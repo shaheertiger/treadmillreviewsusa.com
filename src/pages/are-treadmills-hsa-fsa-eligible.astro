@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Are Treadmills HSA or FSA Eligible? (2026): The Medical Necessity Rule";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/are-treadmills-hsa-fsa-eligible/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,104 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-aretreadmillshsafsaeligible" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-aretreadmillshsafsaeligible)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Are Treadmills HSA or FSA Eligible?</h1>
+      <p class="ed-dek">
+        A treadmill bought to get fitter is a personal expense, and tax-advantaged health money cannot pay for it. A treadmill bought because a clinician says you need one to treat a diagnosed condition can be a different matter. Here is where the line sits, how the Letter of Medical Necessity works, how FSAs and HSAs differ, and what it costs to get it wrong.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Are Treadmills <span class="text-[#5AA9FF]">HSA or FSA Eligible?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill bought to get fitter is a personal expense, and tax-advantaged health money cannot pay for it. A treadmill bought because a clinician says you need one to treat a diagnosed condition can be a different matter. Here is where the line sits, how the Letter of Medical Necessity works, how FSAs and HSAs differ, and what it costs to get it wrong.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#fsa-vs-hsa" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            FSA vs HSA Differences
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">This is not tax advice.</strong> We review treadmills. We
-          are not accountants, tax advisers, benefits specialists or clinicians, and nothing on
-          this page is tax, legal, financial or medical advice. It is a plain-English explanation
-          of how the general rule is commonly understood, written so you know which questions to
-          ask. Plan rules differ, IRS guidance changes, and your own circumstances decide the
-          answer. <strong class="text-gray-900">Before you spend a dollar of FSA or HSA money on a
-          treadmill,</strong> check with your plan administrator (for an FSA or HRA) or your HSA
-          custodian and a qualified tax professional (for an HSA), and talk to your doctor about
-          whether a treadmill is genuinely part of treating a condition you have. IRS Publication
-          502 is the official reference on what counts as medical care; read the current edition
-          rather than relying on anyone's summary of it, including this one.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are Treadmills HSA or FSA Eligible? The Short Answer</a>
-          <a href="#primarily-for-medical-care" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Does "Primarily for Medical Care" Actually Mean?</a>
-          <a href="#letter-of-medical-necessity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Is a Letter of Medical Necessity, and What Goes in It?</a>
-          <a href="#fsa-vs-hsa" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Does It Work Differently With an FSA and an HSA?</a>
-          <a href="#retailer-labels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What About Retailers That Say a Treadmill Is "HSA/FSA Eligible"?</a>
-          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Are Walking Pads FSA or HSA Eligible?</a>
-          <a href="#who-might-qualify" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Who Is Most Likely to Have a Genuine Case?</a>
-          <a href="#risks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Happens If the Treadmill Turns Out Not to Qualify?</a>
-          <a href="#step-by-step" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Do You Use FSA or HSA Money for a Treadmill Properly?</a>
-          <a href="#if-not-eligible" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If Your Treadmill Is Not Eligible, How Else Can You Pay Less?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           "Can I buy a treadmill with my HSA?" is one of the most common money questions people ask
           before buying a home machine, and it gets confidently wrong answers in both directions.
           Some retail listings imply that a treadmill is simply eligible; some forum replies say it
@@ -213,8 +148,40 @@ const schema = {
           for, and what the realistic risks are if the purchase does not qualify.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">This is not tax advice.</strong> We review treadmills. We
+          are not accountants, tax advisers, benefits specialists or clinicians, and nothing on
+          this page is tax, legal, financial or medical advice. It is a plain-English explanation
+          of how the general rule is commonly understood, written so you know which questions to
+          ask. Plan rules differ, IRS guidance changes, and your own circumstances decide the
+          answer. <strong class="text-gray-900">Before you spend a dollar of FSA or HSA money on a
+          treadmill,</strong> check with your plan administrator (for an FSA or HRA) or your HSA
+          custodian and a qualified tax professional (for an HSA), and talk to your doctor about
+          whether a treadmill is genuinely part of treating a condition you have. IRS Publication
+          502 is the official reference on what counts as medical care; read the current edition
+          rather than relying on anyone's summary of it, including this one.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Are Treadmills HSA or FSA Eligible? The Short Answer</a></li>
+            <li><a href="#primarily-for-medical-care">What Does "Primarily for Medical Care" Actually Mean?</a></li>
+            <li><a href="#letter-of-medical-necessity">What Is a Letter of Medical Necessity, and What Goes in It?</a></li>
+            <li><a href="#fsa-vs-hsa">Does It Work Differently With an FSA and an HSA?</a></li>
+            <li><a href="#retailer-labels">What About Retailers That Say a Treadmill Is "HSA/FSA Eligible"?</a></li>
+            <li><a href="#walking-pads">Are Walking Pads FSA or HSA Eligible?</a></li>
+            <li><a href="#who-might-qualify">Who Is Most Likely to Have a Genuine Case?</a></li>
+            <li><a href="#risks">What Happens If the Treadmill Turns Out Not to Qualify?</a></li>
+            <li><a href="#step-by-step">How Do You Use FSA or HSA Money for a Treadmill Properly?</a></li>
+            <li><a href="#if-not-eligible">If Your Treadmill Is Not Eligible, How Else Can You Pay Less?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are Treadmills HSA or FSA Eligible? The Short Answer</h2>
+          <h2>Are Treadmills HSA or FSA Eligible? The Short Answer</h2>
 <p>
             <strong>Generally no: a treadmill bought for general fitness is not an eligible FSA or
             HSA expense. It can be eligible when it is bought primarily to treat a specific
@@ -241,14 +208,12 @@ const schema = {
           </p>
           <p>
             If your treadmill is a fitness purchase, which for most people it is, the useful
-            questions are about price rather than tax treatment, and our guide to
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>
-            is the better place to start.
+            questions are about price rather than tax treatment, and our guide to <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a> is the better place to start.
           </p>
         </div>
 
         <div id="primarily-for-medical-care" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Does "Primarily for Medical Care" Actually Mean?</h2>
+          <h2>What Does "Primarily for Medical Care" Actually Mean?</h2>
 <p>
             It means the main reason you are buying the item is to treat or alleviate a specific
             medical condition, not to improve your general health, and that you would not have
@@ -294,7 +259,7 @@ const schema = {
         </div>
 
         <div id="letter-of-medical-necessity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Is a Letter of Medical Necessity, and What Goes in It?</h2>
+          <h2>What Is a Letter of Medical Necessity, and What Goes in It?</h2>
 <p>
             A Letter of Medical Necessity (LMN) is a written statement from a licensed clinician
             explaining that an item or service is needed to treat a specific diagnosed condition.
@@ -343,7 +308,7 @@ const schema = {
         </div>
 
         <div id="fsa-vs-hsa" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Does It Work Differently With an FSA and an HSA?</h2>
+          <h2>Does It Work Differently With an FSA and an HSA?</h2>
 <p>
             Yes. The underlying definition of medical care is the same, but who decides, when, and
             what happens if the money is not used are quite different. The table below sets out the
@@ -393,7 +358,7 @@ const schema = {
         </div>
 
         <div id="retailer-labels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What About Retailers That Say a Treadmill Is "HSA/FSA Eligible"?</h2>
+          <h2>What About Retailers That Say a Treadmill Is "HSA/FSA Eligible"?</h2>
 <p>
             Treat the label as marketing, not as a ruling. A retailer cannot decide whether your
             purchase is a qualified medical expense; only the rules, applied to your circumstances,
@@ -432,13 +397,12 @@ const schema = {
             condition than the machine itself. Accessories, extended warranties and delivery
             charges should be checked with your administrator rather than assumed. If a retailer
             is pushing the HSA angle hard, that is a reason to read the terms more carefully, the
-            same way you would with the finance offers covered in our guide to
-            <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing</a>.
+            same way you would with the finance offers covered in our guide to <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing</a>.
           </p>
         </div>
 
         <div id="walking-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Are Walking Pads FSA or HSA Eligible?</h2>
+          <h2>Are Walking Pads FSA or HSA Eligible?</h2>
 <p>
             Walking pads follow exactly the same rule: not eligible as general fitness or
             under-desk activity equipment, potentially eligible when bought primarily to treat a
@@ -458,9 +422,7 @@ const schema = {
             The practical difference is cost. A walking pad is usually a few hundred dollars rather
             than a few thousand, so the tax saving at stake is smaller, and the fee for a
             third-party letter takes a larger share of it. Do the arithmetic before paying for
-            paperwork. Our explainer on
-            <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a>
-            covers whether one suits the kind of walking you would be doing.
+            paperwork. Our explainer on <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> covers whether one suits the kind of walking you would be doing.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other equipment and services</h3>
           <p>
@@ -476,7 +438,7 @@ const schema = {
         </div>
 
         <div id="who-might-qualify" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who Is Most Likely to Have a Genuine Case?</h2>
+          <h2>Who Is Most Likely to Have a Genuine Case?</h2>
 <p>
             The people with the strongest cases are those whose clinician has prescribed walking or
             supervised-style exercise as part of treating a diagnosed condition, where a home
@@ -508,15 +470,13 @@ const schema = {
             None of this is a formula, and we are not in a position to tell you whether your case
             qualifies. It is meant to help you have a realistic conversation with your clinician
             and your plan. If a clinician has suggested treadmill walking for a joint-related
-            reason, our guide to
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a>
-            covers the features — cushioning, low step-up height, slow start speeds — that matter
+            reason, our guide to <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a> covers the features — cushioning, low step-up height, slow start speeds — that matter
             for that kind of use.
           </p>
         </div>
 
         <div id="risks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Happens If the Treadmill Turns Out Not to Qualify?</h2>
+          <h2>What Happens If the Treadmill Turns Out Not to Qualify?</h2>
 <p>
             It depends on the account, and the HSA consequences are the ones to take seriously.
           </p>
@@ -555,7 +515,7 @@ const schema = {
         </div>
 
         <div id="step-by-step" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Do You Use FSA or HSA Money for a Treadmill Properly?</h2>
+          <h2>How Do You Use FSA or HSA Money for a Treadmill Properly?</h2>
 <p>
             If you believe you have a genuine medical case, the process is mostly about doing
             things in the right order and keeping the paper.
@@ -588,23 +548,19 @@ const schema = {
           </p>
           <p>
             Separately from tax, the usual buying advice still applies: check the return window,
-            the warranty and the delivery terms before you commit. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            covers what to look for.
+            the warranty and the delivery terms before you commit. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> covers what to look for.
           </p>
         </div>
 
         <div id="if-not-eligible" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If Your Treadmill Is Not Eligible, How Else Can You Pay Less?</h2>
+          <h2>If Your Treadmill Is Not Eligible, How Else Can You Pay Less?</h2>
 <p>
             For most buyers the treadmill is a fitness purchase, and the realistic ways to reduce
             the cost are ordinary ones rather than tax ones.
           </p>
           <ul>
             <li><strong>Buy at the right time.</strong> Treadmill prices move with the season and
-            with retail sale events, and our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
-            sets out when discounts are most common.</li>
+            with retail sale events, and our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> sets out when discounts are most common.</li>
             <li><strong>Buy the machine you need.</strong> A walker who will rarely exceed 4 mph does
             not need the motor, <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> or console of a running machine. Matching the machine
             to the use is usually the biggest saving available.</li>
@@ -626,141 +582,155 @@ const schema = {
             or benefits team can tell you whether exercise equipment is included.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I buy a treadmill with my HSA?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the treadmill is primarily for medical care, meaning it is bought to treat a specific condition a clinician has diagnosed, typically documented with a Letter of Medical Necessity. A treadmill for general fitness is a personal expense. With an HSA you decide and keep the records, and an ineligible withdrawal is generally taxable, usually with a penalty under 65.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are treadmills FSA eligible?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not as general fitness equipment. An FSA administrator may reimburse a treadmill when it is bought primarily to treat a diagnosed condition and you supply an itemised receipt and a Letter of Medical Necessity. Each plan sets its own documentation requirements and makes its own decision, so ask the administrator before buying rather than after.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are walking pads FSA or HSA eligible?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The same rule applies as for any treadmill. A walking pad bought to add steps during the working day is a personal expense. One bought because a clinician recommends a specific walking routine to treat a diagnosed condition may qualify with a Letter of Medical Necessity. Because walking pads cost less, check that any letter fee is worth the tax saving.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should a Letter of Medical Necessity for a treadmill include?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Typically your details and the clinician's, the specific diagnosis, why a treadmill is part of treating it, how often and how long it should be used, how long the recommendation applies, and a date and signature. Many plans have their own form and treat letters as valid for a limited period, so ask the administrator what it accepts.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a retailer saying HSA/FSA eligible mean I can use my account?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. The label usually means the checkout accepts HSA or FSA cards, or that the retailer works with a service that can arrange a Letter of Medical Necessity. Neither decides whether your purchase qualifies. The rules applied to your circumstances decide that, and for an FSA your plan administrator makes the call.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens if I used HSA money on a treadmill that does not qualify?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The withdrawal is generally treated as taxable income, and if you are under 65 it is generally subject to an additional penalty tax as well. Depending on the custodian and circumstances there may be a way to correct a genuine mistake. Contact your custodian and a tax professional promptly rather than waiting until your return is due.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With HSA and FSA Treadmill Purchases</h2>
+          <p>Most problems come from treating eligibility as a property of the product rather than of the purchase, or from doing things in the wrong order.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the "HSA/FSA eligible" badge</h3>
+              <p>A product page cannot decide whether your purchase is a qualified medical expense. The badge usually means the card will go through or that a letter service is available. Check with your plan administrator or custodian, and with a tax professional for an HSA, before relying on it.</p>
+            </li>
+            <li>
+              <h3>Buying first and finding a letter afterwards</h3>
+              <p>A Letter of Medical Necessity dated after the purchase is weaker evidence that the treadmill was bought because of a condition, and some administrators will not accept it. If you think you have a case, talk to your clinician and get the letter before you order the machine.</p>
+            </li>
+            <li>
+              <h3>Spending a December FSA balance on a fitness treadmill</h3>
+              <p>Use-it-or-lose-it pressure does not change the rule. A treadmill for general fitness is not eligible however much is left in the account. Spend the balance on genuinely eligible expenses, check whether your plan has a grace period or carryover, and pay for the treadmill with ordinary money.</p>
+            </li>
+            <li>
+              <h3>Not keeping the paperwork with an HSA</h3>
+              <p>Nobody approves an HSA withdrawal in advance, so the receipt and the Letter of Medical Necessity are your only evidence if the IRS asks. Keep the itemised receipt, the letter and any plan correspondence together, for as long as a tax professional advises, ideally in one folder.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With HSA and FSA Treadmill Purchases</h2>
-          <p class="text-gray-700 leading-relaxed">Most problems come from treating eligibility as a property of the product rather than of the purchase, or from doing things in the wrong order.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the "HSA/FSA eligible" badge</h3>
-              <p class="text-gray-700 text-sm m-0">A product page cannot decide whether your purchase is a qualified medical expense. The badge usually means the card will go through or that a letter service is available. Check with your plan administrator or custodian, and with a tax professional for an HSA, before relying on it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying first and finding a letter afterwards</h3>
-              <p class="text-gray-700 text-sm m-0">A Letter of Medical Necessity dated after the purchase is weaker evidence that the treadmill was bought because of a condition, and some administrators will not accept it. If you think you have a case, talk to your clinician and get the letter before you order the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Spending a December FSA balance on a fitness treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">Use-it-or-lose-it pressure does not change the rule. A treadmill for general fitness is not eligible however much is left in the account. Spend the balance on genuinely eligible expenses, check whether your plan has a grace period or carryover, and pay for the treadmill with ordinary money.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not keeping the paperwork with an HSA</h3>
-              <p class="text-gray-700 text-sm m-0">Nobody approves an HSA withdrawal in advance, so the receipt and the Letter of Medical Necessity are your only evidence if the IRS asks. Keep the itemised receipt, the letter and any plan correspondence together, for as long as a tax professional advises, ideally in one folder.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price and Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-much-does-a-treadmill-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Price</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Much Does a Treadmill Cost?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Prices by type and tier, from walking pads to commercial machines, and the hidden extras.</p>
-            </a>
-            <a href="/treadmill-financing/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Paying</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Financing</p>
-              <p class="text-sm text-gray-500 leading-relaxed">0% offers, buy now pay later and the deferred-interest trap, explained plainly.</p>
-            </a>
-            <a href="/are-walking-pads-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Walking Pads</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Walking Pads Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Who a walking pad suits, where it falls short, and when a treadmill is the better buy.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A treadmill for fitness is not an FSA or HSA expense; a treadmill
             bought primarily to treat a diagnosed condition can be.</strong> The difference is the
             purpose and the paperwork: a clinician's Letter of Medical Necessity, obtained before
             the purchase, and an itemised receipt kept safely.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             For an FSA, the plan administrator decides; for an HSA, you decide and carry the risk if
             you are wrong. Ignore retailer badges, check with your plan and a tax professional, and
-            if the machine is really a fitness purchase, focus on paying less for it — our guide to
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#5AA9FF] font-bold no-underline">treadmill prices</a>
-            is the place to start.
+            if the machine is really a fitness purchase, focus on paying less for it — our guide to <a href="/how-much-does-a-treadmill-cost/" class="text-[#5AA9FF] font-bold no-underline">treadmill prices</a> is the place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-much-does-a-treadmill-cost/">How Much Does a Treadmill Cost?</a></li>
+            <li><a href="/treadmill-financing/">Treadmill Financing</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Can I buy a treadmill with my HSA?</h3></summary>
+            <p class="faq-a">
+              Only if the treadmill is primarily for medical care, meaning it is bought to treat a specific condition a clinician has diagnosed, typically documented with a Letter of Medical Necessity. A treadmill for general fitness is a personal expense. With an HSA you decide and keep the records, and an ineligible withdrawal is generally taxable, usually with a penalty under 65.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are treadmills FSA eligible?</h3></summary>
+            <p class="faq-a">
+              Not as general fitness equipment. An FSA administrator may reimburse a treadmill when it is bought primarily to treat a diagnosed condition and you supply an itemised receipt and a Letter of Medical Necessity. Each plan sets its own documentation requirements and makes its own decision, so ask the administrator before buying rather than after.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are walking pads FSA or HSA eligible?</h3></summary>
+            <p class="faq-a">
+              The same rule applies as for any treadmill. A walking pad bought to add steps during the working day is a personal expense. One bought because a clinician recommends a specific walking routine to treat a diagnosed condition may qualify with a Letter of Medical Necessity. Because walking pads cost less, check that any letter fee is worth the tax saving.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should a Letter of Medical Necessity for a treadmill include?</h3></summary>
+            <p class="faq-a">
+              Typically your details and the clinician's, the specific diagnosis, why a treadmill is part of treating it, how often and how long it should be used, how long the recommendation applies, and a date and signature. Many plans have their own form and treat letters as valid for a limited period, so ask the administrator what it accepts.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a retailer saying HSA/FSA eligible mean I can use my account?</h3></summary>
+            <p class="faq-a">
+              No. The label usually means the checkout accepts HSA or FSA cards, or that the retailer works with a service that can arrange a Letter of Medical Necessity. Neither decides whether your purchase qualifies. The rules applied to your circumstances decide that, and for an FSA your plan administrator makes the call.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What happens if I used HSA money on a treadmill that does not qualify?</h3></summary>
+            <p class="faq-a">
+              The withdrawal is generally treated as taxable income, and if you are under 65 it is generally subject to an additional penalty tax as well. Depending on the custodian and circumstances there may be a way to correct a genuine mistake. Contact your custodian and a tax professional promptly rather than waiting until your return is due.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price and Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-much-does-a-treadmill-cost/" class="card">
+            <div class="c-kicker">Price</div>
+            <div class="c-title">How Much Does a Treadmill Cost?</div>
+            <p class="c-blurb">Prices by type and tier, from walking pads to commercial machines, and the hidden extras.</p>
+          </a>
+          <a href="/treadmill-financing/" class="card">
+            <div class="c-kicker">Paying</div>
+            <div class="c-title">Treadmill Financing</div>
+            <p class="c-blurb">0% offers, buy now pay later and the deferred-interest trap, explained plainly.</p>
+          </a>
+          <a href="/are-walking-pads-worth-it/" class="card">
+            <div class="c-kicker">Walking Pads</div>
+            <div class="c-title">Are Walking Pads Worth It?</div>
+            <p class="c-blurb">Who a walking pad suits, where it falls short, and when a treadmill is the better buy.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

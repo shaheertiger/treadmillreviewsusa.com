@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Academy Sports Treadmills (2026): Brands, Prices, Delivery, Returns";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/academy-sports-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -105,104 +110,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Check Returns First", link: "#returns" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-academysportstreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-academysportstreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Academy Sports Treadmills: What to Know Before You Buy</h1>
+      <p class="ed-dek">
+        Academy Sports + Outdoors is a Texas-based sporting goods chain with stores across the South and Southeast and a treadmill range that runs from $200 walking pads to $5,000 NordicTrack machines. Here is what it sells, how a treadmill reaches your home, what its return and price-match rules actually say, and how its prices compared with buying direct on the day we checked.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Academy Sports Treadmills: <span class="text-[#5AA9FF]">What to Know Before You Buy</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Academy Sports + Outdoors is a Texas-based sporting goods chain with stores across the South and Southeast and a treadmill range that runs from $200 walking pads to $5,000 NordicTrack machines. Here is what it sells, how a treadmill reaches your home, what its return and price-match rules actually say, and how its prices compared with buying direct on the day we checked.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#brands" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Brands at Academy
-          </a>
-          <a href="#returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Returns and Price Match
-          </a>
-        </div>
+        <a href="#brands" class="btn-ghost">Brands at Academy</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site is independent and not
-          affiliated with Academy Sports + Outdoors or any brand it sells. Brands, prices and policies
-          were read on academy.com on 20 October 2026, and store, return, price-match and card details
-          were cross-checked against independent reporting and the card issuer's announcement. Where we
-          could find no independent source, we say the detail comes from Academy alone. Ranges,
-          fulfilment options and policies change and can differ by product, store and ZIP code, so
-          confirm the current terms on the product page or with the store before you buy. We have not
-          tested the machines mentioned here.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Treadmill at Academy Sports? The Short Answer</a>
-          <a href="#about-academy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Is Academy Sports + Outdoors, and Where Are the Stores?</a>
-          <a href="#brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Treadmill Brands Does Academy Sell?</a>
-          <a href="#price-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Much Do Treadmills Cost at Academy?</a>
-          <a href="#in-store-testing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Can You Try a Treadmill at an Academy Store?</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Does Academy Deliver a Treadmill?</a>
-          <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Does Academy Assemble Treadmills?</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Is Academy's Return Policy on Treadmills?</a>
-          <a href="#price-match" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Does Academy Price Match Treadmills?</a>
-          <a href="#credit-financing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. The Academy Credit Card and Paying Over Time</a>
-          <a href="#compare-channels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How Do Academy's Prices Compare With Other Places to Buy?</a>
-          <a href="#warranty-recalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Who Handles the Warranty, and What About Recalls?</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. How Do You Judge a Treadmill at Academy, and What Should You Check Before Paying?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Academy Sports + Outdoors sells treadmills in its stores and on academy.com, from budget
           walking pads to NordicTrack's top home machines. This page sets out what we could confirm on
           academy.com on 20 October 2026 — the brands listed and their prices, how bulky items are
@@ -211,8 +146,40 @@ const schema = {
           Individual prices change weekly, so treat the figures as a dated snapshot rather than a quote.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site is independent and not
+          affiliated with Academy Sports + Outdoors or any brand it sells. Brands, prices and policies
+          were read on academy.com on 20 October 2026, and store, return, price-match and card details
+          were cross-checked against independent reporting and the card issuer's announcement. Where we
+          could find no independent source, we say the detail comes from Academy alone. Ranges,
+          fulfilment options and policies change and can differ by product, store and ZIP code, so
+          confirm the current terms on the product page or with the store before you buy. We have not
+          tested the machines mentioned here.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a Treadmill at Academy Sports? The Short Answer</a></li>
+            <li><a href="#about-academy">What Is Academy Sports + Outdoors, and Where Are the Stores?</a></li>
+            <li><a href="#brands">Which Treadmill Brands Does Academy Sell?</a></li>
+            <li><a href="#price-range">How Much Do Treadmills Cost at Academy?</a></li>
+            <li><a href="#in-store-testing">Can You Try a Treadmill at an Academy Store?</a></li>
+            <li><a href="#delivery">How Does Academy Deliver a Treadmill?</a></li>
+            <li><a href="#assembly">Does Academy Assemble Treadmills?</a></li>
+            <li><a href="#returns">What Is Academy's Return Policy on Treadmills?</a></li>
+            <li><a href="#price-match">Does Academy Price Match Treadmills?</a></li>
+            <li><a href="#credit-financing">The Academy Credit Card and Paying Over Time</a></li>
+            <li><a href="#compare-channels">How Do Academy's Prices Compare With Other Places to Buy?</a></li>
+            <li><a href="#warranty-recalls">Who Handles the Warranty, and What About Recalls?</a></li>
+            <li><a href="#checklist">How Do You Judge a Treadmill at Academy, and What Should You Check Before Paying?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Treadmill at Academy Sports? The Short Answer</h2>
+          <h2>Should You Buy a Treadmill at Academy Sports? The Short Answer</h2>
 <p>
             <strong>Academy is a reasonable place to buy a mainstream home treadmill, particularly if you
             live near one of its stores in the South or Southeast; its price match, which beats a
@@ -234,13 +201,12 @@ const schema = {
             Academy's prices are not consistently lower or higher than buying elsewhere. On the day we
             checked, one NordicTrack model was $300 cheaper at Academy than on NordicTrack's own site
             and another was $400 dearer. Compare the exact model number and the delivered price every
-            time. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
-            covers what separates a good machine from a poor one.
+            time. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> covers what separates a good machine from a poor one.
           </p>
         </div>
 
         <div id="about-academy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Is Academy Sports + Outdoors, and Where Are the Stores?</h2>
+          <h2>What Is Academy Sports + Outdoors, and Where Are the Stores?</h2>
 <p>
             Academy Sports + Outdoors is a publicly listed sporting goods and outdoor retailer
             headquartered in Katy, Texas, just west of Houston. The company's own history traces it to a
@@ -270,7 +236,7 @@ const schema = {
         </div>
 
         <div id="brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Treadmill Brands Does Academy Sell?</h2>
+          <h2>Which Treadmill Brands Does Academy Sell?</h2>
 <p>
             On 20 October 2026 Academy's treadmill category showed 94 items across four pages, including
             a few accessories (a treadmill mat and a walking pad handrail) and two stair steppers. The
@@ -308,16 +274,14 @@ const schema = {
           </p>
           <p>
             Several of the NordicTrack listings use names that are easy to confuse — "T Series 5" and
-            "T 5.0 S", for example, appeared as separate products at the same price. Our guide to the
-            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series</a>
-            explains the line-up. Always match the full item number on the Academy page (it is listed
+            "T 5.0 S", for example, appeared as separate products at the same price. Our guide to the <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series</a> explains the line-up. Always match the full item number on the Academy page (it is listed
             under "about this product") with the manufacturer's model number before you compare prices
             or ask for a price match.
           </p>
         </div>
 
         <div id="price-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Much Do Treadmills Cost at Academy?</h2>
+          <h2>How Much Do Treadmills Cost at Academy?</h2>
 <p>
             Listed prices for motorized treadmills and walking pads on academy.com ran from $199.99 (a
             UREVO under-desk walking pad) to $4,999.99 (the NordicTrack Ultra 3) on 20 October 2026. The
@@ -346,13 +310,12 @@ const schema = {
             add the machine to the cart before you compare it.
           </p>
           <p>
-            For what each of those tiers typically buys in motor, deck and frame, see
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+            For what each of those tiers typically buys in motor, deck and frame, see <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
           </p>
         </div>
 
         <div id="in-store-testing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Can You Try a Treadmill at an Academy Store?</h2>
+          <h2>Can You Try a Treadmill at an Academy Store?</h2>
 <p>
             The best reason to buy from a store chain is that you can stand on the machine first, and
             Academy's stores have fitness departments. Whether a particular treadmill is on the floor,
@@ -375,8 +338,7 @@ const schema = {
             <li><strong>Fold and unfold it</strong> yourself if it folds, and check how heavy it is to move.</li>
           </ul>
           <p>
-            Our <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">in-store treadmill test</a>
-            sets out the full protocol. Before you leave, photograph the spec card and the model number
+            Our <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">in-store treadmill test</a> sets out the full protocol. Before you leave, photograph the spec card and the model number
             on the frame, and check that the machine you order has the same item number. Treadmill names
             are reused across model years with real changes underneath.
           </p>
@@ -388,7 +350,7 @@ const schema = {
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Does Academy Deliver a Treadmill?</h2>
+          <h2>How Does Academy Deliver a Treadmill?</h2>
 <p>
             Most full-size treadmills on academy.com do not travel by parcel carrier. The product pages we
             checked said they ship "via Academy's Bulk Carrier Service" and that bulk orders cannot go to a
@@ -417,23 +379,19 @@ const schema = {
           <p>
             For a box that can weigh as much as an adult, the difference between "to your door" and "to
             the room" is the whole job. If you choose basic delivery, plan who will carry the box in and
-            up any stairs. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            explains what each level usually means on the day, and
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives typical boxed weights.
+            up any stairs. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> explains what each level usually means on the day, and <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives typical boxed weights.
           </p>
           <p>
             Some items ship directly from the brand rather than from Academy. Academy flags these with a
             banner saying the item may ship from a different location; once such an order has been passed
             to the vendor it cannot be switched to store pick-up or a different address, and it can only
             be cancelled before the vendor accepts it. Measure the room and the route to it before ordering —
-            the <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the clearances.
+            the <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the clearances.
           </p>
         </div>
 
         <div id="assembly" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Does Academy Assemble Treadmills?</h2>
+          <h2>Does Academy Assemble Treadmills?</h2>
 <p>
             Sometimes. Academy's in-store services page, checked on 20 October 2026, says that when you
             buy an oversized item it will "assist with free assembly for in-store pickup or offer home
@@ -456,14 +414,12 @@ const schema = {
             assembly service (NordicTrack, for example, offers delivery, assembly and haul-away for an
             extra charge when you buy direct), book a local fitness technician or assembly service, or do
             it yourself. Most home treadmills arrive with the heavy base pre-built and need the uprights,
-            console and handrails attaching — a two-person job of an hour or two. Our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a>
-            sets out the job.
+            console and handrails attaching — a two-person job of an hour or two. Our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a> sets out the job.
           </p>
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Is Academy's Return Policy on Treadmills?</h2>
+          <h2>What Is Academy's Return Policy on Treadmills?</h2>
 <p>
             Academy's return policy, as published on academy.com on 20 October 2026, accepts returns of
             "most unused, new condition items within 60 days of purchase" and refunds to the original form
@@ -499,14 +455,12 @@ const schema = {
           </p>
           <p>
             Some low-quality third-party pages still quote 30 or 90 days for Academy returns. Academy's own
-            page said 60 days when we checked, so follow that. Our guide to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            compares how other retailers and manufacturers handle large-item returns.
+            page said 60 days when we checked, so follow that. Our guide to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> compares how other retailers and manufacturers handle large-item returns.
           </p>
         </div>
 
         <div id="price-match" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Does Academy Price Match Treadmills?</h2>
+          <h2>Does Academy Price Match Treadmills?</h2>
 <p>
             Yes, and it goes further than most: Academy's price-match guarantee, checked on 20 October 2026,
             says it will <strong>beat</strong> a qualifying competitor's advertised price by 5%, not just
@@ -537,14 +491,12 @@ const schema = {
             on the online list, so a sale price on nordictrack.com, for example, does not qualify unless a
             local retailer prints it in an ad — and many brand sales are timed events in any case. Second,
             the identical-model rule is strict; compare the full item number before you ask. For when
-            treadmill prices typically fall, see the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
-            and our notes on judging <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>.
+            treadmill prices typically fall, see the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> and our notes on judging <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>.
           </p>
         </div>
 
         <div id="credit-financing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. The Academy Credit Card and Paying Over Time</h2>
+          <h2>The Academy Credit Card and Paying Over Time</h2>
 <p>
             In March 2026 Academy replaced its old store card with two new cards issued by Comenity Capital
             Bank, part of Bread Financial: the myAcademy Rewards Mastercard, usable anywhere, and the
@@ -571,9 +523,7 @@ const schema = {
             PayPal and Bread Pay installment loans, which Academy lists as eligible for fitness equipment,
             and the treadmill pages we checked showed "Pay in 4 interest-free payments" alongside a
             monthly "as low as" figure. Read the terms of whichever plan you choose — the rate, the term
-            and what happens on a return — before signing. Our guide to
-            <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing</a>
-            compares the main options.
+            and what happens on a return — before signing. Our guide to <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing</a> compares the main options.
           </p>
           <p>
             The product pages also offered optional protection plans — two- and three-year plans priced
@@ -583,7 +533,7 @@ const schema = {
         </div>
 
         <div id="compare-channels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How Do Academy's Prices Compare With Other Places to Buy?</h2>
+          <h2>How Do Academy's Prices Compare With Other Places to Buy?</h2>
 <p>
             There is no simple answer, which is the point. On 20 October 2026 we compared two NordicTrack
             treadmills that carried the same model numbers at Academy and on NordicTrack's own site:
@@ -605,32 +555,25 @@ const schema = {
             So Academy was $300 cheaper on one machine and $400 dearer on the other, before Academy's bulk
             delivery charge, which is calculated at checkout. NordicTrack's site also advertised a 30-day
             home trial. Neither channel was consistently cheaper, and both prices will have moved by the
-            time you read this. Our review of the
-            <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1250</a>
-            covers that machine in detail.
+            time you read this. Our review of the <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1250</a> covers that machine in detail.
           </p>
           <p>
-            Against other sporting goods chains, Academy works much like
-            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods</a>
-            or <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels</a>: a mainstream range,
+            Against other sporting goods chains, Academy works much like <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods</a> or <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels</a>: a mainstream range,
             some floor models, freight delivery for big machines. Its distinguishing features are the
             beat-by-5% price match, which lists Dick's and Scheels among the qualifying competitors, and
             a regional footprint in the South and Southeast where those chains are thinner on the ground.
-            Against <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a> and
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon</a>, it has
+            Against <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a> and <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon</a>, it has
             a smaller range but no third-party marketplace sellers, and a store to walk into.
           </p>
           <p>
             The sensible approach is the same everywhere: settle the specification, then compare the
             delivered price for the identical model number across channels, adding delivery level,
-            assembly and return terms to the comparison. Our guide to
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale</a>
-            sets out what each channel usually includes.
+            assembly and return terms to the comparison. Our guide to <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale</a> sets out what each channel usually includes.
           </p>
         </div>
 
         <div id="warranty-recalls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Who Handles the Warranty, and What About Recalls?</h2>
+          <h2>Who Handles the Warranty, and What About Recalls?</h2>
 <p>
             Warranty cover on a treadmill bought at Academy comes from the manufacturer, and the product
             pages we checked listed the manufacturer's terms in the specifications — frame, motor, parts
@@ -638,9 +581,7 @@ const schema = {
             register the machine with the manufacturer, keep the model and serial numbers with your Academy
             receipt, and check whether the brand has service technicians where you live. Read the labour
             term in particular: Academy's T Series 10 listing and NordicTrack's own page both gave ten
-            years on the frame, two years on parts and one year on labour. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains how to read the terms.
+            years on the frame, two years on parts and one year on labour. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains how to read the terms.
           </p>
           <p>
             We searched the U.S. Consumer Product Safety Commission's recall database on 20 October 2026 for
@@ -654,7 +595,7 @@ const schema = {
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. How Do You Judge a Treadmill at Academy, and What Should You Check Before Paying?</h2>
+          <h2>How Do You Judge a Treadmill at Academy, and What Should You Check Before Paying?</h2>
 <p>
             Judge the machine on the same figures you would anywhere, not on the screen or the sale tag.
             Academy's specification lists include useful fields — continuous motor horsepower, running
@@ -663,14 +604,10 @@ const schema = {
             width. Check gaps against the manufacturer's page.
           </p>
           <ul>
-            <li><strong>Motor:</strong> continuous-duty horsepower, not peak. See the
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>.</li>
-            <li><strong>Running surface:</strong> length and width against your stride and height. See the
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>.</li>
+            <li><strong>Motor:</strong> continuous-duty horsepower, not peak. See the <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>.</li>
+            <li><strong>Running surface:</strong> length and width against your stride and height. See the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>.</li>
             <li><strong>Subscription:</strong> many NordicTrack, ProForm, Bowflex and Echelon features need a
-            paid membership. Check what the machine does without one; our guide to
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            sets out the cost over time.</li>
+            paid membership. Check what the machine does without one; our guide to <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> sets out the cost over time.</li>
           </ul>
           <p>
             Before you pay, run through this list:
@@ -692,143 +629,156 @@ const schema = {
           </ul>
           <p>
             If the specification fits and the numbers work, Academy is a sound place to buy. If you are
-            still deciding how much to spend, start with our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
+            still deciding how much to spend, start with our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Academy Sports sell treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. On 20 October 2026 academy.com listed treadmills and walking pads from NordicTrack, ProForm, Bowflex, Echelon, Sunny Health & Fitness, XTERRA, UREVO, WalkingPad, CENTR, Assault Fitness, adidas, Reebok and others, at listed prices from $199.99 to $4,999.99 for motorized machines. Store stock varies, so check availability for your local store.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the Academy return policy on treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Academy accepts most unused, new-condition items within 60 days of purchase, refunded to the original payment method. Returns must be resalable with no visible wear, in original packaging, unless there is a defect, transit damage or a performance issue. For items that needed bulk shipping, Academy asks you to contact Customer Care.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Academy price match treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Academy says it beats a qualifying competitor's current advertised price by 5% on an identical, in-stock item with the same brand and model number. Qualifying online retailers include Amazon, Walmart, Dick's, Scheels and Target; clearance, timed events, coupons and membership prices are excluded. It also adjusts its own price within 14 days of purchase.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Academy deliver and assemble treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Large treadmills ship by Academy's bulk freight carrier, typically within 7 to 14 business days, with Basic (to the door), Scheduled (inside the main entrance) and Room of Choice levels where available. Academy offers free assembly of select treadmills picked up in store. It does not ship to California, Alaska or Hawaii.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you finance a treadmill at Academy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Academy accepts Klarna, Sezzle, PayPal and Bread Pay installment loans, which it lists as eligible for fitness equipment. Its myAcademy Rewards credit cards give 5% off Academy purchases, or $30 off a first same-day purchase, with no annual fee but a variable APR on unpaid balances. The cards are not available in California.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where are Academy Sports stores located?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Academy describes itself as running more than 300 stores in 21 states, concentrated in Texas, the Gulf states and the Southeast, and reaching north to Illinois, Indiana, Ohio, Pennsylvania and Maryland. Its store directory listed those 21 states on 20 October 2026. Outside them, academy.com ships to the contiguous states except California.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill at Academy</h2>
+          <p>None of these is unique to Academy, but its written policies make each one easy to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Building it before you are sure</h3>
+              <p>Academy's 60-day returns are for unused items in original packaging, unless something is faulty. Test in store first, and keep the box until you know you are keeping the machine.</p>
+            </li>
+            <li>
+              <h3>Assuming the treadmill ships free</h3>
+              <p>Academy's free shipping offers exclude bulk and heavy items. Check the delivery charge for the level you want at checkout and compare the delivered price with other retailers.</p>
+            </li>
+            <li>
+              <h3>Asking for a match on the wrong model</h3>
+              <p>The price match needs the same brand and model number from a qualifying retailer. Compare item numbers first, and remember that manufacturers' own sites are not on Academy's online list.</p>
+            </li>
+            <li>
+              <h3>Choosing door delivery without a plan</h3>
+              <p>Basic delivery stops at the door. Unless you choose a higher level, arrange help to carry a heavy box inside and up any stairs before the truck arrives.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill at Academy</h2>
-          <p class="text-gray-700 leading-relaxed">None of these is unique to Academy, but its written policies make each one easy to avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Building it before you are sure</h3>
-              <p class="text-gray-700 text-sm m-0">Academy's 60-day returns are for unused items in original packaging, unless something is faulty. Test in store first, and keep the box until you know you are keeping the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the treadmill ships free</h3>
-              <p class="text-gray-700 text-sm m-0">Academy's free shipping offers exclude bulk and heavy items. Check the delivery charge for the level you want at checkout and compare the delivered price with other retailers.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Asking for a match on the wrong model</h3>
-              <p class="text-gray-700 text-sm m-0">The price match needs the same brand and model number from a qualifying retailer. Compare item numbers first, and remember that manufacturers' own sites are not on Academy's online list.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing door delivery without a plan</h3>
-              <p class="text-gray-700 text-sm m-0">Basic delivery stops at the door. Unless you choose a higher level, arrange help to carry a heavy box inside and up any stairs before the truck arrives.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/dicks-sporting-goods-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Dick's Sporting Goods Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The national sporting goods chain, compared.</p>
-            </a>
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-            <a href="/treadmill-return-policies/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Policies</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Return Policies</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How large-item returns really work, retailer by retailer.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Academy is a sound place to buy a mainstream treadmill if you are in its region.</strong>
-            It sells NordicTrack, ProForm, Bowflex, Echelon, Sunny, XTERRA and a deep walking pad range,
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Academy is a sound place to buy a mainstream treadmill if you are in its region.</strong> It sells NordicTrack, ProForm, Bowflex, Echelon, Sunny, XTERRA and a deep walking pad range,
             beats qualifying competitors' prices by 5% and takes unused items back within 60 days. Test in
             store, keep the box, and check the bulk delivery level and charge before you pay.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Then compare the delivered price for the same model number with
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+          <p>
+            Then compare the delivered price for the same model number with <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
             Academy was cheaper on one NordicTrack and dearer on another on the day we checked.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/dicks-sporting-goods-treadmills/">Dick's Sporting Goods Treadmills</a></li>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does Academy Sports sell treadmills?</h3></summary>
+            <p class="faq-a">
+              Yes. On 20 October 2026 academy.com listed treadmills and walking pads from NordicTrack, ProForm, Bowflex, Echelon, Sunny Health & Fitness, XTERRA, UREVO, WalkingPad, CENTR, Assault Fitness, adidas, Reebok and others, at listed prices from $199.99 to $4,999.99 for motorized machines. Store stock varies, so check availability for your local store.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the Academy return policy on treadmills?</h3></summary>
+            <p class="faq-a">
+              Academy accepts most unused, new-condition items within 60 days of purchase, refunded to the original payment method. Returns must be resalable with no visible wear, in original packaging, unless there is a defect, transit damage or a performance issue. For items that needed bulk shipping, Academy asks you to contact Customer Care.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does Academy price match treadmills?</h3></summary>
+            <p class="faq-a">
+              Yes. Academy says it beats a qualifying competitor's current advertised price by 5% on an identical, in-stock item with the same brand and model number. Qualifying online retailers include Amazon, Walmart, Dick's, Scheels and Target; clearance, timed events, coupons and membership prices are excluded. It also adjusts its own price within 14 days of purchase.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Academy deliver and assemble treadmills?</h3></summary>
+            <p class="faq-a">
+              Large treadmills ship by Academy's bulk freight carrier, typically within 7 to 14 business days, with Basic (to the door), Scheduled (inside the main entrance) and Room of Choice levels where available. Academy offers free assembly of select treadmills picked up in store. It does not ship to California, Alaska or Hawaii.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you finance a treadmill at Academy?</h3></summary>
+            <p class="faq-a">
+              Academy accepts Klarna, Sezzle, PayPal and Bread Pay installment loans, which it lists as eligible for fitness equipment. Its myAcademy Rewards credit cards give 5% off Academy purchases, or $30 off a first same-day purchase, with no annual fee but a variable APR on unpaid balances. The cards are not available in California.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Where are Academy Sports stores located?</h3></summary>
+            <p class="faq-a">
+              Academy describes itself as running more than 300 stores in 21 states, concentrated in Texas, the Gulf states and the Southeast, and reaching north to Illinois, Indiana, Ohio, Pennsylvania and Maryland. Its store directory listed those 21 states on 20 October 2026. Outside them, academy.com ships to the contiguous states except California.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/dicks-sporting-goods-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Dick's Sporting Goods Treadmills</div>
+            <p class="c-blurb">The national sporting goods chain, compared.</p>
+          </a>
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+          <a href="/treadmill-return-policies/" class="card">
+            <div class="c-kicker">Policies</div>
+            <div class="c-title">Treadmill Return Policies</div>
+            <p class="c-blurb">How large-item returns really work, retailer by retailer.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

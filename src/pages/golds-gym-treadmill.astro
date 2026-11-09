@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Gold's Gym Treadmill Guide (2026): Makers, Models and Parts";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/golds-gym-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-goldsgymtreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-goldsgymtreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">Gold’s Gym Treadmill: Who Made Them and What to Buy Now</h1>
+      <p class="ed-dek">
+        For nearly two decades the Gold’s Gym treadmills sold at Walmart and other mass retailers were made by ICON Health & Fitness, the company behind NordicTrack and ProForm, under licence. That exclusive deal ended in 2019, and the best-known models are out of production. This guide explains what a Gold’s Gym treadmill is, what you can still buy, how iFIT fits in, and what to check before buying one new or used.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Gold’s Gym Treadmill: <span class="text-[#5AA9FF]">Who Made Them and What to Buy Now</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          For nearly two decades the Gold’s Gym treadmills sold at Walmart and other mass retailers were made by ICON Health & Fitness, the company behind NordicTrack and ProForm, under licence. That exclusive deal ended in 2019, and the best-known models are out of production. This guide explains what a Gold’s Gym treadmill is, what you can still buy, how iFIT fits in, and what to check before buying one new or used.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#models" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Legacy Models
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What we checked, and what we could not.</strong> On 14 October
-          2026 we checked Gold’s Gym’s own website and its owner RSG Group’s brand page, Gold’s Gym’s
-          2019 request for new home-equipment licensees, IMG Licensing’s 2025 announcement, ICON’s
-          2004 annual report and iFIT’s 2021 registration statement, Amazon’s US catalogue through its
-          product search, independent reviews of the Trainer 430i and Trainer 720, and the US Consumer
-          Product Safety Commission’s recall database. Walmart’s site blocked our automated checks, so
-          we could not see its current listings directly; where we describe Walmart we say what other
-          sources show. Model figures appear only where at least two independent sources agree; where
-          they conflict, we say so. We have no connection with Gold’s Gym, RSG Group or iFIT and have
-          not tested any Gold’s Gym treadmill. Used values are rough, labelled estimates.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Gold’s Gym Treadmills: The Short Answer</a>
-          <a href="#who-made-them" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Made Gold’s Gym Treadmills?</a>
-          <a href="#what-is-sold-now" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Can You Still Buy a Gold’s Gym Treadmill New?</a>
-          <a href="#models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Gold’s Gym Treadmill Models You Will Still Find</a>
-          <a href="#ifit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Do Gold’s Gym Treadmills Need iFIT?</a>
-          <a href="#parts-and-service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Gold’s Gym Treadmill Parts, Manuals and Service</a>
-          <a href="#strengths-and-weaknesses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Gold’s Gym Treadmills Did Well, and Less Well</a>
-          <a href="#buying-used" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Is a Used Gold’s Gym Treadmill Worth Buying?</a>
-          <a href="#what-to-buy-instead" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What to Buy Instead of a Gold’s Gym Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Gold’s Gym is a gym chain first. Its name went onto home treadmills through a licence, and
           the machines themselves were built by ICON Health & Fitness — renamed iFIT in 2021 — alongside
           its NordicTrack, ProForm and Weslo lines. That matters for anyone searching for a Gold’s Gym
@@ -210,8 +147,38 @@ const schema = {
           iFIT and who is selling.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What we checked, and what we could not.</strong> On 14 October
+          2026 we checked Gold’s Gym’s own website and its owner RSG Group’s brand page, Gold’s Gym’s
+          2019 request for new home-equipment licensees, IMG Licensing’s 2025 announcement, ICON’s
+          2004 annual report and iFIT’s 2021 registration statement, Amazon’s US catalogue through its
+          product search, independent reviews of the Trainer 430i and Trainer 720, and the US Consumer
+          Product Safety Commission’s recall database. Walmart’s site blocked our automated checks, so
+          we could not see its current listings directly; where we describe Walmart we say what other
+          sources show. Model figures appear only where at least two independent sources agree; where
+          they conflict, we say so. We have no connection with Gold’s Gym, RSG Group or iFIT and have
+          not tested any Gold’s Gym treadmill. Used values are rough, labelled estimates.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Gold’s Gym Treadmills: The Short Answer</a></li>
+            <li><a href="#who-made-them">Who Made Gold’s Gym Treadmills?</a></li>
+            <li><a href="#what-is-sold-now">Can You Still Buy a Gold’s Gym Treadmill New?</a></li>
+            <li><a href="#models">Gold’s Gym Treadmill Models You Will Still Find</a></li>
+            <li><a href="#ifit">Do Gold’s Gym Treadmills Need iFIT?</a></li>
+            <li><a href="#parts-and-service">Gold’s Gym Treadmill Parts, Manuals and Service</a></li>
+            <li><a href="#strengths-and-weaknesses">What Gold’s Gym Treadmills Did Well, and Less Well</a></li>
+            <li><a href="#buying-used">Is a Used Gold’s Gym Treadmill Worth Buying?</a></li>
+            <li><a href="#what-to-buy-instead">What to Buy Instead of a Gold’s Gym Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Gold’s Gym Treadmills: The Short Answer</h2>
+          <h2>Gold’s Gym Treadmills: The Short Answer</h2>
 <p>
             <strong>Gold’s Gym treadmills were made by ICON Health & Fitness (now iFIT) under a
             licence that began in 2001, and the best-known models — the Trainer 430i and Trainer
@@ -230,17 +197,12 @@ const schema = {
           <p>
             If what you wanted was the Gold’s Gym formula — an affordable folding treadmill sold by a
             big retailer — the same company’s ProForm and NordicTrack machines are the nearest
-            equivalents, and our
-            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a>
-            and
-            <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T 6.5 S review</a>
-            are good places to start. If you want to avoid a subscription platform altogether, see our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
+            equivalents, and our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a> and <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T 6.5 S review</a> are good places to start. If you want to avoid a subscription platform altogether, see our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
           </p>
         </div>
 
         <div id="who-made-them" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Made Gold’s Gym Treadmills?</h2>
+          <h2>Who Made Gold’s Gym Treadmills?</h2>
 <p>
             ICON Health & Fitness, of Logan, Utah. Several independent treadmill review sites describe
             ICON designing, manufacturing and marketing the Gold’s Gym equipment line under a
@@ -278,7 +240,7 @@ const schema = {
         </div>
 
         <div id="what-is-sold-now" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Can You Still Buy a Gold’s Gym Treadmill New?</h2>
+          <h2>Can You Still Buy a Gold’s Gym Treadmill New?</h2>
 <p>
             Not from any source we could confirm. On 14 October 2026 a search of Amazon’s US catalogue
             for Gold’s Gym treadmills returned replacement walking belts listed as compatible with the
@@ -308,14 +270,12 @@ const schema = {
           <p>
             If you do find a new treadmill carrying the Gold’s Gym name, treat it like any unfamiliar
             listing: find the manufacturer’s name in the specifications, the model number, who
-            provides warranty service, and whether parts are sold. Our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            walks through those checks for any marketplace.
+            provides warranty service, and whether parts are sold. Our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> walks through those checks for any marketplace.
           </p>
         </div>
 
         <div id="models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Gold’s Gym Treadmill Models You Will Still Find</h2>
+          <h2>Gold’s Gym Treadmill Models You Will Still Find</h2>
 <p>
             Gold’s Gym models span the 2000s to the late 2010s. Treadmill Doctor’s and Treadmill
             Reviews’ indexes of Gold’s Gym models list, among others, the Trainer 315, 410, 420, 430 and 430i, the Trainer 520 and
@@ -367,7 +327,7 @@ const schema = {
         </div>
 
         <div id="ifit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Do Gold’s Gym Treadmills Need iFIT?</h2>
+          <h2>Do Gold’s Gym Treadmills Need iFIT?</h2>
 <p>
             No. The Gold’s Gym machines that advertised iFIT, such as the 430i, were described as
             iFIT compatible: the treadmill runs in manual mode and on its built-in programmes without
@@ -380,24 +340,18 @@ const schema = {
             Older iFIT compatibility depended on the hardware generation, and an app that worked with a
             treadmill in 2017 is not guaranteed to work with it now. If iFIT matters to you on a used
             Gold’s Gym treadmill, ask iFIT whether that model number is supported before you buy, and
-            assume you will use it as a standalone treadmill if the answer is unclear. Our pages on
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            and
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT treadmill without a membership</a>
-            explain what the subscription does and does not add. We do not quote iFIT’s prices,
+            assume you will use it as a standalone treadmill if the answer is unclear. Our pages on <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> and <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT treadmill without a membership</a> explain what the subscription does and does not add. We do not quote iFIT’s prices,
             because they change.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apps other than iFIT</h3>
           <p>
             A treadmill without Bluetooth can still be used with <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> or a running app if you add a
-            foot pod, which measures your pace from your shoe rather than from the treadmill. Our
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
-            explains the set-up and its limits.
+            foot pod, which measures your pace from your shoe rather than from the treadmill. Our <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a> explains the set-up and its limits.
           </p>
         </div>
 
         <div id="parts-and-service" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Gold’s Gym Treadmill Parts, Manuals and Service</h2>
+          <h2>Gold’s Gym Treadmill Parts, Manuals and Service</h2>
 <p>
             Because they are ICON machines, Gold’s Gym treadmills are supported the way old ICON
             treadmills are: by model number, through iFIT’s own parts service and through specialist
@@ -420,11 +374,7 @@ const schema = {
             Owner’s manuals for ICON-built Gold’s Gym treadmills are published as PDF files under ICON
             model numbers, and manual archives hold many more. As with any treadmill, the manual is
             the authority on lubrication: some decks are pre-waxed and need little, others need
-            silicone at set intervals. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
-            explains how to tell, and our
-            <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a>
-            covers faults common to ICON consoles and controllers, which Gold’s Gym machines share.
+            silicone at set intervals. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a> explains how to tell, and our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a> covers faults common to ICON consoles and controllers, which Gold’s Gym machines share.
             Unplug the treadmill before removing the motor hood or working on the belt.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Warranty</h3>
@@ -445,7 +395,7 @@ const schema = {
         </div>
 
         <div id="strengths-and-weaknesses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Gold’s Gym Treadmills Did Well, and Less Well</h2>
+          <h2>What Gold’s Gym Treadmills Did Well, and Less Well</h2>
 <p>
             Judged as what they were — mass-market <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a> from one of the largest home-fitness
             maker of the period — the Gold’s Gym machines had clear strengths and equally clear
@@ -469,9 +419,7 @@ const schema = {
             the Trainer 720, was the minimum, and reviewers noted it.</li>
             <li><strong>Motor figures that are hard to pin down.</strong> Reviews disagree on whether
             quoted ratings were continuous or peak, which makes comparison with current machines
-            unreliable. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why that distinction matters.</li>
+            unreliable. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why that distinction matters.</li>
             <li><strong>A brand that no longer stands behind them.</strong> Neither Gold’s Gym nor,
             after 2019, ICON had a reason to promote the line, so support now runs through parts
             suppliers and iFIT’s general service rather than a dedicated brand.</li>
@@ -479,7 +427,7 @@ const schema = {
         </div>
 
         <div id="buying-used" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Is a Used Gold’s Gym Treadmill Worth Buying?</h2>
+          <h2>Is a Used Gold’s Gym Treadmill Worth Buying?</h2>
 <p>
             Sometimes, as a cheap walking machine. These were budget treadmills when new, and
             independent reviewers were mixed on them at the time: one long-running review site said
@@ -508,185 +456,182 @@ const schema = {
             feel cramped walking, you will not grow into it.</li>
           </ul>
           <p>
-            Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            goes through these in order, and our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explains why the 430i’s belt rules it out for most runners.
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> goes through these in order, and our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains why the 430i’s belt rules it out for most runners.
           </p>
         </div>
 
         <div id="what-to-buy-instead" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What to Buy Instead of a Gold’s Gym Treadmill</h2>
+          <h2>What to Buy Instead of a Gold’s Gym Treadmill</h2>
 <p>
             The Gold’s Gym line filled a specific gap: an affordable folding treadmill from a known
             name, sold in a mass-market store. That gap is still well served, and by the same
             manufacturer.
           </p>
           <p>
-            <strong>For the closest like-for-like.</strong> Our verified reviews of the
-            <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T 6.5 S</a>
-            and the
-            <a href="/proform-505-cst-treadmill/" class="text-[#0F62FE] font-medium">ProForm 505 CST</a>
-            cover two iFIT-made folders in the same class as the Trainer 720, with 55 by 20-inch
-            decks, 10 mph and 10% incline. Our comparison of
-            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack and ProForm</a>
-            explains how the two brands differ.
+            <strong>For the closest like-for-like.</strong> Our verified reviews of the <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T 6.5 S</a> and the <a href="/proform-505-cst-treadmill/" class="text-[#0F62FE] font-medium">ProForm 505 CST</a> cover two iFIT-made folders in the same class as the Trainer 720, with 55 by 20-inch
+            decks, 10 mph and 10% incline. Our comparison of <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack and ProForm</a> explains how the two brands differ.
           </p>
           <p>
             <strong>For no subscription at all.</strong> If iFIT is the part you would rather avoid,
-            our roundup of
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            lists machines whose consoles do everything on their own.
+            our roundup of <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> lists machines whose consoles do everything on their own.
           </p>
           <p>
             <strong>For a tighter budget.</strong> <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> now take much of the price point the
-            430i used to occupy; our
-            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 roundup</a>
-            covers what that money buys and what it does not.
+            430i used to occupy; our <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 roundup</a> covers what that money buys and what it does not.
           </p>
           <p>
-            And if you are deciding between brands generally, our
-            <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium">treadmill brands guide</a>
-            compares the companies selling treadmills now.
+            And if you are deciding between brands generally, our <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium">treadmill brands guide</a> compares the companies selling treadmills now.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes Gold’s Gym treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                ICON Health & Fitness, which renamed itself iFIT in 2021 and also makes NordicTrack and ProForm. It made Gold’s Gym equipment under a licence dating to 2001. Gold’s Gym’s exclusive agreement with ICON expired on 31 December 2019, and we found no announcement of a new licensee for Gold’s Gym home treadmills.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are Gold’s Gym treadmills still sold?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not from any source we could confirm on 14 October 2026. Independent reviews describe the Trainer 430i and Trainer 720 as no longer in production, Gold’s Gym’s own site sells apparel and nutrition rather than equipment, and Amazon’s US catalogue showed only replacement parts. Walmart’s site blocked our checks, so we could not confirm its listings directly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a Gold’s Gym treadmill need an iFIT subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Models advertised as iFIT compatible, such as the 430i, work in manual mode and on their built-in programmes without a membership. iFIT adds trainer-led workouts and automatic speed and incline control. Reviews say the Trainer 720 has no Bluetooth, so it does not connect to iFIT. Support for older hardware is not guaranteed, so ask iFIT about your model number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on the Gold’s Gym Trainer 720?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                300 lb, according to two independent reviews that agree on it. The same reviews agree on a 10 mph top speed, 10% incline and a 20-inch-wide belt, but disagree on the belt’s length and on whether its 2.5 horsepower motor figure is continuous or peak. Check the sticker and manual on the machine itself if those matter to you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I get Gold’s Gym treadmill parts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start with the GGTL model number on the frame sticker. iFIT, which was ICON, is the manufacturer’s route for parts, and specialist suppliers such as FitnessRepairParts.com list Gold’s Gym treadmills by model number. Third-party walking belts, drive belts and safety keys for the 430i and 720 are sold on Amazon and Walmart; check their listed model numbers against yours.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a Gold’s Gym treadmill good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They were budget treadmills, and reviewers were mixed: one long-running site was not overly impressed with the line, another found the Trainer 720 acceptable for its price. Used, a working one can be a reasonable walking machine if it is cheap. For a new purchase, the same maker’s current ProForm and NordicTrack folders are the like-for-like choice.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Gold’s Gym Treadmills</h2>
+          <p>Most problems come from assuming the gym brand stands behind the machine, or from paying too much for an old budget treadmill. Avoid these four.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming Gold’s Gym supports the treadmill</h3>
+              <p>The gym chain licensed its name; ICON, now iFIT, made and supported the machines. A Gold’s Gym club cannot help with a fault, and any warranty was ICON’s. Contact iFIT or a parts supplier with the GGTL model number instead.</p>
+            </li>
+            <li>
+              <h3>Trusting the name on a new listing</h3>
+              <p>With the ICON licence ended and no new home-treadmill licensee announced, a treadmill described as Gold’s Gym today could come from anyone. Find the manufacturer, the model number, who honours the warranty and whether parts exist before paying, and walk away if the listing cannot answer.</p>
+            </li>
+            <li>
+              <h3>Buying a 430i to run on</h3>
+              <p>A 16 by 50-inch belt is short and narrow by current standards. It suits walking for most people; for running it forces a shortened stride and leaves little room for drift. If you plan to jog, look at a 55 or 60-inch deck instead.</p>
+            </li>
+            <li>
+              <h3>Buying for iFIT without checking compatibility</h3>
+              <p>Older iFIT hardware is not guaranteed to work with today’s app, and the Trainer 720 has no Bluetooth at all. If iFIT is the reason you want the machine, confirm the model is supported before you buy, and value it as a standalone treadmill otherwise.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Gold’s Gym Treadmills</h2>
-          <p class="text-gray-700 leading-relaxed">Most problems come from assuming the gym brand stands behind the machine, or from paying too much for an old budget treadmill. Avoid these four.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming Gold’s Gym supports the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">The gym chain licensed its name; ICON, now iFIT, made and supported the machines. A Gold’s Gym club cannot help with a fault, and any warranty was ICON’s. Contact iFIT or a parts supplier with the GGTL model number instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the name on a new listing</h3>
-              <p class="text-gray-700 text-sm m-0">With the ICON licence ended and no new home-treadmill licensee announced, a treadmill described as Gold’s Gym today could come from anyone. Find the manufacturer, the model number, who honours the warranty and whether parts exist before paying, and walk away if the listing cannot answer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a 430i to run on</h3>
-              <p class="text-gray-700 text-sm m-0">A 16 by 50-inch belt is short and narrow by current standards. It suits walking for most people; for running it forces a shortened stride and leaves little room for drift. If you plan to jog, look at a 55 or 60-inch deck instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying for iFIT without checking compatibility</h3>
-              <p class="text-gray-700 text-sm m-0">Older iFIT hardware is not guaranteed to work with today’s app, and the Trainer 720 has no Bluetooth at all. If iFIT is the reason you want the machine, confirm the model is supported before you buy, and value it as a standalone treadmill otherwise.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/nordictrack-t-6-5-s-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Model Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack T 6.5 S</p>
-              <p class="text-sm text-gray-500 leading-relaxed">An iFIT-made folder in the same class as the Trainer 720.</p>
-            </a>
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Apps & Subscriptions</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the subscription adds, and what works without it.</p>
-            </a>
-            <a href="/used-treadmill-buying-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Used Treadmill Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What to check, in order, before buying secondhand.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Gold’s Gym treadmills were ICON machines — the same company that
           makes NordicTrack and ProForm — sold under licence from 2001 until the exclusive deal ended
           in 2019.</strong> The Trainer 430i and Trainer 720 are out of production, and we could not
           find a current Gold’s Gym home treadmill from an identifiable licensed maker.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you own one, support it by its GGTL model number through iFIT or a parts supplier. If you
           are buying used, pay a used budget-treadmill price after seeing it run. And if you want the
-          same kind of machine new, start with the
-          <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack T 6.5 S</a>
-          or our
-          <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills without subscriptions</a>.
+          same kind of machine new, start with the <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack T 6.5 S</a> or our <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills without subscriptions</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/nordictrack-t-6-5-s-treadmill/">NordicTrack T 6.5 S</a></li>
+            <li><a href="/is-ifit-worth-it/">Is iFIT Worth It?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Who makes Gold’s Gym treadmills?</h3></summary>
+            <p class="faq-a">
+              ICON Health & Fitness, which renamed itself iFIT in 2021 and also makes NordicTrack and ProForm. It made Gold’s Gym equipment under a licence dating to 2001. Gold’s Gym’s exclusive agreement with ICON expired on 31 December 2019, and we found no announcement of a new licensee for Gold’s Gym home treadmills.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are Gold’s Gym treadmills still sold?</h3></summary>
+            <p class="faq-a">
+              Not from any source we could confirm on 14 October 2026. Independent reviews describe the Trainer 430i and Trainer 720 as no longer in production, Gold’s Gym’s own site sells apparel and nutrition rather than equipment, and Amazon’s US catalogue showed only replacement parts. Walmart’s site blocked our checks, so we could not confirm its listings directly.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does a Gold’s Gym treadmill need an iFIT subscription?</h3></summary>
+            <p class="faq-a">
+              No. Models advertised as iFIT compatible, such as the 430i, work in manual mode and on their built-in programmes without a membership. iFIT adds trainer-led workouts and automatic speed and incline control. Reviews say the Trainer 720 has no Bluetooth, so it does not connect to iFIT. Support for older hardware is not guaranteed, so ask iFIT about your model number.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit on the Gold’s Gym Trainer 720?</h3></summary>
+            <p class="faq-a">
+              300 lb, according to two independent reviews that agree on it. The same reviews agree on a 10 mph top speed, 10% incline and a 20-inch-wide belt, but disagree on the belt’s length and on whether its 2.5 horsepower motor figure is continuous or peak. Check the sticker and manual on the machine itself if those matter to you.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Where can I get Gold’s Gym treadmill parts?</h3></summary>
+            <p class="faq-a">
+              Start with the GGTL model number on the frame sticker. iFIT, which was ICON, is the manufacturer’s route for parts, and specialist suppliers such as FitnessRepairParts.com list Gold’s Gym treadmills by model number. Third-party walking belts, drive belts and safety keys for the 430i and 720 are sold on Amazon and Walmart; check their listed model numbers against yours.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a Gold’s Gym treadmill good?</h3></summary>
+            <p class="faq-a">
+              They were budget treadmills, and reviewers were mixed: one long-running site was not overly impressed with the line, another found the Trainer 720 acceptable for its price. Used, a working one can be a reasonable walking machine if it is cheap. For a new purchase, the same maker’s current ProForm and NordicTrack folders are the like-for-like choice.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/nordictrack-t-6-5-s-treadmill/" class="card">
+            <div class="c-kicker">Model Review</div>
+            <div class="c-title">NordicTrack T 6.5 S</div>
+            <p class="c-blurb">An iFIT-made folder in the same class as the Trainer 720.</p>
+          </a>
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">Apps & Subscriptions</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">What the subscription adds, and what works without it.</p>
+          </a>
+          <a href="/used-treadmill-buying-checklist/" class="card">
+            <div class="c-kicker">Buying Used</div>
+            <div class="c-title">Used Treadmill Checklist</div>
+            <p class="c-blurb">What to check, in order, before buying secondhand.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

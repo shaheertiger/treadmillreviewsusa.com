@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Long Do Treadmill Motors Last? (2026): 7-12 Years, Usually";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-long-do-treadmill-motors-last/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,105 +109,67 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Lifespan by Type", link: "#by-type" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howlongdotreadmillmotorslast" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howlongdotreadmillmotorslast)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership</span>
+      </nav>
+      <h1 class="ed-title">How Long Do Treadmill Motors Last?</h1>
+      <p class="ed-dek">
+        Seven to twelve years for a maintained DC motor, and considerably longer for commercial AC. The number is set by heat, and heat is set by friction — which is entirely within your control.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Long Do <span class="text-[#5AA9FF]">Treadmill Motors Last?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Seven to twelve years for a maintained DC motor, and considerably longer for commercial AC. The number is set by heat, and heat is set by friction — which is entirely within your control.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#by-type" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Lifespan by Motor Type
-          </a>
-          <a href="#warning-signs" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Signs of Failure
-          </a>
-        </div>
+        <a href="#by-type" class="btn-ghost">Lifespan by Motor Type</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="3.0k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> These are typical ranges
-          based on manufacturer guidance and common failure patterns rather than measured data
-          from a service network. Individual machines vary widely, and the same motor in two
-          households can differ by years depending on maintenance, placement and duty cycle.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#by-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Expected Lifespan by Motor Type</a>
-          <a href="#what-kills-them" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Actually Kills Treadmill Motors</a>
-          <a href="#dc-vs-ac" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Why AC Motors Last So Much Longer</a>
-          <a href="#warning-signs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Signs a Motor Is in Trouble</a>
-          <a href="#motor-or-board" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Motor or Controller Board?</a>
-          <a href="#replacement-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Replacement Costs</a>
-          <a href="#duty-cycle" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Your Use Changes the Number</a>
-          <a href="#extending-life" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Getting to Twelve Years Instead of Six</a>
-          <a href="#when-to-replace-machine" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When to Replace the Machine Instead</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Treadmill motors almost never wear out in the way people imagine — brushes gradually
           eroding, bearings slowly giving up. They die of heat, and the heat comes from the belt
           dragging on a dry deck. Which means the lifespan figure is less a property of the motor
           than of its owner.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> These are typical ranges
+          based on manufacturer guidance and common failure patterns rather than measured data
+          from a service network. Individual machines vary widely, and the same motor in two
+          households can differ by years depending on maintenance, placement and duty cycle.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#by-type">Expected Lifespan by Motor Type</a></li>
+            <li><a href="#what-kills-them">What Actually Kills Treadmill Motors</a></li>
+            <li><a href="#dc-vs-ac">Why AC Motors Last So Much Longer</a></li>
+            <li><a href="#warning-signs">Signs a Motor Is in Trouble</a></li>
+            <li><a href="#motor-or-board">Motor or Controller Board?</a></li>
+            <li><a href="#replacement-cost">What Replacement Costs</a></li>
+            <li><a href="#duty-cycle">How Your Use Changes the Number</a></li>
+            <li><a href="#extending-life">Getting to Twelve Years Instead of Six</a></li>
+            <li><a href="#when-to-replace-machine">When to Replace the Machine Instead</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="by-type" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Expected Lifespan by Motor Type</h2>
+          <h2>Expected Lifespan by Motor Type</h2>
 <p>
             <strong>Budget DC motors (1.5-2.25 CHP): 3-7 years.</strong> These operate close to
             their design limit during ordinary use, so they have little margin to absorb rising
@@ -228,7 +195,7 @@ const schema = {
         </div>
 
         <div id="what-kills-them" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Actually Kills Treadmill Motors</h2>
+          <h2>What Actually Kills Treadmill Motors</h2>
 <p>
             One cause dominates, and understanding it explains why two identical machines can be
             five years apart.
@@ -259,7 +226,7 @@ const schema = {
         </div>
 
         <div id="dc-vs-ac" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Why AC Motors Last So Much Longer</h2>
+          <h2>Why AC Motors Last So Much Longer</h2>
 <p>
             The difference is not marketing. It is a genuinely different class of component with
             different failure modes.
@@ -279,16 +246,12 @@ const schema = {
           <p>
             For a single home user running an hour a day, a good DC motor is entirely adequate for a
             decade — the duty cycle simply never approaches what the AC motor is for. The case for
-            AC becomes real with two or three daily users, high body weight, or high mileage. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            covers the ratings and
-            <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium</a>
-            covers where the step sits in the market.
+            AC becomes real with two or three daily users, high body weight, or high mileage. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> covers the ratings and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium</a> covers where the step sits in the market.
           </p>
         </div>
 
         <div id="warning-signs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Signs a Motor Is in Trouble</h2>
+          <h2>Signs a Motor Is in Trouble</h2>
 <p>
             <strong>A burning or hot-electrical smell.</strong> The clearest and most urgent.
             Winding insulation is failing. Stop using the machine.
@@ -313,14 +276,12 @@ const schema = {
           </p>
           <p>
             <strong>The breaker tripping repeatedly.</strong> Excessive current draw. Resetting it
-            over and over is treating the alarm rather than the fault. Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            covers diagnosis, including the symptoms that mean stop entirely.
+            over and over is treating the alarm rather than the fault. Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> covers diagnosis, including the symptoms that mean stop entirely.
           </p>
         </div>
 
         <div id="motor-or-board" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Motor or Controller Board?</h2>
+          <h2>Motor or Controller Board?</h2>
 <p>
             These fail with overlapping symptoms and cost similar amounts, so misdiagnosis is
             expensive. A few patterns help, though a proper diagnosis needs a meter and someone who
@@ -344,13 +305,12 @@ const schema = {
             other can mean a second visit.
           </p>
           <p>
-            Our <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">guide to a treadmill that turns on but will not move</a>
-            works through the distinctions by symptom.
+            Our <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">guide to a treadmill that turns on but will not move</a> works through the distinctions by symptom.
           </p>
         </div>
 
         <div id="replacement-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Replacement Costs</h2>
+          <h2>What Replacement Costs</h2>
 <p>
             <strong>Drive motor part: $200-$600</strong>, depending on size and whether it is an
             OEM or third-party unit.
@@ -371,16 +331,12 @@ const schema = {
           <p>
             So a motor replacement typically lands between <strong>$380 and $1,000</strong>. Against
             that, apply the standard threshold: repair if the cost is under half the machine's
-            replacement value and it is not past the midpoint of its expected life. Our
-            <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
-            covers the arithmetic and
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            covers whole-machine lifespans.
+            replacement value and it is not past the midpoint of its expected life. Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a> covers the arithmetic and <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> covers whole-machine lifespans.
           </p>
         </div>
 
         <div id="duty-cycle" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Your Use Changes the Number</h2>
+          <h2>How Your Use Changes the Number</h2>
 <p>
             Two households with the same machine can be five years apart, and the variables are
             predictable.
@@ -393,9 +349,7 @@ const schema = {
           <p>
             <strong>User weight.</strong> More load means more current for the same speed, directly.
             This is why capacity ratings exist and why shopping well above your weight extends motor
-            life as well as comfort. Our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
-            covers it.
+            life as well as comfort. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a> covers it.
           </p>
           <p>
             <strong>Session length.</strong> Heat accumulates. Three twenty-minute sessions are
@@ -412,7 +366,7 @@ const schema = {
         </div>
 
         <div id="extending-life" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Getting to Twelve Years Instead of Six</h2>
+          <h2>Getting to Twelve Years Instead of Six</h2>
 <p>
             Five habits, in descending order of effect. The first accounts for most of the
             difference on its own.
@@ -424,9 +378,7 @@ const schema = {
           </p>
           <p>
             <strong>Vacuum the motor compartment annually</strong>, six-monthly on carpet. Dust
-            insulates the housing and blocks the cooling fan, so the same load runs hotter. Our
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">guide to doing it safely</a>
-            covers the method and the things not to touch.
+            insulates the housing and blocks the cooling fan, so the same load runs hotter. Our <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">guide to doing it safely</a> covers the method and the things not to touch.
           </p>
           <p>
             <strong>Keep the belt correctly tensioned.</strong> Over-tightening increases contact
@@ -445,7 +397,7 @@ const schema = {
         </div>
 
         <div id="when-to-replace-machine" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When to Replace the Machine Instead</h2>
+          <h2>When to Replace the Machine Instead</h2>
 <p>
             A motor failure is often the moment a treadmill's life ends, and it is worth deciding
             deliberately rather than defaulting either way.
@@ -471,7 +423,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Expect 3-7 years</strong> from a budget <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motor</a>, <strong>7-12</strong> from a
             mid-range one, and <strong>15-25 or more</strong> from a commercial AC motor. In hours:
@@ -494,110 +446,42 @@ const schema = {
             left the cause.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long do treadmill motors last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three to seven years for a budget DC motor, seven to twelve for a mid-range one, and fifteen to twenty-five or more for a commercial AC motor. In running hours that is roughly 500-1,500, 1,500-4,000, and over 10,000 respectively. Maintenance moves a given motor several years within its range.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What causes a treadmill motor to fail?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Heat, almost always caused by friction from an unlubricated deck. As the belt-deck interface dries the motor draws more current to hold speed, and that current degrades the insulation on the windings until they short. Restricted cooling from a dusty motor compartment compounds it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the signs of a failing treadmill motor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A burning or hot-electrical smell, loss of power when you step on the belt, a new whine or growl that changes with speed, intermittent cutting out after ten to twenty minutes (usually thermal protection), speed fluctuating on its own, or a breaker tripping repeatedly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does it cost to replace a treadmill motor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The part is $200 to $600, labour $100 to $250, plus an $80 to $150 call-out at many companies — so typically $380 to $1,000 all in. If the controller board has failed alongside it, add $150 to $450, which is common when friction has been driving excessive current for months.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth replacing a treadmill motor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the machine is mid-range or better, under about eight years old, the belt and deck are sound, and the quote is under half the replacement cost — yes. On a budget machine a $400 repair is most of a new one. And if you do repair, refresh the belt and deck too, or the friction that killed it is still there.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do AC treadmill motors last longer than DC?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Substantially. AC motors have no brushes to wear, tolerate continuous operation without significant heat build-up, and are built for gym duty cycles. They appear above roughly $3,000. For one person running an hour a day a good DC motor is adequate for a decade; the AC case is multiple daily users or high mileage.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes That Shorten Motor Life</h2>
+          <p>The first of these causes the large majority of premature motor failures, and it takes ten minutes to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Never lubricating the deck</h3>
+              <p>This is the mechanism behind most treadmill motor deaths. A dry belt-deck interface makes the motor draw more current continuously, and that current degrades the winding insulation until it fails. Nothing seems wrong for months — the only symptom is slight hesitation when you step on. Lubricate every 40 to 50 hours.</p>
+            </li>
+            <li>
+              <h3>Ignoring intermittent cut-outs</h3>
+              <p>A machine that stops after ten or twenty minutes is usually the motor's thermal protection shutting it down to prevent damage. That is a warning that the motor is running too hot, not a glitch to work around by restarting. Investigate the cause — friction and blocked cooling are the two usual suspects.</p>
+            </li>
+            <li>
+              <h3>Leaving the machine on carpet without a mat</h3>
+              <p>Carpet pile sheds fibre continuously and the motor's cooling fan is pointed at it, so fibre accumulates on the housing and in the vents. That insulates the motor and reduces airflow at the same time, meaning identical work produces a higher temperature. A rigid mat solves most of it.</p>
+            </li>
+            <li>
+              <h3>Replacing the motor and nothing else</h3>
+              <p>If friction killed the motor, fitting a new one to a worn, dry deck simply restarts the same clock. When you authorise a motor repair, budget for a belt-and-deck refresh at the same time — the machine is already apart, and it addresses the cause rather than the symptom.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes That Shorten Motor Life</h2>
-          <p class="text-gray-700 leading-relaxed">The first of these causes the large majority of premature motor failures, and it takes ten minutes to avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never lubricating the deck</h3>
-              <p class="text-gray-700 text-sm m-0">This is the mechanism behind most treadmill motor deaths. A dry belt-deck interface makes the motor draw more current continuously, and that current degrades the winding insulation until it fails. Nothing seems wrong for months — the only symptom is slight hesitation when you step on. Lubricate every 40 to 50 hours.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring intermittent cut-outs</h3>
-              <p class="text-gray-700 text-sm m-0">A machine that stops after ten or twenty minutes is usually the motor's thermal protection shutting it down to prevent damage. That is a warning that the motor is running too hot, not a glitch to work around by restarting. Investigate the cause — friction and blocked cooling are the two usual suspects.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the machine on carpet without a mat</h3>
-              <p class="text-gray-700 text-sm m-0">Carpet pile sheds fibre continuously and the motor's cooling fan is pointed at it, so fibre accumulates on the housing and in the vents. That insulates the motor and reduces airflow at the same time, meaning identical work produces a higher temperature. A rigid mat solves most of it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing the motor and nothing else</h3>
-              <p class="text-gray-700 text-sm m-0">If friction killed the motor, fitting a new one to a worn, dry deck simply restarts the same clock. When you authorise a motor repair, budget for a belt-and-deck refresh at the same time — the machine is already apart, and it addresses the cause rather than the symptom.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-long-do-treadmills-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Whole Machine</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmills Last?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Lifespans by tier, what fails first, and repair-or-replace.</p>
-            </a>
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Prevention</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Vacuum a Motor Compartment</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The annual cooling task, and what not to touch while you are in there.</p>
-            </a>
-            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Working out whether it is the motor, the board, or friction.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">7 to 12 years</strong> for a maintained mid-range DC motor,
             3 to 7 for a budget one, and 15 to 25 for commercial AC. Motors die of heat, and heat
             comes from friction — which makes the lifespan figure more a property of the owner than
             of the motor.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <a href="/how-often-to-lubricate-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Lubricate every 40 to 50 hours</a>,
             keep the motor compartment clear, and treat intermittent cut-outs as a warning rather
             than a glitch. If it does fail, repair only on a mid-range or better machine under
@@ -605,29 +489,113 @@ const schema = {
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-long-do-treadmills-last/">How Long Do Treadmills Last?</a></li>
+            <li><a href="/how-to-vacuum-treadmill-motor-compartment/">How to Vacuum a Motor Compartment</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How long do treadmill motors last?</h3></summary>
+            <p class="faq-a">
+              Three to seven years for a budget DC motor, seven to twelve for a mid-range one, and fifteen to twenty-five or more for a commercial AC motor. In running hours that is roughly 500-1,500, 1,500-4,000, and over 10,000 respectively. Maintenance moves a given motor several years within its range.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What causes a treadmill motor to fail?</h3></summary>
+            <p class="faq-a">
+              Heat, almost always caused by friction from an unlubricated deck. As the belt-deck interface dries the motor draws more current to hold speed, and that current degrades the insulation on the windings until they short. Restricted cooling from a dusty motor compartment compounds it.
             </p>
+          </details>
+          <details>
+            <summary><h3>What are the signs of a failing treadmill motor?</h3></summary>
+            <p class="faq-a">
+              A burning or hot-electrical smell, loss of power when you step on the belt, a new whine or growl that changes with speed, intermittent cutting out after ten to twenty minutes (usually thermal protection), speed fluctuating on its own, or a breaker tripping repeatedly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much does it cost to replace a treadmill motor?</h3></summary>
+            <p class="faq-a">
+              The part is $200 to $600, labour $100 to $250, plus an $80 to $150 call-out at many companies — so typically $380 to $1,000 all in. If the controller board has failed alongside it, add $150 to $450, which is common when friction has been driving excessive current for months.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth replacing a treadmill motor?</h3></summary>
+            <p class="faq-a">
+              If the machine is mid-range or better, under about eight years old, the belt and deck are sound, and the quote is under half the replacement cost — yes. On a budget machine a $400 repair is most of a new one. And if you do repair, refresh the belt and deck too, or the friction that killed it is still there.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do AC treadmill motors last longer than DC?</h3></summary>
+            <p class="faq-a">
+              Substantially. AC motors have no brushes to wear, tolerate continuous operation without significant heat build-up, and are built for gym duty cycles. They appear above roughly $3,000. For one person running an hour a day a good DC motor is adequate for a decade; the AC case is multiple daily users or high mileage.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Ownership Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-long-do-treadmills-last/" class="card">
+            <div class="c-kicker">Whole Machine</div>
+            <div class="c-title">How Long Do Treadmills Last?</div>
+            <p class="c-blurb">Lifespans by tier, what fails first, and repair-or-replace.</p>
+          </a>
+          <a href="/how-to-vacuum-treadmill-motor-compartment/" class="card">
+            <div class="c-kicker">Prevention</div>
+            <div class="c-title">How to Vacuum a Motor Compartment</div>
+            <p class="c-blurb">The annual cooling task, and what not to touch while you are in there.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Troubleshooting</div>
+            <p class="c-blurb">Working out whether it is the motor, the board, or friction.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

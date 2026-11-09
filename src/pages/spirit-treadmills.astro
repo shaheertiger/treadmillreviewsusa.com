@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Spirit Treadmill Guide (2026): XT185 to XT685, Warranty and Zwift";
 const description =
@@ -170,6 +169,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/spirit-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -190,66 +195,55 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Current Range", link: "#lineup" }}
+  stickyCta={{ text: "Folding Pick: Spirit XT485", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-spirittreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-spirittreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">Spirit Treadmills: The XT Range, Warranty and Apps</h1>
+      <p class="ed-dek">
+        Spirit Fitness is a dealer-sold brand from Jonesboro, Arkansas, best known for its XT485 folding treadmill and the non-folding XT685. This guide covers who owns Spirit, what the current range is, how the warranty and app work, and which Spirit treadmill fits which buyer.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Spirit Treadmills: <span class="text-[#5AA9FF]">The XT Range, Warranty and Apps</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Spirit Fitness is a dealer-sold brand from Jonesboro, Arkansas, best known for its XT485 folding treadmill and the non-folding XT685. This guide covers who owns Spirit, what the current range is, how the warranty and app work, and which Spirit treadmill fits which buyer.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Current Range
-          </a>
-        </div>
+        <a href="#spirit-xt485" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#spirit-xt485"><img src="https://m.media-amazon.com/images/I/41-4F7a-pkL._SL500_.jpg" alt="Spirit XT485" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        <figcaption>Spirit XT485</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          People who search for a Spirit treadmill usually mean Spirit Fitness, the Arkansas brand
+          whose XT treadmills sit in specialist fitness stores next to Sole, Horizon and True. Spirit
+          is less familiar than the brands that advertise heavily because it sells mostly through
+          dealers, and it competes on two things buyers notice only once they look closely: long
+          warranties and machines that work fully without a subscription. This guide sets out who
+          makes Spirit treadmills now, what the current range is and which figures the sources agree
+          on, how the warranty reads, what the free SPIRIT+ app does and does not include, and how a
+          Spirit compares with its closest rival, which happens to share its parent company.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we checked Spirit Fitness's US site (every residential treadmill page, its
           commercial treadmill pages and its connectivity and SPIRIT+ pages), the corporate history
@@ -261,51 +255,30 @@ const schema = {
           independent source agree; where they disagree we say so. We have not tested any Spirit
           treadmill. Prices are what spiritfitness.com showed on the day and change often. As an
           Amazon Associate we earn from qualifying purchases.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are Spirit Treadmills Good? The Short Answer</a>
-          <a href="#who-makes-spirit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes Spirit Treadmills?</a>
-          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current Spirit Treadmill Range</a>
-          <a href="#xt485-vs-xt685" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Spirit XT485 vs XT685: Fold or Fixed?</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Spirit Warranty, Read Properly</a>
-          <a href="#apps-and-zwift" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Does a Spirit Treadmill Need a Subscription?</a>
-          <a href="#spirit-vs-sole" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Spirit vs Sole: Which Should You Buy?</a>
-          <a href="#strengths-and-weaknesses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Spirit Does Well, and Less Well</a>
-          <a href="#where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Where to Buy a Spirit Treadmill</a>
-          <a href="#which-spirit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Which Spirit Treadmill Should You Buy?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Are Spirit Treadmills Good? The Short Answer</a></li>
+            <li><a href="#who-makes-spirit">Who Makes Spirit Treadmills?</a></li>
+            <li><a href="#lineup">The Current Spirit Treadmill Range</a></li>
+            <li><a href="#xt485-vs-xt685">Spirit XT485 vs XT685: Fold or Fixed?</a></li>
+            <li><a href="#warranty">The Spirit Warranty, Read Properly</a></li>
+            <li><a href="#apps-and-zwift">Does a Spirit Treadmill Need a Subscription?</a></li>
+            <li><a href="#spirit-vs-sole">Spirit vs Sole: Which Should You Buy?</a></li>
+            <li><a href="#strengths-and-weaknesses">What Spirit Does Well, and Less Well</a></li>
+            <li><a href="#where-to-buy">Where to Buy a Spirit Treadmill</a></li>
+            <li><a href="#which-spirit">Which Spirit Treadmill Should You Buy?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          People who search for a Spirit treadmill usually mean Spirit Fitness, the Arkansas brand
-          whose XT treadmills sit in specialist fitness stores next to Sole, Horizon and True. Spirit
-          is less familiar than the brands that advertise heavily because it sells mostly through
-          dealers, and it competes on two things buyers notice only once they look closely: long
-          warranties and machines that work fully without a subscription. This guide sets out who
-          makes Spirit treadmills now, what the current range is and which figures the sources agree
-          on, how the warranty reads, what the free SPIRIT+ app does and does not include, and how a
-          Spirit compares with its closest rival, which happens to share its parent company.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are Spirit Treadmills Good? The Short Answer</h2>
+          <h2>Are Spirit Treadmills Good? The Short Answer</h2>
 <p>
             <strong>Spirit treadmills are solid mid-to-upper-range machines, sold mainly through
-            dealers, with long parts warranties and no subscription needed to use them.</strong>
-            Spirit Fitness is based in Jonesboro, Arkansas, and has been owned since 2008 by Dyaco,
+            dealers, with long parts warranties and no subscription needed to use them.</strong> Spirit Fitness is based in Jonesboro, Arkansas, and has been owned since 2008 by Dyaco,
             a Taiwanese fitness manufacturer that also makes and distributes Sole and XTERRA. The
             current home range runs from the folding XT185 to the non-folding XT685, at about $2,200
             to $3,200 on Spirit's own site when we checked.
@@ -316,8 +289,7 @@ const schema = {
             425 lb user rating — and differ in one thing: the XT485 folds and the XT685 does not.
             Both carry lifetime cover on the frame, motor and deck and ten years on parts for home
             use. Both connect over Bluetooth to Zwift, which is why Spirit appears among the
-            manufacturers on Zwift's compatibility list and in our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill roundup</a>.
+            manufacturers on Zwift's compatibility list and in our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill roundup</a>.
           </p>
           <p>
             The caveats are familiar from this price band: one year of labour, a motor figure that
@@ -327,78 +299,67 @@ const schema = {
             closest rival is a Sole.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="who-makes-spirit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes Spirit Treadmills?</h2>
+          <h2>Who Makes Spirit Treadmills?</h2>
 <p>
             Spirit Fitness is owned by Dyaco International, a fitness equipment company based in
             Taipei. Dyaco's own corporate timeline records that it acquired Spirit Fitness, "a
@@ -418,14 +379,11 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Spirit, Sole and XTERRA</h3>
           <p>
-            Dyaco's timeline also records an international distribution agreement with <a href="/sole-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Sole Fitness</a>
-            in 2010 and the acquisition of the XTERRA Fitness brand rights in 2013. In practice that
+            Dyaco's timeline also records an international distribution agreement with <a href="/sole-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Sole Fitness</a> in 2010 and the acquisition of the XTERRA Fitness brand rights in 2013. In practice that
             means a Spirit and a Sole are cousins rather than strangers: they come from the same
             corporate family, are sold through overlapping dealer networks, and compete on similar
             terms. That is useful to know when a dealer recommends one over the other, and it is
-            why the comparison later on this page is closer than it looks from the brand names. Our
-            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a>
-            covers the other side of the family.
+            why the comparison later on this page is closer than it looks from the brand names. Our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a> covers the other side of the family.
           </p>
           <p>
             Do not confuse Spirit Fitness with Sears' old Free Spirit label, which was a different
@@ -435,7 +393,7 @@ const schema = {
         </div>
 
         <div id="lineup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current Spirit Treadmill Range</h2>
+          <h2>The Current Spirit Treadmill Range</h2>
 <p>
             On 14 October 2026 Spirit's US site listed five residential treadmills in its XT range,
             two of them also offered as ENT versions with a touchscreen, plus commercial and
@@ -484,14 +442,12 @@ const schema = {
             15.6-inch screen, at $3,899.99. Above the XT range, Spirit sells CT800, CT850, CT900 and
             CT1000ENT commercial treadmills and a rehabilitation line to facilities. The CT models
             are club machines with commercial warranties; if you are tempted to put one in a home,
-            read our guide to
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmills at home</a>
-            first.
+            read our guide to <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmills at home</a> first.
           </p>
         </div>
 
         <div id="xt485-vs-xt685" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Spirit XT485 vs XT685: Fold or Fixed?</h2>
+          <h2>Spirit XT485 vs XT685: Fold or Fixed?</h2>
 <p>
             Buy the XT685 if the treadmill will stay put; buy the XT485 if it has to fold. On the
             figures that decide most purchases they are identical: a 22 by 60-inch deck, a 4.0 HP
@@ -513,16 +469,12 @@ const schema = {
           </p>
           <p>
             Both are among the heavier-duty options at their price for users near the upper weight
-            ratings. Our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">guide to treadmills for heavier users</a>
-            sets them against the alternatives, and our
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill picks</a>
-            put the XT485 in context.
+            ratings. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">guide to treadmills for heavier users</a> sets them against the alternatives, and our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill picks</a> put the XT485 in context.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Spirit Warranty, Read Properly</h2>
+          <h2>The Spirit Warranty, Read Properly</h2>
 <p>
             Every residential XT treadmill on Spirit's US site carries the same headline terms:
             lifetime on the frame, motor and deck, ten years on parts and one year of labour. That
@@ -548,14 +500,13 @@ const schema = {
             residential terms assume ordinary home use.
           </p>
           <p>
-            Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            covers what counts as a part versus a wear item, and why a lubrication log helps if you
+            Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> covers what counts as a part versus a wear item, and why a lubrication log helps if you
             ever need to claim.
           </p>
         </div>
 
         <div id="apps-and-zwift" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Does a Spirit Treadmill Need a Subscription?</h2>
+          <h2>Does a Spirit Treadmill Need a Subscription?</h2>
 <p>
             No. Every Spirit treadmill works on its own console, and the app side is optional.
             Spirit's own app, SPIRIT+, offers on-demand classes, and Spirit says a qualifying
@@ -570,9 +521,7 @@ const schema = {
             includes a guide to pairing with Zwift. Zwift's own list of manufacturers with confirmed
             compatible models includes Spirit, and Zwift says compatibility can vary by model and
             production year. In practice the treadmill sends its speed to Zwift; you change the
-            incline yourself. Our
-            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            covers set-up and pairing problems, and the XT185, which Spirit does not list with FTMS,
+            incline yourself. Our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> covers set-up and pairing problems, and the XT185, which Spirit does not list with FTMS,
             would need a foot pod to run Zwift.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why this matters for value</h3>
@@ -580,14 +529,12 @@ const schema = {
             A treadmill that works fully without a membership costs the same in year five as in
             year one, and holds its value better second-hand, because the next owner does not
             inherit a platform decision. That is a real advantage over screen-led machines that do
-            much less once the trial ends. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a>
-            sets out the arithmetic.
+            much less once the trial ends. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a> sets out the arithmetic.
           </p>
         </div>
 
         <div id="spirit-vs-sole" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Spirit vs Sole: Which Should You Buy?</h2>
+          <h2>Spirit vs Sole: Which Should You Buy?</h2>
 <p>
             Decide on the delivered price, the dealer and the console, because the two brands are
             close on paper and share a parent company. Sole's own site publishes head-to-head
@@ -611,14 +558,12 @@ const schema = {
             <li><strong>Service.</strong> Ask each seller who repairs it where you live.</li>
           </ol>
           <p>
-            Our <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack comparison</a>
-            and the <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a>
-            give the Sole side in detail.
+            Our <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack comparison</a> and the <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a> give the Sole side in detail.
           </p>
         </div>
 
         <div id="strengths-and-weaknesses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Spirit Does Well, and Less Well</h2>
+          <h2>What Spirit Does Well, and Less Well</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Does well</h3>
           <ul>
             <li><strong>Long parts cover.</strong> Ten years on parts with lifetime frame, motor and deck is strong for the price band.</li>
@@ -634,14 +579,13 @@ const schema = {
             <li><strong>Availability.</strong> Dealer-led distribution means fewer places to see one and less frequent deep discounts.</li>
           </ul>
           <p>
-            Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why the motor warranty term — lifetime, on Spirit's residential treadmills — is
+            Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why the motor warranty term — lifetime, on Spirit's residential treadmills — is
             the more useful signal.
           </p>
         </div>
 
         <div id="where-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Where to Buy a Spirit Treadmill</h2>
+          <h2>Where to Buy a Spirit Treadmill</h2>
 <p>
             Spirit sells through its own US online store and through a network of specialist dealers
             found with its store locator. Larger independent retailers such as Abt also list Spirit
@@ -661,14 +605,12 @@ const schema = {
             frames makes them reasonable buys when priced to match. Model numbers have been reused
             across generations — the XT485 has been sold since at least 2014 — so the serial label
             matters more than the name in the listing. Assume no warranty transfers, test the
-            incline through its full range and listen to the motor at your running speed. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            covers the rest.
+            incline through its full range and listen to the motor at your running speed. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> covers the rest.
           </p>
         </div>
 
         <div id="which-spirit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Which Spirit Treadmill Should You Buy?</h2>
+          <h2>Which Spirit Treadmill Should You Buy?</h2>
 <p>
             <strong>Most buyers: the XT485 or the XT685.</strong> They are the two models with the
             strongest figures and the most independent coverage. Choose the XT685 for a permanent
@@ -686,143 +628,156 @@ const schema = {
           </p>
           <p>
             <strong>Anyone who wants a screen: the ENT versions</strong>, or a machine built around
-            a platform, priced over five years. For more choice at the top end, our
-            <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">over-$2,500 roundup</a>
-            and the <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice brand guide</a>
-            cover heavier machines.
+            a platform, priced over five years. For more choice at the top end, our <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">over-$2,500 roundup</a> and the <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice brand guide</a> cover heavier machines.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes Spirit treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Spirit Fitness, based in Jonesboro, Arkansas. It has been owned since 2008 by Dyaco International, a Taiwanese fitness company that also distributes Sole and owns the XTERRA brand rights. Spirit stopped manufacturing in the US after the acquisition and kept sales, distribution and customer service in Jonesboro; independent coverage says the treadmills are made in Taiwan.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Spirit XT485 a good treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On its published figures, yes. Spirit and independent sources agree on a 22 by 60-inch deck, a 4.0 HP motor, 12 mph, 15 incline levels and a 425 lb rating, on a folding frame, with lifetime frame, motor and deck cover and ten years on parts. The caveats are one year of labour and a weight of about 289 lb. We have not tested it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the Spirit XT485 and XT685?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The XT485 folds and the XT685 does not. Their deck, motor, speed, incline and weight rating figures match. The XT685 adds 3-inch rollers instead of 2.5-inch, a light commercial warranty option for non-dues facilities, and costs about $250 more on Spirit’s site. Choose the XT685 for a permanent space and the XT485 if floor space matters.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do Spirit treadmills work with Zwift?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most do. The XT285, XT385, XT485 and XT685 have built-in Bluetooth FTMS, and Spirit’s pages name Zwift and Kinomap. Zwift’s list of manufacturers with confirmed compatible models includes Spirit, though it says compatibility varies by model and year. The treadmill sends speed to Zwift; you set the incline yourself. The XT185 would need a foot pod.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need a subscription for a Spirit treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Every Spirit console works without one. Spirit’s SPIRIT+ app of on-demand classes is free with a qualifying equipment purchase, activated with the serial number, and otherwise a monthly subscription. Third-party apps such as Zwift and Kinomap charge separately. The treadmill’s speed, incline and programmes all work on their own.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty do Spirit treadmills have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On Spirit’s US site every residential XT treadmill carried lifetime cover on the frame, motor and deck, ten years on parts and one year of labour on 14 October 2026. The XT685 also has light commercial terms for non-dues facilities. Register the product, keep proof of purchase, and ask the dealer who carries out service locally.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Spirit Treadmill</h2>
+          <p>Spirit treadmills are well specified for the money. These are the errors that undo that.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting an old weight rating, or a new one, from a listing</h3>
+              <p>Retailer tables give lower weight ratings for the XT485 and XT685 than Spirit’s current 425 lb, and one retailer FAQ gave 350 lb for the XT485. Ratings appear to have changed between generations. If you are near the limit, check the label on the actual unit or ask the dealer to confirm the model year before you buy.</p>
+            </li>
+            <li>
+              <h3>Ignoring the one-year labour term</h3>
+              <p>Lifetime frame, motor and deck cover and ten years on parts are strong, but labour is one year. From year two a covered part may still mean paying for the visit. Ask the dealer what a call-out costs locally and whether they carry out service themselves.</p>
+            </li>
+            <li>
+              <h3>Buying the XT485 when the XT685 would never be folded</h3>
+              <p>The two share their key figures and differ by about $250. If the treadmill will stay in one place, the fixed frame and larger rollers of the XT685 are the better use of that money. Fold only if you will actually fold it.</p>
+            </li>
+            <li>
+              <h3>Choosing on brand name between Spirit and Sole</h3>
+              <p>Spirit and Sole share a parent company and compete closely. Compare the delivered price, the full warranty line by line for the exact models, the console and the local service arrangements, not the logo. The better buy on the day is often simply the one with the better delivered price and nearer service.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Spirit Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Spirit treadmills are well specified for the money. These are the errors that undo that.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting an old weight rating, or a new one, from a listing</h3>
-              <p class="text-gray-700 text-sm m-0">Retailer tables give lower weight ratings for the XT485 and XT685 than Spirit’s current 425 lb, and one retailer FAQ gave 350 lb for the XT485. Ratings appear to have changed between generations. If you are near the limit, check the label on the actual unit or ask the dealer to confirm the model year before you buy.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the one-year labour term</h3>
-              <p class="text-gray-700 text-sm m-0">Lifetime frame, motor and deck cover and ten years on parts are strong, but labour is one year. From year two a covered part may still mean paying for the visit. Ask the dealer what a call-out costs locally and whether they carry out service themselves.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the XT485 when the XT685 would never be folded</h3>
-              <p class="text-gray-700 text-sm m-0">The two share their key figures and differ by about $250. If the treadmill will stay in one place, the fixed frame and larger rollers of the XT685 are the better use of that money. Fold only if you will actually fold it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing on brand name between Spirit and Sole</h3>
-              <p class="text-gray-700 text-sm m-0">Spirit and Sole share a parent company and compete closely. Compare the delivered price, the full warranty line by line for the exact models, the console and the local service arrangements, not the logo. The better buy on the day is often simply the one with the better delivered price and nearer service.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-zwift/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Apps</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Zwift</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines whose makers name Zwift, and what the pairing really does.</p>
-            </a>
-            <a href="/best-sole-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Rival</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Sole Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Spirit’s closest competitor, from the same parent company.</p>
-            </a>
-            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills Without Subscriptions</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why a console that works alone is worth more than it looks.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Spirit treadmills are dealer-sold, well-specified machines with
-          lifetime frame, motor and deck cover, ten years on parts and no subscription needed.</strong>
-          The XT485 and XT685 are the ones to look at: the same 22 by 60-inch deck, 4.0 HP motor and
+          lifetime frame, motor and deck cover, ten years on parts and no subscription needed.</strong> The XT485 and XT685 are the ones to look at: the same 22 by 60-inch deck, 4.0 HP motor and
           425 lb rating, with the XT485 folding and the XT685 built for a permanent space.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Plan for one year of labour, check weight ratings on the unit itself, and compare a Spirit
           with a Sole on delivered price and local service. If you train on Zwift, Spirit's Bluetooth
-          FTMS models pair directly — see our
-          <a href="/best-treadmills-for-zwift/" class="text-[#5AA9FF] font-bold no-underline">Zwift treadmill roundup</a>
-          for the alternatives.
+          FTMS models pair directly — see our <a href="/best-treadmills-for-zwift/" class="text-[#5AA9FF] font-bold no-underline">Zwift treadmill roundup</a> for the alternatives.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-zwift/">Best Treadmills for Zwift</a></li>
+            <li><a href="/best-sole-treadmills/">Best Sole Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Who makes Spirit treadmills?</h3></summary>
+            <p class="faq-a">
+              Spirit Fitness, based in Jonesboro, Arkansas. It has been owned since 2008 by Dyaco International, a Taiwanese fitness company that also distributes Sole and owns the XTERRA brand rights. Spirit stopped manufacturing in the US after the acquisition and kept sales, distribution and customer service in Jonesboro; independent coverage says the treadmills are made in Taiwan.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is the Spirit XT485 a good treadmill?</h3></summary>
+            <p class="faq-a">
+              On its published figures, yes. Spirit and independent sources agree on a 22 by 60-inch deck, a 4.0 HP motor, 12 mph, 15 incline levels and a 425 lb rating, on a folding frame, with lifetime frame, motor and deck cover and ten years on parts. The caveats are one year of labour and a weight of about 289 lb. We have not tested it.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the Spirit XT485 and XT685?</h3></summary>
+            <p class="faq-a">
+              The XT485 folds and the XT685 does not. Their deck, motor, speed, incline and weight rating figures match. The XT685 adds 3-inch rollers instead of 2.5-inch, a light commercial warranty option for non-dues facilities, and costs about $250 more on Spirit’s site. Choose the XT685 for a permanent space and the XT485 if floor space matters.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do Spirit treadmills work with Zwift?</h3></summary>
+            <p class="faq-a">
+              Most do. The XT285, XT385, XT485 and XT685 have built-in Bluetooth FTMS, and Spirit’s pages name Zwift and Kinomap. Zwift’s list of manufacturers with confirmed compatible models includes Spirit, though it says compatibility varies by model and year. The treadmill sends speed to Zwift; you set the incline yourself. The XT185 would need a foot pod.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you need a subscription for a Spirit treadmill?</h3></summary>
+            <p class="faq-a">
+              No. Every Spirit console works without one. Spirit’s SPIRIT+ app of on-demand classes is free with a qualifying equipment purchase, activated with the serial number, and otherwise a monthly subscription. Third-party apps such as Zwift and Kinomap charge separately. The treadmill’s speed, incline and programmes all work on their own.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty do Spirit treadmills have?</h3></summary>
+            <p class="faq-a">
+              On Spirit’s US site every residential XT treadmill carried lifetime cover on the frame, motor and deck, ten years on parts and one year of labour on 14 October 2026. The XT685 also has light commercial terms for non-dues facilities. Register the product, keep proof of purchase, and ask the dealer who carries out service locally.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-zwift/" class="card">
+            <div class="c-kicker">Apps</div>
+            <div class="c-title">Best Treadmills for Zwift</div>
+            <p class="c-blurb">Machines whose makers name Zwift, and what the pairing really does.</p>
+          </a>
+          <a href="/best-sole-treadmills/" class="card">
+            <div class="c-kicker">Rival</div>
+            <div class="c-title">Best Sole Treadmills</div>
+            <p class="c-blurb">Spirit’s closest competitor, from the same parent company.</p>
+          </a>
+          <a href="/best-treadmills-without-subscriptions/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">Treadmills Without Subscriptions</div>
+            <p class="c-blurb">Why a console that works alone is worth more than it looks.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

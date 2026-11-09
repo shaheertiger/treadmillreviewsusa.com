@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Brands (2026): How the Major Brands Compare";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-brands/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Brands Ranked by Need", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillbrands" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillbrands)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">The Best Treadmill Brands and How to Judge Them</h1>
+      <p class="ed-dek">
+        There is no single best treadmill brand — there are brands that are best at different things. Here is the framework we use to judge them, and where each major brand we cover sits within it.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          The Best Treadmill Brands <span class="text-[#5AA9FF]">and How to Judge Them</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          There is no single best treadmill brand — there are brands that are best at different things. Here is the framework we use to judge them, and where each major brand we cover sits within it.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Brands Ranked by Need
-          </a>
-          <a href="#framework" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Judge a Brand
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">Brands Ranked by Need</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On what follows.</strong> These are general brand
-          profiles, deliberately without model specifications or prices, which change through the
-          year. Warranty terms, subscription policies and service arrangements also change and can
-          vary by model and retailer; confirm them for the specific machine before you buy. Each
-          profile links to our full brand guide, which carries the detail.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: Treadmill Brands Ranked by What You Need</a>
-          <a href="#framework" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How to Judge a Treadmill Brand</a>
-          <a href="#warranty-and-service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Warranty and Service: The Brand Signal That Matters Most</a>
-          <a href="#subscriptions-and-tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Subscriptions and Price Tiers Across Brands</a>
-          <a href="#nordictrack" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. NordicTrack: The Interactive-Training Brand</a>
-          <a href="#proform" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. ProForm: iFIT Features at a Lower Price</a>
-          <a href="#sole" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Sole: Hardware First, No Required Subscription</a>
-          <a href="#horizon" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Horizon: Mid-Range, Still Being Verified</a>
-          <a href="#commercial-brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Life Fitness and Matrix: Commercial Pedigree at Home</a>
-          <a href="#bowflex" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Bowflex: Treadmills and the Max Trainer</a>
-          <a href="#walking-pad-brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Budget Walking-Pad Brands, as a Category</a>
-          <a href="#choosing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Using Brand to Narrow the Choice</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Brand matters less than most shoppers think and more than spec sheets admit. Less, because
           every major brand sells machines across a wide range of quality, and a brand's budget
           model can be worse than a rival's mid-range one. More, because what happens after the sale
@@ -205,8 +144,36 @@ const schema = {
           the console works without a subscription — is largely set at brand level.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On what follows.</strong> These are general brand
+          profiles, deliberately without model specifications or prices, which change through the
+          year. Warranty terms, subscription policies and service arrangements also change and can
+          vary by model and retailer; confirm them for the specific machine before you buy. Each
+          profile links to our full brand guide, which carries the detail.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: Treadmill Brands Ranked by What You Need</a></li>
+            <li><a href="#framework">How to Judge a Treadmill Brand</a></li>
+            <li><a href="#warranty-and-service">Warranty and Service: The Brand Signal That Matters Most</a></li>
+            <li><a href="#subscriptions-and-tiers">Subscriptions and Price Tiers Across Brands</a></li>
+            <li><a href="#nordictrack">NordicTrack: The Interactive-Training Brand</a></li>
+            <li><a href="#proform">ProForm: iFIT Features at a Lower Price</a></li>
+            <li><a href="#sole">Sole: Hardware First, No Required Subscription</a></li>
+            <li><a href="#horizon">Horizon: Mid-Range, Still Being Verified</a></li>
+            <li><a href="#commercial-brands">Life Fitness and Matrix: Commercial Pedigree at Home</a></li>
+            <li><a href="#bowflex">Bowflex: Treadmills and the Max Trainer</a></li>
+            <li><a href="#walking-pad-brands">Budget Walking-Pad Brands, as a Category</a></li>
+            <li><a href="#choosing">Using Brand to Narrow the Choice</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: Treadmill Brands Ranked by What You Need</h2>
+          <h2>The Short Answer: Treadmill Brands Ranked by What You Need</h2>
 <p>
             Ranked by the buyer each brand suits best, among the brands we cover in depth:
           </p>
@@ -226,17 +193,15 @@ const schema = {
           </ul>
           <p>
             Bowflex is a well-known fitness brand that shoppers often ask about in this context; it
-            now sells three folding treadmills alongside the better-known Max Trainer, and our
-            <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex page</a> explains where it
+            now sells three folding treadmills alongside the better-known Max Trainer, and our <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex page</a> explains where it
             stands. Within any brand, choose the model by the specifications that matter for you —
-            motor, deck, weight capacity — using our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>.
+            motor, deck, weight capacity — using our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>.
             Brand narrows the field; it does not choose the machine.
           </p>
         </div>
 
         <div id="framework" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How to Judge a Treadmill Brand</h2>
+          <h2>How to Judge a Treadmill Brand</h2>
 <p>
             Five things separate brands in ways that individual spec sheets do not show. They are
             the questions we ask of every brand we cover.
@@ -270,7 +235,7 @@ const schema = {
         </div>
 
         <div id="warranty-and-service" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Warranty and Service: The Brand Signal That Matters Most</h2>
+          <h2>Warranty and Service: The Brand Signal That Matters Most</h2>
 <p>
             A warranty is a manufacturer's estimate, in money, of how its machine will hold up. A
             brand that gives long motor cover and multi-year in-home labour is betting it will rarely
@@ -281,9 +246,7 @@ const schema = {
             Compare brands on the terms that decide what a repair costs you: the motor, the parts —
             which usually means the controller board, incline motor and electronics — and labour.
             Check whether in-home service is included or whether you fit replacement parts yourself.
-            Check whether registration is required, and whether wear items are excluded. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains each tier.
+            Check whether registration is required, and whether wear items are excluded. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains each tier.
           </p>
           <p>
             Service is the part warranties do not show. Owner experiences of support vary widely
@@ -296,7 +259,7 @@ const schema = {
         </div>
 
         <div id="subscriptions-and-tiers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Subscriptions and Price Tiers Across Brands</h2>
+          <h2>Subscriptions and Price Tiers Across Brands</h2>
 <p>
             The clearest split between treadmill brands today is how they treat software. On one
             side are brands whose machines are designed around a subscription training platform:
@@ -309,24 +272,18 @@ const schema = {
             structure and variety motivating and will pay for it continuously. The hardware-first
             approach suits people who will watch their own screen, or who do not want a recurring
             cost attached to a machine they expect to own for a decade. The question for each brand
-            is what its consoles do with no subscription active, model by model. Our guides to
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            cover both sides.
+            is what its consoles do with no subscription active, model by model. Our guides to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> cover both sides.
           </p>
           <p>
             Price tiers matter because every brand stretches its name across a range. Budget
             machines from a premium brand share its badge but often not its build, and a strong
             mid-range brand can beat a famous one at the same price. Compare machines at the same
-            price across brands, not across a brand's range. Our pages on
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>
-            and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium</a>
-            cover what changes as price rises.
+            price across brands, not across a brand's range. Our pages on <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a> and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium</a> cover what changes as price rises.
           </p>
         </div>
 
         <div id="nordictrack" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. NordicTrack: The Interactive-Training Brand</h2>
+          <h2>NordicTrack: The Interactive-Training Brand</h2>
 <p>
             NordicTrack is owned by iFIT Health &amp; Fitness, formerly ICON Health &amp; Fitness,
             which also owns ProForm. Its treadmill range is built around the iFIT platform:
@@ -337,21 +294,18 @@ const schema = {
           <p>
             <strong>Strengths:</strong> the broadest range of interactive machines from a single
             brand, from budget folding models to heavier non-folding machines and steep <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline
-            trainers</a>, with build quality that scales fairly predictably with price.
-            <strong>Things to weigh:</strong> the ongoing cost of the subscription, what each
+            trainers</a>, with build quality that scales fairly predictably with price. <strong>Things to weigh:</strong> the ongoing cost of the subscription, what each
             console does without it, and owner reports of mixed support experiences. Warranties are
             competitive at frame level, with shorter parts and labour terms.
           </p>
           <p>
             NordicTrack suits buyers who want structured, trainer-led sessions and have priced the
-            membership over several years. Our
-            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand guide</a>
-            covers the lineup tier by tier.
+            membership over several years. Our <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand guide</a> covers the lineup tier by tier.
           </p>
         </div>
 
         <div id="proform" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. ProForm: iFIT Features at a Lower Price</h2>
+          <h2>ProForm: iFIT Features at a Lower Price</h2>
 <p>
             ProForm is NordicTrack's sister brand under the same parent company, and runs the same
             iFIT software. It is positioned to reach more budget-conscious shoppers: on comparable
@@ -368,22 +322,16 @@ const schema = {
           </p>
           <p>
             ProForm suits buyers who want interactive training, will mostly walk or jog, and want to
-            spend less than NordicTrack's heavier machines cost. Our
-            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm brand guide</a>
-            covers the range, and
-            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack versus ProForm</a>
-            compares the two directly.
+            spend less than NordicTrack's heavier machines cost. Our <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm brand guide</a> covers the range, and <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack versus ProForm</a> compares the two directly.
           </p>
         </div>
 
         <div id="sole" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Sole: Hardware First, No Required Subscription</h2>
+          <h2>Sole: Hardware First, No Required Subscription</h2>
 <p>
             Sole has built its reputation on durable, no-subscription-required treadmills with
             strong motors and cushioning for their price. Its consoles run speed, incline and
-            built-in programmes without any membership (our
-            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a>
-            ranks the current range); its app is optional workout tracking rather
+            built-in programmes without any membership (our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a> ranks the current range); its app is optional workout tracking rather
             than a gate on features. Sole's parent also makes the heavier <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit Fitness</a> range.
           </p>
           <p>
@@ -395,14 +343,12 @@ const schema = {
           </p>
           <p>
             Sole suits buyers who prioritise motor, deck and frame over screen, and who would rather
-            not attach a subscription to their treadmill. Our
-            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole Fitness brand guide</a>
-            covers the lineup and warranty in detail.
+            not attach a subscription to their treadmill. Our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole Fitness brand guide</a> covers the lineup and warranty in detail.
           </p>
         </div>
 
         <div id="horizon" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Horizon: Mid-Range, Still Being Verified</h2>
+          <h2>Horizon: Mid-Range, Still Being Verified</h2>
 <p>
             Horizon Fitness is part of Johnson Health Tech, the same group that owns Matrix. It sells
             home treadmills aimed mainly at the mid-range, and is frequently compared with Sole and
@@ -410,8 +356,7 @@ const schema = {
           </p>
           <p>
             We are deliberately cautious about brand-wide claims here. The current models, checked
-            against Horizon's own listings, are ranked in our
-            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>;
+            against Horizon's own listings, are ranked in our <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>;
             we would rather not assert anything broader we have not confirmed. If you are considering
             a Horizon machine, apply the framework above directly: check the continuous motor rating,
             deck size and weight capacity against your needs, read the motor, parts and labour terms,
@@ -424,7 +369,7 @@ const schema = {
         </div>
 
         <div id="commercial-brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Life Fitness and Matrix: Commercial Pedigree at Home</h2>
+          <h2>Life Fitness and Matrix: Commercial Pedigree at Home</h2>
 <p>
             Life Fitness and Matrix Fitness are primarily commercial gym-equipment manufacturers —
             the brands behind many machines in health clubs, hotels and university gyms — and both
@@ -442,16 +387,12 @@ const schema = {
           </p>
           <p>
             These brands suit households with heavy, shared or high-mileage use, and buyers who want a
-            gym-grade feel. Our <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness</a>
-            and <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix Fitness</a>
-            brand guides cover their home lineups, and
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmills for home</a>
-            covers the practicalities of commercial machines in a house.
+            gym-grade feel. Our <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness</a> and <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix Fitness</a> brand guides cover their home lineups, and <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmills for home</a> covers the practicalities of commercial machines in a house.
           </p>
         </div>
 
         <div id="bowflex" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Bowflex: Treadmills and the Max Trainer</h2>
+          <h2>Bowflex: Treadmills and the Max Trainer</h2>
 <p>
             Bowflex is one of the best-known names in home fitness, built originally on strength
             equipment and now owned by Johnson Health Tech, which also owns Horizon and Matrix. It
@@ -464,16 +405,13 @@ const schema = {
           <p>
             Whether a Max Trainer is a sensible alternative depends on the goal. For lower-impact
             cardio it can be a strong option; for anyone who specifically wants to run or walk, it is
-            a different kind of machine. Our
-            <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex guide</a> covers the full
-            range and compares its Max Trainer models, and
-            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill versus elliptical</a>
-            covers the broader choice between those two formats.
+            a different kind of machine. Our <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex guide</a> covers the full
+            range and compares its Max Trainer models, and <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill versus elliptical</a> covers the broader choice between those two formats.
           </p>
         </div>
 
         <div id="walking-pad-brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Budget Walking-Pad Brands, as a Category</h2>
+          <h2>Budget Walking-Pad Brands, as a Category</h2>
 <p>
             The fastest-growing part of the market is compact under-desk <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, sold largely
             online under a wide and changing set of brand names. We treat them as a category rather
@@ -491,13 +429,7 @@ const schema = {
           <p>
             Judge a walking-pad brand on the same framework, scaled down: a warranty that includes the
             motor, a responsive support channel, a published weight capacity with headroom, and a
-            return window you can actually use. Our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
-            covers the category, the
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            covers what to check before buying one, and
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus treadmill</a>
-            covers when one is the right choice.
+            return window you can actually use. Our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a> covers the category, the <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> covers what to check before buying one, and <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus treadmill</a> covers when one is the right choice.
           </p>
           <p>
             For a worked example of reading one of these listings critically — which figures are the seller's claims, which are disputed and what the warranty really covers — see our <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037 review</a>.
@@ -505,7 +437,7 @@ const schema = {
         </div>
 
         <div id="choosing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Using Brand to Narrow the Choice</h2>
+          <h2>Using Brand to Narrow the Choice</h2>
 <p>
             Brand is most useful as a first filter. Decide what kind of owner you will be — someone
             who wants guided classes, someone who wants durable hardware and no recurring cost, or
@@ -522,152 +454,164 @@ const schema = {
           </p>
           <p>
             Our <a href="/brands/" class="text-[#0F62FE] font-medium">brands hub</a> lists every brand
-            guide we publish, our <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a>
-            roundup compares machines across brands, and
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            explains why build and support matter more over a decade than any single feature.
+            guide we publish, our <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a> roundup compares machines across brands, and <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> explains why build and support matter more over a decade than any single feature.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best treadmill brands?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on what you need. Among the brands we cover, NordicTrack leads for interactive, trainer-led training; ProForm offers the same iFIT platform at lower prices; Sole is strong on hardware without a required subscription; and Life Fitness and Matrix bring commercial engineering to the home. Choose the brand by need, then the model by specifications.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What treadmill brands are ranked highest?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no single ranking that suits everyone, which is why we rank by need. For durability with no subscription, Sole, Life Fitness and Matrix rank highly in our guides; for interactive features, NordicTrack and ProForm. Judge any brand on warranty terms, local service, parts availability, subscription dependence and consistency across its price range.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which treadmill brand is most reliable?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Reliability varies more between models than between brands, since every brand sells machines across a wide quality range. Brands with commercial businesses, such as Life Fitness and Matrix, generally build their home lines to heavier-duty standards. Long motor and labour warranties and strong parts support are the best brand-level signs of expected reliability.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is NordicTrack or Sole better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They suit different buyers. NordicTrack is built around the iFIT platform and suits people who want trainer-led classes and will pay for the membership. Sole focuses on motor, frame and cushioning per dollar with no required subscription. Compare models at the same price on continuous motor rating, deck size, weight capacity and full warranty terms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are NordicTrack and ProForm the same company?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are sister brands owned by the same parent, iFIT Health & Fitness, formerly ICON Health & Fitness, and both run iFIT software. ProForm is generally positioned at lower prices, with differences tending to show up in frame and motor construction rather than on the spec sheet. Our NordicTrack versus ProForm comparison covers the details.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are cheap walking pad brands any good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For slow walking at a desk, many are fine and good value. Expect a shorter lifespan than a full treadmill, typically short warranties, and thinner service and parts support, with some models sold under several brand names. Choose one with a warranty covering the motor, a published weight capacity with headroom, and a usable return window.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Choosing a Treadmill Brand</h2>
+          <p>Brand loyalty is a reasonable shortcut until it replaces checking the machine itself.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the badge, not the model</h3>
+              <p>Every major brand sells machines across a wide quality range. An entry-level model from a premium brand often shares its name but not its build, and can be outclassed by a mid-range machine from a less famous one. Compare machines at the same price across brands.</p>
+            </li>
+            <li>
+              <h3>Judging warranties on the frame alone</h3>
+              <p>Most brands offer a long frame warranty. The terms that separate them are motor, parts and labour, and whether service happens in your home. Compare those, and ask who services the brand in your area.</p>
+            </li>
+            <li>
+              <h3>Ignoring what the console does without a subscription</h3>
+              <p>Some brands design their machines around a paid platform. That suits many buyers, but check what each specific model does with no membership, and price the subscription over the years you expect to own the machine.</p>
+            </li>
+            <li>
+              <h3>Treating a ranking as permanent</h3>
+              <p>Ownership, warranty terms, subscription policies and service arrangements change. A brand ranking is a starting point; confirm the current terms for the specific machine with the retailer before you buy.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Choosing a Treadmill Brand</h2>
-          <p class="text-gray-700 leading-relaxed">Brand loyalty is a reasonable shortcut until it replaces checking the machine itself.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the badge, not the model</h3>
-              <p class="text-gray-700 text-sm m-0">Every major brand sells machines across a wide quality range. An entry-level model from a premium brand often shares its name but not its build, and can be outclassed by a mid-range machine from a less famous one. Compare machines at the same price across brands.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging warranties on the frame alone</h3>
-              <p class="text-gray-700 text-sm m-0">Most brands offer a long frame warranty. The terms that separate them are motor, parts and labour, and whether service happens in your home. Compare those, and ask who services the brand in your area.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring what the console does without a subscription</h3>
-              <p class="text-gray-700 text-sm m-0">Some brands design their machines around a paid platform. That suits many buyers, but check what each specific model does with no membership, and price the subscription over the years you expect to own the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating a ranking as permanent</h3>
-              <p class="text-gray-700 text-sm m-0">Ownership, warranty terms, subscription policies and service arrangements change. A brand ranking is a starting point; confirm the current terms for the specific machine with the retailer before you buy.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand and Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The lineup by tier, and the iFIT trade-offs explained honestly.</p>
-            </a>
-            <a href="/sole-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Sole Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Hardware-first machines with no required subscription.</p>
-            </a>
-            <a href="/treadmill-warranty-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Warranty Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Frame, motor, parts and labour — and what each actually covers.</p>
-            </a>
-            <a href="/schwinn-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Schwinn Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four folding treadmills, $699 to $1,099 (810, 815, SFT4.1, SFT4.3), the old 830, missing motor figures.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">There is no single best treadmill brand.</strong> NordicTrack
             and ProForm lead on interactive training, Sole on hardware without a subscription, and
             Life Fitness and Matrix on commercial-grade durability. Choose the brand by the kind of
             owner you will be, then the model by its specifications.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Judge any brand on <strong class="text-white">motor, parts and labour warranty terms</strong>,
             local service, parts availability and what the console does without a subscription —
-            and confirm current terms for the specific machine. Our
-            <a href="/brands/" class="text-[#5AA9FF] font-bold no-underline">brands hub</a> lists
+            and confirm current terms for the specific machine. Our <a href="/brands/" class="text-[#5AA9FF] font-bold no-underline">brands hub</a> lists
             every brand guide we publish.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/nordictrack/">NordicTrack Treadmills</a></li>
+            <li><a href="/sole-fitness/">Sole Fitness Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What are the best treadmill brands?</h3></summary>
+            <p class="faq-a">
+              It depends on what you need. Among the brands we cover, NordicTrack leads for interactive, trainer-led training; ProForm offers the same iFIT platform at lower prices; Sole is strong on hardware without a required subscription; and Life Fitness and Matrix bring commercial engineering to the home. Choose the brand by need, then the model by specifications.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What treadmill brands are ranked highest?</h3></summary>
+            <p class="faq-a">
+              There is no single ranking that suits everyone, which is why we rank by need. For durability with no subscription, Sole, Life Fitness and Matrix rank highly in our guides; for interactive features, NordicTrack and ProForm. Judge any brand on warranty terms, local service, parts availability, subscription dependence and consistency across its price range.
             </p>
+          </details>
+          <details>
+            <summary><h3>Which treadmill brand is most reliable?</h3></summary>
+            <p class="faq-a">
+              Reliability varies more between models than between brands, since every brand sells machines across a wide quality range. Brands with commercial businesses, such as Life Fitness and Matrix, generally build their home lines to heavier-duty standards. Long motor and labour warranties and strong parts support are the best brand-level signs of expected reliability.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is NordicTrack or Sole better?</h3></summary>
+            <p class="faq-a">
+              They suit different buyers. NordicTrack is built around the iFIT platform and suits people who want trainer-led classes and will pay for the membership. Sole focuses on motor, frame and cushioning per dollar with no required subscription. Compare models at the same price on continuous motor rating, deck size, weight capacity and full warranty terms.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are NordicTrack and ProForm the same company?</h3></summary>
+            <p class="faq-a">
+              They are sister brands owned by the same parent, iFIT Health & Fitness, formerly ICON Health & Fitness, and both run iFIT software. ProForm is generally positioned at lower prices, with differences tending to show up in frame and motor construction rather than on the spec sheet. Our NordicTrack versus ProForm comparison covers the details.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are cheap walking pad brands any good?</h3></summary>
+            <p class="faq-a">
+              For slow walking at a desk, many are fine and good value. Expect a shorter lifespan than a full treadmill, typically short warranties, and thinner service and parts support, with some models sold under several brand names. Choose one with a warranty covering the motor, a published weight capacity with headroom, and a usable return window.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Brand and Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/nordictrack/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">NordicTrack Treadmills</div>
+            <p class="c-blurb">The lineup by tier, and the iFIT trade-offs explained honestly.</p>
+          </a>
+          <a href="/sole-fitness/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Sole Fitness Treadmills</div>
+            <p class="c-blurb">Hardware-first machines with no required subscription.</p>
+          </a>
+          <a href="/treadmill-warranty-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Warranty Guide</div>
+            <p class="c-blurb">Frame, motor, parts and labour — and what each actually covers.</p>
+          </a>
+          <a href="/schwinn-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Schwinn Treadmills</div>
+            <p class="c-blurb">Four folding treadmills, $699 to $1,099 (810, 815, SFT4.1, SFT4.3), the old 830, missing motor figures.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

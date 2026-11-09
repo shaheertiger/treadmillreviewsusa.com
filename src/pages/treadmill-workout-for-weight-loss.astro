@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Workouts for Weight Loss (2026): What Actually Helps";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-workout-for-weight-loss/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,42 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Sessions", link: "#the-sessions" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillworkoutforweightloss" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillworkoutforweightloss)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Training Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Workouts for Weight Loss</h1>
+      <p class="ed-dek">
+        Most content on this subject oversells intensity and undersells consistency. The sessions below are built around what people actually keep doing, and the page is honest about what exercise alone can and cannot do.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Workouts <span class="text-[#5AA9FF]">for Weight Loss</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most content on this subject oversells intensity and undersells consistency. The sessions below are built around what people actually keep doing, and the page is honest about what exercise alone can and cannot do.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#the-sessions" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Sessions
-          </a>
-          <a href="#calorie-count" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why the Calorie Count Misleads
-          </a>
-        </div>
+        <a href="#the-sessions" class="btn-ghost">The Sessions</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The honest starting point is that a treadmill is an excellent tool for health, fitness
+          and building a durable habit, and a weaker tool for weight change than most content in
+          this category implies. Understanding that up front is what stops people quitting in
+          week six.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="7.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review
           treadmills. This is a guide to using one consistently — it is not medical advice,
           nutrition advice, or a weight-loss programme, and we are not qualified to give any of
@@ -169,44 +152,28 @@ const schema = {
           pregnant, or have any history of disordered eating, please talk to a doctor or a
           registered dietitian rather than to a review site. Exercise is worth doing regardless
           of what happens to your weight.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#what-it-can-do" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What a Treadmill Can and Cannot Do</a>
-          <a href="#calorie-count" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why the Console Calorie Count Misleads</a>
-          <a href="#consistency" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Consistency Beats Intensity, Reliably</a>
-          <a href="#the-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Four Sessions Worth Doing</a>
-          <a href="#incline-over-speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Incline Beats Speed Here</a>
-          <a href="#fat-burning-zone" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The "Fat-Burning Zone", Explained Properly</a>
-          <a href="#why-progress-stalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Why Progress Stalls Around Week Six</a>
-          <a href="#strength" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Treadmill Is Not the Whole Answer</a>
-          <a href="#tracking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Tracking Without Making It Worse</a>
-          <a href="#realistic-expectations" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What a Realistic First Three Months Looks Like</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#what-it-can-do">What a Treadmill Can and Cannot Do</a></li>
+            <li><a href="#calorie-count">Why the Console Calorie Count Misleads</a></li>
+            <li><a href="#consistency">Consistency Beats Intensity, Reliably</a></li>
+            <li><a href="#the-sessions">Four Sessions Worth Doing</a></li>
+            <li><a href="#incline-over-speed">Why Incline Beats Speed Here</a></li>
+            <li><a href="#fat-burning-zone">The "Fat-Burning Zone", Explained Properly</a></li>
+            <li><a href="#why-progress-stalls">Why Progress Stalls Around Week Six</a></li>
+            <li><a href="#strength">The Treadmill Is Not the Whole Answer</a></li>
+            <li><a href="#tracking">Tracking Without Making It Worse</a></li>
+            <li><a href="#realistic-expectations">What a Realistic First Three Months Looks Like</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The honest starting point is that a treadmill is an excellent tool for health, fitness
-          and building a durable habit, and a weaker tool for weight change than most content in
-          this category implies. Understanding that up front is what stops people quitting in
-          week six.
-        </p>
 
         <div id="what-it-can-do" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What a Treadmill Can and Cannot Do</h2>
+          <h2>What a Treadmill Can and Cannot Do</h2>
 <p>
             <strong>What it does well.</strong> It builds cardiovascular fitness, it is available
             regardless of weather, darkness or safety, and it makes a daily habit unusually easy
@@ -220,8 +187,7 @@ const schema = {
             expended in a 40-minute session is real but modest, and the body partially
             compensates — moving less during the rest of the day, and increasing appetite. This
             is not a reason to skip it. It is a reason not to be blindsided when the scale moves
-            more slowly than a <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium" data-autolink>calorie readout</a> implies. The same logic applies to desk walking; see
-            <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">do walking pads help you lose weight</a>.
+            more slowly than a <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium" data-autolink>calorie readout</a> implies. The same logic applies to desk walking; see <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">do walking pads help you lose weight</a>.
           </p>
           <p>
             <strong>What that means practically.</strong> The most useful treadmill habit for
@@ -236,7 +202,7 @@ const schema = {
         </div>
 
         <div id="calorie-count" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why the Console Calorie Count Misleads</h2>
+          <h2>Why the Console Calorie Count Misleads</h2>
 <p>
             The number on the display is an estimate, and it tends to be generous. It is
             calculated from speed, incline and time against a body-weight assumption the machine
@@ -264,7 +230,7 @@ const schema = {
         </div>
 
         <div id="consistency" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Consistency Beats Intensity, Reliably</h2>
+          <h2>Consistency Beats Intensity, Reliably</h2>
 <p>
             If there is one finding to take from this page, it is that the best session is the one
             you will do again on Thursday.
@@ -283,15 +249,13 @@ const schema = {
           <p>
             The corollary is that enjoyment is a legitimate training variable. A session you
             tolerate is one you will drop. Watch something. Take calls. Walk while working, if
-            that is what makes it happen — our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
-            covers that format, which for many people produces far more weekly movement than a
+            that is what makes it happen — our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a> covers that format, which for many people produces far more weekly movement than a
             more "serious" approach they do not sustain.
           </p>
         </div>
 
         <div id="the-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Four Sessions Worth Doing</h2>
+          <h2>Four Sessions Worth Doing</h2>
 <p>
             <strong>One — Steady incline walk (30-45 min).</strong> Walk at a comfortable pace,
             typically 3 to 3.5 mph, at 5 to 10% incline. Conversational throughout. This is the
@@ -306,15 +270,11 @@ const schema = {
           <p>
             <strong>Three — Incline intervals (30 min).</strong> Warm up 10 minutes flat. Then 6
             rounds of 90 seconds at 8 to 10% and 90 seconds near flat, holding your speed constant.
-            Cool down 5. Once a week at most. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a>
-            covers the structures in detail.
+            Cool down 5. Once a week at most. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a> covers the structures in detail.
           </p>
           <p>
             <strong>Four — Walk-jog progression (30 min).</strong> If you want to build toward
-            running, alternate walking and jogging rather than trying to run continuously. Our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">beginner running progression</a>
-            sets out a structured version.
+            running, alternate walking and jogging rather than trying to run continuously. Our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">beginner running progression</a> sets out a structured version.
           </p>
           <p>
             A workable week: sessions one, one again, and two. Add session three only once that is
@@ -323,7 +283,7 @@ const schema = {
         </div>
 
         <div id="incline-over-speed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Incline Beats Speed Here</h2>
+          <h2>Why Incline Beats Speed Here</h2>
 <p>
             For this goal specifically, raising the grade is almost always the better choice than
             raising the pace, for four reasons that compound. For concrete starting numbers, see the <a href="/best-treadmill-settings-for-fat-loss/" class="text-[#0F62FE] font-medium">best treadmill settings for fat loss</a>.
@@ -346,8 +306,7 @@ const schema = {
           <p>
             <strong>It is quieter.</strong> Relevant if you live above someone — footfall energy
             into the floor is what a neighbour hears, and incline walking does not increase it.
-            Our <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment guide</a>
-            covers that.
+            Our <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment guide</a> covers that.
           </p>
           <p>
             One rule makes or breaks it: <strong>do not hold the handrails.</strong> Leaning
@@ -357,7 +316,7 @@ const schema = {
         </div>
 
         <div id="fat-burning-zone" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The "Fat-Burning Zone", Explained Properly</h2>
+          <h2>The "Fat-Burning Zone", Explained Properly</h2>
 <p>
             Many treadmills label a low-intensity band as the "fat-burning zone", which is
             technically accurate and widely misunderstood.
@@ -382,7 +341,7 @@ const schema = {
         </div>
 
         <div id="why-progress-stalls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Why Progress Stalls Around Week Six</h2>
+          <h2>Why Progress Stalls Around Week Six</h2>
 <p>
             A predictable pattern: encouraging early progress, then a plateau, then discouragement.
             Three things are usually happening at once, and none of them means the training failed.
@@ -411,7 +370,7 @@ const schema = {
         </div>
 
         <div id="strength" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Treadmill Is Not the Whole Answer</h2>
+          <h2>The Treadmill Is Not the Whole Answer</h2>
 <p>
             A review site telling you to do something other than use the product is worth
             listening to. Cardiovascular exercise alone is not the strongest approach here, and
@@ -442,7 +401,7 @@ const schema = {
         </div>
 
         <div id="tracking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Tracking Without Making It Worse</h2>
+          <h2>Tracking Without Making It Worse</h2>
 <p>
             Measurement helps until it becomes the activity. A few principles keep it useful.
           </p>
@@ -471,7 +430,7 @@ const schema = {
         </div>
 
         <div id="realistic-expectations" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What a Realistic First Three Months Looks Like</h2>
+          <h2>What a Realistic First Three Months Looks Like</h2>
 <p>
             Weeks one to three: three sessions a week, 25 to 30 minutes, walking at a
             conversational pace with a modest incline. The only goal is that all nine sessions
@@ -493,14 +452,12 @@ const schema = {
             Weight may or may not have moved much, and the training was worth doing either way.
           </p>
           <p>
-            If you want a running goal at the end of it, our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">beginner running progression</a>
-            picks up from roughly this point.
+            If you want a running goal at the end of it, our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">beginner running progression</a> picks up from roughly this point.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Walk at an incline, most days you can, for a long time.</strong> That is the
             approach with the best ratio of benefit to sustainability, and it beats anything
@@ -520,145 +477,159 @@ const schema = {
             The habit is the thing that determines everything afterwards.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill good for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is very good for building cardiovascular fitness and a consistent habit, and a weaker lever on body weight than most content implies — exercise is partially offset by reduced incidental movement and increased appetite. It is genuinely useful, particularly for maintaining a weight you have reached, and worth doing regardless of what the scale does.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is walking or running better for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Whichever you will do consistently, which for most people is walking — ideally at an incline. Running expends more energy per minute and is harder to sustain several times a week, especially at higher body weights. An incline walk you repeat four times a week beats a run you abandon in month two.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are treadmill calorie counts accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No, and they tend to be generous — commonly 10 to 20% above actual expenditure, sometimes more. They are estimated from speed, incline and time against a default body weight, and they know nothing about your fitness or efficiency. Use the figure to compare sessions, not as calories you have earned back.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the fat-burning zone, and should I train in it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At lower intensities a higher proportion of energy comes from fat, but you use less energy overall, so the absolute amount is often similar to a harder session. The percentage is real; the conclusion is not. Train at lower intensity because you can do it more often and for longer — that is the actual benefit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should I walk on a treadmill to lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Thirty to forty-five minutes at a conversational pace with some incline, three to five times a week, is a realistic and sustainable target. Build up to it over several weeks rather than starting there. Total weekly minutes and consistency matter far more than the length of any individual session.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why have I stopped losing weight despite using the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually three things at once: you have become more efficient so the same session costs less energy, you may be moving less outside sessions without noticing, and appetite adjusts upward. Add a little duration or incline, keep daily movement up, and judge progress by fitness and how you feel as well as the scale.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Using a Treadmill for Weight Loss</h2>
+          <p>The first two undo more sessions than any training error, and neither is about the training at all.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating the calorie readout as earned intake</h3>
+              <p>The figure typically runs 10 to 20% high and knows nothing about your fitness or efficiency. Combined with the natural tendency to round up, "I burned 500" easily becomes a couple of hundred calories of optimism. Use it to compare this week to last week, and track minutes and sessions instead.</p>
+            </li>
+            <li>
+              <h3>Starting with four hard sessions a week</h3>
+              <p>It works for about three weeks, then fatigue accumulates, a week gets missed, and it stops. Three moderate sessions sustained for twelve weeks produces far more than four hard ones sustained for three. Start below what feels ambitious and add only once the current load is genuinely easy to fit in.</p>
+            </li>
+            <li>
+              <h3>Holding the handrails on incline</h3>
+              <p>Leaning on the rails transfers work to your arms and the frame while the console keeps reporting the same grade, so the session is much easier than it appears and the incline equivalences stop holding. If you cannot walk the grade with a light hand or none at all, lower the grade rather than gripping harder.</p>
+            </li>
+            <li>
+              <h3>Judging the first three months by the scale alone</h3>
+              <p>Weight moves several pounds a week for reasons unrelated to body composition — hydration, sodium, hormones, digestion. Meanwhile resting heart rate, cardiovascular fitness, sleep and blood pressure may all be improving. Judge the first three months by whether the sessions happened.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Using a Treadmill for Weight Loss</h2>
-          <p class="text-gray-700 leading-relaxed">The first two undo more sessions than any training error, and neither is about the training at all.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the calorie readout as earned intake</h3>
-              <p class="text-gray-700 text-sm m-0">The figure typically runs 10 to 20% high and knows nothing about your fitness or efficiency. Combined with the natural tendency to round up, "I burned 500" easily becomes a couple of hundred calories of optimism. Use it to compare this week to last week, and track minutes and sessions instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting with four hard sessions a week</h3>
-              <p class="text-gray-700 text-sm m-0">It works for about three weeks, then fatigue accumulates, a week gets missed, and it stops. Three moderate sessions sustained for twelve weeks produces far more than four hard ones sustained for three. Start below what feels ambitious and add only once the current load is genuinely easy to fit in.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the handrails on incline</h3>
-              <p class="text-gray-700 text-sm m-0">Leaning on the rails transfers work to your arms and the frame while the console keeps reporting the same grade, so the session is much easier than it appears and the incline equivalences stop holding. If you cannot walk the grade with a light hand or none at all, lower the grade rather than gripping harder.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging the first three months by the scale alone</h3>
-              <p class="text-gray-700 text-sm m-0">Weight moves several pounds a week for reasons unrelated to body composition — hydration, sodium, hormones, digestion. Meanwhile resting heart rate, cardiovascular fitness, sleep and blood pressure may all be improving. Judge the first three months by whether the sessions happened.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types, and how to build a sustainable week.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The best-known incline walk, with a four-week build-up.</p>
-            </a>
-            <a href="/couch-to-5k-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Progression</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Couch to 5K on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A structured walk-to-run progression if you want a running goal.</p>
-            </a>
-            <a href="/best-treadmill-for-weight-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Weight loss</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill for Weight Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Incline, deck comfort, a daily-rated motor and capacity headroom, and why no machine causes weight loss.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Walk at an incline, often, for a long time.</strong> The
             approach with the best ratio of benefit to sustainability beats anything cleverer you
             stop doing — and consistency over twelve weeks beats intensity over three every time.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Ignore the calorie readout as accounting, add resistance training twice a week, and take
             nutrition questions to a registered dietitian rather than a treadmill site. Judge the
-            first three months by whether the sessions happened, and remember the
-            <a href="/treadmill-workouts/" class="text-[#5AA9FF] font-bold no-underline">health benefits arrive</a>
-            whether or not the scale moves.
+            first three months by whether the sessions happened, and remember the <a href="/treadmill-workouts/" class="text-[#5AA9FF] font-bold no-underline">health benefits arrive</a> whether or not the scale moves.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-workouts/">Treadmill Workouts</a></li>
+            <li><a href="/12-3-30-treadmill-workout/">The 12-3-30 Treadmill Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is a treadmill good for weight loss?</h3></summary>
+            <p class="faq-a">
+              It is very good for building cardiovascular fitness and a consistent habit, and a weaker lever on body weight than most content implies — exercise is partially offset by reduced incidental movement and increased appetite. It is genuinely useful, particularly for maintaining a weight you have reached, and worth doing regardless of what the scale does.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is walking or running better for weight loss?</h3></summary>
+            <p class="faq-a">
+              Whichever you will do consistently, which for most people is walking — ideally at an incline. Running expends more energy per minute and is harder to sustain several times a week, especially at higher body weights. An incline walk you repeat four times a week beats a run you abandon in month two.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are treadmill calorie counts accurate?</h3></summary>
+            <p class="faq-a">
+              No, and they tend to be generous — commonly 10 to 20% above actual expenditure, sometimes more. They are estimated from speed, incline and time against a default body weight, and they know nothing about your fitness or efficiency. Use the figure to compare sessions, not as calories you have earned back.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the fat-burning zone, and should I train in it?</h3></summary>
+            <p class="faq-a">
+              At lower intensities a higher proportion of energy comes from fat, but you use less energy overall, so the absolute amount is often similar to a harder session. The percentage is real; the conclusion is not. Train at lower intensity because you can do it more often and for longer — that is the actual benefit.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should I walk on a treadmill to lose weight?</h3></summary>
+            <p class="faq-a">
+              Thirty to forty-five minutes at a conversational pace with some incline, three to five times a week, is a realistic and sustainable target. Build up to it over several weeks rather than starting there. Total weekly minutes and consistency matter far more than the length of any individual session.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why have I stopped losing weight despite using the treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually three things at once: you have become more efficient so the same session costs less energy, you may be moving less outside sessions without noticing, and appetite adjusts upward. Add a little duration or incline, keep daily movement up, and judge progress by fitness and how you feel as well as the scale.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Pillar Guide</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types, and how to build a sustainable week.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">The best-known incline walk, with a four-week build-up.</p>
+          </a>
+          <a href="/couch-to-5k-treadmill/" class="card">
+            <div class="c-kicker">Progression</div>
+            <div class="c-title">Couch to 5K on a Treadmill</div>
+            <p class="c-blurb">A structured walk-to-run progression if you want a running goal.</p>
+          </a>
+          <a href="/best-treadmill-for-weight-loss/" class="card">
+            <div class="c-kicker">Weight loss</div>
+            <div class="c-title">Best Treadmill for Weight Loss</div>
+            <p class="c-blurb">Incline, deck comfort, a daily-rated motor and capacity headroom, and why no machine causes weight loss.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Thick Should a Treadmill Mat Be? (2026): Bands by Floor";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-thick-should-a-treadmill-mat-be/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,104 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Thickness Bands", link: "#thickness-bands" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howthickshouldatreadmillmatbe" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howthickshouldatreadmillmatbe)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">How Thick Should a Treadmill Mat Be?</h1>
+      <p class="ed-dek">
+        Thickness is the number people compare on mat listings, and it is the one that misleads most often. The right figure depends on the job — floor protection, carpet, or the people living below — and on how firm the material is. Here are the thickness bands, what each one actually does, and why a thick soft mat is worse than a thin firm one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Thick Should a <span class="text-[#5AA9FF]">Treadmill Mat Be?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Thickness is the number people compare on mat listings, and it is the one that misleads most often. The right figure depends on the job — floor protection, carpet, or the people living below — and on how firm the material is. Here are the thickness bands, what each one actually does, and why a thick soft mat is worse than a thin firm one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#thickness-bands" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Thickness Bands Table
-          </a>
-          <a href="#too-thick-or-soft" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why Soft Mats Rock
-          </a>
-        </div>
+        <a href="#thickness-bands" class="btn-ghost">Thickness Bands Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">How to read the figures on this page.</strong> We review
-          treadmills and the kit around them; we have not measured or tested treadmill mats
-          ourselves. The thickness bands below are the ranges treadmill mats are commonly sold in,
-          and the uses we attach to them are general guidance rather than test results. Where we
-          quote a specific mat's thickness, it is a figure from our
-          <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat roundup</a>,
-          which only prints numbers that more than one source agreed on. Conversions between
-          inches and millimetres are simple arithmetic. If a mat is going under a treadmill in a
-          flat or above an occupied room, your building's rules and your machine's manual come
-          before anything here.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Thick Should a Treadmill Mat Be? The Short Answer</a>
-          <a href="#thickness-bands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Treadmill Mat Thickness Bands and What Each Does</a>
-          <a href="#by-job" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Choose the Thickness by the Job, Not the Number</a>
-          <a href="#too-thick-or-soft" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why a Mat That Is Too Thick or Too Soft Makes a Treadmill Unstable</a>
-          <a href="#density" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Density Matters More Than Thickness</a>
-          <a href="#rubber-vs-pvc" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Rubber vs PVC at the Same Thickness</a>
-          <a href="#size-before-thickness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Size Comes Before Thickness</a>
-          <a href="#hidden-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Extra Thickness Costs You</a>
-          <a href="#walking-pads-and-special-cases" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Walking Pads, Stacked Mats and Other Special Cases</a>
-          <a href="#checking-a-mat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How to Check the Thickness and Firmness of the Mat You Bought</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. If You Are Shopping for a Mat</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           How thick should a treadmill mat be? For most people with a treadmill on a hard
           ground-floor surface, about 1/4 inch of firm PVC or vinyl is enough. For carpet, a
           heavier, denser rubber mat matters more than any particular thickness. For an upstairs
@@ -212,8 +147,39 @@ const schema = {
           thickness at all.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">How to read the figures on this page.</strong> We review
+          treadmills and the kit around them; we have not measured or tested treadmill mats
+          ourselves. The thickness bands below are the ranges treadmill mats are commonly sold in,
+          and the uses we attach to them are general guidance rather than test results. Where we
+          quote a specific mat's thickness, it is a figure from our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat roundup</a>,
+          which only prints numbers that more than one source agreed on. Conversions between
+          inches and millimetres are simple arithmetic. If a mat is going under a treadmill in a
+          flat or above an occupied room, your building's rules and your machine's manual come
+          before anything here.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Thick Should a Treadmill Mat Be? The Short Answer</a></li>
+            <li><a href="#thickness-bands">Treadmill Mat Thickness Bands and What Each Does</a></li>
+            <li><a href="#by-job">Choose the Thickness by the Job, Not the Number</a></li>
+            <li><a href="#too-thick-or-soft">Why a Mat That Is Too Thick or Too Soft Makes a Treadmill Unstable</a></li>
+            <li><a href="#density">Density Matters More Than Thickness</a></li>
+            <li><a href="#rubber-vs-pvc">Rubber vs PVC at the Same Thickness</a></li>
+            <li><a href="#size-before-thickness">Size Comes Before Thickness</a></li>
+            <li><a href="#hidden-costs">What Extra Thickness Costs You</a></li>
+            <li><a href="#walking-pads-and-special-cases">Walking Pads, Stacked Mats and Other Special Cases</a></li>
+            <li><a href="#checking-a-mat">How to Check the Thickness and Firmness of the Mat You Bought</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping for a Mat</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Thick Should a Treadmill Mat Be? The Short Answer</h2>
+          <h2>How Thick Should a Treadmill Mat Be? The Short Answer</h2>
 <p>
             <strong>For floor protection on a hard floor, around 4 mm to 1/4 inch of firm PVC or
             vinyl is enough; for noise heard in the room below, choose dense rubber at 3/8 inch or
@@ -232,18 +198,14 @@ const schema = {
             problem.
           </p>
           <p>
-            If you already know which job you need done, the
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats by floor and machine</a>
-            lists a pick for each. If you are not yet sure a mat is worth buying at all, our guide
-            to
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a>
-            covers that question; this page assumes the answer is yes and is only about how thick
+            If you already know which job you need done, the <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats by floor and machine</a> lists a pick for each. If you are not yet sure a mat is worth buying at all, our guide
+            to <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a> covers that question; this page assumes the answer is yes and is only about how thick
             it should be.
           </p>
         </div>
 
         <div id="thickness-bands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Treadmill Mat Thickness Bands and What Each Does</h2>
+          <h2>Treadmill Mat Thickness Bands and What Each Does</h2>
 <p>
             Treadmill mats are sold in a fairly narrow range of thicknesses, and they cluster into
             a few bands. The table gives each band in inches and millimetres (1 inch is 25.4 mm,
@@ -288,7 +250,7 @@ const schema = {
         </div>
 
         <div id="by-job" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Choose the Thickness by the Job, Not the Number</h2>
+          <h2>Choose the Thickness by the Job, Not the Number</h2>
 <p>
             The quickest way to the right thickness is to name the problem you are buying the mat
             to solve. The three common ones need different things, and a mat that is perfect for
@@ -311,9 +273,7 @@ const schema = {
             the motor's cooling intake and gives the feet a firmer surface to bear on, so they do
             not sink unevenly into the pile and twist the frame. That favours a heavy, grippy,
             firm mat. A thin rubber mat around 3/16 inch does this well; a thick soft mat does it
-            badly, because it adds a second compressible layer on top of the first. Our
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">guide to putting a treadmill on carpet</a>
-            covers the case where carpet is so deep that you need a rigid board under the mat as
+            badly, because it adds a second compressible layer on top of the first. Our <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">guide to putting a treadmill on carpet</a> covers the case where carpet is so deep that you need a rigid board under the mat as
             well, which is the real fix for deep pile and soft underlay rather than a thicker
             mat.
           </p>
@@ -327,9 +287,7 @@ const schema = {
             room. Be realistic about the ceiling of what a mat achieves, though: it takes the
             sharp edge off footfalls and stops rattles, and on a lightweight upper floor a running
             treadmill will still be heard. The machine, and whether you walk or run, matter more.
-            Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            covers that side.
+            Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> covers that side.
           </p>
           <p>
             Noise you hear in the same room — motor whine, belt sound, the slap of footsteps in
@@ -339,7 +297,7 @@ const schema = {
         </div>
 
         <div id="too-thick-or-soft" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why a Mat That Is Too Thick or Too Soft Makes a Treadmill Unstable</h2>
+          <h2>Why a Mat That Is Too Thick or Too Soft Makes a Treadmill Unstable</h2>
 <p>
             The instinct that more padding must be better is the most common reason people end
             up with the wrong mat. Under a treadmill, softness is a liability, and a thick soft
@@ -362,9 +320,7 @@ const schema = {
             joints and bolts, and that movement is felt as wobble through the handrails and heard
             as creaks. On a folding machine, the hinge and the lift mechanism take some of that
             movement too. None of this is dramatic on day one, which is why people do not connect
-            it to the mat. Our guide to a
-            <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill that shakes or wobbles</a>
-            lists a soft or uneven base among the first things to check.
+            it to the mat. Our guide to a <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill that shakes or wobbles</a> lists a soft or uneven base among the first things to check.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Compression that does not come back</h3>
           <p>
@@ -386,7 +342,7 @@ const schema = {
         </div>
 
         <div id="density" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Density Matters More Than Thickness</h2>
+          <h2>Density Matters More Than Thickness</h2>
 <p>
             Density is how much material is packed into a given volume. Two mats of the same
             thickness can differ enormously in it: a solid rubber or vinyl sheet is all material,
@@ -423,13 +379,11 @@ const schema = {
         </div>
 
         <div id="rubber-vs-pvc" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Rubber vs PVC at the Same Thickness</h2>
+          <h2>Rubber vs PVC at the Same Thickness</h2>
 <p>
             Almost every treadmill mat is PVC (vinyl) or rubber, and at the same nominal thickness
             they are not equivalent. The table summarises how they compare for the jobs on this
-            page; the
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">mat roundup</a>
-            covers smell, floor compatibility and specific picks in more detail.
+            page; the <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">mat roundup</a> covers smell, floor compatibility and specific picks in more detail.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -465,7 +419,7 @@ const schema = {
         </div>
 
         <div id="size-before-thickness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Size Comes Before Thickness</h2>
+          <h2>Size Comes Before Thickness</h2>
 <p>
             If you only have the budget or patience to get one dimension right, get the size
             right. A mat that is thick enough but too small fails at the edges, which is exactly
@@ -496,7 +450,7 @@ const schema = {
         </div>
 
         <div id="hidden-costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Extra Thickness Costs You</h2>
+          <h2>What Extra Thickness Costs You</h2>
 <p>
             Thicker is never free, and the costs are worth weighing before you pay for a heavy
             mat you may not need.
@@ -530,7 +484,7 @@ const schema = {
         </div>
 
         <div id="walking-pads-and-special-cases" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Walking Pads, Stacked Mats and Other Special Cases</h2>
+          <h2>Walking Pads, Stacked Mats and Other Special Cases</h2>
 <p>
             A few situations come up often enough to answer directly.
           </p>
@@ -558,9 +512,7 @@ const schema = {
           <p>
             <strong>Interlocking tiles.</strong> Soft EVA foam tiles fail the thumb test and are
             a poor base for a treadmill at any thickness. Firm, high-density rubber gym tiles are
-            a different product and work well, provided no foot sits on a seam; our
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a>
-            covers which thickness suits weights, cardio and bodyweight areas.
+            a different product and work well, provided no foot sits on a seam; our <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a> covers which thickness suits weights, cardio and bodyweight areas.
           </p>
           <p>
             <strong>Existing rubber gym flooring.</strong> If the floor is already dense rubber, it
@@ -569,7 +521,7 @@ const schema = {
         </div>
 
         <div id="checking-a-mat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How to Check the Thickness and Firmness of the Mat You Bought</h2>
+          <h2>How to Check the Thickness and Firmness of the Mat You Bought</h2>
 <p>
             Because listing thicknesses are unreliable, it is worth five minutes checking the mat
             when it arrives, before the treadmill goes on it and the return window closes.
@@ -601,7 +553,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. If You Are Shopping for a Mat</h2>
+          <h2>If You Are Shopping for a Mat</h2>
 <p>
             Pulling it together, the order of decisions is: size first, then the job, then the
             material, and thickness last, because the job and the material mostly decide it for
@@ -620,148 +572,159 @@ const schema = {
             sold as cushioning.</li>
           </ul>
           <p>
-            Our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">roundup of treadmill mats matched to floor and machine</a>
-            has a pick for each of these cases, with the sizes and thicknesses we could confirm
-            and the caveats on each. If you are setting up a new machine more broadly, the
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            puts the mat alongside the lubricant, fan and heart-rate strap, and explains why the
+            Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">roundup of treadmill mats matched to floor and machine</a> has a pick for each of these cases, with the sizes and thicknesses we could confirm
+            and the caveats on each. If you are setting up a new machine more broadly, the <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> puts the mat alongside the lubricant, fan and heart-rate strap, and explains why the
             mat is worth laying before the treadmill arrives rather than after.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How thick should a treadmill mat be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For floor protection on a hard ground floor, around 4 mm to 1/4 inch of firm PVC or vinyl is enough. For noise heard in the room below, choose dense rubber at 3/8 inch or more. On carpet, a heavy, firm rubber mat matters more than the exact thickness. A thick soft mat is worse than a thinner firm one under any treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a thicker treadmill mat better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if it is also dense. Extra thickness of firm rubber does more vibration work, which helps in an upstairs room. Extra thickness of soft foam lets the treadmill's feet sink unevenly, so the frame rocks and the belt drifts off centre. For protecting a hard floor, thickness beyond about 1/4 inch adds weight and cost for little benefit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What thickness of treadmill mat do I need for an upstairs room?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Dense rubber at around 3/8 to 1/2 inch is the usual range for reducing the thud heard downstairs. Expect it to take the edge off footfalls and stop rattles rather than make a running treadmill silent. On a lightweight upper floor, walking instead of running and choosing a quieter machine matter more than any mat.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill mat be too thick?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, in two ways. A soft mat that is too thick lets the machine move and sink unevenly, which affects belt tracking and stability. And any thick mat raises the deck, adds weight, and leaves a raised edge to trip on when you step off. Thick only makes sense for dense rubber in a room where vibration is the problem.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is 4 mm thick enough for a treadmill mat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For protecting a hard ground floor from dents, scuffs and sweat, a firm 4 mm mat that is large enough is generally adequate, and many standard treadmill mats sit at about that thickness. It will do very little for noise in a room below, and a foamed 4 mm mat may dent permanently under a heavy machine's feet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a rubber mat need to be thicker than a PVC mat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not necessarily. At the same thickness, rubber is usually denser, grips better and damps more vibration than PVC, so a thin rubber mat around 3/16 inch already suits carpet well. Rubber only needs to be thicker, around 3/8 inch or more, when the goal is reducing the vibration heard in the room below.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Mat Thickness</h2>
+          <p>Most thickness mistakes come from treating the mat like a cushion. Under a treadmill it is a base, and a base should be firm.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the thickest, softest mat on the page</h3>
+              <p>Soft foam compresses unevenly under a treadmill's feet, so the frame rocks and the belt drifts. It also takes a permanent set, leaving pits that throw the machine out of level. Press a thumb into any mat before it goes down: if it sinks or the dent lingers, it is too soft for a treadmill.</p>
+            </li>
+            <li>
+              <h3>Paying for thickness when the job is floor protection</h3>
+              <p>On a hard ground floor with nobody below, a firm 4 mm to 1/4-inch mat that extends past the machine does the whole job. A heavy 3/8-inch rubber mat there adds weight, cost and smell for a problem you do not have. Spend the difference on a bigger mat instead.</p>
+            </li>
+            <li>
+              <h3>Trusting the listed thickness</h3>
+              <p>Mat listings are inconsistent, and some budget mats arrive thinner than advertised. Measure the edge in several places when the mat arrives, weigh it if you can, and compare with the listing. If it is materially thinner or softer than described, return it before the treadmill is sitting on it.</p>
+            </li>
+            <li>
+              <h3>Choosing thickness before size</h3>
+              <p>A thick mat that stops short of the treadmill's feet, rollers or motor intake fails exactly where it matters. Measure the assembled machine unfolded, add a margin on every side, and choose a mat that size first. If the thick mat you want is too short, butt two together with the join away from any foot.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Mat Thickness</h2>
-          <p class="text-gray-700 leading-relaxed">Most thickness mistakes come from treating the mat like a cushion. Under a treadmill it is a base, and a base should be firm.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the thickest, softest mat on the page</h3>
-              <p class="text-gray-700 text-sm m-0">Soft foam compresses unevenly under a treadmill's feet, so the frame rocks and the belt drifts. It also takes a permanent set, leaving pits that throw the machine out of level. Press a thumb into any mat before it goes down: if it sinks or the dent lingers, it is too soft for a treadmill.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for thickness when the job is floor protection</h3>
-              <p class="text-gray-700 text-sm m-0">On a hard ground floor with nobody below, a firm 4 mm to 1/4-inch mat that extends past the machine does the whole job. A heavy 3/8-inch rubber mat there adds weight, cost and smell for a problem you do not have. Spend the difference on a bigger mat instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the listed thickness</h3>
-              <p class="text-gray-700 text-sm m-0">Mat listings are inconsistent, and some budget mats arrive thinner than advertised. Measure the edge in several places when the mat arrives, weigh it if you can, and compare with the listing. If it is materially thinner or softer than described, return it before the treadmill is sitting on it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing thickness before size</h3>
-              <p class="text-gray-700 text-sm m-0">A thick mat that stops short of the treadmill's feet, rollers or motor intake fails exactly where it matters. Measure the assembled machine unfolded, add a margin on every side, and choose a mat that size first. If the thick mat you want is too short, butt two together with the join away from any foot.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Mat Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmill-mats/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Mats</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five picks matched to hard floors, carpet, upstairs rooms and walking pads.</p>
-            </a>
-            <a href="/do-you-need-a-treadmill-mat/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Question</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Do You Need a Treadmill Mat?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What a mat does and does not do, and when it is close to essential.</p>
-            </a>
-            <a href="/treadmill-on-carpet/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Set-up</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill on Carpet</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When a mat is enough on carpet, and when you need a rigid board as well.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">About 1/4 inch of firm vinyl protects a hard floor; dense rubber at
             3/8 inch or more is for the room below.</strong> On carpet, choose a heavy, firm rubber
             mat for its grip rather than its thickness, and add a board if the pile is deep.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Size the mat to the machine before you think about thickness, judge it by density rather
             than the number on the listing, and never put a soft mat under a treadmill. For
-            mats sorted by floor and machine, see our
-            <a href="/best-treadmill-mats/" class="text-[#5AA9FF] font-bold no-underline">best treadmill mats roundup</a>.
+            mats sorted by floor and machine, see our <a href="/best-treadmill-mats/" class="text-[#5AA9FF] font-bold no-underline">best treadmill mats roundup</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-mats/">Best Treadmill Mats</a></li>
+            <li><a href="/do-you-need-a-treadmill-mat/">Do You Need a Treadmill Mat?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How thick should a treadmill mat be?</h3></summary>
+            <p class="faq-a">
+              For floor protection on a hard ground floor, around 4 mm to 1/4 inch of firm PVC or vinyl is enough. For noise heard in the room below, choose dense rubber at 3/8 inch or more. On carpet, a heavy, firm rubber mat matters more than the exact thickness. A thick soft mat is worse than a thinner firm one under any treadmill.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a thicker treadmill mat better?</h3></summary>
+            <p class="faq-a">
+              Only if it is also dense. Extra thickness of firm rubber does more vibration work, which helps in an upstairs room. Extra thickness of soft foam lets the treadmill's feet sink unevenly, so the frame rocks and the belt drifts off centre. For protecting a hard floor, thickness beyond about 1/4 inch adds weight and cost for little benefit.
             </p>
+          </details>
+          <details>
+            <summary><h3>What thickness of treadmill mat do I need for an upstairs room?</h3></summary>
+            <p class="faq-a">
+              Dense rubber at around 3/8 to 1/2 inch is the usual range for reducing the thud heard downstairs. Expect it to take the edge off footfalls and stop rattles rather than make a running treadmill silent. On a lightweight upper floor, walking instead of running and choosing a quieter machine matter more than any mat.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill mat be too thick?</h3></summary>
+            <p class="faq-a">
+              Yes, in two ways. A soft mat that is too thick lets the machine move and sink unevenly, which affects belt tracking and stability. And any thick mat raises the deck, adds weight, and leaves a raised edge to trip on when you step off. Thick only makes sense for dense rubber in a room where vibration is the problem.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is 4 mm thick enough for a treadmill mat?</h3></summary>
+            <p class="faq-a">
+              For protecting a hard ground floor from dents, scuffs and sweat, a firm 4 mm mat that is large enough is generally adequate, and many standard treadmill mats sit at about that thickness. It will do very little for noise in a room below, and a foamed 4 mm mat may dent permanently under a heavy machine's feet.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a rubber mat need to be thicker than a PVC mat?</h3></summary>
+            <p class="faq-a">
+              Not necessarily. At the same thickness, rubber is usually denser, grips better and damps more vibration than PVC, so a thin rubber mat around 3/16 inch already suits carpet well. Rubber only needs to be thicker, around 3/8 inch or more, when the goal is reducing the vibration heard in the room below.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Mat Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-mats/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Treadmill Mats</div>
+            <p class="c-blurb">Five picks matched to hard floors, carpet, upstairs rooms and walking pads.</p>
+          </a>
+          <a href="/do-you-need-a-treadmill-mat/" class="card">
+            <div class="c-kicker">Question</div>
+            <div class="c-title">Do You Need a Treadmill Mat?</div>
+            <p class="c-blurb">What a mat does and does not do, and when it is close to essential.</p>
+          </a>
+          <a href="/treadmill-on-carpet/" class="card">
+            <div class="c-kicker">Set-up</div>
+            <div class="c-title">Treadmill on Carpet</div>
+            <p class="c-blurb">When a mat is enough on carpet, and when you need a rigid board as well.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Covers (2026): Picks for Garage, Indoor and Outdoor";
 const description =
@@ -221,6 +220,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-covers/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -241,132 +246,44 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best for Folding Treadmills: ClawsCover Folding Treadmill Cover", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillcovers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillcovers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmill Covers for Garage and Home</h1>
+      <p class="ed-dek">
+        A treadmill cover is a simple product with two ways to go wrong: the wrong size, and the wrong fabric for the room. Here are four covers whose listed size and material we could confirm, and the measuring, condensation and safety rules that decide which one you need.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#clawscover-folding"><img src="https://m.media-amazon.com/images/I/31WDCfK+XCL._SL500_.jpg" alt="ClawsCover Folding Treadmill Cover" width="500" height="500" decoding="async" /></a>
+          <a href="#clawscover-unfolding"><img src="https://m.media-amazon.com/images/I/31WDCfK+XCL._SL500_.jpg" alt="ClawsCover Unfolding Treadmill Cover" width="500" height="500" decoding="async" /></a>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmill Covers <span class="text-[#5AA9FF]">for Garage and Home</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill cover is a simple product with two ways to go wrong: the wrong size, and the wrong fabric for the room. Here are four covers whose listed size and material we could confirm, and the measuring, condensation and safety rules that decide which one you need.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#measuring" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Measure
-          </a>
-        </div>
-      </div>
-    </div>
+        <figcaption>ClawsCover Folding Treadmill Cover · ClawsCover Unfolding Treadmill Cover</figcaption>
+      </figure>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          covers. Each was checked on 15 October 2026 against its Amazon listing or the maker's own
-          site, and against at least one second source — another retailer listing or an independent
-          roundup — for size, fabric and current availability. A figure appears on this page only
-          where those sources agreed; where a listing contradicted itself or another source, we left
-          the figure out and say so. Prices are the ones we saw on that date and change often, so
-          confirm the size and the style you have selected on the exact listing before ordering. We
-          earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Folding Treadmills:</span>
-            <a href="#clawscover-folding" class="font-bold text-gray-900 no-underline hover:underline">ClawsCover Folding Treadmill Cover</a>
-            <a href="#clawscover-folding" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Non-Folding Treadmills:</span>
-            <a href="#clawscover-unfolding" class="font-bold text-gray-900 no-underline hover:underline">ClawsCover Unfolding Treadmill Cover</a>
-            <a href="#clawscover-unfolding" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Weatherproof:</span>
-            <a href="#zettum-600d-unfolding" class="font-bold text-gray-900 no-underline hover:underline">Zettum 600D Treadmill Cover (Unfolding)</a>
-            <a href="#zettum-600d-unfolding" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Custom Fit:</span>
-            <a href="#covers-and-all-custom" class="font-bold text-gray-900 no-underline hover:underline">Covers & All Custom Treadmill Cover</a>
-            <a href="#covers-and-all-custom" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 4 Best Treadmill Covers</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Covers</a>
-          <a href="#measuring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Measure Your Treadmill for a Cover</a>
-          <a href="#indoor-vs-weatherproof" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Indoor Dust Covers Versus Weatherproof Covers</a>
-          <a href="#condensation" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Condensation, and Why Breathability Matters in a Garage</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Covering Safely: Heat, Power, Pets and Children</a>
-          <a href="#fitting-and-care" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Putting a Cover On, and Looking After It</a>
-          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Walking Pads and Under-Desk Treadmills</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Does Not Need a Treadmill Cover</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most treadmill covers are sold by marketplace brands under near-identical titles, and the
           listings are often careless: the same cover described at two different heights, a
           specification table that contradicts its own bullet points, a fabric named one way in
@@ -377,8 +294,60 @@ const schema = {
           the condensation problem that a cover can make better or worse.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Folding Treadmills:</span> <a href="#clawscover-folding">ClawsCover Folding Treadmill Cover</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Non-Folding Treadmills:</span> <a href="#clawscover-unfolding">ClawsCover Unfolding Treadmill Cover</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Weatherproof:</span> <a href="#zettum-600d-unfolding">Zettum 600D Treadmill Cover (Unfolding)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Custom Fit:</span> <a href="#covers-and-all-custom">Covers & All Custom Treadmill Cover</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          covers. Each was checked on 15 October 2026 against its Amazon listing or the maker's own
+          site, and against at least one second source — another retailer listing or an independent
+          roundup — for size, fabric and current availability. A figure appears on this page only
+          where those sources agreed; where a listing contradicted itself or another source, we left
+          the figure out and say so. Prices are the ones we saw on that date and change often, so
+          confirm the size and the style you have selected on the exact listing before ordering. We
+          earn a commission if you buy through the Amazon links on this page; it does not change
+          which products we list or what we say about them.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 4 Best Treadmill Covers</a></li>
+            <li><a href="#how-we-chose">How We Chose These Covers</a></li>
+            <li><a href="#measuring">How to Measure Your Treadmill for a Cover</a></li>
+            <li><a href="#indoor-vs-weatherproof">Indoor Dust Covers Versus Weatherproof Covers</a></li>
+            <li><a href="#condensation">Condensation, and Why Breathability Matters in a Garage</a></li>
+            <li><a href="#safety">Covering Safely: Heat, Power, Pets and Children</a></li>
+            <li><a href="#fitting-and-care">Putting a Cover On, and Looking After It</a></li>
+            <li><a href="#walking-pads">Walking Pads and Under-Desk Treadmills</a></li>
+            <li><a href="#who-should-skip">Who Does Not Need a Treadmill Cover</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             The first decision is not the brand but the shape of your machine. A folding treadmill
             stored upright needs a tall, short cover; a <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding treadmill</a> needs a long, low one;
@@ -399,15 +368,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If the treadmill is going into a garage, read our guide to
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">keeping a treadmill in a garage</a>
-            first. A cover is one of several defences against cold, damp and dust out there, and it
+            If the treadmill is going into a garage, read our guide to <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">keeping a treadmill in a garage</a> first. A cover is one of several defences against cold, damp and dust out there, and it
             is not the most important one.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 4 Best Treadmill Covers</h2>
+          <h2>The 4 Best Treadmill Covers</h2>
 <p>
             Each card gives only the sizes and materials we could confirm in two places, the price
             we saw, and who the cover suits. The size line matters more than anything else on the
@@ -419,78 +386,67 @@ const schema = {
             listings gave conflicting dimensions or fabrics, which is explained in the next section.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Covers</h2>
+          <h2>How We Chose These Covers</h2>
 <p>
             We have not tested these covers. They were chosen from listings, maker information and
             independent roundups, all checked on 15 October 2026, and the claims on this page are
@@ -505,14 +461,11 @@ const schema = {
             listing or an independent roundup that named the same product.
           </p>
           <p>
-            That step removed more covers than it kept. We excluded the <strong>QWORK</strong>
-            folding cover because its height appears as 66 inches in one place and 69 in another,
-            and its specification table lists details that cannot apply to a cover. We excluded the
-            <strong>folding version of the Zettum cover</strong> because its listing gives
+            That step removed more covers than it kept. We excluded the <strong>QWORK</strong> folding cover because its height appears as 66 inches in one place and 69 in another,
+            and its specification table lists details that cannot apply to a cover. We excluded the <strong>folding version of the Zettum cover</strong> because its listing gives
             46 x 38 x 66 inches in the bullets and 79 x 38 x 60 inches in its own table. We left out
             an <strong>XYZCTEM</strong> vented cover because its bullets and table disagree on which
-            dimension is the height, and we could not see a price. For <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, the
-            <strong>Aidetech</strong> cover lists Oxford cloth in its bullets and polypropylene in
+            dimension is the height, and we could not see a price. For <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, the <strong>Aidetech</strong> cover lists Oxford cloth in its bullets and polypropylene in
             its table, and another under-desk cover named 420D fabric in its title and 210D in its
             description, so neither made the list. Model-specific covers whose listings gave
             placeholder dimensions were also excluded, as was a well-reviewed cover sold only in
@@ -527,7 +480,7 @@ const schema = {
         </div>
 
         <div id="measuring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Measure Your Treadmill for a Cover</h2>
+          <h2>How to Measure Your Treadmill for a Cover</h2>
 <p>
             Covers are sold by three numbers — length, width and height — and listings use the
             words inconsistently. Some say "D x W x H", some say "L x W x H", and at least one listing
@@ -551,9 +504,7 @@ const schema = {
           </ul>
           <p>
             A typical folded treadmill comes out tall and short — roughly the shape of the
-            46 x 38 x 66-inch folding covers on this page. Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            explains how folded and in-use footprints differ.
+            46 x 38 x 66-inch folding covers on this page. Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a> explains how folded and in-use footprints differ.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Non-folding treadmills: measure it as it stands</h3>
           <p>
@@ -574,14 +525,12 @@ const schema = {
           <p>
             One more measurement is worth taking: the gap between the machine and the nearest wall.
             A cover adds bulk, and a folded treadmill pushed tight into a corner may not leave room
-            to pull one on. Our guide to
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a>
-            covers doing that safely before you cover it.
+            to pull one on. Our guide to <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a> covers doing that safely before you cover it.
           </p>
         </div>
 
         <div id="indoor-vs-weatherproof" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Indoor Dust Covers Versus Weatherproof Covers</h2>
+          <h2>Indoor Dust Covers Versus Weatherproof Covers</h2>
 <p>
             Almost every treadmill cover on sale is described as "waterproof", "dustproof" and "for
             indoor and outdoor use", so those words do not help you choose. What does help is the
@@ -606,16 +555,14 @@ const schema = {
           <p>
             Two cautions. First, no cover turns an indoor treadmill into an outdoor one. Most
             treadmill manuals specify indoor use, and many warranties exclude damage from use in
-            other conditions; our page on
-            <a href="/outdoor-treadmill/" class="text-[#0F62FE] font-medium">using a treadmill outdoors</a>
-            covers what that means in practice. A cover on a patio reduces exposure; it does not
+            other conditions; our page on <a href="/outdoor-treadmill/" class="text-[#0F62FE] font-medium">using a treadmill outdoors</a> covers what that means in practice. A cover on a patio reduces exposure; it does not
             make the electronics weatherproof. Second, "waterproof" and "breathable" pull in
             opposite directions, which is the subject of the next section.
           </p>
         </div>
 
         <div id="condensation" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Condensation, and Why Breathability Matters in a Garage</h2>
+          <h2>Condensation, and Why Breathability Matters in a Garage</h2>
 <p>
             In a garage, the biggest risk to a treadmill's electronics is not rain but condensation.
             When warm, humid air meets a cold surface, water forms on it. A garage that is cold
@@ -627,9 +574,7 @@ const schema = {
             changes, which takes the edge off rapid swings. But a fully sealed, non-breathable cover
             traps whatever moisture is already under it, and when the temperature drops, that
             moisture condenses on the inside of the cover and on the machine. That is why our guides
-            to the <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage</a>
-            and to <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a>
-            both warn against plastic sheeting and tarpaulins.
+            to the <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage</a> and to <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a> both warn against plastic sheeting and tarpaulins.
           </p>
           <p>
             Most PU-coated covers, including three of the four here, sit somewhere in between: they
@@ -640,9 +585,7 @@ const schema = {
           </p>
           <ul>
             <li><strong>Never cover a damp machine.</strong> Wipe off sweat and let the treadmill
-            dry fully first, as our
-            <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning guide</a>
-            describes.</li>
+            dry fully first, as our <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning guide</a> describes.</li>
             <li><strong>Leave the hem loose</strong> unless it is windy, so air can move under the
             cover rather than being sealed in.</li>
             <li><strong>Prefer vents.</strong> Covered air vents let moist air escape without
@@ -662,7 +605,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Covering Safely: Heat, Power, Pets and Children</h2>
+          <h2>Covering Safely: Heat, Power, Pets and Children</h2>
 <p>
             A cover is a sheet of fabric over an electrical machine, which means a few rules are not
             optional.
@@ -672,9 +615,7 @@ const schema = {
             motor and controller are cooled by air drawn through the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>, and both
             stay warm for a while after a session. A cover thrown over a hot motor traps that heat.
             Switch the machine off, let it cool — longer after a long or hard session — and only
-            then cover it. Our guide to
-            <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
-            explains why heat around the motor matters.
+            then cover it. Our guide to <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a> explains why heat around the motor matters.
           </p>
           <p>
             <strong>Unplug it and take the safety key out.</strong> A covered treadmill is not being
@@ -692,9 +633,7 @@ const schema = {
             it is not a barrier, and a draped machine can become a den or a climbing frame. Do not
             let children play under or on a covered treadmill, make sure a folded machine's lock is
             engaged before the cover goes on, and keep pets away from the hem, where loose fabric and drawstrings
-            can tangle. A drawstring with a free end is worth tucking away. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            cover the rest of what keeps children and animals safe around a treadmill.
+            can tangle. A drawstring with a free end is worth tucking away. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> cover the rest of what keeps children and animals safe around a treadmill.
           </p>
           <p>
             <strong>Never use the cover while the belt is moving.</strong> Take it fully off, fold
@@ -704,7 +643,7 @@ const schema = {
         </div>
 
         <div id="fitting-and-care" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Putting a Cover On, and Looking After It</h2>
+          <h2>Putting a Cover On, and Looking After It</h2>
 <p>
             Most covers go on from the top down, with the elastic hem or drawstring at the base.
             On a folding treadmill, fold and lock the machine first, then find the cover's front —
@@ -731,14 +670,12 @@ const schema = {
           <p>
             <strong>Pair it with a mat.</strong> A cover protects the top; a mat protects the
             bottom, keeping the frame off cold, damp concrete and stopping dust being drawn into the
-            motor compartment from floor level. Our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat roundup</a>
-            covers sizes for each kind of machine.
+            motor compartment from floor level. Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat roundup</a> covers sizes for each kind of machine.
           </p>
         </div>
 
         <div id="walking-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Walking Pads and Under-Desk Treadmills</h2>
+          <h2>Walking Pads and Under-Desk Treadmills</h2>
 <p>
             Walking pads need a different shape of cover altogether: long, narrow and only a few
             inches tall. Many are sold, usually in a dozen or more sizes under one listing, and that
@@ -758,7 +695,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Does Not Need a Treadmill Cover</h2>
+          <h2>Who Does Not Need a Treadmill Cover</h2>
 <p>
             <strong>If the treadmill is used daily in a clean indoor room</strong>, a cover adds a
             chore for little benefit. A quick wipe after each session and a weekly vacuum around
@@ -767,16 +704,12 @@ const schema = {
           <p>
             <strong>If the machine is going into long-term storage</strong>, a cover is part of the
             job but not the main part. Cleaning, drying, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>, the plug and the room matter
-            more, and our guide to
-            <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a>
-            covers them in order.
+            more, and our guide to <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a> covers them in order.
           </p>
           <p>
             <strong>If the problem is a cold or damp garage</strong>, a cover will not solve it on
             its own. A machine built to cope with those conditions makes more difference, and our
-            guide to the
-            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">best treadmills for a garage</a>
-            looks at which machines suit them.
+            guide to the <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">best treadmills for a garage</a> looks at which machines suit them.
           </p>
           <p>
             <strong>If the treadmill sits fully outdoors</strong>, uncovered by a roof, no cover on
@@ -785,142 +718,158 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I put a cover on my treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the treadmill sits in a garage, a dusty room, near a window, or goes unused for weeks, a cover is worth having: it keeps dust off the belt, sun off the console and some damp off the frame. If you use the machine daily in a clean indoor room, wiping it after each session and vacuuming around it matters more than a cover.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What size treadmill cover do I need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure the machine in the position you will cover it. Fold a folding treadmill and measure height, widest width and depth; measure a non-folding machine as it stands, including the motor hood and rear roller housing. Choose a cover a few inches larger in each direction. Folding machines commonly suit about 46 x 38 x 66 inches; non-folding about 79 x 38 x 60.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a waterproof treadmill cover good for a garage?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, used carefully. A coated cover sheds drips and slows temperature swings, but it breathes less than plain fabric, so moisture already under it can condense when the garage cools. Only cover a dry machine, leave the hem loose unless it is windy, prefer a cover with vents, and run a dehumidifier if the garage is damp.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I leave a treadmill outside under a cover?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not as a long-term plan. Most treadmill manuals specify indoor use, and environmental damage may not be covered by the warranty. A heavy, coated cover reduces exposure under a carport or patio roof, but it does not make the motor, controller or console weatherproof. If the machine has to live outdoors, choose one built for it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I cover my treadmill right after using it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. The motor and controller are still warm after a session, and a cover traps that heat and any sweat on the frame. Switch the treadmill off, unplug it, take the safety key out, wipe off sweat, and let the machine cool and dry before covering it. Never cover a treadmill that is running.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a plastic sheet or tarp OK as a treadmill cover?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is the worst choice in a garage or basement. Plastic sheeting and tarpaulins trap humid air against the machine, and when the temperature drops, water condenses on the inside and drips onto the frame and console. A fabric treadmill cover, or a cotton or canvas dust sheet, is better. If plastic is all you have, leave the bottom open.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Covers</h2>
+          <p>Each of these turns a simple protective cover into something that does no good, or does harm.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Measuring a folding treadmill unfolded</h3>
+              <p>A folding treadmill is covered in its folded position, which is tall and short, not long and low. Measured unfolded, you will buy a non-folding cover that bunches on the floor. Fold and lock the machine, then measure the height, the widest width and the depth, and compare those to the cover listing, not the belt size on the box.</p>
+            </li>
+            <li>
+              <h3>Covering a warm or sweaty machine</h3>
+              <p>A cover over a motor that has just been working traps heat, and a cover over a sweaty frame traps moisture. Switch off, unplug, remove the safety key, wipe the rails and belt, and let the machine cool and dry fully before the cover goes on. Never put a cover on a running treadmill for any reason.</p>
+            </li>
+            <li>
+              <h3>Sealing a coated cover tight in a damp garage</h3>
+              <p>Most covers are coated to shed water, which also means they breathe less. Cinched tight in a garage that cools at night, they can hold moisture against the machine. Leave the hem loose unless wind is a problem, choose a vented cover where you can, take it off if you see moisture inside, and tackle the damp itself with a dehumidifier.</p>
+            </li>
+            <li>
+              <h3>Trusting the listing title alone</h3>
+              <p>Marketplace cover listings often give one size in the title and another in the table, or name different fabrics in different places. Read the title, the bullet points and the specification table, check they agree, and confirm the style option selected. If they disagree, ask the seller or buy a cover whose listing is consistent.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Covers</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a simple protective cover into something that does no good, or does harm.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring a folding treadmill unfolded</h3>
-              <p class="text-gray-700 text-sm m-0">A folding treadmill is covered in its folded position, which is tall and short, not long and low. Measured unfolded, you will buy a non-folding cover that bunches on the floor. Fold and lock the machine, then measure the height, the widest width and the depth, and compare those to the cover listing, not the belt size on the box.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Covering a warm or sweaty machine</h3>
-              <p class="text-gray-700 text-sm m-0">A cover over a motor that has just been working traps heat, and a cover over a sweaty frame traps moisture. Switch off, unplug, remove the safety key, wipe the rails and belt, and let the machine cool and dry fully before the cover goes on. Never put a cover on a running treadmill for any reason.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sealing a coated cover tight in a damp garage</h3>
-              <p class="text-gray-700 text-sm m-0">Most covers are coated to shed water, which also means they breathe less. Cinched tight in a garage that cools at night, they can hold moisture against the machine. Leave the hem loose unless wind is a problem, choose a vented cover where you can, take it off if you see moisture inside, and tackle the damp itself with a dehumidifier.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the listing title alone</h3>
-              <p class="text-gray-700 text-sm m-0">Marketplace cover listings often give one size in the title and another in the table, or name different fabrics in different places. Read the title, the bullet points and the specification table, check they agree, and confirm the style option selected. If they disagree, ask the seller or buy a cover whose listing is consistent.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-in-garage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Garage</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Keeping a Treadmill in a Garage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cold, condensation, dust and power: what a garage does to a treadmill and how to set it up.</p>
-            </a>
-            <a href="/how-to-store-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Storage</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Store a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cleaning, belt tension, covers and the checks before bringing it back into use.</p>
-            </a>
-            <a href="/best-treadmills-for-garage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for a Garage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines that cope better with the conditions a cover cannot fix.</p>
-            </a>
-            <a href="/best-treadmill-tablet-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Mounts</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Tablet Holders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mounts that stay steady at running pace without blocking the stop button or safety key.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Measure first, then buy the simplest cover that fits.</strong>
-            For a folding treadmill, a 46 x 38 x 66-inch cover such as the ClawsCover folding model
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Measure first, then buy the simplest cover that fits.</strong> For a folding treadmill, a 46 x 38 x 66-inch cover such as the ClawsCover folding model
             suits most machines; for a non-folding one, a 79 x 38 x 60-inch cover. Choose the heavier
             Zettum fabric for a carport or open garage, and a made-to-measure vented cover when your
             machine is an odd size or condensation is a real problem.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, only cover a cool, dry, unplugged treadmill, leave the hem loose
             indoors, and never use a plastic sheet in a garage. If the machine lives out there, our
-            guide to
-            <a href="/treadmill-in-garage/" class="text-[#5AA9FF] font-bold no-underline">keeping a treadmill in a garage</a>
-            covers the rest of the set-up.
+            guide to <a href="/treadmill-in-garage/" class="text-[#5AA9FF] font-bold no-underline">keeping a treadmill in a garage</a> covers the rest of the set-up.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-in-garage/">Keeping a Treadmill in a Garage</a></li>
+            <li><a href="/how-to-store-a-treadmill/">How to Store a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Should I put a cover on my treadmill?</h3></summary>
+            <p class="faq-a">
+              If the treadmill sits in a garage, a dusty room, near a window, or goes unused for weeks, a cover is worth having: it keeps dust off the belt, sun off the console and some damp off the frame. If you use the machine daily in a clean indoor room, wiping it after each session and vacuuming around it matters more than a cover.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What size treadmill cover do I need?</h3></summary>
+            <p class="faq-a">
+              Measure the machine in the position you will cover it. Fold a folding treadmill and measure height, widest width and depth; measure a non-folding machine as it stands, including the motor hood and rear roller housing. Choose a cover a few inches larger in each direction. Folding machines commonly suit about 46 x 38 x 66 inches; non-folding about 79 x 38 x 60.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a waterproof treadmill cover good for a garage?</h3></summary>
+            <p class="faq-a">
+              It can be, used carefully. A coated cover sheds drips and slows temperature swings, but it breathes less than plain fabric, so moisture already under it can condense when the garage cools. Only cover a dry machine, leave the hem loose unless it is windy, prefer a cover with vents, and run a dehumidifier if the garage is damp.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I leave a treadmill outside under a cover?</h3></summary>
+            <p class="faq-a">
+              Not as a long-term plan. Most treadmill manuals specify indoor use, and environmental damage may not be covered by the warranty. A heavy, coated cover reduces exposure under a carport or patio roof, but it does not make the motor, controller or console weatherproof. If the machine has to live outdoors, choose one built for it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I cover my treadmill right after using it?</h3></summary>
+            <p class="faq-a">
+              No. The motor and controller are still warm after a session, and a cover traps that heat and any sweat on the frame. Switch the treadmill off, unplug it, take the safety key out, wipe off sweat, and let the machine cool and dry before covering it. Never cover a treadmill that is running.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a plastic sheet or tarp OK as a treadmill cover?</h3></summary>
+            <p class="faq-a">
+              It is the worst choice in a garage or basement. Plastic sheeting and tarpaulins trap humid air against the machine, and when the temperature drops, water condenses on the inside and drips onto the frame and console. A fabric treadmill cover, or a cotton or canvas dust sheet, is better. If plastic is all you have, leave the bottom open.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-in-garage/" class="card">
+            <div class="c-kicker">Garage</div>
+            <div class="c-title">Keeping a Treadmill in a Garage</div>
+            <p class="c-blurb">Cold, condensation, dust and power: what a garage does to a treadmill and how to set it up.</p>
+          </a>
+          <a href="/how-to-store-a-treadmill/" class="card">
+            <div class="c-kicker">Storage</div>
+            <div class="c-title">How to Store a Treadmill</div>
+            <p class="c-blurb">Cleaning, belt tension, covers and the checks before bringing it back into use.</p>
+          </a>
+          <a href="/best-treadmills-for-garage/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Treadmills for a Garage</div>
+            <p class="c-blurb">Machines that cope better with the conditions a cover cannot fix.</p>
+          </a>
+          <a href="/best-treadmill-tablet-holders/" class="card">
+            <div class="c-kicker">Mounts</div>
+            <div class="c-title">Best Treadmill Tablet Holders</div>
+            <p class="c-blurb">Mounts that stay steady at running pace without blocking the stop button or safety key.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

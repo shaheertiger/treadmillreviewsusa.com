@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Fitness Tracker (2026): 7 Picks, Subscriptions Explained";
 const description =
@@ -303,6 +302,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-fitness-trackers/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -323,66 +328,89 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Google Fitbit Air", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestfitnesstrackers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestfitnesstrackers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Fitness Trackers and What They Really Cost</h1>
+      <p class="ed-dek">
+        The best fitness tracker for most people is the one you will keep wearing, on a budget that includes any subscription. Here are seven current bands, watches and rings sold on Amazon US, with honest notes on accuracy, battery and the fees some of them need to work at all.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Fitness Trackers <span class="text-[#5AA9FF]">and What They Really Cost</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The best fitness tracker for most people is the one you will keep wearing, on a budget that includes any subscription. Here are seven current bands, watches and rings sold on Amazon US, with honest notes on accuracy, battery and the fees some of them need to work at all.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#subscriptions" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Subscriptions Explained
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#fitbit-inspire-3"><img src="https://m.media-amazon.com/images/I/21o5Z87UgYL._SL500_.jpg" alt="Fitbit Inspire 3" width="500" height="374" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Fitbit Inspire 3</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A fitness tracker is a small sensor package that guesses a lot. It counts steps from
+          movement, reads heart rate through your skin, and turns both into calorie, sleep and
+          "readiness" figures using models you cannot see. That does not make trackers useless —
+          they are very good at showing whether you are moving, sleeping and recovering more or less
+          than usual — but it does mean the right choice depends less on the spec sheet than on
+          comfort, battery, the app and what you will pay after the box is opened. The seven picks
+          below cover every common shape, from a screenless band to a GPS watch and a ring, and the
+          guide after them explains what each kind measures well and what it does not.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#fitbit-air">Google Fitbit Air</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Fitness Watch:</span> <a href="#garmin-vivoactive-6">Garmin vívoactive 6</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for iPhone Users:</span> <a href="#apple-watch-se-3">Apple Watch SE 3</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#amazfit-bip-6">Amazfit Bip 6</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Cheap Band With a Screen:</span> <a href="#fitbit-inspire-3">Fitbit Inspire 3</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Recovery Data:</span> <a href="#whoop-5">WHOOP 5.0</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Ring:</span> <a href="#oura-ring-5">Oura Ring 5</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           trackers, and no figure on this page is our own measurement. Each one was confirmed as
           currently sold on Amazon US on 19 October 2026 — every listing we used was the brand's
@@ -395,87 +423,33 @@ const schema = {
           published on that date and are quoted as such; they change, so check them before you buy.
           Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices change often. We earn a commission if you buy through the Amazon links
-          on this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          on this page; it does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment and the gear around it; we are not giving medical, cardiology, sleep
           or nutrition advice. None of these trackers is presented here as a medical device, and
           health features are described as the makers describe them. Heart rate, sleep, calorie and
           "readiness" figures are estimates. If you have a heart condition, a pacemaker or other
           implanted device, are pregnant, or are tracking because a clinician asked you to, talk
           to a qualified professional about what to use and how to read it.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#fitbit-air" class="font-bold text-gray-900 no-underline hover:underline">Google Fitbit Air</a>
-            <a href="#fitbit-air" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Fitness Watch:</span>
-            <a href="#garmin-vivoactive-6" class="font-bold text-gray-900 no-underline hover:underline">Garmin vívoactive 6</a>
-            <a href="#garmin-vivoactive-6" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for iPhone Users:</span>
-            <a href="#apple-watch-se-3" class="font-bold text-gray-900 no-underline hover:underline">Apple Watch SE 3</a>
-            <a href="#apple-watch-se-3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#amazfit-bip-6" class="font-bold text-gray-900 no-underline hover:underline">Amazfit Bip 6</a>
-            <a href="#amazfit-bip-6" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Cheap Band With a Screen:</span>
-            <a href="#fitbit-inspire-3" class="font-bold text-gray-900 no-underline hover:underline">Fitbit Inspire 3</a>
-            <a href="#fitbit-inspire-3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 7 Best Fitness Trackers</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Fitness Trackers</a>
-          <a href="#subscriptions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Which Fitness Trackers Need a Subscription?</a>
-          <a href="#accuracy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Accurate Are Fitness Trackers?</a>
-          <a href="#band-watch-or-ring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Band, Watch or Ring: Which Shape Suits You?</a>
-          <a href="#battery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Battery Life: What the Claims Mean</a>
-          <a href="#treadmill-and-home-gym" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Using a Fitness Tracker on a Treadmill and in a Home Gym</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 7 Best Fitness Trackers</a></li>
+            <li><a href="#how-we-chose">How We Chose These Fitness Trackers</a></li>
+            <li><a href="#subscriptions">Which Fitness Trackers Need a Subscription?</a></li>
+            <li><a href="#accuracy">How Accurate Are Fitness Trackers?</a></li>
+            <li><a href="#band-watch-or-ring">Band, Watch or Ring: Which Shape Suits You?</a></li>
+            <li><a href="#battery">Battery Life: What the Claims Mean</a></li>
+            <li><a href="#treadmill-and-home-gym">Using a Fitness Tracker on a Treadmill and in a Home Gym</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A fitness tracker is a small sensor package that guesses a lot. It counts steps from
-          movement, reads heart rate through your skin, and turns both into calorie, sleep and
-          "readiness" figures using models you cannot see. That does not make trackers useless —
-          they are very good at showing whether you are moving, sleeping and recovering more or less
-          than usual — but it does mean the right choice depends less on the spec sheet than on
-          comfort, battery, the app and what you will pay after the box is opened. The seven picks
-          below cover every common shape, from a screenless band to a GPS watch and a ring, and the
-          guide after them explains what each kind measures well and what it does not.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Seven trackers, one for each common way of wearing one. If you want a single answer, the
             Fitbit Air is the best fitness tracker for most people in 2026: it is cheap, comfortable,
@@ -501,18 +475,14 @@ const schema = {
           </table></div>
           <p>
             This page is the general roundup. If your question is narrower, we have pages that go
-            deeper: trackers for
-            <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">counting steps on a walking pad</a>,
-            <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">running watches for treadmill training</a>
-            and
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">chest straps and arm-band heart rate monitors</a>.
+            deeper: trackers for <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">counting steps on a walking pad</a>, <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">running watches for treadmill training</a> and <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">chest straps and arm-band heart rate monitors</a>.
             The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects
             the rest of this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 7 Best Fitness Trackers</h2>
+          <h2>The 7 Best Fitness Trackers</h2>
 <p>
             Each card gives the figures we could confirm in two places, the price range we saw on
             Amazon US on 19 October 2026, and who the tracker suits. Read the subscription line on
@@ -524,78 +494,67 @@ const schema = {
             wear every day is a better tracker than a $500 ring that sits in a drawer.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Fitness Trackers</h2>
+          <h2>How We Chose These Fitness Trackers</h2>
 <p>
             We have not tested these trackers. They were chosen from maker product pages, manuals
             and Amazon listings, subscription terms, recall records and independent hands-on reviews
@@ -613,16 +572,13 @@ const schema = {
             it.
           </p>
           <p>
-            Several good trackers fell out on that Amazon-first rule. The
-            <strong>Garmin Cirqa</strong>, a $199.99 screenless band launched in July 2026 with a
+            Several good trackers fell out on that Amazon-first rule. The <strong>Garmin Cirqa</strong>, a $199.99 screenless band launched in July 2026 with a
             claimed 10-day battery and no required subscription, is well reviewed, but on 19 October
             we found only third-party straps for it on Amazon US, not the band itself; it is sold by
             Garmin and other retailers. Google's new <strong>Fitbit Edge</strong>, announced on 12
             October at $179.99 with built-in GPS and a screen, was on pre-order with deliveries
-            starting 27 October, so it was not yet on sale; it replaces the
-            <strong>Fitbit Charge 6</strong>, whose Amazon listing showed no price when we checked.
-            We will revisit the Edge once it ships. The <strong>Polar Loop</strong> and the
-            <strong>Amazfit Helio Strap</strong> are both on Amazon as subscription-free screenless
+            starting 27 October, so it was not yet on sale; it replaces the <strong>Fitbit Charge 6</strong>, whose Amazon listing showed no price when we checked.
+            We will revisit the Edge once it ships. The <strong>Polar Loop</strong> and the <strong>Amazfit Helio Strap</strong> are both on Amazon as subscription-free screenless
             bands, but at the same or higher prices than the Fitbit Air they overlap almost
             completely, so they are mentioned rather than carded. We did not check Samsung's
             watches or other smart rings in enough depth to card them.
@@ -638,7 +594,7 @@ const schema = {
         </div>
 
         <div id="subscriptions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Which Fitness Trackers Need a Subscription?</h2>
+          <h2>Which Fitness Trackers Need a Subscription?</h2>
 <p>
             This is the question that most changes the real price of a fitness tracker. There are
             three models: no subscription at all, an optional subscription that adds coaching and
@@ -683,7 +639,7 @@ const schema = {
         </div>
 
         <div id="accuracy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Accurate Are Fitness Trackers?</h2>
+          <h2>How Accurate Are Fitness Trackers?</h2>
 <p>
             Accurate enough to show trends, not accurate enough to treat any single number as a
             measurement. How far you can trust a figure depends on what it is.
@@ -692,11 +648,7 @@ const schema = {
           <p>
             Wrist and ring trackers count steps largely from the swing and jolt of your arm. On a
             free walk they do well. They under-count when your arms stop moving: holding treadmill
-            handrails, pushing a stroller, or typing on a walking pad. Our explainer on
-            <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether a fitness tracker counts steps on a treadmill</a>
-            goes through each case, and our guide to
-            <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">fitness trackers for a walking pad</a>
-            covers the waist-worn and clip-on fixes. A ring is on your hand, so it has the same
+            handrails, pushing a stroller, or typing on a walking pad. Our explainer on <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether a fitness tracker counts steps on a treadmill</a> goes through each case, and our guide to <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">fitness trackers for a walking pad</a> covers the waist-worn and clip-on fixes. A ring is on your hand, so it has the same
             problem as a wrist.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heart rate</h3>
@@ -705,9 +657,7 @@ const schema = {
             and watching blood flow. That works best at rest and during steady effort. It is less
             reliable in fast intervals, when the band is loose, in the cold, and during movements
             that flex the wrist, such as lifting. A chest strap reads the heart's electrical signal
-            instead and is the better tool for <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a>. Our comparison of
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest strap and wrist heart rate</a>
-            explains where the wrist lags and how to wear it for the cleanest reading, and most of
+            instead and is the better tool for <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a>. Our comparison of <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest strap and wrist heart rate</a> explains where the wrist lags and how to wear it for the cleanest reading, and most of
             these trackers can pair with a strap if you need one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Distance and pace</h3>
@@ -717,18 +667,14 @@ const schema = {
             own and borrow your phone's, as most screenless bands and rings do, so leave the phone at
             home and outdoor distance becomes an estimate. Indoors, every
             tracker estimates distance from stride, so a treadmill console that has been checked is
-            usually the better figure; our
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a>
-            shows how to check one.
+            usually the better figure; our <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a> shows how to check one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Calories</h3>
           <p>
             Calorie burn is the weakest figure on any tracker. It is calculated from heart rate,
             movement and the body details you enter, using a model, and different devices disagree
             for the same session. Use it to compare your own days with each other, not as a number
-            to eat back. Our page on
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calorie counts are accurate</a>
-            explains why consoles and wearables rarely agree.
+            to eat back. Our page on <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calorie counts are accurate</a> explains why consoles and wearables rarely agree.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Sleep and readiness scores</h3>
           <p>
@@ -741,7 +687,7 @@ const schema = {
         </div>
 
         <div id="band-watch-or-ring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Band, Watch or Ring: Which Shape Suits You?</h2>
+          <h2>Band, Watch or Ring: Which Shape Suits You?</h2>
 <p>
             The shape decides more about daily life with a tracker than any sensor does.
           </p>
@@ -756,15 +702,13 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Band with a screen (Fitbit Inspire 3)</h3>
           <p>
             A slim strap with a small display for time, steps, heart rate and notifications. Cheap
-            and long-lasting, but the screen is small and there is no built-in GPS.
-            <strong>Best for</strong> a first tracker, and for anyone who wants to see their step
+            and long-lasting, but the screen is small and there is no built-in GPS. <strong>Best for</strong> a first tracker, and for anyone who wants to see their step
             count during the day.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fitness-first watch (Garmin vívoactive 6, Amazfit Bip 6)</h3>
           <p>
             A bigger screen, built-in GPS and workout modes you start from the wrist, with battery
-            measured in days or weeks rather than hours. Fewer smartwatch apps than an Apple Watch.
-            <strong>Best for</strong> people who run, cycle or walk outdoors and want pace and
+            measured in days or weeks rather than hours. Fewer smartwatch apps than an Apple Watch. <strong>Best for</strong> people who run, cycle or walk outdoors and want pace and
             distance without a phone.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Smartwatch (Apple Watch SE 3)</h3>
@@ -778,13 +722,12 @@ const schema = {
           <p>
             The least intrusive of all to wear, especially at night. Rings are strong for sleep and
             resting heart rate, but they have no screen, are poorly suited to wearing while lifting
-            weights, need a careful sizing, and count steps from your hand.
-            <strong>Best for</strong> people who will not wear anything on the wrist, and for sleep.
+            weights, need a careful sizing, and count steps from your hand. <strong>Best for</strong> people who will not wear anything on the wrist, and for sleep.
           </p>
         </div>
 
         <div id="battery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Battery Life: What the Claims Mean</h2>
+          <h2>Battery Life: What the Claims Mean</h2>
 <p>
             Every battery figure on this page is the maker's claim under its own test conditions,
             and the makers say so in their footnotes. Real life is usually shorter, because GPS,
@@ -818,7 +761,7 @@ const schema = {
         </div>
 
         <div id="treadmill-and-home-gym" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Using a Fitness Tracker on a Treadmill and in a Home Gym</h2>
+          <h2>Using a Fitness Tracker on a Treadmill and in a Home Gym</h2>
 <p>
             Indoor training is where trackers are most often misread. A few habits make the numbers
             far more useful.
@@ -831,53 +774,37 @@ const schema = {
               tracker seeing your steps and lowers your effort. If you need the rails for balance,
               trust the console's distance and expect a low step count.</li>
             <li><strong>Treat the console as the record for distance and pace.</strong> Then use
-              the tracker for heart rate and time in zones. Our guide to
-              <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
-              explains how to set them, and
-              <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 training on a treadmill</a>
-              shows a common way to use them.</li>
+              the tracker for heart rate and time in zones. Our guide to <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a> explains how to set them, and <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 training on a treadmill</a> shows a common way to use them.</li>
             <li><strong>Pair a strap for intervals and lifting.</strong> Wrist readings struggle with
               fast changes and with gripping a bar. A chest strap gives a cleaner trace, and many
               trackers will display it.</li>
             <li><strong>Connect where you can.</strong> Some treadmills share speed and distance with
-              a watch directly. If you use an Apple Watch, our guide to
-              <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-              covers GymKit and app-based options.</li>
+              a watch directly. If you use an Apple Watch, our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> covers GymKit and app-based options.</li>
           </ul>
           <p>
             For strength training, accept that most trackers record time and heart rate well and
             reps and sets poorly. Log the lifts yourself. If you are building a home gym around a
-            treadmill, our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            guide compares the main options, and if body composition is the goal rather than
-            activity, our guide to the
-            <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">best smart scales</a>
-            explains what a bathroom scale can add, and how little a single body-fat reading means.
+            treadmill, our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> guide compares the main options, and if body composition is the goal rather than
+            activity, our guide to the <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">best smart scales</a> explains what a bathroom scale can add, and how little a single body-fat reading means.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you mainly run and train to pace,</strong> a dedicated running watch with
-            better GPS and training tools is the better buy; our
-            <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">running watch roundup</a>
-            covers the treadmill side.
+            better GPS and training tools is the better buy; our <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">running watch roundup</a> covers the treadmill side.
           </p>
           <p>
             <strong>If you train by heart rate in intervals,</strong> buy a chest strap first. It is
-            cheaper than most trackers and more accurate for that job; our
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart rate monitor picks</a>
-            list the current straps and arm bands.
+            cheaper than most trackers and more accurate for that job; our <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart rate monitor picks</a> list the current straps and arm bands.
           </p>
           <p>
             <strong>If you only want a step count at a walking desk,</strong> a $25 clip-on
-            pedometer will do it better than anything on this page, for the reasons in our
-            <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">walking pad tracker guide</a>.
+            pedometer will do it better than anything on this page, for the reasons in our <a href="/best-fitness-trackers-for-walking-pad/" class="text-[#0F62FE] font-medium">walking pad tracker guide</a>.
           </p>
           <p>
-            <strong>If you already own a recent phone and want to see whether tracking helps,</strong>
-            try its built-in step counting and a free app for a month before buying anything. A
+            <strong>If you already own a recent phone and want to see whether tracking helps,</strong> try its built-in step counting and a free app for a month before buying anything. A
             phone in your pocket counts steps well, and you will learn what you actually look at.
           </p>
           <p>
@@ -887,137 +814,154 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best fitness tracker in 2026?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, the Google Fitbit Air. It costs about $100, lasts about a week per charge, is light enough to wear overnight and records steps, heart rate, sleep and workouts without a subscription. If you want a screen and built-in GPS, the Garmin vivoactive 6 is the step up, and iPhone owners who want a full smartwatch should look at the Apple Watch SE 3.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which fitness trackers do not need a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Of the trackers on this page, the Fitbit Air, Fitbit Inspire 3, Garmin vivoactive 6, Apple Watch SE 3 and Amazfit Bip 6 all record your core data for free, with optional paid tiers for coaching and extra analysis. WHOOP requires a paid membership, and the Oura Ring needs its membership for most features. Check each maker's current terms before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Whoop worth it compared with a Fitbit or Garmin?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if you want WHOOP's strain and recovery coaching and accept paying every year. On WHOOP's published prices the cheapest plan is $199 a year, so two years costs about $398, against about $100 for a Fitbit Air with no subscription. A Fitbit or Garmin covers steps, heart rate, sleep and workouts for far less.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How accurate are fitness trackers?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Accurate enough to show trends, not to treat one number as a measurement. Step counts are good on a free walk but drop when your arms are still, as on treadmill rails or at a walking desk. Wrist heart rate is best at rest and steady effort and weaker in fast intervals. Calories, sleep stages and readiness scores are estimates from each maker's model.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do fitness trackers count steps on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if your arms swing normally. Wrist and ring trackers count steps largely from arm movement, so holding the handrails or typing on a walking pad lowers the count. For distance, a treadmill console that has been checked is usually more reliable than a tracker's indoor estimate. A phone in a trouser pocket or a waist clip counts better when your hands are busy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which fitness tracker has the longest battery life?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Of the picks here, WHOOP 5.0 claims 14 days or more and the Amazfit Bip 6 up to 14 days in typical use, followed by the Garmin vivoactive 6 at up to 11 days and the Fitbit Inspire 3 at up to 10. These are the makers' figures; GPS, an always-on screen and notifications shorten them. The Apple Watch SE 3 is rated at up to 18 hours.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Fitness Tracker</h2>
+          <p>Each of these is easy to avoid before you order and costs money or data afterwards.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing sticker prices and ignoring the subscription</h3>
+              <p>A tracker that needs a membership costs its yearly fee every year you use it. Add up the purchase price and two years of whatever you would actually pay before comparing. On published prices, a subscription-free band can cost a quarter of what a membership device costs over the same period.</p>
+            </li>
+            <li>
+              <h3>Treating calories and scores as measurements</h3>
+              <p>Calorie burn, sleep stages and readiness scores are estimates from each maker's model, and different devices disagree for the same day. Use them to compare your own days and weeks, not to decide how much to eat or whether to train. Steps and resting heart rate trends are the more dependable figures.</p>
+            </li>
+            <li>
+              <h3>Buying a wrist tracker to count desk or rail-holding steps</h3>
+              <p>Wrist and ring trackers count from arm movement, so they under-count when your hands are on a keyboard or handrail. If that is where most of your walking happens, clip a tracker or pedometer to your waistband, carry your phone in a pocket, or use the treadmill's own distance.</p>
+            </li>
+            <li>
+              <h3>Choosing a tracker you will not wear</h3>
+              <p>A tracker only builds useful trends if it is on you every day and night. Short battery life, a bulky case or a strap you dislike all lead to gaps. Pick for comfort and charging habits first, features second, and wear it snugly just above the wrist bone for the best heart-rate reading.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Fitness Tracker</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and costs money or data afterwards.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing sticker prices and ignoring the subscription</h3>
-              <p class="text-gray-700 text-sm m-0">A tracker that needs a membership costs its yearly fee every year you use it. Add up the purchase price and two years of whatever you would actually pay before comparing. On published prices, a subscription-free band can cost a quarter of what a membership device costs over the same period.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating calories and scores as measurements</h3>
-              <p class="text-gray-700 text-sm m-0">Calorie burn, sleep stages and readiness scores are estimates from each maker's model, and different devices disagree for the same day. Use them to compare your own days and weeks, not to decide how much to eat or whether to train. Steps and resting heart rate trends are the more dependable figures.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a wrist tracker to count desk or rail-holding steps</h3>
-              <p class="text-gray-700 text-sm m-0">Wrist and ring trackers count from arm movement, so they under-count when your hands are on a keyboard or handrail. If that is where most of your walking happens, clip a tracker or pedometer to your waistband, carry your phone in a pocket, or use the treadmill's own distance.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing a tracker you will not wear</h3>
-              <p class="text-gray-700 text-sm m-0">A tracker only builds useful trends if it is on you every day and night. Short battery life, a bulky case or a strap you dislike all lead to gaps. Pick for comfort and charging habits first, features second, and wear it snugly just above the wrist bone for the best heart-rate reading.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-fitness-trackers-for-walking-pad/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking Pads</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Fitness Trackers for a Walking Pad</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why wrists under-count at a desk, and the clip-on and pedometer fixes that work.</p>
-            </a>
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Heart Rate</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Chest Strap vs Wrist Heart Rate</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where optical sensors lag, when a strap is worth it, and how to get a clean reading.</p>
-            </a>
-            <a href="/best-smart-scales/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Fitness Tech</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Smart Scales</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Body-fat scales on Amazon, what bioimpedance can and cannot tell you, and who should not use it.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people, the Fitbit Air is the fitness tracker to buy</strong>:
             about $100, a week of battery, comfortable overnight and useful without a subscription. If
             you want a screen and GPS on your wrist, the Garmin vívoactive 6 does that with no monthly
             fee, and the Amazfit Bip 6 does most of it for well under $100. iPhone owners who want
             one device for everything should choose the Apple Watch SE 3 and accept daily charging.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             WHOOP and Oura are good at what they do, but you pay every year, so buy them for the
             recovery and sleep analysis, not for steps. Whatever you choose, read trends rather than
-            single numbers, and use a chest strap when heart rate really matters —
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#5AA9FF] font-bold no-underline">our chest strap vs wrist guide</a>
-            explains when.
+            single numbers, and use a chest strap when heart rate really matters — <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#5AA9FF] font-bold no-underline">our chest strap vs wrist guide</a> explains when.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-fitness-trackers-for-walking-pad/">Best Fitness Trackers for a Walking Pad</a></li>
+            <li><a href="/chest-strap-vs-wrist-heart-rate/">Chest Strap vs Wrist Heart Rate</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best fitness tracker in 2026?</h3></summary>
+            <p class="faq-a">
+              For most people, the Google Fitbit Air. It costs about $100, lasts about a week per charge, is light enough to wear overnight and records steps, heart rate, sleep and workouts without a subscription. If you want a screen and built-in GPS, the Garmin vivoactive 6 is the step up, and iPhone owners who want a full smartwatch should look at the Apple Watch SE 3.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Which fitness trackers do not need a subscription?</h3></summary>
+            <p class="faq-a">
+              Of the trackers on this page, the Fitbit Air, Fitbit Inspire 3, Garmin vivoactive 6, Apple Watch SE 3 and Amazfit Bip 6 all record your core data for free, with optional paid tiers for coaching and extra analysis. WHOOP requires a paid membership, and the Oura Ring needs its membership for most features. Check each maker's current terms before buying.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is Whoop worth it compared with a Fitbit or Garmin?</h3></summary>
+            <p class="faq-a">
+              Only if you want WHOOP's strain and recovery coaching and accept paying every year. On WHOOP's published prices the cheapest plan is $199 a year, so two years costs about $398, against about $100 for a Fitbit Air with no subscription. A Fitbit or Garmin covers steps, heart rate, sleep and workouts for far less.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How accurate are fitness trackers?</h3></summary>
+            <p class="faq-a">
+              Accurate enough to show trends, not to treat one number as a measurement. Step counts are good on a free walk but drop when your arms are still, as on treadmill rails or at a walking desk. Wrist heart rate is best at rest and steady effort and weaker in fast intervals. Calories, sleep stages and readiness scores are estimates from each maker's model.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do fitness trackers count steps on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, if your arms swing normally. Wrist and ring trackers count steps largely from arm movement, so holding the handrails or typing on a walking pad lowers the count. For distance, a treadmill console that has been checked is usually more reliable than a tracker's indoor estimate. A phone in a trouser pocket or a waist clip counts better when your hands are busy.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which fitness tracker has the longest battery life?</h3></summary>
+            <p class="faq-a">
+              Of the picks here, WHOOP 5.0 claims 14 days or more and the Amazfit Bip 6 up to 14 days in typical use, followed by the Garmin vivoactive 6 at up to 11 days and the Fitbit Inspire 3 at up to 10. These are the makers' figures; GPS, an always-on screen and notifications shorten them. The Apple Watch SE 3 is rated at up to 18 hours.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-fitness-trackers-for-walking-pad/" class="card">
+            <div class="c-kicker">Walking Pads</div>
+            <div class="c-title">Best Fitness Trackers for a Walking Pad</div>
+            <p class="c-blurb">Why wrists under-count at a desk, and the clip-on and pedometer fixes that work.</p>
+          </a>
+          <a href="/chest-strap-vs-wrist-heart-rate/" class="card">
+            <div class="c-kicker">Heart Rate</div>
+            <div class="c-title">Chest Strap vs Wrist Heart Rate</div>
+            <p class="c-blurb">Where optical sensors lag, when a strap is worth it, and how to get a clean reading.</p>
+          </a>
+          <a href="/best-smart-scales/" class="card">
+            <div class="c-kicker">Fitness Tech</div>
+            <div class="c-title">Best Smart Scales</div>
+            <p class="c-blurb">Body-fat scales on Amazon, what bioimpedance can and cannot tell you, and who should not use it.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

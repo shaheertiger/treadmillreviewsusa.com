@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Walking Pad vs Folding Treadmill (2026): Space, Speed and Price";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/walking-pad-vs-folding-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Compare Side by Side", link: "#side-by-side" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-walkingpadvsfoldingtreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-walkingpadvsfoldingtreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Walking Pad vs Folding Treadmill</h1>
+      <p class="ed-dek">
+        Both promise to disappear when you are done. A walking pad does it by lying flat and sliding under a sofa or desk; a folding treadmill does it by standing on end against a wall. That one difference drives almost everything else — deck length, speed, rails, weight and price — and decides which one your home and your routine will actually use.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Walking Pad vs <span class="text-[#5AA9FF]">Folding Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Both promise to disappear when you are done. A walking pad does it by lying flat and sliding under a sofa or desk; a folding treadmill does it by standing on end against a wall. That one difference drives almost everything else — deck length, speed, rails, weight and price — and decides which one your home and your routine will actually use.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#side-by-side" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Side-by-Side Table
-          </a>
-          <a href="#who-each-suits" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Which One Suits You
-          </a>
-        </div>
+        <a href="#side-by-side" class="btn-ghost">Side-by-Side Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">How to read the figures.</strong> The ranges on this
-          page are typical figures for each category, consistent with the ranges used across this
-          site and with published specifications; they are not our own measurements, and
-          individual models fall outside them in both directions. Prices are typical bands, not
-          quotes for any product, and change often. Where a product is named, the figures are the
-          ones given in our roundups, which say where they come from. Nothing here is medical
-          advice: if you are choosing a machine because of a balance, joint, heart or other
-          condition, talk to your doctor or physiotherapist about what suits you.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Walking Pad vs Folding Treadmill: The Short Answer</a>
-          <a href="#side-by-side" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Walking Pad vs Folding Treadmill Side by Side</a>
-          <a href="#footprint-storage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Footprint and Storage: Flat Under vs Upright Against</a>
-          <a href="#deck-length" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Deck Length and Stride</a>
-          <a href="#speed-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Speed and Incline: Where the Pad Runs Out</a>
-          <a href="#rails-console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Handrails, Controls and Safety</a>
-          <a href="#noise-floors" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise, Floors and Living With It</a>
-          <a href="#price-lifespan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Price Bands and How Long Each Lasts</a>
-          <a href="#two-in-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. 2-in-1 Walking Pads: The Middle Ground</a>
-          <a href="#who-each-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Each One Suits</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. If You Are Shopping: What to Look For</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           People choosing between a walking pad and a folding treadmill are usually short of the
           same thing: floor space. Both machines are sold as the answer, and both can be. But they
           solve the space problem in opposite ways, and the way each one folds decides how long
@@ -209,8 +146,38 @@ const schema = {
           including the 2-in-1 pads with a fold-up rail that sit between the two.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">How to read the figures.</strong> The ranges on this
+          page are typical figures for each category, consistent with the ranges used across this
+          site and with published specifications; they are not our own measurements, and
+          individual models fall outside them in both directions. Prices are typical bands, not
+          quotes for any product, and change often. Where a product is named, the figures are the
+          ones given in our roundups, which say where they come from. Nothing here is medical
+          advice: if you are choosing a machine because of a balance, joint, heart or other
+          condition, talk to your doctor or physiotherapist about what suits you.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Walking Pad vs Folding Treadmill: The Short Answer</a></li>
+            <li><a href="#side-by-side">Walking Pad vs Folding Treadmill Side by Side</a></li>
+            <li><a href="#footprint-storage">Footprint and Storage: Flat Under vs Upright Against</a></li>
+            <li><a href="#deck-length">Deck Length and Stride</a></li>
+            <li><a href="#speed-incline">Speed and Incline: Where the Pad Runs Out</a></li>
+            <li><a href="#rails-console">Handrails, Controls and Safety</a></li>
+            <li><a href="#noise-floors">Noise, Floors and Living With It</a></li>
+            <li><a href="#price-lifespan">Price Bands and How Long Each Lasts</a></li>
+            <li><a href="#two-in-one">2-in-1 Walking Pads: The Middle Ground</a></li>
+            <li><a href="#who-each-suits">Who Each One Suits</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping: What to Look For</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Walking Pad vs Folding Treadmill: The Short Answer</h2>
+          <h2>Walking Pad vs Folding Treadmill: The Short Answer</h2>
 <p>
             <strong>Buy a walking pad if you will walk, mostly slowly, while doing something else,
             and the machine has to vanish under a desk, sofa or bed. Buy a folding treadmill if you
@@ -229,20 +196,16 @@ const schema = {
             Between the two sits the 2-in-1 walking pad: a pad with a rail that folds up, which on
             most models also unlocks a higher top speed. It stores like a pad and gives you
             something to hold and the option of a light jog, but it does not turn a pad into a
-            treadmill. If that middle ground sounds like you, our pick of the
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best 2-in-1 walking pads with a handrail</a>
-            is the place to look.
+            treadmill. If that middle ground sounds like you, our pick of the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best 2-in-1 walking pads with a handrail</a> is the place to look.
           </p>
           <p>
             If you are still at the earlier question — a pad or any full-size treadmill, folding or
-            not — our broader
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a>
-            is the better starting point. This page assumes the treadmill has to fold.
+            not — our broader <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a> is the better starting point. This page assumes the treadmill has to fold.
           </p>
         </div>
 
         <div id="side-by-side" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Walking Pad vs Folding Treadmill Side by Side</h2>
+          <h2>Walking Pad vs Folding Treadmill Side by Side</h2>
 <p>
             The table gives typical ranges for each category. Individual models sit outside them,
             and the 2-in-1 column shows how the middle ground compares.
@@ -278,14 +241,12 @@ const schema = {
           <p>
             The lifespan row deserves a note. Pads are often worked for hours a day at a desk,
             which is a big part of why they wear out sooner; a folding treadmill used for half an
-            hour most days is living a gentler life. Our guide to
-            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>
-            explains how hours of use change the picture.
+            hour most days is living a gentler life. Our guide to <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a> explains how hours of use change the picture.
           </p>
         </div>
 
         <div id="footprint-storage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Footprint and Storage: Flat Under vs Upright Against</h2>
+          <h2>Footprint and Storage: Flat Under vs Upright Against</h2>
 <p>
             This is the deciding difference for most people, and it is more lopsided than the
             marketing suggests.
@@ -322,17 +283,13 @@ const schema = {
             is a one-person job on a hard floor. A folding treadmill at about 150 to 250 lb has
             transport wheels and can be rolled into a corner, but it is not something you carry
             upstairs on your own. If the machine has to live in one room and be used in another,
-            only the pad makes that a daily habit; our roundup of the
-            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a>
-            compares specific pads and folding machines by what they weigh. Our guide to
-            <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding treadmills</a>
-            covers the other side of this: if you will not fold a treadmill most weeks, you are
+            only the pad makes that a daily habit; our roundup of the <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a> compares specific pads and folding machines by what they weigh. Our guide to <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding treadmills</a> covers the other side of this: if you will not fold a treadmill most weeks, you are
             paying for a feature you are not using.
           </p>
         </div>
 
         <div id="deck-length" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Deck Length and Stride</h2>
+          <h2>Deck Length and Stride</h2>
 <p>
             Belt length is where the two formats part company most clearly as exercise machines,
             and it is the difference buyers underestimate most.
@@ -348,10 +305,7 @@ const schema = {
           <p>
             Folding treadmills run from about 50 inches on compact, walking-oriented models to 60
             inches on full-length running models. The commonly quoted guide is that 50 to 55
-            inches suits walking for most people, and that running wants around 60 inches, with
-            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> wanting the full length. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
-            sets out which lengths suit which users.
+            inches suits walking for most people, and that running wants around 60 inches, with <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> wanting the full length. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> sets out which lengths suit which users.
           </p>
           <p>
             The practical consequence is that even a compact folding treadmill gives a walker
@@ -367,14 +321,12 @@ const schema = {
         </div>
 
         <div id="speed-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Speed and Incline: Where the Pad Runs Out</h2>
+          <h2>Speed and Incline: Where the Pad Runs Out</h2>
 <p>
             <strong>Speed.</strong> A standard walking pad stops at about 3 to 4 mph, which is a
             brisk walk for most adults and nothing more. A folding treadmill commonly reaches 10 to
             12 mph. If anyone in the house wants to jog, even occasionally, a standard pad is the
-            wrong machine. Our page on
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a>
-            explains why the belt, not the speed setting, is the real limit.
+            wrong machine. Our page on <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a> explains why the belt, not the speed setting, is the real limit.
           </p>
           <p>
             <strong>Incline.</strong> Most walking pads are flat. Some sit at a fixed angle of a few
@@ -383,9 +335,7 @@ const schema = {
             entry-level have a powered incline, commonly into the low-to-mid teens, on a deck long
             enough to use it comfortably. For a walker, incline is the main way to make a session
             harder once speed tops out, so it matters more than it first appears. Our explainer
-            on
-            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>
-            covers why.
+            on <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a> covers why.
           </p>
           <p>
             <strong>Progression.</strong> This is the quiet consequence of both. A pad user who
@@ -397,7 +347,7 @@ const schema = {
         </div>
 
         <div id="rails-console" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Handrails, Controls and Safety</h2>
+          <h2>Handrails, Controls and Safety</h2>
 <p>
             <strong>A standard walking pad has nothing to hold.</strong> Speed is set from a small
             remote or an app, and many pads have no buttons you can reach while walking. That is
@@ -410,9 +360,7 @@ const schema = {
             clothing. The rails run along the deck, so you can steady yourself throughout rather
             than reach forward for a bar. For older walkers, anyone returning from injury and
             anyone with a balance concern, that difference outweighs everything else on this page.
-            Our guide to the
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            covers machines with full rails, low step-up heights and slow starting speeds.
+            Our guide to the <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a> covers machines with full rails, low step-up heights and slow starting speeds.
           </p>
           <p>
             <strong>A 2-in-1 pad sits between them.</strong> Its rail is a single folding upright
@@ -424,16 +372,14 @@ const schema = {
           <p>
             Whichever you choose, the safety habits are the same: start the belt slowly, attach
             the safety clip where one is provided, keep the clear space behind the deck, unplug
-            the machine when it is not in use, and keep children and pets away from it. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            cover the rest. A folding treadmill adds one more: the latch that holds the folded deck
+            the machine when it is not in use, and keep children and pets away from it. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> cover the rest. A folding treadmill adds one more: the latch that holds the folded deck
             upright is a safety part, so never leave a folded machine where a child can pull on it
             and stop folding it if the latch stops engaging cleanly.
           </p>
         </div>
 
         <div id="noise-floors" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise, Floors and Living With It</h2>
+          <h2>Noise, Floors and Living With It</h2>
 <p>
             <strong>At walking pace, both are fairly quiet.</strong> The main sounds are the motor,
             the belt passing over the rollers, and your footsteps. Pads are built to run during
@@ -446,9 +392,7 @@ const schema = {
             much louder than walking, and in an upstairs flat it travels through the floor to the
             neighbours below. That is a property of running, not of the machine, and it is one
             reason some flat-dwellers choose a pad: they were only ever going to walk. If you will
-            run, a solid frame and a dense mat help more than anything else. Our guide to
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">the best treadmill mats</a>
-            covers sizes for both pads and full machines.
+            run, a solid frame and a dense mat help more than anything else. Our guide to <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">the best treadmill mats</a> covers sizes for both pads and full machines.
           </p>
           <p>
             <strong>Floors.</strong> A pad's light weight is easy on floors, but on carpet it pulls
@@ -467,7 +411,7 @@ const schema = {
         </div>
 
         <div id="price-lifespan" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Price Bands and How Long Each Lasts</h2>
+          <h2>Price Bands and How Long Each Lasts</h2>
 <p>
             The ranges below are typical bands for each format, not quotes for any product.
           </p>
@@ -487,8 +431,7 @@ const schema = {
             Lifespan changes the comparison. Under heavy desk use, two to four years is a
             realistic life for a pad. A maintained <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a> is commonly expected to last
             five to eight years, and a mid-range one eight to twelve, according to the ranges in
-            our guide to
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+            our guide to <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
             As simple arithmetic: a $400 pad that lasts three years costs about $133 a year; a $900
             folding treadmill that lasts nine years costs $100 a year. The pad is still cheaper to
             try and easier to walk away from, but once lifespan is included it is not the
@@ -501,7 +444,7 @@ const schema = {
         </div>
 
         <div id="two-in-one" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. 2-in-1 Walking Pads: The Middle Ground</h2>
+          <h2>2-in-1 Walking Pads: The Middle Ground</h2>
 <p>
             A 2-in-1 pad is the format that blurs this comparison, so it is worth being precise
             about what it does and does not borrow from a folding treadmill.
@@ -536,7 +479,7 @@ const schema = {
         </div>
 
         <div id="who-each-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Each One Suits</h2>
+          <h2>Who Each One Suits</h2>
 <p>
             Most buyers fit one of these descriptions. If you fit two, buy for the habit you
             already have rather than the one you hope to start.
@@ -544,9 +487,7 @@ const schema = {
           <ul>
             <li><strong>You want to walk while you work.</strong> A walking pad, under a standing
             desk. A folding treadmill's console and rails get in the way of a desktop, and its
-            deck is too high for most desks to clear. Our guide to the
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height you need for a walking pad</a>
-            does the sums.</li>
+            deck is too high for most desks to clear. Our guide to the <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height you need for a walking pad</a> does the sums.</li>
             <li><strong>You live in a small flat and only walk.</strong> A walking pad. It stores
             out of sight and its weight is kind to floors and stairs.</li>
             <li><strong>You walk most days and want something to hold.</strong> A 2-in-1 pad if the
@@ -567,16 +508,14 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. If You Are Shopping: What to Look For</h2>
+          <h2>If You Are Shopping: What to Look For</h2>
 <p>
             <strong>If the pad side won,</strong> check the belt length against your height and
             walking speed, the weight capacity against the heaviest user with at least 50 lb to
             spare, the stored height against the gap you plan to slide it into, and the warranty
             and seller. If you want something to hold, or the option of a light jog, a 2-in-1 is
             the obvious choice; the thing to check there is the speed with the rail folded, not
-            the headline top speed, and whether the rail locks firmly. Our pick of the
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">top walking pads with a fold-up rail or side handles</a>
-            compares five on exactly those points, from a budget 2-in-1 to a 47-inch premium deck,
+            the headline top speed, and whether the rail locks firmly. Our pick of the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">top walking pads with a fold-up rail or side handles</a> compares five on exactly those points, from a budget 2-in-1 to a 47-inch premium deck,
             and says which figures its sources disputed.
           </p>
           <p>
@@ -584,9 +523,7 @@ const schema = {
             inches if you run), the fold mechanism (a hydraulic assist if you will fold it often),
             the folded footprint against the wall you have, the weight against the stairs between
             the delivery van and the room, and whether the machine works fully without a
-            subscription. Our roundup of the
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
-            covers machines chosen with daily folding in mind.
+            subscription. Our roundup of the <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a> covers machines chosen with daily folding in mind.
           </p>
           <p>
             And if you are still unsure, the cheapest experiment is the pad. It costs less, it is
@@ -594,141 +531,154 @@ const schema = {
             going to stick — which is the question most people are really trying to answer.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad better than a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walking while you work, and for storing out of sight under furniture, yes. For running, incline training, tall users and anyone who needs side rails, a folding treadmill is better. A walking pad is not a cheaper folding treadmill; it is a different machine designed to be used while your attention is somewhere else.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which takes up less space, a walking pad or a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A walking pad, by a wide margin. It stores flat at roughly 4 to 7 inches tall and slides under a sofa, bed or desk. A folded mid-range treadmill typically stands five to six feet tall on about three feet by three feet of floor, and when unfolded it needs as much room as any treadmill, plus clear space behind.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a walking pad instead of a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not on a standard pad, which stops at about 3 to 4 mph. Many 2-in-1 pads unlock around 7.5 mph with the rail raised, which allows a short, easy jog on the longer belts. Regular running needs a longer deck and a stronger motor, so a folding treadmill with a 60-inch deck is the better choice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a 2-in-1 walking pad as good as a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No, but it is closer than a flat pad. It borrows a rail to hold and a higher top speed, and keeps a pad's flat storage. It does not borrow the long deck, the motor or full side rails, so it suits occasional jogs and steadying, not regular running or anyone who needs real support.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are walking pads quieter than folding treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At walking speed, both are fairly quiet, and pads are designed to run during calls. The bigger difference is what you do on them: running produces much more impact noise than walking, whatever the machine. If noise for neighbours below is the concern, walking on either is quieter than running on either, and a dense mat helps.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which lasts longer, a walking pad or a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually the folding treadmill. Under heavy desk use, two to four years is a realistic life for a pad, partly because pads are often run for hours a day. A maintained budget treadmill is commonly expected to last five to eight years, and better machines longer. Care and hours of use matter more than format.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Choosing Between a Pad and a Folding Treadmill</h2>
+          <p>Most regret comes from buying for the space you have without thinking about the way you will use it.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming a folding treadmill disappears</h3>
+              <p>A folded treadmill stands about five to six feet tall on a patch of floor roughly three feet square, and many owners stop folding it within months. If the room cannot spare that space permanently, or you know you will not lift and latch it every day, a pad is the more honest choice.</p>
+            </li>
+            <li>
+              <h3>Buying a pad to run on</h3>
+              <p>A standard pad stops at about 3 to 4 mph, and even a 2-in-1 with a running mode keeps a short belt and a walking motor. If anyone in the house will run regularly, buy a folding treadmill with a deck of around 60 inches rather than hoping a pad will stretch.</p>
+            </li>
+            <li>
+              <h3>Choosing a 2-in-1 for its rail when you need support</h3>
+              <p>A fold-up rail steadies you; it is not built to take your weight. For an older walker or anyone with a balance concern, a folding treadmill with full side rails, a console within reach and a slow starting speed is the safer machine. Talk to your doctor if balance is the reason you are buying.</p>
+            </li>
+            <li>
+              <h3>Ignoring deck length because you only walk</h3>
+              <p>Walking stride lengthens with speed and incline. A tall or brisk walker on a 34 to 38-inch belt shortens their step without noticing, and the discomfort shows up weeks later. If you are tall or walk fast, choose a pad of 40 inches or more, or a compact folding treadmill.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing Between a Pad and a Folding Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most regret comes from buying for the space you have without thinking about the way you will use it.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a folding treadmill disappears</h3>
-              <p class="text-gray-700 text-sm m-0">A folded treadmill stands about five to six feet tall on a patch of floor roughly three feet square, and many owners stop folding it within months. If the room cannot spare that space permanently, or you know you will not lift and latch it every day, a pad is the more honest choice.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a pad to run on</h3>
-              <p class="text-gray-700 text-sm m-0">A standard pad stops at about 3 to 4 mph, and even a 2-in-1 with a running mode keeps a short belt and a walking motor. If anyone in the house will run regularly, buy a folding treadmill with a deck of around 60 inches rather than hoping a pad will stretch.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing a 2-in-1 for its rail when you need support</h3>
-              <p class="text-gray-700 text-sm m-0">A fold-up rail steadies you; it is not built to take your weight. For an older walker or anyone with a balance concern, a folding treadmill with full side rails, a console within reach and a slow starting speed is the safer machine. Talk to your doctor if balance is the reason you are buying.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring deck length because you only walk</h3>
-              <p class="text-gray-700 text-sm m-0">Walking stride lengthens with speed and incline. A tall or brisk walker on a 34 to 38-inch belt shortens their step without noticing, and the discomfort shows up weeks later. If you are tall or walk fast, choose a pad of 40 inches or more, or a compact folding treadmill.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Comparisons and Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads-with-handrail/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads With Handrail</p>
-              <p class="text-sm text-gray-500 leading-relaxed">2-in-1 pads with a fold-up rail or side handles, and what the rail really does to the speed.</p>
-            </a>
-            <a href="/walking-pad-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The broader question: a pad against any full-size treadmill, by use, space and cost.</p>
-            </a>
-            <a href="/folding-vs-non-folding-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Folding vs Non-Folding Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What a fold costs in stability, deck and motor, and when it is worth paying for.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A walking pad stores flat and suits walking while you do
-            something else; a folding treadmill stands upright and suits real exercise.</strong>
-            The pad wins on storage, weight and price; the folding treadmill wins on deck length,
+            something else; a folding treadmill stands upright and suits real exercise.</strong> The pad wins on storage, weight and price; the folding treadmill wins on deck length,
             speed, incline and rails, and takes far more room even when folded.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you want the pad's storage with something to hold and the option of a light jog, a 2-in-1
-            is the middle ground — our roundup of
-            <a href="/best-walking-pads-with-handrail/" class="text-[#5AA9FF] font-bold no-underline">walking pads with a handrail</a>
-            compares the best of them. If you run, are tall or need full rails, buy a folding
+            is the middle ground — our roundup of <a href="/best-walking-pads-with-handrail/" class="text-[#5AA9FF] font-bold no-underline">walking pads with a handrail</a> compares the best of them. If you run, are tall or need full rails, buy a folding
             treadmill and check you will genuinely fold it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads-with-handrail/">Best Walking Pads With Handrail</a></li>
+            <li><a href="/walking-pad-vs-treadmill/">Walking Pad vs Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is a walking pad better than a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              For walking while you work, and for storing out of sight under furniture, yes. For running, incline training, tall users and anyone who needs side rails, a folding treadmill is better. A walking pad is not a cheaper folding treadmill; it is a different machine designed to be used while your attention is somewhere else.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Which takes up less space, a walking pad or a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              A walking pad, by a wide margin. It stores flat at roughly 4 to 7 inches tall and slides under a sofa, bed or desk. A folded mid-range treadmill typically stands five to six feet tall on about three feet by three feet of floor, and when unfolded it needs as much room as any treadmill, plus clear space behind.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a walking pad instead of a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              Not on a standard pad, which stops at about 3 to 4 mph. Many 2-in-1 pads unlock around 7.5 mph with the rail raised, which allows a short, easy jog on the longer belts. Regular running needs a longer deck and a stronger motor, so a folding treadmill with a 60-inch deck is the better choice.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a 2-in-1 walking pad as good as a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              No, but it is closer than a flat pad. It borrows a rail to hold and a higher top speed, and keeps a pad's flat storage. It does not borrow the long deck, the motor or full side rails, so it suits occasional jogs and steadying, not regular running or anyone who needs real support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are walking pads quieter than folding treadmills?</h3></summary>
+            <p class="faq-a">
+              At walking speed, both are fairly quiet, and pads are designed to run during calls. The bigger difference is what you do on them: running produces much more impact noise than walking, whatever the machine. If noise for neighbours below is the concern, walking on either is quieter than running on either, and a dense mat helps.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which lasts longer, a walking pad or a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually the folding treadmill. Under heavy desk use, two to four years is a realistic life for a pad, partly because pads are often run for hours a day. A maintained budget treadmill is commonly expected to last five to eight years, and better machines longer. Care and hours of use matter more than format.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Comparisons and Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads-with-handrail/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Walking Pads With Handrail</div>
+            <p class="c-blurb">2-in-1 pads with a fold-up rail or side handles, and what the rail really does to the speed.</p>
+          </a>
+          <a href="/walking-pad-vs-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Walking Pad vs Treadmill</div>
+            <p class="c-blurb">The broader question: a pad against any full-size treadmill, by use, space and cost.</p>
+          </a>
+          <a href="/folding-vs-non-folding-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Folding vs Non-Folding Treadmill</div>
+            <p class="c-blurb">What a fold costs in stability, deck and motor, and when it is worth paying for.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

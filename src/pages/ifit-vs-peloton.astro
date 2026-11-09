@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "iFIT vs Peloton (2026): Which Connected Treadmill Ecosystem Fits You?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/ifit-vs-peloton/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Who Each Suits", link: "#who-each-suits" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-ifitvspeloton" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-ifitvspeloton)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">iFIT vs Peloton: Two Ecosystems, Two Kinds of Treadmill Buyer</h1>
+      <p class="ed-dek">
+        Choosing between iFIT and Peloton is really choosing between two different ideas of what a treadmill workout should be, and two very different hardware commitments. This comparison sets out how each one works, what you are locked into, what you lose if you stop paying, and who should pick which.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          iFIT vs Peloton: <span class="text-[#5AA9FF]">Two Ecosystems, Two Kinds of Treadmill Buyer</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Choosing between iFIT and Peloton is really choosing between two different ideas of what a treadmill workout should be, and two very different hardware commitments. This comparison sets out how each one works, what you are locked into, what you lose if you stop paying, and who should pick which.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#hardware-lock-in" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Hardware Lock-In Compared
-          </a>
-          <a href="#without-subscription" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Without the Subscription
-          </a>
-        </div>
+        <a href="#hardware-lock-in" class="btn-ghost">Hardware Lock-In Compared</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On prices and tiers.</strong> We do not quote membership
-          prices or tier names on this page, because both platforms change them regularly and a
-          figure written today would mislead someone reading next year. Check the current pricing
-          on each platform directly, including whether a membership is required or bundled with
-          the hardware, before you commit. The hardware prices are discussed only in general
-          terms for the same reason.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. iFIT or Peloton? The Short Answer</a>
-          <a href="#what-ifit-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What iFIT Is</a>
-          <a href="#what-peloton-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Peloton Is</a>
-          <a href="#hardware-lock-in" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Hardware Lock-In: One Line vs a Whole Range</a>
-          <a href="#training-feel" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Each Is Actually Like to Train With</a>
-          <a href="#hardware-beneath-the-screen" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Hardware Beneath the Screen</a>
-          <a href="#without-subscription" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Happens Without the Subscription</a>
-          <a href="#app-on-any-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The App-on-Any-Treadmill Option</a>
-          <a href="#subscription-fatigue" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Subscription Fatigue: Is a Plain Treadmill and a Free App the Better Answer?</a>
-          <a href="#who-each-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Each One Suits</a>
-          <a href="#questions-before-buying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Questions to Settle Before You Choose</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           iFIT and Peloton are the two connected-fitness platforms most treadmill shoppers end up
           comparing, and they are less alike than the marketing suggests. iFIT is a content and
           control layer that sits on top of a large range of treadmills from several brands under
@@ -208,8 +147,36 @@ const schema = {
           you want a subscription at all.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On prices and tiers.</strong> We do not quote membership
+          prices or tier names on this page, because both platforms change them regularly and a
+          figure written today would mislead someone reading next year. Check the current pricing
+          on each platform directly, including whether a membership is required or bundled with
+          the hardware, before you commit. The hardware prices are discussed only in general
+          terms for the same reason.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">iFIT or Peloton? The Short Answer</a></li>
+            <li><a href="#what-ifit-is">What iFIT Is</a></li>
+            <li><a href="#what-peloton-is">What Peloton Is</a></li>
+            <li><a href="#hardware-lock-in">Hardware Lock-In: One Line vs a Whole Range</a></li>
+            <li><a href="#training-feel">What Each Is Actually Like to Train With</a></li>
+            <li><a href="#hardware-beneath-the-screen">The Hardware Beneath the Screen</a></li>
+            <li><a href="#without-subscription">What Happens Without the Subscription</a></li>
+            <li><a href="#app-on-any-treadmill">The App-on-Any-Treadmill Option</a></li>
+            <li><a href="#subscription-fatigue">Subscription Fatigue: Is a Plain Treadmill and a Free App the Better Answer?</a></li>
+            <li><a href="#who-each-suits">Who Each One Suits</a></li>
+            <li><a href="#questions-before-buying">Questions to Settle Before You Choose</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. iFIT or Peloton? The Short Answer</h2>
+          <h2>iFIT or Peloton? The Short Answer</h2>
 <p>
             <strong>Choose iFIT</strong> if you want a treadmill that changes its own speed and
             incline to follow a filmed route or a coached workout, if you want to pick from a wide
@@ -228,16 +195,12 @@ const schema = {
             <strong>Choose neither</strong> — a non-connected treadmill and a free or inexpensive
             app — if what you actually want is a reliable machine for walking and running without a
             monthly commitment. That is a perfectly good answer and it is the one a lot of people
-            arrive at after a year of paying for content they stopped watching. Our guide to
-            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart treadmills versus regular ones</a>
-            works through that decision on its own, and our list of
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            covers the machines.
+            arrive at after a year of paying for content they stopped watching. Our guide to <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart treadmills versus regular ones</a> works through that decision on its own, and our list of <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> covers the machines.
           </p>
         </div>
 
         <div id="what-ifit-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What iFIT Is</h2>
+          <h2>What iFIT Is</h2>
 <p>
             iFIT is the fitness platform behind NordicTrack, ProForm and several other brands owned
             by iFIT Health &amp; Fitness. It is not a treadmill; it is the software, the content
@@ -264,14 +227,12 @@ const schema = {
           <p>
             Beyond the content there is a tracking layer, a calendar, family profiles, and
             integration with the usual watches and fitness platforms, all of which vary by
-            membership tier and change over time. Our guide to
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            looks at the platform in depth; this page is about how it compares.
+            membership tier and change over time. Our guide to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> looks at the platform in depth; this page is about how it compares.
           </p>
         </div>
 
         <div id="what-peloton-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Peloton Is</h2>
+          <h2>What Peloton Is</h2>
 <p>
             Peloton is best known for its bike, and its treadmill, the Peloton Tread, brings the
             same formula to running and walking: a machine with a large touchscreen, built for
@@ -306,7 +267,7 @@ const schema = {
         </div>
 
         <div id="hardware-lock-in" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Hardware Lock-In: One Line vs a Whole Range</h2>
+          <h2>Hardware Lock-In: One Line vs a Whole Range</h2>
 <p>
             This is the sharpest difference between the two, and the one most likely to decide the
             question for a buyer who is honest about their budget.
@@ -318,13 +279,7 @@ const schema = {
             point and get the same content library as someone who spent several times as much; the
             more expensive machine buys a bigger screen, a better deck and a stronger motor, not
             different software. This is a real advantage if you want automatic trail runs on a
-            modest budget. Our brand guides to
-            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a>
-            and
-            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a>
-            cover the ranges, and our
-            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm comparison</a>
-            explains how the two brands split the market under one platform.
+            modest budget. Our brand guides to <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a> and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a> cover the ranges, and our <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm comparison</a> explains how the two brands split the market under one platform.
           </p>
           <p>
             <strong>Peloton ties you to Peloton.</strong> The Tread is one hardware line with a
@@ -346,14 +301,12 @@ const schema = {
           </p>
           <p>
             One more practical point: both companies sell their machines on monthly payment plans
-            that can fold the membership into the figure. Our
-            <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing guide</a>
-            explains how to separate the machine cost from the subscription cost before signing.
+            that can fold the membership into the figure. Our <a href="/treadmill-financing/" class="text-[#0F62FE] font-medium">treadmill financing guide</a> explains how to separate the machine cost from the subscription cost before signing.
           </p>
         </div>
 
         <div id="training-feel" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Each Is Actually Like to Train With</h2>
+          <h2>What Each Is Actually Like to Train With</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">iFIT: the machine follows the trail</h3>
           <p>
             An iFIT outdoor session starts with the trainer somewhere beautiful, talking, and the
@@ -395,7 +348,7 @@ const schema = {
         </div>
 
         <div id="hardware-beneath-the-screen" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Hardware Beneath the Screen</h2>
+          <h2>The Hardware Beneath the Screen</h2>
 <p>
             It is easy to compare the two platforms as software and forget that each arrives
             bolted to a treadmill, and that the treadmill is what you are standing on for the next
@@ -410,11 +363,7 @@ const schema = {
             treadmills at similar prices on the things that matter — deck length, motor headroom,
             cushioning, incline range — and the screen is more of a bonus. The practical advice is
             to ignore the platform while judging an iFIT machine and compare it with plain
-            treadmills at the same figure. Our guides to the
-            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack range</a>
-            and the
-            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm range</a>
-            do that machine by machine.
+            treadmills at the same figure. Our guides to the <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack range</a> and the <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm range</a> do that machine by machine.
           </p>
           <p>
             <strong>Peloton hardware is consistent and premium.</strong> With one line, there is no
@@ -431,14 +380,12 @@ const schema = {
             companies service their own hardware; neither is a machine you want a general <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>repair
             technician</a> improvising on. Check the warranty on the frame, motor, parts and labour
             separately, and check how long the screen and software are covered, because that is
-            where connected-treadmill complaints tend to cluster. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what the standard terms mean.
+            where connected-treadmill complaints tend to cluster. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what the standard terms mean.
           </p>
         </div>
 
         <div id="without-subscription" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Happens Without the Subscription</h2>
+          <h2>What Happens Without the Subscription</h2>
 <p>
             This matters more than most people think at purchase time, because subscriptions
             lapse. People cancel, cards expire, interest fades, and the treadmill is still in the
@@ -474,7 +421,7 @@ const schema = {
         </div>
 
         <div id="app-on-any-treadmill" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The App-on-Any-Treadmill Option</h2>
+          <h2>The App-on-Any-Treadmill Option</h2>
 <p>
             Both platforms offer their app on phones, tablets and televisions, independent of
             their hardware, and this is the most underrated route in the whole comparison. It lets
@@ -507,14 +454,12 @@ const schema = {
           </p>
           <p>
             And if the content you actually want is neither, a running platform that works with
-            any treadmill and a <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a> is a third route; our
-            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            explains how that works.
+            any treadmill and a <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a> is a third route; our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> explains how that works.
           </p>
         </div>
 
         <div id="subscription-fatigue" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Subscription Fatigue: Is a Plain Treadmill and a Free App the Better Answer?</h2>
+          <h2>Subscription Fatigue: Is a Plain Treadmill and a Free App the Better Answer?</h2>
 <p>
             Behind a lot of iFIT-versus-Peloton searches is a quieter question: do I want a
             subscription treadmill at all? It deserves a straight answer, and the straight answer
@@ -554,7 +499,7 @@ const schema = {
         </div>
 
         <div id="who-each-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Each One Suits</h2>
+          <h2>Who Each One Suits</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">iFIT suits</h3>
           <ul>
             <li><strong>Walkers and hikers.</strong> Automatic incline on a filmed trail is the
@@ -592,15 +537,14 @@ const schema = {
         </div>
 
         <div id="questions-before-buying" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Questions to Settle Before You Choose</h2>
+          <h2>Questions to Settle Before You Choose</h2>
 <p>
             Whichever way you lean, these are the things worth confirming before money changes
             hands. Most of them have answers that change, which is why we point you to the
             platforms rather than answering here.
           </p>
           <ol>
-            <li><strong>Is a membership required with the hardware, and for how long?</strong>
-            Some purchase routes bundle a commitment; some do not. Know which you are signing.</li>
+            <li><strong>Is a membership required with the hardware, and for how long?</strong> Some purchase routes bundle a commitment; some do not. Know which you are signing.</li>
             <li><strong>What does the machine do in manual mode?</strong> Ask the retailer to show
             you, or find the manufacturer's current description. Do not rely on a forum post from
             three years ago.</li>
@@ -608,9 +552,7 @@ const schema = {
             tiers that differ by hardware, number of users and app-only access, and the tier
             names and contents change. Match the tier to how many people will use it.</li>
             <li><strong>Does the hardware stand on its own?</strong> Judge the deck length, motor,
-            cushioning, frame stability and warranty as if the screen were not there. Our
-            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart vs regular treadmill guide</a>
-            explains how to do that.</li>
+            cushioning, frame stability and warranty as if the screen were not there. Our <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart vs regular treadmill guide</a> explains how to do that.</li>
             <li><strong>Can you try the app first?</strong> Both platforms offer the app
             independently. A month on your current machine, or a gym treadmill, tells you whether
             you like the format before you buy the hardware around it.</li>
@@ -627,141 +569,154 @@ const schema = {
             does well is the one who knows which kind of session they will actually turn up for.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is iFIT or Peloton better for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on what you want a session to feel like. iFIT suits people who want the machine to adjust speed and incline automatically along filmed outdoor routes, with a wide choice of treadmills at many prices. Peloton suits people who want instructor-led studio classes, a leaderboard and a live schedule, and are happy to commit to one hardware line or use the app on another machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use the Peloton app on a non-Peloton treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. The Peloton app runs on phones, tablets and televisions and carries the same class library. On another treadmill you follow the instructor's speed and incline cues on your own console, and some metrics and leaderboard functions that depend on Peloton hardware are limited. For many people it is most of the Peloton experience without the Tread.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use iFIT on any treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The iFIT app works on other treadmills, but the automatic speed and incline control that defines iFIT needs a compatible iFIT machine. On another treadmill you watch the filmed route and adjust the console by hand. The structured programmes and off-machine content transfer well; the trail-run experience does not fully.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens to an iFIT treadmill without a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Broadly, it drops back to a manual mode where you set speed and incline from the console, sometimes with a small set of built-in workouts, and the content and automatic control go away. The exact behaviour varies by machine and software version and has changed over time, so confirm it with the manufacturer for the model you are considering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a Peloton Tread work without a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In general terms it retains a manual mode with speed and incline control and a basic display, while the classes, leaderboard and most of the screen's features need a membership. Specifics have changed across hardware and software versions, so check Peloton's current statement rather than relying on older reports.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill subscription worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the content changes your behaviour — a live class or an automatic trail run that gets you on the machine when a blank console would not. If you are unsure, try the app for a month on a treadmill you already have access to. If you would resent the fee or rarely watch the content, a well-built non-connected treadmill is better value.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Choosing Between iFIT and Peloton</h2>
+          <p>The platforms are both good at what they do. The mistakes are almost always about the buyer misjudging themselves, not the software.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the screen and forgetting the treadmill</h3>
+              <p>A connected machine is a treadmill first. Judge the deck, motor, cushioning, frame stability and warranty as if the screen were switched off, and compare the result with a non-connected machine at the same price. A premium platform on a mediocre deck is still a mediocre treadmill, with an expensive distraction bolted on top.</p>
+            </li>
+            <li>
+              <h3>Not checking what manual mode does</h3>
+              <p>Subscriptions lapse. Before buying, find out what the specific machine does without a membership — from the manufacturer's current statement or a demonstration, not an old forum thread — and decide whether you would still be happy owning it in that state. If the answer is no, the subscription is doing too much of the work.</p>
+            </li>
+            <li>
+              <h3>Choosing iFIT for the trails and then using the app on another machine</h3>
+              <p>The outdoor-filmed routes are the reason to choose iFIT, and the automatic speed and incline control that makes them special needs a compatible iFIT treadmill. On a non-iFIT machine you are watching a video and pressing buttons. If the trail runs are the draw, buy an iFIT machine; if not, reconsider the platform.</p>
+            </li>
+            <li>
+              <h3>Skipping the trial because the hardware is already chosen</h3>
+              <p>Both apps can be tried on a treadmill you already have access to, at home or in a gym. A month of classes or guided runs tells you whether the format holds your attention. Buying premium hardware first and discovering you dislike the content is the most expensive version of this comparison, and it happens often.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Choosing Between iFIT and Peloton</h2>
-          <p class="text-gray-700 leading-relaxed">The platforms are both good at what they do. The mistakes are almost always about the buyer misjudging themselves, not the software.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the screen and forgetting the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">A connected machine is a treadmill first. Judge the deck, motor, cushioning, frame stability and warranty as if the screen were switched off, and compare the result with a non-connected machine at the same price. A premium platform on a mediocre deck is still a mediocre treadmill, with an expensive distraction bolted on top.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking what manual mode does</h3>
-              <p class="text-gray-700 text-sm m-0">Subscriptions lapse. Before buying, find out what the specific machine does without a membership — from the manufacturer's current statement or a demonstration, not an old forum thread — and decide whether you would still be happy owning it in that state. If the answer is no, the subscription is doing too much of the work.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing iFIT for the trails and then using the app on another machine</h3>
-              <p class="text-gray-700 text-sm m-0">The outdoor-filmed routes are the reason to choose iFIT, and the automatic speed and incline control that makes them special needs a compatible iFIT treadmill. On a non-iFIT machine you are watching a video and pressing buttons. If the trail runs are the draw, buy an iFIT machine; if not, reconsider the platform.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the trial because the hardware is already chosen</h3>
-              <p class="text-gray-700 text-sm m-0">Both apps can be tried on a treadmill you already have access to, at home or in a gym. A month of classes or guided runs tells you whether the format holds your attention. Buying premium hardware first and discovering you dislike the content is the most expensive version of this comparison, and it happens often.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Comparison Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Subscriptions</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The platform in depth: content, control, and what it costs you in practice.</p>
-            </a>
-            <a href="/smart-treadmill-vs-regular/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Smart Treadmill vs Regular</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When the screen earns its place and when the deck should get the money.</p>
-            </a>
-            <a href="/nordictrack-vs-proform/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brands</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack vs ProForm</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The two main iFIT brands and how they split the range.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">iFIT if you want the machine to follow the trail; Peloton if you want the instructor to run the room.</strong>
-            iFIT spreads across many treadmills at many prices and loses most of its magic off its
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">iFIT if you want the machine to follow the trail; Peloton if you want the instructor to run the room.</strong> iFIT spreads across many treadmills at many prices and loses most of its magic off its
             own hardware. Peloton is one premium hardware line whose classes survive well on the
             app alone. Check current pricing and manual-mode behaviour on both before you commit.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you would not be glad to own the machine with the subscription cancelled, the content
             is carrying too much of the decision. In that case a solid plain treadmill is better
-            value, and our list of
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills without subscriptions</a>
-            is the place to start.
+            value, and our list of <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills without subscriptions</a> is the place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/is-ifit-worth-it/">Is iFIT Worth It?</a></li>
+            <li><a href="/smart-treadmill-vs-regular/">Smart Treadmill vs Regular</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is iFIT or Peloton better for a treadmill?</h3></summary>
+            <p class="faq-a">
+              It depends on what you want a session to feel like. iFIT suits people who want the machine to adjust speed and incline automatically along filmed outdoor routes, with a wide choice of treadmills at many prices. Peloton suits people who want instructor-led studio classes, a leaderboard and a live schedule, and are happy to commit to one hardware line or use the app on another machine.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you use the Peloton app on a non-Peloton treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. The Peloton app runs on phones, tablets and televisions and carries the same class library. On another treadmill you follow the instructor's speed and incline cues on your own console, and some metrics and leaderboard functions that depend on Peloton hardware are limited. For many people it is most of the Peloton experience without the Tread.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you use iFIT on any treadmill?</h3></summary>
+            <p class="faq-a">
+              The iFIT app works on other treadmills, but the automatic speed and incline control that defines iFIT needs a compatible iFIT machine. On another treadmill you watch the filmed route and adjust the console by hand. The structured programmes and off-machine content transfer well; the trail-run experience does not fully.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What happens to an iFIT treadmill without a subscription?</h3></summary>
+            <p class="faq-a">
+              Broadly, it drops back to a manual mode where you set speed and incline from the console, sometimes with a small set of built-in workouts, and the content and automatic control go away. The exact behaviour varies by machine and software version and has changed over time, so confirm it with the manufacturer for the model you are considering.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a Peloton Tread work without a subscription?</h3></summary>
+            <p class="faq-a">
+              In general terms it retains a manual mode with speed and incline control and a basic display, while the classes, leaderboard and most of the screen's features need a membership. Specifics have changed across hardware and software versions, so check Peloton's current statement rather than relying on older reports.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a treadmill subscription worth it?</h3></summary>
+            <p class="faq-a">
+              Only if the content changes your behaviour — a live class or an automatic trail run that gets you on the machine when a blank console would not. If you are unsure, try the app for a month on a treadmill you already have access to. If you would resent the fee or rarely watch the content, a well-built non-connected treadmill is better value.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Comparison Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">Subscriptions</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">The platform in depth: content, control, and what it costs you in practice.</p>
+          </a>
+          <a href="/smart-treadmill-vs-regular/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Smart Treadmill vs Regular</div>
+            <p class="c-blurb">When the screen earns its place and when the deck should get the money.</p>
+          </a>
+          <a href="/nordictrack-vs-proform/" class="card">
+            <div class="c-kicker">Brands</div>
+            <div class="c-title">NordicTrack vs ProForm</div>
+            <p class="c-blurb">The two main iFIT brands and how they split the range.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

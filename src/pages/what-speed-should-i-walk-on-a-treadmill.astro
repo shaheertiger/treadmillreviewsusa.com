@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Speed Should I Walk on a Treadmill? (2026 Guide)";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-speed-should-i-walk-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,112 +109,73 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Find Your Walking Speed", link: "#talk-test" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whatspeedshouldiwalkonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whatspeedshouldiwalkonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">What Speed Should I Walk On a Treadmill?</h1>
+      <p class="ed-dek">
+        For most adults, a brisk walk lands somewhere around 3 to 3.5 mph. But the right speed is the one that produces the right effort for you, and finding it takes about five minutes on your own machine.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Speed Should I Walk <span class="text-[#5AA9FF]">On a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          For most adults, a brisk walk lands somewhere around 3 to 3.5 mph. But the right speed is the one that produces the right effort for you, and finding it takes about five minutes on your own machine.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Typical Walking Speeds
-          </a>
-          <a href="#talk-test" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Find Your Speed
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">Typical Walking Speeds</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page explains typical walking speeds so you can use the machine
-          sensibly — this site reviews equipment and does not give medical advice. If you have a
-          heart, lung, joint or balance condition, are recovering from illness or surgery, or have
-          been told to keep to a particular intensity, follow your clinician's guidance over
-          anything here.
-          <strong class="text-gray-900">On the figures below:</strong> speeds are typical ranges
-          for adults, not targets. Height, age, fitness and how a particular treadmill is
-          calibrated all move the numbers.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#average-speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Is the Average Walking Speed?</a>
-          <a href="#mph-to-pace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Walking Speeds as Minutes per Mile</a>
-          <a href="#talk-test" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Find Your Speed: The Talk Test</a>
-          <a href="#speed-vs-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Speed or Incline: The Trade-Off</a>
-          <a href="#for-weight-loss" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Speed to Walk for Weight Loss</a>
-          <a href="#for-seniors" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Walking Speed for Older Adults and Beginners</a>
-          <a href="#treadmill-vs-outdoors" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Why Treadmill Walking Can Feel Faster</a>
-          <a href="#cadence" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Steps per Minute as a Speed Check</a>
-          <a href="#when-to-jog" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. When to Switch From Walking to Jogging</a>
-          <a href="#your-machine" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Does Your Treadmill Need to Go Fast?</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Verdict</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           It is one of the first questions anyone asks on a new treadmill, and the honest answer is
           a range rather than a number. People walk at very different speeds for perfectly good
           reasons, and a speed that is brisk for one person is a stroll for another. What you can
           pin down is the effort you want — and the speed that produces it.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This page explains typical walking speeds so you can use the machine
+          sensibly — this site reviews equipment and does not give medical advice. If you have a
+          heart, lung, joint or balance condition, are recovering from illness or surgery, or have
+          been told to keep to a particular intensity, follow your clinician's guidance over
+          anything here. <strong class="text-gray-900">On the figures below:</strong> speeds are typical ranges
+          for adults, not targets. Height, age, fitness and how a particular treadmill is
+          calibrated all move the numbers.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#average-speed">What Is the Average Walking Speed?</a></li>
+            <li><a href="#mph-to-pace">Walking Speeds as Minutes per Mile</a></li>
+            <li><a href="#talk-test">How to Find Your Speed: The Talk Test</a></li>
+            <li><a href="#speed-vs-incline">Speed or Incline: The Trade-Off</a></li>
+            <li><a href="#for-weight-loss">What Speed to Walk for Weight Loss</a></li>
+            <li><a href="#for-seniors">Walking Speed for Older Adults and Beginners</a></li>
+            <li><a href="#treadmill-vs-outdoors">Why Treadmill Walking Can Feel Faster</a></li>
+            <li><a href="#cadence">Steps per Minute as a Speed Check</a></li>
+            <li><a href="#when-to-jog">When to Switch From Walking to Jogging</a></li>
+            <li><a href="#your-machine">Does Your Treadmill Need to Go Fast?</a></li>
+            <li><a href="#verdict">The Verdict</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>Most adults walk comfortably at around 2.5 to 3 mph, briskly at about 3 to
             3.5 mph, and fast at roughly 3.5 to 4.5 mph.</strong> For a typical walking workout, a
@@ -236,7 +202,7 @@ const schema = {
         </div>
 
         <div id="average-speed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Is the Average Walking Speed?</h2>
+          <h2>What Is the Average Walking Speed?</h2>
 <p>
             Measurements of how people walk in everyday life tend to put an ordinary adult walking
             pace at roughly 3 mph, with a wide spread around it. Younger adults commonly walk a
@@ -263,7 +229,7 @@ const schema = {
         </div>
 
         <div id="mph-to-pace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Walking Speeds as Minutes per Mile</h2>
+          <h2>Walking Speeds as Minutes per Mile</h2>
 <p>
             Treadmills display miles per hour, but many walkers think in minutes per mile. The
             conversion is simple: <strong>minutes per mile = 60 ÷ mph.</strong>
@@ -283,14 +249,12 @@ const schema = {
             saves less than two.
           </p>
           <p>
-            Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>
-            has the full conversion table, including running speeds and kilometres per hour.
+            Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a> has the full conversion table, including running speeds and kilometres per hour.
           </p>
         </div>
 
         <div id="talk-test" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Find Your Speed: The Talk Test</h2>
+          <h2>How to Find Your Speed: The Talk Test</h2>
 <p>
             The talk test is the simplest way to set walking intensity, and it is widely used
             because it works. It reads your effort directly rather than estimating it from speed.
@@ -317,9 +281,7 @@ const schema = {
           </ul>
           <p>
             <strong>Step four: write them down.</strong> These three numbers are your personal
-            speed scale, and you can plug them into any walking session — including the ones in our
-            <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>
-            guide. Repeat the test every couple of months; as your fitness improves, each speed
+            speed scale, and you can plug them into any walking session — including the ones in our <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a> guide. Repeat the test every couple of months; as your fitness improves, each speed
             will creep up.
           </p>
           <p>
@@ -329,7 +291,7 @@ const schema = {
         </div>
 
         <div id="speed-vs-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Speed or Incline: The Trade-Off</h2>
+          <h2>Speed or Incline: The Trade-Off</h2>
 <p>
             Once you are walking at a brisk pace, there are two ways to make the session harder:
             walk faster, or raise the grade. For most walkers, incline is the better lever.
@@ -350,9 +312,7 @@ const schema = {
           <p>
             <strong>So the practical rule is:</strong> find your brisk speed on the flat, and when
             you want more work, add grade rather than speed. Expect to slow down a little as the
-            grade rises, especially above 6 to 8%. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            covers which grades suit which goals, and how to build up to steep ones without sore
+            grade rises, especially above 6 to 8%. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> covers which grades suit which goals, and how to build up to steep ones without sore
             calves.
           </p>
           <p>
@@ -363,7 +323,7 @@ const schema = {
         </div>
 
         <div id="for-weight-loss" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Speed to Walk for Weight Loss</h2>
+          <h2>What Speed to Walk for Weight Loss</h2>
 <p>
             There is no special weight-loss speed. The energy you use walking depends on how far you
             go, how steep it is, how much you weigh and, to a lesser degree, how fast — and for
@@ -382,16 +342,14 @@ const schema = {
           </p>
           <p>
             It is also worth being honest that exercise is a more modest lever on body weight than
-            most fitness content suggests, and that what you eat matters more. Our page on
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>
-            sets out realistic sessions and expectations, and the health benefits of regular
+            most fitness content suggests, and that what you eat matters more. Our page on <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a> sets out realistic sessions and expectations, and the health benefits of regular
             walking arrive whether the scale moves or not. For nutrition questions, a registered
             dietitian is the right person to ask.
           </p>
         </div>
 
         <div id="for-seniors" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Walking Speed for Older Adults and Beginners</h2>
+          <h2>Walking Speed for Older Adults and Beginners</h2>
 <p>
             If you are older, returning to exercise after a long break, or simply <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to
             treadmills</a>, start slower than you think you need to. Speeds of 1.5 to 2.5 mph are a
@@ -418,14 +376,12 @@ const schema = {
           <p>
             Anyone with a heart condition, balance problems, a history of falls or joint issues
             should ask their doctor or physical therapist what intensity suits them. For the
-            machine side, our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            covers features such as low starting speeds, long handrails and low step-up heights.
+            machine side, our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> covers features such as low starting speeds, long handrails and low step-up heights.
           </p>
         </div>
 
         <div id="treadmill-vs-outdoors" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Why Treadmill Walking Can Feel Faster</h2>
+          <h2>Why Treadmill Walking Can Feel Faster</h2>
 <p>
             Many people find that a speed they would happily walk outdoors feels surprisingly quick
             on a treadmill, at least for the first few sessions. There are some ordinary reasons for
@@ -449,21 +405,17 @@ const schema = {
             exact, and two machines set to the same speed may not feel identical. Use the number to
             repeat and progress your own sessions on your own machine rather than to compare with a
             different treadmill or a GPS watch. If you suspect your machine is well out, our guide
-            to
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">checking treadmill speed accuracy</a>
-            shows how to test it with a stopwatch.
+            to <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">checking treadmill speed accuracy</a> shows how to test it with a stopwatch.
           </p>
           <p>
             At walking speeds, the absence of air resistance makes very little difference, so you
             do not need to add incline to match <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a>. The 1% convention is a running
-            correction. Our comparison of
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill and outdoor running</a>
-            explains where those differences do matter.
+            correction. Our comparison of <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill and outdoor running</a> explains where those differences do matter.
           </p>
         </div>
 
         <div id="cadence" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Steps per Minute as a Speed Check</h2>
+          <h2>Steps per Minute as a Speed Check</h2>
 <p>
             Another way to think about walking intensity is cadence — how many steps you take per
             minute. Research on walking has found that, for many adults, a cadence of about 100
@@ -478,14 +430,12 @@ const schema = {
           <p>
             Cadence is a useful cross-check rather than a replacement for the talk test, because it
             depends on height and leg length — taller people may reach moderate intensity at a
-            slightly lower cadence. Our guide to
-            <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile</a>
-            explains how stride length and cadence combine into distance.
+            slightly lower cadence. Our guide to <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile</a> explains how stride length and cadence combine into distance.
           </p>
         </div>
 
         <div id="when-to-jog" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. When to Switch From Walking to Jogging</h2>
+          <h2>When to Switch From Walking to Jogging</h2>
 <p>
             Most people naturally switch from walking to running somewhere around 4 to 4.5 mph.
             Below that, walking is the more efficient gait; above it, walking becomes strained and
@@ -500,9 +450,7 @@ const schema = {
             <strong>Signs you might enjoy adding jogging:</strong> your brisk walk on a decent
             incline has become easy, your fast pace keeps tipping into a jog on its own, and you
             are curious. The sensible way in is to alternate walking and jogging rather than trying
-            to run continuously. Our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K on a treadmill</a>
-            plan does exactly that over several weeks.
+            to run continuously. Our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K on a treadmill</a> plan does exactly that over several weeks.
           </p>
           <p>
             If you start jogging, add it gradually and keep most of your sessions as walks at
@@ -512,7 +460,7 @@ const schema = {
         </div>
 
         <div id="your-machine" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Does Your Treadmill Need to Go Fast?</h2>
+          <h2>Does Your Treadmill Need to Go Fast?</h2>
 <p>
             For walking, top speed is rarely the limiting factor. Almost every motorised treadmill
             covers the full walking range, and walkers spend most of their time well below the
@@ -527,16 +475,12 @@ const schema = {
             you.
           </p>
           <p>
-            Our
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a>
-            guide covers machines built for this use, and our explainer on
-            <a href="/how-fast-do-treadmills-go/" class="text-[#0F62FE] font-medium">how fast treadmills go</a>
-            covers top speeds across the different types.
+            Our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a> guide covers machines built for this use, and our explainer on <a href="/how-fast-do-treadmills-go/" class="text-[#0F62FE] font-medium">how fast treadmills go</a> covers top speeds across the different types.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Verdict</h2>
+          <h2>The Verdict</h2>
 <p>
             <strong>Start at about 3 to 3.5 mph for a brisk walk</strong> and adjust until the talk
             test says moderate: breathing quicker, still able to speak in sentences. Easy walking is
@@ -550,139 +494,154 @@ const schema = {
             your clinician — guide you rather than the chart.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should I walk on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For a typical walking workout, start around 3 to 3.5 mph — brisk for most adults — and adjust until you are breathing noticeably harder but can still talk in sentences. Easy walking is usually 2.5 to 3 mph and fast walking 3.5 to 4.5 mph. Beginners and older adults may find 1.5 to 2.5 mph a better starting point.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the average walking speed on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                An ordinary adult walking pace is roughly 3 mph, or about 20 minutes per mile, with a wide spread around it. Younger and taller people often walk a little faster, and average walking speed tends to decline gradually with age. For a treadmill workout, the brisk range of about 3 to 3.5 mph is a typical target.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is 3 mph a good walking speed on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. For many adults 3 mph is a comfortable-to-brisk pace that counts as moderate exercise, especially with a modest incline of 2 to 5%. If 3 mph feels easy enough to chat freely, raise the speed slightly or add incline; if you cannot talk in sentences, slow down.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed is brisk walking on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Brisk walking is typically about 3 to 3.5 mph, though it depends on your height and fitness. The better definition is effort: brisk means your breathing is noticeably quicker and you can still talk in sentences, but would not want to sing. A cadence of roughly 100 steps per minute or more is a useful cross-check.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should I walk on a treadmill to lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no special speed for weight loss. A brisk 3 to 3.5 mph with a modest incline is a good default because you can sustain it for 30 to 45 minutes several times a week, and consistency matters far more than speed. Diet has a bigger effect on weight than walking speed; ask a registered dietitian for nutrition advice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good treadmill walking speed for seniors?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often 1.5 to 2.5 mph to start, adjusted using the talk test rather than a chart. A moderate effort at 2.3 mph is a genuine workout. Clip on the safety key, change speed in small steps, use the handrails for balance if needed, and ask a doctor or physical therapist which intensity suits any health condition.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Walking Speed</h2>
+          <p>Most speed mistakes come from treating a number as the goal instead of the effort it is supposed to produce.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Copying someone else's speed</h3>
+              <p>Height, stride length, age and fitness all change the speed that produces a given effort. A brisk walk at 3.1 mph for a shorter walker can be the same workout as 3.6 mph for a taller one. Use the talk test to find your own easy, brisk and fast speeds, and write them down.</p>
+            </li>
+            <li>
+              <h3>Forcing a fast walk instead of adding incline</h3>
+              <p>Walking faster than about 4 to 4.5 mph usually means over-striding, which feels awkward and loads the shins. If you want more work, keep your brisk speed and raise the grade instead — it increases the effort far more efficiently without changing your mechanics much.</p>
+            </li>
+            <li>
+              <h3>Holding the rails to keep up with the belt</h3>
+              <p>If you need to grip the handrails to stay with the belt, the speed is too high. Holding on shortens your stride and takes work off your legs. A light touch for balance is fine, particularly for older walkers — but the fix for a speed you cannot manage is to slow down.</p>
+            </li>
+            <li>
+              <h3>Never retesting</h3>
+              <p>A speed that was brisk in your first month will be easy by your third. Repeat the talk test every couple of months and nudge your numbers up, or the same walk slowly stops being a workout without you noticing.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Walking Speed</h2>
-          <p class="text-gray-700 leading-relaxed">Most speed mistakes come from treating a number as the goal instead of the effort it is supposed to produce.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Copying someone else's speed</h3>
-              <p class="text-gray-700 text-sm m-0">Height, stride length, age and fitness all change the speed that produces a given effort. A brisk walk at 3.1 mph for a shorter walker can be the same workout as 3.6 mph for a taller one. Use the talk test to find your own easy, brisk and fast speeds, and write them down.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forcing a fast walk instead of adding incline</h3>
-              <p class="text-gray-700 text-sm m-0">Walking faster than about 4 to 4.5 mph usually means over-striding, which feels awkward and loads the shins. If you want more work, keep your brisk speed and raise the grade instead — it increases the effort far more efficiently without changing your mechanics much.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails to keep up with the belt</h3>
-              <p class="text-gray-700 text-sm m-0">If you need to grip the handrails to stay with the belt, the speed is too high. Holding on shortens your stride and takes work off your legs. A light touch for balance is fine, particularly for older walkers — but the fix for a speed you cannot manage is to slow down.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never retesting</h3>
-              <p class="text-gray-700 text-sm m-0">A speed that was brisk in your first month will be easy by your third. Repeat the talk test every couple of months and nudge your numbers up, or the same walk slowly stops being a workout without you noticing.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Incline Should I Walk On?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The other half of the equation — grades by goal, and how to build up.</p>
-            </a>
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace & Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Convert mph to minutes per mile and km/h for walking and running.</p>
-            </a>
-            <a href="/treadmill-walking-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Workouts</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Walking Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six structured walking sessions to plug your speeds into.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Start around 3 to 3.5 mph for a brisk walk</strong> and adjust
             until you are breathing quicker but can still talk in sentences. Easy walking is
             typically 2.5 to 3 mph and fast walking 3.5 to 4.5 mph.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Find your own speeds with the talk test, retest every couple of months, and when you want
-            a harder walk, raise the
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">incline before the speed</a>.
+            a harder walk, raise the <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">incline before the speed</a>.
             Older adults and beginners should start slower and let effort, not the chart, decide.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/what-incline-should-i-walk-on-a-treadmill/">What Incline Should I Walk On?</a></li>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace & Speed Chart</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What speed should I walk on a treadmill?</h3></summary>
+            <p class="faq-a">
+              For a typical walking workout, start around 3 to 3.5 mph — brisk for most adults — and adjust until you are breathing noticeably harder but can still talk in sentences. Easy walking is usually 2.5 to 3 mph and fast walking 3.5 to 4.5 mph. Beginners and older adults may find 1.5 to 2.5 mph a better starting point.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the average walking speed on a treadmill?</h3></summary>
+            <p class="faq-a">
+              An ordinary adult walking pace is roughly 3 mph, or about 20 minutes per mile, with a wide spread around it. Younger and taller people often walk a little faster, and average walking speed tends to decline gradually with age. For a treadmill workout, the brisk range of about 3 to 3.5 mph is a typical target.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is 3 mph a good walking speed on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. For many adults 3 mph is a comfortable-to-brisk pace that counts as moderate exercise, especially with a modest incline of 2 to 5%. If 3 mph feels easy enough to chat freely, raise the speed slightly or add incline; if you cannot talk in sentences, slow down.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What speed is brisk walking on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Brisk walking is typically about 3 to 3.5 mph, though it depends on your height and fitness. The better definition is effort: brisk means your breathing is noticeably quicker and you can still talk in sentences, but would not want to sing. A cadence of roughly 100 steps per minute or more is a useful cross-check.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What speed should I walk on a treadmill to lose weight?</h3></summary>
+            <p class="faq-a">
+              There is no special speed for weight loss. A brisk 3 to 3.5 mph with a modest incline is a good default because you can sustain it for 30 to 45 minutes several times a week, and consistency matters far more than speed. Diet has a bigger effect on weight than walking speed; ask a registered dietitian for nutrition advice.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a good treadmill walking speed for seniors?</h3></summary>
+            <p class="faq-a">
+              Often 1.5 to 2.5 mph to start, adjusted using the talk test rather than a chart. A moderate effort at 2.3 mph is a genuine workout. Clip on the safety key, change speed in small steps, use the handrails for balance if needed, and ask a doctor or physical therapist which intensity suits any health condition.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/what-incline-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">What Incline Should I Walk On?</div>
+            <p class="c-blurb">The other half of the equation — grades by goal, and how to build up.</p>
+          </a>
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace & Speed Chart</div>
+            <p class="c-blurb">Convert mph to minutes per mile and km/h for walking and running.</p>
+          </a>
+          <a href="/treadmill-walking-workouts/" class="card">
+            <div class="c-kicker">Workouts</div>
+            <div class="c-title">Treadmill Walking Workouts</div>
+            <p class="c-blurb">Six structured walking sessions to plug your speeds into.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

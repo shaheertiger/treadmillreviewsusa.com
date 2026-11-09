@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Do You Need a Surge Protector for a Treadmill? (2026)";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-surge-protector/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,109 +109,71 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Choosing a Surge Protector", link: "#what-to-look-for" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillsurgeprotector" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillsurgeprotector)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Setup</span>
+      </nav>
+      <h1 class="ed-title">Do You Need a Surge Protector for a Treadmill?</h1>
+      <p class="ed-dek">
+        Often a good idea, sometimes specified, occasionally forbidden — and your manual decides which. What is almost never right is an ordinary power strip or an extension cord. Here is why, and what to use instead.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Setup
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Do You Need a Surge <span class="text-[#5AA9FF]">Protector for a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Often a good idea, sometimes specified, occasionally forbidden — and your manual decides which. What is almost never right is an ordinary power strip or an extension cord. Here is why, and what to use instead.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#what-manuals-say" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What the Manual Says
-          </a>
-          <a href="#what-to-look-for" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Choosing a Protector
-          </a>
-        </div>
+        <a href="#what-manuals-say" class="btn-ghost">What the Manual Says</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Safety first.</strong> Your treadmill's manual is the
-          authority on how to connect it, and where it conflicts with anything on this page, follow
-          the manual. Any work on outlets, circuits, breakers or the electrical panel — including
-          installing a dedicated circuit or whole-house surge protection — is a job for a licensed
-          electrician. If a plug or outlet is hot to the touch, discoloured, buzzing or smells of
-          burning, stop using it and have it inspected.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#what-manuals-say" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Treadmill Manuals Typically Say</a>
-          <a href="#why-power-strips-fail" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Why Ordinary Power Strips Trip or Overheat</a>
-          <a href="#what-to-look-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What to Look For in a Treadmill Surge Protector</a>
-          <a href="#wear-out" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Surge Protectors Wear Out — Quietly</a>
-          <a href="#controller-board" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What a Surge Actually Damages</a>
-          <a href="#whole-house" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Whole-House Surge Protection as an Alternative</a>
-          <a href="#dedicated-circuit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Outlet and Circuit Matter More Than the Protector</a>
-          <a href="#extension-cords" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Why Extension Cords Are a Bad Idea</a>
-          <a href="#gfci" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. GFCI Outlets and Treadmills</a>
-          <a href="#unplugging" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Storms, Holidays and Unplugging</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Bottom Line on Treadmill Surge Protection</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill is one of the few things in a home that combines a powerful motor with a
           sensitive circuit board, and that combination is exactly what makes the surge question
           worth getting right. The motor is why a cheap power strip is the wrong answer. The board
           is why doing nothing is not a great one either.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Safety first.</strong> Your treadmill's manual is the
+          authority on how to connect it, and where it conflicts with anything on this page, follow
+          the manual. Any work on outlets, circuits, breakers or the electrical panel — including
+          installing a dedicated circuit or whole-house surge protection — is a job for a licensed
+          electrician. If a plug or outlet is hot to the touch, discoloured, buzzing or smells of
+          burning, stop using it and have it inspected.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#what-manuals-say">What Treadmill Manuals Typically Say</a></li>
+            <li><a href="#why-power-strips-fail">Why Ordinary Power Strips Trip or Overheat</a></li>
+            <li><a href="#what-to-look-for">What to Look For in a Treadmill Surge Protector</a></li>
+            <li><a href="#wear-out">Surge Protectors Wear Out — Quietly</a></li>
+            <li><a href="#controller-board">What a Surge Actually Damages</a></li>
+            <li><a href="#whole-house">Whole-House Surge Protection as an Alternative</a></li>
+            <li><a href="#dedicated-circuit">The Outlet and Circuit Matter More Than the Protector</a></li>
+            <li><a href="#extension-cords">Why Extension Cords Are a Bad Idea</a></li>
+            <li><a href="#gfci">GFCI Outlets and Treadmills</a></li>
+            <li><a href="#unplugging">Storms, Holidays and Unplugging</a></li>
+            <li><a href="#verdict">The Bottom Line on Treadmill Surge Protection</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             For most home treadmills, plugging into a good-quality, correctly rated surge
             protector is a sensible precaution — provided your manual does not say otherwise. The
@@ -215,8 +182,7 @@ const schema = {
           </p>
           <p>
             But three things are almost never right. An ordinary multi-outlet power strip, which is
-            not designed for a load like a treadmill motor and tends to trip or run hot. An
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>, which most manufacturers prohibit outright. And plugging the treadmill
+            not designed for a load like a treadmill motor and tends to trip or run hot. An <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>, which most manufacturers prohibit outright. And plugging the treadmill
             into a circuit it shares with other heavy appliances, which causes more nuisance trips
             and electrical stress than any surge.
           </p>
@@ -234,7 +200,7 @@ const schema = {
         </div>
 
         <div id="what-manuals-say" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Treadmill Manuals Typically Say</h2>
+          <h2>What Treadmill Manuals Typically Say</h2>
 <p>
             There is no single industry position, and it is worth being honest about that rather
             than pretending there is. Manuals differ, sometimes between models from the same
@@ -266,7 +232,7 @@ const schema = {
         </div>
 
         <div id="why-power-strips-fail" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Why Ordinary Power Strips Trip or Overheat</h2>
+          <h2>Why Ordinary Power Strips Trip or Overheat</h2>
 <p>
             The everyday power strip is designed to share one outlet among several small loads — a
             lamp, a phone charger, a monitor. A treadmill motor is a very different load, in two
@@ -275,9 +241,7 @@ const schema = {
           <p>
             <strong>Sustained current.</strong> Home treadmills typically carry a rating-plate
             figure of around 1,500 to 2,000 watts, which at 120 volts works out to roughly 12 to 17
-            amps. As our
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity guide</a>
-            explains, actual draw during a walk is usually well below that, but a heavier user, a
+            amps. As our <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity guide</a> explains, actual draw during a walk is usually well below that, but a heavier user, a
             steep incline or a fast run pushes it up. Many power strips are built with an internal
             breaker and conductors that are adequate at their rating for short periods but not for a
             heavy motor load sustained for an hour, so they warm up — and heat in a cheap strip is
@@ -299,12 +263,10 @@ const schema = {
         </div>
 
         <div id="what-to-look-for" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What to Look For in a Treadmill Surge Protector</h2>
+          <h2>What to Look For in a Treadmill Surge Protector</h2>
 <p>
             If your manual allows one, the right device is closer to an appliance-grade surge
-            protector than an office power strip. Five things matter. (The unit in our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories</a>
-            roundup was chosen against them.)
+            protector than an office power strip. Five things matter. (The unit in our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories</a> roundup was chosen against them.)
           </p>
           <p>
             <strong>A safety listing to UL 1449.</strong> UL 1449 is the US safety standard for
@@ -340,7 +302,7 @@ const schema = {
         </div>
 
         <div id="wear-out" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Surge Protectors Wear Out — Quietly</h2>
+          <h2>Surge Protectors Wear Out — Quietly</h2>
 <p>
             This is the part that most owners never hear about. The components that absorb surges
             in a typical protector — usually metal oxide varistors — degrade a little with every
@@ -368,7 +330,7 @@ const schema = {
         </div>
 
         <div id="controller-board" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What a Surge Actually Damages</h2>
+          <h2>What a Surge Actually Damages</h2>
 <p>
             Treadmill motors are fairly robust against brief electrical disturbances. The part that
             is not is the electronics — and above all the motor controller board, sometimes called
@@ -392,15 +354,13 @@ const schema = {
           </p>
           <p>
             If your treadmill is suddenly completely dead, a failed board is one possibility among
-            several, and most of the others are cheaper. Our guide to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that will not turn on</a>
-            works through the safety key, the reset switch, the outlet and the breaker before you
+            several, and most of the others are cheaper. Our guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that will not turn on</a> works through the safety key, the reset switch, the outlet and the breaker before you
             reach that conclusion.
           </p>
         </div>
 
         <div id="whole-house" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Whole-House Surge Protection as an Alternative</h2>
+          <h2>Whole-House Surge Protection as an Alternative</h2>
 <p>
             A plug-in protector guards one outlet. A whole-house surge protective device, installed
             at or next to the main electrical panel, guards every circuit in the home against
@@ -428,7 +388,7 @@ const schema = {
         </div>
 
         <div id="dedicated-circuit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Outlet and Circuit Matter More Than the Protector</h2>
+          <h2>The Outlet and Circuit Matter More Than the Protector</h2>
 <p>
             Most of the electrical problems treadmill owners actually experience — tripping
             breakers, machines cutting out mid-run, boards failing early — trace back to the circuit
@@ -450,16 +410,13 @@ const schema = {
           <p>
             Planning helps here. When you choose where the treadmill goes, put it within reach of
             a suitable outlet so the cord reaches without strain and without running under the
-            machine, across a walkway or under a
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a>.
-            Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            covers placement and clearance; add the outlet to that checklist.
+            machine, across a walkway or under a <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a>.
+            Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a> covers placement and clearance; add the outlet to that checklist.
           </p>
         </div>
 
         <div id="extension-cords" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Why Extension Cords Are a Bad Idea</h2>
+          <h2>Why Extension Cords Are a Bad Idea</h2>
 <p>
             Of all the electrical instructions in treadmill manuals, the prohibition on extension
             cords is the most consistent, and it is one to take literally.
@@ -488,7 +445,7 @@ const schema = {
         </div>
 
         <div id="gfci" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. GFCI Outlets and Treadmills</h2>
+          <h2>GFCI Outlets and Treadmills</h2>
 <p>
             A GFCI — ground-fault circuit interrupter — is a protective device built into some
             outlets and breakers that cuts power within a fraction of a second if it detects current
@@ -517,7 +474,7 @@ const schema = {
         </div>
 
         <div id="unplugging" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Storms, Holidays and Unplugging</h2>
+          <h2>Storms, Holidays and Unplugging</h2>
 <p>
             The only protection that is complete is an air gap. A treadmill that is unplugged cannot
             be damaged by a surge, whatever its size, and unplugging costs nothing.
@@ -539,14 +496,12 @@ const schema = {
             Remember that a surge, a power cut or a tripped breaker can leave a treadmill behaving
             oddly even when nothing is damaged. Error codes, a frozen console or a machine that
             will not start after an outage often clear with a full power-down: unplugged for a
-            minute, then reconnected. Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
-            covers what to check next if they do not.
+            minute, then reconnected. Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a> covers what to check next if they do not.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Bottom Line on Treadmill Surge Protection</h2>
+          <h2>The Bottom Line on Treadmill Surge Protection</h2>
 <p>
             <strong>Start with the manual.</strong> Some manufacturers recommend or sell a surge
             protector, some say to plug directly into the wall, and their instruction for your
@@ -566,146 +521,160 @@ const schema = {
             free.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a surge protector for my treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is a sensible precaution for most treadmills, because power disturbances can damage the controller board, the most expensive electronic part. But check the manual first: some manufacturers recommend or sell a specific protector, while others say to plug directly into a grounded wall outlet. Where the manual says to plug straight in, whole-house surge protection installed by an electrician is the alternative.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you plug a treadmill into a power strip?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not an ordinary multi-outlet power strip. A treadmill motor draws far more sustained current than the loads those strips are designed for, and brief current peaks when the motor starts or meets load can trip their breakers. Many strips also run warm under heavy load. If your manual allows surge protection, use a single, correctly rated, UL 1449 listed protector for the treadmill alone.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use an extension cord with a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Generally no. Most treadmill manuals prohibit extension cords, because a cord adds resistance that causes heating at the cord and its connections and voltage drop at the machine. Both are risks, the first a fire risk. If the treadmill cannot reach an outlet, move the machine or have a licensed electrician install an outlet where you need it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many joules should a treadmill surge protector have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no single correct figure, and joule ratings are the least standardised number on the box. Prioritise a UL 1449 safety listing, a low Voltage Protection Rating — often 330 to 500 volts on 120-volt devices — and a current rating that matches your outlet and plug. Among listed devices, a higher joule rating generally means more capacity before the protection wears out.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill keep tripping the breaker or power strip?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because the circuit or strip is overloaded. A treadmill under load is a large draw, and sharing a circuit with heaters, air conditioners or other appliances can trip the breaker, while ordinary power strips often trip on the motor's current peaks. Plug directly into the wall and, if the breaker still trips, have a licensed electrician assess the circuit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill be plugged into a GFCI outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                GFCI protection is required by code in many locations, such as garages, kitchens and many basements, and should never be removed or bypassed. Some treadmills trip GFCI devices occasionally because motor controllers produce small leakage currents, and a few manuals advise against them. If yours trips repeatedly, contact the manufacturer and have a licensed electrician inspect the circuit.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Power</h2>
+          <p>None of these feels risky at the time, which is why they are so common. The second is the one most likely to end in a melted plug.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Using the same power strip as everything else</h3>
+              <p>A treadmill sharing a strip with a fan, a television and chargers puts a heavy motor load through one light cord and one small breaker. It trips at best and overheats at worst. If you use a protector at all, it should serve the treadmill alone and plug directly into the wall.</p>
+            </li>
+            <li>
+              <h3>Running the treadmill from an extension cord</h3>
+              <p>Most manuals forbid it for good reason: resistance in the cord produces heat at the plug and socket and voltage drop at the machine. The fix is moving the treadmill or having an electrician add an outlet, not a heavier cord bought on a guess.</p>
+            </li>
+            <li>
+              <h3>Assuming a surge protector lasts forever</h3>
+              <p>The components inside wear down with every surge, and many devices keep supplying power after their protection is spent. Check the indicator occasionally, and replace the device after a major electrical event or when it is old, warm or discoloured.</p>
+            </li>
+            <li>
+              <h3>Ignoring the manual in favour of general advice</h3>
+              <p>Manufacturers disagree on surge protection, and some explicitly say to plug directly into the wall. Following your manual keeps the warranty position clean; if it is silent, a call to the manufacturer settles the question in minutes.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Power</h2>
-          <p class="text-gray-700 leading-relaxed">None of these feels risky at the time, which is why they are so common. The second is the one most likely to end in a melted plug.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the same power strip as everything else</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill sharing a strip with a fan, a television and chargers puts a heavy motor load through one light cord and one small breaker. It trips at best and overheats at worst. If you use a protector at all, it should serve the treadmill alone and plug directly into the wall.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running the treadmill from an extension cord</h3>
-              <p class="text-gray-700 text-sm m-0">Most manuals forbid it for good reason: resistance in the cord produces heat at the plug and socket and voltage drop at the machine. The fix is moving the treadmill or having an electrician add an outlet, not a heavier cord bought on a guess.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a surge protector lasts forever</h3>
-              <p class="text-gray-700 text-sm m-0">The components inside wear down with every surge, and many devices keep supplying power after their protection is spent. Check the indicator occasionally, and replace the device after a major electrical event or when it is old, warm or discoloured.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the manual in favour of general advice</h3>
-              <p class="text-gray-700 text-sm m-0">Manufacturers disagree on surge protection, and some explicitly say to plug directly into the wall. Following your manual keeps the warranty position clean; if it is silent, a call to the manufacturer settles the question in minutes.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Setup and Repair Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-electricity-usage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Running Costs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Much Electricity Does a Treadmill Use?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Real draw versus the rating plate, and what it costs a month.</p>
-            </a>
-            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Will Not Turn On</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The cheap checks to make before you suspect the controller board.</p>
-            </a>
-            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Symptoms, likely causes and fixes for the common faults.</p>
-            </a>
-            <a href="/best-surge-protectors-for-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Electrical</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Surge Protectors for Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Single-outlet protectors rated for the load, why a power strip is the wrong tool, and what the manual says.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Your manual decides.</strong> Some manufacturers recommend a
             surge protector and some say to plug straight into a grounded wall outlet — but almost
             none approve of an ordinary power strip or an extension cord, and the controller board
             is what a surge puts at risk.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Get the <strong class="text-white">outlet and circuit right first</strong>, using a
             licensed electrician for any circuit work, then add a UL 1449 listed protector if the
-            manual allows. See our
-            <a href="/treadmill-electricity-usage/" class="text-[#5AA9FF] font-bold no-underline">electricity guide</a>
-            for what the machine actually draws.
+            manual allows. See our <a href="/treadmill-electricity-usage/" class="text-[#5AA9FF] font-bold no-underline">electricity guide</a> for what the machine actually draws.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-electricity-usage/">How Much Electricity Does a Treadmill Use?</a></li>
+            <li><a href="/treadmill-wont-turn-on/">Treadmill Will Not Turn On</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Do I need a surge protector for my treadmill?</h3></summary>
+            <p class="faq-a">
+              It is a sensible precaution for most treadmills, because power disturbances can damage the controller board, the most expensive electronic part. But check the manual first: some manufacturers recommend or sell a specific protector, while others say to plug directly into a grounded wall outlet. Where the manual says to plug straight in, whole-house surge protection installed by an electrician is the alternative.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you plug a treadmill into a power strip?</h3></summary>
+            <p class="faq-a">
+              Not an ordinary multi-outlet power strip. A treadmill motor draws far more sustained current than the loads those strips are designed for, and brief current peaks when the motor starts or meets load can trip their breakers. Many strips also run warm under heavy load. If your manual allows surge protection, use a single, correctly rated, UL 1449 listed protector for the treadmill alone.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can I use an extension cord with a treadmill?</h3></summary>
+            <p class="faq-a">
+              Generally no. Most treadmill manuals prohibit extension cords, because a cord adds resistance that causes heating at the cord and its connections and voltage drop at the machine. Both are risks, the first a fire risk. If the treadmill cannot reach an outlet, move the machine or have a licensed electrician install an outlet where you need it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How many joules should a treadmill surge protector have?</h3></summary>
+            <p class="faq-a">
+              There is no single correct figure, and joule ratings are the least standardised number on the box. Prioritise a UL 1449 safety listing, a low Voltage Protection Rating — often 330 to 500 volts on 120-volt devices — and a current rating that matches your outlet and plug. Among listed devices, a higher joule rating generally means more capacity before the protection wears out.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill keep tripping the breaker or power strip?</h3></summary>
+            <p class="faq-a">
+              Usually because the circuit or strip is overloaded. A treadmill under load is a large draw, and sharing a circuit with heaters, air conditioners or other appliances can trip the breaker, while ordinary power strips often trip on the motor's current peaks. Plug directly into the wall and, if the breaker still trips, have a licensed electrician assess the circuit.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill be plugged into a GFCI outlet?</h3></summary>
+            <p class="faq-a">
+              GFCI protection is required by code in many locations, such as garages, kitchens and many basements, and should never be removed or bypassed. Some treadmills trip GFCI devices occasionally because motor controllers produce small leakage currents, and a few manuals advise against them. If yours trips repeatedly, contact the manufacturer and have a licensed electrician inspect the circuit.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Setup and Repair Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-electricity-usage/" class="card">
+            <div class="c-kicker">Running Costs</div>
+            <div class="c-title">How Much Electricity Does a Treadmill Use?</div>
+            <p class="c-blurb">Real draw versus the rating plate, and what it costs a month.</p>
+          </a>
+          <a href="/treadmill-wont-turn-on/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Will Not Turn On</div>
+            <p class="c-blurb">The cheap checks to make before you suspect the controller board.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Troubleshooting</div>
+            <p class="c-blurb">Symptoms, likely causes and fixes for the common faults.</p>
+          </a>
+          <a href="/best-surge-protectors-for-treadmills/" class="card">
+            <div class="c-kicker">Electrical</div>
+            <div class="c-title">Best Surge Protectors for Treadmills</div>
+            <p class="c-blurb">Single-outlet protectors rated for the load, why a power strip is the wrong tool, and what the manual says.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

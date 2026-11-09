@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Home Gym Accessories (2026): Worth Buying vs Skip";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-home-gym-accessories/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Bench: REP Fitness AB-3000 2.0 FID Adjustable Weight Bench", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besthomegymaccessories" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besthomegymaccessories)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Home Gym Accessories Worth Buying, and What to Skip</h1>
+      <p class="ed-dek">
+        Most home gym accessories are bought on impulse and forgotten in a drawer. A few change what you can do with the equipment you already own. Here are six that genuinely earn their place, what each is honestly good for, and the categories we would leave on the shelf.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Home Gym Accessories <span class="text-[#5AA9FF]">Worth Buying, and What to Skip</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most home gym accessories are bought on impulse and forgotten in a drawer. A few change what you can do with the equipment you already own. Here are six that genuinely earn their place, what each is honestly good for, and the categories we would leave on the shelf.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#skip-these" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What to Skip
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#lock-jaw-pro"><img src="https://m.media-amazon.com/images/I/41orCoeCw7L._SL500_.jpg" alt="Lock-Jaw PRO Olympic Barbell Collars" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>Lock-Jaw PRO Olympic Barbell Collars</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The accessory aisle is where home gym budgets quietly disappear. Gadgets are cheap
+          individually, easy to justify and rarely used twice. The test we applied is simple: does it
+          let you train more movements, train them more safely, or protect the house and the
+          equipment? A bench, a pull-up bar, resistance bands, proper flooring, barbell collars and a
+          jump rope pass that test for most people. The six picks below are each matched to a job,
+          and the guide after them covers what order to buy them in and what to skip entirely.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Bench:</span> <a href="#rep-ab-3000">REP Fitness AB-3000 2.0 FID Adjustable Weight Bench</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Flooring:</span> <a href="#tractor-supply-stall-mat">Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Resistance Bands:</span> <a href="#rogue-monster-bands">Rogue Monster Bands</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Pull-Up Bar:</span> <a href="#rep-wall-mounted-pull-up-bar">REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Collars:</span> <a href="#lock-jaw-pro">Lock-Jaw PRO Olympic Barbell Collars</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Jump Rope:</span> <a href="#rogue-sr-2">Rogue SR-2 Speed Rope 3.0</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           accessories, and no figure on this page is our own measurement. Each was confirmed as
           currently listed for sale on 16 October 2026 on the maker's or seller's own site (REP
@@ -368,84 +390,32 @@ const schema = {
           makers' own figures. Every brand and product type was checked against the US Consumer
           Product Safety Commission's recall database. Prices are those we saw on that date and change
           often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy, coaching or nutrition advice.
           If you have a back, shoulder, joint or heart condition, are pregnant or postpartum, or are
           returning from injury, talk to a qualified professional before starting or changing a
           strength programme.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Bench:</span>
-            <a href="#rep-ab-3000" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness AB-3000 2.0 FID Adjustable Weight Bench</a>
-            <a href="#rep-ab-3000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Flooring:</span>
-            <a href="#tractor-supply-stall-mat" class="font-bold text-gray-900 no-underline hover:underline">Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)</a>
-            <a href="#tractor-supply-stall-mat" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Resistance Bands:</span>
-            <a href="#rogue-monster-bands" class="font-bold text-gray-900 no-underline hover:underline">Rogue Monster Bands</a>
-            <a href="#rogue-monster-bands" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Pull-Up Bar:</span>
-            <a href="#rep-wall-mounted-pull-up-bar" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar</a>
-            <a href="#rep-wall-mounted-pull-up-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Collars:</span>
-            <a href="#lock-jaw-pro" class="font-bold text-gray-900 no-underline hover:underline">Lock-Jaw PRO Olympic Barbell Collars</a>
-            <a href="#lock-jaw-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Home Gym Accessories</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Accessories</a>
-          <a href="#buy-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What to Buy First</a>
-          <a href="#skip-these" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Skip These: Commonly Oversold Accessories</a>
-          <a href="#flooring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Flooring: The Accessory That Protects Everything Else</a>
-          <a href="#bench" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Choosing a Bench</a>
-          <a href="#pull-up-bars" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Pull-Up Bars: Doorway, Wall, Ceiling or Rack</a>
-          <a href="#small-kit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Bands, Collars, Ropes and Timers</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Home Gym Accessories</a></li>
+            <li><a href="#how-we-chose">How We Chose These Accessories</a></li>
+            <li><a href="#buy-first">What to Buy First</a></li>
+            <li><a href="#skip-these">Skip These: Commonly Oversold Accessories</a></li>
+            <li><a href="#flooring">Flooring: The Accessory That Protects Everything Else</a></li>
+            <li><a href="#bench">Choosing a Bench</a></li>
+            <li><a href="#pull-up-bars">Pull-Up Bars: Doorway, Wall, Ceiling or Rack</a></li>
+            <li><a href="#small-kit">Bands, Collars, Ropes and Timers</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The accessory aisle is where home gym budgets quietly disappear. Gadgets are cheap
-          individually, easy to justify and rarely used twice. The test we applied is simple: does it
-          let you train more movements, train them more safely, or protect the house and the
-          equipment? A bench, a pull-up bar, resistance bands, proper flooring, barbell collars and a
-          jump rope pass that test for most people. The six picks below are each matched to a job,
-          and the guide after them covers what order to buy them in and what to skip entirely.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Six accessories, one per job. If you are starting from nothing, the flooring and the bench
             matter most; the others make a small space far more versatile for little money.
@@ -467,16 +437,13 @@ const schema = {
           </table></div>
           <p>
             This page is about strength and general home gym kit. If your home gym is mainly a
-            treadmill, our separate
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            covers mats, lubricant, heart-rate straps and surge protection, and we do not repeat it
-            here. For the bigger pieces, start at the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
+            treadmill, our separate <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> covers mats, lubricant, heart-rate straps and surge protection, and we do not repeat it
+            here. For the bigger pieces, start at the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Home Gym Accessories</h2>
+          <h2>The 6 Best Home Gym Accessories</h2>
 <p>
             Each card gives the figures we could confirm from two sources, the price range we saw,
             and who the item suits. None of these is exciting, and that is the point: they are the
@@ -488,78 +455,67 @@ const schema = {
             than choosing one.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Accessories</h2>
+          <h2>How We Chose These Accessories</h2>
 <p>
             We have not tested these accessories. They were chosen from published specifications,
             maker product pages, independent hands-on coverage and recall records, and the claims on
@@ -598,15 +554,13 @@ const schema = {
             We deliberately left out some popular categories. A dedicated wall gym timer did not make
             the cut: the best-known one was listed as unavailable on the day, and the alternatives we
             found cost around $300, which is hard to justify when a phone timer does the job for one
-            person. Foam rollers and other recovery tools belong in our guide to
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>,
-            and lifting platforms in our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>.
+            person. Foam rollers and other recovery tools belong in our guide to <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>,
+            and lifting platforms in our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>.
           </p>
         </div>
 
         <div id="buy-first" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What to Buy First</h2>
+          <h2>What to Buy First</h2>
 <p>
             Accessories are easier to buy in the wrong order than the wrong brand. This is the order
             that makes sense for most people building a home gym around dumbbells, a barbell, or both.
@@ -626,14 +580,12 @@ const schema = {
               ceiling height and a floor that suits it.</li>
           </ol>
           <p>
-            If you have not yet bought dumbbells, our guide to
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            covers the trade-offs between mechanisms and when <a href="/best-dumbbell-sets/" class="text-[#0F62FE] font-medium" data-autolink>fixed dumbbells</a> are the better choice.
+            If you have not yet bought dumbbells, our guide to <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a> covers the trade-offs between mechanisms and when <a href="/best-dumbbell-sets/" class="text-[#0F62FE] font-medium" data-autolink>fixed dumbbells</a> are the better choice.
           </p>
         </div>
 
         <div id="skip-these" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Skip These: Commonly Oversold Accessories</h2>
+          <h2>Skip These: Commonly Oversold Accessories</h2>
 <p>
             Some accessories are not bad products; they are just bought far more often than they are
             used, or they promise something equipment cannot deliver. These are the categories we would
@@ -672,7 +624,7 @@ const schema = {
         </div>
 
         <div id="flooring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Flooring: The Accessory That Protects Everything Else</h2>
+          <h2>Flooring: The Accessory That Protects Everything Else</h2>
 <p>
             Flooring is the least glamorous purchase and the most important. It protects the floor
             from dropped weights and sliding equipment, protects the equipment from concrete, cuts
@@ -683,20 +635,15 @@ const schema = {
             budget standard for good reason. They are dense, nearly indestructible and cheap per square
             foot. The trade-offs are weight, a strong rubber smell when new, and a textured surface
             that is harder to clean. <strong>Interlocking rubber tiles</strong> are lighter, easier to
-            carry upstairs and to cut around obstacles, and cost more per square foot.
-            <strong>Rolled rubber</strong> gives a seamless finish over a whole room and tends to be
+            carry upstairs and to cut around obstacles, and cost more per square foot. <strong>Rolled rubber</strong> gives a seamless finish over a whole room and tends to be
             thinner. <strong>Foam puzzle mats</strong> are for stretching, not weights; for yoga and
-            floor work, a proper mat on top of the flooring does the job better — see our guide to
-            <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">the best yoga mats</a>.
+            floor work, a proper mat on top of the flooring does the job better — see our guide to <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">the best yoga mats</a>.
           </p>
           <p>
             For a typical dumbbell and bench area, two stall mats side by side make an 8 x 6 ft pad
             that covers a bench and room to move around it. For deadlifts and Olympic lifts, a
-            dedicated platform spreads impact better; our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
-            covers when you need one. If a treadmill shares the room, it needs a mat sized to its own
-            footprint — see our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat guide</a>.
+            dedicated platform spreads impact better; our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a> covers when you need one. If a treadmill shares the room, it needs a mat sized to its own
+            footprint — see our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat guide</a>.
           </p>
           <p>
             <strong>Upstairs rooms.</strong> Rubber flooring reduces impact noise but does not change
@@ -709,14 +656,12 @@ const schema = {
           <p>
             Air new rubber in a garage or outdoors for several days before it goes into a living
             space, and check under it after a few weeks if the floor beneath is vinyl or pale wood,
-            which some rubber products can discolour. Our
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a>
-            covers damp and temperature, which affect garage gyms in the same way.
+            which some rubber products can discolour. Our <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a> covers damp and temperature, which affect garage gyms in the same way.
           </p>
         </div>
 
         <div id="bench" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Choosing a Bench</h2>
+          <h2>Choosing a Bench</h2>
 <p>
             A bench is the accessory that adds the most exercises per dollar. The choice is between a
             flat bench, a flat-to-incline bench, and a flat-incline-decline (FID) bench like our pick.
@@ -740,15 +685,13 @@ const schema = {
             Before buying, measure where the bench will go. An adjustable bench is typically around
             four and a half to five feet long, and you need clear space around it to lower dumbbells
             to the sides and to sit up. If you plan to use it in a rack, check that the rack's depth
-            and the bench's rear foot work together; our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            covers rack sizing, and always set the rack's safeties or spotter arms when you bench
+            and the bench's rear foot work together; our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> covers rack sizing, and always set the rack's safeties or spotter arms when you bench
             alone.
           </p>
         </div>
 
         <div id="pull-up-bars" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Pull-Up Bars: Doorway, Wall, Ceiling or Rack</h2>
+          <h2>Pull-Up Bars: Doorway, Wall, Ceiling or Rack</h2>
 <p>
             A <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium" data-autolink>pull-up bar</a> is only as strong as what it is fixed to, which makes installation the real
             decision.
@@ -781,7 +724,7 @@ const schema = {
         </div>
 
         <div id="small-kit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Bands, Collars, Ropes and Timers</h2>
+          <h2>Bands, Collars, Ropes and Timers</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resistance bands</h3>
           <p>
             Looped latex bands like the Monster Bands do three jobs well: assisting pull-ups, warming up
@@ -822,15 +765,12 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If your home gym is a treadmill</strong>, most of this page is not for you yet. The
             accessories that matter for a treadmill — a mat sized to the machine, belt lubricant, a
-            surge protector, a heart-rate strap — are covered in our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>,
-            and our comparison of a
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill versus a gym membership</a>
-            may help if you are weighing strength kit against a membership.
+            surge protector, a heart-rate strap — are covered in our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>,
+            and our comparison of a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill versus a gym membership</a> may help if you are weighing strength kit against a membership.
           </p>
           <p>
             <strong>If you rent</strong>, skip the mounted pull-up bar unless your landlord agrees to the
@@ -838,9 +778,7 @@ const schema = {
           </p>
           <p>
             <strong>If you have not bought your main equipment yet</strong>, buy that first. Accessories
-            make a bench, dumbbells or a rack more useful; they do not replace them. Our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            cover the bigger decisions.
+            make a bench, dumbbells or a rack more useful; they do not replace them. Our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> cover the bigger decisions.
           </p>
           <p>
             <strong>If you train in a shared space</strong> where noise matters, a jump rope and dropped
@@ -849,148 +787,165 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best gym accessories worth buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most home gyms: rubber flooring, an adjustable bench, a few resistance bands, a pull-up bar if you can mount one properly, collars for any barbell, and a jump rope if you have the space. Each lets you train more movements, train more safely, or protect the floor and equipment. Most other accessories are optional.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I buy first for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Your main equipment first, then flooring, then a bench. Flooring protects the house from the start, and a bench roughly doubles what dumbbells or a barbell can do. Bands, a pull-up bar, collars and a rope follow. Buying a rack or storage before you own enough weights to need it is a common waste of space.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are horse stall mats good for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, for most people. They are thick, dense recycled rubber at a low cost per square foot, and they handle dumbbells, benches and most barbell work. The downsides are weight, a strong smell when new and a textured surface. Air them out for several days before using them indoors, and consider tiles if you need to carry them upstairs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a doorway pull-up bar safe?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, if the door frame is solid, has moulding for the bar to bear against, and you stay within the maker's stated limit. Doorway bars can mark the frame and limit headroom, and weight limits vary widely between listings. A bar bolted into wall studs or ceiling joists, installed as the maker specifies, is stronger and more versatile.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need collars on a barbell at home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Collars stop plates sliding off when the bar tilts, which can happen on any set, especially when pressing, racking or loading one side first. Use them every time, not just on heavy sets. Lever-style collars are quicker and hold more firmly than spring clips; check they fit your bar's sleeve diameter.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What home gym accessories are a waste of money?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sweat belts and sauna suits, electrical stimulation ab belts, thin foam puzzle mats used under heavy weights, wall timers for a single person, and gadgets that need a subscription for basic features are the categories we would skip. A storage rack bought before you own enough weights to fill it is another common one.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Home Gym Accessories</h2>
+          <p>Each of these turns a sensible accessory into money wasted or, worse, a safety problem.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Lifting on foam puzzle mats</h3>
+              <p>Foam tiles feel soft, which is exactly the problem under weights: they compress, tear and let a dropped dumbbell reach the floor beneath. They also make a bench less stable. Use dense rubber anywhere weights are lifted or set down, and keep foam for stretching and bodyweight work.</p>
+            </li>
+            <li>
+              <h3>Mounting a pull-up bar into drywall</h3>
+              <p>A rated capacity assumes the bar is fixed into solid structure with the right fixings. Plasterboard anchors will pull out under body weight, often suddenly. Find the studs or joists first, fit a backing board if the holes do not line up, and use the fixings the maker specifies — or have a tradesperson install it.</p>
+            </li>
+            <li>
+              <h3>Skipping collars on light sets</h3>
+              <p>Plates slide off when a bar tilts, and bars tilt most when you are tired, racking, or loading one side. That happens on warm-ups as much as heavy sets. Put collars on every time the bar has plates on it; lever collars make that quick enough that there is no excuse.</p>
+            </li>
+            <li>
+              <h3>Using worn resistance bands</h3>
+              <p>Latex degrades with use, sunlight and age, and a band that snaps under tension can strike your face. Check bands before each session for nicks, thinning and surface cracks, and replace them at the first sign. With tube bands, check where the rubber meets the handle or ring, which is where recent recalls describe failures.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Home Gym Accessories</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a sensible accessory into money wasted or, worse, a safety problem.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Lifting on foam puzzle mats</h3>
-              <p class="text-gray-700 text-sm m-0">Foam tiles feel soft, which is exactly the problem under weights: they compress, tear and let a dropped dumbbell reach the floor beneath. They also make a bench less stable. Use dense rubber anywhere weights are lifted or set down, and keep foam for stretching and bodyweight work.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Mounting a pull-up bar into drywall</h3>
-              <p class="text-gray-700 text-sm m-0">A rated capacity assumes the bar is fixed into solid structure with the right fixings. Plasterboard anchors will pull out under body weight, often suddenly. Find the studs or joists first, fit a backing board if the holes do not line up, and use the fixings the maker specifies — or have a tradesperson install it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping collars on light sets</h3>
-              <p class="text-gray-700 text-sm m-0">Plates slide off when a bar tilts, and bars tilt most when you are tired, racking, or loading one side. That happens on warm-ups as much as heavy sets. Put collars on every time the bar has plates on it; lever collars make that quick enough that there is no excuse.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using worn resistance bands</h3>
-              <p class="text-gray-700 text-sm m-0">Latex degrades with use, sunlight and age, and a band that snaps under tension can strike your face. Check bands before each session for nicks, thinning and surface cracks, and replace them at the first sign. With tube bands, check where the rubber meets the handle or ring, which is where recent recalls describe failures.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-adjustable-dumbbells/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Dumbbells</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Adjustable Dumbbells</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Seven sets by mechanism, the recalls that shaped the list, and adjustable versus fixed.</p>
-            </a>
-            <a href="/best-lifting-platforms/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Flooring</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lifting Platforms</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When rubber mats are not enough and a dedicated platform is worth the space.</p>
-            </a>
-            <a href="/best-recovery-tools-for-weightlifters/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Recovery Tools for Weightlifters</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Foam rollers, massage tools and what recovery kit is actually worth owning.</p>
-            </a>
-            <a href="/best-punching-bags/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Boxing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Punching Bags</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Hanging heavy bags and freestanding bags, with mounting, base fill and noise.</p>
-            </a>
-            <a href="/gymproluxe-review/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">GymProLuxe Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What we could and could not verify about the seller and its products before you buy.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Start with the floor and a bench.</strong> Two thick rubber stall
             mats and an adjustable bench such as the REP AB-3000 2.0 make every other piece of
             equipment more useful and protect the house while you use it. Add a few Monster Bands, a
             properly installed pull-up bar, collars for any barbell and a rope if you have the room,
             and you have covered almost everything a home gym needs from the accessory aisle.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Skip the gadgets that need a promise rather than a use case to justify them, treat every
             rated capacity as a maker figure that assumes correct installation, and check the recall
             database for anything with a handle, a battery or a mechanism. Then choose the main
-            equipment these accessories support —
-            <a href="/best-adjustable-dumbbells/" class="text-[#5AA9FF] font-bold no-underline">our adjustable dumbbell guide</a>
-            is a good place to start.
+            equipment these accessories support — <a href="/best-adjustable-dumbbells/" class="text-[#5AA9FF] font-bold no-underline">our adjustable dumbbell guide</a> is a good place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-adjustable-dumbbells/">Best Adjustable Dumbbells</a></li>
+            <li><a href="/best-lifting-platforms/">Best Lifting Platforms</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What are the best gym accessories worth buying?</h3></summary>
+            <p class="faq-a">
+              For most home gyms: rubber flooring, an adjustable bench, a few resistance bands, a pull-up bar if you can mount one properly, collars for any barbell, and a jump rope if you have the space. Each lets you train more movements, train more safely, or protect the floor and equipment. Most other accessories are optional.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What should I buy first for a home gym?</h3></summary>
+            <p class="faq-a">
+              Your main equipment first, then flooring, then a bench. Flooring protects the house from the start, and a bench roughly doubles what dumbbells or a barbell can do. Bands, a pull-up bar, collars and a rope follow. Buying a rack or storage before you own enough weights to need it is a common waste of space.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are horse stall mats good for a home gym?</h3></summary>
+            <p class="faq-a">
+              Yes, for most people. They are thick, dense recycled rubber at a low cost per square foot, and they handle dumbbells, benches and most barbell work. The downsides are weight, a strong smell when new and a textured surface. Air them out for several days before using them indoors, and consider tiles if you need to carry them upstairs.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a doorway pull-up bar safe?</h3></summary>
+            <p class="faq-a">
+              It can be, if the door frame is solid, has moulding for the bar to bear against, and you stay within the maker's stated limit. Doorway bars can mark the frame and limit headroom, and weight limits vary widely between listings. A bar bolted into wall studs or ceiling joists, installed as the maker specifies, is stronger and more versatile.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need collars on a barbell at home?</h3></summary>
+            <p class="faq-a">
+              Yes. Collars stop plates sliding off when the bar tilts, which can happen on any set, especially when pressing, racking or loading one side first. Use them every time, not just on heavy sets. Lever-style collars are quicker and hold more firmly than spring clips; check they fit your bar's sleeve diameter.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What home gym accessories are a waste of money?</h3></summary>
+            <p class="faq-a">
+              Sweat belts and sauna suits, electrical stimulation ab belts, thin foam puzzle mats used under heavy weights, wall timers for a single person, and gadgets that need a subscription for basic features are the categories we would skip. A storage rack bought before you own enough weights to fill it is another common one.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-adjustable-dumbbells/" class="card">
+            <div class="c-kicker">Dumbbells</div>
+            <div class="c-title">Best Adjustable Dumbbells</div>
+            <p class="c-blurb">Seven sets by mechanism, the recalls that shaped the list, and adjustable versus fixed.</p>
+          </a>
+          <a href="/best-lifting-platforms/" class="card">
+            <div class="c-kicker">Flooring</div>
+            <div class="c-title">Best Lifting Platforms</div>
+            <p class="c-blurb">When rubber mats are not enough and a dedicated platform is worth the space.</p>
+          </a>
+          <a href="/best-recovery-tools-for-weightlifters/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Recovery Tools for Weightlifters</div>
+            <p class="c-blurb">Foam rollers, massage tools and what recovery kit is actually worth owning.</p>
+          </a>
+          <a href="/best-punching-bags/" class="card">
+            <div class="c-kicker">Boxing</div>
+            <div class="c-title">Best Punching Bags</div>
+            <p class="c-blurb">Hanging heavy bags and freestanding bags, with mounting, base fill and noise.</p>
+          </a>
+          <a href="/gymproluxe-review/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">GymProLuxe Review</div>
+            <p class="c-blurb">What we could and could not verify about the seller and its products before you buy.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

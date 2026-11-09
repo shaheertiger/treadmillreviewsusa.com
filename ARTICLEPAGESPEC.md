@@ -1,5 +1,7 @@
 # Treadmill Reviews USA — Article Page Spec
 
+**Note (2026-11-09):** pages generated from `src/content/articles/` now use the editorial template described in README "Design"; this file describes the original hand-written page format, which the remaining hand-written pages still follow.
+
 **How to use this file.** Paste it into a fresh Claude session that has no context on this
 repo, or point Claude at this path. It describes exactly how an article page on
 treadmillreviewsusa.com is built so a new page comes out matching the other 40.

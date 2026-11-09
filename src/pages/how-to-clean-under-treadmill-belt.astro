@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Clean Under a Treadmill Belt (2026): The Full Method";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-clean-under-treadmill-belt/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,106 +109,67 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Start the Method", link: "#step-one" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtocleanundertreadmillbelt" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtocleanundertreadmillbelt)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Maintenance</span>
+      </nav>
+      <h1 class="ed-title">How to Clean Under a Treadmill Belt</h1>
+      <p class="ed-dek">
+        The space between belt and deck collects dust, carpet fibre and belt shedding, and that mixture is abrasive. Cleaning it takes twenty minutes annually and directly reduces the friction that kills motors.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Maintenance
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Clean Under <span class="text-[#5AA9FF]">a Treadmill Belt</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The space between belt and deck collects dust, carpet fibre and belt shedding, and that mixture is abrasive. Cleaning it takes twenty minutes annually and directly reduces the friction that kills motors.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#step-one" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Start the Method
-          </a>
-          <a href="#what-you-need" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What You Will Need
-          </a>
-        </div>
+        <a href="#step-one" class="btn-ghost">Start the Method</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="3.8k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Unplug the machine at the wall before starting.</strong>
-          Not the safety key — the plug. A treadmill motor can turn under stored energy and you
-          will have your hands under a belt. Also find your manual before you begin, because the
-          deck type determines what you can safely apply afterwards.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#why-it-matters" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why This Matters More Than It Sounds</a>
-          <a href="#what-you-need" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What You Will Need</a>
-          <a href="#step-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Step One: Unplug and Slacken the Belt</a>
-          <a href="#step-two" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Step Two: Clear the Loose Debris</a>
-          <a href="#step-three" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Step Three: Clean the Deck Surface</a>
-          <a href="#step-four" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Step Four: Clean the Belt Underside</a>
-          <a href="#step-five" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Step Five: Let It Dry Completely</a>
-          <a href="#step-six" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Step Six: Lubricate and Retension</a>
-          <a href="#how-often" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Often to Do This</a>
-          <a href="#what-you-find" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What You Find, and What It Tells You</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Everything a treadmill draws in from the room eventually ends up in the one place you
           cannot see: between the belt and the deck. Dust, carpet fibre, hair and shed belt
           material combine there into a mildly abrasive paste, and it works against the deck on
           every rotation.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Unplug the machine at the wall before starting.</strong> Not the safety key — the plug. A treadmill motor can turn under stored energy and you
+          will have your hands under a belt. Also find your manual before you begin, because the
+          deck type determines what you can safely apply afterwards.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#why-it-matters">Why This Matters More Than It Sounds</a></li>
+            <li><a href="#what-you-need">What You Will Need</a></li>
+            <li><a href="#step-one">Step One: Unplug and Slacken the Belt</a></li>
+            <li><a href="#step-two">Step Two: Clear the Loose Debris</a></li>
+            <li><a href="#step-three">Step Three: Clean the Deck Surface</a></li>
+            <li><a href="#step-four">Step Four: Clean the Belt Underside</a></li>
+            <li><a href="#step-five">Step Five: Let It Dry Completely</a></li>
+            <li><a href="#step-six">Step Six: Lubricate and Retension</a></li>
+            <li><a href="#how-often">How Often to Do This</a></li>
+            <li><a href="#what-you-find">What You Find, and What It Tells You</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="why-it-matters" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why This Matters More Than It Sounds</h2>
+          <h2>Why This Matters More Than It Sounds</h2>
 <p>
             Lubrication gets all the attention and cleaning is the step that makes it work. The two
             are not alternatives; applying fresh silicone over accumulated grit traps the abrasive
@@ -226,7 +192,7 @@ const schema = {
         </div>
 
         <div id="what-you-need" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What You Will Need</h2>
+          <h2>What You Will Need</h2>
 <p>
             Nothing specialised, and most of it is already in the house.
           </p>
@@ -249,14 +215,12 @@ const schema = {
           </p>
           <p>
             <strong>100% silicone treadmill lubricant</strong>, for afterwards — assuming your deck
-            is not pre-waxed. Our
-            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">lubricant guide</a>
-            covers which product and how to tell which deck you have.
+            is not pre-waxed. Our <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">lubricant guide</a> covers which product and how to tell which deck you have.
           </p>
         </div>
 
         <div id="step-one" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Step One: Unplug and Slacken the Belt</h2>
+          <h2>Step One: Unplug and Slacken the Belt</h2>
 <p>
             Unplug at the wall. Then find the two rear roller adjustment bolts, one at each back
             corner of the frame, usually behind a small cap or accessible through a hole in the end
@@ -280,7 +244,7 @@ const schema = {
         </div>
 
         <div id="step-two" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Step Two: Clear the Loose Debris</h2>
+          <h2>Step Two: Clear the Loose Debris</h2>
 <p>
             Before any cloth or liquid, get the loose material out. Lift the belt edge on one side
             and run the vacuum's crevice tool as far under as it will comfortably reach, working
@@ -303,7 +267,7 @@ const schema = {
         </div>
 
         <div id="step-three" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Step Three: Clean the Deck Surface</h2>
+          <h2>Step Three: Clean the Deck Surface</h2>
 <p>
             Dampen a lint-free cloth with isopropyl alcohol. Damp, not wet — you want no liquid
             running anywhere.
@@ -329,7 +293,7 @@ const schema = {
         </div>
 
         <div id="step-four" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Step Four: Clean the Belt Underside</h2>
+          <h2>Step Four: Clean the Belt Underside</h2>
 <p>
             Half the interface is the belt, and it is routinely ignored. The fabric backing holds
             residue as readily as the deck does.
@@ -352,7 +316,7 @@ const schema = {
         </div>
 
         <div id="step-five" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Step Five: Let It Dry Completely</h2>
+          <h2>Step Five: Let It Dry Completely</h2>
 <p>
             Isopropyl alcohol evaporates quickly, but "quickly" is not "instantly", and applying
             lubricant onto a surface that is still damp gives you a diluted film that does not
@@ -373,7 +337,7 @@ const schema = {
         </div>
 
         <div id="step-six" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Step Six: Lubricate and Retension</h2>
+          <h2>Step Six: Lubricate and Retension</h2>
 <p>
             With everything clean and dry, this is the ideal moment to lubricate — the whole point
             of cleaning first.
@@ -381,28 +345,22 @@ const schema = {
           <p>
             Apply <strong>about an ounce of 100% silicone</strong> along the centre third of the
             deck under the belt, using an applicator bottle rather than an aerosol. Check your
-            manual first: pre-waxed decks must never receive silicone. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the procedure in full.
+            manual first: pre-waxed decks must never receive silicone. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers the procedure in full.
           </p>
           <p>
             Then <strong>retension</strong>: turn each rear roller bolt clockwise by exactly the
             number of turns you loosened. Check with the lift test — the belt should rise about two
-            to three inches at the centre of the deck. Our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">tension guide</a>
-            covers it.
+            to three inches at the centre of the deck. Our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">tension guide</a> covers it.
           </p>
           <p>
             Plug in, run at a walking pace unloaded for three to five minutes to distribute the
             lubricant, and <strong>watch the tracking</strong>. Slackening and retensioning is the
-            most likely moment for the belt to start drifting, and our
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a>
-            covers the quarter-turn correction.
+            most likely moment for the belt to start drifting, and our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a> covers the quarter-turn correction.
           </p>
         </div>
 
         <div id="how-often" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Often to Do This</h2>
+          <h2>How Often to Do This</h2>
 <p>
             <strong>Annually</strong> for a machine in a normal heated room on a hard floor with
             average use. That is the baseline, and for many owners it is enough.
@@ -417,14 +375,12 @@ const schema = {
             You do not need the full procedure at every lubrication. The routine 40-to-50-hour
             lubrication includes a wipe of the deck and belt underside, which handles ordinary
             accumulation. This deeper clean — belt fully slackened, vacuumed, both surfaces done
-            end to end — is the annual version of that. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
-            sets out which tasks belong to which interval.
+            end to end — is the annual version of that. Our <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a> sets out which tasks belong to which interval.
           </p>
         </div>
 
         <div id="what-you-find" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What You Find, and What It Tells You</h2>
+          <h2>What You Find, and What It Tells You</h2>
 <p>
             The state of things under the belt is diagnostic, so it is worth looking rather than
             just cleaning.
@@ -435,9 +391,7 @@ const schema = {
           </p>
           <p>
             <strong>Matted fibre along the deck edges.</strong> Carpet, almost always. Consider a
-            rigid mat under the machine and shorten this interval to six months. Our
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">carpet guide</a>
-            covers why this matters for the motor as well as the deck.
+            rigid mat under the machine and shorten this interval to six months. Our <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">carpet guide</a> covers why this matters for the motor as well as the deck.
           </p>
           <p>
             <strong>A dark, sticky film.</strong> Old lubricant that has picked up debris, or the
@@ -457,7 +411,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             Unplug the machine. Loosen both rear roller bolts one full turn each, counting. Vacuum
             under the belt from both sides. Wipe the deck with a lint-free cloth damped in
@@ -474,114 +428,41 @@ const schema = {
             that makes lubrication work rather than an alternative to it.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you clean under a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Unplug the machine, loosen both rear roller bolts one full turn each, and vacuum under the belt from both sides with a crevice tool. Then wipe the deck with a lint-free cloth damped in isopropyl alcohol, working centre-outward and changing cloth faces often, and do the belt underside the same way.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should you clean under a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Annually for a machine in a normal heated room on a hard floor. Every six months if it sits on carpet, lives in a garage or basement, is used by two or more people daily, or shares a home with a shedding pet. Carpet is by far the largest single factor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I use to clean a treadmill deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Isopropyl alcohol on a lint-free microfibre cloth, damp rather than wet. It evaporates cleanly and leaves no residue. Avoid household cleaners, which leave films, and avoid paper towel or old T-shirts, which shed fibre exactly where you are trying to remove it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use compressed air to clean under a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Better not to. Compressed air drives debris into the motor compartment and into the roller bearings rather than removing it, which are the two places you least want it. A vacuum with a narrow crevice tool takes material out instead of relocating it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need to lubricate after cleaning under the belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is the ideal moment — a clean, dry deck is exactly what fresh lubricant needs. Apply about an ounce of 100% silicone along the centre third under the belt, then retension and run the machine slowly for a few minutes. Check your manual first, as pre-waxed decks must never receive silicone.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is there black powder under my treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Belt backing wearing away. A light, even distribution is normal shedding. If it is concentrated near one roller, the belt has probably been tracking off-centre for a while and rubbing — correct the tracking and inspect the belt edge for damage before it worsens.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Cleaning Under a Treadmill Belt</h2>
+          <p>The first two undo the work entirely, and the fourth is the one that turns a clean into a tracking problem.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Lubricating without cleaning first</h3>
+              <p>Fresh silicone applied over accumulated grit traps the abrasive directly against the deck, which is the friction you were trying to remove. Cleaning is not an optional extra step before lubrication — it is what makes lubrication work. Wipe the deck and belt underside and let both dry fully first.</p>
+            </li>
+            <li>
+              <h3>Using paper towel or an old T-shirt</h3>
+              <p>Both shed fibre, and you are depositing it in exactly the place you are trying to clear. Use lint-free microfibre, and change to a clean face frequently — a saturated cloth spreads residue in a thinner layer rather than removing it. You should see material transferring to the cloth.</p>
+            </li>
+            <li>
+              <h3>Blowing debris out with compressed air</h3>
+              <p>It drives fibre and grit into the motor compartment and the roller bearings instead of removing it. Those are the two places where contamination causes the most expensive problems. Use a vacuum with a narrow crevice tool, which takes the material away.</p>
+            </li>
+            <li>
+              <h3>Not counting the turns when slackening the belt</h3>
+              <p>Loosening the rear roller bolts by an unknown, possibly uneven amount means guessing at correct tension afterwards, and uneven tension is what pulls a belt off centre. Count the turns aloud, keep both sides equal, and reverse exactly at the end — then confirm with the lift test.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Cleaning Under a Treadmill Belt</h2>
-          <p class="text-gray-700 leading-relaxed">The first two undo the work entirely, and the fourth is the one that turns a clean into a tracking problem.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Lubricating without cleaning first</h3>
-              <p class="text-gray-700 text-sm m-0">Fresh silicone applied over accumulated grit traps the abrasive directly against the deck, which is the friction you were trying to remove. Cleaning is not an optional extra step before lubrication — it is what makes lubrication work. Wipe the deck and belt underside and let both dry fully first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using paper towel or an old T-shirt</h3>
-              <p class="text-gray-700 text-sm m-0">Both shed fibre, and you are depositing it in exactly the place you are trying to clear. Use lint-free microfibre, and change to a clean face frequently — a saturated cloth spreads residue in a thinner layer rather than removing it. You should see material transferring to the cloth.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Blowing debris out with compressed air</h3>
-              <p class="text-gray-700 text-sm m-0">It drives fibre and grit into the motor compartment and the roller bearings instead of removing it. Those are the two places where contamination causes the most expensive problems. Use a vacuum with a narrow crevice tool, which takes the material away.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not counting the turns when slackening the belt</h3>
-              <p class="text-gray-700 text-sm m-0">Loosening the rear roller bolts by an unknown, possibly uneven amount means guessing at correct tension afterwards, and uneven tension is what pulls a belt off centre. Count the turns aloud, keep both sides equal, and reverse exactly at the end — then confirm with the lift test.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Next Step</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Lubricate a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What to do the moment the deck is clean and dry.</p>
-            </a>
-            <a href="/how-tight-should-treadmill-belt-be/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Tension</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Tight Should a Treadmill Belt Be?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The lift test, for getting tension right after retensioning.</p>
-            </a>
-            <a href="/treadmill-maintenance-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Schedule</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Which tasks belong to which interval, across the whole year.</p>
-            </a>
-            <a href="/best-treadmill-cleaning-products/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cleaning</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Cleaning Products</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Unplug, loosen both rear bolts one turn each while counting, vacuum from both sides, then
             wipe deck and belt underside with isopropyl alcohol on lint-free cloths — working
             centre-outward and changing faces often. Dry fifteen to thirty minutes.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Then <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">lubricate</a>,
             retension by the same number of turns, and watch the tracking on the first run.
             Twenty minutes annually — six-monthly on carpet — and it is what makes lubrication
@@ -589,29 +470,118 @@ const schema = {
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-belt-lubrication/">How to Lubricate a Treadmill Belt</a></li>
+            <li><a href="/how-tight-should-treadmill-belt-be/">How Tight Should a Treadmill Belt Be?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you clean under a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Unplug the machine, loosen both rear roller bolts one full turn each, and vacuum under the belt from both sides with a crevice tool. Then wipe the deck with a lint-free cloth damped in isopropyl alcohol, working centre-outward and changing cloth faces often, and do the belt underside the same way.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How often should you clean under a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Annually for a machine in a normal heated room on a hard floor. Every six months if it sits on carpet, lives in a garage or basement, is used by two or more people daily, or shares a home with a shedding pet. Carpet is by far the largest single factor.
             </p>
+          </details>
+          <details>
+            <summary><h3>What should I use to clean a treadmill deck?</h3></summary>
+            <p class="faq-a">
+              Isopropyl alcohol on a lint-free microfibre cloth, damp rather than wet. It evaporates cleanly and leaves no residue. Avoid household cleaners, which leave films, and avoid paper towel or old T-shirts, which shed fibre exactly where you are trying to remove it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use compressed air to clean under a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Better not to. Compressed air drives debris into the motor compartment and into the roller bearings rather than removing it, which are the two places you least want it. A vacuum with a narrow crevice tool takes material out instead of relocating it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need to lubricate after cleaning under the belt?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is the ideal moment — a clean, dry deck is exactly what fresh lubricant needs. Apply about an ounce of 100% silicone along the centre third under the belt, then retension and run the machine slowly for a few minutes. Check your manual first, as pre-waxed decks must never receive silicone.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is there black powder under my treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Belt backing wearing away. A light, even distribution is normal shedding. If it is concentrated near one roller, the belt has probably been tracking off-centre for a while and rubbing — correct the tracking and inspect the belt edge for damage before it worsens.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-belt-lubrication/" class="card">
+            <div class="c-kicker">Next Step</div>
+            <div class="c-title">How to Lubricate a Treadmill Belt</div>
+            <p class="c-blurb">What to do the moment the deck is clean and dry.</p>
+          </a>
+          <a href="/how-tight-should-treadmill-belt-be/" class="card">
+            <div class="c-kicker">Tension</div>
+            <div class="c-title">How Tight Should a Treadmill Belt Be?</div>
+            <p class="c-blurb">The lift test, for getting tension right after retensioning.</p>
+          </a>
+          <a href="/treadmill-maintenance-checklist/" class="card">
+            <div class="c-kicker">Schedule</div>
+            <div class="c-title">Treadmill Maintenance Checklist</div>
+            <p class="c-blurb">Which tasks belong to which interval, across the whole year.</p>
+          </a>
+          <a href="/best-treadmill-cleaning-products/" class="card">
+            <div class="c-kicker">Cleaning</div>
+            <div class="c-title">Best Treadmill Cleaning Products</div>
+            <p class="c-blurb">Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

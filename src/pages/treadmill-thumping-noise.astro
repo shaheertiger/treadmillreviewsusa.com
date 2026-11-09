@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Thumping Noise (2026): Time the Thump to Find It";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-thumping-noise/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,114 +109,74 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Time the Thump", link: "#timing-the-thump" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillthumpingnoise" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillthumpingnoise)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Thumping, Knocking or Clunking?</h1>
+      <p class="ed-dek">
+        A thump has a rhythm, and the rhythm is the diagnosis. Work out whether it keeps time with the belt, with your feet, or with neither, and the list of suspects shrinks from a dozen to two.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Thumping, <span class="text-[#5AA9FF]">Knocking or Clunking?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A thump has a rhythm, and the rhythm is the diagnosis. Work out whether it keeps time with the belt, with your feet, or with neither, and the list of suspects shrinks from a dozen to two.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#timing-the-thump" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Time the Thump
-          </a>
-          <a href="#footstrike-thump" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Thump on Every Step
-          </a>
-        </div>
+        <a href="#timing-the-thump" class="btn-ghost">Time the Thump</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before touching the belt, deck, rollers or motor compartment. The safety key stops
-          the belt; it does not isolate the machine. If you smell burning, see sparking, notice
-          smoke, or the belt moves when the machine is off, stop using it and get it looked at —
-          those are not noise problems to diagnose at home.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#thump-vs-squeak" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. A Thump Is Not a Squeak</a>
-          <a href="#timing-the-thump" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Time It Against the Belt and Your Stride</a>
-          <a href="#belt-seam" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Once Per Revolution: The Belt Seam</a>
-          <a href="#damaged-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Once Per Revolution: A Lump, Bulge or Damaged Belt</a>
-          <a href="#debris" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Debris Under the Belt or Around a Roller</a>
-          <a href="#footstrike-thump" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. With Every Footstrike: Deck Bolts and Cushions</a>
-          <a href="#frame-and-floor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Loose Frame, Uneven Floor and Levelling Feet</a>
-          <a href="#rollers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Rollers, Bearings and the Front Pulley</a>
-          <a href="#motor-and-drive" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Motor, Flywheel and Drive Belt</a>
-          <a href="#incline-clunk" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. The Incline Motor Clunk</a>
-          <a href="#not-a-fault" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Thumps That Are Not a Fault</a>
-          <a href="#when-to-stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. When a Thump Means Stop, and What Repairs Cost</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A squeak tells you two surfaces are rubbing. A thump tells you something is hitting
           something, on a schedule — and that schedule is the most useful piece of evidence you
           will get. Most thumping treadmills can be diagnosed in ten minutes with a strip of tape
           and a watch, before a single bolt is turned.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
+          wall before touching the belt, deck, rollers or motor compartment. The safety key stops
+          the belt; it does not isolate the machine. If you smell burning, see sparking, notice
+          smoke, or the belt moves when the machine is off, stop using it and get it looked at —
+          those are not noise problems to diagnose at home.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#thump-vs-squeak">A Thump Is Not a Squeak</a></li>
+            <li><a href="#timing-the-thump">Time It Against the Belt and Your Stride</a></li>
+            <li><a href="#belt-seam">Once Per Revolution: The Belt Seam</a></li>
+            <li><a href="#damaged-belt">Once Per Revolution: A Lump, Bulge or Damaged Belt</a></li>
+            <li><a href="#debris">Debris Under the Belt or Around a Roller</a></li>
+            <li><a href="#footstrike-thump">With Every Footstrike: Deck Bolts and Cushions</a></li>
+            <li><a href="#frame-and-floor">Loose Frame, Uneven Floor and Levelling Feet</a></li>
+            <li><a href="#rollers">Rollers, Bearings and the Front Pulley</a></li>
+            <li><a href="#motor-and-drive">The Motor, Flywheel and Drive Belt</a></li>
+            <li><a href="#incline-clunk">The Incline Motor Clunk</a></li>
+            <li><a href="#not-a-fault">Thumps That Are Not a Fault</a></li>
+            <li><a href="#when-to-stop">When a Thump Means Stop, and What Repairs Cost</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="thump-vs-squeak" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. A Thump Is Not a Squeak</h2>
+          <h2>A Thump Is Not a Squeak</h2>
 <p>
             It is worth separating the two at the start, because the fixes barely overlap. A
             squeak or a creak is friction: metal on metal at a loose joint, a dry belt on a dry
-            deck, a bearing running short of grease. Our
-            <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">squeaking noise guide</a>
-            covers that family, and if what you hear is high-pitched and continuous, start there.
+            deck, a bearing running short of grease. Our <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">squeaking noise guide</a> covers that family, and if what you hear is high-pitched and continuous, start there.
           </p>
           <p>
             A thump, knock or clunk is an impact. Something with mass is moving and then stopping
@@ -231,7 +196,7 @@ const schema = {
         </div>
 
         <div id="timing-the-thump" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Time It Against the Belt and Your Stride</h2>
+          <h2>Time It Against the Belt and Your Stride</h2>
 <p>
             Every thump on a treadmill keeps one of three tempos, and telling them apart is the
             whole technique.
@@ -273,7 +238,7 @@ const schema = {
         </div>
 
         <div id="belt-seam" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Once Per Revolution: The Belt Seam</h2>
+          <h2>Once Per Revolution: The Belt Seam</h2>
 <p>
             Every treadmill belt is a flat strip joined into a loop, and the joint is the seam.
             On a good belt it is nearly invisible and makes no noise. On an old, poorly made or
@@ -291,23 +256,17 @@ const schema = {
             A brand-new belt often has a slightly noticeable seam for its first few hours, which
             usually settles as the belt beds in. A seam that thumps on an old belt does not settle;
             it gets worse, and a seam that is visibly separating is a belt to replace rather than
-            to nurse. Our guide on
-            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">when a treadmill belt is due</a>
-            covers the other signs, and
-            <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>
-            covers the job itself.
+            to nurse. Our guide on <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">when a treadmill belt is due</a> covers the other signs, and <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a> covers the job itself.
           </p>
           <p>
             One complication worth knowing: a seam noise that appeared shortly after someone
             over-tightened the belt is sometimes the tension, not the seam. A belt pulled too tight
-            bends the joint harder over the rollers. Check the lift test in our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
-            before ordering anything.
+            bends the joint harder over the rollers. Check the lift test in our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a> before ordering anything.
           </p>
         </div>
 
         <div id="damaged-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Once Per Revolution: A Lump, Bulge or Damaged Belt</h2>
+          <h2>Once Per Revolution: A Lump, Bulge or Damaged Belt</h2>
 <p>
             If the seam is clean but the tape still lands on the thump somewhere else, look at that
             section of belt closely, both sides.
@@ -333,15 +292,13 @@ const schema = {
           <p>
             <strong>A curled or frayed edge.</strong> An edge that has been rubbing on the frame
             because the belt ran off centre can curl up and slap the side rail or the roller end
-            once per revolution. That is a tracking problem first; our guide to
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a>
-            covers the adjustment, and a badly damaged edge usually means the belt is on borrowed
+            once per revolution. That is a tracking problem first; our guide to <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a> covers the adjustment, and a badly damaged edge usually means the belt is on borrowed
             time.
           </p>
         </div>
 
         <div id="debris" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Debris Under the Belt or Around a Roller</h2>
+          <h2>Debris Under the Belt or Around a Roller</h2>
 <p>
             Treadmills are low to the floor and the gap between belt and deck is an excellent trap.
             Coins, hair ties, small toys, pen lids, pet hair and the occasional screw from the
@@ -357,9 +314,7 @@ const schema = {
             Unplug, loosen the rear roller bolts a turn or two each — counting, so you can restore
             the setting — and lift the belt edge to look along the deck with a torch. Check both
             roller ends too, because hair and fibre wind tightly round the roller shafts and build
-            into a lump that knocks against the frame. Our guide to
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
-            walks through the access safely.
+            into a lump that knocks against the frame. Our guide to <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a> walks through the access safely.
           </p>
           <p>
             If what you find is a screw or a washer, do not just throw it away. Find out where it
@@ -369,7 +324,7 @@ const schema = {
         </div>
 
         <div id="footstrike-thump" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. With Every Footstrike: Deck Bolts and Cushions</h2>
+          <h2>With Every Footstrike: Deck Bolts and Cushions</h2>
 <p>
             If the thump keeps time with your feet and disappears with the belt running empty, the
             deck is moving when it should not be, or it is landing on something it should not land
@@ -406,7 +361,7 @@ const schema = {
         </div>
 
         <div id="frame-and-floor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Loose Frame, Uneven Floor and Levelling Feet</h2>
+          <h2>Loose Frame, Uneven Floor and Levelling Feet</h2>
 <p>
             The next ring out from the deck is the frame, and beyond that the floor. Both produce
             footstrike-timed thumps, and the floor is the one people forget.
@@ -432,15 +387,13 @@ const schema = {
             the floor flexes under a running user and booms like a drum, and the thump you hear
             may be the joists rather than the machine. On thick carpet, the feet sink unevenly and
             the frame works against itself. A firm equipment mat helps in both cases, and our guide
-            to
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">using a treadmill on carpet</a>
-            covers what to put underneath. If the thump is much louder downstairs than in the room
+            to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">using a treadmill on carpet</a> covers what to put underneath. If the thump is much louder downstairs than in the room
             itself, it is mostly transmitted noise, and the fix is isolation rather than repair.
           </p>
         </div>
 
         <div id="rollers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Rollers, Bearings and the Front Pulley</h2>
+          <h2>Rollers, Bearings and the Front Pulley</h2>
 <p>
             Rollers turn fast enough that their faults usually sound like a rhythmic knock or a
             throb rather than a slow thump, and the rhythm rises sharply with speed. Run the machine
@@ -473,7 +426,7 @@ const schema = {
         </div>
 
         <div id="motor-and-drive" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Motor, Flywheel and Drive Belt</h2>
+          <h2>The Motor, Flywheel and Drive Belt</h2>
 <p>
             Under the motor hood, the drive motor turns a flywheel and a pulley, and a short ribbed
             drive belt connects it to the front roller. All three can knock, and all three are
@@ -502,15 +455,13 @@ const schema = {
           </p>
           <p>
             While the hood is off, look at the general condition of the compartment. A layer of
-            dust and belt debris is common and worth clearing — our guide to
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>
-            covers doing it without damaging anything. Do not touch the controller board, and if
+            dust and belt debris is common and worth clearing — our guide to <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a> covers doing it without damaging anything. Do not touch the controller board, and if
             anything looks scorched or melted, stop there.
           </p>
         </div>
 
         <div id="incline-clunk" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. The Incline Motor Clunk</h2>
+          <h2>The Incline Motor Clunk</h2>
 <p>
             Some clunks have nothing to do with the belt at all and happen only when the incline
             changes or when the machine is set at a grade. Changing the incline with nobody on the
@@ -533,15 +484,13 @@ const schema = {
           </p>
           <p>
             If the incline also behaves badly — stops at one grade, moves one way only, or throws
-            an error — the noise is a symptom of a wider fault. Our guide to a
-            <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline that is not working</a>
-            covers that separately. Never put hands or feet under the deck while the incline is
+            an error — the noise is a symptom of a wider fault. Our guide to a <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline that is not working</a> covers that separately. Never put hands or feet under the deck while the incline is
             moving; the lift mechanism closes with considerable force.
           </p>
         </div>
 
         <div id="not-a-fault" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Thumps That Are Not a Fault</h2>
+          <h2>Thumps That Are Not a Fault</h2>
 <p>
             Before anyone orders a part, it is worth ruling out the noises that come from use
             rather than from the machine.
@@ -569,7 +518,7 @@ const schema = {
         </div>
 
         <div id="when-to-stop" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. When a Thump Means Stop, and What Repairs Cost</h2>
+          <h2>When a Thump Means Stop, and What Repairs Cost</h2>
 <p>
             Most thumps are worth fixing within the week rather than within the hour. A few are
             not, and they deserve stating plainly.
@@ -591,149 +540,159 @@ const schema = {
             treat these as typical ranges rather than quotes: deck cushions and isolators are
             usually inexpensive; a drive belt is commonly a modest part cost; a replacement running
             belt typically runs from around $80 to $250; and a roller somewhere in a similar band.
-            Professional labour adds to all of them, and our
-            <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
-            covers when a repair stops making sense against the value of the machine. If you are
-            still not sure where the noise is coming from, the wider
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            sorts faults by symptom.
+            Professional labour adds to all of them, and our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a> covers when a repair stops making sense against the value of the machine. If you are
+            still not sure where the noise is coming from, the wider <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> sorts faults by symptom.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill make a thumping noise every few seconds?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A slow, regular thump with nobody on the machine is almost always the running belt — usually a stiff or lifting seam, a bulge from delamination, or something stuck to the underside — because the belt is the slowest-turning part. Mark the belt with tape, run it at low speed, and see whether the thump arrives each time the mark passes a roller.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill thump when I walk on it but not when it runs empty?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A thump that keeps time with your footstrike and disappears with the belt running empty is structural. The usual causes are loose deck mounting bolts, hardened or missing deck cushions, a loose frame or folding joint, or a levelling foot that is not touching the floor so the frame rocks on every step.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill belt seam supposed to make noise?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A new belt can have a slightly noticeable seam for its first few hours, which usually settles. On an older belt, a seam that thumps has usually stiffened or started to lift, and it tends to get worse rather than better. A seam that is visibly separating means the belt should be replaced. Over-tension can also make a seam noisier, so check tension first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can debris under the belt cause a knocking noise?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is common. Coins, hair ties, small toys and stray screws get carried round under the belt and knock as they reach a roller. Debris often gives a slightly irregular knock because the object moves. Unplug the machine, slacken the belt by counted turns, look along the deck with a torch, and check the roller ends for wound-on hair and fibre.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill clunk when the incline changes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A whirr during incline travel is normal. A clunk at the start or end of travel, or a knock while the deck moves, usually means play in the lift mechanism — a loose incline motor mounting bolt, a worn pivot bushing, or slack at the lift screw. If the incline also stops at one level or throws an error, treat it as an incline fault rather than a noise.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to keep using a treadmill that is thumping?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often for a short while, but not always. Stop if the belt is delaminating or tearing, the belt hesitates or jerks under your foot, the deck visibly moves when you step on it, a folding latch is not secure, or there is a heavy throb from the motor or any burning smell. Other thumps should still be fixed promptly because impacts load the surrounding parts.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Chasing a Thump</h2>
+          <p>Most wasted money on treadmill noises comes from skipping the timing test and going straight to a part. These four are the usual ways it happens.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating a thump like a squeak</h3>
+              <p>Lubricating the deck is the right answer to a dry, rubbing belt and the wrong answer to an impact. A thump is something hitting something on a schedule; silicone will not quieten a lifting seam, a loose deck bolt or a rocking foot, and too much of it can make a belt slip.</p>
+            </li>
+            <li>
+              <h3>Ordering a belt before checking tension</h3>
+              <p>A belt tightened well past correct bends its seam harder over the rollers, loads the bearings and can create the very thump that makes people think the belt is finished. The lift test takes thirty seconds and costs nothing. Do it before buying anything.</p>
+            </li>
+            <li>
+              <h3>Ignoring the floor</h3>
+              <p>A levelling foot clear of the floor makes the frame rock and thump on every step, and an upstairs timber floor can boom like a drum under a running user. Press each corner, level the frame and consider a firm mat before taking the machine apart.</p>
+            </li>
+            <li>
+              <h3>Over-tightening deck bolts</h3>
+              <p>When a deck thumps, the instinct is to crank its bolts down hard. Many thread into inserts in the board or into captive nuts, and forcing them crushes the deck or strips the thread — turning a loose bolt into a deck repair. Snug, evenly, and check the cushions instead.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Chasing a Thump</h2>
-          <p class="text-gray-700 leading-relaxed">Most wasted money on treadmill noises comes from skipping the timing test and going straight to a part. These four are the usual ways it happens.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating a thump like a squeak</h3>
-              <p class="text-gray-700 text-sm m-0">Lubricating the deck is the right answer to a dry, rubbing belt and the wrong answer to an impact. A thump is something hitting something on a schedule; silicone will not quieten a lifting seam, a loose deck bolt or a rocking foot, and too much of it can make a belt slip.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a belt before checking tension</h3>
-              <p class="text-gray-700 text-sm m-0">A belt tightened well past correct bends its seam harder over the rollers, loads the bearings and can create the very thump that makes people think the belt is finished. The lift test takes thirty seconds and costs nothing. Do it before buying anything.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the floor</h3>
-              <p class="text-gray-700 text-sm m-0">A levelling foot clear of the floor makes the frame rock and thump on every step, and an upstairs timber floor can boom like a drum under a running user. Press each corner, level the frame and consider a firm mat before taking the machine apart.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-tightening deck bolts</h3>
-              <p class="text-gray-700 text-sm m-0">When a deck thumps, the instinct is to crank its bolts down hard. Many thread into inserts in the board or into captive nuts, and forcing them crushes the deck or strips the thread — turning a loose bolt into a deck repair. Snug, evenly, and check the cushions instead.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Diagnosis Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-squeaking-noise/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Making a Squeaking Noise</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The friction family: bolts, bearings, dry decks and the incline motor.</p>
-            </a>
-            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Troubleshooting</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every common fault sorted by symptom, with what you can fix yourself.</p>
-            </a>
-            <a href="/how-to-replace-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Maintenance</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Replace a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Measuring, ordering and fitting a new belt when the seam is finished.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Time it before you touch it.</strong> A slow thump every few
             seconds with the belt running empty is the belt — usually the seam, a bulge or something
             stuck underneath. A thump on every footstrike is the deck, its cushions, the frame or
             the floor. A fast knock or throb is a roller, the drive belt or the motor.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Start with the free fixes: tension, levelling, debris and bolts. Stop using the machine if
             the belt is delaminating or the deck moves underfoot, and if the noise is a high-pitched
-            rub rather than an impact, the
-            <a href="/treadmill-squeaking-noise/" class="text-[#5AA9FF] font-bold no-underline">squeaking noise guide</a>
-            is the better place to start.
+            rub rather than an impact, the <a href="/treadmill-squeaking-noise/" class="text-[#5AA9FF] font-bold no-underline">squeaking noise guide</a> is the better place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-squeaking-noise/">Treadmill Making a Squeaking Noise</a></li>
+            <li><a href="/treadmill-troubleshooting/">Treadmill Troubleshooting Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why does my treadmill make a thumping noise every few seconds?</h3></summary>
+            <p class="faq-a">
+              A slow, regular thump with nobody on the machine is almost always the running belt — usually a stiff or lifting seam, a bulge from delamination, or something stuck to the underside — because the belt is the slowest-turning part. Mark the belt with tape, run it at low speed, and see whether the thump arrives each time the mark passes a roller.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill thump when I walk on it but not when it runs empty?</h3></summary>
+            <p class="faq-a">
+              A thump that keeps time with your footstrike and disappears with the belt running empty is structural. The usual causes are loose deck mounting bolts, hardened or missing deck cushions, a loose frame or folding joint, or a levelling foot that is not touching the floor so the frame rocks on every step.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a treadmill belt seam supposed to make noise?</h3></summary>
+            <p class="faq-a">
+              A new belt can have a slightly noticeable seam for its first few hours, which usually settles. On an older belt, a seam that thumps has usually stiffened or started to lift, and it tends to get worse rather than better. A seam that is visibly separating means the belt should be replaced. Over-tension can also make a seam noisier, so check tension first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can debris under the belt cause a knocking noise?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is common. Coins, hair ties, small toys and stray screws get carried round under the belt and knock as they reach a roller. Debris often gives a slightly irregular knock because the object moves. Unplug the machine, slacken the belt by counted turns, look along the deck with a torch, and check the roller ends for wound-on hair and fibre.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill clunk when the incline changes?</h3></summary>
+            <p class="faq-a">
+              A whirr during incline travel is normal. A clunk at the start or end of travel, or a knock while the deck moves, usually means play in the lift mechanism — a loose incline motor mounting bolt, a worn pivot bushing, or slack at the lift screw. If the incline also stops at one level or throws an error, treat it as an incline fault rather than a noise.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to keep using a treadmill that is thumping?</h3></summary>
+            <p class="faq-a">
+              Often for a short while, but not always. Stop if the belt is delaminating or tearing, the belt hesitates or jerks under your foot, the deck visibly moves when you step on it, a folding latch is not secure, or there is a heavy throb from the motor or any burning smell. Other thumps should still be fixed promptly because impacts load the surrounding parts.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-squeaking-noise/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Making a Squeaking Noise</div>
+            <p class="c-blurb">The friction family: bolts, bearings, dry decks and the incline motor.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Troubleshooting</div>
+            <div class="c-title">Treadmill Troubleshooting Guide</div>
+            <p class="c-blurb">Every common fault sorted by symptom, with what you can fix yourself.</p>
+          </a>
+          <a href="/how-to-replace-treadmill-belt/" class="card">
+            <div class="c-kicker">Maintenance</div>
+            <div class="c-title">How to Replace a Treadmill Belt</div>
+            <p class="c-blurb">Measuring, ordering and fitting a new belt when the seam is finished.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

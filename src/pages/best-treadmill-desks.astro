@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Desks (2026): Integrated Sets and Desks for a Pad";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-desks/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: UPLIFT Treadmill Desk (V3 Desk + Inclining Walking Pad)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmilldesks" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmilldesks)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmill Desks Sets and Desks for a Pad</h1>
+      <p class="ed-dek">
+        A treadmill desk is either a desk and treadmill sold together, or a standing desk with a walking pad slid underneath. Both work. What decides whether yours does is the desk: whether it rises high enough once you are standing on a deck, and whether it stays still while you walk.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmill Desks <span class="text-[#5AA9FF]">Sets and Desks for a Pad</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill desk is either a desk and treadmill sold together, or a standing desk with a walking pad slid underneath. Both work. What decides whether yours does is the desk: whether it rises high enough once you are standing on a deck, and whether it stays still while you walk.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#height-range" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Check the Height You Need
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#vari-comfortedge"><img src="https://m.media-amazon.com/images/I/41lWv2G5BWL._SL500_.jpg" alt="Vari Electric Standing Desk with ComfortEdge" width="500" height="500" decoding="async" /></a>
+          <a href="#uplift-v3-desk-only"><img src="https://m.media-amazon.com/images/I/31jDPAgcLxL._SL500_.jpg" alt="UPLIFT V3 Standing Desk (Desk Only)" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+        <figcaption>Vari Electric Standing Desk with ComfortEdge · UPLIFT V3 Standing Desk (Desk Only)</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          There are two ways to buy a treadmill desk. The first is an integrated set: a standing
+          desk and a treadmill base sold together by one company, delivered together and supported
+          by one warranty desk. The second is to buy a standing desk on its own and put a walking
+          pad underneath it — either one you already own, or one bought separately. The second
+          route is how most people end up with a treadmill desk, and it is usually cheaper, but it
+          puts the job of checking compatibility on you. This page covers both, says on every card
+          which kind it is, and spends most of its length on the two things that decide whether a
+          desk works with a treadmill under it: height range and stability.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#uplift-treadmill-desk">UPLIFT Treadmill Desk (V3 Desk + Inclining Walking Pad)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Premium:</span> <a href="#imovr-lander-unsit">iMovR Lander Treadmill Desk with Unsit Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Stable Desk:</span> <a href="#flexispot-e7-plus">FlexiSpot E7 Plus Standing Desk (4-Leg)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Typing Comfort:</span> <a href="#vari-comfortedge">Vari Electric Standing Desk with ComfortEdge</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for an Existing Pad:</span> <a href="#uplift-v3-desk-only">UPLIFT V3 Standing Desk (Desk Only)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> Specifications, prices and
           warranty terms were checked on 13 October 2026 against each maker's own product page, at
           least one retailer or independent review, and, for the integrated sets, the makers'
@@ -342,84 +363,30 @@ const schema = {
           out on its US site when we checked, and we could not reach Rebel Desk's site or find a
           current US listing. We earn a commission if you buy through the Amazon links on this
           page; it does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#uplift-treadmill-desk" class="font-bold text-gray-900 no-underline hover:underline">UPLIFT Treadmill Desk (V3 Desk + Inclining Walking Pad)</a>
-            <a href="#uplift-treadmill-desk" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Premium:</span>
-            <a href="#imovr-lander-unsit" class="font-bold text-gray-900 no-underline hover:underline">iMovR Lander Treadmill Desk with Unsit Treadmill</a>
-            <a href="#imovr-lander-unsit" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Stable Desk:</span>
-            <a href="#flexispot-e7-plus" class="font-bold text-gray-900 no-underline hover:underline">FlexiSpot E7 Plus Standing Desk (4-Leg)</a>
-            <a href="#flexispot-e7-plus" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Typing Comfort:</span>
-            <a href="#vari-comfortedge" class="font-bold text-gray-900 no-underline hover:underline">Vari Electric Standing Desk with ComfortEdge</a>
-            <a href="#vari-comfortedge" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for an Existing Pad:</span>
-            <a href="#uplift-v3-desk-only" class="font-bold text-gray-900 no-underline hover:underline">UPLIFT V3 Standing Desk (Desk Only)</a>
-            <a href="#uplift-v3-desk-only" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmill Desks</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Treadmill Desks</a>
-          <a href="#two-kinds" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Integrated Set or Desk Plus Pad?</a>
-          <a href="#height-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Desk Height Range: Your Height Plus the Deck</a>
-          <a href="#wobble" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Wobble at Walking Height</a>
-          <a href="#ergonomics" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Keyboard, Monitor and Typing Speed</a>
-          <a href="#cables-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Cable Management, Clearance and Floor Space</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Treadmill Desks</a></li>
+            <li><a href="#how-we-chose">How We Chose These Treadmill Desks</a></li>
+            <li><a href="#two-kinds">Integrated Set or Desk Plus Pad?</a></li>
+            <li><a href="#height-range">Desk Height Range: Your Height Plus the Deck</a></li>
+            <li><a href="#wobble">Wobble at Walking Height</a></li>
+            <li><a href="#ergonomics">Keyboard, Monitor and Typing Speed</a></li>
+            <li><a href="#cables-space">Cable Management, Clearance and Floor Space</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          There are two ways to buy a treadmill desk. The first is an integrated set: a standing
-          desk and a treadmill base sold together by one company, delivered together and supported
-          by one warranty desk. The second is to buy a standing desk on its own and put a walking
-          pad underneath it — either one you already own, or one bought separately. The second
-          route is how most people end up with a treadmill desk, and it is usually cheaper, but it
-          puts the job of checking compatibility on you. This page covers both, says on every card
-          which kind it is, and spends most of its length on the two things that decide whether a
-          desk works with a treadmill under it: height range and stability.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             If you do not already own a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> and want one order, one delivery and one
             company to call, buy an integrated set. If you already own a pad, or want to choose the
-            pad separately, buy one of the three desks and check the height sums below first. To work out the height range you need, see our guide to
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>.
+            pad separately, buy one of the three desks and check the height sums below first. To work out the height range you need, see our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -439,91 +406,76 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmill Desks</h2>
+          <h2>The 5 Best Treadmill Desks</h2>
 <p>
             Each card says first which kind of treadmill desk it is: an integrated set, where the
             desk and treadmill come together, or a standing desk that suits a walking pad you supply.
             For the desks, the number that matters most is the top of the height range, so every card
             states it where the sources agree and flags it where they do not. If you have not chosen
-            a pad yet, our guides to
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            and
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            cover that half of the set-up.
+            a pad yet, our guides to <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> and <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a> cover that half of the set-up.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Treadmill Desks</h2>
+          <h2>How We Chose These Treadmill Desks</h2>
 <p>
             We have not tested these desks. They were chosen from published specifications,
             manufacturer listings, warranty terms and independent coverage, and the claims on this
@@ -531,8 +483,7 @@ const schema = {
           </p>
           <p>
             For the integrated sets, the first check was simply whether the product is sold today.
-            Several names that still dominate older treadmill-desk articles are not: <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>iMovR</a>
-            discontinued its ThermoTread GT treadmill and now sells the Unsit in its place,
+            Several names that still dominate older treadmill-desk articles are not: <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>iMovR</a> discontinued its ThermoTread GT treadmill and now sells the Unsit in its place,
             LifeSpan's full-set treadmill desks were all marked sold out on its US site, and Rebel
             Desk had no reachable current listing. We only list a set that we could see offered,
             with prices, on the maker's own site.
@@ -562,7 +513,7 @@ const schema = {
         </div>
 
         <div id="two-kinds" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Integrated Set or Desk Plus Pad?</h2>
+          <h2>Integrated Set or Desk Plus Pad?</h2>
 <p>
             The two kinds solve the same problem with different trade-offs, and the right one
             depends mostly on what you already own.
@@ -594,7 +545,7 @@ const schema = {
         </div>
 
         <div id="height-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Desk Height Range: Your Height Plus the Deck</h2>
+          <h2>Desk Height Range: Your Height Plus the Deck</h2>
 <p>
             This is the check that rules most desks in or out, and it takes five minutes with a
             tape measure.
@@ -608,9 +559,7 @@ const schema = {
           <p>
             <strong>Step 2: add the deck height.</strong> Walking pads stand roughly 4 to 7 inches
             tall, with incline pads at the top of that band and higher still when the incline is
-            raised. Our
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">incline walking pad guide</a>
-            lists the heights of the pads it covers. A full-size treadmill deck sits much higher,
+            raised. Our <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">incline walking pad guide</a> lists the heights of the pads it covers. A full-size treadmill deck sits much higher,
             which is why it rarely works under a desk.
           </p>
           <p>
@@ -633,14 +582,12 @@ const schema = {
             <strong>Do not forget the low end.</strong> If you want to lower the desk and sit when
             you are not walking, the minimum height matters too. That is easy for most electric
             desks, but it is the reason to prefer a desk with a wide range over a fixed-height
-            treadmill workstation. Our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers how to set the height once the desk arrives.
+            treadmill workstation. Our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers how to set the height once the desk arrives.
           </p>
         </div>
 
         <div id="wobble" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Wobble at Walking Height</h2>
+          <h2>Wobble at Walking Height</h2>
 <p>
             Every standing desk moves more at the top of its range than at the bottom, because the
             legs are extended and the joints between the stages carry more leverage. Walking makes
@@ -675,11 +622,10 @@ const schema = {
         </div>
 
         <div id="ergonomics" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Keyboard, Monitor and Typing Speed</h2>
+          <h2>Keyboard, Monitor and Typing Speed</h2>
 <p>
             The desk you buy affects how comfortable typing while walking can be, though most of the
-            set-up is covered in our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">guide to using a treadmill desk</a>,
+            set-up is covered in our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">guide to using a treadmill desk</a>,
             so here are only the points that should shape the purchase.
           </p>
           <p>
@@ -711,7 +657,7 @@ const schema = {
         </div>
 
         <div id="cables-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Cable Management, Clearance and Floor Space</h2>
+          <h2>Cable Management, Clearance and Floor Space</h2>
 <p>
             A treadmill desk puts a moving belt within a few inches of a tangle of cables, so cable
             management is a safety question as well as a tidiness one.
@@ -726,9 +672,7 @@ const schema = {
           </p>
           <p>
             <strong>Give the treadmill its own outlet.</strong> The pad's cord should reach a wall
-            outlet directly, not via the desk's power strip or an extension lead. Our guide to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a>
-            explains why.
+            outlet directly, not via the desk's power strip or an extension lead. Our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a> explains why.
           </p>
           <p>
             <strong>Measure between the legs.</strong> The clear width between a desk's legs, not
@@ -741,191 +685,195 @@ const schema = {
             <strong>Allow room behind.</strong> You stand further back from the desk on a pad than
             you would on the floor, and you need clear floor behind the deck in case you step off.
             Plan for the pad's full length plus a margin behind it, and a mat under it if the floor
-            is hard or carpeted; our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat guide</a>
-            has a walking-pad size.
+            is hard or carpeted; our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat guide</a> has a walking-pad size.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you mainly want to exercise, not work,</strong> a treadmill desk is the wrong
             tool. Walking pads are short and slow by design; a full treadmill with a proper deck and
-            handrails suits workouts far better, and our guide to
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmills</a>
-            is a better starting point.
+            handrails suits workouts far better, and our guide to <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmills</a> is a better starting point.
           </p>
           <p>
             <strong>If you need something to hold on to,</strong> a desk is not a handrail, and
-            leaning on one while walking is how desks get damaged and walkers stumble. Look at
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a>
-            instead, and use one away from a desk.
+            leaning on one while walking is how desks get damaged and walkers stumble. Look at <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a> instead, and use one away from a desk.
           </p>
           <p>
             <strong>If you are over a pad's weight limit,</strong> do not buy a set built around
-            one. The pad in the UPLIFT set is rated to 243 lb. Our guide to
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavier users</a>
-            covers higher-capacity options, and any of the three standing desks here will sit over
+            one. The pad in the UPLIFT set is rated to 243 lb. Our guide to <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavier users</a> covers higher-capacity options, and any of the three standing desks here will sit over
             them, height allowing.
           </p>
           <p>
             <strong>If you already own a good standing desk</strong> that reaches your elbow height
             plus about six inches, you do not need a new desk at all. Buy a pad, check the clearance
             between the legs, and add a cable tray. And if you want to move at the desk without walking,
-            a gentle standing-desk board is the cheaper option; our
-            <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance board guide</a>
-            covers which kinds suit a desk.
+            a gentle standing-desk board is the cheaper option; our <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance board guide</a> covers which kinds suit a desk.
           </p>
           <p>
             <strong>If you want to run,</strong> no desk set-up here is suitable. A walking pad is
-            built for walking pace, as our article on
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">running on a walking pad</a>
-            explains.
+            built for walking pace, as our article on <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">running on a walking pad</a> explains.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most home offices, the UPLIFT Treadmill Desk, which pairs a well-reviewed standing desk with an incline walking pad in one order. If you already own a pad, buy a standing desk that reaches your elbow height plus the pad's deck height; the four-leg FlexiSpot E7 Plus is the steadiest and one of the tallest we found.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How tall does a standing desk need to be for a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure your standing elbow height in shoes, then add the pad's deck height, usually about 4 to 7 inches. The desk must reach that comfortably, with an inch or so to spare. For most adults that means a desk whose maximum is around 50 inches or more, which usually means three-stage legs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I put a walking pad under any standing desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the desk rises high enough, the pad fits between the legs, and nothing such as a low crossbar blocks it. Many two-stage desks top out around 47 or 48 inches, which is too low for most adults on a pad. Measure the clear width between the legs, not the desktop width.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do treadmill desks wobble?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                All standing desks move more at full height, and walking adds a rhythmic push through your forearms. Four-leg desks wobble least, and three-stage two-leg desks with good frames come next. A monitor on its own stand moves less than one on a clamp-on arm, and setting the screen a little further back makes movement less noticeable.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should I walk at a treadmill desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most people type and read comfortably at around 1 to 2 mph, which is why office treadmills often top out at 2 mph. Start slowly and increase in small steps. Our treadmill desk guide covers speed, posture and how to build up your daily minutes without overdoing it in the first week.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an integrated treadmill desk better than a desk and separate pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not inherently. An integrated set removes the compatibility checks and gives you one company for support. A separate desk and pad lets you choose each on its merits and replace the pad, which wears faster, without replacing the desk. If you already own a pad, buying just the desk is the obvious choice.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill Desk</h2>
+          <p>Each of these turns a working set-up into one you stop using within a month.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a desk that only reaches your floor standing height</h3>
+              <p>A pad lifts you several inches, so a desk that is right for you on the floor is too low on the belt, and you end up hunched over the keyboard. Measure your elbow height in shoes, add the deck height, and buy a desk whose maximum clears that by an inch or more.</p>
+            </li>
+            <li>
+              <h3>Measuring the desktop instead of the gap between the legs</h3>
+              <p>A 48-inch desktop does not mean 48 inches of clearance; the legs and feet take some of it, and a low crossbar can block the pad entirely. Measure the clear width between the legs at floor level and compare it with the pad’s full width, including any side rails.</p>
+            </li>
+            <li>
+              <h3>Clamping the monitor to an arm on the back edge</h3>
+              <p>A monitor arm puts the screen on a lever, and the rhythmic push of walking makes it nod. Use the monitor’s own stand on the desktop, choose a deep enough top to set it a little further back, and keep heavy equipment centred over the legs.</p>
+            </li>
+            <li>
+              <h3>Running cables and the pad’s cord across the floor</h3>
+              <p>A cable under the belt or across the path behind the deck is a trip and damage hazard. Route desk cables up into a tray and down a rear leg, give the pad its own wall outlet without an extension cord, and leave enough slack for the desk’s full travel.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill Desk</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a working set-up into one you stop using within a month.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a desk that only reaches your floor standing height</h3>
-              <p class="text-gray-700 text-sm m-0">A pad lifts you several inches, so a desk that is right for you on the floor is too low on the belt, and you end up hunched over the keyboard. Measure your elbow height in shoes, add the deck height, and buy a desk whose maximum clears that by an inch or more.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the desktop instead of the gap between the legs</h3>
-              <p class="text-gray-700 text-sm m-0">A 48-inch desktop does not mean 48 inches of clearance; the legs and feet take some of it, and a low crossbar can block the pad entirely. Measure the clear width between the legs at floor level and compare it with the pad’s full width, including any side rails.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Clamping the monitor to an arm on the back edge</h3>
-              <p class="text-gray-700 text-sm m-0">A monitor arm puts the screen on a lever, and the rhythmic push of walking makes it nod. Use the monitor’s own stand on the desktop, choose a deep enough top to set it a little further back, and keep heavy equipment centred over the legs.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running cables and the pad’s cord across the floor</h3>
-              <p class="text-gray-700 text-sm m-0">A cable under the belt or across the path behind the deck is a trip and damage hazard. Route desk cables up into a tray and down a rear leg, give the pad its own wall outlet without an extension cord, and leave enough slack for the desk’s full travel.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Desk Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-desk-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Use a Treadmill Desk</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Desk and monitor height, typing speed, posture, and building up your minutes in the first weeks.</p>
-            </a>
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Treadmills</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Choosing the walking pad half of the set-up: belt length, quietness, deck height and capacity.</p>
-            </a>
-            <a href="/best-walking-pads-with-incline/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Walking Pads</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads With Incline</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Incline pads that suit a desk, with their deck heights and belt lengths compared.</p>
-            </a>
-            <a href="/inmovement-treadmill-desk/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">InMovement Treadmill Desk</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The maker of the Unsit: buying direct, the desk bundle, and vs LifeSpan.</p>
-            </a>
-            <a href="/best-treadmill-laptop-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Laptop Holders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you want the whole thing in one order, buy the
-            <strong class="text-white">UPLIFT Treadmill Desk</strong>, provided your elbow height plus
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            If you want the whole thing in one order, buy the <strong class="text-white">UPLIFT Treadmill Desk</strong>, provided your elbow height plus
             the pad's deck height comes in comfortably under its top height. If you already own a pad
             or are tall, buy the four-leg <strong class="text-white">FlexiSpot E7 Plus</strong>, which
             is the steadiest desk we found and one of the tallest.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, do the height sum before anything else, measure between the legs
             rather than across the desktop, and plan the cables before the pad goes under. Then read
-            our
-            <a href="/treadmill-desk-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill desk guide</a>
-            to set it up and build the habit.
+            our <a href="/treadmill-desk-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill desk guide</a> to set it up and build the habit.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-desk-guide/">How to Use a Treadmill Desk</a></li>
+            <li><a href="/under-desk-treadmills/">Under-Desk Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best treadmill desk?</h3></summary>
+            <p class="faq-a">
+              For most home offices, the UPLIFT Treadmill Desk, which pairs a well-reviewed standing desk with an incline walking pad in one order. If you already own a pad, buy a standing desk that reaches your elbow height plus the pad's deck height; the four-leg FlexiSpot E7 Plus is the steadiest and one of the tallest we found.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How tall does a standing desk need to be for a walking pad?</h3></summary>
+            <p class="faq-a">
+              Measure your standing elbow height in shoes, then add the pad's deck height, usually about 4 to 7 inches. The desk must reach that comfortably, with an inch or so to spare. For most adults that means a desk whose maximum is around 50 inches or more, which usually means three-stage legs.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can I put a walking pad under any standing desk?</h3></summary>
+            <p class="faq-a">
+              Only if the desk rises high enough, the pad fits between the legs, and nothing such as a low crossbar blocks it. Many two-stage desks top out around 47 or 48 inches, which is too low for most adults on a pad. Measure the clear width between the legs, not the desktop width.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do treadmill desks wobble?</h3></summary>
+            <p class="faq-a">
+              All standing desks move more at full height, and walking adds a rhythmic push through your forearms. Four-leg desks wobble least, and three-stage two-leg desks with good frames come next. A monitor on its own stand moves less than one on a clamp-on arm, and setting the screen a little further back makes movement less noticeable.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What speed should I walk at a treadmill desk?</h3></summary>
+            <p class="faq-a">
+              Most people type and read comfortably at around 1 to 2 mph, which is why office treadmills often top out at 2 mph. Start slowly and increase in small steps. Our treadmill desk guide covers speed, posture and how to build up your daily minutes without overdoing it in the first week.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is an integrated treadmill desk better than a desk and separate pad?</h3></summary>
+            <p class="faq-a">
+              Not inherently. An integrated set removes the compatibility checks and gives you one company for support. A separate desk and pad lets you choose each on its merits and replace the pad, which wears faster, without replacing the desk. If you already own a pad, buying just the desk is the obvious choice.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Desk Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-desk-guide/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Use a Treadmill Desk</div>
+            <p class="c-blurb">Desk and monitor height, typing speed, posture, and building up your minutes in the first weeks.</p>
+          </a>
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Treadmills</div>
+            <div class="c-title">Under-Desk Treadmills</div>
+            <p class="c-blurb">Choosing the walking pad half of the set-up: belt length, quietness, deck height and capacity.</p>
+          </a>
+          <a href="/best-walking-pads-with-incline/" class="card">
+            <div class="c-kicker">Walking Pads</div>
+            <div class="c-title">Best Walking Pads With Incline</div>
+            <p class="c-blurb">Incline pads that suit a desk, with their deck heights and belt lengths compared.</p>
+          </a>
+          <a href="/inmovement-treadmill-desk/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">InMovement Treadmill Desk</div>
+            <p class="c-blurb">The maker of the Unsit: buying direct, the desk bundle, and vs LifeSpan.</p>
+          </a>
+          <a href="/best-treadmill-laptop-holders/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Treadmill Laptop Holders</div>
+            <p class="c-blurb">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

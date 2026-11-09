@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Gym Flooring (2026): Rubber, Foam and Stall Mats by Use";
 const description =
@@ -257,6 +256,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-gym-flooring/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -277,66 +282,81 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best for Free Weights: Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestgymflooring" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestgymflooring)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Gym Flooring for a Home Gym, by What You Do on It</h1>
+      <p class="ed-dek">
+        The right home gym floor depends on what lands on it: feet, a treadmill, dumbbells set down carefully, or a barbell dropped from overhead. Here are five floors sold on Amazon, the stall-mat alternative most home lifters start with, and how thickness, smell, the subfloor and damp change the answer.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Gym Flooring <span class="text-[#5AA9FF]">for a Home Gym, by What You Do on It</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The right home gym floor depends on what lands on it: feet, a treadmill, dumbbells set down carefully, or a barbell dropped from overhead. Here are five floors sold on Amazon, the stall-mat alternative most home lifters start with, and how thickness, smell, the subfloor and damp change the answer.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#thickness" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Thickness by Use
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#rubber-cal-eco-sport-tiles"><img src="https://m.media-amazon.com/images/I/51d59z1nqmL._SL500_.jpg" alt="Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles" width="500" height="500" decoding="async" /></a>
+          <a href="#rubber-cal-elephant-bark"><img src="https://m.media-amazon.com/images/I/51hQzXcV1iL._SL500_.jpg" alt="Rubber-Cal Elephant Bark Rubber Flooring Roll" width="500" height="500" decoding="async" /></a>
+          <a href="#prosourcefit-puzzle-mat-half-inch"><img src="https://m.media-amazon.com/images/I/51gMv3NUgtL._SL500_.jpg" alt="ProsourceFit Exercise Puzzle Mat (1/2 in.)" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles · Rubber-Cal Elephant Bark Rubber Flooring Roll · ProsourceFit Exercise Puzzle Mat (1/2 in.)</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Gym flooring is the purchase that protects every other purchase. It stops a set-down dumbbell
+          cracking a tile, keeps a bench from sliding, takes the edge off the noise, and gives you a
+          surface that grips when it is sweaty. It is also easy to get wrong: soft foam under heavy
+          weights, thin rubber under a barbell that gets dropped, or a beautiful rubber floor laid over
+          a damp basement slab. The picks below are sorted by the job they do, and the guide after them
+          covers thickness, smell, subfloors, moisture and what each option costs per square foot.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Free Weights:</span> <a href="#rubber-cal-eco-sport-tiles">Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value Rubber:</span> <a href="#rubber-cal-maxx-tuff">Rubber-Cal Maxx-Tuff Heavy-Duty Mat (4 x 6 ft, 1/2 in.)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Rolled Rubber:</span> <a href="#rubber-cal-elephant-bark">Rubber-Cal Elephant Bark Rubber Flooring Roll</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#prosourcefit-puzzle-mat-half-inch">ProsourceFit Exercise Puzzle Mat (1/2 in.)</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Thickest Cushioning:</span> <a href="#prosourcefit-weaved-puzzle-mat-1-inch">ProsourceFit Weaved Pattern Extra Thick Puzzle Mat (1 in.)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           floors, and no figure on this page is our own measurement. On 19 October 2026 we confirmed each
           product as listed on Amazon US, and checked its size, thickness, material and warranty against
@@ -350,79 +370,28 @@ const schema = {
           the Amazon links on this page; it does not change which products we list or what we say about
           them. Floor loading is general guidance only: for an upstairs room, an old or unusual
           structure, or heavy racks and plates, ask a qualified professional.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Free Weights:</span>
-            <a href="#rubber-cal-eco-sport-tiles" class="font-bold text-gray-900 no-underline hover:underline">Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles</a>
-            <a href="#rubber-cal-eco-sport-tiles" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Rubber:</span>
-            <a href="#rubber-cal-maxx-tuff" class="font-bold text-gray-900 no-underline hover:underline">Rubber-Cal Maxx-Tuff Heavy-Duty Mat (4 x 6 ft, 1/2 in.)</a>
-            <a href="#rubber-cal-maxx-tuff" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Rolled Rubber:</span>
-            <a href="#rubber-cal-elephant-bark" class="font-bold text-gray-900 no-underline hover:underline">Rubber-Cal Elephant Bark Rubber Flooring Roll</a>
-            <a href="#rubber-cal-elephant-bark" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#prosourcefit-puzzle-mat-half-inch" class="font-bold text-gray-900 no-underline hover:underline">ProsourceFit Exercise Puzzle Mat (1/2 in.)</a>
-            <a href="#prosourcefit-puzzle-mat-half-inch" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Thickest Cushioning:</span>
-            <a href="#prosourcefit-weaved-puzzle-mat-1-inch" class="font-bold text-gray-900 no-underline hover:underline">ProsourceFit Weaved Pattern Extra Thick Puzzle Mat (1 in.)</a>
-            <a href="#prosourcefit-weaved-puzzle-mat-1-inch" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Home Gym Flooring Options</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose This Flooring</a>
-          <a href="#thickness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Thick Should Home Gym Flooring Be?</a>
-          <a href="#materials" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Rubber, Foam, Stall Mats and the Rest</a>
-          <a href="#stall-mats" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Horse Stall Mats: The Alternative Most Lifters Start With</a>
-          <a href="#smell" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Rubber Smell and Off-Gassing</a>
-          <a href="#subfloor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Concrete, Carpet, Wood or Upstairs: Your Subfloor Matters</a>
-          <a href="#moisture" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Moisture: Basements and Garages</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Gym Flooring Costs per Square Foot</a>
-          <a href="#install" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Installing and Looking After a Gym Floor</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Home Gym Flooring Options</a></li>
+            <li><a href="#how-we-chose">How We Chose This Flooring</a></li>
+            <li><a href="#thickness">How Thick Should Home Gym Flooring Be?</a></li>
+            <li><a href="#materials">Rubber, Foam, Stall Mats and the Rest</a></li>
+            <li><a href="#stall-mats">Horse Stall Mats: The Alternative Most Lifters Start With</a></li>
+            <li><a href="#smell">Rubber Smell and Off-Gassing</a></li>
+            <li><a href="#subfloor">Concrete, Carpet, Wood or Upstairs: Your Subfloor Matters</a></li>
+            <li><a href="#moisture">Moisture: Basements and Garages</a></li>
+            <li><a href="#cost">What Gym Flooring Costs per Square Foot</a></li>
+            <li><a href="#install">Installing and Looking After a Gym Floor</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Gym flooring is the purchase that protects every other purchase. It stops a set-down dumbbell
-          cracking a tile, keeps a bench from sliding, takes the edge off the noise, and gives you a
-          surface that grips when it is sweaty. It is also easy to get wrong: soft foam under heavy
-          weights, thin rubber under a barbell that gets dropped, or a beautiful rubber floor laid over
-          a damp basement slab. The picks below are sorted by the job they do, and the guide after them
-          covers thickness, smell, subfloors, moisture and what each option costs per square foot.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             <strong>The best gym flooring for most home gyms is solid rubber at least 1/2 inch thick
             wherever weights are lifted or set down</strong>, and either thinner rubber or dense foam
@@ -447,18 +416,15 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you deadlift heavy or drop weights from overhead, flooring is only half the answer; our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
-            covers the other half. If a treadmill is the main thing on the floor, a mat sized to the machine
-            is usually better than a whole floor — see our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat picks</a>.
+            If you deadlift heavy or drop weights from overhead, flooring is only half the answer; our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a> covers the other half. If a treadmill is the main thing on the floor, a mat sized to the machine
+            is usually better than a whole floor — see our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat picks</a>.
             The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
             guide in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Home Gym Flooring Options</h2>
+          <h2>The 5 Best Home Gym Flooring Options</h2>
 <p>
             Each card gives the size, thickness and material we could confirm from two sources, the
             price range we saw on 19 October, and the job the floor suits. The first three are rubber,
@@ -467,83 +433,71 @@ const schema = {
           <p>
             Rubber-Cal fills three of the five slots because it is the rubber flooring brand with the
             widest current range on Amazon US, from tiles to sheets to rolls. Several better-known
-            flooring makers sell mainly from their own sites; the
-            <a href="#how-we-chose" class="text-[#0F62FE] font-medium">how we chose</a> section
+            flooring makers sell mainly from their own sites; the <a href="#how-we-chose" class="text-[#0F62FE] font-medium">how we chose</a> section
             names them.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose This Flooring</h2>
+          <h2>How We Chose This Flooring</h2>
 <p>
             We have not tested these floors. They were chosen from makers' product pages, the Amazon
             listings themselves, recall records and independent coverage, chiefly Garage Gym Reviews'
@@ -585,7 +539,7 @@ const schema = {
         </div>
 
         <div id="thickness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Thick Should Home Gym Flooring Be?</h2>
+          <h2>How Thick Should Home Gym Flooring Be?</h2>
 <p>
             Thickness is the first decision, and it follows from the heaviest thing that will hit the
             floor and how hard it will hit. These bands follow Garage Gym Reviews' thickness guidance and
@@ -610,11 +564,7 @@ const schema = {
             A treadmill, bike, rower or elliptical does not drop anything; the floor's job is to protect
             the surface from the machine's feet, catch sweat and dust, and take a little vibration out.
             Thin rubber or a machine-specific mat does that, and a mat sized to the machine is usually the
-            better buy than a whole floor. Our guide to
-            <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>
-            goes through the bands by floor type, and if the problem is noise reaching a room below,
-            <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pads under the feet</a>
-            do more than extra thickness across the whole floor. Do not put a treadmill on soft foam:
+            better buy than a whole floor. Our guide to <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a> goes through the bands by floor type, and if the problem is noise reaching a room below, <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pads under the feet</a> do more than extra thickness across the whole floor. Do not put a treadmill on soft foam:
             the feet sink unevenly and the frame can rock.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Free weights</h3>
@@ -624,23 +574,19 @@ const schema = {
             dropping from overhead and says he prefers 3/4 inch; the same guide suggests erring on the
             thick side when unsure. For dumbbells that are lowered rather than dropped, 3/8 to 1/2 inch is
             a common choice. If your dumbbells are adjustable, do not drop them at all, whatever the
-            floor — our
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>
-            explains why.
+            floor — our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a> explains why.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Dropping weights</h3>
           <p>
             Flooring alone does not spread the impact of a loaded barbell dropped from the hips or from
             overhead. A platform does: a common home build is a layer of 3/4-inch plywood under 3/4-inch
-            rubber, about 1.5 inches in all, which is the build Wilkes describes for his own. Our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms guide</a>
-            compares bought and DIY platforms, and covers why a platform on a suspended floor upstairs does
+            rubber, about 1.5 inches in all, which is the build Wilkes describes for his own. Our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms guide</a> compares bought and DIY platforms, and covers why a platform on a suspended floor upstairs does
             not make dropping safe.
           </p>
         </div>
 
         <div id="materials" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Rubber, Foam, Stall Mats and the Rest</h2>
+          <h2>Rubber, Foam, Stall Mats and the Rest</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Interlocking rubber tiles</h3>
           <p>
             Square tiles, usually 20 to 24 inches, with jigsaw edges or connecting pins. They are the
@@ -680,7 +626,7 @@ const schema = {
         </div>
 
         <div id="stall-mats" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Horse Stall Mats: The Alternative Most Lifters Start With</h2>
+          <h2>Horse Stall Mats: The Alternative Most Lifters Start With</h2>
 <p>
             Before you buy any tile or roll, price a stall mat. Tractor Supply's 4 x 6 ft, 3/4-inch mat is
             the one most home gym guides recommend, and it is not sold on Amazon. Garage Gym Reviews' guide
@@ -704,7 +650,7 @@ const schema = {
         </div>
 
         <div id="smell" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Rubber Smell and Off-Gassing</h2>
+          <h2>Rubber Smell and Off-Gassing</h2>
 <p>
             Most rubber gym flooring is made from recycled tyre rubber, and when new it smells — strongly,
             in the case of stall mats. Garage Gym Reviews scored Tractor Supply's stall mats 2 out of 5 for
@@ -733,7 +679,7 @@ const schema = {
         </div>
 
         <div id="subfloor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Concrete, Carpet, Wood or Upstairs: Your Subfloor Matters</h2>
+          <h2>Concrete, Carpet, Wood or Upstairs: Your Subfloor Matters</h2>
 <p>
             <strong>Concrete</strong> in a garage or basement is the easiest base: flat, strong and
             indifferent to weight. Rubber protects it from chips and protects your equipment from it.
@@ -744,9 +690,7 @@ const schema = {
             <strong>Carpet</strong> is the awkward one. Foam tiles on carpet move and feel unstable, and
             a bench or rack on carpet rocks. For light work, a firm rubber mat over low-pile carpet is
             workable. For a lifting area, the usual answer is a rigid layer — plywood, or a platform —
-            under the rubber, or lifting the carpet in that corner. Our guide to
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a>
-            covers the machine side of the same problem.
+            under the rubber, or lifting the carpet in that corner. Our guide to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a> covers the machine side of the same problem.
           </p>
           <p>
             <strong>Wood and laminate</strong> dent and scratch, so they need protection from weights
@@ -758,14 +702,12 @@ const schema = {
             much weight a floor can carry. A bench, dumbbells and a lifter are within what most domestic
             floors handle, but a rack, loaded bar and stacks of plates concentrated in a corner are
             different. That is general guidance, not an assessment of your house: for anything heavy
-            upstairs, ask a structural engineer or qualified builder. Our
-            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">guide to where to put a treadmill</a>
-            covers the same question for cardio machines.
+            upstairs, ask a structural engineer or qualified builder. Our <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">guide to where to put a treadmill</a> covers the same question for cardio machines.
           </p>
         </div>
 
         <div id="moisture" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Moisture: Basements and Garages</h2>
+          <h2>Moisture: Basements and Garages</h2>
 <p>
             Concrete on or below ground can carry moisture up from the soil. Laid over a damp slab, rubber
             or foam traps that moisture, and the result is mould, mildew and a smell that is not the
@@ -786,14 +728,12 @@ const schema = {
               anything that is damp underneath.</li>
           </ul>
           <p>
-            Garages add temperature swings, which make rolls expand and contract and seams lift. Our
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a>
-            covers damp, cold and heat, which affect a garage gym in the same way.
+            Garages add temperature swings, which make rolls expand and contract and seams lift. Our <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a> covers damp, cold and heat, which affect a garage gym in the same way.
           </p>
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Gym Flooring Costs per Square Foot</h2>
+          <h2>What Gym Flooring Costs per Square Foot</h2>
 <p>
             Compare flooring per square foot, not per pack. The figures below are approximate, worked out
             from the listed prices and coverage we saw on 19 October 2026, or taken from Garage Gym
@@ -830,7 +770,7 @@ const schema = {
         </div>
 
         <div id="install" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Installing and Looking After a Gym Floor</h2>
+          <h2>Installing and Looking After a Gym Floor</h2>
 <ul>
             <li><strong>Let it relax.</strong> Rolls and new tiles arrive curled. Lay them flat for a day
               or two, ideally at room temperature, before you fit them; Garage Gym Reviews' tester found
@@ -847,152 +787,164 @@ const schema = {
               any tile that has split.</li>
           </ul>
           <p>
-            If you are kitting out the rest of the room, our guides to
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a>,
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
-            and
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines for home</a>
-            cover what usually goes on top of it.
+            If you are kitting out the rest of the room, our guides to <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a>, <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a> and <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines for home</a> cover what usually goes on top of it.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best flooring for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most home gyms, solid rubber at least 1/2 inch thick wherever weights are lifted or set down, and 3/4 inch where a barbell may be dropped. Horse stall mats are the cheapest way to get it; interlocking rubber tiles are easier to handle and move; rolled rubber covers a whole room. EVA foam tiles suit only bodyweight work and stretching.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How thick should home gym flooring be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As a rule of thumb: 1/2 to 1 inch of foam for yoga and bodyweight work, 3/16 to 3/8 inch of rubber or a machine mat under cardio equipment, at least 3/8 to 1/2 inch of solid rubber where dumbbells are set down, and 3/4 inch for barbell work. For heavy deadlifts or dropped lifts, add a platform of plywood under rubber.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are horse stall mats good for home gym flooring?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, for weights. A 4 x 6 ft, 3/4-inch stall mat is dense, durable and among the cheapest rubber per square foot; Garage Gym Reviews puts Tractor Supply's at about $2.38 a square foot. The trade-offs are weight, around 100 lb a sheet, a strong rubber smell when new, and a textured surface. Air them out before bringing them indoors.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you put gym flooring over carpet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For light work, a firm rubber mat over low-pile carpet is workable. Foam tiles on carpet shift and feel unstable, and benches or racks rock on carpet. For a lifting area, put a rigid layer such as plywood under the rubber, use a platform, or lift the carpet in that corner.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you get rid of the rubber smell from gym mats?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Air new rubber in a garage, on a porch or outdoors for several days before it goes indoors, then ventilate the room for the first weeks. Washing with mild soap and water removes surface residue; avoid solvents. Vulcanized rubber is generally milder than bonded crumb, and foam has no rubber smell at all.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are foam gym mats OK for lifting weights?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not as the main floor. EVA foam compresses under load, dents under equipment feet, makes benches less stable and lets a dropped dumbbell reach the floor beneath. Use solid rubber where weights are lifted or set down, and keep foam for stretching, bodyweight circuits and play areas.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does home gym flooring cost per square foot?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On the prices we saw in October 2026: about $1 to $1.25 for 1/2-inch foam tiles, $2.25 to $3.60 for thin rolled rubber, about $2.40 for 3/4-inch stall mats, $3.30 to $5.80 for 1/2-inch rubber sheets and $9 to $11.50 for 3/4-inch interlocking rubber tiles. Add about 10% for cuts. Prices change often.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Home Gym Flooring</h2>
+          <p>Each of these is cheap to avoid before you order and expensive to fix once the floor is down.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Putting foam where the weights go</h3>
+              <p>Foam puzzle tiles feel soft, and that is the problem under weights: they compress, tear and let a dropped dumbbell reach the floor beneath, and a bench on foam is less stable. Use solid rubber anywhere weights are lifted or set down.</p>
+            </li>
+            <li>
+              <h3>Laying rubber over a damp slab</h3>
+              <p>Rubber and foam trap moisture coming up through basement or garage concrete, which leads to mould and a smell that is not the rubber. Check the slab with a taped plastic sheet first, deal with any damp, and choose tiles or loose-laid sheets you can lift.</p>
+            </li>
+            <li>
+              <h3>Bringing new rubber straight indoors</h3>
+              <p>New recycled rubber can smell strongly for weeks. Spread it out in a garage or outdoors for several days before it goes into a living space, ventilate the room afterwards, and check the floor underneath for staining after a few weeks.</p>
+            </li>
+            <li>
+              <h3>Buying by the pack instead of the area</h3>
+              <p>Tiles are sold by count, rolls by length, and pack coverage sometimes rounds up. Measure the area, work out the tiles or length you need, add about 10% for cuts, and compare products per square foot rather than per box.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Home Gym Flooring</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is cheap to avoid before you order and expensive to fix once the floor is down.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting foam where the weights go</h3>
-              <p class="text-gray-700 text-sm m-0">Foam puzzle tiles feel soft, and that is the problem under weights: they compress, tear and let a dropped dumbbell reach the floor beneath, and a bench on foam is less stable. Use solid rubber anywhere weights are lifted or set down.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Laying rubber over a damp slab</h3>
-              <p class="text-gray-700 text-sm m-0">Rubber and foam trap moisture coming up through basement or garage concrete, which leads to mould and a smell that is not the rubber. Check the slab with a taped plastic sheet first, deal with any damp, and choose tiles or loose-laid sheets you can lift.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Bringing new rubber straight indoors</h3>
-              <p class="text-gray-700 text-sm m-0">New recycled rubber can smell strongly for weeks. Spread it out in a garage or outdoors for several days before it goes into a living space, ventilate the room afterwards, and check the floor underneath for staining after a few weeks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying by the pack instead of the area</h3>
-              <p class="text-gray-700 text-sm m-0">Tiles are sold by count, rolls by length, and pack coverage sometimes rounds up. Measure the area, work out the tiles or length you need, add about 10% for cuts, and compare products per square foot rather than per box.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-lifting-platforms/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Strength</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lifting Platforms</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Deadlift platforms, drop pads and DIY builds for when flooring alone is not enough.</p>
-            </a>
-            <a href="/best-treadmill-mats/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Mats</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mats sized to the machine, matched to the floor underneath, for cardio equipment.</p>
-            </a>
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Gym Accessories Worth Buying</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The bench, flooring and small kit that make a home gym work, and what to skip.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Put solid rubber wherever weights touch the floor</strong>: 3/4-inch
             Rubber-Cal Eco-Sport tiles if you want a modular floor you can take with you, a 1/2-inch
             Maxx-Tuff sheet for a delivered lifting zone, or a Tractor Supply stall mat if you can collect
             one and want the lowest cost. Cover the rest of the room with a rubber roll like Elephant
             Bark, and keep ProsourceFit's foam tiles for stretching, bodyweight work and play.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Before anything goes down, check the slab for damp, air out new rubber, and remember that
             flooring protects a floor without making it stronger. If you drop heavy barbells, add a
-            platform — our
-            <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">lifting platform guide</a>
-            covers the options.
+            platform — our <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">lifting platform guide</a> covers the options.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-lifting-platforms/">Best Lifting Platforms</a></li>
+            <li><a href="/best-treadmill-mats/">Best Treadmill Mats</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best flooring for a home gym?</h3></summary>
+            <p class="faq-a">
+              For most home gyms, solid rubber at least 1/2 inch thick wherever weights are lifted or set down, and 3/4 inch where a barbell may be dropped. Horse stall mats are the cheapest way to get it; interlocking rubber tiles are easier to handle and move; rolled rubber covers a whole room. EVA foam tiles suit only bodyweight work and stretching.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How thick should home gym flooring be?</h3></summary>
+            <p class="faq-a">
+              As a rule of thumb: 1/2 to 1 inch of foam for yoga and bodyweight work, 3/16 to 3/8 inch of rubber or a machine mat under cardio equipment, at least 3/8 to 1/2 inch of solid rubber where dumbbells are set down, and 3/4 inch for barbell work. For heavy deadlifts or dropped lifts, add a platform of plywood under rubber.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are horse stall mats good for home gym flooring?</h3></summary>
+            <p class="faq-a">
+              Yes, for weights. A 4 x 6 ft, 3/4-inch stall mat is dense, durable and among the cheapest rubber per square foot; Garage Gym Reviews puts Tractor Supply's at about $2.38 a square foot. The trade-offs are weight, around 100 lb a sheet, a strong rubber smell when new, and a textured surface. Air them out before bringing them indoors.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you put gym flooring over carpet?</h3></summary>
+            <p class="faq-a">
+              For light work, a firm rubber mat over low-pile carpet is workable. Foam tiles on carpet shift and feel unstable, and benches or racks rock on carpet. For a lifting area, put a rigid layer such as plywood under the rubber, use a platform, or lift the carpet in that corner.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do you get rid of the rubber smell from gym mats?</h3></summary>
+            <p class="faq-a">
+              Air new rubber in a garage, on a porch or outdoors for several days before it goes indoors, then ventilate the room for the first weeks. Washing with mild soap and water removes surface residue; avoid solvents. Vulcanized rubber is generally milder than bonded crumb, and foam has no rubber smell at all.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are foam gym mats OK for lifting weights?</h3></summary>
+            <p class="faq-a">
+              Not as the main floor. EVA foam compresses under load, dents under equipment feet, makes benches less stable and lets a dropped dumbbell reach the floor beneath. Use solid rubber where weights are lifted or set down, and keep foam for stretching, bodyweight circuits and play areas.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much does home gym flooring cost per square foot?</h3></summary>
+            <p class="faq-a">
+              On the prices we saw in October 2026: about $1 to $1.25 for 1/2-inch foam tiles, $2.25 to $3.60 for thin rolled rubber, about $2.40 for 3/4-inch stall mats, $3.30 to $5.80 for 1/2-inch rubber sheets and $9 to $11.50 for 3/4-inch interlocking rubber tiles. Add about 10% for cuts. Prices change often.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-lifting-platforms/" class="card">
+            <div class="c-kicker">Strength</div>
+            <div class="c-title">Best Lifting Platforms</div>
+            <p class="c-blurb">Deadlift platforms, drop pads and DIY builds for when flooring alone is not enough.</p>
+          </a>
+          <a href="/best-treadmill-mats/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Treadmill Mats</div>
+            <p class="c-blurb">Mats sized to the machine, matched to the floor underneath, for cardio equipment.</p>
+          </a>
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Home Gym Accessories Worth Buying</div>
+            <p class="c-blurb">The bench, flooring and small kit that make a home gym work, and what to skip.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

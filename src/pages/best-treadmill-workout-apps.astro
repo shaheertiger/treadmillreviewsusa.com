@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Workout Apps (2026): Eight Apps, What Each Controls";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-workout-apps/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,44 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Apps", link: "#quick-picks" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillworkoutapps" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillworkoutapps)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmill Workout Apps and What Each One Controls</h1>
+      <p class="ed-dek">
+        Some treadmill apps drive the machine for you; most give you a coach, a route or a plan and leave the buttons to you. Here are eight worth knowing, what each does on a treadmill, what it needs to work, and which ones cost nothing to use.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmill Workout Apps <span class="text-[#5AA9FF]">and What Each One Controls</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Some treadmill apps drive the machine for you; most give you a coach, a route or a plan and leave the buttons to you. Here are eight worth knowing, what each does on a treadmill, what it needs to work, and which ones cost nothing to use.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Apps
-          </a>
-          <a href="#control-explained" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Which Apps Control a Treadmill
-          </a>
-        </div>
+        <a href="#quick-picks" class="btn-ghost">See the Apps</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The phrase "treadmill app" covers very different things. A few apps can take over a
+          compatible treadmill, raising the incline as a filmed road climbs or matching a trainer's
+          speed changes. Others are virtual worlds that need only your speed. Many more are coaching
+          apps that tell you what to do and trust you to press the buttons, and one of the best known
+          is really a training log. Which one is right depends far less on the app than on the
+          treadmill you own and what you want from a session. This page sorts them by that.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> These are apps, not
           products we sell or link to, and we have not tested them. What each app does, which
           treadmills it can control, which devices it runs on and whether it has a free tier were
@@ -173,49 +158,31 @@ const schema = {
           this page is, and is not.</strong> We review equipment and software; we are not giving
           medical, coaching or nutrition advice. If you have a medical condition, an injury or a
           concern about starting a training plan, talk to a qualified professional first.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How We Chose These Apps</a>
-          <a href="#ifit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. iFIT</a>
-          <a href="#peloton-app" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Peloton App</a>
-          <a href="#zwift" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Zwift</a>
-          <a href="#kinomap" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Kinomap</a>
-          <a href="#nike-run-club" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Nike Run Club</a>
-          <a href="#apple-fitness-plus" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Apple Fitness+</a>
-          <a href="#runna" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Runna</a>
-          <a href="#strava" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Strava (as Your Log)</a>
-          <a href="#control-explained" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Which Apps Can Control Your Treadmill</a>
-          <a href="#free-vs-paid" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Free Tiers, Trials and What You Pay For</a>
-          <a href="#setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Setting Up an App on a Treadmill</a>
-          <a href="#which-app" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Which App Should You Use?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">15. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#how-we-chose">How We Chose These Apps</a></li>
+            <li><a href="#ifit">iFIT</a></li>
+            <li><a href="#peloton-app">Peloton App</a></li>
+            <li><a href="#zwift">Zwift</a></li>
+            <li><a href="#kinomap">Kinomap</a></li>
+            <li><a href="#nike-run-club">Nike Run Club</a></li>
+            <li><a href="#apple-fitness-plus">Apple Fitness+</a></li>
+            <li><a href="#runna">Runna</a></li>
+            <li><a href="#strava">Strava (as Your Log)</a></li>
+            <li><a href="#control-explained">Which Apps Can Control Your Treadmill</a></li>
+            <li><a href="#free-vs-paid">Free Tiers, Trials and What You Pay For</a></li>
+            <li><a href="#setup">Setting Up an App on a Treadmill</a></li>
+            <li><a href="#which-app">Which App Should You Use?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The phrase "treadmill app" covers very different things. A few apps can take over a
-          compatible treadmill, raising the incline as a filmed road climbs or matching a trainer's
-          speed changes. Others are virtual worlds that need only your speed. Many more are coaching
-          apps that tell you what to do and trust you to press the buttons, and one of the best known
-          is really a training log. Which one is right depends far less on the app than on the
-          treadmill you own and what you want from a session. This page sorts them by that.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             The quick version: iFIT if you own or are buying a <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack or ProForm</a> treadmill and
             want the machine to follow the workout; Zwift or Kinomap if you want a virtual route on a
@@ -240,15 +207,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you are <a href="/what-treadmill-should-i-buy/" class="text-[#0F62FE] font-medium" data-autolink>choosing a treadmill</a> and an app together, read our guide to
-            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a>
-            first: whether an app can control the machine is decided by the treadmill, not the app
+            If you are <a href="/what-treadmill-should-i-buy/" class="text-[#0F62FE] font-medium" data-autolink>choosing a treadmill</a> and an app together, read our guide to <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a> first: whether an app can control the machine is decided by the treadmill, not the app
             store.
           </p>
         </div>
 
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How We Chose These Apps</h2>
+          <h2>How We Chose These Apps</h2>
 <p>
             We have not tested these apps. They were chosen because they are the apps treadmill
             owners most often weigh up, and because together they cover the four things a treadmill
@@ -281,7 +246,7 @@ const schema = {
         </div>
 
         <div id="ifit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. iFIT</h2>
+          <h2>iFIT</h2>
 <p>
             iFIT is the platform behind NordicTrack and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm treadmills</a>, and it is the clearest
             example of an app that drives the machine. On a compatible treadmill, a trainer-led
@@ -297,16 +262,12 @@ const schema = {
           </ul>
           <p>
             iFIT is the right answer if you want the treadmill to do the work of following a
-            session, and wrong if you do not own, or want, an iFIT machine. Our guides to
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            and to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
-            cover what the membership adds and what the machine does without it.
+            session, and wrong if you do not own, or want, an iFIT machine. Our guides to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> and to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a> cover what the membership adds and what the machine does without it.
           </p>
         </div>
 
         <div id="peloton-app" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Peloton App</h2>
+          <h2>Peloton App</h2>
 <p>
             The Peloton App brings Peloton's instructor-led classes to equipment that is not made
             by Peloton, or to no equipment at all. For treadmill users, that means instructor-led
@@ -322,14 +283,12 @@ const schema = {
           <p>
             Choose it if the energy of a studio class is what keeps you running, and you are happy
             to press the buttons yourself. If you are deciding between Peloton and iFIT more
-            broadly, our
-            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton</a>
-            comparison sets the two side by side.
+            broadly, our <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton</a> comparison sets the two side by side.
           </p>
         </div>
 
         <div id="zwift" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Zwift</h2>
+          <h2>Zwift</h2>
 <p>
             Zwift is a virtual world you run through as an avatar, alongside other Zwift users
             around the world. What it needs from your treadmill is your speed, and that is what
@@ -344,16 +303,12 @@ const schema = {
           </ul>
           <p>
             The foot-pod route is the important one for most readers: with a pod on your shoe,
-            Zwift works on nearly any treadmill, including a basic machine with no Bluetooth. Our
-            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            covers set-up and calibration, and our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
-            page explains the KICKR RUN and the machines that send their speed directly.
+            Zwift works on nearly any treadmill, including a basic machine with no Bluetooth. Our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> covers set-up and calibration, and our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a> page explains the KICKR RUN and the machines that send their speed directly.
           </p>
         </div>
 
         <div id="kinomap" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Kinomap</h2>
+          <h2>Kinomap</h2>
 <p>
             Kinomap is built around real-world video: routes filmed by its users, played back at
             the pace you run. It also has coaching videos, structured workouts, a map mode for
@@ -375,7 +330,7 @@ const schema = {
         </div>
 
         <div id="nike-run-club" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Nike Run Club</h2>
+          <h2>Nike Run Club</h2>
 <p>
             Nike Run Club is a running app first, with GPS tracking for outdoor runs, but its
             Audio-Guided Runs and training plans work just as well on a treadmill, and its App
@@ -392,14 +347,12 @@ const schema = {
             The catch on a treadmill is distance. Without GPS, a phone or watch estimates treadmill
             distance from motion, and the result can differ from the console, so treat the app's
             figure as approximate and take pace from the treadmill. For many people the coach's
-            voice is the whole point, and our guide on
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
-            has more ideas in the same spirit.
+            voice is the whole point, and our guide on <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a> has more ideas in the same spirit.
           </p>
         </div>
 
         <div id="apple-fitness-plus" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Apple Fitness+</h2>
+          <h2>Apple Fitness+</h2>
 <p>
             Apple Fitness+ is Apple's subscription video workout service, and treadmill running is
             one of its workout types. Trainers lead the session on screen and call out effort and
@@ -415,14 +368,12 @@ const schema = {
           <p>
             It suits a household already using an iPhone and an Apple TV, where a trainer on the big
             screen is the appeal. Separately, some treadmills can pair with an Apple Watch through
-            Apple's GymKit to share data; that is a watch feature, not Fitness+, and our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            explains it.
+            Apple's GymKit to share data; that is a watch feature, not Fitness+, and our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> explains it.
           </p>
         </div>
 
         <div id="runna" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Runna</h2>
+          <h2>Runna</h2>
 <p>
             Runna is a training-plan app: you set a goal, such as a faster 5K or a first marathon,
             and it builds a personalised plan of sessions around your schedule. It is now published
@@ -439,14 +390,12 @@ const schema = {
             Runna is for someone working towards a race or a specific target who uses the treadmill
             for some or all of their sessions. Its value is the plan, not the treadmill experience,
             so pair it with a watch that shows the workout on your wrist. If you are just starting
-            out, our
-            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workout</a>
-            guide is a gentler first step.
+            out, our <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workout</a> guide is a gentler first step.
           </p>
         </div>
 
         <div id="strava" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Strava (as Your Log)</h2>
+          <h2>Strava (as Your Log)</h2>
 <p>
             Strava is not a treadmill workout app in the way the others are. It is a training log
             and social network, and for treadmill runners its value is as the place every session
@@ -463,14 +412,12 @@ const schema = {
             One caution for treadmill runners: indoor and virtual runs depend on the distance your
             device or app reports, and Strava's own guidance says inaccurate virtual data is not
             allowed on its leaderboards, and suggests making an activity private if the data looks
-            wrong. If your treadmill's distance and your watch's disagree, our guide to
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
-            explains which to trust.
+            wrong. If your treadmill's distance and your watch's disagree, our guide to <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a> explains which to trust.
           </p>
         </div>
 
         <div id="control-explained" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Which Apps Can Control Your Treadmill</h2>
+          <h2>Which Apps Can Control Your Treadmill</h2>
 <p>
             Automatic control is the feature people most often assume they are getting and most
             often are not. It depends on three things lining up: the treadmill, the connection
@@ -501,9 +448,7 @@ const schema = {
           <p>
             If your treadmill has no Bluetooth at all, a foot pod on your shoe reports your speed to
             apps such as Zwift. It cannot change the treadmill's settings, but it brings a basic
-            machine into the virtual-world apps. Our
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
-            covers how they work and how to calibrate one.
+            machine into the virtual-world apps. Our <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a> covers how they work and how to calibrate one.
           </p>
           <p>
             Before buying a treadmill for an app, check the app maker's own compatibility page for
@@ -513,7 +458,7 @@ const schema = {
         </div>
 
         <div id="free-vs-paid" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Free Tiers, Trials and What You Pay For</h2>
+          <h2>Free Tiers, Trials and What You Pay For</h2>
 <p>
             Of the eight apps here, three have a free way in that does not expire: Nike Run Club,
             Kinomap's free version, and Strava's free version. The others are subscriptions with a
@@ -531,9 +476,7 @@ const schema = {
             Three practical habits save money. Start trials on a week when you can actually use
             them. Set a reminder before a trial converts, because most renew automatically. And do
             not stack overlapping subscriptions: one coaching or class app plus a free log is
-            enough for most people. If the ongoing cost is what puts you off, our guide to the
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>
-            covers machines that are complete without one.
+            enough for most people. If the ongoing cost is what puts you off, our guide to the <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a> covers machines that are complete without one.
           </p>
           <p>
             Prices and tier structures for apps like these can change at any time, so check the
@@ -542,7 +485,7 @@ const schema = {
         </div>
 
         <div id="setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Setting Up an App on a Treadmill</h2>
+          <h2>Setting Up an App on a Treadmill</h2>
 <p>
             Most app frustration on a treadmill is set-up frustration, and a few minutes beforehand
             avoid it.
@@ -555,14 +498,12 @@ const schema = {
             <li><strong>Learn the override.</strong> On a machine an app controls, find out how to take control back — on some set-ups, touching the console's own speed or incline buttons does it — before the first steep section.</li>
           </ul>
           <p>
-            If you are doing hill sessions by hand while following a video, our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a>
-            guide explains how to build them sensibly.
+            If you are doing hill sessions by hand while following a video, our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a> guide explains how to build them sensibly.
           </p>
         </div>
 
         <div id="which-app" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Which App Should You Use?</h2>
+          <h2>Which App Should You Use?</h2>
 <p>
             Start from the treadmill you have, then what keeps you running.
           </p>
@@ -594,141 +535,155 @@ const schema = {
             perfectly good way to train on a treadmill, and it costs nothing.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">15. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best app to use on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on your treadmill. On an iFIT-enabled NordicTrack or ProForm, iFIT is best because it controls speed and incline. On other Bluetooth treadmills, Kinomap and Zwift add routes or virtual worlds. For a free coach on any machine, Nike Run Club is hard to beat, and Strava is the best place to keep a log of every run.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is there a free treadmill workout app?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Nike Run Club is free and has audio-guided runs that work on a treadmill. Kinomap says it offers a free version with no time or usage limit, and Strava has a free version for logging runs. Most other treadmill apps, including iFIT, Peloton, Zwift, Apple Fitness+ and Runna, are subscriptions, some with free trials.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which apps can control treadmill speed and incline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                iFIT controls both on iFIT-enabled NordicTrack, ProForm and Freemotion treadmills. Kinomap says it can set the incline on compatible machines, so check its list for your model. Zwift's documentation names one treadmill whose incline it controls, the Wahoo KICKR RUN. Peloton on other brands, Apple Fitness+, Nike Run Club and Runna leave the buttons to you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use the Peloton app on any treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. The Peloton App runs on phones, tablets and TVs and offers running and walking classes you can follow on any treadmill. It does not control other brands' machines, so you set the speed and incline yourself from the instructor's cues. Peloton lists more than one app tier, so check what each includes before choosing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a smart treadmill to use Zwift?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Zwift needs your running speed, which a compatible treadmill can send directly or a foot pod on your shoe can supply on nearly any treadmill. A smart treadmill saves you the pod, but Zwift's documentation names only one treadmill whose incline it can control, so on most machines you change the incline yourself.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need an Apple Watch for Apple Fitness+ treadmill workouts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Apple says an iPhone is all you need for Fitness+, and the workouts can play on iPhone, iPad or Apple TV. Wearing an Apple Watch adds live metrics such as heart rate. Fitness+ does not change the treadmill's speed or incline; you follow the trainer and adjust the machine yourself.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Choosing a Treadmill App</h2>
+          <p>Each of these leads to paying for a feature you do not get, or a session that is less safe than it should be.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming "compatible" means the app controls the treadmill</h3>
+              <p>Many treadmills send their speed to apps but accept no instructions back, and listings rarely say which. If automatic speed or incline is the reason you are buying, check the app maker's own compatibility page for the exact model and year, and treat a treadmill listing's app logos as a sign the machine shares data, nothing more.</p>
+            </li>
+            <li>
+              <h3>Watching a phone on the console shelf</h3>
+              <p>Looking down at a small screen pulls you forward on the belt, shortens your stride and makes a misstep more likely. Mount a tablet at eye level or put a screen in front of the treadmill, pair devices before the belt starts, and keep the safety key clipped on, especially with an app that can change the speed or incline.</p>
+            </li>
+            <li>
+              <h3>Letting a free trial roll into a subscription you will not use</h3>
+              <p>Most app trials renew automatically. Start one in a week when you can train, set a reminder a couple of days before it ends, and decide then. Avoid stacking several class or coaching subscriptions; one paid app plus a free log such as Strava covers most treadmill runners, and the free apps here may be enough.</p>
+            </li>
+            <li>
+              <h3>Trusting app distance over the console</h3>
+              <p>On a treadmill there is no GPS, so a phone or watch app estimates distance from motion or a sensor, and it can disagree with the console. Compare the two on a steady run. If the gap is large, calibrate the foot pod or watch, or check the treadmill itself, before you base training paces on either figure.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing a Treadmill App</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these leads to paying for a feature you do not get, or a session that is less safe than it should be.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming "compatible" means the app controls the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">Many treadmills send their speed to apps but accept no instructions back, and listings rarely say which. If automatic speed or incline is the reason you are buying, check the app maker's own compatibility page for the exact model and year, and treat a treadmill listing's app logos as a sign the machine shares data, nothing more.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Watching a phone on the console shelf</h3>
-              <p class="text-gray-700 text-sm m-0">Looking down at a small screen pulls you forward on the belt, shortens your stride and makes a misstep more likely. Mount a tablet at eye level or put a screen in front of the treadmill, pair devices before the belt starts, and keep the safety key clipped on, especially with an app that can change the speed or incline.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting a free trial roll into a subscription you will not use</h3>
-              <p class="text-gray-700 text-sm m-0">Most app trials renew automatically. Start one in a week when you can train, set a reminder a couple of days before it ends, and decide then. Avoid stacking several class or coaching subscriptions; one paid app plus a free log such as Strava covers most treadmill runners, and the free apps here may be enough.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting app distance over the console</h3>
-              <p class="text-gray-700 text-sm m-0">On a treadmill there is no GPS, so a phone or watch app estimates distance from motion or a sensor, and it can disagree with the console. Compare the two on a steady run. If the gap is large, calibrate the foot pod or watch, or check the treadmill itself, before you base training paces on either figure.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/zwift-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Zwift</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Zwift Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Set-up, foot pods, calibration and what Zwift can and cannot control.</p>
-            </a>
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">iFIT</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the membership adds to a NordicTrack or ProForm, and what the machine does without it.</p>
-            </a>
-            <a href="/how-to-make-treadmill-running-less-boring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Motivation</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Making Treadmill Running Less Boring</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Session ideas, entertainment and structure that keep you on the belt.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Match the app to the treadmill you own.</strong> On an iFIT-enabled
             NordicTrack or ProForm, iFIT is the only app that fully drives the machine. On another
             Bluetooth treadmill, try Kinomap's free version for video routes or Zwift for a virtual
             world; on any treadmill at all, Nike Run Club is a free coach, and Strava keeps the log.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, check the current price and the exact compatibility on the app maker's
             site before subscribing, and mount the screen where you can see it without looking down.
-            If you are still choosing the treadmill itself, our guide to
-            <a href="/smart-treadmill-vs-regular/" class="text-[#5AA9FF] font-bold no-underline">smart versus regular treadmills</a>
-            is the place to start.
+            If you are still choosing the treadmill itself, our guide to <a href="/smart-treadmill-vs-regular/" class="text-[#5AA9FF] font-bold no-underline">smart versus regular treadmills</a> is the place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/zwift-treadmill-guide/">Zwift Treadmill Guide</a></li>
+            <li><a href="/is-ifit-worth-it/">Is iFIT Worth It?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best app to use on a treadmill?</h3></summary>
+            <p class="faq-a">
+              It depends on your treadmill. On an iFIT-enabled NordicTrack or ProForm, iFIT is best because it controls speed and incline. On other Bluetooth treadmills, Kinomap and Zwift add routes or virtual worlds. For a free coach on any machine, Nike Run Club is hard to beat, and Strava is the best place to keep a log of every run.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is there a free treadmill workout app?</h3></summary>
+            <p class="faq-a">
+              Yes. Nike Run Club is free and has audio-guided runs that work on a treadmill. Kinomap says it offers a free version with no time or usage limit, and Strava has a free version for logging runs. Most other treadmill apps, including iFIT, Peloton, Zwift, Apple Fitness+ and Runna, are subscriptions, some with free trials.
             </p>
+          </details>
+          <details>
+            <summary><h3>Which apps can control treadmill speed and incline?</h3></summary>
+            <p class="faq-a">
+              iFIT controls both on iFIT-enabled NordicTrack, ProForm and Freemotion treadmills. Kinomap says it can set the incline on compatible machines, so check its list for your model. Zwift's documentation names one treadmill whose incline it controls, the Wahoo KICKR RUN. Peloton on other brands, Apple Fitness+, Nike Run Club and Runna leave the buttons to you.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use the Peloton app on any treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. The Peloton App runs on phones, tablets and TVs and offers running and walking classes you can follow on any treadmill. It does not control other brands' machines, so you set the speed and incline yourself from the instructor's cues. Peloton lists more than one app tier, so check what each includes before choosing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a smart treadmill to use Zwift?</h3></summary>
+            <p class="faq-a">
+              No. Zwift needs your running speed, which a compatible treadmill can send directly or a foot pod on your shoe can supply on nearly any treadmill. A smart treadmill saves you the pod, but Zwift's documentation names only one treadmill whose incline it can control, so on most machines you change the incline yourself.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need an Apple Watch for Apple Fitness+ treadmill workouts?</h3></summary>
+            <p class="faq-a">
+              No. Apple says an iPhone is all you need for Fitness+, and the workouts can play on iPhone, iPad or Apple TV. Wearing an Apple Watch adds live metrics such as heart rate. Fitness+ does not change the treadmill's speed or incline; you follow the trainer and adjust the machine yourself.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/zwift-treadmill-guide/" class="card">
+            <div class="c-kicker">Zwift</div>
+            <div class="c-title">Zwift Treadmill Guide</div>
+            <p class="c-blurb">Set-up, foot pods, calibration and what Zwift can and cannot control.</p>
+          </a>
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">iFIT</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">What the membership adds to a NordicTrack or ProForm, and what the machine does without it.</p>
+          </a>
+          <a href="/how-to-make-treadmill-running-less-boring/" class="card">
+            <div class="c-kicker">Motivation</div>
+            <div class="c-title">Making Treadmill Running Less Boring</div>
+            <p class="c-blurb">Session ideas, entertainment and structure that keep you on the belt.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

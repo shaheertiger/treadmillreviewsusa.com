@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Curved Treadmill Workouts (2026): Sprints, Tempo and Sled Pushes";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/curved-treadmill-workouts/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,44 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Six-Week Plan", link: "#progression" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-curvedtreadmillworkouts" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-curvedtreadmillworkouts)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Guide</span>
+      </nav>
+      <h1 class="ed-title">Curved Treadmill Workouts Built Around a Belt You Drive</h1>
+      <p class="ed-dek">
+        A curved treadmill goes exactly as fast as you push it, which makes it brilliant for some sessions and awkward for others. Here are four workouts that play to its strengths — sprint repeats, tempo, sled-style pushes and walking intervals — and a six-week progression that builds into them without wrecking your calves.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Curved Treadmill Workouts <span class="text-[#5AA9FF]">Built Around a Belt You Drive</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A curved treadmill goes exactly as fast as you push it, which makes it brilliant for some sessions and awkward for others. Here are four workouts that play to its strengths — sprint repeats, tempo, sled-style pushes and walking intervals — and a six-week progression that builds into them without wrecking your calves.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#sprint-repeats" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Four Sessions
-          </a>
-          <a href="#progression" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Six-Week Progression
-          </a>
-        </div>
+        <a href="#sprint-repeats" class="btn-ghost">The Four Sessions</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most treadmill workouts are written for a motorised belt: set a speed, hold it, change it on
+          the button. A curved treadmill has no buttons for any of that. You speed up by moving
+          forward on the curve and slow down by drifting back, so sessions are defined by effort and
+          time rather than by speed. That suits short, hard efforts better than anything else in a
+          home gym. This page sets out the sessions worth doing on one; if you are choosing a
+          machine to do them on, our roundup of the <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a> compares the current models.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This is a guide to structuring sessions on a type of equipment — it is not medical,
           physiotherapy or coaching advice, and we are not qualified to give any of those. Sprinting
@@ -174,47 +159,27 @@ const schema = {
           below:</strong> durations, rep counts and progressions are illustrations rather than
           prescriptions, and curved trainers differ in curve depth and resistance, so the same
           session can feel different from one machine to the next.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Curved Treadmill Workouts: The Short Answer</a>
-          <a href="#why-curved" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why a Curved Treadmill Suits Sprinting, and What That Means for Sessions</a>
-          <a href="#warm-up-and-effort" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Warm-Up, Effort and How to Measure It</a>
-          <a href="#sprint-repeats" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Session One: Sprint Repeats</a>
-          <a href="#tempo" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Session Two: Tempo Running on a Curve</a>
-          <a href="#sled-push" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Session Three: Sled-Push Style Work</a>
-          <a href="#walking-intervals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Session Four: Walking Intervals</a>
-          <a href="#progression" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. A Six-Week Progression</a>
-          <a href="#fitting-it-in" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Fitting Curved Sessions Into a Week, and When to Back Off</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What to Buy: Choosing a Curved Trainer for These Sessions</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Curved Treadmill Workouts: The Short Answer</a></li>
+            <li><a href="#why-curved">Why a Curved Treadmill Suits Sprinting, and What That Means for Sessions</a></li>
+            <li><a href="#warm-up-and-effort">Warm-Up, Effort and How to Measure It</a></li>
+            <li><a href="#sprint-repeats">Session One: Sprint Repeats</a></li>
+            <li><a href="#tempo">Session Two: Tempo Running on a Curve</a></li>
+            <li><a href="#sled-push">Session Three: Sled-Push Style Work</a></li>
+            <li><a href="#walking-intervals">Session Four: Walking Intervals</a></li>
+            <li><a href="#progression">A Six-Week Progression</a></li>
+            <li><a href="#fitting-it-in">Fitting Curved Sessions Into a Week, and When to Back Off</a></li>
+            <li><a href="#what-to-buy">What to Buy: Choosing a Curved Trainer for These Sessions</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most treadmill workouts are written for a motorised belt: set a speed, hold it, change it on
-          the button. A curved treadmill has no buttons for any of that. You speed up by moving
-          forward on the curve and slow down by drifting back, so sessions are defined by effort and
-          time rather than by speed. That suits short, hard efforts better than anything else in a
-          home gym. This page sets out the sessions worth doing on one; if you are choosing a
-          machine to do them on, our roundup of the
-          <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
-          compares the current models.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Curved Treadmill Workouts: The Short Answer</h2>
+          <h2>Curved Treadmill Workouts: The Short Answer</h2>
 <p>
             <strong>The best curved treadmill workouts are short, hard repeats with full recovery —
             sprints of 8 to 20 seconds, resisted pushes on machines that have resistance — plus
@@ -240,21 +205,16 @@ const schema = {
             session for everyone else.</li>
           </ul>
           <p>
-            If you are new to a curved treadmill, start with the technique in our guide to
-            <a href="/how-to-use-a-manual-treadmill/" class="text-[#0F62FE] font-medium">using a manual treadmill</a>
-            before attempting any of these. And if most of your sprinting will be on a motorised
-            machine, our
-            <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a>
-            page covers the mount at speed, incline sprints and the rest of what changes when a
+            If you are new to a curved treadmill, start with the technique in our guide to <a href="/how-to-use-a-manual-treadmill/" class="text-[#0F62FE] font-medium">using a manual treadmill</a> before attempting any of these. And if most of your sprinting will be on a motorised
+            machine, our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a> page covers the mount at speed, incline sprints and the rest of what changes when a
             motor sets the pace.
           </p>
         </div>
 
         <div id="why-curved" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why a Curved Treadmill Suits Sprinting, and What That Means for Sessions</h2>
+          <h2>Why a Curved Treadmill Suits Sprinting, and What That Means for Sessions</h2>
 <p>
-            The mechanics of the curve are explained in our
-            <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>.
+            The mechanics of the curve are explained in our <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>.
             What matters here is how they change the way you structure a workout.
           </p>
           <p>
@@ -288,8 +248,7 @@ const schema = {
             the reason coaches and athletes use them.
           </p>
           <p>
-            Two consequences follow. First, sessions are defined by <strong>effort and time</strong>
-            rather than speed: "ten seconds at a 9 out of 10" works on any curved trainer, while
+            Two consequences follow. First, sessions are defined by <strong>effort and time</strong> rather than speed: "ten seconds at a 9 out of 10" works on any curved trainer, while
             "ten seconds at 14 mph" is a number you either reach or do not. Second, the same freedom
             that makes sprinting easy makes steady running harder, because a moment's lapse in
             concentration lets the pace drift. That is why the tempo session below is broken into
@@ -298,7 +257,7 @@ const schema = {
         </div>
 
         <div id="warm-up-and-effort" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Warm-Up, Effort and How to Measure It</h2>
+          <h2>Warm-Up, Effort and How to Measure It</h2>
 <p>
             Every session below assumes a warm-up and a cool-down, and a way of judging how hard you
             are working when there is no speed setting to read.
@@ -312,9 +271,7 @@ const schema = {
             <li><strong>Five minutes of easy walking into easy jogging</strong> on the curve, starting
             near the bottom and moving forward gradually.</li>
             <li><strong>A few minutes of dynamic drills off the machine</strong>: leg swings, walking
-            lunges, high knees, calf raises. Our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            describes them.</li>
+            lunges, high knees, calf raises. Our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> describes them.</li>
             <li><strong>Three or four progressive strides</strong> of 15 to 20 seconds on the belt,
             each a little faster than the last, with a walk between. The last should be close to the
             effort of the main session.</li>
@@ -341,15 +298,13 @@ const schema = {
             <strong>Heart rate</strong> is the best guide for tempo and walking intervals and the
             worst for sprints, because it lags well behind a ten-second effort and peaks after the
             rep has finished. A chest strap reads changing effort more reliably than a wrist sensor;
-            our roundup of the
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a>
-            explains why, and some curved trainer consoles, such as the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a>'s, pair
+            our roundup of the <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a> explains why, and some curved trainer consoles, such as the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a>'s, pair
             with a strap directly.
           </p>
         </div>
 
         <div id="sprint-repeats" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Session One: Sprint Repeats</h2>
+          <h2>Session One: Sprint Repeats</h2>
 <p>
             This is the session a curved treadmill does better than any other home machine. The aim
             is a handful of genuinely maximal efforts, each as fast as the first, with full recovery
@@ -404,7 +359,7 @@ const schema = {
         </div>
 
         <div id="tempo" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Session Two: Tempo Running on a Curve</h2>
+          <h2>Session Two: Tempo Running on a Curve</h2>
 <p>
             Tempo running — a sustained effort that is comfortably hard, where you can speak a few
             words but not hold a conversation — is the session curved treadmill owners most often
@@ -457,7 +412,7 @@ const schema = {
         </div>
 
         <div id="sled-push" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Session Three: Sled-Push Style Work</h2>
+          <h2>Session Three: Sled-Push Style Work</h2>
 <p>
             Pushing a weighted sled is a staple of strength and conditioning training, and a curved
             treadmill with heavy resistance can imitate it: hands on the rails or front handles, body
@@ -468,8 +423,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">On a curved trainer with resistance</h3>
           <p>
             This version needs a machine with adjustable resistance. Of the machines in our curved
-            roundup, the SOLE C80 and the Sunny SF-X7110 have eight magnetic levels each, and the
-            <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner has six levels with the top two set up for sled-push work. Machines
+            roundup, the SOLE C80 and the Sunny SF-X7110 have eight magnetic levels each, and the <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner has six levels with the top two set up for sled-push work. Machines
             without resistance — including the AssaultRunner Pro — cannot do a true sled push,
             because the belt runs freely.
           </p>
@@ -501,7 +455,7 @@ const schema = {
         </div>
 
         <div id="walking-intervals" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Session Four: Walking Intervals</h2>
+          <h2>Session Four: Walking Intervals</h2>
 <p>
             Curved treadmills are not walking machines, and the roundup is plain that anyone who
             mainly wants to walk should buy something else. But a walking-interval session has a
@@ -534,15 +488,13 @@ const schema = {
           </p>
           <p>
             If walking is most of what you intend to do, a curved trainer is the wrong purchase;
-            our
-            <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">manual treadmill roundup</a>
-            covers the flat folding walkers, and a motorised incline machine does long walks far
+            our <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">manual treadmill roundup</a> covers the flat folding walkers, and a motorised incline machine does long walks far
             better.
           </p>
         </div>
 
         <div id="progression" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. A Six-Week Progression</h2>
+          <h2>A Six-Week Progression</h2>
 <p>
             The plan below takes a reasonably fit runner who is new to a curved treadmill from the
             first sessions to a full week of curved work. It is an illustration, not a prescription:
@@ -591,7 +543,7 @@ const schema = {
         </div>
 
         <div id="fitting-it-in" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Fitting Curved Sessions Into a Week, and When to Back Off</h2>
+          <h2>Fitting Curved Sessions Into a Week, and When to Back Off</h2>
 <p>
             A curved treadmill makes hard work convenient, and that is its main hazard: it is easy to
             do too much of it.
@@ -627,7 +579,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What to Buy: Choosing a Curved Trainer for These Sessions</h2>
+          <h2>What to Buy: Choosing a Curved Trainer for These Sessions</h2>
 <p>
             Which of these sessions you care about most is the best guide to which curved trainer to
             buy.
@@ -645,149 +597,161 @@ const schema = {
             you watching a separate device.</li>
           </ul>
           <p>
-            Our
-            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill buying guide</a>
-            compares seven current trainers on exactly these points — resistance, curve, deck size,
+            Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill buying guide</a> compares seven current trainers on exactly these points — resistance, curve, deck size,
             weight rating and warranty — and says plainly where sources disagreed on a figure. Expect
             to spend a little over $2,000 at the least; there is no credible curved trainer much
             below that.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good curved treadmill workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                After a 15-minute warm-up with progressive strides, do six to ten sprints of 10 to 12 seconds at near-maximal effort, with about two minutes of slow walking between them, then a 5 to 10-minute walking cool-down. Stop on the first rep that is slower than the last. Once a week is enough for most people training at home.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a curved treadmill good for sprinting?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, it is the best home machine for it. The belt goes exactly as fast as you push it, so there is no acceleration lag, no stepping onto a fast belt, no top-speed limit and no being carried off the back when you tire. The trade-off is that steady, easy running feels harder because nothing holds the pace for you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you do sled pushes on a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On machines with heavy adjustable resistance, yes: hands on the rails, body leaning well forward, short powerful steps for 10 to 20 seconds. Machines without resistance cannot do a true sled push because the belt runs freely; standing-start accelerations are the nearest substitute. Keep your back flat and drop a level if your form breaks.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is running slower on a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Because you drive the belt yourself instead of a motor carrying it under you. Users and coaches widely report that the same effort produces a lower speed on a curved trainer, though how much lower varies with the machine, the resistance and the runner. Run by effort at first and set your curved-treadmill paces from what the console shows.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should you use a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Two or three sessions a week suits most people once they have built up: one sprint or push session, one tempo session and one easy session, with easy days between the hard ones. The curve loads the calves and Achilles tendons heavily, so build up over several weeks and do long easy miles elsewhere if you can.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can beginners use a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, with patience. Start with walking intervals while holding the rails, learning that moving forward speeds the belt and drifting back slows it, and progress to run-walk sessions over a couple of weeks before any sprints. Anyone with balance, heart or joint concerns should talk to a doctor or physical therapist before starting.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Curved Treadmill Workouts</h2>
+          <p>A curved trainer removes most of the hazards of sprinting on a motorised belt and adds a few of its own. These are the ones that cost people sessions.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Going straight to sprints</h3>
+              <p>The forefoot-led stride on a curve loads the calves and Achilles tendons more than most runners expect, and a first session of all-out sprints is a common route to a sore week or worse. Spend a fortnight on walking intervals, run-walk and build-ups before the first maximal rep.</p>
+            </li>
+            <li>
+              <h3>Cutting the rest between sprints</h3>
+              <p>Standing on the deck for two minutes feels unproductive, so people shorten it. Each rep then gets slower and the session turns into hard intervals rather than sprints. Rest roughly ten times the sprint length, and end the session on the first rep that is slower or sloppier than the last.</p>
+            </li>
+            <li>
+              <h3>Using maximum resistance for everything</h3>
+              <p>Resistance is for sled-style pushes and resisted sprints. Left on high for tempo or easy running, it turns the session into a grind and changes your stride. Keep it low or off for running, set it high only for pushes, and use the same setting each week so the numbers mean something.</p>
+            </li>
+            <li>
+              <h3>Carrying motorised paces across</h3>
+              <p>The same effort usually produces a lower speed on a curved trainer than on a motorised belt, so a tempo pace copied from your old treadmill will be far too hard. Run the first few sessions by effort or heart rate, note the speeds, and build your curved-treadmill paces from those.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Curved Treadmill Workouts</h2>
-          <p class="text-gray-700 leading-relaxed">A curved trainer removes most of the hazards of sprinting on a motorised belt and adds a few of its own. These are the ones that cost people sessions.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Going straight to sprints</h3>
-              <p class="text-gray-700 text-sm m-0">The forefoot-led stride on a curve loads the calves and Achilles tendons more than most runners expect, and a first session of all-out sprints is a common route to a sore week or worse. Spend a fortnight on walking intervals, run-walk and build-ups before the first maximal rep.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cutting the rest between sprints</h3>
-              <p class="text-gray-700 text-sm m-0">Standing on the deck for two minutes feels unproductive, so people shorten it. Each rep then gets slower and the session turns into hard intervals rather than sprints. Rest roughly ten times the sprint length, and end the session on the first rep that is slower or sloppier than the last.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using maximum resistance for everything</h3>
-              <p class="text-gray-700 text-sm m-0">Resistance is for sled-style pushes and resisted sprints. Left on high for tempo or easy running, it turns the session into a grind and changes your stride. Keep it low or off for running, set it high only for pushes, and use the same setting each week so the numbers mean something.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Carrying motorised paces across</h3>
-              <p class="text-gray-700 text-sm m-0">The same effort usually produces a lower speed on a curved trainer than on a motorised belt, so a tempo pace copied from your old treadmill will be far too hard. Run the first few sessions by effort or heart rate, note the speeds, and build your curved-treadmill paces from those.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-curved-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Curved Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Seven self-powered trainers compared on resistance, curve, deck and warranty.</p>
-            </a>
-            <a href="/treadmill-sprint-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sprints</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Sprint Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four sprint sessions, rest intervals and the safe mount on a motorised belt.</p>
-            </a>
-            <a href="/curved-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How the curve works, which claimed benefits are real and who should not buy one.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A curved treadmill is built for short, hard efforts with full
             recovery.</strong> Sprint repeats of 8 to 20 seconds, sled-style pushes on machines with
             resistance, and tempo broken into blocks are the sessions that suit it; walking intervals
             are the way in and the easy day between.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Build up over several weeks, keep sprinting to once or twice a week, and run by effort
             rather than by the speeds you used on a motorised belt. If you are choosing a machine for
-            these sessions, our
-            <a href="/best-curved-treadmills/" class="text-[#5AA9FF] font-bold no-underline">comparison of the best curved treadmills</a>
-            shows which have resistance, which have the widest decks and which suit heavier runners.
+            these sessions, our <a href="/best-curved-treadmills/" class="text-[#5AA9FF] font-bold no-underline">comparison of the best curved treadmills</a> shows which have resistance, which have the widest decks and which suit heavier runners.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-curved-treadmills/">Best Curved Treadmills</a></li>
+            <li><a href="/treadmill-sprint-workout/">Treadmill Sprint Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a good curved treadmill workout?</h3></summary>
+            <p class="faq-a">
+              After a 15-minute warm-up with progressive strides, do six to ten sprints of 10 to 12 seconds at near-maximal effort, with about two minutes of slow walking between them, then a 5 to 10-minute walking cool-down. Stop on the first rep that is slower than the last. Once a week is enough for most people training at home.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a curved treadmill good for sprinting?</h3></summary>
+            <p class="faq-a">
+              Yes, it is the best home machine for it. The belt goes exactly as fast as you push it, so there is no acceleration lag, no stepping onto a fast belt, no top-speed limit and no being carried off the back when you tire. The trade-off is that steady, easy running feels harder because nothing holds the pace for you.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you do sled pushes on a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              On machines with heavy adjustable resistance, yes: hands on the rails, body leaning well forward, short powerful steps for 10 to 20 seconds. Machines without resistance cannot do a true sled push because the belt runs freely; standing-start accelerations are the nearest substitute. Keep your back flat and drop a level if your form breaks.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is running slower on a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              Because you drive the belt yourself instead of a motor carrying it under you. Users and coaches widely report that the same effort produces a lower speed on a curved trainer, though how much lower varies with the machine, the resistance and the runner. Run by effort at first and set your curved-treadmill paces from what the console shows.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How often should you use a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              Two or three sessions a week suits most people once they have built up: one sprint or push session, one tempo session and one easy session, with easy days between the hard ones. The curve loads the calves and Achilles tendons heavily, so build up over several weeks and do long easy miles elsewhere if you can.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can beginners use a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, with patience. Start with walking intervals while holding the rails, learning that moving forward speeds the belt and drifting back slows it, and progress to run-walk sessions over a couple of weeks before any sprints. Anyone with balance, heart or joint concerns should talk to a doctor or physical therapist before starting.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-curved-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Curved Treadmills</div>
+            <p class="c-blurb">Seven self-powered trainers compared on resistance, curve, deck and warranty.</p>
+          </a>
+          <a href="/treadmill-sprint-workout/" class="card">
+            <div class="c-kicker">Sprints</div>
+            <div class="c-title">Treadmill Sprint Workout</div>
+            <p class="c-blurb">Four sprint sessions, rest intervals and the safe mount on a motorised belt.</p>
+          </a>
+          <a href="/curved-treadmill-guide/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Curved Treadmill Guide</div>
+            <p class="c-blurb">How the curve works, which claimed benefits are real and who should not buy one.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Sprint Workout (2026): How to Sprint on a Treadmill Safely";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-sprint-workout/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,105 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "The Safe Mount", link: "#mounting" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillsprintworkout" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillsprintworkout)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Sprint Workouts Without Being Thrown Off the Back</h1>
+      <p class="ed-dek">
+        Sprinting is the one thing a motorised treadmill does worse than almost any other surface, and people do it anyway. Here is what is different about sprinting on a belt, how to get on and off one at speed, why hill sprints are usually the better home option, and four sessions that respect the machine.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Sprint Workouts <span class="text-[#5AA9FF]">Without Being Thrown Off the Back</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Sprinting is the one thing a motorised treadmill does worse than almost any other surface, and people do it anyway. Here is what is different about sprinting on a belt, how to get on and off one at speed, why hill sprints are usually the better home option, and four sessions that respect the machine.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#mounting" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Safe Mount and Dismount
-          </a>
-          <a href="#sessions" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Sessions
-          </a>
-        </div>
+        <a href="#mounting" class="btn-ghost">The Safe Mount and Dismount</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to sprinting on one — it is not medical advice,
-          physiotherapy or coaching, and we are not qualified to give any of those. Sprinting puts
-          more force through hamstrings, calves and Achilles tendons than any other running, and
-          sprinting on a motorised belt adds a real risk of falling. If you have a heart, lung or
-          circulation condition, take medication that affects heart rate, are pregnant, have a
-          history of hamstring, calf or Achilles injury, or have balance problems, talk to a doctor
-          or physical therapist before trying it. Stop for chest pain, dizziness or any sharp pain.
-          <strong class="text-gray-900">On the figures below:</strong> speeds, grades and rep
-          counts are illustrations, not prescriptions, and top speeds vary widely between machines.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: Sprinting on a Treadmill</a>
-          <a href="#how-it-differs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How a Treadmill Sprint Differs From a Track Sprint</a>
-          <a href="#mounting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Safe Mount and Dismount at Speed</a>
-          <a href="#incline-sprints" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Incline Sprints Are Usually Better at Home</a>
-          <a href="#sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Four Treadmill Sprint Sessions</a>
-          <a href="#recovery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Rest Intervals: Why Full Recovery Matters</a>
-          <a href="#how-many" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Many Sprints Per Session and Per Week</a>
-          <a href="#warm-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warming Up for Treadmill Sprints</a>
-          <a href="#who-should-not" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Not Sprint on a Treadmill</a>
-          <a href="#curved-treadmills" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Curved and Manual Treadmills: Built for Sprinting</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Safety Rules for Every Sprint Session</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill sprint workout is a session of short, all-out or near-all-out efforts — ten to
           thirty seconds — with long, complete recovery between them. On a track, the hard part is
           the sprint. On a motorised treadmill, the hard part is the transition: getting onto a
@@ -211,8 +145,40 @@ const schema = {
           one that puts people on the floor.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This is a practical guide to sprinting on one — it is not medical advice,
+          physiotherapy or coaching, and we are not qualified to give any of those. Sprinting puts
+          more force through hamstrings, calves and Achilles tendons than any other running, and
+          sprinting on a motorised belt adds a real risk of falling. If you have a heart, lung or
+          circulation condition, take medication that affects heart rate, are pregnant, have a
+          history of hamstring, calf or Achilles injury, or have balance problems, talk to a doctor
+          or physical therapist before trying it. Stop for chest pain, dizziness or any sharp pain. <strong class="text-gray-900">On the figures below:</strong> speeds, grades and rep
+          counts are illustrations, not prescriptions, and top speeds vary widely between machines.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: Sprinting on a Treadmill</a></li>
+            <li><a href="#how-it-differs">How a Treadmill Sprint Differs From a Track Sprint</a></li>
+            <li><a href="#mounting">The Safe Mount and Dismount at Speed</a></li>
+            <li><a href="#incline-sprints">Why Incline Sprints Are Usually Better at Home</a></li>
+            <li><a href="#sessions">Four Treadmill Sprint Sessions</a></li>
+            <li><a href="#recovery">Rest Intervals: Why Full Recovery Matters</a></li>
+            <li><a href="#how-many">How Many Sprints Per Session and Per Week</a></li>
+            <li><a href="#warm-up">Warming Up for Treadmill Sprints</a></li>
+            <li><a href="#who-should-not">Who Should Not Sprint on a Treadmill</a></li>
+            <li><a href="#curved-treadmills">Curved and Manual Treadmills: Built for Sprinting</a></li>
+            <li><a href="#safety">Safety Rules for Every Sprint Session</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: Sprinting on a Treadmill</h2>
+          <h2>The Short Answer: Sprinting on a Treadmill</h2>
 <p>
             Yes, you can <strong>sprint on a treadmill</strong>, but it is a different exercise
             from sprinting on a track and it needs a different approach. The belt pulls your feet
@@ -239,7 +205,7 @@ const schema = {
         </div>
 
         <div id="how-it-differs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How a Treadmill Sprint Differs From a Track Sprint</h2>
+          <h2>How a Treadmill Sprint Differs From a Track Sprint</h2>
 <p>
             Four things change when the ground moves instead of you, and all four matter for how
             you set up the session.
@@ -250,18 +216,14 @@ const schema = {
             moving, so part of what your legs do is keep up rather than drive. The feeling is of
             being carried rather than propelling, and the mechanics are not identical — most
             runners find the hip extension at the back of the stride is shorter, and the emphasis
-            shifts toward getting the foot down and back up quickly. Our
-            <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form guide</a>
-            covers the "belt pulls you" question at easy speeds; at sprint speeds the effect is
+            shifts toward getting the foot down and back up quickly. Our <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form guide</a> covers the "belt pulls you" question at easy speeds; at sprint speeds the effect is
             more pronounced. It is not a reason not to sprint on a treadmill, but it is a reason not
             to expect it to transfer perfectly to the track.
           </p>
           <p>
             <strong>The machine has a ceiling.</strong> Most home treadmills top out somewhere
             between about 10 and 12 mph, with running-focused and commercial machines reaching the
-            low-to-mid teens. Those are typical ranges, not figures for any model, and our guide to
-            <a href="/how-fast-do-treadmills-go/" class="text-[#0F62FE] font-medium">how fast treadmills go</a>
-            sets them out by machine type. A 10 mph belt is a six-minute mile — a fast run for most
+            low-to-mid teens. Those are typical ranges, not figures for any model, and our guide to <a href="/how-fast-do-treadmills-go/" class="text-[#0F62FE] font-medium">how fast treadmills go</a> sets them out by machine type. A 10 mph belt is a six-minute mile — a fast run for most
             people, but a long way from a sprint for a fit adult, who may sprint on the ground at
             well above that. So for anyone fast, a flat treadmill sprint is really a fast run at the
             machine's maximum, and the only way to make it a true near-maximal effort is to add
@@ -288,7 +250,7 @@ const schema = {
         </div>
 
         <div id="mounting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Safe Mount and Dismount at Speed</h2>
+          <h2>The Safe Mount and Dismount at Speed</h2>
 <p>
             This is the skill that decides whether flat treadmill sprints are safe for you. Learn it
             at a jogging speed and practise it for several sessions before using it at a hard one.
@@ -337,7 +299,7 @@ const schema = {
         </div>
 
         <div id="incline-sprints" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Incline Sprints Are Usually Better at Home</h2>
+          <h2>Why Incline Sprints Are Usually Better at Home</h2>
 <p>
             Hill sprints solve most of the treadmill problems at once, which is why they are the
             default recommendation on this page.
@@ -362,8 +324,7 @@ const schema = {
             less landing force than flat sprints, which is why coaches use them with runners
             returning from injury or starting speed work. The cost shifts to the calves and
             Achilles tendons, which do more work on every uphill push-off; that is covered under
-            who should not sprint below, and in detail in our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout guide</a>.
+            who should not sprint below, and in detail in our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout guide</a>.
           </p>
           <p>
             <strong>The incline motor sets the pace.</strong> The one awkwardness is that raising
@@ -382,7 +343,7 @@ const schema = {
         </div>
 
         <div id="sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Four Treadmill Sprint Sessions</h2>
+          <h2>Four Treadmill Sprint Sessions</h2>
 <p>
             All four assume the sprint-specific warm-up described later, a cool-down of five to ten
             minutes of easy walking, and recovery that is genuinely complete between reps. Speeds
@@ -444,7 +405,7 @@ const schema = {
         </div>
 
         <div id="recovery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Rest Intervals: Why Full Recovery Matters</h2>
+          <h2>Rest Intervals: Why Full Recovery Matters</h2>
 <p>
             The thing that most separates a sprint session from a HIIT session is the length of the
             rest, and the most common error is cutting it short because standing around feels
@@ -454,9 +415,7 @@ const schema = {
             A true sprint runs on the body's immediate energy stores, which empty within seconds
             and take a few minutes to refill. Sprint again before they have, and the effort is
             slower; the session quietly turns into a hard aerobic interval workout. That is a
-            different and perfectly good session — our
-            <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT guide</a>
-            covers it — but it is not sprinting, and it does not train the top-end speed and
+            different and perfectly good session — our <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT guide</a> covers it — but it is not sprinting, and it does not train the top-end speed and
             power that sprinting is for. If your tenth rep is noticeably slower than your second,
             the recovery is too short or there are too many reps.
           </p>
@@ -481,7 +440,7 @@ const schema = {
         </div>
 
         <div id="how-many" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Many Sprints Per Session and Per Week</h2>
+          <h2>How Many Sprints Per Session and Per Week</h2>
 <p>
             <strong>Per session: six to ten.</strong> Fewer than you expect. A sprint is a
             near-maximal effort, and the body can only produce a handful before quality drops.
@@ -506,15 +465,13 @@ const schema = {
           </p>
           <p>
             Sprinting also fits better into a week that has other things in it. Two or three easy
-            runs or walks, one sprint session and one longer easy session is a sensible shape; our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
-            covers the moderate sessions that can alternate with sprints week by week rather than
+            runs or walks, one sprint session and one longer easy session is a sensible shape; our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a> covers the moderate sessions that can alternate with sprints week by week rather than
             being added on top.
           </p>
         </div>
 
         <div id="warm-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warming Up for Treadmill Sprints</h2>
+          <h2>Warming Up for Treadmill Sprints</h2>
 <p>
             The warm-up before a sprint session is the most important of any treadmill workout and
             the one most often rushed. Cold hamstrings asked to produce maximal force are the
@@ -526,9 +483,7 @@ const schema = {
             or 1%, until you are warm and breathing a little harder.</li>
             <li><strong>Three to five minutes of dynamic drills off the belt</strong>, on the floor
             beside the machine: leg swings forward and sideways, walking lunges, high knees, butt
-            kicks, skipping for height. Keep them light and rhythmic. Our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            describes these in more detail.</li>
+            kicks, skipping for height. Keep them light and rhythmic. Our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> describes these in more detail.</li>
             <li><strong>Three or four progressive strides on the belt</strong>: 15 to 20 seconds
             each, the first at a brisk run, each one faster than the last, the final one close to
             sprint effort, with a minute of easy jogging or walking between. These are where you
@@ -552,7 +507,7 @@ const schema = {
         </div>
 
         <div id="who-should-not" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Not Sprint on a Treadmill</h2>
+          <h2>Who Should Not Sprint on a Treadmill</h2>
 <p>
             Sprinting is the highest-force, highest-risk thing a person can do on a treadmill, and
             for some people the honest advice is not to, or not yet.
@@ -560,11 +515,8 @@ const schema = {
           <ul>
             <li><strong>Anyone new to running.</strong> Sprinting sits on top of a base of easy
             running and some moderate speed work. If you cannot run continuously for 20 to 30
-            minutes at an easy effort, build that first; our
-            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill plan</a>
-            is the place to start, and the beginner progression above comes after it.</li>
-            <li><strong>Anyone with a recent or recurring hamstring, calf or Achilles injury.</strong>
-            These are precisely the tissues sprinting loads hardest. Flat sprints load hamstrings
+            minutes at an easy effort, build that first; our <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill plan</a> is the place to start, and the beginner progression above comes after it.</li>
+            <li><strong>Anyone with a recent or recurring hamstring, calf or Achilles injury.</strong> These are precisely the tissues sprinting loads hardest. Flat sprints load hamstrings
             most; hill sprints shift the load to the calves and Achilles. A physical therapist
             should clear either before you start.</li>
             <li><strong>Anyone with a balance problem, a recent fall, or who feels unsteady
@@ -588,7 +540,7 @@ const schema = {
         </div>
 
         <div id="curved-treadmills" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Curved and Manual Treadmills: Built for Sprinting</h2>
+          <h2>Curved and Manual Treadmills: Built for Sprinting</h2>
 <p>
             If sprinting is the main reason you want a treadmill, a motorised machine is the wrong
             tool, and it is worth knowing why.
@@ -600,9 +552,7 @@ const schema = {
             the belt follows your legs. There is no mount at speed, because the belt starts at
             zero when you do. There is no ceiling, because the belt has no maximum except what you
             can drive. And there is no being carried off the back, because the moment you stop
-            pushing, the belt stops moving. Our
-            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
-            roundup compares the current machines.
+            pushing, the belt stops moving. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a> roundup compares the current machines.
           </p>
           <p>
             The mechanics are also closer to ground sprinting. You push the belt away rather than
@@ -615,19 +565,14 @@ const schema = {
             steady running because of that same higher effort, and have no incline control. For a
             runner who also wants easy miles and long runs, a motorised machine is still the more
             versatile buy, with hill sprints as the compromise. For someone whose training is
-            mostly short, hard efforts, the curved machine is the better fit. Our
-            <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>
-            covers the full case, and our
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorised comparison</a>
-            sets the two types side by side.
+            mostly short, hard efforts, the curved machine is the better fit. Our <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a> covers the full case, and our <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorised comparison</a> sets the two types side by side.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Safety Rules for Every Sprint Session</h2>
+          <h2>Safety Rules for Every Sprint Session</h2>
 <p>
-            Most of these are in our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>,
+            Most of these are in our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>,
             and all of them apply with more force to sprinting than to anything else.
           </p>
           <ul>
@@ -637,16 +582,14 @@ const schema = {
             have time to look for it.</li>
             <li><strong>Clear space behind the machine</strong> — several feet of nothing, and no
             children or pets in the room.</li>
-            <li><strong>No flat sprints on a machine without proper side platforms and rails.</strong>
-            Use incline at a mountable speed instead.</li>
+            <li><strong>No flat sprints on a machine without proper side platforms and rails.</strong> Use incline at a mountable speed instead.</li>
             <li><strong>Mount learned at a jogging speed</strong> over several sessions before any
             use at speed.</li>
             <li><strong>Hands off the rails during the sprint itself</strong>, and both hands on
             them for the transitions.</li>
             <li><strong>End the session on the first slow or sloppy rep</strong>, not after the
             planned count.</li>
-            <li><strong>Never sprint tired, ill, or on a machine that has shown any fault</strong>
-            — a belt that hesitates, a speed that surges, an incline that sticks. Those are
+            <li><strong>Never sprint tired, ill, or on a machine that has shown any fault</strong> — a belt that hesitates, a speed that surges, an incline that sticks. Those are
             reasons to stop using it until it is checked.</li>
           </ul>
           <p>
@@ -658,7 +601,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>On a home treadmill, sprint uphill.</strong> Short hill sprints of 8 to 12
             seconds at 8 to 12% grade, six to ten reps with 90 seconds to two minutes of easy
@@ -678,141 +621,156 @@ const schema = {
             and sessions that respect that are the ones that work.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you sprint on a treadmill safely?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Set the speed while standing astride the belt on the side platforms, hold both rails, step on one foot at a time with a short rail-assisted run, and release once your stride matches. To finish, take the rails and hop out to the platforms. Learn it at a jogging speed first, keep the safety key clipped on, and prefer incline sprints at a lower belt speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you do sprints on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, with caveats. The belt pulls rather than you pushing, most home machines top out well below a fit adult's ground sprint speed, the belt takes seconds to accelerate, and a tired stumble can carry you off the back. Hill sprints at 8 to 12% grade solve most of that by making a maximal effort arrive at a much lower, safer belt speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good treadmill sprint workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                After a 15-minute warm-up with progressive strides, set the incline to 8 to 12% and sprint for 8 to 12 seconds, then walk slowly for 90 seconds to two minutes. Six reps to start, ten at most, once a week. Each sprint should be close to maximal, the last one as fast as the first, with a five-to-ten-minute walking cool-down.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should you rest between treadmill sprints?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Roughly ten times the sprint length or more — 90 seconds to two minutes after a 10-second sprint, two to three minutes after 20 seconds — and until your breathing is near conversational. Standing or very slow walking, not jogging. Short rest turns sprints into a hard interval session, which trains something different.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are incline sprints on a treadmill better than flat sprints?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people at home, yes. At 8 to 12% grade a near-maximal effort arrives at a belt speed that is easier to mount, the stride is shorter and more upright, the impact is lower, and the machine's top speed stops being a limit. The load shifts to calves and Achilles tendons, so build gradually if those are a weak point.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a curved treadmill better for sprints?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, clearly. A curved manual treadmill has no motor, so the belt goes exactly as fast as you push it: no acceleration lag, no mounting at speed, no ceiling and no being carried off the back when you tire. The mechanics are closer to ground sprinting. The trade-offs are price, no incline control and a higher effort for easy running.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Sprint Workouts</h2>
+          <p>Sprint sessions go wrong at the edges — the mount, the last rep, the rest — far more than in the sprint itself.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Using the mount at speed before it is automatic</h3>
+              <p>Stepping onto a belt at a sprint speed with rails you have only held a few times is how most sprint falls begin. Practise the mount and dismount at a jogging speed for several sessions, then at the progressive strides in each warm-up, before it is ever used at a hard effort. If the machine lacks proper platforms, do not use it at all.</p>
+            </li>
+            <li>
+              <h3>Doing one more rep on tired legs</h3>
+              <p>The fall almost always comes on the rep that was one too many: stride lengthening, feet drifting back, a late grab for the rails. The rule is simple and hard to follow — the first rep that is slower or sloppier than the last ends the session, regardless of what the plan said.</p>
+            </li>
+            <li>
+              <h3>Cutting the recovery short</h3>
+              <p>Standing on the side platforms for two minutes feels unproductive, so people shorten it. Sprint before the immediate energy stores refill and the rep is slower; the session becomes a hard aerobic interval workout. Rest about ten times the sprint length, until breathing is near conversational, and jog nothing. If the next rep is still slower, stop.</p>
+            </li>
+            <li>
+              <h3>Sprinting flat on a machine that cannot reach your sprint speed</h3>
+              <p>If the belt maximum is a fast run rather than a sprint for you, flat sessions are intervals in disguise. Raise the deck to 8 to 12% instead, where a maximal effort arrives at a belt speed the machine can hold and you can mount — a better session on every count except the ego one.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Sprint Workouts</h2>
-          <p class="text-gray-700 leading-relaxed">Sprint sessions go wrong at the edges — the mount, the last rep, the rest — far more than in the sprint itself.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the mount at speed before it is automatic</h3>
-              <p class="text-gray-700 text-sm m-0">Stepping onto a belt at a sprint speed with rails you have only held a few times is how most sprint falls begin. Practise the mount and dismount at a jogging speed for several sessions, then at the progressive strides in each warm-up, before it is ever used at a hard effort. If the machine lacks proper platforms, do not use it at all.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing one more rep on tired legs</h3>
-              <p class="text-gray-700 text-sm m-0">The fall almost always comes on the rep that was one too many: stride lengthening, feet drifting back, a late grab for the rails. The rule is simple and hard to follow — the first rep that is slower or sloppier than the last ends the session, regardless of what the plan said.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cutting the recovery short</h3>
-              <p class="text-gray-700 text-sm m-0">Standing on the side platforms for two minutes feels unproductive, so people shorten it. Sprint before the immediate energy stores refill and the rep is slower; the session becomes a hard aerobic interval workout. Rest about ten times the sprint length, until breathing is near conversational, and jog nothing. If the next rep is still slower, stop.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sprinting flat on a machine that cannot reach your sprint speed</h3>
-              <p class="text-gray-700 text-sm m-0">If the belt maximum is a fast run rather than a sprint for you, flat sessions are intervals in disguise. Raise the deck to 8 to 12% instead, where a maximal effort arrives at a belt speed the machine can hold and you can mount — a better session on every count except the ego one.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-hiit-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">HIIT</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill HIIT Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five hard interval sessions with recovery that works around the belt lag.</p>
-            </a>
-            <a href="/treadmill-hill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Hills</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Hill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four incline sessions and the calf and Achilles cautions that go with them.</p>
-            </a>
-            <a href="/curved-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Curved</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why a self-powered belt suits sprinting, and what it is bad at.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Sprint uphill on a home treadmill.</strong> Six to ten hill
             sprints of 8 to 12 seconds at 8 to 12% grade, with 90 seconds to two minutes of easy
             recovery and a 15-minute warm-up, once a week, is a real sprint session at a belt speed
             you can mount and the machine can hold.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Flat sprints need the rail-assisted mount learned at a jogging speed first, full
             recovery between reps, and a machine with proper platforms and a top speed that is
-            actually a sprint for you — see
-            <a href="/how-fast-do-treadmills-go/" class="text-[#5AA9FF] font-bold no-underline">how fast treadmills go</a>.
+            actually a sprint for you — see <a href="/how-fast-do-treadmills-go/" class="text-[#5AA9FF] font-bold no-underline">how fast treadmills go</a>.
             If sprinting is the point, a curved manual treadmill is the right machine.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-hiit-workout/">Treadmill HIIT Workout</a></li>
+            <li><a href="/treadmill-hill-workout/">Treadmill Hill Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you sprint on a treadmill safely?</h3></summary>
+            <p class="faq-a">
+              Set the speed while standing astride the belt on the side platforms, hold both rails, step on one foot at a time with a short rail-assisted run, and release once your stride matches. To finish, take the rails and hop out to the platforms. Learn it at a jogging speed first, keep the safety key clipped on, and prefer incline sprints at a lower belt speed.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you do sprints on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, with caveats. The belt pulls rather than you pushing, most home machines top out well below a fit adult's ground sprint speed, the belt takes seconds to accelerate, and a tired stumble can carry you off the back. Hill sprints at 8 to 12% grade solve most of that by making a maximal effort arrive at a much lower, safer belt speed.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is a good treadmill sprint workout?</h3></summary>
+            <p class="faq-a">
+              After a 15-minute warm-up with progressive strides, set the incline to 8 to 12% and sprint for 8 to 12 seconds, then walk slowly for 90 seconds to two minutes. Six reps to start, ten at most, once a week. Each sprint should be close to maximal, the last one as fast as the first, with a five-to-ten-minute walking cool-down.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should you rest between treadmill sprints?</h3></summary>
+            <p class="faq-a">
+              Roughly ten times the sprint length or more — 90 seconds to two minutes after a 10-second sprint, two to three minutes after 20 seconds — and until your breathing is near conversational. Standing or very slow walking, not jogging. Short rest turns sprints into a hard interval session, which trains something different.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are incline sprints on a treadmill better than flat sprints?</h3></summary>
+            <p class="faq-a">
+              For most people at home, yes. At 8 to 12% grade a near-maximal effort arrives at a belt speed that is easier to mount, the stride is shorter and more upright, the impact is lower, and the machine's top speed stops being a limit. The load shifts to calves and Achilles tendons, so build gradually if those are a weak point.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a curved treadmill better for sprints?</h3></summary>
+            <p class="faq-a">
+              Yes, clearly. A curved manual treadmill has no motor, so the belt goes exactly as fast as you push it: no acceleration lag, no mounting at speed, no ceiling and no being carried off the back when you tire. The mechanics are closer to ground sprinting. The trade-offs are price, no incline control and a higher effort for easy running.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-hiit-workout/" class="card">
+            <div class="c-kicker">HIIT</div>
+            <div class="c-title">Treadmill HIIT Workout</div>
+            <p class="c-blurb">Five hard interval sessions with recovery that works around the belt lag.</p>
+          </a>
+          <a href="/treadmill-hill-workout/" class="card">
+            <div class="c-kicker">Hills</div>
+            <div class="c-title">Treadmill Hill Workout</div>
+            <p class="c-blurb">Four incline sessions and the calf and Achilles cautions that go with them.</p>
+          </a>
+          <a href="/curved-treadmill-guide/" class="card">
+            <div class="c-kicker">Curved</div>
+            <div class="c-title">Curved Treadmill Guide</div>
+            <p class="c-blurb">Why a self-powered belt suits sprinting, and what it is bad at.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

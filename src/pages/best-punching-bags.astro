@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Punching Bag (2026): Heavy Bags and Freestanding Picks";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-punching-bags/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,87 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Punching Bag Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Heavy Bag: Outslayer #2 100 lb Heavy Bag", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestpunchingbags" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestpunchingbags)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Punching Bag for a Home Gym</h1>
+      <p class="ed-dek">
+        The best punching bag is the one your home can actually hold. Here are six currently sold bags — three hanging heavy bags and three freestanding bags — with the weights, fills and bases we could confirm, how to choose between hanging and freestanding, how a heavy bag is mounted, and what your neighbors will hear.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Punching Bag <span class="text-[#5AA9FF]">for a Home Gym</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The best punching bag is the one your home can actually hold. Here are six currently sold bags — three hanging heavy bags and three freestanding bags — with the weights, fills and bases we could confirm, how to choose between hanging and freestanding, how a heavy bag is mounted, and what your neighbors will hear.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#hanging-or-freestanding" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Hanging or Freestanding?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#ringside-powerhide-100-lb"><img src="https://m.media-amazon.com/images/I/41UXVMSEfWL._SL500_.jpg" alt="Ringside Soft Filled Powerhide 100 lb Heavy Bag" width="500" height="500" decoding="async" /></a>
+          <a href="#hayabusa-heavy-bag-unfilled"><img src="https://m.media-amazon.com/images/I/317hw3+iuSL._SL500_.jpg" alt="Hayabusa Heavy Bag (Unfilled)" width="104" height="500" decoding="async" /></a>
+          <a href="#century-original-wavemaster"><img src="https://m.media-amazon.com/images/I/31t1+gRfHML._SL500_.jpg" alt="Century Original Wavemaster" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Ringside Soft Filled Powerhide 100 lb Heavy Bag · Hayabusa Heavy Bag (Unfilled) · Century Original Wavemaster</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Choosing a punching bag looks like a question about brands and leather, and it is mostly a
+          question about your building. A 100 lb heavy bag hung from the right beam in a garage is
+          the most satisfying thing you can hit at home; the same bag hung from the wrong ceiling is
+          a repair bill. A freestanding bag needs no drilling at all but a base filled with a few
+          hundred pounds of water or sand, and it thuds. The six bags below were chosen to cover
+          both styles with products that are on sale now, and the guide after them covers bag weight
+          and fill, mounting options, bases, noise and the basics of protecting your hands. If you
+          want the whole home boxing setup — gloves, wraps, a double-end bag and a rope — our <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">home boxing equipment guide</a> covers the rest of the kit.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Heavy Bag:</span> <a href="#outslayer-100-lb-heavy-bag">Outslayer #2 100 lb Heavy Bag</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value Heavy Bag:</span> <a href="#ringside-powerhide-100-lb">Ringside Soft Filled Powerhide 100 lb Heavy Bag</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Unfilled Bag:</span> <a href="#hayabusa-heavy-bag-unfilled">Hayabusa Heavy Bag (Unfilled)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Freestanding Bag:</span> <a href="#century-original-wavemaster">Century Original Wavemaster</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Kicking:</span> <a href="#century-wavemaster-xxl">Century Wavemaster XXL</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Heaviest Freestanding Base:</span> <a href="#everlast-powercore-freestanding">Everlast Powercore Freestanding Heavy Bag</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           bags, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
           each bag as currently sold on its maker's US store (Outslayer, Ringside, Hayabusa, Century
@@ -372,93 +398,36 @@ const schema = {
           was checked against the US Consumer Product Safety Commission's recall database. Prices
           are those we saw on that date and change often. We earn a commission if you buy through the
           Amazon links on this page; it does not change which products we list or what we say about
-          them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           training equipment; this is not boxing coaching and not medical advice. Hitting a bag loads
           the hands, wrists, shoulders and heart, and poor technique can injure them. Learn the basics
           from a qualified coach where you can, and if you have a heart, joint, wrist or other medical
           condition, an injury, or you are pregnant, talk to a doctor before you start. Whether a
           ceiling, beam, wall or floor can carry a bag is a question for a qualified builder or
           structural engineer, not for us.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Heavy Bag:</span>
-            <a href="#outslayer-100-lb-heavy-bag" class="font-bold text-gray-900 no-underline hover:underline">Outslayer #2 100 lb Heavy Bag</a>
-            <a href="#outslayer-100-lb-heavy-bag" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Heavy Bag:</span>
-            <a href="#ringside-powerhide-100-lb" class="font-bold text-gray-900 no-underline hover:underline">Ringside Soft Filled Powerhide 100 lb Heavy Bag</a>
-            <a href="#ringside-powerhide-100-lb" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Unfilled Bag:</span>
-            <a href="#hayabusa-heavy-bag-unfilled" class="font-bold text-gray-900 no-underline hover:underline">Hayabusa Heavy Bag (Unfilled)</a>
-            <a href="#hayabusa-heavy-bag-unfilled" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Freestanding Bag:</span>
-            <a href="#century-original-wavemaster" class="font-bold text-gray-900 no-underline hover:underline">Century Original Wavemaster</a>
-            <a href="#century-original-wavemaster" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Kicking:</span>
-            <a href="#century-wavemaster-xxl" class="font-bold text-gray-900 no-underline hover:underline">Century Wavemaster XXL</a>
-            <a href="#century-wavemaster-xxl" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Punching Bags</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Punching Bags</a>
-          <a href="#hanging-or-freestanding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Hanging Heavy Bag or Freestanding Bag?</a>
-          <a href="#weight-and-fill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Bag Weight, Size and Fill</a>
-          <a href="#mounting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Mounting a Heavy Bag: Joists, Beams, Stands and Wall Mounts</a>
-          <a href="#freestanding-bases" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Freestanding Bases: Water, Sand and Stability</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Noise, Neighbors and Floors</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Hands, Wrists and Starting Out</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Punching Bags</a></li>
+            <li><a href="#how-we-chose">How We Chose These Punching Bags</a></li>
+            <li><a href="#hanging-or-freestanding">Hanging Heavy Bag or Freestanding Bag?</a></li>
+            <li><a href="#weight-and-fill">Bag Weight, Size and Fill</a></li>
+            <li><a href="#mounting">Mounting a Heavy Bag: Joists, Beams, Stands and Wall Mounts</a></li>
+            <li><a href="#freestanding-bases">Freestanding Bases: Water, Sand and Stability</a></li>
+            <li><a href="#noise">Noise, Neighbors and Floors</a></li>
+            <li><a href="#safety">Hands, Wrists and Starting Out</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Choosing a punching bag looks like a question about brands and leather, and it is mostly a
-          question about your building. A 100 lb heavy bag hung from the right beam in a garage is
-          the most satisfying thing you can hit at home; the same bag hung from the wrong ceiling is
-          a repair bill. A freestanding bag needs no drilling at all but a base filled with a few
-          hundred pounds of water or sand, and it thuds. The six bags below were chosen to cover
-          both styles with products that are on sale now, and the guide after them covers bag weight
-          and fill, mounting options, bases, noise and the basics of protecting your hands. If you
-          want the whole home boxing setup — gloves, wraps, a double-end bag and a rope — our
-          <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">home boxing equipment guide</a>
-          covers the rest of the kit.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
-            Three hanging heavy bags and three freestanding bags. If you want one sentence:
-            <strong>the best punching bag for a garage or basement with a sound mounting point is the
+            Three hanging heavy bags and three freestanding bags. If you want one sentence: <strong>the best punching bag for a garage or basement with a sound mounting point is the
             Outslayer 100 lb heavy bag</strong>, and <strong>the best free standing punching bag for
             a flat or a rented home is the Century Original Wavemaster</strong>, with the XXL
             Wavemaster if you kick.
@@ -479,98 +448,82 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            Building a wider home gym around the bag? Our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            are the place to start, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide in
+            Building a wider home gym around the bag? Our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> are the place to start, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide in
             this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Punching Bags</h2>
+          <h2>The 6 Best Punching Bags</h2>
 <p>
             Each card gives the weight, size, fill and hardware we could confirm from two sources, the
             price we saw, and who the bag suits. The hanging bags come first, then the freestanding
-            ones. Read the
-            <a href="#mounting" class="text-[#0F62FE] font-medium">mounting section</a> before you buy a
-            hanging bag, and the
-            <a href="#noise" class="text-[#0F62FE] font-medium">noise section</a> before you buy any bag
+            ones. Read the <a href="#mounting" class="text-[#0F62FE] font-medium">mounting section</a> before you buy a
+            hanging bag, and the <a href="#noise" class="text-[#0F62FE] font-medium">noise section</a> before you buy any bag
             for an upstairs room.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Punching Bags</h2>
+          <h2>How We Chose These Punching Bags</h2>
 <p>
             We have not tested these bags. They were chosen from makers' product pages, retailer
             listings and independent reviews, and every claim on this page is limited to what those
@@ -616,7 +569,7 @@ const schema = {
         </div>
 
         <div id="hanging-or-freestanding" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Hanging Heavy Bag or Freestanding Bag?</h2>
+          <h2>Hanging Heavy Bag or Freestanding Bag?</h2>
 <p>
             The choice is usually made by your home, not your boxing style. Here is how the two
             compare on the things that matter.
@@ -654,7 +607,7 @@ const schema = {
         </div>
 
         <div id="weight-and-fill" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Bag Weight, Size and Fill</h2>
+          <h2>Bag Weight, Size and Fill</h2>
 <p>
             Three choices decide how a hanging bag feels: how heavy it is, how long it is, and what it
             is filled with.
@@ -696,7 +649,7 @@ const schema = {
         </div>
 
         <div id="mounting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Mounting a Heavy Bag: Joists, Beams, Stands and Wall Mounts</h2>
+          <h2>Mounting a Heavy Bag: Joists, Beams, Stands and Wall Mounts</h2>
 <p>
             A heavy bag puts its full static weight on its mount, and every punch adds a sudden
             dynamic load on top as the bag swings and jerks on its chain or straps. That is why
@@ -710,8 +663,7 @@ const schema = {
             undersized member. Many garage and basement ceilings, with exposed joists or beams, can
             carry a bag this way; many upstairs ceilings, flat roofs and apartments should not.
             Whether a particular joist can safely take a swinging bag depends on its size, span,
-            condition and what else it carries, which only someone who can see it can judge.
-            <strong>If you are unsure, ask a qualified builder or structural engineer before you
+            condition and what else it carries, which only someone who can see it can judge. <strong>If you are unsure, ask a qualified builder or structural engineer before you
             drill</strong>, and ask your landlord first if you rent.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heavy bag stand</h3>
@@ -728,9 +680,7 @@ const schema = {
             A wall bracket holds the bag away from the wall and must be bolted into solid masonry or
             framing as its maker specifies. Some power rack makers sell heavy bag attachments; if you
             already own a rack, check that the rack maker approves the attachment for a swinging bag
-            and that the rack is bolted down or heavy enough not to move. Our guide to
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
-            covers anchoring.
+            and that the rack is bolted down or heavy enough not to move. Our guide to <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a> covers anchoring.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Hardware and clearance</h3>
           <ul>
@@ -746,7 +696,7 @@ const schema = {
         </div>
 
         <div id="freestanding-bases" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Freestanding Bases: Water, Sand and Stability</h2>
+          <h2>Freestanding Bases: Water, Sand and Stability</h2>
 <p>
             A freestanding bag is only as stable as its base, and its base is only as heavy as what
             you put in it.
@@ -771,9 +721,7 @@ const schema = {
             upstairs, and stand it on a thick rubber mat rather than bare wood, tile or a rug. Garage
             Gym Reviews' tester found a freestanding bag stable on concrete and more mobile on rubber
             flooring, and saw a water-filled base leak under hard hits, so keep the cap tight and
-            check it. Our guide to the
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">best gym flooring</a>
-            covers mats and tiles.
+            check it. Our guide to the <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">best gym flooring</a> covers mats and tiles.
           </p>
           <p>
             <strong>Height.</strong> An adjustable bag lets different users set the target at their
@@ -784,7 +732,7 @@ const schema = {
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Noise, Neighbors and Floors</h2>
+          <h2>Noise, Neighbors and Floors</h2>
 <p>
             Bag work is loud in two ways, and they need different fixes.
           </p>
@@ -799,8 +747,7 @@ const schema = {
             <strong>Structure-borne noise</strong> is the thud that travels through the floor or the
             ceiling mount into the next room or the home below. A ceiling-hung bag passes every punch
             into the joists; a freestanding bag rocks and thumps the floor. Dense rubber under a
-            freestanding base takes the edge off, the same principle behind our
-            <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pads guide</a>,
+            freestanding base takes the edge off, the same principle behind our <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pads guide</a>,
             but it will not eliminate the thud.
           </p>
           <p>
@@ -808,29 +755,24 @@ const schema = {
             train at reasonable hours, use a thick mat, throw faster and lighter combinations rather
             than all-out power shots, and do your rope work outside. Ask someone to stand in the room
             below during a normal session; if they hear a rhythmic thud, so will your neighbors. If the
-            same room holds a treadmill, our guide to
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a>
-            deals with the machine side of the same problem.
+            same room holds a treadmill, our guide to <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a> deals with the machine side of the same problem.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Hands, Wrists and Starting Out</h2>
+          <h2>Hands, Wrists and Starting Out</h2>
 <p>
             This is not coaching, and a page cannot teach you to punch. These are the general safety
             points that apply to anyone hitting a heavy bag at home.
           </p>
           <ul>
             <li><strong>Always wrap and wear proper gloves.</strong> A heavy bag is unforgiving on bare
-              knuckles and thin fitness gloves. Our
-              <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">boxing equipment guide</a>
-              covers glove weights, sizing and wraps.</li>
+              knuckles and thin fitness gloves. Our <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">boxing equipment guide</a> covers glove weights, sizing and wraps.</li>
             <li><strong>Keep the wrist straight.</strong> Land with the knuckles, wrist in line with
               the forearm. A bent wrist on a heavy bag is the classic home injury.</li>
             <li><strong>Start light and short.</strong> A few rounds at moderate effort, building over
               weeks. Heavy, dense bags punish poor technique more than soft-filled ones.</li>
-            <li><strong>Warm up.</strong> Shadowboxing or a few minutes with a
-              <a href="/best-jump-ropes/" class="text-[#0F62FE] font-medium">jump rope</a>, plus shoulder
+            <li><strong>Warm up.</strong> Shadowboxing or a few minutes with a <a href="/best-jump-ropes/" class="text-[#0F62FE] font-medium">jump rope</a>, plus shoulder
               and wrist mobility.</li>
             <li><strong>Stop for pain.</strong> Sharp pain in the hand, wrist, elbow or shoulder,
               numbness, swelling, chest pain, dizziness or unusual breathlessness are reasons to stop
@@ -847,7 +789,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you live upstairs and cannot hang a bag</strong>, a freestanding bag may still
             be too loud for your building. Shadowboxing, a double-end bag with a weighted floor anchor,
@@ -855,9 +797,7 @@ const schema = {
           </p>
           <p>
             <strong>If you mainly want cardio</strong>, a rope or a cardio machine gives more
-            conditioning per dollar with less setup. Our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machines guide</a>
-            compares the options.
+            conditioning per dollar with less setup. Our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machines guide</a> compares the options.
           </p>
           <p>
             <strong>If you want to spar or compete</strong>, join a gym with a qualified coach. Home
@@ -866,141 +806,157 @@ const schema = {
           <p>
             <strong>If you already own a bag</strong>, you probably do not need a new one. Check the
             mount and hardware, add a mat, buy good wraps and gloves, and spend the rest on coaching.
-            For the flooring, storage and small kit around a bag, see our
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>.
+            For the flooring, storage and small kit around a bag, see our <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best punching bag for home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on where it will go. In a garage or basement with a sound mounting point or a stand, the Outslayer 100 lb heavy bag is our pick. In a flat or rented home, the Century Original Wavemaster freestanding bag avoids mounting altogether, and the Wavemaster XXL suits kickers. Check the structure or floor before buying either.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best heavy bag?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most home gyms, a 100 lb fabric-filled hanging bag. The Outslayer #2, about $290 to $320 filled when we checked, is 55 inches long, uses quiet sewn-on straps and carries a 10-year warranty. The Ringside Powerhide 100 lb is the value choice at about $220 with chain and swivel included, and the Hayabusa ships unfilled.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best free standing punching bag?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The Century Original Wavemaster, at about $220 with seven height settings from 47 to 68 inches, is the best freestanding bag for boxing at home. The Wavemaster XXL, 69 inches tall with an 18 inch diameter, suits kicks. The Everlast Powercore's base holds about 370 pounds of sand, heavier than most freestanding bases.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What weight punching bag should I get?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For hanging bags, 100 pounds is the most common home choice. A common rule of thumb is roughly half your body weight: heavier bags swing less and suit power work, lighter ones move more and suit speed. Whatever you choose, the mount, stand or wall bracket must be rated for the bag's full weight plus the force of hitting it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I hang a heavy bag from a ceiling joist?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, in a garage or basement, using a heavy bag mount fixed into the center of a solid structural joist or beam, never into drywall or a hollow space. Whether a particular joist can take a swinging bag depends on its size, span and condition, so ask a qualified builder or structural engineer if unsure, and ask your landlord if you rent.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I fill a freestanding bag base with water or sand?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sand makes the base heavier and steadier; Everlast's Powercore base holds about 250 pounds with water or 370 pounds with sand. Water is easier to fill and drain but lighter, and can freeze in an unheated garage. If you will not move the bag often, sand is usually the better choice. Follow the maker's instructions and keep the cap tight.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Punching Bag</h2>
+          <p>Each of these is easy to avoid before you order and turns a good bag into a cracked ceiling, a sore wrist or an unhappy neighbor.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Hanging a heavy bag from something not built for it</h3>
+              <p>A heavy bag adds a sudden load every time you hit it. Never hang one from drywall, a ceiling board, a light fitting or a hollow space. Use a heavy bag mount fixed into a solid structural member, a wall mount bolted as specified, or a rated stand, and ask a qualified builder or engineer if you are unsure.</p>
+            </li>
+            <li>
+              <h3>Filling a bag with loose sand</h3>
+              <p>Loose sand settles to the bottom, turning it brick-hard while the top goes soft, and it can work out through the seams. Fill unfilled bags with packed fabric, with any sand sealed in smaller bags at the core, and top them up as the fill settles. Better still, buy pre-filled if you want an even feel.</p>
+            </li>
+            <li>
+              <h3>Leaving a freestanding base half full</h3>
+              <p>A light base slides and tips under hard hits, and a part-filled water base sloshes and can leak. Fill the base fully, with sand if you can, keep the cap tight, and stand it on a thick rubber mat. Check the floor can take a few hundred pounds in one spot first, especially upstairs.</p>
+            </li>
+            <li>
+              <h3>Hitting a heavy bag without wraps</h3>
+              <p>Bare knuckles or thin fitness gloves on a dense 100 lb bag are the quickest way to hurt a hand or wrist. Wrap every time, wear proper bag or training gloves with a firm wrist closure, keep the wrist straight on impact, and start with short, moderate rounds before building up power.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Punching Bag</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and turns a good bag into a cracked ceiling, a sore wrist or an unhappy neighbor.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Hanging a heavy bag from something not built for it</h3>
-              <p class="text-gray-700 text-sm m-0">A heavy bag adds a sudden load every time you hit it. Never hang one from drywall, a ceiling board, a light fitting or a hollow space. Use a heavy bag mount fixed into a solid structural member, a wall mount bolted as specified, or a rated stand, and ask a qualified builder or engineer if you are unsure.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Filling a bag with loose sand</h3>
-              <p class="text-gray-700 text-sm m-0">Loose sand settles to the bottom, turning it brick-hard while the top goes soft, and it can work out through the seams. Fill unfilled bags with packed fabric, with any sand sealed in smaller bags at the core, and top them up as the fill settles. Better still, buy pre-filled if you want an even feel.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving a freestanding base half full</h3>
-              <p class="text-gray-700 text-sm m-0">A light base slides and tips under hard hits, and a part-filled water base sloshes and can leak. Fill the base fully, with sand if you can, keep the cap tight, and stand it on a thick rubber mat. Check the floor can take a few hundred pounds in one spot first, especially upstairs.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Hitting a heavy bag without wraps</h3>
-              <p class="text-gray-700 text-sm m-0">Bare knuckles or thin fitness gloves on a dense 100 lb bag are the quickest way to hurt a hand or wrist. Wrap every time, wear proper bag or training gloves with a firm wrist closure, keep the wrist straight on impact, and start with short, moderate rounds before building up power.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-boxing-equipment-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Boxing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Boxing Equipment for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Gloves, wraps, a double-end bag and rope to go with your punching bag.</p>
-            </a>
-            <a href="/best-gym-flooring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Flooring</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Gym Flooring</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mats and tiles that protect the floor under a freestanding base and your footwork.</p>
-            </a>
-            <a href="/best-treadmill-anti-vibration-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Vibration</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Anti-Vibration Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How dense rubber reduces the thud that travels into the floor below.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">If you can hang a bag safely, buy the Outslayer 100 lb heavy bag</strong>;
             the Ringside Powerhide is the value alternative with its chain and swivel included, and the
             Hayabusa lets you set your own weight. If you cannot hang one, the Century Original
             Wavemaster is the default freestanding bag, the Wavemaster XXL is the one for kicks, and
             the Everlast Powercore carries the heaviest base if you fill it with sand.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, decide on the mount or the floor before the bag arrives, get professional
-            advice on the structure if you are unsure, and protect your hands every session. Our
-            <a href="/best-boxing-equipment-for-home/" class="text-[#5AA9FF] font-bold no-underline">home boxing equipment guide</a>
-            covers the gloves, wraps and extras that make a home boxing setup complete.
+            advice on the structure if you are unsure, and protect your hands every session. Our <a href="/best-boxing-equipment-for-home/" class="text-[#5AA9FF] font-bold no-underline">home boxing equipment guide</a> covers the gloves, wraps and extras that make a home boxing setup complete.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-boxing-equipment-for-home/">Best Boxing Equipment for Home</a></li>
+            <li><a href="/best-gym-flooring/">Best Gym Flooring</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best punching bag for home?</h3></summary>
+            <p class="faq-a">
+              It depends on where it will go. In a garage or basement with a sound mounting point or a stand, the Outslayer 100 lb heavy bag is our pick. In a flat or rented home, the Century Original Wavemaster freestanding bag avoids mounting altogether, and the Wavemaster XXL suits kickers. Check the structure or floor before buying either.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best heavy bag?</h3></summary>
+            <p class="faq-a">
+              For most home gyms, a 100 lb fabric-filled hanging bag. The Outslayer #2, about $290 to $320 filled when we checked, is 55 inches long, uses quiet sewn-on straps and carries a 10-year warranty. The Ringside Powerhide 100 lb is the value choice at about $220 with chain and swivel included, and the Hayabusa ships unfilled.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the best free standing punching bag?</h3></summary>
+            <p class="faq-a">
+              The Century Original Wavemaster, at about $220 with seven height settings from 47 to 68 inches, is the best freestanding bag for boxing at home. The Wavemaster XXL, 69 inches tall with an 18 inch diameter, suits kicks. The Everlast Powercore's base holds about 370 pounds of sand, heavier than most freestanding bases.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What weight punching bag should I get?</h3></summary>
+            <p class="faq-a">
+              For hanging bags, 100 pounds is the most common home choice. A common rule of thumb is roughly half your body weight: heavier bags swing less and suit power work, lighter ones move more and suit speed. Whatever you choose, the mount, stand or wall bracket must be rated for the bag's full weight plus the force of hitting it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I hang a heavy bag from a ceiling joist?</h3></summary>
+            <p class="faq-a">
+              Often, in a garage or basement, using a heavy bag mount fixed into the center of a solid structural joist or beam, never into drywall or a hollow space. Whether a particular joist can take a swinging bag depends on its size, span and condition, so ask a qualified builder or structural engineer if unsure, and ask your landlord if you rent.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I fill a freestanding bag base with water or sand?</h3></summary>
+            <p class="faq-a">
+              Sand makes the base heavier and steadier; Everlast's Powercore base holds about 250 pounds with water or 370 pounds with sand. Water is easier to fill and drain but lighter, and can freeze in an unheated garage. If you will not move the bag often, sand is usually the better choice. Follow the maker's instructions and keep the cap tight.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-boxing-equipment-for-home/" class="card">
+            <div class="c-kicker">Boxing</div>
+            <div class="c-title">Best Boxing Equipment for Home</div>
+            <p class="c-blurb">Gloves, wraps, a double-end bag and rope to go with your punching bag.</p>
+          </a>
+          <a href="/best-gym-flooring/" class="card">
+            <div class="c-kicker">Flooring</div>
+            <div class="c-title">Best Gym Flooring</div>
+            <p class="c-blurb">Mats and tiles that protect the floor under a freestanding base and your footwork.</p>
+          </a>
+          <a href="/best-treadmill-anti-vibration-pads/" class="card">
+            <div class="c-kicker">Vibration</div>
+            <div class="c-title">Best Anti-Vibration Pads</div>
+            <p class="c-blurb">How dense rubber reduces the thud that travels into the floor below.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

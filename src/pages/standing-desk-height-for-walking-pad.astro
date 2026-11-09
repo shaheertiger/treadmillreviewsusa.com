@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Standing Desk Height for a Walking Pad (2026): Chart and Formula";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/standing-desk-height-for-walking-pad/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,45 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Height Chart", link: "#height-chart" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-standingdeskheightforwalkingpad" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-standingdeskheightforwalkingpad)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Guide</span>
+      </nav>
+      <h1 class="ed-title">Standing Desk Height for a Walking Pad</h1>
+      <p class="ed-dek">
+        A walking pad lifts you several inches, so a desk that suits you on the floor is too low on the belt. The fix is simple arithmetic: your standing elbow height, plus the deck, plus your shoes. Here is the formula, a chart by height, what it means for the monitor, and why so many standing desks run out of travel.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Standing Desk Height <span class="text-[#5AA9FF]">for a Walking Pad</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A walking pad lifts you several inches, so a desk that suits you on the floor is too low on the belt. The fix is simple arithmetic: your standing elbow height, plus the deck, plus your shoes. Here is the formula, a chart by height, what it means for the monitor, and why so many standing desks run out of travel.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#height-chart" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Desk Height Chart
-          </a>
-          <a href="#why-too-low" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why Desks Top Out Too Low
-          </a>
-        </div>
+        <a href="#height-chart" class="btn-ghost">Desk Height Chart</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people buy a standing desk, slide a walking pad underneath, step on and find
+          themselves hunched over a keyboard that is suddenly too low. It is the most common
+          treadmill desk mistake, and it is entirely predictable: the pad raises you by its deck
+          height, and the desk has to rise by the same amount to keep up. This page turns that
+          into numbers you can check before you buy — a formula, a chart of estimated desk
+          heights by user height, the matching monitor height, and the reasons so many desks
+          stop an inch or two short.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review
           treadmills and walking pads. This is a set-up reference built from simple arithmetic and
           widely used ergonomic rules of thumb — it is not medical, physiotherapy or occupational
@@ -172,47 +158,28 @@ const schema = {
           figures below:</strong> elbow and eye heights are estimated from overall height using
           approximate body proportions, which vary from person to person by an inch or more, so
           the chart is a starting point for the tape measure, not a substitute for it.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How High Should a Standing Desk Be for a Walking Pad? The Short Answer</a>
-          <a href="#formula" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Formula: Elbow Height + Shoes + Deck Height</a>
-          <a href="#height-chart" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Standing Desk Height Chart for a Walking Pad</a>
-          <a href="#measure" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Measure Your Own Numbers</a>
-          <a href="#why-too-low" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Many Standing Desks Top Out Too Low</a>
-          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Incline Pads: How Much Extra Height the Slope Adds</a>
-          <a href="#monitor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Monitor Height on a Walking Pad</a>
-          <a href="#keyboard-tray" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Keyboard Trays and Desktop Risers</a>
-          <a href="#too-low-options" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. If Your Desk Is Too Low: Your Options</a>
-          <a href="#comfort-checks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Comfort Checks Once It Is Set Up</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. If You Are Shopping for a Treadmill Desk</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How High Should a Standing Desk Be for a Walking Pad? The Short Answer</a></li>
+            <li><a href="#formula">The Formula: Elbow Height + Shoes + Deck Height</a></li>
+            <li><a href="#height-chart">Standing Desk Height Chart for a Walking Pad</a></li>
+            <li><a href="#measure">How to Measure Your Own Numbers</a></li>
+            <li><a href="#why-too-low">Why Many Standing Desks Top Out Too Low</a></li>
+            <li><a href="#incline">Incline Pads: How Much Extra Height the Slope Adds</a></li>
+            <li><a href="#monitor">Monitor Height on a Walking Pad</a></li>
+            <li><a href="#keyboard-tray">Keyboard Trays and Desktop Risers</a></li>
+            <li><a href="#too-low-options">If Your Desk Is Too Low: Your Options</a></li>
+            <li><a href="#comfort-checks">Comfort Checks Once It Is Set Up</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping for a Treadmill Desk</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people buy a standing desk, slide a walking pad underneath, step on and find
-          themselves hunched over a keyboard that is suddenly too low. It is the most common
-          treadmill desk mistake, and it is entirely predictable: the pad raises you by its deck
-          height, and the desk has to rise by the same amount to keep up. This page turns that
-          into numbers you can check before you buy — a formula, a chart of estimated desk
-          heights by user height, the matching monitor height, and the reasons so many desks
-          stop an inch or two short.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How High Should a Standing Desk Be for a Walking Pad? The Short Answer</h2>
+          <h2>How High Should a Standing Desk Be for a Walking Pad? The Short Answer</h2>
 <p>
             <strong>The desk surface should sit at about your standing elbow height in shoes, plus
             the height of the walking pad's belt — so for most adults on most pads, somewhere
@@ -230,22 +197,19 @@ const schema = {
             The arithmetic matters because it decides which desks are usable at all. A desk that
             tops out at around 47 or 48 inches — common on two-stage frames — works for shorter
             users on a slim pad and few others. Three-stage desks that reach around 50 to 52
-            inches leave room for most adults. Our
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk roundup</a>
-            screened its picks on exactly this, and only lists desks that reach about 50 inches
+            inches leave room for most adults. Our <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk roundup</a> screened its picks on exactly this, and only lists desks that reach about 50 inches
             or more.
           </p>
           <p>
             The rest of this page is the working: where each number comes from, a chart for
             heights from 5 feet to 6 feet 6 inches, what the same arithmetic says about your
             monitor, and what to do if your desk comes up short. For setting up and walking at the
-            desk once it is the right height — speed, posture, building up your minutes — see our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">guide to using a treadmill desk</a>.
+            desk once it is the right height — speed, posture, building up your minutes — see our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">guide to using a treadmill desk</a>.
           </p>
         </div>
 
         <div id="formula" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Formula: Elbow Height + Shoes + Deck Height</h2>
+          <h2>The Formula: Elbow Height + Shoes + Deck Height</h2>
 <p>
             Each of the three terms is simple, but each has a catch.
           </p>
@@ -272,9 +236,7 @@ const schema = {
             For most athletic shoes that is roughly an inch to an inch and a half, and highly
             cushioned <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a> can be more. The chart uses 1 inch. If you walk in thick
             cushioned shoes, add a little; if you walk in thin-soled shoes, subtract. Do not walk in
-            socks or bare feet on a moving belt; our page on
-            <a href="/can-you-walk-barefoot-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking barefoot on a treadmill</a>
-            explains why.
+            socks or bare feet on a moving belt; our page on <a href="/can-you-walk-barefoot-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking barefoot on a treadmill</a> explains why.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Deck height</h3>
           <p>
@@ -297,7 +259,7 @@ const schema = {
         </div>
 
         <div id="height-chart" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Standing Desk Height Chart for a Walking Pad</h2>
+          <h2>Standing Desk Height Chart for a Walking Pad</h2>
 <p>
             The chart applies the formula to heights from 5 feet to 6 feet 6 inches, using the
             assumptions above: barefoot elbow height of 0.63 times overall height, 1 inch of shoe,
@@ -346,7 +308,7 @@ const schema = {
         </div>
 
         <div id="measure" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Measure Your Own Numbers</h2>
+          <h2>How to Measure Your Own Numbers</h2>
 <p>
             The chart gets you into the right range. Ten minutes with a tape measure gets you the
             real figure, and it is worth doing before you order a desk, a pad or both.
@@ -380,7 +342,7 @@ const schema = {
         </div>
 
         <div id="why-too-low" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Many Standing Desks Top Out Too Low</h2>
+          <h2>Why Many Standing Desks Top Out Too Low</h2>
 <p>
             Standing desks are designed for people standing on the floor, and for that job a
             maximum of around 47 to 48 inches is generous: from the chart, it covers users up to
@@ -425,7 +387,7 @@ const schema = {
         </div>
 
         <div id="incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Incline Pads: How Much Extra Height the Slope Adds</h2>
+          <h2>Incline Pads: How Much Extra Height the Slope Adds</h2>
 <p>
             A powered incline usually lifts the front of the deck while the rear stays on the
             floor. The extra height under your feet therefore depends on where you stand and how
@@ -443,9 +405,7 @@ const schema = {
           </ul>
           <p>
             Those are geometric estimates, and real pads differ in where the pivot sits. As a check
-            against a real machine, one hands-on reviewer of the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> Z10 covered in our
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">incline walking pad roundup</a>
-            recorded about 6 inches of height level and about 7 inches at full incline, which sits
+            against a real machine, one hands-on reviewer of the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> Z10 covered in our <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">incline walking pad roundup</a> recorded about 6 inches of height level and about 7 inches at full incline, which sits
             comfortably inside these figures.
           </p>
           <p>
@@ -458,7 +418,7 @@ const schema = {
         </div>
 
         <div id="monitor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Monitor Height on a Walking Pad</h2>
+          <h2>Monitor Height on a Walking Pad</h2>
 <p>
             The usual guidance is to set the monitor so its top edge is at or slightly below eye
             level, about an arm's length away. On a walking pad, your eyes rise by exactly the same
@@ -507,7 +467,7 @@ const schema = {
         </div>
 
         <div id="keyboard-tray" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Keyboard Trays and Desktop Risers</h2>
+          <h2>Keyboard Trays and Desktop Risers</h2>
 <p>
             Two accessories change the arithmetic, in opposite directions.
           </p>
@@ -536,7 +496,7 @@ const schema = {
         </div>
 
         <div id="too-low-options" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If Your Desk Is Too Low: Your Options</h2>
+          <h2>If Your Desk Is Too Low: Your Options</h2>
 <p>
             If you already own a desk and the arithmetic says it is short, these are the options,
             roughly from cheapest to most expensive.
@@ -567,15 +527,13 @@ const schema = {
             back. If the desk cannot be made high enough, the desk is the part to change.
           </p>
           <p>
-            Our guide to
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            covers choosing a pad with desk height in mind, including how slim the slimmest models
+            Our guide to <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> covers choosing a pad with desk height in mind, including how slim the slimmest models
             are.
           </p>
         </div>
 
         <div id="comfort-checks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Comfort Checks Once It Is Set Up</h2>
+          <h2>Comfort Checks Once It Is Set Up</h2>
 <p>
             Numbers get the desk into the right range; your body tells you whether it is right.
             In the first week, check these while walking at your usual desk speed:
@@ -608,7 +566,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. If You Are Shopping for a Treadmill Desk</h2>
+          <h2>If You Are Shopping for a Treadmill Desk</h2>
 <p>
             Do the sum first, then shop. Write down your formula figure — elbow height in shoes
             plus the pad's belt height — and add an inch. That is the minimum maximum height to
@@ -627,150 +585,161 @@ const schema = {
             for walking.</li>
           </ul>
           <p>
-            Our roundup of the
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks and desks for a walking pad</a>
-            applies exactly these checks. It covers two integrated desk-and-treadmill sets and
+            Our roundup of the <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks and desks for a walking pad</a> applies exactly these checks. It covers two integrated desk-and-treadmill sets and
             three standing desks chosen because they reach about 50 inches or more, states each
             desk's height range where its sources agree, and flags where a maker and a reviewer
             disagree by half an inch — which, as the chart above shows, can be the difference
             between a desk that fits you and one that does not.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How high should a standing desk be for a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At about your standing elbow height in shoes plus the height of the pad's belt. For most adults on most pads that is roughly 44 to 54 inches. Measure your elbow height with your arms hanging and elbows at about 90 degrees, add the deck height, and buy a desk that reaches that with an inch or more to spare.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a walking pad raise you?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                By the height of its belt surface, which on most walking pads is roughly 4 to 7 inches. Slim flat pads sit at the low end and incline pads at the top. A powered incline lifts the front further, and your feet rise by roughly half the front rise, so a 5% slope on a 40-inch deck adds about an inch.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a 48-inch standing desk tall enough for a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For shorter users on a slim pad, often yes. By the estimates in our chart, someone around 5 feet 4 inches on a 4-inch pad needs about 45.5 inches, which a 48-inch desk covers. Someone 5 feet 8 inches on a 6-inch pad needs about 50 inches, which it does not. Measure your own numbers before relying on the chart.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How high should the monitor be on a treadmill desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                With the top edge at or slightly below eye level, about an arm's length away. Your eye line sits roughly 0.31 times your height above the keyboard, about 21.5 inches for someone 5 feet 10, whether or not you are on a pad. Many monitors on their own stands sit lower than that and need a sturdy riser.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a keyboard tray help if my desk is too low?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not on its own, because a tray lowers the keyboard below the desktop. Where it helps is the other way round: it lets the desktop and monitor sit higher than your elbows while the keys stay at elbow height, which suits taller users whose screen needs to be well above the keyboard. A sturdy desktop riser is the accessory that adds height.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What elbow angle should I have at a walking desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About 90 degrees, with your upper arms hanging naturally and shoulders relaxed; slightly more open, with the keyboard a touch lower, is fine and many people prefer it. If your shoulders lift or you hunch forward, the desk is at the wrong height. If you have pain, see a physical therapist rather than relying on a rule of thumb.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Setting Desk Height for a Walking Pad</h2>
+          <p>Each of these turns a good treadmill desk into one that hurts, and all of them are avoidable with a tape measure.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Setting the desk height on the floor</h3>
+              <p>A desk set for you standing beside the pad is 4 to 7 inches too low once you step onto it. Always set the height while standing on the belt, in the shoes you walk in, with your elbows at about 90 degrees, and save it as a preset.</p>
+            </li>
+            <li>
+              <h3>Buying a desk that only just reaches your number</h3>
+              <p>A desk running at the very top of its range all day wobbles more, has no room for thicker shoes or a taller pad, and may be half an inch shorter than its listing. Choose a desk whose maximum, with the desktop fitted, clears your figure by at least an inch.</p>
+            </li>
+            <li>
+              <h3>Fixing the keyboard and forgetting the monitor</h3>
+              <p>Raising the desk for your hands raises the monitor too, but rarely enough. A screen left too low makes you tip your head down for hours. Set the top edge at or slightly below eye level, using a sturdy riser if the stand will not go high enough.</p>
+            </li>
+            <li>
+              <h3>Propping the pad up or leaning on the desk</h3>
+              <p>Raising a pad on boards to meet a desk, or resting your forearms on the desk to reach a low keyboard, both trade a geometry problem for a safety or posture one. Keep the pad flat on the floor and change the desk, the pad or the riser instead.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Setting Desk Height for a Walking Pad</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a good treadmill desk into one that hurts, and all of them are avoidable with a tape measure.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Setting the desk height on the floor</h3>
-              <p class="text-gray-700 text-sm m-0">A desk set for you standing beside the pad is 4 to 7 inches too low once you step onto it. Always set the height while standing on the belt, in the shoes you walk in, with your elbows at about 90 degrees, and save it as a preset.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a desk that only just reaches your number</h3>
-              <p class="text-gray-700 text-sm m-0">A desk running at the very top of its range all day wobbles more, has no room for thicker shoes or a taller pad, and may be half an inch shorter than its listing. Choose a desk whose maximum, with the desktop fitted, clears your figure by at least an inch.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fixing the keyboard and forgetting the monitor</h3>
-              <p class="text-gray-700 text-sm m-0">Raising the desk for your hands raises the monitor too, but rarely enough. A screen left too low makes you tip your head down for hours. Set the top edge at or slightly below eye level, using a sturdy riser if the stand will not go high enough.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Propping the pad up or leaning on the desk</h3>
-              <p class="text-gray-700 text-sm m-0">Raising a pad on boards to meet a desk, or resting your forearms on the desk to reach a low keyboard, both trade a geometry problem for a safety or posture one. Keep the pad flat on the floor and change the desk, the pad or the riser instead.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Desk Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Integrated sets and standing desks that reach walking-pad height, chosen on range, stability and warranty.</p>
-            </a>
-            <a href="/treadmill-desk-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Use a Treadmill Desk</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Speed, posture, which tasks suit walking, and building up your minutes in the first weeks.</p>
-            </a>
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Walking Pads</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Choosing the pad half of the set-up: belt length, quietness, deck height and capacity.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Your desk needs to reach your standing elbow height in shoes plus
-            the pad's deck height — for most adults on most pads, roughly 44 to 54 inches.</strong>
-            That is 4 to 7 inches more than you need on the floor, and it is why so many two-stage
+            the pad's deck height — for most adults on most pads, roughly 44 to 54 inches.</strong> That is 4 to 7 inches more than you need on the floor, and it is why so many two-stage
             desks that top out around 47 or 48 inches come up short.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Measure your own elbow height and the pad's belt surface, add an inch of headroom, and
             raise the monitor by the same amount as the desk. Then choose a desk that clears your
-            number comfortably; our list of the
-            <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">best treadmill desks</a>
-            was screened on exactly that height check.
+            number comfortably; our list of the <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">best treadmill desks</a> was screened on exactly that height check.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-desks/">Best Treadmill Desks</a></li>
+            <li><a href="/treadmill-desk-guide/">How to Use a Treadmill Desk</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How high should a standing desk be for a walking pad?</h3></summary>
+            <p class="faq-a">
+              At about your standing elbow height in shoes plus the height of the pad's belt. For most adults on most pads that is roughly 44 to 54 inches. Measure your elbow height with your arms hanging and elbows at about 90 degrees, add the deck height, and buy a desk that reaches that with an inch or more to spare.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does a walking pad raise you?</h3></summary>
+            <p class="faq-a">
+              By the height of its belt surface, which on most walking pads is roughly 4 to 7 inches. Slim flat pads sit at the low end and incline pads at the top. A powered incline lifts the front further, and your feet rise by roughly half the front rise, so a 5% slope on a 40-inch deck adds about an inch.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a 48-inch standing desk tall enough for a walking pad?</h3></summary>
+            <p class="faq-a">
+              For shorter users on a slim pad, often yes. By the estimates in our chart, someone around 5 feet 4 inches on a 4-inch pad needs about 45.5 inches, which a 48-inch desk covers. Someone 5 feet 8 inches on a 6-inch pad needs about 50 inches, which it does not. Measure your own numbers before relying on the chart.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How high should the monitor be on a treadmill desk?</h3></summary>
+            <p class="faq-a">
+              With the top edge at or slightly below eye level, about an arm's length away. Your eye line sits roughly 0.31 times your height above the keyboard, about 21.5 inches for someone 5 feet 10, whether or not you are on a pad. Many monitors on their own stands sit lower than that and need a sturdy riser.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a keyboard tray help if my desk is too low?</h3></summary>
+            <p class="faq-a">
+              Not on its own, because a tray lowers the keyboard below the desktop. Where it helps is the other way round: it lets the desktop and monitor sit higher than your elbows while the keys stay at elbow height, which suits taller users whose screen needs to be well above the keyboard. A sturdy desktop riser is the accessory that adds height.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What elbow angle should I have at a walking desk?</h3></summary>
+            <p class="faq-a">
+              About 90 degrees, with your upper arms hanging naturally and shoulders relaxed; slightly more open, with the keyboard a touch lower, is fine and many people prefer it. If your shoulders lift or you hunch forward, the desk is at the wrong height. If you have pain, see a physical therapist rather than relying on a rule of thumb.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Desk Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-desks/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill Desks</div>
+            <p class="c-blurb">Integrated sets and standing desks that reach walking-pad height, chosen on range, stability and warranty.</p>
+          </a>
+          <a href="/treadmill-desk-guide/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Use a Treadmill Desk</div>
+            <p class="c-blurb">Speed, posture, which tasks suit walking, and building up your minutes in the first weeks.</p>
+          </a>
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Walking Pads</div>
+            <div class="c-title">Under-Desk Treadmills</div>
+            <p class="c-blurb">Choosing the pad half of the set-up: belt length, quietness, deck height and capacity.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills Under $2,000 (2026): The Running Tier";
 const description =
@@ -270,6 +269,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-under-2000/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -290,146 +295,111 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Top Pick", link: "#nordictrack-commercial-1750" }}
+  stickyCta={{ text: "Best Overall: NordicTrack Commercial 1750", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillsunder2000" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsunder2000)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills Under $2,000</h1>
+      <p class="ed-dek">
+        This is the tier where a treadmill becomes a running machine rather than a walking one that tolerates jogging. It is also where the subscription question starts costing more than the hardware.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-commercial-1750"><img src="https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg" alt="NordicTrack Commercial 1750" width="500" height="500" decoding="async" /></a>
+          <a href="#sole-f65"><img src="https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg" alt="Sole F65" width="500" height="500" decoding="async" /></a>
+          <a href="#nordictrack-commercial-2450"><img src="https://m.media-amazon.com/images/I/31NVjoFCMQL._SL500_.jpg" alt="NordicTrack Commercial 2450" width="500" height="500" decoding="async" /></a>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills <span class="text-[#5AA9FF]">Under $2,000</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          This is the tier where a treadmill becomes a running machine rather than a walking one that tolerates jogging. It is also where the subscription question starts costing more than the hardware.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#nordictrack-commercial-1750" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Top Pick
-          </a>
-          <a href="#what-changes" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Changes Here
-          </a>
-        </div>
-      </div>
-    </div>
+        <figcaption>NordicTrack Commercial 1750 · Sole F65 · NordicTrack Commercial 2450</figcaption>
+      </figure>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="4.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the five-year cost.</strong> Several machines in this
-          band carry a subscription of around $39 a month, which is roughly $2,350 over five
-          years — more than the treadmill. Prices below are purchase prices only. The section on
-          total cost works through what that means for the comparison, and our
-          <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a>
-          covers what each console does when you stop paying.
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Deck, motor and weight figures are the manufacturers' published
-          specifications, and judgements on how they run come from what those figures imply — not
-          from our own measurements.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
-            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#sole-f65" class="font-bold text-gray-900 no-underline hover:underline">Sole F65</a>
-            <a href="#sole-f65" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Hills:</span>
-            <a href="#nordictrack-commercial-2450" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 2450</a>
-            <a href="#nordictrack-commercial-2450" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest 60 in. Deck:</span>
-            <a href="#proform-pro-2000" class="font-bold text-gray-900 no-underline hover:underline">ProForm Pro 2000</a>
-            <a href="#proform-pro-2000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking Value:</span>
-            <a href="#sole-f63" class="font-bold text-gray-900 no-underline hover:underline">Sole F63</a>
-            <a href="#sole-f63" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#what-changes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What This Tier Buys That the Last One Did Not</a>
-          <a href="#what-it-does-not-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What It Still Does Not Buy</a>
-          <a href="#total-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Five-Year Cost Changes the Ranking</a>
-          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How We Chose</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Six Best Treadmills Under $2,000</a>
-          <a href="#incline-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Incline, Decline and What to Pay For</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Delivery Is a Real Consideration at This Weight</a>
-          <a href="#longevity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Making This Tier Last Ten Years</a>
-          <a href="#who-should-spend-more" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Spend More Than This</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Warranty Terms Are the Real Tiebreaker</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Somewhere between $1,200 and $1,800 a treadmill stops being a machine you can jog on and
           becomes one you can run on. The specification that changes is not the motor — it is the
           combination of a 60-inch deck and enough frame mass to keep it still underneath you.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#nordictrack-commercial-1750">NordicTrack Commercial 1750</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#sole-f65">Sole F65</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Hills:</span> <a href="#nordictrack-commercial-2450">NordicTrack Commercial 2450</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest 60 in. Deck:</span> <a href="#proform-pro-2000">ProForm Pro 2000</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Walking Value:</span> <a href="#sole-f63">Sole F63</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Display:</span> <a href="#proform-power-1295i">ProForm Power 1295i</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the five-year cost.</strong> Several machines in this
+          band carry a subscription of around $39 a month, which is roughly $2,350 over five
+          years — more than the treadmill. Prices below are purchase prices only. The section on
+          total cost works through what that means for the comparison, and our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a> covers what each console does when you stop paying. <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          machines. Deck, motor and weight figures are the manufacturers' published
+          specifications, and judgements on how they run come from what those figures imply — not
+          from our own measurements.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#what-changes">What This Tier Buys That the Last One Did Not</a></li>
+            <li><a href="#what-it-does-not-buy">What It Still Does Not Buy</a></li>
+            <li><a href="#total-cost">The Five-Year Cost Changes the Ranking</a></li>
+            <li><a href="#how-we-tested">How We Chose</a></li>
+            <li><a href="#picks">The Six Best Treadmills Under $2,000</a></li>
+            <li><a href="#incline-decline">Incline, Decline and What to Pay For</a></li>
+            <li><a href="#delivery">Delivery Is a Real Consideration at This Weight</a></li>
+            <li><a href="#longevity">Making This Tier Last Ten Years</a></li>
+            <li><a href="#who-should-spend-more">Who Should Spend More Than This</a></li>
+            <li><a href="#warranty">Warranty Terms Are the Real Tiebreaker</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="what-changes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What This Tier Buys That the Last One Did Not</h2>
+          <h2>What This Tier Buys That the Last One Did Not</h2>
 <p>
             The step from $1,000 to $2,000 is the second genuine value threshold in the treadmill
             market, after the one around $700. Four things change together.
@@ -458,7 +428,7 @@ const schema = {
         </div>
 
         <div id="what-it-does-not-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What It Still Does Not Buy</h2>
+          <h2>What It Still Does Not Buy</h2>
 <p>
             Being clear about the ceiling saves people from expecting the next tier's benefits at
             this price.
@@ -482,14 +452,12 @@ const schema = {
             exactly that reason.
           </p>
           <p>
-            If those matter to you, our
-            <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">over-$2,500 guide</a>
-            covers where they begin.
+            If those matter to you, our <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">over-$2,500 guide</a> covers where they begin.
           </p>
         </div>
 
         <div id="total-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Five-Year Cost Changes the Ranking</h2>
+          <h2>The Five-Year Cost Changes the Ranking</h2>
 <p>
             This is the price band where subscriptions distort comparisons most, because the
             recurring cost is a large fraction of the purchase price rather than a rounding error.
@@ -514,7 +482,7 @@ const schema = {
         </div>
 
         <div id="how-we-tested" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How We Chose</h2>
+          <h2>How We Chose</h2>
 <p>
             We have not tested these machines, and nothing on this page should be read as if we
             had. They were chosen and ranked for running from the manufacturers' published
@@ -532,98 +500,84 @@ const schema = {
           <p>
             Deck consistency is most of what the extra money buys in this band, and it is the
             hardest thing to judge from a specification sheet, which is why we treat assembled
-            weight and the parts warranty as the best available proxies for it. Our
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a>
-            explains how we assess machines from published data.
+            weight and the parts warranty as the best available proxies for it. Our <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a> explains how we assess machines from published data.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Six Best Treadmills Under $2,000</h2>
+          <h2>The Six Best Treadmills Under $2,000</h2>
 <p>
             Ranked for running, since that is what this tier is for. Each entry notes the
             subscription position, because at this price it changes the arithmetic.
           </p>
           <p>
-            The clearest illustration of that arithmetic is the
-            <a href="/proform-pro-5000-treadmill/" class="text-[#0F62FE] font-medium">ProForm Pro 5000</a>,
+            The clearest illustration of that arithmetic is the <a href="/proform-pro-5000-treadmill/" class="text-[#0F62FE] font-medium">ProForm Pro 5000</a>,
             which delivers a 22 by 60-inch deck and decline for well under the ceiling here and
             attaches a content platform to the console. Its review works the five-year total
             through against the subscription-free alternatives.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="incline-decline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Incline, Decline and What to Pay For</h2>
+          <h2>Incline, Decline and What to Pay For</h2>
 <p>
             Every machine here reaches at least 12% incline, which covers any structured hill
             session a home runner will do. The differences are in how quickly the grade changes and
@@ -640,14 +594,12 @@ const schema = {
             valuable if you are preparing for a course with significant descent, because <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill
             running</a> loads the quadriceps eccentrically in a way nothing else replicates. For
             everyone else it is a mechanism you will use twice. Do not let it decide a purchase, and
-            if you have knee pain, our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">knee guide</a>
-            explains why it is the one function to avoid.
+            if you have knee pain, our <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">knee guide</a> explains why it is the one function to avoid.
           </p>
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Delivery Is a Real Consideration at This Weight</h2>
+          <h2>Delivery Is a Real Consideration at This Weight</h2>
 <p>
             Machines in this band run 250 to 340 lbs assembled and arrive in a crate around six
             feet long. That changes delivery from an administrative detail into a planning problem.
@@ -662,15 +614,13 @@ const schema = {
           <p>
             Measure the route rather than the room: doorway widths, stairwell turns and the diagonal
             of any landing pivot. A treadmill arrives assembled enough that it cannot be angled the
-            way flat-packed furniture can. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a>
-            covers the full route and clearance arithmetic, including the run-off space you need
+            way flat-packed furniture can. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a> covers the full route and clearance arithmetic, including the run-off space you need
             behind the deck.
           </p>
         </div>
 
         <div id="longevity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Making This Tier Last Ten Years</h2>
+          <h2>Making This Tier Last Ten Years</h2>
 <p>
             Machines at this price have genuine margin, and a well-maintained one will run for a
             decade of home use. A neglected one fails at four to six years, and the failure is
@@ -685,18 +635,12 @@ const schema = {
           </p>
           <p>
             Check your manual before applying anything — some decks are pre-waxed and are destroyed
-            by silicone. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the procedure, the
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
-            covers the year, and
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            covers the repair-or-replace arithmetic when something eventually does fail.
+            by silicone. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers the procedure, the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a> covers the year, and <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> covers the repair-or-replace arithmetic when something eventually does fail.
           </p>
         </div>
 
         <div id="who-should-spend-more" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Spend More Than This</h2>
+          <h2>Who Should Spend More Than This</h2>
 <p>
             For most home runners this tier is the right stopping point, and the case for going
             further is narrower than the marketing suggests. Three situations genuinely justify it.
@@ -709,8 +653,7 @@ const schema = {
           <p>
             <strong>A runner near or above 250 lbs.</strong> Weight capacities here cluster at 300
             lbs, which with the margin we recommend elsewhere means a practical ceiling near 240.
-            Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
-            covers where to look instead.
+            Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a> covers where to look instead.
           </p>
           <p>
             <strong>A fifteen-year horizon.</strong> If you intend to buy once and keep it,
@@ -724,7 +667,7 @@ const schema = {
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Warranty Terms Are the Real Tiebreaker</h2>
+          <h2>Warranty Terms Are the Real Tiebreaker</h2>
 <p>
             When two machines in this band look similar on paper — and several here do — warranty terms
             are the most informative remaining difference, because they are the manufacturer
@@ -744,14 +687,12 @@ const schema = {
             never lubricated, which is another reason to keep to the schedule. The second is whether
             service is in-home or return-to-base. Shipping a 300 lb machine back to a manufacturer
             is not a realistic remedy, so a return-to-base term on a treadmill this heavy is close to
-            no term at all. Our
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">lifespan and repair guide</a>
-            covers what these failures actually cost when they fall outside cover.
+            no term at all. Our <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">lifespan and repair guide</a> covers what these failures actually cost when they fall outside cover.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             The <strong>NordicTrack Commercial 1750</strong> is the best running machine in this
             band and the one we recommend most often: a 60 by 22-inch deck, roughly 340 lbs of
@@ -771,136 +712,151 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is $2,000 enough for a good running treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Comfortably. This is the band where 60-inch decks become standard, assembled weights pass 250 lbs and decks are built to hold their cushioning. What it does not buy is an AC motor or commercial roller diameters, both of which start around $3,000 and matter mainly for very high mileage or multiple daily users.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between a $1,000 and a $2,000 treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly frame mass and deck consistency. At $1,000 a 60-inch deck usually comes at the cost of frame weight, so the machine is more likely to move at 9 mph and its cushioning to soften with mileage. At $2,000 you get both together — a full deck on a frame that stays still, with deck construction built to keep its feel for years.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy a treadmill with a subscription at this price?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Count the five-year cost first. A $1,300 subscription-free machine costs $1,300 over five years; an $1,800 machine with a $39 monthly fee costs roughly $4,150. If you would pay $39 a month for the content even if the machine were free, buy the connected one. If you hesitate, buy the plain machine and use a tablet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a 22-inch belt or is 20 enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Twenty inches is enough for most runners under about 6'2". Twenty-two gives margin for the wider foot placement that comes with a longer stride and for the way placement wanders as you fatigue, so it matters most on runs past the hour and for taller runners. It is a comfort specification, not a safety one.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long will a treadmill in this price range last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A decade of home use if maintained, four to six years if neglected, and the difference is almost entirely belt lubrication. Rising friction against a dry deck is what wears out motors and controller boards, which are the expensive components. The routine is under an hour a year.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth spending more than $2,000?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only in three cases: two people running high mileage daily, where an AC motor is a genuinely different class of component; a runner near or above 250 lbs, since capacities here cluster at 300 lbs; or a fifteen-year ownership horizon. Outside those, the money is better spent elsewhere.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying at This Price</h2>
+          <p>At this level the hardware is good enough that the expensive mistakes are about cost structure and specifications rather than build quality.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing purchase prices when one machine has a subscription</h3>
+              <p>A $1,300 subscription-free machine and an $1,800 connected one look $500 apart and are $2,850 apart over five years. That is more than the price of either treadmill. Run the five-year number before shortlisting, and ask whether you would pay the monthly fee for the content if the hardware were free.</p>
+            </li>
+            <li>
+              <h3>Trusting the advertised belt length</h3>
+              <p>Belt figures include the section curving onto the rear roller, which is not usable running surface. The usable length is therefore always shorter than the advertised figure, and how much shorter varies by brand and model — two machines quoting 60 inches need not give you the same running surface. Ask for the flat deck measurement.</p>
+            </li>
+            <li>
+              <h3>Buying decline you will never use</h3>
+              <p>Downhill running loads the quadriceps eccentrically and is genuinely valuable for preparing for a descent-heavy race. For everyone else it is a mechanism used twice, competing for the same budget as frame mass. Let it be a bonus on a machine you chose for other reasons, never the reason you chose it.</p>
+            </li>
+            <li>
+              <h3>Not paying for room-of-choice delivery</h3>
+              <p>These machines are 250 to 340 lbs in a six-foot crate, and kerbside — a pallet on the driveway — is the default at most retailers. Upgraded delivery costs $100 to $300 and is worth it at this weight. Measure the route including stairwell turns first, because a treadmill cannot be angled the way furniture can.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying at This Price</h2>
-          <p class="text-gray-700 leading-relaxed">At this level the hardware is good enough that the expensive mistakes are about cost structure and specifications rather than build quality.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing purchase prices when one machine has a subscription</h3>
-              <p class="text-gray-700 text-sm m-0">A $1,300 subscription-free machine and an $1,800 connected one look $500 apart and are $2,850 apart over five years. That is more than the price of either treadmill. Run the five-year number before shortlisting, and ask whether you would pay the monthly fee for the content if the hardware were free.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the advertised belt length</h3>
-              <p class="text-gray-700 text-sm m-0">Belt figures include the section curving onto the rear roller, which is not usable running surface. The usable length is therefore always shorter than the advertised figure, and how much shorter varies by brand and model — two machines quoting 60 inches need not give you the same running surface. Ask for the flat deck measurement.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying decline you will never use</h3>
-              <p class="text-gray-700 text-sm m-0">Downhill running loads the quadriceps eccentrically and is genuinely valuable for preparing for a descent-heavy race. For everyone else it is a mechanism used twice, competing for the same budget as frame mass. Let it be a bonus on a machine you chose for other reasons, never the reason you chose it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not paying for room-of-choice delivery</h3>
-              <p class="text-gray-700 text-sm m-0">These machines are 250 to 340 lbs in a six-foot crate, and kerbside — a pallet on the driveway — is the default at most retailers. Upgraded delivery costs $100 to $300 and is worth it at this weight. Measure the route including stairwell turns first, because a treadmill cannot be angled the way furniture can.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Running &amp; Value Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-running/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Runners</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Running</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The running ranking across all price points, decided on deck and frame.</p>
-            </a>
-            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Without Subscriptions</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What each console does unpaid, and the five-year arithmetic.</p>
-            </a>
-            <a href="/treadmills-over-2500/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Above</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Over $2,500</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where AC motors and commercial rollers begin, and who needs them.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            This is the tier where a treadmill becomes a running machine. The
-            <strong class="text-white">NordicTrack Commercial 1750</strong> is the best hardware
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            This is the tier where a treadmill becomes a running machine. The <strong class="text-white">NordicTrack Commercial 1750</strong> is the best hardware
             in it; the <strong class="text-white">Sole F65</strong> is the best value once you
             count five years, at roughly a third of the total cost for nearly the same run.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Mostly walking? Buy the
-            <a href="/sole-f63-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F63</a>
-            instead and save around $3,000 over five years. Running high mileage or over 250 lbs?
-            The <a href="/treadmills-over-2500/" class="text-[#5AA9FF] font-bold no-underline">tier above</a>
-            is where AC motors start.
+          <p>
+            Mostly walking? Buy the <a href="/sole-f63-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F63</a> instead and save around $3,000 over five years. Running high mileage or over 250 lbs?
+            The <a href="/treadmills-over-2500/" class="text-[#5AA9FF] font-bold no-underline">tier above</a> is where AC motors start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-running/">Best Treadmills for Running</a></li>
+            <li><a href="/best-treadmills-without-subscriptions/">Best Treadmills Without Subscriptions</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is $2,000 enough for a good running treadmill?</h3></summary>
+            <p class="faq-a">
+              Comfortably. This is the band where 60-inch decks become standard, assembled weights pass 250 lbs and decks are built to hold their cushioning. What it does not buy is an AC motor or commercial roller diameters, both of which start around $3,000 and matter mainly for very high mileage or multiple daily users.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between a $1,000 and a $2,000 treadmill?</h3></summary>
+            <p class="faq-a">
+              Mainly frame mass and deck consistency. At $1,000 a 60-inch deck usually comes at the cost of frame weight, so the machine is more likely to move at 9 mph and its cushioning to soften with mileage. At $2,000 you get both together — a full deck on a frame that stays still, with deck construction built to keep its feel for years.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should I buy a treadmill with a subscription at this price?</h3></summary>
+            <p class="faq-a">
+              Count the five-year cost first. A $1,300 subscription-free machine costs $1,300 over five years; an $1,800 machine with a $39 monthly fee costs roughly $4,150. If you would pay $39 a month for the content even if the machine were free, buy the connected one. If you hesitate, buy the plain machine and use a tablet.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a 22-inch belt or is 20 enough?</h3></summary>
+            <p class="faq-a">
+              Twenty inches is enough for most runners under about 6'2". Twenty-two gives margin for the wider foot placement that comes with a longer stride and for the way placement wanders as you fatigue, so it matters most on runs past the hour and for taller runners. It is a comfort specification, not a safety one.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long will a treadmill in this price range last?</h3></summary>
+            <p class="faq-a">
+              A decade of home use if maintained, four to six years if neglected, and the difference is almost entirely belt lubrication. Rising friction against a dry deck is what wears out motors and controller boards, which are the expensive components. The routine is under an hour a year.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth spending more than $2,000?</h3></summary>
+            <p class="faq-a">
+              Only in three cases: two people running high mileage daily, where an AC motor is a genuinely different class of component; a runner near or above 250 lbs, since capacities here cluster at 300 lbs; or a fifteen-year ownership horizon. Outside those, the money is better spent elsewhere.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Running &amp; Value Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-running/" class="card">
+            <div class="c-kicker">Runners</div>
+            <div class="c-title">Best Treadmills for Running</div>
+            <p class="c-blurb">The running ranking across all price points, decided on deck and frame.</p>
+          </a>
+          <a href="/best-treadmills-without-subscriptions/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">Best Treadmills Without Subscriptions</div>
+            <p class="c-blurb">What each console does unpaid, and the five-year arithmetic.</p>
+          </a>
+          <a href="/treadmills-over-2500/" class="card">
+            <div class="c-kicker">Above</div>
+            <div class="c-title">Best Treadmills Over $2,500</div>
+            <p class="c-blurb">Where AC motors and commercial rollers begin, and who needs them.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

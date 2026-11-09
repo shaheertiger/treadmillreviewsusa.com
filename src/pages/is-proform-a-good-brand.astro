@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Is ProForm a Good Brand? (2026): An Honest Assessment";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/is-proform-a-good-brand/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,104 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Who Should Buy One", link: "#who-should-buy" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-isproformagoodbrand" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-isproformagoodbrand)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Is ProForm a Good Brand?</h1>
+      <p class="ed-dek">
+        ProForm is a sound value brand with a clear set of trade-offs: full-size decks and iFIT at prices below NordicTrack, in exchange for short motor warranties, a 12% incline ceiling and a machine that leans on a subscription. Whether it is good for you depends on which side of those trade-offs you sit.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Is ProForm <span class="text-[#5AA9FF]">a Good Brand?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          ProForm is a sound value brand with a clear set of trade-offs: full-size decks and iFIT at prices below NordicTrack, in exchange for short motor warranties, a 12% incline ceiling and a machine that leans on a subscription. Whether it is good for you depends on which side of those trade-offs you sit.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy One
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this assessment is based on.</strong> The figures
-          on this page come from our
-          <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm range guide</a>,
-          which checked ProForm's own US site against independent review coverage on 13 October
-          2026 and carries only figures they agree on. Ownership details were checked against
-          iFIT's own announcement and independent sources. We have not tested ProForm's current
-          machines, and we do not have access to failure-rate or service data for any brand, so
-          we do not claim one; where we describe the brand's strengths and weaknesses, they rest
-          on published specifications, warranty terms and independent review coverage. ProForm
-          changes its range, prices and terms often, so confirm the specification and warranty
-          for the exact unit before you order.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is ProForm a Good Brand? The Short Answer</a>
-          <a href="#who-owns-proform" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Owns ProForm, and Why It Matters</a>
-          <a href="#what-proform-does-well" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What ProForm Does Well</a>
-          <a href="#where-proform-falls-short" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Where ProForm Falls Short</a>
-          <a href="#warranty-pattern" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Warranty Pattern, and What It Tells You</a>
-          <a href="#service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Service, Support and Buying Experience</a>
-          <a href="#ifit-dependence" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Much a ProForm Depends on iFIT</a>
-          <a href="#old-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Old-Model Problem</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy a ProForm, and Who Should Not</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If You Are Shopping: Choosing the Right ProForm</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           "Is ProForm a good brand?" usually means one of three things. Will the machine last?
           Is it good value next to NordicTrack and Sole? And is the iFIT subscription a trap? The
           honest answer to each is more useful than a verdict, because ProForm is not a bad brand
@@ -210,8 +145,39 @@ const schema = {
           look.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this assessment is based on.</strong> The figures
+          on this page come from our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm range guide</a>,
+          which checked ProForm's own US site against independent review coverage on 13 October
+          2026 and carries only figures they agree on. Ownership details were checked against
+          iFIT's own announcement and independent sources. We have not tested ProForm's current
+          machines, and we do not have access to failure-rate or service data for any brand, so
+          we do not claim one; where we describe the brand's strengths and weaknesses, they rest
+          on published specifications, warranty terms and independent review coverage. ProForm
+          changes its range, prices and terms often, so confirm the specification and warranty
+          for the exact unit before you order.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is ProForm a Good Brand? The Short Answer</a></li>
+            <li><a href="#who-owns-proform">Who Owns ProForm, and Why It Matters</a></li>
+            <li><a href="#what-proform-does-well">What ProForm Does Well</a></li>
+            <li><a href="#where-proform-falls-short">Where ProForm Falls Short</a></li>
+            <li><a href="#warranty-pattern">The Warranty Pattern, and What It Tells You</a></li>
+            <li><a href="#service">Service, Support and Buying Experience</a></li>
+            <li><a href="#ifit-dependence">How Much a ProForm Depends on iFIT</a></li>
+            <li><a href="#old-models">The Old-Model Problem</a></li>
+            <li><a href="#who-should-buy">Who Should Buy a ProForm, and Who Should Not</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping: Choosing the Right ProForm</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is ProForm a Good Brand? The Short Answer</h2>
+          <h2>Is ProForm a Good Brand? The Short Answer</h2>
 <p>
             <strong>Yes, for the right buyer: ProForm is a reasonable value brand for walkers and
             moderate runners who want iFIT classes at a lower price than NordicTrack. It is a
@@ -229,14 +195,12 @@ const schema = {
           <p>
             That is a coherent product: a sensibly sized treadmill with a capable software
             platform, at a price the sister brand does not reach. If those are your priorities,
-            ProForm is a good brand. Our
-            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">guide to the best ProForm treadmills</a>
-            ranks the four current models and says which to skip.
+            ProForm is a good brand. Our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">guide to the best ProForm treadmills</a> ranks the four current models and says which to skip.
           </p>
         </div>
 
         <div id="who-owns-proform" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Owns ProForm, and Why It Matters</h2>
+          <h2>Who Owns ProForm, and Why It Matters</h2>
 <p>
             ProForm belongs to iFIT Health &amp; Fitness. The company was called ICON Health &amp;
             Fitness until June 2021, when it took the name of its software platform, iFIT. It is
@@ -248,9 +212,7 @@ const schema = {
             trainers and the lifetime motor warranties; ProForm offers the same platform on
             lighter, cheaper machines. Both brands run the same iFIT software, so the experience on
             a ProForm screen is the experience on a NordicTrack screen, with different hardware
-            underneath. Our
-            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm comparison</a>
-            goes into where the two genuinely differ and where, in the middle of the price range,
+            underneath. Our <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm comparison</a> goes into where the two genuinely differ and where, in the middle of the price range,
             the badge stops mattering.
           </p>
           <p>
@@ -269,7 +231,7 @@ const schema = {
         </div>
 
         <div id="what-proform-does-well" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What ProForm Does Well</h2>
+          <h2>What ProForm Does Well</h2>
 <p>
             The case for ProForm rests on four things, all visible in the current range.
           </p>
@@ -303,7 +265,7 @@ const schema = {
         </div>
 
         <div id="where-proform-falls-short" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Where ProForm Falls Short</h2>
+          <h2>Where ProForm Falls Short</h2>
 <p>
             The case against ProForm is just as visible, and it is mostly about longevity
             signals and range.
@@ -344,7 +306,7 @@ const schema = {
         </div>
 
         <div id="warranty-pattern" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Warranty Pattern, and What It Tells You</h2>
+          <h2>The Warranty Pattern, and What It Tells You</h2>
 <p>
             Read by component, ProForm's warranty is consistent across the range, and the pattern
             says more than any single figure.
@@ -385,7 +347,7 @@ const schema = {
         </div>
 
         <div id="service" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Service, Support and Buying Experience</h2>
+          <h2>Service, Support and Buying Experience</h2>
 <p>
             We do not have access to service data for ProForm or any other brand, and owner
             reviews of customer service are too self-selecting to turn into a rating. What we can
@@ -413,15 +375,13 @@ const schema = {
           <p>
             <strong>Self-help first.</strong> Many treadmill faults — a console that will not
             start, a belt that will not move, an incline that stops responding — are fixed by a
-            power cycle, a reset or a <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt adjustment</a>. Our
-            <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a>
-            covers the checks to try before booking a visit. Unplug the machine before any check
+            power cycle, a reset or a <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt adjustment</a>. Our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a> covers the checks to try before booking a visit. Unplug the machine before any check
             beyond the console, and follow the manual for your model.
           </p>
         </div>
 
         <div id="ifit-dependence" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Much a ProForm Depends on iFIT</h2>
+          <h2>How Much a ProForm Depends on iFIT</h2>
 <p>
             This is the question that should weigh most in a decision about ProForm, because it
             affects the machine for as long as you own it.
@@ -447,17 +407,13 @@ const schema = {
             step. And a good part of what you paid for — the screen on the Pro Series, the
             automatic control on all four — is only worth its price while you pay for iFIT. For
             someone who will use the classes several times a week, that is fine. For someone who
-            will not, it makes ProForm poorer value than its sticker suggests. Our
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">guide to whether iFIT is worth it</a>
-            works through the arithmetic, and our guide to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT machine without a membership</a>
-            covers what the sister brand's consoles do when the membership stops — the same
+            will not, it makes ProForm poorer value than its sticker suggests. Our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">guide to whether iFIT is worth it</a> works through the arithmetic, and our guide to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT machine without a membership</a> covers what the sister brand's consoles do when the membership stops — the same
             platform, the same pattern.
           </p>
         </div>
 
         <div id="old-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Old-Model Problem</h2>
+          <h2>The Old-Model Problem</h2>
 <p>
             One reason ProForm's reputation is hard to read is that most of what is written about
             it describes machines it no longer sells.
@@ -472,8 +428,7 @@ const schema = {
             That matters in two ways. First, a good or bad review of a retired model tells you
             little about the current one, and some names have been reused for different machines:
             earlier Pro 9000s had a 22-inch screen and decline, and the current Carbon Pro 9000 has
-            neither. Second, older brand overviews, including our own
-            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm brand overview</a>,
+            neither. Second, older brand overviews, including our own <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm brand overview</a>,
             describe a lineup that has since changed, so use them for the background on how the
             brand works rather than for current model figures.
           </p>
@@ -485,7 +440,7 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy a ProForm, and Who Should Not</h2>
+          <h2>Who Should Buy a ProForm, and Who Should Not</h2>
 <p>
             <strong>ProForm suits you if</strong> you mainly walk, incline-walk or run at moderate
             pace a few times a week; you want trainer-led classes and will pay for iFIT; you want a
@@ -495,29 +450,21 @@ const schema = {
           <p>
             <strong>Look at NordicTrack instead if</strong> you want the same platform with decline,
             steeper incline, a pivoting or larger screen, or a lifetime motor warranty. The
-            Commercial 1750 is where that lifetime cover starts. Our
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>
-            ranks the current range.
+            Commercial 1750 is where that lifetime cover starts. Our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a> ranks the current range.
           </p>
           <p>
             <strong>Look at Sole instead if</strong> you do not want a subscription at all and want
             the longest motor cover. Sole's folding treadmills carry lifetime frame and motor
-            warranties, reach 15% incline, and describe their app as free. Our
-            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a>
-            covers them, and our
-            <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack comparison</a>
-            sets out the hardware-first and platform-first approaches side by side.
+            warranties, reach 15% incline, and describe their app as free. Our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a> covers them, and our <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack comparison</a> sets out the hardware-first and platform-first approaches side by side.
           </p>
           <p>
             <strong>Look elsewhere if</strong> you run fast and often, weigh more than about 300 lb,
-            or want a machine that is entirely independent of any platform. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            roundup is the starting point for the last of those.
+            or want a machine that is entirely independent of any platform. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> roundup is the starting point for the last of those.
           </p>
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If You Are Shopping: Choosing the Right ProForm</h2>
+          <h2>If You Are Shopping: Choosing the Right ProForm</h2>
 <p>
             If ProForm fits, the choice within the range is narrow, because there are only four
             machines, and it comes down to two questions: do you need a 60-inch deck, and do you
@@ -539,146 +486,158 @@ const schema = {
             machine arrives.
           </p>
           <p>
-            Our
-            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm treadmill rankings</a>
-            carry the confirmed specification for each model, the figures ProForm's own pages
+            Our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm treadmill rankings</a> carry the confirmed specification for each model, the figures ProForm's own pages
             disagree on, and the older models to avoid.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is ProForm a good treadmill brand?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walkers and moderate runners who want iFIT classes at a lower price than NordicTrack, yes. Most current models have a full 20 by 60-inch deck, fold, and carry ten years on the frame. The weaknesses are short motor warranties of two years at most, a 12% incline ceiling with no decline, and a machine that needs an iFIT account to activate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who owns ProForm?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                iFIT Health & Fitness, the company formerly called ICON Health & Fitness, based in Logan, Utah. It renamed itself after its iFIT software platform in June 2021. The same company owns NordicTrack, which is why the two brands run the same iFIT software on different hardware at different price points.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is ProForm the same as NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Same parent company and the same iFIT platform, but different hardware. NordicTrack is the premium line, with incline trainers, decline, larger pivoting screens and lifetime motor cover on its better machines. ProForm is the value line, with lighter machines, a 12% incline ceiling and motor cover of two years at most. In the middle of the price range they overlap.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long do ProForm treadmills last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We do not have failure data for any brand, so we will not give a number. The best published signal is the warranty: ten years on the frame, but two years at most on the motor, and one year on labour. That suggests a machine built for moderate home use rather than heavy daily running. Use well within the user rating and regular maintenance both help.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need iFIT to use a ProForm treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                You need a free iFIT account to activate it, according to ProForm’s product pages, and a paid membership for classes, automatic control and streaming. Without a paid membership you set speed and incline yourself in manual mode, and the motor, deck and frame work as normal. An independent review says the Carbon TLX must be unlocked through the app first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is ProForm or Sole better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They suit different buyers. Sole is hardware-first: lifetime frame and motor cover on its folding treadmills, incline to 15% and no subscription. ProForm is platform-first: iFIT classes and automatic control at a value price, with shorter motor cover. If you will not pay for classes, Sole is usually better value; if the classes keep you training, ProForm can be.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Judging ProForm</h2>
+          <p>Most of these come from reading ProForm’s reputation off machines it no longer sells, or from ignoring the subscription.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Judging the brand on retired models</h3>
+              <p>Much of what is written about ProForm describes the Pro 5000, Power series or older Pro 9000, none of which ProForm’s US site currently lists. Judge the current Carbon range on its own specification and warranty, and treat older reviews as background only.</p>
+            </li>
+            <li>
+              <h3>Treating the frame warranty as the headline</h3>
+              <p>Ten years on the frame sounds generous, but frames rarely fail. The motor, parts, screen and labour carry one or two years. Compare those terms with Sole and NordicTrack before deciding a ProForm is the better deal.</p>
+            </li>
+            <li>
+              <h3>Buying for the screen and never subscribing</h3>
+              <p>Without a paid membership, much of a Pro Series screen sits idle and automatic control goes. If you are not going to pay for iFIT, you are paying for features you will not use, and a brand built without a platform is better value.</p>
+            </li>
+            <li>
+              <h3>Assuming the published figures are always right</h3>
+              <p>ProForm’s own pages disagree in places — two motor ratings for one model, two motor warranty terms for a series. Get the specification and warranty in writing for the exact unit, particularly when buying from a third-party retailer.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Judging ProForm</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from reading ProForm’s reputation off machines it no longer sells, or from ignoring the subscription.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging the brand on retired models</h3>
-              <p class="text-gray-700 text-sm m-0">Much of what is written about ProForm describes the Pro 5000, Power series or older Pro 9000, none of which ProForm’s US site currently lists. Judge the current Carbon range on its own specification and warranty, and treat older reviews as background only.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the frame warranty as the headline</h3>
-              <p class="text-gray-700 text-sm m-0">Ten years on the frame sounds generous, but frames rarely fail. The motor, parts, screen and labour carry one or two years. Compare those terms with Sole and NordicTrack before deciding a ProForm is the better deal.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying for the screen and never subscribing</h3>
-              <p class="text-gray-700 text-sm m-0">Without a paid membership, much of a Pro Series screen sits idle and automatic control goes. If you are not going to pay for iFIT, you are paying for features you will not use, and a brand built without a platform is better value.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the published figures are always right</h3>
-              <p class="text-gray-700 text-sm m-0">ProForm’s own pages disagree in places — two motor ratings for one model, two motor warranty terms for a series. Get the specification and warranty in writing for the exact unit, particularly when buying from a third-party retailer.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related ProForm Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-proform-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best ProForm Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four current models ranked, with confirmed figures and the ones to skip.</p>
-            </a>
-            <a href="/nordictrack-vs-proform/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sister Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack vs ProForm</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Same parent company and platform — where the two actually differ.</p>
-            </a>
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">The Platform</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the membership includes and what it costs over the life of a treadmill.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">ProForm is a good brand for the buyer it is built for:</strong>
-            a walker or moderate runner who wants iFIT classes and a full-size folding deck at a
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">ProForm is a good brand for the buyer it is built for:</strong> a walker or moderate runner who wants iFIT classes and a full-size folding deck at a
             price below NordicTrack. Its weaknesses — motor cover of two years at most, no decline,
             a 12% ceiling and a machine tied to an iFIT account — are real but clearly signposted.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you will pay for iFIT and run moderately, a ProForm can be the right choice; if you
             will not, or you want lifetime motor cover, look at Sole or NordicTrack. To choose
-            between the four current models, see our
-            <a href="/best-proform-treadmills/" class="text-[#5AA9FF] font-bold no-underline">ranking of ProForm's current treadmills</a>.
+            between the four current models, see our <a href="/best-proform-treadmills/" class="text-[#5AA9FF] font-bold no-underline">ranking of ProForm's current treadmills</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-proform-treadmills/">Best ProForm Treadmills</a></li>
+            <li><a href="/nordictrack-vs-proform/">NordicTrack vs ProForm</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is ProForm a good treadmill brand?</h3></summary>
+            <p class="faq-a">
+              For walkers and moderate runners who want iFIT classes at a lower price than NordicTrack, yes. Most current models have a full 20 by 60-inch deck, fold, and carry ten years on the frame. The weaknesses are short motor warranties of two years at most, a 12% incline ceiling with no decline, and a machine that needs an iFIT account to activate.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Who owns ProForm?</h3></summary>
+            <p class="faq-a">
+              iFIT Health & Fitness, the company formerly called ICON Health & Fitness, based in Logan, Utah. It renamed itself after its iFIT software platform in June 2021. The same company owns NordicTrack, which is why the two brands run the same iFIT software on different hardware at different price points.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is ProForm the same as NordicTrack?</h3></summary>
+            <p class="faq-a">
+              Same parent company and the same iFIT platform, but different hardware. NordicTrack is the premium line, with incline trainers, decline, larger pivoting screens and lifetime motor cover on its better machines. ProForm is the value line, with lighter machines, a 12% incline ceiling and motor cover of two years at most. In the middle of the price range they overlap.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long do ProForm treadmills last?</h3></summary>
+            <p class="faq-a">
+              We do not have failure data for any brand, so we will not give a number. The best published signal is the warranty: ten years on the frame, but two years at most on the motor, and one year on labour. That suggests a machine built for moderate home use rather than heavy daily running. Use well within the user rating and regular maintenance both help.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you need iFIT to use a ProForm treadmill?</h3></summary>
+            <p class="faq-a">
+              You need a free iFIT account to activate it, according to ProForm’s product pages, and a paid membership for classes, automatic control and streaming. Without a paid membership you set speed and incline yourself in manual mode, and the motor, deck and frame work as normal. An independent review says the Carbon TLX must be unlocked through the app first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is ProForm or Sole better?</h3></summary>
+            <p class="faq-a">
+              They suit different buyers. Sole is hardware-first: lifetime frame and motor cover on its folding treadmills, incline to 15% and no subscription. ProForm is platform-first: iFIT classes and automatic control at a value price, with shorter motor cover. If you will not pay for classes, Sole is usually better value; if the classes keep you training, ProForm can be.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related ProForm Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-proform-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best ProForm Treadmills</div>
+            <p class="c-blurb">The four current models ranked, with confirmed figures and the ones to skip.</p>
+          </a>
+          <a href="/nordictrack-vs-proform/" class="card">
+            <div class="c-kicker">Sister Brand</div>
+            <div class="c-title">NordicTrack vs ProForm</div>
+            <p class="c-blurb">Same parent company and platform — where the two actually differ.</p>
+          </a>
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">The Platform</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">What the membership includes and what it costs over the life of a treadmill.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

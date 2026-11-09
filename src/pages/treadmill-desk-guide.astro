@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Use a Treadmill Desk (2026): Setup, Speed and Habits";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-desk-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,107 +109,69 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Desk Setup Guide", link: "#desk-height" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmilldeskguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmilldeskguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">How to Use a Treadmill Desk</h1>
+      <p class="ed-dek">
+        Walking while you work is easy to start and easy to get wrong. The machine matters less than the desk height, the speed and how quickly you build up — and the people who stick with it are the ones who get those three right.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Use a <span class="text-[#5AA9FF]">Treadmill Desk</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Walking while you work is easy to start and easy to get wrong. The machine matters less than the desk height, the speed and how quickly you build up — and the people who stick with it are the ones who get those three right.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#desk-height" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Set Up the Desk
-          </a>
-          <a href="#ramp-up" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Build Up Gradually
-          </a>
-        </div>
+        <a href="#desk-height" class="btn-ghost">Set Up the Desk</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a practical guide to setting up and using one at a desk — it is not medical or
-          ergonomic advice for any individual. If you have a foot, knee, back or balance condition,
-          are pregnant, or have been advised to limit standing or walking, ask a doctor or
-          physical therapist before walking for long periods. Stop and rest if anything hurts.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-version" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Use a Treadmill Desk: The Short Version</a>
-          <a href="#desk-height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Set the Desk Height for Elbows at About 90 Degrees</a>
-          <a href="#monitor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Monitor Height and Distance</a>
-          <a href="#speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Speed to Walk While Typing</a>
-          <a href="#ramp-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Build Up Your Minutes Gradually</a>
-          <a href="#tasks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Which Tasks Work While Walking</a>
-          <a href="#posture" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Posture While Walking and Working</a>
-          <a href="#footwear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Footwear and Flooring</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Noise on Calls and in Shared Spaces</a>
-          <a href="#standing-desk" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Standing Desk Compatibility</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Staying Safe at a Treadmill Desk</a>
-          <a href="#making-it-stick" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Making the Habit Stick</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Set the desk so your elbows sit at about 90 degrees while you stand on the belt, raise the
           screen to eye level, walk slowly — most people type comfortably at around 1 to 2 mph —
           and build up your daily minutes over several weeks rather than several days.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is a practical guide to setting up and using one at a desk — it is not medical or
+          ergonomic advice for any individual. If you have a foot, knee, back or balance condition,
+          are pregnant, or have been advised to limit standing or walking, ask a doctor or
+          physical therapist before walking for long periods. Stop and rest if anything hurts.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-version">How to Use a Treadmill Desk: The Short Version</a></li>
+            <li><a href="#desk-height">Set the Desk Height for Elbows at About 90 Degrees</a></li>
+            <li><a href="#monitor">Monitor Height and Distance</a></li>
+            <li><a href="#speed">What Speed to Walk While Typing</a></li>
+            <li><a href="#ramp-up">Build Up Your Minutes Gradually</a></li>
+            <li><a href="#tasks">Which Tasks Work While Walking</a></li>
+            <li><a href="#posture">Posture While Walking and Working</a></li>
+            <li><a href="#footwear">Footwear and Flooring</a></li>
+            <li><a href="#noise">Noise on Calls and in Shared Spaces</a></li>
+            <li><a href="#standing-desk">Standing Desk Compatibility</a></li>
+            <li><a href="#safety">Staying Safe at a Treadmill Desk</a></li>
+            <li><a href="#making-it-stick">Making the Habit Stick</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-version" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Use a Treadmill Desk: The Short Version</h2>
+          <h2>How to Use a Treadmill Desk: The Short Version</h2>
 <p>
             A treadmill desk is any walking treadmill — usually a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, sometimes a
             full-size machine — set under a desk high enough to work at while you walk. Using one
@@ -223,15 +190,13 @@ const schema = {
             <li><strong>Shoes</strong>, posture and a clear space behind you.</li>
           </ul>
           <p>
-            If you have not chosen a machine yet, our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill picks</a>
-            cover which walking pads held up under a desk. This page is about using one once you
+            If you have not chosen a machine yet, our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill picks</a> cover which walking pads held up under a desk. This page is about using one once you
             have it.
           </p>
         </div>
 
         <div id="desk-height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Set the Desk Height for Elbows at About 90 Degrees</h2>
+          <h2>Set the Desk Height for Elbows at About 90 Degrees</h2>
 <p>
             Desk height is the setting most people get wrong, and the one that causes shoulder,
             neck and wrist complaints that get blamed on the treadmill.
@@ -262,7 +227,7 @@ const schema = {
         </div>
 
         <div id="monitor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Monitor Height and Distance</h2>
+          <h2>Monitor Height and Distance</h2>
 <p>
             Looking down while walking is the fastest route to a stiff neck, and it also makes most
             people drift on the belt. Raise the screen so its top edge is at or slightly below eye
@@ -283,11 +248,10 @@ const schema = {
         </div>
 
         <div id="speed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Speed to Walk While Typing</h2>
+          <h2>What Speed to Walk While Typing</h2>
 <p>
             Slower than you think. Most people find they can type and read comfortably at around
-            1 to 2 mph, and many settle in the middle of that band. In our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk testing</a>,
+            1 to 2 mph, and many settle in the middle of that band. In our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk testing</a>,
             typing accuracy at 1.5 mph was indistinguishable from seated, and testers settled at
             roughly 1.6 to 2.2 mph for focused work.
           </p>
@@ -305,14 +269,12 @@ const schema = {
             It may feel too slow to be worthwhile. It is not: the value of a treadmill desk is
             volume, not intensity. Two hours at 1.5 mph is about three miles of walking that would
             not otherwise have happened. If you find yourself wanting to go faster, that is a
-            workout, and it belongs in a separate session — our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            shows what different speeds mean.
+            workout, and it belongs in a separate session — our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> shows what different speeds mean.
           </p>
         </div>
 
         <div id="ramp-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Build Up Your Minutes Gradually</h2>
+          <h2>Build Up Your Minutes Gradually</h2>
 <p>
             The most common way people abandon a treadmill desk is by walking for four hours on
             day one. Calves, arches and the soles of the feet are not used to hours of continuous
@@ -333,14 +295,12 @@ const schema = {
             Few people benefit from walking all day. Alternating between walking, standing and
             sitting is easier on the body and easier to sustain than any single position. If
             something aches beyond ordinary tiredness, shorten the blocks or take a day off; if it
-            persists, ask a clinician. Our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            covers daily walking volume more broadly.
+            persists, ask a clinician. Our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> covers daily walking volume more broadly.
           </p>
         </div>
 
         <div id="tasks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Which Tasks Work While Walking</h2>
+          <h2>Which Tasks Work While Walking</h2>
 <p>
             Not all work suits walking, and matching tasks to the treadmill is what makes it
             productive rather than distracting.
@@ -370,7 +330,7 @@ const schema = {
         </div>
 
         <div id="posture" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Posture While Walking and Working</h2>
+          <h2>Posture While Walking and Working</h2>
 <p>
             The aim is natural walking posture with your arms at a desk: upright, head level,
             shoulders relaxed.
@@ -391,14 +351,12 @@ const schema = {
           <p>
             A full-size treadmill with handrails and a console can make it awkward to get close
             enough to the desk. Do not remove or modify the console or rails to fit; choose a
-            machine and desk designed to work together, or a walking pad. Our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
-            comparison covers which suits desk use.
+            machine and desk designed to work together, or a walking pad. Our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a> comparison covers which suits desk use.
           </p>
         </div>
 
         <div id="footwear" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Footwear and Flooring</h2>
+          <h2>Footwear and Flooring</h2>
 <p>
             Wear supportive walking or <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a>. It is tempting to walk in socks, slippers or
             bare feet at an office pace, but hours of walking on a thin deck with no support is
@@ -411,16 +369,14 @@ const schema = {
             cushioning is worth more than any feature on the machine.
           </p>
           <p>
-            Under the machine, a dense rubber
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a>
-            protects the floor, keeps carpet fibre out of the motor and reduces the footfall noise
+            Under the machine, a dense rubber <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a> protects the floor, keeps carpet fibre out of the motor and reduces the footfall noise
             that travels into rooms below. It also stops a light walking pad creeping across a
             hard floor.
           </p>
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Noise on Calls and in Shared Spaces</h2>
+          <h2>Noise on Calls and in Shared Spaces</h2>
 <p>
             Two kinds of noise matter. Motor hum and belt noise reach your microphone; footfall
             reaches the floor and anyone below.
@@ -436,19 +392,16 @@ const schema = {
           <p>
             <strong>In shared offices and homes.</strong> Footfall noise travels through floors
             more than airborne noise travels through rooms. A dense mat, positioning the machine
-            near a load-bearing wall rather than mid-floor, and a slower speed all help. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            covers why some machines are quieter than others. In an apartment, a ten-minute test and
+            near a load-bearing wall rather than mid-floor, and a slower speed all help. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> covers why some machines are quieter than others. In an apartment, a ten-minute test and
             a word with the neighbours below is worth doing before committing to a routine.
           </p>
         </div>
 
         <div id="standing-desk" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Standing Desk Compatibility</h2>
+          <h2>Standing Desk Compatibility</h2>
 <p>
             Most treadmill desks are a walking pad under an electric sit-stand desk. Before
-            pairing them, check four things; our
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> applies them to current desks.
+            pairing them, check four things; our <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> applies them to current desks.
           </p>
           <ul>
             <li><strong>Height range.</strong> The desk must reach your standing elbow height plus
@@ -468,14 +421,12 @@ const schema = {
             A sit-stand desk has a further advantage: you can lower it and sit when you are not
             walking. That is the arrangement most people end up using — walking for suitable work,
             sitting for the rest — and it is easier to sustain than walking all day. If you want to keep
-            moving during the sitting blocks too, an
-            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk elliptical or pedal bike</a>
-            fits beneath the lowered desk.
+            moving during the sitting blocks too, an <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk elliptical or pedal bike</a> fits beneath the lowered desk.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Staying Safe at a Treadmill Desk</h2>
+          <h2>Staying Safe at a Treadmill Desk</h2>
 <p>
             Low speeds make a treadmill desk feel harmless, and the main risk is distraction. You
             are looking at a screen, often in a call, and not thinking about the belt.
@@ -492,14 +443,13 @@ const schema = {
             done.</li>
           </ul>
           <p>
-            Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers these in more detail, including the household risks of having a machine at
+            Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers these in more detail, including the household risks of having a machine at
             home.
           </p>
         </div>
 
         <div id="making-it-stick" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Making the Habit Stick</h2>
+          <h2>Making the Habit Stick</h2>
 <p>
             <strong>Schedule walking blocks.</strong> Tie walking to particular kinds of work —
             every call, the first hour of email, afternoon reading — rather than deciding each
@@ -512,9 +462,7 @@ const schema = {
           <p>
             <strong>Maintain the machine.</strong> Walking pads run for many hours at low speed,
             which adds up. Check the manual for the <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>lubrication interval</a> and deck type — some are
-            pre-waxed and must not receive silicone — and follow our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            when it is due. Vacuum underneath regularly.
+            pre-waxed and must not receive silicone — and follow our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> when it is due. Vacuum underneath regularly.
           </p>
           <p>
             <strong>Do not let it replace exercise.</strong> Desk walking is excellent for breaking
@@ -522,144 +470,158 @@ const schema = {
             raise your heart rate, and keeping the two separate makes both easier.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you use a treadmill desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Set the desk while standing on the belt so your elbows sit at about 90 degrees, raise the monitor so the top is at or slightly below eye level, walk at around 1 to 2 mph, and build up from twenty or thirty minutes on day one to about an hour by the end of the first week. Match tasks to walking: calls and reading work well, fine mouse work does not.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should you walk on a treadmill desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most people type and read comfortably at around 1 to 2 mph. In our under-desk testing, typing accuracy at 1.5 mph was indistinguishable from seated, and testers settled at about 1.6 to 2.2 mph for focused work. Above about 2.5 mph, accuracy and reading comfort fall off for most people.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should you walk on a treadmill desk per day?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Build up gradually: twenty to thirty minutes on day one in short blocks, about an hour a day by the end of the first week, then add fifteen to thirty minutes a day each week if your feet and legs feel fine. Most people do best with blocks of thirty to sixty minutes alternated with sitting or standing, not walking all day.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you type while walking on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, at slow speeds. Most people adapt within a few sessions at 1 to 2 mph, especially with the keyboard at elbow height and close to the body. Routine typing and email work well; precise mouse work and long periods of deep concentration are harder, and stopping the belt for those tasks is the simplest fix.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How high should a treadmill desk be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                High enough that your elbows sit at about 90 degrees with relaxed shoulders while you stand on the belt in your shoes. Because the deck raises you — typically around 4 to 7 inches on a walking pad and more on a full-size treadmill — the desk needs to be higher than your usual standing height, and some desks cannot reach it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a walking pad with a standing desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is the most common treadmill desk setup. Check the desk reaches your elbow height plus the deck height, is stable at full extension, has legs that clear the walking pad’s footprint, and leaves room to route cables away from the belt.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Treadmill Desk</h2>
+          <p>These four account for most abandoned treadmill desks, and all are fixed in the first week.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Walking for hours on day one</h3>
+              <p>Feet and calves need time to adapt to hours of walking. Start with twenty to thirty minutes in short blocks and build to about an hour by the end of the first week, then increase gradually.</p>
+            </li>
+            <li>
+              <h3>Setting desk height on the floor</h3>
+              <p>The deck raises you, so a desk set correctly on the floor is too low on the treadmill. Set the height while standing on the belt in your shoes, with elbows at about 90 degrees.</p>
+            </li>
+            <li>
+              <h3>Walking too fast to work</h3>
+              <p>Above about 2 to 2.5 mph, typing and reading suffer for most people. The value is in the volume of slow walking, not the speed; keep faster walking for separate sessions.</p>
+            </li>
+            <li>
+              <h3>Leaning on the desk</h3>
+              <p>Resting your forearms or weight on the desk edge changes your gait and loads your shoulders and back. Bring the keyboard closer so your elbows stay near your sides, and let your legs carry you.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Treadmill Desk</h2>
-          <p class="text-gray-700 leading-relaxed">These four account for most abandoned treadmill desks, and all are fixed in the first week.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Walking for hours on day one</h3>
-              <p class="text-gray-700 text-sm m-0">Feet and calves need time to adapt to hours of walking. Start with twenty to thirty minutes in short blocks and build to about an hour by the end of the first week, then increase gradually.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Setting desk height on the floor</h3>
-              <p class="text-gray-700 text-sm m-0">The deck raises you, so a desk set correctly on the floor is too low on the treadmill. Set the height while standing on the belt in your shoes, with elbows at about 90 degrees.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Walking too fast to work</h3>
-              <p class="text-gray-700 text-sm m-0">Above about 2 to 2.5 mph, typing and reading suffer for most people. The value is in the volume of slow walking, not the speed; keep faster walking for separate sessions.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaning on the desk</h3>
-              <p class="text-gray-700 text-sm m-0">Resting your forearms or weight on the desk edge changes your gait and loads your shoulders and back. Bring the keyboard closer so your elbows stay near your sides, and let your legs carry you.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Products</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The walking pads that held up through weeks of workdays.</p>
-            </a>
-            <a href="/walking-pad-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Which machine suits a desk, and which suits workouts.</p>
-            </a>
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Should I Walk on a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Daily walking volume, and how to build it sensibly.</p>
-            </a>
-            <a href="/best-treadmill-laptop-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Laptop Holders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Set the desk on the belt, elbows at about 90 degrees, screen at
             eye level, and walk slowly</strong> — around 1 to 2 mph is where most people can type
             and read without noticing the walking.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Build up from short blocks over several weeks, match the walking to calls and reading,
-            and wear proper shoes. If you are still choosing a machine, our
-            <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">under-desk treadmill picks</a>
-            cover which walking pads suit a desk.
+            and wear proper shoes. If you are still choosing a machine, our <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">under-desk treadmill picks</a> cover which walking pads suit a desk.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/under-desk-treadmills/">Best Under-Desk Treadmills</a></li>
+            <li><a href="/walking-pad-vs-treadmill/">Walking Pad vs Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you use a treadmill desk?</h3></summary>
+            <p class="faq-a">
+              Set the desk while standing on the belt so your elbows sit at about 90 degrees, raise the monitor so the top is at or slightly below eye level, walk at around 1 to 2 mph, and build up from twenty or thirty minutes on day one to about an hour by the end of the first week. Match tasks to walking: calls and reading work well, fine mouse work does not.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What speed should you walk on a treadmill desk?</h3></summary>
+            <p class="faq-a">
+              Most people type and read comfortably at around 1 to 2 mph. In our under-desk testing, typing accuracy at 1.5 mph was indistinguishable from seated, and testers settled at about 1.6 to 2.2 mph for focused work. Above about 2.5 mph, accuracy and reading comfort fall off for most people.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long should you walk on a treadmill desk per day?</h3></summary>
+            <p class="faq-a">
+              Build up gradually: twenty to thirty minutes on day one in short blocks, about an hour a day by the end of the first week, then add fifteen to thirty minutes a day each week if your feet and legs feel fine. Most people do best with blocks of thirty to sixty minutes alternated with sitting or standing, not walking all day.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you type while walking on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, at slow speeds. Most people adapt within a few sessions at 1 to 2 mph, especially with the keyboard at elbow height and close to the body. Routine typing and email work well; precise mouse work and long periods of deep concentration are harder, and stopping the belt for those tasks is the simplest fix.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How high should a treadmill desk be?</h3></summary>
+            <p class="faq-a">
+              High enough that your elbows sit at about 90 degrees with relaxed shoulders while you stand on the belt in your shoes. Because the deck raises you — typically around 4 to 7 inches on a walking pad and more on a full-size treadmill — the desk needs to be higher than your usual standing height, and some desks cannot reach it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use a walking pad with a standing desk?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is the most common treadmill desk setup. Check the desk reaches your elbow height plus the deck height, is stable at full extension, has legs that clear the walking pad’s footprint, and leaves room to route cables away from the belt.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Products</div>
+            <div class="c-title">Best Under-Desk Treadmills</div>
+            <p class="c-blurb">The walking pads that held up through weeks of workdays.</p>
+          </a>
+          <a href="/walking-pad-vs-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Walking Pad vs Treadmill</div>
+            <p class="c-blurb">Which machine suits a desk, and which suits workouts.</p>
+          </a>
+          <a href="/how-long-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">How Long Should I Walk on a Treadmill?</div>
+            <p class="c-blurb">Daily walking volume, and how to build it sensibly.</p>
+          </a>
+          <a href="/best-treadmill-laptop-holders/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Treadmill Laptop Holders</div>
+            <p class="c-blurb">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

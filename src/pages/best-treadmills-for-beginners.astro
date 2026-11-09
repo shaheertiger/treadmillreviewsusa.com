@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills for Beginners (2026): Buy Less Machine Than You Think";
 const description =
@@ -270,6 +269,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-for-beginners/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -290,66 +295,80 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Top Pick", link: "#sole-f63" }}
+  stickyCta={{ text: "Best Overall: Sole F63", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillsforbeginners" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsforbeginners)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills for Beginners</h1>
+      <p class="ed-dek">
+        The most common first-treadmill mistake is spending too much on a machine chosen for a version of yourself who trains five days a week. Buy for the person you are in week three.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills for <span class="text-[#5AA9FF]">Beginners</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The most common first-treadmill mistake is spending too much on a machine chosen for a version of yourself who trains five days a week. Buy for the person you are in week three.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#sole-f63" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Top Pick
-          </a>
-          <a href="#how-much" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How Much to Spend
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sole-f65"><img src="https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg" alt="Sole F65" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
+        <figcaption>Sole F65</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A first treadmill has one job that matters more than every specification combined: it
+          has to still be in use in month three. Almost everything that determines whether that
+          happens is decided before you ever press start.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="5.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#sole-f63">Sole F63</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#nordictrack-c-700">NordicTrack C 700</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Structure:</span> <a href="#proform-power-995i">ProForm Power 995i</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Buy Once:</span> <a href="#sole-f65">Sole F65</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Display:</span> <a href="#proform-power-1295i">ProForm Power 1295i</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Classes:</span> <a href="#nordictrack-c-990">NordicTrack C 990</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">A note on starting out.</strong> This is an equipment
           guide, not a training programme. If you have been inactive for a long time, have a
           heart condition, or are carrying an injury, it is worth speaking to your doctor before
@@ -357,75 +376,27 @@ const schema = {
           not about whether you should. We have not tested these machines: what follows is drawn
           from published specifications and what they imply for a first-time owner, not from our
           own measurements.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#sole-f63" class="font-bold text-gray-900 no-underline hover:underline">Sole F63</a>
-            <a href="#sole-f63" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#nordictrack-c-700" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack C 700</a>
-            <a href="#nordictrack-c-700" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Structure:</span>
-            <a href="#proform-power-995i" class="font-bold text-gray-900 no-underline hover:underline">ProForm Power 995i</a>
-            <a href="#proform-power-995i" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buy Once:</span>
-            <a href="#sole-f65" class="font-bold text-gray-900 no-underline hover:underline">Sole F65</a>
-            <a href="#sole-f65" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Display:</span>
-            <a href="#proform-power-1295i" class="font-bold text-gray-900 no-underline hover:underline">ProForm Power 1295i</a>
-            <a href="#proform-power-1295i" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#why-abandoned" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Most First Treadmills Stop Being Used</a>
-          <a href="#how-much" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Much a Beginner Should Actually Spend</a>
-          <a href="#criteria" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Four Things That Matter for a First Machine</a>
-          <a href="#ignore" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What You Can Safely Ignore</a>
-          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How We Chose for Beginners</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Six Best Treadmills for Beginners</a>
-          <a href="#first-month" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. A Sensible First Month</a>
-          <a href="#placement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Where You Put It Decides Whether You Use It</a>
-          <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Maintenance Nobody Tells Beginners About</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#why-abandoned">Why Most First Treadmills Stop Being Used</a></li>
+            <li><a href="#how-much">How Much a Beginner Should Actually Spend</a></li>
+            <li><a href="#criteria">The Four Things That Matter for a First Machine</a></li>
+            <li><a href="#ignore">What You Can Safely Ignore</a></li>
+            <li><a href="#how-we-tested">How We Chose for Beginners</a></li>
+            <li><a href="#picks">The Six Best Treadmills for Beginners</a></li>
+            <li><a href="#first-month">A Sensible First Month</a></li>
+            <li><a href="#placement">Where You Put It Decides Whether You Use It</a></li>
+            <li><a href="#maintenance">The Maintenance Nobody Tells Beginners About</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A first treadmill has one job that matters more than every specification combined: it
-          has to still be in use in month three. Almost everything that determines whether that
-          happens is decided before you ever press start.
-        </p>
 
         <div id="why-abandoned" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Most First Treadmills Stop Being Used</h2>
+          <h2>Why Most First Treadmills Stop Being Used</h2>
 <p>
             The treadmill's reputation as an expensive clothes rail is earned, and the reasons
             are consistent enough to design a buying guide around. Very few abandoned machines
@@ -450,7 +421,7 @@ const schema = {
         </div>
 
         <div id="how-much" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Much a Beginner Should Actually Spend</h2>
+          <h2>How Much a Beginner Should Actually Spend</h2>
 <p>
             Our answer is $700 to $1,200 for almost everyone starting out, and we would defend
             that range against arguments in both directions.
@@ -465,21 +436,17 @@ const schema = {
           <p>
             Above about $1,200 you are buying for running rather than for starting: longer decks,
             bigger motors, heavier frames, larger screens. All of that is real and none of it helps
-            someone walking at 3 mph four times a week. If you know you are a runner, our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a>
-            is the right page. If you are finding out, spend in the middle.
+            someone walking at 3 mph four times a week. If you know you are a runner, our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a> is the right page. If you are finding out, spend in the middle.
           </p>
           <p>
             The exception worth naming: if you are confident the machine will be used daily by two
             people, or you are significantly above average weight, the durability argument for
-            spending more is genuine rather than aspirational. Our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
-            covers the second case.
+            spending more is genuine rather than aspirational. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a> covers the second case.
           </p>
         </div>
 
         <div id="criteria" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Four Things That Matter for a First Machine</h2>
+          <h2>The Four Things That Matter for a First Machine</h2>
 <p>
             <strong>Console simplicity.</strong> The best beginner console has physical buttons for
             speed and incline, a clear display of time, distance and speed, and nothing else
@@ -507,7 +474,7 @@ const schema = {
         </div>
 
         <div id="ignore" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What You Can Safely Ignore</h2>
+          <h2>What You Can Safely Ignore</h2>
 <p>
             Beginner buyers are marketed to on specifications that will not affect them, and
             knowing which ones to discard makes the decision far easier.
@@ -515,9 +482,7 @@ const schema = {
           <p>
             <strong>Peak horsepower.</strong> A figure describing a burst the motor cannot sustain.
             Look at continuous-duty horsepower instead, where 2.5 CHP is ample for walking and 3.0
-            is comfortable for jogging. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the distinction properly.
+            is comfortable for jogging. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the distinction properly.
           </p>
           <p>
             <strong>Top speed.</strong> Machines advertise 10 to 12 mph. Twelve mph is a
@@ -536,7 +501,7 @@ const schema = {
         </div>
 
         <div id="how-we-tested" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How We Chose for Beginners</h2>
+          <h2>How We Chose for Beginners</h2>
 <p>
             We have not tested these machines, and nothing on this page should be read as if we
             had. They were chosen from the manufacturers' published specifications and warranty
@@ -554,97 +519,82 @@ const schema = {
           <p>
             We also weighed what tends to become irritating over the first weeks rather than what
             impresses on day one — subscription prompts, an awkward fold, a frame that moves at a
-            brisk walk. Our full
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
-            explains how we assess machines from published data.
+            brisk walk. Our full <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a> explains how we assess machines from published data.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Six Best Treadmills for Beginners</h2>
+          <h2>The Six Best Treadmills for Beginners</h2>
 <p>
             Where a machine is heavy enough that assembly is realistically a two-person job, the
             entry says so.
           </p>
           <p>
-            If you want one recommendation rather than six, the
-            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>
-            is the machine we point beginners at most often: nothing to subscribe to, nothing to
+            If you want one recommendation rather than six, the <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a> is the machine we point beginners at most often: nothing to subscribe to, nothing to
             configure, and a lifetime frame and motor warranty behind it.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="first-month" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. A Sensible First Month</h2>
+          <h2>A Sensible First Month</h2>
 <p>
             The equipment decision is the easy part. What determines whether it was worth the money
             is what happens in weeks two through six, and a deliberately conservative start is the
@@ -653,8 +603,7 @@ const schema = {
           <p>
             <strong>Week one:</strong> fifteen minutes at an easy walking pace, three times. The
             only goal is getting on and off confidently and finding a speed you could hold while
-            talking. <strong>Week two:</strong> twenty minutes, three or four times, same speed.
-            <strong>Week three:</strong> twenty-five to thirty minutes, and either raise the speed
+            talking. <strong>Week two:</strong> twenty minutes, three or four times, same speed. <strong>Week three:</strong> twenty-five to thirty minutes, and either raise the speed
             slightly or add 2% incline — not both. <strong>Week four:</strong> thirty to
             thirty-five minutes, four times.
           </p>
@@ -662,16 +611,12 @@ const schema = {
             That arrives at roughly two hours of activity a week without a single hard session, and
             it is far more valuable than three punishing weeks followed by nothing. Add minutes
             before speed, and incline before speed: incline raises effort without raising impact or
-            the risk of catching a foot, which makes it the better lever early on. Our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">guide to treadmill workouts</a>
-            covers what comes after that first month, and the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a>
-            includes a gentler build-up if structured incline walking appeals later.
+            the risk of catching a foot, which makes it the better lever early on. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">guide to treadmill workouts</a> covers what comes after that first month, and the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a> includes a gentler build-up if structured incline walking appeals later.
           </p>
         </div>
 
         <div id="placement" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Where You Put It Decides Whether You Use It</h2>
+          <h2>Where You Put It Decides Whether You Use It</h2>
 <p>
             This is the most under-rated decision in the whole purchase. A treadmill in a cold
             garage or an unheated spare room gets used in April and not in January. A treadmill in
@@ -681,21 +626,18 @@ const schema = {
             Leave clear space behind the deck — it is where you go if you lose your footing, and it
             matters most while you are still getting used to the machine. Avoid thick carpet, which
             draws fibres into the motor, blocks its ventilation and lets the frame shift under load;
-            our
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">carpet guide</a>
-            covers the fix if you have no alternative. And check the ceiling if you are tall,
+            our <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">carpet guide</a> covers the fix if you have no alternative. And check the ceiling if you are tall,
             because incline raises the deck several inches at the point where you stand.
           </p>
           <p>
-            The full clearance and delivery arithmetic is in our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a>.
+            The full clearance and delivery arithmetic is in our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a>.
             Do it before ordering rather than after, because the most common delivery failure is a
             machine that fits the room and not the stairwell.
           </p>
         </div>
 
         <div id="maintenance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Maintenance Nobody Tells Beginners About</h2>
+          <h2>The Maintenance Nobody Tells Beginners About</h2>
 <p>
             First-time owners are rarely told that a treadmill needs anything, and the result is
             the most common cause of early failure: belt-to-deck friction rising until it takes the
@@ -712,16 +654,12 @@ const schema = {
           <p>
             One warning before you buy any lubricant: check your manual first. Some decks are
             pre-waxed and are ruined by silicone, and household products are worse than doing
-            nothing. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            has the step-by-step and the
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
-            has the full year.
+            nothing. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> has the step-by-step and the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a> has the full year.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             For most first-time buyers the <strong>Sole F63</strong> is the machine. It has a
             hydraulic fold one person can manage, a console of physical buttons you can operate
@@ -741,137 +679,152 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much should a beginner spend on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Between $700 and $1,200 for almost everyone. Below $700 the compromises stop being cosmetic — motors under 2.5 CHP, decks under 55 inches and frames light enough to move underfoot. Above $1,200 you are buying for running rather than for starting, and none of it helps someone walking at 3 mph four times a week.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What treadmill specs can a beginner ignore?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Peak horsepower, which describes a burst the motor cannot sustain; top speed, since 12 mph is a five-minute mile and you will spend a year between 2.5 and 5 mph; screen size, which makes a treadmill larger rather than better; and decline, which is genuinely useful only for downhill race preparation.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does it take to assemble a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It varies widely with the machine, and heavier ones genuinely require two people. It is worth more attention than most specifications, because a treadmill that is difficult to build often sits in its box for a fortnight — and that fortnight is when the initial motivation is spent.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should a beginner use a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three to four times a week, starting at around fifteen minutes at a pace you could hold a conversation at. Build minutes before speed, and add incline before adding speed. Roughly two hours a week by the end of month one is a strong outcome, and far more valuable than three hard weeks followed by nothing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should a beginner buy a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the machine has to share a room, yes — but judge the fold mechanism rather than the label. A hydraulic assist that one person can work easily genuinely gets used; a manual latch needing effort and two people means the machine stays up permanently, at which point its unfolded dimensions are the real ones.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need to maintain a new treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is rarely mentioned at the point of sale. Wipe the belt and deck edges after use, vacuum around the machine monthly, and lubricate the belt every 40 to 50 hours of use. That is under an hour a year and it roughly doubles the machine's life. Check your manual first — some decks are pre-waxed and are ruined by silicone.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a First Treadmill</h2>
+          <p>These four account for most abandoned machines, and none of them is a specification problem.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying for the person you intend to become</h3>
+              <p>A $2,500 machine chosen for a version of yourself who runs five days a week is very good at things you will not do for a year, and it often comes with guilt attached. Buy for the person you are in week three. If the habit sticks, upgrading in two years with real knowledge of what you want beats guessing now.</p>
+            </li>
+            <li>
+              <h3>Doing too much in week one</h3>
+              <p>Three hard sessions in the first week produce several days of soreness that break the habit before it forms. Fifteen minutes at a conversational pace is the right week-one session even when it feels absurdly easy. Add minutes before speed and incline before speed, and the routine will still be running in month six.</p>
+            </li>
+            <li>
+              <h3>Putting it in the garage</h3>
+              <p>A treadmill in an unheated garage or spare room gets used in April and not in January. Put it somewhere you already spend time, with a plug nearby and something to watch. Placement is the most under-rated decision in the whole purchase and it costs nothing to get right.</p>
+            </li>
+            <li>
+              <h3>Never lubricating the belt</h3>
+              <p>Belt-to-deck friction rising unchecked is the most common cause of early treadmill death, taking the motor and controller board with it. Lubrication is a ten-minute job every 40 to 50 hours that most first-time owners never do once. Check the manual before buying any product — some decks are pre-waxed and silicone ruins them.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a First Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">These four account for most abandoned machines, and none of them is a specification problem.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying for the person you intend to become</h3>
-              <p class="text-gray-700 text-sm m-0">A $2,500 machine chosen for a version of yourself who runs five days a week is very good at things you will not do for a year, and it often comes with guilt attached. Buy for the person you are in week three. If the habit sticks, upgrading in two years with real knowledge of what you want beats guessing now.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing too much in week one</h3>
-              <p class="text-gray-700 text-sm m-0">Three hard sessions in the first week produce several days of soreness that break the habit before it forms. Fifteen minutes at a conversational pace is the right week-one session even when it feels absurdly easy. Add minutes before speed and incline before speed, and the routine will still be running in month six.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting it in the garage</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill in an unheated garage or spare room gets used in April and not in January. Put it somewhere you already spend time, with a plug nearby and something to watch. Placement is the most under-rated decision in the whole purchase and it costs nothing to get right.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never lubricating the belt</h3>
-              <p class="text-gray-700 text-sm m-0">Belt-to-deck friction rising unchecked is the most common cause of early treadmill death, taking the motor and controller board with it. Lubrication is a ten-minute job every 40 to 50 hours that most first-time owners never do once. Check the manual before buying any product — some decks are pre-waxed and silicone ruins them.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Getting-Started Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-buying-guide-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The Complete Treadmill Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Motor, deck, folding and budget tiers, in the order they matter.</p>
-            </a>
-            <a href="/best-treadmill-under-1000-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Budget</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $1,000</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The budget tier in detail, ranked on durability rather than features.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A structured incline walk, with a gentler four-week build-up.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Spend $700 to $1,200, buy the simplest console you can find, and put the machine in a room
             you already use. The <strong class="text-white">Sole F63</strong> is the first
             treadmill we recommend most often — easy to start, easy to store, and still the right
             machine when you are no longer a beginner.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Working to a tighter budget? The
-            <a href="/best-treadmill-under-1000-reviews/" class="text-[#5AA9FF] font-bold no-underline">under-$1,000 guide</a>
-            covers that tier properly. Need structure to keep going? Guided content is worth
-            paying for — just
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">count the five-year cost</a>
-            before you commit.
+          <p>
+            Working to a tighter budget? The <a href="/best-treadmill-under-1000-reviews/" class="text-[#5AA9FF] font-bold no-underline">under-$1,000 guide</a> covers that tier properly. Need structure to keep going? Guided content is worth
+            paying for — just <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">count the five-year cost</a> before you commit.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-buying-guide-2026/">The Complete Treadmill Buying Guide</a></li>
+            <li><a href="/best-treadmill-under-1000-reviews/">Best Treadmills Under $1,000</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How much should a beginner spend on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Between $700 and $1,200 for almost everyone. Below $700 the compromises stop being cosmetic — motors under 2.5 CHP, decks under 55 inches and frames light enough to move underfoot. Above $1,200 you are buying for running rather than for starting, and none of it helps someone walking at 3 mph four times a week.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What treadmill specs can a beginner ignore?</h3></summary>
+            <p class="faq-a">
+              Peak horsepower, which describes a burst the motor cannot sustain; top speed, since 12 mph is a five-minute mile and you will spend a year between 2.5 and 5 mph; screen size, which makes a treadmill larger rather than better; and decline, which is genuinely useful only for downhill race preparation.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long does it take to assemble a treadmill?</h3></summary>
+            <p class="faq-a">
+              It varies widely with the machine, and heavier ones genuinely require two people. It is worth more attention than most specifications, because a treadmill that is difficult to build often sits in its box for a fortnight — and that fortnight is when the initial motivation is spent.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How often should a beginner use a treadmill?</h3></summary>
+            <p class="faq-a">
+              Three to four times a week, starting at around fifteen minutes at a pace you could hold a conversation at. Build minutes before speed, and add incline before adding speed. Roughly two hours a week by the end of month one is a strong outcome, and far more valuable than three hard weeks followed by nothing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should a beginner buy a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              If the machine has to share a room, yes — but judge the fold mechanism rather than the label. A hydraulic assist that one person can work easily genuinely gets used; a manual latch needing effort and two people means the machine stays up permanently, at which point its unfolded dimensions are the real ones.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need to maintain a new treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is rarely mentioned at the point of sale. Wipe the belt and deck edges after use, vacuum around the machine monthly, and lubricate the belt every 40 to 50 hours of use. That is under an hour a year and it roughly doubles the machine's life. Check your manual first — some decks are pre-waxed and are ruined by silicone.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Getting-Started Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-buying-guide-2026/" class="card">
+            <div class="c-kicker">Buying</div>
+            <div class="c-title">The Complete Treadmill Buying Guide</div>
+            <p class="c-blurb">Motor, deck, folding and budget tiers, in the order they matter.</p>
+          </a>
+          <a href="/best-treadmill-under-1000-reviews/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">Best Treadmills Under $1,000</div>
+            <p class="c-blurb">The budget tier in detail, ranked on durability rather than features.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">A structured incline walk, with a gentler four-week build-up.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

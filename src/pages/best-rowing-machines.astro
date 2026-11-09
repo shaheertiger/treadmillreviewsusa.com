@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Rowing Machine (2026): Air, Water and Magnetic Picks";
 const description =
@@ -285,6 +284,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-rowing-machines/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -307,66 +312,77 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Concept2 RowErg", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestrowingmachines" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestrowingmachines)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Rowing Machines for Home: Air, Water and Magnetic</h1>
+      <p class="ed-dek">
+        The best rowing machine for your home depends on three things most listings bury: how the resistance is made, whether the rail fits your legs, and where the rower lives when you are not using it. Here are six currently sold rowers across every resistance type, the recall that shaped this list, and how to check the fit before you order.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Rowing Machines <span class="text-[#5AA9FF]">for Home: Air, Water and Magnetic</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The best rowing machine for your home depends on three things most listings bury: how the resistance is made, whether the rail fits your legs, and where the rower lives when you are not using it. Here are six currently sold rowers across every resistance type, the recall that shaped this list, and how to check the fit before you order.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#resistance-types" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Air vs Water vs Magnetic
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A rowing machine is one of the most space-efficient cardio machines you can own: it works the
+          legs, hips, back and arms in one movement, has no impact, and many models stand on end in a
+          corner when you are done. It is also a machine where the cheap and the expensive versions
+          differ less in the motion than in the rail, the resistance and the screen. The six rowers
+          below were chosen so that air, water, magnetic and hydraulic resistance each have a pick
+          you can buy on Amazon today, and the guide after them explains which type suits which
+          home.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#concept2-rowerg">Concept2 RowErg</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Water Rower:</span> <a href="#waterrower-oak-s4">WaterRower Oak or Natural Rowing Machine with S4 Monitor</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Connected Rower:</span> <a href="#hydrow-wave">Hydrow Wave</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Magnetic Rower:</span> <a href="#sunny-sf-rw523021">Sunny Health & Fitness Premium Smart Quiet Dual Slide Rail Magnetic Rowing Machine (SF-RW523021)</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Hybrid:</span> <a href="#merach-950">Merach 950 (NovaRow 950) Dual Resistance Wood Rower</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Small Spaces:</span> <a href="#sunny-sf-rw1205smart">Sunny Health & Fitness Smart Compact Hydraulic Rowing Machine (SF-RW1205SMART)</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           rowers, and no figure on this page is our own measurement. Each was confirmed as currently
           sold on 19 October 2026: on its maker's own store (Concept2, Merach and Sunny Health &
@@ -381,86 +397,33 @@ const schema = {
           checked against the US Consumer Product Safety Commission's recall database. Prices are
           those we saw on or shortly before 19 October 2026 and change often. We earn a commission if
           you buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home exercise
+          what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home exercise
           equipment; this is not medical, physiotherapy or coaching advice. Rowing asks a lot of the
           lower back and takes the hips and knees through a deep bend. If you have back, hip or knee
           problems, a heart condition, are pregnant or postpartum, or are returning from injury or
           surgery, ask a doctor or physiotherapist whether rowing suits you before you buy.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#concept2-rowerg" class="font-bold text-gray-900 no-underline hover:underline">Concept2 RowErg</a>
-            <a href="#concept2-rowerg" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Water Rower:</span>
-            <a href="#waterrower-oak-s4" class="font-bold text-gray-900 no-underline hover:underline">WaterRower Oak or Natural Rowing Machine with S4 Monitor</a>
-            <a href="#waterrower-oak-s4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Connected Rower:</span>
-            <a href="#hydrow-wave" class="font-bold text-gray-900 no-underline hover:underline">Hydrow Wave</a>
-            <a href="#hydrow-wave" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Magnetic Rower:</span>
-            <a href="#sunny-sf-rw523021" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Premium Smart Quiet Dual Slide Rail Magnetic Rowing Machine (SF-RW523021)</a>
-            <a href="#sunny-sf-rw523021" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Hybrid:</span>
-            <a href="#merach-950" class="font-bold text-gray-900 no-underline hover:underline">Merach 950 (NovaRow 950) Dual Resistance Wood Rower</a>
-            <a href="#merach-950" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Rowing Machines for Home</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Rowing Machines</a>
-          <a href="#resistance-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Air vs Water vs Magnetic vs Hydraulic</a>
-          <a href="#rail-and-fit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Rail Length, Inseam and Height</a>
-          <a href="#storage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Storage: Upright, Folding or Two Pieces</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise, Floors and Neighbours</a>
-          <a href="#monitors-apps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Monitors, Apps and Subscriptions</a>
-          <a href="#technique" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Your First Weeks on a Rower</a>
-          <a href="#what-to-spend" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What to Spend on a Rowing Machine</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Rowing Machines for Home</a></li>
+            <li><a href="#how-we-chose">How We Chose These Rowing Machines</a></li>
+            <li><a href="#resistance-types">Air vs Water vs Magnetic vs Hydraulic</a></li>
+            <li><a href="#rail-and-fit">Rail Length, Inseam and Height</a></li>
+            <li><a href="#storage">Storage: Upright, Folding or Two Pieces</a></li>
+            <li><a href="#noise">Noise, Floors and Neighbours</a></li>
+            <li><a href="#monitors-apps">Monitors, Apps and Subscriptions</a></li>
+            <li><a href="#technique">Your First Weeks on a Rower</a></li>
+            <li><a href="#what-to-spend">What to Spend on a Rowing Machine</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A rowing machine is one of the most space-efficient cardio machines you can own: it works the
-          legs, hips, back and arms in one movement, has no impact, and many models stand on end in a
-          corner when you are done. It is also a machine where the cheap and the expensive versions
-          differ less in the motion than in the rail, the resistance and the screen. The six rowers
-          below were chosen so that air, water, magnetic and hydraulic resistance each have a pick
-          you can buy on Amazon today, and the guide after them explains which type suits which
-          home.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Best Rowing Machines at a Glance</h2>
+          <h2>The Best Rowing Machines at a Glance</h2>
 <p>
             Six rowers, one for each common way of making resistance and each common budget. If you
             only read one line: <strong>the Concept2 RowErg is the best rowing machine for most
@@ -483,17 +446,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            Still deciding whether a rower is the right machine at all? Our
-            <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a>
-            comparison covers impact, technique, the lower back and bone loading, and our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            roundup sets the RowErg beside one pick of every other machine type. This page assumes you
+            Still deciding whether a rower is the right machine at all? Our <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a> comparison covers impact, technique, the lower back and bone loading, and our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> roundup sets the RowErg beside one pick of every other machine type. This page assumes you
             have settled on rowing and want to choose the rower.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Rowing Machines for Home</h2>
+          <h2>The 6 Best Rowing Machines for Home</h2>
 <p>
             Each card gives the figures we could confirm from two sources, the price range we saw, and
             who the rower suits. Read the resistance type and the storage line first; they decide more
@@ -505,78 +464,67 @@ const schema = {
             why.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Rowing Machines</h2>
+          <h2>How We Chose These Rowing Machines</h2>
 <p>
             We have not tested these rowers. They were chosen from manufacturer product pages and
             specification tags, Amazon listings, published hands-on reviews, warranty terms and the
@@ -616,8 +564,7 @@ const schema = {
           <p>
             We found no CPSC recalls for Concept2, WaterRower, Hydrow, Merach, YOSUDA, Echelon, Ergatta,
             Aviron or Sunny Health &amp; Fitness rowing machines. iFIT's other recalls on record in the
-            same period concern adjustable dumbbells, not rowers, and the rower notice does not mention
-            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>ProForm or NordicTrack</a>'s other rowing models; if you consider one, check its model number
+            same period concern adjustable dumbbells, not rowers, and the rower notice does not mention <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>ProForm or NordicTrack</a>'s other rowing models; if you consider one, check its model number
             all the same.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What else we left out</h3>
@@ -628,13 +575,12 @@ const schema = {
             ProForm rowers this time. Ergatta and Aviron make well-reviewed connected rowers; we kept
             this page to rowers whose Amazon listings we could confirm, and did not check theirs. Those
             are judgements about what we could verify, not about the machines. Aviron now makes
-            treadmills too, and one membership covers both; see our
-            <a href="/aviron-treadmill/" class="text-[#0F62FE] font-medium">Aviron treadmill review</a>.
+            treadmills too, and one membership covers both; see our <a href="/aviron-treadmill/" class="text-[#0F62FE] font-medium">Aviron treadmill review</a>.
           </p>
         </div>
 
         <div id="resistance-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Air vs Water vs Magnetic vs Hydraulic Rowing Machines</h2>
+          <h2>Air vs Water vs Magnetic vs Hydraulic Rowing Machines</h2>
 <p>
             Every home rower makes resistance in one of four ways, and the choice changes the feel, the
             noise, the maintenance and whether you need a power socket. This is the decision behind most
@@ -678,8 +624,7 @@ const schema = {
             small rooms. The trade-offs are a shorter rail, a feel that is less like rowing on water, a
             lower user rating, and resistance that can change as the oil warms during a long session.
             Garage Gym Reviews, which recommends one hydraulic model in its under-$300 guide, says it does
-            not generally recommend hydraulic rowers because of their limited versatility and intensity.
-            <strong>Best for</strong> short sessions, light users and tiny spaces, or as a way to find out
+            not generally recommend hydraulic rowers because of their limited versatility and intensity. <strong>Best for</strong> short sessions, light users and tiny spaces, or as a way to find out
             whether you like rowing before spending more.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -703,7 +648,7 @@ const schema = {
         </div>
 
         <div id="rail-and-fit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Rail Length, Inseam and Height: Will It Fit You?</h2>
+          <h2>Rail Length, Inseam and Height: Will It Fit You?</h2>
 <p>
             The most common fit problem on a rowing machine is a rail that is too short. At the finish of
             each stroke your legs are straight and the seat is far back; if the seat hits the end stop
@@ -749,7 +694,7 @@ const schema = {
         </div>
 
         <div id="storage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Storage: Upright, Folding or Two Pieces</h2>
+          <h2>Storage: Upright, Folding or Two Pieces</h2>
 <p>
             In use, almost every full-size rower is long and narrow: the machines on this page run from
             about 6.5 to 8 feet long and around 20 to 24 inches wide, and you need a little room either
@@ -775,14 +720,12 @@ const schema = {
             fine by design, but check the tank for drips the first few times.
           </p>
           <p>
-            If you are fitting a rower into a room you share with a treadmill or weights, our
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            works through space and ceiling height machine by machine.
+            If you are fitting a rower into a room you share with a treadmill or weights, our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> works through space and ceiling height machine by machine.
           </p>
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise, Floors and Neighbours</h2>
+          <h2>Noise, Floors and Neighbours</h2>
 <p>
             We have not measured the noise of any rower on this page, and we do not repeat makers'
             decibel claims, which are measured in different ways and rarely comparable. What can be said
@@ -798,17 +741,13 @@ const schema = {
             What a rower lacks is footfall. Treadmill noise that reaches a downstairs neighbour is mostly
             the thud of steps through the floor; a rower transmits much less of that, though the seat
             stopping at each end of the stroke can still produce a rhythmic knock through a lightweight
-            floor. A mat under the rower helps with vibration, grit and floor protection. Our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>
-            guide applies to rowers as well, provided the mat is long enough for the whole machine.
-            For a room you share with a treadmill, the reasoning in our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            guide carries over.
+            floor. A mat under the rower helps with vibration, grit and floor protection. Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a> guide applies to rowers as well, provided the mat is long enough for the whole machine.
+            For a room you share with a treadmill, the reasoning in our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> guide carries over.
           </p>
         </div>
 
         <div id="monitors-apps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Monitors, Apps and Subscriptions</h2>
+          <h2>Monitors, Apps and Subscriptions</h2>
 <p>
             Every rower here shows at least time, distance or strokes, stroke rate and an estimated pace
             or calorie figure. The differences are in how accurate and comparable those numbers are, and
@@ -840,24 +779,17 @@ const schema = {
           </p>
           <p>
             Calorie figures on any rower are estimates, and like treadmill consoles they tend to be
-            generous; our guide to
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>
-            explains why, and the same reasoning applies here. A chest strap is a better guide to effort
-            than any console; see our
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitor picks</a>.
-            If you would rather avoid subscriptions altogether, the thinking in our guide to the
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>
-            applies to rowers too.
+            generous; our guide to <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a> explains why, and the same reasoning applies here. A chest strap is a better guide to effort
+            than any console; see our <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitor picks</a>.
+            If you would rather avoid subscriptions altogether, the thinking in our guide to the <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a> applies to rowers too.
           </p>
         </div>
 
         <div id="technique" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Your First Weeks on a Rower</h2>
+          <h2>Your First Weeks on a Rower</h2>
 <p>
             The rower you buy matters less than how you use it in the first month. Rowing has a real
-            technique learning curve, which our
-            <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine comparison</a>
-            covers in detail. The short version:
+            technique learning curve, which our <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine comparison</a> covers in detail. The short version:
           </p>
           <ul>
             <li><strong>Legs, body, arms; then arms, body, legs.</strong> The drive starts with the legs
@@ -879,7 +811,7 @@ const schema = {
         </div>
 
         <div id="what-to-spend" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What to Spend on a Rowing Machine</h2>
+          <h2>What to Spend on a Rowing Machine</h2>
 <p>
             Rowers fall into clear price bands, and the band tells you more than the brand. These are the
             prices we saw on or shortly before 19 October 2026 for the picks on this page; sales move them
@@ -901,15 +833,13 @@ const schema = {
           <p>
             For most people the best value is in the third band. A Concept2 or WaterRower bought once
             tends to outlast several budget machines, holds its resale value, and needs no subscription.
-            Our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            covers checking the seller and the warranty on a big-ticket Amazon order, and it works the same
+            Our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> covers checking the seller and the warranty on a big-ticket Amazon order, and it works the same
             way for a rower.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you want to walk or run,</strong> a rower will not train it. A treadmill or <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking
             pad</a> is the better tool, and walking adds the weight-bearing loading that rowing lacks.
@@ -917,10 +847,7 @@ const schema = {
           <p>
             <strong>If you have a history of back pain or disc problems,</strong> ask a clinician before
             choosing a rower. An exercise bike or elliptical keeps you upright or seated without the
-            loaded forward hinge; see our
-            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>
-            and the
-            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>.
+            loaded forward hinge; see our <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a> and the <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>.
           </p>
           <p>
             <strong>If getting down to a low seat is difficult,</strong> look at Concept2's tall-leg
@@ -928,151 +855,165 @@ const schema = {
           </p>
           <p>
             <strong>If you want the gym experience at home</strong>, a rower is the cardio machine that
-            translates most exactly, but a complete home gym needs more than one machine; our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            set out a buying order, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every guide in
+            translates most exactly, but a complete home gym needs more than one machine; our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> set out a buying order, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every guide in
             this series.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best rowing machine for home use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most homes, the Concept2 RowErg. It is the air rower used in gyms and clubs, fits inseams up to 38 inches, splits in two for storage, needs no outlet and costs $990 with standard legs. If you want quiet, a magnetic rower is better; if you want a wooden machine on show, a water rower such as the WaterRower.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best water rower?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The WaterRower, in oak or ash with the S4 monitor, is the best-established water rower: real water resistance, a solid wood frame, upright storage and a warranty of five years on the frame and three on parts when registered. The Merach 950 is a cheaper water-and-magnetic hybrid that also folds.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a magnetic or air rowing machine better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better overall. Air rowers like the Concept2 feel livelier, match resistance to your effort and give numbers you can compare with other rowers, but they are louder. Magnetic rowers are the quietest type and hold a set level, but budget models feel lighter at the catch. Choose air for training and comparison, magnetic for flats and shared rooms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How tall is too tall for a rowing machine?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Inseam matters more than height. Check the maker's maximum inseam against yours, measured barefoot, with an inch or two of margin. Concept2 says the RowErg fits inseams up to 38 inches and sells a longer rail; Hydrow says the Wave fits up to 36 inches, roughly 6 feet 3 to 6 feet 6 tall.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a rowing machine be stored upright?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Many can. The WaterRower, the Sunny SF-RW523021 and the Merach 950 tip onto their end on wheels and stand in a corner; the Hydrow Wave needs a storage kit sold separately. The Concept2 RowErg separates into two pieces instead. Keep an upright rower against a wall and away from where children climb.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack RW900 rower recalled?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. In October 2025 iFIT recalled about 44,800 NordicTrack rowers with model numbers NTRW19147.0 to NTRW19147.3, marked RW900 on the back legs, because the console can overheat and ignite. Owners are told to stop using and unplug them and contact iFIT for a free replacement console. We exclude the RW900 from our picks.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are hydraulic rowing machines any good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are good for small spaces, tight budgets and short sessions, and for finding out whether you enjoy rowing. They are less good for serious training: rails are shorter, user ratings lower, and piston resistance feels less like rowing and can change as the oil warms. Most people who row regularly are better served by air, water or magnetic resistance.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Rowing Machine</h2>
+          <p>Most rowing machine regrets come from four decisions made before the box arrives.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Choosing by height instead of inseam</h3>
+              <p>Two people of the same height can have very different leg lengths, and a rail that is too short stops the seat before your legs are straight. Measure your inseam barefoot and compare it with the maker's maximum, with an inch or two of margin, especially on budget and compact rowers.</p>
+            </li>
+            <li>
+              <h3>Buying an air rower for a shared living room</h3>
+              <p>Air rowers are excellent and loud at effort, and the noise rises the harder you work. If you will row early, late or next to someone watching television, a magnetic or water rower is the easier neighbour.</p>
+            </li>
+            <li>
+              <h3>Ignoring the subscription in the price</h3>
+              <p>A connected rower's price is the machine plus the membership. At $50 a month, two years of Hydrow membership adds $1,200. Check what the rower does without the membership before you buy, and compare the total with a rower that needs none.</p>
+            </li>
+            <li>
+              <h3>Buying a used rower without checking the model number</h3>
+              <p>Recalled NordicTrack RW900 rowers were sold widely and still circulate secondhand. Before buying any used rower, find the model number on the base and check it against the CPSC notice. If the seller cannot show you the label, walk away.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Rowing Machine</h2>
-          <p class="text-gray-700 leading-relaxed">Most rowing machine regrets come from four decisions made before the box arrives.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing by height instead of inseam</h3>
-              <p class="text-gray-700 text-sm m-0">Two people of the same height can have very different leg lengths, and a rail that is too short stops the seat before your legs are straight. Measure your inseam barefoot and compare it with the maker's maximum, with an inch or two of margin, especially on budget and compact rowers.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying an air rower for a shared living room</h3>
-              <p class="text-gray-700 text-sm m-0">Air rowers are excellent and loud at effort, and the noise rises the harder you work. If you will row early, late or next to someone watching television, a magnetic or water rower is the easier neighbour.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the subscription in the price</h3>
-              <p class="text-gray-700 text-sm m-0">A connected rower's price is the machine plus the membership. At $50 a month, two years of Hydrow membership adds $1,200. Check what the rower does without the membership before you buy, and compare the total with a rower that needs none.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used rower without checking the model number</h3>
-              <p class="text-gray-700 text-sm m-0">Recalled NordicTrack RW900 rowers were sold widely and still circulate secondhand. Before buying any used rower, find the model number on the base and check it against the CPSC notice. If the seller cannot show you the label, walk away.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-vs-rowing-machine/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs Rowing Machine</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Impact, technique, the lower back, bone loading and space, compared honestly.</p>
-            </a>
-            <a href="/best-cardio-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">One pick of every cardio machine type, from walking pads to air bikes.</p>
-            </a>
-            <a href="/home-cardio-equipment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Decision Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Choosing a Home Cardio Machine</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Goals, joints, space, noise and budget, machine by machine.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, buy the Concept2 RowErg.</strong> It is the proven
             air rower, fits most bodies, stores in two pieces and needs neither an outlet nor a
             subscription. Choose the WaterRower if you want water and wood on show, the Sunny dual-rail
             magnetic rower if quiet and price matter most, and the Hydrow Wave only if you will use, and
             pay for, its classes.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, check your inseam against the rail, plan where the rower will stand
             when you are done, and skip any used NordicTrack RW900 until you have checked its model
-            number. If you are still weighing a rower against a treadmill,
-            <a href="/treadmill-vs-rowing-machine/" class="text-[#5AA9FF] font-bold no-underline">our rower vs treadmill comparison</a>
-            will settle it.
+            number. If you are still weighing a rower against a treadmill, <a href="/treadmill-vs-rowing-machine/" class="text-[#5AA9FF] font-bold no-underline">our rower vs treadmill comparison</a> will settle it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-vs-rowing-machine/">Treadmill vs Rowing Machine</a></li>
+            <li><a href="/best-cardio-machines-for-home/">Best Cardio Machines for Home</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best rowing machine for home use?</h3></summary>
+            <p class="faq-a">
+              For most homes, the Concept2 RowErg. It is the air rower used in gyms and clubs, fits inseams up to 38 inches, splits in two for storage, needs no outlet and costs $990 with standard legs. If you want quiet, a magnetic rower is better; if you want a wooden machine on show, a water rower such as the WaterRower.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best water rower?</h3></summary>
+            <p class="faq-a">
+              The WaterRower, in oak or ash with the S4 monitor, is the best-established water rower: real water resistance, a solid wood frame, upright storage and a warranty of five years on the frame and three on parts when registered. The Merach 950 is a cheaper water-and-magnetic hybrid that also folds.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a magnetic or air rowing machine better?</h3></summary>
+            <p class="faq-a">
+              Neither is better overall. Air rowers like the Concept2 feel livelier, match resistance to your effort and give numbers you can compare with other rowers, but they are louder. Magnetic rowers are the quietest type and hold a set level, but budget models feel lighter at the catch. Choose air for training and comparison, magnetic for flats and shared rooms.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How tall is too tall for a rowing machine?</h3></summary>
+            <p class="faq-a">
+              Inseam matters more than height. Check the maker's maximum inseam against yours, measured barefoot, with an inch or two of margin. Concept2 says the RowErg fits inseams up to 38 inches and sells a longer rail; Hydrow says the Wave fits up to 36 inches, roughly 6 feet 3 to 6 feet 6 tall.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a rowing machine be stored upright?</h3></summary>
+            <p class="faq-a">
+              Many can. The WaterRower, the Sunny SF-RW523021 and the Merach 950 tip onto their end on wheels and stand in a corner; the Hydrow Wave needs a storage kit sold separately. The Concept2 RowErg separates into two pieces instead. Keep an upright rower against a wall and away from where children climb.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the NordicTrack RW900 rower recalled?</h3></summary>
+            <p class="faq-a">
+              Yes. In October 2025 iFIT recalled about 44,800 NordicTrack rowers with model numbers NTRW19147.0 to NTRW19147.3, marked RW900 on the back legs, because the console can overheat and ignite. Owners are told to stop using and unplug them and contact iFIT for a free replacement console. We exclude the RW900 from our picks.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are hydraulic rowing machines any good?</h3></summary>
+            <p class="faq-a">
+              They are good for small spaces, tight budgets and short sessions, and for finding out whether you enjoy rowing. They are less good for serious training: rails are shorter, user ratings lower, and piston resistance feels less like rowing and can change as the oil warms. Most people who row regularly are better served by air, water or magnetic resistance.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-vs-rowing-machine/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Treadmill vs Rowing Machine</div>
+            <p class="c-blurb">Impact, technique, the lower back, bone loading and space, compared honestly.</p>
+          </a>
+          <a href="/best-cardio-machines-for-home/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Cardio Machines for Home</div>
+            <p class="c-blurb">One pick of every cardio machine type, from walking pads to air bikes.</p>
+          </a>
+          <a href="/home-cardio-equipment-guide/" class="card">
+            <div class="c-kicker">Decision Guide</div>
+            <div class="c-title">Choosing a Home Cardio Machine</div>
+            <p class="c-blurb">Goals, joints, space, noise and budget, machine by machine.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

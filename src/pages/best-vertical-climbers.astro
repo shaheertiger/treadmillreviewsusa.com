@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Vertical Climbers (2026): 5 Picks and Ceiling Checks";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-vertical-climbers/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,81 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Climber Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best for Beginners: MaxiClimber XL-2000", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestverticalclimbers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestverticalclimbers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Vertical Climbers for Home Cardio</h1>
+      <p class="ed-dek">
+        A vertical climber works your arms and legs together in a small footprint, and it is one of the hardest cardio sessions you can do at home. It is also the machine most likely not to fit: you rise as you climb, and many rooms run out of ceiling before the climber runs out of travel. Here are five currently sold climbers, from a folding bodyweight model to a commercial VersaClimber, and how to check your ceiling first.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Vertical Climbers <span class="text-[#5AA9FF]">for Home Cardio</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A vertical climber works your arms and legs together in a small footprint, and it is one of the hardest cardio sessions you can do at home. It is also the machine most likely not to fit: you rise as you climb, and many rooms run out of ceiling before the climber runs out of travel. Here are five currently sold climbers, from a folding bodyweight model to a commercial VersaClimber, and how to check your ceiling first.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#ceiling-height" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Check Your Ceiling
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#bells-of-steel-blitz-stepper"><img src="https://m.media-amazon.com/images/I/315YJbGM1sL._SL500_.jpg" alt="Bells of Steel Blitz Stepper" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Bells of Steel Blitz Stepper</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Vertical climbers have a split reputation. The cheapest are folding frames sold on
+          late-night television; the most expensive are commercial machines found in studios and
+          athletic training rooms. Both make you push with your legs and pull with your arms at the
+          same time, which is why a few minutes feels like a lot more. In between are steppers,
+          magnetic climbers and connected machines with screens and classes. This guide covers five
+          that were on sale when we checked, at every price level, and the practical questions that
+          decide whether a climber suits your home: ceiling height, your height, your weight, how
+          steady it is, and how its resistance works.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Beginners:</span> <a href="#maxiclimber-xl-2000">MaxiClimber XL-2000</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#sunny-total-body-vertical-climber">Sunny Health & Fitness Total-Body Vertical Climber SF-S024835</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Magnetic Resistance:</span> <a href="#bells-of-steel-blitz-stepper">Bells of Steel Blitz Stepper</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Connected:</span> <a href="#clmbr">CLMBR Connected Vertical Climber</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Premium:</span> <a href="#versaclimber-sm-m">VersaClimber SM-M Sport Magnetic</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines. On 19 October 2026 we checked each one against its maker's product page and at
           least one independent source where one existed: a published hands-on review, a second
@@ -341,85 +361,31 @@ const schema = {
           seller, model and price on any listing before you order. Prices are those we saw on 19
           October 2026 and change often. We earn a commission if you buy through the Amazon links
           on this page; it does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Beginners:</span>
-            <a href="#maxiclimber-xl-2000" class="font-bold text-gray-900 no-underline hover:underline">MaxiClimber XL-2000</a>
-            <a href="#maxiclimber-xl-2000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#sunny-total-body-vertical-climber" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Total-Body Vertical Climber SF-S024835</a>
-            <a href="#sunny-total-body-vertical-climber" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Magnetic Resistance:</span>
-            <a href="#bells-of-steel-blitz-stepper" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel Blitz Stepper</a>
-            <a href="#bells-of-steel-blitz-stepper" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Connected:</span>
-            <a href="#clmbr" class="font-bold text-gray-900 no-underline hover:underline">CLMBR Connected Vertical Climber</a>
-            <a href="#clmbr" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Premium:</span>
-            <a href="#versaclimber-sm-m" class="font-bold text-gray-900 no-underline hover:underline">VersaClimber SM-M Sport Magnetic</a>
-            <a href="#versaclimber-sm-m" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Vertical Climbers</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Vertical Climbers</a>
-          <a href="#ceiling-height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Check Your Ceiling Before Anything Else</a>
-          <a href="#user-height-weight" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. User Height and Weight Limits</a>
-          <a href="#resistance-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Resistance Types: Bodyweight, Hydraulic, Magnetic</a>
-          <a href="#stability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Stability and Build</a>
-          <a href="#climber-vs-others" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Vertical Climber or Another Cardio Machine?</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Before You Buy a Vertical Climber</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Vertical Climbers</a></li>
+            <li><a href="#how-we-chose">How We Chose These Vertical Climbers</a></li>
+            <li><a href="#ceiling-height">Check Your Ceiling Before Anything Else</a></li>
+            <li><a href="#user-height-weight">User Height and Weight Limits</a></li>
+            <li><a href="#resistance-types">Resistance Types: Bodyweight, Hydraulic, Magnetic</a></li>
+            <li><a href="#stability">Stability and Build</a></li>
+            <li><a href="#climber-vs-others">Vertical Climber or Another Cardio Machine?</a></li>
+            <li><a href="#checklist">Before You Buy a Vertical Climber</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Vertical climbers have a split reputation. The cheapest are folding frames sold on
-          late-night television; the most expensive are commercial machines found in studios and
-          athletic training rooms. Both make you push with your legs and pull with your arms at the
-          same time, which is why a few minutes feels like a lot more. In between are steppers,
-          magnetic climbers and connected machines with screens and classes. This guide covers five
-          that were on sale when we checked, at every price level, and the practical questions that
-          decide whether a climber suits your home: ceiling height, your height, your weight, how
-          steady it is, and how its resistance works.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Two folding climbers, a magnetic stepper-climber, a connected climber and the original
             commercial machine. The short version: the <strong>MaxiClimber XL-2000</strong> if you want
             to try vertical climbing without a large outlay; the <strong>Bells of Steel Blitz
-            Stepper</strong> for adjustable magnetic resistance at a mid-range price; and the
-            <strong>VersaClimber SM-M</strong> if you train hard every day and have both the ceiling
+            Stepper</strong> for adjustable magnetic resistance at a mid-range price; and the <strong>VersaClimber SM-M</strong> if you train hard every day and have both the ceiling
             and the budget.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -439,17 +405,14 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            Every pick sells for $100 or more. Before you choose one, read the
-            <a href="#ceiling-height" class="text-[#0F62FE] font-medium">ceiling height section</a>:
+            Every pick sells for $100 or more. Before you choose one, read the <a href="#ceiling-height" class="text-[#0F62FE] font-medium">ceiling height section</a>:
             it rules out more machines than price does. If you are still choosing between machine
-            types, our guide to the
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            compares climbers and steppers with treadmills, bikes, rowers and ellipticals.
+            types, our guide to the <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> compares climbers and steppers with treadmills, bikes, rowers and ellipticals.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Vertical Climbers</h2>
+          <h2>The 5 Best Vertical Climbers</h2>
 <p>
             The cards give the figures the maker and an independent source agreed on, the price we
             saw and who each machine suits. Climbers differ in shape as well as price: the MaxiClimber
@@ -463,78 +426,67 @@ const schema = {
             ceiling section below matters.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Vertical Climbers</h2>
+          <h2>How We Chose These Vertical Climbers</h2>
 <p>
             We have not tested these machines. They were chosen from published specifications,
             maker and retailer listings, warranty terms and independent hands-on coverage from
@@ -547,16 +499,14 @@ const schema = {
             <strong>Recalls.</strong> We searched the US Consumer Product Safety Commission recall
             database for every brand on this page — MaxiClimber, Sunny Health &amp; Fitness, Bells of
             Steel, CLMBR and VersaClimber — and for those we considered: Xebex, Relife, Doufit,
-            Merach and Echelon. None had a recall. A search by product type found a 2018 recall of
-            <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> PowerMill climbers for a fire hazard; that is a commercial stair-climbing
+            Merach and Echelon. None had a recall. A search by product type found a 2018 recall of <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> PowerMill climbers for a fire hazard; that is a commercial stair-climbing
             machine, not a vertical climber, and not on this page.
           </p>
           <p>
             <strong>Deliberate exclusions.</strong> The <strong>Xebex Vertical Climber</strong> has
             good independent coverage, but its maker now sells a version 3.0 with no published price,
             so there was nothing to compare. The <strong>VersaClimber Home Climber</strong>, the
-            maker's consumer model, was listed as sold out with a new generation in development. The
-            <strong>MaxiClimber 2.0</strong>, the brand's bodyweight model, was sold out on
+            maker's consumer model, was listed as sold out with a new generation in development. The <strong>MaxiClimber 2.0</strong>, the brand's bodyweight model, was sold out on
             MaxiClimber's store. <strong>Relife</strong>'s folding climber had consistent
             independent figures, but we could not find a maker page or verify its price. And several
             low-cost climbers sold mainly on Amazon had no maker site or independent coverage we
@@ -565,7 +515,7 @@ const schema = {
         </div>
 
         <div id="ceiling-height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Check Your Ceiling Before Anything Else</h2>
+          <h2>Check Your Ceiling Before Anything Else</h2>
 <p>
             On a vertical climber you rise as you step. At the top of each stroke your head is
             higher than when you stand on the floor, by roughly the height of the raised pedal.
@@ -601,14 +551,12 @@ const schema = {
           <p>
             BarBend notes that 8-foot ceilings are usually enough for most climbers but recommends
             measuring anyway. Basements and garages with low beams are where climbers most often
-            fail to fit. Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            uses the same approach for <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>incline treadmills</a>.
+            fail to fit. Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a> uses the same approach for <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>incline treadmills</a>.
           </p>
         </div>
 
         <div id="user-height-weight" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. User Height and Weight Limits</h2>
+          <h2>User Height and Weight Limits</h2>
 <p>
             <strong>User height.</strong> Climbers fit a range of heights through adjustable
             handles, step length or both. MaxiClimber says the XL-2000 suits users up to 6 feet 6
@@ -625,14 +573,12 @@ const schema = {
             300 lb; the Sunny and the Bells of Steel to 330 lb; the CLMBR and VersaClimber to 350 lb.
             Budget climbers generally have the lowest limits — MaxiClimber's bodyweight models are
             rated to 240 lb — and a machine used near its limit tends to feel less steady. If you are
-            close to a machine's limit, pick the next one up. Our guide on
-            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens if you exceed a treadmill weight limit</a>
-            explains why those ratings are worth respecting on any machine.
+            close to a machine's limit, pick the next one up. Our guide on <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens if you exceed a treadmill weight limit</a> explains why those ratings are worth respecting on any machine.
           </p>
         </div>
 
         <div id="resistance-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Resistance Types: Bodyweight, Hydraulic, Magnetic</h2>
+          <h2>Resistance Types: Bodyweight, Hydraulic, Magnetic</h2>
 <p>
             How a climber resists you shapes the workout more than anything else.
           </p>
@@ -663,7 +609,7 @@ const schema = {
         </div>
 
         <div id="stability" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Stability and Build</h2>
+          <h2>Stability and Build</h2>
 <p>
             A climber that rocks or flexes is unpleasant at best and unsafe at worst, and stability is
             where price makes the biggest difference.
@@ -686,14 +632,12 @@ const schema = {
           </p>
           <p>
             Whatever you buy, a rubber mat under the machine stops it creeping and protects the
-            floor. Our guide to
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a>
-            covers what to use.
+            floor. Our guide to <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> covers what to use.
           </p>
         </div>
 
         <div id="climber-vs-others" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Vertical Climber or Another Cardio Machine?</h2>
+          <h2>Vertical Climber or Another Cardio Machine?</h2>
 <p>
             A climber is a specialist. It suits people who want a short, intense, full-body session
             in a small footprint, and who will not mind that it is hard work from the first minute.
@@ -701,30 +645,21 @@ const schema = {
           <p>
             <strong>Compared with a treadmill,</strong> a climber is low-impact, works the upper body
             and takes a fraction of the floor, but it is not the place for long, easy sessions.
-            Our comparison of
-            <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium">StairMaster vs treadmill</a>
-            covers climbing-style cardio against walking and running.
+            Our comparison of <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium">StairMaster vs treadmill</a> covers climbing-style cardio against walking and running.
           </p>
           <p>
             <strong>Compared with an elliptical or rower,</strong> both of which also work the arms
             and legs together, a climber is more upright and more intense but less comfortable for
-            long, steady sessions. If you want variety in intensity, our guides to the
-            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines</a>
-            and the
-            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a>
-            are worth a look. An air bike is the other short-and-brutal option; see our guide to
-            <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium">air bikes</a>.
+            long, steady sessions. If you want variety in intensity, our guides to the <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines</a> and the <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a> are worth a look. An air bike is the other short-and-brutal option; see our guide to <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium">air bikes</a>.
           </p>
           <p>
             <strong>On calories,</strong> treat any climber console's figure with caution. Climbing
-            is demanding, but consoles estimate energy use from limited inputs; our explainer on
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calorie counts are accurate</a>
-            explains why such numbers are estimates on every machine.
+            is demanding, but consoles estimate energy use from limited inputs; our explainer on <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calorie counts are accurate</a> explains why such numbers are estimates on every machine.
           </p>
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Before You Buy a Vertical Climber</h2>
+          <h2>Before You Buy a Vertical Climber</h2>
 <ol>
             <li><strong>Do the ceiling check.</strong> Machine height, plus your height and the maximum step height, plus headroom. This rules out more climbers than anything else.</li>
             <li><strong>Check the user limits.</strong> Weight and height ranges, with a margin rather than right at the limit.</li>
@@ -734,142 +669,157 @@ const schema = {
             <li><strong>Read the return terms.</strong> VersaClimber says claims must be made within 15 days of receipt and returns carry a 15% restocking charge, and freight is not refundable. Know the policy before a large machine arrives.</li>
           </ol>
           <p>
-            If you want to compare a climber against the broader field of home cardio, our
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            sets out the options by space, noise and budget.
+            If you want to compare a climber against the broader field of home cardio, our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> sets out the options by space, noise and budget.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best vertical climber for home use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people trying vertical climbing at home, the MaxiClimber XL-2000 is the sensible start: it folds, has 12 hydraulic resistance levels and supports users up to 300 lb for around $400. For quieter, adjustable magnetic resistance, the Bells of Steel Blitz Stepper is a strong mid-range choice. The VersaClimber SM-M is the premium option for daily, hard training.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do you need for a vertical climber?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check two things: the machine's height and how high your head goes when climbing. Tall-mast climbers stand around 88 to 94 inches, close to a standard 96-inch ceiling. When climbing, add the maximum step height to your own height and allow headroom. Garage Gym Reviews says the Bells of Steel Blitz Stepper needs at least a 96-inch ceiling for an average user.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are vertical climbers good for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A climber is a demanding full-body cardio machine, so it can contribute to weight loss as part of regular exercise and a calorie deficit. It is not better than any other machine you will use consistently. Console calorie figures are estimates, so judge progress by your training and body measurements rather than the display.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on a vertical climber?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It varies by machine. Budget bodyweight climbers are often rated around 240 lb, the MaxiClimber XL-2000 to 300 lb, the Sunny and Bells of Steel models on this page to 330 lb, and the CLMBR and VersaClimber to 350 lb. Choose a machine rated comfortably above your weight for better stability.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a VersaClimber worth the money?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most home users, no: a VersaClimber SM-M costs around $5,900 to $6,900, needs a tall room and is built for commercial use. It makes sense for athletes or coaches who climb daily and want a durable machine with a five-year frame warranty. Everyone else gets most of the workout from a cheaper climber.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a vertical climber better than a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They do different jobs. A climber gives a short, intense, low-impact workout for the whole body in a small footprint. A treadmill suits longer sessions, walking and running, and is easier to use at a gentle pace. Many people who want variety pair one climber session a week or more with walking or another machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Vertical Climber</h2>
+          <p>Most climber returns come down to the ceiling, the user limits or expecting the wrong kind of workout.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Measuring the machine but not the climb</h3>
+              <p>A climber that fits under your ceiling standing still may not fit with you on it. Add your height to the maximum step height, then allow headroom, and measure where the machine will actually stand, under any beam or light fitting. If it is close, choose a lower stepper-style climber.</p>
+            </li>
+            <li>
+              <h3>Buying at the edge of the weight limit</h3>
+              <p>Folding climbers in particular feel less steady near their limit, and parts work harder. If you are within about 20 to 30 lb of a machine's rating, choose a model rated higher. The difference in price is usually smaller than the cost of returning a machine.</p>
+            </li>
+            <li>
+              <h3>Expecting easy, long sessions</h3>
+              <p>Vertical climbing is hard from the first minute, which is the point. People who buy one for hour-long steady cardio often stop using it. Plan on short intervals, or pair the climber with a machine that suits longer, easier sessions.</p>
+            </li>
+            <li>
+              <h3>Ignoring the warranty and return terms</h3>
+              <p>Warranties on climbers run from 180 days on some parts to five years on a frame, and returning a freight-delivered machine can be costly. Read both before ordering, especially for a connected machine whose membership and support also matter.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Vertical Climber</h2>
-          <p class="text-gray-700 leading-relaxed">Most climber returns come down to the ceiling, the user limits or expecting the wrong kind of workout.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the machine but not the climb</h3>
-              <p class="text-gray-700 text-sm m-0">A climber that fits under your ceiling standing still may not fit with you on it. Add your height to the maximum step height, then allow headroom, and measure where the machine will actually stand, under any beam or light fitting. If it is close, choose a lower stepper-style climber.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying at the edge of the weight limit</h3>
-              <p class="text-gray-700 text-sm m-0">Folding climbers in particular feel less steady near their limit, and parts work harder. If you are within about 20 to 30 lb of a machine's rating, choose a model rated higher. The difference in price is usually smaller than the cost of returning a machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting easy, long sessions</h3>
-              <p class="text-gray-700 text-sm m-0">Vertical climbing is hard from the first minute, which is the point. People who buy one for hour-long steady cardio often stop using it. Plan on short intervals, or pair the climber with a machine that suits longer, easier sessions.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the warranty and return terms</h3>
-              <p class="text-gray-700 text-sm m-0">Warranties on climbers run from 180 days on some parts to five years on a frame, and returning a freight-delivered machine can be costly. Read both before ordering, especially for a connected machine whose membership and support also matter.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-cardio-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">One pick per machine type, from treadmills and bikes to steppers and rowers.</p>
-            </a>
-            <a href="/stairmaster-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">StairMaster vs Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How climbing-style cardio compares with walking and running for effort and joints.</p>
-            </a>
-            <a href="/best-elliptical-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Ellipticals</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Elliptical Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Low-impact, full-body cardio that suits longer sessions than a climber.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, the MaxiClimber XL-2000 is the place to start</strong>,
             and the Sunny climber is the budget choice for low ceilings. Step up to the Bells of Steel Blitz
             Stepper for quiet, adjustable magnetic resistance, the CLMBR if classes keep you going, or the
             VersaClimber SM-M if you climb hard every day and have the room.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, do the ceiling check with yourself on the machine, buy with a margin on the
             weight limit, and expect short, hard sessions rather than long, easy ones. To see how a climber
-            fits alongside other cardio,
-            <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">our guide to the best cardio machines for home</a>
-            compares every type.
+            fits alongside other cardio, <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">our guide to the best cardio machines for home</a> compares every type.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-cardio-machines-for-home/">Best Cardio Machines for Home</a></li>
+            <li><a href="/stairmaster-vs-treadmill/">StairMaster vs Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best vertical climber for home use?</h3></summary>
+            <p class="faq-a">
+              For most people trying vertical climbing at home, the MaxiClimber XL-2000 is the sensible start: it folds, has 12 hydraulic resistance levels and supports users up to 300 lb for around $400. For quieter, adjustable magnetic resistance, the Bells of Steel Blitz Stepper is a strong mid-range choice. The VersaClimber SM-M is the premium option for daily, hard training.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much ceiling height do you need for a vertical climber?</h3></summary>
+            <p class="faq-a">
+              Check two things: the machine's height and how high your head goes when climbing. Tall-mast climbers stand around 88 to 94 inches, close to a standard 96-inch ceiling. When climbing, add the maximum step height to your own height and allow headroom. Garage Gym Reviews says the Bells of Steel Blitz Stepper needs at least a 96-inch ceiling for an average user.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are vertical climbers good for weight loss?</h3></summary>
+            <p class="faq-a">
+              A climber is a demanding full-body cardio machine, so it can contribute to weight loss as part of regular exercise and a calorie deficit. It is not better than any other machine you will use consistently. Console calorie figures are estimates, so judge progress by your training and body measurements rather than the display.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit on a vertical climber?</h3></summary>
+            <p class="faq-a">
+              It varies by machine. Budget bodyweight climbers are often rated around 240 lb, the MaxiClimber XL-2000 to 300 lb, the Sunny and Bells of Steel models on this page to 330 lb, and the CLMBR and VersaClimber to 350 lb. Choose a machine rated comfortably above your weight for better stability.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a VersaClimber worth the money?</h3></summary>
+            <p class="faq-a">
+              For most home users, no: a VersaClimber SM-M costs around $5,900 to $6,900, needs a tall room and is built for commercial use. It makes sense for athletes or coaches who climb daily and want a durable machine with a five-year frame warranty. Everyone else gets most of the workout from a cheaper climber.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a vertical climber better than a treadmill?</h3></summary>
+            <p class="faq-a">
+              They do different jobs. A climber gives a short, intense, low-impact workout for the whole body in a small footprint. A treadmill suits longer sessions, walking and running, and is easier to use at a gentle pace. Many people who want variety pair one climber session a week or more with walking or another machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-cardio-machines-for-home/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Cardio Machines for Home</div>
+            <p class="c-blurb">One pick per machine type, from treadmills and bikes to steppers and rowers.</p>
+          </a>
+          <a href="/stairmaster-vs-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">StairMaster vs Treadmill</div>
+            <p class="c-blurb">How climbing-style cardio compares with walking and running for effort and joints.</p>
+          </a>
+          <a href="/best-elliptical-machines-for-home/" class="card">
+            <div class="c-kicker">Ellipticals</div>
+            <div class="c-title">Best Elliptical Machines for Home</div>
+            <p class="c-blurb">Low-impact, full-body cardio that suits longer sessions than a climber.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

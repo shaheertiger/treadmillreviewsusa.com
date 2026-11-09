@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Pack a Treadmill (2026): Moving, Storage and Returns";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-pack-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Packing Without the Original Box", link: "#without-the-box" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtopackatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtopackatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Guide</span>
+      </nav>
+      <h1 class="ed-title">How to Pack a Treadmill: For a Move, Storage or a Return</h1>
+      <p class="ed-dek">
+        Packing a treadmill well is mostly about three things: stopping the heavy parts from moving, protecting the console and the cable that feeds it, and making sure every bolt you removed is still with the machine when it arrives. Here is how to do each, with or without the original box.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Pack a Treadmill: <span class="text-[#5AA9FF]">For a Move, Storage or a Return</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Packing a treadmill well is mostly about three things: stopping the heavy parts from moving, protecting the console and the cable that feeds it, and making sure every bolt you removed is still with the machine when it arrives. Here is how to do each, with or without the original box.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#without-the-box" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Packing Without the Box
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Unplug first, and do not lift alone.</strong> Every step on
-          this page is done with the treadmill unplugged at the wall and the safety key removed.
-          Most home treadmills weigh well over 100 lb and carry most of that weight at the motor
-          end, so treat lifting, tilting and loading as a two-person job, and use a dolly rather
-          than your back. Your owner's manual is the authority on your model: if it says how the
-          machine should be folded, locked, laid down or transported, follow it over anything
-          here. Carrier weight limits and seller return terms quoted below were checked on 14
-          October 2026 and can change; confirm them with the carrier or seller before you book.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Pack a Treadmill: The Short Answer</a>
-          <a href="#why-are-you-packing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why Are You Packing It? Moving, Storage and Returns Differ</a>
-          <a href="#before-you-start" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Should You Do Before Packing Anything?</a>
-          <a href="#original-box" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Should You Use the Original Box?</a>
-          <a href="#securing-the-deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Do You Secure the Deck?</a>
-          <a href="#console-and-uprights" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Do You Protect the Console and Uprights?</a>
-          <a href="#hardware-and-labels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Should You Bag and Label the Hardware?</a>
-          <a href="#without-the-box" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How Do You Pack a Treadmill Without the Original Box?</a>
-          <a href="#freight-vs-parcel" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Freight or Parcel: How Will a Packed Treadmill Travel?</a>
-          <a href="#packing-for-a-return" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Do Returns Require?</a>
-          <a href="#packing-for-storage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How Should a Treadmill Be Packed for Storage?</a>
-          <a href="#unpacking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. What Should You Check When You Unpack It?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most treadmill damage in transit is not done by the truck. It is done by a folded deck
           that was never strapped, a console cable that was pulled tight when the uprights came
           off, a bag of bolts that went into a different box, or a carton that was never designed
@@ -210,8 +146,39 @@ const schema = {
           moving and dismantling the machine rather than repeating them.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Unplug first, and do not lift alone.</strong> Every step on
+          this page is done with the treadmill unplugged at the wall and the safety key removed.
+          Most home treadmills weigh well over 100 lb and carry most of that weight at the motor
+          end, so treat lifting, tilting and loading as a two-person job, and use a dolly rather
+          than your back. Your owner's manual is the authority on your model: if it says how the
+          machine should be folded, locked, laid down or transported, follow it over anything
+          here. Carrier weight limits and seller return terms quoted below were checked on 14
+          October 2026 and can change; confirm them with the carrier or seller before you book.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Pack a Treadmill: The Short Answer</a></li>
+            <li><a href="#why-are-you-packing">Why Are You Packing It? Moving, Storage and Returns Differ</a></li>
+            <li><a href="#before-you-start">What Should You Do Before Packing Anything?</a></li>
+            <li><a href="#original-box">Should You Use the Original Box?</a></li>
+            <li><a href="#securing-the-deck">How Do You Secure the Deck?</a></li>
+            <li><a href="#console-and-uprights">How Do You Protect the Console and Uprights?</a></li>
+            <li><a href="#hardware-and-labels">How Should You Bag and Label the Hardware?</a></li>
+            <li><a href="#without-the-box">How Do You Pack a Treadmill Without the Original Box?</a></li>
+            <li><a href="#freight-vs-parcel">Freight or Parcel: How Will a Packed Treadmill Travel?</a></li>
+            <li><a href="#packing-for-a-return">What Do Returns Require?</a></li>
+            <li><a href="#packing-for-storage">How Should a Treadmill Be Packed for Storage?</a></li>
+            <li><a href="#unpacking">What Should You Check When You Unpack It?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Pack a Treadmill: The Short Answer</h2>
+          <h2>How to Pack a Treadmill: The Short Answer</h2>
 <p>
             <strong>To pack a treadmill, unplug it, lower the incline, remove the safety key and
             loose accessories, lock and strap the deck (or remove the console and uprights), bag and
@@ -225,10 +192,8 @@ const schema = {
             than a return to the manufacturer by freight, and storage for a year needs different
             attention again, mostly to damp and dust. The sections below take each situation in
             turn. The physical work of getting the machine out of the house and down the stairs is
-            covered in our guide on
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>,
-            and the work of taking it apart is covered step by step in
-            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to disassemble a treadmill</a>.
+            covered in our guide on <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>,
+            and the work of taking it apart is covered step by step in <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to disassemble a treadmill</a>.
             This page is about what happens between those two: protecting the parts and keeping
             them together.
           </p>
@@ -241,7 +206,7 @@ const schema = {
         </div>
 
         <div id="why-are-you-packing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why Are You Packing It? Moving, Storage and Returns Differ</h2>
+          <h2>Why Are You Packing It? Moving, Storage and Returns Differ</h2>
 <p>
             The right level of treadmill packing depends on who will handle the machine and for how
             long. It is worth deciding which of three situations you are in, because it changes
@@ -270,14 +235,12 @@ const schema = {
             freight and moved several times. Here the packaging has to do all the work on its own,
             and the seller's terms may dictate exactly what that packaging is. This is where the
             original box matters most, and where reading the return policy before you start can
-            save a refund deduction. Our guide to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            covers fees, pickups and windows; this page covers the packing itself.
+            save a refund deduction. Our guide to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> covers fees, pickups and windows; this page covers the packing itself.
           </p>
         </div>
 
         <div id="before-you-start" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Should You Do Before Packing Anything?</h2>
+          <h2>What Should You Do Before Packing Anything?</h2>
 <p>
             Before any wrapping, put the machine into a safe, compact state and record how it was
             set up. Ten minutes here prevents most of the problems that show up on the other side.
@@ -315,7 +278,7 @@ const schema = {
         </div>
 
         <div id="original-box" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Should You Use the Original Box?</h2>
+          <h2>Should You Use the Original Box?</h2>
 <p>
             If you still have the original box and its inserts, use them: they were designed for
             this machine and this weight, and some sellers require them for returns. The box is
@@ -343,9 +306,7 @@ const schema = {
             <strong>Repacking it the way it came.</strong> Machines are usually packed partly
             assembled: the base with the deck, the uprights and console in a separate position or
             box, and hardware in a bag. If you have photographs from the day it arrived, or the
-            assembly section of the manual, follow the same layout in reverse. Our guide on
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a>
-            describes the usual packed state and the console cable, which is the part most easily
+            assembly section of the manual, follow the same layout in reverse. Our guide on <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a> describes the usual packed state and the console cable, which is the part most easily
             damaged when the process is reversed.
           </p>
           <p>
@@ -357,7 +318,7 @@ const schema = {
         </div>
 
         <div id="securing-the-deck" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Do You Secure the Deck?</h2>
+          <h2>How Do You Secure the Deck?</h2>
 <p>
             The deck is the heaviest moving part and the most likely to cause damage, so it is
             secured first: folded and locked with a strap added on a folding machine, or left flat
@@ -371,9 +332,7 @@ const schema = {
             side rails. A gas strut slows the deck, it does not hold it, and a latch is designed to
             hold the deck while the machine stands still on a level floor, not while it is tilted
             on a dolly or lying in a van. The strap is what stops the deck dropping if the latch
-            lets go. Our guide on
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a>
-            explains the different latch types. If the latch is worn or will not hold, do not pack
+            lets go. Our guide on <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a> explains the different latch types. If the latch is worn or will not hold, do not pack
             it folded; lower the deck and pack it as a non-folding machine.
           </p>
           <p>
@@ -397,7 +356,7 @@ const schema = {
         </div>
 
         <div id="console-and-uprights" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Do You Protect the Console and Uprights?</h2>
+          <h2>How Do You Protect the Console and Uprights?</h2>
 <p>
             The console is the most fragile and most expensive part to replace, so either wrap it
             in place with the machine folded or remove it and pack it separately in its own padded
@@ -414,8 +373,7 @@ const schema = {
             <strong>Taking the console and uprights off.</strong> For freight, for a return that
             requires disassembly, for storage of more than a few weeks, or for a large machine that
             will not fit through a doorway assembled, remove the console and uprights. The
-            procedure is in
-            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">our disassembly guide</a>;
+            procedure is in <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">our disassembly guide</a>;
             what matters for packing is the console cable. That cable runs up the inside of one
             upright and is joined by a connector, usually near the base. It must be disconnected,
             not pulled, and the free ends must be protected. Put a small bag over each connector,
@@ -438,7 +396,7 @@ const schema = {
         </div>
 
         <div id="hardware-and-labels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Should You Bag and Label the Hardware?</h2>
+          <h2>How Should You Bag and Label the Hardware?</h2>
 <p>
             Bag the bolts from each joint separately, label each bag with where it came from, and
             attach the bags to the machine itself rather than packing them in a general box. Lost
@@ -472,7 +430,7 @@ const schema = {
         </div>
 
         <div id="without-the-box" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How Do You Pack a Treadmill Without the Original Box?</h2>
+          <h2>How Do You Pack a Treadmill Without the Original Box?</h2>
 <p>
             Without the original box, treadmill packaging is built from moving blankets, stretch
             wrap, cardboard corner and edge protection, and straps, with the console packed
@@ -517,7 +475,7 @@ const schema = {
         </div>
 
         <div id="freight-vs-parcel" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Freight or Parcel: How Will a Packed Treadmill Travel?</h2>
+          <h2>Freight or Parcel: How Will a Packed Treadmill Travel?</h2>
 <p>
             Almost every full-size treadmill travels as freight rather than as a parcel, because
             the two largest US parcel carriers cap a single package at 150 lb. On their own
@@ -560,9 +518,7 @@ const schema = {
             </table>
           </div>
           <p>
-            The weights are typical ranges, not figures for any particular model; our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            explains where they come from. Check your own model's shipping weight in the manual or
+            The weights are typical ranges, not figures for any particular model; our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> explains where they come from. Check your own model's shipping weight in the manual or
             on the original box label.
           </p>
           <p>
@@ -588,7 +544,7 @@ const schema = {
         </div>
 
         <div id="packing-for-a-return" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Do Returns Require?</h2>
+          <h2>What Do Returns Require?</h2>
 <p>
             Return requirements vary by seller, so read the policy before you pack: some require the
             original packaging and full disassembly, while others will collect the machine
@@ -626,14 +582,12 @@ const schema = {
           <p>
             <strong>Document the condition.</strong> Photograph the machine assembled and working,
             then each stage of packing, the hardware bags laid out, and the packed result next to
-            the collection paperwork. If the refund is disputed, this is your evidence. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">return policy guide</a>
-            covers restocking fees and pickup charges in more depth.
+            the collection paperwork. If the refund is disputed, this is your evidence. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">return policy guide</a> covers restocking fees and pickup charges in more depth.
           </p>
         </div>
 
         <div id="packing-for-storage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How Should a Treadmill Be Packed for Storage?</h2>
+          <h2>How Should a Treadmill Be Packed for Storage?</h2>
 <p>
             For storage, pack the treadmill to keep it dry, clean and stable rather than to survive
             impact: a breathable cover over a clean machine, raised off a concrete floor, in a space
@@ -643,9 +597,7 @@ const schema = {
             <li><strong>Choose the space carefully.</strong> A climate-controlled unit or an
             indoor room is far better than an unheated garage or a damp basement. Humidity swells
             fibreboard decks and lifts their laminate, and condensation is bad for the control
-            board. If a garage is the only option, a dehumidifier helps. Our guide to
-            <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a>
-            explains what moisture does to the electronics and the deck.</li>
+            board. If a garage is the only option, a dehumidifier helps. Our guide to <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a> explains what moisture does to the electronics and the deck.</li>
             <li><strong>Do not seal it in plastic.</strong> Stretch wrap is fine for a move of a
             few days. For months it traps moisture against the frame and the motor. Use a fabric
             cover, a cotton dust sheet or blankets that let air through.</li>
@@ -675,7 +627,7 @@ const schema = {
         </div>
 
         <div id="unpacking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. What Should You Check When You Unpack It?</h2>
+          <h2>What Should You Check When You Unpack It?</h2>
 <p>
             When the treadmill arrives, inspect it before you sign for it if a carrier delivered
             it, then reassemble it from your photographs and labels and test it slowly before
@@ -685,9 +637,7 @@ const schema = {
             <strong>At delivery.</strong> If a carrier brings it, look at the packaging for
             crushed corners, punctures or obvious damage while the driver is there, and note any
             damage on the delivery receipt before signing. A clean signature is hard to dispute
-            later. Our
-            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            covers the inspection in more detail.
+            later. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> covers the inspection in more detail.
           </p>
           <p>
             <strong>Reassembly.</strong> Use the bags in the order you labelled them and your
@@ -700,147 +650,158 @@ const schema = {
             safety key, and run the belt at the lowest speed with nobody on it. Check that it runs
             centred, that the incline moves through its range, and that pulling the safety key
             stops the belt. Then walk on it at a slow pace, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a>, before using it
-            normally. Our guide on
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            lists the full set of after-move checks.
+            normally. Our guide on <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> lists the full set of after-move checks.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need the original box to pack a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for a move or storage. Moving blankets, stretch wrap, corner protection and straps protect a treadmill well, with the console packed separately in a strong box. The original box matters most for returns, because some sellers require it. Check the return policy first, and ask whether the seller supplies packaging if you no longer have it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill be shipped by UPS or FedEx?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A full-size treadmill usually cannot go as a single parcel, because UPS and FedEx Ground both cap a package at 150 lb, and most folding treadmills weigh about that before packaging. They normally travel as freight on a pallet. A small walking pad can often go as a parcel if it is within the size limits.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should a treadmill be packed folded or flat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A folding treadmill can be packed folded if the latch engages fully and you add a strap around the deck and frame, because the latch alone is not designed to hold the deck in transit. A non-folding treadmill is packed flat on its feet. Avoid packing or storing either kind on its side or end unless the manual allows it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need to remove the console to pack a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not always. For a local move the console can often stay on, wrapped in a blanket with a cardboard sheet over the screen. For freight, a return that requires disassembly, long storage or a tight doorway, remove it, disconnect the console cable at its connector rather than pulling it, and pack the console in its own padded box.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I keep track of treadmill bolts when packing?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Bag the bolts from each joint separately in small zip-lock bags, write on each bag what it holds and where it goes, and tape the bags to the frame so they cannot be separated from the machine. Photograph each joint before you take it apart, and pack the supplied Allen keys and spanner with the hardware.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I loosen the treadmill belt before packing it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no need for a normal move or storage. Leaving the belt as it is avoids having to re-tension and re-track it afterwards. Protect the belt surface with cardboard or a blanket so nothing scuffs it. After any move, check the tension and tracking at a slow speed before using the machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Packing a Treadmill</h2>
+          <p>Most transit damage to treadmills comes from a handful of avoidable packing errors rather than from rough handling.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the fold latch alone</h3>
+              <p>A fold latch is designed to hold the deck while the machine stands still on a level floor, and a gas strut only slows the deck. Tilted on a dolly, bumped on a step or lying in a van, either can let go. Always add a strap around the folded deck and the frame.</p>
+            </li>
+            <li>
+              <h3>Pulling the console cable</h3>
+              <p>The console cable runs inside an upright and joins at a connector. Lifting the console off without disconnecting it, or laying an upright down on the cable, damages the wires or the plug, and the console will not work at the other end. Disconnect it at the connector and protect both ends.</p>
+            </li>
+            <li>
+              <h3>Packing the hardware in a general box</h3>
+              <p>Bolts packed in a box of miscellaneous items get lost, mixed up or delivered to a different room. Bag each set separately, label it with where it goes, and tape the bags to the treadmill itself, along with the safety key and power cord.</p>
+            </li>
+            <li>
+              <h3>Sealing it in plastic for storage</h3>
+              <p>Stretch wrap is fine for a few days in a van, but months of it trap moisture against the frame, the motor and the deck. For storage, use a breathable cover, raise the machine off a concrete floor and choose a dry space.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Packing a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most transit damage to treadmills comes from a handful of avoidable packing errors rather than from rough handling.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the fold latch alone</h3>
-              <p class="text-gray-700 text-sm m-0">A fold latch is designed to hold the deck while the machine stands still on a level floor, and a gas strut only slows the deck. Tilted on a dolly, bumped on a step or lying in a van, either can let go. Always add a strap around the folded deck and the frame.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Pulling the console cable</h3>
-              <p class="text-gray-700 text-sm m-0">The console cable runs inside an upright and joins at a connector. Lifting the console off without disconnecting it, or laying an upright down on the cable, damages the wires or the plug, and the console will not work at the other end. Disconnect it at the connector and protect both ends.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Packing the hardware in a general box</h3>
-              <p class="text-gray-700 text-sm m-0">Bolts packed in a box of miscellaneous items get lost, mixed up or delivered to a different room. Bag each set separately, label it with where it goes, and tape the bags to the treadmill itself, along with the safety key and power cord.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sealing it in plastic for storage</h3>
-              <p class="text-gray-700 text-sm m-0">Stretch wrap is fine for a few days in a van, but months of it trap moisture against the frame, the motor and the deck. For storage, use a breathable cover, raise the machine off a concrete floor and choose a dry space.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Moving and Ownership Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-move-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Moving</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Move a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Stairs, transport wheels, vans and when to hire movers.</p>
-            </a>
-            <a href="/how-to-disassemble-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Disassembly</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Disassemble a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Tools, the console cable and the order of work, step by step.</p>
-            </a>
-            <a href="/treadmill-return-policies/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Returns</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Return Policies</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Restocking fees, pickups and packaging rules before you buy.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Treadmill packing comes down to stopping the heavy parts moving,
-            protecting the console and its cable, and keeping every bolt with the machine.</strong>
-            Lock and strap the deck, wrap or remove the console, bag and label the hardware, and use
+            protecting the console and its cable, and keeping every bolt with the machine.</strong> Lock and strap the deck, wrap or remove the console, bag and label the hardware, and use
             the original box if you have it or blankets, stretch wrap and corner protection if you
             do not.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Match the packing to the journey.</strong> A local move needs
             protection from knocks, storage needs protection from damp, and a return needs whatever
-            the seller's policy says, so read it first. For the lifting and the stairs, our guide on
-            <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to move a treadmill</a>
-            picks up where this one ends.
+            the seller's policy says, so read it first. For the lifting and the stairs, our guide on <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to move a treadmill</a> picks up where this one ends.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-move-a-treadmill/">How to Move a Treadmill</a></li>
+            <li><a href="/how-to-disassemble-a-treadmill/">How to Disassemble a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Do I need the original box to pack a treadmill?</h3></summary>
+            <p class="faq-a">
+              Not for a move or storage. Moving blankets, stretch wrap, corner protection and straps protect a treadmill well, with the console packed separately in a strong box. The original box matters most for returns, because some sellers require it. Check the return policy first, and ask whether the seller supplies packaging if you no longer have it.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill be shipped by UPS or FedEx?</h3></summary>
+            <p class="faq-a">
+              A full-size treadmill usually cannot go as a single parcel, because UPS and FedEx Ground both cap a package at 150 lb, and most folding treadmills weigh about that before packaging. They normally travel as freight on a pallet. A small walking pad can often go as a parcel if it is within the size limits.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should a treadmill be packed folded or flat?</h3></summary>
+            <p class="faq-a">
+              A folding treadmill can be packed folded if the latch engages fully and you add a strap around the deck and frame, because the latch alone is not designed to hold the deck in transit. A non-folding treadmill is packed flat on its feet. Avoid packing or storing either kind on its side or end unless the manual allows it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need to remove the console to pack a treadmill?</h3></summary>
+            <p class="faq-a">
+              Not always. For a local move the console can often stay on, wrapped in a blanket with a cardboard sheet over the screen. For freight, a return that requires disassembly, long storage or a tight doorway, remove it, disconnect the console cable at its connector rather than pulling it, and pack the console in its own padded box.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I keep track of treadmill bolts when packing?</h3></summary>
+            <p class="faq-a">
+              Bag the bolts from each joint separately in small zip-lock bags, write on each bag what it holds and where it goes, and tape the bags to the frame so they cannot be separated from the machine. Photograph each joint before you take it apart, and pack the supplied Allen keys and spanner with the hardware.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I loosen the treadmill belt before packing it?</h3></summary>
+            <p class="faq-a">
+              There is no need for a normal move or storage. Leaving the belt as it is avoids having to re-tension and re-track it afterwards. Protect the belt surface with cardboard or a blanket so nothing scuffs it. After any move, check the tension and tracking at a slow speed before using the machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Moving and Ownership Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-move-a-treadmill/" class="card">
+            <div class="c-kicker">Moving</div>
+            <div class="c-title">How to Move a Treadmill</div>
+            <p class="c-blurb">Stairs, transport wheels, vans and when to hire movers.</p>
+          </a>
+          <a href="/how-to-disassemble-a-treadmill/" class="card">
+            <div class="c-kicker">Disassembly</div>
+            <div class="c-title">How to Disassemble a Treadmill</div>
+            <p class="c-blurb">Tools, the console cable and the order of work, step by step.</p>
+          </a>
+          <a href="/treadmill-return-policies/" class="card">
+            <div class="c-kicker">Returns</div>
+            <div class="c-title">Treadmill Return Policies</div>
+            <p class="c-blurb">Restocking fees, pickups and packaging rules before you buy.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

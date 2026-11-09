@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Workout Plan (2026): A 12-Week Progressive Program";
 const description =
@@ -90,6 +89,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-workout-plan/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -112,116 +117,76 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Week-by-Week Plan", link: "#foundation" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillworkoutplan" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillworkoutplan)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training Plan</span>
+      </nav>
+      <h1 class="ed-title">A 12-Week Treadmill Workout Plan</h1>
+      <p class="ed-dek">
+        A single good session is easy to find. What most people lack is the sequence: what to do in week one, what changes in week five, and when to back off. This plan gives you twelve weeks of it, in three tracks, with every speed, grade and duration written down.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training Plan
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          A 12-Week <span class="text-[#5AA9FF]">Treadmill Workout Plan</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A single good session is easy to find. What most people lack is the sequence: what to do in week one, what changes in week five, and when to back off. This plan gives you twelve weeks of it, in three tracks, with every speed, grade and duration written down.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#foundation" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Weeks 1–4
-          </a>
-          <a href="#progression" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Weeks 5–12
-          </a>
-        </div>
+        <a href="#foundation" class="btn-ghost">Weeks 1–4</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this plan is, and is not.</strong> We review
-          treadmills. This is a general training structure for healthy adults, built on the US
-          physical activity guidelines; it is not medical advice, physiotherapy, coaching or
-          nutrition advice. If you have a heart, lung, metabolic or joint condition, take
-          medication that affects heart rate, are pregnant, or have been inactive for a long time,
-          talk to your doctor before starting. Stop and seek advice for chest pain, unusual
-          breathlessness, dizziness, an irregular heartbeat or pain that changes how you walk.
-          <strong class="text-gray-900">On the numbers:</strong> speeds and grades are typical
-          starting points for illustration. The effort column (RPE) is the instruction; the speed
-          column is a guess at where that effort usually sits.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: The Plan at a Glance</a>
-          <a href="#guidelines" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Guidelines Ask For, and Where This Plan Lands</a>
-          <a href="#choose-track" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Choose Your Track (and How to Read the Tables)</a>
-          <a href="#foundation" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Weeks 1–4: The Foundation Block</a>
-          <a href="#progression" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Weeks 5–12: The Eight-Week Progression</a>
-          <a href="#weekly-layout" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Laying Out the Week, Strength Days Included</a>
-          <a href="#progression-rules" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Progression Rules, and the Limits of the 10% Rule</a>
-          <a href="#deloads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Deload Weeks: Why Weeks 4, 8 and 12 Are Lighter</a>
-          <a href="#repeat-a-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When to Repeat a Week (or Go Back Two)</a>
-          <a href="#weight-loss" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Adapting the Plan for Weight Loss</a>
-          <a href="#sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Sessions in the Plan, and Where Each Is Explained</a>
-          <a href="#after-week-12" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. After Week 12</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill workout plan is not a list of good sessions. It is a decision about
           order — which session comes first, what changes each week, how much, and when you
           deliberately do less. Get the order right and ordinary sessions add up to real fitness;
           get it wrong and excellent sessions end in sore shins by week three.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this plan is, and is not.</strong> We review
+          treadmills. This is a general training structure for healthy adults, built on the US
+          physical activity guidelines; it is not medical advice, physiotherapy, coaching or
+          nutrition advice. If you have a heart, lung, metabolic or joint condition, take
+          medication that affects heart rate, are pregnant, or have been inactive for a long time,
+          talk to your doctor before starting. Stop and seek advice for chest pain, unusual
+          breathlessness, dizziness, an irregular heartbeat or pain that changes how you walk. <strong class="text-gray-900">On the numbers:</strong> speeds and grades are typical
+          starting points for illustration. The effort column (RPE) is the instruction; the speed
+          column is a guess at where that effort usually sits.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: The Plan at a Glance</a></li>
+            <li><a href="#guidelines">What the Guidelines Ask For, and Where This Plan Lands</a></li>
+            <li><a href="#choose-track">Choose Your Track (and How to Read the Tables)</a></li>
+            <li><a href="#foundation">Weeks 1–4: The Foundation Block</a></li>
+            <li><a href="#progression">Weeks 5–12: The Eight-Week Progression</a></li>
+            <li><a href="#weekly-layout">Laying Out the Week, Strength Days Included</a></li>
+            <li><a href="#progression-rules">The Progression Rules, and the Limits of the 10% Rule</a></li>
+            <li><a href="#deloads">Deload Weeks: Why Weeks 4, 8 and 12 Are Lighter</a></li>
+            <li><a href="#repeat-a-week">When to Repeat a Week (or Go Back Two)</a></li>
+            <li><a href="#weight-loss">Adapting the Plan for Weight Loss</a></li>
+            <li><a href="#sessions">The Sessions in the Plan, and Where Each Is Explained</a></li>
+            <li><a href="#after-week-12">After Week 12</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: The Plan at a Glance</h2>
+          <h2>The Short Answer: The Plan at a Glance</h2>
 <p>
-            This <strong>treadmill workout plan</strong> runs for twelve weeks: a
-            <strong>four-week foundation block</strong> that builds the habit and the tissues, then
+            This <strong>treadmill workout plan</strong> runs for twelve weeks: a <strong>four-week foundation block</strong> that builds the habit and the tissues, then
             an <strong>eight-week progression</strong> that takes you to, or past, the 150 weekly
             minutes of moderate activity the US guidelines recommend. There are three tracks, and
             you follow one:
@@ -247,22 +212,18 @@ const schema = {
           <p>
             This page is the plan. The individual sessions it calls for — easy walks, incline
             walks, intervals, hills, long runs — each have their own page on this site, linked in
-            the session section, and our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts</a>
-            pillar explains the four session types the plan is built from.
+            the session section, and our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts</a> pillar explains the four session types the plan is built from.
           </p>
         </div>
 
         <div id="guidelines" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Guidelines Ask For, and Where This Plan Lands</h2>
+          <h2>What the Guidelines Ask For, and Where This Plan Lands</h2>
 <p>
             The target the plan builds toward is not ours. The <strong>Physical Activity Guidelines
             for Americans</strong> (US Department of Health and Human Services, second edition,
-            2018), which the CDC summarises for the public, recommend that adults get
-            <strong>150 to 300 minutes a week of moderate-intensity aerobic activity, or 75 to 150
+            2018), which the CDC summarises for the public, recommend that adults get <strong>150 to 300 minutes a week of moderate-intensity aerobic activity, or 75 to 150
             minutes of vigorous activity</strong>, or an equivalent mix, preferably spread across
-            the week. They note additional benefits beyond 300 minutes, and add
-            <strong>muscle-strengthening activity on at least two days a week</strong> covering
+            the week. They note additional benefits beyond 300 minutes, and add <strong>muscle-strengthening activity on at least two days a week</strong> covering
             the major muscle groups. The American College of Sports Medicine's 2011 position stand
             (Garber and colleagues, <em>Medicine &amp; Science in Sports &amp; Exercise</em>)
             gives the same 150-minute floor — framed as 30 minutes on five days — and recommends
@@ -300,14 +261,13 @@ const schema = {
             Guidelines for Americans</em>, 2nd ed., 2018; CDC, "Adult Activity: An Overview" and
             "Measuring Physical Activity Intensity" (cdc.gov, checked October 20, 2026); Garber CE
             et al., ACSM position stand, <em>Med Sci Sports Exerc</em> 2011;43(7):1334–1359;
-            Donnelly JE et al., ACSM position stand on weight loss, <em>Med Sci Sports Exerc</em>
-            2009;41(2):459–471; Buist I et al., <em>Am J Sports Med</em> 2008;36(1):33–39;
+            Donnelly JE et al., ACSM position stand on weight loss, <em>Med Sci Sports Exerc</em> 2009;41(2):459–471; Buist I et al., <em>Am J Sports Med</em> 2008;36(1):33–39;
             Nielsen RO et al., <em>J Orthop Sports Phys Ther</em> 2014;44(10):739–747.
           </p>
         </div>
 
         <div id="choose-track" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Choose Your Track (and How to Read the Tables)</h2>
+          <h2>Choose Your Track (and How to Read the Tables)</h2>
 <p>
             <strong>Walker</strong> if you can walk 20 minutes without discomfort and running is
             not a goal, or if you are returning after a long break, carrying significant extra
@@ -318,9 +278,7 @@ const schema = {
             <strong>Beginner runner</strong> if you can walk briskly for 30 minutes and want to
             run, but cannot yet jog for more than a few minutes. If you cannot comfortably walk
             for 30 minutes yet, do the walker foundation block first and start this track
-            afterwards. Our
-            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workout</a>
-            page covers the very first sessions on a machine in more detail.
+            afterwards. Our <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workout</a> page covers the very first sessions on a machine in more detail.
           </p>
           <p>
             <strong>Runner</strong> if you already run 20 to 30 minutes continuously two or three
@@ -339,8 +297,7 @@ const schema = {
             the effort in the last column. The <strong>incline</strong> column is the treadmill's
             grade in per cent. <strong>Minutes</strong> include a five-minute easy warm-up and
             cool-down. The effort column uses a 0 to 10 rating of perceived exertion (RPE) and
-            the five-zone heart-rate model from our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>:
+            the five-zone heart-rate model from our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>:
           </p>
           <div class="not-prose overflow-x-auto my-8">
 <table class="min-w-[600px] w-full text-sm border-collapse">
@@ -367,8 +324,7 @@ const schema = {
             RPE.
           </p>
           <p>
-            For converting the speeds to pace per mile or km/h, use our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>.
+            For converting the speeds to pace per mile or km/h, use our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>.
             The ranges in this plan are taken from it: 2.8 to 3.5 mph is a comfortable-to-brisk
             walk, 4.5 to 5.5 mph the walk-jog transition and easy jog, 5 to 6 mph easy running,
             and 7 to 8 mph the interval range it gives for someone training toward a 5K.
@@ -376,7 +332,7 @@ const schema = {
         </div>
 
         <div id="foundation" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Weeks 1–4: The Foundation Block</h2>
+          <h2>Weeks 1–4: The Foundation Block</h2>
 <p>
             The foundation block has two jobs, and neither is fitness. The first is the habit:
             twelve sessions completed, on the days you planned, at an effort that leaves you
@@ -479,13 +435,12 @@ const schema = {
             seconds per mile slower than you could race — before any hard work arrives. The first
             quality session, in week 3, is a short hill session rather than flat intervals
             because grade raises the work without raising the speed or the impact per stride.
-            Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a>
-            page covers the hill-repeat session in full.
+            Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a> page covers the hill-repeat session in full.
           </p>
         </div>
 
         <div id="progression" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Weeks 5–12: The Eight-Week Progression</h2>
+          <h2>Weeks 5–12: The Eight-Week Progression</h2>
 <p>
             The eight-week block has the same shape on every track: three building weeks, a
             deload, three more building weeks, and a final deload with a simple benchmark so you
@@ -548,8 +503,7 @@ const schema = {
             block, with no increase in impact. If your machine tops out below 6%, hold at its
             maximum and lengthen the incline block by five minutes instead. Keep your hands off
             the rails on the grade; leaning on them removes much of the work while the console
-            reports the same numbers. For more incline structures to rotate in from week 9, see our
-            <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>.
+            reports the same numbers. For more incline structures to rotate in from week 9, see our <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Beginner runner track</h3>
           <div class="not-prose overflow-x-auto my-8">
@@ -590,8 +544,7 @@ const schema = {
             is 20 continuous minutes and week 12 backs off to 15. Total session time is held at
             30 minutes the whole way, so what rises is the share of it spent jogging rather than
             the length of the session. If you would rather follow the faster nine-week version,
-            our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K on a treadmill</a>
-            page sets it out week by week; you can also switch to it after week 12, starting at
+            our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K on a treadmill</a> page sets it out week by week; you can also switch to it after week 12, starting at
             the week whose longest run matches yours.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Runner track</h3>
@@ -650,14 +603,12 @@ const schema = {
             single minute of impact. Running time rises only in weeks 7 and 11, by about ten per
             cent each time. The quality session alternates between hills and flat intervals so no
             one structure is repeated often enough to go stale. The interval speeds — 7 to 8 mph —
-            are a typical range; set yours at a pace you could complete on the final rep, and use our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
-            guide for the reasoning and alternative structures.
+            are a typical range; set yours at a pace you could complete on the final rep, and use our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a> guide for the reasoning and alternative structures.
           </p>
         </div>
 
         <div id="weekly-layout" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Laying Out the Week, Strength Days Included</h2>
+          <h2>Laying Out the Week, Strength Days Included</h2>
 <p>
             The guidelines ask for muscle-strengthening work on at least two days a week, and the
             plan assumes you will do it. Strength training matters more alongside a treadmill
@@ -698,9 +649,7 @@ const schema = {
             after the treadmill session or on a day of its own. The combination to avoid is hard
             intervals or hills immediately before heavy lower-body lifting, which degrades
             lifting technique when it matters most, and heavy leg work the day before the
-            runner's quality session. Our
-            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a>
-            guide goes through the ordering question by goal. As a rule, in this plan the
+            runner's quality session. Our <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a> guide goes through the ordering question by goal. As a rule, in this plan the
             treadmill comes first only when it is an easy session or a warm-up.
           </p>
           <p>
@@ -711,7 +660,7 @@ const schema = {
         </div>
 
         <div id="progression-rules" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Progression Rules, and the Limits of the 10% Rule</h2>
+          <h2>The Progression Rules, and the Limits of the 10% Rule</h2>
 <p>
             Every row in the tables follows five rules. They are worth knowing in their own right,
             because they let you adjust the plan — or write the next one — without guessing.
@@ -753,8 +702,7 @@ const schema = {
             walker foundation adds five minutes per session instead — 20% on paper, trivial for
             the body. <strong>It ignores intensity:</strong> a week with the same minutes and a
             new interval session is harder than its total suggests, which is why the plan never
-            adds minutes and intensity in the same week. And <strong>it ignores incline:</strong>
-            treadmill grade is load, so on the walker track a grade increase is treated as that
+            adds minutes and intensity in the same week. And <strong>it ignores incline:</strong> treadmill grade is load, so on the walker track a grade increase is treated as that
             week's change, not as free.
           </p>
           <p>
@@ -774,7 +722,7 @@ const schema = {
         </div>
 
         <div id="deloads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Deload Weeks: Why Weeks 4, 8 and 12 Are Lighter</h2>
+          <h2>Deload Weeks: Why Weeks 4, 8 and 12 Are Lighter</h2>
 <p>
             A deload is a planned lighter week. The plan uses two kinds. In the foundation block,
             week 4 is a <strong>hold</strong>: it repeats week 3, because the volume is already
@@ -811,7 +759,7 @@ const schema = {
         </div>
 
         <div id="repeat-a-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When to Repeat a Week (or Go Back Two)</h2>
+          <h2>When to Repeat a Week (or Go Back Two)</h2>
 <p>
             Repeating a week is the most useful adjustment in any plan, and it is the one people
             are most reluctant to make. Twelve weeks is a template; taking fifteen to finish it
@@ -852,7 +800,7 @@ const schema = {
         </div>
 
         <div id="weight-loss" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Adapting the Plan for Weight Loss</h2>
+          <h2>Adapting the Plan for Weight Loss</h2>
 <p>
             Many people searching for a <strong>treadmill routine for weight loss</strong> want a
             harder version of a normal plan. The evidence points the other way: more minutes,
@@ -896,8 +844,7 @@ const schema = {
             ambitious, and it is a destination for month five or six, not week one.
           </p>
           <p>
-            Our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>
-            page explains why consistency beats intensity, why progress stalls around week six,
+            Our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a> page explains why consistency beats intensity, why progress stalls around week six,
             and what a realistic first three months looks like. Nutrition questions belong with a
             registered dietitian, and anyone with a history of disordered eating should plan
             training with a professional rather than from a web page.
@@ -905,16 +852,14 @@ const schema = {
         </div>
 
         <div id="sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Sessions in the Plan, and Where Each Is Explained</h2>
+          <h2>The Sessions in the Plan, and Where Each Is Explained</h2>
 <p>
             The plan uses six sessions. This page tells you when to do each; the linked pages tell
             you how.
           </p>
           <p>
             <strong>Easy walk and easy run.</strong> Conversational, RPE 4 to 5, zone 2. The
-            backbone of every track and the session people most often do too hard. Our
-            <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 training on a treadmill</a>
-            guide shows how to find your own easy settings in one session, using the talk test
+            backbone of every track and the session people most often do too hard. Our <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 training on a treadmill</a> guide shows how to find your own easy settings in one session, using the talk test
             and the grade.
           </p>
           <p>
@@ -945,14 +890,12 @@ const schema = {
             <strong>What is deliberately missing.</strong> Sprints, HIIT protocols and tempo runs
             do not appear in the first twelve weeks. They are useful tools with a high recovery
             cost, and a plan whose job is building a base gets more from adding minutes. Every
-            session also starts and ends with easy walking; our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            covers why stepping straight off a fast belt catches people out.
+            session also starts and ends with easy walking; our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> covers why stepping straight off a fast belt catches people out.
           </p>
         </div>
 
         <div id="after-week-12" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. After Week 12</h2>
+          <h2>After Week 12</h2>
 <p>
             Week 12's benchmark is the point of it. Walkers should find the week 6 incline
             session clearly easier at the same speed; runners should find their steady 20 minutes
@@ -982,153 +925,167 @@ const schema = {
             of the week easy, and one change at a time.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good treadmill workout plan for beginners?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three sessions a week for the first four weeks, mostly easy walking at a conversational effort, adding about five minutes per session every week or two and nothing else. From week five add a fourth session, then alternate small increases in duration with small increases in incline, and make every fourth week lighter. Beginners who want to run should use walk-run intervals at 4.5 to 5.5 mph inside a fixed 30-minute session.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many days a week should I use a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three days is a sound start and four is a good target for most people. The US guidelines recommend 150 to 300 minutes of moderate activity or 75 to 150 minutes of vigorous activity a week, spread across the week, plus muscle-strengthening work on at least two days. Four sessions of 35 to 45 minutes reaches the lower end comfortably.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill routine for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mostly incline walking, for more minutes than you think, sustained for months. The ACSM's 2009 position stand associated fewer than 150 minutes a week with minimal weight change, 150 to 250 minutes with modest loss, and more than about 250 minutes with clinically significant loss, usually alongside diet changes. Build toward that gradually, keep hard sessions to one a week, keep two strength days, and do not eat back the console's calorie estimate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the 10% rule for increasing training real?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is a reasonable ceiling but a weak law. A randomised trial of novice runners found a programme built on the 10% rule produced almost the same injury rate as a faster standard programme, about 20% in both groups. A later cohort study suggested that jumps of more than 30% over two weeks may raise the risk of some overuse injuries. Avoid big jumps, and at very low volumes add a few minutes per session rather than calculating percentages.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a deload week and do I need one?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A deload week is a planned lighter week, usually every third or fourth week, with the same number of sessions at roughly two-thirds to three-quarters of the previous week's minutes. It lets accumulated fatigue clear while fitness remains, and most people feel better the week after. Keep the sessions and a little of the intensity; just make everything shorter.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I do strength training on the same day as a treadmill workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Pair strength work with easy treadmill days, either after the session or on its own day. Avoid hard intervals or hills immediately before heavy lower-body lifting, and avoid heavy leg work the day before a hard treadmill session. Two or three short whole-body sessions a week meets the guidelines.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I do if a week of the plan feels too hard?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Repeat it. Repeat a week if you could not finish its sessions as written, if the effort ran one or two points higher than the target, if soreness lasted into the next session, or if you missed more than one session. Go back two weeks after an illness or a two-week break. Pain that is sharp, in a joint, or that changes how you move is a reason to see a clinician rather than to repeat.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Workout Plans</h2>
+          <p>All four come from the same instinct — that a plan is working only if it hurts — and all four are fixed by doing slightly less than you feel you could.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Changing speed, incline and duration in the same week</h3>
+              <p>Three changes at once triples the new stress and leaves you no idea which one caused the sore calves. Move one variable per week, in the order frequency, duration, intensity, and let speed rise on its own as the same effort gets faster.</p>
+            </li>
+            <li>
+              <h3>Skipping the deload because you feel fine</h3>
+              <p>Feeling fine in week 8 is the deload working in advance, not a sign you do not need it. Fatigue hides fitness, and the lighter week is when it shows. Keep the sessions, cut the minutes by about a third, and expect week 9 to feel unusually good.</p>
+            </li>
+            <li>
+              <h3>Treating the speed column as a target</h3>
+              <p>The mph ranges are typical guesses at where an effort sits, not instructions. If 3.3 mph feels like RPE 7 on a day it should feel like 5, slow down. The effort column is the plan; heat, sleep and a hard day at work all move the speed that produces it.</p>
+            </li>
+            <li>
+              <h3>Making up missed sessions by doubling up</h3>
+              <p>Squeezing a missed interval session into the day before the long run, or doing two sessions in one day to stay on schedule, concentrates load exactly where the plan spreads it out. Drop the missed session, or repeat the week. The plan is the order of the weeks, not the dates.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Workout Plans</h2>
-          <p class="text-gray-700 leading-relaxed">All four come from the same instinct — that a plan is working only if it hurts — and all four are fixed by doing slightly less than you feel you could.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Changing speed, incline and duration in the same week</h3>
-              <p class="text-gray-700 text-sm m-0">Three changes at once triples the new stress and leaves you no idea which one caused the sore calves. Move one variable per week, in the order frequency, duration, intensity, and let speed rise on its own as the same effort gets faster.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the deload because you feel fine</h3>
-              <p class="text-gray-700 text-sm m-0">Feeling fine in week 8 is the deload working in advance, not a sign you do not need it. Fatigue hides fitness, and the lighter week is when it shows. Keep the sessions, cut the minutes by about a third, and expect week 9 to feel unusually good.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the speed column as a target</h3>
-              <p class="text-gray-700 text-sm m-0">The mph ranges are typical guesses at where an effort sits, not instructions. If 3.3 mph feels like RPE 7 on a day it should feel like 5, slow down. The effort column is the plan; heat, sleep and a hard day at work all move the speed that produces it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Making up missed sessions by doubling up</h3>
-              <p class="text-gray-700 text-sm m-0">Squeezing a missed interval session into the day before the long run, or doing two sessions in one day to stay on schedule, concentrates load exactly where the plan spreads it out. Drop the missed session, or repeat the week. The plan is the order of the weeks, not the dates.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types this plan is built from, and how to combine them.</p>
-            </a>
-            <a href="/couch-to-5k-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Running</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Couch to 5K on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The faster nine-week walk-to-run plan, and the natural next step.</p>
-            </a>
-            <a href="/treadmill-before-or-after-weights/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Strength</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Before or After Weights?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to order cardio and lifting on the same day, by goal.</p>
-            </a>
-            <a href="/best-treadmill-workout-apps/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Apps</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Workout Apps</p>
-              <p class="text-sm text-gray-500 leading-relaxed">iFIT, Peloton, Zwift, Kinomap and the free options: what each does on a treadmill and what it controls.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            A treadmill workout plan works because of its order, not its sessions:
-            <strong class="text-white">four easy foundation weeks, eight progressive weeks, one
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            A treadmill workout plan works because of its order, not its sessions: <strong class="text-white">four easy foundation weeks, eight progressive weeks, one
             change at a time, and a lighter week every fourth</strong>. Pick the walker, beginner
             runner or runner track honestly — the lower one if in doubt — and let the effort
             column, not the speed column, set your numbers.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             The target is the one in the US guidelines: 150 to 300 minutes of moderate activity a
             week, or half that vigorous, plus two strength days. Every track gets there by week
-            12 without a punishing session, and if weight loss is the goal the
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">answer is more easy minutes</a>,
+            12 without a punishing session, and if weight loss is the goal the <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">answer is more easy minutes</a>,
             built the same way, rather than harder ones.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-workouts/">Treadmill Workouts</a></li>
+            <li><a href="/couch-to-5k-treadmill/">Couch to 5K on a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a good treadmill workout plan for beginners?</h3></summary>
+            <p class="faq-a">
+              Three sessions a week for the first four weeks, mostly easy walking at a conversational effort, adding about five minutes per session every week or two and nothing else. From week five add a fourth session, then alternate small increases in duration with small increases in incline, and make every fourth week lighter. Beginners who want to run should use walk-run intervals at 4.5 to 5.5 mph inside a fixed 30-minute session.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How many days a week should I use a treadmill?</h3></summary>
+            <p class="faq-a">
+              Three days is a sound start and four is a good target for most people. The US guidelines recommend 150 to 300 minutes of moderate activity or 75 to 150 minutes of vigorous activity a week, spread across the week, plus muscle-strengthening work on at least two days. Four sessions of 35 to 45 minutes reaches the lower end comfortably.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the best treadmill routine for weight loss?</h3></summary>
+            <p class="faq-a">
+              Mostly incline walking, for more minutes than you think, sustained for months. The ACSM's 2009 position stand associated fewer than 150 minutes a week with minimal weight change, 150 to 250 minutes with modest loss, and more than about 250 minutes with clinically significant loss, usually alongside diet changes. Build toward that gradually, keep hard sessions to one a week, keep two strength days, and do not eat back the console's calorie estimate.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the 10% rule for increasing training real?</h3></summary>
+            <p class="faq-a">
+              It is a reasonable ceiling but a weak law. A randomised trial of novice runners found a programme built on the 10% rule produced almost the same injury rate as a faster standard programme, about 20% in both groups. A later cohort study suggested that jumps of more than 30% over two weeks may raise the risk of some overuse injuries. Avoid big jumps, and at very low volumes add a few minutes per session rather than calculating percentages.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a deload week and do I need one?</h3></summary>
+            <p class="faq-a">
+              A deload week is a planned lighter week, usually every third or fourth week, with the same number of sessions at roughly two-thirds to three-quarters of the previous week's minutes. It lets accumulated fatigue clear while fitness remains, and most people feel better the week after. Keep the sessions and a little of the intensity; just make everything shorter.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I do strength training on the same day as a treadmill workout?</h3></summary>
+            <p class="faq-a">
+              Yes. Pair strength work with easy treadmill days, either after the session or on its own day. Avoid hard intervals or hills immediately before heavy lower-body lifting, and avoid heavy leg work the day before a hard treadmill session. Two or three short whole-body sessions a week meets the guidelines.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should I do if a week of the plan feels too hard?</h3></summary>
+            <p class="faq-a">
+              Repeat it. Repeat a week if you could not finish its sessions as written, if the effort ran one or two points higher than the target, if soreness lasted into the next session, or if you missed more than one session. Go back two weeks after an illness or a two-week break. Pain that is sharp, in a joint, or that changes how you move is a reason to see a clinician rather than to repeat.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Pillar</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types this plan is built from, and how to combine them.</p>
+          </a>
+          <a href="/couch-to-5k-treadmill/" class="card">
+            <div class="c-kicker">Running</div>
+            <div class="c-title">Couch to 5K on a Treadmill</div>
+            <p class="c-blurb">The faster nine-week walk-to-run plan, and the natural next step.</p>
+          </a>
+          <a href="/treadmill-before-or-after-weights/" class="card">
+            <div class="c-kicker">Strength</div>
+            <div class="c-title">Treadmill Before or After Weights?</div>
+            <p class="c-blurb">How to order cardio and lifting on the same day, by goal.</p>
+          </a>
+          <a href="/best-treadmill-workout-apps/" class="card">
+            <div class="c-kicker">Apps</div>
+            <div class="c-title">Best Treadmill Workout Apps</div>
+            <p class="c-blurb">iFIT, Peloton, Zwift, Kinomap and the free options: what each does on a treadmill and what it controls.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

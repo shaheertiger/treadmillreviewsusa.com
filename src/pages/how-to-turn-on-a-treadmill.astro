@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Do You Turn On a Treadmill? (2026): NordicTrack, ProForm and More";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-turn-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Steps", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtoturnonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtoturnonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">How Do You Turn On a Treadmill?</h1>
+      <p class="ed-dek">
+        Most treadmills turn on the same way: wall outlet, a power switch down at the front of the base, the safety key in place, a moment for the console to wake, then start. The steps are simple, but missing any one of them makes a working machine look dead. Here they are in order, with notes for NordicTrack, ProForm, Peloton and walking pads.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Do You Turn On <span class="text-[#5AA9FF]">a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most treadmills turn on the same way: wall outlet, a power switch down at the front of the base, the safety key in place, a moment for the console to wake, then start. The steps are simple, but missing any one of them makes a working machine look dead. Here they are in order, with notes for NordicTrack, ProForm, Peloton and walking pads.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Steps in Order
-          </a>
-          <a href="#wont-turn-on" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            If It Will Not Turn On
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Steps in Order</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Your manual is the authority.</strong> Treadmills differ in
-          where the switch is, how the console starts and what the start controls are called, and
-          the details change between models and console generations. This page describes the
-          general sequence and the arrangements common to many home machines; where your manual
-          says something different, follow the manual. Plug the treadmill directly into a
-          properly grounded wall outlet that meets the requirements in the manual. If you ever
-          need to look inside the machine — at the cord connection, the switch or the motor
-          compartment — switch off and unplug it at the wall first, and leave the controller and
-          its wiring to a technician.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Do You Turn On a Treadmill? The Short Answer</a>
-          <a href="#plug-in" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Where Should a Treadmill Be Plugged In?</a>
-          <a href="#power-switch" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Where Is the Power Switch on a Treadmill?</a>
-          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Does the Safety Key Have to Be In Before It Will Turn On?</a>
-          <a href="#console-boot" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Long Does a Treadmill Console Take to Turn On?</a>
-          <a href="#start-the-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Do You Start the Belt Safely Once It Is On?</a>
-          <a href="#brand-notes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Do You Turn On a NordicTrack, ProForm or Peloton Treadmill?</a>
-          <a href="#sleep-and-off" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Is It Off, Asleep or in Standby? And How Do You Turn It Off?</a>
-          <a href="#wont-turn-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What If the Treadmill Still Will Not Turn On?</a>
-          <a href="#first-time" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Anything Different the First Time, or After a Move?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Turning on a treadmill should take ten seconds, and usually does. The reason people search
           for it is that the first attempt did nothing: the screen stayed dark, or it lit up and
           the belt would not move. Almost always, one step in a short sequence was missed — the
@@ -210,8 +147,38 @@ const schema = {
           machine still will not wake.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Your manual is the authority.</strong> Treadmills differ in
+          where the switch is, how the console starts and what the start controls are called, and
+          the details change between models and console generations. This page describes the
+          general sequence and the arrangements common to many home machines; where your manual
+          says something different, follow the manual. Plug the treadmill directly into a
+          properly grounded wall outlet that meets the requirements in the manual. If you ever
+          need to look inside the machine — at the cord connection, the switch or the motor
+          compartment — switch off and unplug it at the wall first, and leave the controller and
+          its wiring to a technician.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Do You Turn On a Treadmill? The Short Answer</a></li>
+            <li><a href="#plug-in">Where Should a Treadmill Be Plugged In?</a></li>
+            <li><a href="#power-switch">Where Is the Power Switch on a Treadmill?</a></li>
+            <li><a href="#safety-key">Does the Safety Key Have to Be In Before It Will Turn On?</a></li>
+            <li><a href="#console-boot">How Long Does a Treadmill Console Take to Turn On?</a></li>
+            <li><a href="#start-the-belt">How Do You Start the Belt Safely Once It Is On?</a></li>
+            <li><a href="#brand-notes">How Do You Turn On a NordicTrack, ProForm or Peloton Treadmill?</a></li>
+            <li><a href="#sleep-and-off">Is It Off, Asleep or in Standby? And How Do You Turn It Off?</a></li>
+            <li><a href="#wont-turn-on">What If the Treadmill Still Will Not Turn On?</a></li>
+            <li><a href="#first-time">Anything Different the First Time, or After a Move?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Do You Turn On a Treadmill? The Short Answer</h2>
+          <h2>How Do You Turn On a Treadmill? The Short Answer</h2>
 <p>
             <strong>Plug the treadmill directly into a wall outlet, switch on the main power switch
             (usually on the front of the base near where the cord enters the frame), make sure the
@@ -234,15 +201,13 @@ const schema = {
           <p>
             If the console stays dark after all five steps, the cause is usually one of a short
             list — the key, a tripped reset switch on the machine, the outlet or breaker, the cord
-            — and our guide to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that will not turn on</a>
-            works through them in order. If the console lights but the belt will not move, that is
+            — and our guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that will not turn on</a> works through them in order. If the console lights but the belt will not move, that is
             a different problem with a different set of causes, covered further down.
           </p>
         </div>
 
         <div id="plug-in" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Where Should a Treadmill Be Plugged In?</h2>
+          <h2>Where Should a Treadmill Be Plugged In?</h2>
 <p>
             Directly into a grounded wall outlet, on a circuit that meets the requirements in your
             manual. This is the first step and the one most often done wrong, because the natural
@@ -279,7 +244,7 @@ const schema = {
         </div>
 
         <div id="power-switch" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Where Is the Power Switch on a Treadmill?</h2>
+          <h2>Where Is the Power Switch on a Treadmill?</h2>
 <p>
             On most motorised home treadmills the main power switch is at the front of the base,
             on the motor end, close to where the power cord enters the frame. It is typically a
@@ -319,7 +284,7 @@ const schema = {
         </div>
 
         <div id="safety-key" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Does the Safety Key Have to Be In Before It Will Turn On?</h2>
+          <h2>Does the Safety Key Have to Be In Before It Will Turn On?</h2>
 <p>
             On many treadmills, yes. The safety key — a magnetic or plug-in key on a cord with a
             clip at the other end — sits in a slot on the console, and when it is removed the
@@ -346,15 +311,13 @@ const schema = {
           </ul>
           <p>
             If the key is in place and the machine still behaves as if it is missing, or if the key
-            has been lost, our guide to a
-            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>
-            covers cleaning the slot, worn keys, the switch behind it and ordering the right
+            has been lost, our guide to a <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a> covers cleaning the slot, worn keys, the switch behind it and ordering the right
             replacement. Do not bypass the switch with tape or a loose magnet.
           </p>
         </div>
 
         <div id="console-boot" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Long Does a Treadmill Console Take to Turn On?</h2>
+          <h2>How Long Does a Treadmill Console Take to Turn On?</h2>
 <p>
             A simple LED or LCD console usually lights within a second or two of the power switch
             going on. A touchscreen console can take considerably longer — commonly somewhere from
@@ -396,7 +359,7 @@ const schema = {
         </div>
 
         <div id="start-the-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Do You Start the Belt Safely Once It Is On?</h2>
+          <h2>How Do You Start the Belt Safely Once It Is On?</h2>
 <p>
             Stand on the side rails, not on the belt, clip the safety key to your clothing, then
             press start. Most treadmills give a short countdown and then move the belt at a slow
@@ -424,13 +387,12 @@ const schema = {
           <p>
             If the console is lit and accepts the start command but the belt does not move, or
             moves and stops, that is not a turning-on problem. The causes — the key switch, the
-            drive belt, the motor, the controller, a speed sensor — are covered in our guide to a
-            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill that turns on but the belt will not move</a>.
+            drive belt, the motor, the controller, a speed sensor — are covered in our guide to a <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill that turns on but the belt will not move</a>.
           </p>
         </div>
 
         <div id="brand-notes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Do You Turn On a NordicTrack, ProForm or Peloton Treadmill?</h2>
+          <h2>How Do You Turn On a NordicTrack, ProForm or Peloton Treadmill?</h2>
 <p>
             The same general sequence applies, and the honest answer for any brand is that the
             manual for your model number is the authority. Brand ranges change, console generations
@@ -449,11 +411,7 @@ const schema = {
           </p>
           <p>
             Beyond that, layouts vary by model and year, so find the model number (usually on a
-            label on the frame) and use the manual for that exact model. Our guide on
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a>
-            covers the reset switch, power cycling and the console reset in detail, and our
-            <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a>
-            guide does the same for ProForm, including consoles that look dead because they are
+            label on the frame) and use the manual for that exact model. Our guide on <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a> covers the reset switch, power cycling and the console reset in detail, and our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a> guide does the same for ProForm, including consoles that look dead because they are
             asleep.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Peloton</h3>
@@ -469,8 +427,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other brands and walking pads</h3>
           <p>
             Horizon owners have a model-by-model walkthrough taken from Horizon’s own manuals in our
-            guide to
-            <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">how to start a Horizon treadmill</a>.
+            guide to <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">how to start a Horizon treadmill</a>.
             Other <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a>, and the many walking-pad brands, generally follow one of the
             two patterns on this page: a base switch, a safety key and a console start
             control, or a plug-in-and-standby design with a remote or app. If in doubt, the
@@ -479,7 +436,7 @@ const schema = {
         </div>
 
         <div id="sleep-and-off" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Is It Off, Asleep or in Standby? And How Do You Turn It Off?</h2>
+          <h2>Is It Off, Asleep or in Standby? And How Do You Turn It Off?</h2>
 <p>
             Many treadmill consoles go to sleep after a period without use, and a sleeping console
             can look exactly like a machine that is switched off. Touching the screen, pressing a
@@ -513,7 +470,7 @@ const schema = {
         </div>
 
         <div id="wont-turn-on" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What If the Treadmill Still Will Not Turn On?</h2>
+          <h2>What If the Treadmill Still Will Not Turn On?</h2>
 <p>
             Work through the free checks in order before assuming anything has failed. A dead
             treadmill is far more often a key, a switch or an outlet than a broken part.
@@ -534,9 +491,7 @@ const schema = {
           <p>
             If those six checks do not bring it to life, the problem is likely to be inside the
             machine — an internal fuse, the console cable, the controller board — and our full
-            guide to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that will not turn on</a>
-            takes it from there, including when the repair is worth paying for. Brand-specific
+            guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that will not turn on</a> takes it from there, including when the repair is worth paying for. Brand-specific
             guides help with NordicTrack and ProForm consoles in particular, because their reset
             routines and console behaviour have their own quirks.
           </p>
@@ -549,7 +504,7 @@ const schema = {
         </div>
 
         <div id="first-time" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Anything Different the First Time, or After a Move?</h2>
+          <h2>Anything Different the First Time, or After a Move?</h2>
 <p>
             Yes, a few checks. A treadmill that has just been assembled, moved or stored is the
             one most likely not to start, and usually for a reason that takes a minute to fix.
@@ -558,9 +513,7 @@ const schema = {
             <strong>After assembly,</strong> the most common culprit is the console cable. It runs
             up through an upright to a connector at the console, and if it is not fully pushed
             together, or was pinched when the upright was bolted on, the console stays dark. Our
-            guide on
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a>
-            covers routing it so this does not happen.
+            guide on <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a> covers routing it so this does not happen.
           </p>
           <p>
             <strong>After a move,</strong> check the same cable, check that nothing was knocked
@@ -582,141 +535,155 @@ const schema = {
             but grinding, scraping or a smell of hot electrics means stop and investigate.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you turn on a NordicTrack treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On many NordicTrack treadmills, plug the machine directly into a wall outlet, switch on the power switch at the front of the base near the power cord, put the safety key in its slot on the console, and wait for the console to boot. Then choose a workout or manual mode and press start. Check the manual for your model number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where is the on switch on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On most motorised home treadmills the main power switch is at the front of the base, near where the power cord enters the frame, often low down on or beneath the motor hood. It is usually not on the console. Some walking pads use a side switch, a remote or an app instead. The parts diagram in the manual shows its location.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why will my treadmill not turn on even though it is plugged in?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The most common reasons are a missing or badly seated safety key, the power switch at the base being off, a tripped reset button on the machine, a dead or tripped outlet, or a power strip that cannot carry the load. A sleeping or updating console can also look dead. Work through those before suspecting an internal fault.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill turn on without the safety key?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the design. Some treadmills show nothing without the key, some light the console but refuse to start the belt, and some display a message asking for it. In all cases the belt should not run without the key in place. If the key is fitted and the machine acts as if it is missing, the key or switch may need attention.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does a treadmill touchscreen take to turn on?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Simple LED consoles light almost immediately. Touchscreen consoles boot like a small computer and commonly take from several seconds to a minute or more, longer when installing a software update. Leave the machine alone during an update, because cutting power partway through can cause a genuine software fault on the console.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you turn off a treadmill after every use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Stopping the belt and removing the safety key after every session is sensible, especially with children in the house. Switching off at the base switch is a good habit, though some owners leave connected machines on so they update overnight. Unplug at the wall before cleaning, adjusting or moving it, and during long absences.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Turning On a Treadmill</h2>
+          <p>Most treadmills that seem not to turn on are working machines with one step missed. These are the ones that catch people out.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Plugging it into a power strip or extension cord</h3>
+              <p>A treadmill motor draws a large current at start-up, and strips and thin cords add resistance and heat. The machine may stay dark, behave erratically or trip something. Plug it directly into a grounded wall outlet that meets the manual's circuit requirements, and check whether the manual allows a surge protector.</p>
+            </li>
+            <li>
+              <h3>Looking for the power switch on the console</h3>
+              <p>On most home treadmills the main switch is at floor level on the front of the base, near the power cord. Owners press every console button and conclude the machine is broken. Check the base first, and look for a reset button beside the switch that may have tripped.</p>
+            </li>
+            <li>
+              <h3>Cutting the power during a console update</h3>
+              <p>A touchscreen that seems frozen on a logo may be updating. Switching it off partway through is one of the few ways to create a real software fault. Give it time, and check the manufacturer's support guidance before power-cycling a console that appears stuck on an update.</p>
+            </li>
+            <li>
+              <h3>Clipping the safety key to the frame</h3>
+              <p>People clip the key to the handrail so it stops getting in the way. The machine turns on and runs, but the emergency stop can no longer work, because a fall will not pull the key out. Clip it to your clothing at the waist every session.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Turning On a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most treadmills that seem not to turn on are working machines with one step missed. These are the ones that catch people out.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Plugging it into a power strip or extension cord</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill motor draws a large current at start-up, and strips and thin cords add resistance and heat. The machine may stay dark, behave erratically or trip something. Plug it directly into a grounded wall outlet that meets the manual's circuit requirements, and check whether the manual allows a surge protector.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Looking for the power switch on the console</h3>
-              <p class="text-gray-700 text-sm m-0">On most home treadmills the main switch is at floor level on the front of the base, near the power cord. Owners press every console button and conclude the machine is broken. Check the base first, and look for a reset button beside the switch that may have tripped.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cutting the power during a console update</h3>
-              <p class="text-gray-700 text-sm m-0">A touchscreen that seems frozen on a logo may be updating. Switching it off partway through is one of the few ways to create a real software fault. Give it time, and check the manufacturer's support guidance before power-cycling a console that appears stuck on an update.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Clipping the safety key to the frame</h3>
-              <p class="text-gray-700 text-sm m-0">People clip the key to the handrail so it stops getting in the way. The machine turns on and runs, but the emergency stop can no longer work, because a fall will not pull the key out. Clip it to your clothing at the waist every session.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Fault Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Will Not Turn On?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six checks in order, from the safety key to the controller, and when to call a technician.</p>
-            </a>
-            <a href="/how-to-reset-nordictrack-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">NordicTrack</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Reset a NordicTrack Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The reset switch, a proper power cycle and a console reset, in the right order.</p>
-            </a>
-            <a href="/treadmill-safety-key-not-working/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Safety</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Safety Key Not Working or Lost?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Seating, dust, worn keys and the switch behind them, and how to order the right key.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Wall outlet, base switch, safety key, a moment for the console,
             then start.</strong> On most home treadmills the power switch is at the front of the
             base near the cord, not on the console, and the safety key has to be in place before
             the belt will run.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If the screen stays dark, check the key, the switch, the reset button and the outlet
             before suspecting a fault, and give a touchscreen time to boot or update. For anything
-            beyond that, our guide to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">treadmill that will not turn on</a>
-            takes the diagnosis further.
+            beyond that, our guide to a <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">treadmill that will not turn on</a> takes the diagnosis further.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-wont-turn-on/">Treadmill Will Not Turn On?</a></li>
+            <li><a href="/how-to-reset-nordictrack-treadmill/">How to Reset a NordicTrack Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you turn on a NordicTrack treadmill?</h3></summary>
+            <p class="faq-a">
+              On many NordicTrack treadmills, plug the machine directly into a wall outlet, switch on the power switch at the front of the base near the power cord, put the safety key in its slot on the console, and wait for the console to boot. Then choose a workout or manual mode and press start. Check the manual for your model number.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where is the on switch on a treadmill?</h3></summary>
+            <p class="faq-a">
+              On most motorised home treadmills the main power switch is at the front of the base, near where the power cord enters the frame, often low down on or beneath the motor hood. It is usually not on the console. Some walking pads use a side switch, a remote or an app instead. The parts diagram in the manual shows its location.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why will my treadmill not turn on even though it is plugged in?</h3></summary>
+            <p class="faq-a">
+              The most common reasons are a missing or badly seated safety key, the power switch at the base being off, a tripped reset button on the machine, a dead or tripped outlet, or a power strip that cannot carry the load. A sleeping or updating console can also look dead. Work through those before suspecting an internal fault.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill turn on without the safety key?</h3></summary>
+            <p class="faq-a">
+              It depends on the design. Some treadmills show nothing without the key, some light the console but refuse to start the belt, and some display a message asking for it. In all cases the belt should not run without the key in place. If the key is fitted and the machine acts as if it is missing, the key or switch may need attention.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does a treadmill touchscreen take to turn on?</h3></summary>
+            <p class="faq-a">
+              Simple LED consoles light almost immediately. Touchscreen consoles boot like a small computer and commonly take from several seconds to a minute or more, longer when installing a software update. Leave the machine alone during an update, because cutting power partway through can cause a genuine software fault on the console.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should you turn off a treadmill after every use?</h3></summary>
+            <p class="faq-a">
+              Stopping the belt and removing the safety key after every session is sensible, especially with children in the house. Switching off at the base switch is a good habit, though some owners leave connected machines on so they update overnight. Unplug at the wall before cleaning, adjusting or moving it, and during long absences.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-wont-turn-on/" class="card">
+            <div class="c-kicker">Fault Diagnosis</div>
+            <div class="c-title">Treadmill Will Not Turn On?</div>
+            <p class="c-blurb">Six checks in order, from the safety key to the controller, and when to call a technician.</p>
+          </a>
+          <a href="/how-to-reset-nordictrack-treadmill/" class="card">
+            <div class="c-kicker">NordicTrack</div>
+            <div class="c-title">How to Reset a NordicTrack Treadmill</div>
+            <p class="c-blurb">The reset switch, a proper power cycle and a console reset, in the right order.</p>
+          </a>
+          <a href="/treadmill-safety-key-not-working/" class="card">
+            <div class="c-kicker">Safety</div>
+            <div class="c-title">Treadmill Safety Key Not Working or Lost?</div>
+            <p class="c-blurb">Seating, dust, worn keys and the switch behind them, and how to order the right key.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Life Fitness 95T and 95Ti Treadmill (2026): Buying One Remanufactured";
 const description =
@@ -203,6 +202,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/life-fitness-95t-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -224,66 +229,65 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Prices", link: "#models" }}
+  stickyCta={{ text: "Best Used Club Treadmill: Life Fitness 95T Elevation Series Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-lifefitness95ttreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-lifefitness95ttreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer’s Guide</span>
+      </nav>
+      <h1 class="ed-title">Life Fitness 95T and 95Ti: Buying a Remanufactured Club Treadmill</h1>
+      <p class="ed-dek">
+        The Life Fitness 95T, sold as the Elevation Series treadmill with Achieve, Inspire, Engage and Discover consoles, and the older 95Ti were fixtures of American gyms. Both are discontinued, and both are now sold remanufactured for a fraction of their new price. Here is what the figures are, how the consoles differ, what remanufacturers charged on 5 November 2026, and how to buy one well.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer’s Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Life Fitness 95T and 95Ti: <span class="text-[#5AA9FF]">Buying a Remanufactured Club Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Life Fitness 95T, sold as the Elevation Series treadmill with Achieve, Inspire, Engage and Discover consoles, and the older 95Ti were fixtures of American gyms. Both are discontinued, and both are now sold remanufactured for a fraction of their new price. Here is what the figures are, how the consoles differ, what remanufacturers charged on 5 November 2026, and how to buy one well.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#consoles" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Consoles Explained
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          If you search for a Life Fitness 95T, you will find dozens of listings — "95T Inspire", "95T Discover SE
+          inc WiFi", "95Ti remanufactured" — and no way to buy one new from Life Fitness's US catalogue, which marks
+          the Elevation Series treadmill as discontinued and points to the Integrity+ as its replacement. These
+          are club treadmills built for a gym floor, and that is the attraction: a 4 HP AC drive, a 22 by 60-inch
+          deck and a 400 lb rating for around $4,000 remanufactured. This guide covers what the 95T and 95Ti are,
+          how the console names fit together, what sellers were asking on 5 November 2026, and the checks that
+          matter when you buy a ten-year-old gym machine for a house.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Used Club Treadmill:</span> <a href="#life-fitness-95t">Life Fitness 95T Elevation Series Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lowest Price:</span> <a href="#life-fitness-95ti">Life Fitness 95Ti Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Buy New Instead:</span> <a href="#life-fitness-run-cx">Life Fitness Run CX</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we read Life Fitness's US catalogue page for the Elevation Series treadmill (marked
           discontinued), Life Fitness's US Facility Shop listing for the same machine, Fitness Superstore's US
@@ -296,67 +300,25 @@ const schema = {
           in the text and kept off the cards. Remanufactured prices are individual sellers' asking prices, change
           constantly and exclude freight. We have not tested any 95T or 95Ti. As an Amazon Associate we earn from
           qualifying purchases; that does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Used Club Treadmill:</span>
-            <a href="#life-fitness-95t" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness 95T Elevation Series Treadmill</a>
-            <a href="#life-fitness-95t" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest Price:</span>
-            <a href="#life-fitness-95ti" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness 95Ti Treadmill</a>
-            <a href="#life-fitness-95ti" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buy New Instead:</span>
-            <a href="#life-fitness-run-cx" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness Run CX</a>
-            <a href="#life-fitness-run-cx" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Can You Still Buy a Life Fitness 95T? The Short Answer</a>
-          <a href="#what-is-95t" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. 95T, 95Ti, Elevation, Inspire, Discover: What the Names Mean</a>
-          <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Life Fitness 95T and 95Ti Specifications</a>
-          <a href="#consoles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 95T Consoles Compared</a>
-          <a href="#models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Remanufactured Prices, and the New Alternative</a>
-          <a href="#buying-remanufactured" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How to Buy a Remanufactured 95T or 95Ti</a>
-          <a href="#home-install" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Putting a 95T in Your Home</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Remanufactured 95T or New Life Fitness?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Can You Still Buy a Life Fitness 95T? The Short Answer</a></li>
+            <li><a href="#what-is-95t">95T, 95Ti, Elevation, Inspire, Discover: What the Names Mean</a></li>
+            <li><a href="#specs">Life Fitness 95T and 95Ti Specifications</a></li>
+            <li><a href="#consoles">The 95T Consoles Compared</a></li>
+            <li><a href="#models">Remanufactured Prices, and the New Alternative</a></li>
+            <li><a href="#buying-remanufactured">How to Buy a Remanufactured 95T or 95Ti</a></li>
+            <li><a href="#home-install">Putting a 95T in Your Home</a></li>
+            <li><a href="#alternatives">Remanufactured 95T or New Life Fitness?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          If you search for a Life Fitness 95T, you will find dozens of listings — "95T Inspire", "95T Discover SE
-          inc WiFi", "95Ti remanufactured" — and no way to buy one new from Life Fitness's US catalogue, which marks
-          the Elevation Series treadmill as discontinued and points to the Integrity+ as its replacement. These
-          are club treadmills built for a gym floor, and that is the attraction: a 4 HP AC drive, a 22 by 60-inch
-          deck and a 400 lb rating for around $4,000 remanufactured. This guide covers what the 95T and 95Ti are,
-          how the console names fit together, what sellers were asking on 5 November 2026, and the checks that
-          matter when you buy a ten-year-old gym machine for a house.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Can You Still Buy a Life Fitness 95T? The Short Answer</h2>
+          <h2>Can You Still Buy a Life Fitness 95T? The Short Answer</h2>
 <p>
             <strong>Only remanufactured or used, in practice. Life Fitness's US catalogue marks the Elevation Series
             (95T) treadmill discontinued, and the 95Ti is older still. A remanufactured 95T at about $4,100 to
@@ -380,7 +342,7 @@ const schema = {
         </div>
 
         <div id="what-is-95t" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. 95T, 95Ti, Elevation, Inspire, Discover: What the Names Mean</h2>
+          <h2>95T, 95Ti, Elevation, Inspire, Discover: What the Names Mean</h2>
 <p>
             Life Fitness's naming confuses most buyers, because the treadmill and its console are named
             separately and sellers combine them freely.
@@ -405,17 +367,15 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What replaced it</h3>
           <p>
-            Life Fitness names the <a href="/life-fitness-integrity-series-treadmill/" class="text-[#0F62FE] font-medium">Integrity+ treadmill</a>
-            as the Elevation Series' replacement, and its US page also highlighted the Aspire and the HD Tread.
-            For home buyers Life Fitness's current club-grade option is the
-            <a href="/life-fitness-club-series-plus-treadmill/" class="text-[#0F62FE] font-medium">Club Series+</a>.
+            Life Fitness names the <a href="/life-fitness-integrity-series-treadmill/" class="text-[#0F62FE] font-medium">Integrity+ treadmill</a> as the Elevation Series' replacement, and its US page also highlighted the Aspire and the HD Tread.
+            For home buyers Life Fitness's current club-grade option is the <a href="/life-fitness-club-series-plus-treadmill/" class="text-[#0F62FE] font-medium">Club Series+</a>.
             Our <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness brand guide</a> covers
             the whole range.
           </p>
         </div>
 
         <div id="specs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Life Fitness 95T and 95Ti Specifications</h2>
+          <h2>Life Fitness 95T and 95Ti Specifications</h2>
 <p>
             The table gives the figures Life Fitness and sellers agree on, with conflicts noted. The 95T's figures
             are the same whichever console is fitted, apart from machine weight.
@@ -448,15 +408,12 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What those figures mean at home</h3>
           <p>
             A 4 HP continuous AC drive is built for a gym where the treadmill runs most of the day. In a home it
-            is overbuilt, which is the point: it should run quietly at any speed for years. The 60-inch deck suits
-            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> and fast intervals, and 400 lb is a higher rating than most home treadmills. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
-            explains why AC and DC ratings are not directly comparable.
+            is overbuilt, which is the point: it should run quietly at any speed for years. The 60-inch deck suits <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> and fast intervals, and 400 lb is a higher rating than most home treadmills. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a> explains why AC and DC ratings are not directly comparable.
           </p>
         </div>
 
         <div id="consoles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 95T Consoles Compared</h2>
+          <h2>The 95T Consoles Compared</h2>
 <p>
             The console is what most separates one 95T listing from another, and what most affects its price and
             long-term usefulness.
@@ -505,7 +462,7 @@ const schema = {
         </div>
 
         <div id="models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Remanufactured Prices, and the New Alternative</h2>
+          <h2>Remanufactured Prices, and the New Alternative</h2>
 <p>
             The cards below cover the 95T, the 95Ti and the new Life Fitness treadmill we would compare them with.
             Remanufactured prices are what sellers asked on 5 November 2026, before freight. Life Fitness does not
@@ -516,91 +473,76 @@ const schema = {
             Other listings in search results suggest a similar range: Keystone Fitness in Canada showed
             refurbished 95T Discover units at $3,999 to $4,449 (currency not stated), and SGroup Fitness listed a
             95T Inspire as out of stock. Prices for private sales on local marketplaces are often far lower, but
-            come with no warranty and no inspection; our
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">guide to where to buy a used treadmill</a>
-            compares the options.
+            come with no warranty and no inspection; our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">guide to where to buy a used treadmill</a> compares the options.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="buying-remanufactured" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How to Buy a Remanufactured 95T or 95Ti</h2>
+          <h2>How to Buy a Remanufactured 95T or 95Ti</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Know what "remanufactured" includes</h3>
           <p>
             A remanufactured treadmill should have been stripped down, cleaned, fitted with new wear parts and
             tested. Fitness Superstore describes a remanufacturing process on each listing; ask any seller for the
             list of parts replaced on your unit — belt, deck, rollers, bearings, <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> if applicable — and
-            get it in writing. "Refurbished" and "serviced" can mean much less. Our
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
-            explains the grades.
+            get it in writing. "Refurbished" and "serviced" can mean much less. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a> explains the grades.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Warranty</h3>
           <p>
@@ -614,9 +556,7 @@ const schema = {
             These machines weigh more than 430 lb. GymStore charged a fixed $699 for shipping on its 95Ti, and
             Fitness Superstore offered delivery options including room-of-choice and stair carry at extra cost,
             shipping the machine mostly assembled with the arms removed. Add delivery to the price before
-            comparing sellers, and measure doorways and stairs. Our
-            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            covers what to arrange.
+            comparing sellers, and measure doorways and stairs. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> covers what to arrange.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What to inspect</h3>
           <ul>
@@ -628,8 +568,7 @@ const schema = {
             <li>Ask for the serial number, so you can check its age and confirm it is not covered by a recall.</li>
           </ul>
           <p>
-            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            has the full list.
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> has the full list.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Recalls</h3>
           <p>
@@ -641,7 +580,7 @@ const schema = {
         </div>
 
         <div id="home-install" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Putting a 95T in Your Home</h2>
+          <h2>Putting a 95T in Your Home</h2>
 <p>
             The 95T and 95Ti are gym machines, and they bring gym requirements into a house.
           </p>
@@ -655,181 +594,189 @@ const schema = {
             think twice about an upper floor in an older house.</li>
           </ul>
           <p>
-            Our <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">guide to putting a gym treadmill in a home</a>
-            covers circuits, floors and access routes in detail, and our
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a> guide
+            Our <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">guide to putting a gym treadmill in a home</a> covers circuits, floors and access routes in detail, and our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a> guide
             compares other club brands.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Remanufactured 95T or New Life Fitness?</h2>
+          <h2>Remanufactured 95T or New Life Fitness?</h2>
 <p>
             For about $4,000, a remanufactured 95T Inspire gets you a club AC drive, a 22 by 60-inch deck, 14 mph
-            and a 400 lb rating, with a year of seller's warranty. On 5 November 2026 the new
-            <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness Run CX</a>
-            was $3,919 with a lifetime frame warranty, 10 years on the motor, 7 on parts, delivery and installation,
+            and a 400 lb rating, with a year of seller's warranty. On 5 November 2026 the new <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness Run CX</a> was $3,919 with a lifetime frame warranty, 10 years on the motor, 7 on parts, delivery and installation,
             and no 20-amp circuit. For most home users that is the better buy. The 95T wins if you want a true club
             treadmill, will run fast or for many hours a week, or can buy one well below $4,000.
           </p>
           <p>
-            Other club treadmills sold remanufactured in the same price range include the
-            <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex 770T and R Series</a>, also now
-            under Life Fitness's ownership, and machines from
-            <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> and
-            <a href="/star-trac-treadmills/" class="text-[#0F62FE] font-medium">Star Trac</a>. The same buying rules
-            apply. If you are still deciding between new and used at all, our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs. used treadmill guide</a>
-            sets out when each makes sense.
+            Other club treadmills sold remanufactured in the same price range include the <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium">Cybex 770T and R Series</a>, also now
+            under Life Fitness's ownership, and machines from <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> and <a href="/star-trac-treadmills/" class="text-[#0F62FE] font-medium">Star Trac</a>. The same buying rules
+            apply. If you are still deciding between new and used at all, our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs. used treadmill guide</a> sets out when each makes sense.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Life Fitness 95T discontinued?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. On 5 November 2026 Life Fitness’s US catalogue page for the Elevation Series treadmill, the 95T, was headed "Product Discontinued" and named the Integrity+ as its replacement. Life Fitness’s business-only Facility Shop still listed one with the SE3 HD console at $16,999. Home buyers find the 95T remanufactured or used.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much is a remanufactured Life Fitness 95T?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 5 November 2026 Fitness Superstore listed remanufactured 95Ts at $4,099 with the Achieve or Inspire console, $4,199 with the Engage or Discover SI and $4,999 with the Discover SE3, each with a one-year parts and on-site labour warranty. Freight is extra and prices change often.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the Life Fitness 95T and 95Ti?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The 95Ti is the older model, with a 20-inch-wide belt and an LED console. The 95T is the Elevation Series treadmill that followed, with a 22 by 60-inch deck, the DX3 belt and deck system and a choice of consoles. Both have 4 HP AC motors, 15% incline and 400 lb ratings.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the Life Fitness 95T specs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Life Fitness lists a 4 HP (8.0 HP peak) AC motor with MagnaDrive controller, a 22 by 60-inch running surface, 0.5 to 14 mph, 15% incline, a 400 lb maximum user and a dedicated 120 V, 20 A circuit. Remanufacturer listings agree and give an 80 by 37-inch footprint and 442 to 444 lb depending on the console.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the Life Fitness 95T Inspire?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is the 95T Elevation Series treadmill fitted with the Inspire console, a display with a long program list including terrain courses, heart-rate workouts and fitness tests, and no reliance on a network. Fitness Superstore listed a remanufactured 95T Inspire at $4,099 on 5 November 2026.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does "95T Discover SE inc WiFi" mean?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It describes a 95T Elevation treadmill with the Discover SE touchscreen console and network connectivity; "inc" is UK shorthand for "including". The running hardware is the same as any 95T. Before paying extra, check which of the console’s apps and TV features still work on the unit you are buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a remanufactured Life Fitness 95Ti worth buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be at $2,600 to $3,800 from a remanufacturer with a written warranty, if you have a dedicated 20-amp circuit. Sellers disagree on its top speed, 12 or 14 mph, so confirm it on the unit. For about $3,900, a new Life Fitness Run CX is the simpler choice for most homes.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Used Life Fitness 95T</h2>
+          <p>A remanufactured 95T can be excellent value. These are the ways buyers end up paying more for less.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying for a touchscreen that no longer does much</h3>
+              <p>Discover consoles add up to $900 over an Inspire on the listings we saw, but their TV, app and network features were designed for gyms in the 2010s. Pay for one only after seeing the features you want working on that unit.</p>
+            </li>
+            <li>
+              <h3>Forgetting the 20-amp circuit</h3>
+              <p>Life Fitness lists a dedicated 120 V, 20 A circuit for the 95T. Running it on a shared 15-amp household circuit risks tripped breakers and electronics faults. Price the electrician in before you compare it with a new home treadmill.</p>
+            </li>
+            <li>
+              <h3>Comparing prices without freight</h3>
+              <p>A 95Ti at $2,599 plus $699 shipping costs nearly as much as a 95T elsewhere with cheaper delivery. Ask every seller for a delivered price, including stairs or room-of-choice placement if you need it.</p>
+            </li>
+            <li>
+              <h3>Buying without a written warranty</h3>
+              <p>No Life Fitness warranty transfers to a second-hand buyer. The remanufacturer’s warranty is all you have, so get its length, what it covers and who does on-site labour in writing, along with the list of replaced parts.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Used Life Fitness 95T</h2>
-          <p class="text-gray-700 leading-relaxed">A remanufactured 95T can be excellent value. These are the ways buyers end up paying more for less.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for a touchscreen that no longer does much</h3>
-              <p class="text-gray-700 text-sm m-0">Discover consoles add up to $900 over an Inspire on the listings we saw, but their TV, app and network features were designed for gyms in the 2010s. Pay for one only after seeing the features you want working on that unit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the 20-amp circuit</h3>
-              <p class="text-gray-700 text-sm m-0">Life Fitness lists a dedicated 120 V, 20 A circuit for the 95T. Running it on a shared 15-amp household circuit risks tripped breakers and electronics faults. Price the electrician in before you compare it with a new home treadmill.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing prices without freight</h3>
-              <p class="text-gray-700 text-sm m-0">A 95Ti at $2,599 plus $699 shipping costs nearly as much as a 95T elsewhere with cheaper delivery. Ask every seller for a delivered price, including stairs or room-of-choice placement if you need it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying without a written warranty</h3>
-              <p class="text-gray-700 text-sm m-0">No Life Fitness warranty transfers to a second-hand buyer. The remanufacturer’s warranty is all you have, so get its length, what it covers and who does on-site labour in writing, along with the list of replaced parts.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/life-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The current Life Fitness home and club range, and how it is sold.</p>
-            </a>
-            <a href="/refurbished-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Refurbished Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What remanufactured, refurbished and serviced mean, and the warranty to ask for.</p>
-            </a>
-            <a href="/gym-treadmill-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">At home</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Gym Treadmill for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Circuits, floors and access routes for a club treadmill in a house.</p>
-            </a>
-            <a href="/cybex-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Club brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Cybex Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The other discontinued club treadmill Life Fitness now owns, bought remanufactured.</p>
-            </a>
-            <a href="/life-fitness-integrity-series-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Replacement</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Integrity Series</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The Integrity+ that Life Fitness names as the 95T’s replacement.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The Life Fitness 95T (Elevation Series) and older 95Ti are discontinued club
           treadmills, sold remanufactured: about $4,100 to $5,000 for a 95T and from about $2,600 for a 95Ti on
           5 November 2026.</strong> Both have 4 HP AC drives, 15% incline and 400 lb ratings; the 95T adds a
           22 by 60-inch deck. Buy from a remanufacturer with a written warranty and a parts list, choose the
           Inspire console unless you will really use a touchscreen, and have a dedicated 20-amp circuit ready.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            For most home buyers, the new
-          <a href="/life-fitness-run-cx-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Life Fitness Run CX</a>
-          at $3,919 is the better use of similar money, with a lifetime frame warranty and a standard outlet. Buy
+          <p>
+            For most home buyers, the new <a href="/life-fitness-run-cx-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Life Fitness Run CX</a> at $3,919 is the better use of similar money, with a lifetime frame warranty and a standard outlet. Buy
           the 95T when you specifically want the club machine.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/life-fitness/">Life Fitness Treadmills</a></li>
+            <li><a href="/refurbished-treadmills/">Refurbished Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the Life Fitness 95T discontinued?</h3></summary>
+            <p class="faq-a">
+              Yes. On 5 November 2026 Life Fitness’s US catalogue page for the Elevation Series treadmill, the 95T, was headed "Product Discontinued" and named the Integrity+ as its replacement. Life Fitness’s business-only Facility Shop still listed one with the SE3 HD console at $16,999. Home buyers find the 95T remanufactured or used.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much is a remanufactured Life Fitness 95T?</h3></summary>
+            <p class="faq-a">
+              On 5 November 2026 Fitness Superstore listed remanufactured 95Ts at $4,099 with the Achieve or Inspire console, $4,199 with the Engage or Discover SI and $4,999 with the Discover SE3, each with a one-year parts and on-site labour warranty. Freight is extra and prices change often.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the Life Fitness 95T and 95Ti?</h3></summary>
+            <p class="faq-a">
+              The 95Ti is the older model, with a 20-inch-wide belt and an LED console. The 95T is the Elevation Series treadmill that followed, with a 22 by 60-inch deck, the DX3 belt and deck system and a choice of consoles. Both have 4 HP AC motors, 15% incline and 400 lb ratings.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What are the Life Fitness 95T specs?</h3></summary>
+            <p class="faq-a">
+              Life Fitness lists a 4 HP (8.0 HP peak) AC motor with MagnaDrive controller, a 22 by 60-inch running surface, 0.5 to 14 mph, 15% incline, a 400 lb maximum user and a dedicated 120 V, 20 A circuit. Remanufacturer listings agree and give an 80 by 37-inch footprint and 442 to 444 lb depending on the console.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the Life Fitness 95T Inspire?</h3></summary>
+            <p class="faq-a">
+              It is the 95T Elevation Series treadmill fitted with the Inspire console, a display with a long program list including terrain courses, heart-rate workouts and fitness tests, and no reliance on a network. Fitness Superstore listed a remanufactured 95T Inspire at $4,099 on 5 November 2026.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What does "95T Discover SE inc WiFi" mean?</h3></summary>
+            <p class="faq-a">
+              It describes a 95T Elevation treadmill with the Discover SE touchscreen console and network connectivity; "inc" is UK shorthand for "including". The running hardware is the same as any 95T. Before paying extra, check which of the console’s apps and TV features still work on the unit you are buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a remanufactured Life Fitness 95Ti worth buying?</h3></summary>
+            <p class="faq-a">
+              It can be at $2,600 to $3,800 from a remanufacturer with a written warranty, if you have a dedicated 20-amp circuit. Sellers disagree on its top speed, 12 or 14 mph, so confirm it on the unit. For about $3,900, a new Life Fitness Run CX is the simpler choice for most homes.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/life-fitness/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">Life Fitness Treadmills</div>
+            <p class="c-blurb">The current Life Fitness home and club range, and how it is sold.</p>
+          </a>
+          <a href="/refurbished-treadmills/" class="card">
+            <div class="c-kicker">Used</div>
+            <div class="c-title">Refurbished Treadmills</div>
+            <p class="c-blurb">What remanufactured, refurbished and serviced mean, and the warranty to ask for.</p>
+          </a>
+          <a href="/gym-treadmill-for-home/" class="card">
+            <div class="c-kicker">At home</div>
+            <div class="c-title">Gym Treadmill for Home</div>
+            <p class="c-blurb">Circuits, floors and access routes for a club treadmill in a house.</p>
+          </a>
+          <a href="/cybex-treadmills/" class="card">
+            <div class="c-kicker">Club brand</div>
+            <div class="c-title">Cybex Treadmills</div>
+            <p class="c-blurb">The other discontinued club treadmill Life Fitness now owns, bought remanufactured.</p>
+          </a>
+          <a href="/life-fitness-integrity-series-treadmill/" class="card">
+            <div class="c-kicker">Replacement</div>
+            <div class="c-title">Life Fitness Integrity Series</div>
+            <p class="c-blurb">The Integrity+ that Life Fitness names as the 95T’s replacement.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

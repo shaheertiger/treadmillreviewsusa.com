@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Compression Boots (2026): 5 Recovery Boots Compared";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-compression-boots/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,85 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Compression Boot Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Hyperice Normatec 3 Legs", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestcompressionboots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestcompressionboots)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Compression Boots and Recovery Boots for Home</h1>
+      <p class="ed-dek">
+        Pneumatic compression boots squeeze your legs in sequence with air, and the best ones cost as much as a good treadmill. Here are five currently sold pairs, from Hyperice Normatec and Therabody JetBoots down to a $100 calf-and-foot leg massager, how chambers, pressure and sizing actually differ, and the medical conditions every maker says rule them out.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Compression Boots <span class="text-[#5AA9FF]">and Recovery Boots for Home</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Pneumatic compression boots squeeze your legs in sequence with air, and the best ones cost as much as a good treadmill. Here are five currently sold pairs, from Hyperice Normatec and Therabody JetBoots down to a $100 calf-and-foot leg massager, how chambers, pressure and sizing actually differ, and the medical conditions every maker says rule them out.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#who-should-not" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Not Use Them
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#hyperice-normatec-3-legs"><img src="https://m.media-amazon.com/images/I/31twvW0rxML._SL500_.jpg" alt="Hyperice Normatec 3 Legs" width="276" height="500" decoding="async" /></a>
+          <a href="#therabody-jetboots-prime"><img src="https://m.media-amazon.com/images/I/31MAxBSYXjL._SL500_.jpg" alt="Therabody JetBoots Prime" width="500" height="500" decoding="async" /></a>
+          <a href="#therabody-jetboots-pro-plus"><img src="https://m.media-amazon.com/images/I/41Ioz1qvKQL._SL500_.jpg" alt="Therabody JetBoots PRO Plus" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Hyperice Normatec 3 Legs · Therabody JetBoots Prime · Therabody JetBoots PRO Plus</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Compression boots are the most expensive recovery gadget most people ever consider, and the
+          one where the marketing runs furthest ahead of the evidence. A pair of sleeves zips over
+          each leg, a pump fills overlapping air chambers from the foot upward, holds, releases and
+          repeats, and for half an hour your legs are squeezed the way a firm massage might squeeze
+          them. Many owners find that relaxing after long runs, rides or heavy leg days. Whether it
+          speeds recovery is a separate and much less settled question. The five pairs below cover
+          the realistic choices on sale on Amazon today — two Hyperice Normatec systems, two
+          Therabody JetBoots and one budget leg massager — and the guide after them explains what
+          chambers, pressure and sizing mean, what to expect from a $100 "leg massager", and the
+          conditions under which the makers themselves say not to use them at all.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#hyperice-normatec-3-legs">Hyperice Normatec 3 Legs</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Wireless:</span> <a href="#hyperice-normatec-elite-legs">Hyperice Normatec Elite Legs</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value Wireless:</span> <a href="#therabody-jetboots-prime">Therabody JetBoots Prime</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Features:</span> <a href="#therabody-jetboots-pro-plus">Therabody JetBoots PRO Plus</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#fit-king-leg-air-massager">FIT KING Leg Air Massager</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           boots, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
           each pair as currently sold on its maker's US store (Hyperice and Therabody) or, for FIT
@@ -345,90 +369,34 @@ const schema = {
           Safety Commission's recall database. Prices are those we saw on that date and change
           often; FIT KING's typical price sits just below the $100 floor we use elsewhere in this
           series, which the card notes. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym
+          this page; it does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym
           and recovery equipment; we are not giving medical or physiotherapy advice, and we make no
           claim that compression boots speed recovery, reduce injury or improve performance. Makers
           market those benefits, and on this page they are reported as the sellers' claims.
           Pneumatic compression is not suitable for everyone — see the section on who should not use
           it — and if you have a circulation, heart or clotting condition, an injury, diabetes, or
           you are pregnant, talk to a doctor before using a pair.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#hyperice-normatec-3-legs" class="font-bold text-gray-900 no-underline hover:underline">Hyperice Normatec 3 Legs</a>
-            <a href="#hyperice-normatec-3-legs" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Wireless:</span>
-            <a href="#hyperice-normatec-elite-legs" class="font-bold text-gray-900 no-underline hover:underline">Hyperice Normatec Elite Legs</a>
-            <a href="#hyperice-normatec-elite-legs" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Wireless:</span>
-            <a href="#therabody-jetboots-prime" class="font-bold text-gray-900 no-underline hover:underline">Therabody JetBoots Prime</a>
-            <a href="#therabody-jetboots-prime" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Features:</span>
-            <a href="#therabody-jetboots-pro-plus" class="font-bold text-gray-900 no-underline hover:underline">Therabody JetBoots PRO Plus</a>
-            <a href="#therabody-jetboots-pro-plus" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#fit-king-leg-air-massager" class="font-bold text-gray-900 no-underline hover:underline">FIT KING Leg Air Massager</a>
-            <a href="#fit-king-leg-air-massager" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Compression Boots</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Compression Boots</a>
-          <a href="#how-they-work" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Pneumatic Compression Boots Work</a>
-          <a href="#what-they-do" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Compression Boots Can and Cannot Do</a>
-          <a href="#sizing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Sizing, Inseam and Fit</a>
-          <a href="#wireless-or-hose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Wireless or Hose-and-Control-Unit, Battery and Noise</a>
-          <a href="#leg-massagers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Budget "Leg Massagers": What You Get for $100 to $300</a>
-          <a href="#who-should-not" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Not Use Compression Boots</a>
-          <a href="#using-them" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Using Compression Boots Sensibly</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Compression Boots</a></li>
+            <li><a href="#how-we-chose">How We Chose These Compression Boots</a></li>
+            <li><a href="#how-they-work">How Pneumatic Compression Boots Work</a></li>
+            <li><a href="#what-they-do">What Compression Boots Can and Cannot Do</a></li>
+            <li><a href="#sizing">Sizing, Inseam and Fit</a></li>
+            <li><a href="#wireless-or-hose">Wireless or Hose-and-Control-Unit, Battery and Noise</a></li>
+            <li><a href="#leg-massagers">Budget "Leg Massagers": What You Get for $100 to $300</a></li>
+            <li><a href="#who-should-not">Who Should Not Use Compression Boots</a></li>
+            <li><a href="#using-them">Using Compression Boots Sensibly</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Compression boots are the most expensive recovery gadget most people ever consider, and the
-          one where the marketing runs furthest ahead of the evidence. A pair of sleeves zips over
-          each leg, a pump fills overlapping air chambers from the foot upward, holds, releases and
-          repeats, and for half an hour your legs are squeezed the way a firm massage might squeeze
-          them. Many owners find that relaxing after long runs, rides or heavy leg days. Whether it
-          speeds recovery is a separate and much less settled question. The five pairs below cover
-          the realistic choices on sale on Amazon today — two Hyperice Normatec systems, two
-          Therabody JetBoots and one budget leg massager — and the guide after them explains what
-          chambers, pressure and sizing mean, what to expect from a $100 "leg massager", and the
-          conditions under which the makers themselves say not to use them at all.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five pairs, chosen so that each realistic budget and design has a currently sold example.
             If you want one sentence: <strong>the best compression boots for most people who will
@@ -453,16 +421,13 @@ const schema = {
           </table></div>
           <p>
             Compression boots are one tool among several. If you are still deciding what a recovery
-            budget is best spent on, our guide to
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>
-            puts boots alongside rollers, balls, straps and a massage gun, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide in
+            budget is best spent on, our guide to <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a> puts boots alongside rollers, balls, straps and a massage gun, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide in
             this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Compression Boots</h2>
+          <h2>The 5 Best Compression Boots</h2>
 <p>
             Each card gives the chambers, levels and design we could confirm from two sources, the
             price we saw, and who the pair suits. Read the sizing notes before you order: a boot that
@@ -470,84 +435,71 @@ const schema = {
             is, and returns on a large, used, worn-on-the-skin product are rarely pleasant.
           </p>
           <p>
-            The Normatec 3 card keeps the figures we published on our
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools page</a>
-            except battery life, where Hyperice's operating instructions and its marketing now
+            The Normatec 3 card keeps the figures we published on our <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools page</a> except battery life, where Hyperice's operating instructions and its marketing now
             disagree; the card explains.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Compression Boots</h2>
+          <h2>How We Chose These Compression Boots</h2>
 <p>
             We have not tested these boots. They were chosen from makers' product pages and
             operating instructions, published precautions and contraindications, recall records and
@@ -575,8 +527,7 @@ const schema = {
             Normatec sizes by height (Short up to 5 ft 7 in, Standard 5 ft 7 in to 6 ft 4 in, Tall
             6 ft 4 in and over), while Garage Gym Reviews prints different breakpoints for the same
             names; Therabody sizes JetBoots by outseam, thigh and inseam, and a second retailer
-            prints different inseam ranges. So the cards name the sizes and the
-            <a href="#sizing" class="text-[#0F62FE] font-medium">sizing section</a> tells you how to
+            prints different inseam ranges. So the cards name the sizes and the <a href="#sizing" class="text-[#0F62FE] font-medium">sizing section</a> tells you how to
             measure, but no card prints a range we could not confirm.
           </p>
           <p>
@@ -602,7 +553,7 @@ const schema = {
         </div>
 
         <div id="how-they-work" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Pneumatic Compression Boots Work</h2>
+          <h2>How Pneumatic Compression Boots Work</h2>
 <p>
             Every pair on this page works the same basic way. Each sleeve contains a row of air
             chambers, sometimes called zones, running from the foot to the top of the thigh. A pump
@@ -647,7 +598,7 @@ const schema = {
         </div>
 
         <div id="what-they-do" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Compression Boots Can and Cannot Do</h2>
+          <h2>What Compression Boots Can and Cannot Do</h2>
 <p>
             Makers describe faster recovery, reduced soreness, better circulation, "flushing" and
             improved performance. Here is the honest version.
@@ -671,22 +622,18 @@ const schema = {
             <strong>What matters more.</strong> Sleep, total training load, food and an easy day after
             a hard one do more for recovery than any gadget. A pair of boots is a pleasant way to lie still after a long run, and lying still
             with your legs up for half an hour is not nothing. If you would use them most evenings,
-            that has value. If you would use them twice and then store them, a
-            <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a> or a
-            <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a> costs a
+            that has value. If you would use them twice and then store them, a <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a> or a <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a> costs a
             fraction as much.
           </p>
           <p>
             <strong>HSA and FSA.</strong> Some sellers and reviewers describe compression boots as
             HSA or FSA eligible. Eligibility depends on your plan and, often, on a letter of medical
-            necessity, not on the product page. Our explainer on
-            <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">whether fitness equipment is HSA or FSA eligible</a>
-            sets out how that works; check with your plan administrator before relying on it.
+            necessity, not on the product page. Our explainer on <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">whether fitness equipment is HSA or FSA eligible</a> sets out how that works; check with your plan administrator before relying on it.
           </p>
         </div>
 
         <div id="sizing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Sizing, Inseam and Fit</h2>
+          <h2>Sizing, Inseam and Fit</h2>
 <p>
             Fit is the biggest source of disappointment with compression boots, and the hardest
             thing to judge from a product page.
@@ -730,7 +677,7 @@ const schema = {
         </div>
 
         <div id="wireless-or-hose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Wireless or Hose-and-Control-Unit, Battery and Noise</h2>
+          <h2>Wireless or Hose-and-Control-Unit, Battery and Noise</h2>
 <p>
             There are two designs, and the difference matters more for how often you use the boots
             than for how they feel.
@@ -772,7 +719,7 @@ const schema = {
         </div>
 
         <div id="leg-massagers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Budget "Leg Massagers": What You Get for $100 to $300</h2>
+          <h2>Budget "Leg Massagers": What You Get for $100 to $300</h2>
 <p>
             Search Amazon for compression boots or recovery boots and most results under $300 are
             listed as leg massagers, leg air massagers or calf massagers. Some are excellent value;
@@ -810,7 +757,7 @@ const schema = {
         </div>
 
         <div id="who-should-not" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Not Use Compression Boots</h2>
+          <h2>Who Should Not Use Compression Boots</h2>
 <p>
             This section matters more than any other on the page. Pneumatic compression moves blood
             and lymph toward the heart, which is why it is used medically and also why it is wrong for
@@ -828,8 +775,7 @@ const schema = {
             dangerous without supervision.
           </p>
           <p>
-            <strong>Therabody (precautions and contraindications for RecoveryAir and JetBoots)</strong>
-            lists, among its contraindications: known or suspected DVT or pulmonary embolism,
+            <strong>Therabody (precautions and contraindications for RecoveryAir and JetBoots)</strong> lists, among its contraindications: known or suspected DVT or pulmonary embolism,
             decompensated cardiac failure, edema from congestive heart failure, cardiopulmonary edema,
             uncontrolled hypertension, acute or severe cardiac, liver or kidney disease, bleeding
             disorders, blood-thinning medication, a pacemaker, ICD or history of embolism, active
@@ -851,18 +797,13 @@ const schema = {
           </p>
           <p>
             Many of the conditions on these lists are more common with age. If you are buying for an
-            older parent, our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            covers the broader point about checking with a doctor before new exercise or recovery
-            equipment, and the same caution applies to a
-            <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium">zero gravity massage chair</a>
-            or a
-            <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge</a>.
+            older parent, our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> covers the broader point about checking with a doctor before new exercise or recovery
+            equipment, and the same caution applies to a <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium">zero gravity massage chair</a> or a <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge</a>.
           </p>
         </div>
 
         <div id="using-them" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Using Compression Boots Sensibly</h2>
+          <h2>Using Compression Boots Sensibly</h2>
 <ul>
             <li><strong>Start low and short.</strong> First sessions at the lowest or second-lowest
               level for 15 to 20 minutes. Raise the level only if it still feels comfortable, and
@@ -887,151 +828,163 @@ const schema = {
             If you are building a recovery corner, a rubber mat or a yoga mat on the floor, somewhere
             to lie flat, and a hook or shelf for the boots is all you need. Pair them with the habits
             that matter more — sleep and sensible training load — and, for runners, a realistic plan;
-            our guide to
-            <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">treadmills for marathon training</a>
-            covers the training side, and our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put recovery kit in the context of a whole home gym.
+            our guide to <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">treadmills for marathon training</a> covers the training side, and our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> put recovery kit in the context of a whole home gym.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best compression boots?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people using them at home, the Hyperice Normatec 3 Legs, at $899 when we checked, are the best balance of an established five-zone system, seven levels and the option to add hip and arm attachments. The wireless Normatec Elite and Therabody JetBoots Prime suit travelers. A FIT KING leg air massager at about $100 covers calves and feet only.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do compression boots actually work?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They do what they are designed to do: squeeze the legs in sequence and temporarily move fluid toward the heart, which many people find relaxing. Research on recovery after exercise is small and suggests at most modest, short-lived effects on how sore people feel. Claims of faster recovery or better performance are the makers' marketing, not established findings.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Normatec or Therabody JetBoots: which is better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better for everyone. Normatec legs have five zones and seven levels; JetBoots have four overlapping chambers and publish their pressure in mmHg. The Normatec 3 is cheaper than the wireless Elite and expandable with attachments. JetBoots Prime is the cheapest fully wireless pair from a major brand. Choose by design, sizing chart and budget.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who should not use compression boots?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Makers list deep vein thrombosis or a history of pulmonary embolism, congestive heart failure, acute thrombophlebitis, acute infections, fractures, wounds or tumors in the area, and situations where increased venous return is undesirable. Therabody adds bleeding disorders, blood thinners, uncontrolled high blood pressure and loss of sensation. Pregnancy and diabetes need medical advice first. Ask a doctor if unsure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should you wear compression boots?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Makers' timers commonly run from 15 or 20 minutes up to an hour. Start at a low level for 15 to 20 minutes, lying down with your legs straight, and increase only if it stays comfortable. Stop immediately for pain, numbness, tingling or color change, and follow the time and settings guidance in your own boots' manual.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are cheap leg massagers the same as compression boots?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not quite. Most leg massagers under $300 cover only the feet and calves, use straps rather than sized sleeves, offer two or three intensities and publish no pressure. They can be good value for tired calves and feet. Full-leg boots from Normatec or Therabody cover foot to upper thigh with more chambers and finer control.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Compression Boots</h2>
+          <p>Each of these is easy to avoid before you order, and each is a common reason boots end up unused in a cupboard.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ignoring the contraindications</h3>
+              <p>Compression moves blood toward the heart, which is exactly why it is wrong for people with a clot, heart failure or certain circulation problems. Read the maker's precautions list before buying, not after. If any condition applies to you, or you take blood thinners, are pregnant or have diabetes, ask your doctor first.</p>
+            </li>
+            <li>
+              <h3>Guessing the size</h3>
+              <p>Size names mean different things to different brands, and retailer pages and reviews often print ranges that do not match the maker's current chart. Measure your outseam, inseam and thigh, use the maker's chart on the day you order, and size down if the maker says to when you fall between sizes.</p>
+            </li>
+            <li>
+              <h3>Buying a leg massager expecting full-leg boots</h3>
+              <p>A $100 Amazon "recovery boot" is usually a calf and foot massager. It can be very pleasant, but it will not squeeze your hamstrings and quads after leg day. Check the photos and the coverage description before you order, and expect fewer settings and no published pressure.</p>
+            </li>
+            <li>
+              <h3>Expecting a gadget to fix recovery</h3>
+              <p>Boots feel good, but sleep, sensible training load and easy days matter far more. If you are always sore, look at the training plan before spending $1,000. And if you would use boots twice and store them, a foam roller or massage gun will serve you better for a fraction of the price.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Compression Boots</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order, and each is a common reason boots end up unused in a cupboard.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the contraindications</h3>
-              <p class="text-gray-700 text-sm m-0">Compression moves blood toward the heart, which is exactly why it is wrong for people with a clot, heart failure or certain circulation problems. Read the maker's precautions list before buying, not after. If any condition applies to you, or you take blood thinners, are pregnant or have diabetes, ask your doctor first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Guessing the size</h3>
-              <p class="text-gray-700 text-sm m-0">Size names mean different things to different brands, and retailer pages and reviews often print ranges that do not match the maker's current chart. Measure your outseam, inseam and thigh, use the maker's chart on the day you order, and size down if the maker says to when you fall between sizes.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a leg massager expecting full-leg boots</h3>
-              <p class="text-gray-700 text-sm m-0">A $100 Amazon "recovery boot" is usually a calf and foot massager. It can be very pleasant, but it will not squeeze your hamstrings and quads after leg day. Check the photos and the coverage description before you order, and expect fewer settings and no published pressure.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a gadget to fix recovery</h3>
-              <p class="text-gray-700 text-sm m-0">Boots feel good, but sleep, sensible training load and easy days matter far more. If you are always sore, look at the training plan before spending $1,000. And if you would use boots twice and store them, a foam roller or massage gun will serve you better for a fraction of the price.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-recovery-tools-for-weightlifters/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Recovery Tools for Weightlifters</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Boots alongside rollers, balls, straps and a massage gun, and which to buy first.</p>
-            </a>
-            <a href="/best-massage-guns/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Massage</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Massage Guns</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six percussion massagers, how to read their spec sheets, and where not to use one.</p>
-            </a>
-            <a href="/best-foam-rollers/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Basics</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Foam Rollers</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The cheapest recovery tool worth owning, and how density and texture differ.</p>
-            </a>
-            <a href="/best-inversion-tables/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Inversion Tables</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five tables on Amazon, their ankle locks and angle stops, and who must not invert.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">For regular use at home, buy the Hyperice Normatec 3 Legs.</strong>
-            If hoses would stop you using them, the Normatec Elite does the same squeeze wirelessly for
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">For regular use at home, buy the Hyperice Normatec 3 Legs.</strong> If hoses would stop you using them, the Normatec Elite does the same squeeze wirelessly for
             $200 more, and Therabody's JetBoots Prime is the cheapest wireless pair from a major brand.
             PRO Plus adds vibration and light for a premium the evidence does not justify, and a FIT
             KING leg massager is the honest budget choice if calves and feet are what you want
             treated.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, read the maker's contraindications first, measure before you choose a
             size, and treat recovery claims as marketing. Then decide whether boots are the right
-            purchase at all — our
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#5AA9FF] font-bold no-underline">guide to recovery tools</a>
-            covers the cheaper options that do most of the work.
+            purchase at all — our <a href="/best-recovery-tools-for-weightlifters/" class="text-[#5AA9FF] font-bold no-underline">guide to recovery tools</a> covers the cheaper options that do most of the work.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-recovery-tools-for-weightlifters/">Best Recovery Tools for Weightlifters</a></li>
+            <li><a href="/best-massage-guns/">Best Massage Guns</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What are the best compression boots?</h3></summary>
+            <p class="faq-a">
+              For most people using them at home, the Hyperice Normatec 3 Legs, at $899 when we checked, are the best balance of an established five-zone system, seven levels and the option to add hip and arm attachments. The wireless Normatec Elite and Therabody JetBoots Prime suit travelers. A FIT KING leg air massager at about $100 covers calves and feet only.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Do compression boots actually work?</h3></summary>
+            <p class="faq-a">
+              They do what they are designed to do: squeeze the legs in sequence and temporarily move fluid toward the heart, which many people find relaxing. Research on recovery after exercise is small and suggests at most modest, short-lived effects on how sore people feel. Claims of faster recovery or better performance are the makers' marketing, not established findings.
             </p>
+          </details>
+          <details>
+            <summary><h3>Normatec or Therabody JetBoots: which is better?</h3></summary>
+            <p class="faq-a">
+              Neither is better for everyone. Normatec legs have five zones and seven levels; JetBoots have four overlapping chambers and publish their pressure in mmHg. The Normatec 3 is cheaper than the wireless Elite and expandable with attachments. JetBoots Prime is the cheapest fully wireless pair from a major brand. Choose by design, sizing chart and budget.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who should not use compression boots?</h3></summary>
+            <p class="faq-a">
+              Makers list deep vein thrombosis or a history of pulmonary embolism, congestive heart failure, acute thrombophlebitis, acute infections, fractures, wounds or tumors in the area, and situations where increased venous return is undesirable. Therabody adds bleeding disorders, blood thinners, uncontrolled high blood pressure and loss of sensation. Pregnancy and diabetes need medical advice first. Ask a doctor if unsure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should you wear compression boots?</h3></summary>
+            <p class="faq-a">
+              Makers' timers commonly run from 15 or 20 minutes up to an hour. Start at a low level for 15 to 20 minutes, lying down with your legs straight, and increase only if it stays comfortable. Stop immediately for pain, numbness, tingling or color change, and follow the time and settings guidance in your own boots' manual.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are cheap leg massagers the same as compression boots?</h3></summary>
+            <p class="faq-a">
+              Not quite. Most leg massagers under $300 cover only the feet and calves, use straps rather than sized sleeves, offer two or three intensities and publish no pressure. They can be good value for tired calves and feet. Full-leg boots from Normatec or Therabody cover foot to upper thigh with more chambers and finer control.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-recovery-tools-for-weightlifters/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Recovery Tools for Weightlifters</div>
+            <p class="c-blurb">Boots alongside rollers, balls, straps and a massage gun, and which to buy first.</p>
+          </a>
+          <a href="/best-massage-guns/" class="card">
+            <div class="c-kicker">Massage</div>
+            <div class="c-title">Best Massage Guns</div>
+            <p class="c-blurb">Six percussion massagers, how to read their spec sheets, and where not to use one.</p>
+          </a>
+          <a href="/best-foam-rollers/" class="card">
+            <div class="c-kicker">Basics</div>
+            <div class="c-title">Best Foam Rollers</div>
+            <p class="c-blurb">The cheapest recovery tool worth owning, and how density and texture differ.</p>
+          </a>
+          <a href="/best-inversion-tables/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Inversion Tables</div>
+            <p class="c-blurb">Five tables on Amazon, their ankle locks and angle stops, and who must not invert.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

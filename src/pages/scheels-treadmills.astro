@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Scheels Treadmills (2026): Brands, Delivery, Returns, Price Match";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/scheels-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Check Returns First", link: "#returns" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-scheelstreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-scheelstreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Scheels Treadmills: What to Know Before You Buy</h1>
+      <p class="ed-dek">
+        Scheels is a large, employee-owned sporting goods chain with a serious fitness department, and in some stores you can stand on a premium treadmill you would otherwise only see online. Here is what it sells, how delivery and returns actually work for a machine that arrives on a freight truck, and how its price match applies.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Scheels Treadmills: <span class="text-[#5AA9FF]">What to Know Before You Buy</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Scheels is a large, employee-owned sporting goods chain with a serious fitness department, and in some stores you can stand on a premium treadmill you would otherwise only see online. Here is what it sells, how delivery and returns actually work for a machine that arrives on a freight truck, and how its price match applies.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#brands" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Brands at Scheels
-          </a>
-          <a href="#returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Returns and Price Match
-          </a>
-        </div>
+        <a href="#brands" class="btn-ghost">Brands at Scheels</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site is independent and not
-          affiliated with Scheels or any brand it sells. Brands, policies and figures were checked on
-          scheels.com on 14 October 2026, with company facts and policy summaries cross-checked against
-          independent sources; where an independent source disagreed with Scheels' own pages, we say so
-          and follow Scheels. Ranges, fulfilment options and policies change and can differ by product
-          and store, so confirm the current terms on the product page or with the store before you buy.
-          We have not tested the machines mentioned here.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Treadmill at Scheels? The Short Answer</a>
-          <a href="#about-scheels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Is Scheels, and Where Are the Stores?</a>
-          <a href="#brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Treadmill Brands Does Scheels Sell?</a>
-          <a href="#in-store-online" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Is It Better to Buy at a Scheels Store or Online?</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Does Scheels Deliver a Treadmill?</a>
-          <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Does Scheels Assemble Treadmills?</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Is Scheels' Return Policy on Treadmills?</a>
-          <a href="#price-match" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Does Scheels Price Match Treadmills?</a>
-          <a href="#warranty-recalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Handles the Warranty, and What About Recalls?</a>
-          <a href="#judging" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Do You Judge a Treadmill at Scheels?</a>
-          <a href="#compare-checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How Does Scheels Compare, and What Should You Check Before Paying?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Scheels treadmills are mostly mainstream home brands sold online and in a few dozen large
           stores, with a premium, store-only tier in some locations. This page sets out what we could
           confirm on scheels.com on 14 October 2026 — the brands listed, how oversized items ship, the
@@ -207,8 +145,37 @@ const schema = {
           change weekly; it gives the range we saw instead.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site is independent and not
+          affiliated with Scheels or any brand it sells. Brands, policies and figures were checked on
+          scheels.com on 14 October 2026, with company facts and policy summaries cross-checked against
+          independent sources; where an independent source disagreed with Scheels' own pages, we say so
+          and follow Scheels. Ranges, fulfilment options and policies change and can differ by product
+          and store, so confirm the current terms on the product page or with the store before you buy.
+          We have not tested the machines mentioned here.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a Treadmill at Scheels? The Short Answer</a></li>
+            <li><a href="#about-scheels">What Is Scheels, and Where Are the Stores?</a></li>
+            <li><a href="#brands">Which Treadmill Brands Does Scheels Sell?</a></li>
+            <li><a href="#in-store-online">Is It Better to Buy at a Scheels Store or Online?</a></li>
+            <li><a href="#delivery">How Does Scheels Deliver a Treadmill?</a></li>
+            <li><a href="#assembly">Does Scheels Assemble Treadmills?</a></li>
+            <li><a href="#returns">What Is Scheels' Return Policy on Treadmills?</a></li>
+            <li><a href="#price-match">Does Scheels Price Match Treadmills?</a></li>
+            <li><a href="#warranty-recalls">Who Handles the Warranty, and What About Recalls?</a></li>
+            <li><a href="#judging">How Do You Judge a Treadmill at Scheels?</a></li>
+            <li><a href="#compare-checklist">How Does Scheels Compare, and What Should You Check Before Paying?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Treadmill at Scheels? The Short Answer</h2>
+          <h2>Should You Buy a Treadmill at Scheels? The Short Answer</h2>
 <p>
             <strong>Scheels is a reasonable place to buy a treadmill, especially if you live near a
             store and want to try a machine first; its 90-day return window and price match are
@@ -226,16 +193,12 @@ const schema = {
             ask how the machine reaches the room and who builds it.
           </p>
           <p>
-            If those answers work for you, the decision comes down to the machine itself. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
-            covers what separates a good one from a poor one, and our guide to
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale</a>
-            compares Scheels-type retailers with every other channel.
+            If those answers work for you, the decision comes down to the machine itself. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> covers what separates a good one from a poor one, and our guide to <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale</a> compares Scheels-type retailers with every other channel.
           </p>
         </div>
 
         <div id="about-scheels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Is Scheels, and Where Are the Stores?</h2>
+          <h2>What Is Scheels, and Where Are the Stores?</h2>
 <p>
             Scheels is an employee-owned sporting goods retailer headquartered in Fargo, North
             Dakota. It traces its history to a hardware and general store opened in Sabin, Minnesota,
@@ -262,7 +225,7 @@ const schema = {
         </div>
 
         <div id="brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Treadmill Brands Does Scheels Sell?</h2>
+          <h2>Which Treadmill Brands Does Scheels Sell?</h2>
 <p>
             On 14 October 2026, the treadmill listings we found on scheels.com came from five
             brands. The range changes through the year and not every model is in every store, so
@@ -292,19 +255,15 @@ const schema = {
             genuine reason to visit if you are shopping at that level.
           </p>
           <p>
-            For independent coverage of the brands, see our roundups of the
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>,
-            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">best ProForm treadmills</a>
-            and <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>,
+            For independent coverage of the brands, see our roundups of the <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>, <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">best ProForm treadmills</a> and <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>,
             and our page on <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex</a>.
             Listed prices on the Scheels treadmills we checked ran from around $600 to more than
-            $5,000, with sale prices on some; for what each tier of that range typically buys, see
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+            $5,000, with sale prices on some; for what each tier of that range typically buys, see <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
           </p>
         </div>
 
         <div id="in-store-online" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Is It Better to Buy at a Scheels Store or Online?</h2>
+          <h2>Is It Better to Buy at a Scheels Store or Online?</h2>
 <p>
             If you live near a store, start there: trying a treadmill before you buy it is worth more
             than any listing, and the premium Landice models we saw on scheels.com were marked
@@ -316,17 +275,14 @@ const schema = {
             Experts and suggests contacting the local department about new arrivals and product
             questions. Call ahead if you want to try a particular model, because floor stock differs
             between stores. When you get there, test properly: walk and run at your real speeds in
-            your own shoes, use the incline, listen to the motor and fold the machine. Our
-            <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">in-store treadmill test</a>
-            sets out the ten-minute version.
+            your own shoes, use the incline, listen to the motor and fold the machine. Our <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">in-store treadmill test</a> sets out the ten-minute version.
           </p>
           <p>
             <strong>Online.</strong> Treadmill pages on scheels.com show a ship option and a store
             pick-up option, with an estimated delivery window and a "Check Availability" button for
             store stock. A pick-up option on a 200 lb-plus box is only useful if you have a vehicle
             and the help to load and unload it; ask what the boxed weight is before choosing it. Our
-            guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives typical boxed weights.
+            guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives typical boxed weights.
           </p>
           <p>
             <strong>Confirm the model number.</strong> Whichever route you take, make sure the
@@ -336,7 +292,7 @@ const schema = {
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Does Scheels Deliver a Treadmill?</h2>
+          <h2>How Does Scheels Deliver a Treadmill?</h2>
 <p>
             Treadmills from scheels.com ship as oversized items, which Scheels says are delivered by
             LTL (less-than-truckload) freight carriers, carry an additional shipping surcharge based
@@ -360,20 +316,16 @@ const schema = {
             delivery in general is often to the curb, driveway or garage rather than into the room,
             and a treadmill box can weigh as much as an adult. Before ordering, ask Scheels — or, for
             vendor-shipped items, the manufacturer — where delivery ends, whether an appointment is
-            scheduled, and whether an upgraded in-home service is available. Our
-            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            explains the levels of delivery service and what each costs you on the day.
+            scheduled, and whether an upgraded in-home service is available. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> explains the levels of delivery service and what each costs you on the day.
           </p>
           <p>
             Measure the room and the route to it — doorways, stair turns and hallway corners — before
-            the truck arrives. The
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the clearances a treadmill needs once it is in place.
+            the truck arrives. The <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the clearances a treadmill needs once it is in place.
           </p>
         </div>
 
         <div id="assembly" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Does Scheels Assemble Treadmills?</h2>
+          <h2>Does Scheels Assemble Treadmills?</h2>
 <p>
             We could not confirm a treadmill assembly service at Scheels. Its online help pages, as
             checked on 14 October 2026, list assembly of roof and trunk racks and nothing for fitness
@@ -386,9 +338,7 @@ const schema = {
             themselves, so check with the brand. Local fitness equipment technicians and general
             assembly services will build a treadmill for a fee. Or you can do it yourself: most home
             treadmills arrive with the heavy base pre-assembled and need the uprights, console and
-            handrails attaching, a two-person job of an hour or two. Our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a>
-            sets out the job.
+            handrails attaching, a two-person job of an hour or two. Our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a> sets out the job.
           </p>
           <p>
             One return-related reason to think about this early: Scheels' return policy asks for
@@ -399,7 +349,7 @@ const schema = {
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Is Scheels' Return Policy on Treadmills?</h2>
+          <h2>What Is Scheels' Return Policy on Treadmills?</h2>
 <p>
             Scheels' return policy, as published on scheels.com on 14 October 2026, gives 90 days
             for returns, with free mail-in returns for online orders using a prepaid label and
@@ -428,14 +378,12 @@ const schema = {
             <strong>A conflict worth knowing about.</strong> Several third-party summaries of Scheels'
             returns, including ones updated in 2026, still describe a longer window of up to a year.
             Scheels' own policy page said 90 days when we checked, so follow Scheels' page and treat
-            the longer figure as out of date. Our guide to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            compares how other retailers and manufacturers handle large-item returns.
+            the longer figure as out of date. Our guide to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> compares how other retailers and manufacturers handle large-item returns.
           </p>
         </div>
 
         <div id="price-match" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Does Scheels Price Match Treadmills?</h2>
+          <h2>Does Scheels Price Match Treadmills?</h2>
 <p>
             Yes, Scheels runs a price-match policy, and on 14 October 2026 its own pages set out the
             conditions. A treadmill qualifies only if the competitor's item is:
@@ -467,22 +415,19 @@ const schema = {
             Some third-party guides say Scheels will also adjust the price for a period after
             purchase or match Amazon specifically. We could not confirm either on Scheels' own
             pages, so ask before relying on them. For when treadmill prices typically fall across the
-            market, see our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>.
+            market, see our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>.
           </p>
         </div>
 
         <div id="warranty-recalls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Handles the Warranty, and What About Recalls?</h2>
+          <h2>Who Handles the Warranty, and What About Recalls?</h2>
 <p>
             Warranty cover on a treadmill bought at Scheels comes from the manufacturer, and the
             terms are listed on the product page — the NordicTrack and Horizon pages we checked both
             stated the manufacturer's warranty. Warranty claims, parts and in-home
             service generally run through the brand rather than the store, so register the machine
             with the manufacturer, keep the model and serial numbers with your Scheels receipt, and
-            check whether the brand has service technicians in your area. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains how to read the terms, particularly the labour period.
+            check whether the brand has service technicians in your area. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains how to read the terms, particularly the labour period.
           </p>
           <p>
             We searched cpsc.gov for each brand listed above on 14 October 2026 and found no current
@@ -497,7 +442,7 @@ const schema = {
         </div>
 
         <div id="judging" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Do You Judge a Treadmill at Scheels?</h2>
+          <h2>How Do You Judge a Treadmill at Scheels?</h2>
 <p>
             Judge it on the same figures you would anywhere, not on the screen or the sale tag.
             Scheels' own treadmill buying guide, shown on its product pages, suggests a deck of 55 to
@@ -506,8 +451,7 @@ const schema = {
             line with our own guidance.
           </p>
           <ul>
-            <li><strong>Motor:</strong> continuous-duty horsepower, not peak. See the
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>.</li>
+            <li><strong>Motor:</strong> continuous-duty horsepower, not peak. See the <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>.</li>
             <li><strong>Running surface:</strong> length and width against your stride and height.
             See the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>.</li>
             <li><strong>Maximum user weight</strong>, with a margin to spare.</li>
@@ -516,22 +460,18 @@ const schema = {
             to, and what the machine does without it.</li>
           </ul>
           <p>
-            If you are shopping for a connected machine, read our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            guide before deciding whether the classes are worth the ongoing cost.
+            If you are shopping for a connected machine, read our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> guide before deciding whether the classes are worth the ongoing cost.
           </p>
         </div>
 
         <div id="compare-checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How Does Scheels Compare, and What Should You Check Before Paying?</h2>
+          <h2>How Does Scheels Compare, and What Should You Check Before Paying?</h2>
 <p>
             Scheels sits between a general sporting goods chain and a specialist fitness store. Its
             range is mainstream with a premium tier in some stores, its fitness departments are large,
             and its 90-day return window and price match are clearly written. Against that, its store
             footprint is regional, treadmill delivery is freight with a surcharge, and assembly is
-            not advertised. Compared with
-            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods</a>
-            or <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy</a>,
+            not advertised. Compared with <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods</a> or <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy</a>,
             the buying process for mainstream machines is similar; the store-only Landice tier is the
             main point of difference we saw.
           </p>
@@ -555,144 +495,157 @@ const schema = {
           </ul>
           <p>
             If the specification fits and the numbers work, Scheels is a sound place to buy. If you
-            are still deciding how much to spend, start with our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
+            are still deciding how much to spend, start with our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Scheels sell treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. On 14 October 2026 scheels.com listed treadmills from NordicTrack, ProForm, Horizon and Landice, and its treadmill category also names Bowflex. Most ship to your home or can be picked up in store; some premium Landice models were marked available in store only. Ranges change, so check the site or call your nearest store.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the Scheels return policy on treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Scheels' published policy gives 90 days, with free mail-in returns for online orders and in-store returns with proof of purchase. Items must be in original packaging and condition for a full refund, and shipping fees and surcharges are not refunded. Ask how a freight-delivered treadmill would physically be returned before you buy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Scheels price match treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, at its discretion. The competitor's item must be the exact same brand and model, from an authorised retailer, and in stock on both scheels.com and the competitor's site; competitor shipping is included in the comparison. Used, opened and display items are excluded. Model numbers often differ between retailers, so compare them first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Scheels deliver and assemble treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Scheels ships treadmills as oversized items by freight carrier, with a shipping surcharge shown on the product page, and some ship directly from the manufacturer. We could not confirm a treadmill assembly service on Scheels' pages, so ask the store or the brand, and ask how far the delivery brings the box.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you try treadmills at Scheels?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In stores with floor models, yes, and that is one of the main reasons to shop there. Floor stock differs between locations, so call the fitness department before visiting. Wear your own shoes, walk and run at your usual speeds, use the incline and fold the machine, and confirm the model number you buy matches what you tried.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where are Scheels stores located?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Scheels listed 34 open stores in 16 states on 14 October 2026, concentrated in the Midwest, the Plains and the Mountain West, from North Dakota and Minnesota to Texas, Utah and Arizona, with four more marked as coming soon. If there is no store near you, scheels.com ships treadmills nationally as freight.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill at Scheels</h2>
+          <p>None of these is specific to Scheels, but its freight delivery and written policies make each one easy to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing the price without the surcharge</h3>
+              <p>Free shipping over $75 does not cover the oversized-item surcharge. Compare the delivered price with what the same machine costs delivered elsewhere.</p>
+            </li>
+            <li>
+              <h3>Throwing away the box</h3>
+              <p>A full refund needs the original packaging and condition. Keep the box and packing material until you are sure you are keeping the treadmill.</p>
+            </li>
+            <li>
+              <h3>Assuming freight means room delivery</h3>
+              <p>LTL delivery is often to the curb or garage. Ask where delivery ends and who carries the box in before ordering, and plan for the gap.</p>
+            </li>
+            <li>
+              <h3>Asking for a match on a different model number</h3>
+              <p>Price matching needs the identical brand and model. Check the full model number on both listings before you ask, rather than matching a similar-looking machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill at Scheels</h2>
-          <p class="text-gray-700 leading-relaxed">None of these is specific to Scheels, but its freight delivery and written policies make each one easy to avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing the price without the surcharge</h3>
-              <p class="text-gray-700 text-sm m-0">Free shipping over $75 does not cover the oversized-item surcharge. Compare the delivered price with what the same machine costs delivered elsewhere.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Throwing away the box</h3>
-              <p class="text-gray-700 text-sm m-0">A full refund needs the original packaging and condition. Keep the box and packing material until you are sure you are keeping the treadmill.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming freight means room delivery</h3>
-              <p class="text-gray-700 text-sm m-0">LTL delivery is often to the curb or garage. Ask where delivery ends and who carries the box in before ordering, and plan for the gap.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Asking for a match on a different model number</h3>
-              <p class="text-gray-700 text-sm m-0">Price matching needs the identical brand and model. Check the full model number on both listings before you ask, rather than matching a similar-looking machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/dicks-sporting-goods-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Dick's Sporting Goods Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The other big sporting goods chain, compared.</p>
-            </a>
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-            <a href="/treadmill-return-policies/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Policies</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Return Policies</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How large-item returns really work, retailer by retailer.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Scheels is a sound place to buy a treadmill if the logistics work for you.</strong>
-            It sells mainstream NordicTrack, ProForm, Horizon and Bowflex machines plus a store-only
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Scheels is a sound place to buy a treadmill if the logistics work for you.</strong> It sells mainstream NordicTrack, ProForm, Horizon and Bowflex machines plus a store-only
             Landice tier, with a 90-day return window and a written price match. Check the freight
             surcharge, where delivery ends, who assembles it and how a return would work before you
             pay.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Then compare the delivered price with
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+          <p>
+            Then compare the delivered price with <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
             If the specification fits and the numbers work, buy it with confidence.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/dicks-sporting-goods-treadmills/">Dick's Sporting Goods Treadmills</a></li>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does Scheels sell treadmills?</h3></summary>
+            <p class="faq-a">
+              Yes. On 14 October 2026 scheels.com listed treadmills from NordicTrack, ProForm, Horizon and Landice, and its treadmill category also names Bowflex. Most ship to your home or can be picked up in store; some premium Landice models were marked available in store only. Ranges change, so check the site or call your nearest store.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the Scheels return policy on treadmills?</h3></summary>
+            <p class="faq-a">
+              Scheels' published policy gives 90 days, with free mail-in returns for online orders and in-store returns with proof of purchase. Items must be in original packaging and condition for a full refund, and shipping fees and surcharges are not refunded. Ask how a freight-delivered treadmill would physically be returned before you buy.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does Scheels price match treadmills?</h3></summary>
+            <p class="faq-a">
+              Yes, at its discretion. The competitor's item must be the exact same brand and model, from an authorised retailer, and in stock on both scheels.com and the competitor's site; competitor shipping is included in the comparison. Used, opened and display items are excluded. Model numbers often differ between retailers, so compare them first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Scheels deliver and assemble treadmills?</h3></summary>
+            <p class="faq-a">
+              Scheels ships treadmills as oversized items by freight carrier, with a shipping surcharge shown on the product page, and some ship directly from the manufacturer. We could not confirm a treadmill assembly service on Scheels' pages, so ask the store or the brand, and ask how far the delivery brings the box.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you try treadmills at Scheels?</h3></summary>
+            <p class="faq-a">
+              In stores with floor models, yes, and that is one of the main reasons to shop there. Floor stock differs between locations, so call the fitness department before visiting. Wear your own shoes, walk and run at your usual speeds, use the incline and fold the machine, and confirm the model number you buy matches what you tried.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Where are Scheels stores located?</h3></summary>
+            <p class="faq-a">
+              Scheels listed 34 open stores in 16 states on 14 October 2026, concentrated in the Midwest, the Plains and the Mountain West, from North Dakota and Minnesota to Texas, Utah and Arizona, with four more marked as coming soon. If there is no store near you, scheels.com ships treadmills nationally as freight.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/dicks-sporting-goods-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Dick's Sporting Goods Treadmills</div>
+            <p class="c-blurb">The other big sporting goods chain, compared.</p>
+          </a>
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+          <a href="/treadmill-return-policies/" class="card">
+            <div class="c-kicker">Policies</div>
+            <div class="c-title">Treadmill Return Policies</div>
+            <p class="c-blurb">How large-item returns really work, retailer by retailer.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Black Friday Deals (2026): How to Tell a Real Discount";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-black-friday-deals/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,107 +109,69 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "The Black Friday Checklist", link: "#checklist" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillblackfridaydeals" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillblackfridaydeals)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Timing</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Black Friday Deals</h1>
+      <p class="ed-dek">
+        Late November is usually the strongest treadmill sale of the year, and also the week with the most creative arithmetic. A real deal is a lower delivered price on a machine you had already chosen. Everything else is presentation.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Timing
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill <span class="text-[#5AA9FF]">Black Friday Deals</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Late November is usually the strongest treadmill sale of the year, and also the week with the most creative arithmetic. A real deal is a lower delivered price on a machine you had already chosen. Everything else is presentation.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#judge-the-price" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            How to Judge a Deal
-          </a>
-          <a href="#checklist" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Checklist
-          </a>
-        </div>
+        <a href="#judge-the-price" class="btn-ghost">How to Judge a Deal</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 28, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Discount ranges, delivery
-          costs and retailer policies here are typical patterns, not quotes. They vary by brand,
-          retailer and year, and the only figures that count are the ones on the order page in
-          front of you — including the delivery tier and the return terms.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are Treadmill Black Friday Deals Real?</a>
-          <a href="#before-the-sale" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Do the Work Before the Sale Starts</a>
-          <a href="#judge-the-price" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Judge the Price Against What It Actually Sold For</a>
-          <a href="#msrp-inflation" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. MSRP Inflation and the "Was" Price</a>
-          <a href="#subscriptions-as-discount" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Bundled Subscriptions Counted as Savings</a>
-          <a href="#other-bundles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Free Mats, Accessories and Extended Warranties</a>
-          <a href="#delivery-fees" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Delivery Fees and the Delivered Price</a>
-          <a href="#which-tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Which Treadmill Tiers Discount Most</a>
-          <a href="#deal-formats" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Doorbusters, Lightning Deals and Marketplace Sellers</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Returns, Price Adjustments and Holiday Policies</a>
-          <a href="#january" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. January as the Alternative</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. A Black Friday Treadmill Checklist</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           This page is not a list of this year's deals — those change by the hour and a list
           would be out of date before you read it. It is the method for judging any treadmill
           deal you see between mid-November and Cyber Monday, so you can tell a genuine
           reduction from a big red percentage in a few minutes.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Discount ranges, delivery
+          costs and retailer policies here are typical patterns, not quotes. They vary by brand,
+          retailer and year, and the only figures that count are the ones on the order page in
+          front of you — including the delivery tier and the return terms.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Are Treadmill Black Friday Deals Real?</a></li>
+            <li><a href="#before-the-sale">Do the Work Before the Sale Starts</a></li>
+            <li><a href="#judge-the-price">Judge the Price Against What It Actually Sold For</a></li>
+            <li><a href="#msrp-inflation">MSRP Inflation and the "Was" Price</a></li>
+            <li><a href="#subscriptions-as-discount">Bundled Subscriptions Counted as Savings</a></li>
+            <li><a href="#other-bundles">Free Mats, Accessories and Extended Warranties</a></li>
+            <li><a href="#delivery-fees">Delivery Fees and the Delivered Price</a></li>
+            <li><a href="#which-tiers">Which Treadmill Tiers Discount Most</a></li>
+            <li><a href="#deal-formats">Doorbusters, Lightning Deals and Marketplace Sellers</a></li>
+            <li><a href="#returns">Returns, Price Adjustments and Holiday Policies</a></li>
+            <li><a href="#january">January as the Alternative</a></li>
+            <li><a href="#checklist">A Black Friday Treadmill Checklist</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are Treadmill Black Friday Deals Real?</h2>
+          <h2>Are Treadmill Black Friday Deals Real?</h2>
 <p>
             <strong>Often, yes.</strong> For treadmills, late November is reliably one of the
             strongest buying windows of the year, because retailers would rather move stock at a
@@ -227,17 +194,14 @@ const schema = {
             it is not.
           </p>
           <p>
-            Our
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            guide covers why prices move across the whole year; this page is about the sale
+            Our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> guide covers why prices move across the whole year; this page is about the sale
             itself. For the specific machines worth watching this year, with what each normally
-            sells for and the price we would wait for, see
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>.
+            sells for and the price we would wait for, see <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>.
           </p>
         </div>
 
         <div id="before-the-sale" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Do the Work Before the Sale Starts</h2>
+          <h2>Do the Work Before the Sale Starts</h2>
 <p>
             Most bad Black Friday purchases are decided in the moment. A countdown timer and a large
             percentage are designed to make you choose a machine during the sale, which is the worst
@@ -246,20 +210,14 @@ const schema = {
           <p>
             <strong>Choose two or three acceptable machines by early November.</strong> Work out
             what you need first: deck length for your stride, motor rating for your weight and pace,
-            folding or not, and the space you have. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>
-            and
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            cover those decisions. A shortlist of more than one means you can buy whichever falls
+            folding or not, and the space you have. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a> and <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> cover those decisions. A shortlist of more than one means you can buy whichever falls
             furthest instead of chasing one model.
           </p>
           <p>
             <strong>Record the normal selling price.</strong> Note what each shortlisted machine
             actually sells for in October and early November, at more than one retailer, with the
             delivery tier you would choose. A price-tracking tool or a dated screenshot both work.
-            This is the baseline every deal is measured against. The
-            <a href="/best-time-of-year-to-buy-a-treadmill/#tracking" class="text-[#0F62FE] font-medium">tracking section</a>
-            of our timing guide covers the mechanics.
+            This is the baseline every deal is measured against. The <a href="/best-time-of-year-to-buy-a-treadmill/#tracking" class="text-[#0F62FE] font-medium">tracking section</a> of our timing guide covers the mechanics.
           </p>
           <p>
             <strong>Set your ceiling.</strong> Decide in advance what you will pay for each machine
@@ -268,7 +226,7 @@ const schema = {
         </div>
 
         <div id="judge-the-price" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Judge the Price Against What It Actually Sold For</h2>
+          <h2>Judge the Price Against What It Actually Sold For</h2>
 <p>
             The only comparison that matters is between the price you can pay now and the price you
             could have paid recently. Everything on a deal page — the strikethrough, the percentage,
@@ -301,7 +259,7 @@ const schema = {
         </div>
 
         <div id="msrp-inflation" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. MSRP Inflation and the "Was" Price</h2>
+          <h2>MSRP Inflation and the "Was" Price</h2>
 <p>
             Reference pricing is a long-standing problem in fitness equipment, and the sale period
             is when it is most visible.
@@ -325,14 +283,12 @@ const schema = {
           <p>
             None of this means the machine is a bad buy at the sale price. It means the percentage is
             not information. Judge the delivered price against your baseline and against what the
-            machine is worth for your use. Our guide to
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a>
-            gives typical prices by tier, which is a useful sense check.
+            machine is worth for your use. Our guide to <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a> gives typical prices by tier, which is a useful sense check.
           </p>
         </div>
 
         <div id="subscriptions-as-discount" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Bundled Subscriptions Counted as Savings</h2>
+          <h2>Bundled Subscriptions Counted as Savings</h2>
 <p>
             Connected treadmills are often promoted with a period of membership included, and some
             deal pages count the retail value of that membership in the advertised saving. It is
@@ -352,11 +308,7 @@ const schema = {
           </p>
           <p>
             <strong>Watch the renewal terms.</strong> Note when the included period ends and what it
-            renews into. Our
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a>
-            works through the long-run cost of a membership, and
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            covers machines where this question does not arise.
+            renews into. Our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a> works through the long-run cost of a membership, and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> covers machines where this question does not arise.
           </p>
           <p>
             A useful habit: compare the deal with the bundled membership removed. If the machine
@@ -367,16 +319,14 @@ const schema = {
         </div>
 
         <div id="other-bundles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Free Mats, Accessories and Extended Warranties</h2>
+          <h2>Free Mats, Accessories and Extended Warranties</h2>
 <p>
             Sale-period bundles often include physical extras, and the same rule applies: count them
             at what you would have spent, not at the retail value printed on the deal.
           </p>
           <p>
             <strong>Mats and accessories.</strong> A mat is useful on most floors, and if you would
-            have bought one anyway, an included one is worth having. Our guide to whether
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">you need a treadmill mat</a>
-            covers when it matters. Bundled heart rate straps, lubricant and cleaning kits are
+            have bought one anyway, an included one is worth having. Our guide to whether <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">you need a treadmill mat</a> covers when it matters. Bundled heart rate straps, lubricant and cleaning kits are
             useful but low value, and rarely a reason to choose one deal over another.
           </p>
           <p>
@@ -384,9 +334,7 @@ const schema = {
             checkout and sometimes bundled into deals. Read what the manufacturer's warranty
             already covers first, because on many treadmills the frame and motor terms are long
             and the plan mostly duplicates them. Where a plan adds labour or parts cover beyond the
-            standard terms, it may be worth considering; compare the terms, not the label. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            covers what the standard terms usually include.
+            standard terms, it may be worth considering; compare the terms, not the label. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> covers what the standard terms usually include.
           </p>
           <p>
             <strong>Upgraded delivery or assembly.</strong> This is the bundle most often worth more
@@ -397,15 +345,11 @@ const schema = {
         </div>
 
         <div id="delivery-fees" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Delivery Fees and the Delivered Price</h2>
+          <h2>Delivery Fees and the Delivered Price</h2>
 <p>
             Comparing headline prices during a sale misses the cost that varies most between
             retailers. Delivery tiers differ in what they include — from kerbside drop-off to
-            room-of-choice placement and assembly — and upgrades can add a meaningful sum. Our
-            <a href="/best-time-of-year-to-buy-a-treadmill/#delivery-costs" class="text-[#0F62FE] font-medium">timing guide</a>
-            sets out typical costs, and
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy</a>
-            covers what each channel usually includes.
+            room-of-choice placement and assembly — and upgrades can add a meaningful sum. Our <a href="/best-time-of-year-to-buy-a-treadmill/#delivery-costs" class="text-[#0F62FE] font-medium">timing guide</a> sets out typical costs, and <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy</a> covers what each channel usually includes.
           </p>
           <p>
             Black Friday adds three specific wrinkles.
@@ -433,7 +377,7 @@ const schema = {
         </div>
 
         <div id="which-tiers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Which Treadmill Tiers Discount Most</h2>
+          <h2>Which Treadmill Tiers Discount Most</h2>
 <p>
             Discounting is not even across the market. As general patterns rather than predictions
             for any given year:
@@ -446,9 +390,7 @@ const schema = {
           <p>
             <strong>Budget folding treadmills</strong> attract the largest headline percentages, and
             also the most inflated reference prices. Real reductions do happen, but judge them
-            against the selling price, and make sure the machine is adequate for your use; our
-            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a>
-            covers what that tier can and cannot do.
+            against the selling price, and make sure the machine is adequate for your use; our <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a> covers what that tier can and cannot do.
           </p>
           <p>
             <strong>Mainstream mid-range home treadmills</strong> from the major brands are often where
@@ -469,7 +411,7 @@ const schema = {
         </div>
 
         <div id="deal-formats" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Doorbusters, Lightning Deals and Marketplace Sellers</h2>
+          <h2>Doorbusters, Lightning Deals and Marketplace Sellers</h2>
 <p>
             The format of a deal matters almost as much as the price, because some formats limit what
             you can check.
@@ -490,9 +432,7 @@ const schema = {
           <p>
             <strong>Open-box, refurbished and floor models</strong> often appear in sale periods.
             They can be excellent value, but the warranty terms may differ from a new unit, so ask
-            what is covered and for how long. Our guide to
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills</a>
-            covers what to ask.
+            what is covered and for how long. Our guide to <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills</a> covers what to ask.
           </p>
           <p>
             <strong>Price matching</strong> exists at some retailers and not others, and sale periods
@@ -502,15 +442,14 @@ const schema = {
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Returns, Price Adjustments and Holiday Policies</h2>
+          <h2>Returns, Price Adjustments and Holiday Policies</h2>
 <p>
             The return policy on a treadmill is worth reading before the sale, not after delivery.
           </p>
           <p>
             <strong>Large items often have their own rules.</strong> Retailers that offer generous or
             extended holiday returns on most products sometimes treat fitness equipment and
-            freight-delivered items differently. There may be a shorter window, a requirement for
-            <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>, a restocking fee, or a charge for return freight. Some return
+            freight-delivered items differently. There may be a shorter window, a requirement for <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>, a restocking fee, or a charge for return freight. Some return
             processes require the item to be disassembled and boxed, which on a treadmill is a
             substantial job.
           </p>
@@ -532,7 +471,7 @@ const schema = {
         </div>
 
         <div id="january" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. January as the Alternative</h2>
+          <h2>January as the Alternative</h2>
 <p>
             If Black Friday passes without a deal that meets your ceiling, or you simply are not ready,
             January is the obvious second chance — with one important qualification.
@@ -551,9 +490,7 @@ const schema = {
           <p>
             <strong>Model-year clearance can beat both.</strong> Outgoing models that are mechanically
             near-identical to their replacements are cleared at various points in the year, and they
-            are often the best value in the category. Our
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">timing guide</a>
-            covers the full calendar, including the windows outside November and January.
+            are often the best value in the category. Our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">timing guide</a> covers the full calendar, including the windows outside November and January.
           </p>
           <p>
             And if you are ready to start now, waiting six weeks to save a modest sum is only worth it
@@ -562,7 +499,7 @@ const schema = {
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. A Black Friday Treadmill Checklist</h2>
+          <h2>A Black Friday Treadmill Checklist</h2>
 <p>
             Run every deal through these before you click buy.
           </p>
@@ -580,145 +517,157 @@ const schema = {
           <p>
             If a deal passes all nine, buy it and stop looking. The most common Black Friday regret
             is not paying slightly too much; it is spending a week chasing a slightly lower price and
-            ending up with a machine you had not chosen. Our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a>
-            helps set the ceiling in the first place.
+            ending up with a machine you had not chosen. Our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a> helps set the ceiling in the first place.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are treadmill Black Friday deals worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes. Late November is usually one of the strongest treadmill buying windows of the year, and genuine reductions on mainstream home machines are common. Judge each deal against what the machine actually sold for recently, including delivery, rather than the advertised percentage, which is usually measured from an inflated list price.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much do treadmills go down on Black Friday?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As a typical pattern, genuine reductions in a strong sale window run somewhere around 15 to 30% off the normal selling price, varying by brand, tier and year. Claims of 50% or more are almost always measured against a list price the machine rarely sells at. Price history is the reliable check.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Cyber Monday or Black Friday better for treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is rarely a consistent winner. Treadmill reductions frequently start before Black Friday and run through Cyber Monday and beyond, and stock on the most discounted models can run out. Decide your shortlist and price ceiling in advance and buy when a shortlisted machine meets it, whichever day that is.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I wait until January to buy a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only for the second half of January. Late December through the first two weeks of January is when demand peaks and discounts are weakest. Once the new-year rush passes, prices often ease again, though usually not as far as in late November. If you are ready to start now, waiting is only worth it if you will start when you buy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a free subscription count as part of a treadmill deal?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if you would have paid for it anyway. Included membership is worth what you would otherwise have spent, and nothing if you would not have subscribed. Check what it renews into and when, and compare the treadmill price with the membership removed to see whether the machine itself is discounted.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I return a treadmill bought on Black Friday?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the retailer and the item. Holiday return extensions do not always apply to fitness equipment or freight-delivered items, and there may be restocking fees, return freight charges or packaging requirements. Read the return policy for the specific product before you buy, and save a copy of the terms that applied on the day.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Black Friday Treadmill Deals</h2>
+          <p>Nearly every bad sale purchase comes from letting the deal choose the machine, or from comparing the wrong price.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Choosing the machine during the sale</h3>
+              <p>A countdown and a large percentage push you to pick a treadmill in minutes. Decide two or three acceptable machines before November, based on your space, weight and pace, and only consider deals on those. A heavily discounted wrong machine is not a saving.</p>
+            </li>
+            <li>
+              <h3>Trusting the percentage badge</h3>
+              <p>The advertised saving is calculated from a reference price that the machine may rarely sell at. Compare against what it actually sold for in the weeks before the sale, at more than one retailer. Genuine reductions typically run around 15 to 30% of the normal selling price.</p>
+            </li>
+            <li>
+              <h3>Ignoring delivery and returns</h3>
+              <p>Free shipping often means kerbside, and holiday return extensions may not cover freight-delivered fitness equipment. Price the delivery tier you need and read the return terms for this item, including restocking and return freight, before treating the headline price as the cost.</p>
+            </li>
+            <li>
+              <h3>Counting bundled extras at retail value</h3>
+              <p>Included membership, accessories and protection plans are only worth what you would have spent on them. Remove anything you would not have bought and see whether the treadmill itself is discounted. If the saving disappears, the deal was mostly packaging.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Black Friday Treadmill Deals</h2>
-          <p class="text-gray-700 leading-relaxed">Nearly every bad sale purchase comes from letting the deal choose the machine, or from comparing the wrong price.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing the machine during the sale</h3>
-              <p class="text-gray-700 text-sm m-0">A countdown and a large percentage push you to pick a treadmill in minutes. Decide two or three acceptable machines before November, based on your space, weight and pace, and only consider deals on those. A heavily discounted wrong machine is not a saving.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the percentage badge</h3>
-              <p class="text-gray-700 text-sm m-0">The advertised saving is calculated from a reference price that the machine may rarely sell at. Compare against what it actually sold for in the weeks before the sale, at more than one retailer. Genuine reductions typically run around 15 to 30% of the normal selling price.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring delivery and returns</h3>
-              <p class="text-gray-700 text-sm m-0">Free shipping often means kerbside, and holiday return extensions may not cover freight-delivered fitness equipment. Price the delivery tier you need and read the return terms for this item, including restocking and return freight, before treating the headline price as the cost.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Counting bundled extras at retail value</h3>
-              <p class="text-gray-700 text-sm m-0">Included membership, accessories and protection plans are only worth what you would have spent on them. Remove anything you would not have bought and see whether the treadmill itself is discounted. If the saving disappears, the deal was mostly packaging.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Timing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Time of Year to Buy a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The annual price cycle, month by month, and how to track a price.</p>
-            </a>
-            <a href="/black-friday-treadmill-deals-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Black Friday 2026</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Black Friday Treadmill Deals 2026</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The machines worth watching this year and the price we would wait for.</p>
-            </a>
-            <a href="/how-much-does-a-treadmill-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Budget</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Much Does a Treadmill Cost?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Typical prices by tier, for sense-checking any deal.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Black Friday is usually a strong time to buy a treadmill</strong>,
             but the deal is the delivered price against what the machine actually sold for — not
             the percentage on the badge. Genuine reductions typically land around 15 to 30% off the
             normal selling price.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Shortlist two or three machines, record their prices in October, and buy whichever meets
-            your ceiling once delivery, bundles and return terms are counted. If nothing does,
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">the second half of January</a>
-            is the next good window.
+            your ceiling once delivery, bundles and return terms are counted. If nothing does, <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">the second half of January</a> is the next good window.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-time-of-year-to-buy-a-treadmill/">Best Time of Year to Buy a Treadmill</a></li>
+            <li><a href="/black-friday-treadmill-deals-2026/">Black Friday Treadmill Deals 2026</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Are treadmill Black Friday deals worth it?</h3></summary>
+            <p class="faq-a">
+              Often, yes. Late November is usually one of the strongest treadmill buying windows of the year, and genuine reductions on mainstream home machines are common. Judge each deal against what the machine actually sold for recently, including delivery, rather than the advertised percentage, which is usually measured from an inflated list price.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much do treadmills go down on Black Friday?</h3></summary>
+            <p class="faq-a">
+              As a typical pattern, genuine reductions in a strong sale window run somewhere around 15 to 30% off the normal selling price, varying by brand, tier and year. Claims of 50% or more are almost always measured against a list price the machine rarely sells at. Price history is the reliable check.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is Cyber Monday or Black Friday better for treadmills?</h3></summary>
+            <p class="faq-a">
+              There is rarely a consistent winner. Treadmill reductions frequently start before Black Friday and run through Cyber Monday and beyond, and stock on the most discounted models can run out. Decide your shortlist and price ceiling in advance and buy when a shortlisted machine meets it, whichever day that is.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I wait until January to buy a treadmill?</h3></summary>
+            <p class="faq-a">
+              Only for the second half of January. Late December through the first two weeks of January is when demand peaks and discounts are weakest. Once the new-year rush passes, prices often ease again, though usually not as far as in late November. If you are ready to start now, waiting is only worth it if you will start when you buy.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a free subscription count as part of a treadmill deal?</h3></summary>
+            <p class="faq-a">
+              Only if you would have paid for it anyway. Included membership is worth what you would otherwise have spent, and nothing if you would not have subscribed. Check what it renews into and when, and compare the treadmill price with the membership removed to see whether the machine itself is discounted.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I return a treadmill bought on Black Friday?</h3></summary>
+            <p class="faq-a">
+              It depends on the retailer and the item. Holiday return extensions do not always apply to fitness equipment or freight-delivered items, and there may be restocking fees, return freight charges or packaging requirements. Read the return policy for the specific product before you buy, and save a copy of the terms that applied on the day.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-time-of-year-to-buy-a-treadmill/" class="card">
+            <div class="c-kicker">Timing</div>
+            <div class="c-title">Best Time of Year to Buy a Treadmill</div>
+            <p class="c-blurb">The annual price cycle, month by month, and how to track a price.</p>
+          </a>
+          <a href="/black-friday-treadmill-deals-2026/" class="card">
+            <div class="c-kicker">Black Friday 2026</div>
+            <div class="c-title">Black Friday Treadmill Deals 2026</div>
+            <p class="c-blurb">The machines worth watching this year and the price we would wait for.</p>
+          </a>
+          <a href="/how-much-does-a-treadmill-cost/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">How Much Does a Treadmill Cost?</div>
+            <p class="c-blurb">Typical prices by tier, for sense-checking any deal.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

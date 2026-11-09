@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Weight Capacity Guide (2026): What Limit Do You Need?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-weight-capacity-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "How Much Capacity Do I Need?", link: "#how-much-you-need" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillweightcapacityguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillweightcapacityguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Weight Capacity: What Limit Do You Need?</h1>
+      <p class="ed-dek">
+        The number on the spec sheet is a warranty boundary, not a comfort rating — and every running stride loads the deck with a multiple of your body weight. Here is how to read it, and how much to buy.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Weight Capacity: <span class="text-[#5AA9FF]">What Limit Do You Need?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The number on the spec sheet is a warranty boundary, not a comfort rating — and every running stride loads the deck with a multiple of your body weight. Here is how to read it, and how much to buy.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#how-much-you-need" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            How Much Do I Need?
-          </a>
-          <a href="#capacity-tiers" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Typical Capacity Tiers
-          </a>
-        </div>
+        <a href="#how-much-you-need" class="btn-ghost">How Much Do I Need?</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Capacity tiers, roller
-          diameters and motor ratings are given as typical ranges drawn from manufacturers'
-          published specifications across the market, not from measurements of any one machine.
-          Manufacturers do not all define maximum user weight the same way, and some do not say
-          how they arrived at it. Where your own machine's manual or warranty says something
-          different from this page, the manual wins.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#what-it-means" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What the Weight Limit Actually Means</a>
-          <a href="#static-vs-dynamic" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Static Load vs What Your Feet Actually Do</a>
-          <a href="#how-much-you-need" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Much Capacity Do You Need?</a>
-          <a href="#capacity-tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Typical Capacity Tiers</a>
-          <a href="#what-it-correlates-with" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What a Higher Rating Is Built From</a>
-          <a href="#checking-the-number" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How to Tell an Honest Rating From a Marketing One</a>
-          <a href="#walking-vs-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Walking vs Running: Why the Same Weight Needs Different Margins</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Weight Capacity and Your Warranty</a>
-          <a href="#exceeding-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Happens If You Exceed It</a>
-          <a href="#other-loads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Shared Machines, Weighted Vests and Other Loads</a>
-          <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Maintenance Matters More Near the Limit</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Bottom Line on Weight Capacity</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Weight capacity is one of the few treadmill specifications that almost every listing
           prints, and one of the most misunderstood. It is not the weight at which the machine
           breaks, and it is not the weight at which it stops being pleasant to use. It is the
@@ -206,8 +144,37 @@ const schema = {
           things is what this guide is about.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Capacity tiers, roller
+          diameters and motor ratings are given as typical ranges drawn from manufacturers'
+          published specifications across the market, not from measurements of any one machine.
+          Manufacturers do not all define maximum user weight the same way, and some do not say
+          how they arrived at it. Where your own machine's manual or warranty says something
+          different from this page, the manual wins.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#what-it-means">What the Weight Limit Actually Means</a></li>
+            <li><a href="#static-vs-dynamic">Static Load vs What Your Feet Actually Do</a></li>
+            <li><a href="#how-much-you-need">How Much Capacity Do You Need?</a></li>
+            <li><a href="#capacity-tiers">Typical Capacity Tiers</a></li>
+            <li><a href="#what-it-correlates-with">What a Higher Rating Is Built From</a></li>
+            <li><a href="#checking-the-number">How to Tell an Honest Rating From a Marketing One</a></li>
+            <li><a href="#walking-vs-running">Walking vs Running: Why the Same Weight Needs Different Margins</a></li>
+            <li><a href="#warranty">Weight Capacity and Your Warranty</a></li>
+            <li><a href="#exceeding-it">What Happens If You Exceed It</a></li>
+            <li><a href="#other-loads">Shared Machines, Weighted Vests and Other Loads</a></li>
+            <li><a href="#maintenance">Maintenance Matters More Near the Limit</a></li>
+            <li><a href="#verdict">The Bottom Line on Weight Capacity</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="what-it-means" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What the Weight Limit Actually Means</h2>
+          <h2>What the Weight Limit Actually Means</h2>
 <p>
             Every treadmill carries a figure variously labelled maximum user weight, user weight
             capacity or weight limit. It is set by the manufacturer, and it does three jobs at
@@ -238,7 +205,7 @@ const schema = {
         </div>
 
         <div id="static-vs-dynamic" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Static Load vs What Your Feet Actually Do</h2>
+          <h2>Static Load vs What Your Feet Actually Do</h2>
 <p>
             Standing still on a treadmill, you load it with your body weight. That is the static
             load, and it is the smallest force the machine ever sees from you. The moment you
@@ -271,14 +238,12 @@ const schema = {
         </div>
 
         <div id="how-much-you-need" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Much Capacity Do You Need?</h2>
+          <h2>How Much Capacity Do You Need?</h2>
 <p>
             The rule of thumb you will see most often is to buy a treadmill rated at least 50 lb
             above your body weight. It is a rule of thumb, not a standard — no manufacturer or
             testing body publishes it as a requirement — but it is a sensible one, and it is
-            roughly where most experienced reviewers land. Our own
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">guide to treadmills for heavy people</a>
-            goes further and suggests 50 to 75 lb for users near the top of the range, which is the
+            roughly where most experienced reviewers land. Our own <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">guide to treadmills for heavy people</a> goes further and suggests 50 to 75 lb for users near the top of the range, which is the
             same idea applied more cautiously.
           </p>
           <p>
@@ -304,7 +269,7 @@ const schema = {
         </div>
 
         <div id="capacity-tiers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Typical Capacity Tiers</h2>
+          <h2>Typical Capacity Tiers</h2>
 <p>
             Capacity tracks price fairly closely, because the things that raise it — heavier
             steel, bigger rollers, a stronger motor — all cost money. The bands below are typical
@@ -312,11 +277,9 @@ const schema = {
             above and below them.
           </p>
           <p>
-            <strong>Walking pads and compact under-desk machines: roughly 220 to 265 lb.</strong>
-            These are built light so they can be moved and stored, with small rollers and modest
+            <strong>Walking pads and compact under-desk machines: roughly 220 to 265 lb.</strong> These are built light so they can be moved and stored, with small rollers and modest
             motors. Many are intended for walking only, and the capacity figure assumes walking. A
-            smaller group is now rated at 330 to 400 lb; see the
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">best walking pads for heavy people</a>.
+            smaller group is now rated at 330 to 400 lb; see the <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">best walking pads for heavy people</a>.
           </p>
           <p>
             <strong>Budget folding treadmills: typically around 250 lb.</strong> Ratings in the 220
@@ -329,8 +292,7 @@ const schema = {
             usually rated 3.0 CHP or above, and frames get noticeably heavier.
           </p>
           <p>
-            <strong>Heavy-duty and light-commercial: typically 350 to 400 lb and above.</strong>
-            Machines built around a heavier user or harder use — larger rollers, thicker decks,
+            <strong>Heavy-duty and light-commercial: typically 350 to 400 lb and above.</strong> Machines built around a heavier user or harder use — larger rollers, thicker decks,
             stronger motors and frames that weigh a great deal assembled. Commercial gym
             treadmills commonly sit at the top of this band or beyond it.
           </p>
@@ -341,7 +303,7 @@ const schema = {
         </div>
 
         <div id="what-it-correlates-with" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What a Higher Rating Is Built From</h2>
+          <h2>What a Higher Rating Is Built From</h2>
 <p>
             Weight capacity is not a component. It is the outcome of several components being
             sized for a heavier load, and knowing which ones lets you check whether a rating is
@@ -356,9 +318,7 @@ const schema = {
           </p>
           <p>
             <strong>Motor continuous rating.</strong> Heavier users increase the friction between
-            belt and deck, and the motor has to overcome it on every stride. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            suggests adding roughly a quarter of a continuous horsepower for every 50 lb of user
+            belt and deck, and the motor has to overcome it on every stride. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> suggests adding roughly a quarter of a continuous horsepower for every 50 lb of user
             weight above 200 lb. The figure that matters is continuous (CHP), not peak.
           </p>
           <p>
@@ -377,14 +337,12 @@ const schema = {
           <p>
             <strong>Belt construction and size.</strong> A thicker, multi-ply belt tolerates load
             and heat better than a thin single-ply one. Width matters too: heavier users often have
-            a wider stance, and our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explains why 20 to 22 inches is more comfortable than 18 for most of them.
+            a wider stance, and our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains why 20 to 22 inches is more comfortable than 18 for most of them.
           </p>
         </div>
 
         <div id="checking-the-number" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How to Tell an Honest Rating From a Marketing One</h2>
+          <h2>How to Tell an Honest Rating From a Marketing One</h2>
 <p>
             Because there is no common test behind the number, the best check is consistency.
             Capacity, motor rating, roller size and assembled weight should tell the same story.
@@ -413,7 +371,7 @@ const schema = {
         </div>
 
         <div id="walking-vs-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Walking vs Running: Why the Same Weight Needs Different Margins</h2>
+          <h2>Walking vs Running: Why the Same Weight Needs Different Margins</h2>
 <p>
             Two people of the same weight can put very different demands on a treadmill, and the
             difference is mostly how they move.
@@ -442,7 +400,7 @@ const schema = {
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Weight Capacity and Your Warranty</h2>
+          <h2>Weight Capacity and Your Warranty</h2>
 <p>
             This is the part of the subject with the most direct financial consequence, and it is
             worth reading your own warranty document rather than relying on a summary.
@@ -470,13 +428,11 @@ const schema = {
         </div>
 
         <div id="exceeding-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Happens If You Exceed It</h2>
+          <h2>What Happens If You Exceed It</h2>
 <p>
             Usually nothing dramatic, at least at first, and that is precisely why people do it.
             A treadmill used modestly above its rated capacity rarely fails on the first day. What
-            happens instead is accelerated wear across the whole machine, part by part, as our guide to
-            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">exceeding a treadmill weight limit</a>
-            sets out.
+            happens instead is accelerated wear across the whole machine, part by part, as our guide to <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">exceeding a treadmill weight limit</a> sets out.
           </p>
           <p>
             The deck deflects further on each stride, so its cushioning bottoms out and the board
@@ -490,9 +446,7 @@ const schema = {
             The symptoms tend to arrive in a recognisable order: the belt hesitating under
             footstrike, a motor that smells hot after longer sessions, new creaks and knocks from
             the frame, a belt that wears or slips sooner than expected, and eventually an
-            electronic fault. Our guide to
-            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
-            covers why heat is the deciding factor.
+            electronic fault. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> covers why heat is the deciding factor.
           </p>
           <p>
             The rarer but more serious risk is structural. A frame weld, a deck or a fold latch
@@ -503,10 +457,9 @@ const schema = {
         </div>
 
         <div id="other-loads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Shared Machines, Weighted Vests and Other Loads</h2>
+          <h2>Shared Machines, Weighted Vests and Other Loads</h2>
 <p>
-            The capacity applies to everything on the belt, not just the person. A <a href="/best-weighted-vests-for-walking/" class="text-[#0F62FE] font-medium" data-autolink>weighted vest</a>
-            or a rucksack counts. So does a child being carried, which is a bad idea on a treadmill
+            The capacity applies to everything on the belt, not just the person. A <a href="/best-weighted-vests-for-walking/" class="text-[#0F62FE] font-medium" data-autolink>weighted vest</a> or a rucksack counts. So does a child being carried, which is a bad idea on a treadmill
             for reasons that have nothing to do with capacity. If you train in a 30 lb vest, your
             effective weight for sizing purposes is your body weight plus 30 lb.
           </p>
@@ -525,9 +478,7 @@ const schema = {
           </p>
           <p>
             Floors are a related question people raise. A heavy-duty treadmill plus its user is a
-            concentrated load on four feet, and a
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a>
-            spreads it slightly and protects the floor surface. Typical residential floors carry
+            concentrated load on four feet, and a <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a> spreads it slightly and protects the floor surface. Typical residential floors carry
             this kind of load without issue, but if you have any doubt about an upper floor —
             particularly an older building — ask a qualified builder or structural engineer rather
             than guessing.
@@ -535,7 +486,7 @@ const schema = {
         </div>
 
         <div id="maintenance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Maintenance Matters More Near the Limit</h2>
+          <h2>Maintenance Matters More Near the Limit</h2>
 <p>
             Every maintenance task on a treadmill exists to keep friction and heat down, and both
             scale with user weight. A machine running near its rated capacity therefore benefits
@@ -544,9 +495,7 @@ const schema = {
           <p>
             Lubrication is the main one. A dry deck raises friction sharply, and a heavier user
             raises it further, so the motor and controller see the combined effect. If your manual
-            gives a range, use the shorter end of it; our guide to
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
-            explains how to judge it, and always check the manual first, because some decks are
+            gives a range, use the shorter end of it; our guide to <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a> explains how to judge it, and always check the manual first, because some decks are
             pre-waxed and must not receive silicone.
           </p>
           <p>
@@ -562,7 +511,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Bottom Line on Weight Capacity</h2>
+          <h2>The Bottom Line on Weight Capacity</h2>
 <p>
             <strong>Treat the printed figure as the edge of the envelope.</strong> It is the
             heaviest user the manufacturer will stand behind, often a condition of the warranty,
@@ -577,145 +526,157 @@ const schema = {
           <p>
             <strong>Check the rating against the hardware.</strong> Continuous motor rating, roller
             diameter, deck and frame weight, and warranty length should all agree with the
-            capacity. When they do not, trust them over the headline number. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
-            puts weight capacity in context with the other specifications that matter.
+            capacity. When they do not, trust them over the headline number. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> puts weight capacity in context with the other specifications that matter.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What weight capacity treadmill do I need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As a rule of thumb, buy a treadmill rated at least 50 lb above your body weight. If you run regularly, or plan to, aim for 75 to 100 lb of margin, because running loads the deck with two to three times body weight at each footstrike. In a shared household, size the machine for the heaviest regular user.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does a treadmill weight limit actually mean?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is the maximum user weight the manufacturer designed the machine around and will honour the warranty for. It is not the weight at which the treadmill breaks, and it is not a promise that it will feel solid at that weight. There is no single industry test behind the number, so treat it as the edge of the envelope rather than the middle.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens if you exceed a treadmill weight limit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually accelerated wear rather than immediate failure: more deck deflection, more belt-to-deck friction, a hotter motor and controller board, and extra load on the rollers and frame. Many warranties make the maximum user weight a condition of cover, so a failure while used above the limit may not be covered. Structural failure is rare but is the reason the limit exists.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a 250 lb weight limit treadmill enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For a user up to about 200 lb who mostly walks, generally yes. For a heavier user, or a runner near 200 lb, it leaves little margin, and machines in this band are typically budget folding models with smaller rollers and lighter motors. Applying the 50 lb rule of thumb, a 250 lb rating suits users up to around 200 lb.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does running put more weight on a treadmill than walking?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Biomechanics studies commonly report peak footstrike forces of roughly 1.0 to 1.5 times body weight when walking and around two to three times body weight when running, rising with speed. The deck, rollers and motor all see that larger, repeated load, which is why runners should buy more margin than walkers of the same weight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do weighted vests count toward treadmill weight capacity?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. The capacity applies to the total load on the belt, so a 30 lb vest or a loaded rucksack adds to your effective weight. Size the machine for your body weight plus whatever you carry, then apply the usual margin on top.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Weight Capacity</h2>
+          <p>Most capacity problems start at the checkout rather than on the belt, and all four of these are avoidable before you buy.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a machine rated exactly at your weight</h3>
+              <p>If the printed figure only just covers you, the machine is working at its design limit on every stride, and any weight gain takes you outside the warranty. A 50 lb margin costs a step up in price band; running at the limit costs a motor, a board or a deck sooner than you would like.</p>
+            </li>
+            <li>
+              <h3>Sizing for walking when you will run</h3>
+              <p>Running roughly doubles to triples the peak load at each footstrike compared with standing. A machine that feels solid for a heavier walker can feel marginal for the same person jogging. If running is the goal, size for it now rather than buying twice.</p>
+            </li>
+            <li>
+              <h3>Trusting the headline number over the hardware</h3>
+              <p>There is no common test behind capacity figures. A high rating alongside small rollers, a peak-only motor figure, a light frame and a short warranty is a marketing number. When capacity disagrees with the other specifications, believe the other specifications.</p>
+            </li>
+            <li>
+              <h3>Forgetting the heaviest user in the house</h3>
+              <p>The warranty is measured against whoever uses the machine, not whoever bought it. In a shared household, size for the heaviest regular user and the hardest training anyone will do, then apply the margin to that.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Weight Capacity</h2>
-          <p class="text-gray-700 leading-relaxed">Most capacity problems start at the checkout rather than on the belt, and all four of these are avoidable before you buy.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a machine rated exactly at your weight</h3>
-              <p class="text-gray-700 text-sm m-0">If the printed figure only just covers you, the machine is working at its design limit on every stride, and any weight gain takes you outside the warranty. A 50 lb margin costs a step up in price band; running at the limit costs a motor, a board or a deck sooner than you would like.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sizing for walking when you will run</h3>
-              <p class="text-gray-700 text-sm m-0">Running roughly doubles to triples the peak load at each footstrike compared with standing. A machine that feels solid for a heavier walker can feel marginal for the same person jogging. If running is the goal, size for it now rather than buying twice.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the headline number over the hardware</h3>
-              <p class="text-gray-700 text-sm m-0">There is no common test behind capacity figures. A high rating alongside small rollers, a peak-only motor figure, a light frame and a short warranty is a marketing number. When capacity disagrees with the other specifications, believe the other specifications.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the heaviest user in the house</h3>
-              <p class="text-gray-700 text-sm m-0">The warranty is measured against whoever uses the machine, not whoever bought it. In a shared household, size for the heaviest regular user and the hardest training anyone will do, then apply the margin to that.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Of</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Heavy People</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines ranked on rollers, frame flex and motor heat at 280 to 330 lb.</p>
-            </a>
-            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Continuous vs peak, and how much motor your weight and pace need.</p>
-            </a>
-            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Deck length and width by stride, pace and build.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The printed limit is a warranty boundary, not a comfort
             rating.</strong> Running loads the deck with a multiple of your body weight on every
             stride, so a machine used near its limit wears faster everywhere — and may fall outside
             its cover.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Buy <strong class="text-white">at least 50 lb above your weight</strong>, more if you run,
-            and check that the motor, rollers and frame back the number up. Our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">heavy-duty picks</a>
-            show what an honest high rating looks like in hardware.
+            and check that the motor, rollers and frame back the number up. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">heavy-duty picks</a> show what an honest high rating looks like in hardware.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-heavy-people/">Best Treadmills for Heavy People</a></li>
+            <li><a href="/treadmill-horsepower-guide/">Treadmill Horsepower Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What weight capacity treadmill do I need?</h3></summary>
+            <p class="faq-a">
+              As a rule of thumb, buy a treadmill rated at least 50 lb above your body weight. If you run regularly, or plan to, aim for 75 to 100 lb of margin, because running loads the deck with two to three times body weight at each footstrike. In a shared household, size the machine for the heaviest regular user.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What does a treadmill weight limit actually mean?</h3></summary>
+            <p class="faq-a">
+              It is the maximum user weight the manufacturer designed the machine around and will honour the warranty for. It is not the weight at which the treadmill breaks, and it is not a promise that it will feel solid at that weight. There is no single industry test behind the number, so treat it as the edge of the envelope rather than the middle.
             </p>
+          </details>
+          <details>
+            <summary><h3>What happens if you exceed a treadmill weight limit?</h3></summary>
+            <p class="faq-a">
+              Usually accelerated wear rather than immediate failure: more deck deflection, more belt-to-deck friction, a hotter motor and controller board, and extra load on the rollers and frame. Many warranties make the maximum user weight a condition of cover, so a failure while used above the limit may not be covered. Structural failure is rare but is the reason the limit exists.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a 250 lb weight limit treadmill enough?</h3></summary>
+            <p class="faq-a">
+              For a user up to about 200 lb who mostly walks, generally yes. For a heavier user, or a runner near 200 lb, it leaves little margin, and machines in this band are typically budget folding models with smaller rollers and lighter motors. Applying the 50 lb rule of thumb, a 250 lb rating suits users up to around 200 lb.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does running put more weight on a treadmill than walking?</h3></summary>
+            <p class="faq-a">
+              Yes. Biomechanics studies commonly report peak footstrike forces of roughly 1.0 to 1.5 times body weight when walking and around two to three times body weight when running, rising with speed. The deck, rollers and motor all see that larger, repeated load, which is why runners should buy more margin than walkers of the same weight.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do weighted vests count toward treadmill weight capacity?</h3></summary>
+            <p class="faq-a">
+              Yes. The capacity applies to the total load on the belt, so a 30 lb vest or a loaded rucksack adds to your effective weight. Size the machine for your body weight plus whatever you carry, then apply the usual margin on top.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-heavy-people/" class="card">
+            <div class="c-kicker">Best Of</div>
+            <div class="c-title">Best Treadmills for Heavy People</div>
+            <p class="c-blurb">Machines ranked on rollers, frame flex and motor heat at 280 to 330 lb.</p>
+          </a>
+          <a href="/treadmill-horsepower-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Horsepower Guide</div>
+            <p class="c-blurb">Continuous vs peak, and how much motor your weight and pace need.</p>
+          </a>
+          <a href="/treadmill-belt-size-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Belt Size Guide</div>
+            <p class="c-blurb">Deck length and width by stride, pace and build.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

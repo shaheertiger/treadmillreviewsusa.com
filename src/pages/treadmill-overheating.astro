@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Overheating (2026): Causes, Checks and When to Stop";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-overheating/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Check the Causes", link: "#dry-deck" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmilloverheating" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmilloverheating)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Overheating: Why the Motor Runs Hot and What to Do</h1>
+      <p class="ed-dek">
+        A treadmill motor is supposed to get warm. It is not supposed to smell hot, shut itself down mid-session or leave the hood too hot to rest a hand on. The causes are a short list, they can be checked in order, and the most common one costs almost nothing to fix.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Overheating: <span class="text-[#5AA9FF]">Why the Motor Runs Hot and What to Do</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill motor is supposed to get warm. It is not supposed to smell hot, shut itself down mid-session or leave the hood too hot to rest a hand on. The causes are a short list, they can be checked in order, and the most common one costs almost nothing to fix.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#dry-deck" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Causes in Order
-          </a>
-          <a href="#stop-rule" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            When to Stop
-          </a>
-        </div>
+        <a href="#dry-deck" class="btn-ghost">The Causes in Order</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">A burning smell means stop.</strong> Warmth from the motor
-          hood after a long session is normal. A smell of hot electrics, scorched plastic, burning
-          rubber or singed dust is not: stop the belt, switch off, unplug at the wall and do not
-          restart until the cause has been found. Let the machine cool fully before opening the
-          hood, and unplug before any inspection. A treadmill that shuts itself down when hot is
-          protecting itself, and the right response is to find out why it got hot, not to bypass
-          the protection. Your manual is the authority on your model.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Is My Treadmill Overheating? The Short Answer</a>
-          <a href="#normal-warmth" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Normal Warmth Is, and What Is Not</a>
-          <a href="#dry-deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Cause One: A Dry Deck Raising Friction</a>
-          <a href="#tight-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Cause Two: A Belt That Is Too Tight</a>
-          <a href="#dust-and-vents" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Cause Three: Dust, Fluff and Blocked Vents</a>
-          <a href="#motor-brushes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Cause Four: Worn Motor Brushes</a>
-          <a href="#overload" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Cause Five: Heavy Use on an Under-Rated Motor</a>
-          <a href="#controller-and-supply" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Causes Six and Seven: A Failing Controller and Low Voltage</a>
-          <a href="#stop-rule" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Burning Smell Rule</a>
-          <a href="#thermal-cut-out" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Thermal Cut-Outs: A Machine Protecting Itself</a>
-          <a href="#prevention" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Preventing Treadmill Overheating</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           An overheating treadmill is almost always a treadmill that is working harder than it was
           designed to, and the reason is usually friction. A deck that has dried out, a belt that
           has been tensioned too tight, a motor compartment packed with dust or a set of worn
@@ -209,8 +147,37 @@ const schema = {
           the check for each.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">A burning smell means stop.</strong> Warmth from the motor
+          hood after a long session is normal. A smell of hot electrics, scorched plastic, burning
+          rubber or singed dust is not: stop the belt, switch off, unplug at the wall and do not
+          restart until the cause has been found. Let the machine cool fully before opening the
+          hood, and unplug before any inspection. A treadmill that shuts itself down when hot is
+          protecting itself, and the right response is to find out why it got hot, not to bypass
+          the protection. Your manual is the authority on your model.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Why Is My Treadmill Overheating? The Short Answer</a></li>
+            <li><a href="#normal-warmth">What Normal Warmth Is, and What Is Not</a></li>
+            <li><a href="#dry-deck">Cause One: A Dry Deck Raising Friction</a></li>
+            <li><a href="#tight-belt">Cause Two: A Belt That Is Too Tight</a></li>
+            <li><a href="#dust-and-vents">Cause Three: Dust, Fluff and Blocked Vents</a></li>
+            <li><a href="#motor-brushes">Cause Four: Worn Motor Brushes</a></li>
+            <li><a href="#overload">Cause Five: Heavy Use on an Under-Rated Motor</a></li>
+            <li><a href="#controller-and-supply">Causes Six and Seven: A Failing Controller and Low Voltage</a></li>
+            <li><a href="#stop-rule">The Burning Smell Rule</a></li>
+            <li><a href="#thermal-cut-out">Thermal Cut-Outs: A Machine Protecting Itself</a></li>
+            <li><a href="#prevention">Preventing Treadmill Overheating</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Is My Treadmill Overheating? The Short Answer</h2>
+          <h2>Why Is My Treadmill Overheating? The Short Answer</h2>
 <p>
             A <strong>treadmill overheats</strong> when the motor has to work harder than it
             should, and it has to work harder for one of a short list of reasons. In order of
@@ -218,8 +185,7 @@ const schema = {
             belt has risen; the <strong>walking belt is too tight</strong>; the <strong>motor
             compartment is choked with dust</strong> and the vents are blocked; the <strong>motor
             brushes are worn</strong>; the machine is being used by a <strong>heavy user at a
-            steep incline for long sessions</strong> on a motor that is not rated for it; the
-            <strong>motor controller is failing</strong>; or the machine is being <strong>starved
+            steep incline for long sessions</strong> on a motor that is not rated for it; the <strong>motor controller is failing</strong>; or the machine is being <strong>starved
             of voltage</strong> through an extension cord or an overloaded circuit.
           </p>
           <p>
@@ -240,7 +206,7 @@ const schema = {
         </div>
 
         <div id="normal-warmth" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Normal Warmth Is, and What Is Not</h2>
+          <h2>What Normal Warmth Is, and What Is Not</h2>
 <p>
             Owners who put a hand on the motor hood after a session and feel heat often assume
             something is wrong. Usually it is not. A treadmill motor converts electricity into
@@ -278,7 +244,7 @@ const schema = {
         </div>
 
         <div id="dry-deck" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Cause One: A Dry Deck Raising Friction</h2>
+          <h2>Cause One: A Dry Deck Raising Friction</h2>
 <p>
             This is the most common cause of treadmill overheating by a wide margin, and it is
             the one to check first because it is the cheapest to put right.
@@ -311,9 +277,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The fix</h3>
           <p>
             Lubricate the deck with the lubricant your manual specifies, in the quantity it
-            specifies — more is not better, and the wrong lubricant can damage the belt. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication guide</a>
-            covers how often, how much and how to apply it. Run the belt for a few minutes with
+            specifies — more is not better, and the wrong lubricant can damage the belt. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication guide</a> covers how often, how much and how to apply it. Run the belt for a few minutes with
             nobody on it to spread the lubricant, then try a session and feel the hood again. If
             the heat has gone, you have found the cause and the job now is to keep to a
             lubrication schedule. If the deck and belt have worn, the heat will come back, and that
@@ -322,7 +286,7 @@ const schema = {
         </div>
 
         <div id="tight-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Cause Two: A Belt That Is Too Tight</h2>
+          <h2>Cause Two: A Belt That Is Too Tight</h2>
 <p>
             A walking belt that slips is annoying, and the usual response is to tighten it. Owners
             often keep going until the slip stops, and a few quarter-turns past that point they
@@ -342,9 +306,7 @@ const schema = {
           <p>
             With the machine unplugged, lift the belt at the midpoint of one side. On most home
             machines you should be able to raise it a few centimetres off the deck without
-            straining; if it feels like a drum skin, it is too tight. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
-            goes through the lift test and the manual-specified method for the common brands.
+            straining; if it feels like a drum skin, it is too tight. Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a> goes through the lift test and the manual-specified method for the common brands.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The fix</h3>
           <p>
@@ -358,7 +320,7 @@ const schema = {
         </div>
 
         <div id="dust-and-vents" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Cause Three: Dust, Fluff and Blocked Vents</h2>
+          <h2>Cause Three: Dust, Fluff and Blocked Vents</h2>
 <p>
             The motor compartment of a treadmill is a dust trap. The belt sheds fine particles of
             its own underside, the deck sheds lubricant mixed with that dust, the room contributes
@@ -390,16 +352,14 @@ const schema = {
             Vacuum the compartment thoroughly with a brush attachment, keeping the nozzle clear
             of the controller board and its wiring, and brush dust off the motor casing and fan
             with a soft dry brush. Do not use compressed air at close range on the board and do
-            not use any liquid. Our guide to
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>
-            walks through it. Then make it a habit: a few minutes every few months keeps the
+            not use any liquid. Our guide to <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a> walks through it. Then make it a habit: a few minutes every few months keeps the
             motor cool, and it is also when you will spot a frayed drive belt or a loose connector
             before they become a fault.
           </p>
         </div>
 
         <div id="motor-brushes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Cause Four: Worn Motor Brushes</h2>
+          <h2>Cause Four: Worn Motor Brushes</h2>
 <p>
             Most home treadmills use a brushed DC motor, and the brushes — two small carbon blocks
             held against the spinning commutator by springs — wear down over thousands of hours of
@@ -424,8 +384,7 @@ const schema = {
             it needs replacing. Look at the commutator through the holder too: a smooth
             dark-bronze surface is healthy; heavy black deposits, scoring or burnt segments mean
             the brushes have been bad for a while and the commutator may need attention. Our guide
-            to <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">treadmill motor brushes</a>
-            covers the inspection and replacement in detail, including which machines do not have
+            to <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">treadmill motor brushes</a> covers the inspection and replacement in detail, including which machines do not have
             brushes at all.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The fix</h3>
@@ -440,7 +399,7 @@ const schema = {
         </div>
 
         <div id="overload" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Cause Five: Heavy Use on an Under-Rated Motor</h2>
+          <h2>Cause Five: Heavy Use on an Under-Rated Motor</h2>
 <p>
             Sometimes nothing is wrong with the treadmill at all. It is simply being asked to do
             more than its motor was designed for, and the motor is telling you.
@@ -458,9 +417,7 @@ const schema = {
           <p>
             Motor ratings add to the confusion. The figures on the box are not always a measure of
             what the motor can deliver all day, and two machines with the same headline number can
-            behave quite differently under sustained load. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
-            explains the difference between peak and continuous ratings and why the continuous
+            behave quite differently under sustained load. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a> explains the difference between peak and continuous ratings and why the continuous
             figure is the one that matters for heat.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to check</h3>
@@ -483,7 +440,7 @@ const schema = {
         </div>
 
         <div id="controller-and-supply" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Causes Six and Seven: A Failing Controller and Low Voltage</h2>
+          <h2>Causes Six and Seven: A Failing Controller and Low Voltage</h2>
 <p>
             The last two causes are electrical rather than mechanical, and they are worth
             understanding because they produce heat in ways that lubrication and cleaning cannot
@@ -521,15 +478,13 @@ const schema = {
             Check by feeling the plug and any extension cord after a session — warm means
             resistance and voltage drop — and by trying the machine on a dedicated wall outlet
             with no extension. Manufacturers generally advise against extension cords altogether,
-            and our guide to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a>
-            explains when one can be used safely and what rating it would need. A machine that
+            and our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a> explains when one can be used safely and what rating it would need. A machine that
             also trips the breaker on start-up is a stop-now fault in its own right.
           </p>
         </div>
 
         <div id="stop-rule" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Burning Smell Rule</h2>
+          <h2>The Burning Smell Rule</h2>
 <p>
             Of all the symptoms on this page, smell is the one that decides whether you keep
             going or stop. Heat without a smell is a reason to investigate soon. Heat with a smell
@@ -545,13 +500,10 @@ const schema = {
           </p>
           <p>
             Once the machine has cooled, the smell itself is diagnostic. Burning rubber along the
-            deck is belt friction on a dry or over-tight deck. Burning rubber from the front is the
-            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium" data-autolink>drive belt slipping</a> on its pulleys. Scorched dust from the motor is a dirty
+            deck is belt friction on a dry or over-tight deck. Burning rubber from the front is the <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium" data-autolink>drive belt slipping</a> on its pulleys. Scorched dust from the motor is a dirty
             compartment. A sharp, sweet, chemical smell of hot electrics is the controller, the
             motor windings or the wiring, and that one in particular is not a machine to plug back
-            in on the strength of a hope. Our
-            <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">burning smell guide</a>
-            goes through each smell and what it points to.
+            in on the strength of a hope. Our <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">burning smell guide</a> goes through each smell and what it points to.
           </p>
           <p>
             The exception people ask about is a new machine. A faint odour in the first few
@@ -562,14 +514,12 @@ const schema = {
           <p>
             The same stop-now rule applies to a breaker that trips the moment you press start, a
             belt that surges on its own and a belt that does not stop when the safety key is
-            pulled. Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
-            lists all four.
+            pulled. Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a> lists all four.
           </p>
         </div>
 
         <div id="thermal-cut-out" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Thermal Cut-Outs: A Machine Protecting Itself</h2>
+          <h2>Thermal Cut-Outs: A Machine Protecting Itself</h2>
 <p>
             Many treadmill motors and controllers have thermal protection: a sensor or a
             self-resetting thermal switch that cuts power when a component reaches a temperature
@@ -598,14 +548,12 @@ const schema = {
             Not every mid-session stop is thermal. A weak safety key, a loose connector, a speed
             sensor dropping out and a controller fault all produce random stops that are not
             related to temperature, and the way to tell them apart is the pattern: thermal stops
-            are predictable and recover with rest, the others are not. Our guide to a
-            <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a>
-            goes through all of them.
+            are predictable and recover with rest, the others are not. Our guide to a <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a> goes through all of them.
           </p>
         </div>
 
         <div id="prevention" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Preventing Treadmill Overheating</h2>
+          <h2>Preventing Treadmill Overheating</h2>
 <p>
             Almost everything on this page is preventable with a maintenance routine that takes
             less than an hour a year, and a little thought about how the machine is used.
@@ -643,142 +591,156 @@ const schema = {
             lubricant and a vacuum cleaner.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill motor overheating?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because friction has risen and the motor is working harder than it should. The common causes, in order, are a dry deck that needs lubricating, a walking belt tensioned too tight, a motor compartment choked with dust, and worn motor brushes. Less often it is heavy use on a small motor, a failing controller or low voltage through an extension cord.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it normal for a treadmill to get hot after use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Warm is normal. After a long session the motor hood will be warm to the touch, because motors and controllers produce heat as they work. Hot enough that you cannot keep a hand on it, hot after only a short walk, hot with a smell, or hot and then shutting down are not normal and mean the machine is working harder than it was designed to.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I do if my treadmill smells hot?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Stop the belt, switch off, unplug at the wall and do not restart until you have found the cause. Once it has cooled, the smell identifies the problem: burning rubber along the deck is belt friction, from the front is the drive belt, scorched dust is a dirty motor, and a sharp electrical smell points at the controller, motor or wiring and is a technician job.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill shut off after 20 or 30 minutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If it stops at a predictable point in a session and works again after resting, a thermal cut-out is tripping because the motor or controller has reached its temperature limit. That is the machine protecting itself. Find the reason it is running hot, usually a dry deck, a tight belt or dust, rather than trying to keep it running. Random stops that do not recover with rest have other causes.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a dry treadmill belt cause the motor to overheat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is the most common cause. Lubricant between the belt and deck is what lets the belt glide; as it wears away, friction rises and the motor draws more current to hold the same speed, and current is heat. Lubricating the deck as the manual specifies often cures overheating outright, and a deck left dry for long enough wears the belt and deck too.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can using an extension cord make a treadmill overheat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can. A long or thin extension cord drops the voltage reaching the machine, so the motor draws more current to deliver the same power and both the motor and the cord run warmer. A warm plug or cord after a session is the sign. Manufacturers generally advise plugging straight into a wall outlet on a circuit without other heavy loads, with a surge protector rated for the machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With an Overheating Treadmill</h2>
+          <p>Overheating is usually simple to fix. These four are how owners turn a cheap problem into an expensive one.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Tightening a slipping belt instead of lubricating the deck</h3>
+              <p>Slip on a home treadmill is usually a dry deck, not a loose belt. Tightening the belt until the slip stops presses it harder against a deck that was already dragging, so friction and motor heat go up. Lubricate first, then set tension with the lift test, backing the rear bolts off in equal quarter-turns.</p>
+            </li>
+            <li>
+              <h3>Restarting repeatedly after a thermal shutdown</h3>
+              <p>A machine that cuts out when hot and comes back after a rest is protecting its motor and controller. Running it again and again to the cut-out point ages the windings, brushes and capacitors faster. Treat the first shutdown as the signal to check the deck, the belt tension and the dust under the hood before the next session.</p>
+            </li>
+            <li>
+              <h3>Ignoring a smell because the machine still runs</h3>
+              <p>A treadmill that smells of burning but keeps going has already got hotter than it should somewhere. Carrying on turns a glazed drive belt or a dusty motor into a failed controller or a burnt winding. Stop, unplug, let it cool, and identify the smell before deciding whether it is a five-minute fix or a technician visit.</p>
+            </li>
+            <li>
+              <h3>Blaming the motor and skipping the cheap checks</h3>
+              <p>Owners sometimes price a replacement motor before lifting the belt to feel the deck or taking the hood off to look for dust. A hot motor is nearly always a symptom. Lubricate, check tension, vacuum and inspect the brushes in that order; only if all four are right does the motor, controller or supply become the likely cause.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With an Overheating Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Overheating is usually simple to fix. These four are how owners turn a cheap problem into an expensive one.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening a slipping belt instead of lubricating the deck</h3>
-              <p class="text-gray-700 text-sm m-0">Slip on a home treadmill is usually a dry deck, not a loose belt. Tightening the belt until the slip stops presses it harder against a deck that was already dragging, so friction and motor heat go up. Lubricate first, then set tension with the lift test, backing the rear bolts off in equal quarter-turns.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Restarting repeatedly after a thermal shutdown</h3>
-              <p class="text-gray-700 text-sm m-0">A machine that cuts out when hot and comes back after a rest is protecting its motor and controller. Running it again and again to the cut-out point ages the windings, brushes and capacitors faster. Treat the first shutdown as the signal to check the deck, the belt tension and the dust under the hood before the next session.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring a smell because the machine still runs</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill that smells of burning but keeps going has already got hotter than it should somewhere. Carrying on turns a glazed drive belt or a dusty motor into a failed controller or a burnt winding. Stop, unplug, let it cool, and identify the smell before deciding whether it is a five-minute fix or a technician visit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Blaming the motor and skipping the cheap checks</h3>
-              <p class="text-gray-700 text-sm m-0">Owners sometimes price a replacement motor before lifting the belt to feel the deck or taking the hood off to look for dust. A hot motor is nearly always a symptom. Lubricate, check tension, vacuum and inspect the brushes in that order; only if all four are right does the motor, controller or supply become the likely cause.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Fault Diagnosis Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-burning-smell/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Safety</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Burning Smell</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Name the smell and it tells you which part is overheating.</p>
-            </a>
-            <a href="/treadmill-shuts-off-by-itself/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Shuts Off by Itself</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Thermal cut-outs, weak keys and the other causes of random stops.</p>
-            </a>
-            <a href="/treadmill-motor-brushes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Maintenance</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Motor Brushes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to inspect and replace the brushes on a DC motor.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Overheating is nearly always friction, and friction is nearly
             always a dry deck.</strong> Lubricate the deck, set the belt tension properly and
             vacuum the motor compartment before suspecting the motor, and most cases are solved for
             the price of a bottle of silicone.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">A burning smell means stop, and a thermal shutdown means the
             machine is protecting itself.</strong> Find the cause rather than working round the
             protection, and if the deck, belt, dust and brushes are all right, the controller or the
-            supply is next — see our
-            <a href="/treadmill-burning-smell/" class="text-[#5AA9FF] font-bold no-underline">burning smell guide</a>
-            for which smell points where.
+            supply is next — see our <a href="/treadmill-burning-smell/" class="text-[#5AA9FF] font-bold no-underline">burning smell guide</a> for which smell points where.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-burning-smell/">Treadmill Burning Smell</a></li>
+            <li><a href="/treadmill-shuts-off-by-itself/">Treadmill Shuts Off by Itself</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why is my treadmill motor overheating?</h3></summary>
+            <p class="faq-a">
+              Usually because friction has risen and the motor is working harder than it should. The common causes, in order, are a dry deck that needs lubricating, a walking belt tensioned too tight, a motor compartment choked with dust, and worn motor brushes. Less often it is heavy use on a small motor, a failing controller or low voltage through an extension cord.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is it normal for a treadmill to get hot after use?</h3></summary>
+            <p class="faq-a">
+              Warm is normal. After a long session the motor hood will be warm to the touch, because motors and controllers produce heat as they work. Hot enough that you cannot keep a hand on it, hot after only a short walk, hot with a smell, or hot and then shutting down are not normal and mean the machine is working harder than it was designed to.
             </p>
+          </details>
+          <details>
+            <summary><h3>What should I do if my treadmill smells hot?</h3></summary>
+            <p class="faq-a">
+              Stop the belt, switch off, unplug at the wall and do not restart until you have found the cause. Once it has cooled, the smell identifies the problem: burning rubber along the deck is belt friction, from the front is the drive belt, scorched dust is a dirty motor, and a sharp electrical smell points at the controller, motor or wiring and is a technician job.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill shut off after 20 or 30 minutes?</h3></summary>
+            <p class="faq-a">
+              If it stops at a predictable point in a session and works again after resting, a thermal cut-out is tripping because the motor or controller has reached its temperature limit. That is the machine protecting itself. Find the reason it is running hot, usually a dry deck, a tight belt or dust, rather than trying to keep it running. Random stops that do not recover with rest have other causes.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a dry treadmill belt cause the motor to overheat?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is the most common cause. Lubricant between the belt and deck is what lets the belt glide; as it wears away, friction rises and the motor draws more current to hold the same speed, and current is heat. Lubricating the deck as the manual specifies often cures overheating outright, and a deck left dry for long enough wears the belt and deck too.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can using an extension cord make a treadmill overheat?</h3></summary>
+            <p class="faq-a">
+              It can. A long or thin extension cord drops the voltage reaching the machine, so the motor draws more current to deliver the same power and both the motor and the cord run warmer. A warm plug or cord after a session is the sign. Manufacturers generally advise plugging straight into a wall outlet on a circuit without other heavy loads, with a surge protector rated for the machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Fault Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-burning-smell/" class="card">
+            <div class="c-kicker">Safety</div>
+            <div class="c-title">Treadmill Burning Smell</div>
+            <p class="c-blurb">Name the smell and it tells you which part is overheating.</p>
+          </a>
+          <a href="/treadmill-shuts-off-by-itself/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Shuts Off by Itself</div>
+            <p class="c-blurb">Thermal cut-outs, weak keys and the other causes of random stops.</p>
+          </a>
+          <a href="/treadmill-motor-brushes/" class="card">
+            <div class="c-kicker">Maintenance</div>
+            <div class="c-title">Treadmill Motor Brushes</div>
+            <p class="c-blurb">How to inspect and replace the brushes on a DC motor.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

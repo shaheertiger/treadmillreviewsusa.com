@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Outdoors (2026): Can You Use or Keep One Outside?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/outdoor-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "What the Manuals Say", link: "#what-manuals-say" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-outdoortreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-outdoortreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Outdoors: Can You Keep One Outside?</h1>
+      <p class="ed-dek">
+        Running in the fresh air without the traffic sounds like the best of both worlds. The manufacturers disagree, in writing, and for good reasons: weather, humidity, sun and outdoor electrics are all hard on a machine built for a living room. Here is what the manuals say, what actually goes wrong, and what to do if you want the outdoor feeling anyway.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Outdoors: <span class="text-[#5AA9FF]">Can You Keep One Outside?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Running in the fresh air without the traffic sounds like the best of both worlds. The manufacturers disagree, in writing, and for good reasons: weather, humidity, sun and outdoor electrics are all hard on a machine built for a living room. Here is what the manuals say, what actually goes wrong, and what to do if you want the outdoor feeling anyway.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#what-manuals-say" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What the Manuals Say
-          </a>
-          <a href="#electrical" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Outdoor Electrical Safety
-          </a>
-        </div>
+        <a href="#what-manuals-say" class="btn-ghost">What the Manuals Say</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Electrical safety first.</strong> A mains-powered treadmill
-          outdoors combines electricity, moisture and a sweating person on a metal frame. Follow your
-          owner's manual — the manuals we checked say not to use the treadmill outdoors. Never bypass
-          or remove a GFCI, never use the treadmill if it, the cord or the outlet is wet, never run a
-          cord through standing water or a doorway where it can be crushed, unplug before any cleaning
-          or inspection, and have a licensed electrician assess any outdoor outlet or circuit. Electrical
-          codes vary by jurisdiction; this page describes general principles, not code compliance.
-          <strong class="text-gray-900">On manufacturer statements:</strong> quotations are from
-          manuals we checked on 14 October 2026; your model's manual is the authority.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Can You Use a Treadmill Outdoors? The Short Answer</a>
-          <a href="#what-manuals-say" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Do Treadmill Manuals Say About Outdoor Use?</a>
-          <a href="#covered-porch" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Is a Covered Porch, Patio or Deck Any Different?</a>
-          <a href="#weather" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Does Weather Actually Do to a Treadmill Outside?</a>
-          <a href="#electrical" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Is It Safe to Plug a Treadmill In Outside?</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Does Using a Treadmill Outside Void the Warranty?</a>
-          <a href="#which-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Which Types of Treadmill Cope Best Outside?</a>
-          <a href="#if-you-do" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. If You Still Want to Use a Treadmill Outside, How Do You Reduce the Risk?</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Are There Better Ways to Get the Outdoor Feeling?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Searches for "treadmill outdoor" usually come from one of three places: someone with a
           covered porch or patio and no spare room, someone who misses running outside but not the
           weather, and someone who wants to put the treadmill on the deck for the summer. The short
@@ -208,8 +146,36 @@ const schema = {
           anywhere else in the house.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Electrical safety first.</strong> A mains-powered treadmill
+          outdoors combines electricity, moisture and a sweating person on a metal frame. Follow your
+          owner's manual — the manuals we checked say not to use the treadmill outdoors. Never bypass
+          or remove a GFCI, never use the treadmill if it, the cord or the outlet is wet, never run a
+          cord through standing water or a doorway where it can be crushed, unplug before any cleaning
+          or inspection, and have a licensed electrician assess any outdoor outlet or circuit. Electrical
+          codes vary by jurisdiction; this page describes general principles, not code compliance. <strong class="text-gray-900">On manufacturer statements:</strong> quotations are from
+          manuals we checked on 14 October 2026; your model's manual is the authority.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Can You Use a Treadmill Outdoors? The Short Answer</a></li>
+            <li><a href="#what-manuals-say">What Do Treadmill Manuals Say About Outdoor Use?</a></li>
+            <li><a href="#covered-porch">Is a Covered Porch, Patio or Deck Any Different?</a></li>
+            <li><a href="#weather">What Does Weather Actually Do to a Treadmill Outside?</a></li>
+            <li><a href="#electrical">Is It Safe to Plug a Treadmill In Outside?</a></li>
+            <li><a href="#warranty">Does Using a Treadmill Outside Void the Warranty?</a></li>
+            <li><a href="#which-types">Which Types of Treadmill Cope Best Outside?</a></li>
+            <li><a href="#if-you-do">If You Still Want to Use a Treadmill Outside, How Do You Reduce the Risk?</a></li>
+            <li><a href="#alternatives">Are There Better Ways to Get the Outdoor Feeling?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Can You Use a Treadmill Outdoors? The Short Answer</h2>
+          <h2>Can You Use a Treadmill Outdoors? The Short Answer</h2>
 <p>
             <strong>Not as a rule: home treadmills are designed for indoor use, and the manuals we
             checked tell you in writing not to use them outdoors — one names covered patios
@@ -223,9 +189,7 @@ const schema = {
             wind-driven rain, dew, humidity, pollen and temperature swings all reach under a roof.
             A fully enclosed, climate-controlled sunroom is a room of the house and is a different
             matter. An unheated, enclosed three-season room or a garage sits in between, and our
-            guide to keeping a
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in a garage</a>
-            covers that middle ground in detail.
+            guide to keeping a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in a garage</a> covers that middle ground in detail.
           </p>
           <p>
             If you want to do it anyway, the safer approach is to store the treadmill indoors and
@@ -236,7 +200,7 @@ const schema = {
         </div>
 
         <div id="what-manuals-say" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Do Treadmill Manuals Say About Outdoor Use?</h2>
+          <h2>What Do Treadmill Manuals Say About Outdoor Use?</h2>
 <p>
             The manuals we checked are explicit that their treadmills are for indoor use. Three
             examples, all read on 14 October 2026:
@@ -272,7 +236,7 @@ const schema = {
         </div>
 
         <div id="covered-porch" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Is a Covered Porch, Patio or Deck Any Different?</h2>
+          <h2>Is a Covered Porch, Patio or Deck Any Different?</h2>
 <p>
             A covered porch, patio or deck is better than open ground, but it is not indoors, and at
             least one manufacturer's manual names covered patios as unsuitable. A roof stops vertical
@@ -298,14 +262,12 @@ const schema = {
           <p>
             A useful test is to ask whether you would leave a laptop, a television or a sofa
             cushion in that space for a year. If not, it is not a good permanent home for a
-            treadmill either. Our guide to
-            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
-            goes room by room through the alternatives.
+            treadmill either. Our guide to <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a> goes room by room through the alternatives.
           </p>
         </div>
 
         <div id="weather" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Does Weather Actually Do to a Treadmill Outside?</h2>
+          <h2>What Does Weather Actually Do to a Treadmill Outside?</h2>
 <p>
             Outdoor conditions attack a treadmill on several fronts at once, and the damage is
             usually gradual rather than sudden, which is why people are surprised when the machine
@@ -317,9 +279,7 @@ const schema = {
             Rain blown under a roof, dew on the frame, or condensation inside the motor hood on a
             cold, humid morning can corrode connections and short circuits. Condensation is
             insidious because the machine can look dry while the board inside is not. If a
-            treadmill has been rained on, do not switch it on; read our guide to
-            <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a>
-            first.
+            treadmill has been rained on, do not switch it on; read our guide to <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a> first.
           </p>
           <p>
             <strong>Humidity and rust.</strong> Frames are usually powder-coated steel; bolts,
@@ -331,9 +291,7 @@ const schema = {
             <strong>Sun and heat.</strong> Ultraviolet light fades and embrittles plastics, cracks
             console screens and dries out belts. Heat on a sunny deck can push the machine past the
             temperatures its manual allows, and a hot motor compartment makes overheating faults
-            more likely. Our guide to
-            <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
-            covers the symptoms.
+            more likely. Our guide to <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a> covers the symptoms.
           </p>
           <p>
             <strong>Cold.</strong> Cold thickens deck lubricant, stiffens the belt and makes plastics
@@ -356,7 +314,7 @@ const schema = {
         </div>
 
         <div id="electrical" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Is It Safe to Plug a Treadmill In Outside?</h2>
+          <h2>Is It Safe to Plug a Treadmill In Outside?</h2>
 <p>
             It can be made safer, but it is the part of outdoor treadmill use with the least margin
             for error. A treadmill draws substantial current, has a large grounded metal frame, and
@@ -392,22 +350,18 @@ const schema = {
             single outlet at the end. Outdoors, a cord adds a connection that can get wet, a cable
             that can be crushed under a door or the deck, and voltage drop under load. The safer
             arrangement is an outdoor-rated outlet close enough for the treadmill's own cord, which
-            means an electrician if you do not have one. Our guide to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and dedicated circuits</a>
-            explains the electrical reasoning.
+            means an electrician if you do not have one. Our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and dedicated circuits</a> explains the electrical reasoning.
           </p>
           <p>
             <strong>Storms and surges.</strong> Unplug an outdoor treadmill whenever you are not
             using it, and always ahead of a storm. ProForm's manual calls for a surge suppressor
-            meeting a specific rating; our
-            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a>
-            covers what that means. A surge suppressor is not a substitute for a GFCI, and many are
+            meeting a specific rating; our <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a> covers what that means. A surge suppressor is not a substitute for a GFCI, and many are
             not rated for outdoor use themselves.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Does Using a Treadmill Outside Void the Warranty?</h2>
+          <h2>Does Using a Treadmill Outside Void the Warranty?</h2>
 <p>
             It can. Treadmill warranties typically exclude damage caused by misuse, improper
             installation or use outside the conditions in the owner's manual. When the manual says
@@ -423,14 +377,12 @@ const schema = {
           </p>
           <p>
             Read the warranty terms for your specific machine, and if the wording on environment or
-            location is unclear, ask the manufacturer in writing and keep the reply. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what typical exclusions look like and how to read them.
+            location is unclear, ask the manufacturer in writing and keep the reply. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what typical exclusions look like and how to read them.
           </p>
         </div>
 
         <div id="which-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Which Types of Treadmill Cope Best Outside?</h2>
+          <h2>Which Types of Treadmill Cope Best Outside?</h2>
 <p>
             Some types are less vulnerable than others, but none of the manuals we checked approves
             outdoor use, including one for a non-motorised <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>curved treadmill</a>. Think of the list below
@@ -441,9 +393,7 @@ const schema = {
             board, which removes the most expensive electrical failure and most of the shock risk.
             They still have bearings, slats or belts and steel frames that rust, and many have a
             small battery-powered console that dislikes damp. Sole's 2026 C80 manual still says not
-            to use its curved treadmill outdoors. Our guide to
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized treadmills</a>
-            covers the type.
+            to use its curved treadmill outdoors. Our guide to <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized treadmills</a> covers the type.
           </p>
           <p>
             <strong>Folding motorised treadmills with transport wheels</strong> are the most
@@ -464,18 +414,15 @@ const schema = {
           <p>
             <strong>Dog treadmills</strong> are often used in kennels, barns and garages, but they
             are still electrical equipment with their own manuals; check yours rather than assuming
-            it is built for outdoor conditions. Our guide to
-            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a>
-            covers safe use.
+            it is built for outdoor conditions. Our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a> covers safe use.
           </p>
           <p>
-            For a wider view of how each type is built, see our explainer on the
-            <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium">types of treadmills</a>.
+            For a wider view of how each type is built, see our explainer on the <a href="/types-of-treadmills/" class="text-[#0F62FE] font-medium">types of treadmills</a>.
           </p>
         </div>
 
         <div id="if-you-do" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. If You Still Want to Use a Treadmill Outside, How Do You Reduce the Risk?</h2>
+          <h2>If You Still Want to Use a Treadmill Outside, How Do You Reduce the Risk?</h2>
 <p>
             If you decide to use a treadmill outdoors anyway, the safest pattern is occasional use
             on fine days with the machine stored indoors the rest of the time. You are still outside
@@ -502,9 +449,7 @@ const schema = {
             console, and never use the machine if anything is damp.</li>
             <li><strong>Inspect more often.</strong> Check under the motor hood for debris, insects
             and corrosion with the machine unplugged, and check the belt and deck more often than
-            the indoor schedule in our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
-            suggests.</li>
+            the indoor schedule in our <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a> suggests.</li>
           </ul>
           <p>
             A cover helps with dust and sun for short periods, but a plastic sheet traps moisture
@@ -514,7 +459,7 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Are There Better Ways to Get the Outdoor Feeling?</h2>
+          <h2>Are There Better Ways to Get the Outdoor Feeling?</h2>
 <p>
             Usually, yes. Most of what people want from an outdoor treadmill is fresh air, light and
             a view, and those are easier to bring to an indoor treadmill than the other way round.
@@ -527,158 +472,165 @@ const schema = {
           <p>
             <strong>Use scenic programming.</strong> Many connected treadmills and apps offer
             filmed outdoor routes, some with incline that follows the terrain. It is not the same as
-            outside, but it is a real help with boredom; our guide to
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
-            has other ideas.
+            outside, but it is a real help with boredom; our guide to <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a> has other ideas.
           </p>
           <p>
             <strong>Split your training.</strong> Use the treadmill for bad-weather days, precise
-            intervals and incline work, and go outside on good days. Our comparison of
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill vs running outside</a>
-            sets out what each does better.
+            intervals and incline work, and go outside on good days. Our comparison of <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill vs running outside</a> sets out what each does better.
           </p>
           <p>
             <strong>Keep cool indoors.</strong> If the reason for going outside is heat, a fan,
-            better ventilation and a cooler time of day usually solve it. Our guide to
-            <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">staying cool on a treadmill</a>
-            covers the options.
+            better ventilation and a cooler time of day usually solve it. Our guide to <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">staying cool on a treadmill</a> covers the options.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a treadmill outdoors?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Home treadmills are designed for indoor use, and the manuals we checked say not to use them outdoors. ProForm's manual names covered patios as unsuitable. Outdoor use exposes the electronics and frame to moisture, humidity, sun and temperature swings, raises electrical risks and may affect your warranty. Occasional use on dry days, with the machine stored indoors, is lower risk but still outside the manufacturer's intent.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I keep a treadmill on a covered porch?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is not recommended. A roof stops vertical rain but not wind-driven rain, dew, humidity, pollen or temperature swings, and at least one manufacturer's manual specifically says not to put the treadmill on a covered patio. A fully enclosed, climate-controlled sunroom is effectively indoors; an unheated three-season room behaves more like a garage.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to plug a treadmill into an outdoor outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only into a properly installed, GFCI-protected, weather-resistant outdoor outlet with an in-use cover, and only when the treadmill, cord and outlet are dry. Never bypass a GFCI, even if the treadmill trips it. Avoid extension cords where possible, unplug after use and before storms, and have a licensed electrician check any outdoor circuit you plan to use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will using a treadmill outside void the warranty?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can. Warranties typically exclude damage caused by use outside the conditions in the owner's manual, and manuals commonly specify indoor use. Corrosion, moisture damage or debris in the motor compartment can make a claim hard to win. Read your warranty terms and, if the wording is unclear, ask the manufacturer in writing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is there a treadmill designed for outdoor use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We did not find a mainstream home treadmill whose manufacturer approves outdoor use. Manual and curved treadmills avoid the motor electronics, but Sole's 2026 manual for its curved C80 still says not to use it outdoors. If you need a machine for a covered space, read the manual of any model you are considering before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens if a treadmill gets rained on?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Do not switch it on. Unplug it at the outlet if you can do so safely, move it somewhere dry and warm, and let it dry thoroughly. Water can reach the motor controller board and console and may not be visible. If it was soaked, have it inspected before use, because powering a wet board can cause further damage or a shock hazard.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With an Outdoor Treadmill</h2>
+          <p>Most outdoor treadmill failures come from a few assumptions that seem reasonable at the time.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming a roof makes it indoors</h3>
+              <p>A covered patio still gets wind-driven rain, dew, humidity and temperature swings. At least one manufacturer names covered patios as unsuitable in its manual.</p>
+            </li>
+            <li>
+              <h3>Bypassing a GFCI that keeps tripping</h3>
+              <p>Removing ground-fault protection outdoors removes the device that stops a shock becoming fatal. If it trips, stop and have the circuit and machine checked.</p>
+            </li>
+            <li>
+              <h3>A plastic sheet as a cover</h3>
+              <p>A non-breathable cover traps moisture against the frame and electronics and makes condensation worse. Store the machine indoors, or use a breathable cover and let it dry out.</p>
+            </li>
+            <li>
+              <h3>Switching on after rain</h3>
+              <p>A machine can look dry while water sits on the controller board. Unplug it, dry it out thoroughly in a warm space and have it checked if it was soaked.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With an Outdoor Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most outdoor treadmill failures come from a few assumptions that seem reasonable at the time.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a roof makes it indoors</h3>
-              <p class="text-gray-700 text-sm m-0">A covered patio still gets wind-driven rain, dew, humidity and temperature swings. At least one manufacturer names covered patios as unsuitable in its manual.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Bypassing a GFCI that keeps tripping</h3>
-              <p class="text-gray-700 text-sm m-0">Removing ground-fault protection outdoors removes the device that stops a shock becoming fatal. If it trips, stop and have the circuit and machine checked.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">A plastic sheet as a cover</h3>
-              <p class="text-gray-700 text-sm m-0">A non-breathable cover traps moisture against the frame and electronics and makes condensation worse. Store the machine indoors, or use a breathable cover and let it dry out.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Switching on after rain</h3>
-              <p class="text-gray-700 text-sm m-0">A machine can look dry while water sits on the controller board. Unplug it, dry it out thoroughly in a warm space and have it checked if it was soaked.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-in-garage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Ownership</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Can You Keep a Treadmill in a Garage?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cold, damp, garage power and the warranty clause.</p>
-            </a>
-            <a href="/where-to-put-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Where to Put a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Room by room: floors, power, noise and space.</p>
-            </a>
-            <a href="/treadmill-water-damage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Problems</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Water Damage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What to do before switching a wet machine on.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">A treadmill is an indoor appliance, and the manuals say so.</strong>
-            The ones we checked tell owners not to use their treadmills outdoors, and one names covered
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">A treadmill is an indoor appliance, and the manuals say so.</strong> The ones we checked tell owners not to use their treadmills outdoors, and one names covered
             patios. Rain, condensation, humidity, sun and outdoor electrics are all hard on a machine
             built for a living room, and damage from them may not be covered by the warranty.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you want the outdoor feeling, put the treadmill by a window or patio door, or wheel it
             out only on dry days into a GFCI-protected outdoor outlet. For the in-between spaces, our
-            guide to keeping a
-            <a href="/treadmill-in-garage/" class="text-[#5AA9FF] font-bold no-underline">treadmill in a garage</a>
-            covers the precautions in detail.
+            guide to keeping a <a href="/treadmill-in-garage/" class="text-[#5AA9FF] font-bold no-underline">treadmill in a garage</a> covers the precautions in detail.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-in-garage/">Can You Keep a Treadmill in a Garage?</a></li>
+            <li><a href="/where-to-put-a-treadmill/">Where to Put a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Can you use a treadmill outdoors?</h3></summary>
+            <p class="faq-a">
+              Home treadmills are designed for indoor use, and the manuals we checked say not to use them outdoors. ProForm's manual names covered patios as unsuitable. Outdoor use exposes the electronics and frame to moisture, humidity, sun and temperature swings, raises electrical risks and may affect your warranty. Occasional use on dry days, with the machine stored indoors, is lower risk but still outside the manufacturer's intent.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can I keep a treadmill on a covered porch?</h3></summary>
+            <p class="faq-a">
+              It is not recommended. A roof stops vertical rain but not wind-driven rain, dew, humidity, pollen or temperature swings, and at least one manufacturer's manual specifically says not to put the treadmill on a covered patio. A fully enclosed, climate-controlled sunroom is effectively indoors; an unheated three-season room behaves more like a garage.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to plug a treadmill into an outdoor outlet?</h3></summary>
+            <p class="faq-a">
+              Only into a properly installed, GFCI-protected, weather-resistant outdoor outlet with an in-use cover, and only when the treadmill, cord and outlet are dry. Never bypass a GFCI, even if the treadmill trips it. Avoid extension cords where possible, unplug after use and before storms, and have a licensed electrician check any outdoor circuit you plan to use.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will using a treadmill outside void the warranty?</h3></summary>
+            <p class="faq-a">
+              It can. Warranties typically exclude damage caused by use outside the conditions in the owner's manual, and manuals commonly specify indoor use. Corrosion, moisture damage or debris in the motor compartment can make a claim hard to win. Read your warranty terms and, if the wording is unclear, ask the manufacturer in writing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is there a treadmill designed for outdoor use?</h3></summary>
+            <p class="faq-a">
+              We did not find a mainstream home treadmill whose manufacturer approves outdoor use. Manual and curved treadmills avoid the motor electronics, but Sole's 2026 manual for its curved C80 still says not to use it outdoors. If you need a machine for a covered space, read the manual of any model you are considering before buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What happens if a treadmill gets rained on?</h3></summary>
+            <p class="faq-a">
+              Do not switch it on. Unplug it at the outlet if you can do so safely, move it somewhere dry and warm, and let it dry thoroughly. Water can reach the motor controller board and console and may not be visible. If it was soaked, have it inspected before use, because powering a wet board can cause further damage or a shock hazard.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-in-garage/" class="card">
+            <div class="c-kicker">Ownership</div>
+            <div class="c-title">Can You Keep a Treadmill in a Garage?</div>
+            <p class="c-blurb">Cold, damp, garage power and the warranty clause.</p>
+          </a>
+          <a href="/where-to-put-a-treadmill/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Where to Put a Treadmill</div>
+            <p class="c-blurb">Room by room: floors, power, noise and space.</p>
+          </a>
+          <a href="/treadmill-water-damage/" class="card">
+            <div class="c-kicker">Problems</div>
+            <div class="c-title">Treadmill Water Damage</div>
+            <p class="c-blurb">What to do before switching a wet machine on.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

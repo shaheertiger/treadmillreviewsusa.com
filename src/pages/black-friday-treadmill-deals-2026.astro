@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Black Friday Treadmill Deals 2026: 7 Worth Watching";
 const description =
@@ -303,6 +302,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/black-friday-treadmill-deals-2026/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -325,66 +330,88 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the 2026 Watch List", link: "#picks" }}
+  stickyCta={{ text: "Budget Walking Pad: UREVO Strol 2E", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-blackfridaytreadmilldeals2026" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-blackfridaytreadmilldeals2026)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Black Friday 2026</span>
+      </nav>
+      <h1 class="ed-title">Black Friday Treadmill Deals 2026</h1>
+      <p class="ed-dek">
+        Black Friday is Friday 27 November this year, and no retailer has published its treadmill prices yet. Here are seven machines on Amazon worth watching, one or two in every tier, with what each sold for when we checked and the price at which we would call it a good deal.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Black Friday 2026
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Black Friday Treadmill Deals <span class="text-[#5AA9FF]">2026</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Black Friday is Friday 27 November this year, and no retailer has published its treadmill prices yet. Here are seven machines on Amazon worth watching, one or two in every tier, with what each sold for when we checked and the price at which we would call it a good deal.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Watch List
-          </a>
-          <a href="#by-tier" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Deals by Tier
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#urevo-strol-2e"><img src="https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg" alt="UREVO Strol 2E" width="500" height="500" decoding="async" /></a>
+          <a href="#walkingpad-z1"><img src="https://m.media-amazon.com/images/I/31oMu9TYTUL._SL500_.jpg" alt="WalkingPad Z1" width="448" height="500" decoding="async" /></a>
+          <a href="#nordictrack-t-series-5"><img src="https://m.media-amazon.com/images/I/31HBQOJxIZL._SL500_.jpg" alt="NordicTrack T Series 5" width="386" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 28, 2026</strong>
+        <figcaption>UREVO Strol 2E · WalkingPad Z1 · NordicTrack T Series 5</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most Black Friday treadmill lists are written on the day and out of date by lunchtime. This
+          one is written a month early on purpose. It names seven machines sold on Amazon that we
+          think are worth watching across every tier, from a walking pad under $200 to a
+          connected running treadmill near $2,000, and for each one it gives the price we actually
+          saw, the lowest price we could trace, and the price at which we would buy.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Budget Walking Pad:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Walking Pad:</span> <a href="#walkingpad-z1">WalkingPad Z1</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Budget Pick:</span> <a href="#nordictrack-t-series-5">NordicTrack T Series 5</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best All-Rounder:</span> <a href="#horizon-t101-connect">Horizon T101 Connect</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Running:</span> <a href="#horizon-7-0-at">Horizon 7.0 AT</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Entry iFIT:</span> <a href="#nordictrack-t-series-10">NordicTrack T Series 10</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Premium Pick:</span> <a href="#nordictrack-commercial-1750">NordicTrack Commercial 1750</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">How this page was put together.</strong> On 28 October 2026
           we checked the prices below against the manufacturers' own stores (UREVO, WalkingPad,
           Horizon Fitness and NordicTrack) and, where we could read it, the Amazon listing; the
@@ -398,76 +425,26 @@ const schema = {
           or a promise that the price will appear. We have not tested these machines. We earn a
           commission if you buy through the Amazon links on this page; it does not change which
           products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Walking Pad:</span>
-            <a href="#urevo-strol-2e" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E</a>
-            <a href="#urevo-strol-2e" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking Pad:</span>
-            <a href="#walkingpad-z1" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad Z1</a>
-            <a href="#walkingpad-z1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Pick:</span>
-            <a href="#nordictrack-t-series-5" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T Series 5</a>
-            <a href="#nordictrack-t-series-5" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best All-Rounder:</span>
-            <a href="#horizon-t101-connect" class="font-bold text-gray-900 no-underline hover:underline">Horizon T101 Connect</a>
-            <a href="#horizon-t101-connect" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Running:</span>
-            <a href="#horizon-7-0-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon 7.0 AT</a>
-            <a href="#horizon-7-0-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Watch List at a Glance</a>
-          <a href="#calendar" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 2026 Calendar</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The 7 Machines to Watch</a>
-          <a href="#by-tier" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Deals by Tier</a>
-          <a href="#typical-discounts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Typical Discounts by Tier</a>
-          <a href="#how-targets" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How We Set the Targets</a>
-          <a href="#amazon-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Buying on Amazon in Black Friday Week</a>
-          <a href="#last-year" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. If You Searched for 2025 Deals</a>
-          <a href="#left-off" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Machines We Left Off</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">The Watch List at a Glance</a></li>
+            <li><a href="#calendar">The 2026 Calendar</a></li>
+            <li><a href="#picks">The 7 Machines to Watch</a></li>
+            <li><a href="#by-tier">Deals by Tier</a></li>
+            <li><a href="#typical-discounts">Typical Discounts by Tier</a></li>
+            <li><a href="#how-targets">How We Set the Targets</a></li>
+            <li><a href="#amazon-week">Buying on Amazon in Black Friday Week</a></li>
+            <li><a href="#last-year">If You Searched for 2025 Deals</a></li>
+            <li><a href="#left-off">Machines We Left Off</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most Black Friday treadmill lists are written on the day and out of date by lunchtime. This
-          one is written a month early on purpose. It names seven machines sold on Amazon that we
-          think are worth watching across every tier, from a walking pad under $200 to a
-          connected running treadmill near $2,000, and for each one it gives the price we actually
-          saw, the lowest price we could trace, and the price at which we would buy.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The 2026 Watch List at a Glance</h2>
+          <h2>The 2026 Watch List at a Glance</h2>
 <p>
             Seven machines, one or two per tier, all sold on Amazon US. The "price we saw" column is
             dated because prices move daily; the "target" column is the price at which we think each
@@ -499,14 +476,13 @@ const schema = {
             suits your space, weight and pace, that is a good purchase. If it does not get there, it
             is still the same machine at its normal price, and the second half of January is the
             next good window. For the full method behind judging any deal — price history, inflated
-            "was" prices, bundles and delivered cost — read our guide to
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">how to tell a real Black Friday treadmill discount</a>.
+            "was" prices, bundles and delivered cost — read our guide to <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">how to tell a real Black Friday treadmill discount</a>.
             This page applies that method to specific machines; it does not repeat it.
           </p>
         </div>
 
         <div id="calendar" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. When Black Friday 2026 Treadmill Deals Start</h2>
+          <h2>When Black Friday 2026 Treadmill Deals Start</h2>
 <p>
             The fixed dates are simple. <strong>Thanksgiving is Thursday 26 November 2026, Black
             Friday is Friday 27 November and Cyber Monday is Monday 30 November.</strong> The sale
@@ -536,15 +512,13 @@ const schema = {
             <li><strong>December:</strong> some reductions continue, but freight delivery for full-size treadmills tends to lengthen. If the machine is a gift, check the delivery estimate on the order page before you buy.</li>
           </ul>
           <p>
-            Our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
-            covers the rest of the calendar, including why the first two weeks of January are a poor
+            Our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> covers the rest of the calendar, including why the first two weeks of January are a poor
             time to buy and the second half is a reasonable one.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. 7 Treadmills Worth Watching for Black Friday 2026</h2>
+          <h2>7 Treadmills Worth Watching for Black Friday 2026</h2>
 <p>
             Ordered by price, from a walking pad to a premium connected treadmill. Each card gives
             the price we saw and when, the lowest price we could document from a source we could
@@ -554,78 +528,67 @@ const schema = {
             7.0 AT links to an Amazon search because its listing is shared with other Horizon models.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="by-tier" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Black Friday 2026 Deals by Tier</h2>
+          <h2>Black Friday 2026 Deals by Tier</h2>
 <p>
             This page is the overview. Each tier has its own Black Friday 2026 page with a longer
             list of machines, tier-specific traps and its own target prices. Start with the one that
@@ -634,56 +597,38 @@ const schema = {
           <p>
             <strong>Walking pads.</strong> If you want to walk at a desk or in front of the
             television, a walking pad is the right tool, and the deals are plentiful because the
-            category is crowded. Our
-            <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Black Friday walking pad deals</a>
-            page covers pads with incline, handrails and longer belts, and the brands to avoid.
+            category is crowded. Our <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">Black Friday walking pad deals</a> page covers pads with incline, handrails and longer belts, and the brands to avoid.
           </p>
           <p>
             <strong>Under $500.</strong> This is the tier where headline percentages are biggest and
-            reference prices are most inflated. Our
-            <a href="/black-friday-treadmill-deals-under-500/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $500</a>
-            page sorts the real treadmills from the walking pads with treadmill titles.
+            reference prices are most inflated. Our <a href="/black-friday-treadmill-deals-under-500/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $500</a> page sorts the real treadmills from the walking pads with treadmill titles.
           </p>
           <p>
             <strong>Under $1,000.</strong> The tier where most people should be shopping if they
-            will jog regularly, and where a good deal can move a 60-inch running deck into budget. See
-            <a href="/black-friday-treadmill-deals-under-1000/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $1,000</a>.
+            will jog regularly, and where a good deal can move a 60-inch running deck into budget. See <a href="/black-friday-treadmill-deals-under-1000/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals under $1,000</a>.
           </p>
           <p>
-            <strong>Folding treadmills.</strong> If storage decides the purchase, the
-            <a href="/black-friday-folding-treadmill-deals/" class="text-[#0F62FE] font-medium">Black Friday folding treadmill deals</a>
-            page compares folded footprints and fold mechanisms as well as prices.
+            <strong>Folding treadmills.</strong> If storage decides the purchase, the <a href="/black-friday-folding-treadmill-deals/" class="text-[#0F62FE] font-medium">Black Friday folding treadmill deals</a> page compares folded footprints and fold mechanisms as well as prices.
           </p>
           <p>
             <strong>NordicTrack.</strong> NordicTrack runs the most visible Black Friday promotions
             in the category, and its deals often bundle iFIT membership into the advertised saving.
-            Our
-            <a href="/nordictrack-black-friday-deals/" class="text-[#0F62FE] font-medium">NordicTrack Black Friday deals</a>
-            page covers the whole range, from the T Series to the X Series incline trainers.
+            Our <a href="/nordictrack-black-friday-deals/" class="text-[#0F62FE] font-medium">NordicTrack Black Friday deals</a> page covers the whole range, from the T Series to the X Series incline trainers.
           </p>
           <p>
             <strong>Cyber Monday.</strong> Many treadmill reductions run straight through the
-            weekend, and some retailers save their best prices for Monday. The
-            <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a>
-            page covers what typically changes between Friday and Monday.
+            weekend, and some retailers save their best prices for Monday. The <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a> page covers what typically changes between Friday and Monday.
           </p>
           <p>
             <strong>The rest of the home gym.</strong> If the treadmill is one piece of a bigger
-            set-up, our
-            <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a>
-            page covers racks, weights and machines, and there are separate pages for
-            <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">ellipticals</a>
-            and
-            <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">exercise bikes</a>
-            if a treadmill is not the only option you are weighing.
+            set-up, our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page covers racks, weights and machines, and there are separate pages for <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">ellipticals</a> and <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">exercise bikes</a> if a treadmill is not the only option you are weighing.
           </p>
         </div>
 
         <div id="typical-discounts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Discounts Are Typical by Tier</h2>
+          <h2>What Discounts Are Typical by Tier</h2>
 <p>
-            Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">method guide</a>
-            puts a genuine treadmill reduction in a strong sale window at around 15 to 30% off the
+            Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">method guide</a> puts a genuine treadmill reduction in a strong sale window at around 15 to 30% off the
             normal selling price — what the machine actually sold for in the weeks before, not its
             list price. That band is a general pattern, and it does not apply evenly. Here is how it
             tends to play out in each tier, illustrated with the machines on this page.
@@ -732,14 +677,12 @@ const schema = {
             price and more of the deal in extras. On 28 October NordicTrack's own page for the
             Commercial 1750 offered 20% off plus free shipping it values at up to $249, and an
             extra $100 off with an annual iFIT membership. That last part is only a saving if you
-            were going to pay for iFIT anyway — our guide to
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            works through the long-run cost.
+            were going to pay for iFIT anyway — our guide to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> works through the long-run cost.
           </p>
         </div>
 
         <div id="how-targets" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How We Set the Target Prices</h2>
+          <h2>How We Set the Target Prices</h2>
 <p>
             Each target started from two numbers we could document from a source we actually read:
             the <strong>normal selling price</strong> in October 2026 at Amazon or the maker's
@@ -769,19 +712,15 @@ const schema = {
           <p>
             Compare targets on the <strong>delivered</strong> price. A full-size treadmill arrives by
             freight, and kerbside delivery and room-of-choice delivery can differ by a meaningful
-            sum. Our
-            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            explains the tiers.
+            sum. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> explains the tiers.
           </p>
         </div>
 
         <div id="amazon-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Buying on Amazon in Black Friday Week</h2>
+          <h2>Buying on Amazon in Black Friday Week</h2>
 <p>
             All seven machines here are sold on Amazon, and Black Friday week changes a few things
-            about buying there. Our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            covers the basics; these are the points that matter most during the sale.
+            about buying there. Our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> covers the basics; these are the points that matter most during the sale.
           </p>
           <p>
             <strong>Read the seller line every time.</strong> The Commercial 1750 listing we read on
@@ -808,9 +747,7 @@ const schema = {
             <strong>Check the return terms for this item.</strong> Extended holiday return windows do
             not always apply in the same way to large, freight-delivered items, and returning a
             full treadmill means disassembly, repacking and a scheduled pickup. Read the terms on the
-            listing before you order. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            guide covers what to look for.
+            listing before you order. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> guide covers what to look for.
           </p>
           <p>
             <strong>Match the model, not the name.</strong> Treadmill names are reused across model
@@ -822,7 +759,7 @@ const schema = {
         </div>
 
         <div id="last-year" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Looking for Black Friday 2025 Treadmill Deals?</h2>
+          <h2>Looking for Black Friday 2025 Treadmill Deals?</h2>
 <p>
             Plenty of people still search for last year's Black Friday treadmill deals, usually to
             get a sense of what this year might bring. Last year's deals have ended, and their
@@ -849,14 +786,12 @@ const schema = {
             The other lesson from previous years is that reductions are spread out. Treadmill deals
             have typically started before the day and continued through Cyber Monday, so missing a
             single day rarely means missing the sale. If you are deciding between buying on the
-            Friday and waiting for Monday, our
-            <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday page</a>
-            covers what tends to change.
+            Friday and waiting for Monday, our <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday page</a> covers what tends to change.
           </p>
         </div>
 
         <div id="left-off" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Machines We Considered and Left Off</h2>
+          <h2>Machines We Considered and Left Off</h2>
 <p>
             A few machines you might expect on a Black Friday list are missing. The reasons are worth
             knowing if you see them discounted.
@@ -873,9 +808,7 @@ const schema = {
             treadmill, but on 13 October ProForm listed it at $1,099.99, and the next day an authorised retailer
             had it at $799.99, a $300 gap for the same machine. With an 18 by 55-inch belt and no
             screen, it is hard to recommend above about $800, and we could not confirm a current
-            Amazon price. Our
-            <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium">Carbon TLS review</a>
-            has the detail.
+            Amazon price. Our <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium">Carbon TLS review</a> has the detail.
           </p>
           <p>
             <strong>Sperax walking pads.</strong> These turn up at very low prices on marketplaces,
@@ -890,143 +823,159 @@ const schema = {
             carries the warranty questions covered above, whatever the price.
           </p>
           <p>
-            For the full evergreen list without a sale attached, see our
-            <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a>
-            roundup.
+            For the full evergreen list without a sale attached, see our <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> roundup.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">When does Black Friday 2026 start for treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Black Friday is Friday 27 November 2026, after Thanksgiving on Thursday 26 November, and Cyber Monday is 30 November. Amazon typically opens its Black Friday event about a week earlier; last year it began on 20 November. Amazon had not announced its 2026 dates on 28 October, so start checking prices daily from the week of 16 November.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much will treadmills be discounted on Black Friday 2026?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Nobody has published 2026 prices yet. As a typical pattern, genuine reductions on mainstream treadmills in a strong sale run around 15 to 30% off the normal selling price. Walking pads are discounted so often that a Black Friday price may match the year-round sale price, and premium machines tend to see smaller cuts with more value in delivery or membership.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill to watch for Black Friday 2026?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, the Horizon T101 Connect: a 20 by 55-inch deck, 10% incline and lifetime frame and motor warranty, with a target of $600 or less. Runners should watch the Horizon 7.0 AT at $850 or less, and anyone who wants iFIT and decline should watch the NordicTrack Commercial 1750 at $1,700 or less.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are Black Friday 2025 treadmill prices a guide to 2026?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only as a record of what a machine has sold for, not as a forecast. Several of the lowest prices we could document were not on Black Friday at all: the Horizon T101 Connect at $599.99 in August 2025 and the NordicTrack T Series 5 at $479 in January 2026. Judge 2026 deals against documented prices for the same model.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy a treadmill now or wait for Black Friday?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If a machine on your shortlist already meets your target price, buy it; an October price that meets your ceiling is as good as one in November. Otherwise, record what it sells for now and wait. If you need the machine to arrive by a set date, allow for longer freight delivery times in late November and December.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Amazon a good place to buy a treadmill on Black Friday?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if the item is sold by Amazon or by the brand's own storefront, which keeps the manufacturer's warranty clear. Check the seller line, expect some prices to appear only in the cart, confirm the model number against the maker's page, and read the return terms for freight-delivered items before you order.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Black Friday 2026 Treadmill Deals</h2>
+          <p>Most of these come from letting the sale choose the machine, or from measuring the deal against the wrong number.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trading up a tier because the discount is bigger</h3>
+              <p>A large saving on a premium connected treadmill is still more money than a walker who needs a 55-inch deck should spend. Decide the tier from your space, weight, pace and whether you will pay for a membership, then watch the deals in that tier only.</p>
+            </li>
+            <li>
+              <h3>Measuring the deal from the compare-at price</h3>
+              <p>Horizon showed a $2,100 compare-at price on a 7.0 AT selling for $935 to $1,099; UREVO showed $289.99 on a pad selling for $169.99. Measure every deal from what the machine actually sold for in October, at more than one retailer.</p>
+            </li>
+            <li>
+              <h3>Waiting for one model to hit one number</h3>
+              <p>Stock on the most discounted machines can run out, and the T101 Connect was already sold out on Horizon’s own store a month before Black Friday. Keep two or three acceptable machines on your list and buy whichever reaches its target first.</p>
+            </li>
+            <li>
+              <h3>Forgetting delivery and returns</h3>
+              <p>A full treadmill box weighs 200 to 300 lb or more, and free shipping often means kerbside. Price the delivery tier you need, check whether holiday return terms apply to freight items, and keep the packaging until you are sure you are keeping the machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Black Friday 2026 Treadmill Deals</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from letting the sale choose the machine, or from measuring the deal against the wrong number.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trading up a tier because the discount is bigger</h3>
-              <p class="text-gray-700 text-sm m-0">A large saving on a premium connected treadmill is still more money than a walker who needs a 55-inch deck should spend. Decide the tier from your space, weight, pace and whether you will pay for a membership, then watch the deals in that tier only.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the deal from the compare-at price</h3>
-              <p class="text-gray-700 text-sm m-0">Horizon showed a $2,100 compare-at price on a 7.0 AT selling for $935 to $1,099; UREVO showed $289.99 on a pad selling for $169.99. Measure every deal from what the machine actually sold for in October, at more than one retailer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Waiting for one model to hit one number</h3>
-              <p class="text-gray-700 text-sm m-0">Stock on the most discounted machines can run out, and the T101 Connect was already sold out on Horizon’s own store a month before Black Friday. Keep two or three acceptable machines on your list and buy whichever reaches its target first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting delivery and returns</h3>
-              <p class="text-gray-700 text-sm m-0">A full treadmill box weighs 200 to 300 lb or more, and free shipping often means kerbside. Price the delivery tier you need, check whether holiday return terms apply to freight items, and keep the packaging until you are sure you are keeping the machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-black-friday-deals/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Method</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Black Friday Deals: How to Tell a Real Discount</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Price history, inflated list prices, bundles and the delivered price, step by step.</p>
-            </a>
-            <a href="/best-treadmills-on-amazon/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills on Amazon</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six machines genuinely sold on Amazon, and how to buy one safely, sale or no sale.</p>
-            </a>
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Timing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Time of Year to Buy a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The annual price cycle, month by month, including the January window.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people, the Horizon T101 Connect at $600 or less is the
             Black Friday 2026 treadmill to watch</strong>; runners should watch the Horizon 7.0 AT
             at $850 or less, and anyone who wants iFIT and decline the NordicTrack Commercial 1750
             at $1,700 or less. On a smaller budget, the NordicTrack T Series 5 under $480 is a real
             treadmill, and the walking pads are only deals below the prices they already sell at.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             The dates are fixed — Black Friday is 27 November and Cyber Monday 30 November — but
             treadmill deals typically start a week earlier and spread across both. Write down what
-            your shortlist sells for now, judge every deal against that number using our
-            <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">guide to spotting a real discount</a>,
+            your shortlist sells for now, judge every deal against that number using our <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">guide to spotting a real discount</a>,
             and buy the first machine that meets its target.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-black-friday-deals/">Treadmill Black Friday Deals: How to Tell a Real Discount</a></li>
+            <li><a href="/best-treadmills-on-amazon/">Best Treadmills on Amazon</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>When does Black Friday 2026 start for treadmills?</h3></summary>
+            <p class="faq-a">
+              Black Friday is Friday 27 November 2026, after Thanksgiving on Thursday 26 November, and Cyber Monday is 30 November. Amazon typically opens its Black Friday event about a week earlier; last year it began on 20 November. Amazon had not announced its 2026 dates on 28 October, so start checking prices daily from the week of 16 November.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much will treadmills be discounted on Black Friday 2026?</h3></summary>
+            <p class="faq-a">
+              Nobody has published 2026 prices yet. As a typical pattern, genuine reductions on mainstream treadmills in a strong sale run around 15 to 30% off the normal selling price. Walking pads are discounted so often that a Black Friday price may match the year-round sale price, and premium machines tend to see smaller cuts with more value in delivery or membership.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the best treadmill to watch for Black Friday 2026?</h3></summary>
+            <p class="faq-a">
+              For most people, the Horizon T101 Connect: a 20 by 55-inch deck, 10% incline and lifetime frame and motor warranty, with a target of $600 or less. Runners should watch the Horizon 7.0 AT at $850 or less, and anyone who wants iFIT and decline should watch the NordicTrack Commercial 1750 at $1,700 or less.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are Black Friday 2025 treadmill prices a guide to 2026?</h3></summary>
+            <p class="faq-a">
+              Only as a record of what a machine has sold for, not as a forecast. Several of the lowest prices we could document were not on Black Friday at all: the Horizon T101 Connect at $599.99 in August 2025 and the NordicTrack T Series 5 at $479 in January 2026. Judge 2026 deals against documented prices for the same model.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I buy a treadmill now or wait for Black Friday?</h3></summary>
+            <p class="faq-a">
+              If a machine on your shortlist already meets your target price, buy it; an October price that meets your ceiling is as good as one in November. Otherwise, record what it sells for now and wait. If you need the machine to arrive by a set date, allow for longer freight delivery times in late November and December.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is Amazon a good place to buy a treadmill on Black Friday?</h3></summary>
+            <p class="faq-a">
+              Yes, if the item is sold by Amazon or by the brand's own storefront, which keeps the manufacturer's warranty clear. Check the seller line, expect some prices to appear only in the cart, confirm the model number against the maker's page, and read the return terms for freight-delivered items before you order.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-black-friday-deals/" class="card">
+            <div class="c-kicker">Method</div>
+            <div class="c-title">Treadmill Black Friday Deals: How to Tell a Real Discount</div>
+            <p class="c-blurb">Price history, inflated list prices, bundles and the delivered price, step by step.</p>
+          </a>
+          <a href="/best-treadmills-on-amazon/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Best Treadmills on Amazon</div>
+            <p class="c-blurb">Six machines genuinely sold on Amazon, and how to buy one safely, sale or no sale.</p>
+          </a>
+          <a href="/best-time-of-year-to-buy-a-treadmill/" class="card">
+            <div class="c-kicker">Timing</div>
+            <div class="c-title">Best Time of Year to Buy a Treadmill</div>
+            <p class="c-blurb">The annual price cycle, month by month, including the January window.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

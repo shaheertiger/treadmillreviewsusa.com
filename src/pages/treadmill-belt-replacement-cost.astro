@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Belt Replacement Cost (2026): Parts, Labour and Extras";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-belt-replacement-cost/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Cost Breakdown", link: "#belt-cost" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillbeltreplacementcost" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillbeltreplacementcost)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Maintenance</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Belt Replacement Cost: What You Will Actually Pay</h1>
+      <p class="ed-dek">
+        A new treadmill belt is not an expensive part, but the bill can grow quickly once labour, lubricant and a worn deck are added. Here are the typical ranges, how to tell whether the belt really needs replacing, and when the money is better spent on a different machine.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Maintenance
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Belt Replacement Cost: <span class="text-[#5AA9FF]">What You Will Actually Pay</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A new treadmill belt is not an expensive part, but the bill can grow quickly once labour, lubricant and a worn deck are added. Here are the typical ranges, how to tell whether the belt really needs replacing, and when the money is better spent on a different machine.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#belt-cost" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Cost Breakdown
-          </a>
-          <a href="#repair-or-replace" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Repair or Replace?
-          </a>
-        </div>
+        <a href="#belt-cost" class="btn-ghost">The Cost Breakdown</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Unplug before you touch anything.</strong> Every check on
-          this page that involves lifting the belt edge, feeling the deck or looking at the rollers
-          is done with the treadmill unplugged at the wall, not merely switched off. Stop using the
-          machine entirely for a burning smell, a breaker that trips on start-up, speed that surges
-          on its own, or a belt that does not stop when the safety key is pulled. Your manual is
-          the authority on your model; where it disagrees with the general guidance here, follow
-          the manual.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Much Does It Cost to Replace a Treadmill Belt?</a>
-          <a href="#does-it-need-replacing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Does the Belt Actually Need Replacing?</a>
-          <a href="#belt-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What the Belt Itself Costs</a>
-          <a href="#labour-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What a Technician Charges</a>
-          <a href="#hidden-extras" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Hidden Extras That Inflate the Bill</a>
-          <a href="#cost-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Typical Costs at a Glance</a>
-          <a href="#measuring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Measuring Your Belt and Ordering the Right One</a>
-          <a href="#diy-vs-pro" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. DIY or Professional? An Honest Comparison</a>
-          <a href="#repair-or-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Repair-or-Replace Maths</a>
-          <a href="#making-it-last" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Making the Next Belt Last Longer</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Ask what it costs to replace a treadmill belt and you will get three very different
           answers depending on who you ask: the price of a belt on a parts website, the price a
           technician quotes for the whole job, and the price an owner remembers paying after the
@@ -206,8 +145,36 @@ const schema = {
           matters more than any of them — whether this machine is worth the money at all.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Unplug before you touch anything.</strong> Every check on
+          this page that involves lifting the belt edge, feeling the deck or looking at the rollers
+          is done with the treadmill unplugged at the wall, not merely switched off. Stop using the
+          machine entirely for a burning smell, a breaker that trips on start-up, speed that surges
+          on its own, or a belt that does not stop when the safety key is pulled. Your manual is
+          the authority on your model; where it disagrees with the general guidance here, follow
+          the manual.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Much Does It Cost to Replace a Treadmill Belt?</a></li>
+            <li><a href="#does-it-need-replacing">Does the Belt Actually Need Replacing?</a></li>
+            <li><a href="#belt-cost">What the Belt Itself Costs</a></li>
+            <li><a href="#labour-cost">What a Technician Charges</a></li>
+            <li><a href="#hidden-extras">The Hidden Extras That Inflate the Bill</a></li>
+            <li><a href="#cost-table">Typical Costs at a Glance</a></li>
+            <li><a href="#measuring">Measuring Your Belt and Ordering the Right One</a></li>
+            <li><a href="#diy-vs-pro">DIY or Professional? An Honest Comparison</a></li>
+            <li><a href="#repair-or-replace">The Repair-or-Replace Maths</a></li>
+            <li><a href="#making-it-last">Making the Next Belt Last Longer</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Much Does It Cost to Replace a Treadmill Belt?</h2>
+          <h2>How Much Does It Cost to Replace a Treadmill Belt?</h2>
 <p>
             For a typical home treadmill, <strong>the belt itself commonly costs somewhere in the
             region of $60 to $150 for a generic replacement and $100 to $250 or more for the
@@ -232,7 +199,7 @@ const schema = {
         </div>
 
         <div id="does-it-need-replacing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Does the Belt Actually Need Replacing?</h2>
+          <h2>Does the Belt Actually Need Replacing?</h2>
 <p>
             Most belts that get replaced on a hunch did not need to be. The symptoms that send
             owners shopping for a belt — slipping, hesitation underfoot, a belt that drifts to one
@@ -243,17 +210,14 @@ const schema = {
             <strong>Lubricate first.</strong> If the underside of the belt feels dry when you slide
             a hand under the edge (machine unplugged), the deck needs lubricant. A dry deck makes
             the belt drag, which makes it slip under load, which makes the motor labour. Our guide
-            to <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a>
-            covers the how and how much. If the symptoms clear after lubrication and a short run,
+            to <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a> covers the how and how much. If the symptoms clear after lubrication and a short run,
             the belt was fine.
           </p>
           <p>
             <strong>Then check tension and tracking.</strong> A belt that slips when you push off
             but runs smoothly with nobody on it is usually loose, not worn. Tightening the rear
             roller bolts a quarter-turn at a time, equally on both sides, is the standard
-            procedure, and our guide to
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">a slipping treadmill belt</a>
-            walks through it. A belt that rubs one side rail needs centring, not replacing.
+            procedure, and our guide to <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">a slipping treadmill belt</a> walks through it. A belt that rubs one side rail needs centring, not replacing.
           </p>
           <p>
             <strong>Signs the belt genuinely is worn.</strong> If lubrication and tension do not
@@ -279,14 +243,12 @@ const schema = {
           </ul>
           <p>
             A belt can look acceptable from above and be finished underneath, so check the
-            underside with a torch, not just the walking surface. Our guide to
-            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a>
-            puts these symptoms in the context of mileage and age.
+            underside with a torch, not just the walking surface. Our guide to <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a> puts these symptoms in the context of mileage and age.
           </p>
         </div>
 
         <div id="belt-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What the Belt Itself Costs</h2>
+          <h2>What the Belt Itself Costs</h2>
 <p>
             The belt is a loop of two-ply or three-ply material — a textured PVC or rubber top
             surface bonded to a fabric backing — sized to the specific rollers and deck of the
@@ -324,9 +286,7 @@ const schema = {
             heavier-duty and commercial decks use three-ply or specialist low-friction belts. A
             thicker belt is not automatically better — on a home motor it can mean more drag and
             more heat — so match what the machine came with unless the manufacturer specifies
-            otherwise. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
-            goes into dimensions in detail.
+            otherwise. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> goes into dimensions in detail.
           </p>
           <p>
             One thing not to do is shop by price alone across different sizes. A cheap belt listed
@@ -336,7 +296,7 @@ const schema = {
         </div>
 
         <div id="labour-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What a Technician Charges</h2>
+          <h2>What a Technician Charges</h2>
 <p>
             If you do not want to do the job yourself, the labour side of the bill has two or three
             parts, and it helps to ask for them separately when getting a quote.
@@ -367,14 +327,12 @@ const schema = {
             cheapest time to find the next problem. If your machine is still under a parts or
             labour warranty, start with the manufacturer rather than an independent, because a
             worn belt within the warranty period is sometimes covered and sometimes a symptom of a
-            defect that is. Our
-            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
-            covers how to find and brief a technician.
+            defect that is. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a> covers how to find and brief a technician.
           </p>
         </div>
 
         <div id="hidden-extras" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Hidden Extras That Inflate the Bill</h2>
+          <h2>The Hidden Extras That Inflate the Bill</h2>
 <p>
             The belt is rarely the only thing that needs attention when it is replaced, because
             whatever wore the belt out has been working on the rest of the machine too. These are
@@ -384,9 +342,7 @@ const schema = {
             <strong>Lubricant.</strong> A new belt goes onto a cleaned, freshly lubricated deck,
             without exception. Silicone treadmill lubricant is inexpensive — a bottle is usually
             well under $20 and lasts several applications — but it is a line on the bill and a
-            thing to have in the house before the belt arrives. Our guide to the
-            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">best treadmill lubricant</a>
-            covers what to buy and what to avoid.
+            thing to have in the house before the belt arrives. Our guide to the <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">best treadmill lubricant</a> covers what to buy and what to avoid.
           </p>
           <p>
             <strong>A worn deck.</strong> This is the big one. The deck is the board the belt runs
@@ -396,8 +352,7 @@ const schema = {
             flipped once to present a fresh surface, which costs labour but not a part; a deck that
             has already been flipped, or is grooved, soft or delaminated, needs replacing, which
             typically adds a part costing somewhere in the region of $100 to $300 or more. Our
-            guide to <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a>
-            covers how to tell, and what a flip involves.
+            guide to <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a> covers how to tell, and what a flip involves.
           </p>
           <p>
             <strong>Rollers.</strong> The front and rear rollers carry the belt, and a bearing that
@@ -409,9 +364,7 @@ const schema = {
           <p>
             <strong>The drive belt.</strong> Not the walking belt but the short ribbed belt between
             the motor and the front roller. If it is cracked, glazed or has stretched, it is a
-            modest part that is sensible to replace while the motor hood is off. Our guide to the
-            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a>
-            explains the symptoms.
+            modest part that is sensible to replace while the motor hood is off. Our guide to the <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a> explains the symptoms.
           </p>
           <p>
             <strong>A second visit.</strong> If a technician diagnoses on one visit and returns
@@ -420,13 +373,12 @@ const schema = {
           </p>
           <p>
             The honest way to think about all of this is that a belt replacement is a service, not
-            a part swap. Our guide to <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance cost</a>
-            puts it against the other costs of ownership over a machine's life.
+            a part swap. Our guide to <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance cost</a> puts it against the other costs of ownership over a machine's life.
           </p>
         </div>
 
         <div id="cost-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Typical Costs at a Glance</h2>
+          <h2>Typical Costs at a Glance</h2>
 <p>
             Everything below is a typical range gathered from what owners and technicians commonly
             report, not a price list. Large belts, commercial machines, urban call-out rates and
@@ -487,7 +439,7 @@ const schema = {
         </div>
 
         <div id="measuring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Measuring Your Belt and Ordering the Right One</h2>
+          <h2>Measuring Your Belt and Ordering the Right One</h2>
 <p>
             Ordering the wrong belt is the most common way a cheap DIY job becomes an expensive
             one, because a belt is not always returnable once it has been fitted and run. There are
@@ -517,9 +469,7 @@ const schema = {
           </p>
           <p>
             Also note the thickness of the old belt, and whether the underside is a plain fabric or
-            a specialist low-friction coating, so that the replacement matches. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            has the detail, including what to do when the measured length falls between two
+            a specialist low-friction coating, so that the replacement matches. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> has the detail, including what to do when the measured length falls between two
             listed sizes.
           </p>
           <p>
@@ -531,7 +481,7 @@ const schema = {
         </div>
 
         <div id="diy-vs-pro" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. DIY or Professional? An Honest Comparison</h2>
+          <h2>DIY or Professional? An Honest Comparison</h2>
 <p>
             Replacing a treadmill belt is within reach of a reasonably handy owner with basic
             tools, a free afternoon and patience for the re-tensioning and tracking that follows.
@@ -544,9 +494,7 @@ const schema = {
             clean and lubricate the deck, slide the new belt on (seam direction matters on many
             belts — check the manual or the supplier's note), reassemble, tension, then <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>centre the
             belt</a> by running it slowly and adjusting the rear roller bolts a quarter-turn at a time.
-            Our step-by-step guide to
-            <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>
-            covers each stage with the common snags.
+            Our step-by-step guide to <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a> covers each stage with the common snags.
           </p>
           <p>
             <strong>Where DIY makes sense.</strong> A folding home treadmill of modest weight, a
@@ -568,14 +516,12 @@ const schema = {
             the motor and bearings and shortens everything's life; fitting the belt with the seam
             running the wrong way; forgetting to lubricate; and giving up on tracking after two
             adjustments. None of these is a reason not to try, but all are reasons to read the
-            procedure through before starting. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
-            covers the lift test that stops the first one.
+            procedure through before starting. Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a> covers the lift test that stops the first one.
           </p>
         </div>
 
         <div id="repair-or-replace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Repair-or-Replace Maths</h2>
+          <h2>The Repair-or-Replace Maths</h2>
 <p>
             This is the question that matters more than any price on this page. A belt replacement
             is worth doing when the machine underneath is sound and has useful life left. It is
@@ -592,9 +538,7 @@ const schema = {
             used and otherwise quiet is an easy case: fit the belt. One that is approaching ten
             years, has had heavy use and is starting to show its age in other ways — a motor that
             runs hot, a console that is slow, an incline that groans — is a harder one, because a
-            new belt does nothing for any of those. Our guide to
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            gives a sense of where a machine sits in its life.
+            new belt does nothing for any of those. Our guide to <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> gives a sense of where a machine sits in its life.
           </p>
           <p>
             <strong>The price tier.</strong> On a <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a>, a technician's belt-and-deck
@@ -615,14 +559,12 @@ const schema = {
             <strong>Warranty.</strong> Check it before you pay anyone. Belts and decks are wear
             items and are often excluded or given a short cover period, but frames and motors
             usually carry longer cover, and a worn belt on a young machine can be the result of a
-            tracking or alignment defect that is covered. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what the typical tiers cover.
+            tracking or alignment defect that is covered. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what the typical tiers cover.
           </p>
         </div>
 
         <div id="making-it-last" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Making the Next Belt Last Longer</h2>
+          <h2>Making the Next Belt Last Longer</h2>
 <p>
             The cheapest belt replacement is the one you postpone by years. Most premature belt
             wear on home treadmills comes down to a short list of avoidable causes.
@@ -631,9 +573,7 @@ const schema = {
             <li><strong>Lubricate on schedule.</strong> A dry deck is the single biggest cause of
             glazed belts and worn decks. Follow the manual's interval, check the underside of the
             belt by hand between times, and use silicone lubricant made for treadmills — not
-            household oils or sprays. Our guide to
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
-            sets out a sensible schedule.</li>
+            household oils or sprays. Our guide to <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a> sets out a sensible schedule.</li>
             <li><strong>Keep tension correct, not tight.</strong> An over-tightened belt wears
             itself, the deck, the rollers and the motor. Tension only enough to stop slipping under
             load.</li>
@@ -641,9 +581,7 @@ const schema = {
             edge quickly. Check tracking every few weeks and correct it early.</li>
             <li><strong>Keep grit out.</strong> Dust and carpet fibre under the belt act as an
             abrasive. Vacuum around and under the machine regularly, and clean under the belt
-            occasionally. Our guide to
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
-            covers it.</li>
+            occasionally. Our guide to <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a> covers it.</li>
             <li><strong>Use a mat.</strong> On carpet especially, a mat keeps fibres and dust away
             from the belt and the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.</li>
             <li><strong>Respect the machine's limits.</strong> Heavy runners on a light-duty belt
@@ -656,140 +594,154 @@ const schema = {
             surprise.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a treadmill belt cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A generic replacement belt for a typical home treadmill commonly costs somewhere in the region of $60 to $150, and a manufacturer's own belt ordered by model number is often $100 to $250 or more. Larger belts for long-deck or commercial-style machines sit at the top of those ranges or above. Add a bottle of silicone lubricant, which is inexpensive.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does it cost to have a treadmill belt replaced professionally?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Owners commonly report an all-in total in the region of $200 to $400 for a straightforward belt replacement by an independent technician, covering a call-out fee, an hour or two of labour and the part. If the deck also needs replacing, the job often runs from roughly $300 to $600 or more. Rates vary by area and by brand.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I know if my treadmill belt needs replacing or just lubricating?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Lubricate and check tension first, because slipping and hesitation are more often caused by a dry deck or a loose belt. The belt genuinely needs replacing if the edges are fraying, the underside has worn smooth and shiny, the edges curl, the seam is separating, or slipping continues after lubrication and correct tension.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth replacing a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually yes on a mid-range or premium machine with a sound frame and healthy motor, where a belt every several years is simply part of ownership. It is harder to justify on an old or budget machine when a technician's belt-and-deck job approaches half the cost of a comparable new treadmill, especially if other parts are also showing their age.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I replace a treadmill belt myself?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if you are comfortable with basic tools and have an afternoon. The job involves removing the motor hood and side rails, loosening both rollers, swapping the belt, cleaning and lubricating the deck, then re-tensioning and centring. Heavy non-folding machines, deck replacements and machines under a labour warranty are better left to a technician.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I measure a treadmill belt for replacement?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Order by model and serial number where possible, since that avoids measuring errors. Otherwise, with the machine unplugged, measure the width edge to edge, then mark the belt and measure the full loop in stages with a flexible tape, rolling the belt by hand. Note the thickness and underside material so the replacement matches.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Belt Replacement</h2>
+          <p>Most of the money wasted on treadmill belts goes on one of these four, and two of them happen before a belt is even ordered.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Replacing a belt that only needed lubricant</h3>
+              <p>Slipping, hesitation and a laboured motor are more often a dry deck or a loose belt than a worn one. Lubricate, run it for a few minutes, then check tension before spending anything. Only fraying, a glazed underside, curling edges or a separating seam confirm the belt itself is finished.</p>
+            </li>
+            <li>
+              <h3>Fitting a new belt on a worn deck</h3>
+              <p>The deck wears with the belt, and a fresh belt on a worn surface drags, heats and glazes within months. Inspect the deck while the belt is off: feel for grooves, dips and soft spots in the foot-strike zone. Flip it if the design allows, or budget for a replacement at the same time.</p>
+            </li>
+            <li>
+              <h3>Ordering by price instead of dimensions</h3>
+              <p>A belt an inch too long cannot be tensioned and one too wide shreds against the side rails. Order by model and serial number, or measure width and full loop length carefully, and match the thickness and ply. Buy from a supplier who accepts returns and check the new belt against the old one before fitting.</p>
+            </li>
+            <li>
+              <h3>Over-tightening the new belt</h3>
+              <p>A tight belt stops slipping and quietly wears the belt, deck, roller bearings and motor. Tension only enough to stop slip under a hard push-off, using the lift test in your manual, then centre the belt a quarter-turn at a time. If it still slips at correct tension, look for a drive-belt or lubrication problem instead.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Belt Replacement</h2>
-          <p class="text-gray-700 leading-relaxed">Most of the money wasted on treadmill belts goes on one of these four, and two of them happen before a belt is even ordered.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing a belt that only needed lubricant</h3>
-              <p class="text-gray-700 text-sm m-0">Slipping, hesitation and a laboured motor are more often a dry deck or a loose belt than a worn one. Lubricate, run it for a few minutes, then check tension before spending anything. Only fraying, a glazed underside, curling edges or a separating seam confirm the belt itself is finished.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fitting a new belt on a worn deck</h3>
-              <p class="text-gray-700 text-sm m-0">The deck wears with the belt, and a fresh belt on a worn surface drags, heats and glazes within months. Inspect the deck while the belt is off: feel for grooves, dips and soft spots in the foot-strike zone. Flip it if the design allows, or budget for a replacement at the same time.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering by price instead of dimensions</h3>
-              <p class="text-gray-700 text-sm m-0">A belt an inch too long cannot be tensioned and one too wide shreds against the side rails. Order by model and serial number, or measure width and full loop length carefully, and match the thickness and ply. Buy from a supplier who accepts returns and check the new belt against the old one before fitting.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-tightening the new belt</h3>
-              <p class="text-gray-700 text-sm m-0">A tight belt stops slipping and quietly wears the belt, deck, roller bearings and motor. Tension only enough to stop slip under a hard push-off, using the lift test in your manual, then centre the belt a quarter-turn at a time. If it still slips at correct tension, look for a drive-belt or lubrication problem instead.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-replace-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Replace a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The full procedure, stage by stage, with the common snags.</p>
-            </a>
-            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sizing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Measuring length, width and thickness so the new belt fits.</p>
-            </a>
-            <a href="/treadmill-maintenance-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Costs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Cost</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What a treadmill costs to keep running over its life.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Expect a belt to cost in the region of $60 to $250 as a part, and
             $200 to $400 fitted by a technician</strong> — more if the deck is worn too, which it
             often is. Rule out a dry deck and a loose belt before you spend any of it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Fit the belt on a sound machine; put the money elsewhere on a
             tired one.</strong> If the repair approaches half the price of a comparable new
-            treadmill, check what else is wearing first. If you decide to do the job yourself, our
-            <a href="/how-to-replace-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">step-by-step belt replacement guide</a>
-            takes you through it.
+            treadmill, check what else is wearing first. If you decide to do the job yourself, our <a href="/how-to-replace-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">step-by-step belt replacement guide</a> takes you through it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-replace-treadmill-belt/">How to Replace a Treadmill Belt</a></li>
+            <li><a href="/treadmill-belt-size-guide/">Treadmill Belt Size Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How much does a treadmill belt cost?</h3></summary>
+            <p class="faq-a">
+              A generic replacement belt for a typical home treadmill commonly costs somewhere in the region of $60 to $150, and a manufacturer's own belt ordered by model number is often $100 to $250 or more. Larger belts for long-deck or commercial-style machines sit at the top of those ranges or above. Add a bottle of silicone lubricant, which is inexpensive.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does it cost to have a treadmill belt replaced professionally?</h3></summary>
+            <p class="faq-a">
+              Owners commonly report an all-in total in the region of $200 to $400 for a straightforward belt replacement by an independent technician, covering a call-out fee, an hour or two of labour and the part. If the deck also needs replacing, the job often runs from roughly $300 to $600 or more. Rates vary by area and by brand.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do I know if my treadmill belt needs replacing or just lubricating?</h3></summary>
+            <p class="faq-a">
+              Lubricate and check tension first, because slipping and hesitation are more often caused by a dry deck or a loose belt. The belt genuinely needs replacing if the edges are fraying, the underside has worn smooth and shiny, the edges curl, the seam is separating, or slipping continues after lubrication and correct tension.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth replacing a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Usually yes on a mid-range or premium machine with a sound frame and healthy motor, where a belt every several years is simply part of ownership. It is harder to justify on an old or budget machine when a technician's belt-and-deck job approaches half the cost of a comparable new treadmill, especially if other parts are also showing their age.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I replace a treadmill belt myself?</h3></summary>
+            <p class="faq-a">
+              Yes, if you are comfortable with basic tools and have an afternoon. The job involves removing the motor hood and side rails, loosening both rollers, swapping the belt, cleaning and lubricating the deck, then re-tensioning and centring. Heavy non-folding machines, deck replacements and machines under a labour warranty are better left to a technician.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I measure a treadmill belt for replacement?</h3></summary>
+            <p class="faq-a">
+              Order by model and serial number where possible, since that avoids measuring errors. Otherwise, with the machine unplugged, measure the width edge to edge, then mark the belt and measure the full loop in stages with a flexible tape, rolling the belt by hand. Note the thickness and underside material so the replacement matches.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-replace-treadmill-belt/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Replace a Treadmill Belt</div>
+            <p class="c-blurb">The full procedure, stage by stage, with the common snags.</p>
+          </a>
+          <a href="/treadmill-belt-size-guide/" class="card">
+            <div class="c-kicker">Sizing</div>
+            <div class="c-title">Treadmill Belt Size Guide</div>
+            <p class="c-blurb">Measuring length, width and thickness so the new belt fits.</p>
+          </a>
+          <a href="/treadmill-maintenance-cost/" class="card">
+            <div class="c-kicker">Costs</div>
+            <div class="c-title">Treadmill Maintenance Cost</div>
+            <p class="c-blurb">What a treadmill costs to keep running over its life.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

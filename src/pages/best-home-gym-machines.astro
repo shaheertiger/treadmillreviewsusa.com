@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Home Gym Machines (2026): Stack, Rod and Bodyweight Picks";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-home-gym-machines/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Body-Solid EXM2500S Home Gym", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besthomegymmachines" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besthomegymmachines)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Home Gym Machines and What Their Resistance Really Means</h1>
+      <p class="ed-dek">
+        An all-in-one home gym puts a press, a pulldown, a leg station and a low pulley in one frame. The best home gym for you depends on how that frame makes resistance, whether it fits under your ceiling, and how much of the advertised number you will actually feel. Here are five machines on sale now, and the checks to make before one arrives in three boxes.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Home Gym Machines <span class="text-[#5AA9FF]">and What Their Resistance Really Means</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An all-in-one home gym puts a press, a pulldown, a leg station and a low pulley in one frame. The best home gym for you depends on how that frame makes resistance, whether it fits under your ceiling, and how much of the advertised number you will actually feel. Here are five machines on sale now, and the checks to make before one arrives in three boxes.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#resistance-types" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Stack vs Rod vs Band
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#body-solid-exm2500s"><img src="https://m.media-amazon.com/images/I/41T1xlZqU7L._SL500_.jpg" alt="Body-Solid EXM2500S Home Gym" width="439" height="500" decoding="async" /></a>
+          <a href="#marcy-mwm-990"><img src="https://m.media-amazon.com/images/I/41ChxxKqiYL._SL500_.jpg" alt="Marcy MWM-990 150 lb Stack Home Gym" width="500" height="500" decoding="async" /></a>
+          <a href="#total-gym-evolve"><img src="https://m.media-amazon.com/images/I/41S0yLn6tkL._SL500_.jpg" alt="Total Gym EVOLVE" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Body-Solid EXM2500S Home Gym · Marcy MWM-990 150 lb Stack Home Gym · Total Gym EVOLVE</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best home gym machine is the one that matches how you train and the room you have.
+          A weight-stack gym feels most like the machines in a commercial gym, a rod gym is lighter
+          to move and gentler to start on, and an incline bodyweight trainer folds flat and needs no
+          iron at all. All three are sold with a headline resistance figure that is rarely what you
+          feel at the handle. The five machines below were chosen to cover those designs with
+          products on sale today, and the guide after them explains how to read resistance,
+          ceiling height, footprint, assembly and floor loading before you order.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#body-solid-exm2500s">Body-Solid EXM2500S Home Gym</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Stack:</span> <a href="#marcy-mwm-990">Marcy MWM-990 150 lb Stack Home Gym</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact Stack:</span> <a href="#body-solid-bfmg20">Body-Solid Best Fitness BFMG20 Sportsman Gym</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Rod Gym:</span> <a href="#bowflex-xtreme-2-se">BowFlex Xtreme 2 SE Home Gym</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Low Ceilings:</span> <a href="#total-gym-evolve">Total Gym EVOLVE</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines, and no figure on this page is our own measurement. Each was confirmed as
           currently sold on 19 October 2026 on the maker's own store (Marcy, Body-Solid, BowFlex
@@ -342,87 +363,34 @@ const schema = {
           conflicted, we left the number off and say so on the card. Every brand was checked
           against the US Consumer Product Safety Commission's recall database. Prices are those we
           saw on that date and change often. We earn a commission if you buy through the Amazon
-          links on this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          links on this page; it does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy, coaching or structural
           engineering advice. Resistance figures and user limits are manufacturer figures, not a
           guide to what you should lift. If you have a back, shoulder, joint or heart condition, are
           pregnant or postpartum, or are returning from injury, talk to a qualified professional
           before starting or changing a strength programme.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#body-solid-exm2500s" class="font-bold text-gray-900 no-underline hover:underline">Body-Solid EXM2500S Home Gym</a>
-            <a href="#body-solid-exm2500s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Stack:</span>
-            <a href="#marcy-mwm-990" class="font-bold text-gray-900 no-underline hover:underline">Marcy MWM-990 150 lb Stack Home Gym</a>
-            <a href="#marcy-mwm-990" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compact Stack:</span>
-            <a href="#body-solid-bfmg20" class="font-bold text-gray-900 no-underline hover:underline">Body-Solid Best Fitness BFMG20 Sportsman Gym</a>
-            <a href="#body-solid-bfmg20" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Rod Gym:</span>
-            <a href="#bowflex-xtreme-2-se" class="font-bold text-gray-900 no-underline hover:underline">BowFlex Xtreme 2 SE Home Gym</a>
-            <a href="#bowflex-xtreme-2-se" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Low Ceilings:</span>
-            <a href="#total-gym-evolve" class="font-bold text-gray-900 no-underline hover:underline">Total Gym EVOLVE</a>
-            <a href="#total-gym-evolve" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Home Gym Machines</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Machines</a>
-          <a href="#resistance-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Stack vs Rod vs Band vs Bodyweight: How Each Machine Makes Resistance</a>
-          <a href="#real-resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Real Resistance vs Advertised Resistance</a>
-          <a href="#space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Ceiling Height, Footprint and Working Area</a>
-          <a href="#assembly-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Delivery, Assembly and Getting It Into the Room</a>
-          <a href="#floor-loading" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Floor Loading, Flooring and Upstairs Rooms</a>
-          <a href="#reading-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Reading a Home Gym Listing, Including Marketplace Machines</a>
-          <a href="#used-and-recalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Buying Used: The Old Recalls to Check</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Home Gym Machines</a></li>
+            <li><a href="#how-we-chose">How We Chose These Machines</a></li>
+            <li><a href="#resistance-types">Stack vs Rod vs Band vs Bodyweight: How Each Machine Makes Resistance</a></li>
+            <li><a href="#real-resistance">Real Resistance vs Advertised Resistance</a></li>
+            <li><a href="#space">Ceiling Height, Footprint and Working Area</a></li>
+            <li><a href="#assembly-delivery">Delivery, Assembly and Getting It Into the Room</a></li>
+            <li><a href="#floor-loading">Floor Loading, Flooring and Upstairs Rooms</a></li>
+            <li><a href="#reading-listings">Reading a Home Gym Listing, Including Marketplace Machines</a></li>
+            <li><a href="#used-and-recalls">Buying Used: The Old Recalls to Check</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best home gym machine is the one that matches how you train and the room you have.
-          A weight-stack gym feels most like the machines in a commercial gym, a rod gym is lighter
-          to move and gentler to start on, and an incline bodyweight trainer folds flat and needs no
-          iron at all. All three are sold with a headline resistance figure that is rarely what you
-          feel at the handle. The five machines below were chosen to cover those designs with
-          products on sale today, and the guide after them explains how to read resistance,
-          ceiling height, footprint, assembly and floor loading before you order.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five machines, one for each way an all-in-one home gym is usually built. The short
             version: the Body-Solid EXM2500S if you want the best home gym you can keep for decades
@@ -447,23 +415,16 @@ const schema = {
           <p>
             Two neighbouring categories have their own pages, and we have not repeated them here.
             Dual-stack functional trainers, rack-mounted cable attachments and digital cable machines
-            are covered in our guide to
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">the best cable machines for a home gym</a>,
-            and if heavy barbell squats and presses are the goal, start with
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
-            instead. If you are still deciding what belongs in the room at all, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put all-in-one machines alongside racks, dumbbells and cardio machines.
+            are covered in our guide to <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">the best cable machines for a home gym</a>,
+            and if heavy barbell squats and presses are the goal, start with <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a> instead. If you are still deciding what belongs in the room at all, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> put all-in-one machines alongside racks, dumbbells and cardio machines.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Home Gym Machines</h2>
+          <h2>The 5 Best Home Gym Machines</h2>
 <p>
             Each card gives the figures we could confirm from two sources, the price range we saw on
-            19 October 2026, and who the machine suits. Read the resistance line with the section on
-            <a href="#real-resistance" class="text-[#0F62FE] font-medium">real versus advertised resistance</a>
-            in mind: a 150 lb stack, 210 lb of rods and a 500 lb user limit are three different kinds
+            19 October 2026, and who the machine suits. Read the resistance line with the section on <a href="#real-resistance" class="text-[#0F62FE] font-medium">real versus advertised resistance</a> in mind: a 150 lb stack, 210 lb of rods and a 500 lb user limit are three different kinds
             of number, and none of them is the load you will feel on every exercise.
           </p>
           <p>
@@ -472,78 +433,67 @@ const schema = {
             against the larger figure.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Machines</h2>
+          <h2>How We Chose These Machines</h2>
 <p>
             We have not tested these machines. They were chosen from published specifications,
             maker product pages, shipping and warranty terms, recall records and independent
@@ -575,8 +525,7 @@ const schema = {
             manufacturer and recall description. BowFlex (formerly Nautilus, now owned by Johnson
             Health Tech) has home gym recalls on record for the Power Pro, Ultimate and Ultimate 2 —
             none of them current models — along with its well-known June 2025 SelectTech 552 and
-            1090 dumbbell recall, covered in our
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>.
+            1090 dumbbell recall, covered in our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>.
             Total Gym has two recalls from 2002 for older models. Marcy's importer, Impex, recalled
             a set of Olympic dumbbell handles in 2021, not a home gym. We found no recalls for
             Body-Solid or Best Fitness, or for the marketplace brands discussed below. The used-gym
@@ -596,7 +545,7 @@ const schema = {
         </div>
 
         <div id="resistance-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Stack vs Rod vs Band vs Bodyweight: How Each Machine Makes Resistance</h2>
+          <h2>Stack vs Rod vs Band vs Bodyweight: How Each Machine Makes Resistance</h2>
 <p>
             Every all-in-one home gym is built around one way of making resistance, and it shapes
             the feel of every exercise, the weight of the machine, and how far it can grow with you.
@@ -628,8 +577,7 @@ const schema = {
             linear feel closer to a weight stack than rods do. Band-type systems share the rod
             advantages of low machine weight and low inertia, and generally cost more than a rod gym.
             We have not carded one this year, for the reason in the section above. Elastic resistance
-            bands, the cheapest version of the idea, are a separate purchase covered in our
-            <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a>.
+            bands, the cheapest version of the idea, are a separate purchase covered in our <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline bodyweight (Total Gym)</h3>
           <p>
@@ -650,7 +598,7 @@ const schema = {
         </div>
 
         <div id="real-resistance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Real Resistance vs Advertised Resistance</h2>
+          <h2>Real Resistance vs Advertised Resistance</h2>
 <p>
             The headline number on an all-in-one gym is the easiest figure to misread. Here is what
             each kind of number really tells you.
@@ -659,14 +607,11 @@ const schema = {
           <p>
             A 150 lb stack means 150 lb of plates. What you feel at each station depends on how the
             cable is routed and on the lever arms of the press and leg attachments. Some stations
-            pull close to the pinned weight, some less, and some more: Body-Solid says its optional
-            <a href="/best-leg-press-machines/" class="text-[#0F62FE] font-medium" data-autolink>leg press</a> for the EXM2500S works at a 2:1 ratio, so the 210 lb stack becomes 420 lb of
+            pull close to the pinned weight, some less, and some more: Body-Solid says its optional <a href="/best-leg-press-machines/" class="text-[#0F62FE] font-medium" data-autolink>leg press</a> for the EXM2500S works at a 2:1 ratio, so the 210 lb stack becomes 420 lb of
             resistance at the footplate. Few makers of budget stack gyms publish a per-station
             figure, so assume the chest press and leg developer will not feel the same as the
             number on the pin, and judge progress against your own previous sessions rather than
-            against a gym machine. Our
-            <a href="/best-cable-machines-for-home-gym/#pulley-ratio" class="text-[#0F62FE] font-medium">explanation of 2:1 and 1:1 pulley ratios</a>
-            covers the cable side of this in more detail.
+            against a gym machine. Our <a href="/best-cable-machines-for-home-gym/#pulley-ratio" class="text-[#0F62FE] font-medium">explanation of 2:1 and 1:1 pulley ratios</a> covers the cable side of this in more detail.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A rod figure is a rating at full bend</h3>
           <p>
@@ -701,7 +646,7 @@ const schema = {
         </div>
 
         <div id="space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Ceiling Height, Footprint and Working Area</h2>
+          <h2>Ceiling Height, Footprint and Working Area</h2>
 <p>
             Three measurements decide whether an all-in-one gym fits: the height of the frame, the
             floor it covers, and the space you need around it to train. The table gives the
@@ -729,9 +674,7 @@ const schema = {
             assembled lying down and then stood up, which needs more height than the finished frame.
             Measure at the exact spot, under any beam, duct or soffit, and if the gap above the frame
             is only an inch or two, ask the maker how its uprights go up before you order. Basements
-            and garages are where this goes wrong most often; our guide to
-            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">treadmills for a garage</a>
-            covers the same low-ceiling and cold-floor issues for cardio machines.
+            and garages are where this goes wrong most often; our guide to <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">treadmills for a garage</a> covers the same low-ceiling and cold-floor issues for cardio machines.
           </p>
           <p>
             <strong>Footprint versus working area.</strong> The listed footprint is the frame. Press
@@ -740,9 +683,7 @@ const schema = {
             in-use size of 76 by 78 inches for the Xtreme 2 SE and recommends a workout area of 112
             by 150 inches, more than three times the frame. That is a sensible rule for any
             all-in-one: allow several feet of clear floor in front of the low pulley and to the sides
-            of the press arms. Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space requirements</a>
-            uses the same method — footprint, plus a use zone, plus a safety margin — and it
+            of the press arms. Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space requirements</a> uses the same method — footprint, plus a use zone, plus a safety margin — and it
             transfers directly.
           </p>
           <p>
@@ -757,7 +698,7 @@ const schema = {
         </div>
 
         <div id="assembly-delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Delivery, Assembly and Getting It Into the Room</h2>
+          <h2>Delivery, Assembly and Getting It Into the Room</h2>
 <p>
             All-in-one gyms arrive as heavy flat-packed boxes, and the stack versions are among the
             longest assembly jobs in home fitness. Makers rarely publish an assembly time, and we
@@ -788,9 +729,7 @@ const schema = {
             sub-frame is square, then tighten in stages; route every cable exactly as drawn,
             checking that it sits in each pulley groove; and run the stack through its full travel
             with light weight before you load it. Recheck bolts after the first few sessions, as
-            frames settle. Our guide to
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a>
-            covers unboxing, tools and two-person lifting in more detail, and the same habits apply.
+            frames settle. Our guide to <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a> covers unboxing, tools and two-person lifting in more detail, and the same habits apply.
           </p>
           <p>
             Check the return terms before you open anything. BowFlex's store said on 19 October that
@@ -801,7 +740,7 @@ const schema = {
         </div>
 
         <div id="floor-loading" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Floor Loading, Flooring and Upstairs Rooms</h2>
+          <h2>Floor Loading, Flooring and Upstairs Rooms</h2>
 <p>
             A home gym machine is heavy, but its weight is spread over a frame several feet long, so
             on a ground-floor concrete slab it is rarely a structural concern. Upstairs, on a timber
@@ -837,16 +776,12 @@ const schema = {
             Whatever the floor, put the machine on rubber flooring. It protects the floor from the
             frame's feet, stops a machine creeping on a smooth surface, and cuts the clank of a stack
             being set down. Horse-stall mats or interlocking rubber tiles under the whole frame and
-            working area are usual; our
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a>
-            compares the options, and the guide to
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>
-            covers a timber platform if you also lift free weights next to the machine.
+            working area are usual; our <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a> compares the options, and the guide to <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a> covers a timber platform if you also lift free weights next to the machine.
           </p>
         </div>
 
         <div id="reading-listings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Reading a Home Gym Listing, Including Marketplace Machines</h2>
+          <h2>Reading a Home Gym Listing, Including Marketplace Machines</h2>
 <p>
             Search Amazon for a home gym and the results are dominated by stack gyms from brands that
             exist mainly on marketplaces, often at prices well below the machines on this page. Some
@@ -882,7 +817,7 @@ const schema = {
         </div>
 
         <div id="used-and-recalls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Buying Used: The Old Recalls to Check</h2>
+          <h2>Buying Used: The Old Recalls to Check</h2>
 <p>
             All-in-one gyms last a long time and resell constantly, so the used market is full of
             older machines, including some that were recalled. These are the home gym recalls we
@@ -915,184 +850,186 @@ const schema = {
             for a new set of cables if they look tired, and walk away if the seller cannot tell you
             the model. Rods lose some resistance with age by BowFlex's own account, so a used rod gym
             may feel lighter than its ratings. For the wider question of what to buy new and what
-            secondhand, our guide to
-            <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a>
-            explains how used commercial machines differ from home ones.
+            secondhand, our guide to <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a> explains how used commercial machines differ from home ones.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you want to squat, deadlift and press heavy</strong>, no all-in-one gym on
             this page replaces a barbell. A rack, bar and plates cost a similar amount to a good
-            stack gym and grow much further. Our guide to
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
-            is the place to start, and a
-            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench</a>
-            completes the setup.
+            stack gym and grow much further. Our guide to <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a> is the place to start, and a <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench</a> completes the setup.
           </p>
           <p>
             <strong>If cables are the main attraction</strong>, a functional trainer gives longer
-            cable travel and more angles than the fixed stations of an all-in-one. Our
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a>
-            compares them.
+            cable travel and more angles than the fixed stations of an all-in-one. Our <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a> compares them.
           </p>
           <p>
             <strong>If space or budget is tight</strong>, a pair of adjustable dumbbells and a bench
-            covers most of what an all-in-one gym does in a corner of a room. Our
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>
-            covers the options and the recalls. For pull-ups and dips without a full machine, see
-            our guide to
-            <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power towers</a>.
+            covers most of what an all-in-one gym does in a corner of a room. Our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a> covers the options and the recalls. For pull-ups and dips without a full machine, see
+            our guide to <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power towers</a>.
           </p>
           <p>
             <strong>If you are equipping a shared or commercial space</strong>, residential machines
             are not designed for it; Marcy, for one, says the MWM-990 is not intended for commercial
-            use. Our
-            <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment guide</a>
-            covers what changes at that level.
+            use. Our <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment guide</a> covers what changes at that level.
           </p>
           <p>
             <strong>If cardio is the priority</strong>, an all-in-one gym will not replace it. Many
-            home gyms pair one strength station with one cardio machine; our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">guide to cardio machines for home</a>
-            helps with that half of the room.
+            home gyms pair one strength station with one cardio machine; our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">guide to cardio machines for home</a> helps with that half of the room.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best home gym machine?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people who can afford it, a commercial-style weight-stack gym such as the Body-Solid EXM2500S, because a stack feels like gym machines and lasts decades. On a budget, the Marcy MWM-990 gives a real 150 lb stack. If the machine must go upstairs or be light, the BowFlex Xtreme 2 SE is the rod alternative, and for low ceilings an incline trainer like the Total Gym EVOLVE fits.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a weight stack better than BowFlex rods?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better for everyone. A weight stack gives the same resistance through the whole rep and feels like a gym machine, but it is heavy and needs add-on plates to grow. Rods are light, cheaper for the headline figure and easy on joints at the start of a rep, but they resist least at the start and BowFlex says their ratings are estimates that degrade with use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do I need for a home gym machine?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The stack and rod machines on this page stand about 78 to 83 inches tall, so a standard 8-foot ceiling usually works. Add the thickness of any flooring, check for beams and ducts at the exact spot, and allow extra height for assembly, because uprights are often stood up from lying flat. Incline trainers like the Total Gym EVOLVE need far less.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a home gym machine go upstairs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, but choose the design with the floor in mind. A rod gym such as the 174 lb BowFlex Xtreme 2 SE or an incline trainer is far lighter than a stack gym. For a stack gym upstairs, place it near a load-bearing wall and across the joists, use rubber flooring, and ask a structural engineer about older houses or long spans. This is general guidance, not engineering advice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does it take to assemble a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Makers rarely publish a time, and we have not assembled these machines. A weight-stack gym is one of the longest assembly jobs in home fitness, so plan for two people and most of a day. BowFlex offers white-glove delivery with full assembly for the Xtreme 2 SE, and Total Gym says the EVOLVE arrives fully assembled.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a 150 lb weight stack enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For many beginners and intermediate lifters, yes, for chest presses, rows, curls and extensions. Stronger lifters often outgrow 150 lb on lat pulldowns and leg work. Remember that the felt resistance at each station depends on how the cable and levers are arranged, so it may not match the number on the pin.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Home Gym Machine</h2>
+          <p>Each of these turns a large, heavy purchase into one that disappoints, does not fit, or is hard to send back.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing headline resistance across designs</h3>
+              <p>A 150 lb stack, 210 lb of rods and a 500 lb user limit are not comparable numbers. Rods resist least at the start of each rep and are rated as a total for both sides; stack stations vary with their cable and lever layout; bodyweight trainers depend on the incline. Compare machines of the same type, and judge progress against your own sessions.</p>
+            </li>
+            <li>
+              <h3>Measuring the frame but not the working area</h3>
+              <p>The listed footprint is only the frame. Press arms swing out, rows are done in front of the low pulley, and BowFlex recommends a workout area more than three times the Xtreme 2 SE's frame. Mark the frame and a clear zone on the floor with tape before you order, and check the ceiling height at the same spot.</p>
+            </li>
+            <li>
+              <h3>Opening every box before the last one arrives</h3>
+              <p>Stack gyms often ship in several boxes on different days. Starting assembly with a box missing leaves a half-built frame in the middle of the room and makes a return far harder. Check every box against the parts list when it arrives, and keep the packaging until the machine is assembled and working.</p>
+            </li>
+            <li>
+              <h3>Buying a used machine without the model name</h3>
+              <p>Several older BowFlex home gyms were recalled, and two notices say the remedy is no longer available and the machines should be discarded, not resold. Ask for a photo of the model name on the frame, check it against the CPSC database, and inspect every cable and pulley before paying.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Home Gym Machine</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a large, heavy purchase into one that disappoints, does not fit, or is hard to send back.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing headline resistance across designs</h3>
-              <p class="text-gray-700 text-sm m-0">A 150 lb stack, 210 lb of rods and a 500 lb user limit are not comparable numbers. Rods resist least at the start of each rep and are rated as a total for both sides; stack stations vary with their cable and lever layout; bodyweight trainers depend on the incline. Compare machines of the same type, and judge progress against your own sessions.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the frame but not the working area</h3>
-              <p class="text-gray-700 text-sm m-0">The listed footprint is only the frame. Press arms swing out, rows are done in front of the low pulley, and BowFlex recommends a workout area more than three times the Xtreme 2 SE's frame. Mark the frame and a clear zone on the floor with tape before you order, and check the ceiling height at the same spot.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Opening every box before the last one arrives</h3>
-              <p class="text-gray-700 text-sm m-0">Stack gyms often ship in several boxes on different days. Starting assembly with a box missing leaves a half-built frame in the middle of the room and makes a return far harder. Check every box against the parts list when it arrives, and keep the packaging until the machine is assembled and working.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used machine without the model name</h3>
-              <p class="text-gray-700 text-sm m-0">Several older BowFlex home gyms were recalled, and two notices say the remedy is no longer available and the machines should be discarded, not resold. Ask for a photo of the model name on the frame, check it against the CPSC database, and inspect every cable and pulley before paying.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-cable-machines-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cables</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cable Machines for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Functional trainers, rack attachments and digital machines, and what a 2:1 ratio means.</p>
-            </a>
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Racks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The barbell route to heavy strength training, with anchoring and floor-loading checks.</p>
-            </a>
-            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Overview</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where an all-in-one machine fits among the big home gym purchases.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">If you can pay for it, the Body-Solid EXM2500S is the best home gym
             here</strong>, with a 210 lb stack and an in-home lifetime warranty; on a budget, the Marcy
             MWM-990 gives you a real 150 lb stack, and the Best Fitness BFMG20 does the same in a
             smaller room. Choose the BowFlex Xtreme 2 SE when weight and price matter more than
             stack feel, and the Total Gym EVOLVE when the ceiling or storage decides everything.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, read the resistance figure for what it is, measure the ceiling and
             the working area at the exact spot, and plan the delivery and the build before the
             boxes arrive. If what you really want is heavy barbell work or more cable angles, read
-            our <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">squat rack guide</a>
-            or <a href="/best-cable-machines-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">cable machine guide</a>
-            before you buy.
+            our <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">squat rack guide</a> or <a href="/best-cable-machines-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">cable machine guide</a> before you buy.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-cable-machines-for-home-gym/">Best Cable Machines for a Home Gym</a></li>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for a Home Gym</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best home gym machine?</h3></summary>
+            <p class="faq-a">
+              For most people who can afford it, a commercial-style weight-stack gym such as the Body-Solid EXM2500S, because a stack feels like gym machines and lasts decades. On a budget, the Marcy MWM-990 gives a real 150 lb stack. If the machine must go upstairs or be light, the BowFlex Xtreme 2 SE is the rod alternative, and for low ceilings an incline trainer like the Total Gym EVOLVE fits.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a weight stack better than BowFlex rods?</h3></summary>
+            <p class="faq-a">
+              Neither is better for everyone. A weight stack gives the same resistance through the whole rep and feels like a gym machine, but it is heavy and needs add-on plates to grow. Rods are light, cheaper for the headline figure and easy on joints at the start of a rep, but they resist least at the start and BowFlex says their ratings are estimates that degrade with use.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much ceiling height do I need for a home gym machine?</h3></summary>
+            <p class="faq-a">
+              The stack and rod machines on this page stand about 78 to 83 inches tall, so a standard 8-foot ceiling usually works. Add the thickness of any flooring, check for beams and ducts at the exact spot, and allow extra height for assembly, because uprights are often stood up from lying flat. Incline trainers like the Total Gym EVOLVE need far less.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a home gym machine go upstairs?</h3></summary>
+            <p class="faq-a">
+              Often, but choose the design with the floor in mind. A rod gym such as the 174 lb BowFlex Xtreme 2 SE or an incline trainer is far lighter than a stack gym. For a stack gym upstairs, place it near a load-bearing wall and across the joists, use rubber flooring, and ask a structural engineer about older houses or long spans. This is general guidance, not engineering advice.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does it take to assemble a home gym?</h3></summary>
+            <p class="faq-a">
+              Makers rarely publish a time, and we have not assembled these machines. A weight-stack gym is one of the longest assembly jobs in home fitness, so plan for two people and most of a day. BowFlex offers white-glove delivery with full assembly for the Xtreme 2 SE, and Total Gym says the EVOLVE arrives fully assembled.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a 150 lb weight stack enough?</h3></summary>
+            <p class="faq-a">
+              For many beginners and intermediate lifters, yes, for chest presses, rows, curls and extensions. Stronger lifters often outgrow 150 lb on lat pulldowns and leg work. Remember that the felt resistance at each station depends on how the cable and levers are arranged, so it may not match the number on the pin.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-cable-machines-for-home-gym/" class="card">
+            <div class="c-kicker">Cables</div>
+            <div class="c-title">Best Cable Machines for a Home Gym</div>
+            <p class="c-blurb">Functional trainers, rack attachments and digital machines, and what a 2:1 ratio means.</p>
+          </a>
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Racks</div>
+            <div class="c-title">Best Squat Racks for a Home Gym</div>
+            <p class="c-blurb">The barbell route to heavy strength training, with anchoring and floor-loading checks.</p>
+          </a>
+          <a href="/home-workout-equipment-reviews/" class="card">
+            <div class="c-kicker">Overview</div>
+            <div class="c-title">Home Workout Equipment Reviews</div>
+            <p class="c-blurb">Where an all-in-one machine fits among the big home gym purchases.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

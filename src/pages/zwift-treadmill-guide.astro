@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Zwift Treadmill Guide (2026): How Zwift Run Works With Any Treadmill";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/zwift-treadmill-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,88 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Set-Up Steps", link: "#setup" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-zwifttreadmillguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-zwifttreadmillguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Using Zwift With a Treadmill: What You Need and What to Expect</h1>
+      <p class="ed-dek">
+        Zwift turns a treadmill session into a run through a virtual world with other people in it. It needs one thing from you: a speed signal. Here is where that signal comes from, how to make it honest, and what Zwift Run can and cannot do compared with the cycling side of the app.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Using Zwift With a Treadmill: <span class="text-[#5AA9FF]">What You Need and What to Expect</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Zwift turns a treadmill session into a run through a virtual world with other people in it. It needs one thing from you: a speed signal. Here is where that signal comes from, how to make it honest, and what Zwift Run can and cannot do compared with the cycling side of the app.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#speed-sources" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Three Speed Sources
-          </a>
-          <a href="#connection-problems" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Fixing Connection Problems
-          </a>
-        </div>
+        <a href="#speed-sources" class="btn-ghost">The Three Speed Sources</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Zwift Works With a Treadmill: The Short Answer</a>
-          <a href="#what-zwift-needs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Zwift Actually Needs From Your Treadmill</a>
-          <a href="#speed-sources" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Three Ways to Get a Speed Signal Into Zwift</a>
-          <a href="#no-connectivity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Can You Use Zwift With a Treadmill That Has No Connectivity?</a>
-          <a href="#calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Calibration: Why the Pod and the Treadmill Both Need Checking</a>
-          <a href="#what-zwift-can-do" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Zwift Run Can and Cannot Do</a>
-          <a href="#setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Setting Up: Screen, Device Placement and Bluetooth vs ANT+</a>
-          <a href="#connection-problems" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Common Connection Problems and How to Fix Them</a>
-          <a href="#zwift-run-vs-cycling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Honest Comparison With Zwift Cycling</a>
-          <a href="#is-it-worth-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Is Zwift Worth It for Treadmill Running, and What Are the Alternatives?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Zwift works with almost any treadmill, including one with no connectivity at all, because
           the app does not need to talk to the machine. It needs to know how fast you are running,
           and that number can come from the treadmill, from a small sensor on your shoe, or from a
@@ -194,8 +145,25 @@ const schema = {
           is most of what this guide is about.
         </p>
 
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Zwift Works With a Treadmill: The Short Answer</a></li>
+            <li><a href="#what-zwift-needs">What Zwift Actually Needs From Your Treadmill</a></li>
+            <li><a href="#speed-sources">The Three Ways to Get a Speed Signal Into Zwift</a></li>
+            <li><a href="#no-connectivity">Can You Use Zwift With a Treadmill That Has No Connectivity?</a></li>
+            <li><a href="#calibration">Calibration: Why the Pod and the Treadmill Both Need Checking</a></li>
+            <li><a href="#what-zwift-can-do">What Zwift Run Can and Cannot Do</a></li>
+            <li><a href="#setup">Setting Up: Screen, Device Placement and Bluetooth vs ANT+</a></li>
+            <li><a href="#connection-problems">Common Connection Problems and How to Fix Them</a></li>
+            <li><a href="#zwift-run-vs-cycling">The Honest Comparison With Zwift Cycling</a></li>
+            <li><a href="#is-it-worth-it">Is Zwift Worth It for Treadmill Running, and What Are the Alternatives?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Zwift Works With a Treadmill: The Short Answer</h2>
+          <h2>How Zwift Works With a Treadmill: The Short Answer</h2>
 <p>
             <strong>Zwift Run</strong> is the running side of the Zwift app. You run on your
             treadmill, a device tells Zwift your speed, and your avatar moves through a virtual
@@ -204,10 +172,7 @@ const schema = {
             not required to do anything new.
           </p>
           <p>
-            The speed signal is the whole question. It comes from one of three places: a
-            <strong>treadmill that broadcasts its belt speed</strong> over Bluetooth or ANT+, a
-            <strong>foot pod</strong> clipped to your shoe, or a <strong>watch or phone</strong>
-            that estimates your running speed and passes it on. Any of the three works. A connected
+            The speed signal is the whole question. It comes from one of three places: a <strong>treadmill that broadcasts its belt speed</strong> over Bluetooth or ANT+, a <strong>foot pod</strong> clipped to your shoe, or a <strong>watch or phone</strong> that estimates your running speed and passes it on. Any of the three works. A connected
             treadmill is the tidiest; a foot pod is the universal answer for every other machine;
             the wrist-based route is the cheapest to try if you already own the hardware.
           </p>
@@ -217,14 +182,12 @@ const schema = {
             yourself. Second, the number Zwift shows is only as honest as the sensor feeding it, and
             treadmill consoles are not always honest either. Calibration, covered further down, is
             not optional if you care about the pace on screen matching the pace on the belt. If you
-            are deciding between a connected machine and a plain one, our comparison of
-            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart and regular treadmills</a>
-            is the place to start; Zwift does not need you to buy the smart one.
+            are deciding between a connected machine and a plain one, our comparison of <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart and regular treadmills</a> is the place to start; Zwift does not need you to buy the smart one.
           </p>
         </div>
 
         <div id="what-zwift-needs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Zwift Actually Needs From Your Treadmill</h2>
+          <h2>What Zwift Actually Needs From Your Treadmill</h2>
 <p>
             It helps to separate what the app needs from what people assume it needs. Zwift Run
             needs a running speed, updated several times a second, delivered over a wireless
@@ -244,15 +207,12 @@ const schema = {
             There is one honest caveat. Because Zwift cannot see the belt, it cannot verify
             anything. If a foot pod is badly calibrated, Zwift will cheerfully record a run at a
             pace you did not do. If a treadmill's own speed is off, a connected machine will
-            broadcast the wrong number with total confidence. Our guide to
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a>
-            explains why consoles drift; the short version is that belt speed under load often
+            broadcast the wrong number with total confidence. Our guide to <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a> explains why consoles drift; the short version is that belt speed under load often
             differs from the displayed figure, and nothing in Zwift corrects for that.
           </p>
           <p>
             The protocols involved are <strong>Bluetooth</strong> (specifically Bluetooth Low
-            Energy, which phones, tablets, laptops and TV streaming boxes already have) and
-            <strong>ANT+</strong>, a low-power sports protocol that most computers and phones do
+            Energy, which phones, tablets, laptops and TV streaming boxes already have) and <strong>ANT+</strong>, a low-power sports protocol that most computers and phones do
             not have built in and that usually needs a small USB dongle. A sensor or treadmill may
             support one or both. Which you use affects reliability more than most people expect,
             and the set-up section below goes into it.
@@ -260,7 +220,7 @@ const schema = {
         </div>
 
         <div id="speed-sources" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Three Ways to Get a Speed Signal Into Zwift</h2>
+          <h2>The Three Ways to Get a Speed Signal Into Zwift</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">1. A treadmill that broadcasts its speed</h3>
           <p>
             Some connected treadmills transmit belt speed over Bluetooth or ANT+ using a standard
@@ -270,8 +230,7 @@ const schema = {
             the console is the speed on screen.
           </p>
           <p>
-            This guide does not name models; our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
-            roundup does, dated and sourced. Which treadmills pair with Zwift changes with
+            This guide does not name models; our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a> roundup does, dated and sourced. Which treadmills pair with Zwift changes with
             firmware updates on both sides, and a machine that worked last year can need a firmware
             update, a different pairing mode or a workaround this year. Zwift publishes and updates
             a compatibility list; check it for the exact model and firmware you are considering
@@ -309,14 +268,12 @@ const schema = {
             more complicated way than a foot, and the estimate drifts noticeably with arm swing,
             handrail use and pace changes. They are fine for joining a social run or a casual route.
             For workouts with precise pace targets, a foot pod is the better tool. If a watch is your
-            main training device, our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            covers what the watch can and cannot do on its own.
+            main training device, our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> covers what the watch can and cannot do on its own.
           </p>
         </div>
 
         <div id="no-connectivity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Can You Use Zwift With a Treadmill That Has No Connectivity?</h2>
+          <h2>Can You Use Zwift With a Treadmill That Has No Connectivity?</h2>
 <p>
             Yes, and this is the question most people searching for a "Zwift compatible treadmill"
             actually want answered. A treadmill with no Bluetooth, no ANT+, no app and no screen
@@ -343,14 +300,12 @@ const schema = {
             The implication for buyers is useful. If Zwift is the reason you are shopping, you do
             not need to pay for a connected treadmill or a bundled subscription machine to get it.
             Spend the money on a solid deck, a decent motor and a frame that does not shake, then add
-            a pod. Our list of
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            covers machines built on exactly that philosophy.
+            a pod. Our list of <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> covers machines built on exactly that philosophy.
           </p>
         </div>
 
         <div id="calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Calibration: Why the Pod and the Treadmill Both Need Checking</h2>
+          <h2>Calibration: Why the Pod and the Treadmill Both Need Checking</h2>
 <p>
             There are two separate accuracy problems here, and they stack. The first is whether your
             sensor reports your true speed. The second is whether the treadmill's displayed speed is
@@ -379,9 +334,7 @@ const schema = {
             mark the belt, measure its full length, count revolutions over a timed interval at a set
             speed with your weight on the belt, and work out the real speed. Belt stretch, roller
             wear and a dry deck all make the belt run slower under load than the display claims,
-            and the error is often larger at higher speeds. Our full
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a>
-            walks through the arithmetic, the service-mode route on consoles that have one, and when
+            and the error is often larger at higher speeds. Our full <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a> walks through the arithmetic, the service-mode route on consoles that have one, and when
             an error points to a fault rather than a setting.
           </p>
           <p>
@@ -402,7 +355,7 @@ const schema = {
         </div>
 
         <div id="what-zwift-can-do" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Zwift Run Can and Cannot Do</h2>
+          <h2>What Zwift Run Can and Cannot Do</h2>
 <p>
             It is worth being clear-eyed here, because the cycling side of Zwift sets expectations
             that the running side does not fully meet.
@@ -415,9 +368,7 @@ const schema = {
             style option on some routes to help you hold a steady effort. Recording of distance,
             pace, cadence and heart rate, exportable to the usual training platforms. For a lot of
             people, the simple fact of other runners on screen is enough to make a forty-minute
-            treadmill run pass without the clock-watching that our guide to
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
-            is written to solve.
+            treadmill run pass without the clock-watching that our guide to <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a> is written to solve.
           </p>
           <p>
             <strong>What it does not do on most machines.</strong> Zwift does not control your
@@ -445,7 +396,7 @@ const schema = {
         </div>
 
         <div id="setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Setting Up: Screen, Device Placement and Bluetooth vs ANT+</h2>
+          <h2>Setting Up: Screen, Device Placement and Bluetooth vs ANT+</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Choosing a screen</h3>
           <p>
             Zwift runs on phones, tablets, laptops, desktop computers and a popular TV streaming
@@ -488,13 +439,12 @@ const schema = {
           <p>
             Open the pairing screen, wake the sensor (a few steps for a foot pod, or starting the
             belt for a connected treadmill), and pair the run speed source first, then cadence if it
-            is separate, then heart rate. Put the device in the position you will actually run with
-            <em>before</em> pairing, not after, so that you are testing the real set-up.
+            is separate, then heart rate. Put the device in the position you will actually run with <em>before</em> pairing, not after, so that you are testing the real set-up.
           </p>
         </div>
 
         <div id="connection-problems" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Common Connection Problems and How to Fix Them</h2>
+          <h2>Common Connection Problems and How to Fix Them</h2>
 <p>
             Most Zwift Run frustration is connectivity rather than the app. Work through these in
             order; the early ones solve the large majority of cases.
@@ -538,7 +488,7 @@ const schema = {
         </div>
 
         <div id="zwift-run-vs-cycling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Honest Comparison With Zwift Cycling</h2>
+          <h2>The Honest Comparison With Zwift Cycling</h2>
 <p>
             Many people arrive at Zwift Run having used, or watched someone use, Zwift on a bike. The
             running experience is good, but it is not the same, and it is better to know why before
@@ -576,7 +526,7 @@ const schema = {
         </div>
 
         <div id="is-it-worth-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Is Zwift Worth It for Treadmill Running, and What Are the Alternatives?</h2>
+          <h2>Is Zwift Worth It for Treadmill Running, and What Are the Alternatives?</h2>
 <p>
             Zwift suits a particular kind of treadmill runner: someone who does regular structured
             sessions, likes the idea of other people on screen, and is comfortable operating the
@@ -589,9 +539,7 @@ const schema = {
             pace and grade for them, or someone who already pays for a treadmill subscription. For
             walkers, the virtual world moves slowly and the structured content is thin. For the
             automatic-adjust crowd, platforms built around specific hardware do that job and Zwift
-            does not; our guide to
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            covers the main one. For the already-subscribed, adding Zwift is a second monthly cost
+            does not; our guide to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> covers the main one. For the already-subscribed, adding Zwift is a second monthly cost
             for a treadmill that is already connected to something, and it is worth asking whether
             the first subscription is the one to drop.
           </p>
@@ -609,142 +557,155 @@ const schema = {
             machine first and the connectivity second.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use Zwift with any treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Zwift needs a running speed signal, not a connection to the treadmill, so any machine works once you add a source of speed. A foot pod clipped to your shoe is the universal option and works on treadmills with no connectivity at all. Some connected treadmills can broadcast speed directly, and some watches can provide an estimate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Zwift control treadmill speed and incline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On most treadmills, no. Zwift reads your speed and shows pace targets or virtual terrain, but you change the belt speed and incline yourself using the console. A few machines broadcast incline so Zwift can display it, and exceptions change over time, but assume you will be pressing the buttons during workouts.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a foot pod for Zwift running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                You need one unless your treadmill broadcasts speed over Bluetooth or ANT+ or you use a watch that can send an estimated running speed. A foot pod is the most reliable and portable choice for most people. It measures your stride, so it works on any treadmill and travels with you, but it needs calibrating against a known speed to be accurate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I calibrate a foot pod for Zwift?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Run at a steady, known treadmill speed for a minute or two, compare what the pod reports with the real belt speed, and adjust the calibration factor until they agree. Calibrate at the pace you run most. Verify the treadmill's own speed first, because consoles often read high under load, otherwise you copy the treadmill's error into the pod.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my Zwift foot pod keep disconnecting?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually distance or body blocking. Bluetooth and ANT+ are short range and your legs and torso absorb the signal, so keep the receiving device in front of you and close. Check the pod battery, close other apps that may have grabbed the sensor, move an ANT+ dongle on an extension cable, and keep the device away from the treadmill motor area.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Zwift free for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It has been treated differently from cycling at various points, and the terms can change, so check Zwift's current pricing and whether running-only use is included, offered separately or free. If you already pay for a treadmill subscription, weigh the cost of running two memberships for one machine before adding Zwift.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Zwift on a Treadmill</h2>
+          <p>Nearly every disappointing Zwift Run session comes back to one of these four, and all of them are fixable in an afternoon.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Calibrating the pod to an unverified console</h3>
+              <p>A foot pod calibrated to the treadmill display inherits whatever error the display has, and belts commonly run slower under load than the console claims. Measure the real belt speed first with the mark-and-time method, then calibrate the pod to that figure rather than to the number on the screen.</p>
+            </li>
+            <li>
+              <h3>Putting the device behind or beside you</h3>
+              <p>A laptop on a table behind the treadmill has to receive the pod's signal through your body, and dropouts follow. Put the receiving device in front of you on the console or a stand, within a couple of metres, and on a laptop use a short USB extension to bring an ANT+ dongle closer.</p>
+            </li>
+            <li>
+              <h3>Buying a connected treadmill just for Zwift</h3>
+              <p>A treadmill that broadcasts speed is convenient, but it broadcasts the console's figure, errors included, and pairing can break with firmware changes. A good basic treadmill plus a decent foot pod is cheaper, more portable and often more accurate. Buy the machine on deck, motor and frame, then add the sensor.</p>
+            </li>
+            <li>
+              <h3>Expecting the cycling experience</h3>
+              <p>Zwift sets the resistance on a smart bike trainer; it sets nothing on a treadmill. Hills are scenery unless you raise the incline, workout blocks need you to press the speed buttons, and the running race scene is smaller and less comparable. Go in expecting prompts and company rather than automation.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Zwift on a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Nearly every disappointing Zwift Run session comes back to one of these four, and all of them are fixable in an afternoon.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating the pod to an unverified console</h3>
-              <p class="text-gray-700 text-sm m-0">A foot pod calibrated to the treadmill display inherits whatever error the display has, and belts commonly run slower under load than the console claims. Measure the real belt speed first with the mark-and-time method, then calibrate the pod to that figure rather than to the number on the screen.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting the device behind or beside you</h3>
-              <p class="text-gray-700 text-sm m-0">A laptop on a table behind the treadmill has to receive the pod's signal through your body, and dropouts follow. Put the receiving device in front of you on the console or a stand, within a couple of metres, and on a laptop use a short USB extension to bring an ANT+ dongle closer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a connected treadmill just for Zwift</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill that broadcasts speed is convenient, but it broadcasts the console's figure, errors included, and pairing can break with firmware changes. A good basic treadmill plus a decent foot pod is cheaper, more portable and often more accurate. Buy the machine on deck, motor and frame, then add the sensor.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting the cycling experience</h3>
-              <p class="text-gray-700 text-sm m-0">Zwift sets the resistance on a smart bike trainer; it sets nothing on a treadmill. Hills are scenery unless you raise the incline, workout blocks need you to press the speed buttons, and the running race scene is smaller and less comparable. Go in expecting prompts and company rather than automation.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-calibration/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accuracy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calibration</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Checking belt speed, incline and your watch against reality.</p>
-            </a>
-            <a href="/smart-treadmill-vs-regular/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Smart Treadmill vs Regular</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What connectivity actually buys you, and what it does not.</p>
-            </a>
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Subscriptions</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The main auto-adjust platform, weighed honestly.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Any treadmill is a Zwift treadmill once it has a speed source.</strong>
-            A calibrated foot pod is the universal answer, works on machines with no connectivity,
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Any treadmill is a Zwift treadmill once it has a speed source.</strong> A calibrated foot pod is the universal answer, works on machines with no connectivity,
             and is often more truthful than a console. A connected treadmill is tidier but
             broadcasts its own errors, and on most machines Zwift still does not control speed or
             incline.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Verify the belt speed before calibrating anything, put the device in front of you, and
             expect prompts rather than automation. If you want the machine to change pace and grade
-            for you, that is a different platform, and our guide to
-            <a href="/is-ifit-worth-it/" class="text-[#5AA9FF] font-bold no-underline">whether iFIT is worth it</a>
-            covers the trade-offs.
+            for you, that is a different platform, and our guide to <a href="/is-ifit-worth-it/" class="text-[#5AA9FF] font-bold no-underline">whether iFIT is worth it</a> covers the trade-offs.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-calibration/">Treadmill Calibration</a></li>
+            <li><a href="/smart-treadmill-vs-regular/">Smart Treadmill vs Regular</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Can you use Zwift with any treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. Zwift needs a running speed signal, not a connection to the treadmill, so any machine works once you add a source of speed. A foot pod clipped to your shoe is the universal option and works on treadmills with no connectivity at all. Some connected treadmills can broadcast speed directly, and some watches can provide an estimate.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Does Zwift control treadmill speed and incline?</h3></summary>
+            <p class="faq-a">
+              On most treadmills, no. Zwift reads your speed and shows pace targets or virtual terrain, but you change the belt speed and incline yourself using the console. A few machines broadcast incline so Zwift can display it, and exceptions change over time, but assume you will be pressing the buttons during workouts.
             </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a foot pod for Zwift running?</h3></summary>
+            <p class="faq-a">
+              You need one unless your treadmill broadcasts speed over Bluetooth or ANT+ or you use a watch that can send an estimated running speed. A foot pod is the most reliable and portable choice for most people. It measures your stride, so it works on any treadmill and travels with you, but it needs calibrating against a known speed to be accurate.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I calibrate a foot pod for Zwift?</h3></summary>
+            <p class="faq-a">
+              Run at a steady, known treadmill speed for a minute or two, compare what the pod reports with the real belt speed, and adjust the calibration factor until they agree. Calibrate at the pace you run most. Verify the treadmill's own speed first, because consoles often read high under load, otherwise you copy the treadmill's error into the pod.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my Zwift foot pod keep disconnecting?</h3></summary>
+            <p class="faq-a">
+              Usually distance or body blocking. Bluetooth and ANT+ are short range and your legs and torso absorb the signal, so keep the receiving device in front of you and close. Check the pod battery, close other apps that may have grabbed the sensor, move an ANT+ dongle on an extension cable, and keep the device away from the treadmill motor area.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is Zwift free for running?</h3></summary>
+            <p class="faq-a">
+              It has been treated differently from cycling at various points, and the terms can change, so check Zwift's current pricing and whether running-only use is included, offered separately or free. If you already pay for a treadmill subscription, weigh the cost of running two memberships for one machine before adding Zwift.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-calibration/" class="card">
+            <div class="c-kicker">Accuracy</div>
+            <div class="c-title">Treadmill Calibration</div>
+            <p class="c-blurb">Checking belt speed, incline and your watch against reality.</p>
+          </a>
+          <a href="/smart-treadmill-vs-regular/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Smart Treadmill vs Regular</div>
+            <p class="c-blurb">What connectivity actually buys you, and what it does not.</p>
+          </a>
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">Subscriptions</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">The main auto-adjust platform, weighed honestly.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

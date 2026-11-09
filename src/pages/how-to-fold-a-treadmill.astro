@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Fold a Treadmill (2026): And When It Won't Latch";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-fold-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Won't Fold or Latch?", link: "#wont-fold" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtofoldatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtofoldatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership</span>
+      </nav>
+      <h1 class="ed-title">How to Fold a Treadmill</h1>
+      <p class="ed-dek">
+        Folding a treadmill takes ten seconds once you know the order, and most of the problems people have with it — a deck that will not latch, a strut that drops too fast, a machine that tips — come from skipping one of those steps. Here is the order, and what to do when it goes wrong.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Fold <span class="text-[#5AA9FF]">a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Folding a treadmill takes ten seconds once you know the order, and most of the problems people have with it — a deck that will not latch, a strut that drops too fast, a machine that tips — come from skipping one of those steps. Here is the order, and what to do when it goes wrong.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#wont-fold" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Won't Fold or Latch?
-          </a>
-          <a href="#unfolding" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Unfolding Safely
-          </a>
-        </div>
+        <a href="#wont-fold" class="btn-ghost">Won't Fold or Latch?</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Safety first.</strong> Stop the belt, remove the safety key and
-          unplug the treadmill before you fold or unfold it. Keep children and pets well clear
-          while the deck is moving, never stand or reach underneath a raised deck, and if the
-          latch will not hold the deck securely, leave the machine down and flat. Fold mechanisms
-          differ between models, so your owner's manual is the authority on where to lift and how
-          the release works — the steps below are the general pattern, not a substitute for it.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Fold a Treadmill: The Short Answer</a>
-          <a href="#know-your-mechanism" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Know Which Fold Mechanism You Have</a>
-          <a href="#before-you-fold" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Before You Fold: The Checks That Prevent Damage</a>
-          <a href="#lifting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Lifting the Deck: Use Your Legs, Not Your Back</a>
-          <a href="#locking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Seating the Latch and Locking Pin</a>
-          <a href="#unfolding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How to Unfold a Treadmill Safely</a>
-          <a href="#wont-fold" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Treadmill Won't Fold or Won't Latch: What to Check</a>
-          <a href="#wont-unfold" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Treadmill Won't Unfold: A Stuck Latch</a>
-          <a href="#folded-storage-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Folded Storage Safety: Children, Pets and Tipping</a>
-          <a href="#mechanism-care" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Looking After the Fold Mechanism</a>
-          <a href="#short-version" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Folding a treadmill is simple, but it is also the one routine job where you are lifting a
           heavy, hinged steel deck above head height and trusting a latch to hold it there. Done in
           the right order it is safe and quick. Done in the wrong order — incline still raised,
@@ -205,8 +144,36 @@ const schema = {
           folded machines come down when nobody expects them to.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Safety first.</strong> Stop the belt, remove the safety key and
+          unplug the treadmill before you fold or unfold it. Keep children and pets well clear
+          while the deck is moving, never stand or reach underneath a raised deck, and if the
+          latch will not hold the deck securely, leave the machine down and flat. Fold mechanisms
+          differ between models, so your owner's manual is the authority on where to lift and how
+          the release works — the steps below are the general pattern, not a substitute for it.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Fold a Treadmill: The Short Answer</a></li>
+            <li><a href="#know-your-mechanism">Know Which Fold Mechanism You Have</a></li>
+            <li><a href="#before-you-fold">Before You Fold: The Checks That Prevent Damage</a></li>
+            <li><a href="#lifting">Lifting the Deck: Use Your Legs, Not Your Back</a></li>
+            <li><a href="#locking">Seating the Latch and Locking Pin</a></li>
+            <li><a href="#unfolding">How to Unfold a Treadmill Safely</a></li>
+            <li><a href="#wont-fold">Treadmill Won't Fold or Won't Latch: What to Check</a></li>
+            <li><a href="#wont-unfold">Treadmill Won't Unfold: A Stuck Latch</a></li>
+            <li><a href="#folded-storage-safety">Folded Storage Safety: Children, Pets and Tipping</a></li>
+            <li><a href="#mechanism-care">Looking After the Fold Mechanism</a></li>
+            <li><a href="#short-version">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Fold a Treadmill: The Short Answer</h2>
+          <h2>How to Fold a Treadmill: The Short Answer</h2>
 <p>
             To fold a treadmill: lower the incline to zero, stop the belt, remove the safety key and
             unplug the machine. Stand at the rear of the deck, bend at the knees, grip the deck frame
@@ -222,16 +189,12 @@ const schema = {
             latch is fully seated is the commonest way to have a deck come back down.
           </p>
           <p>
-            If you are still choosing a machine and folding matters to you, our
-            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill guide</a>
-            explains how the different mechanisms work, and our comparison of
-            <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding and non-folding treadmills</a>
-            covers the trade-offs. This page is about using the one you have.
+            If you are still choosing a machine and folding matters to you, our <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill guide</a> explains how the different mechanisms work, and our comparison of <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding and non-folding treadmills</a> covers the trade-offs. This page is about using the one you have.
           </p>
         </div>
 
         <div id="know-your-mechanism" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Know Which Fold Mechanism You Have</h2>
+          <h2>Know Which Fold Mechanism You Have</h2>
 <p>
             Almost every folding home treadmill uses some combination of three parts, and knowing
             which ones yours has tells you what to expect when you fold and unfold it.
@@ -264,14 +227,12 @@ const schema = {
             Walking pads and <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under-desk treadmills</a> are a separate case. Many do not fold in this
             sense at all — they are designed to slide under furniture or, on some models, to stand
             on end against a wall. Whether yours may be stored on end is a question for its manual,
-            not an assumption to make. Our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad comparison</a>
-            covers the differences between the two types.
+            not an assumption to make. Our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad comparison</a> covers the differences between the two types.
           </p>
         </div>
 
         <div id="before-you-fold" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Before You Fold: The Checks That Prevent Damage</h2>
+          <h2>Before You Fold: The Checks That Prevent Damage</h2>
 <p>
             Thirty seconds of preparation prevents nearly every folding problem worth worrying
             about.
@@ -301,15 +262,13 @@ const schema = {
             <strong>Check the overhead space.</strong> A folded treadmill is often considerably taller
             than people picture, because the rear of the deck now points at the ceiling. Light
             fittings, shelves, sloped ceilings and low basement beams are all things decks have hit.
-            Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers folded footprints; the manufacturer's spec sheet gives the folded height for your
+            Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers folded footprints; the manufacturer's spec sheet gives the folded height for your
             model.
           </p>
         </div>
 
         <div id="lifting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Lifting the Deck: Use Your Legs, Not Your Back</h2>
+          <h2>Lifting the Deck: Use Your Legs, Not Your Back</h2>
 <p>
             You are not lifting the whole treadmill. The front of the machine — motor, uprights and
             console — stays on the floor, and the deck pivots up from a hinge near the front. But the
@@ -334,14 +293,12 @@ const schema = {
             Be honest about whether you can do this comfortably. If lifting the deck is a strain
             every time, you are one bad morning away from a back injury or a dropped deck. Ask for
             help, or consider leaving the machine flat and folding it only when you genuinely need
-            the space. For readers for whom this is a regular concern, our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            covers which features matter, including the effort a fold takes.
+            the space. For readers for whom this is a regular concern, our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> covers which features matter, including the effort a fold takes.
           </p>
         </div>
 
         <div id="locking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Seating the Latch and Locking Pin</h2>
+          <h2>Seating the Latch and Locking Pin</h2>
 <p>
             The deck is not folded until it is latched. Bring it fully upright — not nearly upright —
             and you should hear or feel a distinct click as the latch catches. On some machines you
@@ -367,7 +324,7 @@ const schema = {
         </div>
 
         <div id="unfolding" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How to Unfold a Treadmill Safely</h2>
+          <h2>How to Unfold a Treadmill Safely</h2>
 <p>
             Unfolding is the higher-risk direction, because you are releasing a heavy deck rather
             than lifting one, and the release mechanism is designed to let it move.
@@ -401,14 +358,12 @@ const schema = {
             <strong>Check before you run.</strong> Once the deck is down, confirm it sits evenly on
             its rear feet and does not rock. Reconnect the power, insert the key, and start at a
             slow walking pace while you watch the belt. Folding rarely disturbs belt tracking, but if
-            the belt drifts to one side our
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a>
-            covers the correction.
+            the belt drifts to one side our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a> covers the correction.
           </p>
         </div>
 
         <div id="wont-fold" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Treadmill Won't Fold or Won't Latch: What to Check</h2>
+          <h2>Treadmill Won't Fold or Won't Latch: What to Check</h2>
 <p>
             When a deck will not go up, or goes up but will not stay latched, the cause is usually
             one of a short list. Work through it in order before assuming anything is broken, and
@@ -418,9 +373,7 @@ const schema = {
             <strong>The incline is not at zero.</strong> The most common cause by a distance. On
             many machines the latch will not align with the incline even slightly raised. Power the
             machine on, bring the incline fully down, wait for it to finish, and try again. If the
-            incline will not return to zero, that is a separate fault — our
-            <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">incline troubleshooting guide</a>
-            covers it.
+            incline will not return to zero, that is a separate fault — our <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">incline troubleshooting guide</a> covers it.
           </p>
           <p>
             <strong>A locking pin is still engaged.</strong> On machines where the secondary pin
@@ -457,15 +410,13 @@ const schema = {
           <p>
             If you cannot find the cause, or the fault is a damaged part, contact the manufacturer
             with your model and serial number. If the machine is under warranty, the fold mechanism
-            is normally covered as a part, and our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to make a claim. In the meantime, do not store the machine folded on a
+            is normally covered as a part, and our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how to make a claim. In the meantime, do not store the machine folded on a
             latch you do not trust. Leave it down.
           </p>
         </div>
 
         <div id="wont-unfold" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Treadmill Won't Unfold: A Stuck Latch</h2>
+          <h2>Treadmill Won't Unfold: A Stuck Latch</h2>
 <p>
             The reverse problem is less common and usually simpler. In most cases the deck's weight
             is pressing on the catch and the release cannot move against it.
@@ -493,7 +444,7 @@ const schema = {
         </div>
 
         <div id="folded-storage-safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Folded Storage Safety: Children, Pets and Tipping</h2>
+          <h2>Folded Storage Safety: Children, Pets and Tipping</h2>
 <p>
             A folded treadmill is a heavy object standing on a small footprint with its centre of
             gravity raised. Latched, on a level floor, it is stable. The risks come from three
@@ -505,9 +456,7 @@ const schema = {
             children, and a deck coming down from the folded position is one of the ways it happens.
             Keep the safety key out of the machine and out of reach, keep the machine unplugged, and
             where small children are in the house, store the treadmill in a room they cannot get into
-            unsupervised. If the machine has a secondary lock, use it every time. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers the wider household precautions.
+            unsupervised. If the machine has a secondary lock, use it every time. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers the wider household precautions.
           </p>
           <p>
             <strong>Tipping.</strong> A folded machine on thick carpet, an uneven floor or a slope
@@ -519,9 +468,7 @@ const schema = {
           <p>
             <strong>Moving it folded.</strong> Transport wheels let you roll a folded machine a short
             distance on a flat floor. Do it slowly, keep thresholds and rug edges in mind, and do not
-            roll a folded treadmill over steps. Our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            covers anything further than across the room, including why the latch should never be
+            roll a folded treadmill over steps. Our guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> covers anything further than across the room, including why the latch should never be
             trusted alone when the machine is tilted.
           </p>
           <p>
@@ -532,7 +479,7 @@ const schema = {
         </div>
 
         <div id="mechanism-care" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Looking After the Fold Mechanism</h2>
+          <h2>Looking After the Fold Mechanism</h2>
 <p>
             Folding mechanisms on home treadmills are built to be used, and folding the deck daily
             is normal use. They do wear, though, and a few minutes' attention now and then keeps
@@ -548,9 +495,7 @@ const schema = {
           <p>
             Pay attention to changes. A latch that used to click and now needs a second push, a
             deck that rocks slightly when folded, or a new creak at the hinge are all early warnings,
-            and they are easier to deal with as a loose bolt than as a failed part. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
-            folds these checks into a routine with everything else.
+            and they are easier to deal with as a loose bolt than as a failed part. Our <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a> folds these checks into a routine with everything else.
           </p>
           <p>
             Do not modify the mechanism. Removing a pin that is a nuisance, wedging a latch open or
@@ -560,7 +505,7 @@ const schema = {
         </div>
 
         <div id="short-version" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>To fold:</strong> incline to zero, belt stopped, key out, unplugged, cord and
             deck clear. Lift from the rear with your legs, take the deck fully upright until the
@@ -577,139 +522,154 @@ const schema = {
             store the deck folded on a latch you do not trust.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you fold a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Lower the incline to zero, stop the belt, remove the safety key and unplug the machine. Stand at the rear, bend your knees, grip the deck frame where the manual shows and lift with your legs until the deck is fully upright and the latch clicks. Engage any secondary locking pin, then give the deck a gentle pull to confirm it is held before letting go.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why won't my treadmill fold?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The most common reason is that the incline is not fully at zero, which stops the latch lining up. Other usual causes are a secondary locking pin still engaged, an obstruction such as the cord or a mat edge, not lifting the deck fully to vertical, an unlevel machine or loose frame bolts, and less often a bent latch or a failed lift-assist strut. Do not force the deck.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you unfold a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Make sure nobody is near the deck's path. Stand at the rear, to one side, and push the deck slightly toward the uprights to take the weight off the latch. Operate the release, keep a hand on the deck and guide it down — on soft-drop machines the strut lowers it the rest of the way. Never stand underneath it and never let it drop.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why won't my treadmill stay folded?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually the latch is not fully seated, because the deck was not lifted all the way to vertical, the incline was not at zero, or something is obstructing the hinge. If the latch is bent, worn or loose, it will not hold reliably and needs replacing. Until it is fixed, leave the deck down rather than storing it folded on a latch you do not trust.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to leave a treadmill folded?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if the latch and any secondary lock are fully engaged and the machine is on a level floor. Remove the safety key, keep it unplugged, keep children away from it, and never hang things on the raised deck. Folded machines have a high centre of gravity, so a firm push against the deck on carpet or an uneven floor is the main tipping risk.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you fold a treadmill with the incline up?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                You should not. Most manuals require the incline to be at zero before folding, because the raised incline changes the deck geometry the fold was designed around. The latch may not align, and forcing the fold can strain the incline mechanism and hinge. Bring the incline down with the machine powered on, wait for it to stop, then power off and fold.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Folding a Treadmill</h2>
+          <p>Fold mechanisms are reliable when used as designed. Almost every problem we hear about traces back to one of these four.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Folding with the incline still raised</h3>
+              <p>The fold is designed around the deck at zero incline. Folding with the incline up stops the latch lining up and loads the incline mechanism and hinge in a way they were not built for. It takes ten seconds to bring the incline down first, and most manuals say to.</p>
+            </li>
+            <li>
+              <h3>Treating the soft-drop strut as a lock</h3>
+              <p>A hydraulic or gas strut controls how fast the deck moves; it does not hold it up. If the latch is not seated, the strut will only make the descent slower. The latch, and any secondary pin, are what keep a folded deck folded — check them every time with a gentle pull.</p>
+            </li>
+            <li>
+              <h3>Leaving the key in and the plug connected</h3>
+              <p>A folded treadmill with the key in and the power connected can be started by anyone, and a curious child can reach the release. Remove the key, unplug the machine and store the key out of reach. Where small children are around, keep the treadmill in a room they cannot enter alone.</p>
+            </li>
+            <li>
+              <h3>Forcing a stuck latch</h3>
+              <p>Prying at a stuck latch with a tool while nobody holds the deck is how hands get caught when it suddenly releases. Take the weight off the latch by supporting the deck, get a second person if needed, and replace a bent or damaged latch rather than bending it back.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Folding a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Fold mechanisms are reliable when used as designed. Almost every problem we hear about traces back to one of these four.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Folding with the incline still raised</h3>
-              <p class="text-gray-700 text-sm m-0">The fold is designed around the deck at zero incline. Folding with the incline up stops the latch lining up and loads the incline mechanism and hinge in a way they were not built for. It takes ten seconds to bring the incline down first, and most manuals say to.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the soft-drop strut as a lock</h3>
-              <p class="text-gray-700 text-sm m-0">A hydraulic or gas strut controls how fast the deck moves; it does not hold it up. If the latch is not seated, the strut will only make the descent slower. The latch, and any secondary pin, are what keep a folded deck folded — check them every time with a gentle pull.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the key in and the plug connected</h3>
-              <p class="text-gray-700 text-sm m-0">A folded treadmill with the key in and the power connected can be started by anyone, and a curious child can reach the release. Remove the key, unplug the machine and store the key out of reach. Where small children are around, keep the treadmill in a room they cannot enter alone.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forcing a stuck latch</h3>
-              <p class="text-gray-700 text-sm m-0">Prying at a stuck latch with a tool while nobody holds the deck is how hands get caught when it suddenly releases. Take the weight off the latch by supporting the deck, get a second person if needed, and replace a bent or damaged latch rather than bending it back.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Folding Treadmills Explained</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Hydraulic, manual and powered folds, and what to check before you rely on one.</p>
-            </a>
-            <a href="/how-to-move-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Move a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Stairs, vans and why the latch is never enough on its own.</p>
-            </a>
-            <a href="/best-folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The folding machines worth shortlisting if space is the constraint.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Incline to zero, key out, unplug, lift with your legs, latch,
             pin, pull-test.</strong> That order prevents nearly every folding problem, and the
             pull-test at the end is the step that stops a half-seated latch becoming a falling deck.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If the deck <strong class="text-white">will not fold or will not latch</strong>, check the
             incline, pins, obstructions and frame bolts before blaming a part — and never store it
-            folded on a latch you do not trust. For longer-term storage, see our guide to
-            <a href="/how-to-store-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">storing a treadmill</a>.
+            folded on a latch you do not trust. For longer-term storage, see our guide to <a href="/how-to-store-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">storing a treadmill</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/folding-treadmills/">Folding Treadmills Explained</a></li>
+            <li><a href="/how-to-move-a-treadmill/">How to Move a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you fold a treadmill?</h3></summary>
+            <p class="faq-a">
+              Lower the incline to zero, stop the belt, remove the safety key and unplug the machine. Stand at the rear, bend your knees, grip the deck frame where the manual shows and lift with your legs until the deck is fully upright and the latch clicks. Engage any secondary locking pin, then give the deck a gentle pull to confirm it is held before letting go.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why won't my treadmill fold?</h3></summary>
+            <p class="faq-a">
+              The most common reason is that the incline is not fully at zero, which stops the latch lining up. Other usual causes are a secondary locking pin still engaged, an obstruction such as the cord or a mat edge, not lifting the deck fully to vertical, an unlevel machine or loose frame bolts, and less often a bent latch or a failed lift-assist strut. Do not force the deck.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do you unfold a treadmill?</h3></summary>
+            <p class="faq-a">
+              Make sure nobody is near the deck's path. Stand at the rear, to one side, and push the deck slightly toward the uprights to take the weight off the latch. Operate the release, keep a hand on the deck and guide it down — on soft-drop machines the strut lowers it the rest of the way. Never stand underneath it and never let it drop.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why won't my treadmill stay folded?</h3></summary>
+            <p class="faq-a">
+              Usually the latch is not fully seated, because the deck was not lifted all the way to vertical, the incline was not at zero, or something is obstructing the hinge. If the latch is bent, worn or loose, it will not hold reliably and needs replacing. Until it is fixed, leave the deck down rather than storing it folded on a latch you do not trust.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to leave a treadmill folded?</h3></summary>
+            <p class="faq-a">
+              Yes, if the latch and any secondary lock are fully engaged and the machine is on a level floor. Remove the safety key, keep it unplugged, keep children away from it, and never hang things on the raised deck. Folded machines have a high centre of gravity, so a firm push against the deck on carpet or an uneven floor is the main tipping risk.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you fold a treadmill with the incline up?</h3></summary>
+            <p class="faq-a">
+              You should not. Most manuals require the incline to be at zero before folding, because the raised incline changes the deck geometry the fold was designed around. The latch may not align, and forcing the fold can strain the incline mechanism and hinge. Bring the incline down with the machine powered on, wait for it to stop, then power off and fold.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Ownership Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/folding-treadmills/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Folding Treadmills Explained</div>
+            <p class="c-blurb">Hydraulic, manual and powered folds, and what to check before you rely on one.</p>
+          </a>
+          <a href="/how-to-move-a-treadmill/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Move a Treadmill</div>
+            <p class="c-blurb">Stairs, vans and why the latch is never enough on its own.</p>
+          </a>
+          <a href="/best-folding-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Folding Treadmills</div>
+            <p class="c-blurb">The folding machines worth shortlisting if space is the constraint.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

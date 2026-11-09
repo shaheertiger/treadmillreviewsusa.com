@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills Under $500 (2026): What This Budget Actually Buys";
 const description =
@@ -270,6 +269,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-under-500/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -290,66 +295,73 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Top Pick", link: "#walking-pad-flat" }}
+  stickyCta={{ text: "Best Overall: Flat-Fold Walking Pad", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillsunder500" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsunder500)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills Under $500</h1>
+      <p class="ed-dek">
+        This budget buys a walking machine. Anything claiming otherwise is quoting peak horsepower at you. Here is what is genuinely achievable under $500, and what to spend a little more on if you can.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills <span class="text-[#5AA9FF]">Under $500</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          This budget buys a walking machine. Anything claiming otherwise is quoting peak horsepower at you. Here is what is genuinely achievable under $500, and what to spend a little more on if you can.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#walking-pad-flat" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Top Pick
-          </a>
-          <a href="#what-you-cannot-get" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What You Cannot Get
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Under $500 the useful question is not which treadmill is best. It is which compromises
+          you can live with — because at this price every machine has made the same three, and
+          pretending otherwise is how people end up disappointed six weeks in.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="6.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#walking-pad-flat">Flat-Fold Walking Pad</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compromise:</span> <a href="#walking-pad-2in1">2-in-1 Walking Pad With Rail</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Has Incline:</span> <a href="#budget-folding-treadmill">Budget Folding Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">No Motor to Fail:</span> <a href="#compact-manual-treadmill">Manual (Non-Motorised) Treadmill</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#used-mid-range">Used Mid-Range Treadmill</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Warranty Included:</span> <a href="#refurbished-treadmill">Manufacturer-Refurbished Treadmill</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the machines below.</strong> This tier changes faster
           than any other: models are discontinued, rebadged and revised constantly, and
           specifications shift under unchanged product names. We describe categories and the
@@ -358,94 +370,42 @@ const schema = {
           machines; what follows is drawn from published specifications and what they imply, not
           from our own measurements. Verify the motor rating, deck size and weight capacity for
           the exact unit before ordering.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#walking-pad-flat" class="font-bold text-gray-900 no-underline hover:underline">Flat-Fold Walking Pad</a>
-            <a href="#walking-pad-flat" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compromise:</span>
-            <a href="#walking-pad-2in1" class="font-bold text-gray-900 no-underline hover:underline">2-in-1 Walking Pad With Rail</a>
-            <a href="#walking-pad-2in1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Has Incline:</span>
-            <a href="#budget-folding-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Budget Folding Treadmill</a>
-            <a href="#budget-folding-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">No Motor to Fail:</span>
-            <a href="#compact-manual-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Manual (Non-Motorised) Treadmill</a>
-            <a href="#compact-manual-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#used-mid-range" class="font-bold text-gray-900 no-underline hover:underline">Used Mid-Range Treadmill</a>
-            <a href="#used-mid-range" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#what-you-cannot-get" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What $500 Cannot Buy, Stated Plainly</a>
-          <a href="#two-categories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Two Different Machines at the Same Price</a>
-          <a href="#specs-to-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Four Specifications Worth Checking</a>
-          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How We Chose</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Six Best Machines Under $500</a>
-          <a href="#should-you-wait" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Should You Save for $800 Instead?</a>
-          <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Maintenance Is Not Optional at This Price</a>
-          <a href="#red-flags" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Listing Red Flags at This Price</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Returns Window Is Your Real Warranty</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#what-you-cannot-get">What $500 Cannot Buy, Stated Plainly</a></li>
+            <li><a href="#two-categories">Two Different Machines at the Same Price</a></li>
+            <li><a href="#specs-to-check">The Four Specifications Worth Checking</a></li>
+            <li><a href="#how-we-tested">How We Chose</a></li>
+            <li><a href="#picks">The Six Best Machines Under $500</a></li>
+            <li><a href="#should-you-wait">Should You Save for $800 Instead?</a></li>
+            <li><a href="#maintenance">Maintenance Is Not Optional at This Price</a></li>
+            <li><a href="#red-flags">Listing Red Flags at This Price</a></li>
+            <li><a href="#returns">The Returns Window Is Your Real Warranty</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Under $500 the useful question is not which treadmill is best. It is which compromises
-          you can live with — because at this price every machine has made the same three, and
-          pretending otherwise is how people end up disappointed six weeks in.
-        </p>
 
         <div id="what-you-cannot-get" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What $500 Cannot Buy, Stated Plainly</h2>
+          <h2>What $500 Cannot Buy, Stated Plainly</h2>
 <p>
             Three things are effectively unavailable at this price, and knowing that up front
-            makes the rest of the decision straightforward. (For the tier below, see the
-            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>.)
+            makes the rest of the decision straightforward. (For the tier below, see the <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>.)
           </p>
           <p>
             <strong>A running deck.</strong> Decks at this price run 40 to 50 inches. A 60-inch
             deck is the running specification and it does not appear below roughly $900. If you
             intend to run, this is the wrong budget, and no amount of shopping will change that —
-            our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>
-            starts where this one ends.
+            our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a> starts where this one ends.
           </p>
           <p>
             <strong>A motor rated for sustained work.</strong> Continuous-duty ratings here are
             typically 1.5 to 2.25 CHP. That is adequate for walking and marginal for jogging, and
             the peak-horsepower figures on the box — often 4.0 or higher — describe a burst the
-            motor cannot hold for more than a few seconds. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the distinction.
+            motor cannot hold for more than a few seconds. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the distinction.
           </p>
           <p>
             <strong>A frame that does not move.</strong> Assembled weights are 60 to 130 lbs
@@ -460,7 +420,7 @@ const schema = {
         </div>
 
         <div id="two-categories" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Two Different Machines at the Same Price</h2>
+          <h2>Two Different Machines at the Same Price</h2>
 <p>
             This budget contains two distinct product categories that are rarely presented as
             alternatives, and choosing the right one matters more than choosing between models.
@@ -487,7 +447,7 @@ const schema = {
         </div>
 
         <div id="specs-to-check" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Four Specifications Worth Checking</h2>
+          <h2>The Four Specifications Worth Checking</h2>
 <p>
             <strong>Continuous-duty horsepower, not peak.</strong> Look for 2.0 CHP or better if
             you will jog at all; 1.5 CHP is walking only. If a listing quotes only peak
@@ -497,9 +457,7 @@ const schema = {
           <p>
             <strong>Weight capacity, discounted.</strong> Stated capacities here cluster around
             220 to 265 lbs, and as elsewhere the figure is a warranty boundary rather than a
-            comfortable operating point. Treat it as 50 lbs lower than printed. Our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
-            explains why.
+            comfortable operating point. Treat it as 50 lbs lower than printed. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a> explains why.
           </p>
           <p>
             <strong>Deck length against your stride.</strong> Forty inches suits walking. Fifty
@@ -515,7 +473,7 @@ const schema = {
         </div>
 
         <div id="how-we-tested" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How We Chose</h2>
+          <h2>How We Chose</h2>
 <p>
             We have not tested these machines, and nothing on this page should be read as if we
             had. Because models at this price change so often, the picks are categories as much
@@ -531,98 +489,83 @@ const schema = {
             other price.
           </p>
           <p>
-            It is also why the maintenance advice at the end of this page is not optional. Our
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a>
-            explains how we assess machines from published data.
+            It is also why the maintenance advice at the end of this page is not optional. Our <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a> explains how we assess machines from published data.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Six Best Machines Under $500</h2>
+          <h2>The Six Best Machines Under $500</h2>
 <p>
             Two of these are walking pads rather than treadmills, and they are here because at
             this price they are frequently the better product. Each entry says who it is for.
           </p>
           <p>
             One machine that is no longer an option deserves a mention, because it is still what
-            people search for at this budget: the
-            <a href="/weslo-cadence-g-5-9-treadmill/" class="text-[#0F62FE] font-medium">Weslo Cadence G 5.9</a>
-            has been discontinued. Its review covers what a used one is worth and why a walking pad
+            people search for at this budget: the <a href="/weslo-cadence-g-5-9-treadmill/" class="text-[#0F62FE] font-medium">Weslo Cadence G 5.9</a> has been discontinued. Its review covers what a used one is worth and why a walking pad
             now does that job better.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="should-you-wait" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Should You Save for $800 Instead?</h2>
+          <h2>Should You Save for $800 Instead?</h2>
 <p>
             For a meaningful share of readers, yes — and it is worth being direct about when.
           </p>
@@ -637,22 +580,18 @@ const schema = {
             the machines here do that job and spending more will not make your walk better. If
             you think you might jog, want incline, or are above about 220 lbs, saving for a few
             more months is the better financial decision, because a machine that cannot do what
-            you want it to do is expensive at any price. Our
-            <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">under-$1,000 guide</a>
-            covers that next tier.
+            you want it to do is expensive at any price. Our <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">under-$1,000 guide</a> covers that next tier.
           </p>
           <p>
             The used market is the third option and often the best value of all at this budget. A
             three-year-old mid-range machine frequently sells for $400 to $600 and is a
-            substantially better product than anything new at the same money. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            covers the fifteen checks that separate a bargain from someone else's dead controller
+            substantially better product than anything new at the same money. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> covers the fifteen checks that separate a bargain from someone else's dead controller
             board.
           </p>
         </div>
 
         <div id="maintenance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Maintenance Is Not Optional at This Price</h2>
+          <h2>Maintenance Is Not Optional at This Price</h2>
 <p>
             <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cheap treadmills</a> are not doomed, but they have far less margin, and the difference
             between one that lasts eighteen months and one that lasts five years is almost
@@ -669,16 +608,12 @@ const schema = {
             Lubricate every 40 to 50 hours of use, wipe the belt and deck edges after sessions,
             and vacuum around the machine monthly. That is under an hour a year. Check your manual
             before buying any product, because some decks are pre-waxed and are ruined by
-            silicone. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            has the step-by-step and the
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
-            has the full year.
+            silicone. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> has the step-by-step and the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a> has the full year.
           </p>
         </div>
 
         <div id="red-flags" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Listing Red Flags at This Price</h2>
+          <h2>Listing Red Flags at This Price</h2>
 <p>
             This tier attracts the least scrupulous marketing in the category. Four patterns are
             worth recognising.
@@ -704,7 +639,7 @@ const schema = {
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Returns Window Is Your Real Warranty</h2>
+          <h2>The Returns Window Is Your Real Warranty</h2>
 <p>
             At this price the returns policy is worth more attention than the warranty, because
             the failures that matter at the budget end tend to appear immediately rather than in
@@ -730,7 +665,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             If you want to walk — which is what most treadmills are used for at every price — buy
             a walking pad. The <strong>flat-fold walking pad</strong> category gives you a better
@@ -739,8 +674,7 @@ const schema = {
           </p>
           <p>
             If you need handrails for support or incline for low-impact work, you need a folding
-            treadmill and you accept a weaker machine for the same money. The
-            <strong>2-in-1 folding pad with a rail</strong> is the best compromise we found: a
+            treadmill and you accept a weaker machine for the same money. The <strong>2-in-1 folding pad with a rail</strong> is the best compromise we found: a
             short handrail and a low deck, at the cost of a very small running surface.
           </p>
           <p>
@@ -750,135 +684,151 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you get a decent treadmill for under $500?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                You can get a decent walking machine, which for most people is what a treadmill actually is. What you cannot get is a running deck, a motor rated for sustained work, or a frame that stays still above a brisk walk. If your use is walking at 2.5 to 4 mph, this budget is genuinely sufficient.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad better than a cheap treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At this price, usually yes. A walking pad spends the whole budget on the belt and motor, while a folding treadmill spends half of it on an upright, console, rails and incline mechanism — so everything is thinner. Buy the folding treadmill only if you specifically need handrails or incline.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a treadmill under $500?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not sensibly. Decks at this price run 40 to 50 inches against the 60 inches a running stride needs, motors are 1.5 to 2.25 CHP, and frames weigh 60 to 130 lbs so they move under you. Machines here will display 10 mph; that is a number rather than a capability.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long will a cheap treadmill last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Anywhere from about eighteen months to five or more years, and maintenance is most of the difference. Cheap motors have far less margin, so rising belt friction represents a large fraction of available power rather than a small one. Lubricating every 40 to 50 hours matters more at this price than at any other.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy used instead of new at this budget?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is usually the better hardware decision. A three-to-six-year-old mid-range machine at $400 has a 55 to 60-inch deck, a 2.5 to 3.0 CHP motor and a proper frame — none of which you can buy new here. The costs are no warranty, inherited maintenance neglect, and collecting a very heavy object yourself.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does peak horsepower mean on a budget treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It describes a momentary burst the motor cannot sustain, and at this price it is quoted precisely because the continuous figure is unflattering. A "4.0 HP" claim on a $400 machine typically sits on a 1.5 to 2.0 CHP motor. If a listing gives only a peak figure, assume the continuous rating is one you would not like.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill Under $500</h2>
+          <p>Three of these come from taking budget-tier marketing at face value, and the fourth is what kills the machine.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Believing the horsepower figure</h3>
+              <p>A "4.0 HP" claim at this price is a peak rating describing a burst of a few seconds. The continuous-duty figure, which is the one that determines whether the motor holds speed while you walk, will be 1.5 to 2.25 CHP. Its absence from the listing is deliberate — ask for it, and treat a refusal as an answer.</p>
+            </li>
+            <li>
+              <h3>Buying a folding treadmill when a walking pad would be better</h3>
+              <p>At this price a folding treadmill spends half your money on an upright, console, handrails and incline mechanism, leaving a thinner belt and a weaker motor than a pad at the same price. Unless you specifically need rails for support or incline for low-impact work, the pad is the better machine.</p>
+            </li>
+            <li>
+              <h3>Expecting to run on it</h3>
+              <p>Decks here are 40 to 50 inches against the 60 inches a running stride needs, and the frames are light enough to move under you. A machine that displays 10 mph on a 45-inch deck is quoting a number. If running is the goal, save for the $800 to $1,000 tier or buy used — the compromise does not work.</p>
+            </li>
+            <li>
+              <h3>Skipping lubrication because it was cheap</h3>
+              <p>Rising belt friction is what kills treadmills, and a 2.0 CHP motor has far less margin to absorb it than a 3.5 CHP one. The cheaper the machine, the more lubrication matters. Every 40 to 50 hours, under an hour a year in total — and check the manual first, because some decks are pre-waxed and silicone ruins them.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill Under $500</h2>
-          <p class="text-gray-700 leading-relaxed">Three of these come from taking budget-tier marketing at face value, and the fourth is what kills the machine.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Believing the horsepower figure</h3>
-              <p class="text-gray-700 text-sm m-0">A "4.0 HP" claim at this price is a peak rating describing a burst of a few seconds. The continuous-duty figure, which is the one that determines whether the motor holds speed while you walk, will be 1.5 to 2.25 CHP. Its absence from the listing is deliberate — ask for it, and treat a refusal as an answer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a folding treadmill when a walking pad would be better</h3>
-              <p class="text-gray-700 text-sm m-0">At this price a folding treadmill spends half your money on an upright, console, handrails and incline mechanism, leaving a thinner belt and a weaker motor than a pad at the same price. Unless you specifically need rails for support or incline for low-impact work, the pad is the better machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting to run on it</h3>
-              <p class="text-gray-700 text-sm m-0">Decks here are 40 to 50 inches against the 60 inches a running stride needs, and the frames are light enough to move under you. A machine that displays 10 mph on a 45-inch deck is quoting a number. If running is the goal, save for the $800 to $1,000 tier or buy used — the compromise does not work.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping lubrication because it was cheap</h3>
-              <p class="text-gray-700 text-sm m-0">Rising belt friction is what kills treadmills, and a 2.0 CHP motor has far less margin to absorb it than a 3.5 CHP one. The cheaper the machine, the more lubrication matters. Every 40 to 50 hours, under an hour a year in total — and check the manual first, because some decks are pre-waxed and silicone ruins them.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Budget &amp; Value Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmill-under-1000-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Next Tier</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $1,000</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where 55-inch decks, 2.5 CHP motors and real warranties begin.</p>
-            </a>
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Alternative</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The walking pad category in detail, for use through the working day.</p>
-            </a>
-            <a href="/used-treadmill-buying-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Used Market</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Used Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Fifteen checks that separate a bargain from a dead controller board.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Under $500 you are buying a walking machine, and a
-            <strong class="text-white">walking pad</strong> is usually the best version of one
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            Under $500 you are buying a walking machine, and a <strong class="text-white">walking pad</strong> is usually the best version of one
             because none of your money goes into a frame you would not use. Add a rail only if
             you want support; add incline only if you will use it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you might jog, want real incline, or weigh over about 220 lbs, save for the
-            <a href="/best-treadmill-under-1000-reviews/" class="text-[#5AA9FF] font-bold no-underline">$800-$1,000 tier</a>
-            or buy <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used</a>.
+          <p>
+            If you might jog, want real incline, or weigh over about 220 lbs, save for the <a href="/best-treadmill-under-1000-reviews/" class="text-[#5AA9FF] font-bold no-underline">$800-$1,000 tier</a> or buy <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used</a>.
             A machine that cannot do what you need is expensive at any price.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-under-1000-reviews/">Best Treadmills Under $1,000</a></li>
+            <li><a href="/under-desk-treadmills/">Under-Desk Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Can you get a decent treadmill for under $500?</h3></summary>
+            <p class="faq-a">
+              You can get a decent walking machine, which for most people is what a treadmill actually is. What you cannot get is a running deck, a motor rated for sustained work, or a frame that stays still above a brisk walk. If your use is walking at 2.5 to 4 mph, this budget is genuinely sufficient.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad better than a cheap treadmill?</h3></summary>
+            <p class="faq-a">
+              At this price, usually yes. A walking pad spends the whole budget on the belt and motor, while a folding treadmill spends half of it on an upright, console, rails and incline mechanism — so everything is thinner. Buy the folding treadmill only if you specifically need handrails or incline.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a treadmill under $500?</h3></summary>
+            <p class="faq-a">
+              Not sensibly. Decks at this price run 40 to 50 inches against the 60 inches a running stride needs, motors are 1.5 to 2.25 CHP, and frames weigh 60 to 130 lbs so they move under you. Machines here will display 10 mph; that is a number rather than a capability.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long will a cheap treadmill last?</h3></summary>
+            <p class="faq-a">
+              Anywhere from about eighteen months to five or more years, and maintenance is most of the difference. Cheap motors have far less margin, so rising belt friction represents a large fraction of available power rather than a small one. Lubricating every 40 to 50 hours matters more at this price than at any other.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I buy used instead of new at this budget?</h3></summary>
+            <p class="faq-a">
+              It is usually the better hardware decision. A three-to-six-year-old mid-range machine at $400 has a 55 to 60-inch deck, a 2.5 to 3.0 CHP motor and a proper frame — none of which you can buy new here. The costs are no warranty, inherited maintenance neglect, and collecting a very heavy object yourself.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What does peak horsepower mean on a budget treadmill?</h3></summary>
+            <p class="faq-a">
+              It describes a momentary burst the motor cannot sustain, and at this price it is quoted precisely because the continuous figure is unflattering. A "4.0 HP" claim on a $400 machine typically sits on a 1.5 to 2.0 CHP motor. If a listing gives only a peak figure, assume the continuous rating is one you would not like.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Budget &amp; Value Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-under-1000-reviews/" class="card">
+            <div class="c-kicker">Next Tier</div>
+            <div class="c-title">Best Treadmills Under $1,000</div>
+            <p class="c-blurb">Where 55-inch decks, 2.5 CHP motors and real warranties begin.</p>
+          </a>
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Alternative</div>
+            <div class="c-title">Under-Desk Treadmills</div>
+            <p class="c-blurb">The walking pad category in detail, for use through the working day.</p>
+          </a>
+          <a href="/used-treadmill-buying-checklist/" class="card">
+            <div class="c-kicker">Used Market</div>
+            <div class="c-title">Buying a Used Treadmill</div>
+            <p class="c-blurb">Fifteen checks that separate a bargain from a dead controller board.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

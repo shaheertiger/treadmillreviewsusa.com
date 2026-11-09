@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Pace & Speed Chart (2026): mph, Pace and Incline";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-pace-and-speed-chart/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,97 +109,60 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Chart", link: "#the-chart" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillpaceandspeedchart" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillpaceandspeedchart)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Reference</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Pace & Speed Chart</h1>
+      <p class="ed-dek">
+        Your machine speaks mph. Your training plan speaks minutes per mile. Your running app speaks km/h. Here is the conversion, plus what each speed and grade actually demands.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Reference
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Pace & <span class="text-[#5AA9FF]">Speed Chart</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Your machine speaks mph. Your training plan speaks minutes per mile. Your running app speaks km/h. Here is the conversion, plus what each speed and grade actually demands.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#the-chart" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Conversion Chart
-          </a>
-          <a href="#incline-equivalents" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Incline Is Worth
-          </a>
-        </div>
+        <a href="#the-chart" class="btn-ghost">The Conversion Chart</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="4.5k" />
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#the-maths" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Conversion, and How to Do It in Your Head</a>
-          <a href="#the-chart" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Speed, Pace and km/h</a>
-          <a href="#what-it-feels-like" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Only Calibration That Travels</a>
-          <a href="#incline-equivalents" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What an Incline Is Worth</a>
-          <a href="#one-percent" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The 1% Incline Convention</a>
-          <a href="#treadmill-vs-outdoor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Treadmill Pace and Road Pace Differ</a>
-          <a href="#using-the-chart" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Using This to Set Up a Session</a>
-          <a href="#walking-pace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Walking Pace, Steps and Distance</a>
-          <a href="#pace-by-goal" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Target Paces by Goal</a>
-          <a href="#metric-plans" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If Your Plan Is in Kilometres</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Two Numbers to Remember</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Treadmills in the US display miles per hour. Training plans are written in minutes per
           mile. Most running apps and anyone outside the US think in kilometres. Three units for
           one thing, and the arithmetic is the reason plenty of good sessions get run at the
           wrong intensity.
         </p>
 
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#the-maths">The Conversion, and How to Do It in Your Head</a></li>
+            <li><a href="#the-chart">Speed, Pace and km/h</a></li>
+            <li><a href="#what-it-feels-like">The Only Calibration That Travels</a></li>
+            <li><a href="#incline-equivalents">What an Incline Is Worth</a></li>
+            <li><a href="#one-percent">The 1% Incline Convention</a></li>
+            <li><a href="#treadmill-vs-outdoor">Why Treadmill Pace and Road Pace Differ</a></li>
+            <li><a href="#using-the-chart">Using This to Set Up a Session</a></li>
+            <li><a href="#walking-pace">Walking Pace, Steps and Distance</a></li>
+            <li><a href="#pace-by-goal">Target Paces by Goal</a></li>
+            <li><a href="#metric-plans">If Your Plan Is in Kilometres</a></li>
+            <li><a href="#verdict">The Two Numbers to Remember</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="the-maths" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Conversion, and How to Do It in Your Head</h2>
+          <h2>The Conversion, and How to Do It in Your Head</h2>
 <p>
             <strong>Minutes per mile = 60 ÷ mph.</strong> That is the whole formula. At 6 mph you
             are covering a mile every 10 minutes; at 4 mph, every 15.
@@ -204,8 +172,7 @@ const schema = {
             accurate to within a rounding error at any treadmill speed.
           </p>
           <p>
-            Two anchors worth memorising, because everything else can be estimated from them:
-            <strong>6 mph is a 10-minute mile</strong> and <strong>4 mph is a 15-minute
+            Two anchors worth memorising, because everything else can be estimated from them: <strong>6 mph is a 10-minute mile</strong> and <strong>4 mph is a 15-minute
             mile</strong>. From there, each 0.5 mph above 6 takes roughly 45 seconds off the mile,
             and the increments get smaller as speed rises — which is why the difference between
             9 and 9.5 mph feels smaller on the clock than the difference between 4 and 4.5.
@@ -218,7 +185,7 @@ const schema = {
         </div>
 
         <div id="the-chart" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Speed, Pace and km/h</h2>
+          <h2>Speed, Pace and km/h</h2>
 <div class="overflow-x-auto my-8 not-prose">
             <table class="min-w-[520px] w-full text-sm border-collapse">
               <thead>
@@ -261,7 +228,7 @@ const schema = {
         </div>
 
         <div id="what-it-feels-like" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Only Calibration That Travels</h2>
+          <h2>The Only Calibration That Travels</h2>
 <p>
             Numbers are useful for repeating a session; they are useless for judging whether the
             intensity is right for you today. For that, use breathing, which needs no calibration
@@ -286,14 +253,12 @@ const schema = {
           <p>
             The same mph will sit in different rows on different days depending on sleep, heat,
             fatigue and how recently you ate. When the chart and your breathing disagree, believe
-            your breathing. Our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
-            covers how to distribute those intensities across a week.
+            your breathing. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a> covers how to distribute those intensities across a week.
           </p>
         </div>
 
         <div id="incline-equivalents" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What an Incline Is Worth</h2>
+          <h2>What an Incline Is Worth</h2>
 <p>
             Raising the grade increases cardiovascular demand without increasing speed, which is
             the treadmill's most useful trick. A rough working guide for walking:
@@ -325,16 +290,14 @@ const schema = {
           </p>
           <p>
             Note how modest the angles are. Fifteen per cent is only 8.5 degrees, which is why a
-            grade that looks trivial on a protractor is punishing underfoot. Our
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade conversion guide</a>
-            covers that in full, and one caveat applies throughout: these figures assume you are
+            grade that looks trivial on a protractor is punishing underfoot. Our <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade conversion guide</a> covers that in full, and one caveat applies throughout: these figures assume you are
             not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the handrails</a>. Leaning transfers work to your arms and the numbers stop
             meaning anything.
           </p>
         </div>
 
         <div id="one-percent" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The 1% Incline Convention</h2>
+          <h2>The 1% Incline Convention</h2>
 <p>
             The advice to set <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium" data-autolink>1% incline</a> to "simulate outdoor running" comes from a 1996 study
             that found the energy cost of treadmill running matched outdoor running at around 1%
@@ -359,7 +322,7 @@ const schema = {
         </div>
 
         <div id="treadmill-vs-outdoor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Why Treadmill Pace and Road Pace Differ</h2>
+          <h2>Why Treadmill Pace and Road Pace Differ</h2>
 <p>
             Runners frequently find their treadmill pace does not match their outdoor pace, in
             either direction, and there are several reasons that have nothing to do with fitness.
@@ -380,9 +343,7 @@ const schema = {
           <p>
             <strong>Console calibration drift.</strong> Belt speed is generally accurate but can
             drift with <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a> and tension. If your treadmill pace and your GPS watch disagree
-            consistently, the machine may need attention — our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
-            covers the most common cause.
+            consistently, the machine may need attention — our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a> covers the most common cause.
           </p>
           <p>
             The practical takeaway: treat treadmill pace as its own scale. Compare treadmill
@@ -392,7 +353,7 @@ const schema = {
         </div>
 
         <div id="using-the-chart" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Using This to Set Up a Session</h2>
+          <h2>Using This to Set Up a Session</h2>
 <p>
             <strong>Following a plan written in minutes per mile.</strong> Find your target pace
             in the chart and read across to mph. A plan asking for 9:14 miles is 6.5 mph. If it
@@ -401,9 +362,7 @@ const schema = {
           <p>
             <strong>Setting interval pace.</strong> Take a pace you could hold for 30 minutes and
             go 20 to 40 seconds per mile faster — in mph terms, roughly 0.3 to 0.6 faster. Set it
-            for the final rep, not the first. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a>
-            covers the structures.
+            for the final rep, not the first. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a> covers the structures.
           </p>
           <p>
             <strong>Setting easy pace.</strong> Take the pace you would naturally choose and go
@@ -418,7 +377,7 @@ const schema = {
         </div>
 
         <div id="walking-pace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Walking Pace, Steps and Distance</h2>
+          <h2>Walking Pace, Steps and Distance</h2>
 <p>
             Most treadmill use happens between 2.5 and 4 mph, and walkers are usually thinking in
             steps or minutes rather than in pace. A few conversions make the chart more useful.
@@ -439,15 +398,13 @@ const schema = {
             <strong>Raising pace versus raising time.</strong> For step count, time matters more
             than speed — walking faster covers more ground per step but does not add many steps
             per minute. If your goal is a step target, add minutes. If your goal is
-            cardiovascular, add incline. Our
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill guide</a>
-            covers the machines built for exactly this range, most of which are used far below
+            cardiovascular, add incline. Our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill guide</a> covers the machines built for exactly this range, most of which are used far below
             their top speed.
           </p>
         </div>
 
         <div id="pace-by-goal" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Target Paces by Goal</h2>
+          <h2>Target Paces by Goal</h2>
 <p>
             A rough orientation for where to sit on the chart depending on what you are training
             for. These are starting points to adjust by feel, not prescriptions.
@@ -477,9 +434,7 @@ const schema = {
           <p>
             <strong>Weight management.</strong> Duration and consistency beat intensity here, and
             incline beats speed. Longer sessions at a pace you can sustain and repeat several
-            times a week do more than short hard ones you dread. Our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">guide to that</a>
-            covers the reasoning, including why the console's calorie figure is not the number to
+            times a week do more than short hard ones you dread. Our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">guide to that</a> covers the reasoning, including why the console's calorie figure is not the number to
             optimise.
           </p>
           <p>
@@ -491,15 +446,14 @@ const schema = {
         </div>
 
         <div id="metric-plans" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If Your Plan Is in Kilometres</h2>
+          <h2>If Your Plan Is in Kilometres</h2>
 <p>
             Plenty of training plans, apps and race distances are metric while US treadmills are
             not, which adds a second conversion. The arithmetic is the same shape.
           </p>
           <p>
             <strong>Minutes per kilometre = 60 ÷ km/h</strong>, and km/h is mph × 1.6. So 6 mph is
-            9.7 km/h, which is a touch over 6:11 per kilometre. A useful anchor:
-            <strong>10 km/h — about 6.2 mph — is a 6-minute kilometre</strong>, which is the
+            9.7 km/h, which is a touch over 6:11 per kilometre. A useful anchor: <strong>10 km/h — about 6.2 mph — is a 6-minute kilometre</strong>, which is the
             metric equivalent of the 10-minute mile as a mental reference point.
           </p>
           <p>
@@ -518,7 +472,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Two Numbers to Remember</h2>
+          <h2>The Two Numbers to Remember</h2>
 <p>
             <strong>6 mph is a 10-minute mile. 4 mph is a 15-minute mile.</strong> Everything else
             can be estimated from those two, and <strong>mph × 1.6 gives km/h</strong>.
@@ -533,138 +487,152 @@ const schema = {
             speed column. Same cardiovascular gain, considerably less impact.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I convert treadmill mph to minutes per mile?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Divide 60 by the speed in mph. At 6 mph that is a 10-minute mile; at 4 mph, a 15-minute mile. Those two are worth memorising because everything else can be estimated from them. To get km/h, multiply mph by 1.61 — or just 1.6, which is accurate enough at any treadmill speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed is a 10-minute mile on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                6.0 mph, which is 9.7 km/h. A 9-minute mile is about 6.7 mph, an 8-minute mile is 7.5 mph, and a 12-minute mile is 5.0 mph. If your target pace falls between the speeds your machine offers, round down rather than up.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What incline equals running on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Roughly, walking at 3 mph on a 10% grade is comparable in cardiovascular effort to jogging at about 5 mph on the flat, at a fraction of the impact per footfall. These are approximations that vary with body weight and fitness, and they assume you are not holding the handrails.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I set the treadmill to 1% incline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is a harmless default and a reasonable habit, particularly if you race outdoors. The 1996 study behind it found the energy cost matched outdoor running at 1% specifically at faster paces, around 7 mph and up. At walking and easy jogging paces the difference is small enough to ignore.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill pace different from my outdoor pace?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Several reasons unrelated to fitness: no air resistance to push through, no camber or terrain variation, and poorer heat dissipation indoors, which makes a given pace feel harder. Console calibration can also drift with belt wear. Treat treadmill pace as its own scale rather than expecting the two to match.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is treadmill speed accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Generally yes — the machine controls belt speed directly, so it is among the more reliable numbers on the console. It can drift with belt wear and incorrect tension. If your treadmill consistently disagrees with a GPS watch, check belt tension before assuming either device is wrong.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Reading Treadmill Speeds</h2>
+          <p>Three of these come from treating a number on a console as though it meant the same thing every day.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming 0.5 mph means the same thing at every speed</h3>
+              <p>The dial moves evenly and the effect does not. Adding 0.5 mph at walking pace changes your mile time by nearly two minutes; adding it at 9 mph changes it by about twenty seconds. Plans written in pace do not increment the way a speed dial does, which is why converting matters.</p>
+            </li>
+            <li>
+              <h3>Running every session by the number rather than by feel</h3>
+              <p>The same mph sits at a different effort on different days depending on sleep, heat, fatigue and food. Use the chart to translate a plan into settings and your breathing to judge whether it is right today. Full sentences means easy; single words means hard. When they disagree, believe your breathing.</p>
+            </li>
+            <li>
+              <h3>Holding the rails while using the incline equivalents</h3>
+              <p>Every incline comparison on this page assumes your hands are off the handrails, or resting lightly at most. Leaning transfers work to your arms and the frame while the console keeps reporting the same grade, so the equivalence stops holding. If you cannot walk the grade without gripping, lower it.</p>
+            </li>
+            <li>
+              <h3>Expecting treadmill and road paces to match</h3>
+              <p>No air resistance, no terrain variation and poorer heat dissipation mean the two are genuinely different. Compare treadmill sessions to treadmill sessions and road runs to road runs. A 1% grade addresses part of the difference at faster paces and does not make them interchangeable.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Reading Treadmill Speeds</h2>
-          <p class="text-gray-700 leading-relaxed">Three of these come from treating a number on a console as though it meant the same thing every day.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming 0.5 mph means the same thing at every speed</h3>
-              <p class="text-gray-700 text-sm m-0">The dial moves evenly and the effect does not. Adding 0.5 mph at walking pace changes your mile time by nearly two minutes; adding it at 9 mph changes it by about twenty seconds. Plans written in pace do not increment the way a speed dial does, which is why converting matters.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running every session by the number rather than by feel</h3>
-              <p class="text-gray-700 text-sm m-0">The same mph sits at a different effort on different days depending on sleep, heat, fatigue and food. Use the chart to translate a plan into settings and your breathing to judge whether it is right today. Full sentences means easy; single words means hard. When they disagree, believe your breathing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails while using the incline equivalents</h3>
-              <p class="text-gray-700 text-sm m-0">Every incline comparison on this page assumes your hands are off the handrails, or resting lightly at most. Leaning transfers work to your arms and the frame while the console keeps reporting the same grade, so the equivalence stops holding. If you cannot walk the grade without gripping, lower it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting treadmill and road paces to match</h3>
-              <p class="text-gray-700 text-sm m-0">No air resistance, no terrain variation and poorer heat dissipation mean the two are genuinely different. Compare treadmill sessions to treadmill sessions and road runs to road runs. A 1% grade addresses part of the difference at faster paces and does not make them interchangeable.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types, and how to distribute intensity across a week.</p>
-            </a>
-            <a href="/treadmill-interval-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Intervals</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Interval Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five session structures and how to pick a pace you can finish.</p>
-            </a>
-            <a href="/treadmill-incline-percent-vs-degrees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Grade</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Incline: Percentage vs. Degrees</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why 15% is only 8.5 degrees, and what each grade demands.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">6 mph is a 10-minute mile, 4 mph is a 15-minute mile, and
             mph × 1.6 gives km/h.</strong> Everything else follows from those three.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Use the chart to translate a plan into machine settings, and your breathing to judge
-            whether it suits you today. When you want a session harder, reach for the
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#5AA9FF] font-bold no-underline">incline column</a>
-            rather than the speed column.
+            whether it suits you today. When you want a session harder, reach for the <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#5AA9FF] font-bold no-underline">incline column</a> rather than the speed column.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-workouts/">Treadmill Workouts</a></li>
+            <li><a href="/treadmill-interval-workouts/">Treadmill Interval Workouts</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do I convert treadmill mph to minutes per mile?</h3></summary>
+            <p class="faq-a">
+              Divide 60 by the speed in mph. At 6 mph that is a 10-minute mile; at 4 mph, a 15-minute mile. Those two are worth memorising because everything else can be estimated from them. To get km/h, multiply mph by 1.61 — or just 1.6, which is accurate enough at any treadmill speed.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What speed is a 10-minute mile on a treadmill?</h3></summary>
+            <p class="faq-a">
+              6.0 mph, which is 9.7 km/h. A 9-minute mile is about 6.7 mph, an 8-minute mile is 7.5 mph, and a 12-minute mile is 5.0 mph. If your target pace falls between the speeds your machine offers, round down rather than up.
             </p>
+          </details>
+          <details>
+            <summary><h3>What incline equals running on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Roughly, walking at 3 mph on a 10% grade is comparable in cardiovascular effort to jogging at about 5 mph on the flat, at a fraction of the impact per footfall. These are approximations that vary with body weight and fitness, and they assume you are not holding the handrails.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I set the treadmill to 1% incline?</h3></summary>
+            <p class="faq-a">
+              It is a harmless default and a reasonable habit, particularly if you race outdoors. The 1996 study behind it found the energy cost matched outdoor running at 1% specifically at faster paces, around 7 mph and up. At walking and easy jogging paces the difference is small enough to ignore.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is my treadmill pace different from my outdoor pace?</h3></summary>
+            <p class="faq-a">
+              Several reasons unrelated to fitness: no air resistance to push through, no camber or terrain variation, and poorer heat dissipation indoors, which makes a given pace feel harder. Console calibration can also drift with belt wear. Treat treadmill pace as its own scale rather than expecting the two to match.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is treadmill speed accurate?</h3></summary>
+            <p class="faq-a">
+              Generally yes — the machine controls belt speed directly, so it is among the more reliable numbers on the console. It can drift with belt wear and incorrect tension. If your treadmill consistently disagrees with a GPS watch, check belt tension before assuming either device is wrong.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Pillar Guide</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types, and how to distribute intensity across a week.</p>
+          </a>
+          <a href="/treadmill-interval-workouts/" class="card">
+            <div class="c-kicker">Intervals</div>
+            <div class="c-title">Treadmill Interval Workouts</div>
+            <p class="c-blurb">Five session structures and how to pick a pace you can finish.</p>
+          </a>
+          <a href="/treadmill-incline-percent-vs-degrees/" class="card">
+            <div class="c-kicker">Grade</div>
+            <div class="c-title">Incline: Percentage vs. Degrees</div>
+            <p class="c-blurb">Why 15% is only 8.5 degrees, and what each grade demands.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

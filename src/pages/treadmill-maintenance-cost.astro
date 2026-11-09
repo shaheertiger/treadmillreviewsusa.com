@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Maintenance Cost (2026): What a Year Actually Costs";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-maintenance-cost/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,109 +109,70 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Annual Cost", link: "#annual-cost" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillmaintenancecost" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillmaintenancecost)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Maintenance Cost</h1>
+      <p class="ed-dek">
+        Routine upkeep costs $15 to $40 a year and takes under an hour. The failures it prevents cost several hundred dollars each. That ratio is the entire argument, and most owners never hear it.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill <span class="text-[#5AA9FF]">Maintenance Cost</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Routine upkeep costs $15 to $40 a year and takes under an hour. The failures it prevents cost several hundred dollars each. That ratio is the entire argument, and most owners never hear it.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#annual-cost" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Annual Figure
-          </a>
-          <a href="#repair-or-replace" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Repair vs. Replace
-          </a>
-        </div>
+        <a href="#annual-cost" class="btn-ghost">The Annual Figure</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="3.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> These are typical US ranges
-          drawn from published parts pricing and common service rates, not measured data from a
-          service network. Labour rates vary widely by region and by whether a manufacturer has
-          local engineers. Treat them as planning figures and get a specific quote before
-          committing to any repair.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#annual-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Annual Figure</a>
-          <a href="#time-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Time Cost, Which Is the Real Barrier</a>
-          <a href="#wear-parts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Wear Parts and What They Cost</a>
-          <a href="#repair-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What the Expensive Failures Cost</a>
-          <a href="#by-tier" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Cost Varies by Machine Tier</a>
-          <a href="#repair-or-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. When Repair Stops Making Sense</a>
-          <a href="#diy-vs-professional" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What to Do Yourself and What Not To</a>
-          <a href="#ten-year-picture" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Ten-Year Picture</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What the Warranty Does and Does Not Cover</a>
-          <a href="#extended-warranties" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Are Extended Warranties Worth It?</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The full annual cost of keeping a home treadmill healthy is somewhere between a takeaway
           meal and a tank of fuel. The cost of not doing it is a motor or controller board, and
           those are several hundred dollars each. Very few purchases have that payoff ratio.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> These are typical US ranges
+          drawn from published parts pricing and common service rates, not measured data from a
+          service network. Labour rates vary widely by region and by whether a manufacturer has
+          local engineers. Treat them as planning figures and get a specific quote before
+          committing to any repair.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#annual-cost">The Annual Figure</a></li>
+            <li><a href="#time-cost">The Time Cost, Which Is the Real Barrier</a></li>
+            <li><a href="#wear-parts">Wear Parts and What They Cost</a></li>
+            <li><a href="#repair-costs">What the Expensive Failures Cost</a></li>
+            <li><a href="#by-tier">How Cost Varies by Machine Tier</a></li>
+            <li><a href="#repair-or-replace">When Repair Stops Making Sense</a></li>
+            <li><a href="#diy-vs-professional">What to Do Yourself and What Not To</a></li>
+            <li><a href="#ten-year-picture">The Ten-Year Picture</a></li>
+            <li><a href="#warranty">What the Warranty Does and Does Not Cover</a></li>
+            <li><a href="#extended-warranties">Are Extended Warranties Worth It?</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="annual-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Annual Figure</h2>
+          <h2>The Annual Figure</h2>
 <p>
-            For a home treadmill used a few times a week, routine maintenance costs roughly
-            <strong>$15 to $40 a year</strong> and takes under an hour in total. That breaks down
+            For a home treadmill used a few times a week, routine maintenance costs roughly <strong>$15 to $40 a year</strong> and takes under an hour in total. That breaks down
             into a very short list.
           </p>
           <p>
@@ -231,7 +197,7 @@ const schema = {
         </div>
 
         <div id="time-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Time Cost, Which Is the Real Barrier</h2>
+          <h2>The Time Cost, Which Is the Real Barrier</h2>
 <p>
             Money is not why people skip maintenance — $20 a year deters nobody. Time and
             uncertainty are, and both are smaller than they appear.
@@ -253,16 +219,12 @@ const schema = {
           </p>
           <p>
             Totalled across a year that is roughly 50 to 70 minutes. Set against a machine lifespan
-            that roughly doubles, it is the best-value hour anyone spends on a treadmill. Our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
-            lays out the full year, and the
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">printable checklist</a>
-            turns it into something you can work through.
+            that roughly doubles, it is the best-value hour anyone spends on a treadmill. Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a> lays out the full year, and the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">printable checklist</a> turns it into something you can work through.
           </p>
         </div>
 
         <div id="wear-parts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Wear Parts and What They Cost</h2>
+          <h2>Wear Parts and What They Cost</h2>
 <p>
             Beyond consumables, three components wear out rather than fail, and their replacement
             is a normal part of long ownership rather than a fault.
@@ -289,7 +251,7 @@ const schema = {
         </div>
 
         <div id="repair-costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What the Expensive Failures Cost</h2>
+          <h2>What the Expensive Failures Cost</h2>
 <p>
             These are the failures that end treadmills, and they are almost always downstream of
             friction that was left unaddressed.
@@ -309,8 +271,7 @@ const schema = {
           </p>
           <p>
             <strong>Console or display: $150-$700</strong>, and this is where screen-based machines
-            become expensive. A large touchscreen assembly can cost a substantial fraction of a
-            <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a>'s value, which is a quiet argument for simpler consoles.
+            become expensive. A large touchscreen assembly can cost a substantial fraction of a <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a>'s value, which is a quiet argument for simpler consoles.
           </p>
           <p>
             <strong>Service call-out: $80-$150</strong> before any parts or labour, and many
@@ -322,7 +283,7 @@ const schema = {
         </div>
 
         <div id="by-tier" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Cost Varies by Machine Tier</h2>
+          <h2>How Cost Varies by Machine Tier</h2>
 <p>
             Routine maintenance costs almost the same across the range — a $500 machine and a
             $4,000 machine both take about an ounce of silicone. Repairs do not.
@@ -351,7 +312,7 @@ const schema = {
         </div>
 
         <div id="repair-or-replace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. When Repair Stops Making Sense</h2>
+          <h2>When Repair Stops Making Sense</h2>
 <p>
             A workable rule: if the total repair cost exceeds half the machine's current
             replacement value, and it is past the midpoint of its expected life, replace it.
@@ -373,13 +334,12 @@ const schema = {
             Two shift it toward replacement: a second major failure within a year or two, which
             usually indicates the whole drivetrain is at end of life, and a machine that was never
             maintained, where fixing one symptom leaves the underlying friction problem in place.
-            Our <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">lifespan guide</a>
-            covers the full arithmetic.
+            Our <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">lifespan guide</a> covers the full arithmetic.
           </p>
         </div>
 
         <div id="diy-vs-professional" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What to Do Yourself and What Not To</h2>
+          <h2>What to Do Yourself and What Not To</h2>
 <p>
             The split is reasonably clear, and it is drawn around the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.
           </p>
@@ -401,23 +361,19 @@ const schema = {
             the motor compartment, that is the point to call someone.
           </p>
           <p>
-            Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            covers diagnosing faults safely, including the four symptoms that mean stop using the
+            Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> covers diagnosing faults safely, including the four symptoms that mean stop using the
             machine entirely.
           </p>
         </div>
 
         <div id="ten-year-picture" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Ten-Year Picture</h2>
+          <h2>The Ten-Year Picture</h2>
 <p>
             Totalling a decade of ownership on a maintained mid-range machine:
           </p>
           <p>
-            Routine maintenance at $20 a year is <strong>$200</strong>. A belt and <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>deck replacement</a>
-            around year seven is <strong>$250-$500</strong>. Electricity, at typical home use, is
-            roughly <strong>$5-$15 a year</strong> or $50-$150 across the decade — our
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity guide</a>
-            works through the figures. One mat at <strong>$60</strong>.
+            Routine maintenance at $20 a year is <strong>$200</strong>. A belt and <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>deck replacement</a> around year seven is <strong>$250-$500</strong>. Electricity, at typical home use, is
+            roughly <strong>$5-$15 a year</strong> or $50-$150 across the decade — our <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity guide</a> works through the figures. One mat at <strong>$60</strong>.
           </p>
           <p>
             That totals roughly <strong>$560 to $910 over ten years</strong>, or $56 to $91 a year,
@@ -433,13 +389,12 @@ const schema = {
           <p>
             Note what is absent from this list: any subscription. At around $39 a month that alone
             is $4,680 over ten years, dwarfing every maintenance and repair figure on this page.
-            Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a>
-            covers it.
+            Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a> covers it.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What the Warranty Does and Does Not Cover</h2>
+          <h2>What the Warranty Does and Does Not Cover</h2>
 <p>
             Warranty terms change the cost picture significantly in the early years, and they are
             worth reading properly rather than by headline.
@@ -460,7 +415,7 @@ const schema = {
         </div>
 
         <div id="extended-warranties" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Are Extended Warranties Worth It?</h2>
+          <h2>Are Extended Warranties Worth It?</h2>
 <p>
             Retailers push extended cover hard on treadmills, and the honest answer is that it
             depends almost entirely on the machine's price tier and on what the policy actually
@@ -493,7 +448,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             Budget <strong>$20 to $40 a year</strong> for routine maintenance and about an hour of
             your time. That is the whole ongoing cost, and it roughly doubles the machine's life.
@@ -514,140 +469,154 @@ const schema = {
             payoff.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does treadmill maintenance cost per year?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Roughly $15 to $40 a year for a home machine used a few times a week — mostly silicone lubricant at $10 to $18 a bottle lasting one to two years, plus cleaning supplies. There is no annual service requirement, no filter and no fluid change. The time cost is about an hour a year.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does it cost to repair a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A drive motor is $200 to $600 for the part plus $100 to $250 labour. A controller board is $150 to $450 plus labour. An incline motor is $100 to $300, and a console or touchscreen $150 to $700. Most engineers also charge an $80 to $150 call-out before any work begins.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth repairing an old treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the total repair is under half the machine's current replacement value and it is not past the midpoint of its expected life, usually yes. A $400 repair on a four-year-old $1,500 machine is good value; the same repair on a nine-year-old $700 machine is not.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often does a treadmill belt need replacing?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Typically every 5 to 10 years on a maintained machine, and considerably sooner on a neglected one. The part costs $80 to $250 and fitting is $100 to $200 if you do not do it yourself. Belt and deck are usually replaced together because the labour overlaps almost entirely.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does regular maintenance really extend treadmill life?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Substantially. The dominant failure mode is a motor and controller worn out by friction against a dry deck, and lubrication addresses that directly. A maintained mid-range machine reaching ten years against a neglected one failing at five is the usual pattern, for the cost of about an hour a year.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What treadmill maintenance should I pay a professional for?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Anything inside the motor compartment — the motor, the controller board or mains wiring — because of electrical risk and the cost of a misdiagnosis. Lubrication, cleaning, belt tension and tracking are all straightforward DIY. Belt replacement and deck flipping are within reach with basic tools and a second person.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Running Costs</h2>
+          <p>These four all involve underestimating one cost while overestimating another, and the first is by far the most expensive.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating maintenance as optional to save money</h3>
+              <p>It costs $20 a year and prevents failures costing $300 to $800. No other decision in treadmill ownership has that payoff ratio. Some manufacturers can also decline a motor warranty claim on a deck that was clearly never lubricated, which turns a skipped hour into a direct financial loss.</p>
+            </li>
+            <li>
+              <h3>Buying a budget machine without checking parts availability</h3>
+              <p>Routine maintenance costs the same across the range, but repairability does not. On a $500 machine a $250 motor plus labour is close to a total loss, and parts are often unavailable anyway. Mid-range machines are the sweet spot: parts exist, are standardised, and are worth fitting.</p>
+            </li>
+            <li>
+              <h3>Forgetting that a subscription dwarfs every other running cost</h3>
+              <p>Ten years of maintenance, one belt-and-deck replacement, electricity and a mat total roughly $560 to $910. A $39 monthly subscription over the same period is $4,680. If you are calculating cost of ownership, the content fee is the number that actually decides it.</p>
+            </li>
+            <li>
+              <h3>Replacing a deck without checking whether it flips</h3>
+              <p>Many treadmill decks are reversible — the underside is an unused low-friction surface. Flipping one costs labour only and effectively doubles deck life against a $100 to $300 replacement. Check before ordering a part, because nobody will volunteer this information.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Running Costs</h2>
-          <p class="text-gray-700 leading-relaxed">These four all involve underestimating one cost while overestimating another, and the first is by far the most expensive.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating maintenance as optional to save money</h3>
-              <p class="text-gray-700 text-sm m-0">It costs $20 a year and prevents failures costing $300 to $800. No other decision in treadmill ownership has that payoff ratio. Some manufacturers can also decline a motor warranty claim on a deck that was clearly never lubricated, which turns a skipped hour into a direct financial loss.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a budget machine without checking parts availability</h3>
-              <p class="text-gray-700 text-sm m-0">Routine maintenance costs the same across the range, but repairability does not. On a $500 machine a $250 motor plus labour is close to a total loss, and parts are often unavailable anyway. Mid-range machines are the sweet spot: parts exist, are standardised, and are worth fitting.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting that a subscription dwarfs every other running cost</h3>
-              <p class="text-gray-700 text-sm m-0">Ten years of maintenance, one belt-and-deck replacement, electricity and a mat total roughly $560 to $910. A $39 monthly subscription over the same period is $4,680. If you are calculating cost of ownership, the content fee is the number that actually decides it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing a deck without checking whether it flips</h3>
-              <p class="text-gray-700 text-sm m-0">Many treadmill decks are reversible — the underside is an unused low-friction surface. Flipping one costs labour only and effectively doubles deck life against a $100 to $300 replacement. Check before ordering a part, because nobody will volunteer this information.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-maintenance/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Schedule</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The complete owner's schedule — under an hour a year.</p>
-            </a>
-            <a href="/how-long-do-treadmills-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Lifespan</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmills Last?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Lifespans by tier and the repair-or-replace arithmetic in full.</p>
-            </a>
-            <a href="/treadmill-electricity-usage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Running Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Electricity Usage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What it adds to the bill, which is less than most people assume.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Routine maintenance is <strong class="text-white">$15 to $40 a year</strong> and about an
             hour of your time. The failures it prevents are $300 to $800 each. Budget a further
             $250 to $500 around year seven for a belt and deck, which is wear rather than failure.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             When something major does go, repair if the cost is under half the machine's replacement
-            value and it is not past the midpoint of its life. And remember that a
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">subscription</a>
-            costs more over ten years than every maintenance and repair figure on this page
+            value and it is not past the midpoint of its life. And remember that a <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">subscription</a> costs more over ten years than every maintenance and repair figure on this page
             combined.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-maintenance/">Treadmill Maintenance</a></li>
+            <li><a href="/how-long-do-treadmills-last/">How Long Do Treadmills Last?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How much does treadmill maintenance cost per year?</h3></summary>
+            <p class="faq-a">
+              Roughly $15 to $40 a year for a home machine used a few times a week — mostly silicone lubricant at $10 to $18 a bottle lasting one to two years, plus cleaning supplies. There is no annual service requirement, no filter and no fluid change. The time cost is about an hour a year.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does it cost to repair a treadmill?</h3></summary>
+            <p class="faq-a">
+              A drive motor is $200 to $600 for the part plus $100 to $250 labour. A controller board is $150 to $450 plus labour. An incline motor is $100 to $300, and a console or touchscreen $150 to $700. Most engineers also charge an $80 to $150 call-out before any work begins.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth repairing an old treadmill?</h3></summary>
+            <p class="faq-a">
+              If the total repair is under half the machine's current replacement value and it is not past the midpoint of its expected life, usually yes. A $400 repair on a four-year-old $1,500 machine is good value; the same repair on a nine-year-old $700 machine is not.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How often does a treadmill belt need replacing?</h3></summary>
+            <p class="faq-a">
+              Typically every 5 to 10 years on a maintained machine, and considerably sooner on a neglected one. The part costs $80 to $250 and fitting is $100 to $200 if you do not do it yourself. Belt and deck are usually replaced together because the labour overlaps almost entirely.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does regular maintenance really extend treadmill life?</h3></summary>
+            <p class="faq-a">
+              Substantially. The dominant failure mode is a motor and controller worn out by friction against a dry deck, and lubrication addresses that directly. A maintained mid-range machine reaching ten years against a neglected one failing at five is the usual pattern, for the cost of about an hour a year.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What treadmill maintenance should I pay a professional for?</h3></summary>
+            <p class="faq-a">
+              Anything inside the motor compartment — the motor, the controller board or mains wiring — because of electrical risk and the cost of a misdiagnosis. Lubrication, cleaning, belt tension and tracking are all straightforward DIY. Belt replacement and deck flipping are within reach with basic tools and a second person.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Ownership Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-maintenance/" class="card">
+            <div class="c-kicker">Schedule</div>
+            <div class="c-title">Treadmill Maintenance</div>
+            <p class="c-blurb">The complete owner's schedule — under an hour a year.</p>
+          </a>
+          <a href="/how-long-do-treadmills-last/" class="card">
+            <div class="c-kicker">Lifespan</div>
+            <div class="c-title">How Long Do Treadmills Last?</div>
+            <p class="c-blurb">Lifespans by tier and the repair-or-replace arithmetic in full.</p>
+          </a>
+          <a href="/treadmill-electricity-usage/" class="card">
+            <div class="c-kicker">Running Cost</div>
+            <div class="c-title">Treadmill Electricity Usage</div>
+            <p class="c-blurb">What it adds to the bill, which is less than most people assume.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

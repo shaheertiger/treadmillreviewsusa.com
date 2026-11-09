@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Fitness Trackers for a Walking Pad (2026): Count Desk Steps";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-fitness-trackers-for-walking-pad/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Fitbit Inspire 3", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestfitnesstrackersforwalkingpad" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestfitnesstrackersforwalkingpad)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Fitness Trackers for a Walking Pad</h1>
+      <p class="ed-dek">
+        A wrist tracker counts steps largely from the swing of your arm, and at a walking desk your arms are typing. Here are the trackers and pedometers that count from somewhere else, what each one genuinely fixes, and the free options — your pocket and your walking pad’s own display — that may be all you need.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Fitness Trackers <span class="text-[#5AA9FF]">for a Walking Pad</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A wrist tracker counts steps largely from the swing of your arm, and at a walking desk your arms are typing. Here are the trackers and pedometers that count from somewhere else, what each one genuinely fixes, and the free options — your pocket and your walking pad’s own display — that may be all you need.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#why-wrists-under-count" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why Wrists Under-Count
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#fitbit-inspire-3"><img src="https://m.media-amazon.com/images/I/21o5Z87UgYL._SL500_.jpg" alt="Fitbit Inspire 3" width="500" height="374" decoding="async" /></a>
+          <a href="#3dfitbud-simple-step-counter"><img src="https://m.media-amazon.com/images/I/51DKoF-gEHL._SL500_.jpg" alt="3DFitBud Simple Step Counter" width="500" height="500" decoding="async" /></a>
+          <a href="#oura-ring-4"><img src="https://m.media-amazon.com/images/I/41VEw2cIuqL._SL500_.jpg" alt="Oura Ring 4" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+        <figcaption>Fitbit Inspire 3 · 3DFitBud Simple Step Counter · Oura Ring 4</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          You walk for an hour at your desk, the walking pad says you covered a couple of miles,
+          and your watch credits you with a fraction of the steps. Nothing is broken. Wrist-worn
+          trackers recognise walking largely from the rhythm of your arm, and when both hands are
+          on a keyboard that rhythm mostly disappears. The fix is not a better wrist tracker; it is
+          counting from a part of you that is still moving — the waist, the foot — or using the
+          pad's own figures. This page names five devices that do that, says plainly which ones only
+          half-solve the problem, and explains how to get a count you can trust.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#fitbit-inspire-3">Fitbit Inspire 3</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#3dfitbud-simple-step-counter">3DFitBud Simple Step Counter</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Pedometer With Distance:</span> <a href="#3dtrisport-walking-pedometer">3DTriSport Walking 3D Pedometer</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Runners:</span> <a href="#stryd-5">Stryd 5.0</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Ring (With Caveats):</span> <a href="#oura-ring-4">Oura Ring 4</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           trackers, pedometers or the foot pod, and nothing on this page is our own measurement. Each
           product was confirmed as currently sold on 15 October 2026, and its specifications were
@@ -339,85 +360,32 @@ const schema = {
           figure out and say so in the description. Prices are the ranges we saw on that date and
           change often; membership and subscription prices are not quoted, so check them yourself.
           We earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
+          which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
           and the gear around them; we are not giving medical, coaching or nutrition advice. Step
           counts, distances and calorie figures from any of these devices are estimates, and none
           of them is a medical device. If you are counting steps because of a health condition, an
           injury or a target someone has set for you, talk to a qualified professional about what
           to measure and how.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#fitbit-inspire-3" class="font-bold text-gray-900 no-underline hover:underline">Fitbit Inspire 3</a>
-            <a href="#fitbit-inspire-3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#3dfitbud-simple-step-counter" class="font-bold text-gray-900 no-underline hover:underline">3DFitBud Simple Step Counter</a>
-            <a href="#3dfitbud-simple-step-counter" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Pedometer With Distance:</span>
-            <a href="#3dtrisport-walking-pedometer" class="font-bold text-gray-900 no-underline hover:underline">3DTriSport Walking 3D Pedometer</a>
-            <a href="#3dtrisport-walking-pedometer" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Runners:</span>
-            <a href="#stryd-5" class="font-bold text-gray-900 no-underline hover:underline">Stryd 5.0</a>
-            <a href="#stryd-5" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Ring (With Caveats):</span>
-            <a href="#oura-ring-4" class="font-bold text-gray-900 no-underline hover:underline">Oura Ring 4</a>
-            <a href="#oura-ring-4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Fitness Trackers for a Walking Pad</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Trackers</a>
-          <a href="#why-wrists-under-count" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Wrist Trackers Under-Count on a Walking Pad</a>
-          <a href="#where-to-wear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Waist, Pocket, Foot or Finger: Where to Wear It</a>
-          <a href="#walking-pad-count" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Using Your Walking Pad’s Own Step or Distance Count</a>
-          <a href="#setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Setting Up a Tracker for Desk Walking</a>
-          <a href="#which-number" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Which Number to Trust</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Fitness Trackers for a Walking Pad</a></li>
+            <li><a href="#how-we-chose">How We Chose These Trackers</a></li>
+            <li><a href="#why-wrists-under-count">Why Wrist Trackers Under-Count on a Walking Pad</a></li>
+            <li><a href="#where-to-wear">Waist, Pocket, Foot or Finger: Where to Wear It</a></li>
+            <li><a href="#walking-pad-count">Using Your Walking Pad’s Own Step or Distance Count</a></li>
+            <li><a href="#setup">Setting Up a Tracker for Desk Walking</a></li>
+            <li><a href="#which-number">Which Number to Trust</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          You walk for an hour at your desk, the walking pad says you covered a couple of miles,
-          and your watch credits you with a fraction of the steps. Nothing is broken. Wrist-worn
-          trackers recognise walking largely from the rhythm of your arm, and when both hands are
-          on a keyboard that rhythm mostly disappears. The fix is not a better wrist tracker; it is
-          counting from a part of you that is still moving — the waist, the foot — or using the
-          pad's own figures. This page names five devices that do that, says plainly which ones only
-          half-solve the problem, and explains how to get a count you can trust.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five devices, plus two options that cost nothing. The short version: if you want an
             app, step history and a band you can wear off the desk, the Fitbit Inspire 3 with its
@@ -442,15 +410,13 @@ const schema = {
           </table></div>
           <p>
             If you want the background first — how wrist counting works, why the handrails and the
-            desk break it, and which distance to believe — our explainer on
-            <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether a fitness tracker counts steps on a treadmill</a>
-            covers it. This page is about what to buy, or not buy, once you know the wrist is the
+            desk break it, and which distance to believe — our explainer on <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether a fitness tracker counts steps on a treadmill</a> covers it. This page is about what to buy, or not buy, once you know the wrist is the
             problem.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Fitness Trackers for a Walking Pad</h2>
+          <h2>The 5 Best Fitness Trackers for a Walking Pad</h2>
 <p>
             Each card gives only the figures we could confirm in more than one place, the price
             range we saw on 15 October 2026, and who the device suits. Read the cons as carefully
@@ -462,78 +428,67 @@ const schema = {
             pedometer on your waistband fixes it more completely than a $349 ring on your finger.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Trackers</h2>
+          <h2>How We Chose These Trackers</h2>
 <p>
             We have not tested these devices, and nothing here should be read as if we had. The
             picks were made from manufacturer product pages and help documentation, retailer
@@ -556,8 +511,7 @@ const schema = {
             recommendation, no longer appear on Omron's US site, and the listings we found were
             resellers. The <strong>Garmin Foot Pod</strong> has been described as discontinued by a
             Garmin community representative, and the only Garmin store page we found for it was an
-            older regional listing.
-            <strong>WHOOP</strong> sells apparel for wearing its sensor on the upper arm or body,
+            older regional listing. <strong>WHOOP</strong> sells apparel for wearing its sensor on the upper arm or body,
             but WHOOP staff have said in its community forum that its step algorithm is optimised for
             the wrist and will report fewer steps elsewhere, so it does not solve this problem. A
             classic spring-lever pedometer, the Yamax Digi-Walker, turned up only on resale
@@ -573,7 +527,7 @@ const schema = {
         </div>
 
         <div id="why-wrists-under-count" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Wrist Trackers Under-Count on a Walking Pad</h2>
+          <h2>Why Wrist Trackers Under-Count on a Walking Pad</h2>
 <p>
             A wrist tracker does not see your feet. It contains an accelerometer that senses the
             movement of your forearm, and its software decides which patterns of movement are
@@ -613,7 +567,7 @@ const schema = {
         </div>
 
         <div id="where-to-wear" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Waist, Pocket, Foot or Finger: Where to Wear It</h2>
+          <h2>Waist, Pocket, Foot or Finger: Where to Wear It</h2>
 <p>
             Where the sensor sits matters more than which brand it is. Here is how the options
             compare for walking at a desk.
@@ -638,11 +592,7 @@ const schema = {
           <p>
             A foot pod measures the foot itself, so it is the most direct of all — but foot pods are
             built for running, they report to a watch during a recorded workout rather than counting
-            your day, and they cost several times as much as a pedometer. Our
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>
-            explains how they work, and our roundup of the
-            <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium">best foot pods for a treadmill</a>
-            compares them for runners.
+            your day, and they cost several times as much as a pedometer. Our <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a> explains how they work, and our roundup of the <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium">best foot pods for a treadmill</a> compares them for runners.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ankle</h3>
           <p>
@@ -662,7 +612,7 @@ const schema = {
         </div>
 
         <div id="walking-pad-count" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Using Your Walking Pad’s Own Step or Distance Count</h2>
+          <h2>Using Your Walking Pad’s Own Step or Distance Count</h2>
 <p>
             Before buying anything, look at what your walking pad already tells you. Most pads show
             distance and time on a small display, a remote or a companion app, and some show an
@@ -675,17 +625,13 @@ const schema = {
             at desk speed is shorter than the assumption — and slow, shuffling desk steps often are
             — the pad will under-state your steps even though its distance is right. Second, the
             distance depends on the pad's speed being accurate, and budget pads vary. If the numbers
-            look off, our guide to
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
-            explains how to check the belt speed against a known distance.
+            look off, our guide to <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a> explains how to check the belt speed against a known distance.
           </p>
           <p>
             A practical way to use it: treat the pad's <strong>distance</strong> as the reliable
             figure, and convert it to steps yourself once you know your own stride at desk speed.
             Count your steps for a measured stretch on the pad — say, the time it takes the display
-            to tick over a tenth of a mile — and multiply up. Our guide to
-            <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile on a treadmill</a>
-            explains why the answer changes with speed and height, and why a typical stride figure
+            to tick over a tenth of a mile — and multiply up. Our guide to <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile on a treadmill</a> explains why the answer changes with speed and height, and why a typical stride figure
             from a chart may not fit you.
           </p>
           <p>
@@ -696,7 +642,7 @@ const schema = {
         </div>
 
         <div id="setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Setting Up a Tracker for Desk Walking</h2>
+          <h2>Setting Up a Tracker for Desk Walking</h2>
 <p>
             Whichever device you choose, a few minutes of setting up makes the count far more
             trustworthy.
@@ -724,16 +670,12 @@ const schema = {
           <p>
             The desk itself matters too. If the desk is so low that you hunch, you will tend to
             shorten your stride and lean on your forearms, which makes every counter's job harder.
-            Our guide to
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
-            covers how to set it, and the
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers the wider set-up, from speed to posture.
+            Our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a> covers how to set it, and the <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers the wider set-up, from speed to posture.
           </p>
         </div>
 
         <div id="which-number" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Which Number to Trust</h2>
+          <h2>Which Number to Trust</h2>
 <p>
             For steps at a walking desk, trust a device at your waist or in your pocket over a
             device on your hand, and trust the pad's distance over any wearable's distance. That
@@ -749,9 +691,7 @@ const schema = {
           </p>
           <p>
             For calories, trust none of them very far. Every figure here is an estimate from a model,
-            and treadmill consoles are estimates too. Our guide to
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calorie counts are accurate</a>
-            explains why the numbers rarely agree and why that matters less than consistency.
+            and treadmill consoles are estimates too. Our guide to <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calorie counts are accurate</a> explains why the numbers rarely agree and why that matters less than consistency.
           </p>
           <p>
             Above all, value consistency over precision. A count that is slightly low but the same
@@ -761,20 +701,17 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you can walk hands-free.</strong> If your desk walking is mostly calls,
             reading or thinking with your arms swinging, your current wrist tracker is probably
             counting well. Do the 100-step test before buying anything. If you are really choosing
-            a tracker for the whole day rather than the desk, our roundup of the
-            <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium">best fitness trackers</a>
-            compares bands, watches and rings, including what each costs in subscriptions.
+            a tracker for the whole day rather than the desk, our roundup of the <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium">best fitness trackers</a> compares bands, watches and rings, including what each costs in subscriptions.
           </p>
           <p>
             <strong>If you mainly run.</strong> A running watch with a foot pod, or a treadmill that
             broadcasts its speed, is a better investment than anything on this page. Our roundup of
-            the <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">best running watches for the treadmill</a>
-            covers the watch side.
+            the <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">best running watches for the treadmill</a> covers the watch side.
           </p>
           <p>
             <strong>If you already carry a phone in your pocket all day.</strong> You may already
@@ -784,149 +721,163 @@ const schema = {
           <p>
             <strong>If you are still choosing the walking pad.</strong> Some pads have more useful
             displays and apps than others, and a pad whose figures sync to your phone may make a
-            separate tracker unnecessary. Our guide to
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            covers what to look for in the machine itself.
+            separate tracker unnecessary. Our guide to <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> covers what to look for in the machine itself.
           </p>
           <p>
             <strong>If heart rate is the point.</strong> A clipped tracker or a pedometer will not
             give you heart rate. If you want both an accurate desk step count and heart rate, wear a
-            chest strap for heart rate and a waist counter for steps; our roundup of
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart rate monitors for the treadmill</a>
-            covers the straps.
+            chest strap for heart rate and a waist counter for steps; our roundup of <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart rate monitors for the treadmill</a> covers the straps.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a Fitbit count steps on a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, but on the wrist it may under-count when your hands are on a keyboard, because it relies largely on arm movement. Fitbit's own help pages say a wrist device can count lower when your arms stay still, as when pushing a stroller. Clipping a Fitbit Inspire 3 to your waistband in its body-wear mode, or using a phone in your pocket, avoids the problem.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best fitness tracker for a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                One that counts from your waist rather than your wrist. The Fitbit Inspire 3 is our top pick because Google sells a clip for it and it has a "Clipped on body" mode, so it can count at the desk and go back on your wrist afterwards. If you only want a step number, a clip-on pedometer at around $25 does the job just as well.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best step counter for a treadmill desk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A clip-on pedometer worn on your waistband, such as the 3DFitBud Simple Step Counter or the 3DTriSport, which also shows distance. Both use three-axis sensors, need no app or charging, and count your hip movement, so typing does not affect them. Check either against a counted 100 steps at your desk speed before trusting it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my watch show fewer steps than my walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because your hands are still. Wrist trackers recognise walking largely from arm swing, which disappears when you type or rest on the desk. The pad, meanwhile, often estimates steps from distance and an assumed stride, which can be wrong in the other direction. Trust the pad's distance and a waist-worn counter's steps over a wrist count.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a smart ring count steps better than a watch on a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for desk walking. A ring senses movement at your finger, and your hands are busy at a keyboard in ways that do not match your steps, so it faces the same problem as a wrist tracker. Rings are comfortable and good for sleep tracking, but if accurate desk steps are your goal, a waist-worn tracker or pedometer is the better choice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad step count accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Its distance is usually the more reliable figure, provided the belt speed is accurate. A step count on a pad's display or app is typically calculated from distance and an assumed stride, so if your desk-walking stride is shorter than the assumption, it will show too few steps. Count your own steps over a measured distance and convert the pad's distance yourself.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Tracking Steps on a Walking Pad</h2>
+          <p>Each of these produces a step count that looks precise and is not.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a better wrist tracker to fix a wrist problem</h3>
+              <p>A more expensive watch still senses your arm, and your arm is on the keyboard. Moving to a premium band or a ring does not change the physics of the problem. Move the sensor instead: clip a tracker to your waistband, carry your phone in a trouser pocket, or use a clip-on pedometer at the desk.</p>
+            </li>
+            <li>
+              <h3>Clipping a tracker without changing its setting</h3>
+              <p>A band that thinks it is on a wrist interprets waist movement with the wrong assumptions. If your tracker has a body-wear mode, as the Fitbit Inspire 3 does with "Clipped on body", switch to it whenever you move it into the clip, and switch back when it goes on your wrist again.</p>
+            </li>
+            <li>
+              <h3>Taking the pad’s step figure at face value</h3>
+              <p>Many walking pads calculate steps from distance and a fixed stride, and slow desk steps are often shorter than the assumption, so the pad under-states them. Use the pad's distance, which it actually measures, and convert it with your own stride, counted over a known distance at your usual desk speed.</p>
+            </li>
+            <li>
+              <h3>Letting three devices argue about one walk</h3>
+              <p>A phone, a band and a pedometer all counting the same session will disagree, and a health app merging them may double-count or pick the lowest. Choose one device as your record for desk walking, run a counted 100-step test with it, and compare like with like from week to week.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Tracking Steps on a Walking Pad</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these produces a step count that looks precise and is not.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a better wrist tracker to fix a wrist problem</h3>
-              <p class="text-gray-700 text-sm m-0">A more expensive watch still senses your arm, and your arm is on the keyboard. Moving to a premium band or a ring does not change the physics of the problem. Move the sensor instead: clip a tracker to your waistband, carry your phone in a trouser pocket, or use a clip-on pedometer at the desk.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Clipping a tracker without changing its setting</h3>
-              <p class="text-gray-700 text-sm m-0">A band that thinks it is on a wrist interprets waist movement with the wrong assumptions. If your tracker has a body-wear mode, as the Fitbit Inspire 3 does with "Clipped on body", switch to it whenever you move it into the clip, and switch back when it goes on your wrist again.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Taking the pad’s step figure at face value</h3>
-              <p class="text-gray-700 text-sm m-0">Many walking pads calculate steps from distance and a fixed stride, and slow desk steps are often shorter than the assumption, so the pad under-states them. Use the pad's distance, which it actually measures, and convert it with your own stride, counted over a known distance at your usual desk speed.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting three devices argue about one walk</h3>
-              <p class="text-gray-700 text-sm m-0">A phone, a band and a pedometer all counting the same session will disagree, and a health app merging them may double-count or pick the lowest. Choose one device as your record for desk walking, run a counted 100-step test with it, and compare like with like from week to week.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Does a Fitness Tracker Count Steps on a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How wrist counting works, why handrails and desks break it, and which distance to trust.</p>
-            </a>
-            <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Steps</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Many Steps in a Mile on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why the answer changes with speed and height, and how to work out your own.</p>
-            </a>
-            <a href="/treadmill-desk-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Desk Setup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Desk Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Speed, posture, desk height and how to make walking while you work comfortable.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most walking-desk users, the Fitbit Inspire 3 with its clip is
             the tracker to buy</strong>: wear it on the wrist for the day, switch it to "Clipped on
             body" and clip it to your waistband on the pad. If you only want an honest step number,
             a $25 clip-on pedometer does that job just as well, and your phone in a trouser pocket
             may already do it for free.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you use, treat the pad's distance as the measured figure, run a counted 100-step
             test with your chosen device, and stick to one device as your record. If your stride or
-            desk set-up is shortening your steps, start with the
-            <a href="/treadmill-desk-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill desk guide</a>.
+            desk set-up is shortening your steps, start with the <a href="/treadmill-desk-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill desk guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/">Does a Fitness Tracker Count Steps on a Treadmill?</a></li>
+            <li><a href="/how-many-steps-in-a-mile-on-a-treadmill/">How Many Steps in a Mile on a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does a Fitbit count steps on a walking pad?</h3></summary>
+            <p class="faq-a">
+              Yes, but on the wrist it may under-count when your hands are on a keyboard, because it relies largely on arm movement. Fitbit's own help pages say a wrist device can count lower when your arms stay still, as when pushing a stroller. Clipping a Fitbit Inspire 3 to your waistband in its body-wear mode, or using a phone in your pocket, avoids the problem.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best fitness tracker for a walking pad?</h3></summary>
+            <p class="faq-a">
+              One that counts from your waist rather than your wrist. The Fitbit Inspire 3 is our top pick because Google sells a clip for it and it has a "Clipped on body" mode, so it can count at the desk and go back on your wrist afterwards. If you only want a step number, a clip-on pedometer at around $25 does the job just as well.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the best step counter for a treadmill desk?</h3></summary>
+            <p class="faq-a">
+              A clip-on pedometer worn on your waistband, such as the 3DFitBud Simple Step Counter or the 3DTriSport, which also shows distance. Both use three-axis sensors, need no app or charging, and count your hip movement, so typing does not affect them. Check either against a counted 100 steps at your desk speed before trusting it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my watch show fewer steps than my walking pad?</h3></summary>
+            <p class="faq-a">
+              Usually because your hands are still. Wrist trackers recognise walking largely from arm swing, which disappears when you type or rest on the desk. The pad, meanwhile, often estimates steps from distance and an assumed stride, which can be wrong in the other direction. Trust the pad's distance and a waist-worn counter's steps over a wrist count.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a smart ring count steps better than a watch on a walking pad?</h3></summary>
+            <p class="faq-a">
+              Not for desk walking. A ring senses movement at your finger, and your hands are busy at a keyboard in ways that do not match your steps, so it faces the same problem as a wrist tracker. Rings are comfortable and good for sleep tracking, but if accurate desk steps are your goal, a waist-worn tracker or pedometer is the better choice.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad step count accurate?</h3></summary>
+            <p class="faq-a">
+              Its distance is usually the more reliable figure, provided the belt speed is accurate. A step count on a pad's display or app is typically calculated from distance and an assumed stride, so if your desk-walking stride is shorter than the assumption, it will show too few steps. Count your own steps over a measured distance and convert the pad's distance yourself.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Does a Fitness Tracker Count Steps on a Treadmill?</div>
+            <p class="c-blurb">How wrist counting works, why handrails and desks break it, and which distance to trust.</p>
+          </a>
+          <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="card">
+            <div class="c-kicker">Steps</div>
+            <div class="c-title">How Many Steps in a Mile on a Treadmill</div>
+            <p class="c-blurb">Why the answer changes with speed and height, and how to work out your own.</p>
+          </a>
+          <a href="/treadmill-desk-guide/" class="card">
+            <div class="c-kicker">Desk Setup</div>
+            <div class="c-title">Treadmill Desk Guide</div>
+            <p class="c-blurb">Speed, posture, desk height and how to make walking while you work comfortable.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

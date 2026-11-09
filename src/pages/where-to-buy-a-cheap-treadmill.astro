@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Where to Buy a Cheap Treadmill (2026): Ranked by Real Cost";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/where-to-buy-a-cheap-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -105,64 +110,46 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Ranking", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-wheretobuyacheaptreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-wheretobuyacheaptreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Where to Buy Treadmills Cheap: Ranked by What You Really Pay</h1>
+      <p class="ed-dek">
+        The cheapest sticker price is rarely the cheapest treadmill. Here is where a decent machine actually costs least once you add delivery, warranty and the risk of a dud — what to search for, what to ask, and the point below which cheap stops saving you anything.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Where to Buy Treadmills Cheap: <span class="text-[#5AA9FF]">Ranked by What You Really Pay</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The cheapest sticker price is rarely the cheapest treadmill. Here is where a decent machine actually costs least once you add delivery, warranty and the risk of a dud — what to search for, what to ask, and the point below which cheap stops saving you anything.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#the-floor" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Where Cheap Stops Paying
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Ask where to buy a treadmill cheap and most answers give you a list of shops. The more
+          useful answer is a ranking, because the places that sell the lowest sticker prices are not
+          the places that sell the cheapest treadmill. A $200 machine you replace in two years, a
+          $400 used one you have to rent a van to collect, and a $900 refurbished one with free
+          delivery and a warranty can end up costing you roughly the same per year — or wildly
+          different amounts. This guide ranks the cheap channels by what you actually pay once
+          delivery, warranty and risk are counted, gives the tactics for each, and marks the floor
+          below which a cheaper machine is no longer a saving.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           18 October 2026 we checked how Amazon describes its Amazon Resale store (formerly Amazon
           Warehouse) and how Walmart's product pages describe the condition tiers of Walmart
@@ -175,47 +162,27 @@ const schema = {
           typical ranges or arithmetic from the inputs stated beside them, not live quotes or
           market data. This page carries no product recommendations and no affiliate links, and we
           have not tested any machine mentioned.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#real-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Working Out the Real Cost</a>
-          <a href="#used-marketplaces" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Used Marketplaces</a>
-          <a href="#clearance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Clearance and Floor Models</a>
-          <a href="#open-box-refurbished" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Open-Box and Refurbished</a>
-          <a href="#clubs-and-budget-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Warehouse Clubs and Budget Listings</a>
-          <a href="#gym-closeouts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Gym Closeouts and Surplus</a>
-          <a href="#sales" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Holiday Sales and Timing</a>
-          <a href="#the-floor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Where Cheap Stops Paying</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Checklist Before You Pay</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#real-cost">Working Out the Real Cost</a></li>
+            <li><a href="#used-marketplaces">Used Marketplaces</a></li>
+            <li><a href="#clearance">Clearance and Floor Models</a></li>
+            <li><a href="#open-box-refurbished">Open-Box and Refurbished</a></li>
+            <li><a href="#clubs-and-budget-listings">Warehouse Clubs and Budget Listings</a></li>
+            <li><a href="#gym-closeouts">Gym Closeouts and Surplus</a></li>
+            <li><a href="#sales">Holiday Sales and Timing</a></li>
+            <li><a href="#the-floor">Where Cheap Stops Paying</a></li>
+            <li><a href="#checklist">Checklist Before You Pay</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Ask where to buy a treadmill cheap and most answers give you a list of shops. The more
-          useful answer is a ranking, because the places that sell the lowest sticker prices are not
-          the places that sell the cheapest treadmill. A $200 machine you replace in two years, a
-          $400 used one you have to rent a van to collect, and a $900 refurbished one with free
-          delivery and a warranty can end up costing you roughly the same per year — or wildly
-          different amounts. This guide ranks the cheap channels by what you actually pay once
-          delivery, warranty and risk are counted, gives the tactics for each, and marks the floor
-          below which a cheaper machine is no longer a saving.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Where Is the Cheapest Place to Buy a Treadmill?</h2>
+          <h2>Where Is the Cheapest Place to Buy a Treadmill?</h2>
 <p>
             <strong>The cheapest place to buy a decent treadmill is usually a private used sale of a
             full-size machine from an established brand, followed by model-year clearance and
@@ -248,17 +215,13 @@ const schema = {
             Holiday sales are not on the list because they are a <em>when</em>, not a <em>where</em>:
             Black Friday, the model-year changeover and the spring and summer lull apply to ranks 2,
             3, 6 and 7 and are covered in their own section below. The price ranges are typical
-            patterns, not quotes — the clearance and refurbished bands are the ones our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            uses, and the used range is the depreciation pattern our
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">used treadmill guide</a>
-            describes. Those two pages explain the markets themselves. This one is about getting the
+            patterns, not quotes — the clearance and refurbished bands are the ones our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> uses, and the used range is the depreciation pattern our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">used treadmill guide</a> describes. Those two pages explain the markets themselves. This one is about getting the
             lowest real cost out of each.
           </p>
         </div>
 
         <div id="real-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How to Work Out the Real Cost of a Cheap Treadmill</h2>
+          <h2>How to Work Out the Real Cost of a Cheap Treadmill</h2>
 <p>
             Every cheap channel shifts some cost off the sticker and onto you. A fair comparison puts
             it back. The arithmetic is simple enough to do on a phone in a stranger's garage:
@@ -290,14 +253,12 @@ const schema = {
           <p>
             The biggest single swing is use. A treadmill you stop using after three months costs the
             same whether it was cheap or not, and only its resale value comes back. If you are not sure
-            you will use one, the cheapest treadmill of all is the one you do not buy yet — our
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">treadmill vs gym membership</a>
-            comparison has cheaper ways to test the habit first.
+            you will use one, the cheapest treadmill of all is the one you do not buy yet — our <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">treadmill vs gym membership</a> comparison has cheaper ways to test the habit first.
           </p>
         </div>
 
         <div id="used-marketplaces" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Used Marketplaces: The Cheapest Hardware Per Dollar</h2>
+          <h2>Used Marketplaces: The Cheapest Hardware Per Dollar</h2>
 <p>
             Private sales on Facebook Marketplace, Craigslist, OfferUp and Nextdoor are where a
             full-size machine gets cheapest, because a treadmill is heavy, awkward and resented by the
@@ -305,9 +266,7 @@ const schema = {
             few years and then flatten, so — as arithmetic on that pattern — a machine that was
             $1,500 new might be listed at around $750 at two years old and closer to $500 at three to
             five. Sellers who are moving house or clearing an estate often go lower to make it
-            disappear. Our
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">guide to where used treadmills turn up</a>
-            covers the sources, safe meetings and scams; here are the tactics for getting the price
+            disappear. Our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">guide to where used treadmills turn up</a> covers the sources, safe meetings and scams; here are the tactics for getting the price
             down without buying a problem.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What to search for</h3>
@@ -335,23 +294,19 @@ const schema = {
             <li>An unbranded marketplace machine with no model number you can find anywhere. You cannot check its specification, its parts supply or its recall status.</li>
           </ul>
           <p>
-            When you see it, run our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
-            — it takes about fifteen minutes and is the only warranty a private sale has. Then
+            When you see it, run our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a> — it takes about fifteen minutes and is the only warranty a private sale has. Then
             negotiate on what you found, not on a general wish for a lower price: a dry belt, a frayed
             belt edge or a <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium" data-autolink>missing safety key</a> are concrete reasons a seller will accept.
           </p>
         </div>
 
         <div id="clearance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Model-Year Clearance and Floor Models</h2>
+          <h2>Model-Year Clearance and Floor Models</h2>
 <p>
             For a new machine with a full warranty, outgoing-model clearance is the best value in the
             category. Treadmill model-year refreshes tend to change the console and software far more
             than the frame, motor and deck, so last year's version of a solid machine is usually
-            nearly the same treadmill for noticeably less. Our
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">price-cycle guide</a>
-            explains when the changeover tends to happen.
+            nearly the same treadmill for noticeably less. Our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">price-cycle guide</a> explains when the changeover tends to happen.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to find it</h3>
           <ul>
@@ -376,7 +331,7 @@ const schema = {
         </div>
 
         <div id="open-box-refurbished" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Open-Box, Resale and Refurbished: Cheaper New-ish Machines</h2>
+          <h2>Open-Box, Resale and Refurbished: Cheaper New-ish Machines</h2>
 <p>
             Between a private sale and a new machine sits a group of channels that resell returned,
             damaged-box or reconditioned treadmills with some protection attached. The discount is
@@ -390,9 +345,7 @@ const schema = {
             Acceptable, and reporting at the time said purchases carry the same delivery and return
             policies as other Amazon orders. For a treadmill, read the condition notes closely —
             "missing hardware" or "damaged packaging" matter more on a 150-pound box than on a phone —
-            and check whether the manufacturer's warranty applies to a resale unit. Our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            covers the seller questions.
+            and check whether the manufacturer's warranty applies to a resale unit. Our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> covers the seller questions.
           </p>
           <p>
             <strong>Walmart Restored.</strong> Walmart's restored listings are graded too. Its product
@@ -404,38 +357,30 @@ const schema = {
           </p>
           <p>
             <strong>Best Buy open-box and other big-box returns.</strong> Open-box treadmills appear at
-            big-box retailers, sometimes only at a particular store. Our
-            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy treadmill guide</a>
-            covers how that retailer's listings work.
+            big-box retailers, sometimes only at a particular store. Our <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy treadmill guide</a> covers how that retailer's listings work.
           </p>
           <p>
             <strong>Manufacturer-refurbished and outlet units.</strong> These are the safest of the
             group, because the company that built the machine has inspected it and usually warrants
-            it, though often for less than a new one. Our
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
-            explains the three different things sold as "refurbished" and what should have been
+            it, though often for less than a new one. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a> explains the three different things sold as "refurbished" and what should have been
             replaced; it is worth reading before you compare a refurbished price with a used one.
           </p>
           <p>
             Two tactics apply to the whole group. Compare the open-box price with the current new
             price, not the list price — an open-box unit discounted from an inflated "was" price can
             cost more than the same machine new on sale. And check how a return would physically work
-            before you buy: the shipping, the collection and whether the box is needed. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">return policies guide</a>
-            sets out what to look for.
+            before you buy: the shipping, the collection and whether the box is needed. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">return policies guide</a> sets out what to look for.
           </p>
         </div>
 
         <div id="clubs-and-budget-listings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Warehouse Clubs and Budget Listings on Amazon and Walmart</h2>
+          <h2>Warehouse Clubs and Budget Listings on Amazon and Walmart</h2>
 <p>
             <strong>Warehouse clubs</strong> earn their place for one reason: they often quote a
             delivered price and back it with returns widely regarded as generous. Their range is small
             and rotates, and many models carry club-specific model numbers, so compare the
             specification line by line with the nearest mainstream model. If you are not already a
-            member, add the membership fee to the price. Our guide to
-            <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a>
-            covers how to judge a club-exclusive model.
+            member, add the membership fee to the price. Our guide to <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a> covers how to judge a club-exclusive model.
           </p>
           <p>
             <strong>The cheapest new listings on Amazon and Walmart</strong> are where most searches for
@@ -452,17 +397,13 @@ const schema = {
             <li><strong>Check the price history.</strong> Budget listings run near-permanent "deals" against list prices few people ever paid. A price-history tracker shows what the machine has really sold for.</li>
           </ul>
           <p>
-            Our
-            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>
-            and
-            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">best budget treadmills</a>
-            roundups name the machines whose figures held up when we checked them, which saves you
+            Our <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a> and <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">best budget treadmills</a> roundups name the machines whose figures held up when we checked them, which saves you
             reading forty near-identical listings.
           </p>
         </div>
 
         <div id="gym-closeouts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Gym Closeouts, Surplus Auctions and Ex-Commercial Machines</h2>
+          <h2>Gym Closeouts, Surplus Auctions and Ex-Commercial Machines</h2>
 <p>
             Gyms replace their cardio on a schedule, which keeps a steady supply of retired commercial
             treadmills moving through the used market. Planet Fitness, for one, says in its annual
@@ -487,18 +428,14 @@ const schema = {
             <li><strong>Recalls.</strong> Johnson Health Tech has recalled Matrix T1 and T3 series commercial treadmills, in 2022 and again in an expanded recall in 2024, because the power cord can work loose from the socket and pose a fire hazard. The remedy is a power cord bracket. Check any ex-gym Matrix against the recall notices before you buy.</li>
           </ul>
           <p>
-            Our guide to putting a
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill in your home</a>
-            covers the floor, the stairs and the circuit in detail, and
-            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
-            tells you which brands you are likely to find and what makes them different. If any of
+            Our guide to putting a <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill in your home</a> covers the floor, the stairs and the circuit in detail, and <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a> tells you which brands you are likely to find and what makes them different. If any of
             those three questions has no good answer, a remanufactured unit with delivery included, or
             a home machine, will be cheaper in the end.
           </p>
         </div>
 
         <div id="sales" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Holiday Sales and Timing: When Cheap Gets Cheaper</h2>
+          <h2>Holiday Sales and Timing: When Cheap Gets Cheaper</h2>
 <p>
             Timing does not create new channels, but it moves prices within them, and in this category
             the swing over a year is large. Three patterns matter for a buyer on a tight budget.
@@ -507,9 +444,7 @@ const schema = {
             <strong>The late-November sales are real for mid-range machines and murky for cheap
             ones.</strong> Established brands discount genuinely around Black Friday and Cyber Monday.
             Budget listings run "deals" all year against list prices that are rarely paid, so the
-            November figure may be no lower than October's. Our
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill guide</a>
-            explains how to tell a real reduction from a presentational one.
+            November figure may be no lower than October's. Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill guide</a> explains how to tell a real reduction from a presentational one.
           </p>
           <p>
             <strong>January is the worst month to buy new and a decent month to start watching
@@ -527,22 +462,19 @@ const schema = {
             The practical habit is the same in every case: write down the delivered price of the two or
             three machines on your shortlist, with the date, and check it again when a sale starts. A
             reduction you can measure is a saving. A reduction from a "was" price you have never seen is
-            marketing. The full month-by-month cycle is in our
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
-            guide.
+            marketing. The full month-by-month cycle is in our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> guide.
           </p>
         </div>
 
         <div id="the-floor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Floor: When a Cheap Treadmill Stops Being a Saving</h2>
+          <h2>The Floor: When a Cheap Treadmill Stops Being a Saving</h2>
 <p>
             There is a price below which a cheaper treadmill does not save money, because it buys a
             different and smaller product. For a new machine in 2026, that line sits at roughly $300.
           </p>
           <p>
             <strong>Under about $300 new, you are buying a walking pad.</strong> When we checked the
-            machines in our
-            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 roundup</a>,
+            machines in our <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 roundup</a>,
             every one we could verify at that price was a flat deck with a motor and a remote, some
             with a fold-up bar. Belts ran from about 35 to 42.5 inches long, and where the motor's real
             continuous rating could be found it came out well under the headline figure.
@@ -562,25 +494,20 @@ const schema = {
           <p>
             <strong>The next step up is not far away.</strong> Our under-$300 guide found folding
             treadmills with a 55-inch belt and powered incline from roughly $420 on sale in 2026, and
-            our <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a>
-            covers that band. If you want to jog and your budget is near $300, the honest options are
+            our <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a> covers that band. If you want to jog and your budget is near $300, the honest options are
             to save to that level, or to spend the same $300 on a used full-size machine from an
-            established brand and inspect it properly. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used comparison</a>
-            works through that choice.
+            established brand and inspect it properly. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used comparison</a> works through that choice.
           </p>
           <p>
             <strong>If you do buy at the floor, protect the purchase.</strong> Most cheap machines fail
             for avoidable reasons — a dry belt, a heavier user than the rating, long sessions with no
-            rest, a dusty room. Our guide to
-            <a href="/how-to-make-a-cheap-treadmill-last-longer/" class="text-[#0F62FE] font-medium">making a cheap treadmill last longer</a>
-            covers the habits that stretch its life, and every extra year it lasts lowers the real cost
+            rest, a dusty room. Our guide to <a href="/how-to-make-a-cheap-treadmill-last-longer/" class="text-[#0F62FE] font-medium">making a cheap treadmill last longer</a> covers the habits that stretch its life, and every extra year it lasts lowers the real cost
             you worked out above.
           </p>
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Before You Pay: A Cheap-Treadmill Checklist</h2>
+          <h2>Before You Pay: A Cheap-Treadmill Checklist</h2>
 <p>
             Whichever channel you use, run through these before money changes hands.
           </p>
@@ -595,147 +522,158 @@ const schema = {
             <li><strong>Is the price lower than it was last month?</strong> Compare with a price you recorded, not with a "was" price.</li>
           </ul>
           <p>
-            If you are unsure how much machine you need in the first place, start with
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>,
+            If you are unsure how much machine you need in the first place, start with <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>,
             then come back here to find the cheapest way to buy it.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where is the cheapest place to buy a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For a decent full-size machine, usually a private used sale from an established brand, found on Facebook Marketplace, Craigslist, OfferUp or Nextdoor, followed by model-year clearance and manufacturer-refurbished units. The cheapest new treadmills on Amazon and Walmart cost least at checkout but are mostly walking pads, so they are only the cheapest option if you will only walk.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I buy a treadmill for cheap near me?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start with local marketplace listings and used-gear stores such as Play It Again Sports, then ask specialty fitness dealers about floor models and last year's stock. Public surplus auctions, such as university and city listings on GovDeals, sometimes include retired gym treadmills, but those are sold as-is and you must remove them yourself.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth buying a cheap treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is worth it when the machine matches the job. A walking pad bought for walking is good value. The same pad bought for running is not, because its belt is short and its motor is rated for walking, and you end up buying a second machine. Work out the cost per year, including delivery, repairs and resale, rather than comparing sticker prices.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much should a decent cheap treadmill cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                New, a walking pad costs roughly $150 to $300, and a folding treadmill with a 55-inch belt and powered incline started at roughly $420 on sale when we checked in October 2026. Used, a full-size machine from an established brand often sells for a third to half of its original price after a few years. These are typical ranges, not quotes.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are open-box and refurbished treadmills worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, if you know who stands behind the machine. Manufacturer-refurbished units are the safest because the maker inspected them and usually warrants them, though often for less time than new. Retail open-box and resale programmes vary by condition grade and seller, so check the warranty and the return terms on the listing and compare the price with the current new price, not the list price.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I buy a used gym treadmill cheaply?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Gyms, universities and hotels retire treadmills on a cycle, and they appear at surplus auctions, liquidation sales and remanufacturers. Auction prices can be very low, but add the buyer's premium, heavy-item transport and any electrical work, since commercial machines usually need a dedicated circuit. Check the model against the CPSC recall database before you buy.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Cheap Treadmill</h2>
+          <p>Most expensive cheap treadmills became expensive in one of four ways, and all four are avoidable before you pay.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing sticker prices instead of real cost</h3>
+              <p>A $230 walking pad and a $900 refurbished treadmill can cost about the same per year once delivery, lifespan and resale are counted. Do the per-year arithmetic with the same assumptions for every option before you decide which is cheap.</p>
+            </li>
+            <li>
+              <h3>Buying a walking machine for running</h3>
+              <p>Under about $300 new you are buying a walking pad. Bought for walking, it is good value; bought for running, it is a short belt and a walking motor that you will replace with the machine you needed in the first place.</p>
+            </li>
+            <li>
+              <h3>Winning an auction you cannot collect or power</h3>
+              <p>Ex-gym treadmills commonly weigh around 400 pounds, must often be removed within days, and usually need a dedicated circuit. Check the lot terms, the transport and the electrical requirement before you bid, not after you win.</p>
+            </li>
+            <li>
+              <h3>Skipping the recall check on a used machine</h3>
+              <p>Recalled treadmills stay in the used market for years. Search the model on the CPSC recall database before you pay, and if a remedy exists, such as the Matrix power cord bracket, make sure it has been fitted or order it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Cheap Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most expensive cheap treadmills became expensive in one of four ways, and all four are avoidable before you pay.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing sticker prices instead of real cost</h3>
-              <p class="text-gray-700 text-sm m-0">A $230 walking pad and a $900 refurbished treadmill can cost about the same per year once delivery, lifespan and resale are counted. Do the per-year arithmetic with the same assumptions for every option before you decide which is cheap.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a walking machine for running</h3>
-              <p class="text-gray-700 text-sm m-0">Under about $300 new you are buying a walking pad. Bought for walking, it is good value; bought for running, it is a short belt and a walking motor that you will replace with the machine you needed in the first place.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Winning an auction you cannot collect or power</h3>
-              <p class="text-gray-700 text-sm m-0">Ex-gym treadmills commonly weigh around 400 pounds, must often be removed within days, and usually need a dedicated circuit. Check the lot terms, the transport and the electrical requirement before you bid, not after you win.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the recall check on a used machine</h3>
-              <p class="text-gray-700 text-sm m-0">Recalled treadmills stay in the used market for years. Search the model on the CPSC recall database before you pay, and if a remedy exists, such as the Matrix power cord bracket, make sure it has been fitted or order it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four markets selling the same machine, and what each one costs you.</p>
-            </a>
-            <a href="/where-to-buy-a-used-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Where to Buy a Used Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where second-hand machines turn up, safe meetings and the scams to avoid.</p>
-            </a>
-            <a href="/best-budget-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Budget Picks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Budget Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The best verified pick at every price band, and what each band sacrifices.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The cheapest decent treadmill is usually a used full-size machine
           from an established brand, inspected properly — followed by model-year clearance and
           manufacturer-refurbished units.</strong> The lowest new prices buy walking pads, which are
           good value for walking and poor value for anything else.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Compare real cost per year, not sticker price; ask who stands behind the machine; and check
-          the recall database before you pay. Then use our
-          <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used treadmill checklist</a>
-          for a private sale, or the
-          <a href="/best-treadmills-under-500/" class="text-[#5AA9FF] font-bold no-underline">under-$500 guide</a>
-          if you would rather buy new.
+          the recall database before you pay. Then use our <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used treadmill checklist</a> for a private sale, or the <a href="/best-treadmills-under-500/" class="text-[#5AA9FF] font-bold no-underline">under-$500 guide</a> if you would rather buy new.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+            <li><a href="/where-to-buy-a-used-treadmill/">Where to Buy a Used Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where is the cheapest place to buy a treadmill?</h3></summary>
+            <p class="faq-a">
+              For a decent full-size machine, usually a private used sale from an established brand, found on Facebook Marketplace, Craigslist, OfferUp or Nextdoor, followed by model-year clearance and manufacturer-refurbished units. The cheapest new treadmills on Amazon and Walmart cost least at checkout but are mostly walking pads, so they are only the cheapest option if you will only walk.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where can I buy a treadmill for cheap near me?</h3></summary>
+            <p class="faq-a">
+              Start with local marketplace listings and used-gear stores such as Play It Again Sports, then ask specialty fitness dealers about floor models and last year's stock. Public surplus auctions, such as university and city listings on GovDeals, sometimes include retired gym treadmills, but those are sold as-is and you must remove them yourself.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth buying a cheap treadmill?</h3></summary>
+            <p class="faq-a">
+              It is worth it when the machine matches the job. A walking pad bought for walking is good value. The same pad bought for running is not, because its belt is short and its motor is rated for walking, and you end up buying a second machine. Work out the cost per year, including delivery, repairs and resale, rather than comparing sticker prices.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much should a decent cheap treadmill cost?</h3></summary>
+            <p class="faq-a">
+              New, a walking pad costs roughly $150 to $300, and a folding treadmill with a 55-inch belt and powered incline started at roughly $420 on sale when we checked in October 2026. Used, a full-size machine from an established brand often sells for a third to half of its original price after a few years. These are typical ranges, not quotes.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are open-box and refurbished treadmills worth it?</h3></summary>
+            <p class="faq-a">
+              Often, if you know who stands behind the machine. Manufacturer-refurbished units are the safest because the maker inspected them and usually warrants them, though often for less time than new. Retail open-box and resale programmes vary by condition grade and seller, so check the warranty and the return terms on the listing and compare the price with the current new price, not the list price.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I buy a used gym treadmill cheaply?</h3></summary>
+            <p class="faq-a">
+              Yes. Gyms, universities and hotels retire treadmills on a cycle, and they appear at surplus auctions, liquidation sales and remanufacturers. Auction prices can be very low, but add the buyer's premium, heavy-item transport and any electrical work, since commercial machines usually need a dedicated circuit. Check the model against the CPSC recall database before you buy.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">The four markets selling the same machine, and what each one costs you.</p>
+          </a>
+          <a href="/where-to-buy-a-used-treadmill/" class="card">
+            <div class="c-kicker">Used</div>
+            <div class="c-title">Where to Buy a Used Treadmill</div>
+            <p class="c-blurb">Where second-hand machines turn up, safe meetings and the scams to avoid.</p>
+          </a>
+          <a href="/best-budget-treadmills/" class="card">
+            <div class="c-kicker">Budget Picks</div>
+            <div class="c-title">Best Budget Treadmills</div>
+            <p class="c-blurb">The best verified pick at every price band, and what each band sacrifices.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

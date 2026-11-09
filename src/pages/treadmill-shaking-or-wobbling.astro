@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Shaking or Wobbling? (2026): Floor, Frame or Machinery";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-shaking-or-wobbling/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Start With the Floor", link: "#levelling-feet" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillshakingorwobbling" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillshakingorwobbling)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Shaking, Wobbling or Vibrating?</h1>
+      <p class="ed-dek">
+        Most treadmill shake comes from the outside in: a foot clear of the floor, carpet compressing unevenly, bolts that settled after assembly. Rule those out first, because the causes inside the machine are fewer, and some of them mean stop.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Shaking, <span class="text-[#5AA9FF]">Wobbling or Vibrating?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most treadmill shake comes from the outside in: a foot clear of the floor, carpet compressing unevenly, bolts that settled after assembly. Rule those out first, because the causes inside the machine are fewer, and some of them mean stop.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#levelling-feet" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Start With the Floor
-          </a>
-          <a href="#when-to-stop" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            When Vibration Means Stop
-          </a>
-        </div>
+        <a href="#levelling-feet" class="btn-ghost">Start With the Floor</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before adjusting feet, tightening bolts or reaching under the deck. The safety key
-          stops the belt; it does not isolate the machine. Stop using the treadmill and get it
-          looked at if the vibration appeared suddenly and is severe, comes with a burning smell,
-          grinding or a new knock from the motor area, or if any part of the frame, an upright or a
-          folding latch moves at a joint when it should not.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Is My Treadmill Shaking?</a>
-          <a href="#name-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Shake, Wobble or Vibration? Name It First</a>
-          <a href="#levelling-feet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Levelling Feet and Uneven Floors</a>
-          <a href="#carpet-floor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Carpet, Mats and Suspended Floors</a>
-          <a href="#frame-bolts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Frame Bolts That Settled After Assembly</a>
-          <a href="#uprights-console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Uprights, Console and Handrail Wobble</a>
-          <a href="#folding-frames" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Folding Frames, Hinges and Latches</a>
-          <a href="#deck-isolators" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Deck Isolators and Cushions</a>
-          <a href="#belt-rollers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Belt Tracking, Rollers and Pulleys</a>
-          <a href="#motor-flywheel" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Motor, Flywheel and Drive Belt Imbalance</a>
-          <a href="#from-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Vibration That Comes From Use, Not a Fault</a>
-          <a href="#when-to-stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. When Vibration Means Stop</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Every treadmill moves a little under a runner; a long frame carrying a moving belt and a
           person landing on it a hundred and fifty times a minute is never going to be perfectly
           still. The question is whether yours moves more than it should, or in a way it did not
@@ -206,8 +144,37 @@ const schema = {
           spanner and a spirit level.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
+          wall before adjusting feet, tightening bolts or reaching under the deck. The safety key
+          stops the belt; it does not isolate the machine. Stop using the treadmill and get it
+          looked at if the vibration appeared suddenly and is severe, comes with a burning smell,
+          grinding or a new knock from the motor area, or if any part of the frame, an upright or a
+          folding latch moves at a joint when it should not.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Why Is My Treadmill Shaking?</a></li>
+            <li><a href="#name-it">Shake, Wobble or Vibration? Name It First</a></li>
+            <li><a href="#levelling-feet">Levelling Feet and Uneven Floors</a></li>
+            <li><a href="#carpet-floor">Carpet, Mats and Suspended Floors</a></li>
+            <li><a href="#frame-bolts">Frame Bolts That Settled After Assembly</a></li>
+            <li><a href="#uprights-console">Uprights, Console and Handrail Wobble</a></li>
+            <li><a href="#folding-frames">Folding Frames, Hinges and Latches</a></li>
+            <li><a href="#deck-isolators">Deck Isolators and Cushions</a></li>
+            <li><a href="#belt-rollers">Belt Tracking, Rollers and Pulleys</a></li>
+            <li><a href="#motor-flywheel">Motor, Flywheel and Drive Belt Imbalance</a></li>
+            <li><a href="#from-use">Vibration That Comes From Use, Not a Fault</a></li>
+            <li><a href="#when-to-stop">When Vibration Means Stop</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Is My Treadmill Shaking?</h2>
+          <h2>Why Is My Treadmill Shaking?</h2>
 <p>
             A treadmill that shakes or wobbles is most often sitting unevenly: <strong>a levelling
             foot</strong> not quite touching the floor, <strong>an uneven floor or soft
@@ -215,8 +182,7 @@ const schema = {
             settled since assembly. Those three account for most cases, and all are fixed from
             outside the machine. Less commonly the cause is <strong>loose upright or console
             bolts</strong>, <strong>worn deck isolators</strong>, a <strong>belt or roller
-            problem</strong> such as a belt rubbing the frame or a bent roller, or an
-            <strong>imbalance in the motor, flywheel or drive pulley</strong>.
+            problem</strong> such as a belt rubbing the frame or a bent roller, or an <strong>imbalance in the motor, flywheel or drive pulley</strong>.
           </p>
           <p>
             The quickest way to tell outside from inside is to run the belt empty. If the machine
@@ -227,14 +193,12 @@ const schema = {
           </p>
           <p>
             A thump or knock that keeps time with your steps or with the belt is a closely related
-            problem with its own guide. If what you hear is more of an impact than a shake, our
-            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping and knocking guide</a>
-            has the timing tests in detail. This page covers movement you can feel and see.
+            problem with its own guide. If what you hear is more of an impact than a shake, our <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping and knocking guide</a> has the timing tests in detail. This page covers movement you can feel and see.
           </p>
         </div>
 
         <div id="name-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Shake, Wobble or Vibration? Name It First</h2>
+          <h2>Shake, Wobble or Vibration? Name It First</h2>
 <p>
             Owners use these words interchangeably, but they tend to describe three different
             things, and naming yours narrows the search quickly.
@@ -266,7 +230,7 @@ const schema = {
         </div>
 
         <div id="levelling-feet" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Levelling Feet and Uneven Floors</h2>
+          <h2>Levelling Feet and Uneven Floors</h2>
 <p>
             A treadmill frame is long and sits on four or more points. Floors are rarely flat to
             the precision a long frame needs, and if one foot sits fractionally clear, the frame
@@ -294,14 +258,12 @@ const schema = {
           <p>
             Levelling also helps a belt that keeps drifting to one side, because a twisted frame
             puts the rollers out of square and steers the belt. If you have been re-centring the
-            belt every few sessions, level the machine before adjusting tracking again; our guide on
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>
-            makes the same point.
+            belt every few sessions, level the machine before adjusting tracking again; our guide on <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a> makes the same point.
           </p>
         </div>
 
         <div id="carpet-floor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Carpet, Mats and Suspended Floors</h2>
+          <h2>Carpet, Mats and Suspended Floors</h2>
 <p>
             Levelling feet assume a firm floor. When the floor itself moves, adjustment alone will
             not hold.
@@ -312,16 +274,12 @@ const schema = {
             user who lands slightly to one side loads one rear corner more than the other. The
             frame ends up rocking on a surface that keeps changing. The usual answer is a dense,
             thin rubber equipment mat, and on deep pile or foam underlay a rigid board beneath the
-            mat so the frame has a flat base. Our guide to a
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a>
-            covers the thumb test for when a board is needed.
+            mat so the frame has a flat base. Our guide to a <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a> covers the thumb test for when a board is needed.
           </p>
           <p>
             <strong>The wrong mat.</strong> Soft interlocking foam tiles behave like carpet: they
             compress under the feet and add a second soft layer. A thick, spongy mat can make a
-            treadmill feel less stable, not more. Our guide on
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a>
-            explains what to look for.
+            treadmill feel less stable, not more. Our guide on <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a> explains what to look for.
           </p>
           <p>
             <strong>Suspended timber floors.</strong> Upstairs rooms and many older ground floors
@@ -339,7 +297,7 @@ const schema = {
         </div>
 
         <div id="frame-bolts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Frame Bolts That Settled After Assembly</h2>
+          <h2>Frame Bolts That Settled After Assembly</h2>
 <p>
             New treadmills arrive partly assembled, and the owner typically fits the uprights,
             console and handrails. Those joints carry load with every stride, and bolts in new
@@ -351,8 +309,7 @@ const schema = {
             <strong>Re-check after the first few sessions.</strong> With the machine unplugged, go
             round every bolt you fitted during assembly and every accessible frame fixing, and
             snug them. Many manuals recommend exactly this after initial use and then periodically;
-            our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
-            puts it on the schedule.
+            our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a> puts it on the schedule.
           </p>
           <p>
             <strong>Snug, not forced.</strong> Over-tightening strips threads, crushes tubing and
@@ -364,9 +321,7 @@ const schema = {
             advice is to start every bolt in a joint by hand, leaving them loose until all are in,
             then tighten them evenly. Tightening one fully before the others are started can pull
             the parts slightly out of alignment and leave a joint under strain that never sits
-            right. Our guide on
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a>
-            covers the full sequence.
+            right. Our guide on <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a> covers the full sequence.
           </p>
           <p>
             <strong>Missing hardware.</strong> If you find a washer or bolt on the floor, find where
@@ -376,16 +331,14 @@ const schema = {
         </div>
 
         <div id="uprights-console" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Uprights, Console and Handrail Wobble</h2>
+          <h2>Uprights, Console and Handrail Wobble</h2>
 <p>
             Some movement at the console is normal, and it is worth calibrating expectations before
             hunting for a fault. On lighter <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> the uprights are relatively slender
             tubes cantilevered from the base, and a console that sways a little at running pace is a
             characteristic of the design rather than a defect. Heavier machines with thicker
             uprights and wider bases move much less. The difference is a large part of what you pay
-            for between tiers, as our
-            <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium comparison</a>
-            explains.
+            for between tiers, as our <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium comparison</a> explains.
           </p>
           <p>
             What is not normal is play: a console or handrail you can move by hand relative to the
@@ -406,14 +359,12 @@ const schema = {
           <p>
             One practical caution: leaning heavily on the handrails, or pulling on them while
             running, magnifies any looseness and can work joints loose faster. Rails are for
-            balance, not for carrying your weight; our guide on
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>
-            covers why.
+            balance, not for carrying your weight; our guide on <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a> covers why.
           </p>
         </div>
 
         <div id="folding-frames" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Folding Frames, Hinges and Latches</h2>
+          <h2>Folding Frames, Hinges and Latches</h2>
 <p>
             Folding treadmills add a hinge between the deck and the base, a lift-assist mechanism,
             and a latch or locking pin. Each adds a possible source of movement.
@@ -446,7 +397,7 @@ const schema = {
         </div>
 
         <div id="deck-isolators" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Deck Isolators and Cushions</h2>
+          <h2>Deck Isolators and Cushions</h2>
 <p>
             Most home treadmills sit the deck on rubber or elastomer isolators between the deck and
             the frame. They absorb some of the footstrike and stop the deck transmitting every
@@ -462,11 +413,7 @@ const schema = {
           <p>
             Inspection is the same as for a thumping deck: unplug, look along the underside of the
             deck from the side with a torch, and check each isolator is present and intact, and
-            that the deck mounting bolts are snug but not over-tightened. Our
-            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping noise guide</a>
-            covers the deck-mounting checks in full, and our explainer on
-            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
-            covers how the different systems work.
+            that the deck mounting bolts are snug but not over-tightened. Our <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping noise guide</a> covers the deck-mounting checks in full, and our explainer on <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a> covers how the different systems work.
           </p>
           <p>
             Isolators are typically inexpensive parts for mainstream models. On a machine that has
@@ -476,7 +423,7 @@ const schema = {
         </div>
 
         <div id="belt-rollers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Belt Tracking, Rollers and Pulleys</h2>
+          <h2>Belt Tracking, Rollers and Pulleys</h2>
 <p>
             If the machine vibrates with the belt running empty, and the vibration rises with
             speed, something that rotates is not running true. Start with the belt, because it is
@@ -487,8 +434,7 @@ const schema = {
             the side rail or the roller end cap, which produces a fine vibration and often a
             scraping sound. Look at both edges with the belt running empty at low speed. If it is
             off centre, correct it with the rear bolts: a quarter turn at a time, turning the bolt
-            on the side the belt is moving toward clockwise. The full procedure is in
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>,
+            on the side the belt is moving toward clockwise. The full procedure is in <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>,
             and level the frame first if it keeps wandering.
           </p>
           <p>
@@ -499,8 +445,7 @@ const schema = {
           <p>
             <strong>Worn bearings.</strong> A roller bearing with play lets the roller move under
             load and rumbles when empty. The commonest avoidable cause is a belt tensioned well
-            past the two-to-three-inch lift test described in
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+            past the two-to-three-inch lift test described in <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
           </p>
           <p>
             <strong>A loose front pulley.</strong> The front roller carries the pulley the motor's
@@ -510,7 +455,7 @@ const schema = {
         </div>
 
         <div id="motor-flywheel" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Motor, Flywheel and Drive Belt Imbalance</h2>
+          <h2>Motor, Flywheel and Drive Belt Imbalance</h2>
 <p>
             Under the motor hood, the drive motor carries a flywheel and a pulley, and a short ribbed
             drive belt connects it to the front roller. Imbalance here produces a fast, rhythmic
@@ -533,8 +478,7 @@ const schema = {
             <strong>Drive belt.</strong> A drive belt with a damaged section, or one that has
             stretched and slaps against the housing, produces a vibration at drive-belt frequency.
             A drive belt that slips usually announces itself as a jerk at start-up, which is
-            covered in our guide to a
-            <a href="/treadmill-belt-jerking/" class="text-[#0F62FE] font-medium">treadmill belt jerking or surging</a>.
+            covered in our guide to a <a href="/treadmill-belt-jerking/" class="text-[#0F62FE] font-medium">treadmill belt jerking or surging</a>.
           </p>
           <p>
             All of this is inside the hood, which commonly voids a warranty when opened. With the
@@ -545,25 +489,20 @@ const schema = {
         </div>
 
         <div id="from-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Vibration That Comes From Use, Not a Fault</h2>
+          <h2>Vibration That Comes From Use, Not a Fault</h2>
 <p>
             Some shake is the machine doing what it was built to do with the load it is given.
           </p>
           <p>
             <strong>A light machine at running pace.</strong> Budget and compact treadmills are
-            lighter, with narrower bases and slimmer uprights, and they move more under a runner.
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> and under-desk machines are designed for walking, and running on one
+            lighter, with narrower bases and slimmer uprights, and they move more under a runner. <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> and under-desk machines are designed for walking, and running on one
             produces movement no adjustment will cure. If you run regularly on a machine built for
-            walking, the honest fix is a machine built for running; our guide to the
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
-            covers what to look for.
+            walking, the honest fix is a machine built for running; our guide to the <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a> covers what to look for.
           </p>
           <p>
             <strong>Near the weight limit.</strong> A user close to the stated capacity loads the
             deck, frame and isolators harder, and a frame working near its limit flexes more. The
-            capacity figure is a ceiling rather than a comfortable operating point, which our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains.
+            capacity figure is a ceiling rather than a comfortable operating point, which our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains.
           </p>
           <p>
             <strong>A resonant speed.</strong> Some machines, on some floors, vibrate noticeably at
@@ -579,7 +518,7 @@ const schema = {
         </div>
 
         <div id="when-to-stop" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. When Vibration Means Stop</h2>
+          <h2>When Vibration Means Stop</h2>
 <p>
             Most shake is an annoyance and a maintenance job. A few kinds are signs that something
             could fail suddenly, and those are worth taking seriously.
@@ -596,9 +535,7 @@ const schema = {
           </ul>
           <p>
             In any of those cases, stop the machine, unplug it, and contact the manufacturer or a
-            technician. Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            lists the four general stop-now symptoms — burning smells, tripping breakers, a belt
+            technician. Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> lists the four general stop-now symptoms — burning smells, tripping breakers, a belt
             that ignores the safety key and speed surging on its own — and a severe new vibration
             belongs in the same spirit.
           </p>
@@ -608,139 +545,154 @@ const schema = {
             first three resolve most cases without opening anything.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill shaking?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most often it is sitting unevenly — a levelling foot not touching the floor, an uneven floor, or soft carpet compressing under one corner — or frame bolts have settled since assembly. Press each corner to find a short foot, adjust it until the frame sits solidly, check with a spirit level, then snug all the frame bolts with the machine unplugged.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill wobble when I run?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some console and upright sway is normal on lighter folding machines. Play you can feel at a joint is not: snug the upright-to-base bolts and the console and handrail fixings. If the whole machine rocks, adjust the levelling feet. On carpet, a dense rubber mat and, on deep pile, a rigid board beneath it gives the frame a stable base.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill vibrating?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Run the belt empty. If it vibrates with nobody on it and the vibration rises with speed, something rotating is out of true — a belt rubbing the frame, a bent roller, worn bearings, a loose pulley or flywheel. If it only vibrates under load, look at the feet, floor, frame bolts and deck isolators.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it normal for a treadmill to shake?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A little movement under a runner is normal, especially on lighter and folding machines. Rocking at a corner, play at a joint, vibration that has increased, or anything that appeared suddenly is not. A severe new vibration, a throb from the motor area or a frame that moves at a joint means stop using it and get it checked.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I stop my treadmill from wobbling?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Unplug it, find and adjust any short levelling foot, check the frame with a spirit level, and snug every frame, upright and console bolt without over-tightening. On carpet use a dense thin rubber mat, adding a rigid board on deep pile. Then check deck isolators and belt tracking if it still moves.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can an uneven floor make a treadmill shake?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is one of the commonest causes. A long frame on four points rocks onto any foot that sits slightly clear of the floor. An uneven floor also twists the frame slightly, which steers the belt to one side. Adjusting the levelling feet fixes most cases; a flexing suspended floor or soft carpet may also need a firm mat or board.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Shaking Treadmill</h2>
+          <p>Most shake is fixed from outside the machine. These four are how a simple fix becomes a bigger one.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Adjusting the belt before levelling the frame</h3>
+              <p>A frame that rocks or twists steers the belt sideways, so tracking adjustments never hold and the belt edges wear from repeated correction. Level the machine first with the feet and a spirit level, then adjust tracking a quarter turn at a time if the belt still drifts.</p>
+            </li>
+            <li>
+              <h3>Over-tightening frame bolts</h3>
+              <p>Snugging bolts after assembly is right; forcing them is not. Over-tightening strips threads, crushes tubing, cracks shrouds and can clamp a folding pivot so it binds. Tighten firmly, stop, and use the manual's torque figure where it gives one.</p>
+            </li>
+            <li>
+              <h3>Putting a soft foam mat under it</h3>
+              <p>Interlocking foam tiles and spongy mats compress under the feet like carpet does, so the frame rocks on a moving base. A dense thin rubber equipment mat, with a rigid board beneath on deep pile, gives the treadmill something stable to sit on.</p>
+            </li>
+            <li>
+              <h3>Running on a severe new vibration</h3>
+              <p>A heavy throb from the motor area, a flywheel moving on its shaft, or a frame or latch that moves at a joint can all fail suddenly. Stop, unplug and get it checked rather than seeing whether it settles.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Shaking Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most shake is fixed from outside the machine. These four are how a simple fix becomes a bigger one.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Adjusting the belt before levelling the frame</h3>
-              <p class="text-gray-700 text-sm m-0">A frame that rocks or twists steers the belt sideways, so tracking adjustments never hold and the belt edges wear from repeated correction. Level the machine first with the feet and a spirit level, then adjust tracking a quarter turn at a time if the belt still drifts.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-tightening frame bolts</h3>
-              <p class="text-gray-700 text-sm m-0">Snugging bolts after assembly is right; forcing them is not. Over-tightening strips threads, crushes tubing, cracks shrouds and can clamp a folding pivot so it binds. Tighten firmly, stop, and use the manual's torque figure where it gives one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting a soft foam mat under it</h3>
-              <p class="text-gray-700 text-sm m-0">Interlocking foam tiles and spongy mats compress under the feet like carpet does, so the frame rocks on a moving base. A dense thin rubber equipment mat, with a rigid board beneath on deep pile, gives the treadmill something stable to sit on.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running on a severe new vibration</h3>
-              <p class="text-gray-700 text-sm m-0">A heavy throb from the motor area, a flywheel moving on its shaft, or a frame or latch that moves at a joint can all fail suddenly. Stop, unplug and get it checked rather than seeing whether it settles.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Fault Diagnosis Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-thumping-noise/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Noise</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Thumping or Knocking</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Time the thump against the belt and your stride to find it.</p>
-            </a>
-            <a href="/treadmill-on-carpet/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Setup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill on Carpet</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mats, rigid boards and why carpet steers the belt.</p>
-            </a>
-            <a href="/how-to-center-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Centre a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The quarter-turn method, and when the frame is the real problem.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Start at the corners.</strong> Find and adjust a short levelling
             foot, check the frame with a level, deal with soft carpet using a dense mat and board,
             and snug every frame and upright bolt. That resolves most shaking treadmills.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If it vibrates with the belt running empty, look at <strong class="text-white">belt
             tracking, rollers and the motor end</strong> — and stop if the vibration is severe and
-            new. For impacts rather than shake, see the
-            <a href="/treadmill-thumping-noise/" class="text-[#5AA9FF] font-bold no-underline">thumping noise guide</a>.
+            new. For impacts rather than shake, see the <a href="/treadmill-thumping-noise/" class="text-[#5AA9FF] font-bold no-underline">thumping noise guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-thumping-noise/">Treadmill Thumping or Knocking</a></li>
+            <li><a href="/treadmill-on-carpet/">Treadmill on Carpet</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why is my treadmill shaking?</h3></summary>
+            <p class="faq-a">
+              Most often it is sitting unevenly — a levelling foot not touching the floor, an uneven floor, or soft carpet compressing under one corner — or frame bolts have settled since assembly. Press each corner to find a short foot, adjust it until the frame sits solidly, check with a spirit level, then snug all the frame bolts with the machine unplugged.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill wobble when I run?</h3></summary>
+            <p class="faq-a">
+              Some console and upright sway is normal on lighter folding machines. Play you can feel at a joint is not: snug the upright-to-base bolts and the console and handrail fixings. If the whole machine rocks, adjust the levelling feet. On carpet, a dense rubber mat and, on deep pile, a rigid board beneath it gives the frame a stable base.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why is my treadmill vibrating?</h3></summary>
+            <p class="faq-a">
+              Run the belt empty. If it vibrates with nobody on it and the vibration rises with speed, something rotating is out of true — a belt rubbing the frame, a bent roller, worn bearings, a loose pulley or flywheel. If it only vibrates under load, look at the feet, floor, frame bolts and deck isolators.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it normal for a treadmill to shake?</h3></summary>
+            <p class="faq-a">
+              A little movement under a runner is normal, especially on lighter and folding machines. Rocking at a corner, play at a joint, vibration that has increased, or anything that appeared suddenly is not. A severe new vibration, a throb from the motor area or a frame that moves at a joint means stop using it and get it checked.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I stop my treadmill from wobbling?</h3></summary>
+            <p class="faq-a">
+              Unplug it, find and adjust any short levelling foot, check the frame with a spirit level, and snug every frame, upright and console bolt without over-tightening. On carpet use a dense thin rubber mat, adding a rigid board on deep pile. Then check deck isolators and belt tracking if it still moves.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can an uneven floor make a treadmill shake?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is one of the commonest causes. A long frame on four points rocks onto any foot that sits slightly clear of the floor. An uneven floor also twists the frame slightly, which steers the belt to one side. Adjusting the levelling feet fixes most cases; a flexing suspended floor or soft carpet may also need a firm mat or board.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Fault Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-thumping-noise/" class="card">
+            <div class="c-kicker">Noise</div>
+            <div class="c-title">Treadmill Thumping or Knocking</div>
+            <p class="c-blurb">Time the thump against the belt and your stride to find it.</p>
+          </a>
+          <a href="/treadmill-on-carpet/" class="card">
+            <div class="c-kicker">Setup</div>
+            <div class="c-title">Treadmill on Carpet</div>
+            <p class="c-blurb">Mats, rigid boards and why carpet steers the belt.</p>
+          </a>
+          <a href="/how-to-center-treadmill-belt/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Centre a Treadmill Belt</div>
+            <p class="c-blurb">The quarter-turn method, and when the frame is the real problem.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Used Peloton Treadmill (2026): Recalls, Fees and Fair Prices";
 const description =
@@ -193,6 +192,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/used-peloton-tread/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -213,66 +218,67 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "What to Check", link: "#inspection" }}
+  stickyCta={{ text: "Most Common Used Peloton: Peloton Tread (used, model TR02)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-usedpelotontread" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-usedpelotontread)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Used</span>
+      </nav>
+      <h1 class="ed-title">Buying a Used Peloton Treadmill</h1>
+      <p class="ed-dek">
+        Peloton has sold well over 100,000 treadmills in the US, and plenty are now for sale. A used one can be a good buy, but only if three things check out first: the recall remedy, the costs Peloton adds when you activate it, and a price that still beats a new Tread Flex once you have moved it home.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Used
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Buying a Used <span class="text-[#5AA9FF]">Peloton Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Peloton has sold well over 100,000 treadmills in the US, and plenty are now for sale. A used one can be a good buy, but only if three things check out first: the recall remedy, the costs Peloton adds when you activate it, and a price that still beats a new Tread Flex once you have moved it home.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#recalls" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Recalls
-          </a>
-          <a href="#fair-price" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Fair Prices
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A used Peloton treadmill looks like an easy saving: the machines are expensive new, many
+          sellers bought them during 2020 and 2021 and no longer use them, and Peloton replaced its
+          whole treadmill range on 1 October 2026, which has pushed more older machines onto the
+          market. The saving is real only if the machine is safe, if you budget for what Peloton
+          charges a second owner, and if the price still makes sense next to a new Tread Flex at
+          $2,195. Both Peloton treadmill models sold before mid-2021 were recalled, one of them after
+          a child died. This guide explains how to tell which machine you are looking at, how to
+          confirm the recall remedy, what activation and the membership add, what to check in
+          person, what to pay and where to look.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Common Used Peloton:</span> <a href="#used-peloton-tread-tr02">Peloton Tread (used, model TR02)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Check the Rear Guard:</span> <a href="#used-peloton-tread-plus-tr01">Peloton Tread+ (used, model TR01)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">The New Benchmark:</span> <a href="#peloton-tread-flex-new">Peloton Tread Flex</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we read the US Consumer Product Safety Commission’s two May 2021 Peloton
           treadmill recall notices (21-128 and 21-129, the latter updated August 2021) and its May
@@ -289,76 +295,31 @@ const schema = {
           tested any used Peloton treadmill. Prices change often. We earn a commission if you buy
           through an Amazon link on this page; it does not change what we say. This site is not
           affiliated with Peloton or any marketplace mentioned.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Common Used Peloton:</span>
-            <a href="#used-peloton-tread-tr02" class="font-bold text-gray-900 no-underline hover:underline">Peloton Tread (used, model TR02)</a>
-            <a href="#used-peloton-tread-tr02" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Check the Rear Guard:</span>
-            <a href="#used-peloton-tread-plus-tr01" class="font-bold text-gray-900 no-underline hover:underline">Peloton Tread+ (used, model TR01)</a>
-            <a href="#used-peloton-tread-plus-tr01" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The New Benchmark:</span>
-            <a href="#peloton-tread-flex-new" class="font-bold text-gray-900 no-underline hover:underline">Peloton Tread Flex</a>
-            <a href="#peloton-tread-flex-new" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is a Used Peloton Treadmill Worth Buying?</a>
-          <a href="#which-model" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Which Peloton Treadmill Are You Looking At?</a>
-          <a href="#recalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The 2021 Recalls, and How to Confirm the Fix</a>
-          <a href="#fees" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Activation Fee, the Membership and the Warranty</a>
-          <a href="#inspection" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What to Check</a>
-          <a href="#moving" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Moving a Used Peloton Home</a>
-          <a href="#fair-price" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Fair Prices</a>
-          <a href="#where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Where to Buy</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Alternatives to a Used Peloton</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy a Used Peloton Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is a Used Peloton Treadmill Worth Buying?</a></li>
+            <li><a href="#which-model">Which Peloton Treadmill Are You Looking At?</a></li>
+            <li><a href="#recalls">The 2021 Recalls, and How to Confirm the Fix</a></li>
+            <li><a href="#fees">The Activation Fee, the Membership and the Warranty</a></li>
+            <li><a href="#inspection">What to Check</a></li>
+            <li><a href="#moving">Moving a Used Peloton Home</a></li>
+            <li><a href="#fair-price">Fair Prices</a></li>
+            <li><a href="#where-to-buy">Where to Buy</a></li>
+            <li><a href="#alternatives">The Alternatives to a Used Peloton</a></li>
+            <li><a href="#verdict">Who Should Buy a Used Peloton Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A used Peloton treadmill looks like an easy saving: the machines are expensive new, many
-          sellers bought them during 2020 and 2021 and no longer use them, and Peloton replaced its
-          whole treadmill range on 1 October 2026, which has pushed more older machines onto the
-          market. The saving is real only if the machine is safe, if you budget for what Peloton
-          charges a second owner, and if the price still makes sense next to a new Tread Flex at
-          $2,195. Both Peloton treadmill models sold before mid-2021 were recalled, one of them after
-          a child died. This guide explains how to tell which machine you are looking at, how to
-          confirm the recall remedy, what activation and the membership add, what to check in
-          person, what to pay and where to look.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is a Used Peloton Treadmill Worth Buying?</h2>
+          <h2>Is a Used Peloton Treadmill Worth Buying?</h2>
 <p>
             <strong>A used Peloton treadmill is worth buying only if you can confirm the recall
             remedy, you budget for Peloton’s activation fee and membership, and the total cost —
-            asking price, fee and moving — still sits clearly below a new $2,195 Tread Flex.</strong>
-            When all three hold, it can be a good way into Peloton’s classes. When any one fails, a
+            asking price, fee and moving — still sits clearly below a new $2,195 Tread Flex.</strong> When all three hold, it can be a good way into Peloton’s classes. When any one fails, a
             new machine, or a cheaper non-Peloton treadmill with the Peloton App, is the better buy.
           </p>
           <p>
@@ -374,83 +335,70 @@ const schema = {
             second-hand hardware since 2024, classes need a monthly All-Access Membership, no
             manufacturer warranty should be assumed to transfer, and moving a 290 lb-plus treadmill is
             rarely free. On the asking prices we found, many used Treads cost about as much delivered
-            as a new Tread Flex. Our
-            <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
-            covers the current new range in full.
+            as a new Tread Flex. Our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a> covers the current new range in full.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="which-model" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Peloton Treadmill Are You Looking At?</h2>
+          <h2>Which Peloton Treadmill Are You Looking At?</h2>
 <p>
             Peloton has sold two kinds of treadmill: a slat-belt machine (the Tread+) and a
             conventional belt-deck machine (the Tread). Listings use the names loosely, and the names
@@ -484,7 +432,7 @@ const schema = {
         </div>
 
         <div id="recalls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The 2021 Recalls, and How to Confirm the Fix</h2>
+          <h2>The 2021 Recalls, and How to Confirm the Fix</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Tread+ recall (CPSC 21-128)</h3>
           <p>
             On 5 May 2021 the CPSC and Peloton recalled about 125,000 Tread+ treadmills, model TR01,
@@ -524,14 +472,12 @@ const schema = {
             database on 5 November 2026 and found no later Peloton treadmill recall; Peloton’s later
             recalls were of Bike seat posts in 2023 and Bike+ seat posts in 2025. Whatever the model,
             keep children and pets away from any running treadmill and remove the safety key after each
-            session; our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            and <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">guide to children and treadmills</a>
-            cover the habits that matter.
+            session; our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> and <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">guide to children and treadmills</a> cover the habits that matter.
           </p>
         </div>
 
         <div id="fees" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Activation Fee, the Membership and the Warranty</h2>
+          <h2>The Activation Fee, the Membership and the Warranty</h2>
 <p>
             The asking price is not what a used Peloton treadmill costs you. Three things Peloton
             controls sit on top of it.
@@ -559,9 +505,7 @@ const schema = {
             that on Peloton’s site, so check at sign-up. Over three years, $49.99 a month is about
             $1,800, which on a used Tread can be more than the machine. Without a membership, Peloton
             says the current machines offer Just Run, a manual mode with basic metrics; check what the
-            software on the machine you are buying offers before you rely on it. Our
-            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
-            sets the two memberships side by side.
+            software on the machine you are buying offers before you rely on it. Our <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a> sets the two memberships side by side.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The warranty</h3>
           <p>
@@ -569,19 +513,15 @@ const schema = {
             and not transferring to a second owner, while reports from 2022 said Peloton’s paid extended
             protection plans had been made transferable. Assume the machine comes with no manufacturer
             warranty unless Peloton confirms otherwise for that serial number, and ask the seller whether
-            they bought a protection plan and whether it can be transferred. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains what you give up buying used.
+            they bought a protection plan and whether it can be transferred. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains what you give up buying used.
           </p>
         </div>
 
         <div id="inspection" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What to Check on a Used Peloton Tread or Tread+</h2>
+          <h2>What to Check on a Used Peloton Tread or Tread+</h2>
 <p>
             Do every check with the machine running, in person, before any money changes hands. The
-            general mechanical checks in our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
-            apply; these are the Peloton-specific ones.
+            general mechanical checks in our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a> apply; these are the Peloton-specific ones.
           </p>
           <ul>
             <li><strong>Recall remedy.</strong> As above: rear guard on any TR01, screen fix on a TR02 from the recall window, confirmed by Peloton against the serial number.</li>
@@ -596,14 +536,12 @@ const schema = {
           <p>
             Ask for the original order or delivery confirmation as well. It establishes the purchase
             date, helps Peloton identify the machine, and is a reasonable sign the seller actually owns
-            it; our guide to
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>
-            covers the scams that follow this market.
+            it; our guide to <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a> covers the scams that follow this market.
           </p>
         </div>
 
         <div id="moving" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Moving a Used Peloton Home</h2>
+          <h2>Moving a Used Peloton Home</h2>
 <p>
             A Peloton treadmill is heavy and top-heavy. The current Tread Flex weighs 290 lb and the Tread
             Vision 316 lb, by Peloton’s figures, and resale sources describe the original Tread at about
@@ -616,22 +554,18 @@ const schema = {
             through the furniture-moving service AptDeco typically costs $500 to $900 for a Peloton
             treadmill bought on Repowered, and in-person pickup is free if you can do it yourself.
             Specialist movers price by distance, stairs and access. Ask the seller whether the machine
-            is upstairs or in a basement, and measure every doorway and turn on both ends. Our
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a>
-            covers lifting points and stairs.
+            is upstairs or in a basement, and measure every doorway and turn on both ends. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a> covers lifting points and stairs.
           </p>
           <p>
             At the other end, plan the room as for a new machine: a hard, level floor, clearance behind
             the deck, a ceiling high enough for the tallest user plus the step-up height, and a
             dedicated grounded circuit. Peloton specifies a dedicated 15-amp-or-more circuit for its
-            current treadmills; check the manual for the model you are buying. Our
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">circuit guide</a>
-            explains why an extension lead is not an option.
+            current treadmills; check the manual for the model you are buying. Our <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">circuit guide</a> explains why an extension lead is not an option.
           </p>
         </div>
 
         <div id="fair-price" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Is a Fair Price for a Used Peloton Treadmill?</h2>
+          <h2>What Is a Fair Price for a Used Peloton Treadmill?</h2>
 <p>
             We found no independent price index for used Peloton treadmills. The best data we found
             comes from Commonplace, a resale marketplace that publishes its own listings data and has a
@@ -671,22 +605,18 @@ const schema = {
             fixed frame, and that is a fair reason to pay a little more, but not to pay the same as new.
             For a Tread+ with the rear guard confirmed, the comparison is the $6,695 Tread+ Vision plus its
             $299 assembly; there is more room for a saving, but professional moving costs more and the
-            slat belt is expensive to repair. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            sets out the general case.
+            slat belt is expensive to repair. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> sets out the general case.
           </p>
           <p>
             Two timing notes. The range change on 1 October 2026 has put more older Peloton treadmills on
             the market, which should push asking prices down; the August sale figure predates it. And
             Peloton was offering to match a better Tread Flex offer on its own site for purchases from 1
-            to 11 November, so check the new price on the day you negotiate. Our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
-            page tracks the new market through November.
+            to 11 November, so check the new price on the day you negotiate. Our <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> page tracks the new market through November.
           </p>
         </div>
 
         <div id="where-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Where to Find a Used Peloton Treadmill for Sale</h2>
+          <h2>Where to Find a Used Peloton Treadmill for Sale</h2>
 <p>
             <strong>Peloton Repowered.</strong> Peloton’s own resale marketplace launched in June 2025, in
             beta in New York City, Boston and Washington, D.C., with a nationwide rollout planned. CNBC
@@ -710,47 +640,37 @@ const schema = {
             <strong>Previous-generation stock.</strong> New, unused Cross Training Treads from before the
             range change may still turn up at retailers and on Amazon at clearance prices. A new
             previous-generation machine comes with a manufacturer warranty, which a used one does not;
-            our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
-            covers what it lacks against the current range.
+            our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a> covers what it lacks against the current range.
           </p>
           <p>
             <strong>Certified refurbished.</strong> Peloton’s refurbished store listed only the Bike and
             Bike+ on 5 November 2026, not any Tread. A "refurbished Peloton Tread" elsewhere has been
             refurbished by someone other than Peloton; ask who did the work and what warranty comes with
-            it. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
-            explains what the word should mean.
+            it. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a> explains what the word should mean.
           </p>
           <p>
-            For the sourcing side in general — collecting safely, paying, and the scams — read our guide to
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>.
+            For the sourcing side in general — collecting safely, paying, and the scams — read our guide to <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Alternatives to a Used Peloton</h2>
+          <h2>The Alternatives to a Used Peloton</h2>
 <p>
             If the point is Peloton’s classes rather than Peloton’s hardware, there is a cheaper route.
             The Peloton App runs on a phone, tablet or television beside any treadmill; you follow the
             instructor’s cues on your own console, and the app costs less than All-Access. A new
             treadmill with a 60-inch deck and Bluetooth, such as the Horizon 7.0 AT, can cost less than a
-            used Tread once fees and moving are added, and it comes with a warranty. Our
-            <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives</a>
-            guide and our
-            <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a>
-            cover that route, and our
-            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
-            covers machines whose own platforms control speed and incline.
+            used Tread once fees and moving are added, and it comes with a warranty. Our <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives</a> guide and our <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a> cover that route, and our <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a> covers machines whose own platforms control speed and incline.
           </p>
           <p>
             If you want a used treadmill and are not tied to Peloton, a used commercial or premium home
             machine from a brand with a simple console and no activation step is often the better
-            buy; our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">checklist</a>
-            applies to any of them.
+            buy; our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">checklist</a> applies to any of them.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy a Used Peloton Treadmill</h2>
+          <h2>Who Should Buy a Used Peloton Treadmill</h2>
 <p>
             <strong>Buy a used Tread if</strong> you want Peloton’s classes on Peloton’s screen, the
             remedy and account are confirmed, and the price plus the $95 fee and the move sits clearly
@@ -770,136 +690,153 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to buy a used Peloton Tread+?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the CPSC-approved rear guard is fitted. Every Tread+ model TR01 sold from 2018 to April 2021 was recalled in May 2021 because people, pets and objects could be pulled under the rear; a child died. The free breakaway rear guard announced in May 2023 cuts power and slows the belt on contact. Give Peloton the serial number and ask it to confirm the remedy before you buy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does Peloton charge to activate a used treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Peloton introduced a one-time $95 used-equipment activation fee in the US in August 2024 for new members activating second-hand hardware, including the Tread and Tread+. It was waived for promotions in early 2026, most recently until 31 March 2026, and was reported at $45 for purchases on Peloton’s Repowered marketplace at its 2025 launch. Check the current figure when you activate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much should I pay for a used Peloton treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Enough below a new Tread Flex to cover the fee, the move and the lack of a warranty. The Flex was $2,195 at Peloton on 5 November 2026. One resale marketplace reported a typical used Tread sale of about $1,800 in August 2026; add $95 for activation and $500 to $900 for delivery and that exceeds the new Flex, so negotiate accordingly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a Peloton treadmill warranty transfer to a second owner?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Assume not. Sources describe Peloton’s limited home warranty as covering the original purchaser only, while 2022 reports said paid extended protection plans became transferable. Ask the seller whether they bought a plan, and ask Peloton what, if anything, covers that serial number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a membership for a used Peloton Tread?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For classes and most screen features, yes: an All-Access Membership, which coverage of Peloton’s October 2025 price change put at $49.99 a month in the US. Peloton says its current Treads offer Just Run, a manual mode, without one. Check what the software on the machine you are buying offers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I know which Peloton treadmill model I am buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check the model number on the black sticker on the front end cap of the deck. TR01 is the slat-belt Tread+, sold as the Peloton Tread until September 2020; TR02 is the belt-deck Tread. A listing for a 2019 "Peloton Tread" is almost certainly a recalled TR01.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Used Peloton Treadmill</h2>
+          <p>Most expensive mistakes with a used Peloton happen before the machine is switched on.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a Tread+ without proof of the rear guard</h3>
+              <p>Every TR01 was recalled for a pull-under hazard. Without the approved rear guard fitted and confirmed by Peloton against the serial number, walk away at any price.</p>
+            </li>
+            <li>
+              <h3>Trusting the name in the listing</h3>
+              <p>The slat-belt Tread+ was called the Peloton Tread until September 2020. Ask for a photo of the model sticker before you visit, and do not rely on the name or year.</p>
+            </li>
+            <li>
+              <h3>Leaving the fee and the move out of the price</h3>
+              <p>A $95 activation fee and several hundred dollars of moving can take a used Tread past the price of a new Tread Flex. Add both before you make an offer.</p>
+            </li>
+            <li>
+              <h3>Collecting a machine still on the seller’s account</h3>
+              <p>Peloton hardware is tied to a member account. Make sure the seller has removed it before you pay, or you may not be able to activate it in your own name.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Used Peloton Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most expensive mistakes with a used Peloton happen before the machine is switched on.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a Tread+ without proof of the rear guard</h3>
-              <p class="text-gray-700 text-sm m-0">Every TR01 was recalled for a pull-under hazard. Without the approved rear guard fitted and confirmed by Peloton against the serial number, walk away at any price.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the name in the listing</h3>
-              <p class="text-gray-700 text-sm m-0">The slat-belt Tread+ was called the Peloton Tread until September 2020. Ask for a photo of the model sticker before you visit, and do not rely on the name or year.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the fee and the move out of the price</h3>
-              <p class="text-gray-700 text-sm m-0">A $95 activation fee and several hundred dollars of moving can take a used Tread past the price of a new Tread Flex. Add both before you make an offer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Collecting a machine still on the seller’s account</h3>
-              <p class="text-gray-700 text-sm m-0">Peloton hardware is tied to a member account. Make sure the seller has removed it before you pay, or you may not be able to activate it in your own name.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/peloton-tread/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Peloton Treadmill Buyer’s Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The current Tread Flex, Tread Vision and Tread+ Vision, costs and recalls.</p>
-            </a>
-            <a href="/used-treadmill-buying-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Checklist</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Used Treadmill Buying Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The mechanical checks to run on any second-hand treadmill before you pay.</p>
-            </a>
-            <a href="/best-peloton-alternatives/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Alternatives</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Peloton Alternatives</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cheaper ways to Peloton-style classes, with three-year costs compared.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A used Peloton treadmill is a good buy only when three checks pass</strong>:
             the recall remedy is confirmed by Peloton against the serial number — the rear guard on any
             Tread+ TR01, the screen fix on a 2020-21 Tread TR02 — the seller has released the machine
             from their account, and the price plus Peloton’s $95 activation fee and the move sits
             clearly below a new $2,195 Tread Flex.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If any check fails, buy new, or use the Peloton App with a treadmill that needs no
-            membership; our
-            <a href="/best-peloton-alternatives/" class="text-[#5AA9FF] font-bold no-underline">Peloton alternatives</a>
-            guide sets out that route.
+            membership; our <a href="/best-peloton-alternatives/" class="text-[#5AA9FF] font-bold no-underline">Peloton alternatives</a> guide sets out that route.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/peloton-tread/">Peloton Treadmill Buyer’s Guide</a></li>
+            <li><a href="/used-treadmill-buying-checklist/">Used Treadmill Buying Checklist</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is it safe to buy a used Peloton Tread+?</h3></summary>
+            <p class="faq-a">
+              Only if the CPSC-approved rear guard is fitted. Every Tread+ model TR01 sold from 2018 to April 2021 was recalled in May 2021 because people, pets and objects could be pulled under the rear; a child died. The free breakaway rear guard announced in May 2023 cuts power and slows the belt on contact. Give Peloton the serial number and ask it to confirm the remedy before you buy.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does Peloton charge to activate a used treadmill?</h3></summary>
+            <p class="faq-a">
+              Peloton introduced a one-time $95 used-equipment activation fee in the US in August 2024 for new members activating second-hand hardware, including the Tread and Tread+. It was waived for promotions in early 2026, most recently until 31 March 2026, and was reported at $45 for purchases on Peloton’s Repowered marketplace at its 2025 launch. Check the current figure when you activate.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much should I pay for a used Peloton treadmill?</h3></summary>
+            <p class="faq-a">
+              Enough below a new Tread Flex to cover the fee, the move and the lack of a warranty. The Flex was $2,195 at Peloton on 5 November 2026. One resale marketplace reported a typical used Tread sale of about $1,800 in August 2026; add $95 for activation and $500 to $900 for delivery and that exceeds the new Flex, so negotiate accordingly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a Peloton treadmill warranty transfer to a second owner?</h3></summary>
+            <p class="faq-a">
+              Assume not. Sources describe Peloton’s limited home warranty as covering the original purchaser only, while 2022 reports said paid extended protection plans became transferable. Ask the seller whether they bought a plan, and ask Peloton what, if anything, covers that serial number.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a membership for a used Peloton Tread?</h3></summary>
+            <p class="faq-a">
+              For classes and most screen features, yes: an All-Access Membership, which coverage of Peloton’s October 2025 price change put at $49.99 a month in the US. Peloton says its current Treads offer Just Run, a manual mode, without one. Check what the software on the machine you are buying offers.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I know which Peloton treadmill model I am buying?</h3></summary>
+            <p class="faq-a">
+              Check the model number on the black sticker on the front end cap of the deck. TR01 is the slat-belt Tread+, sold as the Peloton Tread until September 2020; TR02 is the belt-deck Tread. A listing for a 2019 "Peloton Tread" is almost certainly a recalled TR01.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/peloton-tread/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Peloton Treadmill Buyer’s Guide</div>
+            <p class="c-blurb">The current Tread Flex, Tread Vision and Tread+ Vision, costs and recalls.</p>
+          </a>
+          <a href="/used-treadmill-buying-checklist/" class="card">
+            <div class="c-kicker">Checklist</div>
+            <div class="c-title">Used Treadmill Buying Checklist</div>
+            <p class="c-blurb">The mechanical checks to run on any second-hand treadmill before you pay.</p>
+          </a>
+          <a href="/best-peloton-alternatives/" class="card">
+            <div class="c-kicker">Alternatives</div>
+            <div class="c-title">Best Peloton Alternatives</div>
+            <p class="c-blurb">Cheaper ways to Peloton-style classes, with three-year costs compared.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

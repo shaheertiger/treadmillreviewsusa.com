@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Connect Apple Watch to a Treadmill (2026): GymKit and Strava";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-connect-apple-watch-to-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,107 +109,69 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "How GymKit Works", link: "#gymkit" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtoconnectapplewatchtotreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtoconnectapplewatchtotreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>How-To</span>
+      </nav>
+      <h1 class="ed-title">How to Connect Apple Watch to a Treadmill</h1>
+      <p class="ed-dek">
+        If the treadmill supports Apple GymKit, you tap your watch on the console and the two share data. Most home treadmills do not, and the better answer for them is an Indoor Run workout plus a little calibration.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            How-To
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Connect Apple Watch <span class="text-[#5AA9FF]">to a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          If the treadmill supports Apple GymKit, you tap your watch on the console and the two share data. Most home treadmills do not, and the better answer for them is an Indoor Run workout plus a little calibration.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#gymkit" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Using GymKit
-          </a>
-          <a href="#strava" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Treadmill Runs on Strava
-          </a>
-        </div>
+        <a href="#gymkit" class="btn-ghost">Using GymKit</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the features below.</strong> Apple, Strava and
-          equipment makers change their software regularly, and what you see depends on your watch
-          model, your watchOS and iOS versions, the app version and the treadmill. We describe how
-          these features generally work rather than exact menu paths, which move between versions.
-          Where a setting is not where we say, check Apple's or the app maker's current support
-          pages, and check your treadmill's manual for what it supports.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Connect Apple Watch to a Treadmill: The Short Answer</a>
-          <a href="#gymkit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Apple GymKit Is and How It Works</a>
-          <a href="#which-treadmills" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Treadmills Support GymKit?</a>
-          <a href="#indoor-run" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. No GymKit? Use an Indoor Run or Indoor Walk</a>
-          <a href="#accuracy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why the Watch and the Treadmill Disagree About Distance</a>
-          <a href="#heart-rate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Getting Your Heart Rate onto the Treadmill Console</a>
-          <a href="#strava" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Does Strava Work on a Treadmill?</a>
-          <a href="#virtual-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Zwift-Style Apps, Footpods and Smart Treadmills</a>
-          <a href="#tips" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Practical Tips for Cleaner Treadmill Data</a>
-          <a href="#buying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If You Are Buying a Treadmill With Apple Watch in Mind</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Connecting an Apple Watch to a treadmill sounds like one job and is actually two. There is
           the direct connection, which only some machines support, and there is the much more common
           situation of simply getting the watch to record a treadmill session accurately — which
           every treadmill supports, because it needs nothing from the treadmill at all.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the features below.</strong> Apple, Strava and
+          equipment makers change their software regularly, and what you see depends on your watch
+          model, your watchOS and iOS versions, the app version and the treadmill. We describe how
+          these features generally work rather than exact menu paths, which move between versions.
+          Where a setting is not where we say, check Apple's or the app maker's current support
+          pages, and check your treadmill's manual for what it supports.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Connect Apple Watch to a Treadmill: The Short Answer</a></li>
+            <li><a href="#gymkit">What Apple GymKit Is and How It Works</a></li>
+            <li><a href="#which-treadmills">Which Treadmills Support GymKit?</a></li>
+            <li><a href="#indoor-run">No GymKit? Use an Indoor Run or Indoor Walk</a></li>
+            <li><a href="#accuracy">Why the Watch and the Treadmill Disagree About Distance</a></li>
+            <li><a href="#heart-rate">Getting Your Heart Rate onto the Treadmill Console</a></li>
+            <li><a href="#strava">Does Strava Work on a Treadmill?</a></li>
+            <li><a href="#virtual-running">Zwift-Style Apps, Footpods and Smart Treadmills</a></li>
+            <li><a href="#tips">Practical Tips for Cleaner Treadmill Data</a></li>
+            <li><a href="#buying">If You Are Buying a Treadmill With Apple Watch in Mind</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Connect Apple Watch to a Treadmill: The Short Answer</h2>
+          <h2>How to Connect Apple Watch to a Treadmill: The Short Answer</h2>
 <p>
             <strong>If the treadmill supports Apple GymKit</strong> — look for a "Connects to <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple
             Watch</a>" label or logo on the console — make sure gym-equipment detection is switched on in
@@ -227,7 +194,7 @@ const schema = {
         </div>
 
         <div id="gymkit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Apple GymKit Is and How It Works</h2>
+          <h2>What Apple GymKit Is and How It Works</h2>
 <p>
             GymKit is Apple's system for linking an Apple Watch directly to compatible cardio
             equipment — treadmills, ellipticals, bikes, rowers and <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>stair climbers</a>. It uses the same
@@ -261,7 +228,7 @@ const schema = {
         </div>
 
         <div id="which-treadmills" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Treadmills Support GymKit?</h2>
+          <h2>Which Treadmills Support GymKit?</h2>
 <p>
             Mostly commercial ones. GymKit support has come largely from the brands that equip gyms
             and health clubs, and if your gym's treadmills carry the "Connects to Apple Watch" logo,
@@ -279,14 +246,12 @@ const schema = {
             Do not buy a treadmill on the assumption that a Bluetooth connection means Apple Watch
             compatibility. Many consoles have Bluetooth for their own app, for audio or for a
             heart-rate chest strap, and none of those is GymKit. If direct watch integration is
-            important to you, confirm it specifically before buying. Our
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            covers the club-grade machines where GymKit is most often found.
+            important to you, confirm it specifically before buying. Our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a> covers the club-grade machines where GymKit is most often found.
           </p>
         </div>
 
         <div id="indoor-run" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. No GymKit? Use an Indoor Run or Indoor Walk</h2>
+          <h2>No GymKit? Use an Indoor Run or Indoor Walk</h2>
 <p>
             For the great majority of home treadmills, this is the method, and it works on any
             machine.
@@ -311,7 +276,7 @@ const schema = {
         </div>
 
         <div id="accuracy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why the Watch and the Treadmill Disagree About Distance</h2>
+          <h2>Why the Watch and the Treadmill Disagree About Distance</h2>
 <p>
             This is the most common complaint, and it is worth understanding before trying to fix it,
             because neither device is the gold standard.
@@ -339,15 +304,12 @@ const schema = {
             accuracy over time.
           </p>
           <p>
-            If you want to judge which reading is closer, our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>
-            converts belt speed to pace, and a belt that is visibly slipping is covered in
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a>.
+            If you want to judge which reading is closer, our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a> converts belt speed to pace, and a belt that is visibly slipping is covered in <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a>.
           </p>
         </div>
 
         <div id="heart-rate" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Getting Your Heart Rate onto the Treadmill Console</h2>
+          <h2>Getting Your Heart Rate onto the Treadmill Console</h2>
 <p>
             With GymKit, your watch's heart rate appears on the console automatically. Without it, the
             picture is more mixed.
@@ -363,9 +325,7 @@ const schema = {
             The simplest and most widely compatible option, if you want heart rate on the console, is
             a Bluetooth chest strap. Many treadmills accept one, chest straps are generally more
             accurate than wrist sensors during hard intervals, and they can usually connect to your
-            watch or phone at the same time, depending on the strap. Our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            explains what to do with the numbers once you have them.
+            watch or phone at the same time, depending on the strap. Our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a> explains what to do with the numbers once you have them.
           </p>
           <p>
             <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>Pulse grips</a> on the handrails are a further fallback, but readings from them are
@@ -374,7 +334,7 @@ const schema = {
         </div>
 
         <div id="strava" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Does Strava Work on a Treadmill?</h2>
+          <h2>Does Strava Work on a Treadmill?</h2>
 <p>
             <strong>Yes.</strong> Strava records treadmill runs and walks, and there are three common
             ways to get one there.
@@ -407,7 +367,7 @@ const schema = {
         </div>
 
         <div id="virtual-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Zwift-Style Apps, Footpods and Smart Treadmills</h2>
+          <h2>Zwift-Style Apps, Footpods and Smart Treadmills</h2>
 <p>
             Virtual running apps such as Zwift put you in an on-screen world that moves at your speed.
             To do that they need a live speed signal, which comes from one of two places.
@@ -436,7 +396,7 @@ const schema = {
         </div>
 
         <div id="tips" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Practical Tips for Cleaner Treadmill Data</h2>
+          <h2>Practical Tips for Cleaner Treadmill Data</h2>
 <ul>
             <li><strong>Pick one source of truth.</strong> Decide whether the watch, the treadmill
             app or a virtual app owns the record, and stop the others from syncing to Strava to avoid
@@ -449,20 +409,17 @@ const schema = {
             rails ruins wrist-based distance.</li>
             <li><strong>Use a chest strap</strong> for intervals if heart-rate accuracy matters.</li>
             <li><strong>Keep the treadmill healthy.</strong> A slipping or poorly tensioned belt
-            makes its own figures less reliable; see our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>.</li>
+            makes its own figures less reliable; see our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>.</li>
           </ul>
           <p>
             None of this changes the workout itself. A treadmill session is worth exactly the same
             whether your watch thinks it was 3.0 miles or 3.2, and the effort you put in is the part
-            that counts — our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts</a>
-            are good sessions to log, whatever the distance says.
+            that counts — our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts</a> are good sessions to log, whatever the distance says.
           </p>
         </div>
 
         <div id="buying" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If You Are Buying a Treadmill With Apple Watch in Mind</h2>
+          <h2>If You Are Buying a Treadmill With Apple Watch in Mind</h2>
 <p>
             For most home buyers, GymKit support should be a pleasant extra rather than a deciding
             feature, because the Indoor Run route works on every treadmill and the differences in
@@ -473,149 +430,160 @@ const schema = {
             If direct watch integration matters, verify it explicitly for the exact model, and do not
             infer it from Bluetooth or from a brand's commercial range. If you would rather avoid
             platform lock-in altogether, a machine that works fully without an app or membership
-            pairs perfectly well with an Apple Watch recording an Indoor Run — see our guide to
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>,
-            and the
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
-            for the specifications that matter more.
+            pairs perfectly well with an Apple Watch recording an Indoor Run — see our guide to <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>,
+            and the <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> for the specifications that matter more.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you connect an Apple Watch to a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the treadmill supports Apple GymKit (look for a "Connects to Apple Watch" logo), make sure gym-equipment detection is on in your watch's Workout settings, hold the watch near the contactless reader on the console until it confirms, then press start. If the treadmill does not support GymKit, start an Indoor Run or Indoor Walk in the Workout app instead; there is nothing to pair.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Strava work on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Record the session as an Indoor Run on your Apple Watch and sync it to Strava, record with the Strava app, or link a treadmill or training app that uploads to Strava. Mark the activity as a treadmill run so it is not compared with outdoor segments, and correct the distance after upload where Strava offers that option.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Apple Watch accurate on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Heart rate is generally as reliable as it is outdoors. Distance is an estimate from motion sensors, so it can differ from the treadmill by a noticeable margin, especially if you hold the rails or have not done outdoor GPS workouts for calibration. The treadmill's own figure is also an estimate. On recent watchOS versions you may be able to correct the distance at the end.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which treadmills work with Apple GymKit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly commercial treadmills found in gyms, from brands that equip health clubs. Very few home treadmills support it. Check for the "Connects to Apple Watch" logo on the console, the product listing or the manufacturer's specifications. Bluetooth alone does not mean GymKit support.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my Apple Watch distance not match the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Without GPS the watch estimates distance from arm motion and stride, and it calibrates using your outdoor workouts. Holding the handrails, changing stride or a lack of outdoor calibration all throw it off. The treadmill's calibration can also be a few percent out. Correct the distance at the end where your software allows, and do occasional outdoor GPS sessions.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I connect my Apple Watch to a home treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if that treadmill supports GymKit, which few home machines do. Otherwise, record an Indoor Run or Indoor Walk on the watch, which works on any treadmill. For heart rate on the console, a Bluetooth chest strap is usually the most compatible option, since the watch does not generally broadcast heart rate as a standard sensor.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Tracking Treadmill Runs</h2>
+          <p>Most treadmill tracking frustrations come down to one of these, and each has a simple fix.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Holding the handrails during an Indoor Run</h3>
+              <p>Without GPS, the watch estimates distance from your arm movement. Holding the rails or resting a hand on the console removes most of that movement and can make the recorded distance far too low. Swing your arms naturally where it is safe to do so, or use GymKit or a footpod.</p>
+            </li>
+            <li>
+              <h3>Assuming Bluetooth means Apple Watch support</h3>
+              <p>Many treadmill consoles have Bluetooth for their own app, audio or a chest strap. None of that is GymKit. If direct Apple Watch integration matters to your purchase, confirm it for the exact model rather than inferring it from a Bluetooth logo.</p>
+            </li>
+            <li>
+              <h3>Recording the same run in two places</h3>
+              <p>A watch workout, a treadmill app and a virtual running app can all upload the same session to Strava, leaving duplicates with different distances. Pick one source of truth and switch off syncing from the others.</p>
+            </li>
+            <li>
+              <h3>Treating either device as exact</h3>
+              <p>The watch estimates distance from motion, and the treadmill estimates it from the motor and rollers, and home treadmill calibration varies. Expect small disagreements, correct the distance where your software allows, and judge progress on effort and consistency rather than tenths of a mile.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Tracking Treadmill Runs</h2>
-          <p class="text-gray-700 leading-relaxed">Most treadmill tracking frustrations come down to one of these, and each has a simple fix.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the handrails during an Indoor Run</h3>
-              <p class="text-gray-700 text-sm m-0">Without GPS, the watch estimates distance from your arm movement. Holding the rails or resting a hand on the console removes most of that movement and can make the recorded distance far too low. Swing your arms naturally where it is safe to do so, or use GymKit or a footpod.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming Bluetooth means Apple Watch support</h3>
-              <p class="text-gray-700 text-sm m-0">Many treadmill consoles have Bluetooth for their own app, audio or a chest strap. None of that is GymKit. If direct Apple Watch integration matters to your purchase, confirm it for the exact model rather than inferring it from a Bluetooth logo.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Recording the same run in two places</h3>
-              <p class="text-gray-700 text-sm m-0">A watch workout, a treadmill app and a virtual running app can all upload the same session to Strava, leaving duplicates with different distances. Pick one source of truth and switch off syncing from the others.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating either device as exact</h3>
-              <p class="text-gray-700 text-sm m-0">The watch estimates distance from motion, and the treadmill estimates it from the motor and rollers, and home treadmill calibration varies. Expect small disagreements, correct the distance where your software allows, and judge progress on effort and consistency rather than tenths of a mile.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-heart-rate-zones/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Zones</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What to do with the heart-rate data your watch records.</p>
-            </a>
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace and Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Convert belt speed to pace and check your watch against the console.</p>
-            </a>
-            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Without Subscriptions</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines that work fully on their own and pair happily with any watch.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">If the treadmill has GymKit</strong>, tap your Apple Watch on the
             console's reader and the two share speed, distance and heart rate. Most home treadmills do
             not, so <strong class="text-white">start an Indoor Run or Indoor Walk</strong> on the watch
             instead, keep your arms moving, and correct the distance at the end where your watchOS
             version allows.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Strava works fine on a treadmill: sync the watch workout, mark it as a treadmill run, and
             fix the distance if needed. If you are buying a machine, prioritise build quality over
-            watch integration — our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a>
-            explains what matters most.
+            watch integration — our <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a> explains what matters most.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-heart-rate-zones/">Treadmill Heart Rate Zones</a></li>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace and Speed Chart</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you connect an Apple Watch to a treadmill?</h3></summary>
+            <p class="faq-a">
+              If the treadmill supports Apple GymKit (look for a "Connects to Apple Watch" logo), make sure gym-equipment detection is on in your watch's Workout settings, hold the watch near the contactless reader on the console until it confirms, then press start. If the treadmill does not support GymKit, start an Indoor Run or Indoor Walk in the Workout app instead; there is nothing to pair.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Does Strava work on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. Record the session as an Indoor Run on your Apple Watch and sync it to Strava, record with the Strava app, or link a treadmill or training app that uploads to Strava. Mark the activity as a treadmill run so it is not compared with outdoor segments, and correct the distance after upload where Strava offers that option.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is Apple Watch accurate on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Heart rate is generally as reliable as it is outdoors. Distance is an estimate from motion sensors, so it can differ from the treadmill by a noticeable margin, especially if you hold the rails or have not done outdoor GPS workouts for calibration. The treadmill's own figure is also an estimate. On recent watchOS versions you may be able to correct the distance at the end.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which treadmills work with Apple GymKit?</h3></summary>
+            <p class="faq-a">
+              Mainly commercial treadmills found in gyms, from brands that equip health clubs. Very few home treadmills support it. Check for the "Connects to Apple Watch" logo on the console, the product listing or the manufacturer's specifications. Bluetooth alone does not mean GymKit support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my Apple Watch distance not match the treadmill?</h3></summary>
+            <p class="faq-a">
+              Without GPS the watch estimates distance from arm motion and stride, and it calibrates using your outdoor workouts. Holding the handrails, changing stride or a lack of outdoor calibration all throw it off. The treadmill's calibration can also be a few percent out. Correct the distance at the end where your software allows, and do occasional outdoor GPS sessions.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I connect my Apple Watch to a home treadmill?</h3></summary>
+            <p class="faq-a">
+              Only if that treadmill supports GymKit, which few home machines do. Otherwise, record an Indoor Run or Indoor Walk on the watch, which works on any treadmill. For heart rate on the console, a Bluetooth chest strap is usually the most compatible option, since the watch does not generally broadcast heart rate as a standard sensor.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-heart-rate-zones/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Treadmill Heart Rate Zones</div>
+            <p class="c-blurb">What to do with the heart-rate data your watch records.</p>
+          </a>
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace and Speed Chart</div>
+            <p class="c-blurb">Convert belt speed to pace and check your watch against the console.</p>
+          </a>
+          <a href="/best-treadmills-without-subscriptions/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmills Without Subscriptions</div>
+            <p class="c-blurb">Machines that work fully on their own and pair happily with any watch.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

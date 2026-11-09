@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "LifeSpan TX6-GlowUp Under Desk Treadmill Review (2026)";
 const description =
@@ -220,6 +219,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/lifespan-tx6-under-desk-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -240,66 +245,77 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+  stickyCta={{ text: "The Model Reviewed: LifeSpan TX6-GlowUp", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-lifespantx6underdesktreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-lifespantx6underdesktreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">LifeSpan TX6-GlowUp Under Desk Treadmill Review</h1>
+      <p class="ed-dek">
+        The TX6-GlowUp is LifeSpan’s heavy-duty walking pad: a 20-inch-wide belt, a 400 lb rating, a 6 mph ceiling and a 10-year frame warranty, built to sit under a standing desk for most of a working day. This review sets out which of its figures hold up across sources, which do not, what it costs on the day, and who should buy something cheaper.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          LifeSpan TX6-GlowUp <span class="text-[#5AA9FF]">Under Desk Treadmill Review</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The TX6-GlowUp is LifeSpan’s heavy-duty walking pad: a 20-inch-wide belt, a 400 lb rating, a 6 mph ceiling and a 10-year frame warranty, built to sit under a standing desk for most of a working day. This review sets out which of its figures hold up across sources, which do not, what it costs on the day, and who should buy something cheaper.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#specifications" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Specifications, Checked
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#merach-novawalk-w50-trekpad"><img src="https://m.media-amazon.com/images/I/41N86eQUrbL._SL500_.jpg" alt="MERACH NovaWalk W50 TrekPad" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>MERACH NovaWalk W50 TrekPad</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The LifeSpan TX6-GlowUp under desk treadmill is what you buy when a $200 walking pad is not
+          going to survive the way you plan to use it. LifeSpan rates it for 400 lb and seven hours a
+          day, puts a 20-inch belt on a phenolic deck, and backs the frame for ten years. Independent
+          sources agree on most of that. They do not agree on how much it weighs, how high you step
+          up onto it, or what its motor is really rated at, and LifeSpan does not publish the one
+          motor figure that would settle it. This review sets out what we could confirm on 5 November
+          2026, what we could not, what the TX6 costs, and when one of LifeSpan’s other desk
+          treadmills, or a far cheaper pad, is the better buy.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">The Model Reviewed:</span> <a href="#lifespan-tx6-glowup">LifeSpan TX6-GlowUp</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheaper LifeSpan:</span> <a href="#lifespan-tr1200pro-glowup">LifeSpan TR1200Pro-GlowUp</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Budget Alternative:</span> <a href="#merach-novawalk-w50-trekpad">MERACH NovaWalk W50 TrekPad</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Wider Still:</span> <a href="#imovr-unsit-desk-treadmill">iMovR Unsit Desk Treadmill</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we read LifeSpan’s US product page for the TX6-GlowUp, including its
           specification table, warranty, delivery and return banners, and LifeSpan’s full US product
@@ -316,75 +332,27 @@ const schema = {
           measurements. Prices are those LifeSpan showed on 5 November 2026 and change often. We earn a
           commission if you buy through the Amazon links on this page; it does not change what we
           say about any machine.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The Model Reviewed:</span>
-            <a href="#lifespan-tx6-glowup" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TX6-GlowUp</a>
-            <a href="#lifespan-tx6-glowup" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheaper LifeSpan:</span>
-            <a href="#lifespan-tr1200pro-glowup" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TR1200Pro-GlowUp</a>
-            <a href="#lifespan-tr1200pro-glowup" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Alternative:</span>
-            <a href="#merach-novawalk-w50-trekpad" class="font-bold text-gray-900 no-underline hover:underline">MERACH NovaWalk W50 TrekPad</a>
-            <a href="#merach-novawalk-w50-trekpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Wider Still:</span>
-            <a href="#imovr-unsit-desk-treadmill" class="font-bold text-gray-900 no-underline hover:underline">iMovR Unsit Desk Treadmill</a>
-            <a href="#imovr-unsit-desk-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. LifeSpan TX6-GlowUp: The Short Answer</a>
-          <a href="#tx6-vs-glowup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. TX6, TX6-GlowUp, “GlowUp Edition”: Is There a Difference?</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. LifeSpan TX6-GlowUp Specifications, Checked</a>
-          <a href="#motor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Motor Figure LifeSpan Prints, and the One It Does Not</a>
-          <a href="#belt-and-deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Belt, Deck and Who the 20-Inch Width Is For</a>
-          <a href="#desk-setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Desk Height, Power and Setting It Up</a>
-          <a href="#price-and-where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What the TX6 Costs, and Where to Buy It</a>
-          <a href="#warranty-and-service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warranty, Service and the Recall Check</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. TX6 vs TR1200, TR5000B Pro+, Unsit and a Budget Pad</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy the LifeSpan TX6-GlowUp</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">LifeSpan TX6-GlowUp: The Short Answer</a></li>
+            <li><a href="#tx6-vs-glowup">TX6, TX6-GlowUp, “GlowUp Edition”: Is There a Difference?</a></li>
+            <li><a href="#specifications">LifeSpan TX6-GlowUp Specifications, Checked</a></li>
+            <li><a href="#motor">The Motor Figure LifeSpan Prints, and the One It Does Not</a></li>
+            <li><a href="#belt-and-deck">Belt, Deck and Who the 20-Inch Width Is For</a></li>
+            <li><a href="#desk-setup">Desk Height, Power and Setting It Up</a></li>
+            <li><a href="#price-and-where-to-buy">What the TX6 Costs, and Where to Buy It</a></li>
+            <li><a href="#warranty-and-service">Warranty, Service and the Recall Check</a></li>
+            <li><a href="#alternatives">TX6 vs TR1200, TR5000B Pro+, Unsit and a Budget Pad</a></li>
+            <li><a href="#who-should-buy">Who Should Buy the LifeSpan TX6-GlowUp</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The LifeSpan TX6-GlowUp under desk treadmill is what you buy when a $200 walking pad is not
-          going to survive the way you plan to use it. LifeSpan rates it for 400 lb and seven hours a
-          day, puts a 20-inch belt on a phenolic deck, and backs the frame for ten years. Independent
-          sources agree on most of that. They do not agree on how much it weighs, how high you step
-          up onto it, or what its motor is really rated at, and LifeSpan does not publish the one
-          motor figure that would settle it. This review sets out what we could confirm on 5 November
-          2026, what we could not, what the TX6 costs, and when one of LifeSpan’s other desk
-          treadmills, or a far cheaper pad, is the better buy.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. LifeSpan TX6-GlowUp: The Short Answer</h2>
+          <h2>LifeSpan TX6-GlowUp: The Short Answer</h2>
 <p>
             <strong>The LifeSpan TX6-GlowUp is one of the few walking pads built and rated for long
             daily use by heavier and taller walkers, and at LifeSpan’s $1,399 sale price it is worth
@@ -397,9 +365,7 @@ const schema = {
             how long the belt is to the nearest inch, and what its motor is rated at. None of those
             disagreements changes whether the machine suits you, but the step-up height affects how
             high your desk has to go, and the motor figure is the one LifeSpan prints most
-            prominently while publishing no continuous rating behind it. The
-            <a href="#specifications" class="text-[#0F62FE] font-medium">specification table</a>
-            sets out each source.
+            prominently while publishing no continuous rating behind it. The <a href="#specifications" class="text-[#0F62FE] font-medium">specification table</a> sets out each source.
           </p>
           <p>
             Buy the TX6 if your walking sessions are long, you weigh more than most budget pads are
@@ -411,78 +377,67 @@ const schema = {
             5 November 2026.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="tx6-vs-glowup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. TX6, TX6-GlowUp, “GlowUp Edition”: Is There a Difference?</h2>
+          <h2>TX6, TX6-GlowUp, “GlowUp Edition”: Is There a Difference?</h2>
 <p>
             People search for this machine under several names — the LifeSpan TX6, the TX6-GlowUp,
             the “TX6 GlowUp edition” — as if they might be different products. As far as we can
@@ -510,7 +465,7 @@ const schema = {
         </div>
 
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. LifeSpan TX6-GlowUp Specifications, Checked</h2>
+          <h2>LifeSpan TX6-GlowUp Specifications, Checked</h2>
 <p>
             The table compares LifeSpan’s US product page with LifeSpan’s authorised dealer 360
             Fitness Superstore and an independent tracker that records LifeSpan’s page, the manual and
@@ -558,7 +513,7 @@ const schema = {
         </div>
 
         <div id="motor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Motor Figure LifeSpan Prints, and the One It Does Not</h2>
+          <h2>The Motor Figure LifeSpan Prints, and the One It Does Not</h2>
 <p>
             LifeSpan describes the TX6’s motor as a 4.5 HP peak brushless motor. A peak figure is the
             short burst a motor can produce, not what it delivers continuously for hours, and it is the
@@ -581,14 +536,12 @@ const schema = {
             What the missing number does mean is that you should not compare the TX6 with another pad
             on horsepower. A budget pad advertised at 3.5 HP is not more powerful than the TX6 because
             the number is bigger; it is quoting a different, equally unhelpful figure. Compare the
-            capacity, the daily-use rating, the belt and the warranty instead. Our guide to
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower</a>
-            explains why peak and continuous ratings diverge so far.
+            capacity, the daily-use rating, the belt and the warranty instead. Our guide to <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower</a> explains why peak and continuous ratings diverge so far.
           </p>
         </div>
 
         <div id="belt-and-deck" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Belt, Deck and Who the 20-Inch Width Is For</h2>
+          <h2>Belt, Deck and Who the 20-Inch Width Is For</h2>
 <p>
             The TX6’s defining figure is its belt width. Most walking pads run a belt of 15 to 16.5
             inches; the TX6’s is 20, the same as many full home treadmills. On a pad you walk on while
@@ -601,9 +554,7 @@ const schema = {
             stance and benefit from the room. Tall walkers take longer strides and benefit from the
             48-inch length as much as the width. And anyone planning to walk for hours benefits from
             not having to think about foot placement. If you are none of those, the width is a
-            comfort, not a necessity, and our
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            roundup covers narrower pads that cost a fraction of the price.
+            comfort, not a necessity, and our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup covers narrower pads that cost a fraction of the price.
           </p>
           <p>
             Under the belt, LifeSpan specifies a 0.7-inch phenolic deck on six compression shocks.
@@ -612,21 +563,17 @@ const schema = {
             self-lubricating, which LifeSpan describes as maintenance-free. That is a real advantage
             over pads that ask you to apply silicone every few weeks, although a self-lubricating belt
             still wears and still needs to be kept clean and centred. If you want to understand what
-            routine care a pad does need, our guide to
-            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
-            covers both kinds.
+            routine care a pad does need, our guide to <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a> covers both kinds.
           </p>
           <p>
             What the TX6 does not have is incline, a fold or a handrail. It is a flat walking deck,
             designed to stay under a desk, with two front wheels to roll it out when you need the
-            floor. If you want incline, look at the MERACH pad in the cards above or our
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            roundup. If you want something to hold, a pad with a handrail is a different product.
+            floor. If you want incline, look at the MERACH pad in the cards above or our <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a> roundup. If you want something to hold, a pad with a handrail is a different product.
           </p>
         </div>
 
         <div id="desk-setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Desk Height, Power and Setting It Up</h2>
+          <h2>Desk Height, Power and Setting It Up</h2>
 <p>
             Every under desk treadmill raises you off the floor, and the TX6 raises you more than most
             budget pads. Take LifeSpan’s 5.8-inch step-up figure as the planning number: the dealer’s
@@ -638,11 +585,7 @@ const schema = {
             your shoes on the floor. A standing desk that tops out at 48 inches suits most people of
             average height on the TX6; a tall user will need a desk that reaches 50 inches or more.
             Check the maximum height of your desk before you order, because it is the most common
-            reason a treadmill desk does not work. Our guide to
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
-            has the measurements, and our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers the desk side of the setup.
+            reason a treadmill desk does not work. Our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a> has the measurements, and our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers the desk side of the setup.
           </p>
           <p>
             Footprint is the next check. LifeSpan gives 60 by 28 inches. A standing desk needs enough
@@ -668,7 +611,7 @@ const schema = {
         </div>
 
         <div id="price-and-where-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What the TX6 Costs, and Where to Buy It</h2>
+          <h2>What the TX6 Costs, and Where to Buy It</h2>
 <p>
             On 5 November 2026 LifeSpan’s US store listed the TX6-GlowUp at $1,399, down from $1,499,
             and LifeSpan’s authorised dealer 360 Fitness Superstore listed it at $1,399 as well,
@@ -685,21 +628,16 @@ const schema = {
             product page, so read LifeSpan’s return policy for restocking fees and return freight
             before you order, since return shipping on a 90 lb machine is not trivial. On Amazon, check
             the delivery charge in the basket and the seller, since a third-party seller’s returns
-            may differ from LifeSpan’s. Our guides to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            and <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            explain what changes with the seller.
+            may differ from LifeSpan’s. Our guides to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> and <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> explain what changes with the seller.
           </p>
           <p>
             If you are shopping around <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a>, use $1,299 to $1,399 as the band a real discount
-            has to beat, and judge it on the delivered total, not against $1,899. Our
-            <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">walking pad deal watch</a>
-            covers the pads worth watching this season.
+            has to beat, and judge it on the delivered total, not against $1,899. Our <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">walking pad deal watch</a> covers the pads worth watching this season.
           </p>
         </div>
 
         <div id="warranty-and-service" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warranty, Service and the Recall Check</h2>
+          <h2>Warranty, Service and the Recall Check</h2>
 <p>
             LifeSpan, its dealer and the tracker all give the same warranty: ten years on the frame,
             two years on parts and one year on labour. The tracker notes the same terms apply whether
@@ -712,9 +650,7 @@ const schema = {
             On service, the record is mixed. The tracker reports a 2.2 out of 5 Trustpilot score from a
             small number of reviews and an A+ BBB rating with complaints on file, with recurring themes
             of slow customer service and some product failures after months of use, alongside owners
-            describing the TX6 as quiet and solid. Our
-            <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan brand guide</a>
-            covers the company’s service history in more detail. The sensible response is the usual
+            describing the TX6 as quiet and solid. Our <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan brand guide</a> covers the company’s service history in more detail. The sensible response is the usual
             one: register the machine, keep the serial number and proof of purchase, photograph the
             label, and use the return window to make sure it works as expected under your weight and at
             your pace.
@@ -722,14 +658,12 @@ const schema = {
           <p>
             We searched the US Consumer Product Safety Commission’s recall database on 5 November 2026
             for LifeSpan and found no recall of the TX6 or any other LifeSpan product. If you are
-            buying used, our guide to
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranties</a>
-            explains why most cover only the original purchaser.
+            buying used, our guide to <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranties</a> explains why most cover only the original purchaser.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. TX6 vs TR1200, TR5000B Pro+, Unsit and a Budget Pad</h2>
+          <h2>TX6 vs TR1200, TR5000B Pro+, Unsit and a Budget Pad</h2>
 <p>
             The TX6 sits between two other LifeSpan desk treadmills. On 5 November 2026 LifeSpan’s
             store listed the TR1200Pro Glow-Up at $1,199 and the TR5000B Pro+ Glow-Up at $1,699, both as
@@ -768,20 +702,15 @@ const schema = {
           </p>
           <p>
             <strong>TX6 or Unsit?</strong> The Unsit is 30 inches wide and built for slow all-day
-            walking, but costs about $1,200 more and stops at 2 mph. Our guides to
-            <a href="/inmovement-treadmill-desk/" class="text-[#0F62FE] font-medium">InMovement’s Unsit</a>
-            and the <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium">iMovR Unsit bundle</a>
-            cover it. <strong>TX6 or a budget pad?</strong> The MERACH W50 matches the 400 lb rating
+            walking, but costs about $1,200 more and stops at 2 mph. Our guides to <a href="/inmovement-treadmill-desk/" class="text-[#0F62FE] font-medium">InMovement’s Unsit</a> and the <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium">iMovR Unsit bundle</a> cover it. <strong>TX6 or a budget pad?</strong> The MERACH W50 matches the 400 lb rating
             at a fifth of the price, with a narrower, shorter belt and two years of cover rather than
             ten. For an hour a day it is the better value; for six hours a day, the TX6’s deck and
-            warranty earn their cost. Our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            roundup compares both.
+            warranty earn their cost. Our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> roundup compares both.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy the LifeSpan TX6-GlowUp</h2>
+          <h2>Who Should Buy the LifeSpan TX6-GlowUp</h2>
 <p>
             <strong>Buy the TX6 if</strong> you will walk at a desk for several hours most working
             days, you weigh more than about 250 lb or are tall enough that a 40-inch belt feels short,
@@ -792,11 +721,7 @@ const schema = {
           <p>
             <strong>Buy something else if</strong> you walk for an hour or less a day, weigh under
             about 220 lb, or want to jog, fold the machine away or walk on an incline. A good budget pad
-            does an hour a day at a fraction of the price, and a folding treadmill does running. Our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under desk treadmills</a>
-            guide and the
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
-            roundup cover the wider field.
+            does an hour a day at a fraction of the price, and a folding treadmill does running. Our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under desk treadmills</a> guide and the <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> roundup cover the wider field.
           </p>
           <p>
             <strong>Either way</strong>, buy at LifeSpan’s sale price rather than a reference price,
@@ -805,136 +730,154 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the LifeSpan TX6-GlowUp a good under desk treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On its published figures and the independent sources we checked, yes, for long daily desk walking by heavier or taller users. LifeSpan rates it for 400 lb and seven hours a day, with a 20-inch belt, 0.4 to 6 mph and a 10-year frame warranty. Its weight, step-up height and motor figures differ between sources. We have not tested it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the LifeSpan TX6 and the TX6-GlowUp?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We found no difference. LifeSpan sells one model, the TX6-GlowUp, in black or white; TX6 is the model and part number and Amazon’s listing name. GlowUp is LifeSpan’s name for its current generation of desk treadmills and appears on the TR1200Pro and TR5000B Pro+ too.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does the LifeSpan TX6-GlowUp cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 5 November 2026 LifeSpan listed it at $1,399, down from $1,499, and its dealer 360 Fitness Superstore also showed $1,399. An independent tracker recorded $1,299 at LifeSpan and Amazon in February 2026, with a $150 Amazon delivery charge. Prices change often.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit of the LifeSpan TX6?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                LifeSpan gives a maximum user weight of 400 lb, and its dealer, an independent tracker and the Amazon listing title give the same figure. LifeSpan also rates it for up to seven hours of use a day.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast does the LifeSpan TX6 go?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                LifeSpan gives a speed range of 0.4 to 6.0 mph using the included remote. With LifeSpan’s optional Omni Hub desk console, its dealer and an independent tracker say the top speed is limited to 4 mph.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I plug the LifeSpan TX6 into any outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                LifeSpan specifies a dedicated 115 V circuit with a standard NEMA 5-15 outlet and says not to plug it into a GFCI outlet, because it may trip. Check the outlet at your desk before delivery, especially in a garage, basement or office.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a LifeSpan TX6</h2>
+          <p>The TX6 is a straightforward machine to buy well. These are the errors that cost buyers money or a working setup.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Judging it by an Amazon star rating</h3>
+              <p>The Amazon listing shares reviews with older LifeSpan models, some written years before the TX6 existed. Read the TX6-specific reviews, or ignore the average and rely on the published figures and the return window.</p>
+            </li>
+            <li>
+              <h3>Planning desk height from the lowest step-up figure</h3>
+              <p>Sources give 4.6, 5 and 5.8 inches. Plan from 5.8 and add about six inches to your usual standing-desk height. A desk that stops an inch short makes the whole setup uncomfortable.</p>
+            </li>
+            <li>
+              <h3>Plugging it into a GFCI outlet or a power strip</h3>
+              <p>LifeSpan says the TX6 may trip a GFCI outlet and wants a dedicated circuit. Check the outlet near your desk before delivery day, and do not run it from a surge strip or extension cord.</p>
+            </li>
+            <li>
+              <h3>Paying the $1,899 reference price, or ignoring delivery</h3>
+              <p>LifeSpan and its dealer both showed $1,399 on 5 November 2026, and Amazon has charged a delivery fee on top. Compare delivered totals, and treat any discount from $1,899 as no discount at all.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a LifeSpan TX6</h2>
-          <p class="text-gray-700 leading-relaxed">The TX6 is a straightforward machine to buy well. These are the errors that cost buyers money or a working setup.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging it by an Amazon star rating</h3>
-              <p class="text-gray-700 text-sm m-0">The Amazon listing shares reviews with older LifeSpan models, some written years before the TX6 existed. Read the TX6-specific reviews, or ignore the average and rely on the published figures and the return window.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Planning desk height from the lowest step-up figure</h3>
-              <p class="text-gray-700 text-sm m-0">Sources give 4.6, 5 and 5.8 inches. Plan from 5.8 and add about six inches to your usual standing-desk height. A desk that stops an inch short makes the whole setup uncomfortable.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Plugging it into a GFCI outlet or a power strip</h3>
-              <p class="text-gray-700 text-sm m-0">LifeSpan says the TX6 may trip a GFCI outlet and wants a dedicated circuit. Check the outlet near your desk before delivery day, and do not run it from a surge strip or extension cord.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying the $1,899 reference price, or ignoring delivery</h3>
-              <p class="text-gray-700 text-sm m-0">LifeSpan and its dealer both showed $1,399 on 5 November 2026, and Amazon has charged a delivery fee on top. Compare delivered totals, and treat any discount from $1,899 as no discount at all.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/lifespan-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LifeSpan Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The whole LifeSpan range, what is in stock, and the company’s service record.</p>
-            </a>
-            <a href="/inmovement-treadmill-desk/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Rival</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">InMovement Unsit Treadmill Desk</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The 30-inch-wide office treadmill, bought direct from its maker.</p>
-            </a>
-            <a href="/best-walking-pads-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads for Heavy People</p>
-              <p class="text-sm text-gray-500 leading-relaxed">High-capacity pads from about $300, with the ratings that hold up across sources.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The LifeSpan TX6-GlowUp is worth its price for one kind of buyer</strong>:
             someone heavier or taller than a budget pad is built for, who will walk at a desk for
             several hours most days. Its 20-inch belt, 400 lb rating, seven-hour daily figure and
             ten-year frame warranty hold up across sources; its weight, step-up height and motor
             figures do not, and LifeSpan publishes no continuous motor rating.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Buy it at LifeSpan’s sale price of about $1,300 to $1,400, plan the desk from a 5.8-inch
             step-up and a non-GFCI outlet, and read the return terms first. If you walk an hour a day,
-            the <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>
-            do that job for far less.
+            the <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a> do that job for far less.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/lifespan-treadmills/">LifeSpan Treadmills</a></li>
+            <li><a href="/inmovement-treadmill-desk/">InMovement Unsit Treadmill Desk</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the LifeSpan TX6-GlowUp a good under desk treadmill?</h3></summary>
+            <p class="faq-a">
+              On its published figures and the independent sources we checked, yes, for long daily desk walking by heavier or taller users. LifeSpan rates it for 400 lb and seven hours a day, with a 20-inch belt, 0.4 to 6 mph and a 10-year frame warranty. Its weight, step-up height and motor figures differ between sources. We have not tested it.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the LifeSpan TX6 and the TX6-GlowUp?</h3></summary>
+            <p class="faq-a">
+              We found no difference. LifeSpan sells one model, the TX6-GlowUp, in black or white; TX6 is the model and part number and Amazon’s listing name. GlowUp is LifeSpan’s name for its current generation of desk treadmills and appears on the TR1200Pro and TR5000B Pro+ too.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much does the LifeSpan TX6-GlowUp cost?</h3></summary>
+            <p class="faq-a">
+              On 5 November 2026 LifeSpan listed it at $1,399, down from $1,499, and its dealer 360 Fitness Superstore also showed $1,399. An independent tracker recorded $1,299 at LifeSpan and Amazon in February 2026, with a $150 Amazon delivery charge. Prices change often.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit of the LifeSpan TX6?</h3></summary>
+            <p class="faq-a">
+              LifeSpan gives a maximum user weight of 400 lb, and its dealer, an independent tracker and the Amazon listing title give the same figure. LifeSpan also rates it for up to seven hours of use a day.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How fast does the LifeSpan TX6 go?</h3></summary>
+            <p class="faq-a">
+              LifeSpan gives a speed range of 0.4 to 6.0 mph using the included remote. With LifeSpan’s optional Omni Hub desk console, its dealer and an independent tracker say the top speed is limited to 4 mph.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I plug the LifeSpan TX6 into any outlet?</h3></summary>
+            <p class="faq-a">
+              LifeSpan specifies a dedicated 115 V circuit with a standard NEMA 5-15 outlet and says not to plug it into a GFCI outlet, because it may trip. Check the outlet at your desk before delivery, especially in a garage, basement or office.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/lifespan-treadmills/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">LifeSpan Treadmills</div>
+            <p class="c-blurb">The whole LifeSpan range, what is in stock, and the company’s service record.</p>
+          </a>
+          <a href="/inmovement-treadmill-desk/" class="card">
+            <div class="c-kicker">Rival</div>
+            <div class="c-title">InMovement Unsit Treadmill Desk</div>
+            <p class="c-blurb">The 30-inch-wide office treadmill, bought direct from its maker.</p>
+          </a>
+          <a href="/best-walking-pads-for-heavy-people/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads for Heavy People</div>
+            <p class="c-blurb">High-capacity pads from about $300, with the ratings that hold up across sources.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

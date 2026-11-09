@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "XTERRA Treadmills (2026): TRX1200, TR95H Hiker, TR150 and Range";
 const description =
@@ -231,6 +230,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/xterra-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -252,66 +257,70 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Current Range", link: "#lineup" }}
+  stickyCta={{ text: "Best Compact Pick: XTERRA TRX1200", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-xterratreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-xterratreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer’s Guide</span>
+      </nav>
+      <h1 class="ed-title">XTERRA Treadmills: A Buyer’s Guide to the Current Range</h1>
+      <p class="ed-dek">
+        XTERRA Fitness is a budget-to-mid-price treadmill brand owned by Dyaco, the Taiwanese company behind Spirit Fitness, and sold through its own site, Amazon and big-box stores. This guide covers the ten treadmills on XTERRA’s US site, the sale prices, the figures XTERRA itself publishes two different ways, the much-searched TR95H Hiker and TRX1200, what happened to the TR150, and who an XTERRA suits.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer’s Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          XTERRA Treadmills: <span class="text-[#5AA9FF]">A Buyer’s Guide to the Current Range</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          XTERRA Fitness is a budget-to-mid-price treadmill brand owned by Dyaco, the Taiwanese company behind Spirit Fitness, and sold through its own site, Amazon and big-box stores. This guide covers the ten treadmills on XTERRA’s US site, the sale prices, the figures XTERRA itself publishes two different ways, the much-searched TR95H Hiker and TRX1200, what happened to the TR150, and who an XTERRA suits.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Current Range
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          XTERRA is one of the names you meet most often when shopping for an inexpensive treadmill:
+          on Amazon, at Target and Academy, at Dick's and in warehouse clubs. The range runs from compact
+          folders around $500 to a $2,200 "Hiker" with a standing desk, all sold at what XTERRA presents
+          as large discounts. The machines are built and backed by Dyaco, a large Taiwanese fitness
+          manufacturer that also owns Spirit Fitness. This guide lists every treadmill on XTERRA's US site
+          on 5 November 2026 with its price, sorts out which figures the sources agree on, explains why the
+          TR150 most reviews mention is no longer on that list, and helps you pick between a compact
+          folder, a Sport-series runner and a Hiker.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.5k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact Pick:</span> <a href="#xterra-trx1200">XTERRA TRX1200</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Running:</span> <a href="#xterra-tr75">XTERRA TR75</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Walking Desk Pick:</span> <a href="#xterra-tr95h-hiker">XTERRA TR95H Hiker</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Older Model:</span> <a href="#xterra-tr150">XTERRA TR150</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we checked XTERRA Fitness's US site (its treadmill collection page and the
           TRX1000, TRX1200, TR75 and TR95H product pages), retailer listings at Target, Academy, Dick's
@@ -325,73 +334,25 @@ const schema = {
           tested any XTERRA treadmill. Prices are XTERRA's sale prices on 5 November 2026, shown against
           higher compare-at prices; they change often. As an Amazon Associate we earn from qualifying
           purchases; that does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compact Pick:</span>
-            <a href="#xterra-trx1200" class="font-bold text-gray-900 no-underline hover:underline">XTERRA TRX1200</a>
-            <a href="#xterra-trx1200" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Running:</span>
-            <a href="#xterra-tr75" class="font-bold text-gray-900 no-underline hover:underline">XTERRA TR75</a>
-            <a href="#xterra-tr75" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking Desk Pick:</span>
-            <a href="#xterra-tr95h-hiker" class="font-bold text-gray-900 no-underline hover:underline">XTERRA TR95H Hiker</a>
-            <a href="#xterra-tr95h-hiker" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Older Model:</span>
-            <a href="#xterra-tr150" class="font-bold text-gray-900 no-underline hover:underline">XTERRA TR150</a>
-            <a href="#xterra-tr150" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy an XTERRA Treadmill? The Short Answer</a>
-          <a href="#who-makes-xterra" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes XTERRA Treadmills?</a>
-          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current XTERRA Treadmill Range</a>
-          <a href="#tr95h-hiker" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The TR95H Hiker: What It Is and the Conflicting Figures</a>
-          <a href="#compact-series" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Compact Series: TRX1000, TRX1200, TRX1400 and the TR150</a>
-          <a href="#sport-series" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Sport Series: The XTERRAs for Running</a>
-          <a href="#where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Where to Buy an XTERRA, and the Warranty Fine Print</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Which XTERRA Should You Buy?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy an XTERRA Treadmill? The Short Answer</a></li>
+            <li><a href="#who-makes-xterra">Who Makes XTERRA Treadmills?</a></li>
+            <li><a href="#lineup">The Current XTERRA Treadmill Range</a></li>
+            <li><a href="#tr95h-hiker">The TR95H Hiker: What It Is and the Conflicting Figures</a></li>
+            <li><a href="#compact-series">The Compact Series: TRX1000, TRX1200, TRX1400 and the TR150</a></li>
+            <li><a href="#sport-series">The Sport Series: The XTERRAs for Running</a></li>
+            <li><a href="#where-to-buy">Where to Buy an XTERRA, and the Warranty Fine Print</a></li>
+            <li><a href="#who-should-buy">Which XTERRA Should You Buy?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          XTERRA is one of the names you meet most often when shopping for an inexpensive treadmill:
-          on Amazon, at Target and Academy, at Dick's and in warehouse clubs. The range runs from compact
-          folders around $500 to a $2,200 "Hiker" with a standing desk, all sold at what XTERRA presents
-          as large discounts. The machines are built and backed by Dyaco, a large Taiwanese fitness
-          manufacturer that also owns Spirit Fitness. This guide lists every treadmill on XTERRA's US site
-          on 5 November 2026 with its price, sorts out which figures the sources agree on, explains why the
-          TR150 most reviews mention is no longer on that list, and helps you pick between a compact
-          folder, a Sport-series runner and a Hiker.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy an XTERRA Treadmill? The Short Answer</h2>
+          <h2>Should You Buy an XTERRA Treadmill? The Short Answer</h2>
 <p>
             <strong>Buy an XTERRA if you want an inexpensive, compact treadmill for walking and light
             jogging, or a full-length folder for running at about $1,200, and you read the sale price and the
@@ -400,8 +361,7 @@ const schema = {
           <p>
             On 5 November 2026 XTERRA's US site listed ten treadmills in four series, from the $499.99 TRX1000
             and WS200 walking treadmill to the $2,199.99 TR95H Hiker, every one shown against a much higher
-            compare-at price. The three most searched-for models are easy to place. The
-            <strong>TRX1200</strong> ($549.99) is a compact folder with ten levels of power incline and
+            compare-at price. The three most searched-for models are easy to place. The <strong>TRX1200</strong> ($549.99) is a compact folder with ten levels of power incline and
             Bluetooth. The <strong>TR95H Hiker</strong> ($2,199.99) is a walking and climbing treadmill with a
             standing desk. The <strong>TR150</strong>, the model most older reviews discuss, was no longer on
             XTERRA's US treadmill page; the current TRX1000 has the same figures.
@@ -417,15 +377,13 @@ const schema = {
         </div>
 
         <div id="who-makes-xterra" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes XTERRA Treadmills?</h2>
+          <h2>Who Makes XTERRA Treadmills?</h2>
 <p>
             XTERRA Fitness is owned by Dyaco International, a Taiwanese fitness equipment manufacturer.
             Dyaco's history page records it becoming a licence partner for the XTERRA name in 2009 and later
             acquiring the brand rights for XTERRA fitness equipment, and its brand page describes XTERRA as a
-            Dyaco-owned home fitness line. Dyaco also owns
-            <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit Fitness</a>, which it
-            acquired in 2008, and describes itself as the global distributor of
-            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole Fitness</a>, which it calls a partner
+            Dyaco-owned home fitness line. Dyaco also owns <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit Fitness</a>, which it
+            acquired in 2008, and describes itself as the global distributor of <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole Fitness</a>, which it calls a partner
             brand rather than one it owns. The XTERRA name comes from the off-road triathlon series; the
             treadmills are made under Dyaco's rights to the name for fitness equipment, not by the race organiser.
           </p>
@@ -445,7 +403,7 @@ const schema = {
         </div>
 
         <div id="lineup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current XTERRA Treadmill Range</h2>
+          <h2>The Current XTERRA Treadmill Range</h2>
 <p>
             The table lists every treadmill on XTERRA's US treadmill page on 5 November 2026 with the figures
             and prices that page shows. The product cards below carry only figures that XTERRA and at least
@@ -488,86 +446,74 @@ const schema = {
             grade matters to you.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="tr95h-hiker" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The TR95H Hiker: What It Is and the Conflicting Figures</h2>
+          <h2>The TR95H Hiker: What It Is and the Conflicting Figures</h2>
 <p>
             "XTERRA TR95H Hiker treadmill" is one of the most searched XTERRA terms, and the machine is
             different from the rest of the range. It is a walking treadmill with a built-in standing desktop
             and two modes. In XTERRA's running mode, speed runs from 0.5 to 7.5 mph at incline levels 0 to 15;
             in climbing mode, speed is limited to 0.5 to 3.7 mph and incline runs from level 15 to level 40.
             That design — a slow, very steep climbing mode — is aimed at hikers training for elevation and at
-            people who want an <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline-trainer</a>
-            style workout, plus a desk for walking while working.
+            people who want an <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline-trainer</a> style workout, plus a desk for walking while working.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Two motors, two decks</h3>
           <p>
@@ -582,11 +528,8 @@ const schema = {
           <p>
             The TR95H suits someone who mainly walks, wants a desk and steep intervals on one machine, and has
             about $2,200 to spend. XTERRA's product page gives a 300 lb maximum user, a 221.6 lb weight and four
-            transport wheels that let it turn in place. If you want only a desk treadmill, a dedicated
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk</a> or walking pad
-            under your own desk costs far less; our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers the set-up. If you want very steep incline with a running deck, see our list of
-            <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>.
+            transport wheels that let it turn in place. If you want only a desk treadmill, a dedicated <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk</a> or walking pad
+            under your own desk costs far less; our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers the set-up. If you want very steep incline with a running deck, see our list of <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>.
           </p>
           <p>
             The cheaper TR75H Hiker ($1,399.99) has a 2.5 HP motor and a 20 by 48-inch deck on XTERRA's page.
@@ -595,7 +538,7 @@ const schema = {
         </div>
 
         <div id="compact-series" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Compact Series: TRX1000, TRX1200, TRX1400 and the TR150</h2>
+          <h2>The Compact Series: TRX1000, TRX1200, TRX1400 and the TR150</h2>
 <p>
             The Compact series is where most XTERRA buyers start, and it is where the TR150 used to sit. All
             three current models have a 2.25 HP motor, a 250 lb rating on the models we checked, a 10 mph top
@@ -630,16 +573,14 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The WalkSlim models</h3>
           <p>
             The WS200 and WS300 are <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>walking treadmills</a> that XTERRA sells fully assembled; the WS300 adds ten
-            incline levels. They compete with <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">walking pads</a>
-            and are for walking only.
+            incline levels. They compete with <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">walking pads</a> and are for walking only.
           </p>
         </div>
 
         <div id="sport-series" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Sport Series: The XTERRAs for Running</h2>
+          <h2>The Sport Series: The XTERRAs for Running</h2>
 <p>
-            If you plan to run, the Sport series is the part of XTERRA's range to look at. The
-            <strong>TR75</strong> ($1,199.99) and <strong>TR85</strong> ($1,499.99) both have 20 by 60-inch
+            If you plan to run, the Sport series is the part of XTERRA's range to look at. The <strong>TR75</strong> ($1,199.99) and <strong>TR85</strong> ($1,499.99) both have 20 by 60-inch
             decks, the length most runners need at speed; the TR65 ($899.99) has a 20 by 55-inch deck that suits
             walkers and joggers better. XTERRA lists the TR75 at 3.25 HP, 0.5 to 12 mph and 350 lb, with lifetime
             frame and motor cover, two years on parts and one year of in-home labour. The TR85 adds a 3.5 HP
@@ -648,25 +589,19 @@ const schema = {
           <p>
             Those warranty terms are a step up from the Compact series, and the 350 lb rating is unusual at the
             price. At about $1,200 the TR75 competes with entry folders from Horizon and Sole and with the
-            better Amazon brands. Our
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill picks</a> and
-            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">budget treadmill guide</a>
-            compare them; for heavier users, see
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>.
+            better Amazon brands. Our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill picks</a> and <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">budget treadmill guide</a> compare them; for heavier users, see <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>.
           </p>
         </div>
 
         <div id="where-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Where to Buy an XTERRA, and the Warranty Fine Print</h2>
+          <h2>Where to Buy an XTERRA, and the Warranty Fine Print</h2>
 <p>
             XTERRA sells through its own US site and widely through retailers. In search results on 5
             November 2026 we saw XTERRA treadmills listed at Amazon, Target, Academy, Dick's Sporting Goods,
             Lowe's, BJ's, QVC and Costco. Prices are close across sellers but not identical: the TRX1200 was
             $549.99 at XTERRA and $599.99 on Academy's listing, and the TR75 between $1,099.99 and $1,299.99.
-            Our guides to <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy</a> and
-            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's</a> treadmills
-            and to <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">treadmills on Amazon</a>
-            cover each seller's returns and delivery.
+            Our guides to <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">Academy</a> and <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's</a> treadmills
+            and to <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">treadmills on Amazon</a> cover each seller's returns and delivery.
           </p>
           <ul>
             <li><strong>XTERRA's site</strong> offered free shipping and a 30-day money-back guarantee on the
@@ -678,29 +613,23 @@ const schema = {
             true of every treadmill, and XTERRA's manuals are the authority for your model.</li>
           </ul>
           <p>
-            Read our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            before choosing between a cheap folder with 90-day parts cover and a slightly dearer one with two
+            Read our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> before choosing between a cheap folder with 90-day parts cover and a slightly dearer one with two
             years.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Which XTERRA Should You Buy?</h2>
+          <h2>Which XTERRA Should You Buy?</h2>
 <p>
             <strong>For walking and light jogging in a small space,</strong> buy the TRX1200. For $50 more than
-            the TRX1000 it adds powered incline and Bluetooth. <strong>For running or a heavier user,</strong>
-            buy the TR75, with its 20 by 60-inch deck, 350 lb rating and longer warranty.
-            <strong>For walking at a desk and steep climbing,</strong> the TR95H Hiker, after confirming its
+            the TRX1000 it adds powered incline and Bluetooth. <strong>For running or a heavier user,</strong> buy the TR75, with its 20 by 60-inch deck, 350 lb rating and longer warranty. <strong>For walking at a desk and steep climbing,</strong> the TR95H Hiker, after confirming its
             deck size with XTERRA. <strong>For the lowest price,</strong> a TR150 or TRX1000 at about $500 or
             less.
           </p>
           <p>
             <strong>Look elsewhere if:</strong> you run fast or often (a 2.25 HP motor and 50-inch deck are not
             built for it); you weigh over 250 lb and are looking at the Compact series; or you want long parts
-            and labour cover, which brands like <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole</a>
-            offer at a higher price. For Zwift running, check our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            before relying on a 10 mph machine.
+            and labour cover, which brands like <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole</a> offer at a higher price. For Zwift running, check our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> before relying on a 10 mph machine.
           </p>
           <p class="text-sm text-gray-500">
             This guide is about equipment, not health. If you are buying on a doctor's or physical therapist's
@@ -708,152 +637,170 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes XTERRA treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                XTERRA Fitness is owned by Dyaco International, a Taiwanese fitness manufacturer that also owns Spirit Fitness and distributes Sole. Dyaco’s history page says it became an XTERRA licence partner in 2009 and later acquired the brand rights for XTERRA fitness equipment. The name comes from the off-road triathlon series.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are XTERRA treadmills good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For their price, they are reasonable, with a real manufacturer behind them and lifetime frame cover. The cheaper Compact models have 2.25 HP motors, 16 by 50-inch decks, a 250 lb limit and 90-day parts and labour cover, so they suit walkers. The Sport series TR75 and TR85 have 20 by 60-inch decks for running. We have not tested them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the XTERRA TR95H Hiker treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A walking and climbing treadmill with a built-in standing desktop. XTERRA lists a running mode to 7.5 mph at incline levels 0 to 15 and a climbing mode to 3.7 mph at levels 15 to 40, with a 300 lb limit. XTERRA gives two different motors and decks for it, 3.0 HP and 20 by 52 inches or 3.5 HP and 20 by 60. It was $2,199.99 on 5 November 2026.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the XTERRA TRX1000 and TRX1200?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The TRX1200 adds ten levels of electronic incline and built-in Bluetooth FTMS for apps such as Zwift and Kinomap; the TRX1000 has three manual incline levels and no Bluetooth. Both have a 2.25 HP motor, a 16 by 50-inch deck, 10 mph and a 250 lb limit. XTERRA priced them $50 apart on 5 November 2026.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the XTERRA TR150 discontinued?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It was not on XTERRA’s US treadmill page on 5 November 2026, but we found no XTERRA statement that it is discontinued, and it was still listed on Amazon. The current TRX1000 has the same headline figures: 2.25 HP, a 16 by 50-inch deck, 10 mph, three manual incline levels and a 250 lb limit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty do XTERRA treadmills have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the series. XTERRA lists lifetime frame, one year on the motor and 90 days on deck, parts and in-home labour for the TRX1000 and TRX1200; lifetime frame and motor, two years on parts and one year of labour for the TR75; and lifetime frame, two years on parts and one year of labour for the TR95H.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Have XTERRA treadmills been recalled?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We searched the US Consumer Product Safety Commission’s recall database for XTERRA and for its owner, Dyaco, on 5 November 2026 and found no recall of any XTERRA product.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an XTERRA Treadmill</h2>
+          <p>XTERRA’s range is easy to buy and easy to buy wrongly. These are the commonest mismatches.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a 50-inch deck to run on</h3>
+              <p>The Compact and WalkSlim models have 16 by 50-inch decks and 10 mph limits, which suit walking and light jogging. Runners need a longer deck at speed. If you plan to run, start with the Sport series TR75 or TR85, whose decks are 20 by 60 inches.</p>
+            </li>
+            <li>
+              <h3>Trusting the compare-at price</h3>
+              <p>Every XTERRA on its US site was shown against a compare-at price 40% to 60% higher, with urgency badges. The sale price is the real price, and other retailers charge similar amounts. Compare the sale price with other brands’ actual prices, not with XTERRA’s list price.</p>
+            </li>
+            <li>
+              <h3>Ordering the TR95H without confirming the deck</h3>
+              <p>XTERRA’s own pages give the TR95H Hiker a 20 by 52-inch or a 20 by 60-inch running surface, and a 3.0 or 3.5 HP motor. For a walking and climbing machine the difference matters less; for anyone who wants to jog on it, it matters a lot. Ask XTERRA to confirm in writing.</p>
+            </li>
+            <li>
+              <h3>Ignoring the 90-day parts cover</h3>
+              <p>The Compact series carries 90 days on parts, deck and labour and one year on the motor. A fault after three months is your bill. If you will use the treadmill daily, the TR75’s two years of parts and lifetime motor cover, or another brand’s longer terms, may be worth the extra cost.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an XTERRA Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">XTERRA’s range is easy to buy and easy to buy wrongly. These are the commonest mismatches.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a 50-inch deck to run on</h3>
-              <p class="text-gray-700 text-sm m-0">The Compact and WalkSlim models have 16 by 50-inch decks and 10 mph limits, which suit walking and light jogging. Runners need a longer deck at speed. If you plan to run, start with the Sport series TR75 or TR85, whose decks are 20 by 60 inches.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the compare-at price</h3>
-              <p class="text-gray-700 text-sm m-0">Every XTERRA on its US site was shown against a compare-at price 40% to 60% higher, with urgency badges. The sale price is the real price, and other retailers charge similar amounts. Compare the sale price with other brands’ actual prices, not with XTERRA’s list price.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering the TR95H without confirming the deck</h3>
-              <p class="text-gray-700 text-sm m-0">XTERRA’s own pages give the TR95H Hiker a 20 by 52-inch or a 20 by 60-inch running surface, and a 3.0 or 3.5 HP motor. For a walking and climbing machine the difference matters less; for anyone who wants to jog on it, it matters a lot. Ask XTERRA to confirm in writing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the 90-day parts cover</h3>
-              <p class="text-gray-700 text-sm m-0">The Compact series carries 90 days on parts, deck and labour and one year on the motor. A fault after three months is your bill. If you will use the treadmill daily, the TR75’s two years of parts and lifetime motor cover, or another brand’s longer terms, may be worth the extra cost.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/spirit-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sister brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Spirit Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Dyaco’s heavier-built line, for buyers who outgrow an XTERRA.</p>
-            </a>
-            <a href="/best-treadmills-under-500/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Budget</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $500</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The cheap folders worth buying, including XTERRA’s Compact series rivals.</p>
-            </a>
-            <a href="/best-folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Folding</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Folding treadmills sorted by use, from walking to running.</p>
-            </a>
-            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Desk</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Walking at work: desks, under-desk treadmills and what to look for.</p>
-            </a>
-            <a href="/oma-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">OMA Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">XTERRA makes inexpensive treadmills with a real manufacturer behind
           them: the TRX1200 is the compact folder to buy at $549.99, with powered incline and Bluetooth,
           and the TR75 is the XTERRA for running, with a 20 by 60-inch deck and a 350 lb rating at
           $1,199.99, on XTERRA's site on 5 November 2026.</strong>
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Read the fine print before you buy: 90 days of parts cover on the Compact series, incline stated
           in levels rather than percent, and two different sets of figures for the TR95H Hiker. If you need
-          a heavier-duty machine, Dyaco's own
-          <a href="/spirit-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Spirit</a> range is the
+          a heavier-duty machine, Dyaco's own <a href="/spirit-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Spirit</a> range is the
           next step up.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/spirit-treadmills/">Spirit Fitness Treadmills</a></li>
+            <li><a href="/best-treadmills-under-500/">Best Treadmills Under $500</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Who makes XTERRA treadmills?</h3></summary>
+            <p class="faq-a">
+              XTERRA Fitness is owned by Dyaco International, a Taiwanese fitness manufacturer that also owns Spirit Fitness and distributes Sole. Dyaco’s history page says it became an XTERRA licence partner in 2009 and later acquired the brand rights for XTERRA fitness equipment. The name comes from the off-road triathlon series.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are XTERRA treadmills good?</h3></summary>
+            <p class="faq-a">
+              For their price, they are reasonable, with a real manufacturer behind them and lifetime frame cover. The cheaper Compact models have 2.25 HP motors, 16 by 50-inch decks, a 250 lb limit and 90-day parts and labour cover, so they suit walkers. The Sport series TR75 and TR85 have 20 by 60-inch decks for running. We have not tested them.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the XTERRA TR95H Hiker treadmill?</h3></summary>
+            <p class="faq-a">
+              A walking and climbing treadmill with a built-in standing desktop. XTERRA lists a running mode to 7.5 mph at incline levels 0 to 15 and a climbing mode to 3.7 mph at levels 15 to 40, with a 300 lb limit. XTERRA gives two different motors and decks for it, 3.0 HP and 20 by 52 inches or 3.5 HP and 20 by 60. It was $2,199.99 on 5 November 2026.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the XTERRA TRX1000 and TRX1200?</h3></summary>
+            <p class="faq-a">
+              The TRX1200 adds ten levels of electronic incline and built-in Bluetooth FTMS for apps such as Zwift and Kinomap; the TRX1000 has three manual incline levels and no Bluetooth. Both have a 2.25 HP motor, a 16 by 50-inch deck, 10 mph and a 250 lb limit. XTERRA priced them $50 apart on 5 November 2026.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the XTERRA TR150 discontinued?</h3></summary>
+            <p class="faq-a">
+              It was not on XTERRA’s US treadmill page on 5 November 2026, but we found no XTERRA statement that it is discontinued, and it was still listed on Amazon. The current TRX1000 has the same headline figures: 2.25 HP, a 16 by 50-inch deck, 10 mph, three manual incline levels and a 250 lb limit.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty do XTERRA treadmills have?</h3></summary>
+            <p class="faq-a">
+              It depends on the series. XTERRA lists lifetime frame, one year on the motor and 90 days on deck, parts and in-home labour for the TRX1000 and TRX1200; lifetime frame and motor, two years on parts and one year of labour for the TR75; and lifetime frame, two years on parts and one year of labour for the TR95H.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Have XTERRA treadmills been recalled?</h3></summary>
+            <p class="faq-a">
+              We searched the US Consumer Product Safety Commission’s recall database for XTERRA and for its owner, Dyaco, on 5 November 2026 and found no recall of any XTERRA product.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/spirit-treadmills/" class="card">
+            <div class="c-kicker">Sister brand</div>
+            <div class="c-title">Spirit Fitness Treadmills</div>
+            <p class="c-blurb">Dyaco’s heavier-built line, for buyers who outgrow an XTERRA.</p>
+          </a>
+          <a href="/best-treadmills-under-500/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">Best Treadmills Under $500</div>
+            <p class="c-blurb">The cheap folders worth buying, including XTERRA’s Compact series rivals.</p>
+          </a>
+          <a href="/best-folding-treadmills/" class="card">
+            <div class="c-kicker">Folding</div>
+            <div class="c-title">Best Folding Treadmills</div>
+            <p class="c-blurb">Folding treadmills sorted by use, from walking to running.</p>
+          </a>
+          <a href="/best-treadmill-desks/" class="card">
+            <div class="c-kicker">Desk</div>
+            <div class="c-title">Best Treadmill Desks</div>
+            <p class="c-blurb">Walking at work: desks, under-desk treadmills and what to look for.</p>
+          </a>
+          <a href="/oma-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">OMA Treadmills</div>
+            <p class="c-blurb">The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

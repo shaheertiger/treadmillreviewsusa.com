@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Do You Disassemble a Treadmill? (2026): Steps, Tools and Safety";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-disassemble-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Steps", link: "#console-cable" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtodisassembleatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtodisassembleatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">How Do You Disassemble a Treadmill?</h1>
+      <p class="ed-dek">
+        Taking a treadmill apart is mostly the assembly instructions in reverse, done carefully: unplug it, disconnect the console cable before anything else, remove the console and uprights, lock or separate the frame, and leave the electronics alone. The difference between a smooth job and a machine that never works again is in the labelling and the order.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Do You Disassemble <span class="text-[#5AA9FF]">a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Taking a treadmill apart is mostly the assembly instructions in reverse, done carefully: unplug it, disconnect the console cable before anything else, remove the console and uprights, lock or separate the frame, and leave the electronics alone. The difference between a smooth job and a machine that never works again is in the labelling and the order.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#console-cable" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Steps in Order
-          </a>
-          <a href="#safety" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Safety First
-          </a>
-        </div>
+        <a href="#console-cable" class="btn-ghost">The Steps in Order</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Unplug first, and leave the control board alone.</strong>
-          Switch the treadmill off, remove the safety key and unplug it at the wall before you
-          remove a single bolt, then wait before opening the motor hood: capacitors on the motor
-          control board can hold a charge after the power is removed. Do not touch the board, its
-          terminals or the mains wiring. Treadmill parts are heavy and the folding mechanism can
-          store energy, so work with at least one other person. Your owner's manual is the
-          authority on your model; if the treadmill is under warranty, check the terms before
-          dismantling more than the manual describes, and if anything here conflicts with the
-          manual, follow the manual.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Do You Disassemble a Treadmill? The Short Answer</a>
-          <a href="#how-far" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Far Do You Actually Need to Take It Apart?</a>
-          <a href="#tools" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Tools Do You Need to Take a Treadmill Apart?</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Safety Precautions Matter Most?</a>
-          <a href="#labelling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Do You Keep Track of the Bolts and Cables?</a>
-          <a href="#console-cable" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Step 1: How Do You Disconnect the Console Wiring Harness?</a>
-          <a href="#console-uprights" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Step 2: How Do You Remove the Console and Uprights?</a>
-          <a href="#folding-frame" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Step 3: What About the Folding Frame?</a>
-          <a href="#motor-hood" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Step 4: Do You Need to Remove the Motor Hood?</a>
-          <a href="#deck-and-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Step 5: Should You Take Off the Belt or Deck?</a>
-          <a href="#reassembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How Do You Put a Treadmill Back Together and Test It?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           People take treadmills apart for three main reasons: to get one through a doorway or up a
           staircase, to move house, or to break one down for disposal. All three need less
           dismantling than most people expect, and all three go wrong in the same ways — a console
@@ -211,8 +147,38 @@ const schema = {
           version for your machine.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Unplug first, and leave the control board alone.</strong> Switch the treadmill off, remove the safety key and unplug it at the wall before you
+          remove a single bolt, then wait before opening the motor hood: capacitors on the motor
+          control board can hold a charge after the power is removed. Do not touch the board, its
+          terminals or the mains wiring. Treadmill parts are heavy and the folding mechanism can
+          store energy, so work with at least one other person. Your owner's manual is the
+          authority on your model; if the treadmill is under warranty, check the terms before
+          dismantling more than the manual describes, and if anything here conflicts with the
+          manual, follow the manual.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Do You Disassemble a Treadmill? The Short Answer</a></li>
+            <li><a href="#how-far">How Far Do You Actually Need to Take It Apart?</a></li>
+            <li><a href="#tools">What Tools Do You Need to Take a Treadmill Apart?</a></li>
+            <li><a href="#safety">What Safety Precautions Matter Most?</a></li>
+            <li><a href="#labelling">How Do You Keep Track of the Bolts and Cables?</a></li>
+            <li><a href="#console-cable">Step 1: How Do You Disconnect the Console Wiring Harness?</a></li>
+            <li><a href="#console-uprights">Step 2: How Do You Remove the Console and Uprights?</a></li>
+            <li><a href="#folding-frame">Step 3: What About the Folding Frame?</a></li>
+            <li><a href="#motor-hood">Step 4: Do You Need to Remove the Motor Hood?</a></li>
+            <li><a href="#deck-and-belt">Step 5: Should You Take Off the Belt or Deck?</a></li>
+            <li><a href="#reassembly">How Do You Put a Treadmill Back Together and Test It?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Do You Disassemble a Treadmill? The Short Answer</h2>
+          <h2>How Do You Disassemble a Treadmill? The Short Answer</h2>
 <p>
             <strong>Unplug the treadmill, photograph everything, disconnect the console wiring
             harness at its connector, then unbolt and lift off the console and the uprights, and
@@ -240,14 +206,12 @@ const schema = {
             A typical disassembly for moving — console off, uprights off, frame folded or flat —
             commonly takes somewhere around an hour for someone working carefully for the first
             time. Taking the deck and motor out as well takes longer and is rarely necessary. If you
-            are moving the machine rather than taking it apart for its own sake, our guide on
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>
-            covers the route, the lift and the van.
+            are moving the machine rather than taking it apart for its own sake, our guide on <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a> covers the route, the lift and the van.
           </p>
         </div>
 
         <div id="how-far" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Far Do You Actually Need to Take It Apart?</h2>
+          <h2>How Far Do You Actually Need to Take It Apart?</h2>
 <p>
             Less than you think, in most cases. Decide what the disassembly is for before starting,
             because every bolt you remove is one you have to replace correctly.
@@ -278,9 +242,7 @@ const schema = {
           <p>
             For disposal, check what the collector actually wants. Many municipal bulk pickups and
             haul-away services take a treadmill whole, and some scrap or e-waste recyclers prefer
-            the electronics separated. Our guide on
-            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">how to dispose of a treadmill</a>
-            covers the options; there is no point dismantling a machine further than its next owner
+            the electronics separated. Our guide on <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">how to dispose of a treadmill</a> covers the options; there is no point dismantling a machine further than its next owner
             or collector needs.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Taking apart a NordicTrack, ProForm or other brand</h3>
@@ -289,14 +251,12 @@ const schema = {
             ProForm, but the fastener positions, cover designs and <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding mechanisms</a> vary from
             model to model. Find the model number, usually on a label on the frame, and download
             the manual for that model: its assembly section, read in reverse, is the most reliable
-            disassembly guide you will find. Our guide on
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a>
-            includes notes on taking one apart for a move and the checks afterwards.
+            disassembly guide you will find. Our guide on <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a> includes notes on taking one apart for a move and the checks afterwards.
           </p>
         </div>
 
         <div id="tools" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Tools Do You Need to Take a Treadmill Apart?</h2>
+          <h2>What Tools Do You Need to Take a Treadmill Apart?</h2>
 <p>
             Ordinary hand tools, plus a few things for staying organised. Most treadmills are put
             together with hex-head or Allen bolts and a few Phillips screws, and the tools that came
@@ -332,7 +292,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Safety Precautions Matter Most?</h2>
+          <h2>What Safety Precautions Matter Most?</h2>
 <p>
             Disconnect the power, respect the weight, and stay away from the controller. Those three
             cover most of the ways people get hurt or damage the machine.
@@ -375,7 +335,7 @@ const schema = {
         </div>
 
         <div id="labelling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Do You Keep Track of the Bolts and Cables?</h2>
+          <h2>How Do You Keep Track of the Bolts and Cables?</h2>
 <p>
             Photograph first, bag second, label everything. The bolts on a treadmill look alike but
             are often different lengths and threads, and putting a longer bolt into a hole meant for
@@ -408,7 +368,7 @@ const schema = {
         </div>
 
         <div id="console-cable" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Step 1: How Do You Disconnect the Console Wiring Harness?</h2>
+          <h2>Step 1: How Do You Disconnect the Console Wiring Harness?</h2>
 <p>
             Find the connector where the cable from the base meets the console, and separate it at
             the connector, never by pulling on the wire. This comes first, before any structural
@@ -441,14 +401,12 @@ const schema = {
             that may work loose later.
           </p>
           <p>
-            This cable is also where most problems after reassembly come from. Our guide on
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a>
-            explains why it gets pinched and how to route it when it goes back together.
+            This cable is also where most problems after reassembly come from. Our guide on <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">how to assemble a treadmill</a> explains why it gets pinched and how to route it when it goes back together.
           </p>
         </div>
 
         <div id="console-uprights" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Step 2: How Do You Remove the Console and Uprights?</h2>
+          <h2>Step 2: How Do You Remove the Console and Uprights?</h2>
 <p>
             With the cable disconnected, support the console and remove the bolts holding it to the
             uprights, then remove the uprights from the base. On some machines the console and
@@ -482,7 +440,7 @@ const schema = {
         </div>
 
         <div id="folding-frame" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Step 3: What About the Folding Frame?</h2>
+          <h2>Step 3: What About the Folding Frame?</h2>
 <p>
             If the treadmill folds, decide whether to move it folded or flat, and lock or secure it
             accordingly. Do not dismantle the folding mechanism.
@@ -492,9 +450,7 @@ const schema = {
             test the lock by gently trying to lower the deck. If the latch is worn or will not hold,
             do not move the machine folded. Even when the latch holds, a ratchet strap around the
             folded deck and frame is cheap insurance against it opening on a staircase or in a van.
-            Our guide to
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a>
-            covers the latch and soft-drop mechanisms.
+            Our guide to <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a> covers the latch and soft-drop mechanisms.
           </p>
           <p>
             <strong>Moving it flat.</strong> With the console and uprights off, many treadmill
@@ -516,7 +472,7 @@ const schema = {
         </div>
 
         <div id="motor-hood" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Step 4: Do You Need to Remove the Motor Hood?</h2>
+          <h2>Step 4: Do You Need to Remove the Motor Hood?</h2>
 <p>
             Usually not. Nothing under the motor hood needs to come out to move a treadmill, and it
             is where the drive motor, the motor control board and the mains wiring live. The only
@@ -531,9 +487,7 @@ const schema = {
           </p>
           <p>
             With the hood off, look but do not touch the board. If you are only cleaning, a vacuum
-            with a soft brush attachment and a careful hand is enough, and our guide to
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>
-            covers doing it safely.
+            with a soft brush attachment and a careful hand is enough, and our guide to <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a> covers doing it safely.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Taking the motor out</h3>
           <p>
@@ -549,7 +503,7 @@ const schema = {
         </div>
 
         <div id="deck-and-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Step 5: Should You Take Off the Belt or Deck?</h2>
+          <h2>Step 5: Should You Take Off the Belt or Deck?</h2>
 <p>
             Only if you are repairing or replacing them, or stripping the machine completely. The
             walking belt and deck do not need to come off for a move, and taking them off creates
@@ -582,7 +536,7 @@ const schema = {
         </div>
 
         <div id="reassembly" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How Do You Put a Treadmill Back Together and Test It?</h2>
+          <h2>How Do You Put a Treadmill Back Together and Test It?</h2>
 <p>
             Reverse the order: base and frame first, then uprights, then console, connecting the
             cable before the console bolts go in. Then test everything at low speed before anyone
@@ -622,141 +576,154 @@ const schema = {
             anything more serious.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you take apart a treadmill to move it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Unplug it, lower the incline first if powered, photograph everything, then disconnect the console cable at its connector before removing any bolts. Take off the console and uprights, bag and label the bolts for each part, and fold and strap the deck or carry the base flat. The motor, control board and deck can usually stay in place.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you take apart a NordicTrack treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The general sequence is the same as for other brands: unplug, disconnect the console cable at its connector, remove the console and uprights, and fold and lock the frame or carry the base flat. Fastener positions and folding mechanisms vary by model, so download the manual for your model number and follow its assembly section in reverse.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need to remove the motor to move a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Almost never. The motor and its control board stay in the base for a move, which keeps the wiring intact and avoids the risk of handling the controller. Removing the motor is a repair or scrap job. If the base is too heavy for the route, removing the console and uprights or hiring movers is usually the better answer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does it take to disassemble a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Removing the console and uprights and preparing the frame for a move commonly takes around an hour for someone working carefully for the first time, and less with experience. Taking out the belt, deck or motor adds considerably more time. Photographing and labelling as you go adds a few minutes and saves much more at reassembly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to open the motor hood on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, if the machine is switched off and unplugged at the wall and you wait before opening it, because capacitors on the motor control board can hold a charge after power is removed. Do not touch the board, its terminals or the mains wiring. If the treadmill is under warranty, check the terms before opening covers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why will my treadmill not turn on after I took it apart?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The console wiring harness is the usual cause. It may not be fully connected, the latch may not have clicked home, or the cable may have been pinched between the console and an upright. Unplug the machine, recheck the connector and the cable route, and check the deck is fully unfolded and the safety key is seated.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Disassembling a Treadmill</h2>
+          <p>Taking a treadmill apart is straightforward. Most of the damage happens in the first five minutes or the last five.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Unbolting the uprights before disconnecting the cable</h3>
+              <p>With the bolts out, the upright and console hang on the wiring harness, and connectors tear or wires pull out of their pins. Always open the console cover and separate the harness at its connector first, then support each part before its last bolt comes out.</p>
+            </li>
+            <li>
+              <h3>Putting all the bolts in one bag</h3>
+              <p>Treadmill bolts look alike but differ in length and thread, and a long bolt in a short hole can strip the thread or crush a cable. Use one labelled bag per part, keep washers in order on their bolts, and tape each bag to the part it came from.</p>
+            </li>
+            <li>
+              <h3>Opening the motor hood straight after unplugging</h3>
+              <p>Capacitors on the control board can hold a charge after the power is removed. Wait before opening the hood, and do not touch the board, its terminals or the mains wiring at any point. For a move there is usually no reason to open the hood at all.</p>
+            </li>
+            <li>
+              <h3>Letting the cable drop inside the upright</h3>
+              <p>Once disconnected, the base end of the console cable can slide down inside the upright tube and disappear. Feeding it back up through steel tubing is slow and risks damaging it. Tape the cable to the outside of the upright or tie string to it before lifting anything away.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Disassembling a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Taking a treadmill apart is straightforward. Most of the damage happens in the first five minutes or the last five.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Unbolting the uprights before disconnecting the cable</h3>
-              <p class="text-gray-700 text-sm m-0">With the bolts out, the upright and console hang on the wiring harness, and connectors tear or wires pull out of their pins. Always open the console cover and separate the harness at its connector first, then support each part before its last bolt comes out.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting all the bolts in one bag</h3>
-              <p class="text-gray-700 text-sm m-0">Treadmill bolts look alike but differ in length and thread, and a long bolt in a short hole can strip the thread or crush a cable. Use one labelled bag per part, keep washers in order on their bolts, and tape each bag to the part it came from.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Opening the motor hood straight after unplugging</h3>
-              <p class="text-gray-700 text-sm m-0">Capacitors on the control board can hold a charge after the power is removed. Wait before opening the hood, and do not touch the board, its terminals or the mains wiring at any point. For a move there is usually no reason to open the hood at all.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting the cable drop inside the upright</h3>
-              <p class="text-gray-700 text-sm m-0">Once disconnected, the base end of the console cable can slide down inside the upright tube and disappear. Feeding it back up through steel tubing is slow and risks damaging it. Tape the cable to the outside of the upright or tie string to it before lifting anything away.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance and Moving Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-move-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Moving</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Move a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Measuring the route, stairs, dollies, vans and the checks after the move.</p>
-            </a>
-            <a href="/how-to-assemble-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Assembly</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Assemble a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Tools, timings, the console cable that causes most problems, and first-run checks.</p>
-            </a>
-            <a href="/how-to-dispose-of-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Disposal</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Dispose of a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Selling, donating, recycling or haul-away, and how much dismantling each needs.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Unplug, disconnect the console cable first, then remove the
-            console and uprights, and stop there unless you have a reason to go further.</strong>
-            Photograph every stage, bag and label every set of bolts, and keep two people on every
+            console and uprights, and stop there unless you have a reason to go further.</strong> Photograph every stage, bag and label every set of bolts, and keep two people on every
             lift. The motor, control board and deck rarely need to come out.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Reassemble in reverse with the bolts snug before tightening, check the cable is not
             pinched, and test at low speed with the safety key before anyone uses it. If you are
-            dismantling the treadmill to get it to a new home, our guide on
-            <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to move a treadmill</a>
-            covers the rest of the job.
+            dismantling the treadmill to get it to a new home, our guide on <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to move a treadmill</a> covers the rest of the job.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-move-a-treadmill/">How to Move a Treadmill</a></li>
+            <li><a href="/how-to-assemble-a-treadmill/">How to Assemble a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you take apart a treadmill to move it?</h3></summary>
+            <p class="faq-a">
+              Unplug it, lower the incline first if powered, photograph everything, then disconnect the console cable at its connector before removing any bolts. Take off the console and uprights, bag and label the bolts for each part, and fold and strap the deck or carry the base flat. The motor, control board and deck can usually stay in place.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do you take apart a NordicTrack treadmill?</h3></summary>
+            <p class="faq-a">
+              The general sequence is the same as for other brands: unplug, disconnect the console cable at its connector, remove the console and uprights, and fold and lock the frame or carry the base flat. Fastener positions and folding mechanisms vary by model, so download the manual for your model number and follow its assembly section in reverse.
             </p>
+          </details>
+          <details>
+            <summary><h3>Do you need to remove the motor to move a treadmill?</h3></summary>
+            <p class="faq-a">
+              Almost never. The motor and its control board stay in the base for a move, which keeps the wiring intact and avoids the risk of handling the controller. Removing the motor is a repair or scrap job. If the base is too heavy for the route, removing the console and uprights or hiring movers is usually the better answer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does it take to disassemble a treadmill?</h3></summary>
+            <p class="faq-a">
+              Removing the console and uprights and preparing the frame for a move commonly takes around an hour for someone working carefully for the first time, and less with experience. Taking out the belt, deck or motor adds considerably more time. Photographing and labelling as you go adds a few minutes and saves much more at reassembly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to open the motor hood on a treadmill?</h3></summary>
+            <p class="faq-a">
+              It can be, if the machine is switched off and unplugged at the wall and you wait before opening it, because capacitors on the motor control board can hold a charge after power is removed. Do not touch the board, its terminals or the mains wiring. If the treadmill is under warranty, check the terms before opening covers.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why will my treadmill not turn on after I took it apart?</h3></summary>
+            <p class="faq-a">
+              The console wiring harness is the usual cause. It may not be fully connected, the latch may not have clicked home, or the cable may have been pinched between the console and an upright. Unplug the machine, recheck the connector and the cable route, and check the deck is fully unfolded and the safety key is seated.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance and Moving Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-move-a-treadmill/" class="card">
+            <div class="c-kicker">Moving</div>
+            <div class="c-title">How to Move a Treadmill</div>
+            <p class="c-blurb">Measuring the route, stairs, dollies, vans and the checks after the move.</p>
+          </a>
+          <a href="/how-to-assemble-a-treadmill/" class="card">
+            <div class="c-kicker">Assembly</div>
+            <div class="c-title">How to Assemble a Treadmill</div>
+            <p class="c-blurb">Tools, timings, the console cable that causes most problems, and first-run checks.</p>
+          </a>
+          <a href="/how-to-dispose-of-a-treadmill/" class="card">
+            <div class="c-kicker">Disposal</div>
+            <div class="c-title">How to Dispose of a Treadmill</div>
+            <p class="c-blurb">Selling, donating, recycling or haul-away, and how much dismantling each needs.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Deer Run Treadmill Guide (2026): Models, Claims and Warranty";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/deer-run-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -105,64 +110,45 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-deerruntreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-deerruntreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Deer Run Treadmill: What the Listings Claim</h1>
+      <p class="ed-dek">
+        DeerRun is a direct-to-consumer brand of cheap walking pads and folding treadmills tied to the PitPat app. Some of its machines can be sensible buys for walking, provided you read every figure as the seller’s claim, know what the “risk-free trial” really allows, and compare it with better-documented pads first.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Deer Run Treadmill: <span class="text-[#5AA9FF]">What the Listings Claim</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          DeerRun is a direct-to-consumer brand of cheap walking pads and folding treadmills tied to the PitPat app. Some of its machines can be sensible buys for walking, provided you read every figure as the seller’s claim, know what the “risk-free trial” really allows, and compare it with better-documented pads first.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#warranty-and-returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Warranty and Returns
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          If you searched for a Deer Run treadmill, you probably saw a pastel walking pad with a 7% or
+          12% incline badge and a price that looked half off. The brand behind it, written DeerRun, is
+          real: it has a Texas showroom, a large catalogue and its own app. What it does not have is
+          much independent evidence for what its machines are built from, and its own pages disagree
+          with each other on several figures that matter. This guide sets out who DeerRun is, what it
+          sells now, which claims hold up and which do not, what the warranty and returns really
+          cover, and how its pads compare with the ones we already recommend.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           20 October 2026 we read every treadmill and walking-pad listing in DeerRun’s own US store
           (deerruntreadmill.com), including prices and stock status, and the store’s contact, warranty,
@@ -177,50 +163,30 @@ const schema = {
           rather than choosing. We have not tested a DeerRun treadmill or walking pad. Prices are those
           shown on the day we checked (20 Oct 2026) and change often. As an Amazon Associate we earn
           from qualifying purchases.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is a Deer Run Treadmill Any Good? The Short Answer</a>
-          <a href="#who-is-deerrun" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Is DeerRun, and Where Is It Sold?</a>
-          <a href="#current-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current DeerRun Range</a>
-          <a href="#listing-contradictions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Where DeerRun’s Figures Contradict Each Other</a>
-          <a href="#warranty-and-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Warranty, Returns and the “Risk-Free Trial”</a>
-          <a href="#safety-record" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Recalls: What the CPSC Record Shows</a>
-          <a href="#pitpat-and-extras" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. PitPat, Rentals and the Paid Add-Ons</a>
-          <a href="#compared" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. DeerRun Compared With the Walking Pads We Recommend</a>
-          <a href="#before-you-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What to Check Before Buying a DeerRun, and Who Should</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is a Deer Run Treadmill Any Good? The Short Answer</a></li>
+            <li><a href="#who-is-deerrun">Who Is DeerRun, and Where Is It Sold?</a></li>
+            <li><a href="#current-range">The Current DeerRun Range</a></li>
+            <li><a href="#listing-contradictions">Where DeerRun’s Figures Contradict Each Other</a></li>
+            <li><a href="#warranty-and-returns">Warranty, Returns and the “Risk-Free Trial”</a></li>
+            <li><a href="#safety-record">Recalls: What the CPSC Record Shows</a></li>
+            <li><a href="#pitpat-and-extras">PitPat, Rentals and the Paid Add-Ons</a></li>
+            <li><a href="#compared">DeerRun Compared With the Walking Pads We Recommend</a></li>
+            <li><a href="#before-you-buy">What to Check Before Buying a DeerRun, and Who Should</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          If you searched for a Deer Run treadmill, you probably saw a pastel walking pad with a 7% or
-          12% incline badge and a price that looked half off. The brand behind it, written DeerRun, is
-          real: it has a Texas showroom, a large catalogue and its own app. What it does not have is
-          much independent evidence for what its machines are built from, and its own pages disagree
-          with each other on several figures that matter. This guide sets out who DeerRun is, what it
-          sells now, which claims hold up and which do not, what the warranty and returns really
-          cover, and how its pads compare with the ones we already recommend.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is a Deer Run Treadmill Any Good? The Short Answer</h2>
+          <h2>Is a Deer Run Treadmill Any Good? The Short Answer</h2>
 <p>
             <strong>A DeerRun walking pad is a budget machine for slow walking that can be fair value
             at its sale price, but its motor and noise claims are disputed, its warranty is one year
-            with no breakdown by part, and its “60-day risk-free trial” is narrower than it sounds.</strong>
-            Buy one only if the price is low enough that you would not mind if the claims turn out
+            with no breakdown by part, and its “60-day risk-free trial” is narrower than it sounds.</strong> Buy one only if the price is low enough that you would not mind if the claims turn out
             optimistic, and only after you have read the return terms for the exact product page you
             are buying from.
           </p>
@@ -244,7 +210,7 @@ const schema = {
         </div>
 
         <div id="who-is-deerrun" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Is DeerRun, and Where Is It Sold?</h2>
+          <h2>Who Is DeerRun, and Where Is It Sold?</h2>
 <p>
             DeerRun is the brand; “Deer Run” is simply how most people type it. The contact page on its
             US store names the company as <strong>JOYFIT INC</strong> at an address on Harwin Drive in
@@ -279,9 +245,7 @@ const schema = {
             Amazon listing had gone by the end of September 2026. Amazon’s pages would not load for us
             on 20 October, so we cannot say which DeerRun listings are live there today. If you find
             one, check the seller name and the model number, because who sells the unit decides who
-            handles a return. Our guide to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            explains why that matters more on a marketplace than on a brand store.
+            handles a return. Our guide to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> explains why that matters more on a marketplace than on a brand store.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A warning on look-alike websites</h3>
           <p>
@@ -294,7 +258,7 @@ const schema = {
         </div>
 
         <div id="current-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current DeerRun Range</h2>
+          <h2>The Current DeerRun Range</h2>
 <p>
             These are the treadmills and walking pads in DeerRun’s US store on 20 October 2026, grouped
             the way the store groups them, with the figures each listing gives and the price shown that
@@ -345,7 +309,7 @@ const schema = {
         </div>
 
         <div id="listing-contradictions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Where DeerRun’s Figures Contradict Each Other</h2>
+          <h2>Where DeerRun’s Figures Contradict Each Other</h2>
 <p>
             Budget fitness listings drift as text is copied between models, colours and marketplaces.
             DeerRun’s show the pattern clearly. These are the disagreements we found on the day we
@@ -367,9 +331,7 @@ const schema = {
             For a walking pad running at 2 or 3 mph, a small brushed motor is normal and can be
             perfectly adequate. The problem is not the motor; it is a claim you cannot rely on. If quiet
             running or motor life is the reason you are choosing one pad over another, do not choose on
-            this claim. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why peak figures and continuous ratings are not comparable.
+            this claim. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why peak figures and continuous ratings are not comparable.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Two noise figures on one page</h3>
           <p>
@@ -415,7 +377,7 @@ const schema = {
         </div>
 
         <div id="warranty-and-returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Warranty, Returns and the “Risk-Free Trial”</h2>
+          <h2>Warranty, Returns and the “Risk-Free Trial”</h2>
 <p>
             This is the part of a DeerRun purchase most worth reading slowly, because the headline
             promises and the written terms are not the same.
@@ -437,9 +399,7 @@ const schema = {
             an independent hands-on review of an earlier DeerRun pad published in January 2025 described a
             two-year limited warranty. If you are reading an older review, do not assume its warranty
             terms still apply. Ask the seller, in writing, what is covered and for how long, and keep the
-            reply. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            lists the questions worth asking.
+            reply. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> lists the questions worth asking.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the 60-day trial actually allows</h3>
           <p>
@@ -486,7 +446,7 @@ const schema = {
         </div>
 
         <div id="safety-record" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Recalls: What the CPSC Record Shows</h2>
+          <h2>Recalls: What the CPSC Record Shows</h2>
 <p>
             We searched the US Consumer Product Safety Commission’s recall database for DeerRun, Deer Run,
             JOYFIT and PitPat on 20 October 2026, and read its recent product safety warnings for walking
@@ -519,7 +479,7 @@ const schema = {
         </div>
 
         <div id="pitpat-and-extras" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. PitPat, Rentals and the Paid Add-Ons</h2>
+          <h2>PitPat, Rentals and the Paid Add-Ons</h2>
 <p>
             DeerRun’s machines connect to its PitPat app, which records workouts and runs online races and
             challenges, some of which the brand describes as “cash contests”. An independent reviewer of an
@@ -533,8 +493,7 @@ const schema = {
             The store also sells several things that are not treadmills. There is a <strong>monthly rental
             plan</strong> for the Q2 Urban and a 90-day rental of the Z10; DeerRun’s rental terms say plans
             renew automatically until cancelled, that cancelling billing does not complete the return of the
-            equipment, and that return shipping is the renter’s responsibility. There are optional
-            <strong>checkout add-ons</strong> called Shipping Protection, Ship-Date Protection, Price Lock
+            equipment, and that return shipping is the renter’s responsibility. There are optional <strong>checkout add-ons</strong> called Shipping Protection, Ship-Date Protection, Price Lock
             Guarantee and Wait &amp; Earn Credit, each with its own terms; the price and ship-date products
             apply to pre-orders and pay out in DeerRun gift cards rather than cash. And the store says
             some equipment can be bought with <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium" data-autolink>HSA or FSA</a> funds through a third-party health assessment
@@ -549,11 +508,9 @@ const schema = {
         </div>
 
         <div id="compared" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. DeerRun Compared With the Walking Pads We Recommend</h2>
+          <h2>DeerRun Compared With the Walking Pads We Recommend</h2>
 <p>
-            Our
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            roundup lists six pads whose figures we could check against the maker and an independent
+            Our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup lists six pads whose figures we could check against the maker and an independent
             source on 18 October 2026. DeerRun is not on it, because too few of its figures could be
             cross-checked. Here is how its main pads line up against the closest picks there, using the
             figures from that page.
@@ -573,11 +530,8 @@ const schema = {
             A 35-inch belt is short. DeerRun’s own size guide for its earlier Q1 pads recommended the
             35.4-inch deck for users under 71 inches (5 ft 11 in) and the 39.4-inch deck for anyone taller.
             On that guidance, the Q2 Urban suits shorter walkers and the longer Q2 Urban Plus is the one to
-            consider if you are taller or have a long stride. For a more natural stride at a desk, the
-            <a href="/walkingpad-a1-pro-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad A1 Pro</a> on our list has a 47 by 16.5-inch walking area, at a much higher price of
-            roughly $529 to $699. Our
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            explains how to match belt length to height and pace.
+            consider if you are taller or have a long stride. For a more natural stride at a desk, the <a href="/walkingpad-a1-pro-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad A1 Pro</a> on our list has a 47 by 16.5-inch walking area, at a much higher price of
+            roughly $529 to $699. Our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> explains how to match belt length to height and pace.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Z10 against the UREVO SpaceWalk 3S and MERACH TrekPad</h3>
           <p>
@@ -593,14 +547,13 @@ const schema = {
             DeerRun’s 2-in-1 machines advertise speeds up to 10 mph, and the X20 and X50 go higher. Speed is
             not the limit, belt length is: the Flex Rise 1’s 47.2-inch belt is a jogging length for most
             adults, and the A1 Pro Move+ and X20 listings do not give a belt length at all. Before you buy
-            any of them to run on, read our guide to
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">running on a walking pad</a>,
+            any of them to run on, read our guide to <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">running on a walking pad</a>,
             and ask DeerRun for the running-surface length in writing.
           </p>
         </div>
 
         <div id="before-you-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What to Check Before Buying a DeerRun, and Who Should</h2>
+          <h2>What to Check Before Buying a DeerRun, and Who Should</h2>
 <p>
             If a DeerRun pad still looks like the right machine, these checks cover most of what can go
             wrong.
@@ -631,147 +584,159 @@ const schema = {
             longer written warranty or a brand whose figures have been checked independently.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes Deer Run treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                DeerRun’s US store names JOYFIT INC of Houston, Texas, as the company, and a 2024 press release named Kevin Zhang as founder of JOYFIT and CEO of DeerRun. A FIBO 2026 trade-fair profile presented Hangzhou Ruze Electronic Commerce Co., Ltd. as the company behind the brand. We could not establish how the companies relate, and the store names no factory.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I buy a DeerRun walking pad, and is it on Amazon?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly from DeerRun’s own store at deerruntreadmill.com, and on Target.com as a marketplace listing sold and shipped by DeerRun. DeerRun has sold on Amazon, but one independent site reported the Q2 Urban listing gone by late September 2026, and Amazon would not load for us on 20 October 2026, so check the seller on any listing you find.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty does DeerRun offer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                One year from receipt, according to DeerRun’s warranty page and its listings, with DeerRun choosing whether to repair or replace. It gives no longer term for the frame or motor and does not explain the claim process. Older coverage mentions a two-year warranty, so do not rely on a review written before 2025.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you return a DeerRun treadmill after the 60-day trial?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The listings advertise a 60-day risk-free trial, but the refund policy says the window is 30 or 60 days depending on the product, that items must be unused and in original packaging, and that change-of-mind buyers pay return shipping and lose the original shipping fee. Ask DeerRun in writing before relying on the trial.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Has DeerRun had a recall?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. We found no CPSC recall or warning for any DeerRun product as of 20 October 2026. The CPSC’s April 2026 warning to stop using walking pads concerns Sperax, a different brand, although one Sperax model shares the Q1 name with older DeerRun pads, so check the brand on the label.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the DeerRun motor really brushless?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                DeerRun says the Q2 Urban and Z10 have brushless motors. One independent teardown of a Q2 Urban, published in March 2026, reported a brushed permanent-magnet DC motor of roughly 0.6 HP continuous. We have not verified it, but no independent source supports the brushless claim, so do not choose a DeerRun pad on that basis.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Deer Run Treadmill</h2>
+          <p>Most disappointment with DeerRun pads comes from trusting a headline line on the listing more than the terms behind it. These are the four mistakes that matter most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating the 60-day trial as a free trial</h3>
+              <p>Buyers walk on the pad for a month, then find the refund policy requires an unused machine in its original packaging, with return shipping at their cost. Keep every piece of packaging, test the pad hard in the first few days, and get written confirmation from DeerRun if you intend to return a used machine.</p>
+            </li>
+            <li>
+              <h3>Confusing DeerRun models with other brands’ pads</h3>
+              <p>The DeerRun A1 Pro Move+ is not the WalkingPad A1 Pro, and DeerRun’s older Q1 pads share a model name with the Sperax Q1 covered by a CPSC warning. Buyers end up comparing the wrong reviews or worrying about the wrong product. Check the brand and model number on the listing and on the label near the power switch.</p>
+            </li>
+            <li>
+              <h3>Buying the shortest belt for a long stride</h3>
+              <p>The Q2 Urban’s belt is about 35 inches, and DeerRun’s own size chart puts that length below users of 5 ft 11 in. Taller walkers who buy it on price end up shortening their stride or stepping off the back. Check your height against the chart and choose the Q2 Urban Plus or a longer pad if you are near or above it.</p>
+            </li>
+            <li>
+              <h3>Choosing on the brushless and quiet claims</h3>
+              <p>Buyers pay more for a “brushless, under 45 dB” pad, then find it no quieter than a cheaper one; the Z10 page also says 65 dB, and a teardown reported a brushed motor in the Q2 Urban. Choose on belt length, price and return terms instead, and listen to the pad in your own room in the first week while it can still go back.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Deer Run Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointment with DeerRun pads comes from trusting a headline line on the listing more than the terms behind it. These are the four mistakes that matter most.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the 60-day trial as a free trial</h3>
-              <p class="text-gray-700 text-sm m-0">Buyers walk on the pad for a month, then find the refund policy requires an unused machine in its original packaging, with return shipping at their cost. Keep every piece of packaging, test the pad hard in the first few days, and get written confirmation from DeerRun if you intend to return a used machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Confusing DeerRun models with other brands’ pads</h3>
-              <p class="text-gray-700 text-sm m-0">The DeerRun A1 Pro Move+ is not the WalkingPad A1 Pro, and DeerRun’s older Q1 pads share a model name with the Sperax Q1 covered by a CPSC warning. Buyers end up comparing the wrong reviews or worrying about the wrong product. Check the brand and model number on the listing and on the label near the power switch.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the shortest belt for a long stride</h3>
-              <p class="text-gray-700 text-sm m-0">The Q2 Urban’s belt is about 35 inches, and DeerRun’s own size chart puts that length below users of 5 ft 11 in. Taller walkers who buy it on price end up shortening their stride or stepping off the back. Check your height against the chart and choose the Q2 Urban Plus or a longer pad if you are near or above it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing on the brushless and quiet claims</h3>
-              <p class="text-gray-700 text-sm m-0">Buyers pay more for a “brushless, under 45 dB” pad, then find it no quieter than a cheaper one; the Z10 page also says 65 dB, and a teardown reported a brushed motor in the Q2 Urban. Choose on belt length, price and return terms instead, and listen to the pad in your own room in the first week while it can still go back.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best List</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six pads whose figures we could cross-check.</p>
-            </a>
-            <a href="/walking-pad-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Which pad specifications to trust, and which to discount.</p>
-            </a>
-            <a href="/maxkare-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">MaxKare Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Another marketplace brand, read the same way.</p>
-            </a>
-            <a href="/livestrong-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Legacy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LIVESTRONG Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A Deer Run treadmill is a budget walking pad or folding treadmill
           whose figures are the seller’s claims, some of them contradictory, backed by a one-year
-          warranty and a “risk-free trial” that the written policy narrows to unused machines.</strong>
-          At its sale price the Q2 Urban can be a fair buy for a shorter walker who wants a light
+          warranty and a “risk-free trial” that the written policy narrows to unused machines.</strong> At its sale price the Q2 Urban can be a fair buy for a shorter walker who wants a light
           under-desk pad; it is not a running machine, and it is not a brand to buy on trust.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you want a pad whose figures we could check, start with our
-          <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>,
-          and if you do buy a DeerRun, read the
-          <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
-          and screenshot the return terms first.
+          <p>
+            If you want a pad whose figures we could check, start with our <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>,
+          and if you do buy a DeerRun, read the <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a> and screenshot the return terms first.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads/">Best Walking Pads</a></li>
+            <li><a href="/walking-pad-buying-guide/">Walking Pad Buying Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Who makes Deer Run treadmills?</h3></summary>
+            <p class="faq-a">
+              DeerRun’s US store names JOYFIT INC of Houston, Texas, as the company, and a 2024 press release named Kevin Zhang as founder of JOYFIT and CEO of DeerRun. A FIBO 2026 trade-fair profile presented Hangzhou Ruze Electronic Commerce Co., Ltd. as the company behind the brand. We could not establish how the companies relate, and the store names no factory.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where can I buy a DeerRun walking pad, and is it on Amazon?</h3></summary>
+            <p class="faq-a">
+              Mainly from DeerRun’s own store at deerruntreadmill.com, and on Target.com as a marketplace listing sold and shipped by DeerRun. DeerRun has sold on Amazon, but one independent site reported the Q2 Urban listing gone by late September 2026, and Amazon would not load for us on 20 October 2026, so check the seller on any listing you find.
             </p>
+          </details>
+          <details>
+            <summary><h3>What warranty does DeerRun offer?</h3></summary>
+            <p class="faq-a">
+              One year from receipt, according to DeerRun’s warranty page and its listings, with DeerRun choosing whether to repair or replace. It gives no longer term for the frame or motor and does not explain the claim process. Older coverage mentions a two-year warranty, so do not rely on a review written before 2025.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you return a DeerRun treadmill after the 60-day trial?</h3></summary>
+            <p class="faq-a">
+              The listings advertise a 60-day risk-free trial, but the refund policy says the window is 30 or 60 days depending on the product, that items must be unused and in original packaging, and that change-of-mind buyers pay return shipping and lose the original shipping fee. Ask DeerRun in writing before relying on the trial.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Has DeerRun had a recall?</h3></summary>
+            <p class="faq-a">
+              No. We found no CPSC recall or warning for any DeerRun product as of 20 October 2026. The CPSC’s April 2026 warning to stop using walking pads concerns Sperax, a different brand, although one Sperax model shares the Q1 name with older DeerRun pads, so check the brand on the label.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the DeerRun motor really brushless?</h3></summary>
+            <p class="faq-a">
+              DeerRun says the Q2 Urban and Z10 have brushless motors. One independent teardown of a Q2 Urban, published in March 2026, reported a brushed permanent-magnet DC motor of roughly 0.6 HP continuous. We have not verified it, but no independent source supports the brushless claim, so do not choose a DeerRun pad on that basis.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads/" class="card">
+            <div class="c-kicker">Best List</div>
+            <div class="c-title">Best Walking Pads</div>
+            <p class="c-blurb">Six pads whose figures we could cross-check.</p>
+          </a>
+          <a href="/walking-pad-buying-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Walking Pad Buying Guide</div>
+            <p class="c-blurb">Which pad specifications to trust, and which to discount.</p>
+          </a>
+          <a href="/maxkare-treadmill/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">MaxKare Treadmill Guide</div>
+            <p class="c-blurb">Another marketplace brand, read the same way.</p>
+          </a>
+          <a href="/livestrong-treadmill/" class="card">
+            <div class="c-kicker">Legacy</div>
+            <div class="c-title">LIVESTRONG Treadmills</div>
+            <p class="c-blurb">A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

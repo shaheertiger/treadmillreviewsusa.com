@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Repair Near Me (2026): Finding a Qualified Technician";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-repair-near-me/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,46 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Questions to Ask a Repairer", link: "#questions-to-ask" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillrepairnearme" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillrepairnearme)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Repair Near Me: How to Find a Technician Worth Booking</h1>
+      <p class="ed-dek">
+        A search for treadmill repair near you returns manufacturer service networks, independent fitness technicians, appliance repairers and handymen, and they are not interchangeable. Here is how to work out which one your machine needs, what a visit typically costs, and how to tell a good repairman from an expensive one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Repair Near Me: <span class="text-[#5AA9FF]">How to Find a Technician Worth Booking</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A search for treadmill repair near you returns manufacturer service networks, independent fitness technicians, appliance repairers and handymen, and they are not interchangeable. Here is how to work out which one your machine needs, what a visit typically costs, and how to tell a good repairman from an expensive one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#questions-to-ask" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Questions to Ask
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          When a treadmill stops working, the instinct is to search for treadmill repair near me and
+          call the first number. That can work, but it is also how owners pay a call-out fee for a
+          dry deck, void a warranty that would have covered the part, or hand a motor control board
+          to someone who has never opened a treadmill. The right repairer depends on two questions:
+          is the machine still under warranty, and what is actually wrong with it. This guide
+          covers how to answer both, where to find manufacturer-authorised and independent
+          technicians, and what to ask before anyone comes to the house. For the repairs
+          themselves and the full cost table, see our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">Unplug before you look, and know when to stop.</strong> Any
           check on this page that involves the motor hood, the belt or the wiring is done with the
           treadmill unplugged at the wall. Stop using the machine entirely and book a technician for
@@ -171,49 +158,28 @@ const schema = {
           the region of", not a quote; labour varies by area and parts by brand. The manufacturer
           service routes were checked on each brand's own support or terms pages on 14 October
           2026 and can change. We have not used or tested any repair service named here.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Repair Near Me: The Short Answer</a>
-          <a href="#before-you-search" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Do You Need a Repairman at All?</a>
-          <a href="#warranty-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Is It Still Under Warranty? Check Before You Call Anyone</a>
-          <a href="#manufacturer-service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Do Manufacturer Service Networks Work?</a>
-          <a href="#independent-technicians" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Where Do You Find an Independent Treadmill Technician?</a>
-          <a href="#what-it-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Does a Treadmill Repair Service Cost?</a>
-          <a href="#what-to-have-ready" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Should You Have Ready Before You Call?</a>
-          <a href="#questions-to-ask" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Questions Should You Ask a Treadmill Repairman?</a>
-          <a href="#red-flags" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Are the Red Flags?</a>
-          <a href="#repair-or-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. When Is a Repair Not Worth Booking?</a>
-          <a href="#after-the-repair" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. What Should Happen After the Repair?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Repair Near Me: The Short Answer</a></li>
+            <li><a href="#before-you-search">Do You Need a Repairman at All?</a></li>
+            <li><a href="#warranty-first">Is It Still Under Warranty? Check Before You Call Anyone</a></li>
+            <li><a href="#manufacturer-service">How Do Manufacturer Service Networks Work?</a></li>
+            <li><a href="#independent-technicians">Where Do You Find an Independent Treadmill Technician?</a></li>
+            <li><a href="#what-it-costs">What Does a Treadmill Repair Service Cost?</a></li>
+            <li><a href="#what-to-have-ready">What Should You Have Ready Before You Call?</a></li>
+            <li><a href="#questions-to-ask">What Questions Should You Ask a Treadmill Repairman?</a></li>
+            <li><a href="#red-flags">What Are the Red Flags?</a></li>
+            <li><a href="#repair-or-replace">When Is a Repair Not Worth Booking?</a></li>
+            <li><a href="#after-the-repair">What Should Happen After the Repair?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          When a treadmill stops working, the instinct is to search for treadmill repair near me and
-          call the first number. That can work, but it is also how owners pay a call-out fee for a
-          dry deck, void a warranty that would have covered the part, or hand a motor control board
-          to someone who has never opened a treadmill. The right repairer depends on two questions:
-          is the machine still under warranty, and what is actually wrong with it. This guide
-          covers how to answer both, where to find manufacturer-authorised and independent
-          technicians, and what to ask before anyone comes to the house. For the repairs
-          themselves and the full cost table, see our
-          <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Repair Near Me: The Short Answer</h2>
+          <h2>Treadmill Repair Near Me: The Short Answer</h2>
 <p>
             <strong>If your treadmill is still under any part of its warranty, the right treadmill
             repair service is the manufacturer's: contact the brand's support team first, with the
@@ -227,8 +193,7 @@ const schema = {
             the region of $75 to $150, with labour and the part on top. Common technician repairs,
             such as a drive belt, a speed sensor or <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a>, often come to roughly $120 to
             $300 all in; a motor control board or drive motor with a visit is commonly in the region
-            of $300 to $900. These are the same estimated ranges used in our
-            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>,
+            of $300 to $900. These are the same estimated ranges used in our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>,
             and they are typical bands, not quotes.
           </p>
           <p>
@@ -241,7 +206,7 @@ const schema = {
         </div>
 
         <div id="before-you-search" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Do You Need a Repairman at All?</h2>
+          <h2>Do You Need a Repairman at All?</h2>
 <p>
             Many treadmill faults that feel like a repair job are owner fixes, so rule those out
             first. It costs nothing and it changes what you tell a technician if you do book one.
@@ -250,8 +215,7 @@ const schema = {
             <li><strong>Will not power on.</strong> Check the safety key is fully seated, the
             outlet works with another appliance, the treadmill's own reset button or circuit
             breaker (often near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>) has not tripped, and the household breaker is on.
-            Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
-            works through this in order.</li>
+            Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a> works through this in order.</li>
             <li><strong>Belt slips or hesitates.</strong> Usually a dry deck or a loose belt, both
             fixed at home in under an hour.</li>
             <li><strong>Belt drifts to one side.</strong> A tracking adjustment at the rear roller,
@@ -273,7 +237,7 @@ const schema = {
         </div>
 
         <div id="warranty-first" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Is It Still Under Warranty? Check Before You Call Anyone</h2>
+          <h2>Is It Still Under Warranty? Check Before You Call Anyone</h2>
 <p>
             Check the warranty before booking any repair, because a part or labour that is still
             covered becomes a support call rather than a bill, and an unauthorised repair can affect
@@ -284,8 +248,7 @@ const schema = {
             parts and labour, and the terms differ by brand and model. Labour is commonly the
             shortest. A machine three years old may be out of labour cover but still in motor or
             parts cover, in which case the manufacturer may ship the part free and you pay only for
-            fitting. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how those tiers usually work.
+            fitting. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how those tiers usually work.
           </p>
           <p>
             Things that commonly decide whether the warranty helps:
@@ -314,7 +277,7 @@ const schema = {
         </div>
 
         <div id="manufacturer-service" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Do Manufacturer Service Networks Work?</h2>
+          <h2>How Do Manufacturer Service Networks Work?</h2>
 <p>
             Most <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> do not employ a technician in every town. They run a support team
             that troubleshoots by phone or online, ships parts, and dispatches either their own
@@ -368,7 +331,7 @@ const schema = {
         </div>
 
         <div id="independent-technicians" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Where Do You Find an Independent Treadmill Technician?</h2>
+          <h2>Where Do You Find an Independent Treadmill Technician?</h2>
 <p>
             Independent fitness-equipment technicians are specialists who service treadmills,
             ellipticals and bikes across brands, often for gyms, hotels and apartment complexes as
@@ -379,8 +342,7 @@ const schema = {
             <strong>Where to look:</strong>
           </p>
           <ul>
-            <li><strong>Search for fitness equipment repair, not just treadmill repair.</strong>
-            Many specialists describe themselves as fitness equipment service companies. A search
+            <li><strong>Search for fitness equipment repair, not just treadmill repair.</strong> Many specialists describe themselves as fitness equipment service companies. A search
             for treadmill repair service plus your town and "fitness equipment" filters out general
             appliance listings.</li>
             <li><strong>Ask local gyms.</strong> Gyms, apartment complexes with fitness rooms, and
@@ -412,7 +374,7 @@ const schema = {
         </div>
 
         <div id="what-it-costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Does a Treadmill Repair Service Cost?</h2>
+          <h2>What Does a Treadmill Repair Service Cost?</h2>
 <p>
             Expect a call-out or diagnostic fee somewhere in the region of $75 to $150 for a home
             visit, with labour charged on top and the part on top of that. Many repairers deduct
@@ -458,7 +420,7 @@ const schema = {
         </div>
 
         <div id="what-to-have-ready" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Should You Have Ready Before You Call?</h2>
+          <h2>What Should You Have Ready Before You Call?</h2>
 <p>
             Have the model and serial number, proof of purchase, a precise description of the fault
             and a short video ready before you contact any treadmill repair service. It turns a
@@ -485,7 +447,7 @@ const schema = {
         </div>
 
         <div id="questions-to-ask" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Questions Should You Ask a Treadmill Repairman?</h2>
+          <h2>What Questions Should You Ask a Treadmill Repairman?</h2>
 <p>
             Ask about treadmill experience, fees, parts and guarantees before booking. A good
             repairer answers all of these plainly and will often tell you from a video whether a
@@ -514,7 +476,7 @@ const schema = {
         </div>
 
         <div id="red-flags" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Are the Red Flags?</h2>
+          <h2>What Are the Red Flags?</h2>
 <p>
             Be wary of any repairer who will not state a call-out fee, wants to replace several
             expensive parts without a diagnosis, or pressures you to decide on the spot. The signs
@@ -543,7 +505,7 @@ const schema = {
         </div>
 
         <div id="repair-or-replace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. When Is a Repair Not Worth Booking?</h2>
+          <h2>When Is a Repair Not Worth Booking?</h2>
 <p>
             A repair is hard to justify when its cost approaches half the price of a comparable new
             treadmill, or exceeds what the machine would sell for working. That is a rule of thumb
@@ -555,21 +517,17 @@ const schema = {
             sense. The same repair on a mid-range or premium machine with a strong frame and motor
             usually passes the test comfortably. Age matters too: a machine near the end of its
             life with a worn deck, noisy bearings and an unreliable console is a list of repairs,
-            not one. Our guide to
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            helps place a machine in its life.
+            not one. Our guide to <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> helps place a machine in its life.
           </p>
           <p>
             Parts availability can decide it. Older or less common brands may simply not have a
             board available, and a technician who cannot source the part cannot fix the machine.
-            Ask that question before the visit. If you decide to replace it, our guide on
-            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">how to dispose of a treadmill</a>
-            covers what to do with the old one.
+            Ask that question before the visit. If you decide to replace it, our guide on <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">how to dispose of a treadmill</a> covers what to do with the old one.
           </p>
         </div>
 
         <div id="after-the-repair" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. What Should Happen After the Repair?</h2>
+          <h2>What Should Happen After the Repair?</h2>
 <p>
             Test the treadmill before the technician leaves, get the guarantee and the parts used
             in writing, and fix the cause as well as the part so you are not booking the same
@@ -585,147 +543,159 @@ const schema = {
             dry deck will fail again. A good technician will tell you if the deck, belt or
             lubrication routine is the underlying problem.</li>
             <li><strong>Keep up the maintenance.</strong> Lubrication, belt tension and keeping the
-            motor compartment clean prevent most repeat repairs. Our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
-            sets out the full routine.</li>
+            motor compartment clean prevent most repeat repairs. Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a> sets out the full routine.</li>
           </ul>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I find a treadmill repairman near me?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the machine is under warranty, contact the manufacturer first and let them send an authorised technician. If not, search for fitness equipment repair in your area, ask local gyms and fitness stores who services their treadmills, and ask the brand for its local service companies. Choose someone who works on treadmills regularly and diagnoses before ordering parts.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a treadmill repair service call cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A call-out or diagnostic fee is typically somewhere in the region of $75 to $150, with labour and parts on top. Common jobs such as a drive belt or motor brushes often come to roughly $120 to $300 all in, while a motor control board or drive motor is commonly $300 to $900. These are estimates, not quotes, and vary by area and brand.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will an independent repair void my treadmill warranty?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can affect it. Manufacturers generally expect warranty repairs to be done by their own or authorised technicians, and an unauthorised repair to a covered part can give them grounds to decline later claims on it. If any part of the warranty might still apply, contact the brand before booking anyone else, with the serial number and proof of purchase.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can an appliance repair company fix a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some can, especially for mechanical jobs such as belts and rollers, but many appliance repairers rarely work on treadmills. For electrical faults, ask directly how many treadmills they repair each month and whether they can source parts for your brand. A fitness-equipment specialist is usually the safer choice for motor and controller faults.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What information does a treadmill technician need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The model and serial number from the frame sticker, the purchase date, a precise description of the fault including any error code, what you have already tried, and a short video of the problem. With that, a technician can often identify the likely part and bring it on the first visit, which avoids a second call-out fee.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth repairing an old treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the machine and the fault. A common rule of thumb is that a repair approaching half the price of a comparable new treadmill, or more than the machine would sell for working, needs a good reason. Repairs on sound mid-range machines usually make sense; a controller and motor on an old budget machine often do not.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Booking Treadmill Repair</h2>
+          <p>Most avoidable repair costs come from calling the wrong person, or calling anyone before the free checks are done.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Booking a visit before the free checks</h3>
+              <p>A dry deck, a loose belt, an unseated safety key or a tripped reset button produce many of the same symptoms as a failed part. A technician who finds one of them still charges the call-out fee. Work through the basic checks in your manual first.</p>
+            </li>
+            <li>
+              <h3>Skipping the warranty call</h3>
+              <p>A part still under motor or parts cover can be free from the manufacturer, and an unauthorised repair to it can complicate future claims. If the machine is less than a few years old, or you bought a protection plan, call the brand or plan provider before anyone else.</p>
+            </li>
+            <li>
+              <h3>Giving a vague description</h3>
+              <p>"It stopped working" leads to a diagnostic visit, a part order and a second visit. The model and serial number, the exact symptom, any error code and a short video often let a technician bring the right part the first time.</p>
+            </li>
+            <li>
+              <h3>Approving parts without a diagnosis</h3>
+              <p>Replacing a board, then a motor, then a sensor until the fault disappears is costly guesswork. Ask what test pointed to each part, get the price before it is fitted, and ask for the old part back.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Booking Treadmill Repair</h2>
-          <p class="text-gray-700 leading-relaxed">Most avoidable repair costs come from calling the wrong person, or calling anyone before the free checks are done.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Booking a visit before the free checks</h3>
-              <p class="text-gray-700 text-sm m-0">A dry deck, a loose belt, an unseated safety key or a tripped reset button produce many of the same symptoms as a failed part. A technician who finds one of them still charges the call-out fee. Work through the basic checks in your manual first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the warranty call</h3>
-              <p class="text-gray-700 text-sm m-0">A part still under motor or parts cover can be free from the manufacturer, and an unauthorised repair to it can complicate future claims. If the machine is less than a few years old, or you bought a protection plan, call the brand or plan provider before anyone else.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Giving a vague description</h3>
-              <p class="text-gray-700 text-sm m-0">"It stopped working" leads to a diagnostic visit, a part order and a second visit. The model and serial number, the exact symptom, any error code and a short video often let a technician bring the right part the first time.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Approving parts without a diagnosis</h3>
-              <p class="text-gray-700 text-sm m-0">Replacing a board, then a motor, then a sensor until the fault disappears is costly guesswork. Ask what test pointed to each part, get the price before it is fitted, and ask for the old part back.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Repair Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-repair-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Repair</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Repair Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What you can fix yourself, what needs a technician, and the full cost table.</p>
-            </a>
-            <a href="/treadmill-warranty-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Warranty</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Warranty Explained</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Frame, motor, parts and labour terms, and what voids them.</p>
-            </a>
-            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The checks to run before you call anyone.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For treadmill repair near you, warranty status decides who to
             call.</strong> Under any part of a warranty or protection plan, start with the
             manufacturer and let them send an authorised technician; out of warranty, an independent
             fitness-equipment technician who works on treadmills regularly is usually the best
             value.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Do the free checks, then call with the serial number, a clear
             symptom and a video.</strong> Ask about fees, parts and guarantees up front, and walk
-            away from anyone who will not diagnose before replacing parts. Our
-            <a href="/treadmill-repair-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill repair guide</a>
-            covers what each repair involves.
+            away from anyone who will not diagnose before replacing parts. Our <a href="/treadmill-repair-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill repair guide</a> covers what each repair involves.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-repair-guide/">Treadmill Repair Guide</a></li>
+            <li><a href="/treadmill-warranty-guide/">Treadmill Warranty Explained</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do I find a treadmill repairman near me?</h3></summary>
+            <p class="faq-a">
+              If the machine is under warranty, contact the manufacturer first and let them send an authorised technician. If not, search for fitness equipment repair in your area, ask local gyms and fitness stores who services their treadmills, and ask the brand for its local service companies. Choose someone who works on treadmills regularly and diagnoses before ordering parts.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does a treadmill repair service call cost?</h3></summary>
+            <p class="faq-a">
+              A call-out or diagnostic fee is typically somewhere in the region of $75 to $150, with labour and parts on top. Common jobs such as a drive belt or motor brushes often come to roughly $120 to $300 all in, while a motor control board or drive motor is commonly $300 to $900. These are estimates, not quotes, and vary by area and brand.
             </p>
+          </details>
+          <details>
+            <summary><h3>Will an independent repair void my treadmill warranty?</h3></summary>
+            <p class="faq-a">
+              It can affect it. Manufacturers generally expect warranty repairs to be done by their own or authorised technicians, and an unauthorised repair to a covered part can give them grounds to decline later claims on it. If any part of the warranty might still apply, contact the brand before booking anyone else, with the serial number and proof of purchase.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can an appliance repair company fix a treadmill?</h3></summary>
+            <p class="faq-a">
+              Some can, especially for mechanical jobs such as belts and rollers, but many appliance repairers rarely work on treadmills. For electrical faults, ask directly how many treadmills they repair each month and whether they can source parts for your brand. A fitness-equipment specialist is usually the safer choice for motor and controller faults.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What information does a treadmill technician need?</h3></summary>
+            <p class="faq-a">
+              The model and serial number from the frame sticker, the purchase date, a precise description of the fault including any error code, what you have already tried, and a short video of the problem. With that, a technician can often identify the likely part and bring it on the first visit, which avoids a second call-out fee.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth repairing an old treadmill?</h3></summary>
+            <p class="faq-a">
+              It depends on the machine and the fault. A common rule of thumb is that a repair approaching half the price of a comparable new treadmill, or more than the machine would sell for working, needs a good reason. Repairs on sound mid-range machines usually make sense; a controller and motor on an old budget machine often do not.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Repair Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-repair-guide/" class="card">
+            <div class="c-kicker">Repair</div>
+            <div class="c-title">Treadmill Repair Guide</div>
+            <p class="c-blurb">What you can fix yourself, what needs a technician, and the full cost table.</p>
+          </a>
+          <a href="/treadmill-warranty-guide/" class="card">
+            <div class="c-kicker">Warranty</div>
+            <div class="c-title">Treadmill Warranty Explained</div>
+            <p class="c-blurb">Frame, motor, parts and labour terms, and what voids them.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Troubleshooting</div>
+            <p class="c-blurb">The checks to run before you call anyone.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

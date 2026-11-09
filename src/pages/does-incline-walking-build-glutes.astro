@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Does Incline Walking Build Glutes? (2026): What It Can and Cannot Do";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/does-incline-walking-build-glutes/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Incline Ranges", link: "#how-much-incline" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-doesinclinewalkingbuildglutes" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-doesinclinewalkingbuildglutes)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Does Incline Walking Build Glutes?</h1>
+      <p class="ed-dek">
+        Incline walking makes the glutes work noticeably harder than walking on the flat, and for beginners it can be a genuine starting point. But it is an endurance stimulus, and growing the glutes takes progressive resistance. Here is what the incline actually changes, how much grade is commonly suggested, the form that makes it count, and how to pair it with strength work.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Does Incline Walking <span class="text-[#5AA9FF]">Build Glutes?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Incline walking makes the glutes work noticeably harder than walking on the flat, and for beginners it can be a genuine starting point. But it is an endurance stimulus, and growing the glutes takes progressive resistance. Here is what the incline actually changes, how much grade is commonly suggested, the form that makes it count, and how to pair it with strength work.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#how-much-incline" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            How Much Incline for Glutes
-          </a>
-          <a href="#form" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Form That Works the Glutes
-          </a>
-        </div>
+        <a href="#how-much-incline" class="btn-ghost">How Much Incline for Glutes</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page explains, in general terms, what incline walking asks of the muscles — it is
-          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. Steep walking loads the calves, Achilles tendons, hips and lower back; if you
-          have a heart, joint, tendon or back condition, are recovering from injury, are pregnant,
-          or have any concern about exercise, talk to a doctor, physical therapist or qualified
-          coach before starting. <strong class="text-gray-900">On the figures below:</strong>
-          incline ranges are commonly suggested starting points and rules of thumb, not
-          research-derived prescriptions, and the right grade for you depends on your fitness and
-          your machine.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Does Incline Walking Build Glutes? The Short Answer</a>
-          <a href="#why-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why Does Incline Make the Glutes Work Harder?</a>
-          <a href="#grow-or-tone" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Can Incline Walking Actually Grow Your Glutes?</a>
-          <a href="#how-much-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Much Incline on a Treadmill for Glutes?</a>
-          <a href="#form" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Form Gets the Glutes Working?</a>
-          <a href="#other-muscles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Which Other Muscles Does Incline Walking Work?</a>
-          <a href="#pair-with-strength" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Should You Pair Incline Walking With Strength Training?</a>
-          <a href="#twelve-three-thirty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Is the 12-3-30 Workout Good for Glutes?</a>
-          <a href="#hill-intervals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Are Hill Intervals Better for Glutes Than a Steady Incline?</a>
-          <a href="#who-benefits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Gets the Most Glute Benefit From Incline Walking?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Incline walking has a reputation as a glute workout, and like most reputations it is part
           true and part exaggerated. The true part: walking uphill makes the hips extend through a
           bigger range against more resistance, so the glutes do noticeably more work than they
@@ -210,8 +146,38 @@ const schema = {
           treadmill and strength training together so each does the job it is good at.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This page explains, in general terms, what incline walking asks of the muscles — it is
+          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
+          those. Steep walking loads the calves, Achilles tendons, hips and lower back; if you
+          have a heart, joint, tendon or back condition, are recovering from injury, are pregnant,
+          or have any concern about exercise, talk to a doctor, physical therapist or qualified
+          coach before starting. <strong class="text-gray-900">On the figures below:</strong> incline ranges are commonly suggested starting points and rules of thumb, not
+          research-derived prescriptions, and the right grade for you depends on your fitness and
+          your machine.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Does Incline Walking Build Glutes? The Short Answer</a></li>
+            <li><a href="#why-incline">Why Does Incline Make the Glutes Work Harder?</a></li>
+            <li><a href="#grow-or-tone">Can Incline Walking Actually Grow Your Glutes?</a></li>
+            <li><a href="#how-much-incline">How Much Incline on a Treadmill for Glutes?</a></li>
+            <li><a href="#form">What Form Gets the Glutes Working?</a></li>
+            <li><a href="#other-muscles">Which Other Muscles Does Incline Walking Work?</a></li>
+            <li><a href="#pair-with-strength">How Should You Pair Incline Walking With Strength Training?</a></li>
+            <li><a href="#twelve-three-thirty">Is the 12-3-30 Workout Good for Glutes?</a></li>
+            <li><a href="#hill-intervals">Are Hill Intervals Better for Glutes Than a Steady Incline?</a></li>
+            <li><a href="#who-benefits">Who Gets the Most Glute Benefit From Incline Walking?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Does Incline Walking Build Glutes? The Short Answer</h2>
+          <h2>Does Incline Walking Build Glutes? The Short Answer</h2>
 <p>
             <strong>Incline walking works your glutes harder than flat walking and can help
             beginners and deconditioned people build some strength and endurance there, but it is
@@ -234,13 +200,12 @@ const schema = {
             regularly, incline walking will improve fitness and stamina on hills, while strength
             training — squats, hip thrusts, lunges, hinges, with load that rises over time — will
             do far more for the glutes themselves. If you want the broader picture of what a
-            session uphill does for the heart, calories and joints, see our companion page on
-            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
+            session uphill does for the heart, calories and joints, see our companion page on <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
           </p>
         </div>
 
         <div id="why-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why Does Incline Make the Glutes Work Harder?</h2>
+          <h2>Why Does Incline Make the Glutes Work Harder?</h2>
 <p>
             Because walking uphill asks the hip to extend from a more bent position, against the
             job of lifting your body weight, on every step. The glutes are the main hip extensors,
@@ -276,7 +241,7 @@ const schema = {
         </div>
 
         <div id="grow-or-tone" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Can Incline Walking Actually Grow Your Glutes?</h2>
+          <h2>Can Incline Walking Actually Grow Your Glutes?</h2>
 <p>
             For most people with any training history, only a little, and mainly at the start.
             Muscle growth is generally understood to come from repeated, challenging effort against
@@ -318,7 +283,7 @@ const schema = {
         </div>
 
         <div id="how-much-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Much Incline on a Treadmill for Glutes?</h2>
+          <h2>How Much Incline on a Treadmill for Glutes?</h2>
 <p>
             The range most commonly suggested for glute emphasis is somewhere around 8 to 12%, at
             a speed you can sustain with an upright posture and without <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> — often
@@ -361,16 +326,14 @@ const schema = {
           <p>
             <strong>Build to it.</strong> If you are new to incline, start in the 4 to 7% band for
             a couple of weeks before moving up, and increase grade by a percent or two at a time.
-            Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on a treadmill</a>
-            covers incline by goal and includes a four-week progression. Note that treadmill
+            Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on a treadmill</a> covers incline by goal and includes a four-week progression. Note that treadmill
             incline is shown in percent grade, not degrees: 10% is a rise of 10 feet per 100
             feet travelled, which is a little under 6 degrees.
           </p>
         </div>
 
         <div id="form" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Form Gets the Glutes Working?</h2>
+          <h2>What Form Gets the Glutes Working?</h2>
 <p>
             Form decides how much of the incline's extra work reaches the glutes. The same grade
             can be a hip-dominant climb or a rail-supported shuffle, and the cues below are what
@@ -408,7 +371,7 @@ const schema = {
         </div>
 
         <div id="other-muscles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Which Other Muscles Does Incline Walking Work?</h2>
+          <h2>Which Other Muscles Does Incline Walking Work?</h2>
 <p>
             Incline walking is a whole-leg effort, and the glutes are only part of it. Knowing
             where else the load goes helps you build sensibly and recognise what you are feeling.
@@ -430,13 +393,12 @@ const schema = {
           </ul>
           <p>
             For the full picture of how flat walking, running, incline and walking backwards
-            spread the load across the legs, see our page on
-            <a href="/what-muscles-does-a-treadmill-work/" class="text-[#0F62FE] font-medium">what muscles a treadmill works</a>.
+            spread the load across the legs, see our page on <a href="/what-muscles-does-a-treadmill-work/" class="text-[#0F62FE] font-medium">what muscles a treadmill works</a>.
           </p>
         </div>
 
         <div id="pair-with-strength" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Should You Pair Incline Walking With Strength Training?</h2>
+          <h2>How Should You Pair Incline Walking With Strength Training?</h2>
 <p>
             By giving each a clear job: strength training to build the glutes, and incline walking
             to add conditioning and some extra volume of hip work. The two complement each other
@@ -463,9 +425,7 @@ const schema = {
           </ul>
           <p>
             Order matters if you do both in one session. Long, steep walking before leg training
-            can leave the glutes and calves tired enough to reduce what you can lift. Our page on
-            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a>
-            covers the trade-offs; the short version is that whatever your main goal is should
+            can leave the glutes and calves tired enough to reduce what you can lift. Our page on <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a> covers the trade-offs; the short version is that whatever your main goal is should
             usually come first.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A sample week</h3>
@@ -479,7 +439,7 @@ const schema = {
         </div>
 
         <div id="twelve-three-thirty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Is the 12-3-30 Workout Good for Glutes?</h2>
+          <h2>Is the 12-3-30 Workout Good for Glutes?</h2>
 <p>
             It is a hard incline walk that works the glutes, among other things, but it is the
             same kind of stimulus described above: endurance work at a steep grade. Twelve percent
@@ -497,14 +457,12 @@ const schema = {
             If you like 12-3-30, use it as one of your conditioning sessions and keep the
             strength work alongside it. If you cannot yet do it without the rails, build up from
             a lower grade or speed; a rail-free 8 to 10% walk is more useful than a rail-supported
-            12%. Our full guide to the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 treadmill workout</a>
-            includes a four-week build-up and modifications.
+            12%. Our full guide to the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 treadmill workout</a> includes a four-week build-up and modifications.
           </p>
         </div>
 
         <div id="hill-intervals" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Are Hill Intervals Better for Glutes Than a Steady Incline?</h2>
+          <h2>Are Hill Intervals Better for Glutes Than a Steady Incline?</h2>
 <p>
             They are a different tool rather than a better one. Short, harder efforts — a minute
             or two at a steep grade and brisk pace, followed by easier recovery — let you work at
@@ -514,9 +472,7 @@ const schema = {
           <p>
             They are still not strength training. Even a hard uphill minute is many light steps,
             not a few heavy ones. What intervals add is variety and a stronger cardiovascular
-            stimulus, which is useful for fitness. Our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a>
-            page sets out four hill sessions, including repeats and a progressive climb, with
+            stimulus, which is useful for fitness. Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a> page sets out four hill sessions, including repeats and a progressive climb, with
             guidance on how hard each should feel.
           </p>
           <p>
@@ -528,7 +484,7 @@ const schema = {
         </div>
 
         <div id="who-benefits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Gets the Most Glute Benefit From Incline Walking?</h2>
+          <h2>Who Gets the Most Glute Benefit From Incline Walking?</h2>
 <p>
             The people for whom it is most useful as a glute exercise are the ones starting from
             the lowest base. Broadly:
@@ -558,140 +514,155 @@ const schema = {
             well short of the 8 to 12% range.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline walking build glutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It works the glutes harder than flat walking, and beginners or very inactive people may gain some strength and endurance from it. But it is a light, repeated endurance effort, so for noticeable glute growth progressive resistance training such as squats, hip thrusts and lunges does much more. Incline walking is best used alongside strength work.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much incline on a treadmill is best for glutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Around 8 to 12% is the range most commonly suggested, at a speed you can hold upright without the handrails, often 2.5 to 3.5 mph. That is a convention rather than a research-derived figure. Beginners should start lower, around 4 to 7%, and build up gradually to protect the calves and Achilles tendons.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is 12-3-30 good for building glutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is a demanding incline walk that works the glutes, hamstrings and calves, especially if you do not hold the rails. It improves endurance and fitness, but it is not a substitute for strength training if you want bigger or stronger glutes. Use it as a conditioning session alongside lower-body resistance work.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do I feel incline walking in my calves, not my glutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Steeper grades bend the ankle further and load the calves at push-off, so many people feel them first. Leaning forward, short steps and holding the rails also shift work away from the hips. Stand tall, take a full stride, let go of the rails and consider a slightly lower grade with better form.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should I incline walk for glutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Twenty to forty minutes at a challenging but sustainable grade, two or three times a week, is a common structure, alongside two strength sessions. Beginners should start with shorter blocks at lower grades. Duration matters less than consistent, rail-free walking with good posture and a gradual increase in grade over weeks.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline walking make your glutes bigger or smaller?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It may firm them slightly through modest muscular work and a higher energy cost than flat walking, but it is unlikely to make them noticeably bigger for anyone with training experience. Whether they look smaller depends on overall fat loss, which happens across the whole body and depends mainly on energy balance, not the exercise.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Incline Walking for Glutes</h2>
+          <p>Most of the disappointment with incline walking for glutes comes from asking it to do strength training’s job, or from doing it in a way that takes the hips out of the movement.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Holding the handrails at a steep grade</h3>
+              <p>Leaning on the rails or hanging from the console supports part of your body weight and flattens the effective climb, which takes much of the load off the glutes. If you cannot walk the grade hands-free, lower the incline or the speed until you can. A rail-free 9% beats a rail-supported 15%.</p>
+            </li>
+            <li>
+              <h3>Expecting it to replace strength training</h3>
+              <p>Incline walking is light, repeated work: excellent for endurance, limited for building muscle. People who rely on it alone for glute growth often stall within weeks. Add two lower-body strength sessions a week with load that rises over time, and keep the incline walks for conditioning.</p>
+            </li>
+            <li>
+              <h3>Going straight to the steepest setting</h3>
+              <p>Jumping to 12 to 15% for long sessions is a common route to sore calves and an irritated Achilles, because tendons adapt more slowly than muscles. Start around 4 to 7%, raise the grade a percent or two at a time over weeks, and back off if the back of the ankle aches.</p>
+            </li>
+            <li>
+              <h3>Hunching forward to cope with the grade</h3>
+              <p>Folding at the waist shifts work to the lower back and shortens the hip movement the glutes need. Keep the chest up with only a slight lean from the ankles, take a full stride, and drop the grade if posture collapses. Good form at a lower incline is the better session.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Incline Walking for Glutes</h2>
-          <p class="text-gray-700 leading-relaxed">Most of the disappointment with incline walking for glutes comes from asking it to do strength training’s job, or from doing it in a way that takes the hips out of the movement.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the handrails at a steep grade</h3>
-              <p class="text-gray-700 text-sm m-0">Leaning on the rails or hanging from the console supports part of your body weight and flattens the effective climb, which takes much of the load off the glutes. If you cannot walk the grade hands-free, lower the incline or the speed until you can. A rail-free 9% beats a rail-supported 15%.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting it to replace strength training</h3>
-              <p class="text-gray-700 text-sm m-0">Incline walking is light, repeated work: excellent for endurance, limited for building muscle. People who rely on it alone for glute growth often stall within weeks. Add two lower-body strength sessions a week with load that rises over time, and keep the incline walks for conditioning.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Going straight to the steepest setting</h3>
-              <p class="text-gray-700 text-sm m-0">Jumping to 12 to 15% for long sessions is a common route to sore calves and an irritated Achilles, because tendons adapt more slowly than muscles. Start around 4 to 7%, raise the grade a percent or two at a time over weeks, and back off if the back of the ankle aches.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Hunching forward to cope with the grade</h3>
-              <p class="text-gray-700 text-sm m-0">Folding at the waist shifts work to the lower back and shortens the hip movement the glutes need. Keep the chest up with only a slight lean from the ankles, take a full stride, and drop the grade if posture collapses. Good form at a lower incline is the better session.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Incline Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Incline Should I Walk On?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Incline by goal, the 1% rule, and a four-week progression.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Workout</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What it is, how hard it really is, and how to build up to it.</p>
-            </a>
-            <a href="/treadmill-hill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Workout</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Hill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four hill sessions, from repeats to a long incline walk.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Incline walking works the glutes harder than flat walking, but
             it is an endurance stimulus, not a glute-building programme.</strong> Beginners and
             deconditioned people may gain some strength from it; anyone wanting noticeably
             stronger or bigger glutes needs progressive resistance training alongside it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Walk at the commonly suggested 8 to 12% once you have built up to it, stand tall, take a
             full stride and let go of the rails, and give the strength work its own sessions. For
-            incline settings by goal and a progression to follow, see our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">what incline to walk on a treadmill</a>.
+            incline settings by goal and a progression to follow, see our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">what incline to walk on a treadmill</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/what-incline-should-i-walk-on-a-treadmill/">What Incline Should I Walk On?</a></li>
+            <li><a href="/12-3-30-treadmill-workout/">The 12-3-30 Treadmill Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does incline walking build glutes?</h3></summary>
+            <p class="faq-a">
+              It works the glutes harder than flat walking, and beginners or very inactive people may gain some strength and endurance from it. But it is a light, repeated endurance effort, so for noticeable glute growth progressive resistance training such as squats, hip thrusts and lunges does much more. Incline walking is best used alongside strength work.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much incline on a treadmill is best for glutes?</h3></summary>
+            <p class="faq-a">
+              Around 8 to 12% is the range most commonly suggested, at a speed you can hold upright without the handrails, often 2.5 to 3.5 mph. That is a convention rather than a research-derived figure. Beginners should start lower, around 4 to 7%, and build up gradually to protect the calves and Achilles tendons.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is 12-3-30 good for building glutes?</h3></summary>
+            <p class="faq-a">
+              It is a demanding incline walk that works the glutes, hamstrings and calves, especially if you do not hold the rails. It improves endurance and fitness, but it is not a substitute for strength training if you want bigger or stronger glutes. Use it as a conditioning session alongside lower-body resistance work.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do I feel incline walking in my calves, not my glutes?</h3></summary>
+            <p class="faq-a">
+              Steeper grades bend the ankle further and load the calves at push-off, so many people feel them first. Leaning forward, short steps and holding the rails also shift work away from the hips. Stand tall, take a full stride, let go of the rails and consider a slightly lower grade with better form.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should I incline walk for glutes?</h3></summary>
+            <p class="faq-a">
+              Twenty to forty minutes at a challenging but sustainable grade, two or three times a week, is a common structure, alongside two strength sessions. Beginners should start with shorter blocks at lower grades. Duration matters less than consistent, rail-free walking with good posture and a gradual increase in grade over weeks.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does incline walking make your glutes bigger or smaller?</h3></summary>
+            <p class="faq-a">
+              It may firm them slightly through modest muscular work and a higher energy cost than flat walking, but it is unlikely to make them noticeably bigger for anyone with training experience. Whether they look smaller depends on overall fat loss, which happens across the whole body and depends mainly on energy balance, not the exercise.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Incline Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/what-incline-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">What Incline Should I Walk On?</div>
+            <p class="c-blurb">Incline by goal, the 1% rule, and a four-week progression.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Workout</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">What it is, how hard it really is, and how to build up to it.</p>
+          </a>
+          <a href="/treadmill-hill-workout/" class="card">
+            <div class="c-kicker">Workout</div>
+            <div class="c-title">Treadmill Hill Workouts</div>
+            <p class="c-blurb">Four hill sessions, from repeats to a long incline walk.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

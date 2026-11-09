@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Low Profile Treadmills (2026): Slimline, Fold-Flat, Lightweight";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-low-profile-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,66 +275,73 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Echelon Stride-6s", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestlowprofiletreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestlowprofiletreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Low Profile Treadmills Slimline, Fold-Flat and Lightweight</h1>
+      <p class="ed-dek">
+        "Low profile" means three different things on treadmill listings: a deck that sits close to the floor, a machine that folds flat enough to slide under furniture, and one light enough to move on your own. Here are five machines that are genuinely low by one of those measures, with the heights and weights we could confirm — and the ones we could not.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Low Profile Treadmills <span class="text-[#5AA9FF]">Slimline, Fold-Flat and Lightweight</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          "Low profile" means three different things on treadmill listings: a deck that sits close to the floor, a machine that folds flat enough to slide under furniture, and one light enough to move on your own. Here are five machines that are genuinely low by one of those measures, with the heights and weights we could confirm — and the ones we could not.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#three-kinds" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Which Kind of Low?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A low profile treadmill solves one of three problems. Some people need a deck they can step
+          onto easily, without a high platform. Some need a machine that disappears — folded flat under
+          a bed or sofa, or standing in a closet. And some need one light enough to move alone. No
+          single machine is best at all three: the lowest folded heights belong to walking pads, the
+          lowest step-up heights on running-length decks belong to heavier gym-style machines, and the
+          lightest machines give up deck length and speed. This roundup picks the strongest option for
+          each, using figures we checked on 14 October 2026, and says where sources disagreed.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#echelon-stride-6s">Echelon Stride-6s</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Easiest to Step On:</span> <a href="#life-fitness-f3">Life Fitness F3</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Walking Pad:</span> <a href="#urevo-spacewalk-3s">UREVO SpaceWalk 3S</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Slimmest Folded:</span> <a href="#merach-t19">MERACH T19</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#goplus-superfit-2-in-1">Goplus SuperFit 2-in-1</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we left out.</strong> On 14 October
           2026 we checked each machine against the manufacturer's own product page or brand store, a
           retailer listing and independent coverage — published reviews and, for the walking pads, a
@@ -345,100 +357,43 @@ const schema = {
           October 2026 and change often, so confirm the price, the specification and the warranty
           for the exact unit before you order. We earn a commission if you buy through the Amazon
           links on this page; it does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#echelon-stride-6s" class="font-bold text-gray-900 no-underline hover:underline">Echelon Stride-6s</a>
-            <a href="#echelon-stride-6s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Easiest to Step On:</span>
-            <a href="#life-fitness-f3" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness F3</a>
-            <a href="#life-fitness-f3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Walking Pad:</span>
-            <a href="#urevo-spacewalk-3s" class="font-bold text-gray-900 no-underline hover:underline">UREVO SpaceWalk 3S</a>
-            <a href="#urevo-spacewalk-3s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Slimmest Folded:</span>
-            <a href="#merach-t19" class="font-bold text-gray-900 no-underline hover:underline">MERACH T19</a>
-            <a href="#merach-t19" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#goplus-superfit-2-in-1" class="font-bold text-gray-900 no-underline hover:underline">Goplus SuperFit 2-in-1</a>
-            <a href="#goplus-superfit-2-in-1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Is the Best Low Profile Treadmill? The Short Answer</a>
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The 5 Best Low Profile Treadmills</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How We Chose Them</a>
-          <a href="#three-kinds" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Three Kinds of Low Profile</a>
-          <a href="#step-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Step-Up Height Matters, and How to Measure It</a>
-          <a href="#fold-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Fold Flat, Fold Up or Fold the Rail: How These Machines Store</a>
-          <a href="#what-you-give-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What a Slimline Treadmill Gives Up</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Safety With Slim and Folding Machines</a>
-          <a href="#measure" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Measure Before You Buy</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Is the Best Low Profile Treadmill? The Short Answer</a></li>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Low Profile Treadmills</a></li>
+            <li><a href="#how-we-chose">How We Chose Them</a></li>
+            <li><a href="#three-kinds">Three Kinds of Low Profile</a></li>
+            <li><a href="#step-up">Why Step-Up Height Matters, and How to Measure It</a></li>
+            <li><a href="#fold-types">Fold Flat, Fold Up or Fold the Rail: How These Machines Store</a></li>
+            <li><a href="#what-you-give-up">What a Slimline Treadmill Gives Up</a></li>
+            <li><a href="#safety">Safety With Slim and Folding Machines</a></li>
+            <li><a href="#measure">Measure Before You Buy</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A low profile treadmill solves one of three problems. Some people need a deck they can step
-          onto easily, without a high platform. Some need a machine that disappears — folded flat under
-          a bed or sofa, or standing in a closet. And some need one light enough to move alone. No
-          single machine is best at all three: the lowest folded heights belong to walking pads, the
-          lowest step-up heights on running-length decks belong to heavier gym-style machines, and the
-          lightest machines give up deck length and speed. This roundup picks the strongest option for
-          each, using figures we checked on 14 October 2026, and says where sources disagreed.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Is the Best Low Profile Treadmill? The Short Answer</h2>
+          <h2>What Is the Best Low Profile Treadmill? The Short Answer</h2>
 <p>
             <strong>The best low profile treadmill for most people is the Echelon Stride-6s: a full
             60-inch running deck that folds flat at the touch of a button, a 7-inch step-up by
-            Echelon's figure, and a weight of about 182 lb.</strong> If you only need to walk, the
-            <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S is 6.5 inches tall with powered incline, and the MERACH T19 folds to
+            Echelon's figure, and a weight of about 182 lb.</strong> If you only need to walk, the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S is 6.5 inches tall with powered incline, and the MERACH T19 folds to
             4.3 inches with a handrail. If an easy step onto the deck matters most, the Life Fitness
             F3 has the lowest step-up we found on a folding treadmill.
           </p>
           <p>
             Which one is right depends on what "low profile" means to you, and the next section sorts
-            that out. If your real constraint is floor space rather than height, our
-            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a>
-            guide compares upright-folding footprints, and our
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
-            page ranks folding machines by use case.
+            that out. If your real constraint is floor space rather than height, our <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a> guide compares upright-folding footprints, and our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a> page ranks folding machines by use case.
           </p>
         </div>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five machines, each low by a different measure. The table gives each in one line; the
             cards below carry the confirmed figures and the ones that conflicted.
@@ -461,89 +416,76 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The 5 Best Low Profile Treadmills</h2>
+          <h2>The 5 Best Low Profile Treadmills</h2>
 <p>
             The two full-size machines come first, because they keep a running-length deck while
             being low in one important way; the three walking-pad-style machines follow, ordered by
             how much they do. All five were listed for sale on 14 October 2026, though MERACH's own
             store showed the T19 sold out that day. For a wider look at the walking-pad side, see
-            our <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrail</a>
-            and <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            roundups.
+            our <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrail</a> and <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a> roundups.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How We Chose Them</h2>
+          <h2>How We Chose Them</h2>
 <p>
             We have not tested these treadmills. The list is built from manufacturers' published
             specifications and warranty terms, retailer listings and independent coverage, all checked
@@ -574,7 +516,7 @@ const schema = {
         </div>
 
         <div id="three-kinds" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Three Kinds of Low Profile</h2>
+          <h2>Three Kinds of Low Profile</h2>
 <p>
             Sellers use "low profile", "slimline" and "fold flat" loosely. It helps to separate the
             three measurements, because a machine that wins on one often loses on another.
@@ -604,21 +546,17 @@ const schema = {
           </p>
           <p>
             Decide which of the three is your actual constraint before you shop. If it is all three,
-            you are almost certainly looking for a walking pad, and our guide to
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs folding treadmill</a>
-            covers what you give up.
+            you are almost certainly looking for a walking pad, and our guide to <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs folding treadmill</a> covers what you give up.
           </p>
         </div>
 
         <div id="step-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Why Step-Up Height Matters, and How to Measure It</h2>
+          <h2>Why Step-Up Height Matters, and How to Measure It</h2>
 <p>
             A lower deck is easier to get on and off, and that matters more than it sounds. You step up
             at the start of every session and down at the end, often when tired. For older users, anyone
             recovering from an injury and anyone with balance concerns, two or three inches is the
-            difference between a comfortable step and an awkward one. Our
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            guide weighs step-up height alongside handrails and speed control.
+            difference between a comfortable step and an awkward one. Our <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> guide weighs step-up height alongside handrails and speed control.
           </p>
           <p>
             It also affects headroom. Your head is raised by the step-up height plus your own bounce
@@ -638,7 +576,7 @@ const schema = {
         </div>
 
         <div id="fold-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Fold Flat, Fold Up or Fold the Rail: How These Machines Store</h2>
+          <h2>Fold Flat, Fold Up or Fold the Rail: How These Machines Store</h2>
 <p>
             "A treadmill that folds up" covers several quite different mechanisms, and the one you
             choose decides where the machine lives when you are not using it.
@@ -647,9 +585,7 @@ const schema = {
             <strong>Upright fold.</strong> The deck hinges up to stand near-vertical against the frame,
             usually with a gas or hydraulic assist. This is how most full-size folding treadmills work.
             It halves the floor space but leaves a tall object in the room, and the folded deck is heavy
-            when it comes down. Our guide on
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a>
-            covers doing it safely.
+            when it comes down. Our guide on <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a> covers doing it safely.
           </p>
           <p>
             <strong>Fold flat.</strong> The console and uprights collapse down onto the deck so the
@@ -666,14 +602,12 @@ const schema = {
           </p>
           <p>
             <strong>No fold at all.</strong> Flat walking pads such as the UREVO SpaceWalk 3S do not
-            fold; they are already low enough to slide under a sofa or bed as they are. Our
-            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills explainer</a>
-            goes deeper into hydraulic, manual-latch and motorised mechanisms.
+            fold; they are already low enough to slide under a sofa or bed as they are. Our <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills explainer</a> goes deeper into hydraulic, manual-latch and motorised mechanisms.
           </p>
         </div>
 
         <div id="what-you-give-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What a Slimline Treadmill Gives Up</h2>
+          <h2>What a Slimline Treadmill Gives Up</h2>
 <p>
             A slimline treadmill is lower and lighter because something has been taken out. Knowing what
             stops you buying the wrong one.
@@ -681,8 +615,7 @@ const schema = {
           <p>
             <strong>Belt length.</strong> The walking pads here have belts of 37.4 to 42.5 inches against
             55 to 60 inches on the full-size machines. That is plenty for walking, short for running,
-            and our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explains why stride length is the limit.
+            and our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains why stride length is the limit.
           </p>
           <p>
             <strong>Speed.</strong> Flat walking pads stop around 4 mph. The 2-in-1s reach about 7.5 mph
@@ -706,7 +639,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Safety With Slim and Folding Machines</h2>
+          <h2>Safety With Slim and Folding Machines</h2>
 <p>
             Low, light and foldable machines bring a few safety points that a fixed, heavy treadmill
             does not, and they are worth settling before the box arrives.
@@ -737,7 +670,7 @@ const schema = {
         </div>
 
         <div id="measure" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Measure Before You Buy</h2>
+          <h2>Measure Before You Buy</h2>
 <p>
             Low-profile buyers are usually fitting a machine into a specific gap, so three measurements
             are worth taking before you order.
@@ -755,135 +688,61 @@ const schema = {
           <p>
             <strong>The route.</strong> A light machine still has to get there. Measure doorways and
             stairs against the boxed size, and remember that the full-size treadmills here arrive at well
-            over 150 lb. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space guide</a>
-            sets out the clearances to leave behind and beside a deck.
+            over 150 lb. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space guide</a> sets out the clearances to leave behind and beside a deck.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>Regular runners.</strong> Slim machines give up deck length, speed and stability.
             If you run more than occasionally and have floor space but not height, a conventional
-            folding treadmill is the better tool; our
-            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small spaces guide</a>
-            covers the most compact ones.
+            folding treadmill is the better tool; our <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small spaces guide</a> covers the most compact ones.
           </p>
           <p>
             <strong>Heavier users.</strong> The lightest machines are the least stable under load, and
-            their capacity figures are the least reliable. Our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            roundup covers the sturdier pads.
+            their capacity figures are the least reliable. Our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> roundup covers the sturdier pads.
           </p>
           <p>
             <strong>Anyone who wants steep incline.</strong> Low profile and high incline pull in
-            opposite directions. Our
-            <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">highest-incline treadmills</a>
-            are tall, heavy and mostly non-folding.
+            opposite directions. Our <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">highest-incline treadmills</a> are tall, heavy and mostly non-folding.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a low profile treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It usually means one of three things: a deck that sits low to the floor, so the step-up is small; a machine that folds or lies flat enough to store under furniture; or a light machine that one person can move. Walking pads are lowest when stored, while some gym-style folding treadmills have the lowest step-up heights.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the lowest step-up height on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Among folding treadmills we checked, the Life Fitness F3 is listed by Life Fitness at 6 inches, though an older testing listing gives 8 inches. Echelon lists 7 inches for the Stride-6s. Most full-size folding treadmills sit around 8 to 9 inches, and incline trainers such as the NordicTrack X Series are over 13 inches.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is there a full-size treadmill that folds flat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. The Echelon Stride-6s has a 60-inch deck and an automatic fold that collapses the console so the machine lies flat. Echelon does not publish a folded height; an independent review gives about 8.5 inches at the deck and about 12 inches at the console. Most other full-size treadmills fold upright instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the thinnest treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Of the machines we could confirm, the MERACH T19 folds thinnest, to 4.3 inches with its handrail down according to MERACH and an independent tracker. The Goplus SuperFit folds to about 5 inches and the UREVO SpaceWalk 3S is 6.5 inches tall without folding. All three are walking pads, best for walking and light jogging.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a light weight treadmill weigh?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Walking pads on this page weigh roughly 55 to 74 lb, depending on model and listing. Full-size treadmills are much heavier: about 182 lb for the Echelon Stride-6s, 264 lb for the Life Fitness F3 and 277 lb for the Horizon 7.0 AT. Lighter machines are easier to move but have shorter belts and less stable frames.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a low profile treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On the full-size ones, yes: the Echelon Stride-6s has a 60-inch deck, and the Life Fitness F3 suits jogging on its 55-inch deck. The 2-in-1 walking pads reach about 7.5 mph with the rail up but have short belts, and flat walking pads stop around 4 mph. For regular running, choose a full-length deck.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Low Profile Treadmill</h2>
+          <p>Most of these come from trusting one listing figure, or from buying for one kind of low and needing another.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting a single height figure</h3>
+              <p>Step-up and folded heights are measured to different points and carried over between versions. Look for a second source, and plan around the higher figure.</p>
+            </li>
+            <li>
+              <h3>Buying a walking pad to run on</h3>
+              <p>A slim machine has a short belt and a light frame. It is excellent for walking and fine for a short jog, but regular running needs a full-length deck.</p>
+            </li>
+            <li>
+              <h3>Forgetting the folded height of an upright folder</h3>
+              <p>A folding treadmill that stands upright saves floor space but can be 70 inches or more tall when stowed. If it has to go under something, it needs to fold flat.</p>
+            </li>
+            <li>
+              <h3>Ignoring the capacity spread</h3>
+              <p>Budget slim machines often list different weight limits in different places. Treat the lowest figure you find as the real one, especially if you are near it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Low Profile Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from trusting one listing figure, or from buying for one kind of low and needing another.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a single height figure</h3>
-              <p class="text-gray-700 text-sm m-0">Step-up and folded heights are measured to different points and carried over between versions. Look for a second source, and plan around the higher figure.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a walking pad to run on</h3>
-              <p class="text-gray-700 text-sm m-0">A slim machine has a short belt and a light frame. It is excellent for walking and fine for a short jog, but regular running needs a full-length deck.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the folded height of an upright folder</h3>
-              <p class="text-gray-700 text-sm m-0">A folding treadmill that stands upright saves floor space but can be 70 inches or more tall when stowed. If it has to go under something, it needs to fold flat.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the capacity spread</h3>
-              <p class="text-gray-700 text-sm m-0">Budget slim machines often list different weight limits in different places. Treat the lowest figure you find as the real one, especially if you are near it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Space-Saving Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-small-spaces/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Small Rooms</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Small Spaces</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Folding treadmills compared by footprint and how easy they are to fold daily.</p>
-            </a>
-            <a href="/best-folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Folding</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Quick picks for folding treadmills by use case.</p>
-            </a>
-            <a href="/walking-pad-vs-folding-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Compare</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs Folding Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What you gain and give up when you go slim.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             For most people the <strong class="text-white">Echelon Stride-6s</strong> is the low profile
             treadmill to buy: a full 60-inch deck that folds flat on its own, a low step-up and about
-            182 lb. If an easy step onto the deck matters most, the
-            <strong class="text-white">Life Fitness F3</strong> has the lowest step-up we found on a
+            182 lb. If an easy step onto the deck matters most, the <strong class="text-white">Life Fitness F3</strong> has the lowest step-up we found on a
             folding machine.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you only walk, the <strong class="text-white">UREVO SpaceWalk 3S</strong> is 6.5 inches
             tall with incline, the <strong class="text-white">MERACH T19</strong> folds to 4.3 inches
             with a rail, and the <strong class="text-white">Goplus SuperFit</strong> does it for the
@@ -891,29 +750,113 @@ const schema = {
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-small-spaces/">Best Treadmills for Small Spaces</a></li>
+            <li><a href="/best-folding-treadmills/">Best Folding Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a low profile treadmill?</h3></summary>
+            <p class="faq-a">
+              It usually means one of three things: a deck that sits low to the floor, so the step-up is small; a machine that folds or lies flat enough to store under furniture; or a light machine that one person can move. Walking pads are lowest when stored, while some gym-style folding treadmills have the lowest step-up heights.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the lowest step-up height on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Among folding treadmills we checked, the Life Fitness F3 is listed by Life Fitness at 6 inches, though an older testing listing gives 8 inches. Echelon lists 7 inches for the Stride-6s. Most full-size folding treadmills sit around 8 to 9 inches, and incline trainers such as the NordicTrack X Series are over 13 inches.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is there a full-size treadmill that folds flat?</h3></summary>
+            <p class="faq-a">
+              Yes. The Echelon Stride-6s has a 60-inch deck and an automatic fold that collapses the console so the machine lies flat. Echelon does not publish a folded height; an independent review gives about 8.5 inches at the deck and about 12 inches at the console. Most other full-size treadmills fold upright instead.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the thinnest treadmill?</h3></summary>
+            <p class="faq-a">
+              Of the machines we could confirm, the MERACH T19 folds thinnest, to 4.3 inches with its handrail down according to MERACH and an independent tracker. The Goplus SuperFit folds to about 5 inches and the UREVO SpaceWalk 3S is 6.5 inches tall without folding. All three are walking pads, best for walking and light jogging.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much does a light weight treadmill weigh?</h3></summary>
+            <p class="faq-a">
+              Walking pads on this page weigh roughly 55 to 74 lb, depending on model and listing. Full-size treadmills are much heavier: about 182 lb for the Echelon Stride-6s, 264 lb for the Life Fitness F3 and 277 lb for the Horizon 7.0 AT. Lighter machines are easier to move but have shorter belts and less stable frames.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a low profile treadmill?</h3></summary>
+            <p class="faq-a">
+              On the full-size ones, yes: the Echelon Stride-6s has a 60-inch deck, and the Life Fitness F3 suits jogging on its 55-inch deck. The 2-in-1 walking pads reach about 7.5 mph with the rail up but have short belts, and flat walking pads stop around 4 mph. For regular running, choose a full-length deck.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Space-Saving Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-small-spaces/" class="card">
+            <div class="c-kicker">Small Rooms</div>
+            <div class="c-title">Best Treadmills for Small Spaces</div>
+            <p class="c-blurb">Folding treadmills compared by footprint and how easy they are to fold daily.</p>
+          </a>
+          <a href="/best-folding-treadmills/" class="card">
+            <div class="c-kicker">Folding</div>
+            <div class="c-title">Best Folding Treadmills</div>
+            <p class="c-blurb">Quick picks for folding treadmills by use case.</p>
+          </a>
+          <a href="/walking-pad-vs-folding-treadmill/" class="card">
+            <div class="c-kicker">Compare</div>
+            <div class="c-title">Walking Pad vs Folding Treadmill</div>
+            <p class="c-blurb">What you gain and give up when you go slim.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Lubricant (2026): 100% Silicone, and Which Applicator";
 const description =
@@ -218,6 +217,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-lubricant/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -238,136 +243,92 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Picks", link: "#silicone-bottle" }}
+  stickyCta={{ text: "Best Overall: 100% Silicone Lubricant (Bottle + Applicator Tube)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmilllubricant" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmilllubricant)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Maintenance</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmill Lubricant</h1>
+      <p class="ed-dek">
+        The product choice is simpler than it looks: 100% silicone for most machines. The decision that actually matters is the applicator, and the check that matters most is whether your deck is pre-waxed.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Maintenance
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmill <span class="text-[#5AA9FF]">Lubricant</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The product choice is simpler than it looks: 100% silicone for most machines. The decision that actually matters is the applicator, and the check that matters most is whether your deck is pre-waxed.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#silicone-bottle" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#deck-type" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Check Your Deck Type First
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="5.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Do this before buying anything.</strong> Find your manual
-          and check what lubricant the manufacturer specifies, and whether the deck is pre-waxed
-          or self-lubricating. Applying silicone to a pre-waxed deck contaminates it and the deck
-          then has to be replaced. This check takes two minutes and is the only irreversible
-          decision on this page.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#silicone-bottle" class="font-bold text-gray-900 no-underline hover:underline">100% Silicone Lubricant (Bottle + Applicator Tube)</a>
-            <a href="#silicone-bottle" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">For Awkward Decks:</span>
-            <a href="#silicone-spray-straw" class="font-bold text-gray-900 no-underline hover:underline">100% Silicone Spray With Precision Straw</a>
-            <a href="#silicone-spray-straw" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Check Your Manual:</span>
-            <a href="#proprietary-wax" class="font-bold text-gray-900 no-underline hover:underline">Manufacturer-Specified Wax or Proprietary Product</a>
-            <a href="#proprietary-wax" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Essential Companion:</span>
-            <a href="#cleaning-kit" class="font-bold text-gray-900 no-underline hover:underline">Isopropyl Alcohol and Microfibre Cloths</a>
-            <a href="#cleaning-kit" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#deck-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. First: What Kind of Deck Do You Have?</a>
-          <a href="#why-silicone" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why Silicone and Nothing Else</a>
-          <a href="#bottle-vs-aerosol" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Bottle vs. Aerosol: The Real Decision</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What to Buy</a>
-          <a href="#how-much" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Much to Apply</a>
-          <a href="#how-often" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Often to Apply</a>
-          <a href="#signs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Signs You Have Left It Too Long</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What It Costs Per Year</a>
-          <a href="#what-not-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Not to Buy</a>
-          <a href="#while-belt-loose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. While You Have the Belt Loose, Do These Too</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           There is less choice here than the shelf suggests. For the overwhelming majority of home
           treadmills the answer is 100% silicone, and the interesting decisions are how you apply
           it and whether your particular deck should receive it at all.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#silicone-bottle">100% Silicone Lubricant (Bottle + Applicator Tube)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">For Awkward Decks:</span> <a href="#silicone-spray-straw">100% Silicone Spray With Precision Straw</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Check Your Manual:</span> <a href="#proprietary-wax">Manufacturer-Specified Wax or Proprietary Product</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Essential Companion:</span> <a href="#cleaning-kit">Isopropyl Alcohol and Microfibre Cloths</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Do this before buying anything.</strong> Find your manual
+          and check what lubricant the manufacturer specifies, and whether the deck is pre-waxed
+          or self-lubricating. Applying silicone to a pre-waxed deck contaminates it and the deck
+          then has to be replaced. This check takes two minutes and is the only irreversible
+          decision on this page.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#deck-type">First: What Kind of Deck Do You Have?</a></li>
+            <li><a href="#why-silicone">Why Silicone and Nothing Else</a></li>
+            <li><a href="#bottle-vs-aerosol">Bottle vs. Aerosol: The Real Decision</a></li>
+            <li><a href="#picks">What to Buy</a></li>
+            <li><a href="#how-much">How Much to Apply</a></li>
+            <li><a href="#how-often">How Often to Apply</a></li>
+            <li><a href="#signs">Signs You Have Left It Too Long</a></li>
+            <li><a href="#cost">What It Costs Per Year</a></li>
+            <li><a href="#what-not-to-buy">What Not to Buy</a></li>
+            <li><a href="#while-belt-loose">While You Have the Belt Loose, Do These Too</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="deck-type" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. First: What Kind of Deck Do You Have?</h2>
+          <h2>First: What Kind of Deck Do You Have?</h2>
 <p>
             Three deck types exist and they want different things, so this determines everything
             that follows.
@@ -398,7 +359,7 @@ const schema = {
         </div>
 
         <div id="why-silicone" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why Silicone and Nothing Else</h2>
+          <h2>Why Silicone and Nothing Else</h2>
 <p>
             Silicone is chemically inert with respect to everything it touches on a treadmill. It
             does not attack the deck laminate, it does not degrade the belt's fabric backing, and
@@ -410,9 +371,7 @@ const schema = {
             other property: a lubricant that turns sticky collects dust, carpet fibre and belt
             debris into an abrasive paste, at which point you have made the friction problem worse
             than before you started. This is exactly what happens with WD-40, cooking oil and
-            petroleum jelly, and our
-            <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to WD-40 on treadmills</a>
-            covers that failure in detail.
+            petroleum jelly, and our <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to WD-40 on treadmills</a> covers that failure in detail.
           </p>
           <p>
             Finally, silicone has a wide temperature tolerance. A deck under a running belt gets
@@ -427,7 +386,7 @@ const schema = {
         </div>
 
         <div id="bottle-vs-aerosol" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Bottle vs. Aerosol: The Real Decision</h2>
+          <h2>Bottle vs. Aerosol: The Real Decision</h2>
 <p>
             This is where the choice genuinely matters, and we come down firmly on one side.
           </p>
@@ -453,85 +412,74 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What to Buy</h2>
+          <h2>What to Buy</h2>
 <p>
             These are product categories rather than specific brands, because availability varies
             and the formulations within each category are close to interchangeable. Buy on
             applicator type and the "100% silicone" claim rather than on brand.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-much" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Much to Apply</h2>
+          <h2>How Much to Apply</h2>
 <p>
             Under-applying is common and harmless; over-applying is common and creates its own
             problems. Roughly one ounce — about two tablespoons — is right for a standard home
@@ -551,14 +499,12 @@ const schema = {
           <p>
             After applying, walk on the belt at a slow speed for three to five minutes to
             distribute the lubricant evenly. Skipping this leaves it pooled where you put it, which
-            is most of the value unrealised. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">step-by-step lubrication guide</a>
-            covers the full procedure.
+            is most of the value unrealised. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">step-by-step lubrication guide</a> covers the full procedure.
           </p>
         </div>
 
         <div id="how-often" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Often to Apply</h2>
+          <h2>How Often to Apply</h2>
 <p>
             The useful interval is measured in running hours rather than calendar months, because a
             machine used daily and one used monthly wear at completely different rates.
@@ -577,14 +523,12 @@ const schema = {
             The check that settles it is simple and worth doing between applications. Unplug the
             machine, reach under the belt near the centre and run a finger along the deck. It should
             feel slightly slick, like a lightly oiled surface. Dry, warm or gritty means apply now
-            regardless of the calendar. Our
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">lubrication interval guide</a>
-            covers the timing in more detail.
+            regardless of the calendar. Our <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">lubrication interval guide</a> covers the timing in more detail.
           </p>
         </div>
 
         <div id="signs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Signs You Have Left It Too Long</h2>
+          <h2>Signs You Have Left It Too Long</h2>
 <p>
             Four symptoms indicate rising friction, and all of them mean lubricate before doing
             anything else.
@@ -604,16 +548,12 @@ const schema = {
           </p>
           <p>
             <strong>A new noise appears</strong> — though noise has several possible sources and
-            friction is only one, so diagnose rather than assume. Our
-            <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">noise guide</a>
-            covers locating it, and
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">the belt-slowing guide</a>
-            covers the hesitation symptom specifically.
+            friction is only one, so diagnose rather than assume. Our <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">noise guide</a> covers locating it, and <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">the belt-slowing guide</a> covers the hesitation symptom specifically.
           </p>
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What It Costs Per Year</h2>
+          <h2>What It Costs Per Year</h2>
 <p>
             This is the cheapest maintenance in the category by a wide margin, which is what makes
             skipping it so expensive.
@@ -627,19 +567,15 @@ const schema = {
           <p>
             Against that: a treadmill motor replacement typically runs several hundred dollars with
             labour, and a controller board is comparable. Both are commonly caused by exactly the
-            friction that lubrication prevents. On a mid-range machine, one avoided <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium" data-autolink>motor failure</a>
-            pays for four decades of lubricant.
+            friction that lubrication prevents. On a mid-range machine, one avoided <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium" data-autolink>motor failure</a> pays for four decades of lubricant.
           </p>
           <p>
-            Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
-            works through the whole annual figure, and
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            covers the repair-or-replace arithmetic when something does eventually fail.
+            Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a> works through the whole annual figure, and <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> covers the repair-or-replace arithmetic when something does eventually fail.
           </p>
         </div>
 
         <div id="what-not-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Not to Buy</h2>
+          <h2>What Not to Buy</h2>
 <p>
             <strong>General-purpose silicone spray.</strong> Tempting and frequently wrong. Most
             contain solvents, propellants and additives alongside the silicone, and the silicone
@@ -666,7 +602,7 @@ const schema = {
         </div>
 
         <div id="while-belt-loose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. While You Have the Belt Loose, Do These Too</h2>
+          <h2>While You Have the Belt Loose, Do These Too</h2>
 <p>
             Lubricating means loosening the belt and getting access underneath, which is the
             awkward part of the job. Since you are already there and the machine is already
@@ -692,17 +628,13 @@ const schema = {
             need to is worth far more than discovering it after a motor failure.
           </p>
           <p>
-            Then retension the belt properly rather than by feel. Our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
-            covers the lift test, and the
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a>
-            covers tracking, which is the step most likely to need attention after the belt has
+            Then retension the belt properly rather than by feel. Our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a> covers the lift test, and the <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a> covers tracking, which is the step most likely to need attention after the belt has
             been loosened.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             For the great majority of home treadmills, buy a <strong>100% silicone treadmill
             lubricant in a squeeze bottle with a long applicator tube</strong>. It costs $10 to
@@ -722,135 +654,152 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best lubricant for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                100% silicone treadmill lubricant, in a squeeze bottle with a long applicator tube. Silicone is inert toward the deck laminate, the belt backing and the adhesive between belt layers, and it stays slick rather than turning tacky and collecting grit. Check your manual first — pre-waxed decks must never receive silicone.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I know if my treadmill deck is pre-waxed?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The manual will say, usually in the maintenance section. If you cannot find it, search your model number plus "lubrication" on the manufacturer's site or call their support line. Do not guess from brand or price — the same manufacturer often uses different deck types across its range, and applying silicone to a waxed deck means replacing it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much lubricant should I use on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About one ounce — roughly two tablespoons — applied along the centre third of the deck under the belt, where almost all the contact happens. Then walk on it slowly for three to five minutes to distribute it. Over-application shows as silicone weeping from the belt edges and a slippery top surface.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use regular silicone spray on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not. General-purpose silicone sprays typically contain solvents, propellants and additives alongside the silicone, and the silicone content is often low. Buy a product sold specifically as treadmill lubricant, which is formulated to be 100% silicone with no petroleum distillates.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does a bottle of treadmill lubricant last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Typically three to six applications, which at the standard 40 to 50 hour interval is one to two years for a home machine used a few times a week. That works out at roughly $5 to $15 a year — against several hundred dollars for the motor replacement that skipping it eventually causes.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I clean the deck before lubricating?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and most people skip it. Old lubricant collects dust, carpet fibre and belt debris, and applying fresh silicone over that traps an abrasive slurry against the deck. Wipe the deck and belt underside with a lint-free cloth lightly dampened in isopropyl alcohol, and let it dry fully first.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Choosing and Applying Lubricant</h2>
+          <p>The first of these is the only irreversible one on this page, and it is entirely avoidable with a two-minute check.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Applying silicone to a pre-waxed deck</h3>
+              <p>Silicone and the wax impregnated in these decks do not coexist, and the result is a contaminated surface that has to be replaced rather than cleaned. Read the manual before buying any product. The same manufacturer often uses different deck types across its range, so brand and price tell you nothing.</p>
+            </li>
+            <li>
+              <h3>Buying general-purpose silicone spray</h3>
+              <p>Most contain solvents, propellants and additives alongside a relatively low silicone content, none of which belongs on a deck laminate or a belt backing. Products sold specifically as treadmill lubricant are formulated to be 100% silicone with no petroleum distillates. The price difference is a few dollars.</p>
+            </li>
+            <li>
+              <h3>Spraying an aerosol near the motor compartment</h3>
+              <p>The motor, controller board and mains wiring sit directly under the front of the deck, and aerosol drift carries further than expected. If you must use a spray, unplug the machine, get the precision straw genuinely under the belt, and use short bursts well away from the front of the frame.</p>
+            </li>
+            <li>
+              <h3>Lubricating over old residue</h3>
+              <p>Months-old lubricant is full of dust, carpet fibre and belt debris. Fresh silicone applied on top traps that abrasive slurry directly against the deck, which is precisely the friction you were trying to remove. Clean with isopropyl alcohol on a lint-free cloth and let it dry fully first.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing and Applying Lubricant</h2>
-          <p class="text-gray-700 leading-relaxed">The first of these is the only irreversible one on this page, and it is entirely avoidable with a two-minute check.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Applying silicone to a pre-waxed deck</h3>
-              <p class="text-gray-700 text-sm m-0">Silicone and the wax impregnated in these decks do not coexist, and the result is a contaminated surface that has to be replaced rather than cleaned. Read the manual before buying any product. The same manufacturer often uses different deck types across its range, so brand and price tell you nothing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying general-purpose silicone spray</h3>
-              <p class="text-gray-700 text-sm m-0">Most contain solvents, propellants and additives alongside a relatively low silicone content, none of which belongs on a deck laminate or a belt backing. Products sold specifically as treadmill lubricant are formulated to be 100% silicone with no petroleum distillates. The price difference is a few dollars.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Spraying an aerosol near the motor compartment</h3>
-              <p class="text-gray-700 text-sm m-0">The motor, controller board and mains wiring sit directly under the front of the deck, and aerosol drift carries further than expected. If you must use a spray, unplug the machine, get the precision straw genuinely under the belt, and use short bursts well away from the front of the frame.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Lubricating over old residue</h3>
-              <p class="text-gray-700 text-sm m-0">Months-old lubricant is full of dust, carpet fibre and belt debris. Fresh silicone applied on top traps that abrasive slurry directly against the deck, which is precisely the friction you were trying to remove. Clean with isopropyl alcohol on a lint-free cloth and let it dry fully first.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Lubricate a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The full ten-minute procedure, step by step.</p>
-            </a>
-            <a href="/can-you-use-wd40-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Warning</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Can You Use WD-40 on a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why the most common household substitute makes friction worse.</p>
-            </a>
-            <a href="/how-often-to-lubricate-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Interval</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Often to Lubricate a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every 40 to 50 hours, and the finger test that settles it.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Buy <strong class="text-white">100% silicone treadmill lubricant in a bottle with an
             applicator tube</strong>. It costs $10 to $18, lasts a year or more, and puts the
             product where the contact actually happens rather than misting it across the motor
             compartment.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Check your manual for deck type first — that is the one irreversible decision here, since
-            silicone destroys a pre-waxed deck. Then apply about an ounce along the centre third
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#5AA9FF] font-bold no-underline">every 40 to 50 hours</a>
-            and walk it in slowly.
+            silicone destroys a pre-waxed deck. Then apply about an ounce along the centre third <a href="/how-often-to-lubricate-treadmill/" class="text-[#5AA9FF] font-bold no-underline">every 40 to 50 hours</a> and walk it in slowly.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-belt-lubrication/">How to Lubricate a Treadmill Belt</a></li>
+            <li><a href="/can-you-use-wd40-on-a-treadmill/">Can You Use WD-40 on a Treadmill?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best lubricant for a treadmill?</h3></summary>
+            <p class="faq-a">
+              100% silicone treadmill lubricant, in a squeeze bottle with a long applicator tube. Silicone is inert toward the deck laminate, the belt backing and the adhesive between belt layers, and it stays slick rather than turning tacky and collecting grit. Check your manual first — pre-waxed decks must never receive silicone.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I know if my treadmill deck is pre-waxed?</h3></summary>
+            <p class="faq-a">
+              The manual will say, usually in the maintenance section. If you cannot find it, search your model number plus "lubrication" on the manufacturer's site or call their support line. Do not guess from brand or price — the same manufacturer often uses different deck types across its range, and applying silicone to a waxed deck means replacing it.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much lubricant should I use on a treadmill?</h3></summary>
+            <p class="faq-a">
+              About one ounce — roughly two tablespoons — applied along the centre third of the deck under the belt, where almost all the contact happens. Then walk on it slowly for three to five minutes to distribute it. Over-application shows as silicone weeping from the belt edges and a slippery top surface.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use regular silicone spray on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually not. General-purpose silicone sprays typically contain solvents, propellants and additives alongside the silicone, and the silicone content is often low. Buy a product sold specifically as treadmill lubricant, which is formulated to be 100% silicone with no petroleum distillates.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does a bottle of treadmill lubricant last?</h3></summary>
+            <p class="faq-a">
+              Typically three to six applications, which at the standard 40 to 50 hour interval is one to two years for a home machine used a few times a week. That works out at roughly $5 to $15 a year — against several hundred dollars for the motor replacement that skipping it eventually causes.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I clean the deck before lubricating?</h3></summary>
+            <p class="faq-a">
+              Yes, and most people skip it. Old lubricant collects dust, carpet fibre and belt debris, and applying fresh silicone over that traps an abrasive slurry against the deck. Wipe the deck and belt underside with a lint-free cloth lightly dampened in isopropyl alcohol, and let it dry fully first.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-belt-lubrication/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Lubricate a Treadmill Belt</div>
+            <p class="c-blurb">The full ten-minute procedure, step by step.</p>
+          </a>
+          <a href="/can-you-use-wd40-on-a-treadmill/" class="card">
+            <div class="c-kicker">Warning</div>
+            <div class="c-title">Can You Use WD-40 on a Treadmill?</div>
+            <p class="c-blurb">Why the most common household substitute makes friction worse.</p>
+          </a>
+          <a href="/how-often-to-lubricate-treadmill/" class="card">
+            <div class="c-kicker">Interval</div>
+            <div class="c-title">How Often to Lubricate a Treadmill</div>
+            <p class="c-blurb">Every 40 to 50 hours, and the finger test that settles it.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

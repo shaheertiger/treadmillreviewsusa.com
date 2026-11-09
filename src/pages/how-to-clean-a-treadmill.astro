@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Clean a Treadmill (2026): Belt, Console and Disinfecting";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-clean-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Clean the Belt", link: "#belt-top-surface" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtocleanatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtocleanatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Maintenance</span>
+      </nav>
+      <h1 class="ed-title">How to Clean a Treadmill</h1>
+      <p class="ed-dek">
+        Cleaning a treadmill is mostly about sweat and dust, and mostly about restraint: a damp cloth, mild soap and a dry finish handle nearly everything. The damage comes from spraying liquids into electronics and from cleaners that leave the belt slippery.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Maintenance
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Clean <span class="text-[#5AA9FF]">a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Cleaning a treadmill is mostly about sweat and dust, and mostly about restraint: a damp cloth, mild soap and a dry finish handle nearly everything. The damage comes from spraying liquids into electronics and from cleaners that leave the belt slippery.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#belt-top-surface" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Clean the Belt
-          </a>
-          <a href="#cleaners-to-avoid" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What to Avoid
-          </a>
-        </div>
+        <a href="#belt-top-surface" class="btn-ghost">Clean the Belt</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Unplug before cleaning.</strong> Switch off and unplug the
-          treadmill at the wall before any cleaning beyond a quick after-session wipe — not just
-          the safety key, the plug. Never wipe the belt while it is moving, because the rollers
-          are pinch points. Never spray liquid onto the console, into vents or toward the motor
-          compartment at the front of the machine, and check your manual for the cleaners your
-          manufacturer approves; where it differs from the general advice here, the manual wins.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Clean a Treadmill: The Short Answer</a>
-          <a href="#why-clean" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why Cleaning a Treadmill Matters</a>
-          <a href="#what-you-need" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What You Need</a>
-          <a href="#after-every-session" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. After Every Session: The One-Minute Wipe</a>
-          <a href="#belt-top-surface" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Clean a Treadmill Belt (Top Surface)</a>
-          <a href="#console-and-screens" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Cleaning the Console and Screens</a>
-          <a href="#handrails-and-frame" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Handrails, Grips and the Frame</a>
-          <a href="#floor-beneath" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Floor Underneath and Around It</a>
-          <a href="#how-to-disinfect" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How to Disinfect a Treadmill</a>
-          <a href="#cleaners-to-avoid" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Cleaners to Avoid on a Treadmill</a>
-          <a href="#schedule" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. A Simple Cleaning Schedule</a>
-          <a href="#what-cleaning-reveals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. What to Look for While You Clean</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill collects sweat on the top surfaces and dust everywhere else. Neither is a
           dramatic problem on a given day, but sweat is mildly corrosive and dust ends up under the
           belt and in the motor's cooling air. A few minutes of the right kind of cleaning keeps
@@ -206,8 +144,37 @@ const schema = {
           the belt — can do more harm than the dirt it removes.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Unplug before cleaning.</strong> Switch off and unplug the
+          treadmill at the wall before any cleaning beyond a quick after-session wipe — not just
+          the safety key, the plug. Never wipe the belt while it is moving, because the rollers
+          are pinch points. Never spray liquid onto the console, into vents or toward the motor
+          compartment at the front of the machine, and check your manual for the cleaners your
+          manufacturer approves; where it differs from the general advice here, the manual wins.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Clean a Treadmill: The Short Answer</a></li>
+            <li><a href="#why-clean">Why Cleaning a Treadmill Matters</a></li>
+            <li><a href="#what-you-need">What You Need</a></li>
+            <li><a href="#after-every-session">After Every Session: The One-Minute Wipe</a></li>
+            <li><a href="#belt-top-surface">How to Clean a Treadmill Belt (Top Surface)</a></li>
+            <li><a href="#console-and-screens">Cleaning the Console and Screens</a></li>
+            <li><a href="#handrails-and-frame">Handrails, Grips and the Frame</a></li>
+            <li><a href="#floor-beneath">The Floor Underneath and Around It</a></li>
+            <li><a href="#how-to-disinfect">How to Disinfect a Treadmill</a></li>
+            <li><a href="#cleaners-to-avoid">Cleaners to Avoid on a Treadmill</a></li>
+            <li><a href="#schedule">A Simple Cleaning Schedule</a></li>
+            <li><a href="#what-cleaning-reveals">What to Look for While You Clean</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Clean a Treadmill: The Short Answer</h2>
+          <h2>How to Clean a Treadmill: The Short Answer</h2>
 <p>
             <strong>After each session</strong>, wipe the handrails, console, belt top surface and
             the deck edges with a dry or barely damp microfibre cloth. <strong>Every week or
@@ -225,16 +192,14 @@ const schema = {
             time on its label.
           </p>
           <p>
-            Two jobs that sound like cleaning are separate procedures with their own guides:
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under the treadmill belt</a>,
-            which means slackening the belt and working on the deck, and
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>,
+            Two jobs that sound like cleaning are separate procedures with their own guides: <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under the treadmill belt</a>,
+            which means slackening the belt and working on the deck, and <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>,
             which means taking the hood off. This page covers everything else.
           </p>
         </div>
 
         <div id="why-clean" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why Cleaning a Treadmill Matters</h2>
+          <h2>Why Cleaning a Treadmill Matters</h2>
 <p>
             There are two separate reasons, and they apply to different parts of the machine.
           </p>
@@ -251,9 +216,7 @@ const schema = {
             floor — dust, hair, pet fur and especially carpet fibre. Some of that ends up under the
             belt, where it raises friction, and some ends up in the motor compartment, where it
             reduces cooling. Friction and heat are what wear out motors and controller boards, which
-            is why our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a>
-            starts with a one-minute wipe after every session.
+            is why our <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance checklist</a> starts with a one-minute wipe after every session.
           </p>
           <p>
             None of this needs special products. It needs a routine, a couple of microfibre
@@ -262,7 +225,7 @@ const schema = {
         </div>
 
         <div id="what-you-need" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What You Need</h2>
+          <h2>What You Need</h2>
 <p>
             <strong>Two or three microfibre cloths.</strong> One for damp work, one for drying, and
             a separate soft one for screens. Microfibre lifts grime without needing much liquid,
@@ -292,7 +255,7 @@ const schema = {
         </div>
 
         <div id="after-every-session" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. After Every Session: The One-Minute Wipe</h2>
+          <h2>After Every Session: The One-Minute Wipe</h2>
 <p>
             This is the highest-value cleaning you will do, because it stops sweat drying on and
             dust building up between deeper cleans.
@@ -322,7 +285,7 @@ const schema = {
         </div>
 
         <div id="belt-top-surface" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Clean a Treadmill Belt (Top Surface)</h2>
+          <h2>How to Clean a Treadmill Belt (Top Surface)</h2>
 <p>
             The running surface is tough, but it is still the surface you trust not to slip, so the
             method is designed to leave it clean, dry and residue-free.
@@ -359,19 +322,16 @@ const schema = {
           <p>
             Keep water to the top surface. You are not cleaning under the belt here, and you do not
             want water running off the edges onto the deck, into the rollers or toward the front of
-            the machine. If the belt's underside or the deck needs attention, that is
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">a separate job</a>
-            with the belt slackened.
+            the machine. If the belt's underside or the deck needs attention, that is <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">a separate job</a> with the belt slackened.
           </p>
         </div>
 
         <div id="console-and-screens" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Cleaning the Console and Screens</h2>
+          <h2>Cleaning the Console and Screens</h2>
 <p>
             The console is where cleaning most often turns into a repair bill, because liquid that
             reaches the electronics behind a membrane keypad or touchscreen can stop it working.
-            The rule is simple: <strong>never spray anything directly onto the console.</strong>
-            Spray or pour onto the cloth, away from the machine, and use a cloth that is damp rather
+            The rule is simple: <strong>never spray anything directly onto the console.</strong> Spray or pour onto the cloth, away from the machine, and use a cloth that is damp rather
             than wet.
           </p>
           <p>
@@ -400,7 +360,7 @@ const schema = {
         </div>
 
         <div id="handrails-and-frame" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Handrails, Grips and the Frame</h2>
+          <h2>Handrails, Grips and the Frame</h2>
 <p>
             <strong>Handrails.</strong> These collect the most sweat. Wipe with a damp microfibre
             cloth and mild soap, follow with a clean damp cloth, and dry them. On foam-covered
@@ -420,8 +380,7 @@ const schema = {
           <p>
             <strong>The motor hood.</strong> Wipe the outside with a damp cloth and vacuum the
             outside of any vents with the brush attachment. Do not push liquid or the vacuum
-            nozzle into the vents. The inside of the hood is the
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">motor compartment clean</a>,
+            nozzle into the vents. The inside of the hood is the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">motor compartment clean</a>,
             done unplugged with the hood off and no liquids at all, typically once a year.
           </p>
           <p>
@@ -431,7 +390,7 @@ const schema = {
         </div>
 
         <div id="floor-beneath" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Floor Underneath and Around It</h2>
+          <h2>The Floor Underneath and Around It</h2>
 <p>
             This is the part most people skip, and it matters more than it looks, because the floor
             under the front of the machine is where the motor's cooling air comes from.
@@ -443,29 +402,23 @@ const schema = {
           </p>
           <p>
             <strong>Folding treadmills</strong> make this easy: unplug, <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>fold the deck</a> up following the
-            manual's procedure, make sure the latch is engaged, and vacuum the floor beneath.
-            <strong>Non-folding treadmills</strong> are heavy and awkward, so reach underneath with a
+            manual's procedure, make sure the latch is engaged, and vacuum the floor beneath. <strong>Non-folding treadmills</strong> are heavy and awkward, so reach underneath with a
             crevice tool rather than moving the machine for every clean. If you do need to move it,
-            our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            covers how to do it without injury or damage.
+            our guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> covers how to do it without injury or damage.
           </p>
           <p>
             <strong>A treadmill mat</strong> makes the floor much easier to keep clean, stops carpet
             fibre being drawn into the machine, and protects the floor from the odd drip of
-            lubricant. Our guide to whether
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">you need a treadmill mat</a>
-            covers the trade-offs. Lift the mat and clean under it occasionally too.
+            lubricant. Our guide to whether <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">you need a treadmill mat</a> covers the trade-offs. Lift the mat and clean under it occasionally too.
           </p>
         </div>
 
         <div id="how-to-disinfect" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How to Disinfect a Treadmill</h2>
+          <h2>How to Disinfect a Treadmill</h2>
 <p>
             Most home treadmills do not need disinfecting after every session. Cleaning removes the
             grime that matters for the machine. Disinfecting makes sense when someone in the house
-            has been ill, when a machine is shared by several people, or when you have bought a
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> and want a fresh start.
+            has been ill, when a machine is shared by several people, or when you have bought a <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> and want a fresh start.
           </p>
           <p>
             <strong>Check the manual first.</strong> Some manufacturers list cleaners and
@@ -496,7 +449,7 @@ const schema = {
         </div>
 
         <div id="cleaners-to-avoid" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Cleaners to Avoid on a Treadmill</h2>
+          <h2>Cleaners to Avoid on a Treadmill</h2>
 <p>
             <strong>Bleach and ammonia.</strong> Harsh on plastics, rubber, coatings and screens,
             and bleach residue on a belt or grips is not something you want against skin.
@@ -514,9 +467,7 @@ const schema = {
             <strong>Anything that leaves a film on the belt or foot rails.</strong> Furniture polish,
             silicone spray, oily wipes, waxes and "protectant" sprays make a running surface
             slippery, which is a fall risk at any speed. Silicone belongs under the belt as a
-            lubricant, applied as the manual says, never on top. Our page on whether you can
-            <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium">use WD-40 on a treadmill</a>
-            explains why aerosols are a particular problem near the deck and motor.
+            lubricant, applied as the manual says, never on top. Our page on whether you can <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium">use WD-40 on a treadmill</a> explains why aerosols are a particular problem near the deck and motor.
           </p>
           <p>
             <strong>Anything sprayed toward the motor compartment.</strong> The motor, controller
@@ -529,7 +480,7 @@ const schema = {
         </div>
 
         <div id="schedule" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. A Simple Cleaning Schedule</h2>
+          <h2>A Simple Cleaning Schedule</h2>
 <p>
             Cleaning fits around the maintenance schedule rather than replacing any of it. As a
             general pattern for a home machine:
@@ -540,22 +491,18 @@ const schema = {
             <li><strong>Weekly or fortnightly:</strong> unplugged clean of the belt top surface,
             console, rails and frame; vacuum around and under the machine.</li>
             <li><strong>Every 40 to 50 hours of use:</strong> check and lubricate the deck as your
-            manual specifies, which includes wiping the deck and belt underside first. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers it.</li>
+            manual specifies, which includes wiping the deck and belt underside first. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers it.</li>
             <li><strong>Annually, or every six months on carpet or with pets:</strong> clean fully
             under the belt and vacuum the motor compartment.</li>
           </ul>
           <p>
             Use frequency, people and environment to adjust. Two daily users, a garage, a shedding
-            dog or deep carpet all justify doing the dust-related jobs more often. Our full
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
-            puts all of it in one place.
+            dog or deep carpet all justify doing the dust-related jobs more often. Our full <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a> puts all of it in one place.
           </p>
         </div>
 
         <div id="what-cleaning-reveals" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. What to Look for While You Clean</h2>
+          <h2>What to Look for While You Clean</h2>
 <p>
             Cleaning is the one time you look closely at the whole machine, so it is worth using
             the opportunity.
@@ -563,9 +510,7 @@ const schema = {
           <p>
             <strong>Belt edges.</strong> Fraying, curling or separation between the layers means the
             belt is wearing, and a belt that is creeping to one side may need its tracking adjusted
-            — our guide to
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a>
-            covers how.
+            — our guide to <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a> covers how.
           </p>
           <p>
             <strong>Black dust.</strong> Fine black powder around the rollers or at the front of the
@@ -580,151 +525,164 @@ const schema = {
           </p>
           <p>
             <strong>Smells.</strong> A machine that smells of sweat needs a clean and some air. A
-            machine that smells of hot rubber or electrics needs our guide to a
-            <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">treadmill burning smell</a>,
+            machine that smells of hot rubber or electrics needs our guide to a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">treadmill burning smell</a>,
             not air freshener.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you clean a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Wipe the handrails, console, belt and deck edges with a dry or barely damp microfibre cloth after each session. Every week or two, unplug it and clean the belt top surface, rails and frame with a cloth dampened in mild soapy water, then a clean damp cloth, then dry. Never spray liquid onto the console, and vacuum around and under the machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you clean a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Unplug the machine, vacuum loose debris, then wipe the visible belt section with a barely damp cloth and mild dish soap. Advance the belt by hand, keeping fingers away from the rollers, until you have cleaned the whole loop. Go round again with clean water to remove soap, dry it, and let it air-dry fully before use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use disinfectant wipes on my treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often yes on handrails, grips and the frame, but check your manual, because some manufacturers warn against alcohol, bleach or particular chemicals on the console, screen or belt. Keep the surface wet for the contact time on the label, then wipe with a clean damp cloth and dry. Use the gentlest approved product on screens.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should you not clean a treadmill with?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Avoid bleach, ammonia, solvents and degreasers, abrasive pads and scouring powders, steam cleaners and hoses, and anything that leaves a film on the belt or foot rails — furniture polish, silicone spray, oily wipes or WD-40. Never spray anything onto the console or toward the motor compartment.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you clean a treadmill touchscreen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Turn it off or unplug the machine, then wipe with a soft microfibre cloth that is dry or very lightly dampened with water, or with the screen cleaner your manual names. Never spray onto the screen, and avoid paper towels, ammonia-based glass cleaners and strong chemicals unless the manual specifically allows them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should I clean my treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A quick wipe after every session, an unplugged clean of the belt, console, rails and frame every week or two, and vacuuming around and under the machine weekly. Clean under the belt and vacuum the motor compartment annually, or every six months on carpet, with pets or with heavy use.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Cleaning a Treadmill</h2>
+          <p>Each of these is well-intentioned, and each turns a cleaning job into a repair or a safety problem.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Spraying cleaner directly onto the console</h3>
+              <p>Liquid wicks behind membrane keypads and screen bezels and can reach the electronics. Spray onto a cloth away from the machine, use it damp rather than wet, and dry afterwards.</p>
+            </li>
+            <li>
+              <h3>Leaving a film on the belt</h3>
+              <p>Polish, silicone spray, oily wipes and soap residue all make the running surface slippery. Rinse with a clean damp cloth after soap, dry the belt, and never apply any product to the top surface.</p>
+            </li>
+            <li>
+              <h3>Cleaning the belt while it is running</h3>
+              <p>Holding a cloth against a moving belt puts your hand next to the rollers, which are pinch points. Unplug the machine and advance the belt by hand instead.</p>
+            </li>
+            <li>
+              <h3>Ignoring the floor</h3>
+              <p>The motor draws its cooling air from floor level, and whatever is there — dust, hair, carpet fibre — ends up in the motor compartment and under the belt. Vacuuming around the machine is part of cleaning it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Cleaning a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is well-intentioned, and each turns a cleaning job into a repair or a safety problem.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Spraying cleaner directly onto the console</h3>
-              <p class="text-gray-700 text-sm m-0">Liquid wicks behind membrane keypads and screen bezels and can reach the electronics. Spray onto a cloth away from the machine, use it damp rather than wet, and dry afterwards.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving a film on the belt</h3>
-              <p class="text-gray-700 text-sm m-0">Polish, silicone spray, oily wipes and soap residue all make the running surface slippery. Rinse with a clean damp cloth after soap, dry the belt, and never apply any product to the top surface.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cleaning the belt while it is running</h3>
-              <p class="text-gray-700 text-sm m-0">Holding a cloth against a moving belt puts your hand next to the rollers, which are pinch points. Unplug the machine and advance the belt by hand instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the floor</h3>
-              <p class="text-gray-700 text-sm m-0">The motor draws its cooling air from floor level, and whatever is there — dust, hair, carpet fibre — ends up in the motor compartment and under the belt. Vacuuming around the machine is part of cleaning it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-clean-under-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Clean Under a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Slacken the belt and clean the deck and underside properly.</p>
-            </a>
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Vacuum the Motor Compartment</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The annual job that keeps the motor and board cool.</p>
-            </a>
-            <a href="/treadmill-maintenance-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Schedule</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every task, in running hours, from one minute to one hour.</p>
-            </a>
-            <a href="/best-treadmill-cleaning-products/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cleaning</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Cleaning Products</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Damp, mild and dry.</strong> A barely damp microfibre cloth,
             mild soap and a dry finish clean every surface you touch. Unplug first, advance the belt
             by hand rather than running it, and never spray liquid onto the console or toward the
             motor.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Keep films off the belt, use only disinfectants your manual allows, and vacuum the
             floor around the machine. For the deck and the motor compartment, follow the dedicated
-            guides to
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">cleaning under the belt</a>
-            and the motor hood.
+            guides to <a href="/how-to-clean-under-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">cleaning under the belt</a> and the motor hood.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-clean-under-treadmill-belt/">How to Clean Under a Treadmill Belt</a></li>
+            <li><a href="/how-to-vacuum-treadmill-motor-compartment/">Vacuum the Motor Compartment</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you clean a treadmill?</h3></summary>
+            <p class="faq-a">
+              Wipe the handrails, console, belt and deck edges with a dry or barely damp microfibre cloth after each session. Every week or two, unplug it and clean the belt top surface, rails and frame with a cloth dampened in mild soapy water, then a clean damp cloth, then dry. Never spray liquid onto the console, and vacuum around and under the machine.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do you clean a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Unplug the machine, vacuum loose debris, then wipe the visible belt section with a barely damp cloth and mild dish soap. Advance the belt by hand, keeping fingers away from the rollers, until you have cleaned the whole loop. Go round again with clean water to remove soap, dry it, and let it air-dry fully before use.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can I use disinfectant wipes on my treadmill?</h3></summary>
+            <p class="faq-a">
+              Often yes on handrails, grips and the frame, but check your manual, because some manufacturers warn against alcohol, bleach or particular chemicals on the console, screen or belt. Keep the surface wet for the contact time on the label, then wipe with a clean damp cloth and dry. Use the gentlest approved product on screens.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should you not clean a treadmill with?</h3></summary>
+            <p class="faq-a">
+              Avoid bleach, ammonia, solvents and degreasers, abrasive pads and scouring powders, steam cleaners and hoses, and anything that leaves a film on the belt or foot rails — furniture polish, silicone spray, oily wipes or WD-40. Never spray anything onto the console or toward the motor compartment.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do you clean a treadmill touchscreen?</h3></summary>
+            <p class="faq-a">
+              Turn it off or unplug the machine, then wipe with a soft microfibre cloth that is dry or very lightly dampened with water, or with the screen cleaner your manual names. Never spray onto the screen, and avoid paper towels, ammonia-based glass cleaners and strong chemicals unless the manual specifically allows them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How often should I clean my treadmill?</h3></summary>
+            <p class="faq-a">
+              A quick wipe after every session, an unplugged clean of the belt, console, rails and frame every week or two, and vacuuming around and under the machine weekly. Clean under the belt and vacuum the motor compartment annually, or every six months on carpet, with pets or with heavy use.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-clean-under-treadmill-belt/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Clean Under a Treadmill Belt</div>
+            <p class="c-blurb">Slacken the belt and clean the deck and underside properly.</p>
+          </a>
+          <a href="/how-to-vacuum-treadmill-motor-compartment/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">Vacuum the Motor Compartment</div>
+            <p class="c-blurb">The annual job that keeps the motor and board cool.</p>
+          </a>
+          <a href="/treadmill-maintenance-checklist/" class="card">
+            <div class="c-kicker">Schedule</div>
+            <div class="c-title">Treadmill Maintenance Checklist</div>
+            <p class="c-blurb">Every task, in running hours, from one minute to one hour.</p>
+          </a>
+          <a href="/best-treadmill-cleaning-products/" class="card">
+            <div class="c-kicker">Cleaning</div>
+            <div class="c-title">Best Treadmill Cleaning Products</div>
+            <p class="c-blurb">Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

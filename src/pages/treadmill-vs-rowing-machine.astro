@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill vs Rowing Machine (2026): Which Should You Buy?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-vs-rowing-machine/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Verdict", link: "#verdict" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillvsrowingmachine" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillvsrowingmachine)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Treadmill vs Rowing Machine</h1>
+      <p class="ed-dek">
+        A rower works more of the body with no impact and stores away more easily. A treadmill needs no technique, trains the walking and running you do every day, and loads your bones. Neither is better — they suit different people.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill vs <span class="text-[#5AA9FF]">Rowing Machine</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A rower works more of the body with no impact and stores away more easily. A treadmill needs no technique, trains the walking and running you do every day, and loads your bones. Neither is better — they suit different people.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#verdict" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Verdict
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy Which
-          </a>
-        </div>
+        <a href="#verdict" class="btn-ghost">The Verdict</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.5k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment. This is a comparison of two machines, not medical or physiotherapy advice. Rowing
-          places specific demands on the lower back, and walking and running load the legs and joints in
-          their own ways. If you have back, hip or knee problems, a heart condition, or are returning from
-          injury or surgery, ask a doctor or physiotherapist which suits you. Sizes and prices below are
-          typical ranges for each category, not measurements of particular models.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Rower vs Treadmill: The Verdict</a>
-          <a href="#full-body" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Body vs Lower Body: How True Is It?</a>
-          <a href="#impact" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Impact and Joints</a>
-          <a href="#technique" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Technique Learning Curve</a>
-          <a href="#back" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Back Considerations</a>
-          <a href="#calories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Calorie Burn and Intensity</a>
-          <a href="#bone" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Bone Loading</a>
-          <a href="#space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Space and Storage</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Noise and Neighbours</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Cost and Maintenance</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Which</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Rowing machines have gone from a corner of the gym to one of the most popular home cardio
           machines, mostly on the strength of one claim: that rowing works the whole body. That claim
           is largely true, with qualifications. Whether it makes a rower the better buy than a treadmill
@@ -205,8 +144,36 @@ const schema = {
           willing to learn a technique.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
+          equipment. This is a comparison of two machines, not medical or physiotherapy advice. Rowing
+          places specific demands on the lower back, and walking and running load the legs and joints in
+          their own ways. If you have back, hip or knee problems, a heart condition, or are returning from
+          injury or surgery, ask a doctor or physiotherapist which suits you. Sizes and prices below are
+          typical ranges for each category, not measurements of particular models.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#verdict">Rower vs Treadmill: The Verdict</a></li>
+            <li><a href="#full-body">Full Body vs Lower Body: How True Is It?</a></li>
+            <li><a href="#impact">Impact and Joints</a></li>
+            <li><a href="#technique">The Technique Learning Curve</a></li>
+            <li><a href="#back">Back Considerations</a></li>
+            <li><a href="#calories">Calorie Burn and Intensity</a></li>
+            <li><a href="#bone">Bone Loading</a></li>
+            <li><a href="#space">Space and Storage</a></li>
+            <li><a href="#noise">Noise and Neighbours</a></li>
+            <li><a href="#cost">Cost and Maintenance</a></li>
+            <li><a href="#who-should-buy">Who Should Buy Which</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Rower vs Treadmill: The Verdict</h2>
+          <h2>Rower vs Treadmill: The Verdict</h2>
 <p>
             <strong>Choose a rowing machine if you want low-impact, whole-body conditioning in a machine
             that is quiet underfoot and stores easily, and you are willing to learn the stroke properly.
@@ -228,7 +195,7 @@ const schema = {
         </div>
 
         <div id="full-body" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Body vs Lower Body: How True Is It?</h2>
+          <h2>Full Body vs Lower Body: How True Is It?</h2>
 <p>
             The full-body claim for rowing is real, but it is often misunderstood. A rowing stroke is not
             an arm exercise. The drive starts with the legs pushing the seat back, continues as the hips
@@ -244,15 +211,13 @@ const schema = {
           <p>
             A treadmill is primarily a lower-body machine — calves, quadriceps, hamstrings and glutes —
             with the trunk working to stabilise you and the arms swinging rather than pulling. Incline
-            shifts more of the work toward the glutes and calves, as our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            explains. Neither machine is a substitute for strength training, but the rower covers more of
+            shifts more of the work toward the glutes and calves, as our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> explains. Neither machine is a substitute for strength training, but the rower covers more of
             the body in a single movement.
           </p>
         </div>
 
         <div id="impact" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Impact and Joints</h2>
+          <h2>Impact and Joints</h2>
 <p>
             A rowing machine has no impact phase. You are seated, your feet are strapped to the
             footplates, and the movement is a controlled slide. For people who cannot tolerate the
@@ -262,9 +227,7 @@ const schema = {
             A treadmill's impact depends on what you do on it. Running produces ground reaction forces in
             the region of two to three times body weight per step; walking produces close to 1.2 times. So
             a treadmill used for walking is a low-impact machine, and the impact argument for the rower is
-            much stronger against running than against walking. Our guide to whether
-            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
-            covers that evidence in detail.
+            much stronger against running than against walking. Our guide to whether <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a> covers that evidence in detail.
           </p>
           <p>
             No impact is not the same as no load. Rowing takes the knees and hips through a deep bend at
@@ -275,12 +238,10 @@ const schema = {
         </div>
 
         <div id="technique" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Technique Learning Curve</h2>
+          <h2>The Technique Learning Curve</h2>
 <p>
             This is the rower's most underrated drawback. Anyone can walk on a treadmill competently in
-            minutes, and our
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a>
-            covers the few safety habits that matter. Rowing well takes practice.
+            minutes, and our <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a> covers the few safety habits that matter. Rowing well takes practice.
           </p>
           <p>
             The stroke has a sequence: legs, then body, then arms on the drive; arms, then body, then legs
@@ -300,7 +261,7 @@ const schema = {
         </div>
 
         <div id="back" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Back Considerations</h2>
+          <h2>Back Considerations</h2>
 <p>
             The lower back deserves its own section because it is the most common reason people find
             rowing does not agree with them.
@@ -325,7 +286,7 @@ const schema = {
         </div>
 
         <div id="calories" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Calorie Burn and Intensity</h2>
+          <h2>Calorie Burn and Intensity</h2>
 <p>
             Because rowing recruits more muscle, it can reach very high intensities, and a hard rowing
             session is among the most demanding things you can do on a home machine. At the same heart
@@ -337,20 +298,16 @@ const schema = {
             Treadmills enforce effort — you cannot coast on a moving belt — and incline lets you raise
             intensity without running. Rowers let you vary effort stroke by stroke, which is excellent for
             intervals but also makes it easy to row gently without realising. A <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>heart rate monitor</a> is a
-            better guide than either console; our article on
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>
-            explains why console figures drift.
+            better guide than either console; our article on <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a> explains why console figures drift.
           </p>
           <p>
             For weight management, the familiar caveats apply: diet is the bigger lever, and consistency
-            beats intensity. Our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">weight-loss workout guide</a>
-            is honest about both.
+            beats intensity. Our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">weight-loss workout guide</a> is honest about both.
           </p>
         </div>
 
         <div id="bone" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Bone Loading</h2>
+          <h2>Bone Loading</h2>
 <p>
             Bone adapts to the loads placed on it and responds most to weight-bearing activity and impact.
             Walking and running on a treadmill provide that stimulus to the legs, hips and spine with every
@@ -367,7 +324,7 @@ const schema = {
         </div>
 
         <div id="space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Space and Storage</h2>
+          <h2>Space and Storage</h2>
 <p>
             A rowing machine is long but narrow. Typical models run somewhere around 7 to 9 feet in length
             and around 2 feet wide, and you need a little room around them for the handle and your arms.
@@ -378,11 +335,7 @@ const schema = {
           <p>
             A treadmill needs its full footprint plus clearance either side and roughly 6 feet of clear
             floor behind the deck as a safety margin. Folding treadmills reduce storage space but not
-            working space, as our
-            <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding comparison</a>
-            explains, and our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the full arithmetic.
+            working space, as our <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding comparison</a> explains, and our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the full arithmetic.
           </p>
           <p>
             Ceiling height rarely matters for a rower, which sits near the floor. That low seat cuts the
@@ -392,11 +345,10 @@ const schema = {
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Noise and Neighbours</h2>
+          <h2>Noise and Neighbours</h2>
 <p>
             Noise depends heavily on the rower's resistance type. <strong>Magnetic</strong> rowers are very
-            quiet. <strong>Water</strong> rowers make a rhythmic swish that many people find pleasant.
-            <strong>Air</strong> rowers use a fan, and the whoosh gets loud at high effort — fine in a
+            quiet. <strong>Water</strong> rowers make a rhythmic swish that many people find pleasant. <strong>Air</strong> rowers use a fan, and the whoosh gets loud at high effort — fine in a
             garage, intrusive in a shared living room.
           </p>
           <p>
@@ -404,14 +356,12 @@ const schema = {
             mostly the thud of steps transmitted through the floor, and it is hard to eliminate fully. A
             rower transmits much less of that, though the seat's travel and the end of each stroke can
             still produce a rhythmic sound through a lightweight floor. If you live above someone, a
-            magnetic or water rower is usually the easier neighbour. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            guide covers how much a well-chosen treadmill and mat can reduce the problem.
+            magnetic or water rower is usually the easier neighbour. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> guide covers how much a well-chosen treadmill and mat can reduce the problem.
           </p>
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Cost and Maintenance</h2>
+          <h2>Cost and Maintenance</h2>
 <p>
             A good rowing machine generally costs less than a treadmill of comparable build quality, and it
             is a simpler machine. There is no drive motor, no belt to lubricate and no controller board
@@ -421,9 +371,7 @@ const schema = {
           </p>
           <p>
             A treadmill needs periodic deck lubrication and belt checks, and its motor and controller board
-            are the expensive components if something fails. None of that is onerous — our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
-            takes well under an hour a year — but it is more than a rower asks.
+            are the expensive components if something fails. None of that is onerous — our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a> takes well under an hour a year — but it is more than a rower asks.
           </p>
           <p>
             Both categories include connected models with screens and subscriptions; check what the machine
@@ -432,21 +380,17 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Which</h2>
+          <h2>Who Should Buy Which</h2>
 <p>
             <strong>Choose a treadmill if:</strong> you want to walk or run; you are training for a
             walking, hiking or running event; you want something usable well from the first session; you
             find getting down to a low seat difficult; you have a history of back problems and a clinician
-            has suggested walking; or bone health is a priority. Our
-            <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill picks</a>
-            are a sensible place to start.
+            has suggested walking; or bone health is a priority. Our <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill picks</a> are a sensible place to start.
           </p>
           <p>
             <strong>Choose a rowing machine if:</strong> you want whole-body conditioning with no impact;
             you are short of space and need to store the machine away; you have neighbours below; you want
-            lower cost and maintenance; and you are willing to learn the stroke properly. Our
-            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a>
-            roundup compares air, water and magnetic models and how to check the rail fits you.
+            lower cost and maintenance; and you are willing to learn the stroke properly. Our <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a> roundup compares air, water and magnetic models and how to check the rail fits you.
           </p>
           <p>
             <strong>Consider both over time</strong> if you enjoy variety. They complement each other well:
@@ -459,140 +403,154 @@ const schema = {
             your back and hips.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a rowing machine better than a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better overall. A rower works more of the body with no impact and stores easily, but it has a technique learning curve and asks a lot of the lower back. A treadmill needs no skill, trains walking and running, and provides weight-bearing loading for bone. Choose the one that fits your body, space and goals.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Rower vs treadmill: which burns more calories?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At the same heart rate and duration, broadly similar for most people. Rowing recruits more muscle and can reach very high intensities, while a treadmill enforces effort and lets incline raise intensity without running. Console calorie figures on both are estimates and tend to run optimistic.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a rowing machine really a full-body workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Largely, yes, but it is leg-dominant. The drive is commonly described as mostly legs — often summarised as roughly 60% — with the trunk and arms contributing the rest. It works more muscle than a treadmill, but it is not an arm exercise and not a substitute for strength training.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is rowing bad for your back?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not inherently, but the lower back is where rowing most often causes complaints, usually from poor technique, fatigue or high volume. Keeping the back long and hinging at the hips matters. If you have a history of back pain or disc problems, ask a clinician before choosing a rower.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a rowing machine easier on the knees than a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It removes impact, which helps compared with running. But rowing takes the knees through a deep bend each stroke, which some people find uncomfortable, and walking on a treadmill is already low impact. Which suits your knees is a question for a physiotherapist.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a rowing machine take up less space than a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In storage, usually much less: many rowers stand upright or separate into two pieces. In use, a rower is long — typically around 7 to 9 feet — but narrow, and needs no safety zone behind it, whereas a treadmill needs its footprint plus roughly 6 feet of clearance behind the deck.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Choosing Between a Rower and a Treadmill</h2>
+          <p>The full-body headline makes rowers easy to oversell. These are the four mistakes that follow most often.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a rower and skipping the technique</h3>
+              <p>Rowing well takes practice. Pulling with the arms first, letting the seat shoot back or rounding the lower back to reach makes the session less effective and harder on the spine. Treat the first weeks as learning, and use the manufacturer's technique videos or a coach.</p>
+            </li>
+            <li>
+              <h3>Cranking the resistance up</h3>
+              <p>High resistance does not make a beginner fitter faster; it mostly magnifies poor technique and loads the back. Most people row better, and harder overall, at moderate settings with a good stroke rhythm.</p>
+            </li>
+            <li>
+              <h3>Comparing a rower with running when you will walk</h3>
+              <p>The no-impact argument is strongest against running. Walking produces close to 1.2 times body weight per step and is itself low impact, so if walking is your plan, the decision rests on space, noise and preference rather than joints alone.</p>
+            </li>
+            <li>
+              <h3>Not trying the low seat</h3>
+              <p>A rower's seat sits close to the floor. For people with stiff hips or knees or limited mobility, getting down and back up can be the real obstacle. Try one before buying, or look for a model with a raised seat.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing Between a Rower and a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">The full-body headline makes rowers easy to oversell. These are the four mistakes that follow most often.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a rower and skipping the technique</h3>
-              <p class="text-gray-700 text-sm m-0">Rowing well takes practice. Pulling with the arms first, letting the seat shoot back or rounding the lower back to reach makes the session less effective and harder on the spine. Treat the first weeks as learning, and use the manufacturer's technique videos or a coach.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cranking the resistance up</h3>
-              <p class="text-gray-700 text-sm m-0">High resistance does not make a beginner fitter faster; it mostly magnifies poor technique and loads the back. Most people row better, and harder overall, at moderate settings with a good stroke rhythm.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing a rower with running when you will walk</h3>
-              <p class="text-gray-700 text-sm m-0">The no-impact argument is strongest against running. Walking produces close to 1.2 times body weight per step and is itself low impact, so if walking is your plan, the decision rests on space, noise and preference rather than joints alone.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not trying the low seat</h3>
-              <p class="text-gray-700 text-sm m-0">A rower's seat sits close to the floor. For people with stiff hips or knees or limited mobility, getting down and back up can be the real obstacle. Try one before buying, or look for a model with a raised seat.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Comparison Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-vs-exercise-bike/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs Exercise Bike</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Weight loss, knees, bone loading and space, compared honestly.</p>
-            </a>
-            <a href="/treadmill-vs-elliptical/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs Elliptical</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The no-impact alternative that keeps you on your feet.</p>
-            </a>
-            <a href="/are-treadmills-bad-for-your-knees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Health</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Treadmills Bad for Your Knees?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the evidence says about walking, running and knee health.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A rower gives whole-body, no-impact work and stores easily</strong>,
             at the cost of a technique learning curve and real demands on the lower back. A treadmill needs
             no skill, trains walking and running, and loads your bones.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Choose the <strong class="text-white">rower</strong> for space, quiet and upper-body work if you
             will learn the stroke; choose the <strong class="text-white">treadmill</strong> for walking,
-            running and ease of use — our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a>
-            covers what to look for.
+            running and ease of use — our <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a> covers what to look for.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-vs-exercise-bike/">Treadmill vs Exercise Bike</a></li>
+            <li><a href="/treadmill-vs-elliptical/">Treadmill vs Elliptical</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is a rowing machine better than a treadmill?</h3></summary>
+            <p class="faq-a">
+              Neither is better overall. A rower works more of the body with no impact and stores easily, but it has a technique learning curve and asks a lot of the lower back. A treadmill needs no skill, trains walking and running, and provides weight-bearing loading for bone. Choose the one that fits your body, space and goals.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Rower vs treadmill: which burns more calories?</h3></summary>
+            <p class="faq-a">
+              At the same heart rate and duration, broadly similar for most people. Rowing recruits more muscle and can reach very high intensities, while a treadmill enforces effort and lets incline raise intensity without running. Console calorie figures on both are estimates and tend to run optimistic.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a rowing machine really a full-body workout?</h3></summary>
+            <p class="faq-a">
+              Largely, yes, but it is leg-dominant. The drive is commonly described as mostly legs — often summarised as roughly 60% — with the trunk and arms contributing the rest. It works more muscle than a treadmill, but it is not an arm exercise and not a substitute for strength training.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is rowing bad for your back?</h3></summary>
+            <p class="faq-a">
+              Not inherently, but the lower back is where rowing most often causes complaints, usually from poor technique, fatigue or high volume. Keeping the back long and hinging at the hips matters. If you have a history of back pain or disc problems, ask a clinician before choosing a rower.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a rowing machine easier on the knees than a treadmill?</h3></summary>
+            <p class="faq-a">
+              It removes impact, which helps compared with running. But rowing takes the knees through a deep bend each stroke, which some people find uncomfortable, and walking on a treadmill is already low impact. Which suits your knees is a question for a physiotherapist.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a rowing machine take up less space than a treadmill?</h3></summary>
+            <p class="faq-a">
+              In storage, usually much less: many rowers stand upright or separate into two pieces. In use, a rower is long — typically around 7 to 9 feet — but narrow, and needs no safety zone behind it, whereas a treadmill needs its footprint plus roughly 6 feet of clearance behind the deck.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Comparison Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-vs-exercise-bike/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Treadmill vs Exercise Bike</div>
+            <p class="c-blurb">Weight loss, knees, bone loading and space, compared honestly.</p>
+          </a>
+          <a href="/treadmill-vs-elliptical/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Treadmill vs Elliptical</div>
+            <p class="c-blurb">The no-impact alternative that keeps you on your feet.</p>
+          </a>
+          <a href="/are-treadmills-bad-for-your-knees/" class="card">
+            <div class="c-kicker">Health</div>
+            <div class="c-title">Are Treadmills Bad for Your Knees?</div>
+            <p class="c-blurb">What the evidence says about walking, running and knee health.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

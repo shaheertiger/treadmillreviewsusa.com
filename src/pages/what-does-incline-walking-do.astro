@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Does Incline Walking Do? (2026): Heart, Calories, Muscle, Fat";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-does-incline-walking-do/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Calories by Incline", link: "#calories" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whatdoesinclinewalkingdo" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whatdoesinclinewalkingdo)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">What Does Incline Walking Do?</h1>
+      <p class="ed-dek">
+        Raising the treadmill deck turns an easy walk into real cardiovascular work, without the impact of running. Here is what that does to your heart rate, how many calories it adds by grade, which muscles take the load, what it can and cannot do for fat loss, and the risks worth knowing before you start.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Does Incline <span class="text-[#5AA9FF]">Walking Do?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Raising the treadmill deck turns an easy walk into real cardiovascular work, without the impact of running. Here is what that does to your heart rate, how many calories it adds by grade, which muscles take the load, what it can and cannot do for fat loss, and the risks worth knowing before you start.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#calories" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Calories by Incline
-          </a>
-          <a href="#how-to-start" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Start
-          </a>
-        </div>
+        <a href="#calories" class="btn-ghost">Calories by Incline</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page explains, in general terms, what walking on an incline does — it is not
-          medical, physiotherapy, coaching or nutrition advice, and we are not qualified to give
-          any of those. Incline walking raises heart rate and loads the calves, Achilles tendons
-          and lower back; if you have a heart, lung, joint, tendon or back condition, are
-          pregnant, are recovering from injury, or have any concern about exercise, talk to a
-          doctor or physical therapist before starting.
-          <strong class="text-gray-900">On the figures below:</strong> calorie numbers are rounded
-          estimates from standard MET arithmetic, not measurements, and incline ranges are common
-          rules of thumb rather than prescriptions.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Does Incline Walking Do? The Short Answer</a>
-          <a href="#heart-rate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Does Incline Walking Do to Your Heart Rate?</a>
-          <a href="#good-cardio" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Is Incline Walking Good Cardio?</a>
-          <a href="#calories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Many Calories Does Incline Walking Burn?</a>
-          <a href="#muscle" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Does Incline Walking Build Muscle?</a>
-          <a href="#joints" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Is Incline Walking Easier on the Joints Than Running?</a>
-          <a href="#fat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Does Incline Walking Burn Fat?</a>
-          <a href="#risks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Are the Risks and Downsides of Incline Walking?</a>
-          <a href="#how-to-start" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Should You Start Incline Walking?</a>
-          <a href="#how-long-how-often" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Long and How Often Should You Incline Walk?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Incline walking has gone from a niche treadmill setting to one of the most-searched ways to
           exercise, largely because it seems to offer something rare: a hard workout that does
           not feel like running. That turns out to be broadly true. Walking uphill makes the
@@ -210,8 +146,38 @@ const schema = {
           This page answers the common questions one at a time.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This page explains, in general terms, what walking on an incline does — it is not
+          medical, physiotherapy, coaching or nutrition advice, and we are not qualified to give
+          any of those. Incline walking raises heart rate and loads the calves, Achilles tendons
+          and lower back; if you have a heart, lung, joint, tendon or back condition, are
+          pregnant, are recovering from injury, or have any concern about exercise, talk to a
+          doctor or physical therapist before starting. <strong class="text-gray-900">On the figures below:</strong> calorie numbers are rounded
+          estimates from standard MET arithmetic, not measurements, and incline ranges are common
+          rules of thumb rather than prescriptions.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Does Incline Walking Do? The Short Answer</a></li>
+            <li><a href="#heart-rate">What Does Incline Walking Do to Your Heart Rate?</a></li>
+            <li><a href="#good-cardio">Is Incline Walking Good Cardio?</a></li>
+            <li><a href="#calories">How Many Calories Does Incline Walking Burn?</a></li>
+            <li><a href="#muscle">Does Incline Walking Build Muscle?</a></li>
+            <li><a href="#joints">Is Incline Walking Easier on the Joints Than Running?</a></li>
+            <li><a href="#fat">Does Incline Walking Burn Fat?</a></li>
+            <li><a href="#risks">What Are the Risks and Downsides of Incline Walking?</a></li>
+            <li><a href="#how-to-start">How Should You Start Incline Walking?</a></li>
+            <li><a href="#how-long-how-often">How Long and How Often Should You Incline Walk?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Does Incline Walking Do? The Short Answer</h2>
+          <h2>What Does Incline Walking Do? The Short Answer</h2>
 <p>
             <strong>Incline walking makes walking harder without making it faster: it raises your
             heart rate and calorie burn substantially, works the glutes, hamstrings and calves more
@@ -238,7 +204,7 @@ const schema = {
         </div>
 
         <div id="heart-rate" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Does Incline Walking Do to Your Heart Rate?</h2>
+          <h2>What Does Incline Walking Do to Your Heart Rate?</h2>
 <p>
             It raises it, often a lot, at a speed that would otherwise be easy. Because the energy
             cost of the walk rises with grade, your heart has to pump more blood and you breathe
@@ -261,17 +227,14 @@ const schema = {
             offers hard aerobic work on recovery days without the impact.
           </p>
           <p>
-            A heart-rate strap or watch helps you use this deliberately, though the treadmill's
-            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> and many wrist devices are imperfect. Our guide to
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
-            explains how to set zones and what each one is for. Without a monitor, the talk test
+            A heart-rate strap or watch helps you use this deliberately, though the treadmill's <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> and many wrist devices are imperfect. Our guide to <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a> explains how to set zones and what each one is for. Without a monitor, the talk test
             works well enough: able to speak in sentences is moderate, a few words at a time is
             hard.
           </p>
         </div>
 
         <div id="good-cardio" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Is Incline Walking Good Cardio?</h2>
+          <h2>Is Incline Walking Good Cardio?</h2>
 <p>
             Yes. For most people, a sustained incline walk is solid cardiovascular exercise, in the
             same intensity range as jogging or a steady bike ride, depending on the grade and
@@ -297,14 +260,12 @@ const schema = {
             running if running is your goal. Very fit people may struggle to raise their heart rate
             far enough without going so steep that the calves give out first. And it shares
             treadmill cardio's general weaknesses: no downhill work, no varied terrain and a
-            tendency to be boring. Our comparison of
-            <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking versus running</a>
-            sets out the trade-offs side by side, including time efficiency and which suits whom.
+            tendency to be boring. Our comparison of <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking versus running</a> sets out the trade-offs side by side, including time efficiency and which suits whom.
           </p>
         </div>
 
         <div id="calories" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Many Calories Does Incline Walking Burn?</h2>
+          <h2>How Many Calories Does Incline Walking Burn?</h2>
 <p>
             The table gives rounded estimates for 30 minutes at 3 mph at different grades, with no
             handrail use, for three body weights. They are derived from a standard walking equation
@@ -344,9 +305,7 @@ const schema = {
             so the line climbs steadily: at 3 mph, a 10% grade comes out at a little over twice
             the flat figure, and 15% at nearly three times. Weight multiplies everything, so
             heavier walkers see the biggest absolute numbers. And a 12% walk at 3 mph lands in
-            roughly the same region as an easy jog, which is a large part of why the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            caught on.
+            roughly the same region as an easy jog, which is a large part of why the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> caught on.
           </p>
           <p>
             Two caveats. Holding the handrails reduces the real cost, sometimes considerably,
@@ -358,7 +317,7 @@ const schema = {
         </div>
 
         <div id="muscle" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Does Incline Walking Build Muscle?</h2>
+          <h2>Does Incline Walking Build Muscle?</h2>
 <p>
             A little, mostly for beginners, and mainly as muscular endurance rather than size. The
             incline makes the glutes, hamstrings, calves and quadriceps work harder than on the
@@ -386,15 +345,13 @@ const schema = {
           </ul>
           <p>
             The most common version of this question is about the glutes specifically, and it has
-            its own page: see
-            <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">does incline walking build glutes</a>
-            for the incline ranges commonly suggested, the form cues that matter, and how to pair
+            its own page: see <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">does incline walking build glutes</a> for the incline ranges commonly suggested, the form cues that matter, and how to pair
             incline walking with strength work.
           </p>
         </div>
 
         <div id="joints" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Is Incline Walking Easier on the Joints Than Running?</h2>
+          <h2>Is Incline Walking Easier on the Joints Than Running?</h2>
 <p>
             Generally yes, in terms of impact. Walking always keeps one foot on the ground, so
             there is no flight phase and no landing from it; running involves a small jump on every
@@ -424,7 +381,7 @@ const schema = {
         </div>
 
         <div id="fat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Does Incline Walking Burn Fat?</h2>
+          <h2>Does Incline Walking Burn Fat?</h2>
 <p>
             It burns energy, some of which comes from fat, and it can contribute to fat loss over
             time — but how much fat you lose depends mainly on your overall energy balance, which
@@ -455,13 +412,12 @@ const schema = {
           </p>
           <p>
             For why no treadmill setting can target the stomach, thighs or hips, and what a
-            realistic fat-loss plan looks like with a treadmill in it, see our page on
-            <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>.
+            realistic fat-loss plan looks like with a treadmill in it, see our page on <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>.
           </p>
         </div>
 
         <div id="risks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Are the Risks and Downsides of Incline Walking?</h2>
+          <h2>What Are the Risks and Downsides of Incline Walking?</h2>
 <p>
             Incline walking is low-risk for most healthy people, but steep grades add specific
             stresses, and a handful of habits cause most of the problems.
@@ -494,9 +450,7 @@ const schema = {
             Some people feel the front of the shin working hard, especially at higher speeds.
             Shoes with worn-out soles make everything worse. And the moment of stopping matters:
             lower the incline and speed before stepping off, because stepping onto a stationary
-            surface from a steep, moving belt is awkward and can be destabilising. Our page on
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on a treadmill</a>
-            covers the calves, Achilles and lower back in more detail.
+            surface from a steep, moving belt is awkward and can be destabilising. Our page on <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on a treadmill</a> covers the calves, Achilles and lower back in more detail.
           </p>
           <p>
             Finally, because incline walking can raise heart rate considerably, anyone with a heart
@@ -506,7 +460,7 @@ const schema = {
         </div>
 
         <div id="how-to-start" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Should You Start Incline Walking?</h2>
+          <h2>How Should You Start Incline Walking?</h2>
 <p>
             Gradually, with posture first and grade second. A simple approach that works for most
             people:
@@ -531,8 +485,7 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check what your treadmill can do</h3>
           <p>
-            Not every machine is suited to this. Many walking pads have no incline at all, some
-            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a> top out at a few percent, and others offer only manual incline that
+            Not every machine is suited to this. Many walking pads have no incline at all, some <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a> top out at a few percent, and others offer only manual incline that
             has to be set before you start. A machine that reaches 10 to 15% under motor control,
             with a stable deck at full grade, makes incline walking much easier to progress. Check
             the specification and the weight limit before buying with incline in mind.
@@ -540,7 +493,7 @@ const schema = {
         </div>
 
         <div id="how-long-how-often" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Long and How Often Should You Incline Walk?</h2>
+          <h2>How Long and How Often Should You Incline Walk?</h2>
 <p>
             Long enough to be useful, and often enough to be a habit, without crowding out
             recovery. For general fitness, sessions of 20 to 45 minutes, two to four times a week,
@@ -568,141 +521,155 @@ const schema = {
             sign the walking is doing what you want.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does incline walking do for your body?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It raises your heart rate and energy cost compared with flat walking, works the glutes, hamstrings and calves harder, and keeps impact low because walking has no flight phase. Done regularly, it improves cardiovascular fitness and leg endurance and can support weight management. It also loads the calves and Achilles more, so build the grade gradually.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is incline walking good cardio?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. A sustained walk at a meaningful grade is moderate to vigorous aerobic exercise for most people, similar in effort to jogging depending on grade and speed. It is easy to control and sustain. It does not train running speed or impact tolerance, so runners still need to run, but as general cardio it is very effective.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline walking burn fat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It burns more energy than flat walking, which can contribute to fat loss over time if your diet does not rise to match. It does not burn fat from the legs or hips specifically; fat loss happens across the whole body. Overall energy balance, driven mainly by diet, decides how much fat you lose.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline walking build muscle?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly muscular endurance, with some strength gain for beginners. It works the glutes, hamstrings, calves and quads harder than flat walking, but the load per step is light, so it builds little size for people who already train. Pair it with strength training if bigger or stronger legs are the goal.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many calories does incline walking burn?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                By standard MET estimates, 30 minutes at 3 mph burns roughly 120 calories on the flat for a 160 lb person, about 195 at 5%, about 270 at 10% and about 300 at 12%. Heavier people burn more. Holding the handrails lowers the real figure, and consoles often overstate it, so treat all numbers as estimates.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is incline walking bad for your knees or back?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is lower-impact than running and many people with sore knees find it comfortable, but it loads the calves, Achilles and front of the knee more than flat walking. Leaning forward or holding the rails can strain the lower back. Stand tall, build up gradually, and check with a doctor or physical therapist if you have a joint condition.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Incline Walking</h2>
+          <p>Incline walking is simple, which makes it easy to do in a way that quietly removes the benefit or causes avoidable aches.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Holding the rails to manage a steep grade</h3>
+              <p>Gripping or leaning on the handrails supports part of your weight, cuts the real energy cost, and bends you into a poor posture, while the console still shows the full calorie figure. If you need the rails to cope, the grade is too high. Lower it until you can walk hands-free and build from there.</p>
+            </li>
+            <li>
+              <h3>Going straight to 12 or 15 percent</h3>
+              <p>Jumping from flat walking to long steep sessions is the usual cause of tight calves and Achilles irritation, because tendons adapt more slowly than muscles. Start at 3 to 5%, add a percent or a few minutes each week, and treat pain at the back of the heel as a signal to back off.</p>
+            </li>
+            <li>
+              <h3>Expecting it to remove leg or belly fat</h3>
+              <p>Incline walking works the legs and hips but does not burn fat from them specifically, and the calories it adds are easily eaten back. Treat it as a good way to add activity and fitness, set realistic expectations, and look to diet and consistency over months for changes in body fat.</p>
+            </li>
+            <li>
+              <h3>Doing the same steep session every day</h3>
+              <p>A daily maximum-grade walk gives the calves and Achilles no time to recover and makes boredom more likely. Mix steady moderate sessions, intervals and easier days across the week, and let progress come from small increases in grade, speed or time rather than repeating the hardest option.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Incline Walking</h2>
-          <p class="text-gray-700 leading-relaxed">Incline walking is simple, which makes it easy to do in a way that quietly removes the benefit or causes avoidable aches.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails to manage a steep grade</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping or leaning on the handrails supports part of your weight, cuts the real energy cost, and bends you into a poor posture, while the console still shows the full calorie figure. If you need the rails to cope, the grade is too high. Lower it until you can walk hands-free and build from there.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Going straight to 12 or 15 percent</h3>
-              <p class="text-gray-700 text-sm m-0">Jumping from flat walking to long steep sessions is the usual cause of tight calves and Achilles irritation, because tendons adapt more slowly than muscles. Start at 3 to 5%, add a percent or a few minutes each week, and treat pain at the back of the heel as a signal to back off.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting it to remove leg or belly fat</h3>
-              <p class="text-gray-700 text-sm m-0">Incline walking works the legs and hips but does not burn fat from them specifically, and the calories it adds are easily eaten back. Treat it as a good way to add activity and fitness, set realistic expectations, and look to diet and consistency over months for changes in body fat.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing the same steep session every day</h3>
-              <p class="text-gray-700 text-sm m-0">A daily maximum-grade walk gives the calves and Achilles no time to recover and makes boredom more likely. Mix steady moderate sessions, intervals and easier days across the week, and let progress come from small increases in grade, speed or time rather than repeating the hardest option.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Incline Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/incline-walking-vs-running/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Incline Walking vs Running</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Calories, impact, time efficiency and who each one suits.</p>
-            </a>
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Incline Should I Walk On?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Incline by goal, the 1% rule, and a four-week progression.</p>
-            </a>
-            <a href="/does-incline-walking-build-glutes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Glutes</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Does Incline Walking Build Glutes?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What it can and cannot do for the glutes, and how much incline to use.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Incline walking turns an easy walk into real cardio without the
             impact of running.</strong> At 3 mph, a 10% grade roughly doubles the estimated energy
             cost of the flat walk, raises heart rate substantially, and works the glutes,
             hamstrings and calves harder — but it builds little muscle for trained people and
             does not burn fat from anywhere in particular.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Start at a modest grade, let go of the rails, stand tall, and build the incline over
-            weeks to protect the calves and Achilles. For the trade-offs against running, see our
-            <a href="/incline-walking-vs-running/" class="text-[#5AA9FF] font-bold no-underline">incline walking versus running</a>
-            comparison.
+            weeks to protect the calves and Achilles. For the trade-offs against running, see our <a href="/incline-walking-vs-running/" class="text-[#5AA9FF] font-bold no-underline">incline walking versus running</a> comparison.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/incline-walking-vs-running/">Incline Walking vs Running</a></li>
+            <li><a href="/what-incline-should-i-walk-on-a-treadmill/">What Incline Should I Walk On?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What does incline walking do for your body?</h3></summary>
+            <p class="faq-a">
+              It raises your heart rate and energy cost compared with flat walking, works the glutes, hamstrings and calves harder, and keeps impact low because walking has no flight phase. Done regularly, it improves cardiovascular fitness and leg endurance and can support weight management. It also loads the calves and Achilles more, so build the grade gradually.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is incline walking good cardio?</h3></summary>
+            <p class="faq-a">
+              Yes. A sustained walk at a meaningful grade is moderate to vigorous aerobic exercise for most people, similar in effort to jogging depending on grade and speed. It is easy to control and sustain. It does not train running speed or impact tolerance, so runners still need to run, but as general cardio it is very effective.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does incline walking burn fat?</h3></summary>
+            <p class="faq-a">
+              It burns more energy than flat walking, which can contribute to fat loss over time if your diet does not rise to match. It does not burn fat from the legs or hips specifically; fat loss happens across the whole body. Overall energy balance, driven mainly by diet, decides how much fat you lose.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does incline walking build muscle?</h3></summary>
+            <p class="faq-a">
+              Mainly muscular endurance, with some strength gain for beginners. It works the glutes, hamstrings, calves and quads harder than flat walking, but the load per step is light, so it builds little size for people who already train. Pair it with strength training if bigger or stronger legs are the goal.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How many calories does incline walking burn?</h3></summary>
+            <p class="faq-a">
+              By standard MET estimates, 30 minutes at 3 mph burns roughly 120 calories on the flat for a 160 lb person, about 195 at 5%, about 270 at 10% and about 300 at 12%. Heavier people burn more. Holding the handrails lowers the real figure, and consoles often overstate it, so treat all numbers as estimates.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is incline walking bad for your knees or back?</h3></summary>
+            <p class="faq-a">
+              It is lower-impact than running and many people with sore knees find it comfortable, but it loads the calves, Achilles and front of the knee more than flat walking. Leaning forward or holding the rails can strain the lower back. Stand tall, build up gradually, and check with a doctor or physical therapist if you have a joint condition.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Incline Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/incline-walking-vs-running/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Incline Walking vs Running</div>
+            <p class="c-blurb">Calories, impact, time efficiency and who each one suits.</p>
+          </a>
+          <a href="/what-incline-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">What Incline Should I Walk On?</div>
+            <p class="c-blurb">Incline by goal, the 1% rule, and a four-week progression.</p>
+          </a>
+          <a href="/does-incline-walking-build-glutes/" class="card">
+            <div class="c-kicker">Glutes</div>
+            <div class="c-title">Does Incline Walking Build Glutes?</div>
+            <p class="c-blurb">What it can and cannot do for the glutes, and how much incline to use.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

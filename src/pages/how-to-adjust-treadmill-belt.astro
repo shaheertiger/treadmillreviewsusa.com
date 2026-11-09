@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Adjust a Treadmill Belt (2026): Tighten and Track It Properly";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-adjust-treadmill-belt/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Tighten It Step by Step", link: "#tighten-step-by-step" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtoadjusttreadmillbelt" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtoadjusttreadmillbelt)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Maintenance</span>
+      </nav>
+      <h1 class="ed-title">How to Adjust a Treadmill Belt</h1>
+      <p class="ed-dek">
+        Two bolts, one hex key and about fifteen minutes. The job is easy; doing it in the right order is the part people get wrong. Here is the whole sequence — tension first, tracking second, and a check before either that saves most belts from being tightened at all.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Maintenance
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Adjust <span class="text-[#5AA9FF]">a Treadmill Belt</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Two bolts, one hex key and about fifteen minutes. The job is easy; doing it in the right order is the part people get wrong. Here is the whole sequence — tension first, tracking second, and a check before either that saves most belts from being tightened at all.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#tighten-step-by-step" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Tighten It Step by Step
-          </a>
-          <a href="#adjust-tracking" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Fix the Tracking
-          </a>
-        </div>
+        <a href="#tighten-step-by-step" class="btn-ghost">Tighten It Step by Step</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before you touch a bolt.</strong> Unplug the treadmill at
-          the wall for every tension adjustment and for anything that puts your hands near the
-          rollers or under the belt. The safety key stops the belt; it does not isolate the
-          machine. Tracking is adjusted with the belt running empty, so do it from the side, never
-          standing on the belt, with the safety key within reach. If you smell burning, see
-          sparks, or the belt moves with the machine switched off, stop — that is not an
-          adjustment problem.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Adjust a Treadmill Belt: The Short Answer</a>
-          <a href="#tension-vs-tracking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Tension Versus Tracking</a>
-          <a href="#do-you-need-to" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. First, Decide Whether It Needs Adjusting at All</a>
-          <a href="#tools" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Tools and Preparation</a>
-          <a href="#find-the-bolts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Finding the Rear Roller Bolts</a>
-          <a href="#lift-test" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Lift Test: Measure Before and After</a>
-          <a href="#tighten-step-by-step" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How to Tighten a Treadmill Belt, Step by Step</a>
-          <a href="#adjust-tracking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Adjusting Tracking After Tensioning</a>
-          <a href="#when-tightening-is-wrong" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When Tightening Is the Wrong Fix</a>
-          <a href="#over-tightening" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Over-Tightening Does</a>
-          <a href="#stretched-or-worn" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When Adjustment Will Not Hold</a>
-          <a href="#how-often" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. How Often to Check Belt Adjustment</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. The Bottom Line on Adjusting a Treadmill Belt</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Adjusting a treadmill belt means one of two things, and they use the same two bolts:
           changing its tension, so it grips the rollers without slipping, or changing its tracking,
           so it runs down the middle of the deck. Turn both bolts equally and you change tension.
@@ -208,8 +144,39 @@ const schema = {
           adjustment got that way because someone did one while trying to do the other.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before you touch a bolt.</strong> Unplug the treadmill at
+          the wall for every tension adjustment and for anything that puts your hands near the
+          rollers or under the belt. The safety key stops the belt; it does not isolate the
+          machine. Tracking is adjusted with the belt running empty, so do it from the side, never
+          standing on the belt, with the safety key within reach. If you smell burning, see
+          sparks, or the belt moves with the machine switched off, stop — that is not an
+          adjustment problem.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Adjust a Treadmill Belt: The Short Answer</a></li>
+            <li><a href="#tension-vs-tracking">Tension Versus Tracking</a></li>
+            <li><a href="#do-you-need-to">First, Decide Whether It Needs Adjusting at All</a></li>
+            <li><a href="#tools">Tools and Preparation</a></li>
+            <li><a href="#find-the-bolts">Finding the Rear Roller Bolts</a></li>
+            <li><a href="#lift-test">The Lift Test: Measure Before and After</a></li>
+            <li><a href="#tighten-step-by-step">How to Tighten a Treadmill Belt, Step by Step</a></li>
+            <li><a href="#adjust-tracking">Adjusting Tracking After Tensioning</a></li>
+            <li><a href="#when-tightening-is-wrong">When Tightening Is the Wrong Fix</a></li>
+            <li><a href="#over-tightening">What Over-Tightening Does</a></li>
+            <li><a href="#stretched-or-worn">When Adjustment Will Not Hold</a></li>
+            <li><a href="#how-often">How Often to Check Belt Adjustment</a></li>
+            <li><a href="#verdict">The Bottom Line on Adjusting a Treadmill Belt</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Adjust a Treadmill Belt: The Short Answer</h2>
+          <h2>How to Adjust a Treadmill Belt: The Short Answer</h2>
 <p>
             To tighten a treadmill belt, unplug the machine, find the two adjustment bolts at the
             rear corners where the rear roller sits, and turn <strong>both</strong> a quarter turn
@@ -227,15 +194,13 @@ const schema = {
             That is the whole job in two paragraphs. The rest of this page is about the order to
             do it in, the check that should come before any tightening, and the ways people turn a
             five-minute adjustment into a damaged belt. If you only want the tension specification,
-            it is set out fully in
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>;
-            if the belt is wandering and the tension is already right, go straight to
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>.
+            it is set out fully in <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>;
+            if the belt is wandering and the tension is already right, go straight to <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>.
           </p>
         </div>
 
         <div id="tension-vs-tracking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Tension Versus Tracking</h2>
+          <h2>Tension Versus Tracking</h2>
 <p>
             Both adjustments work by moving the rear roller. Each end of that roller is held by a
             bolt that runs fore and aft through the frame; turning a bolt clockwise draws its end
@@ -266,7 +231,7 @@ const schema = {
         </div>
 
         <div id="do-you-need-to" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. First, Decide Whether It Needs Adjusting at All</h2>
+          <h2>First, Decide Whether It Needs Adjusting at All</h2>
 <p>
             The commonest reason people search for how to tighten a treadmill belt is that the
             belt hesitates or stutters when they plant a foot. That sensation has two causes, and
@@ -285,11 +250,7 @@ const schema = {
             of the deck and run your fingers across the deck surface underneath. Slick, slightly
             waxy-feeling, is fine. Dry, grippy or dusty means it needs lubricant, and you should
             lubricate, run the machine for a few minutes to spread it, and test again before
-            considering tension. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
-            covers the method, and
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate</a>
-            covers the interval.
+            considering tension. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a> covers the method, and <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate</a> covers the interval.
           </p>
           <p>
             The second check is the lift test, described below. If the belt already lifts only two
@@ -300,7 +261,7 @@ const schema = {
         </div>
 
         <div id="tools" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Tools and Preparation</h2>
+          <h2>Tools and Preparation</h2>
 <p>
             You need very little, which is part of why this job is so often done badly — it looks
             too simple to need preparation.
@@ -334,7 +295,7 @@ const schema = {
         </div>
 
         <div id="find-the-bolts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Finding the Rear Roller Bolts</h2>
+          <h2>Finding the Rear Roller Bolts</h2>
 <p>
             Go to the back of the machine and look at the two rear corners, where the plastic end
             caps cover the ends of the rear roller. On most home treadmills you will find one bolt
@@ -358,7 +319,7 @@ const schema = {
         </div>
 
         <div id="lift-test" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Lift Test: Measure Before and After</h2>
+          <h2>The Lift Test: Measure Before and After</h2>
 <p>
             With the machine unplugged, stand at the side level with the middle of the deck. Get
             your fingers under the belt edge and lift straight up, firmly but without hauling on
@@ -377,13 +338,12 @@ const schema = {
             Write the number down. It is your starting point, and checking it again after each
             round of tightening is what stops you going past correct. There is nothing underfoot
             that tells you a belt is now too tight; the lift test is the only upper limit you have.
-            The full set of checks, including what a failure on each one means, is in our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>.
+            The full set of checks, including what a failure on each one means, is in our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>.
           </p>
         </div>
 
         <div id="tighten-step-by-step" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How to Tighten a Treadmill Belt, Step by Step</h2>
+          <h2>How to Tighten a Treadmill Belt, Step by Step</h2>
 <p>
             With the deck confirmed lubricated, the belt still slipping, and a lift reading of more
             than about three inches, the tightening itself takes a few minutes.
@@ -435,7 +395,7 @@ const schema = {
         </div>
 
         <div id="adjust-tracking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Adjusting Tracking After Tensioning</h2>
+          <h2>Adjusting Tracking After Tensioning</h2>
 <p>
             Tracking is adjusted with the belt moving, which makes it the one part of this job
             done with the machine plugged in. Work from the side or the rear of the machine,
@@ -475,13 +435,12 @@ const schema = {
             overall tension rather than increasing it, which is the better choice if your lift test
             put you at the tight end of the range. Either way, re-check the lift afterwards. The
             reasons behind each of these steps, and what to do when a belt will not stay centred,
-            are covered in depth in
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">our belt centring guide</a>.
+            are covered in depth in <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">our belt centring guide</a>.
           </p>
         </div>
 
         <div id="when-tightening-is-wrong" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When Tightening Is the Wrong Fix</h2>
+          <h2>When Tightening Is the Wrong Fix</h2>
 <p>
             Tightening fixes one specific fault — a belt with too little tension to be gripped by
             the front roller. Several other faults produce similar symptoms, and tightening each
@@ -490,9 +449,7 @@ const schema = {
           <p>
             <strong>Friction from a dry or dirty deck.</strong> Covered above and worth repeating,
             because it is the most common misdiagnosis. Lubricate first. If grit and lint have
-            built up under the belt, clean it out before lubricating; our guide to
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
-            covers the method.
+            built up under the belt, clean it out before lubricating; our guide to <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a> covers the method.
           </p>
           <p>
             <strong>A stretched belt.</strong> A belt that needs re-tightening every few weeks, each
@@ -502,22 +459,17 @@ const schema = {
           <p>
             <strong>Drive belt slip.</strong> If the running belt pauses at start-up with a brief
             squeal from under the motor hood, the slip may be in the small drive belt between the
-            motor and the front roller. The rear bolts have no effect on that; see
-            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">turns on but the belt will not move</a>.
+            motor and the front roller. The rear bolts have no effect on that; see <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">turns on but the belt will not move</a>.
           </p>
           <p>
             <strong>A motor or controller that cannot hold speed.</strong> If the belt slows
             smoothly under your weight rather than slipping — the speed sags and recovers rather
-            than jerking — that is usually a drive-side issue rather than tension. Our guide to a
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows down when you step on it</a>
-            separates the two, and the
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping guide</a>
-            covers the full symptom set.
+            than jerking — that is usually a drive-side issue rather than tension. Our guide to a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows down when you step on it</a> separates the two, and the <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping guide</a> covers the full symptom set.
           </p>
         </div>
 
         <div id="over-tightening" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Over-Tightening Does</h2>
+          <h2>What Over-Tightening Does</h2>
 <p>
             Over-tightening is the expensive mistake in this job, and it is expensive precisely
             because it feels like success. The symptom that prompted the adjustment goes away, the
@@ -527,8 +479,7 @@ const schema = {
             <strong>Bearing wear.</strong> Belt tension is a load on both roller assemblies, and
             their bearings carry it. Excess tension shortens bearing life and is a common origin of
             a rumble or squeal from the front of the machine that owners mistake for a motor fault.
-            Our <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">noise diagnosis guide</a>
-            helps separate roller noise from the other sources.
+            Our <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">noise diagnosis guide</a> helps separate roller noise from the other sources.
           </p>
           <p>
             <strong>Permanent belt stretch.</strong> A belt held under excess tension deforms and
@@ -553,7 +504,7 @@ const schema = {
         </div>
 
         <div id="stretched-or-worn" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When Adjustment Will Not Hold</h2>
+          <h2>When Adjustment Will Not Hold</h2>
 <p>
             A belt correctly set on a healthy machine keeps its tension for many months. A new
             belt stretches a little in its first few weeks and usually needs one follow-up
@@ -564,9 +515,7 @@ const schema = {
             the real cause. The frame is most likely not sitting flat — check it with a spirit
             level front, rear and along a side rail, and adjust the rear feet until it does not
             rock. Carpet is a frequent culprit, because it compresses unevenly under the feet for
-            weeks; our page on a
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a>
-            explains the rigid-board fix.
+            weeks; our page on a <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a> explains the rigid-board fix.
           </p>
           <p>
             If the belt keeps going slack, unplug the machine and inspect it. Frayed or hardened
@@ -574,15 +523,13 @@ const schema = {
             polished means it has been running dry. Cracking across the surface, or adjuster bolts
             wound almost to the end of their travel, means the belt has reached the end of its
             life. Belts are consumables, and replacing one is routine maintenance rather than a
-            failure; our guide to
-            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a belt should be replaced</a>
-            covers the signs and the typical intervals. Check the deck at the same time, since a new
+            failure; our guide to <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a belt should be replaced</a> covers the signs and the typical intervals. Check the deck at the same time, since a new
             belt on a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> will not last.
           </p>
         </div>
 
         <div id="how-often" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. How Often to Check Belt Adjustment</h2>
+          <h2>How Often to Check Belt Adjustment</h2>
 <p>
             There is no fixed schedule for tightening, and there should not be one — a belt that is
             correctly set does not need routine re-tensioning, and turning bolts on a timetable is
@@ -596,14 +543,12 @@ const schema = {
             couple of weeks, and after any change of flooring.
           </p>
           <p>
-            Fitting these checks into a wider routine is straightforward; our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
-            sets out what to do weekly, monthly and yearly, and none of it takes long.
+            Fitting these checks into a wider routine is straightforward; our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a> sets out what to do weekly, monthly and yearly, and none of it takes long.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. The Bottom Line on Adjusting a Treadmill Belt</h2>
+          <h2>The Bottom Line on Adjusting a Treadmill Belt</h2>
 <p>
             <strong>Check lubrication before you touch a bolt.</strong> A dry deck feels exactly
             like a loose belt, and tightening a belt to overcome friction loads the motor twice
@@ -621,140 +566,153 @@ const schema = {
             the belt itself.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you adjust the belt on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Use the two bolts at the rear corners that move the rear roller. For tension, unplug the machine and turn both bolts a quarter turn clockwise, equally, then test at about 3 mph and repeat only if the belt still slips. For tracking, run the belt empty and turn the bolt on the side it drifts toward a quarter turn clockwise, then wait thirty seconds before adjusting again.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you tighten a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check the deck is lubricated first. Then unplug the treadmill, turn each rear roller bolt a quarter turn clockwise with the supplied hex key — exactly the same on both sides — plug in and test by planting your weight at about 3 mph. Repeat in quarter turns until the slipping stops, then confirm you can still lift the belt two to three inches at the centre of the deck.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which way do you turn the bolts to tighten a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Clockwise tightens on most home treadmills, because it draws the rear roller backward; anticlockwise loosens. Turn both bolts by the same amount for tension. If your manual describes a different arrangement, follow the manual.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How tight should a treadmill belt be after adjusting?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Tight enough not to slip when you plant your weight at walking pace, and loose enough that you can lift it two to three inches off the deck at the centre with the machine off. Under two inches of lift is over-tight. If your manual gives a specific gap or bolt torque, use that instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill belt keep slipping after I tighten it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because tension was never the problem. A dry deck, a stretched belt, a glazed front roller or a slipping drive belt under the motor hood all produce slip that tightening does not cure. Lubricate and re-test first; if the belt slips while lifting less than two inches, stop tightening and inspect the belt and drive.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you adjust treadmill belt tension or tracking first?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Tension first. A slack belt will not hold a tracking adjustment, and any tension change disturbs tracking slightly. Set tension with both bolts equally, then correct tracking with one bolt at a time, and re-check the lift test at the end.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Adjusting a Treadmill Belt</h2>
+          <p>Each of these turns a fifteen-minute job into a damaged belt or an over-loaded motor, and the first one is by far the most common.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Tightening a belt that actually needs lubricating</h3>
+              <p>A dry deck makes the belt hesitate under load exactly as a slack one does. Tightening stops the symptom by giving the roller more grip, but adds a tension load on top of the friction load, and the motor and controller board carry both from then on. Feel the deck under the belt before you pick up the hex key.</p>
+            </li>
+            <li>
+              <h3>Turning the bolts unequally</h3>
+              <p>Tension adjustments must be identical on both sides. A quarter turn on one side and a half on the other steers the belt, so you finish with the slip fixed and a tracking problem added. Count and write down every quarter turn on each side as you go.</p>
+            </li>
+            <li>
+              <h3>Tightening until it feels firm</h3>
+              <p>Nothing underfoot tells you when a belt has gone past correct, so tightening by feel has no upper limit. The lift test is the limit: if you cannot raise the belt two inches at the centre of the deck, it is over-tight, and the bearings, belt and motor will pay for it.</p>
+            </li>
+            <li>
+              <h3>Making tracking turns faster than the belt responds</h3>
+              <p>A quarter turn changes the direction the belt travels, not its position, and the migration takes around twenty to forty seconds at 3 mph. Turning again in that window stacks adjustments, and the belt ends up against the opposite rail. One quarter turn, wait thirty seconds, then decide.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Adjusting a Treadmill Belt</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a fifteen-minute job into a damaged belt or an over-loaded motor, and the first one is by far the most common.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening a belt that actually needs lubricating</h3>
-              <p class="text-gray-700 text-sm m-0">A dry deck makes the belt hesitate under load exactly as a slack one does. Tightening stops the symptom by giving the roller more grip, but adds a tension load on top of the friction load, and the motor and controller board carry both from then on. Feel the deck under the belt before you pick up the hex key.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Turning the bolts unequally</h3>
-              <p class="text-gray-700 text-sm m-0">Tension adjustments must be identical on both sides. A quarter turn on one side and a half on the other steers the belt, so you finish with the slip fixed and a tracking problem added. Count and write down every quarter turn on each side as you go.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening until it feels firm</h3>
-              <p class="text-gray-700 text-sm m-0">Nothing underfoot tells you when a belt has gone past correct, so tightening by feel has no upper limit. The lift test is the limit: if you cannot raise the belt two inches at the centre of the deck, it is over-tight, and the bearings, belt and motor will pay for it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Making tracking turns faster than the belt responds</h3>
-              <p class="text-gray-700 text-sm m-0">A quarter turn changes the direction the belt travels, not its position, and the migration takes around twenty to forty seconds at 3 mph. Turning again in that window stacks adjustments, and the belt ends up against the opposite rail. One quarter turn, wait thirty seconds, then decide.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Belt Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-tight-should-treadmill-belt-be/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Specification</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Tight Should a Treadmill Belt Be?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The lift test, the foot-plant test and what over-tight costs.</p>
-            </a>
-            <a href="/how-to-center-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Center a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The quarter-turn tracking method and why the thirty seconds matters.</p>
-            </a>
-            <a href="/treadmill-belt-slipping/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Slipping</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every cause of a slipping or drifting belt, and which ones bolts fix.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Lubricate before you tighten</strong>, then set tension with both
             rear bolts a quarter turn clockwise at a time, equally, testing at about 3 mph. Stop
-            when the slip stops and confirm the belt still lifts two to three inches —
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">the full tension spec</a>.
+            when the slip stops and confirm the belt still lifts two to three inches — <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">the full tension spec</a>.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Then correct tracking with one bolt</strong>: the side the belt
-            drifts toward, a quarter turn clockwise, thirty seconds of waiting.
-            <a href="/how-to-center-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">Our centring guide</a>
-            covers what to do if it will not stay put.
+            drifts toward, a quarter turn clockwise, thirty seconds of waiting. <a href="/how-to-center-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">Our centring guide</a> covers what to do if it will not stay put.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-tight-should-treadmill-belt-be/">How Tight Should a Treadmill Belt Be?</a></li>
+            <li><a href="/how-to-center-treadmill-belt/">How to Center a Treadmill Belt</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you adjust the belt on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Use the two bolts at the rear corners that move the rear roller. For tension, unplug the machine and turn both bolts a quarter turn clockwise, equally, then test at about 3 mph and repeat only if the belt still slips. For tracking, run the belt empty and turn the bolt on the side it drifts toward a quarter turn clockwise, then wait thirty seconds before adjusting again.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do you tighten a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Check the deck is lubricated first. Then unplug the treadmill, turn each rear roller bolt a quarter turn clockwise with the supplied hex key — exactly the same on both sides — plug in and test by planting your weight at about 3 mph. Repeat in quarter turns until the slipping stops, then confirm you can still lift the belt two to three inches at the centre of the deck.
             </p>
+          </details>
+          <details>
+            <summary><h3>Which way do you turn the bolts to tighten a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Clockwise tightens on most home treadmills, because it draws the rear roller backward; anticlockwise loosens. Turn both bolts by the same amount for tension. If your manual describes a different arrangement, follow the manual.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How tight should a treadmill belt be after adjusting?</h3></summary>
+            <p class="faq-a">
+              Tight enough not to slip when you plant your weight at walking pace, and loose enough that you can lift it two to three inches off the deck at the centre with the machine off. Under two inches of lift is over-tight. If your manual gives a specific gap or bolt torque, use that instead.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill belt keep slipping after I tighten it?</h3></summary>
+            <p class="faq-a">
+              Usually because tension was never the problem. A dry deck, a stretched belt, a glazed front roller or a slipping drive belt under the motor hood all produce slip that tightening does not cure. Lubricate and re-test first; if the belt slips while lifting less than two inches, stop tightening and inspect the belt and drive.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you adjust treadmill belt tension or tracking first?</h3></summary>
+            <p class="faq-a">
+              Tension first. A slack belt will not hold a tracking adjustment, and any tension change disturbs tracking slightly. Set tension with both bolts equally, then correct tracking with one bolt at a time, and re-check the lift test at the end.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Belt Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-tight-should-treadmill-belt-be/" class="card">
+            <div class="c-kicker">Specification</div>
+            <div class="c-title">How Tight Should a Treadmill Belt Be?</div>
+            <p class="c-blurb">The lift test, the foot-plant test and what over-tight costs.</p>
+          </a>
+          <a href="/how-to-center-treadmill-belt/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Center a Treadmill Belt</div>
+            <p class="c-blurb">The quarter-turn tracking method and why the thirty seconds matters.</p>
+          </a>
+          <a href="/treadmill-belt-slipping/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Belt Slipping</div>
+            <p class="c-blurb">Every cause of a slipping or drifting belt, and which ones bolts fix.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

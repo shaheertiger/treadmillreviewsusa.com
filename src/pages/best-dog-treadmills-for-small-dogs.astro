@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Dog Treadmills for Small Dogs (2026): Sized for Toy & Small Breeds";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-dog-treadmills-for-small-dogs/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,68 +274,73 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: GoPet PetRun PR700", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestdogtreadmillsforsmalldogs" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestdogtreadmillsforsmalldogs)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Dog Treadmills for Small Dogs Sized for Toy and Small Breeds</h1>
+      <p class="ed-dek">
+        A small dog needs less belt than a big one, which widens the choice, and slower, finer speed control, which narrows it again. Here are five motorised dog treadmills that suit toy and small breeds, what was really in stock on 5 November 2026, how to size one against your dog, and the rules that keep a small dog safe on a moving belt.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Dog Treadmills for Small Dogs <span class="text-[#5AA9FF]">Sized for Toy and Small Breeds</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A small dog needs less belt than a big one, which widens the choice, and slower, finer speed control, which narrows it again. Here are five motorised dog treadmills that suit toy and small breeds, what was really in stock on 5 November 2026, how to size one against your dog, and the rules that keep a small dog safe on a moving belt.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#sizing-small-dogs" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Sizing a Small Dog
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most of the well-known dog treadmills are built around medium and large dogs, and a Chihuahua,
+          a Dachshund or a Jack Russell on one of them is a small dog on a lot of machine. This is the
+          small-breed companion to our general <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">dog treadmill roundup</a> and
+          our <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium">large-dog guide</a>:
+          machines short enough to fit a small home, slow enough to start a nervous dog, and long enough,
+          once you have measured, for your dog to walk naturally.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.5k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the products below, and what this page is not.</strong>
-          We have not tested these dog treadmills. On 5 November 2026 we checked each against the pages we
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#gopet-petrun-pr700">GoPet PetRun PR700</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#costway-dog-treadmill-small-medium">Costway Dog Treadmill for Small/Medium Dogs</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Out of Stock at Target:</span> <a href="#lifepro-pawrunner">Lifepro PawRunner</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Room:</span> <a href="#gopet-petrun-pr720f">GoPet PetRun PR720F</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Sold Out:</span> <a href="#dog-runner-tracks">Dog Runner Tracks</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the products below, and what this page is not.</strong> We have not tested these dog treadmills. On 5 November 2026 we checked each against the pages we
           could read: Canine Athletes and FactoryPure (both GoPet dealers) for the GoPet PR700, Costway’s own
           store and a second retailer listing for the Costway machine, Target’s listing and Whole Dog
           Journal’s January 2026 comparison for the Lifepro PawRunner, EntirelyPets for the GoPet PR720F, and
@@ -347,85 +357,31 @@ const schema = {
           sign of distress, lameness, overheating or laboured breathing. We earn a commission if you buy
           through the Amazon links on this page; it does not change which products we list or what we say
           about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#gopet-petrun-pr700" class="font-bold text-gray-900 no-underline hover:underline">GoPet PetRun PR700</a>
-            <a href="#gopet-petrun-pr700" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#costway-dog-treadmill-small-medium" class="font-bold text-gray-900 no-underline hover:underline">Costway Dog Treadmill for Small/Medium Dogs</a>
-            <a href="#costway-dog-treadmill-small-medium" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Out of Stock at Target:</span>
-            <a href="#lifepro-pawrunner" class="font-bold text-gray-900 no-underline hover:underline">Lifepro PawRunner</a>
-            <a href="#lifepro-pawrunner" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Room:</span>
-            <a href="#gopet-petrun-pr720f" class="font-bold text-gray-900 no-underline hover:underline">GoPet PetRun PR720F</a>
-            <a href="#gopet-petrun-pr720f" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sold Out:</span>
-            <a href="#dog-runner-tracks" class="font-bold text-gray-900 no-underline hover:underline">Dog Runner Tracks</a>
-            <a href="#dog-runner-tracks" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Dog Treadmills for Small Dogs</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Small-Dog Treadmills</a>
-          <a href="#sizing-small-dogs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Sizing: Running Length Against Your Dog’s Length</a>
-          <a href="#speed-and-controls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Speed, Side Panels and Controls for a Small Dog</a>
-          <a href="#motorized-or-slatmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Motorised Treadmill or Slatmill for a Small Dog?</a>
-          <a href="#small-dog-health" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Small Dogs, Puppies and Older Dogs: Talk to the Vet First</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Safety: Never Tether, Always Supervise</a>
-          <a href="#space-and-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Space, Delivery and the Terms You Sign Up To</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Dog Treadmills for Small Dogs</a></li>
+            <li><a href="#how-we-chose">How We Chose These Small-Dog Treadmills</a></li>
+            <li><a href="#sizing-small-dogs">Sizing: Running Length Against Your Dog’s Length</a></li>
+            <li><a href="#speed-and-controls">Speed, Side Panels and Controls for a Small Dog</a></li>
+            <li><a href="#motorized-or-slatmill">Motorised Treadmill or Slatmill for a Small Dog?</a></li>
+            <li><a href="#small-dog-health">Small Dogs, Puppies and Older Dogs: Talk to the Vet First</a></li>
+            <li><a href="#safety">Safety: Never Tether, Always Supervise</a></li>
+            <li><a href="#space-and-delivery">Space, Delivery and the Terms You Sign Up To</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most of the well-known dog treadmills are built around medium and large dogs, and a Chihuahua,
-          a Dachshund or a Jack Russell on one of them is a small dog on a lot of machine. This is the
-          small-breed companion to our general
-          <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">dog treadmill roundup</a> and
-          our <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium">large-dog guide</a>:
-          machines short enough to fit a small home, slow enough to start a nervous dog, and long enough,
-          once you have measured, for your dog to walk naturally.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five motorised machines. Two were confirmed in stock from a US seller on 5 November 2026, and
             three are included because they are the obvious choices for a small dog but could not be
             confirmed as in stock on the day; their cards say so. Match the running length to your dog first.
-            If you are still deciding whether your dog needs its own machine at all, read our comparison of
-            <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog and human treadmills</a>
-            first.
+            If you are still deciding whether your dog needs its own machine at all, read our comparison of <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog and human treadmills</a> first.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -444,92 +400,80 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            Our general roundup’s top pick, the dogPACER, is missing for a reason explained in
-            <a href="#how-we-chose" class="text-[#0F62FE] font-medium">section 3</a>: we could not find it,
+            Our general roundup’s top pick, the dogPACER, is missing for a reason explained in <a href="#how-we-chose" class="text-[#0F62FE] font-medium">section 3</a>: we could not find it,
             or its small-dog MiniPacer, in stock from a US seller.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Dog Treadmills for Small Dogs</h2>
+          <h2>The 5 Best Dog Treadmills for Small Dogs</h2>
 <p>
             Ordered from the machine we would buy first for a toy or small dog to the most specialised.
             Small-dog treadmills are cheaper than large-dog ones, but the same rules apply: measure first,
             read the delivery and returns terms, and plan the training before the machine arrives.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Small-Dog Treadmills</h2>
+          <h2>How We Chose These Small-Dog Treadmills</h2>
 <p>
             We have not tested these machines, and we review treadmills for people rather than for dogs. The
             picks were made from dealer and retailer listings, the makers’ own pages where they loaded, and
@@ -537,10 +481,7 @@ const schema = {
           </p>
           <p>
             <strong>Built for dogs.</strong> Every machine here is sold as a dog treadmill, with a slow
-            starting speed and, on most, side panels that keep a small dog centred on the belt. A human
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> can work for some small dogs under close supervision, as our guide to
-            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">dogs on a human treadmill</a>
-            explains, but a dog machine is designed around a dog’s height, stride and nerves.
+            starting speed and, on most, side panels that keep a small dog centred on the belt. A human <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> can work for some small dogs under close supervision, as our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">dogs on a human treadmill</a> explains, but a dog machine is designed around a dog’s height, stride and nerves.
           </p>
           <p>
             <strong>A stated running length.</strong> A machine qualified only if its seller gives the
@@ -571,7 +512,7 @@ const schema = {
         </div>
 
         <div id="sizing-small-dogs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Sizing: Running Length Against Your Dog’s Length</h2>
+          <h2>Sizing: Running Length Against Your Dog’s Length</h2>
 <p>
             The rule of thumb used across the category, and stated in Whole Dog Journal’s January 2026
             comparison, is that the running surface should be at least twice the dog’s length from the tip of
@@ -615,14 +556,12 @@ const schema = {
             margin for a dog that drifts.
           </p>
           <p>
-            Our explainer on
-            <a href="/dog-treadmill-vs-human-treadmill/#belt-length" class="text-[#0F62FE] font-medium">belt length against a dog’s stride</a>
-            covers the same rule for every size of dog.
+            Our explainer on <a href="/dog-treadmill-vs-human-treadmill/#belt-length" class="text-[#0F62FE] font-medium">belt length against a dog’s stride</a> covers the same rule for every size of dog.
           </p>
         </div>
 
         <div id="speed-and-controls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Speed, Side Panels and Controls for a Small Dog</h2>
+          <h2>Speed, Side Panels and Controls for a Small Dog</h2>
 <p>
             <strong>A low, fine-grained bottom speed matters most.</strong> Small dogs take short, quick steps,
             and their comfortable walking pace on a belt is slow. Most machines here start at around half a
@@ -655,22 +594,17 @@ const schema = {
         </div>
 
         <div id="motorized-or-slatmill" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Motorised Treadmill or Slatmill for a Small Dog?</h2>
+          <h2>Motorised Treadmill or Slatmill for a Small Dog?</h2>
 <p>
-            A <strong>motorized dog treadmill</strong> moves the belt for the dog at a speed you set. A
-            <strong>slatmill</strong> has no motor: the belt of slats moves only when the dog drives it, and
-            stops when the dog stops. Our guide to
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual against motorised treadmills</a>
-            covers the same trade-off for people.
+            A <strong>motorized dog treadmill</strong> moves the belt for the dog at a speed you set. A <strong>slatmill</strong> has no motor: the belt of slats moves only when the dog drives it, and
+            stops when the dog stops. Our guide to <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual against motorised treadmills</a> covers the same trade-off for people.
           </p>
           <p>
             For small dogs, the choice is mostly made for you. Slatmills are built for athletic medium and
             large dogs that want to run, and they are expensive: Dog Trotter USA’s smallest Classic slatmill,
             the Medium, has a 12-inch-wide belt with a 49-inch safe running zone for dogs up to 70 lb, and
             Canine Athletes listed the Classic from $2,900 on 5 November 2026. That is a machine for a Border
-            Collie or a Malinois, not a Pomeranian. If you are handy, our guide to
-            <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium">building a dog treadmill</a>
-            covers DIY slatmills, which some owners scale down for small dogs.
+            Collie or a Malinois, not a Pomeranian. If you are handy, our guide to <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium">building a dog treadmill</a> covers DIY slatmills, which some owners scale down for small dogs.
           </p>
           <p>
             A motorised treadmill suits most small dogs better. It suits the slow, steady walking that most
@@ -682,14 +616,13 @@ const schema = {
           <p>
             Rehabilitation is a different matter. If your vet has suggested treadmill work after surgery or an
             injury, the programme should come from the vet or a canine rehabilitation therapist, and many
-            clinics offer
-            <a href="/underwater-treadmill-for-dogs/" class="text-[#0F62FE] font-medium">underwater treadmill sessions</a>,
+            clinics offer <a href="/underwater-treadmill-for-dogs/" class="text-[#0F62FE] font-medium">underwater treadmill sessions</a>,
             which take weight off the joints in a way no home machine can.
           </p>
         </div>
 
         <div id="small-dog-health" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Small Dogs, Puppies and Older Dogs: Talk to the Vet First</h2>
+          <h2>Small Dogs, Puppies and Older Dogs: Talk to the Vet First</h2>
 <p>
             A treadmill is a tool for exercise a dog would otherwise miss, not a replacement for walks. A walk
             gives a dog smells, other dogs, changes of surface and direction, and time with you; a belt gives
@@ -718,7 +651,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Safety: Never Tether, Always Supervise</h2>
+          <h2>Safety: Never Tether, Always Supervise</h2>
 <p>
             Two rules matter more than anything else on this page.
           </p>
@@ -740,9 +673,7 @@ const schema = {
             <strong>Introduce it slowly.</strong> Let the dog explore the machine switched off, with treats.
             Then switch it on with the belt still. Then lead the dog on at the lowest speed with you beside it,
             for seconds rather than minutes, and reward calm walking. Expect this to take several short
-            sessions; some dogs take weeks, and a few never accept a belt. Our guide to
-            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">training a dog to use a treadmill</a>
-            sets out the steps.
+            sessions; some dogs take weeks, and a few never accept a belt. Our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">training a dog to use a treadmill</a> sets out the steps.
           </p>
           <p>
             <strong>Keep the machine for the dog.</strong> If you also use a human treadmill in the same room,
@@ -750,14 +681,12 @@ const schema = {
             applies to the dog’s own machine when someone else is using it.
           </p>
           <p>
-            Our wider
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers keys, cords and the space to leave behind a belt.
+            Our wider <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers keys, cords and the space to leave behind a belt.
           </p>
         </div>
 
         <div id="space-and-delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Space, Delivery and the Terms You Sign Up To</h2>
+          <h2>Space, Delivery and the Terms You Sign Up To</h2>
 <p>
             Small-dog treadmills are compact by treadmill standards, but they are not small furniture. The
             PR700 measures about 46 by 23 inches and weighs about 63 lb, by Canine Athletes’ listing; Costway
@@ -781,146 +710,161 @@ const schema = {
           </p>
           <p>
             <strong>Freight means kerbside.</strong> LTL freight delivery usually means the driver brings the
-            box to the kerb, not inside. Arrange help to move it. Our
-            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            explains what freight delivery includes and what to check before you sign.
+            box to the kerb, not inside. Arrange help to move it. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> explains what freight delivery includes and what to check before you sign.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What size treadmill does a small dog need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure your dog from the tip of the nose to the base of the tail and double it. That is the minimum running length under the widely used rule of thumb, so a dog measuring 14 inches needs about 28 inches and a 20-inch Dachshund about 40 inches. Ignore the weight rating as a size guide; small-dog machines are often rated for far heavier dogs than they fit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best doggie treadmill for small dogs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For toy breeds, the GoPet PetRun PR700, with a 28 by 16-inch running surface and speeds from 0.6 mph, was in stock at $590 from two US dealers on 5 November 2026. For longer small dogs, the GoPet PR720F, at about 52 inches, is the step up if you can find it in stock. On a budget, Costway’s 39-inch machine was $179.99.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a small dog use a human treadmill or walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some can, at a slow walk and under close supervision, because a small dog needs less belt length. But human machines have no side panels, start faster than many small dogs like and have controls out of your reach while you stand beside the dog. A dog treadmill is designed around those problems. Our guide to dogs on human treadmills sets out the rules if you try.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a motorized dog treadmill safe for a small dog?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, with supervision. Never tether the dog, never leave it alone on a moving belt, start at the lowest speed with you beside it and the remote in your hand, and stop at the first sign of distress. Ask your vet first, especially for puppies, older dogs, flat-faced breeds and dogs with back or knee problems.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the dogPACER MiniPacer still available?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We could not find it in stock from a US seller on 5 November 2026. Canine Athletes’ product page for it no longer opened, Ray Allen’s link led to a general category page, and dogpacer.com returned a server error. A marketplace copy of a dogPACER listing from May 2026 still showed the full-size LF 3.1 in stock. Check with a seller before relying on any dogPACER model.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a small dog walk on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start with a few minutes at a slow walk and build up over several weeks, watching the dog rather than the clock. Your vet can suggest a target for your dog’s age, breed and health. A treadmill session adds to walks rather than replacing them.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill for a Small Dog</h2>
+          <p>Small dogs are easier to fit than large ones, which makes it easy to skip the steps that matter.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying by the weight rating</h3>
+              <p>A small-dog machine rated for 130 lb or 220 lb tells you nothing about whether your dog fits. Measure nose to base of tail, double it, and compare that with the running surface. A long-backed small dog can need more belt than a heavier compact one.</p>
+            </li>
+            <li>
+              <h3>Ordering from a seller that will not take it back</h3>
+              <p>Some dogs never accept a belt. Several specialist sellers charge cancellation fees and accept no returns once a treadmill ships. Read the terms first, and for a first machine consider a seller with a 30-day return window.</p>
+            </li>
+            <li>
+              <h3>Starting too fast, or too long</h3>
+              <p>A small dog’s comfortable belt speed is very slow, and its first sessions should be measured in seconds. Introduce the machine switched off, then still, then at the lowest speed with you beside it, and stop while the dog is still calm.</p>
+            </li>
+            <li>
+              <h3>Tethering the dog or leaving the room</h3>
+              <p>A small dog tied to a moving belt cannot step off if it slips, and a dog left alone has no one to stop it. Never tether, never leave a dog on a moving belt, keep the remote in your hand, and remove the key when you are done.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill for a Small Dog</h2>
-          <p class="text-gray-700 leading-relaxed">Small dogs are easier to fit than large ones, which makes it easy to skip the steps that matter.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying by the weight rating</h3>
-              <p class="text-gray-700 text-sm m-0">A small-dog machine rated for 130 lb or 220 lb tells you nothing about whether your dog fits. Measure nose to base of tail, double it, and compare that with the running surface. A long-backed small dog can need more belt than a heavier compact one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering from a seller that will not take it back</h3>
-              <p class="text-gray-700 text-sm m-0">Some dogs never accept a belt. Several specialist sellers charge cancellation fees and accept no returns once a treadmill ships. Read the terms first, and for a first machine consider a seller with a 30-day return window.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting too fast, or too long</h3>
-              <p class="text-gray-700 text-sm m-0">A small dog’s comfortable belt speed is very slow, and its first sessions should be measured in seconds. Introduce the machine switched off, then still, then at the lowest speed with you beside it, and stop while the dog is still calm.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tethering the dog or leaving the room</h3>
-              <p class="text-gray-700 text-sm m-0">A small dog tied to a moving belt cannot step off if it slips, and a dog left alone has no one to stop it. Never tether, never leave a dog on a moving belt, keep the remote in your hand, and remove the key when you are done.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Dog &amp; Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-dog-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The full range of dog treadmills and slatmills, for every size of dog.</p>
-            </a>
-            <a href="/best-dog-treadmills-for-large-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills for Large Dogs</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines with the length and capacity for large and giant breeds.</p>
-            </a>
-            <a href="/dog-treadmill-vs-human-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Dog Treadmill vs Human Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Belt length, side panels, controls and safety compared.</p>
-            </a>
-            <a href="/treadmill-for-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Before You Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Can a Dog Use a Human Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The safety rules and how to introduce a dog to a belt.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             For a toy breed, the <strong class="text-white">GoPet PetRun PR700</strong> is the machine to buy:
             a 28 by 16-inch running surface, speeds from 0.6 mph and side panels, in stock at $590 from two US
-            dealers. Longer small dogs need the 52-inch GoPet PR720F, if you can find it, and the
-            <strong class="text-white">Costway</strong> machine is the budget option at $179.99 with 30-day
+            dealers. Longer small dogs need the 52-inch GoPet PR720F, if you can find it, and the <strong class="text-white">Costway</strong> machine is the budget option at $179.99 with 30-day
             returns.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, measure your dog against the running surface first, speak to your vet before the
-            first session, and never tether or leave a dog on a moving belt. For bigger dogs, see our
-            <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#5AA9FF] font-bold no-underline">large-dog guide</a>.
+            first session, and never tether or leave a dog on a moving belt. For bigger dogs, see our <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#5AA9FF] font-bold no-underline">large-dog guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-dog-treadmills/">Best Dog Treadmills</a></li>
+            <li><a href="/best-dog-treadmills-for-large-dogs/">Best Dog Treadmills for Large Dogs</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What size treadmill does a small dog need?</h3></summary>
+            <p class="faq-a">
+              Measure your dog from the tip of the nose to the base of the tail and double it. That is the minimum running length under the widely used rule of thumb, so a dog measuring 14 inches needs about 28 inches and a 20-inch Dachshund about 40 inches. Ignore the weight rating as a size guide; small-dog machines are often rated for far heavier dogs than they fit.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best doggie treadmill for small dogs?</h3></summary>
+            <p class="faq-a">
+              For toy breeds, the GoPet PetRun PR700, with a 28 by 16-inch running surface and speeds from 0.6 mph, was in stock at $590 from two US dealers on 5 November 2026. For longer small dogs, the GoPet PR720F, at about 52 inches, is the step up if you can find it in stock. On a budget, Costway’s 39-inch machine was $179.99.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can a small dog use a human treadmill or walking pad?</h3></summary>
+            <p class="faq-a">
+              Some can, at a slow walk and under close supervision, because a small dog needs less belt length. But human machines have no side panels, start faster than many small dogs like and have controls out of your reach while you stand beside the dog. A dog treadmill is designed around those problems. Our guide to dogs on human treadmills sets out the rules if you try.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a motorized dog treadmill safe for a small dog?</h3></summary>
+            <p class="faq-a">
+              It can be, with supervision. Never tether the dog, never leave it alone on a moving belt, start at the lowest speed with you beside it and the remote in your hand, and stop at the first sign of distress. Ask your vet first, especially for puppies, older dogs, flat-faced breeds and dogs with back or knee problems.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the dogPACER MiniPacer still available?</h3></summary>
+            <p class="faq-a">
+              We could not find it in stock from a US seller on 5 November 2026. Canine Athletes’ product page for it no longer opened, Ray Allen’s link led to a general category page, and dogpacer.com returned a server error. A marketplace copy of a dogPACER listing from May 2026 still showed the full-size LF 3.1 in stock. Check with a seller before relying on any dogPACER model.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should a small dog walk on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Start with a few minutes at a slow walk and build up over several weeks, watching the dog rather than the clock. Your vet can suggest a target for your dog’s age, breed and health. A treadmill session adds to walks rather than replacing them.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Dog &amp; Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-dog-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Dog Treadmills</div>
+            <p class="c-blurb">The full range of dog treadmills and slatmills, for every size of dog.</p>
+          </a>
+          <a href="/best-dog-treadmills-for-large-dogs/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Dog Treadmills for Large Dogs</div>
+            <p class="c-blurb">Machines with the length and capacity for large and giant breeds.</p>
+          </a>
+          <a href="/dog-treadmill-vs-human-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Dog Treadmill vs Human Treadmill</div>
+            <p class="c-blurb">Belt length, side panels, controls and safety compared.</p>
+          </a>
+          <a href="/treadmill-for-dogs/" class="card">
+            <div class="c-kicker">Before You Buy</div>
+            <div class="c-title">Can a Dog Use a Human Treadmill?</div>
+            <p class="c-blurb">The safety rules and how to introduce a dog to a belt.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

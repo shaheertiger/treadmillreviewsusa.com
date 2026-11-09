@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Bells of Steel Blitz Treadmill (2026): Magnetic Curved Manual, Checked";
 const description =
@@ -195,6 +194,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/bells-of-steel-blitz-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -216,66 +221,73 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+  stickyCta={{ text: "Sprint & Sled Trainer: Bells of Steel Blitz Manual Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bellsofsteelblitztreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bellsofsteelblitztreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">Bells of Steel Blitz Manual Treadmill Review</h1>
+      <p class="ed-dek">
+        The Blitz is Bells of Steel’s steep-curve, self-powered treadmill with six levels of magnetic resistance, built for sprints and sled pushes. Here is what it costs on the day we checked, the specifications its maker and an independent review agree on, what the warranty covers, how it arrives, and how it compares with the AssaultRunner Pro and SOLE C80.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Bells of Steel Blitz <span class="text-[#5AA9FF]">Manual Treadmill Review</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Blitz is Bells of Steel’s steep-curve, self-powered treadmill with six levels of magnetic resistance, built for sprints and sled pushes. Here is what it costs on the day we checked, the specifications its maker and an independent review agree on, what the warranty covers, how it arrives, and how it compares with the AssaultRunner Pro and SOLE C80.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#specifications" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Specifications
-          </a>
-          <a href="#alternatives" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Blitz vs Rivals
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sole-c80"><img src="https://m.media-amazon.com/images/I/31bmqOOpE8L._SL500_.jpg" alt="SOLE C80 Curved Manual Treadmill" width="500" height="333" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>SOLE C80 Curved Manual Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Bells of Steel is better known for power racks, barbells and plate-loaded machines than for
+          cardio, so the Blitz treadmill tends to be found by people already shopping its strength
+          range. It is a curved, non-motorized treadmill with a twist that most curved trainers lack: a
+          lever-operated magnetic brake with six levels, so the same machine can be a free-running
+          sprint deck or a heavy, slow sled-push trainer. It is also expensive, at $4,749.99 on Bells of
+          Steel's US store on the day we checked, which puts it above both the AssaultRunner Pro and the
+          TrueForm Trainer. This page sets out the figures, who the Blitz suits, and when a cheaper
+          curved trainer does the same job.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="0.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Sprint & Sled Trainer:</span> <a href="#bells-of-steel-blitz">Bells of Steel Blitz Manual Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value Rival:</span> <a href="#sole-c80">SOLE C80 Curved Manual Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">No-Resistance Rival:</span> <a href="#assaultrunner-pro">AssaultRunner Pro</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we read the Blitz Magnetic Resistance Manual Treadmill listing on Bells of
           Steel's US store (bellsofsteel.us), including its specification table, its product data and
@@ -292,69 +304,26 @@ const schema = {
           the Amazon button on its card goes to a tagged Amazon search that may show only similar
           machines. As an Amazon Associate we earn from qualifying purchases; it does not change what
           we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sprint & Sled Trainer:</span>
-            <a href="#bells-of-steel-blitz" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel Blitz Manual Treadmill</a>
-            <a href="#bells-of-steel-blitz" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Rival:</span>
-            <a href="#sole-c80" class="font-bold text-gray-900 no-underline hover:underline">SOLE C80 Curved Manual Treadmill</a>
-            <a href="#sole-c80" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">No-Resistance Rival:</span>
-            <a href="#assaultrunner-pro" class="font-bold text-gray-900 no-underline hover:underline">AssaultRunner Pro</a>
-            <a href="#assaultrunner-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Bells of Steel Blitz Treadmill: The Short Answer</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Blitz Specifications, Checked</a>
-          <a href="#curve-and-resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. A Steep Curve and a Magnetic Brake: What They Mean</a>
-          <a href="#console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Console and Tracking</a>
-          <a href="#delivery-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Delivery, Space and Floors</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Warranty, Returns and Recalls</a>
-          <a href="#bells-of-steel-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Other Bells of Steel Treadmills</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Blitz vs AssaultRunner Pro, SOLE C80 and TrueForm Trainer</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy the Blitz</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Bells of Steel Blitz Treadmill: The Short Answer</a></li>
+            <li><a href="#specifications">Blitz Specifications, Checked</a></li>
+            <li><a href="#curve-and-resistance">A Steep Curve and a Magnetic Brake: What They Mean</a></li>
+            <li><a href="#console">Console and Tracking</a></li>
+            <li><a href="#delivery-space">Delivery, Space and Floors</a></li>
+            <li><a href="#warranty">Warranty, Returns and Recalls</a></li>
+            <li><a href="#bells-of-steel-range">Other Bells of Steel Treadmills</a></li>
+            <li><a href="#alternatives">Blitz vs AssaultRunner Pro, SOLE C80 and TrueForm Trainer</a></li>
+            <li><a href="#who-should-buy">Who Should Buy the Blitz</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Bells of Steel is better known for power racks, barbells and plate-loaded machines than for
-          cardio, so the Blitz treadmill tends to be found by people already shopping its strength
-          range. It is a curved, non-motorized treadmill with a twist that most curved trainers lack: a
-          lever-operated magnetic brake with six levels, so the same machine can be a free-running
-          sprint deck or a heavy, slow sled-push trainer. It is also expensive, at $4,749.99 on Bells of
-          Steel's US store on the day we checked, which puts it above both the AssaultRunner Pro and the
-          TrueForm Trainer. This page sets out the figures, who the Blitz suits, and when a cheaper
-          curved trainer does the same job.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Bells of Steel Blitz Treadmill: The Short Answer</h2>
+          <h2>Bells of Steel Blitz Treadmill: The Short Answer</h2>
 <p>
             <strong>The Blitz is a well-specified curved trainer for sprinting and sled pushes, with a
             400 lb rating, a long 65-inch deck and six magnetic resistance levels. At $4,749.99 it costs
@@ -373,14 +342,12 @@ const schema = {
             curved deck of rubber-coated aluminium slats running on 200 bearings, a 17-degree curve, six
             magnetic resistance levels and a 400 lb maximum user weight. The weaknesses are the price and
             the warranty — one year on parts and five on the frame, shorter than TrueForm's or Assault's.
-            If you are not sure you need resistance on a curved deck, read our
-            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
-            roundup before deciding.
+            If you are not sure you need resistance on a curved deck, read our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a> roundup before deciding.
           </p>
         </div>
 
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Blitz Specifications, Checked</h2>
+          <h2>Blitz Specifications, Checked</h2>
 <p>
             Bells of Steel's specification table and Treadmill Review Guru's review agree on every
             figure below. Where a figure comes from only one of them, the table says so.
@@ -415,78 +382,67 @@ const schema = {
             you are planning delivery and 325 lb when you are thinking about your floor.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="curve-and-resistance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. A Steep Curve and a Magnetic Brake: What They Mean</h2>
+          <h2>A Steep Curve and a Magnetic Brake: What They Mean</h2>
 <p>
             Curved trainers differ mainly in how deep the curve is. A shallow curve, such as TrueForm's,
             gives little help and rewards a disciplined stride; a deep one makes the belt eager to run
@@ -494,9 +450,7 @@ const schema = {
             Treadmill Review Guru calls it "a high curve" that you feel almost immediately. That suits the
             Blitz's purpose: hard accelerations and short sprints, where a willing belt helps you reach top
             speed. It is less suited to long steady runs; one review notes that distance runners may not
-            find it suitable for steady-state work, and the same is true of most deep-curved decks. Our
-            <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>
-            explains how curve depth changes the feel.
+            find it suitable for steady-state work, and the same is true of most deep-curved decks. Our <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a> explains how curve depth changes the feel.
           </p>
           <p>
             The magnetic brake is what separates the Blitz from the AssaultRunner and the TrueForm
@@ -512,65 +466,55 @@ const schema = {
             accelerations at the middle levels and grind out sled-style pushes at the top, which a
             no-resistance curved trainer cannot do without a separate tether or sled. If those sessions
             are the reason you want a curved treadmill, the Blitz makes sense. If you mostly want to run,
-            resistance is a feature you will rarely use. For sessions that fit either kind of deck, see our
-            <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>
-            and the <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a>.
+            resistance is a feature you will rarely use. For sessions that fit either kind of deck, see our <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a> and the <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a>.
           </p>
         </div>
 
         <div id="console" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Console and Tracking</h2>
+          <h2>Console and Tracking</h2>
 <p>
             The Blitz's console runs on batteries, so the machine needs no outlet. Treadmill Review Guru
             lists time, pace, distance, speed, calories, watts, resistance level and heart rate, with heart
             rate needing a compatible ANT+ chest strap; Bells of Steel's table lists "5kHz" connectivity,
             the older wireless standard used by some gym chest straps. Neither source describes Bluetooth
             FTMS, so do not expect the Blitz to pair with <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> or a treadmill app the way some newer
-            curved trainers do. If app tracking matters, a
-            <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium">running foot pod</a>
-            will give your watch or app pace and distance on any treadmill.
+            curved trainers do. If app tracking matters, a <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium">running foot pod</a> will give your watch or app pace and distance on any treadmill.
           </p>
           <p>
             The one quirk the review flags is that you have to press start before the console tracks time
             and distance; step on and run without pressing it and the session is not recorded. Calorie and
-            watt figures on any manual treadmill are estimates, and our piece on
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie accuracy</a>
-            explains why a heart-rate strap gives a better guide to effort.
+            watt figures on any manual treadmill are estimates, and our piece on <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie accuracy</a> explains why a heart-rate strap gives a better guide to effort.
           </p>
         </div>
 
         <div id="delivery-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Delivery, Space and Floors</h2>
+          <h2>Delivery, Space and Floors</h2>
 <p>
             Bells of Steel ships the Blitz by freight only, free to the contiguous US, and offers pickup
             from its Indianapolis location. The box is 73 by 33 by 23 inches and 355 lb. Bells of Steel's
             listing says plainly that the unit is large and heavy and recommends a ground-floor install
             rather than a basement or an upper floor, and suggests bringing a friend if you collect it.
             Take that seriously: a 325 lb machine on a staircase is a two- or three-person job with a
-            proper dolly. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a>
-            covers the method.
+            proper dolly. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a> covers the method.
           </p>
           <p>
             Set up, the Blitz is 70 inches long, 30 wide and 62 high, a little longer than the TrueForm
             machines and about the same as the AssaultRunner Pro. It does not fold. Leave clearance behind
             it for safety, put it on a level, solid floor with a heavy rubber mat, and remember the 13-inch
             step-up the review reports, which is higher than most motorized treadmills. A garage is an
-            ideal home, since there is no motor or electronics to worry about in the cold; see
-            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">our garage treadmill picks</a>.
+            ideal home, since there is no motor or electronics to worry about in the cold; see <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">our garage treadmill picks</a>.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Warranty, Returns and Recalls</h2>
+          <h2>Warranty, Returns and Recalls</h2>
 <p>
             Bells of Steel's specification table and the independent review agree on five years on the
             frame and one year on parts. That is the weakest term among the curved trainers we compare
             here: TrueForm gives five years on moving parts, and Assault three on the AssaultRunner Pro's.
             The one-year parts term matters more than the frame term on a curved trainer, because the
             parts that wear are the bearings and the slats. Ask Bells of Steel what "parts" includes, and
-            whether labour is covered, before you buy; our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            lists the questions.
+            whether labour is covered, before you buy; our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> lists the questions.
           </p>
           <p>
             The US store offers 30-day returns. On a freight item, find out who pays return freight before
@@ -581,7 +525,7 @@ const schema = {
         </div>
 
         <div id="bells-of-steel-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Other Bells of Steel Treadmills</h2>
+          <h2>Other Bells of Steel Treadmills</h2>
 <p>
             The Blitz is the most expensive of three treadmills on Bells of Steel's US store. On
             5 November 2026 it also listed the Dreadmill at $1,849.99 (stated compare-at $2,349.99), a
@@ -601,7 +545,7 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Blitz vs AssaultRunner Pro, SOLE C80 and TrueForm Trainer</h2>
+          <h2>Blitz vs AssaultRunner Pro, SOLE C80 and TrueForm Trainer</h2>
 <p>
             Three curved trainers are the obvious comparisons, and each beats the Blitz on something.
           </p>
@@ -632,9 +576,7 @@ const schema = {
           <p>
             <strong>The AssaultRunner Pro</strong> has no resistance but costs $1,250 less, carries a
             longer moving-parts warranty and has the largest base of independent reviews of any curved
-            trainer. If sled pushes are a small part of your plan, it is the safer choice. Our
-            <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium">AssaultRunner Pro review</a>
-            covers it in detail.
+            trainer. If sled pushes are a small part of your plan, it is the safer choice. Our <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium">AssaultRunner Pro review</a> covers it in detail.
           </p>
           <p>
             <strong>The TrueForm Trainer</strong> matches the Blitz's 400 lb rating and has a much shallower
@@ -644,7 +586,7 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy the Blitz</h2>
+          <h2>Who Should Buy the Blitz</h2>
 <p>
             <strong>Buy the Blitz if</strong> you train for speed and power — field sports, sprinting,
             combat sports or conditioning — and want one machine that sprints, resists and pushes like a
@@ -654,151 +596,168 @@ const schema = {
           </p>
           <p>
             <strong>Look elsewhere if</strong> you mostly run at a steady pace (a shallower curve or a
-            motorized treadmill will be more comfortable), if you mainly walk (see our
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized comparison</a>),
+            motorized treadmill will be more comfortable), if you mainly walk (see our <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized comparison</a>),
             or if price matters, since the SOLE C80 delivers resisted curved running for about half the
             money. And if you live upstairs, Bells of Steel's own advice is to install it on a ground floor.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much is the Bells of Steel Blitz treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 5 November 2026 Bells of Steel’s US store listed the Blitz Magnetic Resistance Manual Treadmill at $4,749.99, against a stated price of $4,999.99, with free freight to the contiguous US. Earlier in 2026 it was listed at $4,999.99. Prices change, so check before ordering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on the Bells of Steel Blitz?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Bells of Steel and an independent review both give a 400 lb maximum user weight. The machine itself weighs 325 lb; the 355 lb figure sometimes quoted is the boxed shipping weight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Blitz a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. It is a self-powered curved treadmill with a 17-degree curve, which Bells of Steel describes as steep. Lean forward and the belt speeds up; drift back and it slows. Its six-level magnetic brake adds resistance on top.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the Bells of Steel Blitz need electricity?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. The belt is driven by you and the console runs on batteries, so it needs no outlet. That makes it a good fit for a garage, but Bells of Steel recommends a ground-floor install because of its weight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty comes with the Blitz?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Bells of Steel’s specification table gives five years on the frame and one year on parts, and an independent review gives the same terms. Ask whether labour is included before you buy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Blitz better than the AssaultRunner Pro?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It does more: six resistance levels, a 400 lb rating and a longer deck. The AssaultRunner Pro costs about $1,250 less and has a longer parts warranty. If you want resisted sprints and sled pushes, the Blitz or the cheaper SOLE C80 fits; if you mainly sprint, the AssaultRunner is the safer buy. We have not tested either.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Bells of Steel Blitz</h2>
+          <p>The Blitz is a specialised machine with a high price and freight delivery. These are the ways buyers end up with the wrong one.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying for resistance you will not use</h3>
+              <p>The magnetic brake is the Blitz’s reason to exist. If your plan is steady runs and intervals rather than sled pushes and resisted sprints, a no-resistance curved trainer such as the AssaultRunner Pro does the same running job for about $1,250 less.</p>
+            </li>
+            <li>
+              <h3>Planning delivery around the machine weight, not the box</h3>
+              <p>The Blitz is 325 lb, but it arrives as a 355 lb crate measuring 73 by 33 by 23 inches. Measure doorways and stairs against the crate, check whether the carrier brings it inside, and follow Bells of Steel’s advice to install it on a ground floor.</p>
+            </li>
+            <li>
+              <h3>Expecting a shallow curve for long runs</h3>
+              <p>A 17-degree curve is built to accelerate. Runners who want long, steady sessions often find a steep curve busy, and reviewers say the Blitz suits sprinting better than distance. If distance running is the goal, a shallower curve such as TrueForm’s or a motorized treadmill fits better.</p>
+            </li>
+            <li>
+              <h3>Not reading the one-year parts warranty</h3>
+              <p>Five years on the frame sounds reassuring, but the parts that wear on a curved trainer are bearings and slats, covered for one year. Ask what parts and labour cover includes, and who pays return freight within the 30-day window, before you order.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Bells of Steel Blitz</h2>
-          <p class="text-gray-700 leading-relaxed">The Blitz is a specialised machine with a high price and freight delivery. These are the ways buyers end up with the wrong one.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for resistance you will not use</h3>
-              <p class="text-gray-700 text-sm m-0">The magnetic brake is the Blitz’s reason to exist. If your plan is steady runs and intervals rather than sled pushes and resisted sprints, a no-resistance curved trainer such as the AssaultRunner Pro does the same running job for about $1,250 less.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Planning delivery around the machine weight, not the box</h3>
-              <p class="text-gray-700 text-sm m-0">The Blitz is 325 lb, but it arrives as a 355 lb crate measuring 73 by 33 by 23 inches. Measure doorways and stairs against the crate, check whether the carrier brings it inside, and follow Bells of Steel’s advice to install it on a ground floor.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a shallow curve for long runs</h3>
-              <p class="text-gray-700 text-sm m-0">A 17-degree curve is built to accelerate. Runners who want long, steady sessions often find a steep curve busy, and reviewers say the Blitz suits sprinting better than distance. If distance running is the goal, a shallower curve such as TrueForm’s or a motorized treadmill fits better.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not reading the one-year parts warranty</h3>
-              <p class="text-gray-700 text-sm m-0">Five years on the frame sounds reassuring, but the parts that wear on a curved trainer are bearings and slats, covered for one year. Ask what parts and labour cover includes, and who pays return freight within the 30-day window, before you order.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-curved-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Curved Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">AssaultRunner, SOLE, Tru Grit, Sunny, TrueForm and Woodway compared.</p>
-            </a>
-            <a href="/trueform-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">TrueForm Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The Runner and Trainer: shallow curves, prices and the warranty.</p>
-            </a>
-            <a href="/assaultrunner-pro-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">AssaultRunner Pro</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The best-known curved trainer: figures, warranty conflicts and who it suits.</p>
-            </a>
-            <a href="/best-manual-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Manual Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Curved and flat self-powered treadmills, from about $200 to $3,500.</p>
-            </a>
-            <a href="/rogue-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Rogue Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The Bells of Steel Blitz is a capable curved trainer for speed and
           power work: a 65-inch, 400 lb-rated deck with a steep 17-degree curve and six magnetic
           resistance levels, at $4,749.99 on the day we checked.</strong> Its weaknesses are the price
           and a one-year parts warranty.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             For most buyers who want resistance on a curved deck, the SOLE C80 does the job for about half
-          the money; for pure sprinting, the AssaultRunner Pro costs $1,250 less. Compare them all in our
-          <a href="/best-curved-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best curved treadmills</a> guide.
+          the money; for pure sprinting, the AssaultRunner Pro costs $1,250 less. Compare them all in our <a href="/best-curved-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best curved treadmills</a> guide.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-curved-treadmills/">Best Curved Treadmills</a></li>
+            <li><a href="/trueform-treadmills/">TrueForm Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How much is the Bells of Steel Blitz treadmill?</h3></summary>
+            <p class="faq-a">
+              On 5 November 2026 Bells of Steel’s US store listed the Blitz Magnetic Resistance Manual Treadmill at $4,749.99, against a stated price of $4,999.99, with free freight to the contiguous US. Earlier in 2026 it was listed at $4,999.99. Prices change, so check before ordering.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit on the Bells of Steel Blitz?</h3></summary>
+            <p class="faq-a">
+              Bells of Steel and an independent review both give a 400 lb maximum user weight. The machine itself weighs 325 lb; the 355 lb figure sometimes quoted is the boxed shipping weight.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is the Blitz a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. It is a self-powered curved treadmill with a 17-degree curve, which Bells of Steel describes as steep. Lean forward and the belt speeds up; drift back and it slows. Its six-level magnetic brake adds resistance on top.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the Bells of Steel Blitz need electricity?</h3></summary>
+            <p class="faq-a">
+              No. The belt is driven by you and the console runs on batteries, so it needs no outlet. That makes it a good fit for a garage, but Bells of Steel recommends a ground-floor install because of its weight.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty comes with the Blitz?</h3></summary>
+            <p class="faq-a">
+              Bells of Steel’s specification table gives five years on the frame and one year on parts, and an independent review gives the same terms. Ask whether labour is included before you buy.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Blitz better than the AssaultRunner Pro?</h3></summary>
+            <p class="faq-a">
+              It does more: six resistance levels, a 400 lb rating and a longer deck. The AssaultRunner Pro costs about $1,250 less and has a longer parts warranty. If you want resisted sprints and sled pushes, the Blitz or the cheaper SOLE C80 fits; if you mainly sprint, the AssaultRunner is the safer buy. We have not tested either.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-curved-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Curved Treadmills</div>
+            <p class="c-blurb">AssaultRunner, SOLE, Tru Grit, Sunny, TrueForm and Woodway compared.</p>
+          </a>
+          <a href="/trueform-treadmills/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">TrueForm Treadmills</div>
+            <p class="c-blurb">The Runner and Trainer: shallow curves, prices and the warranty.</p>
+          </a>
+          <a href="/assaultrunner-pro-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">AssaultRunner Pro</div>
+            <p class="c-blurb">The best-known curved trainer: figures, warranty conflicts and who it suits.</p>
+          </a>
+          <a href="/best-manual-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Manual Treadmills</div>
+            <p class="c-blurb">Curved and flat self-powered treadmills, from about $200 to $3,500.</p>
+          </a>
+          <a href="/rogue-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Rogue Fitness Treadmills</div>
+            <p class="c-blurb">The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

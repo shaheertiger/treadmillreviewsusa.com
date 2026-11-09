@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Console Not Working? (2026): Blank Display and Dead Buttons";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-console-not-working/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Power or Console?", link: "#power-or-console" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillconsolenotworking" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillconsolenotworking)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Console Not Working?</h1>
+      <p class="ed-dek">
+        A dead display looks like the most expensive part of the machine has failed. Usually it has not. Sort out whether the machine has power or only the console has lost it, and most of the remaining suspects cost nothing to check.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Console <span class="text-[#5AA9FF]">Not Working?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A dead display looks like the most expensive part of the machine has failed. Usually it has not. Sort out whether the machine has power or only the console has lost it, and most of the remaining suspects cost nothing to check.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#power-or-console" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Power or Console?
-          </a>
-          <a href="#keypad" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Buttons Not Responding
-          </a>
-        </div>
+        <a href="#power-or-console" class="btn-ghost">Power or Console?</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before removing the motor hood, opening the console or disconnecting any cable.
-          Controller boards can hold a charge after disconnection, so do not probe the board. If
-          you smell burning or hot plastic, see scorch marks, or the belt moves when the console
-          shows nothing, stop using the machine and contact the manufacturer — a belt you cannot
-          control from the console is not a display problem.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Is My Treadmill Display Not Working?</a>
-          <a href="#power-or-console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Is It a Power Fault or a Console Fault?</a>
-          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Safety Key Comes First</a>
-          <a href="#reset" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. A Proper Reset, Not a Quick Off-and-On</a>
-          <a href="#upright-cable" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Cable at the Base of the Upright</a>
-          <a href="#keypad" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Buttons Not Responding: The Keypad and Its Ribbon</a>
-          <a href="#display-faults" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Dim, Garbled or Partial Displays</a>
-          <a href="#touchscreen" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Touchscreen Consoles: Software, Firmware and Connectivity</a>
-          <a href="#sweat-heat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Sweat, Heat and Where the Treadmill Lives</a>
-          <a href="#controller" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. When It Is the Controller Board</a>
-          <a href="#repair-or-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Warranty, Parts and Repair or Replace</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The console is the part of a treadmill you look at, so when it goes blank or stops
           responding it feels like the whole machine has died. In practice the console is the end
           of a chain — wall outlet, cord, power switch, safety key, controller board, a cable up
@@ -205,12 +144,39 @@ const schema = {
           chain. Finding which link takes a few minutes and, in most cases, no tools.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
+          wall before removing the motor hood, opening the console or disconnecting any cable.
+          Controller boards can hold a charge after disconnection, so do not probe the board. If
+          you smell burning or hot plastic, see scorch marks, or the belt moves when the console
+          shows nothing, stop using the machine and contact the manufacturer — a belt you cannot
+          control from the console is not a display problem.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Why Is My Treadmill Display Not Working?</a></li>
+            <li><a href="#power-or-console">Is It a Power Fault or a Console Fault?</a></li>
+            <li><a href="#safety-key">The Safety Key Comes First</a></li>
+            <li><a href="#reset">A Proper Reset, Not a Quick Off-and-On</a></li>
+            <li><a href="#upright-cable">The Cable at the Base of the Upright</a></li>
+            <li><a href="#keypad">Buttons Not Responding: The Keypad and Its Ribbon</a></li>
+            <li><a href="#display-faults">Dim, Garbled or Partial Displays</a></li>
+            <li><a href="#touchscreen">Touchscreen Consoles: Software, Firmware and Connectivity</a></li>
+            <li><a href="#sweat-heat">Sweat, Heat and Where the Treadmill Lives</a></li>
+            <li><a href="#controller">When It Is the Controller Board</a></li>
+            <li><a href="#repair-or-replace">Warranty, Parts and Repair or Replace</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Is My Treadmill Display Not Working?</h2>
+          <h2>Why Is My Treadmill Display Not Working?</h2>
 <p>
             A treadmill display that is blank, or a console whose buttons do not respond, is most
-            often caused by one of five things: <strong>the safety key</strong> not fully seated,
-            <strong>a lost power supply</strong> to the whole machine (outlet, cord, switch or its
+            often caused by one of five things: <strong>the safety key</strong> not fully seated, <strong>a lost power supply</strong> to the whole machine (outlet, cord, switch or its
             reset breaker), <strong>a loose cable</strong> where the console wiring runs down the
             upright, <strong>a failed keypad or its ribbon cable</strong> if the display works but
             the buttons do not, or a <strong>software fault</strong> on a touchscreen console. The
@@ -219,9 +185,7 @@ const schema = {
           <p>
             Start by working out whether anything else on the machine has power. If the whole
             treadmill is dead — no lights anywhere, no fan, no incline — the console is innocent and
-            the problem is upstream; our guide to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a>
-            covers that in order. If the machine shows signs of life but the console does not, or
+            the problem is upstream; our guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a> covers that in order. If the machine shows signs of life but the console does not, or
             the display is fine and the buttons are dead, the sections below are the ones that
             matter.
           </p>
@@ -233,7 +197,7 @@ const schema = {
         </div>
 
         <div id="power-or-console" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Is It a Power Fault or a Console Fault?</h2>
+          <h2>Is It a Power Fault or a Console Fault?</h2>
 <p>
             The first job is to split the problem in two, because the halves have almost nothing in
             common. Look for any of these signs that the machine itself has power:
@@ -249,8 +213,7 @@ const schema = {
             <strong>No signs of life at all</strong> means a supply problem: the outlet, a tripped
             GFCI, the household breaker, the cord, the machine's own power switch or its small
             reset breaker near the inlet. Those are covered properly in the won't-turn-on guide and
-            in our guide to a
-            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill tripping the breaker</a>,
+            in our guide to a <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill tripping the breaker</a>,
             and they should be ruled out before anyone suspects the console.
           </p>
           <p>
@@ -268,7 +231,7 @@ const schema = {
         </div>
 
         <div id="safety-key" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Safety Key Comes First</h2>
+          <h2>The Safety Key Comes First</h2>
 <p>
             On many treadmills the console stays dark, or shows only a prompt, until the safety key
             is in place. The key carries a magnet or presses a switch, and without it the controller
@@ -284,9 +247,7 @@ const schema = {
           </p>
           <p>
             This sounds too simple to be the answer, and it is the answer remarkably often. It is
-            also the one check that has its own page: our guide to a
-            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>
-            explains how the switch works, what to do if the key is lost, and how to order the right
+            also the one check that has its own page: our guide to a <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a> explains how the switch works, what to do if the key is lost, and how to order the right
             replacement. It also explains firmly why the switch should never be bypassed, even
             temporarily to test the console.
           </p>
@@ -298,7 +259,7 @@ const schema = {
         </div>
 
         <div id="reset" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. A Proper Reset, Not a Quick Off-and-On</h2>
+          <h2>A Proper Reset, Not a Quick Off-and-On</h2>
 <p>
             Consoles are small computers, and like any computer they can lock up — a frozen display,
             buttons that do nothing, a screen stuck on a start-up logo. A genuine power cycle clears
@@ -316,9 +277,7 @@ const schema = {
             sequence, and some touchscreen consoles have a separate software reset in their
             settings menu. Those sequences vary by brand and model, and generic ones found online
             are frequently wrong for a given machine. Use the manual, or the manufacturer's support
-            pages with your model number. For NordicTrack and its sister brands, our guide on
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a>
-            separates the power cycle from the deeper resets and what each one erases.
+            pages with your model number. For NordicTrack and its sister brands, our guide on <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a> separates the power cycle from the deeper resets and what each one erases.
           </p>
           <p>
             If the console comes back after a reset and then fails again within a few sessions,
@@ -328,7 +287,7 @@ const schema = {
         </div>
 
         <div id="upright-cable" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Cable at the Base of the Upright</h2>
+          <h2>The Cable at the Base of the Upright</h2>
 <p>
             The console is joined to the controller board in the motor compartment by a cable — on
             many machines a single multi-core lead with a plug-in connector — that runs down the
@@ -349,9 +308,7 @@ const schema = {
             small cover. Confirm the two halves are fully pushed together and latched, and look
             along any visible cable for crush marks, cuts or a pin pushed back in its housing. If
             the machine was recently assembled or moved, this is the first place to look after the
-            safety key; our guide on
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>
-            covers protecting it next time.
+            safety key; our guide on <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a> covers protecting it next time.
           </p>
           <p>
             If you find a damaged cable, it is a replacement part rather than something to tape.
@@ -361,7 +318,7 @@ const schema = {
         </div>
 
         <div id="keypad" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Buttons Not Responding: The Keypad and Its Ribbon</h2>
+          <h2>Buttons Not Responding: The Keypad and Its Ribbon</h2>
 <p>
             When the display works but the buttons do not, the console's input side has failed
             rather than its output side. On most push-button consoles the buttons are a membrane
@@ -384,8 +341,7 @@ const schema = {
             <strong>A button that acts on its own</strong> — speed creeping up, a programme
             starting, a beep with nobody touching it — is a stuck or shorted contact. Treat that
             one seriously. A shorted speed button is a machine that can accelerate without being
-            asked, which is the surging symptom from our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>,
+            asked, which is the surging symptom from our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>,
             and it should not be used until the keypad is replaced.
           </p>
           <p>
@@ -396,7 +352,7 @@ const schema = {
         </div>
 
         <div id="display-faults" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Dim, Garbled or Partial Displays</h2>
+          <h2>Dim, Garbled or Partial Displays</h2>
 <p>
             A display that works partly is giving you more information than one that is blank, and
             the pattern usually points at the console rather than anything further down the
@@ -425,14 +381,12 @@ const schema = {
             unheated garages and outbuildings, where temperature swings pull moist air into the
             console. Let the machine reach room temperature before switching on, and if fogging is
             routine, the location is the problem rather than the console. Moisture inside
-            electronics shortens their life, and our guide to keeping a
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in a garage</a>
-            covers what to do about it.
+            electronics shortens their life, and our guide to keeping a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in a garage</a> covers what to do about it.
           </p>
         </div>
 
         <div id="touchscreen" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Touchscreen Consoles: Software, Firmware and Connectivity</h2>
+          <h2>Touchscreen Consoles: Software, Firmware and Connectivity</h2>
 <p>
             Large touchscreen consoles are effectively tablets bolted to a treadmill, and a fair
             share of their faults are software rather than hardware. Before assuming a screen has
@@ -456,16 +410,13 @@ const schema = {
             network connection. A console waiting on a server can look broken. Check the Wi-Fi
             connection and account status, and try the machine's manual or offline mode. If manual
             speed and incline work, the hardware is fine and the problem is software or service.
-            Our analysis of
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            covers what a lapsed subscription does on those machines, and if this dependence is a
-            concern for your next purchase, see the
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>.
+            Our analysis of <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> covers what a lapsed subscription does on those machines, and if this dependence is a
+            concern for your next purchase, see the <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>.
           </p>
         </div>
 
         <div id="sweat-heat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Sweat, Heat and Where the Treadmill Lives</h2>
+          <h2>Sweat, Heat and Where the Treadmill Lives</h2>
 <p>
             Consoles sit directly in the path of a runner's sweat, and sweat is salty, conductive
             and corrosive. It runs off the handrails into seams, under keypad overlays and through
@@ -488,13 +439,12 @@ const schema = {
           </p>
           <p>
             The general maintenance routine that protects the console — wiping down, checking
-            connections, keeping the motor compartment clean — is part of our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>.
+            connections, keeping the motor compartment clean — is part of our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>.
           </p>
         </div>
 
         <div id="controller" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. When It Is the Controller Board</h2>
+          <h2>When It Is the Controller Board</h2>
 <p>
             The controller board, also called the motor control board or lower board, sits in the
             motor compartment and does two jobs that matter here: it drives the motor, and on many
@@ -515,16 +465,14 @@ const schema = {
             whether the board or the console failed first: a controller that has been running hot
             under a dry deck and a lint-filled motor compartment can take other parts with it, and
             replacing a board without addressing friction invites a repeat. The friction side of
-            that is covered in our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>.
+            that is covered in our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>.
           </p>
         </div>
 
         <div id="repair-or-replace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Warranty, Parts and Repair or Replace</h2>
+          <h2>Warranty, Parts and Repair or Replace</h2>
 <p>
-            Before you buy a part or open anything, check warranty status. Home <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>treadmill parts</a>
-            warranties commonly run one to three years, sometimes longer on electronics for
+            Before you buy a part or open anything, check warranty status. Home <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>treadmill parts</a> warranties commonly run one to three years, sometimes longer on electronics for
             premium models, and opening the console or the motor hood can void cover. Have the
             model and serial number ready; the serial is usually on a sticker near the front of the
             frame.
@@ -538,152 +486,163 @@ const schema = {
           </p>
           <p>
             Controller boards are the harder decision, particularly on mid-range machines several
-            years old, where a board can cost a meaningful fraction of a better new treadmill. Our
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">treadmill lifespan guide</a>
-            sets out how to weigh that by machine tier and age.
+            years old, where a board can cost a meaningful fraction of a better new treadmill. Our <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">treadmill lifespan guide</a> sets out how to weigh that by machine tier and age.
           </p>
           <p>
             One option worth knowing about if a large touchscreen has failed on an otherwise sound
             machine: ask the manufacturer whether a replacement or refurbished console is available
             for your model. If you end up replacing the whole treadmill instead, the console is the
-            part where needs vary most, and the
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>
-            covers what is worth paying for.
+            part where needs vary most, and the <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a> covers what is worth paying for.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill display not working?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check whether the rest of the machine has power. If nothing works, it is a supply problem — outlet, cord, switch or reset breaker. If the machine has power but the display is blank, the usual causes are the safety key not fully seated, a loose cable at the base of the upright, a frozen console that needs a full power cycle, or less often the controller board.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why are my treadmill buttons not responding?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the display works but no buttons respond, the usual causes are a frozen console or a loose or cracked keypad ribbon cable. If only one or two buttons fail, the membrane keypad has worn — the most-used buttons go first. A button that triggers on its own is a shorted contact and the machine should not be used until it is replaced.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill console blank but has power?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Power is reaching the machine but not the display. Reseat the safety key first, since many consoles stay dark without it. Then do a full power cycle, unplugged for several minutes. If it is still blank, check the console cable connector at the base of the upright, which gets pinched during assembly and flexed on folding machines. After that, the controller board's supply to the console is the suspect.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I reset my treadmill console?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Switch the machine off, remove the safety key, unplug it from the wall and leave it for a few minutes so stored charge drains, then reconnect and restart. Deeper resets and calibration routines vary by brand and model, and some erase profiles and settings, so use the sequence in your manual rather than a generic one found online.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill touchscreen frozen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most frozen touchscreens clear with a full power cycle. If the console is stuck on a logo or rebooting repeatedly, an interrupted firmware update is a common cause and the manufacturer will have a recovery procedure. If the screen responds in some areas but not others, the touch layer is failing, which is a hardware replacement.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth replacing a treadmill console?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, yes. Consoles, keypads and upright cables are bolt-on parts that cost a fraction of a new machine and are generally available for mainstream models. Check the warranty first, since parts are often covered for one to three years. A failed controller board on an older mid-range machine is the harder call.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Dead Console</h2>
+          <p>Most console faults are cheap to find and easy to make worse. These four are the usual ways.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering a console before checking the key</h3>
+              <p>A safety key sitting a millimetre proud, or one whose magnet has weakened, leaves many consoles completely dark. Reseating it, or trying a known-good key for the same model, takes a minute and resolves a share of "dead console" reports that would otherwise end in an expensive part.</p>
+            </li>
+            <li>
+              <h3>Bypassing the safety switch to test the console</h3>
+              <p>Taping a magnet over the key switch to see whether the console wakes removes the only emergency stop the machine has, and people forget to undo it. If you suspect the key, use a replacement key for that model. If you suspect the switch, that is a service job.</p>
+            </li>
+            <li>
+              <h3>Spraying cleaner onto the console</h3>
+              <p>Liquid sprayed directly onto a console runs into seams, under the keypad overlay and through ventilation slots, which is how contacts corrode. Spray the cloth, not the console, and wipe sweat off the handrails and console after sessions rather than leaving it to dry.</p>
+            </li>
+            <li>
+              <h3>Opening the console under warranty</h3>
+              <p>Console and controller faults are commonly covered for one to three years, and removing the console housing or motor hood can void that cover. Do the external checks — key, power cycle, upright connector if accessible without dismantling — then call support with the model and serial number.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Dead Console</h2>
-          <p class="text-gray-700 leading-relaxed">Most console faults are cheap to find and easy to make worse. These four are the usual ways.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a console before checking the key</h3>
-              <p class="text-gray-700 text-sm m-0">A safety key sitting a millimetre proud, or one whose magnet has weakened, leaves many consoles completely dark. Reseating it, or trying a known-good key for the same model, takes a minute and resolves a share of "dead console" reports that would otherwise end in an expensive part.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Bypassing the safety switch to test the console</h3>
-              <p class="text-gray-700 text-sm m-0">Taping a magnet over the key switch to see whether the console wakes removes the only emergency stop the machine has, and people forget to undo it. If you suspect the key, use a replacement key for that model. If you suspect the switch, that is a service job.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Spraying cleaner onto the console</h3>
-              <p class="text-gray-700 text-sm m-0">Liquid sprayed directly onto a console runs into seams, under the keypad overlay and through ventilation slots, which is how contacts corrode. Spray the cloth, not the console, and wipe sweat off the handrails and console after sessions rather than leaving it to dry.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Opening the console under warranty</h3>
-              <p class="text-gray-700 text-sm m-0">Console and controller faults are commonly covered for one to three years, and removing the console housing or motor hood can void that cover. Do the external checks — key, power cycle, upright connector if accessible without dismantling — then call support with the model and serial number.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Fault Diagnosis Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Won't Turn On</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When the whole machine is dead, not just the console.</p>
-            </a>
-            <a href="/treadmill-safety-key-not-working/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Safety</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Safety Key Not Working</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How the key switch works, and the right way to replace a lost key.</p>
-            </a>
-            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Pillar Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Error-code families and the four symptoms that mean stop.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Split it first:</strong> no power anywhere is a supply problem;
             power but a blank console is usually the safety key, a frozen console or the cable at
             the upright; display fine but buttons dead is the keypad or its ribbon.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Do a <strong class="text-white">full power cycle</strong> and reseat the key before
             suspecting a board, and check warranty before opening anything. If the whole machine is
-            dead, start with
-            <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">treadmill won't turn on</a>.
+            dead, start with <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">treadmill won't turn on</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-wont-turn-on/">Treadmill Won't Turn On</a></li>
+            <li><a href="/treadmill-safety-key-not-working/">Safety Key Not Working</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why is my treadmill display not working?</h3></summary>
+            <p class="faq-a">
+              Check whether the rest of the machine has power. If nothing works, it is a supply problem — outlet, cord, switch or reset breaker. If the machine has power but the display is blank, the usual causes are the safety key not fully seated, a loose cable at the base of the upright, a frozen console that needs a full power cycle, or less often the controller board.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why are my treadmill buttons not responding?</h3></summary>
+            <p class="faq-a">
+              If the display works but no buttons respond, the usual causes are a frozen console or a loose or cracked keypad ribbon cable. If only one or two buttons fail, the membrane keypad has worn — the most-used buttons go first. A button that triggers on its own is a shorted contact and the machine should not be used until it is replaced.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why is my treadmill console blank but has power?</h3></summary>
+            <p class="faq-a">
+              Power is reaching the machine but not the display. Reseat the safety key first, since many consoles stay dark without it. Then do a full power cycle, unplugged for several minutes. If it is still blank, check the console cable connector at the base of the upright, which gets pinched during assembly and flexed on folding machines. After that, the controller board's supply to the console is the suspect.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I reset my treadmill console?</h3></summary>
+            <p class="faq-a">
+              Switch the machine off, remove the safety key, unplug it from the wall and leave it for a few minutes so stored charge drains, then reconnect and restart. Deeper resets and calibration routines vary by brand and model, and some erase profiles and settings, so use the sequence in your manual rather than a generic one found online.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why is my treadmill touchscreen frozen?</h3></summary>
+            <p class="faq-a">
+              Most frozen touchscreens clear with a full power cycle. If the console is stuck on a logo or rebooting repeatedly, an interrupted firmware update is a common cause and the manufacturer will have a recovery procedure. If the screen responds in some areas but not others, the touch layer is failing, which is a hardware replacement.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth replacing a treadmill console?</h3></summary>
+            <p class="faq-a">
+              Usually, yes. Consoles, keypads and upright cables are bolt-on parts that cost a fraction of a new machine and are generally available for mainstream models. Check the warranty first, since parts are often covered for one to three years. A failed controller board on an older mid-range machine is the harder call.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Fault Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-wont-turn-on/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Won't Turn On</div>
+            <p class="c-blurb">When the whole machine is dead, not just the console.</p>
+          </a>
+          <a href="/treadmill-safety-key-not-working/" class="card">
+            <div class="c-kicker">Safety</div>
+            <div class="c-title">Safety Key Not Working</div>
+            <p class="c-blurb">How the key switch works, and the right way to replace a lost key.</p>
+          </a>
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Pillar Guide</div>
+            <div class="c-title">Treadmill Troubleshooting</div>
+            <p class="c-blurb">Error-code families and the four symptoms that mean stop.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

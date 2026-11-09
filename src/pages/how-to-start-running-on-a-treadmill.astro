@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Start Running on a Treadmill (2026): Your First 8 Weeks";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-start-running-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,46 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtostartrunningonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtostartrunningonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">How to Start Running on a Treadmill</h1>
+      <p class="ed-dek">
+        If you can already walk comfortably on a treadmill, you are closer to running than you think. Start with short jogs between walking breaks, at a pace slow enough to talk, three times a week, and add running time a little at a time. Here is what to set, how to move on a belt, how to progress over the first two months and when to back off.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Start Running <span class="text-[#5AA9FF]">on a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          If you can already walk comfortably on a treadmill, you are closer to running than you think. Start with short jogs between walking breaks, at a pace slow enough to talk, three times a week, and add running time a little at a time. Here is what to set, how to move on a belt, how to progress over the first two months and when to back off.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#progression" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The 8-Week Ladder
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people who start running on a treadmill already know how to use one. They walk on it,
+          they know where the stop button is, and they want to turn the walk into a run without
+          getting hurt or giving up in week three. That transition is mostly a question of
+          patience rather than fitness: run in short pieces, run slower than feels necessary, run
+          on alternate days, and let your legs catch up with your lungs. This page covers what to
+          do in the first sessions, the speeds and incline to set, the treadmill-specific habits
+          that keep you safe on a moving belt, a simple way to progress over four to eight weeks,
+          and the signs that mean ease off or see someone.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This is a general guide to starting a running habit on one — it is not medical,
           physiotherapy or coaching advice, and we are not qualified to give any of those. If you
@@ -173,47 +160,27 @@ const schema = {
           ranges for beginners, not targets, and the progression is one reasonable example rather
           than an individual plan. Your treadmill's manual is the authority on its controls,
           safety key and limits.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Start Running on a Treadmill: The Short Answer</a>
-          <a href="#doctor-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Should You See a Doctor Before You Start Running?</a>
-          <a href="#first-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Should Your First Running Sessions Look Like?</a>
-          <a href="#speed-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Speed and Incline Should a Beginner Use?</a>
-          <a href="#on-and-off" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Getting On, Getting Off and the Safety Key</a>
-          <a href="#form" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Should You Run on a Moving Belt?</a>
-          <a href="#progression" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How to Progress Over 4 to 8 Weeks</a>
-          <a href="#too-much" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Are the Signs You Are Doing Too Much?</a>
-          <a href="#shoes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Shoes Should You Wear to Start Running?</a>
-          <a href="#what-next" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Comes After the First Two Months?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Start Running on a Treadmill: The Short Answer</a></li>
+            <li><a href="#doctor-first">Should You See a Doctor Before You Start Running?</a></li>
+            <li><a href="#first-sessions">What Should Your First Running Sessions Look Like?</a></li>
+            <li><a href="#speed-incline">What Speed and Incline Should a Beginner Use?</a></li>
+            <li><a href="#on-and-off">Getting On, Getting Off and the Safety Key</a></li>
+            <li><a href="#form">How Should You Run on a Moving Belt?</a></li>
+            <li><a href="#progression">How to Progress Over 4 to 8 Weeks</a></li>
+            <li><a href="#too-much">What Are the Signs You Are Doing Too Much?</a></li>
+            <li><a href="#shoes">What Shoes Should You Wear to Start Running?</a></li>
+            <li><a href="#what-next">What Comes After the First Two Months?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people who start running on a treadmill already know how to use one. They walk on it,
-          they know where the stop button is, and they want to turn the walk into a run without
-          getting hurt or giving up in week three. That transition is mostly a question of
-          patience rather than fitness: run in short pieces, run slower than feels necessary, run
-          on alternate days, and let your legs catch up with your lungs. This page covers what to
-          do in the first sessions, the speeds and incline to set, the treadmill-specific habits
-          that keep you safe on a moving belt, a simple way to progress over four to eight weeks,
-          and the signs that mean ease off or see someone.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Start Running on a Treadmill: The Short Answer</h2>
+          <h2>How to Start Running on a Treadmill: The Short Answer</h2>
 <p>
             <strong>Start with walk-run intervals — about one minute of easy jogging followed by
             two minutes of walking, repeated six to eight times — at a pace slow enough to talk in
@@ -239,7 +206,7 @@ const schema = {
         </div>
 
         <div id="doctor-first" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Should You See a Doctor Before You Start Running?</h2>
+          <h2>Should You See a Doctor Before You Start Running?</h2>
 <p>
             Most healthy adults who already walk regularly can start a gentle walk-run program
             without a medical visit. Some people should check first, and the screening approach
@@ -271,14 +238,12 @@ const schema = {
             tightness, breathlessness out of proportion to the effort, dizziness or light-headedness,
             an irregular or racing heartbeat, or sudden sharp pain in a joint. Slow the belt to a
             walk, then stop it, and step off once it has stopped — do not jump off a moving belt.
-            Our guide to whether
-            <a href="/is-running-on-a-treadmill-bad-for-you/" class="text-[#0F62FE] font-medium">running on a treadmill is bad for you</a>
-            covers the real risks and the myths in more detail.
+            Our guide to whether <a href="/is-running-on-a-treadmill-bad-for-you/" class="text-[#0F62FE] font-medium">running on a treadmill is bad for you</a> covers the real risks and the myths in more detail.
           </p>
         </div>
 
         <div id="first-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Should Your First Running Sessions Look Like?</h2>
+          <h2>What Should Your First Running Sessions Look Like?</h2>
 <p>
             Short pieces of slow running separated by walking. The walking breaks are not a
             concession; they are what lets a beginner accumulate several minutes of running without
@@ -287,9 +252,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A first session, start to finish</h3>
           <ol>
             <li><strong>Five minutes of walking</strong>, starting easy and building to a brisk walk.
-            This is the warm-up, and our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            explains why it matters more for running than walking.</li>
+            This is the warm-up, and our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> explains why it matters more for running than walking.</li>
             <li><strong>One minute of easy jogging.</strong> Raise the speed in small steps from your
             brisk walk to a pace just fast enough that you are running rather than walking — both
             feet briefly off the belt — and no faster.</li>
@@ -318,11 +281,7 @@ const schema = {
             and in the first weeks it may go higher than any zone chart suggests for "easy". That is
             normal for an untrained runner and not, by itself, a sign of a problem. Use the talk
             test rather than a heart-rate number at this stage. Once you are running continuously,
-            our guides to
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
-            and
-            <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 training on a treadmill</a>
-            explain how to use heart rate to keep easy days easy — and why, for many beginners,
+            our guides to <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a> and <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 training on a treadmill</a> explain how to use heart rate to keep easy days easy — and why, for many beginners,
             true zone 2 is a brisk walk or incline walk for a while yet.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Three sessions, not five</h3>
@@ -335,7 +294,7 @@ const schema = {
         </div>
 
         <div id="speed-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Speed and Incline Should a Beginner Use?</h2>
+          <h2>What Speed and Incline Should a Beginner Use?</h2>
 <p>
             The right numbers come from the talk test, not a chart, but it helps to know where most
             beginners land.
@@ -359,9 +318,7 @@ const schema = {
             fitter ones nearer 5.5. Neither is better. The common error is the opposite of what
             people fear: not going too slowly, but choosing a speed that looks respectable and then
             fading halfway through the third interval. A slow jog that you can repeat six times
-            does more for you than a fast one you can manage twice. Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>
-            converts any speed to minutes per mile and kilometres if you want to compare with a plan
+            does more for you than a fast one you can manage twice. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a> converts any speed to minutes per mile and kilometres if you want to compare with a plan
             or an app.
           </p>
           <p>
@@ -386,20 +343,17 @@ const schema = {
             to make a slow jog feel like "real" exercise: running uphill loads the calves and
             Achilles tendons more than flat running does, and those are among the tissues most
             likely to complain in the first weeks. Keep incline for walking sessions until you are
-            running continuously. Our comparison of
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill running and running outside</a>
-            covers the other differences — wind, terrain and the moving belt — that a grade setting
+            running continuously. Our comparison of <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill running and running outside</a> covers the other differences — wind, terrain and the moving belt — that a grade setting
             does not address.
           </p>
         </div>
 
         <div id="on-and-off" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Getting On, Getting Off and the Safety Key</h2>
+          <h2>Getting On, Getting Off and the Safety Key</h2>
 <p>
             You probably already have a routine for walking. Running adds speed, and speed is what
             turns a small slip into a fall, so it is worth tightening that routine up. The
-            controls and basics are covered step by step in our guide to
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>;
+            controls and basics are covered step by step in our guide to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>;
             the running-specific points are these.
           </p>
           <ul>
@@ -427,19 +381,15 @@ const schema = {
           </ul>
           <p>
             Leave clear <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium" data-autolink>space behind the treadmill</a> — manufacturers commonly specify around 6 feet —
-            and keep children and pets out of the room while it is running. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            cover clearance, keys, children and pets in full.
+            and keep children and pets out of the room while it is running. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> cover clearance, keys, children and pets in full.
           </p>
         </div>
 
         <div id="form" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Should You Run on a Moving Belt?</h2>
+          <h2>How Should You Run on a Moving Belt?</h2>
 <p>
             Running form on a treadmill is mostly the same as outdoors, but a few habits matter more
-            on a belt, because the surface is moving towards you and the space is limited. Our
-            <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form guide</a>
-            goes into each in depth; for a beginner, these are the cues worth holding on to.
+            on a belt, because the surface is moving towards you and the space is limited. Our <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form guide</a> goes into each in depth; for a beginner, these are the cues worth holding on to.
           </p>
           <ul>
             <li><strong>Short, quick steps.</strong> The classic beginner fault is overstriding:
@@ -471,7 +421,7 @@ const schema = {
         </div>
 
         <div id="progression" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How to Progress Over 4 to 8 Weeks</h2>
+          <h2>How to Progress Over 4 to 8 Weeks</h2>
 <p>
             Progress by adding running time, not speed, and by changing one thing at a time. The
             ladder below is one simple way to do that. Each rung is a session you repeat; you move up
@@ -519,17 +469,14 @@ const schema = {
           </ul>
           <p>
             If you would rather follow a fixed calendar than a ladder, the well-known nine-week
-            walk-to-run plan does the same job with set sessions for each week; our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K on a treadmill</a>
-            guide lays out all nine weeks with treadmill speeds. And if even the first rung is too
-            much, start a step earlier with our
-            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workouts</a>,
+            walk-to-run plan does the same job with set sessions for each week; our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K on a treadmill</a> guide lays out all nine weeks with treadmill speeds. And if even the first rung is too
+            much, start a step earlier with our <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workouts</a>,
             which spend the first weeks building a walking base before introducing short jogs.
           </p>
         </div>
 
         <div id="too-much" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Are the Signs You Are Doing Too Much?</h2>
+          <h2>What Are the Signs You Are Doing Too Much?</h2>
 <p>
             Some soreness is expected in the first weeks of running: a general ache in the calves,
             thighs or glutes a day or two after a session that eases as you warm up and is gone in a
@@ -561,15 +508,13 @@ const schema = {
           </p>
           <p>
             It is also worth checking session length. A beginner's running sessions do not need to
-            be long — the ladder tops out at around half an hour including walking — and our guide to
-            <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long you should run on a treadmill</a>
-            sets out sensible durations by goal and experience for when you are ready to go
+            be long — the ladder tops out at around half an hour including walking — and our guide to <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long you should run on a treadmill</a> sets out sensible durations by goal and experience for when you are ready to go
             further.
           </p>
         </div>
 
         <div id="shoes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Shoes Should You Wear to Start Running?</h2>
+          <h2>What Shoes Should You Wear to Start Running?</h2>
 <p>
             Running shoes that fit you. That is most of the answer. You do not need the most
             cushioned, the most expensive or a "treadmill-specific" model, but you do need a shoe
@@ -594,17 +539,13 @@ const schema = {
             three times a week will not reach that for many months.</li>
           </ul>
           <p>
-            Our roundup of the
-            <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best running shoes for treadmill running</a>
-            explains how belt cushioning and shoe cushioning interact and lists current models
-            across the range, and our guide to
-            <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium">how often to replace running shoes</a>
-            covers the signs a pair is done.
+            Our roundup of the <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best running shoes for treadmill running</a> explains how belt cushioning and shoe cushioning interact and lists current models
+            across the range, and our guide to <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium">how often to replace running shoes</a> covers the signs a pair is done.
           </p>
         </div>
 
         <div id="what-next" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Comes After the First Two Months?</h2>
+          <h2>What Comes After the First Two Months?</h2>
 <p>
             Once you can run 20 to 30 minutes continuously at an easy pace, three times a week, with
             nothing hurting, you have a running habit. What comes next depends on what you want from
@@ -634,141 +575,155 @@ const schema = {
             week, one change at a time, and paying attention to warning signs — still apply.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast should a beginner run on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Slow enough to talk in short sentences. For many beginners that is somewhere around 4 to 5.5 mph, roughly a 15- to 11-minute mile, with walking breaks at about 3 to 3.5 mph. Those are typical ranges rather than targets: shorter, older or heavier beginners are often nearer the bottom, and the talk test matters more than the number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does it take to be able to run 30 minutes on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For a beginner who already walks regularly, building from short walk-run intervals to about 20 minutes of continuous easy running commonly takes four to eight weeks at three sessions a week, and 30 minutes a few weeks more, often eight to ten weeks in total. Repeating weeks is normal. Adding running time slowly, rather than speed, is what gets most people there without injury.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I set the treadmill to 1% incline when I start running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is optional. The 1% convention comes from research showing it matches the energy cost of outdoor running at faster speeds, where air resistance matters. At beginner speeds the difference is small, so 0% or 1% are both fine. Avoid raising the incline further while you are learning to run, because it adds load to the calves and Achilles tendons.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many days a week should a beginner run on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three running days a week on non-consecutive days is a common and sensible starting point. Bones and tendons adapt more slowly than heart and lungs, and the rest day between runs gives them time. If you want to use the treadmill more often, walk on the days in between rather than adding extra runs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it OK to hold the handrails while running on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only to get on and off or to steady yourself in an emergency. Holding the rails while running changes your posture and stride and usually means the belt is too fast for you. Slow the speed until you can run comfortably hands-free, and keep the safety key clipped to your clothing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">When should I see a doctor before starting to run?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Talk to a doctor first if you have a heart, lung, kidney or metabolic condition, high blood pressure, take medication that affects heart rate, are pregnant, have a joint problem or recent injury, or have been inactive for a long time. Stop and get checked if you feel chest pain, unusual breathlessness, dizziness or an irregular heartbeat while exercising.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Starting to Run on a Treadmill</h2>
+          <p>Most new runners who stop do so for one of a handful of reasons, and almost all of them come from doing too much too soon rather than too little.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Running the intervals too fast</h3>
+              <p>Choosing a speed that looks respectable, then fading by the third interval, is the most common beginner error. The belt holds the speed even as you tire, so form breaks down instead. Pick a pace where you can talk in short sentences, even if it feels absurdly slow, and let speed come on its own over the weeks.</p>
+            </li>
+            <li>
+              <h3>Running on consecutive days</h3>
+              <p>Heart and lungs recover quickly, so a beginner often feels ready to run again the next day before their shins, Achilles tendons and feet are. Run three times a week with a rest or walking day between runs for the first couple of months, and walk on the in-between days if you want to stay on the machine.</p>
+            </li>
+            <li>
+              <h3>Adding speed and time in the same week</h3>
+              <p>Longer intervals and a faster belt, or a new incline on top of a longer run, stack two new loads at once. Change one thing at a time, build running time before pace, and repeat a session or a week whenever it felt hard. A repeated week costs nothing; an overuse injury can cost two months.</p>
+            </li>
+            <li>
+              <h3>Treating the safety key as optional</h3>
+              <p>A safety key left on the console does nothing if you stumble at running speed. Clip it to your clothing before the belt moves, every session, start the belt while straddling it, and slow to a walk before reaching for anything. Stop the belt completely before stepping off, and keep children and pets out of the room.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Starting to Run on a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most new runners who stop do so for one of a handful of reasons, and almost all of them come from doing too much too soon rather than too little.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running the intervals too fast</h3>
-              <p class="text-gray-700 text-sm m-0">Choosing a speed that looks respectable, then fading by the third interval, is the most common beginner error. The belt holds the speed even as you tire, so form breaks down instead. Pick a pace where you can talk in short sentences, even if it feels absurdly slow, and let speed come on its own over the weeks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running on consecutive days</h3>
-              <p class="text-gray-700 text-sm m-0">Heart and lungs recover quickly, so a beginner often feels ready to run again the next day before their shins, Achilles tendons and feet are. Run three times a week with a rest or walking day between runs for the first couple of months, and walk on the in-between days if you want to stay on the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Adding speed and time in the same week</h3>
-              <p class="text-gray-700 text-sm m-0">Longer intervals and a faster belt, or a new incline on top of a longer run, stack two new loads at once. Change one thing at a time, build running time before pace, and repeat a session or a week whenever it felt hard. A repeated week costs nothing; an overuse injury can cost two months.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the safety key as optional</h3>
-              <p class="text-gray-700 text-sm m-0">A safety key left on the console does nothing if you stumble at running speed. Clip it to your clothing before the belt moves, every session, start the belt while straddling it, and slow to a walk before reaching for anything. Stop the belt completely before stepping off, and keep children and pets out of the room.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/couch-to-5k-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Plan</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Couch to 5K on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The full nine-week walk-to-run plan with treadmill speeds for every week.</p>
-            </a>
-            <a href="/treadmill-running-form/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Technique</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Running Form</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cadence, overstriding, posture and where to stand on the belt.</p>
-            </a>
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace & Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Convert mph to minutes per mile and see what incline is worth.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">To start running on a treadmill, run in short pieces between walking
             breaks, at a pace slow enough to talk, three times a week, and add running time a little
             at a time.</strong> Typical beginner jogging speeds are around 4 to 5.5 mph with the
             incline at 0 or 1%, but the talk test, not the display, should decide your speed.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Clip the safety key on every time, keep your hands off the rails, take short quick steps,
             and back off for pain that worsens as you run or lingers. If you have a medical
-            condition, check with a doctor first. For a fixed week-by-week schedule, our
-            <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K treadmill plan</a>
-            takes you from here to 30 minutes of running.
+            condition, check with a doctor first. For a fixed week-by-week schedule, our <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K treadmill plan</a> takes you from here to 30 minutes of running.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/couch-to-5k-treadmill/">Couch to 5K on a Treadmill</a></li>
+            <li><a href="/treadmill-running-form/">Treadmill Running Form</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How fast should a beginner run on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Slow enough to talk in short sentences. For many beginners that is somewhere around 4 to 5.5 mph, roughly a 15- to 11-minute mile, with walking breaks at about 3 to 3.5 mph. Those are typical ranges rather than targets: shorter, older or heavier beginners are often nearer the bottom, and the talk test matters more than the number.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How long does it take to be able to run 30 minutes on a treadmill?</h3></summary>
+            <p class="faq-a">
+              For a beginner who already walks regularly, building from short walk-run intervals to about 20 minutes of continuous easy running commonly takes four to eight weeks at three sessions a week, and 30 minutes a few weeks more, often eight to ten weeks in total. Repeating weeks is normal. Adding running time slowly, rather than speed, is what gets most people there without injury.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should I set the treadmill to 1% incline when I start running?</h3></summary>
+            <p class="faq-a">
+              It is optional. The 1% convention comes from research showing it matches the energy cost of outdoor running at faster speeds, where air resistance matters. At beginner speeds the difference is small, so 0% or 1% are both fine. Avoid raising the incline further while you are learning to run, because it adds load to the calves and Achilles tendons.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How many days a week should a beginner run on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Three running days a week on non-consecutive days is a common and sensible starting point. Bones and tendons adapt more slowly than heart and lungs, and the rest day between runs gives them time. If you want to use the treadmill more often, walk on the days in between rather than adding extra runs.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it OK to hold the handrails while running on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Only to get on and off or to steady yourself in an emergency. Holding the rails while running changes your posture and stride and usually means the belt is too fast for you. Slow the speed until you can run comfortably hands-free, and keep the safety key clipped to your clothing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>When should I see a doctor before starting to run?</h3></summary>
+            <p class="faq-a">
+              Talk to a doctor first if you have a heart, lung, kidney or metabolic condition, high blood pressure, take medication that affects heart rate, are pregnant, have a joint problem or recent injury, or have been inactive for a long time. Stop and get checked if you feel chest pain, unusual breathlessness, dizziness or an irregular heartbeat while exercising.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/couch-to-5k-treadmill/" class="card">
+            <div class="c-kicker">Plan</div>
+            <div class="c-title">Couch to 5K on a Treadmill</div>
+            <p class="c-blurb">The full nine-week walk-to-run plan with treadmill speeds for every week.</p>
+          </a>
+          <a href="/treadmill-running-form/" class="card">
+            <div class="c-kicker">Technique</div>
+            <div class="c-title">Treadmill Running Form</div>
+            <p class="c-blurb">Cadence, overstriding, posture and where to stand on the belt.</p>
+          </a>
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace & Speed Chart</div>
+            <p class="c-blurb">Convert mph to minutes per mile and see what incline is worth.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

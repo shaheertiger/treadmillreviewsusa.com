@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Where to Put a Treadmill in Your House (2026): Room-by-Room Guide";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/where-to-put-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Compare the Rooms", link: "#upstairs" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-wheretoputatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-wheretoputatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Where to Put a Treadmill in Your House</h1>
+      <p class="ed-dek">
+        The right room for a treadmill is the one you will actually walk into, which is a different question from the one with the most floor. Here is how to measure for it, what each room costs you in noise, dust, damp or sleep, and the services — power, air, wifi, flooring — that decide whether the spot works.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Where to Put a Treadmill <span class="text-[#5AA9FF]">in Your House</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The right room for a treadmill is the one you will actually walk into, which is a different question from the one with the most floor. Here is how to measure for it, what each room costs you in noise, dust, damp or sleep, and the services — power, air, wifi, flooring — that decide whether the spot works.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#ceiling-height" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Ceiling Height Arithmetic
-          </a>
-          <a href="#upstairs" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Room by Room
-          </a>
-        </div>
+        <a href="#ceiling-height" class="btn-ghost">Ceiling Height Arithmetic</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On floors and structures.</strong> The guidance here about
-          upstairs floors is general and applies to a typical home treadmill on a modern
-          residential floor. We are not structural engineers. If your house is old, the floor is
-          unusual, the machine is a heavy commercial model, or you have any doubt at all, ask a
-          qualified professional to look before the treadmill goes up the stairs. The manual for
-          your model is the authority on its clearance requirements, outlet type and the floor it
-          may be used on.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Where Should You Put a Treadmill? The Short Answer</a>
-          <a href="#footprint-and-clearance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Footprint and the Clearance Zone</a>
-          <a href="#ceiling-height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Ceiling Height: The Arithmetic</a>
-          <a href="#upstairs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Upstairs: Can You Put a Treadmill on an Upper Floor?</a>
-          <a href="#bedroom" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Treadmill in the Bedroom</a>
-          <a href="#basement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Treadmill in the Basement</a>
-          <a href="#garage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Treadmill in the Garage</a>
-          <a href="#living-room" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Treadmill in the Living Room</a>
-          <a href="#apartments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Treadmills in Apartments and Flats</a>
-          <a href="#services" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Power, Air, Wifi and Flooring</a>
-          <a href="#decision-checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. A Decision Checklist</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill is large, heavy, loud and not especially good-looking, and it needs more room
           than its footprint suggests. Most people put it wherever there is space and then
           discover, a month in, that the space was the problem: the ceiling is too low on incline,
@@ -208,13 +146,41 @@ const schema = {
           honest trade-offs of each.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On floors and structures.</strong> The guidance here about
+          upstairs floors is general and applies to a typical home treadmill on a modern
+          residential floor. We are not structural engineers. If your house is old, the floor is
+          unusual, the machine is a heavy commercial model, or you have any doubt at all, ask a
+          qualified professional to look before the treadmill goes up the stairs. The manual for
+          your model is the authority on its clearance requirements, outlet type and the floor it
+          may be used on.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Where Should You Put a Treadmill? The Short Answer</a></li>
+            <li><a href="#footprint-and-clearance">Footprint and the Clearance Zone</a></li>
+            <li><a href="#ceiling-height">Ceiling Height: The Arithmetic</a></li>
+            <li><a href="#upstairs">Upstairs: Can You Put a Treadmill on an Upper Floor?</a></li>
+            <li><a href="#bedroom">Treadmill in the Bedroom</a></li>
+            <li><a href="#basement">Treadmill in the Basement</a></li>
+            <li><a href="#garage">Treadmill in the Garage</a></li>
+            <li><a href="#living-room">Treadmill in the Living Room</a></li>
+            <li><a href="#apartments">Treadmills in Apartments and Flats</a></li>
+            <li><a href="#services">Power, Air, Wifi and Flooring</a></li>
+            <li><a href="#decision-checklist">A Decision Checklist</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Where Should You Put a Treadmill? The Short Answer</h2>
+          <h2>Where Should You Put a Treadmill? The Short Answer</h2>
 <p>
             <strong>Put the treadmill where you will use it, on a ground floor or basement if you
             have the choice, with clear space behind it, a ceiling high enough for you on full
-            incline, a grounded outlet within reach of the fitted cord, and a mat underneath.</strong>
-            A spare room or a corner of a living area on the ground floor ticks most of those boxes
+            incline, a grounded outlet within reach of the fitted cord, and a mat underneath.</strong> A spare room or a corner of a living area on the ground floor ticks most of those boxes
             with the least compromise. A dry, warm basement is close behind it. Upstairs and
             bedrooms work but cost you something in noise and sleep; garages work with effort on
             temperature and dust; apartments need a quiet machine, a thick mat and a conversation
@@ -237,7 +203,7 @@ const schema = {
         </div>
 
         <div id="footprint-and-clearance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Footprint and the Clearance Zone</h2>
+          <h2>Footprint and the Clearance Zone</h2>
 <p>
             A treadmill's listed dimensions are the machine's own length and width, and they are
             the smaller part of the space it needs. The rest is the clearance zone, and it is not
@@ -268,8 +234,7 @@ const schema = {
             same clearance zone when open; folding saves space between sessions, not during them.
           </p>
           <p>
-            Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            goes through typical machine sizes and the clearance figures in detail. The practical
+            Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a> goes through typical machine sizes and the clearance figures in detail. The practical
             method is to tape the machine's outline and the clearance zone on the floor of the
             candidate room, with the machine's long axis the way it would actually face, and live
             with the tape for a day. It is remarkable how many rooms fail that test.
@@ -277,7 +242,7 @@ const schema = {
         </div>
 
         <div id="ceiling-height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Ceiling Height: The Arithmetic</h2>
+          <h2>Ceiling Height: The Arithmetic</h2>
 <p>
             This is the check that catches basements, attic rooms and anywhere with a sloping
             ceiling, a beam or a low light fitting, and it is easy to get wrong because the
@@ -323,14 +288,12 @@ const schema = {
         </div>
 
         <div id="upstairs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Upstairs: Can You Put a Treadmill on an Upper Floor?</h2>
+          <h2>Upstairs: Can You Put a Treadmill on an Upper Floor?</h2>
 <p>
             Usually, yes. The worry people have is whether the floor will hold it, and for a
             typical home treadmill on a modern residential floor that is rarely the issue. Houses
             are built to carry people, furniture and the occasional piano, and a treadmill spreads
-            its weight over a frame and feet that cover a fair area. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives a sense of the range. That is general guidance; for an old house, a floor with
+            its weight over a frame and feet that cover a fair area. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives a sense of the range. That is general guidance; for an old house, a floor with
             known movement, a heavy commercial machine or a converted loft, have a professional
             look before you commit.
           </p>
@@ -347,23 +310,20 @@ const schema = {
             the impact and the machine's own hum. Placing the treadmill over or near a load-bearing
             wall or across the joists rather than along a single one, if you can find out which
             way they run, reduces the trampoline effect. Running when the room below is empty.
-            Choosing a quieter, better-cushioned machine in the first place. Our guide to
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a>
-            is blunt about how much a mat can and cannot do.
+            Choosing a quieter, better-cushioned machine in the first place. Our guide to <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a> is blunt about how much a mat can and cannot do.
           </p>
           <p>
             <strong>Getting it there.</strong> A treadmill is one of the heaviest, most awkward
             things to carry up a domestic staircase, and the turn at the top is where most damage
             to walls and backs happens. Many machines can be partly disassembled; some folding
             models can be moved folded on their wheels up a straight flight by two people. Our
-            guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>
-            covers it, and it is worth reading before you buy, not after the delivery drivers have
+            guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a> covers it, and it is worth reading before you buy, not after the delivery drivers have
             left it in the hall.
           </p>
         </div>
 
         <div id="bedroom" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Treadmill in the Bedroom</h2>
+          <h2>Treadmill in the Bedroom</h2>
 <p>
             The bedroom is where treadmills end up when no other room will take one, and it works
             better than its reputation if you go in with open eyes.
@@ -378,9 +338,7 @@ const schema = {
             <strong>Noise and a partner.</strong> A treadmill in a shared bedroom means one person
             running while the other is trying to sleep, read or work, and the motor and belt are
             loud at close range even on a quiet machine. If sessions and sleep schedules do not
-            line up, it does not work. Our guide to
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            is the place to start if the bedroom is the only option.
+            line up, it does not work. Our guide to <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> is the place to start if the bedroom is the only option.
           </p>
           <p>
             <strong>Dust.</strong> Belts shed fine black rubber dust and the motor fan pulls lint
@@ -399,8 +357,7 @@ const schema = {
             That is partly a joke and partly the real reason bedroom treadmills fall out of use:
             the machine becomes furniture, and furniture does not get used. A folding model that
             goes upright between sessions, or a rule that the belt is never a shelf, is the
-            difference. Our guide to <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills</a>
-            covers which designs fold flat enough to matter.
+            difference. Our guide to <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmills</a> covers which designs fold flat enough to matter.
           </p>
           <p>
             <strong>Clearance still applies.</strong> The zone behind the belt cannot be the end
@@ -410,7 +367,7 @@ const schema = {
         </div>
 
         <div id="basement" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Treadmill in the Basement</h2>
+          <h2>Treadmill in the Basement</h2>
 <p>
             A basement is in many ways the ideal treadmill room: nobody below to disturb, usually
             a solid floor, out of sight, and often the only space in the house nobody else wants.
@@ -436,9 +393,7 @@ const schema = {
             ground-fault protected, and treadmills are prone to nuisance-tripping those outlets.
             Many manuals say not to use one. The answer is not to bypass the protection but to
             have an electrician assess a dedicated outlet suitable for the room, and to make sure
-            the circuit does not share with a freezer or a sump pump. Our guide to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and outlets</a>
-            covers the whole power question, including why a cord run down from upstairs is not the
+            the circuit does not share with a freezer or a sump pump. Our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and outlets</a> covers the whole power question, including why a cord run down from upstairs is not the
             fix.
           </p>
           <p>
@@ -456,7 +411,7 @@ const schema = {
         </div>
 
         <div id="garage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Treadmill in the Garage</h2>
+          <h2>Treadmill in the Garage</h2>
 <p>
             The garage has the space and nobody cares about the noise, which is why so many
             treadmills live there. The environment is the problem: garages are the hottest, coldest,
@@ -483,15 +438,13 @@ const schema = {
           <p>
             <strong>What works.</strong> An insulated or at least enclosed garage, a dedicated
             outlet, a mat, a cover, a fan in summer, a small heater before winter sessions, and a
-            machine whose warranty does not exclude garage use — some do. Our dedicated guide to a
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in the garage</a>
-            goes through each of these properly, including what the typical manual says about
+            machine whose warranty does not exclude garage use — some do. Our dedicated guide to a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in the garage</a> goes through each of these properly, including what the typical manual says about
             temperature and humidity and how to make a garage machine last.
           </p>
         </div>
 
         <div id="living-room" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Treadmill in the Living Room</h2>
+          <h2>Treadmill in the Living Room</h2>
 <p>
             The living room is often the only ground-floor room with the space, and a treadmill in
             it is more common than estate agents would like. It can work well, with three
@@ -509,16 +462,13 @@ const schema = {
             the sofa, and a non-folding one sits there permanently. Positioned along a wall rather
             than across the room, facing the television, it reads as part of the furniture after a
             while. A folding model that stands upright in a corner between sessions is the usual
-            answer where looks matter, and our guide to the
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
-            covers the ones that fold compactly enough to disappear.
+            answer where looks matter, and our guide to the <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a> covers the ones that fold compactly enough to disappear.
           </p>
           <p>
             <strong>Floor and furniture.</strong> Living rooms have hard floors and rugs, both of
             which need a mat under the machine — the first for noise and scratches, the second
             because a treadmill on a rug walks the rug and chews its fibres into the belt. Our
-            guide to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmills on carpet</a>
-            covers both. And the clearance zone behind the belt is where the coffee table was.
+            guide to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmills on carpet</a> covers both. And the clearance zone behind the belt is where the coffee table was.
           </p>
           <p>
             The strongest argument for the living room is that you will see the machine every
@@ -528,7 +478,7 @@ const schema = {
         </div>
 
         <div id="apartments" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Treadmills in Apartments and Flats</h2>
+          <h2>Treadmills in Apartments and Flats</h2>
 <p>
             An apartment combines the upstairs problem, the living-room problem and a neighbour
             you did not choose. It can absolutely be done; the margin for error is just smaller.
@@ -558,15 +508,13 @@ const schema = {
             arrives.
           </p>
           <p>
-            Our guides to the <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">best treadmills for apartments</a>
-            and the <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">best treadmills for small spaces</a>
-            are built around exactly these constraints, including where a walking pad is enough
+            Our guides to the <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">best treadmills for apartments</a> and the <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">best treadmills for small spaces</a> are built around exactly these constraints, including where a walking pad is enough
             and where it is not.
           </p>
         </div>
 
         <div id="services" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Power, Air, Wifi and Flooring</h2>
+          <h2>Power, Air, Wifi and Flooring</h2>
 <p>
             Whichever room wins, four practical services decide whether the spot within it works.
             Check them with a tape measure and a phone before the machine is assembled.
@@ -578,9 +526,7 @@ const schema = {
             outlet, with the cord clear of the belt and the walking route. Manufacturers say no
             extension cords and no power strips, and they have reasons. The outlet should not share
             a circuit with a refrigerator, heater or air conditioner, and in a garage or basement it
-            may be GFCI-protected, which many machines nuisance-trip. Our guide to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and dedicated circuits</a>
-            covers all of that; the short version is to choose the wall with the right outlet
+            may be GFCI-protected, which many machines nuisance-trip. Our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and dedicated circuits</a> covers all of that; the short version is to choose the wall with the right outlet
             rather than run a cord to the wrong one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ventilation and a fan</h3>
@@ -608,13 +554,12 @@ const schema = {
             rubber mat sized a little larger than the footprint is the answer — it damps vibration,
             protects the floor, keeps dust and fibre out, and gives the frame a level base. It is
             not a magic silencer for the room below, but it is the cheapest improvement available.
-            Our guide to <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a>
-            sets out what to buy and what not to expect.
+            Our guide to <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a> sets out what to buy and what not to expect.
           </p>
         </div>
 
         <div id="decision-checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. A Decision Checklist</h2>
+          <h2>A Decision Checklist</h2>
 <p>
             To bring it together, here is the order of checks for any candidate spot. A room that
             fails one of the first three is out; the rest are trade-offs.
@@ -643,152 +588,164 @@ const schema = {
           <p>
             If two rooms both pass, choose the one you will use, not the one that hides the
             machine best. And if none of them pass, the answer may be a different machine —
-            smaller, quieter, folding, or a walking pad — rather than a different house. Our
-            <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyers guide</a>
-            starts from the room and works towards the machine, which is the right way round.
+            smaller, quieter, folding, or a walking pad — rather than a different house. Our <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyers guide</a> starts from the room and works towards the machine, which is the right way round.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where is the best place to put a treadmill in a house?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A ground-floor room you will actually use, with clear space behind the belt, a ceiling high enough for you at full incline, a grounded outlet within reach of the fitted cord, and a mat underneath. A spare room or a corner of a living area is usually the least compromised choice, with a dry, warm basement close behind.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you put a treadmill upstairs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, yes. For a typical home treadmill on a modern residential floor, floor loading is rarely the issue, though an old house, an unusual floor or a heavy commercial machine should be checked by a professional. The real upstairs problems are vibration and noise into the room below; a dense mat, sensible hours and a well-cushioned machine help.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it a good idea to put a treadmill in the bedroom?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can work if you live alone or your schedules allow, but a running treadmill is loud at close range, sheds rubber dust onto bedding, and leaves the room warm and damp after a session. Ventilate, vacuum regularly, choose a quiet or folding machine, and never let the belt become a shelf for laundry, which is how bedroom treadmills stop being used.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you put a treadmill in a basement?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, and it is often a good spot, provided you manage damp with a dehumidifier and a cover, allow for cold in winter, check the ceiling height under beams and ductwork at full incline, and sort out the outlet, since basement outlets are often GFCI-protected and shared with a freezer or sump pump. Measure the stairs before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do you need for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Add your height in shoes, a few inches for running bounce, the deck's step-up height from the manual, the extra rise at maximum incline, and a safety margin, then compare with the lowest point of the ceiling above where you will stand, including beams and light fittings. The step-up and incline figures vary by machine, so use your own model's numbers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you have a treadmill in an apartment?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, with care. Walking-pace use is usually fine; running needs a quiet, well-cushioned machine, a dense mat, sensible hours and ideally a word with the neighbour below beforehand. Folding and compact models suit the space, the clearance zone behind the belt still applies in use, and the delivery route and building rules are worth checking before ordering.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Placement</h2>
+          <p>Most placement regrets come from measuring the machine and forgetting everything around it. These four account for nearly all of them.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Measuring the footprint and not the clearance</h3>
+              <p>The machine fits; the fall zone behind the belt does not, so it ends up against a wall, a window or the foot of a bed. Tape the footprint and the clearance zone on the floor with the machine facing the way it will actually face, and live with the tape for a day before anything is ordered or moved.</p>
+            </li>
+            <li>
+              <h3>Forgetting the incline when checking the ceiling</h3>
+              <p>Standing on the stopped belt under the ceiling is not the test. Add the deck step-up, the rise at maximum incline and running bounce to your height, and compare with the lowest beam, duct or light fitting over the spot. Basements and attic rooms fail this far more often than people expect.</p>
+            </li>
+            <li>
+              <h3>Running a cord to the nearest convenient outlet</h3>
+              <p>Manufacturers say no extension cords and no power strips because the motor's surges lose voltage and heat a thin cord. Choose the wall with a grounded outlet within the fitted cord's reach, test what shares its circuit, and have an outlet added if the machine is staying. Do not solve a placement problem with hardware.</p>
+            </li>
+            <li>
+              <h3>Choosing the room that hides the machine</h3>
+              <p>The tidiest spot is often the one nobody walks into, and a treadmill in a cold, dark, out-of-the-way room is the one that becomes a clothes rack. Pick the room you will enter on a bad evening. If that is the living room, buy a folding or quiet machine and accept it as furniture.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Placement</h2>
-          <p class="text-gray-700 leading-relaxed">Most placement regrets come from measuring the machine and forgetting everything around it. These four account for nearly all of them.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the footprint and not the clearance</h3>
-              <p class="text-gray-700 text-sm m-0">The machine fits; the fall zone behind the belt does not, so it ends up against a wall, a window or the foot of a bed. Tape the footprint and the clearance zone on the floor with the machine facing the way it will actually face, and live with the tape for a day before anything is ordered or moved.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the incline when checking the ceiling</h3>
-              <p class="text-gray-700 text-sm m-0">Standing on the stopped belt under the ceiling is not the test. Add the deck step-up, the rise at maximum incline and running bounce to your height, and compare with the lowest beam, duct or light fitting over the spot. Basements and attic rooms fail this far more often than people expect.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running a cord to the nearest convenient outlet</h3>
-              <p class="text-gray-700 text-sm m-0">Manufacturers say no extension cords and no power strips because the motor's surges lose voltage and heat a thin cord. Choose the wall with a grounded outlet within the fitted cord's reach, test what shares its circuit, and have an outlet added if the machine is staying. Do not solve a placement problem with hardware.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing the room that hides the machine</h3>
-              <p class="text-gray-700 text-sm m-0">The tidiest spot is often the one nobody walks into, and a treadmill in a cold, dark, out-of-the-way room is the one that becomes a clothes rack. Pick the room you will enter on a bad evening. If that is the living room, buy a folding or quiet machine and accept it as furniture.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Space</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Dimensions and Space Requirements</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Typical footprints, clearance zones and how to measure a room.</p>
-            </a>
-            <a href="/treadmill-in-garage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Garage</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill in the Garage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Temperature, dust, damp and power, and how to make it last.</p>
-            </a>
-            <a href="/how-to-move-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Moving</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Move a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Stairs, turns and doorways without wrecking the machine or your back.</p>
-            </a>
-            <a href="/kids-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Kids</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Kids Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Age limits by brand, CDC and AAP activity advice, child injury data, toy treadmills and a home checklist.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Put the treadmill where you will use it, on a ground floor or
             dry basement if you can, with the clearance zone clear, the ceiling checked at full
             incline, a grounded outlet within reach and a mat underneath.</strong> Upstairs,
             bedrooms, garages and apartments all work; each costs you something specific, and the
             sections above say what.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Measure before you move anything.</strong> Tape out the
             footprint and the fall zone, run the ceiling arithmetic with your own model's figures,
-            and check the route in. If the room is fixed and the machine is not, start from our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#5AA9FF] font-bold no-underline">dimensions and space requirements guide</a>
-            and let the space choose the treadmill.
+            and check the route in. If the room is fixed and the machine is not, start from our <a href="/treadmill-dimensions-space-requirements/" class="text-[#5AA9FF] font-bold no-underline">dimensions and space requirements guide</a> and let the space choose the treadmill.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-dimensions-space-requirements/">Treadmill Dimensions and Space Requirements</a></li>
+            <li><a href="/treadmill-in-garage/">Treadmill in the Garage</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where is the best place to put a treadmill in a house?</h3></summary>
+            <p class="faq-a">
+              A ground-floor room you will actually use, with clear space behind the belt, a ceiling high enough for you at full incline, a grounded outlet within reach of the fitted cord, and a mat underneath. A spare room or a corner of a living area is usually the least compromised choice, with a dry, warm basement close behind.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you put a treadmill upstairs?</h3></summary>
+            <p class="faq-a">
+              Usually, yes. For a typical home treadmill on a modern residential floor, floor loading is rarely the issue, though an old house, an unusual floor or a heavy commercial machine should be checked by a professional. The real upstairs problems are vibration and noise into the room below; a dense mat, sensible hours and a well-cushioned machine help.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is it a good idea to put a treadmill in the bedroom?</h3></summary>
+            <p class="faq-a">
+              It can work if you live alone or your schedules allow, but a running treadmill is loud at close range, sheds rubber dust onto bedding, and leaves the room warm and damp after a session. Ventilate, vacuum regularly, choose a quiet or folding machine, and never let the belt become a shelf for laundry, which is how bedroom treadmills stop being used.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you put a treadmill in a basement?</h3></summary>
+            <p class="faq-a">
+              Yes, and it is often a good spot, provided you manage damp with a dehumidifier and a cover, allow for cold in winter, check the ceiling height under beams and ductwork at full incline, and sort out the outlet, since basement outlets are often GFCI-protected and shared with a freezer or sump pump. Measure the stairs before buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much ceiling height do you need for a treadmill?</h3></summary>
+            <p class="faq-a">
+              Add your height in shoes, a few inches for running bounce, the deck's step-up height from the manual, the extra rise at maximum incline, and a safety margin, then compare with the lowest point of the ceiling above where you will stand, including beams and light fittings. The step-up and incline figures vary by machine, so use your own model's numbers.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you have a treadmill in an apartment?</h3></summary>
+            <p class="faq-a">
+              Yes, with care. Walking-pace use is usually fine; running needs a quiet, well-cushioned machine, a dense mat, sensible hours and ideally a word with the neighbour below beforehand. Folding and compact models suit the space, the clearance zone behind the belt still applies in use, and the delivery route and building rules are worth checking before ordering.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-dimensions-space-requirements/" class="card">
+            <div class="c-kicker">Space</div>
+            <div class="c-title">Treadmill Dimensions and Space Requirements</div>
+            <p class="c-blurb">Typical footprints, clearance zones and how to measure a room.</p>
+          </a>
+          <a href="/treadmill-in-garage/" class="card">
+            <div class="c-kicker">Garage</div>
+            <div class="c-title">Treadmill in the Garage</div>
+            <p class="c-blurb">Temperature, dust, damp and power, and how to make it last.</p>
+          </a>
+          <a href="/how-to-move-a-treadmill/" class="card">
+            <div class="c-kicker">Moving</div>
+            <div class="c-title">How to Move a Treadmill</div>
+            <p class="c-blurb">Stairs, turns and doorways without wrecking the machine or your back.</p>
+          </a>
+          <a href="/kids-treadmill/" class="card">
+            <div class="c-kicker">Kids</div>
+            <div class="c-title">Kids Treadmill Guide</div>
+            <p class="c-blurb">Age limits by brand, CDC and AAP activity advice, child injury data, toy treadmills and a home checklist.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

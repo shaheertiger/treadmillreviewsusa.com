@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Does a Treadmill Burn Belly Fat? (2026): The Honest Answer";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/does-treadmill-burn-belly-fat/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,43 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See a Realistic Plan", link: "#realistic-plan" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-doestreadmillburnbellyfat" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-doestreadmillburnbellyfat)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Does a Treadmill Burn Belly Fat?</h1>
+      <p class="ed-dek">
+        Yes, indirectly — and no, not in the way the question usually means. A treadmill cannot pick where fat comes off, but it is a genuinely useful tool for losing fat overall, including the deep abdominal kind that matters most for health.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Does a Treadmill <span class="text-[#5AA9FF]">Burn Belly Fat?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Yes, indirectly — and no, not in the way the question usually means. A treadmill cannot pick where fat comes off, but it is a genuinely useful tool for losing fat overall, including the deep abdominal kind that matters most for health.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#realistic-plan" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            A Realistic Plan
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          It is one of the most searched questions in home fitness, and it deserves a straight
+          answer: no machine burns fat from a particular body part. A treadmill helps you lose fat
+          from your whole body, and your belly is part of your whole body. That distinction sounds
+          pedantic. It is actually the difference between a plan that works and one that ends in
+          frustration around week six.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review
           treadmills. This page explains how fat loss works in general terms so you can use a
           treadmill sensibly — it is not medical advice, nutrition advice or a weight-loss
@@ -170,46 +154,29 @@ const schema = {
           talk to a doctor or a registered dietitian. <strong class="text-gray-900">On the figures
           below:</strong> where we give timelines, rates or calorie costs, they are typical ranges
           from mainstream guidance and standard estimation equations, not measurements of you.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#spot-reduction" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why Spot Reduction Does Not Work</a>
-          <a href="#how-fat-loss-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Fat Loss Actually Happens</a>
-          <a href="#visceral-fat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Belly Fat Is Really Two Kinds of Fat</a>
-          <a href="#what-treadmill-does" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Treadmill Exercise Actually Contributes</a>
-          <a href="#incline-thigh-fat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Can Incline on a Treadmill Help You Lose Thigh Fat?</a>
-          <a href="#walking-vs-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Walking, Running or Intervals — Which Burns More Fat?</a>
-          <a href="#realistic-plan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What a Realistic Plan Looks Like</a>
-          <a href="#sleep-and-diet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Diet, Sleep and Stress Matter More Than the Machine</a>
-          <a href="#timeline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Long Before You See a Difference</a>
-          <a href="#tracking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How to Track Progress Without Obsessing Over the Scale</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Verdict</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#spot-reduction">Why Spot Reduction Does Not Work</a></li>
+            <li><a href="#how-fat-loss-works">How Fat Loss Actually Happens</a></li>
+            <li><a href="#visceral-fat">Belly Fat Is Really Two Kinds of Fat</a></li>
+            <li><a href="#what-treadmill-does">What Treadmill Exercise Actually Contributes</a></li>
+            <li><a href="#incline-thigh-fat">Can Incline on a Treadmill Help You Lose Thigh Fat?</a></li>
+            <li><a href="#walking-vs-running">Walking, Running or Intervals — Which Burns More Fat?</a></li>
+            <li><a href="#realistic-plan">What a Realistic Plan Looks Like</a></li>
+            <li><a href="#sleep-and-diet">Diet, Sleep and Stress Matter More Than the Machine</a></li>
+            <li><a href="#timeline">How Long Before You See a Difference</a></li>
+            <li><a href="#tracking">How to Track Progress Without Obsessing Over the Scale</a></li>
+            <li><a href="#verdict">The Verdict</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          It is one of the most searched questions in home fitness, and it deserves a straight
-          answer: no machine burns fat from a particular body part. A treadmill helps you lose fat
-          from your whole body, and your belly is part of your whole body. That distinction sounds
-          pedantic. It is actually the difference between a plan that works and one that ends in
-          frustration around week six.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>A treadmill does not burn belly fat specifically, but it can help you lose
             belly fat as part of losing fat overall.</strong> Fat loss is a whole-body process.
@@ -233,7 +200,7 @@ const schema = {
         </div>
 
         <div id="spot-reduction" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why Spot Reduction Does Not Work</h2>
+          <h2>Why Spot Reduction Does Not Work</h2>
 <p>
             Spot reduction is the idea that exercising a body part burns the fat sitting on top of
             it — crunches for the stomach, leg raises for the thighs, incline walking for the
@@ -265,7 +232,7 @@ const schema = {
         </div>
 
         <div id="how-fat-loss-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Fat Loss Actually Happens</h2>
+          <h2>How Fat Loss Actually Happens</h2>
 <p>
             Strip away the marketing and fat loss comes down to sustained energy balance. Over
             weeks and months, if you consistently use more energy than you take in, your body makes
@@ -300,7 +267,7 @@ const schema = {
         </div>
 
         <div id="visceral-fat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Belly Fat Is Really Two Kinds of Fat</h2>
+          <h2>Belly Fat Is Really Two Kinds of Fat</h2>
 <p>
             "Belly fat" covers two different tissues, and the distinction matters more than almost
             anything else on this page.
@@ -335,14 +302,13 @@ const schema = {
         </div>
 
         <div id="what-treadmill-does" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Treadmill Exercise Actually Contributes</h2>
+          <h2>What Treadmill Exercise Actually Contributes</h2>
 <p>
             A treadmill is not magic, but it is unusually well suited to the job. Three things
             make it useful for fat loss specifically.
           </p>
           <p>
-            <strong>It adds meaningful energy expenditure without much skill or recovery cost.</strong>
-            Walking at a brisk pace, particularly with some incline, burns a real amount of energy
+            <strong>It adds meaningful energy expenditure without much skill or recovery cost.</strong> Walking at a brisk pace, particularly with some incline, burns a real amount of energy
             and can be repeated almost daily. That is a better fit for fat loss than a gruelling
             session you can only face twice a week.
           </p>
@@ -354,11 +320,7 @@ const schema = {
           </p>
           <p>
             <strong>It makes intensity adjustable and repeatable.</strong> You can set a speed and
-            grade, repeat it next week, and nudge it up gradually. Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            and the
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline conversion guide</a>
-            help you understand what the numbers on the console mean in practice.
+            grade, repeat it next week, and nudge it up gradually. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> and the <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline conversion guide</a> help you understand what the numbers on the console mean in practice.
           </p>
           <p>
             What a treadmill does not do is outrun a diet that consistently exceeds your needs.
@@ -370,7 +332,7 @@ const schema = {
         </div>
 
         <div id="incline-thigh-fat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Can Incline on a Treadmill Help You Lose Thigh Fat?</h2>
+          <h2>Can Incline on a Treadmill Help You Lose Thigh Fat?</h2>
 <p>
             This is the most-searched variation of the question, and the answer follows directly
             from everything above: <strong>incline walking cannot target thigh fat, but it can help
@@ -390,11 +352,7 @@ const schema = {
             an ordinary walking pace a 5% grade raises the energy cost by roughly half again
             compared with flat ground, and a 10% grade roughly doubles it. That lets you reach a
             meaningful workload at a walking speed, which is gentler on the joints than running
-            and far easier to sustain for 30 to 45 minutes. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk at</a>
-            covers how to choose a grade, and the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            is the popular high-incline version.
+            and far easier to sustain for 30 to 45 minutes. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk at</a> covers how to choose a grade, and the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> is the popular high-incline version.
           </p>
           <p>
             A small caution: thighs are, for many women in particular, one of the last places to
@@ -405,7 +363,7 @@ const schema = {
         </div>
 
         <div id="walking-vs-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Walking, Running or Intervals — Which Burns More Fat?</h2>
+          <h2>Walking, Running or Intervals — Which Burns More Fat?</h2>
 <p>
             The "fat-burning zone" on treadmill consoles has caused a great deal of confusion. It is
             true that at lower intensities a larger <em>proportion</em> of the energy you use comes
@@ -424,30 +382,22 @@ const schema = {
             right default.</li>
             <li><strong>Running</strong> burns more per minute and builds more fitness, but it carries
             more injury risk and needs more recovery, particularly for heavier or less conditioned
-            beginners. A
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K</a>
-            programme is the sensible on-ramp.</li>
+            beginners. A <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K</a> programme is the sensible on-ramp.</li>
             <li><strong>Intervals</strong> are time-efficient and good for fitness. Studies comparing
             interval training with steady moderate exercise for fat loss tend to find broadly
             similar results when total work is matched. They are a useful option, not a shortcut.
-            Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts</a>
-            page has sessions to try.</li>
+            Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts</a> page has sessions to try.</li>
           </ul>
           <p>
             A mix usually works best: mostly moderate walking, with one or two harder sessions a
-            week once your fitness allows. The
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart-rate zones guide</a>
-            explains how to judge effort without trusting the console's zone labels too literally.
+            week once your fitness allows. The <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart-rate zones guide</a> explains how to judge effort without trusting the console's zone labels too literally.
           </p>
         </div>
 
         <div id="realistic-plan" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What a Realistic Plan Looks Like</h2>
+          <h2>What a Realistic Plan Looks Like</h2>
 <p>
-            This is a framework rather than a programme — the detailed sessions live in our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>
-            guide, and there is no point duplicating them here. What follows is the shape that
+            This is a framework rather than a programme — the detailed sessions live in our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a> guide, and there is no point duplicating them here. What follows is the shape that
             tends to work for people whose real goal is a smaller waist.
           </p>
           <p>
@@ -478,16 +428,12 @@ const schema = {
           </p>
           <p>
             If you are choosing equipment for this, a machine you will actually use daily matters
-            more than one with impressive specifications. Our
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a>
-            and
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            roundups cover the two most relevant categories.
+            more than one with impressive specifications. Our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a> and <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> roundups cover the two most relevant categories.
           </p>
         </div>
 
         <div id="sleep-and-diet" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Diet, Sleep and Stress Matter More Than the Machine</h2>
+          <h2>Diet, Sleep and Stress Matter More Than the Machine</h2>
 <p>
             It is slightly awkward for a treadmill review site to say so, but for abdominal fat in
             particular the treadmill is one lever among several, and not always the largest.
@@ -519,7 +465,7 @@ const schema = {
         </div>
 
         <div id="timeline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Long Before You See a Difference</h2>
+          <h2>How Long Before You See a Difference</h2>
 <p>
             Expect this to be measured in months rather than weeks. Mainstream public-health
             guidance generally describes a loss of around 1 to 2 pounds a week as a sustainable
@@ -547,7 +493,7 @@ const schema = {
         </div>
 
         <div id="tracking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How to Track Progress Without Obsessing Over the Scale</h2>
+          <h2>How to Track Progress Without Obsessing Over the Scale</h2>
 <p>
             Because the question is specifically about belly fat, the scale is the wrong primary
             measure. Body weight lumps together fat, muscle, water and everything else, and it says
@@ -579,7 +525,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Verdict</h2>
+          <h2>The Verdict</h2>
 <p>
             <strong>Does a treadmill burn belly fat?</strong> Not selectively. No exercise does, and
             any product or programme claiming to target belly or thigh fat is selling something
@@ -598,145 +544,160 @@ const schema = {
             work.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does treadmill burn belly fat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not selectively — no exercise can target fat in one area. A treadmill helps you lose fat from your whole body, belly included, by adding to an energy deficit over time. Regular aerobic exercise has also been shown in controlled trials to reduce visceral fat, the deep abdominal fat most linked to health risk, sometimes even before the scale moves much.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a treadmill burn belly fat faster than other exercise?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No exercise burns belly fat faster than any other, because the body decides where fat comes off. What matters is the total energy you use over weeks and months, and how consistently you keep it up. A treadmill's advantage is convenience: it removes weather and daylight as excuses, which makes a daily habit easier to sustain.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does treadmill reduce belly fat if I only walk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can. Brisk walking, especially with some incline, is a sustainable way to add regular activity, and walking counts toward the same weekly activity guidelines as running. Combined with sensible eating over a period of months, walking is enough for many people to see their waist measurement come down. Expect the lower stomach to be among the last areas to change.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does treadmill burn fat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, in the sense that treadmill exercise uses energy and, over time and alongside your eating habits, can contribute to fat loss across the body. The fat-burning zone on the console is less important than it looks: higher intensities burn more energy overall, and long-term energy balance matters more than which fuel you used during the session.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can incline on a treadmill help you lose thigh fat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not directly. Incline walking works the glutes, hamstrings and calves harder and raises the energy cost of walking considerably — a 10% grade roughly doubles it at a typical walking pace — which helps whole-body fat loss. But fat comes off the thighs on the same body-wide schedule as everywhere else, and thighs are often one of the last areas to change.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does it take to lose belly fat on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually months rather than weeks. Fitness improves within a few weeks, the waist measurement may start moving within the first couple of months, and visible change in stubborn areas comes last. Mainstream guidance treats 1 to 2 pounds a week as a sustainable pace for people with weight to lose, and slower is normal. Judge progress over four to eight weeks, not day to day.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Trying to Lose Belly Fat on a Treadmill</h2>
+          <p>Almost every disappointed treadmill owner we hear from on this subject has made at least one of these, and the first is nearly universal.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Expecting the belly to go first</h3>
+              <p>Fat comes off in an order set mostly by genetics, sex and hormones, and the lower stomach is commonly one of the last areas to change. People who expect it first conclude the plan is failing when it is working normally. Judge progress by your waist measurement over months, not the mirror over weeks.</p>
+            </li>
+            <li>
+              <h3>Adding crunches or incline to "target" the area</h3>
+              <p>Abdominal exercise strengthens the muscles under the fat, and incline walking strengthens the glutes and hamstrings, both of which are worth having. Neither selectively removes the fat over those muscles. Spending your limited time on targeting rather than total activity and eating habits is a poor trade.</p>
+            </li>
+            <li>
+              <h3>Eating back the console calorie count</h3>
+              <p>The calorie figure is an estimate that tends to run high, and it knows nothing about your body composition or efficiency. Treating it as an allowance is how a daily walk gets quietly cancelled out. Use the console for speed, incline and time; ignore the calories as a scorecard.</p>
+            </li>
+            <li>
+              <h3>Starting too hard and quitting</h3>
+              <p>Jumping straight into long, steep or fast sessions is how people get sore calves, sore shins and a strong reason to stop in week three. A moderate habit repeated for a year outperforms an aggressive one abandoned in a month. Build time first, then incline, then speed.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Trying to Lose Belly Fat on a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Almost every disappointed treadmill owner we hear from on this subject has made at least one of these, and the first is nearly universal.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting the belly to go first</h3>
-              <p class="text-gray-700 text-sm m-0">Fat comes off in an order set mostly by genetics, sex and hormones, and the lower stomach is commonly one of the last areas to change. People who expect it first conclude the plan is failing when it is working normally. Judge progress by your waist measurement over months, not the mirror over weeks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Adding crunches or incline to "target" the area</h3>
-              <p class="text-gray-700 text-sm m-0">Abdominal exercise strengthens the muscles under the fat, and incline walking strengthens the glutes and hamstrings, both of which are worth having. Neither selectively removes the fat over those muscles. Spending your limited time on targeting rather than total activity and eating habits is a poor trade.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Eating back the console calorie count</h3>
-              <p class="text-gray-700 text-sm m-0">The calorie figure is an estimate that tends to run high, and it knows nothing about your body composition or efficiency. Treating it as an allowance is how a daily walk gets quietly cancelled out. Use the console for speed, incline and time; ignore the calories as a scorecard.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting too hard and quitting</h3>
-              <p class="text-gray-700 text-sm m-0">Jumping straight into long, steep or fast sessions is how people get sore calves, sore shins and a strong reason to stop in week three. A moderate habit repeated for a year outperforms an aggressive one abandoned in a month. Build time first, then incline, then speed.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-workout-for-weight-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Programme</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts for Weight Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sessions built around what people actually keep doing.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Workout</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The viral incline walk, explained honestly — and how to build up to it.</p>
-            </a>
-            <a href="/treadmill-heart-rate-zones/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Zones</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to judge effort, and why the console zone labels mislead.</p>
-            </a>
-            <a href="/best-treadmill-settings-for-fat-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Settings</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Settings for Fat Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Speed and incline starting points by fitness level, the calorie arithmetic, and how to progress.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A treadmill cannot target belly or thigh fat</strong> — no
             exercise can. It does help with whole-body fat loss, and regular aerobic exercise has
             been shown to reduce the visceral fat that matters most for health, sometimes before
             the scale moves much.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Walk briskly or on an incline most days, add strength work, take eating and sleep
             seriously, and measure your waist rather than obsessing over weight. For the sessions
-            themselves, see our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts for weight loss</a>.
+            themselves, see our <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts for weight loss</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-workout-for-weight-loss/">Treadmill Workouts for Weight Loss</a></li>
+            <li><a href="/12-3-30-treadmill-workout/">The 12-3-30 Treadmill Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does treadmill burn belly fat?</h3></summary>
+            <p class="faq-a">
+              Not selectively — no exercise can target fat in one area. A treadmill helps you lose fat from your whole body, belly included, by adding to an energy deficit over time. Regular aerobic exercise has also been shown in controlled trials to reduce visceral fat, the deep abdominal fat most linked to health risk, sometimes even before the scale moves much.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Will a treadmill burn belly fat faster than other exercise?</h3></summary>
+            <p class="faq-a">
+              No exercise burns belly fat faster than any other, because the body decides where fat comes off. What matters is the total energy you use over weeks and months, and how consistently you keep it up. A treadmill's advantage is convenience: it removes weather and daylight as excuses, which makes a daily habit easier to sustain.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does treadmill reduce belly fat if I only walk?</h3></summary>
+            <p class="faq-a">
+              It can. Brisk walking, especially with some incline, is a sustainable way to add regular activity, and walking counts toward the same weekly activity guidelines as running. Combined with sensible eating over a period of months, walking is enough for many people to see their waist measurement come down. Expect the lower stomach to be among the last areas to change.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does treadmill burn fat?</h3></summary>
+            <p class="faq-a">
+              Yes, in the sense that treadmill exercise uses energy and, over time and alongside your eating habits, can contribute to fat loss across the body. The fat-burning zone on the console is less important than it looks: higher intensities burn more energy overall, and long-term energy balance matters more than which fuel you used during the session.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can incline on a treadmill help you lose thigh fat?</h3></summary>
+            <p class="faq-a">
+              Not directly. Incline walking works the glutes, hamstrings and calves harder and raises the energy cost of walking considerably — a 10% grade roughly doubles it at a typical walking pace — which helps whole-body fat loss. But fat comes off the thighs on the same body-wide schedule as everywhere else, and thighs are often one of the last areas to change.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does it take to lose belly fat on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually months rather than weeks. Fitness improves within a few weeks, the waist measurement may start moving within the first couple of months, and visible change in stubborn areas comes last. Mainstream guidance treats 1 to 2 pounds a week as a sustainable pace for people with weight to lose, and slower is normal. Judge progress over four to eight weeks, not day to day.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-workout-for-weight-loss/" class="card">
+            <div class="c-kicker">Programme</div>
+            <div class="c-title">Treadmill Workouts for Weight Loss</div>
+            <p class="c-blurb">Sessions built around what people actually keep doing.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Workout</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">The viral incline walk, explained honestly — and how to build up to it.</p>
+          </a>
+          <a href="/treadmill-heart-rate-zones/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Treadmill Heart Rate Zones</div>
+            <p class="c-blurb">How to judge effort, and why the console zone labels mislead.</p>
+          </a>
+          <a href="/best-treadmill-settings-for-fat-loss/" class="card">
+            <div class="c-kicker">Settings</div>
+            <div class="c-title">Best Treadmill Settings for Fat Loss</div>
+            <p class="c-blurb">Speed and incline starting points by fitness level, the calorie arithmetic, and how to progress.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

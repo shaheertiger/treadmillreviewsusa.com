@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Aviron Treadmill Review (2026): Justice, Podium and Summit Compared";
 const description =
@@ -206,6 +205,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/aviron-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -227,130 +232,36 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Compare the Three Models", link: "#lineup" }}
+  stickyCta={{ text: "Cheapest Aviron: Aviron Justice Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-avirontreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-avirontreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">Aviron Treadmill: Justice, Podium and Summit Reviewed</h1>
+      <p class="ed-dek">
+        Aviron is best known for its gamified rowers, but it does sell treadmills in the US: three of them since September 2026. This review sets out what the Justice, Podium and Summit cost, what Aviron and independent reviewers agree on, what the membership adds and what the machines do without it, and the conditions attached to the 20-year warranty.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Aviron Treadmill: <span class="text-[#5AA9FF]">Justice, Podium and Summit Reviewed</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Aviron is best known for its gamified rowers, but it does sell treadmills in the US: three of them since September 2026. This review sets out what the Justice, Podium and Summit cost, what Aviron and independent reviewers agree on, what the membership adds and what the machines do without it, and the conditions attached to the 20-year warranty.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Compare the Three Models
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we read Aviron's US treadmill shop page, the product pages and technical
-          specifications for the Justice, Podium and Summit, its membership, warranty and return-policy
-          pages, its August 2026 launch and comparison posts and its 9 September 2026 press release.
-          We cross-checked the figures against Garage Gym Reviews' hands-on reviews of all three
-          models (updated 24 September, 7 October and 19 October 2026) and Wellworthy's launch
-          coverage of 12 August 2026, and we searched the US Consumer Product Safety Commission's
-          recall database for Aviron. Figures on the product cards are ones on which Aviron and at
-          least one independent source agree; where they disagree, or where only Aviron gives a
-          figure, we say so. We have not tested any Aviron treadmill, and none of the numbers here
-          are our own measurements. Prices are those shown on avironactive.com on 20 October 2026
-          and change often. As an Amazon Associate we earn from qualifying purchases.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest Aviron:</span>
-            <a href="#aviron-justice" class="font-bold text-gray-900 no-underline hover:underline">Aviron Justice Treadmill</a>
-            <a href="#aviron-justice" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Buyers:</span>
-            <a href="#aviron-podium" class="font-bold text-gray-900 no-underline hover:underline">Aviron Podium Treadmill</a>
-            <a href="#aviron-podium" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Steepest Incline:</span>
-            <a href="#aviron-summit" class="font-bold text-gray-900 no-underline hover:underline">Aviron Summit Treadmill</a>
-            <a href="#aviron-summit" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Does Aviron Make a Treadmill? The Short Answer</a>
-          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Justice vs Podium vs Summit</a>
-          <a href="#victory" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Victory Treadmill</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What It Costs</a>
-          <a href="#membership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Membership and Free Features</a>
-          <a href="#warranty-and-trial" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Warranty and Returns</a>
-          <a href="#summit-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The 42% Incline</a>
-          <a href="#recalls-and-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Recalls and Safety</a>
-          <a href="#space-and-setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Space and Set-Up</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           People searching for an Aviron treadmill are usually in one of two places: they own or
           have read about Aviron's rowing machine and want to know whether the same games come on a
           treadmill, or they have seen the name in a list of connected treadmills and want to know
@@ -363,8 +274,59 @@ const schema = {
           treadmill.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest Aviron:</span> <a href="#aviron-justice">Aviron Justice Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Buyers:</span> <a href="#aviron-podium">Aviron Podium Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Steepest Incline:</span> <a href="#aviron-summit">Aviron Summit Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          20 October 2026 we read Aviron's US treadmill shop page, the product pages and technical
+          specifications for the Justice, Podium and Summit, its membership, warranty and return-policy
+          pages, its August 2026 launch and comparison posts and its 9 September 2026 press release.
+          We cross-checked the figures against Garage Gym Reviews' hands-on reviews of all three
+          models (updated 24 September, 7 October and 19 October 2026) and Wellworthy's launch
+          coverage of 12 August 2026, and we searched the US Consumer Product Safety Commission's
+          recall database for Aviron. Figures on the product cards are ones on which Aviron and at
+          least one independent source agree; where they disagree, or where only Aviron gives a
+          figure, we say so. We have not tested any Aviron treadmill, and none of the numbers here
+          are our own measurements. Prices are those shown on avironactive.com on 20 October 2026
+          and change often. As an Amazon Associate we earn from qualifying purchases.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Does Aviron Make a Treadmill? The Short Answer</a></li>
+            <li><a href="#lineup">Justice vs Podium vs Summit</a></li>
+            <li><a href="#victory">The Victory Treadmill</a></li>
+            <li><a href="#cost">What It Costs</a></li>
+            <li><a href="#membership">Membership and Free Features</a></li>
+            <li><a href="#warranty-and-trial">Warranty and Returns</a></li>
+            <li><a href="#summit-incline">The 42% Incline</a></li>
+            <li><a href="#recalls-and-safety">Recalls and Safety</a></li>
+            <li><a href="#space-and-setup">Space and Set-Up</a></li>
+            <li><a href="#alternatives">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Does Aviron Make a Treadmill? The Short Answer</h2>
+          <h2>Does Aviron Make a Treadmill? The Short Answer</h2>
 <p>
             <strong>Yes. As of 20 October 2026 Aviron sells three treadmills in the US, direct from
             avironactive.com: the Justice from $1,999, the Podium from $2,499 and the Summit from
@@ -385,14 +347,12 @@ const schema = {
             behind it.
           </p>
           <p>
-            If what you actually want is any treadmill with an entertaining screen, our
-            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
-            compares the main connected platforms side by side.
+            If what you actually want is any treadmill with an entertaining screen, our <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a> compares the main connected platforms side by side.
           </p>
         </div>
 
         <div id="lineup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Three Aviron Treadmills: Justice, Podium and Summit</h2>
+          <h2>The Three Aviron Treadmills: Justice, Podium and Summit</h2>
 <p>
             Launch coverage of the three treadmills appeared from 12 August 2026, Aviron's launch
             post says production units began shipping in the second week of September, and its
@@ -452,78 +412,67 @@ const schema = {
             decide whether the Summit fits, confirm the length with Aviron in writing.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="victory" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Happened to the Aviron Victory Treadmill?</h2>
+          <h2>What Happened to the Aviron Victory Treadmill?</h2>
 <p>
             Aviron's first treadmill was announced in October 2024 at $2,499, with a 22-inch
             touchscreen and a deck about 4 inches off the floor, and coverage at the time said
@@ -551,7 +500,7 @@ const schema = {
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What an Aviron Treadmill Costs, Delivered and Over Three Years</h2>
+          <h2>What an Aviron Treadmill Costs, Delivered and Over Three Years</h2>
 <p>
             Aviron showed every treadmill at a sale price when we checked, with the regular price
             struck through, and Garage Gym Reviews says the Justice is usually found on sale at about
@@ -592,7 +541,7 @@ const schema = {
         </div>
 
         <div id="membership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Aviron Membership: What It Adds and What Works Without It</h2>
+          <h2>Aviron Membership: What It Adds and What Works Without It</h2>
 <p>
             Aviron calls its membership "recommended but not required", and on this point it is
             more generous than most connected-fitness brands. The prices on Aviron's membership page
@@ -621,9 +570,7 @@ const schema = {
             badges, friends, the MyAviron companion app and — unusually — the streaming apps,
             including Netflix, Prime Video, Disney+, YouTube and Spotify. Aviron also says workouts
             sync to Strava and Apple Health. That is considerably more than Peloton's Just Run mode,
-            which our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
-            describes, or Echelon's free tier, covered in our
-            <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon treadmill guide</a>.
+            which our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a> describes, or Echelon's free tier, covered in our <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon treadmill guide</a>.
           </p>
           <p>
             The general caution applies all the same: what a connected treadmill does without a
@@ -635,17 +582,13 @@ const schema = {
             Not in any way we could confirm. Aviron's standalone app, launched for iOS in March 2024,
             was built for rowers and paired with Concept2's RowErg. We found no Aviron page that
             lists a third-party treadmill its app supports. Some treadmill makers name Aviron among
-            compatible apps — TKO does for its manual curved trainer, as our
-            <a href="/tko-airraid-runner-treadmill/" class="text-[#0F62FE] font-medium">TKO AirRaid Runner review</a>
-            notes — but until Aviron itself confirms the pairing, do not buy another treadmill
-            expecting to run Aviron's games on it. If open-app compatibility is what matters, our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            covers machines that pair with the widely supported Bluetooth FTMS standard.
+            compatible apps — TKO does for its manual curved trainer, as our <a href="/tko-airraid-runner-treadmill/" class="text-[#0F62FE] font-medium">TKO AirRaid Runner review</a> notes — but until Aviron itself confirms the pairing, do not buy another treadmill
+            expecting to run Aviron's games on it. If open-app compatibility is what matters, our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> covers machines that pair with the widely supported Bluetooth FTMS standard.
           </p>
         </div>
 
         <div id="warranty-and-trial" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The 20-Year Warranty and the 30-Day Trial, Read Carefully</h2>
+          <h2>The 20-Year Warranty and the 30-Day Trial, Read Carefully</h2>
 <p>
             Aviron's 20-year warranty is the longest we have seen on a consumer treadmill, and it is
             conditional. Garage Gym Reviews' Podium and Summit reviews both mark it down for being
@@ -665,12 +608,9 @@ const schema = {
             applies, and get the answer in writing.
           </p>
           <p>
-            The retail point is easy to miss. Aviron's press release says the treadmills are expected
-            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Dick's Sporting Goods and Amazon for the holiday season. Because the 20-year
+            The retail point is easy to miss. Aviron's press release says the treadmills are expected <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Dick's Sporting Goods and Amazon for the holiday season. Because the 20-year
             tier needs a direct purchase, a treadmill bought from a retailer would, on Aviron's
-            current terms, carry the standard 10-year and one-year cover even with a membership. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to compare these terms with other brands.
+            current terms, carry the standard 10-year and one-year cover even with a membership. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how to compare these terms with other brands.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 30-day trial</h3>
           <p>
@@ -680,19 +620,16 @@ const schema = {
             go back in its original box and packaging, in new condition with every part; the $299
             White Glove fee is not refunded; returns are not available to Alaska or Hawaii; and after
             the trial, the standard policy deducts return shipping and a 25% restocking fee. Keep
-            the box for the first month. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policy guide</a>
-            compares these terms with other brands'.
+            the box for the first month. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policy guide</a> compares these terms with other brands'.
           </p>
         </div>
 
         <div id="summit-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Summit’s 42% Incline: What It Is, and Who It Is For</h2>
+          <h2>The Summit’s 42% Incline: What It Is, and Who It Is For</h2>
 <p>
             A 42% grade means the deck rises 42 units for every 100 travelled — an angle of about
             23 degrees, far steeper than most roads and steeper than many hiking trails. Most home
-            treadmills stop at 15%, and the steepest we had previously confirmed, in our guide to
-            <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>,
+            treadmills stop at 15%, and the steepest we had previously confirmed, in our guide to <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>,
             reach 40%. Aviron, Garage Gym Reviews and Wellworthy all give the Summit 42% with a -6%
             decline.
           </p>
@@ -714,9 +651,7 @@ const schema = {
             differently from flat walking, so build up gradually, hold the handles for balance rather
             than for support, and stop if you feel pain. This site reviews equipment and does not
             give medical advice: if you have a heart, lung, joint or balance condition, or have been
-            inactive for a long time, check with a clinician before using steep grades. Our
-            <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill guide</a>
-            sets out who gains from more than 15%.
+            inactive for a long time, check with a clinician before using steep grades. Our <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill guide</a> sets out who gains from more than 15%.
           </p>
           <p>
             If you will seldom go above 15 to 18%, the Podium gives you the same motor and screens,
@@ -725,7 +660,7 @@ const schema = {
         </div>
 
         <div id="recalls-and-safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Aviron Recalls and Treadmill Safety</h2>
+          <h2>Aviron Recalls and Treadmill Safety</h2>
 <p>
             We searched the US Consumer Product Safety Commission's recall database on 20 October
             2026 for "Aviron" in recall titles, product names, manufacturer names and descriptions,
@@ -750,13 +685,12 @@ const schema = {
             <li><strong>Register the machine.</strong> Registering with Aviron is how you would hear about a future recall.</li>
           </ul>
           <p>
-            Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            go through set-up and everyday use in more detail.
+            Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> go through set-up and everyday use in more detail.
           </p>
         </div>
 
         <div id="space-and-setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Space, Weight, Assembly and the WalkDesk</h2>
+          <h2>Space, Weight, Assembly and the WalkDesk</h2>
 <p>
             Two of the three fold, but none is small. Measure for the in-use size, the folded size
             if that is how it will spend most of its time, and the route into the room.
@@ -796,13 +730,12 @@ const schema = {
             The WalkDesk is a $119 attachment for the Justice and Podium that Aviron says stays level
             when the deck is inclined, turning the treadmill into a walking workstation. It is a
             reasonable way to get a desk treadmill and a running treadmill in one, though a folding
-            treadmill with a desk needs the same floor space as the treadmill alone, and a dedicated
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> under an existing standing desk costs far less if you will never run.
+            treadmill with a desk needs the same floor space as the treadmill alone, and a dedicated <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> under an existing standing desk costs far less if you will never run.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             An Aviron treadmill suits a specific buyer: someone who is motivated by games and
             competition more than by instructors, and who will keep the membership. These are the
@@ -811,17 +744,13 @@ const schema = {
           <p>
             <strong>You want instructor-led classes.</strong> Aviron has coached classes, but its
             library is built around games. Peloton's Tread range and iFIT on NordicTrack and ProForm
-            are built around instructors; iFIT also adjusts speed and incline along filmed routes. Our
-            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
-            sets the platforms side by side.
+            are built around instructors; iFIT also adjusts speed and incline along filmed routes. Our <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a> sets the platforms side by side.
           </p>
           <p>
             <strong>You are not sure you will keep paying.</strong> Aviron's free features are
             generous, but the 20-year warranty disappears with the membership. A treadmill whose
             console works fully on its own and whose warranty does not depend on a subscription
-            keeps its value either way; our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a>
-            lists them.
+            keeps its value either way; our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a> lists them.
           </p>
           <p>
             <strong>You weigh more than 350 lb.</strong> All three current Avirons are outside their
@@ -835,9 +764,7 @@ const schema = {
           </p>
           <p>
             <strong>You want to row as well.</strong> Aviron's rower is the product it is best known
-            for, and one membership covers both machines for an extra $10 a month. Our
-            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">rowing machine roundup</a>
-            explains how connected rowers compare.
+            for, and one membership covers both machines for an extra $10 a month. Our <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">rowing machine roundup</a> explains how connected rowers compare.
           </p>
           <p>
             <strong>Buy the Aviron if</strong> the games are what will get you on the belt, you will
@@ -847,144 +774,161 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Aviron make a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. As of 20 October 2026 Aviron sells three treadmills in the US: the folding Justice ($1,999), the folding Podium ($2,499) and the non-folding Summit ($2,999), at Aviron’s sale prices with the 16-inch screen. Its earlier Victory treadmill is no longer listed on Aviron’s own store.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use an Aviron treadmill without a membership?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Aviron says the membership is not required. Without it you keep the metrics screen, manual speed and incline, profiles, workout history and streaming apps such as Netflix and YouTube. The games, classes, scenic routes and competitions need the membership, and so does the 20-year warranty.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much is the Aviron membership?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 20 October 2026 Aviron charged $29 a month billed annually ($348 a year), $34 a month month to month, or $2,499 once for a perpetual plan. Each extra Aviron machine adds $10 a month, or $999 on a perpetual plan, and one membership covers unlimited household profiles.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Aviron 20-year warranty real?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is real but conditional. Aviron’s terms require a purchase direct from its website, membership activation within 90 days and continued payment of a monthly or annual plan; perpetual plans do not qualify. Otherwise the warranty is 10 years on the frame and drive motor and one year on other parts, and it does not transfer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the Aviron Justice, Podium and Summit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The Justice has a 3.5 CHP motor, 12.5 mph, 15% incline, a 20 by 59-inch deck and a 300 lb limit, and folds. The Podium has a 4.5 CHP motor, 14 mph, 18% incline, a 22 by 60-inch deck and a 350 lb limit, and also folds. The Summit adds a -6% to 42% grade range on a 22 by 61-inch deck, does not fold and weighs 364 lb.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Has the Aviron treadmill been recalled?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We found no recall of any Aviron product when we searched the US Consumer Product Safety Commission’s recall database on 20 October 2026, and none in Health Canada’s listings. Register your treadmill with Aviron so you would be told of any future recall.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use the Aviron app on another treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not in any way we could confirm. Aviron’s standalone app launched in 2024 for Concept2 rowers, and we found no Aviron page listing a supported third-party treadmill. Some makers, including TKO, name Aviron as a compatible app, but confirm with Aviron before buying on that basis.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an Aviron Treadmill</h2>
+          <p>Most disappointing Aviron purchases go wrong on the terms rather than the machine. These are the four we would avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming the 20-year warranty comes with the treadmill</h3>
+              <p>It comes with a direct purchase and a recurring membership that you keep paying, activated within 90 days. Buy from a retailer, choose the perpetual plan or cancel, and Aviron’s terms give you 10 years on the frame and drive motor and one year on everything else. Decide which you are buying before you order.</p>
+            </li>
+            <li>
+              <h3>Buying the Summit for a room with a low ceiling</h3>
+              <p>Aviron recommends at least an 8 ft ceiling to use the Summit’s full incline range, because the front of the deck rises a long way at 42%. Measure the ceiling, add the height of the tallest user standing on a raised deck, and choose the Podium if the room cannot take it.</p>
+            </li>
+            <li>
+              <h3>Throwing away the box in the first month</h3>
+              <p>Aviron’s 30-day trial requires the treadmill to go back in its original box and packaging, in new condition. After 30 days the standard policy deducts return shipping and a 25% restocking fee, and the $299 White Glove fee is never refunded. Keep the packaging until you are sure.</p>
+            </li>
+            <li>
+              <h3>Buying a used or third-party Victory expecting the warranty</h3>
+              <p>Aviron’s warranty does not transfer to a second owner and excludes units from unauthorised sellers. A Victory found on a marketplace may carry no Aviron cover at all. Ask the seller in writing what warranty applies and whose name it is in, and compare the price with a new Justice.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Aviron Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointing Aviron purchases go wrong on the terms rather than the machine. These are the four we would avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the 20-year warranty comes with the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">It comes with a direct purchase and a recurring membership that you keep paying, activated within 90 days. Buy from a retailer, choose the perpetual plan or cancel, and Aviron’s terms give you 10 years on the frame and drive motor and one year on everything else. Decide which you are buying before you order.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the Summit for a room with a low ceiling</h3>
-              <p class="text-gray-700 text-sm m-0">Aviron recommends at least an 8 ft ceiling to use the Summit’s full incline range, because the front of the deck rises a long way at 42%. Measure the ceiling, add the height of the tallest user standing on a raised deck, and choose the Podium if the room cannot take it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Throwing away the box in the first month</h3>
-              <p class="text-gray-700 text-sm m-0">Aviron’s 30-day trial requires the treadmill to go back in its original box and packaging, in new condition. After 30 days the standard policy deducts return shipping and a 25% restocking fee, and the $299 White Glove fee is never refunded. Keep the packaging until you are sure.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used or third-party Victory expecting the warranty</h3>
-              <p class="text-gray-700 text-sm m-0">Aviron’s warranty does not transfer to a second owner and excludes units from unauthorised sellers. A Victory found on a marketplace may carry no Aviron cover at all. Ask the seller in writing what warranty applies and whose name it is in, and compare the price with a new Justice.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Smart Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-smart-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Smart Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Aviron’s games against iFIT, Peloton and open-app machines.</p>
-            </a>
-            <a href="/peloton-tread/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Peloton Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The Tread Flex, Vision and Tread+ Vision, All-Access and the recalls.</p>
-            </a>
-            <a href="/treadmills-with-the-highest-incline/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills With the Highest Incline</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The 40% incline trainers, and who needs more than 15%.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Aviron does sell treadmills in the US, and for someone who
           will keep the membership because the games get them moving, the $2,499 Podium is the one to
           buy.</strong> The $1,999 Justice suits walkers and joggers under 300 lb on a budget, and
           the $2,999 Summit is only worth its extra cost and weight if you will really use grades
           beyond 18%.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Buy direct and keep a monthly or annual plan if the 20-year warranty matters to you, keep the
           box for the 30-day trial, and get the theft and moving-damage cover confirmed in writing.
           If you are less sure about a subscription, a treadmill that works fully on its own is the
-          safer buy — our
-          <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">guide to treadmills without subscriptions</a>
-          lists them.
+          safer buy — our <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">guide to treadmills without subscriptions</a> lists them.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-smart-treadmills/">Best Smart Treadmills</a></li>
+            <li><a href="/peloton-tread/">Peloton Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does Aviron make a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. As of 20 October 2026 Aviron sells three treadmills in the US: the folding Justice ($1,999), the folding Podium ($2,499) and the non-folding Summit ($2,999), at Aviron’s sale prices with the 16-inch screen. Its earlier Victory treadmill is no longer listed on Aviron’s own store.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you use an Aviron treadmill without a membership?</h3></summary>
+            <p class="faq-a">
+              Yes. Aviron says the membership is not required. Without it you keep the metrics screen, manual speed and incline, profiles, workout history and streaming apps such as Netflix and YouTube. The games, classes, scenic routes and competitions need the membership, and so does the 20-year warranty.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much is the Aviron membership?</h3></summary>
+            <p class="faq-a">
+              On 20 October 2026 Aviron charged $29 a month billed annually ($348 a year), $34 a month month to month, or $2,499 once for a perpetual plan. Each extra Aviron machine adds $10 a month, or $999 on a perpetual plan, and one membership covers unlimited household profiles.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Aviron 20-year warranty real?</h3></summary>
+            <p class="faq-a">
+              It is real but conditional. Aviron’s terms require a purchase direct from its website, membership activation within 90 days and continued payment of a monthly or annual plan; perpetual plans do not qualify. Otherwise the warranty is 10 years on the frame and drive motor and one year on other parts, and it does not transfer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the Aviron Justice, Podium and Summit?</h3></summary>
+            <p class="faq-a">
+              The Justice has a 3.5 CHP motor, 12.5 mph, 15% incline, a 20 by 59-inch deck and a 300 lb limit, and folds. The Podium has a 4.5 CHP motor, 14 mph, 18% incline, a 22 by 60-inch deck and a 350 lb limit, and also folds. The Summit adds a -6% to 42% grade range on a 22 by 61-inch deck, does not fold and weighs 364 lb.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Has the Aviron treadmill been recalled?</h3></summary>
+            <p class="faq-a">
+              We found no recall of any Aviron product when we searched the US Consumer Product Safety Commission’s recall database on 20 October 2026, and none in Health Canada’s listings. Register your treadmill with Aviron so you would be told of any future recall.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use the Aviron app on another treadmill?</h3></summary>
+            <p class="faq-a">
+              Not in any way we could confirm. Aviron’s standalone app launched in 2024 for Concept2 rowers, and we found no Aviron page listing a supported third-party treadmill. Some makers, including TKO, name Aviron as a compatible app, but confirm with Aviron before buying on that basis.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Smart Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-smart-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Smart Treadmills</div>
+            <p class="c-blurb">Aviron’s games against iFIT, Peloton and open-app machines.</p>
+          </a>
+          <a href="/peloton-tread/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Peloton Treadmills</div>
+            <p class="c-blurb">The Tread Flex, Vision and Tread+ Vision, All-Access and the recalls.</p>
+          </a>
+          <a href="/treadmills-with-the-highest-incline/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">Treadmills With the Highest Incline</div>
+            <p class="c-blurb">The 40% incline trainers, and who needs more than 15%.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

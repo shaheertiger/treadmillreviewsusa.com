@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Commercial Gym Equipment (2026): Six Pieces Built for Daily Use";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/commercial-gym-equipment/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,84 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Treadmill: Life Fitness Integrity+ Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-commercialgymequipment" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-commercialgymequipment)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Commercial Gym Equipment Worth Buying</h1>
+      <p class="ed-dek">
+        Commercial equipment is built for many users and many hours a day, and it is priced, powered, warrantied and serviced accordingly. Here are six pieces across the main categories for a garage gym built to commercial standard, a small studio, an apartment building or an office gym, and what to check before you sign a quote.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Commercial Gym Equipment <span class="text-[#5AA9FF]">Worth Buying</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Commercial equipment is built for many users and many hours a day, and it is priced, powered, warrantied and serviced accordingly. Here are six pieces across the main categories for a garage gym built to commercial standard, a small studio, an apartment building or an office gym, and what to check before you sign a quote.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#what-commercial-means" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Commercial Means
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#keiser-m3i-indoor-bike"><img src="https://m.media-amazon.com/images/I/31b09AaUZOL._SL500_.jpg" alt="Keiser M3i Indoor Bike" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>Keiser M3i Indoor Bike</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          "Commercial" is the most stretched word in fitness marketing. It is printed on home
+          treadmills, on budget racks and on dumbbells sold by the pound, and it rarely tells you
+          anything on its own. Genuinely commercial equipment is designed for a known duty — many
+          users, long hours, regular servicing — and it comes with different warranties, different
+          power needs and different prices, often by quote rather than on a web page. This guide
+          names six pieces from established commercial brands, one for each main category, and
+          then explains what to check before you equip a garage, a studio, a building or an office.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Treadmill:</span> <a href="#life-fitness-integrity-plus-treadmill">Life Fitness Integrity+ Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Bike:</span> <a href="#keiser-m3i-indoor-bike">Keiser M3i Indoor Bike</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Rower:</span> <a href="#concept2-rowerg">Concept2 RowErg</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Rack:</span> <a href="#rogue-rml-390c-power-rack">Rogue RML-390C Power Rack 3.0</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Machine:</span> <a href="#hammer-strength-iso-lateral-row">Hammer Strength Plate-Loaded Iso-Lateral Row</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Dumbbells:</span> <a href="#rogue-urethane-dumbbells">Rogue Urethane Dumbbells</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested this
           equipment. Each piece was confirmed on 16 October 2026 as currently sold, and its
           specifications were checked on that date against the maker's own product page (Life
@@ -374,80 +397,28 @@ const schema = {
           a facility for other people should take advice from a qualified electrician, structural
           engineer, insurer and lawyer as the situation needs, and anyone with a health condition or
           injury should talk to a qualified professional before training.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Treadmill:</span>
-            <a href="#life-fitness-integrity-plus-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness Integrity+ Treadmill</a>
-            <a href="#life-fitness-integrity-plus-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Bike:</span>
-            <a href="#keiser-m3i-indoor-bike" class="font-bold text-gray-900 no-underline hover:underline">Keiser M3i Indoor Bike</a>
-            <a href="#keiser-m3i-indoor-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Rower:</span>
-            <a href="#concept2-rowerg" class="font-bold text-gray-900 no-underline hover:underline">Concept2 RowErg</a>
-            <a href="#concept2-rowerg" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Rack:</span>
-            <a href="#rogue-rml-390c-power-rack" class="font-bold text-gray-900 no-underline hover:underline">Rogue RML-390C Power Rack 3.0</a>
-            <a href="#rogue-rml-390c-power-rack" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Machine:</span>
-            <a href="#hammer-strength-iso-lateral-row" class="font-bold text-gray-900 no-underline hover:underline">Hammer Strength Plate-Loaded Iso-Lateral Row</a>
-            <a href="#hammer-strength-iso-lateral-row" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Pieces of Commercial Gym Equipment</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose This Equipment</a>
-          <a href="#what-commercial-means" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What "Commercial" Actually Means</a>
-          <a href="#warranties" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Commercial and Home Warranties Are Different Contracts</a>
-          <a href="#power-and-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Power, Floors and Space</a>
-          <a href="#safe-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Safe Use of Commercial Strength Equipment</a>
-          <a href="#liability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Facilities: Liability, Insurance and Records</a>
-          <a href="#used-refurbished" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Buying Used or Refurbished Commercial Equipment</a>
-          <a href="#by-setting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Garage, Studio, Building or Office: What to Prioritise</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When Home-Grade Equipment Is the Better Buy</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Pieces of Commercial Gym Equipment</a></li>
+            <li><a href="#how-we-chose">How We Chose This Equipment</a></li>
+            <li><a href="#what-commercial-means">What "Commercial" Actually Means</a></li>
+            <li><a href="#warranties">Commercial and Home Warranties Are Different Contracts</a></li>
+            <li><a href="#power-and-space">Power, Floors and Space</a></li>
+            <li><a href="#safe-use">Safe Use of Commercial Strength Equipment</a></li>
+            <li><a href="#liability">Facilities: Liability, Insurance and Records</a></li>
+            <li><a href="#used-refurbished">Buying Used or Refurbished Commercial Equipment</a></li>
+            <li><a href="#by-setting">Garage, Studio, Building or Office: What to Prioritise</a></li>
+            <li><a href="#who-should-skip">When Home-Grade Equipment Is the Better Buy</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          "Commercial" is the most stretched word in fitness marketing. It is printed on home
-          treadmills, on budget racks and on dumbbells sold by the pound, and it rarely tells you
-          anything on its own. Genuinely commercial equipment is designed for a known duty — many
-          users, long hours, regular servicing — and it comes with different warranties, different
-          power needs and different prices, often by quote rather than on a web page. This guide
-          names six pieces from established commercial brands, one for each main category, and
-          then explains what to check before you equip a garage, a studio, a building or an office.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             One piece per category, each from a brand whose equipment is widely used in gyms and
             each confirmed as currently sold. Two of the six are quote-only for facilities; for both
@@ -472,17 +443,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If the treadmill is the piece you care about most, our guide to
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>
-            goes much further into motors, decks and models than this page can. For a home gym
-            that does not need to meet commercial duty, the
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            are the better starting point.
+            If the treadmill is the piece you care about most, our guide to <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a> goes much further into motors, decks and models than this page can. For a home gym
+            that does not need to meet commercial duty, the <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> are the better starting point.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Pieces of Commercial Gym Equipment</h2>
+          <h2>The 6 Best Pieces of Commercial Gym Equipment</h2>
 <p>
             Three cardio machines and three strength pieces. The specification line on each card
             carries only figures that the maker and at least one independent source agree on. For the
@@ -491,84 +458,71 @@ const schema = {
           </p>
           <p>
             These are not the only good choices in each category — Matrix, Precor, <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Technogym</a> and
-            others make excellent commercial equipment, as our guide to
-            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
-            sets out for cardio — but each pick here passed every check we
+            others make excellent commercial equipment, as our guide to <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a> sets out for cardio — but each pick here passed every check we
             set, and between them they cover what most small facilities need first.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose This Equipment</h2>
+          <h2>How We Chose This Equipment</h2>
 <p>
             We have not tested this equipment. The picks were made from manufacturer
             specification tables, dealer and retailer listings, warranty terms and independent
@@ -578,8 +532,7 @@ const schema = {
           <p>
             Five rules decided the list. <strong>An established commercial brand:</strong> each
             maker sells into gyms, teams or institutions, not only to homes. <strong>Currently
-            sold:</strong> each piece was listed for sale or for quotation on the maker's own site.
-            <strong>Agreement:</strong> the core figures had to match between the maker and an
+            sold:</strong> each piece was listed for sale or for quotation on the maker's own site. <strong>Agreement:</strong> the core figures had to match between the maker and an
             independent source; the Hammer Strength row's dimensions did not, so they are missing
             from its card. <strong>A published warranty</strong> or a clear route to one in the
             quote. <strong>No current safety action</strong> against the product.
@@ -598,9 +551,7 @@ const schema = {
             and T75 treadmills and Vision T9800, TF20, T40 and T80 treadmills — home models sold
             through specialty retailers, made between June 2007 and January 2024. The remedy is a
             free replacement locking power cord; until it is fitted, the CPSC notice says to make sure
-            the cord is fully inserted before each use. Our
-            <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix Fitness</a>
-            page covers the brand.</li>
+            the cord is fully inserted before each use. Our <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix Fitness</a> page covers the brand.</li>
             <li><strong>Matrix training cycles.</strong> In January 2025 certain Matrix-brand
             indoor cycles sold mainly to facilities were recalled because the seat can drop during
             use; the notice tells users to stop using them until a repair kit is fitted.</li>
@@ -621,7 +572,7 @@ const schema = {
         </div>
 
         <div id="what-commercial-means" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What "Commercial" Actually Means</h2>
+          <h2>What "Commercial" Actually Means</h2>
 <p>
             There is no single legal definition of commercial fitness equipment. In practice, the
             word means equipment designed and warrantied for use by many people, for many hours a
@@ -635,9 +586,7 @@ const schema = {
             size. That shows up in the motor (AC drives with a continuous rating rather than a
             headline peak), in the deck and rollers, and in the user-weight ratings — the <a href="/life-fitness-integrity-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life
             Fitness Integrity</a>+ is rated to 400 lb. The same logic applies to strength equipment:
-            heavier steel, bigger hardware, upholstery that tolerates daily cleaning. Our
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill for home</a>
-            guide explains how duty translates into the treadmill's components.
+            heavier steel, bigger hardware, upholstery that tolerates daily cleaning. Our <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill for home</a> guide explains how duty translates into the treadmill's components.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Serviceability</h3>
           <p>
@@ -665,7 +614,7 @@ const schema = {
         </div>
 
         <div id="warranties" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Commercial and Home Warranties Are Different Contracts</h2>
+          <h2>Commercial and Home Warranties Are Different Contracts</h2>
 <p>
             The same machine can carry two quite different warranties depending on where it is used
             and who bought it. Treat the warranty as part of the specification, and get the version
@@ -691,9 +640,7 @@ const schema = {
           <p>
             <strong>Labour is where the money goes.</strong> On a commercial treadmill, a technician
             visit can cost more than the part. A long parts warranty with a short labour warranty is
-            worth less than it looks; ask about service contracts and response times. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to read the small print, and most of it applies to any machine.
+            worth less than it looks; ask about service contracts and response times. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how to read the small print, and most of it applies to any machine.
           </p>
           <p>
             <strong>Maintenance is usually a condition.</strong> Commercial warranties typically
@@ -703,7 +650,7 @@ const schema = {
         </div>
 
         <div id="power-and-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Power, Floors and Space</h2>
+          <h2>Power, Floors and Space</h2>
 <p>
             <strong>Commercial treadmills often need a dedicated 20-amp circuit.</strong> Life
             Fitness specifies a dedicated 120-volt, 20-amp circuit for the Integrity+ treadmill, and
@@ -722,8 +669,7 @@ const schema = {
             problem; upstairs, in an apartment building or on a suspended office floor it can be. That
             is a question for a structural engineer or the building's management, not for a product
             page. Use rubber flooring or a platform under strength equipment, both to protect the floor
-            and to reduce noise — see our guide to
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.
+            and to reduce noise — see our guide to <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.
           </p>
           <p>
             <strong>Space.</strong> Plan for the machine plus its use clearance. Concept2 recommends a
@@ -735,7 +681,7 @@ const schema = {
         </div>
 
         <div id="safe-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Safe Use of Commercial Strength Equipment</h2>
+          <h2>Safe Use of Commercial Strength Equipment</h2>
 <p>
             Commercial strength equipment is built to take abuse, but most injuries around it come
             from set-up and habits rather than failures. A few rules apply to every facility,
@@ -761,13 +707,12 @@ const schema = {
           </ul>
           <p>
             For a deeper look at racks, including safety systems and how to choose one for a home
-            space, see our guide to the
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">best squat racks for home gyms</a>.
+            space, see our guide to the <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">best squat racks for home gyms</a>.
           </p>
         </div>
 
         <div id="liability" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Facilities: Liability, Insurance and Records</h2>
+          <h2>Facilities: Liability, Insurance and Records</h2>
 <p>
             The moment equipment is used by people other than you — clients, residents, employees,
             members — the questions change. This section is general and not legal or insurance
@@ -795,13 +740,11 @@ const schema = {
         </div>
 
         <div id="used-refurbished" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Buying Used or Refurbished Commercial Equipment</h2>
+          <h2>Buying Used or Refurbished Commercial Equipment</h2>
 <p>
             Used commercial equipment is one of the better bargains in fitness, because gyms replace
             machines on a cycle rather than when they fail, and well-built equipment has years left in
-            it. It is also where most of the risk sits. Our guide to
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills</a>
-            covers the treadmill case in detail; the principles carry across.
+            it. It is also where most of the risk sits. Our guide to <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills</a> covers the treadmill case in detail; the principles carry across.
           </p>
           <ul>
             <li><strong>Know the three grades.</strong> "Used" or "as is" means sold as found.
@@ -820,16 +763,12 @@ const schema = {
             an electronic treadmill.</li>
           </ul>
           <p>
-            Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
-            gives the inspection steps, and the
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill for home</a>
-            guide covers whether an ex-gym machine suits a house at all.
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a> gives the inspection steps, and the <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill for home</a> guide covers whether an ex-gym machine suits a house at all.
           </p>
         </div>
 
         <div id="by-setting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Garage, Studio, Building or Office: What to Prioritise</h2>
+          <h2>Garage, Studio, Building or Office: What to Prioritise</h2>
 <p>
             The same six pieces suit very different settings in different orders. A rough guide:
           </p>
@@ -858,22 +797,19 @@ const schema = {
           </p>
           <p>
             Whatever the setting, the brands behind our treadmill pick have their own pages on this
-            site: see <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness</a>
-            for the brand's commercial and home lines.
+            site: see <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness</a> for the brand's commercial and home lines.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When Home-Grade Equipment Is the Better Buy</h2>
+          <h2>When Home-Grade Equipment Is the Better Buy</h2>
 <p>
             Commercial equipment is not automatically better for everyone. It is heavier, larger,
             pricier and, for a treadmill, more demanding to install.
           </p>
           <p>
             <strong>If one or two people will use it,</strong> a good home machine with a long warranty
-            will usually serve as well for far less, and fit through the door. Our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            guide covers the strongest home options.
+            will usually serve as well for far less, and fit through the door. Our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> guide covers the strongest home options.
           </p>
           <p>
             <strong>If you cannot provide a dedicated 20-amp circuit,</strong> a commercial
@@ -882,152 +818,163 @@ const schema = {
           </p>
           <p>
             <strong>If you are short of space,</strong> adjustable dumbbells and a compact rack may
-            beat a full commercial set; see our guide to
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>.
-            For a single machine that does much of what a plate-loaded row does, look at our
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machines guide</a>.
+            beat a full commercial set; see our guide to <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>.
+            For a single machine that does much of what a plate-loaded row does, look at our <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machines guide</a>.
           </p>
           <p>
             <strong>If you have a health condition,</strong> the right equipment depends on advice
             from a qualified professional, not on its grade. We review equipment; this is not medical
-            advice. For the wider picture, start at our
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
+            advice. For the wider picture, start at our <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between commercial and home gym equipment?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Commercial equipment is designed, warrantied and serviced for many users and long daily hours. That usually means heavier frames, motors with continuous ratings, parts that can be replaced on site, published installation requirements and dealer service. Home equipment is designed around one household. The word commercial on a home product listing does not by itself mean any of this, so check the warranty and specifications.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do commercial treadmills need a special outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Many do. Life Fitness, for example, specifies a dedicated 120-volt, 20-amp circuit for its Integrity+ treadmill, and a 20-amp plug will not fit an ordinary 15-amp socket. Check the installation requirements for the exact model before you buy, and have a licensed electrician install or confirm the circuit. Do not use an extension cord or adapter.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use commercial gym equipment at home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if your home can take it. The common obstacles are a dedicated 20-amp circuit for a treadmill, the weight on an upstairs floor, doorways and stairs for delivery, and ceiling height for racks. Also check which warranty applies when commercial equipment is used at home, because terms can differ from those offered to facilities.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is used commercial gym equipment worth buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, particularly strength equipment, which has few wear parts. Treadmills and electronic cardio carry more risk. Buy from a seller who says exactly what was replaced and gives a written warranty, check the serial number against CPSC recalls, confirm parts are still available, and budget for freight, installation and power. The original warranty usually does not transfer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do commercial gym equipment makers not show prices?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Facility equipment is usually sold through dealers by quote, with delivery, installation, warranty terms and service plans negotiated together. Prices also vary with consoles, finishes and quantities. Some makers publish prices for the same or similar equipment on home stores, which is useful for comparison. A price on request is normal in this market, not a warning sign.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need insurance for an apartment or office gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Almost certainly some form of cover is involved, but the details depend on the building, the users and your location, so speak to an insurer or broker before you buy equipment. They may have requirements about equipment type, supervision, signage, waivers and maintenance records. Legal advice on access rules and waivers is also worth taking. This is general information, not advice.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Commercial Gym Equipment</h2>
+          <p>Commercial equipment rarely fails its buyers by breaking. It fails them by not fitting the room, the circuit, the warranty or the service arrangements they assumed.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering a commercial treadmill before checking the circuit</h3>
+              <p>Many commercial treadmills need a dedicated 20-amp circuit, and the plug will not fit an ordinary socket. People discover this on delivery day. Read the installation requirements before you order, have an electrician confirm or install the circuit, and never run the machine from an extension cord or adapter while you wait.</p>
+            </li>
+            <li>
+              <h3>Assuming the warranty covers how you use it</h3>
+              <p>A home warranty may not cover a machine used by clients, residents or employees, and a facility warranty may be conditional on scheduled maintenance. Ask which warranty applies to your setting, get it in writing with the quote, and keep a maintenance log from the first day so you can show the conditions were met.</p>
+            </li>
+            <li>
+              <h3>Buying used without a recall or parts check</h3>
+              <p>Commercial recalls are often handled by contacting facility owners directly, so a resold machine may never have been fixed, as the Matrix power-cord recall shows. Check every serial number against the CPSC database and the maker, confirm parts are still supplied, and ask exactly what a refurbisher replaced before you pay.</p>
+            </li>
+            <li>
+              <h3>Treating rated capacity as a target</h3>
+              <p>A rack, bench or machine capacity is the maker's figure under its own conditions, and many racks publish none. Bolt racks down as the maker specifies, use safeties or spotter arms on every heavy set, and get advice on floor loading before installing heavy strength equipment upstairs. The safest set-up is the one that never relies on the maximum.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Commercial Gym Equipment</h2>
-          <p class="text-gray-700 leading-relaxed">Commercial equipment rarely fails its buyers by breaking. It fails them by not fitting the room, the circuit, the warranty or the service arrangements they assumed.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a commercial treadmill before checking the circuit</h3>
-              <p class="text-gray-700 text-sm m-0">Many commercial treadmills need a dedicated 20-amp circuit, and the plug will not fit an ordinary socket. People discover this on delivery day. Read the installation requirements before you order, have an electrician confirm or install the circuit, and never run the machine from an extension cord or adapter while you wait.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the warranty covers how you use it</h3>
-              <p class="text-gray-700 text-sm m-0">A home warranty may not cover a machine used by clients, residents or employees, and a facility warranty may be conditional on scheduled maintenance. Ask which warranty applies to your setting, get it in writing with the quote, and keep a maintenance log from the first day so you can show the conditions were met.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying used without a recall or parts check</h3>
-              <p class="text-gray-700 text-sm m-0">Commercial recalls are often handled by contacting facility owners directly, so a resold machine may never have been fixed, as the Matrix power-cord recall shows. Check every serial number against the CPSC database and the maker, confirm parts are still supplied, and ask exactly what a refurbisher replaced before you pay.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating rated capacity as a target</h3>
-              <p class="text-gray-700 text-sm m-0">A rack, bench or machine capacity is the maker's figure under its own conditions, and many racks publish none. Bolt racks down as the maker specifies, use safeties or spotter arms on every heavy set, and get advice on floor loading before installing heavy strength equipment upstairs. The safest set-up is the one that never relies on the maximum.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Motors, decks, power and models: the treadmill side of commercial equipment in depth.</p>
-            </a>
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for Home Gyms</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Power racks, half racks and squat stands, with the safety systems that matter.</p>
-            </a>
-            <a href="/refurbished-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Refurbished Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to buy a used or remanufactured machine without inheriting its problems.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy commercial equipment for duty, service and fit, not for the
-            label.</strong> For most small facilities that means a rower such as the
-            <strong class="text-white">Concept2 RowErg</strong> and a bike such as the
-            <strong class="text-white">Keiser M3i</strong> first, a bolted rack like the
-            <strong class="text-white">Rogue RML-390C</strong> with good dumbbells, and a commercial
+            label.</strong> For most small facilities that means a rower such as the <strong class="text-white">Concept2 RowErg</strong> and a bike such as the <strong class="text-white">Keiser M3i</strong> first, a bolted rack like the <strong class="text-white">Rogue RML-390C</strong> with good dumbbells, and a commercial
             treadmill such as the <strong class="text-white">Life Fitness Integrity+</strong> only once
             the 20-amp circuit, the space and the service contract are in place.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Before you sign anything, get the installation requirements, the warranty that applies to
             your setting and the service terms in writing, and check recalls on anything used. If the
-            treadmill is the centre of your plans, our
-            <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial treadmills guide</a>
-            is the next read.
+            treadmill is the centre of your plans, our <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial treadmills guide</a> is the next read.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/commercial-treadmills/">Commercial Treadmills</a></li>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for Home Gyms</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the difference between commercial and home gym equipment?</h3></summary>
+            <p class="faq-a">
+              Commercial equipment is designed, warrantied and serviced for many users and long daily hours. That usually means heavier frames, motors with continuous ratings, parts that can be replaced on site, published installation requirements and dealer service. Home equipment is designed around one household. The word commercial on a home product listing does not by itself mean any of this, so check the warranty and specifications.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Do commercial treadmills need a special outlet?</h3></summary>
+            <p class="faq-a">
+              Many do. Life Fitness, for example, specifies a dedicated 120-volt, 20-amp circuit for its Integrity+ treadmill, and a 20-amp plug will not fit an ordinary 15-amp socket. Check the installation requirements for the exact model before you buy, and have a licensed electrician install or confirm the circuit. Do not use an extension cord or adapter.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can I use commercial gym equipment at home?</h3></summary>
+            <p class="faq-a">
+              Yes, if your home can take it. The common obstacles are a dedicated 20-amp circuit for a treadmill, the weight on an upstairs floor, doorways and stairs for delivery, and ceiling height for racks. Also check which warranty applies when commercial equipment is used at home, because terms can differ from those offered to facilities.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is used commercial gym equipment worth buying?</h3></summary>
+            <p class="faq-a">
+              Often, particularly strength equipment, which has few wear parts. Treadmills and electronic cardio carry more risk. Buy from a seller who says exactly what was replaced and gives a written warranty, check the serial number against CPSC recalls, confirm parts are still available, and budget for freight, installation and power. The original warranty usually does not transfer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do commercial gym equipment makers not show prices?</h3></summary>
+            <p class="faq-a">
+              Facility equipment is usually sold through dealers by quote, with delivery, installation, warranty terms and service plans negotiated together. Prices also vary with consoles, finishes and quantities. Some makers publish prices for the same or similar equipment on home stores, which is useful for comparison. A price on request is normal in this market, not a warning sign.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need insurance for an apartment or office gym?</h3></summary>
+            <p class="faq-a">
+              Almost certainly some form of cover is involved, but the details depend on the building, the users and your location, so speak to an insurer or broker before you buy equipment. They may have requirements about equipment type, supervision, signage, waivers and maintenance records. Legal advice on access rules and waivers is also worth taking. This is general information, not advice.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/commercial-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Commercial Treadmills</div>
+            <p class="c-blurb">Motors, decks, power and models: the treadmill side of commercial equipment in depth.</p>
+          </a>
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Best Squat Racks for Home Gyms</div>
+            <p class="c-blurb">Power racks, half racks and squat stands, with the safety systems that matter.</p>
+          </a>
+          <a href="/refurbished-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Refurbished Treadmills</div>
+            <p class="c-blurb">How to buy a used or remanufactured machine without inheriting its problems.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

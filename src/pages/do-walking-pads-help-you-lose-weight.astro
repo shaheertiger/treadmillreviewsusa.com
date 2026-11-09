@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Do Walking Pads Help You Lose Weight? (2026): The Honest Arithmetic";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/do-walking-pads-help-you-lose-weight/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Calorie Table", link: "#calories-per-hour" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-dowalkingpadshelpyouloseweight" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-dowalkingpadshelpyouloseweight)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Do Walking Pads Help You Lose Weight?</h1>
+      <p class="ed-dek">
+        A walking pad can help, in the modest way that any extra movement helps: it turns some sitting time into slow walking time. It is not a fat-burning machine, and the arithmetic shows why. Here are the calorie estimates, what a working day of desk walking realistically adds up to, and where a walking pad fits alongside the things that matter more.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Do Walking Pads Help <span class="text-[#5AA9FF]">You Lose Weight?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A walking pad can help, in the modest way that any extra movement helps: it turns some sitting time into slow walking time. It is not a fat-burning machine, and the arithmetic shows why. Here are the calorie estimates, what a working day of desk walking realistically adds up to, and where a walking pad fits alongside the things that matter more.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#calories-per-hour" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Calories Per Hour Table
-          </a>
-          <a href="#work-day" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            A Work Day, Added Up
-          </a>
-        </div>
+        <a href="#calories-per-hour" class="btn-ghost">Calories Per Hour Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and walking pads. This page explains the energy arithmetic behind slow walking — it is
-          not medical, coaching or nutrition advice, and we are not qualified to give any of
-          those. Weight is affected by diet, sleep, medication, hormones and health conditions as
-          well as activity; if you are trying to lose a significant amount of weight, have a
-          heart, joint, metabolic or other condition, are pregnant, or have any concern about
-          exercise, talk to a doctor or registered dietitian before setting a plan.
-          <strong class="text-gray-900">On the figures below:</strong> calorie numbers are
-          rounded estimates from standard MET arithmetic, not measurements, and individuals can
-          differ from them considerably.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Do Walking Pads Help You Lose Weight? The Short Answer</a>
-          <a href="#calories-per-hour" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Many Calories Does a Walking Pad Burn per Hour?</a>
-          <a href="#work-day" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Does a Work Day on a Walking Pad Add Up To?</a>
-          <a href="#neat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Is NEAT, and Why Does It Suit a Walking Pad?</a>
-          <a href="#diet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Is Diet a Bigger Lever Than the Walking Pad?</a>
-          <a href="#no-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Does the Lack of Incline Matter?</a>
-          <a href="#how-long" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Long Before a Walking Pad Makes a Difference?</a>
-          <a href="#get-the-most" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How Do You Get the Most From a Walking Pad for Weight Loss?</a>
-          <a href="#pad-or-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Is a Walking Pad or a Treadmill Better for Weight Loss?</a>
-          <a href="#beyond-the-scale" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Does a Walking Pad Do Even If the Scale Does Not Move?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Walking pads are sold with a lot of quiet promise: walk while you work and the weight takes
           care of itself. The honest version is less exciting and more useful. A walking pad
           lets you replace some sitting with slow walking, and slow walking costs more energy
@@ -210,8 +146,38 @@ const schema = {
           machine. This page does the arithmetic and then puts it in context.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
+          and walking pads. This page explains the energy arithmetic behind slow walking — it is
+          not medical, coaching or nutrition advice, and we are not qualified to give any of
+          those. Weight is affected by diet, sleep, medication, hormones and health conditions as
+          well as activity; if you are trying to lose a significant amount of weight, have a
+          heart, joint, metabolic or other condition, are pregnant, or have any concern about
+          exercise, talk to a doctor or registered dietitian before setting a plan. <strong class="text-gray-900">On the figures below:</strong> calorie numbers are
+          rounded estimates from standard MET arithmetic, not measurements, and individuals can
+          differ from them considerably.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Do Walking Pads Help You Lose Weight? The Short Answer</a></li>
+            <li><a href="#calories-per-hour">How Many Calories Does a Walking Pad Burn per Hour?</a></li>
+            <li><a href="#work-day">What Does a Work Day on a Walking Pad Add Up To?</a></li>
+            <li><a href="#neat">What Is NEAT, and Why Does It Suit a Walking Pad?</a></li>
+            <li><a href="#diet">Why Is Diet a Bigger Lever Than the Walking Pad?</a></li>
+            <li><a href="#no-incline">Why Does the Lack of Incline Matter?</a></li>
+            <li><a href="#how-long">How Long Before a Walking Pad Makes a Difference?</a></li>
+            <li><a href="#get-the-most">How Do You Get the Most From a Walking Pad for Weight Loss?</a></li>
+            <li><a href="#pad-or-treadmill">Is a Walking Pad or a Treadmill Better for Weight Loss?</a></li>
+            <li><a href="#beyond-the-scale">What Does a Walking Pad Do Even If the Scale Does Not Move?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Do Walking Pads Help You Lose Weight? The Short Answer</h2>
+          <h2>Do Walking Pads Help You Lose Weight? The Short Answer</h2>
 <p>
             <strong>Yes, a little, if you use one consistently and your eating does not quietly
             rise to match.</strong> Slow walking at 2 mph burns, by standard estimates, roughly 75
@@ -225,9 +191,7 @@ const schema = {
             is the kind of movement many people find easiest to keep doing. What it is not is
             vigorous exercise. Most walking pads run flat, and most people walk on them slowly
             enough to keep typing, which keeps the energy cost per hour modest. The calorie
-            numbers on this page are estimates from the same MET arithmetic our
-            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>
-            reference uses, applied to the slow speeds walking pads are actually used at.
+            numbers on this page are estimates from the same MET arithmetic our <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a> reference uses, applied to the slow speeds walking pads are actually used at.
           </p>
           <p>
             Three things decide whether a walking pad helps you lose weight in practice. First,
@@ -241,7 +205,7 @@ const schema = {
         </div>
 
         <div id="calories-per-hour" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Many Calories Does a Walking Pad Burn per Hour?</h2>
+          <h2>How Many Calories Does a Walking Pad Burn per Hour?</h2>
 <p>
             The table below gives rounded estimates for one hour of continuous flat walking at
             the speeds walking pads are typically used at. Each cell shows two figures: the gross
@@ -294,7 +258,7 @@ const schema = {
         </div>
 
         <div id="work-day" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Does a Work Day on a Walking Pad Add Up To?</h2>
+          <h2>What Does a Work Day on a Walking Pad Add Up To?</h2>
 <p>
             Per hour, the numbers are small. Over a working week they become more interesting,
             which is the whole case for a walking pad. Here is the arithmetic for a 160 lb person
@@ -345,7 +309,7 @@ const schema = {
         </div>
 
         <div id="neat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Is NEAT, and Why Does It Suit a Walking Pad?</h2>
+          <h2>What Is NEAT, and Why Does It Suit a Walking Pad?</h2>
 <p>
             NEAT stands for non-exercise activity thermogenesis: the energy you spend on
             everything that is not sleeping, eating or deliberate exercise. Walking to the kitchen,
@@ -383,7 +347,7 @@ const schema = {
         </div>
 
         <div id="diet" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Is Diet a Bigger Lever Than the Walking Pad?</h2>
+          <h2>Why Is Diet a Bigger Lever Than the Walking Pad?</h2>
 <p>
             Because the numbers on the eating side are larger and faster to change. The extra cost
             of an hour at 2 mph is, for a typical adult, in the region of 75 to 110 calories. A
@@ -403,9 +367,7 @@ const schema = {
             scale — fitness, mood, and simply not sitting all day — and many people find that
             moving more makes it easier to keep other healthy habits. The point is about order of
             magnitude: if weight loss is the main goal, the eating side is where most of the
-            result will come from, and the walking pad is a useful supporting player. Our page on
-            <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>
-            covers why fat loss happens across the whole body, at the rate the overall energy
+            result will come from, and the walking pad is a useful supporting player. Our page on <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a> covers why fat loss happens across the whole body, at the rate the overall energy
             balance allows, regardless of which machine you use.
           </p>
           <p>
@@ -417,7 +379,7 @@ const schema = {
         </div>
 
         <div id="no-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Why Does the Lack of Incline Matter?</h2>
+          <h2>Why Does the Lack of Incline Matter?</h2>
 <p>
             Because incline is the cheapest way to make walking harder, and most walking pads do
             not have it. On a full treadmill, raising the grade at the same speed increases the
@@ -439,9 +401,7 @@ const schema = {
             options add some flexibility, but the low-intensity nature of desk walking does not
             change: the moment you need to work at the keyboard, you are back at a slow, flat
             pace. If your aim is harder sessions — incline walks, intervals, running — a full
-            treadmill is the better tool, and our comparison of a
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus a treadmill</a>
-            sets out the differences in detail.
+            treadmill is the better tool, and our comparison of a <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus a treadmill</a> sets out the differences in detail.
           </p>
           <p>
             Low intensity is not a flaw in itself. Plenty of people get more total activity from
@@ -453,7 +413,7 @@ const schema = {
         </div>
 
         <div id="how-long" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Long Before a Walking Pad Makes a Difference?</h2>
+          <h2>How Long Before a Walking Pad Makes a Difference?</h2>
 <p>
             Slower than most people hope, and that is the honest expectation to set. At the scale
             of the table above — a few hundred to roughly a thousand extra calories a week for a
@@ -490,7 +450,7 @@ const schema = {
         </div>
 
         <div id="get-the-most" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How Do You Get the Most From a Walking Pad for Weight Loss?</h2>
+          <h2>How Do You Get the Most From a Walking Pad for Weight Loss?</h2>
 <p>
             The answer is mostly about hours of use, because that is the variable with the most
             room to move. A few practical points help.
@@ -525,7 +485,7 @@ const schema = {
         </div>
 
         <div id="pad-or-treadmill" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Is a Walking Pad or a Treadmill Better for Weight Loss?</h2>
+          <h2>Is a Walking Pad or a Treadmill Better for Weight Loss?</h2>
 <p>
             It depends on how you will actually use it, which is the only thing that matters for
             results. A full treadmill can do everything a walking pad can do and much more: incline
@@ -539,9 +499,7 @@ const schema = {
             slides away, and asks nothing of your schedule. For someone who works at a desk all day
             and will not reliably make time for a 45-minute workout, two hours of slow walking
             during work can add up to more weekly activity than the treadmill sessions they would
-            have skipped. Our roundup of
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            looks at the machines themselves, including noise and how they hold up to long daily
+            have skipped. Our roundup of <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> looks at the machines themselves, including noise and how they hold up to long daily
             use.
           </p>
           <p>
@@ -557,14 +515,12 @@ const schema = {
           </ul>
           <p>
             For structured treadmill sessions aimed at weight management — incline walks, steady
-            sessions and the rest — see our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a>
-            guide, which picks up where a walking pad leaves off.
+            sessions and the rest — see our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a> guide, which picks up where a walking pad leaves off.
           </p>
         </div>
 
         <div id="beyond-the-scale" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Does a Walking Pad Do Even If the Scale Does Not Move?</h2>
+          <h2>What Does a Walking Pad Do Even If the Scale Does Not Move?</h2>
 <p>
             Quite a lot, and it is worth knowing before you judge the purchase on weight alone.
             Long, unbroken periods of sitting are widely regarded as something to reduce, and
@@ -591,148 +547,160 @@ const schema = {
             not ease.
           </p>
           <p>
-            If you are still deciding whether to buy one at all, our
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            covers motor, deck size, noise and weight limits — the practical details that decide
+            If you are still deciding whether to buy one at all, our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> covers motor, deck size, noise and weight limits — the practical details that decide
             whether you will still be using it in a year.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many calories does a walking pad burn in an hour?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                By standard MET estimates, an hour of flat walking at 2 mph burns roughly 150 to 230 calories in total for adults between about 130 and 200 lb. The extra over sitting at a desk is roughly 75 to 110 calories. At 3 mph the extra rises to roughly 120 to 180. These are estimates, and individuals can differ from them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you lose weight just by walking on a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Possibly, but slowly, and only if your eating does not rise to match. Two hours a day at 2 mph adds very roughly 900 extra calories a week for a 160 lb person. That is helpful over months, yet it is easily cancelled by a daily snack. Most people who lose weight successfully combine more movement with changes to diet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should I walk on a walking pad each day?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start with 20 to 30-minute blocks and build towards one to two hours spread across the day if your feet and legs are comfortable. Several shorter blocks suit most people better than one long stint. Wear supportive shoes, keep the speed at a level where you can still work, and increase the total gradually over weeks.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should I walk on a walking pad to lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The fastest speed you can sustain while doing your work, which for most people is around 1.5 to 2.5 mph. Faster burns more per hour, but a speed you cannot keep up for long burns less in total. Adding a short brisk block away from the keyboard is a useful way to raise the daily figure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad as good as a treadmill for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Per hour, no. A treadmill allows incline and faster speeds, which cost far more energy than slow flat walking. In total, it depends on use. Someone who walks two hours a day at a desk may accumulate more activity than someone who rarely uses a treadmill. The better machine is the one you will use most.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are walking pad calorie counts accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Treat them as rough guesses. Many displays assume a body weight unless you enter yours, and most report gross calories, which include what you would have burned sitting still. Wrist trackers are estimates too. Use the figures to compare your own days with each other rather than as a precise count to eat against.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Using a Walking Pad for Weight Loss</h2>
+          <p>Walking pads are simple to use. Most of the mistakes come from expecting the wrong thing of them, or letting the rest of the day undo the gain.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Eating back the calories on the display</h3>
+              <p>The console figure is usually gross and often based on an assumed weight, so it overstates the extra you burned over sitting. Treating it as permission for an extra snack can erase the whole session. Ignore the number for eating purposes and judge progress by the weekly trend in weight and waist.</p>
+            </li>
+            <li>
+              <h3>Letting other movement quietly drop</h3>
+              <p>Two hours of desk walking can make an evening on the sofa feel deserved, and the lunchtime walk can fall away. If total daily steps stay flat, the walking pad is only moving activity around. Keep your other walking as it was and check total steps every week or two to make sure the pad is adding.</p>
+            </li>
+            <li>
+              <h3>Building up too fast in socks</h3>
+              <p>Going from no walking to three hours on the first day, often in socks or slippers, is a common route to sore feet and calves and an abandoned habit. Start with short blocks, wear supportive shoes, and add time over several weeks. A walking pad only helps if you are still using it in month three.</p>
+            </li>
+            <li>
+              <h3>Judging it on the scale after two weeks</h3>
+              <p>At the scale of a few hundred extra calories a week, any change from walking alone shows over months, and water swings hide it at first. Give it a fair trial of at least two to three months, watch weekly averages rather than single weigh-ins, and notice the other changes that tend to arrive sooner.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Using a Walking Pad for Weight Loss</h2>
-          <p class="text-gray-700 leading-relaxed">Walking pads are simple to use. Most of the mistakes come from expecting the wrong thing of them, or letting the rest of the day undo the gain.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Eating back the calories on the display</h3>
-              <p class="text-gray-700 text-sm m-0">The console figure is usually gross and often based on an assumed weight, so it overstates the extra you burned over sitting. Treating it as permission for an extra snack can erase the whole session. Ignore the number for eating purposes and judge progress by the weekly trend in weight and waist.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting other movement quietly drop</h3>
-              <p class="text-gray-700 text-sm m-0">Two hours of desk walking can make an evening on the sofa feel deserved, and the lunchtime walk can fall away. If total daily steps stay flat, the walking pad is only moving activity around. Keep your other walking as it was and check total steps every week or two to make sure the pad is adding.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Building up too fast in socks</h3>
-              <p class="text-gray-700 text-sm m-0">Going from no walking to three hours on the first day, often in socks or slippers, is a common route to sore feet and calves and an abandoned habit. Start with short blocks, wear supportive shoes, and add time over several weeks. A walking pad only helps if you are still using it in month three.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging it on the scale after two weeks</h3>
-              <p class="text-gray-700 text-sm m-0">At the scale of a few hundred extra calories a week, any change from walking alone shows over months, and water swings hide it at first. Give it a fair trial of at least two to three months, watch weekly averages rather than single weigh-ins, and notice the other changes that tend to arrive sooner.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Walking and Weight Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Desk Walking</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The Best Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Walking pads tested at a desk, with the limits stated up front.</p>
-            </a>
-            <a href="/treadmill-workout-for-weight-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Weight Loss</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workout for Weight Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Structured sessions, incline over speed, and why consistency wins.</p>
-            </a>
-            <a href="/treadmill-calories-burned/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calories Burned</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Estimate tables by speed, incline and weight, and how the arithmetic works.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A walking pad helps you lose weight only modestly, and only if
             you use it consistently and do not eat more to match.</strong> By standard estimates,
             slow walking at 2 mph costs roughly 75 to 110 calories an hour more than sitting for
             most adults, so two hours every working day adds up over months, while diet remains
             the bigger lever.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Think of it as a way to turn sitting time into walking time rather than as a workout,
             keep your other movement where it was, and judge it over three months, not two
-            weeks. For harder, incline-based sessions, a full treadmill is the better tool; see our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#5AA9FF] font-bold no-underline">walking pad versus treadmill</a>
-            comparison.
+            weeks. For harder, incline-based sessions, a full treadmill is the better tool; see our <a href="/walking-pad-vs-treadmill/" class="text-[#5AA9FF] font-bold no-underline">walking pad versus treadmill</a> comparison.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/under-desk-treadmills/">The Best Under-Desk Treadmills</a></li>
+            <li><a href="/treadmill-workout-for-weight-loss/">Treadmill Workout for Weight Loss</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How many calories does a walking pad burn in an hour?</h3></summary>
+            <p class="faq-a">
+              By standard MET estimates, an hour of flat walking at 2 mph burns roughly 150 to 230 calories in total for adults between about 130 and 200 lb. The extra over sitting at a desk is roughly 75 to 110 calories. At 3 mph the extra rises to roughly 120 to 180. These are estimates, and individuals can differ from them.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you lose weight just by walking on a walking pad?</h3></summary>
+            <p class="faq-a">
+              Possibly, but slowly, and only if your eating does not rise to match. Two hours a day at 2 mph adds very roughly 900 extra calories a week for a 160 lb person. That is helpful over months, yet it is easily cancelled by a daily snack. Most people who lose weight successfully combine more movement with changes to diet.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long should I walk on a walking pad each day?</h3></summary>
+            <p class="faq-a">
+              Start with 20 to 30-minute blocks and build towards one to two hours spread across the day if your feet and legs are comfortable. Several shorter blocks suit most people better than one long stint. Wear supportive shoes, keep the speed at a level where you can still work, and increase the total gradually over weeks.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What speed should I walk on a walking pad to lose weight?</h3></summary>
+            <p class="faq-a">
+              The fastest speed you can sustain while doing your work, which for most people is around 1.5 to 2.5 mph. Faster burns more per hour, but a speed you cannot keep up for long burns less in total. Adding a short brisk block away from the keyboard is a useful way to raise the daily figure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad as good as a treadmill for weight loss?</h3></summary>
+            <p class="faq-a">
+              Per hour, no. A treadmill allows incline and faster speeds, which cost far more energy than slow flat walking. In total, it depends on use. Someone who walks two hours a day at a desk may accumulate more activity than someone who rarely uses a treadmill. The better machine is the one you will use most.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are walking pad calorie counts accurate?</h3></summary>
+            <p class="faq-a">
+              Treat them as rough guesses. Many displays assume a body weight unless you enter yours, and most report gross calories, which include what you would have burned sitting still. Wrist trackers are estimates too. Use the figures to compare your own days with each other rather than as a precise count to eat against.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Walking and Weight Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Desk Walking</div>
+            <div class="c-title">The Best Under-Desk Treadmills</div>
+            <p class="c-blurb">Walking pads tested at a desk, with the limits stated up front.</p>
+          </a>
+          <a href="/treadmill-workout-for-weight-loss/" class="card">
+            <div class="c-kicker">Weight Loss</div>
+            <div class="c-title">Treadmill Workout for Weight Loss</div>
+            <p class="c-blurb">Structured sessions, incline over speed, and why consistency wins.</p>
+          </a>
+          <a href="/treadmill-calories-burned/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Calories Burned</div>
+            <p class="c-blurb">Estimate tables by speed, incline and weight, and how the arithmetic works.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

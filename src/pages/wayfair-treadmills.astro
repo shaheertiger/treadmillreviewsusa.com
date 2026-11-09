@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Wayfair Treadmill Buying Guide (2026): Brands and Returns";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/wayfair-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "How to Read a Listing", link: "#reading-a-listing" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-wayfairtreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-wayfairtreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Buying a Wayfair Treadmill: What You Are Actually Buying</h1>
+      <p class="ed-dek">
+        Wayfair sells treadmills the way it sells sofas: as the retailer, with suppliers shipping most orders straight to your door and many products presented under Wayfair’s own house labels. That works well for some treadmills and badly for others, and the listing usually tells you which — if you know where to look.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Buying a Wayfair Treadmill: <span class="text-[#5AA9FF]">What You Are Actually Buying</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Wayfair sells treadmills the way it sells sofas: as the retailer, with suppliers shipping most orders straight to your door and many products presented under Wayfair’s own house labels. That works well for some treadmills and badly for others, and the listing usually tells you which — if you know where to look.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#reading-a-listing" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Reading a Listing
-          </a>
-          <a href="#returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Returns and Plans
-          </a>
-        </div>
+        <a href="#reading-a-listing" class="btn-ghost">Reading a Listing</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Wayfair. On 14 October 2026 we checked Wayfair’s product listings and
-          help-centre text, its annual report for 2025 filed with the SEC in February 2026, its
-          supplier site, and the protection-plan administrator’s Wayfair page, and compared them with
-          independent guides to Wayfair’s policies. Return windows, fees, delivery options, plan
-          terms and the treadmills offered change over time and can differ by listing. Where this page
-          describes how things typically work, check the current terms on the listing and in
-          Wayfair’s help centre before you buy. Prices are not quoted as current.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Treadmill on Wayfair? The Short Answer</a>
-          <a href="#how-wayfair-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Wayfair Sells a Treadmill: Retailer, Suppliers and Drop-Ship</a>
-          <a href="#house-brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. House Brands, Supplier Brands and Name Brands</a>
-          <a href="#reading-a-listing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Read a Wayfair Treadmill Listing</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Delivery: How a Wayfair Treadmill Reaches You</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Returns: The 30-Day Window and What It Costs on a Treadmill</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Warranty: Who Actually Covers a Wayfair Treadmill</a>
-          <a href="#protection-plans" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Wayfair Protection Plans on a Treadmill</a>
-          <a href="#prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Judging a Wayfair Treadmill Price</a>
-          <a href="#compare" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Wayfair Compared With Other Places to Buy a Treadmill</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Before You Buy a Treadmill on Wayfair</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           This page does not list the treadmills Wayfair is selling now. The range is large, changes
           constantly and is mostly supplied by other companies, so any list would be out of date
           within weeks. It covers how Wayfair sells a treadmill — who makes it, who ships it and who
@@ -208,8 +145,38 @@ const schema = {
           powered machine.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site is independent and
+          not affiliated with Wayfair. On 14 October 2026 we checked Wayfair’s product listings and
+          help-centre text, its annual report for 2025 filed with the SEC in February 2026, its
+          supplier site, and the protection-plan administrator’s Wayfair page, and compared them with
+          independent guides to Wayfair’s policies. Return windows, fees, delivery options, plan
+          terms and the treadmills offered change over time and can differ by listing. Where this page
+          describes how things typically work, check the current terms on the listing and in
+          Wayfair’s help centre before you buy. Prices are not quoted as current.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a Treadmill on Wayfair? The Short Answer</a></li>
+            <li><a href="#how-wayfair-works">How Wayfair Sells a Treadmill: Retailer, Suppliers and Drop-Ship</a></li>
+            <li><a href="#house-brands">House Brands, Supplier Brands and Name Brands</a></li>
+            <li><a href="#reading-a-listing">How to Read a Wayfair Treadmill Listing</a></li>
+            <li><a href="#delivery">Delivery: How a Wayfair Treadmill Reaches You</a></li>
+            <li><a href="#returns">Returns: The 30-Day Window and What It Costs on a Treadmill</a></li>
+            <li><a href="#warranty">Warranty: Who Actually Covers a Wayfair Treadmill</a></li>
+            <li><a href="#protection-plans">Wayfair Protection Plans on a Treadmill</a></li>
+            <li><a href="#prices">Judging a Wayfair Treadmill Price</a></li>
+            <li><a href="#compare">Wayfair Compared With Other Places to Buy a Treadmill</a></li>
+            <li><a href="#checklist">Before You Buy a Treadmill on Wayfair</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Treadmill on Wayfair? The Short Answer</h2>
+          <h2>Should You Buy a Treadmill on Wayfair? The Short Answer</h2>
 <p>
             <strong>A Wayfair treadmill can be a sensible buy if the listing names a manufacturer you
             can identify, its specification sheet actually describes a treadmill, and you have read
@@ -230,14 +197,12 @@ const schema = {
             scattering of house-label listings. The named-brand listings are usable if you apply the
             checks on this page. The house-label ones need much more caution: when we checked the
             "Compact Foldable Electric Treadmill" listings under seven Wayfair labels, every
-            specification sheet described furniture. Our
-            <a href="/east-urban-home-treadmill/" class="text-[#0F62FE] font-medium">East Urban Home treadmill check</a>
-            sets out what we found.
+            specification sheet described furniture. Our <a href="/east-urban-home-treadmill/" class="text-[#0F62FE] font-medium">East Urban Home treadmill check</a> sets out what we found.
           </p>
         </div>
 
         <div id="how-wayfair-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Wayfair Sells a Treadmill: Retailer, Suppliers and Drop-Ship</h2>
+          <h2>How Wayfair Sells a Treadmill: Retailer, Suppliers and Drop-Ship</h2>
 <p>
             Wayfair’s annual report for 2025 describes a business with more than 40 million products
             from approximately 20 thousand suppliers. Three parts of that model matter to a treadmill
@@ -250,9 +215,7 @@ const schema = {
             delivery, sets the price and selects the supplier. That is different from a marketplace
             listing on Amazon, where a third-party seller can be the merchant and set its own terms.
             On Wayfair, your order, your return and your first point of contact are with Wayfair. Our
-            guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            explains the contrast.
+            guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> explains the contrast.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Most orders ship from the supplier</h3>
           <p>
@@ -273,14 +236,12 @@ const schema = {
           <p>
             The report also says Wayfair operated 12 physical stores in four states at the end of
             2025. For most buyers, then, a Wayfair treadmill is bought from the listing alone, without
-            a chance to stand on it first. If trying a machine matters to you, our guide to
-            <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">where to buy a treadmill near you</a>
-            covers the in-person options.
+            a chance to stand on it first. If trying a machine matters to you, our guide to <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">where to buy a treadmill near you</a> covers the in-person options.
           </p>
         </div>
 
         <div id="house-brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. House Brands, Supplier Brands and Name Brands</h2>
+          <h2>House Brands, Supplier Brands and Name Brands</h2>
 <p>
             Every treadmill on Wayfair carries a brand name on the listing, but those names fall into
             three quite different groups, and the group tells you more than the name does.
@@ -310,9 +271,7 @@ const schema = {
             We did not find the specialist brands that dominate our model reviews — NordicTrack,
             ProForm, Sole, Horizon, Bowflex — prominent in Wayfair’s treadmill results when we
             checked. If you want one of those, the maker’s own site, a specialist dealer or a large
-            general retailer is usually the more direct route, and our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            compares the channels.
+            general retailer is usually the more direct route, and our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> compares the channels.
           </p>
           <p>
             One listing summed up the overlap neatly: an East Urban Home <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium" data-autolink>weight bench</a> whose title also
@@ -322,7 +281,7 @@ const schema = {
         </div>
 
         <div id="reading-a-listing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Read a Wayfair Treadmill Listing</h2>
+          <h2>How to Read a Wayfair Treadmill Listing</h2>
 <p>
             Wayfair product pages follow a fixed layout. Reading it in the right order takes a few
             minutes and catches most of the problems.
@@ -342,9 +301,7 @@ const schema = {
             continuous or peak, speed range, incline and whether it is powered, maximum user weight,
             and folded size. Wayfair’s structured fields do not always include these, so they are
             often in the description or bullet points. If they are missing, ask; if the title, bullets
-            and specifications disagree, treat that as a reason to look elsewhere. Our
-            <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyer’s checklist</a>
-            explains what each figure should be for your use.
+            and specifications disagree, treat that as a reason to look elsewhere. Our <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyer’s checklist</a> explains what each figure should be for your use.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Read the warranty fields</h3>
           <p>
@@ -363,14 +320,12 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Read the reviews last, and carefully</h3>
           <p>
             Check that reviews describe the machine on the page, read the low-star ones first, and be
-            wary of a powered machine with no reviews at all. Our
-            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">guide to reading treadmill reviews</a>
-            covers what to look for.
+            wary of a powered machine with no reviews at all. Our <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">guide to reading treadmill reviews</a> covers what to look for.
           </p>
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Delivery: How a Wayfair Treadmill Reaches You</h2>
+          <h2>Delivery: How a Wayfair Treadmill Reaches You</h2>
 <p>
             Wayfair’s annual report says small-parcel items are delivered mainly by FedEx, and
             large-parcel items by third-party line-haul trucking and last-mile home delivery agents,
@@ -390,11 +345,7 @@ const schema = {
             and some items qualify for a fuller service that carries the item to a room and removes
             packaging. Check which applies before you order: a boxed folding treadmill can weigh more
             than one person should lift, and getting it up a flight of stairs is part of the cost of
-            the purchase. Our
-            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
-            explains the tiers, and
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>
-            covers getting it into place.
+            the purchase. Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a> explains the tiers, and <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a> covers getting it into place.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Inspect on arrival</h3>
           <p>
@@ -409,15 +360,13 @@ const schema = {
           <p>
             Many listings offer professional assembly as a paid add-on. Walking pads usually arrive
             built; folding treadmills usually need the upright and console attaching. If you build it
-            yourself, our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a>
-            walks through it — but read the returns section below first, because assembling a
+            yourself, our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a> walks through it — but read the returns section below first, because assembling a
             treadmill can affect whether you can send it back.
           </p>
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Returns: The 30-Day Window and What It Costs on a Treadmill</h2>
+          <h2>Returns: The 30-Day Window and What It Costs on a Treadmill</h2>
 <p>
             Wayfair’s help centre says it accepts returns for most items within 30 days of delivery,
             and that refunds may take up to 14 business days to process. Product listings repeat the
@@ -448,9 +397,7 @@ const schema = {
             charge on a heavy item and a question over its assembled condition. Before ordering, check
             the listing for a non-returnable flag, ask Wayfair what a return of that item would cost
             and whether it must be unassembled, and keep every piece of packaging until you are sure.
-            Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies guide</a>
-            compares Wayfair’s approach with other retailers’.
+            Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies guide</a> compares Wayfair’s approach with other retailers’.
           </p>
           <p>
             Wayfair’s supplier site describes the other side of the same process: the supplier
@@ -460,7 +407,7 @@ const schema = {
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Warranty: Who Actually Covers a Wayfair Treadmill</h2>
+          <h2>Warranty: Who Actually Covers a Wayfair Treadmill</h2>
 <p>
             Wayfair handles the sale and the return window. After that, the product warranty is the
             manufacturer’s — the supplier who made and shipped the machine. Wayfair’s listing fields
@@ -472,9 +419,7 @@ const schema = {
             manufacturer, keep the Wayfair order confirmation as proof of purchase, and note the
             serial number. On budget walking pads and folding treadmills one year of cover on the
             motor and parts is common; anything shorter on a powered machine deserves a second look.
-            Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            sets out what a reasonable minimum looks like at each price.
+            Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> sets out what a reasonable minimum looks like at each price.
           </p>
           <p>
             For a house-label treadmill, there may be no manufacturer you can contact directly. The
@@ -486,7 +431,7 @@ const schema = {
         </div>
 
         <div id="protection-plans" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Wayfair Protection Plans on a Treadmill</h2>
+          <h2>Wayfair Protection Plans on a Treadmill</h2>
 <p>
             Wayfair offers protection plans at checkout on many products, and the treadmill-titled
             listings we opened offered a five-year plan as an add-on. Wayfair’s plans are provided by
@@ -520,7 +465,7 @@ const schema = {
         </div>
 
         <div id="prices" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Judging a Wayfair Treadmill Price</h2>
+          <h2>Judging a Wayfair Treadmill Price</h2>
 <p>
             Because Wayfair prices dynamically and runs frequent sale events, the price on a
             treadmill listing is a moving target. A few habits make it easier to judge.
@@ -542,21 +487,17 @@ const schema = {
               price; neither changes what the machine is worth.</li>
           </ul>
           <p>
-            For what a treadmill of a given type typically costs, use our
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">treadmill cost guide</a>,
-            and for when prices usually fall, our
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday guide</a>.
+            For what a treadmill of a given type typically costs, use our <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">treadmill cost guide</a>,
+            and for when prices usually fall, our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday guide</a>.
           </p>
         </div>
 
         <div id="compare" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Wayfair Compared With Other Places to Buy a Treadmill</h2>
+          <h2>Wayfair Compared With Other Places to Buy a Treadmill</h2>
 <p>
             <strong>Against Amazon,</strong> Wayfair is simpler in one way: it is always the seller,
             so there is no third-party merchant’s policy to decode. But Amazon carries far more
-            treadmill listings and reviews, and many of the same supplier brands. Our
-            <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a>
-            roundup lists machines we could cross-check there.
+            treadmill listings and reviews, and many of the same supplier brands. Our <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> roundup lists machines we could cross-check there.
           </p>
           <p>
             <strong>Against a manufacturer or specialist dealer,</strong> Wayfair rarely carries the
@@ -566,26 +507,18 @@ const schema = {
           </p>
           <p>
             <strong>Against warehouse clubs and big-box stores,</strong> Wayfair’s return window is
-            shorter than some, and its delivery depends on the listing. Our guides to
-            <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco</a>
-            and
-            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy</a>
-            cover those channels. Home Depot, the other big home retailer selling treadmills online,
-            lists similar supplier brands; our
-            <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmill guide</a>
-            sets out what we found there.
+            shorter than some, and its delivery depends on the listing. Our guides to <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco</a> and <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy</a> cover those channels. Home Depot, the other big home retailer selling treadmills online,
+            lists similar supplier brands; our <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot treadmill guide</a> sets out what we found there.
           </p>
           <p>
             <strong>Where Wayfair makes sense</strong> is for a budget walking pad or folding treadmill
             from a supplier brand you can identify, when the Wayfair price, delivery or rewards are
-            better than elsewhere — or when you are spending store credit or a gift card. Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            compares new, clearance, open-box and used channels in full.
+            better than elsewhere — or when you are spending store credit or a gift card. Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> compares new, clearance, open-box and used channels in full.
           </p>
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Before You Buy a Treadmill on Wayfair</h2>
+          <h2>Before You Buy a Treadmill on Wayfair</h2>
 <ol>
             <li><strong>Identify the maker.</strong> If the brand is a Wayfair house label, ask Wayfair
               in writing for the manufacturer and model number. If nobody can tell you, buy something
@@ -594,11 +527,7 @@ const schema = {
               dimensions, machine weight and capacity should all make sense together.</li>
             <li><strong>Confirm the figures elsewhere.</strong> Search the brand and model on the
               maker’s site and another retailer. Agreement is a good sign; disagreement is a reason to
-              ask. Our reviews of the
-              <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad</a>
-              and the
-              <a href="/streamdale-folding-treadmill/" class="text-[#0F62FE] font-medium">Streamdale folding treadmill</a>
-              show the difference between a product you can pin down and one you cannot.</li>
+              ask. Our reviews of the <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad</a> and the <a href="/streamdale-folding-treadmill/" class="text-[#0F62FE] font-medium">Streamdale folding treadmill</a> show the difference between a product you can pin down and one you cannot.</li>
             <li><strong>Read the return box.</strong> Look for a non-returnable flag and ask what a
               return would cost and whether it must be unassembled.</li>
             <li><strong>Find the full warranty.</strong> By component, from the maker, and register
@@ -612,114 +541,39 @@ const schema = {
               plan, so decide once you know the base warranty.</li>
           </ol>
           <p>
-            If you are choosing between a walking pad and a full treadmill, our
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill comparison</a>
-            will help before you start browsing.
+            If you are choosing between a walking pad and a full treadmill, our <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill comparison</a> will help before you start browsing.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Wayfair sell good treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Wayfair sells mostly walking pads and budget folding treadmills from direct-to-consumer brands, plus some house-label listings. Some are reasonable buys. Judge each listing on whether it names a manufacturer you can identify, whether its specifications describe a treadmill and agree with other sources, and whether the warranty and return terms are clear. Established fitness brands were not prominent when we checked.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes Wayfair house-brand treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Wayfair does not make them. It says it has over one hundred house brands and sources from about 20 thousand suppliers, and independent reporting describes house-brand items as supplier products sold under Wayfair names. The listing usually does not name the maker, so ask Wayfair in writing for the manufacturer and model number before buying a house-label treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the Wayfair return policy on treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Wayfair accepts returns on most items within 30 days of delivery, for a refund or store credit, and refunds can take up to 14 business days. Independent guides say return shipping is usually deducted from the refund unless the item is damaged or defective, items should be in original condition and packaging, and non-returnable listings are excluded. Check the listing first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a Wayfair protection plan worth it on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sometimes. Plans are provided by Allstate and administered by SquareTrade, can be added up to 90 days after purchase, and for mechanical products generally start after the manufacturer's warranty ends. It can make sense on a daily-use machine with a short base warranty. Read the terms for exclusions and how fitness equipment is categorised before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Wayfair deliver and assemble treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Wayfair arranges delivery, by parcel carrier for small items and by freight and last-mile agents for large ones, and many listings offer paid professional assembly. What delivery includes varies by listing, from a parcel left at the door to room-of-choice service. Check the delivery type and whether assembly affects returns before ordering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Wayfair price match treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Do not count on it. Wayfair's help centre has a price-matching article, and independent guides say Wayfair does not match competitors' prices, though it may consider a drop in its own price shortly after purchase. Because Wayfair prices change frequently, compare the same model on other sites before you buy rather than after.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill on Wayfair</h2>
+          <p>Most of them come from shopping for a treadmill the way you would shop for a sofa.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a house-label treadmill without knowing the maker</h3>
+              <p>A Wayfair house label tells you how the item is merchandised, not who made it. Without a manufacturer and model number you cannot find a manual, order parts, register a warranty or check for a recall. Ask Wayfair in writing who makes the machine. If the answer is unclear, choose a listing from a brand you can identify.</p>
+            </li>
+            <li>
+              <h3>Trusting the title over the specification sheet</h3>
+              <p>Titles on Wayfair are written for search, and on some treadmill-titled listings the specifications described furniture. Read the product type, dimensions, weight and capacity before anything else. If the title, bullets and specifications disagree, or the weight is implausible for a motorised machine, treat the listing as unreliable and move on.</p>
+            </li>
+            <li>
+              <h3>Treating 30 days as a free trial</h3>
+              <p>Return shipping on a large item is usually deducted from the refund, the item may need to be in original packaging and unassembled, and some listings are non-returnable. Building a treadmill and using it for a week can make a return expensive or awkward. Confirm the return cost and conditions before ordering, and keep all packaging.</p>
+            </li>
+            <li>
+              <h3>Buying a protection plan before knowing the base warranty</h3>
+              <p>A plan generally starts after the manufacturer's warranty ends and may exclude wear items and accidental damage. Bought blind, it can duplicate cover you already have or extend cover on a product nobody can service. Find the maker's warranty first; Wayfair's plans can be added up to 90 days after purchase, so there is no need to decide at checkout.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill on Wayfair</h2>
-          <p class="text-gray-700 leading-relaxed">Most of them come from shopping for a treadmill the way you would shop for a sofa.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a house-label treadmill without knowing the maker</h3>
-              <p class="text-gray-700 text-sm m-0">A Wayfair house label tells you how the item is merchandised, not who made it. Without a manufacturer and model number you cannot find a manual, order parts, register a warranty or check for a recall. Ask Wayfair in writing who makes the machine. If the answer is unclear, choose a listing from a brand you can identify.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the title over the specification sheet</h3>
-              <p class="text-gray-700 text-sm m-0">Titles on Wayfair are written for search, and on some treadmill-titled listings the specifications described furniture. Read the product type, dimensions, weight and capacity before anything else. If the title, bullets and specifications disagree, or the weight is implausible for a motorised machine, treat the listing as unreliable and move on.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating 30 days as a free trial</h3>
-              <p class="text-gray-700 text-sm m-0">Return shipping on a large item is usually deducted from the refund, the item may need to be in original packaging and unassembled, and some listings are non-returnable. Building a treadmill and using it for a week can make a return expensive or awkward. Confirm the return cost and conditions before ordering, and keep all packaging.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a protection plan before knowing the base warranty</h3>
-              <p class="text-gray-700 text-sm m-0">A plan generally starts after the manufacturer's warranty ends and may exclude wear items and accidental damage. Bought blind, it can duplicate cover you already have or extend cover on a product nobody can service. Find the maker's warranty first; Wayfair's plans can be added up to 90 days after purchase, so there is no need to decide at checkout.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">New, clearance, open-box and used, and what each channel really costs.</p>
-            </a>
-            <a href="/buying-a-treadmill-on-amazon/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill on Amazon</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Third-party sellers, listings, delivery and returns on a marketplace.</p>
-            </a>
-            <a href="/where-to-buy-a-treadmill-near-me/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Where to Buy a Treadmill Near You</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Stores where you can try a treadmill before you buy one.</p>
-            </a>
-            <a href="/sams-club-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Sam's Club Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A Wayfair treadmill is worth considering when you can name its
             maker and check its figures.</strong> Wayfair is the retailer, arranges delivery and runs
             a 30-day return window for most items, but suppliers make and mostly ship the machines,
@@ -727,38 +581,123 @@ const schema = {
             before the title, confirm the return cost, find the maker’s warranty, and decide on a
             protection plan only once you know what it adds.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If the listing cannot tell you who made the machine, buy elsewhere. The
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">treadmills for sale guide</a>
-            compares every channel, and our
-            <a href="/east-urban-home-treadmill/" class="text-[#5AA9FF] font-bold no-underline">East Urban Home treadmill check</a>
-            shows what a house-label listing can hide.
+          <p>
+            If the listing cannot tell you who made the machine, buy elsewhere. The <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">treadmills for sale guide</a> compares every channel, and our <a href="/east-urban-home-treadmill/" class="text-[#5AA9FF] font-bold no-underline">East Urban Home treadmill check</a> shows what a house-label listing can hide.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+            <li><a href="/buying-a-treadmill-on-amazon/">Buying a Treadmill on Amazon</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does Wayfair sell good treadmills?</h3></summary>
+            <p class="faq-a">
+              Wayfair sells mostly walking pads and budget folding treadmills from direct-to-consumer brands, plus some house-label listings. Some are reasonable buys. Judge each listing on whether it names a manufacturer you can identify, whether its specifications describe a treadmill and agree with other sources, and whether the warranty and return terms are clear. Established fitness brands were not prominent when we checked.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Who makes Wayfair house-brand treadmills?</h3></summary>
+            <p class="faq-a">
+              Wayfair does not make them. It says it has over one hundred house brands and sources from about 20 thousand suppliers, and independent reporting describes house-brand items as supplier products sold under Wayfair names. The listing usually does not name the maker, so ask Wayfair in writing for the manufacturer and model number before buying a house-label treadmill.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the Wayfair return policy on treadmills?</h3></summary>
+            <p class="faq-a">
+              Wayfair accepts returns on most items within 30 days of delivery, for a refund or store credit, and refunds can take up to 14 business days. Independent guides say return shipping is usually deducted from the refund unless the item is damaged or defective, items should be in original condition and packaging, and non-returnable listings are excluded. Check the listing first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a Wayfair protection plan worth it on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Sometimes. Plans are provided by Allstate and administered by SquareTrade, can be added up to 90 days after purchase, and for mechanical products generally start after the manufacturer's warranty ends. It can make sense on a daily-use machine with a short base warranty. Read the terms for exclusions and how fitness equipment is categorised before buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Wayfair deliver and assemble treadmills?</h3></summary>
+            <p class="faq-a">
+              Wayfair arranges delivery, by parcel carrier for small items and by freight and last-mile agents for large ones, and many listings offer paid professional assembly. What delivery includes varies by listing, from a parcel left at the door to room-of-choice service. Check the delivery type and whether assembly affects returns before ordering.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Wayfair price match treadmills?</h3></summary>
+            <p class="faq-a">
+              Do not count on it. Wayfair's help centre has a price-matching article, and independent guides say Wayfair does not match competitors' prices, though it may consider a drop in its own price shortly after purchase. Because Wayfair prices change frequently, compare the same model on other sites before you buy rather than after.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">New, clearance, open-box and used, and what each channel really costs.</p>
+          </a>
+          <a href="/buying-a-treadmill-on-amazon/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Buying a Treadmill on Amazon</div>
+            <p class="c-blurb">Third-party sellers, listings, delivery and returns on a marketplace.</p>
+          </a>
+          <a href="/where-to-buy-a-treadmill-near-me/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Where to Buy a Treadmill Near You</div>
+            <p class="c-blurb">Stores where you can try a treadmill before you buy one.</p>
+          </a>
+          <a href="/sams-club-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Sam's Club Treadmills</div>
+            <p class="c-blurb">Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

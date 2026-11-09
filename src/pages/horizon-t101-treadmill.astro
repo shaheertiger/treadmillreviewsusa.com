@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Horizon Treadmill T101 Review (2026): T101 Connect, Manual and Recall";
 const description =
@@ -142,6 +141,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/horizon-t101-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -162,66 +167,55 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+  stickyCta={{ text: "Walker’s Pick: Horizon T101 Connect", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-horizont101treadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-horizont101treadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">Horizon T101 Treadmill Review</h1>
+      <p class="ed-dek">
+        The Horizon treadmill T101 has been the brand’s entry machine for years, and the current version is sold as the T101 Connect. This review sets out what Horizon publishes for it today, what it no longer publishes, where to find the manual for each version, and how to tell whether an older T101-05 is one of the units recalled in 2022.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Horizon T101 <span class="text-[#5AA9FF]">Treadmill Review</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Horizon treadmill T101 has been the brand’s entry machine for years, and the current version is sold as the T101 Connect. This review sets out what Horizon publishes for it today, what it no longer publishes, where to find the manual for each version, and how to tell whether an older T101-05 is one of the units recalled in 2022.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#specifications" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Specifications
-          </a>
-          <a href="#manual" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The T101 Manual
-          </a>
-        </div>
+        <a href="#horizon-t101" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#horizon-t101"><img src="https://m.media-amazon.com/images/I/31pAWKay09L._SL500_.jpg" alt="Horizon T101 Connect" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        <figcaption>Horizon T101 Connect</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The Horizon T101 is a walking treadmill first and has never pretended otherwise: a 20 by
+          55-inch deck, a 10 mph ceiling, incline to 10%, a 300 lb rating and a lifetime warranty on
+          the frame and motor, with no subscription attached to the console. Three things have
+          changed since most T101 reviews were written. Horizon now sells it as the T101 Connect, with
+          a simpler LED console and Bluetooth for training apps. Horizon no longer publishes a motor
+          rating for it. And on 14 October 2026 it was sold out on Horizon’s own store. This page is
+          rewritten around those facts, and adds the two things owners search for most: the manual,
+          and the 2022 recall of the T101-05.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.7k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we read Horizon’s US product page for the T101 Connect (SKU HTM1483-01),
           including its full specification table and warranty, and Horizon’s own help-centre article
@@ -237,48 +231,28 @@ const schema = {
           are our own measurements. Prices and stock change; confirm both with the seller before you
           order. We earn a commission if you buy through the Amazon link on this page; it does not
           change what we say about the machine.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Horizon Treadmill T101: The Short Answer</a>
-          <a href="#versions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The T101 Today: One Name, Several Versions</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Horizon T101 Specifications, Checked</a>
-          <a href="#the-deck-question" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 55-Inch Deck Decides Who It Suits</a>
-          <a href="#console-and-apps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Console, Apps and the No-Subscription Point</a>
-          <a href="#walking-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What It Is Built to Do: Walking and Incline Walking</a>
-          <a href="#folding-and-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Folding, Footprint and Setting It Up</a>
-          <a href="#recall" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The October 2022 Recall of the T101-05</a>
-          <a href="#manual" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Horizon T101 Treadmill Manual: Where to Get It and What It Covers</a>
-          <a href="#ownership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Warranty and Keeping It Running</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy It, and Who Should Not</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Horizon Treadmill T101: The Short Answer</a></li>
+            <li><a href="#versions">The T101 Today: One Name, Several Versions</a></li>
+            <li><a href="#specifications">Horizon T101 Specifications, Checked</a></li>
+            <li><a href="#the-deck-question">The 55-Inch Deck Decides Who It Suits</a></li>
+            <li><a href="#console-and-apps">Console, Apps and the No-Subscription Point</a></li>
+            <li><a href="#walking-use">What It Is Built to Do: Walking and Incline Walking</a></li>
+            <li><a href="#folding-and-space">Folding, Footprint and Setting It Up</a></li>
+            <li><a href="#recall">The October 2022 Recall of the T101-05</a></li>
+            <li><a href="#manual">Horizon T101 Treadmill Manual: Where to Get It and What It Covers</a></li>
+            <li><a href="#ownership">Warranty and Keeping It Running</a></li>
+            <li><a href="#who-should-buy">Who Should Buy It, and Who Should Not</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The Horizon T101 is a walking treadmill first and has never pretended otherwise: a 20 by
-          55-inch deck, a 10 mph ceiling, incline to 10%, a 300 lb rating and a lifetime warranty on
-          the frame and motor, with no subscription attached to the console. Three things have
-          changed since most T101 reviews were written. Horizon now sells it as the T101 Connect, with
-          a simpler LED console and Bluetooth for training apps. Horizon no longer publishes a motor
-          rating for it. And on 14 October 2026 it was sold out on Horizon’s own store. This page is
-          rewritten around those facts, and adds the two things owners search for most: the manual,
-          and the 2022 recall of the T101-05.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Horizon Treadmill T101: The Short Answer</h2>
+          <h2>Horizon Treadmill T101: The Short Answer</h2>
 <p>
             <strong>The Horizon treadmill T101, now sold as the T101 Connect, is a well-judged walking
             treadmill with no subscription, a lifetime frame and motor warranty and a 300 lb rating —
@@ -294,87 +268,73 @@ const schema = {
             one for the current model is quoting something other than Horizon.
           </p>
           <p>
-            If you already own a T101, the two sections most likely to help are
-            <a href="#manual" class="text-[#0F62FE] font-medium">where to get the T101 manual</a>
-            for your version, and
-            <a href="#recall" class="text-[#0F62FE] font-medium">how to check a T101-05 against the 2022 recall</a>.
+            If you already own a T101, the two sections most likely to help are <a href="#manual" class="text-[#0F62FE] font-medium">where to get the T101 manual</a> for your version, and <a href="#recall" class="text-[#0F62FE] font-medium">how to check a T101-05 against the 2022 recall</a>.
             If you are buying, read the deck section before anything else. We have not tested the
             T101; what follows is what Horizon’s published figures, its support documents and
             independent coverage show.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="versions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The T101 Today: One Name, Several Versions</h2>
+          <h2>The T101 Today: One Name, Several Versions</h2>
 <p>
             "T101" has covered several machines over the years, and the difference matters for the
             manual, the software and the recall. Horizon’s help centre keeps separate pages for the
@@ -403,9 +363,7 @@ const schema = {
           </p>
           <p>
             In practice the motor warranty is the more useful signal: Horizon covers the T101’s
-            motor for life, which is the same commitment it makes on its most expensive treadmill. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why a warranty term often tells you more than a rating does.
+            motor for life, which is the same commitment it makes on its most expensive treadmill. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why a warranty term often tells you more than a rating does.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Availability</h3>
           <p>
@@ -420,7 +378,7 @@ const schema = {
         </div>
 
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Horizon T101 Specifications, Checked</h2>
+          <h2>Horizon T101 Specifications, Checked</h2>
 <p>
             Every figure in the first part of this table appears on Horizon’s T101 Connect listing and
             in an independent review of the current version. The second part lists figures that only
@@ -464,7 +422,7 @@ const schema = {
         </div>
 
         <div id="the-deck-question" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 55-Inch Deck Decides Who It Suits</h2>
+          <h2>The 55-Inch Deck Decides Who It Suits</h2>
 <p>
             Fifty-five inches is a common belt length at this price and it is enough for walking. It
             becomes a constraint as your stride lengthens, and for most adults it becomes a problem
@@ -480,13 +438,9 @@ const schema = {
           </p>
           <p>
             Both independent reviews we read describe the T101 as suited to walking and light jogging
-            rather than regular running, and the 10 mph ceiling points the same way. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through the stride arithmetic, and the short version is that anyone over about
+            rather than regular running, and the 10 mph ceiling points the same way. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> works through the stride arithmetic, and the short version is that anyone over about
             5 ft 8 in. who intends to run regularly should be looking at a 60-inch deck. Horizon’s own
-            T202 and 7.0 AT both have one, and our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>
-            explains why deck length outranks almost every other figure for that use.
+            T202 and 7.0 AT both have one, and our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a> explains why deck length outranks almost every other figure for that use.
           </p>
           <p>
             None of this is a criticism of the T101. It is a criticism of buying it for the wrong job.
@@ -496,16 +450,14 @@ const schema = {
         </div>
 
         <div id="console-and-apps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Console, Apps and the No-Subscription Point</h2>
+          <h2>Console, Apps and the No-Subscription Point</h2>
 <p>
             The T101 Connect has no subscription. The console is four LED windows showing speed,
             incline, time, distance, calories and heart rate, with six built-in programs, Bluetooth
             speakers, a USB charging port and a tablet holder, and it does the same job in year five as
             on day one with no account attached. That is worth real money and it is rarely priced into
             a comparison: a cheaper machine with a membership behind its screen can cost more over five
-            years. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to subscription-free treadmills</a>
-            sets out that arithmetic.
+            years. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to subscription-free treadmills</a> sets out that arithmetic.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What Bluetooth does and does not do</h3>
           <p>
@@ -528,14 +480,12 @@ const schema = {
           <p>
             The trade-off of a plain console is that you supply the motivation. There is no trainer on
             a screen. If guided sessions are what gets you on the machine, price that membership into
-            the decision, and our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">workout library</a>
-            is a free starting point.
+            the decision, and our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">workout library</a> is a free starting point.
           </p>
         </div>
 
         <div id="walking-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What It Is Built to Do: Walking and Incline Walking</h2>
+          <h2>What It Is Built to Do: Walking and Incline Walking</h2>
 <p>
             Walking is not a low-demand use. An hour at 3 mph on a 10% incline is a long, steady load
             on a drive system, because incline shifts work onto the motor and duration is what builds
@@ -550,25 +500,19 @@ const schema = {
           </p>
           <p>
             Ten percent of incline is enough for serious incline walking, which for most people is the
-            most productive thing a treadmill offers in the time they have. The popular
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            calls for 12%, which the T101 cannot reach, so if that routine is the plan, look at the T202
-            (12%) or a 15% machine. Our
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a>
-            compares the T101 with machines built for the same job.
+            most productive thing a treadmill offers in the time they have. The popular <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> calls for 12%, which the T101 cannot reach, so if that routine is the plan, look at the T202
+            (12%) or a 15% machine. Our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a> compares the T101 with machines built for the same job.
           </p>
           <p>
             Noise is one area where we cannot add a first-hand view. The owner’s manual sets the
             machine’s unloaded noise at no more than 70 dB at 7.5 mph, and one reviewer measured 57 dB
             at 3 mph rising to 70 dB at 10 mph without a user on the belt. On a shared floor, footfall
-            travelling into the structure usually matters more than motor noise;
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">our quiet treadmill guide</a>
-            covers what helps.
+            travelling into the structure usually matters more than motor noise; <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">our quiet treadmill guide</a> covers what helps.
           </p>
         </div>
 
         <div id="folding-and-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Folding, Footprint and Setting It Up</h2>
+          <h2>Folding, Footprint and Setting It Up</h2>
 <p>
             Using Horizon’s figures, the T101 Connect takes up about 16.4 square feet of floor in use
             (70.5 by 33.5 inches) and about 10.9 square feet folded (46 by 34 inches). It folds with
@@ -583,18 +527,14 @@ const schema = {
             one foot in front for the power cord. It also says the treadmill should not be placed in a
             garage, <a href="/outdoor-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>covered patio</a> or anywhere outdoors. For ceilings, Horizon’s help centre advises
             adding 12 inches to the height of the tallest user; with a 7 1/8-inch step-on height and
-            10% of incline, more margin is sensible in a basement with beams or ducts.
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">Our dimensions guide</a>
-            covers the general figures.
+            10% of incline, more margin is sensible in a basement with beams or ducts. <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">Our dimensions guide</a> covers the general figures.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Power</h3>
           <p>
             Horizon specifies a 120 V, 60 Hz supply and says the T101 is not compatible with GFCI
             outlets. The manual asks for a dedicated circuit of at least 15 amps and no extension cord,
             adapter or surge strip. Garages, basements and bathrooms often have GFCI outlets, so check
-            before delivery day. Our
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cord and circuit guide</a>
-            explains why.
+            before delivery day. Our <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cord and circuit guide</a> explains why.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and assembly</h3>
           <p>
@@ -603,14 +543,12 @@ const schema = {
             checkout. It says assembly takes 30 minutes or less, and the reviews we read describe it as
             easy, though a second person helps. Read the manual’s warning before you start: the frame
             is shipped with red transport cables that stop the high-pressure fold shocks springing the
-            base open, and they stay on until the step that tells you to remove them. Our guide to
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a>
-            covers the general job.
+            base open, and they stay on until the step that tells you to remove them. Our guide to <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a> covers the general job.
           </p>
         </div>
 
         <div id="recall" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The October 2022 Recall of the T101-05</h2>
+          <h2>The October 2022 Recall of the T101-05</h2>
 <p>
             On 27 October 2022 the US Consumer Product Safety Commission and Johnson Health Tech
             Trading, Horizon’s importer, announced a recall of Horizon T101-05 folding treadmills
@@ -648,22 +586,18 @@ const schema = {
             The practical risk now is a second-hand T101-05 whose owner never installed the repair. Ask
             for a photograph of the serial label before you travel, check the prefix, and ask whether the
             update was done and when. If the seller does not know, assume it was not, and contact
-            Horizon before you use the machine. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            covers the rest of the inspection.
+            Horizon before you use the machine. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> covers the rest of the inspection.
           </p>
           <p>
             One further fact is on the public record. On 4 August 2026 the CPSC announced that Johnson
             Health Tech Trading had agreed to a $16.875 million civil penalty, provisionally accepted,
             resolving charges that it failed to report the T101-05 hazard to the agency immediately. That
-            is about how quickly the company told the regulator, not about the repair itself; our
-            <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">Horizon brand assessment</a>
-            sets out what it means for the brand.
+            is about how quickly the company told the regulator, not about the repair itself; our <a href="/is-horizon-a-good-treadmill-brand/" class="text-[#0F62FE] font-medium">Horizon brand assessment</a> sets out what it means for the brand.
           </p>
         </div>
 
         <div id="manual" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Horizon T101 Treadmill Manual: Where to Get It and What It Covers</h2>
+          <h2>Horizon T101 Treadmill Manual: Where to Get It and What It Covers</h2>
 <p>
             Horizon publishes the T101 manuals itself, and the right one depends on your version. Start
             by reading the model name on the serial label near the power switch (T101-05, T101-06,
@@ -720,15 +654,12 @@ const schema = {
             for the T101-07 from software S4.09, which point to a faulty console overlay. For anything
             else — a belt that stops and starts, a blank console, a tripped breaker — the manual’s
             first checks are the same: a dedicated 15-amp circuit, no GFCI outlet, no power strip or
-            extension cord, and secure console cable connections. Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            and <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">safety key guide</a>
-            go further. Unplug the machine before removing any cover.
+            extension cord, and secure console cable connections. Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> and <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">safety key guide</a> go further. Unplug the machine before removing any cover.
           </p>
         </div>
 
         <div id="ownership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Warranty and Keeping It Running</h2>
+          <h2>Warranty and Keeping It Running</h2>
 <p>
             The warranty split tells you where to pay attention. Lifetime frame and motor cover reflects
             real confidence in those parts. One year of parts and labour is short, and it means that
@@ -740,24 +671,18 @@ const schema = {
           <p>
             Every one of those wear items is maintenance-sensitive. A deck run without lubricant loads
             the motor and wears the belt from underneath, which is the commonest way a machine in this
-            class dies early. Follow the interval in your version’s manual —
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">the walkthrough</a>
-            covers the method. Belt slipping and belt tracking are different faults with different
-            fixes; work through
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping versus tracking</a>
-            rather than tightening until something stops.
+            class dies early. Follow the interval in your version’s manual — <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">the walkthrough</a> covers the method. Belt slipping and belt tracking are different faults with different
+            fixes; work through <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping versus tracking</a> rather than tightening until something stops.
           </p>
           <p>
             The manual’s monthly checklist includes unplugging, waiting 60 seconds and vacuuming dust
-            from the motor compartment, which it says prevents premature failure of electrical parts.
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">The full owner’s schedule</a>
-            takes about ten minutes a month. Register the machine with Horizon too, so you are contacted
+            from the motor compartment, which it says prevents premature failure of electrical parts. <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">The full owner’s schedule</a> takes about ten minutes a month. Register the machine with Horizon too, so you are contacted
             directly if a future safety notice affects it.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy It, and Who Should Not</h2>
+          <h2>Who Should Buy It, and Who Should Not</h2>
 <p>
             <strong>Buy it if you are walking.</strong> Daily walking, incline walking and the odd easy
             jog in a spare room, on a machine that asks nothing of you afterwards, is what the T101 is
@@ -765,11 +690,8 @@ const schema = {
           </p>
           <p>
             <strong>Do not buy it to run on.</strong> The 55-inch deck and 10 mph ceiling are the design
-            envelope. Runners should look at Horizon’s T202 or 7.0 AT, both with 60-inch decks, in our
-            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon range comparison</a>,
-            or at the
-            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a>
-            from the same parent company.
+            envelope. Runners should look at Horizon’s T202 or 7.0 AT, both with 60-inch decks, in our <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon range comparison</a>,
+            or at the <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a> from the same parent company.
           </p>
           <p>
             <strong>Do not buy it if guided content is what gets you moving.</strong> The console is
@@ -778,151 +700,164 @@ const schema = {
           </p>
           <p>
             <strong>While it is sold out,</strong> do not pay a reseller premium for it. Cross-shop the
-            walking-first field in
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">the walking roundup</a>
-            and <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">our under-$1,000 guide</a>,
-            and if your budget is lower, read
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad or treadmill</a>
-            first.
+            walking-first field in <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">the walking roundup</a> and <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">our under-$1,000 guide</a>,
+            and if your budget is lower, read <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad or treadmill</a> first.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Horizon T101 still available?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Horizon still lists it, as the T101 Connect, but on 14 October 2026 its US store showed it sold out at $699 against a $999 reference price, with no restock date. Dick’s Sporting Goods carries a listing; we could not confirm stock there. Check the serial number on any older or used unit against the 2022 T101-05 recall.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I find the Horizon T101 treadmill manual?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On Horizon’s help centre, help.horizonfitness.com, which has a page for each T101 version (T101-05, -06, -07 and -08 Connect) with the owner’s manual as a PDF. Find your version on the serial label near the power switch first, because lubrication intervals and software differ between versions.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What motor does the Horizon T101 have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Horizon no longer publishes a motor rating for the T101 Connect; it describes a Johnson Drive System and covers the motor with a lifetime warranty. One independent reviewer reports a 2.5 HP figure on the motor label. We treat that as unconfirmed and judge the machine on deck, capacity and warranty instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is my Horizon T101 part of the recall?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the label on the frame near the power switch says T101-05 and the serial number starts with TM734 or TM486. Those units could change speed or stop unexpectedly. The remedy is a free software repair from Horizon, by download or a mailed USB stick; call 888-223-1045 or start from horizonfitness.com/support/recall.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should I lubricate a Horizon T101?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The T101-08 owner’s manual says every three months or 150 miles, using 100% silicone; the 2018 T101-05 guide says every three months or 300 miles. The console shows "LUBE BELT" when it is due and will not run until you clear it by holding Speed Up and Stop for about five to seven seconds.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Horizon T101 good for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for regular running. The 20 by 55-inch deck and 10 mph ceiling suit walking, incline walking and light jogging, and both independent reviews we read say the same. Anyone over about 5 ft 8 in. who plans to run should look for a 60-inch deck, such as Horizon’s T202 or 7.0 AT.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Horizon T101</h2>
+          <p>Most of these come from treating every T101 as the same machine, or from buying it for a job it was not designed for.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Downloading the wrong manual</h3>
+              <p>T101-05, -06, -07 and -08 manuals differ, including on the lubrication interval and the software. Read the model name on the serial label first, then download that exact document from Horizon’s help centre rather than the first PDF a search turns up.</p>
+            </li>
+            <li>
+              <h3>Buying a used T101-05 without checking the serial</h3>
+              <p>Units whose serial numbers begin TM734 or TM486 were recalled in 2022 for unexpected speed changes and stops. A seller may never have installed the free software repair. Ask for a photo of the label before you travel, and contact Horizon if you cannot confirm the update was done.</p>
+            </li>
+            <li>
+              <h3>Comparing it on a horsepower figure</h3>
+              <p>Horizon no longer publishes one for the T101 Connect, so any number in a listing or review is not Horizon’s. Comparing it with another brand’s peak or test rating compares unlike things. The lifetime motor warranty is the more reliable signal.</p>
+            </li>
+            <li>
+              <h3>Plugging it into a GFCI outlet or power strip</h3>
+              <p>Horizon says the T101 is not GFCI-compatible, and the manual asks for a dedicated 15-amp circuit with no extension cord or surge strip. Many "belt stops" and "won’t start" complaints trace back to the outlet, so fix that before calling for service.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Horizon T101</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from treating every T101 as the same machine, or from buying it for a job it was not designed for.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Downloading the wrong manual</h3>
-              <p class="text-gray-700 text-sm m-0">T101-05, -06, -07 and -08 manuals differ, including on the lubrication interval and the software. Read the model name on the serial label first, then download that exact document from Horizon’s help centre rather than the first PDF a search turns up.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used T101-05 without checking the serial</h3>
-              <p class="text-gray-700 text-sm m-0">Units whose serial numbers begin TM734 or TM486 were recalled in 2022 for unexpected speed changes and stops. A seller may never have installed the free software repair. Ask for a photo of the label before you travel, and contact Horizon if you cannot confirm the update was done.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing it on a horsepower figure</h3>
-              <p class="text-gray-700 text-sm m-0">Horizon no longer publishes one for the T101 Connect, so any number in a listing or review is not Horizon’s. Comparing it with another brand’s peak or test rating compares unlike things. The lifetime motor warranty is the more reliable signal.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Plugging it into a GFCI outlet or power strip</h3>
-              <p class="text-gray-700 text-sm m-0">Horizon says the T101 is not GFCI-compatible, and the manual asks for a dedicated 15-amp circuit with no extension cord or surge strip. Many "belt stops" and "won’t start" complaints trace back to the outlet, so fix that before calling for service.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-horizon-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Horizon Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">All five current Horizons ranked, including the T202 and 7.0 AT with 60-inch decks.</p>
-            </a>
-            <a href="/is-horizon-a-good-treadmill-brand/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is Horizon a Good Treadmill Brand?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Ownership, warranty pattern, the recall and the 2026 reporting penalty.</p>
-            </a>
-            <a href="/best-walking-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The walking-first field the T101 competes in.</p>
-            </a>
-            <a href="/horizon-t202-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Model Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon T202 Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             The Horizon T101, now the <strong class="text-white">T101 Connect</strong>, is a coherent
             walking treadmill: a 20 by 55-inch deck, 10% incline, a 300 lb rating, a console that needs
             no subscription and lifetime frame and motor cover. It was sold out at Horizon on 14 October
             2026, Horizon no longer publishes its motor rating, and it is not a running machine.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Owners should get the manual for their exact version from Horizon’s help centre, and anyone
             with a T101-05 should check for a TM734 or TM486 serial and the recall software. Runners
-            should look at the 60-inch Horizons in our
-            <a href="/best-horizon-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Horizon roundup</a>,
-            and walkers can compare the field in the
-            <a href="/best-walking-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking roundup</a>.
+            should look at the 60-inch Horizons in our <a href="/best-horizon-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Horizon roundup</a>,
+            and walkers can compare the field in the <a href="/best-walking-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking roundup</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-horizon-treadmills/">Best Horizon Treadmills</a></li>
+            <li><a href="/is-horizon-a-good-treadmill-brand/">Is Horizon a Good Treadmill Brand?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the Horizon T101 still available?</h3></summary>
+            <p class="faq-a">
+              Horizon still lists it, as the T101 Connect, but on 14 October 2026 its US store showed it sold out at $699 against a $999 reference price, with no restock date. Dick’s Sporting Goods carries a listing; we could not confirm stock there. Check the serial number on any older or used unit against the 2022 T101-05 recall.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where can I find the Horizon T101 treadmill manual?</h3></summary>
+            <p class="faq-a">
+              On Horizon’s help centre, help.horizonfitness.com, which has a page for each T101 version (T101-05, -06, -07 and -08 Connect) with the owner’s manual as a PDF. Find your version on the serial label near the power switch first, because lubrication intervals and software differ between versions.
             </p>
+          </details>
+          <details>
+            <summary><h3>What motor does the Horizon T101 have?</h3></summary>
+            <p class="faq-a">
+              Horizon no longer publishes a motor rating for the T101 Connect; it describes a Johnson Drive System and covers the motor with a lifetime warranty. One independent reviewer reports a 2.5 HP figure on the motor label. We treat that as unconfirmed and judge the machine on deck, capacity and warranty instead.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is my Horizon T101 part of the recall?</h3></summary>
+            <p class="faq-a">
+              Only if the label on the frame near the power switch says T101-05 and the serial number starts with TM734 or TM486. Those units could change speed or stop unexpectedly. The remedy is a free software repair from Horizon, by download or a mailed USB stick; call 888-223-1045 or start from horizonfitness.com/support/recall.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How often should I lubricate a Horizon T101?</h3></summary>
+            <p class="faq-a">
+              The T101-08 owner’s manual says every three months or 150 miles, using 100% silicone; the 2018 T101-05 guide says every three months or 300 miles. The console shows "LUBE BELT" when it is due and will not run until you clear it by holding Speed Up and Stop for about five to seven seconds.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Horizon T101 good for running?</h3></summary>
+            <p class="faq-a">
+              Not for regular running. The 20 by 55-inch deck and 10 mph ceiling suit walking, incline walking and light jogging, and both independent reviews we read say the same. Anyone over about 5 ft 8 in. who plans to run should look for a 60-inch deck, such as Horizon’s T202 or 7.0 AT.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-horizon-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Horizon Treadmills</div>
+            <p class="c-blurb">All five current Horizons ranked, including the T202 and 7.0 AT with 60-inch decks.</p>
+          </a>
+          <a href="/is-horizon-a-good-treadmill-brand/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">Is Horizon a Good Treadmill Brand?</div>
+            <p class="c-blurb">Ownership, warranty pattern, the recall and the 2026 reporting penalty.</p>
+          </a>
+          <a href="/best-walking-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Treadmills</div>
+            <p class="c-blurb">The walking-first field the T101 competes in.</p>
+          </a>
+          <a href="/horizon-t202-treadmill/" class="card">
+            <div class="c-kicker">Model Review</div>
+            <div class="c-title">Horizon T202 Review</div>
+            <p class="c-blurb">The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills With Decline (2026): Powered Downhill, Ranked";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-with-decline/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: NordicTrack Commercial 1750", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillswithdecline" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillswithdecline)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills With Decline Machines That Really Go Downhill</h1>
+      <p class="ed-dek">
+        Powered decline is rarer than most buyers expect. Of the brands we checked, only NordicTrack and Wahoo had a treadmill that tilts below zero and was listed for sale on the day we looked. Here are the five worth buying, what -3% and -6% actually feel like, and who should leave decline alone.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills With Decline <span class="text-[#5AA9FF]">Machines That Really Go Downhill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Powered decline is rarer than most buyers expect. Of the brands we checked, only NordicTrack and Wahoo had a treadmill that tilts below zero and was listed for sale on the day we looked. Here are the five worth buying, what -3% and -6% actually feel like, and who should leave decline alone.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#how-much-decline" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How Much Decline?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-commercial-1750"><img src="https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg" alt="NordicTrack Commercial 1750" width="500" height="500" decoding="async" /></a>
+          <a href="#nordictrack-commercial-1250"><img src="https://m.media-amazon.com/images/I/31Hhl3ePz5L._SL500_.jpg" alt="NordicTrack Commercial 1250" width="460" height="500" decoding="async" /></a>
+          <a href="#nordictrack-commercial-2450"><img src="https://m.media-amazon.com/images/I/31NVjoFCMQL._SL500_.jpg" alt="NordicTrack Commercial 2450" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+        <figcaption>NordicTrack Commercial 1750 · NordicTrack Commercial 1250 · NordicTrack Commercial 2450</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A treadmill with decline tilts the front of the deck below level, so you run or walk
+          downhill. It is the one setting that lets a treadmill imitate the second half of a hill,
+          and it matters for a specific group of people: runners preparing for downhill courses,
+          hikers preparing for long descents, and anyone following outdoor-route workouts that
+          include them. It is also rarer than incline. When we checked the major home brands on 13
+          October 2026, decline was confined almost entirely to NordicTrack's Commercial and X
+          Series and to the Wahoo KICKR RUN — and the cheapest of them still costs around $1,600.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#nordictrack-commercial-1750">NordicTrack Commercial 1750</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Decline:</span> <a href="#nordictrack-x16">NordicTrack X16</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#nordictrack-commercial-1250">NordicTrack Commercial 1250</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Running:</span> <a href="#nordictrack-commercial-2450">NordicTrack Commercial 2450</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Premium Pick:</span> <a href="#wahoo-kickr-run">Wahoo KICKR RUN</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we left out.</strong> On 13 October
           2026 we checked the current treadmill ranges of NordicTrack, ProForm, Sole, Bowflex,
           Horizon, Peloton and Wahoo for machines with powered decline, using each manufacturer's
@@ -344,82 +365,29 @@ const schema = {
           before you order. Nothing on this page is medical advice. We earn a commission if you
           buy through the Amazon links on this page; it does not change which products we list or
           what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
-            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Decline:</span>
-            <a href="#nordictrack-x16" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack X16</a>
-            <a href="#nordictrack-x16" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#nordictrack-commercial-1250" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1250</a>
-            <a href="#nordictrack-commercial-1250" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Running:</span>
-            <a href="#nordictrack-commercial-2450" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 2450</a>
-            <a href="#nordictrack-commercial-2450" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Premium Pick:</span>
-            <a href="#wahoo-kickr-run" class="font-bold text-gray-900 no-underline hover:underline">Wahoo KICKR RUN</a>
-            <a href="#wahoo-kickr-run" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmills With Decline</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose Them</a>
-          <a href="#what-decline-is-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Decline Is Actually For</a>
-          <a href="#how-much-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Much Decline: -3% vs -6%</a>
-          <a href="#knees" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Decline and Your Knees</a>
-          <a href="#incline-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Other Half: Incline Range</a>
-          <a href="#app-question" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Does Decline Need an App?</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Skip Decline</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Treadmills With Decline</a></li>
+            <li><a href="#how-we-chose">How We Chose Them</a></li>
+            <li><a href="#what-decline-is-for">What Decline Is Actually For</a></li>
+            <li><a href="#how-much-decline">How Much Decline: -3% vs -6%</a></li>
+            <li><a href="#knees">Decline and Your Knees</a></li>
+            <li><a href="#incline-range">The Other Half: Incline Range</a></li>
+            <li><a href="#app-question">Does Decline Need an App?</a></li>
+            <li><a href="#who-should-skip">Who Should Skip Decline</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A treadmill with decline tilts the front of the deck below level, so you run or walk
-          downhill. It is the one setting that lets a treadmill imitate the second half of a hill,
-          and it matters for a specific group of people: runners preparing for downhill courses,
-          hikers preparing for long descents, and anyone following outdoor-route workouts that
-          include them. It is also rarer than incline. When we checked the major home brands on 13
-          October 2026, decline was confined almost entirely to NordicTrack's Commercial and X
-          Series and to the Wahoo KICKR RUN — and the cheapest of them still costs around $1,600.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five machines, two brands, two decline figures. The table puts each in one line; the
-            cards below carry the confirmed specifications and the caveats. If you are not sure you need it, read
-            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>.
+            cards below carry the confirmed specifications and the caveats. If you are not sure you need it, read <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -438,7 +406,7 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmills With Decline</h2>
+          <h2>The 5 Best Treadmills With Decline</h2>
 <p>
             Every machine below has powered decline confirmed on its manufacturer's own page as of
             13 October 2026, and all were listed for sale that day. The list is shorter and less
@@ -446,82 +414,70 @@ const schema = {
             gap: decline needs a lift mechanism that tilts the deck both ways, and few brands build
             one into their home machines. Four of the five are NordicTrack, because NordicTrack is
             where decline lives in the home market. For NordicTrack's whole range, including the
-            models without decline, see our
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>.
+            models without decline, see our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose Them</h2>
+          <h2>How We Chose Them</h2>
 <p>
             We have not tested these treadmills. The list is built from manufacturers' published
             specifications and warranty terms, retailer listings and independent review coverage,
@@ -539,10 +495,7 @@ const schema = {
             That filter removed more machines than it kept. <strong>Horizon</strong>'s five current
             treadmills list 0 to 15% at most, with no decline. <strong>Bowflex</strong>'s current T6,
             T9 and T16 list incline up to 15% and no decline; the older Bowflex T10 and T22, which
-            reviews describe with -5% decline, were not on Bowflex's site (our
-            <a href="/bowflex-treadmill-10/" class="text-[#0F62FE] font-medium">Treadmill 10 review</a>
-            covers buying one used).
-            <strong>Peloton</strong>'s current Tread Vision and Tread+ Vision specifications list
+            reviews describe with -5% decline, were not on Bowflex's site (our <a href="/bowflex-treadmill-10/" class="text-[#0F62FE] font-medium">Treadmill 10 review</a> covers buying one used). <strong>Peloton</strong>'s current Tread Vision and Tread+ Vision specifications list
             incline from 0% and no decline. <strong>Sole</strong>'s TT8 lists a -6 to 15 grade range
             but was sold out on Sole's store; Sole's own blog also describes decline on the <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a>, but
             the F85's product page lists 0 to 15 incline levels and does not mention decline, so we
@@ -565,7 +518,7 @@ const schema = {
         </div>
 
         <div id="what-decline-is-for" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Decline Is Actually For</h2>
+          <h2>What Decline Is Actually For</h2>
 <p>
             Most treadmill buyers never need decline. It is worth paying for when your training
             or your goal genuinely includes going downhill, and there are three common cases.
@@ -595,17 +548,14 @@ const schema = {
             downhill training tend to recover better from hilly races.
           </p>
           <p>
-            There is also a simpler fourth use: realism. Outdoor-route workouts on iFIT and <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>
-            routes include descents, and a treadmill that can follow them makes those sessions feel
+            There is also a simpler fourth use: realism. Outdoor-route workouts on iFIT and <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> routes include descents, and a treadmill that can follow them makes those sessions feel
             more like the road. That is a nice-to-have rather than a reason to pay more. If your
-            main interest is climbing, our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            guide covers machines built for that, most of which do not decline at all.
+            main interest is climbing, our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> guide covers machines built for that, most of which do not decline at all.
           </p>
         </div>
 
         <div id="how-much-decline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Much Decline: -3% vs -6%</h2>
+          <h2>How Much Decline: -3% vs -6%</h2>
 <p>
             Every powered-decline machine we found offers either -3% or -6%. The difference sounds
             small on paper and is not small on the legs.
@@ -613,9 +563,7 @@ const schema = {
           <p>
             <strong>What the numbers mean.</strong> Treadmill grade is a percentage: rise or fall
             divided by distance. A -3% grade falls three feet for every hundred feet travelled,
-            which is about 1.7 degrees; -6% is about 3.4 degrees. Our guide to
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent versus degrees</a>
-            explains the conversion and why percentages read steeper than they are.
+            which is about 1.7 degrees; -6% is about 3.4 degrees. Our guide to <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent versus degrees</a> explains the conversion and why percentages read steeper than they are.
           </p>
           <p>
             <strong>-3% is the road-runner's range.</strong> It is roughly the gradient of a gently
@@ -634,15 +582,13 @@ const schema = {
           <p>
             <strong>How to use either.</strong> Start with short decline segments inside an ordinary
             session — a few minutes at -1% to -2% — rather than a long continuous descent, and build
-            over several weeks. Our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workouts</a>
-            guide sets out structured sessions; the decline versions follow the same logic of short
+            over several weeks. Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workouts</a> guide sets out structured sessions; the decline versions follow the same logic of short
             repeats, building slowly, with recovery on the flat.
           </p>
         </div>
 
         <div id="knees" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Decline and Your Knees</h2>
+          <h2>Decline and Your Knees</h2>
 <p>
             Decline is the treadmill setting most likely to aggravate sore knees, and it is worth
             understanding why before you buy a machine for it. This section is general information,
@@ -666,16 +612,12 @@ const schema = {
             any descent, on the treadmill or outdoors.
           </p>
           <p>
-            Our guide to whether
-            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
-            covers the evidence on treadmill running and joint load more broadly, and our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a>
-            roundup focuses on cushioning and low-impact use rather than decline.
+            Our guide to whether <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a> covers the evidence on treadmill running and joint load more broadly, and our <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a> roundup focuses on cushioning and low-impact use rather than decline.
           </p>
         </div>
 
         <div id="incline-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Other Half: Incline Range</h2>
+          <h2>The Other Half: Incline Range</h2>
 <p>
             Every decline treadmill is also an incline treadmill, and the incline range often
             decides between them more than the decline does.
@@ -693,9 +635,7 @@ const schema = {
             <strong>40% (NordicTrack X16).</strong> An incline trainer's range. Steep walking at
             20% and above is a very different workout from running: high effort at low speed and
             low impact. If that appeals as much as the decline does, the X16 covers both ends of a
-            mountain in one machine. If you are unsure whether you need an incline trainer, our
-            <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a>
-            guide sets out the trade-offs.
+            mountain in one machine. If you are unsure whether you need an incline trainer, our <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a> guide sets out the trade-offs.
           </p>
           <p>
             A useful way to choose: work out the steepest climb and the steepest descent your goal
@@ -705,7 +645,7 @@ const schema = {
         </div>
 
         <div id="app-question" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Does Decline Need an App?</h2>
+          <h2>Does Decline Need an App?</h2>
 <p>
             Not for the hardware to work — but the app changes how you use decline, and on the
             NordicTrack machines it is worth confirming one detail before you buy.
@@ -721,17 +661,14 @@ const schema = {
             automatic control: trainer-led workouts and outdoor-route videos move the deck up and
             down for you, including into decline on the descents. For structured downhill training
             that is genuinely useful, because changing grade by hand mid-run is a distraction. It
-            is also an ongoing cost, and our
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a> explains
+            is also an ongoing cost, and our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a> explains
             what the membership includes.
           </p>
           <p>
             <strong>Wahoo and open apps.</strong> Wahoo says the KICKR RUN needs no subscription, that
             you can set the grade manually and that automatic adjustment can be switched off. Zwift
             can control its grade, including decline, on routes; Zwift is a separate service with
-            its own fee. Our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            explains which treadmills Zwift can and cannot control.
+            its own fee. Our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> explains which treadmills Zwift can and cannot control.
           </p>
           <p>
             In short: buy for the decline range and the hardware, and treat the app as a choice
@@ -740,20 +677,16 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Skip Decline</h2>
+          <h2>Who Should Skip Decline</h2>
 <p>
             <strong>If you will mostly walk or run on the flat.</strong> Decline adds cost and is
             only available on machines that start around $1,600. Without a downhill goal, the money
-            is better spent on a better deck or a longer warranty; our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill roundup</a>
-            covers machines that climb well for less.
+            is better spent on a better deck or a longer warranty; our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill roundup</a> covers machines that climb well for less.
           </p>
           <p>
             <strong>If you never want a subscription.</strong> Four of the five machines here are
             built around iFIT, and the fifth costs several times as much. If you would rather
-            avoid platform-led machines altogether, our
-            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon roundup</a>
-            covers a range with no platform at all — and no decline.
+            avoid platform-led machines altogether, our <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon roundup</a> covers a range with no platform at all — and no decline.
           </p>
           <p>
             <strong>If your knees are already sore at the front.</strong> Decline loads the front of
@@ -767,135 +700,151 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which treadmill has the most decline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Among the home treadmills we could confirm on 13 October 2026, the NordicTrack X16 and X24 go furthest, to -6%, with incline up to 40%. The NordicTrack Commercial 1250, 1750 and 2450 and the Wahoo KICKR RUN decline to -3%. Sole lists a -6 to 15 grade range on its TT8, but it was sold out on the day we checked.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is -3% decline enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most runners, yes. Minus three per cent is roughly the gradient of a gently falling road and covers the downhill sections of most road races. It is enough to train the braking work of the quadriceps. Hikers and trail runners preparing for long, steep descents will get more from the -6% on the NordicTrack X Series.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is running on a decline bad for your knees?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Decline increases the load on the front of the knee because the quadriceps brake each step. Healthy knees adapt to it when it is introduced gradually, which is why runners use it. Knees that are already sore at the front can be aggravated. This is general information, not medical advice; see a professional if you have knee pain.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need an iFIT subscription to use decline on a NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not to use the treadmill: reviews describe a manual mode without a paid membership, in which you set speed and incline yourself. We could not find a NordicTrack statement confirming the decline settings are available in manual mode on current software, so ask before ordering if that matters. The membership adds workouts that move the deck automatically, including into decline.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do any cheap treadmills have decline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not among the current models we could confirm. The least expensive machine with manufacturer-confirmed powered decline was the NordicTrack Commercial 1250, at around $1,600 to $1,800. Some older models with decline still appear at third-party sellers, but check that the decline is confirmed for the exact model year before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is -3% decline in degrees?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About 1.7 degrees. Treadmill grade is a percentage of rise or fall over distance, so -3% means the deck falls three feet for every hundred feet travelled. Minus six per cent is about 3.4 degrees. Percentages always read steeper than the equivalent number of degrees, which surprises many buyers.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Decline Treadmill</h2>
+          <p>Most of these come from paying for decline without a clear use for it, or trusting a decline figure the manufacturer does not publish.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting a review’s decline figure</h3>
+              <p>Model names persist while hardware changes, and reviews and blogs sometimes describe decline the current model does not have. Check the manufacturer’s own specification page for a negative grade before you pay extra for it.</p>
+            </li>
+            <li>
+              <h3>Paying for decline you will not use</h3>
+              <p>Without a downhill race, a hiking goal or route workouts you will follow, decline is a feature you will try twice. The same money buys a wider deck, a stronger warranty or a machine that folds more easily.</p>
+            </li>
+            <li>
+              <h3>Starting with long descents</h3>
+              <p>Decline loads the quadriceps eccentrically, and the first sessions cause more soreness than the effort suggests. Begin with a few minutes at a gentle grade inside a normal session and build over weeks.</p>
+            </li>
+            <li>
+              <h3>Forgetting the incline end of the range</h3>
+              <p>The climb usually matters as much as the descent. A Commercial-series machine stops at 12% and the X16 reaches 40%; choose the range that covers the steepest part of your goal in both directions.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Decline Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from paying for decline without a clear use for it, or trusting a decline figure the manufacturer does not publish.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a review’s decline figure</h3>
-              <p class="text-gray-700 text-sm m-0">Model names persist while hardware changes, and reviews and blogs sometimes describe decline the current model does not have. Check the manufacturer’s own specification page for a negative grade before you pay extra for it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for decline you will not use</h3>
-              <p class="text-gray-700 text-sm m-0">Without a downhill race, a hiking goal or route workouts you will follow, decline is a feature you will try twice. The same money buys a wider deck, a stronger warranty or a machine that folds more easily.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting with long descents</h3>
-              <p class="text-gray-700 text-sm m-0">Decline loads the quadriceps eccentrically, and the first sessions cause more soreness than the effort suggests. Begin with a few minutes at a gentle grade inside a normal session and build over weeks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the incline end of the range</h3>
-              <p class="text-gray-700 text-sm m-0">The climb usually matters as much as the descent. A Commercial-series machine stops at 12% and the X16 reaches 40%; choose the range that covers the steepest part of your goal in both directions.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Hill-Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-incline-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Uphill</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Incline Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The machines that climb best, with or without decline.</p>
-            </a>
-            <a href="/treadmill-hill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Workouts</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Hill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Structured sessions for climbing and descending.</p>
-            </a>
-            <a href="/are-treadmills-bad-for-your-knees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Knees</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Treadmills Bad for Your Knees?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the evidence says about treadmill running and joint load.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            For most people who want decline, the <strong class="text-white">NordicTrack Commercial 1750</strong>
-            is the one to buy: -3% to 12%, a folding frame and a lifetime motor warranty. The
-            <strong class="text-white">Commercial 1250</strong> gives the same range for less with
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            For most people who want decline, the <strong class="text-white">NordicTrack Commercial 1750</strong> is the one to buy: -3% to 12%, a folding frame and a lifetime motor warranty. The <strong class="text-white">Commercial 1250</strong> gives the same range for less with
             shorter motor cover.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If your goal involves steep descents, the <strong class="text-white">NordicTrack X16</strong>
-            is the only current home machine we found that reaches -6%. Introduce decline gradually,
+          <p>
+            If your goal involves steep descents, the <strong class="text-white">NordicTrack X16</strong> is the only current home machine we found that reaches -6%. Introduce decline gradually,
             and if your knees are already sore at the front, get them checked before you buy a
             treadmill for it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-incline-treadmills/">Best Incline Treadmills</a></li>
+            <li><a href="/treadmill-hill-workout/">Treadmill Hill Workouts</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Which treadmill has the most decline?</h3></summary>
+            <p class="faq-a">
+              Among the home treadmills we could confirm on 13 October 2026, the NordicTrack X16 and X24 go furthest, to -6%, with incline up to 40%. The NordicTrack Commercial 1250, 1750 and 2450 and the Wahoo KICKR RUN decline to -3%. Sole lists a -6 to 15 grade range on its TT8, but it was sold out on the day we checked.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is -3% decline enough?</h3></summary>
+            <p class="faq-a">
+              For most runners, yes. Minus three per cent is roughly the gradient of a gently falling road and covers the downhill sections of most road races. It is enough to train the braking work of the quadriceps. Hikers and trail runners preparing for long, steep descents will get more from the -6% on the NordicTrack X Series.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is running on a decline bad for your knees?</h3></summary>
+            <p class="faq-a">
+              Decline increases the load on the front of the knee because the quadriceps brake each step. Healthy knees adapt to it when it is introduced gradually, which is why runners use it. Knees that are already sore at the front can be aggravated. This is general information, not medical advice; see a professional if you have knee pain.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you need an iFIT subscription to use decline on a NordicTrack?</h3></summary>
+            <p class="faq-a">
+              Not to use the treadmill: reviews describe a manual mode without a paid membership, in which you set speed and incline yourself. We could not find a NordicTrack statement confirming the decline settings are available in manual mode on current software, so ask before ordering if that matters. The membership adds workouts that move the deck automatically, including into decline.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do any cheap treadmills have decline?</h3></summary>
+            <p class="faq-a">
+              Not among the current models we could confirm. The least expensive machine with manufacturer-confirmed powered decline was the NordicTrack Commercial 1250, at around $1,600 to $1,800. Some older models with decline still appear at third-party sellers, but check that the decline is confirmed for the exact model year before buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is -3% decline in degrees?</h3></summary>
+            <p class="faq-a">
+              About 1.7 degrees. Treadmill grade is a percentage of rise or fall over distance, so -3% means the deck falls three feet for every hundred feet travelled. Minus six per cent is about 3.4 degrees. Percentages always read steeper than the equivalent number of degrees, which surprises many buyers.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Hill-Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-incline-treadmills/" class="card">
+            <div class="c-kicker">Uphill</div>
+            <div class="c-title">Best Incline Treadmills</div>
+            <p class="c-blurb">The machines that climb best, with or without decline.</p>
+          </a>
+          <a href="/treadmill-hill-workout/" class="card">
+            <div class="c-kicker">Workouts</div>
+            <div class="c-title">Treadmill Hill Workouts</div>
+            <p class="c-blurb">Structured sessions for climbing and descending.</p>
+          </a>
+          <a href="/are-treadmills-bad-for-your-knees/" class="card">
+            <div class="c-kicker">Knees</div>
+            <div class="c-title">Are Treadmills Bad for Your Knees?</div>
+            <p class="c-blurb">What the evidence says about treadmill running and joint load.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

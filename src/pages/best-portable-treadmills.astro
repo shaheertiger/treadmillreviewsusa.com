@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Portable Treadmills (2026): 6 Reviews, Sorted by Weight";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-portable-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -297,66 +302,85 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Portable Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: WalkingPad Z1", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestportabletreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestportabletreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Portable Treadmills Sorted by How They Move</h1>
+      <p class="ed-dek">
+        A portable treadmill is only as portable as the person moving it. These six picks run from a pad light enough to carry to a full-size folding treadmill that rolls, with the weight of each one checked against the maker and an independent source, so you can match the machine to your back, your floor and your storage space.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Portable Treadmills <span class="text-[#5AA9FF]">Sorted by How They Move</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A portable treadmill is only as portable as the person moving it. These six picks run from a pad light enough to carry to a full-size folding treadmill that rolls, with the weight of each one checked against the maker and an independent source, so you can match the machine to your back, your floor and your storage space.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#weights-compared" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Compare the Weights
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#walkingpad-z1"><img src="https://m.media-amazon.com/images/I/31oMu9TYTUL._SL500_.jpg" alt="WalkingPad Z1" width="448" height="500" decoding="async" /></a>
+          <a href="#urevo-strol-2e-pro"><img src="https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg" alt="UREVO Strol 2E Pro" width="500" height="500" decoding="async" /></a>
+          <a href="#walkingpad-x25"><img src="https://m.media-amazon.com/images/I/41tMrCSH44L._SL500_.jpg" alt="WalkingPad X25" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
+        <figcaption>WalkingPad Z1 · UREVO Strol 2E Pro · WalkingPad X25</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          "Portable" on a treadmill listing can mean a 43 lb pad you can lift with one hand or a
+          180 lb machine with two small wheels at the front. This page sorts the best portable
+          treadmills by how they actually move — carried, slid under furniture, tipped and rolled,
+          or folded in place — and prints the unit weight of each one only where the maker and an
+          independent source agreed on it. If you first want to know what the different kinds of
+          portable treadmill are and what each one gives up, our explainer on <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a> covers that; this page is the shortlist.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#walkingpad-z1">WalkingPad Z1</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lightest to Carry:</span> <a href="#urevo-strol-2e-pro">UREVO Strol 2E Pro</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Manual:</span> <a href="#stamina-avari">Stamina Avari Adjustable Height Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Small Apartments:</span> <a href="#walkingpad-x21">WalkingPad X21</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Running:</span> <a href="#walkingpad-x25">WalkingPad X25</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Full-Size Folding:</span> <a href="#echelon-stride-6s">Echelon Stride-6s</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested or
           weighed these machines. Each was confirmed on 18 October 2026 as currently sold on its
           maker's own store, and its specifications were checked on that date against the maker's
@@ -370,80 +394,27 @@ const schema = {
           and specification against the exact listing before you order. We earn a commission if you
           buy through the Amazon links on this page; it does not change which products we list or
           what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#walkingpad-z1" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad Z1</a>
-            <a href="#walkingpad-z1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lightest to Carry:</span>
-            <a href="#urevo-strol-2e-pro" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E Pro</a>
-            <a href="#urevo-strol-2e-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Manual:</span>
-            <a href="#stamina-avari" class="font-bold text-gray-900 no-underline hover:underline">Stamina Avari Adjustable Height Treadmill</a>
-            <a href="#stamina-avari" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Small Apartments:</span>
-            <a href="#walkingpad-x21" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad X21</a>
-            <a href="#walkingpad-x21" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Running:</span>
-            <a href="#walkingpad-x25" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad X25</a>
-            <a href="#walkingpad-x25" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Best Portable Treadmills at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Portable Treadmills, Reviewed</a>
-          <a href="#weights-compared" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Much Each Portable Treadmill Weighs, and What That Means</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How We Chose These Portable Treadmills</a>
-          <a href="#which-kind" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Which Kind of Portable Treadmill Do You Need?</a>
-          <a href="#moving-alone" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Can One Person Move It? A Practical Test</a>
-          <a href="#storage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Under the Bed, in a Closet or Against a Wall</a>
-          <a href="#travel-rv" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Portable Treadmills for RVs, Vans and Travel</a>
-          <a href="#small-apartments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Portable Treadmills in Small Apartments</a>
-          <a href="#buyers-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Buyer's Guide: What to Check on a Portable Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Best Portable Treadmills at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Portable Treadmills, Reviewed</a></li>
+            <li><a href="#weights-compared">How Much Each Portable Treadmill Weighs, and What That Means</a></li>
+            <li><a href="#how-we-chose">How We Chose These Portable Treadmills</a></li>
+            <li><a href="#which-kind">Which Kind of Portable Treadmill Do You Need?</a></li>
+            <li><a href="#moving-alone">Can One Person Move It? A Practical Test</a></li>
+            <li><a href="#storage">Under the Bed, in a Closet or Against a Wall</a></li>
+            <li><a href="#travel-rv">Portable Treadmills for RVs, Vans and Travel</a></li>
+            <li><a href="#small-apartments">Portable Treadmills in Small Apartments</a></li>
+            <li><a href="#buyers-guide">Buyer's Guide: What to Check on a Portable Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          "Portable" on a treadmill listing can mean a 43 lb pad you can lift with one hand or a
-          180 lb machine with two small wheels at the front. This page sorts the best portable
-          treadmills by how they actually move — carried, slid under furniture, tipped and rolled,
-          or folded in place — and prints the unit weight of each one only where the maker and an
-          independent source agreed on it. If you first want to know what the different kinds of
-          portable treadmill are and what each one gives up, our explainer on
-          <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
-          covers that; this page is the shortlist.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Best Portable Treadmills at a Glance</h2>
+          <h2>Best Portable Treadmills at a Glance</h2>
 <p>
             <strong>For most people the best portable treadmill is the WalkingPad Z1: a 51 lb walking
             pad with a full-length belt that folds in half and slides under a bed or sofa. If you need
@@ -478,14 +449,12 @@ const schema = {
             rather than a preference for the brand: WalkingPad publishes a full specification table
             for each model, and independent reviews agreed with it on weight, belt size and capacity
             more often than they did for most rivals. If you are choosing between a pad and a folding
-            treadmill in principle, our
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs folding treadmill comparison</a>
-            sets out the trade-offs before you look at models.
+            treadmill in principle, our <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs folding treadmill comparison</a> sets out the trade-offs before you look at models.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Portable Treadmills, Reviewed</h2>
+          <h2>The 6 Best Portable Treadmills, Reviewed</h2>
 <p>
             Each card gives the figures that the maker and an independent source agreed on, the price
             range we saw and who the machine suits. The unit weight is on every card where the sources
@@ -499,78 +468,67 @@ const schema = {
             Stamina is the only machine here that needs none.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="weights-compared" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Much Each Portable Treadmill Weighs, and What That Means</h2>
+          <h2>How Much Each Portable Treadmill Weighs, and What That Means</h2>
 <p>
             A treadmill's weight tells you how it will be moved, and the picks here fall into three
             groups that behave quite differently in a home.
@@ -605,14 +563,12 @@ const schema = {
             boxed weight on delivery day is higher because of packaging, so plan the first carry from
             the door accordingly. Second, a machine's weight is not spread evenly: the motor end of a
             pad and the console end of a folding treadmill are heavier, which is why tipping onto the
-            wheels at that end is easier than lifting the other. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            covers boxed weights, full-size machines and what each weight means for upstairs floors.
+            wheels at that end is easier than lifting the other. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> covers boxed weights, full-size machines and what each weight means for upstairs floors.
           </p>
         </div>
 
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How We Chose These Portable Treadmills</h2>
+          <h2>How We Chose These Portable Treadmills</h2>
 <p>
             We have not tested these machines. They were chosen from published specifications, maker
             and retailer listings, warranty terms and independent hands-on coverage, checked on
@@ -637,27 +593,21 @@ const schema = {
           </p>
           <p>
             Several machines are missing on purpose. <strong>Sperax</strong> walking pads are excluded
-            entirely: in April 2026 the CPSC warned consumers to stop using them. UREVO's
-            <strong>SpaceWalk E1L Pro</strong> is lighter than anything here on UREVO's own figure of
+            entirely: in April 2026 the CPSC warned consumers to stop using them. UREVO's <strong>SpaceWalk E1L Pro</strong> is lighter than anything here on UREVO's own figure of
             35.5 lb, but an independent tracker records 37.5 lb from the Amazon listing and capacity
-            figures from 242 to 350 lb across two pages, and we found no hands-on review. The
-            <strong>Egofit Walker Pro M1</strong> is very small at about 48.5 lb, but its belt is about
+            figures from 242 to 350 lb across two pages, and we found no hands-on review. The <strong>Egofit Walker Pro M1</strong> is very small at about 48.5 lb, but its belt is about
             34 inches long and its capacity has been listed at both 245 and 220 lb. The <strong>WalkingPad R2</strong> fold-in-half
             walk-and-run pad is still listed on WalkingPad's store, but at least one review site describes it as
             discontinued in favour of the R3, and sources give conflicting weights. And low, flat pads such as the
-            UREVO SpaceWalk 3S and the Goplus SuperFit, which our
-            <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">low-profile treadmills</a>
-            page covers for their height, are listed at different unit weights by different sources,
+            UREVO SpaceWalk 3S and the Goplus SuperFit, which our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">low-profile treadmills</a> page covers for their height, are listed at different unit weights by different sources,
             which matters more on this page than on that one.
           </p>
         </div>
 
         <div id="which-kind" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Which Kind of Portable Treadmill Do You Need?</h2>
+          <h2>Which Kind of Portable Treadmill Do You Need?</h2>
 <p>
-            The explainer on
-            <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">what portable means</a>
-            describes the three kinds of portable treadmill. For choosing between the picks above, a
+            The explainer on <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">what portable means</a> describes the three kinds of portable treadmill. For choosing between the picks above, a
             simpler question works better: how often will the machine move, and where to?
           </p>
           <p>
@@ -686,16 +636,12 @@ const schema = {
           </p>
           <p>
             If none of these sounds like your home and the treadmill will rarely leave the room it is
-            in, a conventional folding treadmill is likely to suit you better. Our
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">folding treadmill reviews</a>
-            and our guide to
-            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a>
-            cover that route.
+            in, a conventional folding treadmill is likely to suit you better. Our <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">folding treadmill reviews</a> and our guide to <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">treadmills for small spaces</a> cover that route.
           </p>
         </div>
 
         <div id="moving-alone" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Can One Person Move It? A Practical Test</h2>
+          <h2>Can One Person Move It? A Practical Test</h2>
 <p>
             Most listings say a portable treadmill is easy to move. Whether it is easy for you depends
             on your strength, your floor and the route, and you can check most of that before you buy.
@@ -715,7 +661,7 @@ const schema = {
         </div>
 
         <div id="storage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Under the Bed, in a Closet or Against a Wall</h2>
+          <h2>Under the Bed, in a Closet or Against a Wall</h2>
 <p>
             The second half of portability is where the machine goes when you are done. Measure that
             space before you buy, and measure it against the machine's stored dimensions rather than
@@ -743,16 +689,12 @@ const schema = {
           <p>
             Only store a machine on its end if its manual says it is designed for that, and make sure an
             upright treadmill cannot tip, particularly around children and pets. For storage over a
-            season or longer, our guide to
-            <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a>
-            covers temperature, damp and what to do before you put one away, and the
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the clear floor you need behind any treadmill in use.
+            season or longer, our guide to <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a> covers temperature, damp and what to do before you put one away, and the <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the clear floor you need behind any treadmill in use.
           </p>
         </div>
 
         <div id="travel-rv" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Portable Treadmills for RVs, Vans and Travel</h2>
+          <h2>Portable Treadmills for RVs, Vans and Travel</h2>
 <p>
             People searching for a portable treadmill often mean one they can take with them: in an RV,
             to a holiday rental, or between two homes. None of the makers here markets a model for
@@ -782,16 +724,12 @@ const schema = {
           <p>
             <strong>The no-power option.</strong> A manual treadmill avoids the electrical question
             entirely. The Stamina Avari folds, weighs 54 lb and needs no outlet, though it is a short,
-            narrow walking machine with a fixed set of slopes. Our guide to
-            <a href="/how-to-use-a-manual-treadmill/" class="text-[#0F62FE] font-medium">using a manual treadmill</a>
-            explains how they feel and how to start on one, and the
-            <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>
-            roundup compares the wider choice.
+            narrow walking machine with a fixed set of slopes. Our guide to <a href="/how-to-use-a-manual-treadmill/" class="text-[#0F62FE] font-medium">using a manual treadmill</a> explains how they feel and how to start on one, and the <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a> roundup compares the wider choice.
           </p>
         </div>
 
         <div id="small-apartments" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Portable Treadmills in Small Apartments</h2>
+          <h2>Portable Treadmills in Small Apartments</h2>
 <p>
             Small flats are the most common reason to buy a portable treadmill, and they add two
             concerns that a house does not: the neighbours below and the lack of anywhere to leave a
@@ -801,9 +739,7 @@ const schema = {
             <strong>Light machines are not quiet machines downstairs.</strong> The same low mass that
             makes a pad easy to move means more of each footstep passes into the floor. What the flat
             below usually hears is a rhythmic thud rather than motor hum. A dense rubber mat helps, and
-            so do a slower pace and softer steps. Our pick of
-            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a>
-            explains where walking-pad noise comes from and how to set one up to reduce it.
+            so do a slower pace and softer steps. Our pick of <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a> explains where walking-pad noise comes from and how to set one up to reduce it.
           </p>
           <p>
             <strong>Choose the storage spot first.</strong> In a studio or a one-bedroom flat, the
@@ -815,14 +751,12 @@ const schema = {
             <strong>Check the delivery route and the lease.</strong> A third-floor walk-up with a tight
             turn is easy for a 51 lb pad and much harder for a 180 lb boxed treadmill. Some buildings
             also restrict exercise equipment or set quiet hours, and it is better to know before the box
-            arrives. Our guide to
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a>
-            covers delivery, footprint and noise for full-size machines.
+            arrives. Our guide to <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a> covers delivery, footprint and noise for full-size machines.
           </p>
         </div>
 
         <div id="buyers-guide" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Buyer's Guide: What to Check on a Portable Treadmill</h2>
+          <h2>Buyer's Guide: What to Check on a Portable Treadmill</h2>
 <p>
             Beyond weight, these are the specifications that decide whether a portable treadmill suits
             you. Check each one against the listing for the exact model you are buying.
@@ -832,29 +766,19 @@ const schema = {
             machines save weight, and it is fine at walking pace. As speed rises your stride lengthens,
             and a belt that felt roomy at 3 mph can feel cramped at 6. The UREVO's roughly 36-inch running
             area is short for anything beyond a brisk walk; the X25's 51.9-inch area is the longest of the
-            powered pads here. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            gives the lengths that suit walking, jogging and running, and taller walkers should read our
-            pick of
-            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>.
+            powered pads here. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> gives the lengths that suit walking, jogging and running, and taller walkers should read our
+            pick of <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>.
           </p>
           <p>
             <strong>Weight capacity, with headroom.</strong> Portable machines tend to have lower limits,
             and the figure is one of the most often disputed between sources. Buy a machine rated well
-            above your weight rather than close to it; our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains why, and our pick of
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            covers higher-rated pads.
+            above your weight rather than close to it; our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains why, and our pick of <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> covers higher-rated pads.
           </p>
           <p>
             <strong>Speed with and without the handle.</strong> On 2-in-1 pads, the top speed often
             depends on whether the handle is raised. A pad that reaches 6.2 mph only with the handle up
-            cannot be jogged on under a desk. Our pick of
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a>
-            explains how the rail works as a speed switch on most models, and whether a pad suits jogging
-            at all is answered in
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can you run on a walking pad</a>.
+            cannot be jogged on under a desk. Our pick of <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a> explains how the rail works as a speed switch on most models, and whether a pad suits jogging
+            at all is answered in <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can you run on a walking pad</a>.
           </p>
           <p>
             <strong>Motor figures.</strong> Treat portable-treadmill horsepower claims with caution. For
@@ -871,149 +795,164 @@ const schema = {
             <strong>Warranty and returns.</strong> Portable treadmills commonly carry a one-year warranty,
             and some brands make an extended term depend on registering the machine in an app. Read the
             return terms too: returning a 100 lb box is far harder than returning a 50 lb one, and who
-            pays the return freight matters. Our guide to
-            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>
-            sets realistic expectations for pads used every day.
+            pays the return freight matters. Our guide to <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a> sets realistic expectations for pads used every day.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best portable treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, the WalkingPad Z1: a 51 lb walking pad with a 47.6-inch walking area that folds in half to 5.4 inches high, so it slides under many beds and sofas. If you need the lightest machine to carry, the UREVO Strol 2E Pro weighs about 43 lb. If you want to run, the 104 lb WalkingPad X25 reaches 10 mph and folds into a closet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the lightest portable treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Of the machines whose weight we could confirm with two sources, the UREVO Strol 2E Pro is the lightest at about 43 lb. Some pads are listed lighter, such as UREVO's SpaceWalk E1L Pro at 35.5 lb on UREVO's figure, but other sources give a different weight and capacity. Very light pads also tend to have short belts.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can one person move a portable treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, on a level floor. Pads under about 55 lb can be lifted at one end, rolled or carried a short way. Machines around 80 to 105 lb are folded, tipped onto their wheels and rolled. A 180 lb folding treadmill rolls across a hard floor but needs two people for steps or stairs. Small wheels struggle on rugs and thick carpet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a portable treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On most walking pads, no: they are walking machines with short belts. Double-fold treadmills such as the WalkingPad X21, at up to 7.5 mph, suit walking and light jogging, and the X25 reaches 10 mph on a 52-inch belt. For regular running on a full 60-inch deck, a folding treadmill such as the Echelon Stride-6s is heavier but better suited.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a portable treadmill in an RV?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Possibly, with care. Choose a light machine you can secure flat while driving, check its power rating against your shore power, generator or inverter and the maker's guidance, and use it on a firm, level spot at walking pace. A manual treadmill avoids the power question entirely. No maker on this page markets its treadmill for vehicle use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a portable treadmill fit under my bed?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the gap is higher than the machine when stored. WalkingPad gives the Z1's folded height as 5.4 inches, so it needs a little more than that, measured at the lowest point of the bed frame. Double-fold treadmills are too thick for most beds and are designed to stand in a closet or corner instead. Always measure before you buy.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Portable Treadmill</h2>
+          <p>Each of these turns a portable treadmill into one that never moves, or one that is moved unsafely.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the word "portable" instead of the weight</h3>
+              <p>Listings call 43 lb pads and 180 lb folding treadmills portable alike. Look up the unit weight, check whether the maker and an independent source agree on it, and ask whether the person who will move the machine most could lift one end of it comfortably. If not, it will stay where it is.</p>
+            </li>
+            <li>
+              <h3>Not measuring the storage space</h3>
+              <p>Under-bed storage only works if the gap is taller than the folded machine at the lowest point of the frame, with a clear path in and out. Closets need depth for a double-fold machine standing upright. Measure the space and compare it with the stored dimensions, not the in-use size, before ordering.</p>
+            </li>
+            <li>
+              <h3>Rolling a heavy machine over rugs and steps</h3>
+              <p>Transport wheels are made for short trips on smooth, level floors. Rugs, thresholds and carpet stop small wheels, and that is where machines get dropped. Lift over obstacles rather than forcing the wheels, make sure the fold latch is engaged before tipping, and use two people for any stairs.</p>
+            </li>
+            <li>
+              <h3>Buying the lightest pad to run on</h3>
+              <p>The lightest machines save weight with short belts and small motors. A 36-inch running area suits a brisk walk, not a jog, even if the handle-up mode allows 6 mph. If you want to run, accept the extra weight of a double-fold or folding treadmill with a longer belt and a stated top speed to match.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Portable Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a portable treadmill into one that never moves, or one that is moved unsafely.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the word "portable" instead of the weight</h3>
-              <p class="text-gray-700 text-sm m-0">Listings call 43 lb pads and 180 lb folding treadmills portable alike. Look up the unit weight, check whether the maker and an independent source agree on it, and ask whether the person who will move the machine most could lift one end of it comfortably. If not, it will stay where it is.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the storage space</h3>
-              <p class="text-gray-700 text-sm m-0">Under-bed storage only works if the gap is taller than the folded machine at the lowest point of the frame, with a clear path in and out. Closets need depth for a double-fold machine standing upright. Measure the space and compare it with the stored dimensions, not the in-use size, before ordering.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Rolling a heavy machine over rugs and steps</h3>
-              <p class="text-gray-700 text-sm m-0">Transport wheels are made for short trips on smooth, level floors. Rugs, thresholds and carpet stop small wheels, and that is where machines get dropped. Lift over obstacles rather than forcing the wheels, make sure the fold latch is engaged before tipping, and use two people for any stairs.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the lightest pad to run on</h3>
-              <p class="text-gray-700 text-sm m-0">The lightest machines save weight with short belts and small motors. A 36-inch running area suits a brisk walk, not a jog, even if the handle-up mode allows 6 mph. If you want to run, accept the extra weight of a double-fold or folding treadmill with a longer belt and a stated top speed to match.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/portable-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Portable Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The three kinds of portable treadmill, typical weights and what portability costs you.</p>
-            </a>
-            <a href="/walking-pad-vs-folding-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs Folding Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Flat under the furniture or upright against a wall: storage, speed, rails and price.</p>
-            </a>
-            <a href="/how-to-move-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Move a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Between rooms, up stairs and across town, without damage to the machine or you.</p>
-            </a>
-            <a href="/best-mini-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Mini Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five walking pads ranked by checked footprint and weight.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people, the best portable treadmill is the WalkingPad Z1</strong>:
             51 lb, a full-length walking belt, and a fold that takes it under a bed or sofa. Choose the
             UREVO Strol 2E Pro if you will really carry the machine, the WalkingPad X21 or X25 if you
             want to jog or run and have a closet to roll it into, the Stamina Avari if there is no outlet,
             and the Echelon Stride-6s if you need a full 60-inch deck that still folds away.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, judge it by its weight, the space it will be stored in and the route it
             will travel, not by the word on the listing. For how the different kinds of portable treadmill
-            compare before you pick a model, read our explainer on
-            <a href="/portable-treadmills/" class="text-[#5AA9FF] font-bold no-underline">portable treadmills</a>,
-            and before the first move, our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving a treadmill</a>.
+            compare before you pick a model, read our explainer on <a href="/portable-treadmills/" class="text-[#5AA9FF] font-bold no-underline">portable treadmills</a>,
+            and before the first move, our guide to <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving a treadmill</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/portable-treadmills/">Portable Treadmills</a></li>
+            <li><a href="/walking-pad-vs-folding-treadmill/">Walking Pad vs Folding Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best portable treadmill?</h3></summary>
+            <p class="faq-a">
+              For most people, the WalkingPad Z1: a 51 lb walking pad with a 47.6-inch walking area that folds in half to 5.4 inches high, so it slides under many beds and sofas. If you need the lightest machine to carry, the UREVO Strol 2E Pro weighs about 43 lb. If you want to run, the 104 lb WalkingPad X25 reaches 10 mph and folds into a closet.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the lightest portable treadmill?</h3></summary>
+            <p class="faq-a">
+              Of the machines whose weight we could confirm with two sources, the UREVO Strol 2E Pro is the lightest at about 43 lb. Some pads are listed lighter, such as UREVO's SpaceWalk E1L Pro at 35.5 lb on UREVO's figure, but other sources give a different weight and capacity. Very light pads also tend to have short belts.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can one person move a portable treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually, on a level floor. Pads under about 55 lb can be lifted at one end, rolled or carried a short way. Machines around 80 to 105 lb are folded, tipped onto their wheels and rolled. A 180 lb folding treadmill rolls across a hard floor but needs two people for steps or stairs. Small wheels struggle on rugs and thick carpet.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a portable treadmill?</h3></summary>
+            <p class="faq-a">
+              On most walking pads, no: they are walking machines with short belts. Double-fold treadmills such as the WalkingPad X21, at up to 7.5 mph, suit walking and light jogging, and the X25 reaches 10 mph on a 52-inch belt. For regular running on a full 60-inch deck, a folding treadmill such as the Echelon Stride-6s is heavier but better suited.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use a portable treadmill in an RV?</h3></summary>
+            <p class="faq-a">
+              Possibly, with care. Choose a light machine you can secure flat while driving, check its power rating against your shore power, generator or inverter and the maker's guidance, and use it on a firm, level spot at walking pace. A manual treadmill avoids the power question entirely. No maker on this page markets its treadmill for vehicle use.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will a portable treadmill fit under my bed?</h3></summary>
+            <p class="faq-a">
+              Only if the gap is higher than the machine when stored. WalkingPad gives the Z1's folded height as 5.4 inches, so it needs a little more than that, measured at the lowest point of the bed frame. Double-fold treadmills are too thick for most beds and are designed to stand in a closet or corner instead. Always measure before you buy.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/portable-treadmills/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Portable Treadmills</div>
+            <p class="c-blurb">The three kinds of portable treadmill, typical weights and what portability costs you.</p>
+          </a>
+          <a href="/walking-pad-vs-folding-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Walking Pad vs Folding Treadmill</div>
+            <p class="c-blurb">Flat under the furniture or upright against a wall: storage, speed, rails and price.</p>
+          </a>
+          <a href="/how-to-move-a-treadmill/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Move a Treadmill</div>
+            <p class="c-blurb">Between rooms, up stairs and across town, without damage to the machine or you.</p>
+          </a>
+          <a href="/best-mini-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Mini Treadmills</div>
+            <p class="c-blurb">Five walking pads ranked by checked footprint and weight.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

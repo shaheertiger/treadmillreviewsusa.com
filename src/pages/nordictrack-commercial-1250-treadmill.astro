@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "NordicTrack Commercial 1250 Review (2026): Specs and Verdict";
 const description =
@@ -142,6 +141,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/nordictrack-commercial-1250-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -162,66 +167,54 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+  stickyCta={{ text: "Current Model: NTL14125: NordicTrack Commercial 1250", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-nordictrackcommercial1250treadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-nordictrackcommercial1250treadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">NordicTrack Commercial 1250 Treadmill Review</h1>
+      <p class="ed-dek">
+        The Commercial 1250 is the cheapest way into NordicTrack’s running series, and the machine sold under that name today is not the one most older reviews describe. This review sets out the figures NordicTrack and two US retailers confirm for the current model, what they mean in use, and when the 1750 or a T Series machine is the better buy.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          NordicTrack Commercial 1250 <span class="text-[#5AA9FF]">Treadmill Review</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Commercial 1250 is the cheapest way into NordicTrack’s running series, and the machine sold under that name today is not the one most older reviews describe. This review sets out the figures NordicTrack and two US retailers confirm for the current model, what they mean in use, and when the 1750 or a T Series machine is the better buy.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#current-specs" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Current Specs
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy It
-          </a>
-        </div>
+        <a href="#nordictrack-commercial-1250" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-commercial-1250"><img src="https://m.media-amazon.com/images/I/31Hhl3ePz5L._SL500_.jpg" alt="NordicTrack Commercial 1250" width="460" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        <figcaption>NordicTrack Commercial 1250</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Look up the NordicTrack Commercial 1250 treadmill and you will find it described with a
+          3.0 or a 3.6 CHP motor, a belt 20 or 22 inches wide, and a weight limit of 300 or 400 lb.
+          Both sets of figures have been true of a machine sold under the name. This page is about
+          the one on sale now, model number NTL14125, using the figures NordicTrack publishes for it
+          and that P.C. Richard &amp; Son and Nebraska Furniture Mart repeat for the same model
+          number. Where the older figures still circulate, we say where they came from rather than
+          mixing them in.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we read NordicTrack's US product page for the Commercial 1250 (SKU
           NTL14125), including its specification block, warranty text, FAQ and footnotes, and
@@ -237,49 +230,30 @@ const schema = {
           numbers are our own measurements. Prices are those shown on 14 October 2026 and change
           constantly. We earn a commission if you buy through the Amazon link on this page; it does
           not change what we say about the machine.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. NordicTrack Commercial 1250 Treadmill: The Short Answer</a>
-          <a href="#which-1250" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Which Commercial 1250? Why Older Reviews Disagree</a>
-          <a href="#current-specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Specifications NordicTrack Confirms</a>
-          <a href="#motor-and-warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 3.6 CHP Motor and the Two-Year Motor Warranty</a>
-          <a href="#deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Deck, Cushioning and the 400 lb Rating</a>
-          <a href="#incline-speed-screen" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Incline, Speed and the 10-Inch Screen</a>
-          <a href="#folding-and-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Folding, Footprint and Where It Fits</a>
-          <a href="#warranty-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warranty, Delivery and Returns</a>
-          <a href="#what-reviewers-report" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Independent Reviewers Consistently Report</a>
-          <a href="#vs-alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Commercial 1250 vs the 1750, the T Series and Others</a>
-          <a href="#price-and-timing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Price, Sales and When to Buy</a>
-          <a href="#ownership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Owning One: Resets, Maintenance and Faults</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Who Should Buy It, and Who Should Not</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">NordicTrack Commercial 1250 Treadmill: The Short Answer</a></li>
+            <li><a href="#which-1250">Which Commercial 1250? Why Older Reviews Disagree</a></li>
+            <li><a href="#current-specs">The Specifications NordicTrack Confirms</a></li>
+            <li><a href="#motor-and-warranty">The 3.6 CHP Motor and the Two-Year Motor Warranty</a></li>
+            <li><a href="#deck">Deck, Cushioning and the 400 lb Rating</a></li>
+            <li><a href="#incline-speed-screen">Incline, Speed and the 10-Inch Screen</a></li>
+            <li><a href="#folding-and-space">Folding, Footprint and Where It Fits</a></li>
+            <li><a href="#warranty-delivery">Warranty, Delivery and Returns</a></li>
+            <li><a href="#what-reviewers-report">What Independent Reviewers Consistently Report</a></li>
+            <li><a href="#vs-alternatives">Commercial 1250 vs the 1750, the T Series and Others</a></li>
+            <li><a href="#price-and-timing">Price, Sales and When to Buy</a></li>
+            <li><a href="#ownership">Owning One: Resets, Maintenance and Faults</a></li>
+            <li><a href="#who-should-buy">Who Should Buy It, and Who Should Not</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Look up the NordicTrack Commercial 1250 treadmill and you will find it described with a
-          3.0 or a 3.6 CHP motor, a belt 20 or 22 inches wide, and a weight limit of 300 or 400 lb.
-          Both sets of figures have been true of a machine sold under the name. This page is about
-          the one on sale now, model number NTL14125, using the figures NordicTrack publishes for it
-          and that P.C. Richard &amp; Son and Nebraska Furniture Mart repeat for the same model
-          number. Where the older figures still circulate, we say where they came from rather than
-          mixing them in.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. NordicTrack Commercial 1250 Treadmill: The Short Answer</h2>
+          <h2>NordicTrack Commercial 1250 Treadmill: The Short Answer</h2>
 <p>
             <strong>The NordicTrack Commercial 1250 treadmill is the cheapest machine in NordicTrack's
             running series and, on the current model's figures, a full-size one: a 22 by 60-inch
@@ -301,85 +275,70 @@ const schema = {
             Commercial 1250 with a 3.0 CHP motor, a 20-inch belt and a 300 lb limit. The figures on
             this page are for NTL14125, the model NordicTrack sells now. We have not tested it; what
             follows is what the published figures and independent coverage imply. If the choice you
-            are really making is between the 1250 and the 1750, our
-            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">Commercial 1250 vs 1750 comparison</a>
-            covers that decision on its own, and our
-            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1750 review</a>
-            covers the machine above.
+            are really making is between the 1250 and the 1750, our <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">Commercial 1250 vs 1750 comparison</a> covers that decision on its own, and our <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1750 review</a> covers the machine above.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="which-1250" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Commercial 1250? Why Older Reviews Disagree</h2>
+          <h2>Which Commercial 1250? Why Older Reviews Disagree</h2>
 <p>
             NordicTrack keeps model names while changing the hardware underneath. The Commercial 1750
             is the best-known case, and the 1250 has been through the same thing. That does not make
@@ -405,10 +364,7 @@ const schema = {
             incline from -3% to 12%. P.C. Richard &amp; Son's listing for NTL14125 repeated the motor,
             belt, capacity and speed, and Nebraska Furniture Mart's listing for the same model number
             repeated the capacity, the screen, the incline range and the footprint. That agreement on a
-            single model number is why this page states figures that our earlier
-            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a>
-            and our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>
-            roundup treated with caution; at the time those were written, NordicTrack's page did not
+            single model number is why this page states figures that our earlier <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a> and our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a> roundup treated with caution; at the time those were written, NordicTrack's page did not
             state the 1250's motor rating or belt width.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to make sure you are buying the current one</h3>
@@ -421,7 +377,7 @@ const schema = {
         </div>
 
         <div id="current-specs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Specifications NordicTrack Confirms</h2>
+          <h2>The Specifications NordicTrack Confirms</h2>
 <p>
             The table separates the figures NordicTrack publishes and an independent retailer listing
             repeats for the same model number from the ones that appear in only one place. Everything
@@ -470,7 +426,7 @@ const schema = {
         </div>
 
         <div id="motor-and-warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 3.6 CHP Motor and the Two-Year Motor Warranty</h2>
+          <h2>The 3.6 CHP Motor and the Two-Year Motor Warranty</h2>
 <p>
             NordicTrack rates the current Commercial 1250's drive motor at 3.6 continuous horsepower,
             and P.C. Richard's listing for NTL14125 describes a "3.6 CHP drive system". That is the
@@ -484,9 +440,7 @@ const schema = {
             dynamometer, and that it does not denote the operational horsepower of the treadmill in
             ordinary household use, where the motor does not operate at the horsepower shown. The
             practical point is that a CHP figure helps you compare machines rated the same way and
-            says much less about how a motor will feel under you. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
-            explains peak, continuous and test ratings and what each does and does not tell you.
+            says much less about how a motor will feel under you. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a> explains peak, continuous and test ratings and what each does and does not tell you.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why the warranty matters more than the rating</h3>
           <p>
@@ -504,22 +458,18 @@ const schema = {
             covers the part, not the labour to fit it, which is one year on all three machines. The
             two-year motor term is a real difference for a heavy user, a household sharing one machine
             or anyone who plans to keep the treadmill for a decade. For a walker or a three-runs-a-week
-            jogger it is a smaller risk than it sounds. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to read frame, motor, parts and labour terms line by line.
+            jogger it is a smaller risk than it sounds. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how to read frame, motor, parts and labour terms line by line.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What looks after the motor</h3>
           <p>
             The things that load a treadmill motor hardest are long sessions, heavier users, steep
             incline and sustained running. Keeping the deck lubricated and the belt correctly tensioned
-            does more for motor life than a quarter of a horsepower on the label. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
-            covers the routine, and the manual is the authority on the interval for your machine.
+            does more for motor life than a quarter of a horsepower on the label. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a> covers the routine, and the manual is the authority on the interval for your machine.
           </p>
         </div>
 
         <div id="deck" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Deck, Cushioning and the 400 lb Rating</h2>
+          <h2>Deck, Cushioning and the 400 lb Rating</h2>
 <p>
             The current 1250 has a 22 by 60-inch belt, the same size NordicTrack lists for the 1750 and
             2450. Sixty inches is the length running guidance generally settles on for adults who intend
@@ -532,17 +482,14 @@ const schema = {
             Belt width on a specification sheet and the width you can actually run on are not always the
             same, because side rails can overlap the edge of the belt. If width is the reason you are
             buying, stand on one in a showroom or ask the seller about usable width between the rails.
-            Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through which lengths and widths suit which heights and paces.
+            Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> works through which lengths and widths suit which heights and paces.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">RunFlex cushioning</h3>
           <p>
             NordicTrack describes the deck's RunFlex cushioning as designed to absorb impact and provide
             stability, and publishes no number for it. Treadmill Review Guru found the cushioning softer
             than most competitors'. Cushioning cannot be compared from a listing; it is something you
-            judge by standing on it. Our
-            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning explainer</a>
-            covers what a cushioned deck does and does not do for your joints. In short, it softens the
+            judge by standing on it. Our <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning explainer</a> covers what a cushioned deck does and does not do for your joints. In short, it softens the
             landing compared with a road, which most people find more comfortable, but it is not a
             treatment for an injury.
           </p>
@@ -552,14 +499,12 @@ const schema = {
             Furniture Mart agree for NTL14125. That is 75 lb more than the T Series and 100 lb more than
             the earlier 1250 was reviewed at. A rating is a ceiling, not a target; a machine used near
             its limit every day works harder than one with margin, and with a two-year motor warranty a
-            heavier user has more reason than most to keep that margin. Our guide to
-            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens if you exceed a treadmill's weight limit</a>
-            explains why it matters.
+            heavier user has more reason than most to keep that margin. Our guide to <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens if you exceed a treadmill's weight limit</a> explains why it matters.
           </p>
         </div>
 
         <div id="incline-speed-screen" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Incline, Speed and the 10-Inch Screen</h2>
+          <h2>Incline, Speed and the 10-Inch Screen</h2>
 <p>
             The 1250 inclines to 12%, declines to -3% and runs from 0 to 12 mph. Those ranges are
             identical to the Commercial 1750 on NordicTrack's current listings, and the 2450 differs only
@@ -569,11 +514,8 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline and decline</h3>
           <p>
             Twelve percent is a percent grade, a little under seven degrees, which is plenty for
-            incline walking, the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            at its full setting, and most hill intervals. If steep incline walking is the main reason you
-            are buying and you want to go well beyond 12%, an incline trainer is the better tool; our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            guide covers them. The -3% decline lets iFIT routes include descents and gives runners
+            incline walking, the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> at its full setting, and most hill intervals. If steep incline walking is the main reason you
+            are buying and you want to go well beyond 12%, an incline trainer is the better tool; our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> guide covers them. The -3% decline lets iFIT routes include descents and gives runners
             training for a hilly race a way to practise them. It is a reason to choose a Commercial model
             over the T Series, which has none.
           </p>
@@ -581,8 +523,7 @@ const schema = {
           <p>
             A 12 mph ceiling is a five-minute mile. For steady running and most intervals it will never be
             the limit. If you do fast repeats above it, the <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 2450</a> is the NordicTrack that goes to
-            14 mph. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
-            covers how to structure sessions within a machine's range.
+            14 mph. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a> covers how to structure sessions within a machine's range.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The screen, and what needs a membership</h3>
           <p>
@@ -597,16 +538,12 @@ const schema = {
             include iFIT-enabled features such as SmartAdjust or ActivePulse. A monthly membership's first
             month is included with a purchase from NordicTrack. We do not quote the membership price
             because it changes; check it on iFIT's own site and multiply it by the years you expect to
-            keep the machine. Our assessment of
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            sets out that arithmetic, and our guide to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
-            covers what still works when you stop paying.
+            keep the machine. Our assessment of <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> sets out that arithmetic, and our guide to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a> covers what still works when you stop paying.
           </p>
         </div>
 
         <div id="folding-and-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Folding, Footprint and Where It Fits</h2>
+          <h2>Folding, Footprint and Where It Fits</h2>
 <p>
             Assembled, the 1250 measures 77.3 inches long, 37 wide and 59.5 tall on NordicTrack's
             figures, which P.C. Richard and Nebraska Furniture Mart repeat. That is about 19.9 square
@@ -634,16 +571,12 @@ const schema = {
             not the middle of the room.
           </p>
           <p>
-            You also need clear space behind the deck and at the sides; follow the manual. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a>
-            gives typical clearances, and
-            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
-            covers floors, power and the footstrike noise that travels into rooms below.
+            You also need clear space behind the deck and at the sides; follow the manual. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a> gives typical clearances, and <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a> covers floors, power and the footstrike noise that travels into rooms below.
           </p>
         </div>
 
         <div id="warranty-delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warranty, Delivery and Returns</h2>
+          <h2>Warranty, Delivery and Returns</h2>
 <p>
             NordicTrack's manufacturer warranty on the current 1250 is ten years on the frame, two years on
             the motor, two years on parts, one year on the touchscreen and one year of labour and repairs,
@@ -656,17 +589,13 @@ const schema = {
             ownership costs from year two. The touchscreen is covered for one year, and it is expensive and
             central to how the machine is sold. Labour for one year means that from the second year a
             covered part may arrive free while the visit to fit it does not. If you are weighing an
-            extended plan, price it against a technician's call-out where you live. Our
-            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
-            gives typical costs.
+            extended plan, price it against a technician's call-out where you live. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a> gives typical costs.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and assembly</h3>
           <p>
             On 14 October 2026 NordicTrack offered free curbside shipping in the continental US, which it
             valued at up to $249, with in-home delivery and assembly as a paid upgrade. Retailers set their
-            own delivery terms, so check them at checkout. If you will assemble it yourself, read our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a>
-            first; the deck and motor hood are the heavy parts, and a second person is not optional.
+            own delivery terms, so check them at checkout. If you will assemble it yourself, read our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a> first; the deck and motor hood are the heavy parts, and a second person is not optional.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 30-day trial and its return fee</h3>
           <p>
@@ -680,14 +609,12 @@ const schema = {
             Many treadmill warranties apply only to the original purchaser, so do not assume any cover
             passes to you; ask NordicTrack with the serial number. Read the model number and check the
             belt width, because an earlier 1250 looks almost identical from the console. Run it through
-            the full incline and decline range, and check the belt and deck for wear. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            runs through the full inspection.
+            the full incline and decline range, and check the belt and deck for wear. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> runs through the full inspection.
           </p>
         </div>
 
         <div id="what-reviewers-report" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Independent Reviewers Consistently Report</h2>
+          <h2>What Independent Reviewers Consistently Report</h2>
 <p>
             We include a point here only when it appears in more than one independent source. Some
             published coverage describes the earlier 3.0 CHP machine, so we have kept to points that do
@@ -703,8 +630,7 @@ const schema = {
             What we have not seen consistently is a specific mechanical weakness of the current model. It
             has not been on sale long enough for long-term reports to build up, and the parts most likely
             to need attention on any connected treadmill are the belt, the deck and the electronics. Our
-            guide to <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
-            explains how to tell a pattern in owner reports from a handful of loud ones.
+            guide to <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a> explains how to tell a pattern in owner reports from a handful of loud ones.
           </p>
           <p>
             A note on safety records: we searched the US Consumer Product Safety Commission's recall
@@ -715,7 +641,7 @@ const schema = {
         </div>
 
         <div id="vs-alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Commercial 1250 vs the 1750, the T Series and Others</h2>
+          <h2>Commercial 1250 vs the 1750, the T Series and Others</h2>
 <p>
             Most buyers who look at the 1250 are choosing between it and one neighbour. Here is what
             separates them on the figures NordicTrack publishes now.
@@ -726,9 +652,7 @@ const schema = {
             the incline range (-3% to 12%) and the footprint are identical. The differences are the screen
             (10 in. tilting against 16 in. pivoting), the motor rating (3.6 against 4.25 CHP), the motor
             warranty (two years against lifetime) and the price, which was $400 apart at NordicTrack on the
-            day we checked. Our
-            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a>
-            works through that choice in detail. The rule of thumb: pay for the 1750 if you will use the
+            day we checked. Our <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a> works through that choice in detail. The rule of thumb: pay for the 1750 if you will use the
             pivoting screen for floor classes, run hard and often, or want lifetime motor cover;
             otherwise the 1250 does the same job on the belt.
           </p>
@@ -739,27 +663,18 @@ const schema = {
             on the motor. On the day we checked, NordicTrack listed the T Series 10 at the same $1,599.99 as
             the 1250, and at that price the 1250's wider belt, decline and higher rating make it the more
             capable machine for the money; the T Series makes more sense when it is discounted well below
-            the 1250, or for a walker who values the lower step-up. Our
-            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series review</a>
-            and <a href="/nordictrack-t-series-vs-commercial/" class="text-[#0F62FE] font-medium">T Series vs Commercial guide</a>
-            cover that choice.
+            the 1250, or for a walker who values the lower step-up. Our <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series review</a> and <a href="/nordictrack-t-series-vs-commercial/" class="text-[#0F62FE] font-medium">T Series vs Commercial guide</a> cover that choice.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Outside NordicTrack</h3>
           <p>
             If you know you will never subscribe to iFIT, a machine that works fully without a membership
-            may be the better use of the money. The
-            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a>
-            and <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T9</a>
-            both work without a subscription and carry longer motor cover. ProForm's
-            <a href="/proform-carbon-pro-9000-treadmill/" class="text-[#0F62FE] font-medium">Carbon Pro 9000</a>
-            is the sister brand's nearest equivalent, with a 16-inch screen but a 20-inch belt and no
-            decline. Our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>
-            roundup places the 1250 in the whole current range.
+            may be the better use of the money. The <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a> and <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T9</a> both work without a subscription and carry longer motor cover. ProForm's <a href="/proform-carbon-pro-9000-treadmill/" class="text-[#0F62FE] font-medium">Carbon Pro 9000</a> is the sister brand's nearest equivalent, with a 16-inch screen but a 20-inch belt and no
+            decline. Our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a> roundup places the 1250 in the whole current range.
           </p>
         </div>
 
         <div id="price-and-timing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Price, Sales and When to Buy</h2>
+          <h2>Price, Sales and When to Buy</h2>
 <p>
             NordicTrack's list price for the 1250 was $1,999.99 on 14 October 2026, and its selling price
             was $1,599.99. P.C. Richard and Nebraska Furniture Mart were both at $1,599. NordicTrack runs
@@ -772,10 +687,7 @@ const schema = {
             say what the 1250 will cost on any future date. What we can say is how to judge a deal when you
             see one: compare it with the $1,599 seen on 14 October 2026, compare it with the 1750's price on
             the same day, and check whether the offer includes delivery, assembly or a return fee you would
-            otherwise pay. Our
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill guide</a>
-            and <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            explain when discounts tend to land and how to tell a real one from a reframed list price.
+            otherwise pay. Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill guide</a> and <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> explain when discounts tend to land and how to tell a real one from a reframed list price.
           </p>
           <p>
             One caution specific to this model: when a retailer clears stock at a price well below the
@@ -786,7 +698,7 @@ const schema = {
         </div>
 
         <div id="ownership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Owning One: Resets, Maintenance and Faults</h2>
+          <h2>Owning One: Resets, Maintenance and Faults</h2>
 <p>
             A connected treadmill asks a little more of its owner than a basic one, mostly because of the
             software. Three habits avoid most problems.
@@ -794,15 +706,11 @@ const schema = {
           <p>
             <strong>Know how to reset it.</strong> A frozen screen, an unresponsive console or a machine
             that will not start after an update are the faults NordicTrack owners most often search for, and
-            many clear with a restart. Our guide to
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a>
-            goes through the sequence and what to try before calling support.
+            many clear with a restart. Our guide to <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a> goes through the sequence and what to try before calling support.
           </p>
           <p>
             <strong>Keep the deck lubricated and the belt adjusted.</strong> A dry deck increases friction,
-            which loads the motor and wears the belt, and with two years of motor cover that matters. Our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
-            sets out the owner's schedule.
+            which loads the motor and wears the belt, and with two years of motor cover that matters. Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a> sets out the owner's schedule.
           </p>
           <p>
             <strong>Register it and keep records.</strong> Register the warranty, keep the order
@@ -812,28 +720,23 @@ const schema = {
           <p>
             Before servicing anything, unplug the machine and remove the safety key. If you notice a
             burning smell, a belt that will not stop, sparking or a tripping breaker, stop using it and
-            contact NordicTrack; our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            covers the common faults.
+            contact NordicTrack; our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> covers the common faults.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Who Should Buy It, and Who Should Not</h2>
+          <h2>Who Should Buy It, and Who Should Not</h2>
 <p>
             <strong>Buy the Commercial 1250 if you will run as well as walk, want a full 22 by 60-inch
             folding deck and decline, and would rather keep a few hundred dollars than pay for a bigger
             screen.</strong> On the current model's figures it does everything the 1750 does on the belt.
           </p>
           <p>
-            <strong>Buy it if you are a heavier user who needs more than the T Series' 325 lb.</strong>
-            The current 1250 is rated to 400 lb, and it is the cheapest NordicTrack with that rating.
+            <strong>Buy it if you are a heavier user who needs more than the T Series' 325 lb.</strong> The current 1250 is rated to 400 lb, and it is the cheapest NordicTrack with that rating.
           </p>
           <p>
             <strong>Choose the 1750 if you will run hard and often, or share the machine,</strong> and
-            value lifetime motor cover, or if you will use the pivoting screen for floor classes. Our
-            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">1750 review</a>
-            sets out that case.
+            value lifetime motor cover, or if you will use the pivoting screen for floor classes. Our <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">1750 review</a> sets out that case.
           </p>
           <p>
             <strong>Look elsewhere if you will never subscribe.</strong> The treadmill works in manual
@@ -846,141 +749,157 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack Commercial 1250 treadmill worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most buyers who will run as well as walk, yes, at the discounted prices NordicTrack runs most of the year. The current model (NTL14125) has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline and 12 mph. It is worth less if you will not keep an iFIT membership, and its motor warranty is two years. We have not tested it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on the NordicTrack Commercial 1250?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                NordicTrack lists the current model, NTL14125, at a 400 lb (182 kg) maximum user weight, and P.C. Richard and Nebraska Furniture Mart agree. Earlier machines sold under the same name were reviewed at 300 lb, so check the model number on a used or clearance unit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What motor does the NordicTrack Commercial 1250 have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                NordicTrack rates the current model’s motor at 3.6 CHP and covers it for two years. Its footnote says the figure is a laboratory dynamometer rating that does not denote operational horsepower in household use. Earlier 1250s were reviewed at 3.0 CHP.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack Commercial 1250 belt 20 or 22 inches wide?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The current model, NTL14125, has a 22 by 60-inch belt on NordicTrack’s listing and P.C. Richard’s listing for the same model. Reviews of the earlier machine describe a 20 by 60-inch belt. Because both versions have the same 10-inch screen, the belt width and the model number are the way to tell them apart.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the NordicTrack Commercial 1250 and 1750?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On NordicTrack’s current listings the belt, capacity, speed, incline range and footprint are the same. The 1750 adds a 16-inch pivoting screen in place of a 10-inch tilting one, a 4.25 CHP rating against 3.6, and a lifetime motor warranty against two years. It was $400 more at NordicTrack on 14 October 2026.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the NordicTrack Commercial 1250 have decline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. NordicTrack lists incline from -3% to 12% on the current model. With a paid iFIT membership both adjust automatically during workouts; without one you set them manually.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Commercial 1250</h2>
+          <p>Most bad purchases of this machine come from reading the wrong version’s figures or underestimating the short warranty terms.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting a review of the earlier model</h3>
+              <p>Coverage from 2024 and earlier describes a 1250 with a 3.0 CHP motor, a 20-inch belt and a 300 lb limit. Those figures may have been right for that machine. Check the model number — NTL14125 is the current one — and check the belt width, because the screen is the same on both.</p>
+            </li>
+            <li>
+              <h3>Buying a cleared older unit as if it were current</h3>
+              <p>A deep discount on old stock can look like a bargain against the current price. If the unit has the narrower belt and lower capacity, it is a different machine, and the comparison with today’s 1250 does not hold.</p>
+            </li>
+            <li>
+              <h3>Treating the 30-day trial as free</h3>
+              <p>NordicTrack’s in-home trial deducted a $249.99 return charge when we checked, and delivery and assembly costs were not refundable. Measure the room and the ceiling first, and read the return terms of whichever seller you use.</p>
+            </li>
+            <li>
+              <h3>Forgetting how short most of the warranty is</h3>
+              <p>Only the frame is covered for ten years. The motor and parts are covered for two, the touchscreen and labour for one. From year two a failed screen or a technician’s visit is likely to be on you, so price that before deciding whether an extended plan is worth it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Commercial 1250</h2>
-          <p class="text-gray-700 leading-relaxed">Most bad purchases of this machine come from reading the wrong version’s figures or underestimating the short warranty terms.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a review of the earlier model</h3>
-              <p class="text-gray-700 text-sm m-0">Coverage from 2024 and earlier describes a 1250 with a 3.0 CHP motor, a 20-inch belt and a 300 lb limit. Those figures may have been right for that machine. Check the model number — NTL14125 is the current one — and check the belt width, because the screen is the same on both.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a cleared older unit as if it were current</h3>
-              <p class="text-gray-700 text-sm m-0">A deep discount on old stock can look like a bargain against the current price. If the unit has the narrower belt and lower capacity, it is a different machine, and the comparison with today’s 1250 does not hold.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the 30-day trial as free</h3>
-              <p class="text-gray-700 text-sm m-0">NordicTrack’s in-home trial deducted a $249.99 return charge when we checked, and delivery and assembly costs were not refundable. Measure the room and the ceiling first, and read the return terms of whichever seller you use.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting how short most of the warranty is</h3>
-              <p class="text-gray-700 text-sm m-0">Only the frame is covered for ten years. The motor and parts are covered for two, the touchscreen and labour for one. From year two a failed screen or a technician’s visit is likely to be on you, so price that before deciding whether an extended plan is worth it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/nordictrack-commercial-1250-vs-1750/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 1250 vs 1750</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The choice most 1250 buyers are really making, laid out side by side.</p>
-            </a>
-            <a href="/nordictrack-commercial-1750-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 1750 Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The machine above: the same deck, a pivoting 16-inch screen and lifetime motor cover.</p>
-            </a>
-            <a href="/best-nordictrack-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best NordicTrack Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The whole current range ranked, from the T Series to the X Series incline trainers.</p>
-            </a>
-            <a href="/nordictrack-c-700-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack C 700</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The budget entry point into the NordicTrack lineup.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy the NordicTrack Commercial 1250 if you will run as well as walk
-            and want a full-size folding deck with decline for the least money NordicTrack asks.</strong>
-            The current model, NTL14125, has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline,
+            and want a full-size folding deck with decline for the least money NordicTrack asks.</strong> The current model, NTL14125, has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline,
             12 mph and a 10-inch tilting screen, and was selling for about $1,600 on 14 October 2026. Plan
             around the two-year motor warranty and the one-year screen and labour terms, and price in iFIT
             if you will use the screen.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you run hard and often or want lifetime motor cover, the
-            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Commercial 1750</a>
-            is the step up. Whichever you choose, buy by model number, not by name.
+          <p>
+            If you run hard and often or want lifetime motor cover, the <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Commercial 1750</a> is the step up. Whichever you choose, buy by model number, not by name.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/nordictrack-commercial-1250-vs-1750/">NordicTrack Commercial 1250 vs 1750</a></li>
+            <li><a href="/nordictrack-commercial-1750-treadmill/">NordicTrack Commercial 1750 Review</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the NordicTrack Commercial 1250 treadmill worth it?</h3></summary>
+            <p class="faq-a">
+              For most buyers who will run as well as walk, yes, at the discounted prices NordicTrack runs most of the year. The current model (NTL14125) has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline and 12 mph. It is worth less if you will not keep an iFIT membership, and its motor warranty is two years. We have not tested it.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit on the NordicTrack Commercial 1250?</h3></summary>
+            <p class="faq-a">
+              NordicTrack lists the current model, NTL14125, at a 400 lb (182 kg) maximum user weight, and P.C. Richard and Nebraska Furniture Mart agree. Earlier machines sold under the same name were reviewed at 300 lb, so check the model number on a used or clearance unit.
             </p>
+          </details>
+          <details>
+            <summary><h3>What motor does the NordicTrack Commercial 1250 have?</h3></summary>
+            <p class="faq-a">
+              NordicTrack rates the current model’s motor at 3.6 CHP and covers it for two years. Its footnote says the figure is a laboratory dynamometer rating that does not denote operational horsepower in household use. Earlier 1250s were reviewed at 3.0 CHP.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the NordicTrack Commercial 1250 belt 20 or 22 inches wide?</h3></summary>
+            <p class="faq-a">
+              The current model, NTL14125, has a 22 by 60-inch belt on NordicTrack’s listing and P.C. Richard’s listing for the same model. Reviews of the earlier machine describe a 20 by 60-inch belt. Because both versions have the same 10-inch screen, the belt width and the model number are the way to tell them apart.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the NordicTrack Commercial 1250 and 1750?</h3></summary>
+            <p class="faq-a">
+              On NordicTrack’s current listings the belt, capacity, speed, incline range and footprint are the same. The 1750 adds a 16-inch pivoting screen in place of a 10-inch tilting one, a 4.25 CHP rating against 3.6, and a lifetime motor warranty against two years. It was $400 more at NordicTrack on 14 October 2026.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the NordicTrack Commercial 1250 have decline?</h3></summary>
+            <p class="faq-a">
+              Yes. NordicTrack lists incline from -3% to 12% on the current model. With a paid iFIT membership both adjust automatically during workouts; without one you set them manually.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/nordictrack-commercial-1250-vs-1750/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">NordicTrack Commercial 1250 vs 1750</div>
+            <p class="c-blurb">The choice most 1250 buyers are really making, laid out side by side.</p>
+          </a>
+          <a href="/nordictrack-commercial-1750-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">NordicTrack Commercial 1750 Review</div>
+            <p class="c-blurb">The machine above: the same deck, a pivoting 16-inch screen and lifetime motor cover.</p>
+          </a>
+          <a href="/best-nordictrack-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best NordicTrack Treadmills</div>
+            <p class="c-blurb">The whole current range ranked, from the T Series to the X Series incline trainers.</p>
+          </a>
+          <a href="/nordictrack-c-700-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">NordicTrack C 700</div>
+            <p class="c-blurb">The budget entry point into the NordicTrack lineup.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

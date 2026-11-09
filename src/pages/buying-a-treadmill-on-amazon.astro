@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Amazon Treadmills (2026): How to Buy a Treadmill on Amazon Safely";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/buying-a-treadmill-on-amazon/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,35 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "How to Read a Listing", link: "#reading-listings" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-buyingatreadmillonamazon" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-buyingatreadmillonamazon)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Buying a Treadmill on Amazon</h1>
+      <p class="ed-dek">
+        Amazon has the widest treadmill selection anywhere and some of the least reliable listings. The machine can be perfectly good; the work is in checking who is selling it, what the listing actually says, and what happens if a 200-pound box needs to go back.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Buying a Treadmill <span class="text-[#5AA9FF]">on Amazon</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Amazon has the widest treadmill selection anywhere and some of the least reliable listings. The machine can be perfectly good; the work is in checking who is selling it, what the listing actually says, and what happens if a 200-pound box needs to go back.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#reading-listings" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Reading a Listing
-          </a>
-          <a href="#delivery" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Delivery and Returns
-          </a>
-        </div>
+        <a href="#reading-listings" class="btn-ghost">Reading a Listing</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site earns a commission
-          as an Amazon Associate on qualifying purchases made through some of our links, at no extra
-          cost to you, and that does not change what we tell you here. We are not otherwise
-          affiliated with Amazon. Delivery options, return terms and seller arrangements change and
-          differ between listings, so check the current terms on the specific product page before
-          you buy.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is It a Good Idea to Buy a Treadmill on Amazon?</a>
-          <a href="#who-sells" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Sold by Amazon vs Third-Party Sellers</a>
-          <a href="#reading-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How to Read an Amazon Treadmill Listing</a>
-          <a href="#reviews" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Read Amazon Treadmill Reviews</a>
-          <a href="#generic-brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Generic Brands vs Established Brands</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Delivery: Kerbside, Room of Choice and Freight</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Returns on an Oversized Item</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warranty: Register With the Manufacturer</a>
-          <a href="#prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Judging an Amazon Treadmill Price</a>
-          <a href="#compare-channels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Amazon Compares With Other Places to Buy</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Before You Order a Treadmill on Amazon</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          This page does not recommend particular treadmills on Amazon (our dated
-          <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> roundup does), because listings change
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          This page does not recommend particular treadmills on Amazon (our dated <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> roundup does), because listings change
           constantly, the same product page can quietly switch to a different version, and any
           list would be stale within weeks. It covers how to judge whatever you are looking at: who
           is actually selling it, which numbers on the listing mean something, how to read reviews
@@ -207,11 +145,38 @@ const schema = {
           warranty look like for an item this heavy.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site earns a commission
+          as an Amazon Associate on qualifying purchases made through some of our links, at no extra
+          cost to you, and that does not change what we tell you here. We are not otherwise
+          affiliated with Amazon. Delivery options, return terms and seller arrangements change and
+          differ between listings, so check the current terms on the specific product page before
+          you buy.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is It a Good Idea to Buy a Treadmill on Amazon?</a></li>
+            <li><a href="#who-sells">Sold by Amazon vs Third-Party Sellers</a></li>
+            <li><a href="#reading-listings">How to Read an Amazon Treadmill Listing</a></li>
+            <li><a href="#reviews">How to Read Amazon Treadmill Reviews</a></li>
+            <li><a href="#generic-brands">Generic Brands vs Established Brands</a></li>
+            <li><a href="#delivery">Delivery: Kerbside, Room of Choice and Freight</a></li>
+            <li><a href="#returns">Returns on an Oversized Item</a></li>
+            <li><a href="#warranty">Warranty: Register With the Manufacturer</a></li>
+            <li><a href="#prices">Judging an Amazon Treadmill Price</a></li>
+            <li><a href="#compare-channels">How Amazon Compares With Other Places to Buy</a></li>
+            <li><a href="#checklist">Before You Order a Treadmill on Amazon</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is It a Good Idea to Buy a Treadmill on Amazon?</h2>
+          <h2>Is It a Good Idea to Buy a Treadmill on Amazon?</h2>
 <p>
-            <strong>Yes, if you treat the listing as a lead rather than as the specification.</strong>
-            Amazon carries more treadmills than any other single retailer, from <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> to
+            <strong>Yes, if you treat the listing as a lead rather than as the specification.</strong> Amazon carries more treadmills than any other single retailer, from <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> to
             full-size folding machines from established brands, and prices are often competitive.
             For a buyer who already knows what they need, it can be a perfectly sound place to buy.
           </p>
@@ -232,7 +197,7 @@ const schema = {
         </div>
 
         <div id="who-sells" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Sold by Amazon vs Third-Party Sellers</h2>
+          <h2>Sold by Amazon vs Third-Party Sellers</h2>
 <p>
             Every product page names a seller, usually near the buy button, and for a treadmill it is
             the most important line on the page. Broadly, there are three arrangements.
@@ -259,14 +224,12 @@ const schema = {
             manufacturer honour its warranty for a machine bought from this seller? Some
             manufacturers limit warranty coverage to purchases from authorised sellers. If the
             manufacturer's website lists Amazon or the named seller as a place to buy, you are on
-            solid ground. If you cannot tell, ask the manufacturer before you order. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains what the terms usually cover.
+            solid ground. If you cannot tell, ask the manufacturer before you order. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains what the terms usually cover.
           </p>
         </div>
 
         <div id="reading-listings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How to Read an Amazon Treadmill Listing</h2>
+          <h2>How to Read an Amazon Treadmill Listing</h2>
 <p>
             Treat the listing title as advertising and the bullet points as a summary that may or may
             not be current. The figures that decide whether a treadmill suits you are usually
@@ -277,24 +240,18 @@ const schema = {
             a folding treadmill, a walking pad, an under-desk treadmill and an <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium" data-autolink>incline running</a> machine
             for home and office. That tells you what people search for, not what the product is. Look
             at the photographs and the dimensions to establish what kind of machine it actually is —
-            our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
-            comparison explains why the distinction matters.
+            our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a> comparison explains why the distinction matters.
           </p>
           <p>
             <strong>Motor ratings are often peak, not continuous.</strong> Peak horsepower is a
             short-burst figure; continuous horsepower is what the motor can sustain under load and is
             the number to compare. Many listings quote only the larger peak figure, sometimes without
             saying so. If you cannot find a continuous rating on the listing or the manufacturer's
-            site, assume the figure you are looking at is peak. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            covers what continuous rating you need for walking, jogging and running.
+            site, assume the figure you are looking at is peak. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> covers what continuous rating you need for walking, jogging and running.
           </p>
           <p>
             <strong>Deck size is the running surface, not the machine.</strong> Look for belt width
-            and length, and check it is the usable surface rather than the overall footprint. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            gives the lengths that suit walking and running.
+            and length, and check it is the usable surface rather than the overall footprint. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> gives the lengths that suit walking and running.
           </p>
           <p>
             <strong>Maximum user weight and incline.</strong> Check both, and whether incline is
@@ -309,13 +266,11 @@ const schema = {
         </div>
 
         <div id="reviews" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Read Amazon Treadmill Reviews</h2>
+          <h2>How to Read Amazon Treadmill Reviews</h2>
 <p>
             Reviews are the main reason people buy treadmills on Amazon, and they are genuinely
             useful — but only if you read them for the right things. A star rating on its own tells
-            you very little about a machine you will use for years. (Our longer guide on
-            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read treadmill reviews</a>
-            goes beyond Amazon.)
+            you very little about a machine you will use for years. (Our longer guide on <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read treadmill reviews</a> goes beyond Amazon.)
           </p>
           <p>
             <strong>Check which version the review describes.</strong> Product pages often group
@@ -348,7 +303,7 @@ const schema = {
         </div>
 
         <div id="generic-brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Generic Brands vs Established Brands</h2>
+          <h2>Generic Brands vs Established Brands</h2>
 <p>
             Search for a treadmill on Amazon and a large share of the results come from brands you
             may not recognise, often with very similar-looking machines at lower prices. Some are
@@ -376,15 +331,12 @@ const schema = {
           <p>
             For a walking pad or a compact machine used for gentle walking, a lesser-known brand can
             be a reasonable choice if the reviews are long-term and consistent. For running, heavier
-            users or daily use, the case for an established brand is stronger. Our guides to
-            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a>
-            and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs premium treadmills</a>
-            set out what you give up at the lower end.
+            users or daily use, the case for an established brand is stronger. Our guides to <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a> and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs premium treadmills</a> set out what you give up at the lower end.
           </p>
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Delivery: Kerbside, Room of Choice and Freight</h2>
+          <h2>Delivery: Kerbside, Room of Choice and Freight</h2>
 <p>
             A treadmill does not arrive like an ordinary parcel, and the delivery arrangement on the
             listing is worth reading as closely as the specification.
@@ -410,18 +362,12 @@ const schema = {
           </p>
           <p>
             Before ordering, measure the route from the door to the room, including stairs and tight
-            corners, and check the boxed weight. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives typical figures, and the
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a>
-            covers getting it upstairs. If assembly is yours, our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a>
-            sets out the job.
+            corners, and check the boxed weight. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives typical figures, and the <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a> covers getting it upstairs. If assembly is yours, our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a> sets out the job.
           </p>
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Returns on an Oversized Item</h2>
+          <h2>Returns on an Oversized Item</h2>
 <p>
             Amazon's return process is easy for most products. For a treadmill, the principle may be
             the same but the practicalities are very different, and the terms can vary by seller and
@@ -451,14 +397,12 @@ const schema = {
           </p>
           <p>
             The practical lesson is the same as anywhere else: a return policy is a safety net, not a
-            trial plan. Choose the machine carefully enough that you do not need it. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>
-            covers the decisions to make first.
+            trial plan. Choose the machine carefully enough that you do not need it. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a> covers the decisions to make first.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warranty: Register With the Manufacturer</h2>
+          <h2>Warranty: Register With the Manufacturer</h2>
 <p>
             When you buy a treadmill on Amazon, the warranty almost always comes from the
             manufacturer, not from Amazon. That has three practical consequences.
@@ -481,14 +425,12 @@ const schema = {
           </p>
           <p>
             Amazon and third parties may offer extended protection plans at checkout. Read what they
-            cover and who administers them before buying one; our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            discusses when extended cover is worth having.
+            cover and who administers them before buying one; our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> discusses when extended cover is worth having.
           </p>
         </div>
 
         <div id="prices" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Judging an Amazon Treadmill Price</h2>
+          <h2>Judging an Amazon Treadmill Price</h2>
 <p>
             Amazon prices on treadmills can move frequently, and the crossed-out reference price
             next to a deal is not always a price the machine has recently sold at. Judge any price
@@ -506,44 +448,35 @@ const schema = {
           </p>
           <p>
             <strong>Watch the calendar.</strong> Treadmill prices move through the year across the
-            whole market, not just on Amazon. Our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            sets out the cycle, and
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
-            covers how to tell a real reduction from a presentational one.
+            whole market, not just on Amazon. Our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> sets out the cycle, and <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> covers how to tell a real reduction from a presentational one.
           </p>
         </div>
 
         <div id="compare-channels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Amazon Compares With Other Places to Buy</h2>
+          <h2>How Amazon Compares With Other Places to Buy</h2>
 <p>
             Amazon's strengths are selection, convenience and a large volume of reviews. Its
             weaknesses are listing accuracy, the variety of sellers and the practical difficulty of
-            returning a heavy item. For the other big online marketplaces, see <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill on Wayfair</a>
-            and our guide to <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a>,
+            returning a heavy item. For the other big online marketplaces, see <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill on Wayfair</a> and our guide to <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a>,
             where the same seller checks apply.
           </p>
           <p>
             <strong>Buying direct from the manufacturer</strong> gives you the clearest specification
             and warranty terms and the full current range, often with delivery options that go
             beyond the kerb. <strong>Specialty fitness stores</strong> let you stand on the machine
-            and usually offer delivery, assembly and local service. <strong>Warehouse clubs</strong>
-            such as Costco carry a small, rotating range with a strong return reputation — see our
-            <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco guide</a>.
+            and usually offer delivery, assembly and local service. <strong>Warehouse clubs</strong> such as Costco carry a small, rotating range with a strong return reputation — see our <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco guide</a>.
             The <strong>used market</strong> offers the most hardware for the money, with no
             recourse.
           </p>
           <p>
             A sensible approach for many buyers is to try machines in a store, settle on a
             specification, and then compare the delivered price for an equivalent machine across
-            channels, Amazon included. Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            sets out what each channel usually includes.
+            channels, Amazon included. Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> sets out what each channel usually includes.
           </p>
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Before You Order a Treadmill on Amazon</h2>
+          <h2>Before You Order a Treadmill on Amazon</h2>
 <p>
             Run through these before you click the button.
           </p>
@@ -560,145 +493,157 @@ const schema = {
             <li><strong>Space and route.</strong> Have you measured the room and the path to it?</li>
           </ul>
           <p>
-            If you are unsure how much machine you need, our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            is the place to start.
+            If you are unsure how much machine you need, our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a> is the place to start.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to buy a treadmill on Amazon?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Generally yes, provided you check who the seller is, confirm the specification against the manufacturer's own figures, and read the delivery and return terms on the specific listing. The risks are inaccurate listings, pooled reviews and the practical difficulty of returning a heavy item, not the marketplace itself.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are Amazon treadmills good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Amazon sells treadmills from established manufacturers alongside many lesser-known brands, so quality ranges from very good to very basic. Judge each machine on continuous horsepower, running surface, maximum user weight, warranty and parts availability rather than on the star rating or the listing title.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you return a treadmill to Amazon?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, but the terms depend on the listing and the seller, and large items can carry their own conditions. Returns of heavy machines commonly involve scheduling a pickup and may require repacking. Check the return terms on the product page before ordering, and keep the box until you are sure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Amazon deliver treadmills to your room?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the listing. Smaller machines may arrive as ordinary parcels left at the door. Larger treadmills are often delivered by a freight or large-item carrier, and the service may stop at the kerb or door unless room-of-choice delivery is included or offered. Read the delivery details on the listing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who handles the warranty on a treadmill bought on Amazon?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually the manufacturer. Register the machine if the manufacturer asks you to, keep your order confirmation as proof of purchase, and check before buying that the manufacturer honours its warranty for the seller you are buying from, since some limit coverage to authorised retailers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I look for in an Amazon treadmill machine listing?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Look for the continuous motor rating rather than peak horsepower, the belt width and length of the running surface, the maximum user weight, whether incline is powered, the model number and the seller. Confirm those figures on the manufacturer's website, since listing details are sometimes out of date.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill on Amazon</h2>
+          <p>Most problems with Amazon treadmills start on the product page, not in the box.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the listing title</h3>
+              <p>Titles are written to match searches, so one machine can be described as a walking pad, a folding treadmill and an incline runner all at once. Establish what the machine actually is from its photographs, dimensions and running surface.</p>
+            </li>
+            <li>
+              <h3>Comparing peak horsepower</h3>
+              <p>Peak figures are larger and say little about sustained performance. Compare continuous horsepower, and if the listing does not give it, ask the manufacturer or treat the figure you can see as peak.</p>
+            </li>
+            <li>
+              <h3>Reading the stars, not the reviews</h3>
+              <p>Ratings can be pooled across variants and weighted towards first-week impressions. Read the long-term and critical reviews, check which version they describe, and look for repeated problems.</p>
+            </li>
+            <li>
+              <h3>Ignoring who the seller is</h3>
+              <p>The seller affects returns, delivery and sometimes warranty. Check whether it is Amazon, the manufacturer or an authorised retailer, and whether the manufacturer will support a machine bought from them.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill on Amazon</h2>
-          <p class="text-gray-700 leading-relaxed">Most problems with Amazon treadmills start on the product page, not in the box.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the listing title</h3>
-              <p class="text-gray-700 text-sm m-0">Titles are written to match searches, so one machine can be described as a walking pad, a folding treadmill and an incline runner all at once. Establish what the machine actually is from its photographs, dimensions and running surface.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing peak horsepower</h3>
-              <p class="text-gray-700 text-sm m-0">Peak figures are larger and say little about sustained performance. Compare continuous horsepower, and if the listing does not give it, ask the manufacturer or treat the figure you can see as peak.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading the stars, not the reviews</h3>
-              <p class="text-gray-700 text-sm m-0">Ratings can be pooled across variants and weighted towards first-week impressions. Read the long-term and critical reviews, check which version they describe, and look for repeated problems.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring who the seller is</h3>
-              <p class="text-gray-700 text-sm m-0">The seller affects returns, delivery and sometimes warranty. Check whether it is Amazon, the manufacturer or an authorised retailer, and whether the manufacturer will support a machine bought from them.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-            <a href="/buying-a-treadmill-at-costco/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill at Costco</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Judging a warehouse-club model and its return terms.</p>
-            </a>
-            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Specs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Continuous vs peak, and how much motor you need.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Amazon is a fine place to buy a treadmill you have already chosen.</strong>
-            It is a poor place to choose one from scratch, because titles, motor ratings and pooled
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Amazon is a fine place to buy a treadmill you have already chosen.</strong> It is a poor place to choose one from scratch, because titles, motor ratings and pooled
             reviews can all mislead. Check the seller, the continuous horsepower, the running surface
             and the return terms for that listing before you order.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Register the machine with the manufacturer, keep your order confirmation, and compare the
-            delivered price with
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+            delivered price with <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
             If the specification holds up and the numbers work, the convenience is real.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+            <li><a href="/buying-a-treadmill-at-costco/">Buying a Treadmill at Costco</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is it safe to buy a treadmill on Amazon?</h3></summary>
+            <p class="faq-a">
+              Generally yes, provided you check who the seller is, confirm the specification against the manufacturer's own figures, and read the delivery and return terms on the specific listing. The risks are inaccurate listings, pooled reviews and the practical difficulty of returning a heavy item, not the marketplace itself.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are Amazon treadmills good?</h3></summary>
+            <p class="faq-a">
+              Amazon sells treadmills from established manufacturers alongside many lesser-known brands, so quality ranges from very good to very basic. Judge each machine on continuous horsepower, running surface, maximum user weight, warranty and parts availability rather than on the star rating or the listing title.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you return a treadmill to Amazon?</h3></summary>
+            <p class="faq-a">
+              Usually, but the terms depend on the listing and the seller, and large items can carry their own conditions. Returns of heavy machines commonly involve scheduling a pickup and may require repacking. Check the return terms on the product page before ordering, and keep the box until you are sure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Amazon deliver treadmills to your room?</h3></summary>
+            <p class="faq-a">
+              It depends on the listing. Smaller machines may arrive as ordinary parcels left at the door. Larger treadmills are often delivered by a freight or large-item carrier, and the service may stop at the kerb or door unless room-of-choice delivery is included or offered. Read the delivery details on the listing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who handles the warranty on a treadmill bought on Amazon?</h3></summary>
+            <p class="faq-a">
+              Usually the manufacturer. Register the machine if the manufacturer asks you to, keep your order confirmation as proof of purchase, and check before buying that the manufacturer honours its warranty for the seller you are buying from, since some limit coverage to authorised retailers.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should I look for in an Amazon treadmill machine listing?</h3></summary>
+            <p class="faq-a">
+              Look for the continuous motor rating rather than peak horsepower, the belt width and length of the running surface, the maximum user weight, whether incline is powered, the model number and the seller. Confirm those figures on the manufacturer's website, since listing details are sometimes out of date.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+          <a href="/buying-a-treadmill-at-costco/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Buying a Treadmill at Costco</div>
+            <p class="c-blurb">Judging a warehouse-club model and its return terms.</p>
+          </a>
+          <a href="/treadmill-horsepower-guide/" class="card">
+            <div class="c-kicker">Specs</div>
+            <div class="c-title">Treadmill Horsepower Guide</div>
+            <p class="c-blurb">Continuous vs peak, and how much motor you need.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

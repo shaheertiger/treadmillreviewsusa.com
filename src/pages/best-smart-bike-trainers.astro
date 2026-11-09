@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Smart Trainer (2026): 5 Indoor Bike Trainers Compared";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-smart-bike-trainers/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,66 +275,79 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Wahoo KICKR Smart Trainer", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestsmartbiketrainers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestsmartbiketrainers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Smart Trainer and Indoor Bike Trainer for Your Own Bike</h1>
+      <p class="ed-dek">
+        A smart trainer turns the road bike you already own into an indoor bike that sets its own resistance. Here are five currently sold trainers, direct-drive and wheel-on, the axle and cassette checks to make before you order, what ERG mode, FTMS and ANT+ FE-C actually mean, and the popular trainers we could not confirm as still on sale.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Smart Trainer <span class="text-[#5AA9FF]">and Indoor Bike Trainer for Your Own Bike</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A smart trainer turns the road bike you already own into an indoor bike that sets its own resistance. Here are five currently sold trainers, direct-drive and wheel-on, the axle and cassette checks to make before you order, what ERG mode, FTMS and ANT+ FE-C actually mean, and the popular trainers we could not confirm as still on sale.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#compatibility" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Will It Fit My Bike?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#garmin-tacx-neo-2t"><img src="https://m.media-amazon.com/images/I/31k9jR8e-UL._SL500_.jpg" alt="Garmin Tacx NEO 2T Smart Trainer" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Garmin Tacx NEO 2T Smart Trainer</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          An indoor bike trainer holds your own bicycle still while you pedal, and a smart one controls
+          how hard that is: it can hold you at a set wattage for a structured workout, or make a virtual
+          hill in Zwift feel like a hill. Choosing one is less about brand than about three practical
+          questions — will it fit your bike's axle and drivetrain, how accurate and responsive does it need
+          to be, and how will it connect to the app you use. The five trainers below cover the main types
+          with products on sale now, and the guide after them works through those questions in order.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#wahoo-kickr">Wahoo KICKR Smart Trainer</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#wahoo-kickr-core-2">Wahoo KICKR CORE 2</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Climbing:</span> <a href="#garmin-tacx-neo-2t">Garmin Tacx NEO 2T Smart Trainer</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Wheel-On:</span> <a href="#wahoo-kickr-rollr">Wahoo KICKR ROLLR</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#saris-fluid2-smart-equipped">Saris Fluid2 Smart Equipped Trainer</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           trainers, and no figure on this page is our own measurement. Each was confirmed as currently
           sold on 19 October 2026 on its maker's US store (Wahoo, Garmin and Saris) and in Amazon US search
@@ -340,80 +358,28 @@ const schema = {
           conflicted — most often on unit weight, and once on warranty length — we left it out and say so
           on the card. Prices are those we saw on 19 October 2026 and change often, especially in the
           autumn sales. We earn a commission if you buy through the Amazon links on this page; it does
-          not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment; this
+          not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment; this
           is not medical or coaching advice. If you have a heart condition or are returning from injury,
           ask a doctor what kind of training suits you before starting high-intensity indoor workouts.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#wahoo-kickr" class="font-bold text-gray-900 no-underline hover:underline">Wahoo KICKR Smart Trainer</a>
-            <a href="#wahoo-kickr" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#wahoo-kickr-core-2" class="font-bold text-gray-900 no-underline hover:underline">Wahoo KICKR CORE 2</a>
-            <a href="#wahoo-kickr-core-2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Climbing:</span>
-            <a href="#garmin-tacx-neo-2t" class="font-bold text-gray-900 no-underline hover:underline">Garmin Tacx NEO 2T Smart Trainer</a>
-            <a href="#garmin-tacx-neo-2t" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Wheel-On:</span>
-            <a href="#wahoo-kickr-rollr" class="font-bold text-gray-900 no-underline hover:underline">Wahoo KICKR ROLLR</a>
-            <a href="#wahoo-kickr-rollr" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#saris-fluid2-smart-equipped" class="font-bold text-gray-900 no-underline hover:underline">Saris Fluid2 Smart Equipped Trainer</a>
-            <a href="#saris-fluid2-smart-equipped" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Smart Bike Trainers</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Trainers</a>
-          <a href="#direct-drive-vs-wheel-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Direct-Drive vs Wheel-On Trainers</a>
-          <a href="#compatibility" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Will It Fit My Bike? Axles, Cassettes and Drivetrains</a>
-          <a href="#erg-and-connectivity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. ERG Mode, FTMS, ANT+ FE-C and Wi-Fi Explained</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise, Floors and Neighbours</a>
-          <a href="#buyers-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Smart Trainer Buyer's Guide</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Smart Bike Trainers</a></li>
+            <li><a href="#how-we-chose">How We Chose These Trainers</a></li>
+            <li><a href="#direct-drive-vs-wheel-on">Direct-Drive vs Wheel-On Trainers</a></li>
+            <li><a href="#compatibility">Will It Fit My Bike? Axles, Cassettes and Drivetrains</a></li>
+            <li><a href="#erg-and-connectivity">ERG Mode, FTMS, ANT+ FE-C and Wi-Fi Explained</a></li>
+            <li><a href="#noise">Noise, Floors and Neighbours</a></li>
+            <li><a href="#buyers-guide">Smart Trainer Buyer's Guide</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          An indoor bike trainer holds your own bicycle still while you pedal, and a smart one controls
-          how hard that is: it can hold you at a set wattage for a structured workout, or make a virtual
-          hill in Zwift feel like a hill. Choosing one is less about brand than about three practical
-          questions — will it fit your bike's axle and drivetrain, how accurate and responsive does it need
-          to be, and how will it connect to the app you use. The five trainers below cover the main types
-          with products on sale now, and the guide after them works through those questions in order.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five trainers: three direct-drive, one wheel-on roller design and one classic wheel-on trainer
             for a tight budget. Most riders will be best served by the first two.
@@ -433,17 +399,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you do not own a road bike and do not want to buy one, a trainer is the wrong tool: our
-            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">exercise bike guide</a> and
-            <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives guide</a>
-            cover complete bikes, including a Wahoo smart bike. The
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects the rest of this
+            If you do not own a road bike and do not want to buy one, a trainer is the wrong tool: our <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">exercise bike guide</a> and <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives guide</a> cover complete bikes, including a Wahoo smart bike. The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects the rest of this
             series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Smart Bike Trainers</h2>
+          <h2>The 5 Best Smart Bike Trainers</h2>
 <p>
             Each card gives the figures we could confirm from two sources and the price range we saw on 19
             October. Read the axle and cassette line first: a trainer that does not fit your bike's rear
@@ -451,78 +413,67 @@ const schema = {
             suggests.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Trainers</h2>
+          <h2>How We Chose These Trainers</h2>
 <p>
             We have not tested these trainers. They were chosen from manufacturer product pages and
             specifications, independent testing published by OutdoorGearLab and DC Rainmaker, recall records
@@ -575,7 +526,7 @@ const schema = {
         </div>
 
         <div id="direct-drive-vs-wheel-on" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Direct-Drive vs Wheel-On Trainers</h2>
+          <h2>Direct-Drive vs Wheel-On Trainers</h2>
 <p>
             There are three ways a trainer can connect to your bike, and the type decides more about
             accuracy, noise and convenience than any single specification.
@@ -612,7 +563,7 @@ const schema = {
         </div>
 
         <div id="compatibility" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Will It Fit My Bike? Axles, Cassettes and Drivetrains</h2>
+          <h2>Will It Fit My Bike? Axles, Cassettes and Drivetrains</h2>
 <p>
             Compatibility is where most trainer purchases go wrong, and it is easy to check before you
             order. Look at three things on your bike.
@@ -657,7 +608,7 @@ const schema = {
         </div>
 
         <div id="erg-and-connectivity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. ERG Mode, FTMS, ANT+ FE-C and Wi-Fi Explained</h2>
+          <h2>ERG Mode, FTMS, ANT+ FE-C and Wi-Fi Explained</h2>
 <p>
             A smart trainer is only as useful as its connection to the app you ride with. These are the terms
             that matter.
@@ -690,17 +641,13 @@ const schema = {
             heart-rate strap and a bike computer all talking to one tablet, check the limit.</li>
           </ul>
           <p>
-            For the apps themselves, our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift guide</a>
-            explains how Zwift's subscription and devices work, and our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
-            covers the running side of the same app, which pairs naturally with a trainer for triathletes. A
-            chest-strap monitor gives a better effort measure than most wrist devices indoors; see our
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest strap vs wrist heart rate guide</a>.
+            For the apps themselves, our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift guide</a> explains how Zwift's subscription and devices work, and our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a> covers the running side of the same app, which pairs naturally with a trainer for triathletes. A
+            chest-strap monitor gives a better effort measure than most wrist devices indoors; see our <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest strap vs wrist heart rate guide</a>.
           </p>
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise, Floors and Neighbours</h2>
+          <h2>Noise, Floors and Neighbours</h2>
 <p>
             Trainer noise has three sources: the trainer's own flywheel and resistance unit, your bike's
             drivetrain, and, on wheel-on designs, the tyre on the roller. Direct-drive trainers remove the
@@ -712,17 +659,14 @@ const schema = {
           <p>
             In practice, a clean, well-lubricated chain and a good cassette make more difference to a
             direct-drive trainer's noise than the trainer, and a dense mat under the trainer cuts vibration
-            through the floor, which is what neighbours below actually hear. Our
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a> covers mats,
-            and our <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pad guide</a>
-            explains how isolation pads work. A fan is the other essential: you will sweat far more indoors
-            than on the road, and our <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">fan guide</a>
-            applies just as well to a trainer.
+            through the floor, which is what neighbours below actually hear. Our <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a> covers mats,
+            and our <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pad guide</a> explains how isolation pads work. A fan is the other essential: you will sweat far more indoors
+            than on the road, and our <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">fan guide</a> applies just as well to a trainer.
           </p>
         </div>
 
         <div id="buyers-guide" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Smart Trainer Buyer's Guide</h2>
+          <h2>Smart Trainer Buyer's Guide</h2>
 <ol>
             <li><strong>Check your bike first.</strong> Note the rear axle type and width, the number of gears
             and the freehub. Match them against the trainer's compatibility list, and budget for a cassette
@@ -741,105 +685,38 @@ const schema = {
           </ol>
           <p>
             A trainer is one way to ride indoors; if you are still weighing it against a complete bike or
-            another cardio machine, our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machines guide</a>
-            sets the options side by side.
+            another cardio machine, our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machines guide</a> sets the options side by side.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best smart trainer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most riders, the Wahoo KICKR CORE 2: $549.99 on 19 October 2026, with a cassette or Zwift Cog fitted, Wi-Fi, a 1,800 W maximum and a 16% grade. If you train seriously by power or ride steep virtual climbs, the Wahoo KICKR ($849.99 that day) or the Tacx NEO 2T adds accuracy, power and grade.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best indoor bike trainer for the money?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A direct-drive trainer like the Wahoo KICKR CORE 2 gives the most for the money if you want app-controlled workouts. If you only need to spin indoors and follow a video, a wheel-on fluid trainer such as the Saris Fluid2 costs a fraction as much, but apps cannot change its resistance.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a smart trainer fit my bike?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, but check three things: the rear axle (130 or 135 mm quick-release, or 12 x 142 or 12 x 148 mm thru-axle), the number of gears, and the freehub type. Wahoo's CORE 2 supports 8- to 13-speed drivetrains but not Shimano Micro Spline, and its stock cassette does not suit Shimano CUES or LinkGlide.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is ERG mode on a smart trainer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                ERG mode makes the trainer hold a target power, in watts, whatever gear or cadence you choose. The app sets the target for each interval, so a structured workout runs itself. It works best on direct-drive trainers, which change resistance quickly and accurately; wheel-on trainers are less precise.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between FTMS and ANT+ FE-C?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Both are standards that let an app control a trainer. ANT+ FE-C uses the ANT+ wireless protocol, common on bike computers and PCs. FTMS is the Bluetooth Fitness Machine Service, which most newer phone and tablet apps use. Some trainers use their own Bluetooth control instead, so check that your app lists your trainer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Zwift Hub still available?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 19 October 2026 Zwift's US store listed only spare parts for the Hub, and its Hub One page redirected to the Wahoo KICKR CORE 2 with Zwift Cog and Click, which Zwift now sells at $549.99. If you find a Zwift Hub new elsewhere, check the warranty and who supports it.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Smart Trainer</h2>
+          <p>Each of these is a common reason a new trainer sits in its box for a week.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Not checking the axle and freehub first</h3>
+              <p>A trainer that does not fit your bike's thru-axle or freehub needs an adapter, a new cassette or a different freehub body before you can ride. Check your bike's axle standard, gear count and freehub against the trainer's compatibility list before you order, and ask a bike shop if you are unsure.</p>
+            </li>
+            <li>
+              <h3>Forgetting the cassette and tools</h3>
+              <p>Some direct-drive trainers ship without a cassette. Fitting one needs a cassette that matches your bike, a lockring tool and a chain whip or wrench. Either buy a trainer with a cassette or Zwift Cog fitted, or budget for the parts and an afternoon, or a bike shop visit.</p>
+            </li>
+            <li>
+              <h3>Expecting a basic trainer to control itself</h3>
+              <p>A trainer with only a speed sensor sends data to an app but cannot change its own resistance, so it cannot run ERG workouts or make virtual hills harder. If structured training is the reason you are buying, make sure the trainer supports app control over ANT+ FE-C, FTMS or its maker's own protocol.</p>
+            </li>
+            <li>
+              <h3>Ignoring the floor, the fan and the neighbours</h3>
+              <p>Indoor riding is hot and transmits vibration through floors. Put a dense mat under the trainer, keep a fan in front of you, and keep your drivetrain clean. A wheel-on trainer with knobbly tyres is the loudest setup of all; fit a smooth trainer tyre if you ride wheel-on.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Smart Trainer</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is a common reason a new trainer sits in its box for a week.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking the axle and freehub first</h3>
-              <p class="text-gray-700 text-sm m-0">A trainer that does not fit your bike's thru-axle or freehub needs an adapter, a new cassette or a different freehub body before you can ride. Check your bike's axle standard, gear count and freehub against the trainer's compatibility list before you order, and ask a bike shop if you are unsure.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the cassette and tools</h3>
-              <p class="text-gray-700 text-sm m-0">Some direct-drive trainers ship without a cassette. Fitting one needs a cassette that matches your bike, a lockring tool and a chain whip or wrench. Either buy a trainer with a cassette or Zwift Cog fitted, or budget for the parts and an afternoon, or a bike shop visit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a basic trainer to control itself</h3>
-              <p class="text-gray-700 text-sm m-0">A trainer with only a speed sensor sends data to an app but cannot change its own resistance, so it cannot run ERG workouts or make virtual hills harder. If structured training is the reason you are buying, make sure the trainer supports app control over ANT+ FE-C, FTMS or its maker's own protocol.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the floor, the fan and the neighbours</h3>
-              <p class="text-gray-700 text-sm m-0">Indoor riding is hot and transmits vibration through floors. Put a dense mat under the trainer, keep a fan in front of you, and keep your drivetrain clean. A wheel-on trainer with knobbly tyres is the loudest setup of all; fit a smooth trainer tyre if you ride wheel-on.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/zwift-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Zwift</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Zwift Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How Zwift works, what it costs and which devices it talks to, from the running side.</p>
-            </a>
-            <a href="/best-exercise-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Exercise Bikes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Complete indoor bikes for riders who would rather not use their own road bike.</p>
-            </a>
-            <a href="/best-treadmills-for-zwift/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Zwift</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Zwift</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Treadmills that pair with Zwift, and the one whose incline Zwift can control.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most riders, the Wahoo KICKR CORE 2 is the smart trainer to buy</strong>:
             it fits most modern bikes, ships ready to ride, connects over Wi-Fi and costs a little over half
             the flagship price. Step up to the Wahoo KICKR for more power and a heavier flywheel, or the Tacx
@@ -847,38 +724,120 @@ const schema = {
             remove a wheel, and the Saris Fluid2 is a sound budget trainer as long as you do not need the app
             to control it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, check your axle, gear count and freehub before ordering, budget for a
             cassette if one is not included, and put a mat and a fan in the room. If a trainer on your own
-            bike is not the right fit after all,
-            <a href="/best-peloton-alternatives/" class="text-[#5AA9FF] font-bold no-underline">our Peloton alternatives guide</a>
-            covers complete smart bikes.
+            bike is not the right fit after all, <a href="/best-peloton-alternatives/" class="text-[#5AA9FF] font-bold no-underline">our Peloton alternatives guide</a> covers complete smart bikes.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/zwift-treadmill-guide/">Zwift Treadmill Guide</a></li>
+            <li><a href="/best-exercise-bikes/">Best Exercise Bikes</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best smart trainer?</h3></summary>
+            <p class="faq-a">
+              For most riders, the Wahoo KICKR CORE 2: $549.99 on 19 October 2026, with a cassette or Zwift Cog fitted, Wi-Fi, a 1,800 W maximum and a 16% grade. If you train seriously by power or ride steep virtual climbs, the Wahoo KICKR ($849.99 that day) or the Tacx NEO 2T adds accuracy, power and grade.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best indoor bike trainer for the money?</h3></summary>
+            <p class="faq-a">
+              A direct-drive trainer like the Wahoo KICKR CORE 2 gives the most for the money if you want app-controlled workouts. If you only need to spin indoors and follow a video, a wheel-on fluid trainer such as the Saris Fluid2 costs a fraction as much, but apps cannot change its resistance.
             </p>
+          </details>
+          <details>
+            <summary><h3>Will a smart trainer fit my bike?</h3></summary>
+            <p class="faq-a">
+              Usually, but check three things: the rear axle (130 or 135 mm quick-release, or 12 x 142 or 12 x 148 mm thru-axle), the number of gears, and the freehub type. Wahoo's CORE 2 supports 8- to 13-speed drivetrains but not Shimano Micro Spline, and its stock cassette does not suit Shimano CUES or LinkGlide.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is ERG mode on a smart trainer?</h3></summary>
+            <p class="faq-a">
+              ERG mode makes the trainer hold a target power, in watts, whatever gear or cadence you choose. The app sets the target for each interval, so a structured workout runs itself. It works best on direct-drive trainers, which change resistance quickly and accurately; wheel-on trainers are less precise.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between FTMS and ANT+ FE-C?</h3></summary>
+            <p class="faq-a">
+              Both are standards that let an app control a trainer. ANT+ FE-C uses the ANT+ wireless protocol, common on bike computers and PCs. FTMS is the Bluetooth Fitness Machine Service, which most newer phone and tablet apps use. Some trainers use their own Bluetooth control instead, so check that your app lists your trainer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Zwift Hub still available?</h3></summary>
+            <p class="faq-a">
+              On 19 October 2026 Zwift's US store listed only spare parts for the Hub, and its Hub One page redirected to the Wahoo KICKR CORE 2 with Zwift Cog and Click, which Zwift now sells at $549.99. If you find a Zwift Hub new elsewhere, check the warranty and who supports it.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/zwift-treadmill-guide/" class="card">
+            <div class="c-kicker">Zwift</div>
+            <div class="c-title">Zwift Treadmill Guide</div>
+            <p class="c-blurb">How Zwift works, what it costs and which devices it talks to, from the running side.</p>
+          </a>
+          <a href="/best-exercise-bikes/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Exercise Bikes</div>
+            <p class="c-blurb">Complete indoor bikes for riders who would rather not use their own road bike.</p>
+          </a>
+          <a href="/best-treadmills-for-zwift/" class="card">
+            <div class="c-kicker">Zwift</div>
+            <div class="c-title">Best Treadmills for Zwift</div>
+            <p class="c-blurb">Treadmills that pair with Zwift, and the one whose incline Zwift can control.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

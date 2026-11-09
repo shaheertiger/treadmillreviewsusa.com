@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Anti-Gravity Treadmill (2026): AlterG, Costs and Home Options";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/anti-gravity-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "What a Session Costs", link: "#session-costs" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-antigravitytreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-antigravitytreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Explainer</span>
+      </nav>
+      <h1 class="ed-title">Anti-Gravity Treadmill: What It Is, Who Uses One and What It Costs</h1>
+      <p class="ed-dek">
+        An anti-gravity treadmill lets you walk or run while carrying only part of your body weight, using air pressure rather than a harness. Here is how the AlterG and similar machines work, who they are for, how to get a session, what that costs, and what a home user can realistically do instead.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Explainer
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Anti-Gravity Treadmill: <span class="text-[#5AA9FF]">What It Is, Who Uses One and What It Costs</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An anti-gravity treadmill lets you walk or run while carrying only part of your body weight, using air pressure rather than a harness. Here is how the AlterG and similar machines work, who they are for, how to get a session, what that costs, and what a home user can realistically do instead.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#session-costs" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What It Costs
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is an equipment explainer, not medical, physical therapy or rehabilitation advice,
-          and we are not qualified to give any of those. Whether reduced-body-weight walking or
-          running is appropriate for you, at what level and for how long, depends on your
-          condition, surgery or injury; if you are recovering from an operation or injury, or have
-          a heart, joint, neurological or other condition, follow the plan of your surgeon, doctor
-          or physical therapist. <strong class="text-gray-900">On the figures below:</strong>
-          session prices and company details were checked on 14 October 2026 on the providers' and
-          manufacturers' own pages and an independent source; purchase prices are historical press
-          figures, not current quotes. We have not used or tested any machine described here.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Is an Anti-Gravity Treadmill? The Short Answer</a>
-          <a href="#how-it-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Does Differential Air Pressure Work?</a>
-          <a href="#alterg-today" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Is the AlterG, and Who Makes It Now?</a>
-          <a href="#who-uses-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Who Uses an Anti-Gravity Treadmill?</a>
-          <a href="#how-to-access" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Do You Get a Session on One?</a>
-          <a href="#session-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Much Does an Anti-Gravity Treadmill Session Cost?</a>
-          <a href="#cost-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Much Does It Cost to Buy an Anti-Gravity Treadmill?</a>
-          <a href="#evidence-and-limits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Can an Anti-Gravity Treadmill Do, and What Can It Not?</a>
-          <a href="#home-alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Are the Home Alternatives?</a>
-          <a href="#questions-to-ask" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Should You Ask Before Booking?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The anti-gravity treadmill is one of the few pieces of rehabilitation equipment most
           people have heard of without ever seeing one. It appears in stories about professional
           athletes coming back from injury and in physical therapy clinic windows, usually under
@@ -210,8 +146,38 @@ const schema = {
           machines typically cost, and the home options for people who cannot get to a clinic.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is an equipment explainer, not medical, physical therapy or rehabilitation advice,
+          and we are not qualified to give any of those. Whether reduced-body-weight walking or
+          running is appropriate for you, at what level and for how long, depends on your
+          condition, surgery or injury; if you are recovering from an operation or injury, or have
+          a heart, joint, neurological or other condition, follow the plan of your surgeon, doctor
+          or physical therapist. <strong class="text-gray-900">On the figures below:</strong> session prices and company details were checked on 14 October 2026 on the providers' and
+          manufacturers' own pages and an independent source; purchase prices are historical press
+          figures, not current quotes. We have not used or tested any machine described here.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Is an Anti-Gravity Treadmill? The Short Answer</a></li>
+            <li><a href="#how-it-works">How Does Differential Air Pressure Work?</a></li>
+            <li><a href="#alterg-today">What Is the AlterG, and Who Makes It Now?</a></li>
+            <li><a href="#who-uses-it">Who Uses an Anti-Gravity Treadmill?</a></li>
+            <li><a href="#how-to-access">How Do You Get a Session on One?</a></li>
+            <li><a href="#session-costs">How Much Does an Anti-Gravity Treadmill Session Cost?</a></li>
+            <li><a href="#cost-to-buy">How Much Does It Cost to Buy an Anti-Gravity Treadmill?</a></li>
+            <li><a href="#evidence-and-limits">What Can an Anti-Gravity Treadmill Do, and What Can It Not?</a></li>
+            <li><a href="#home-alternatives">What Are the Home Alternatives?</a></li>
+            <li><a href="#questions-to-ask">What Should You Ask Before Booking?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Is an Anti-Gravity Treadmill? The Short Answer</h2>
+          <h2>What Is an Anti-Gravity Treadmill? The Short Answer</h2>
 <p>
             <strong>An anti-gravity treadmill is a treadmill enclosed in a sealed air chamber from
             the waist down; raising the air pressure in the chamber lifts the user, so they walk or
@@ -239,7 +205,7 @@ const schema = {
         </div>
 
         <div id="how-it-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Does Differential Air Pressure Work?</h2>
+          <h2>How Does Differential Air Pressure Work?</h2>
 <p>
             Differential air pressure works by raising the air pressure around your lower body
             slightly above the pressure around your upper body, so that the difference produces an
@@ -283,7 +249,7 @@ const schema = {
         </div>
 
         <div id="alterg-today" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Is the AlterG, and Who Makes It Now?</h2>
+          <h2>What Is the AlterG, and Who Makes It Now?</h2>
 <p>
             AlterG is the brand name most people mean when they search for an alter g treadmill,
             and since August 2023 it has been owned by Lifeward, the company formerly called ReWalk
@@ -316,7 +282,7 @@ const schema = {
         </div>
 
         <div id="who-uses-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Who Uses an Anti-Gravity Treadmill?</h2>
+          <h2>Who Uses an Anti-Gravity Treadmill?</h2>
 <p>
             Anti-gravity treadmills are used mainly by people in physical rehabilitation after
             lower-limb injury or surgery, by people with neurological conditions that affect
@@ -349,7 +315,7 @@ const schema = {
         </div>
 
         <div id="how-to-access" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Do You Get a Session on One?</h2>
+          <h2>How Do You Get a Session on One?</h2>
 <p>
             Most people use an anti-gravity treadmill either as part of a physical therapy plan,
             where the therapist includes it in treatment, or by booking cash-pay sessions at a
@@ -382,7 +348,7 @@ const schema = {
         </div>
 
         <div id="session-costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Much Does an Anti-Gravity Treadmill Session Cost?</h2>
+          <h2>How Much Does an Anti-Gravity Treadmill Session Cost?</h2>
 <p>
             On the US clinic price lists we checked on 14 October 2026, cash-pay anti-gravity
             treadmill sessions ranged from about $12.50 to $75 per session, depending on the
@@ -434,7 +400,7 @@ const schema = {
         </div>
 
         <div id="cost-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Much Does It Cost to Buy an Anti-Gravity Treadmill?</h2>
+          <h2>How Much Does It Cost to Buy an Anti-Gravity Treadmill?</h2>
 <p>
             Clinical anti-gravity treadmills cost tens of thousands of dollars, and the
             manufacturer does not publish list prices; facilities buy them through sales
@@ -470,7 +436,7 @@ const schema = {
         </div>
 
         <div id="evidence-and-limits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Can an Anti-Gravity Treadmill Do, and What Can It Not?</h2>
+          <h2>What Can an Anti-Gravity Treadmill Do, and What Can It Not?</h2>
 <p>
             An anti-gravity treadmill lets someone walk or run with less load on the legs while
             keeping a near-normal gait, which is genuinely useful in rehabilitation; it does not
@@ -502,7 +468,7 @@ const schema = {
         </div>
 
         <div id="home-alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Are the Home Alternatives?</h2>
+          <h2>What Are the Home Alternatives?</h2>
 <p>
             For most people the realistic home alternatives are low-impact rather than reduced
             body weight: walking at a gentle pace on a well-cushioned treadmill, moderate incline
@@ -511,23 +477,15 @@ const schema = {
           </p>
           <ul>
             <li><strong>A cushioned treadmill at walking pace.</strong> A deck with effective
-            cushioning softens footstrike compared with pavement. Our guide to
-            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
-            explains what it does and does not change, and
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">our picks for bad knees</a>
-            covers machines suited to joint-conscious walkers.</li>
+            cushioning softens footstrike compared with pavement. Our guide to <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a> explains what it does and does not change, and <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">our picks for bad knees</a> covers machines suited to joint-conscious walkers.</li>
             <li><strong>Incline walking instead of running.</strong> Walking uphill raises the
-            effort without the impact of running. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            explains how to start. Incline does increase load on some structures, such as the
+            effort without the impact of running. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> explains how to start. Incline does increase load on some structures, such as the
             Achilles and calves, so check with your therapist if those are the injured part.</li>
             <li><strong>Pool walking and deep-water running.</strong> Water is the original
             unweighting: buoyancy reduces load, and deep-water running uses a flotation belt to
             remove impact altogether. Many community pools allow it, and some physical therapy
             clinics have pools with built-in underwater treadmills.</li>
-            <li><strong>Bikes and ellipticals.</strong> Both remove impact. Our comparison of a
-            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
-            sets out the trade-offs.</li>
+            <li><strong>Bikes and ellipticals.</strong> Both remove impact. Our comparison of a <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a> sets out the trade-offs.</li>
             <li><strong>Handrail support, sparingly.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> takes some weight
             off the legs, and in early rehabilitation a therapist may suggest it. It also changes
             posture and gait, so it is a stopgap rather than a substitute for unweighting.</li>
@@ -541,7 +499,7 @@ const schema = {
         </div>
 
         <div id="questions-to-ask" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Should You Ask Before Booking?</h2>
+          <h2>What Should You Ask Before Booking?</h2>
 <p>
             Before booking anti-gravity treadmill sessions, confirm that they fit your treatment
             plan, what the full cost will be, and who will supervise.
@@ -565,147 +523,161 @@ const schema = {
             surgeon's restrictions, is not the right one.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is an anti-gravity treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is a treadmill enclosed in a sealed air chamber from the waist down. You wear special shorts that zip into the chamber, the air pressure inside is raised, and the pressure difference lifts you so that you walk or run carrying only a set percentage of your body weight. The AlterG is the best-known make.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an AlterG treadmill the same as a zero gravity treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In practice, yes: zero gravity treadmill is a common search term for the same kind of machine. It is a misnomer, because no treadmill removes gravity. AlterG states that its current models can unweight a user by up to 80 percent of body weight, so the lowest setting still leaves you carrying about a fifth of your weight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does an AlterG session cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On the US clinic price lists we checked in October 2026, cash-pay sessions ranged from about $12.50 to $75 each depending on the facility and whether you buy one session, a package or a membership. An initial assessment and the special shorts may cost extra. Within physical therapy, it is usually billed as part of the therapy session.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you buy an anti-gravity treadmill for home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Clinical machines such as the AlterG are sold to facilities and cost tens of thousands of dollars. A few home-focused air-pressure treadmills exist; Boost Treadmills offers its Boost 3 to buy, rent or lease for home use but does not publish a price on its site. For most people, clinic sessions plus a low-impact home set-up are more practical.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does insurance cover anti-gravity treadmill therapy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on your plan and how the clinic bills. When the machine is used as part of a prescribed course of physical therapy, the session is generally billed as therapy and may be covered on the same terms as other therapy visits. Cash-pay wellness sessions are usually not covered. Ask both the clinic and your insurer before you start.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who should not use an anti-gravity treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                That is a decision for your surgeon or physical therapist. Clinics screen users before the first session, and some injuries, wounds, surgical restrictions or medical conditions rule it out or delay it. If you are recovering from surgery or injury, do not book sessions without your treating clinician's agreement on whether and at what body weight to start.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Anti-Gravity Treadmills</h2>
+          <p>The machine is simple to use. The mistakes are about when, how much, and how it fits into a recovery.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Booking sessions without your clinician</h3>
+              <p>Reduced body weight makes it easy to do more than a healing injury can take. If you are recovering from surgery or injury, agree the starting body weight, speed and progression with your surgeon or physical therapist before booking, and tell the clinic what your restrictions are.</p>
+            </li>
+            <li>
+              <h3>Treating it as a substitute for rehabilitation</h3>
+              <p>Walking or running at reduced body weight is one tool. Strength work, balance training and a gradual return to full-weight walking or running are still needed, and the machine does not do those for you.</p>
+            </li>
+            <li>
+              <h3>Comparing session prices without the extras</h3>
+              <p>A cheap session can come with a separate assessment fee, a requirement to buy the shorts, or no supervision. Compare the total cost of the number of sessions you expect to need, including what is and is not supervised.</p>
+            </li>
+            <li>
+              <h3>Expecting a home treadmill to do the same job</h3>
+              <p>A cushioned home treadmill reduces impact compared with pavement, but it does not reduce body weight. If your plan calls for unweighting, you need a clinic session, a harness system or a specialist air-pressure machine, not just a softer deck.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Anti-Gravity Treadmills</h2>
-          <p class="text-gray-700 leading-relaxed">The machine is simple to use. The mistakes are about when, how much, and how it fits into a recovery.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Booking sessions without your clinician</h3>
-              <p class="text-gray-700 text-sm m-0">Reduced body weight makes it easy to do more than a healing injury can take. If you are recovering from surgery or injury, agree the starting body weight, speed and progression with your surgeon or physical therapist before booking, and tell the clinic what your restrictions are.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating it as a substitute for rehabilitation</h3>
-              <p class="text-gray-700 text-sm m-0">Walking or running at reduced body weight is one tool. Strength work, balance training and a gradual return to full-weight walking or running are still needed, and the machine does not do those for you.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing session prices without the extras</h3>
-              <p class="text-gray-700 text-sm m-0">A cheap session can come with a separate assessment fee, a requirement to buy the shorts, or no supervision. Compare the total cost of the number of sessions you expect to need, including what is and is not supervised.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a home treadmill to do the same job</h3>
-              <p class="text-gray-700 text-sm m-0">A cushioned home treadmill reduces impact compared with pavement, but it does not reduce body weight. If your plan calls for unweighting, you need a clinic session, a harness system or a specialist air-pressure machine, not just a softer deck.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Low-Impact Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-bad-knees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Joints</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Bad Knees</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines suited to joint-conscious walkers, and what really matters.</p>
-            </a>
-            <a href="/treadmill-cushioning-explained/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Cushioning Explained</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What deck cushioning does, and what it cannot change.</p>
-            </a>
-            <a href="/are-treadmills-bad-for-your-knees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Treadmills Bad for Your Knees?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Impact, incline and running form, without the myths.</p>
-            </a>
-            <a href="/history-of-the-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">History</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">History of the Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">An anti-gravity treadmill uses air pressure to lift you by part
             of your body weight, so you can walk or run with near-normal mechanics and less
             load.</strong> The AlterG, now owned by Lifeward, is the machine most clinics use, and
             sessions are usually booked through physical therapy or as cash-pay time at a clinic.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">For most people, it is a clinic tool rather than a home
             purchase.</strong> Clinical machines cost tens of thousands of dollars, sessions on the
             lists we checked ran from about $12.50 to $75, and your clinician should set how you use
-            one. At home, a low-impact set-up is the practical partner; our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#5AA9FF] font-bold no-underline">picks for bad knees</a>
-            are a good place to start.
+            one. At home, a low-impact set-up is the practical partner; our <a href="/best-treadmills-for-bad-knees/" class="text-[#5AA9FF] font-bold no-underline">picks for bad knees</a> are a good place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-bad-knees/">Best Treadmills for Bad Knees</a></li>
+            <li><a href="/treadmill-cushioning-explained/">Treadmill Cushioning Explained</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is an anti-gravity treadmill?</h3></summary>
+            <p class="faq-a">
+              It is a treadmill enclosed in a sealed air chamber from the waist down. You wear special shorts that zip into the chamber, the air pressure inside is raised, and the pressure difference lifts you so that you walk or run carrying only a set percentage of your body weight. The AlterG is the best-known make.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is an AlterG treadmill the same as a zero gravity treadmill?</h3></summary>
+            <p class="faq-a">
+              In practice, yes: zero gravity treadmill is a common search term for the same kind of machine. It is a misnomer, because no treadmill removes gravity. AlterG states that its current models can unweight a user by up to 80 percent of body weight, so the lowest setting still leaves you carrying about a fifth of your weight.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much does an AlterG session cost?</h3></summary>
+            <p class="faq-a">
+              On the US clinic price lists we checked in October 2026, cash-pay sessions ranged from about $12.50 to $75 each depending on the facility and whether you buy one session, a package or a membership. An initial assessment and the special shorts may cost extra. Within physical therapy, it is usually billed as part of the therapy session.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you buy an anti-gravity treadmill for home?</h3></summary>
+            <p class="faq-a">
+              Clinical machines such as the AlterG are sold to facilities and cost tens of thousands of dollars. A few home-focused air-pressure treadmills exist; Boost Treadmills offers its Boost 3 to buy, rent or lease for home use but does not publish a price on its site. For most people, clinic sessions plus a low-impact home set-up are more practical.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does insurance cover anti-gravity treadmill therapy?</h3></summary>
+            <p class="faq-a">
+              It depends on your plan and how the clinic bills. When the machine is used as part of a prescribed course of physical therapy, the session is generally billed as therapy and may be covered on the same terms as other therapy visits. Cash-pay wellness sessions are usually not covered. Ask both the clinic and your insurer before you start.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who should not use an anti-gravity treadmill?</h3></summary>
+            <p class="faq-a">
+              That is a decision for your surgeon or physical therapist. Clinics screen users before the first session, and some injuries, wounds, surgical restrictions or medical conditions rule it out or delay it. If you are recovering from surgery or injury, do not book sessions without your treating clinician's agreement on whether and at what body weight to start.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Low-Impact Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-bad-knees/" class="card">
+            <div class="c-kicker">Joints</div>
+            <div class="c-title">Best Treadmills for Bad Knees</div>
+            <p class="c-blurb">Machines suited to joint-conscious walkers, and what really matters.</p>
+          </a>
+          <a href="/treadmill-cushioning-explained/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Treadmill Cushioning Explained</div>
+            <p class="c-blurb">What deck cushioning does, and what it cannot change.</p>
+          </a>
+          <a href="/are-treadmills-bad-for-your-knees/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Are Treadmills Bad for Your Knees?</div>
+            <p class="c-blurb">Impact, incline and running form, without the myths.</p>
+          </a>
+          <a href="/history-of-the-treadmill/" class="card">
+            <div class="c-kicker">History</div>
+            <div class="c-title">History of the Treadmill</div>
+            <p class="c-blurb">From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

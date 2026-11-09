@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Incline Not Working (2026): Stuck or Stopping at One Level";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-incline-not-working/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Quick Checks First", link: "#first-checks" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillinclinenotworking" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillinclinenotworking)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Incline Not Working?</h1>
+      <p class="ed-dek">
+        Stuck at one grade, moving in one direction only, or not moving at all — the incline system fails in a handful of recognisable ways, and the cheapest causes are also the most common ones.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Incline <span class="text-[#5AA9FF]">Not Working?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Stuck at one grade, moving in one direction only, or not moving at all — the incline system fails in a handful of recognisable ways, and the cheapest causes are also the most common ones.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#first-checks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Quick Checks First
-          </a>
-          <a href="#stuck-at-one-level" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Stuck at One Level
-          </a>
-        </div>
+        <a href="#first-checks" class="btn-ghost">Quick Checks First</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before touching the frame, wiring or anything under the deck, and never reach under
-          a treadmill while the incline can move — the lift mechanism closes with real force. If you
-          smell burning, see sparking, notice smoke, or the belt moves when the machine is off, stop
-          using it and get it looked at.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#how-incline-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How the Incline System Works</a>
-          <a href="#first-checks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Five-Minute Checks Before Anything Else</a>
-          <a href="#obstructions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Obstructions Under the Base</a>
-          <a href="#calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Run the Calibration Routine</a>
-          <a href="#stuck-at-one-level" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. When It Stops at One Incline Level</a>
-          <a href="#one-direction" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Goes Up But Not Down, or Down But Not Up</a>
-          <a href="#incline-motor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Incline Motor Itself</a>
-          <a href="#sensors" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Limit Switches and the Position Sensor</a>
-          <a href="#wiring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Wiring at the Upright and the Base</a>
-          <a href="#overheating" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Overheating and Duty Cycle</a>
-          <a href="#power" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Power, Brownouts and Shared Circuits</a>
-          <a href="#error-codes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. What an Incline Error Code Generally Means</a>
-          <a href="#when-to-call" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. When to Call for Service, and What It Costs</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Incline motors fail more often than drive motors, but far less often than people assume
           when the incline stops responding. Most of the time the motor is fine and the machine has
           simply lost track of where the deck is, lost power at the wrong moment, or met something
@@ -206,8 +144,37 @@ const schema = {
           find a part number.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
+          wall before touching the frame, wiring or anything under the deck, and never reach under
+          a treadmill while the incline can move — the lift mechanism closes with real force. If you
+          smell burning, see sparking, notice smoke, or the belt moves when the machine is off, stop
+          using it and get it looked at.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#how-incline-works">How the Incline System Works</a></li>
+            <li><a href="#first-checks">Five-Minute Checks Before Anything Else</a></li>
+            <li><a href="#obstructions">Obstructions Under the Base</a></li>
+            <li><a href="#calibration">Run the Calibration Routine</a></li>
+            <li><a href="#stuck-at-one-level">When It Stops at One Incline Level</a></li>
+            <li><a href="#one-direction">Goes Up But Not Down, or Down But Not Up</a></li>
+            <li><a href="#incline-motor">The Incline Motor Itself</a></li>
+            <li><a href="#sensors">Limit Switches and the Position Sensor</a></li>
+            <li><a href="#wiring">Wiring at the Upright and the Base</a></li>
+            <li><a href="#overheating">Overheating and Duty Cycle</a></li>
+            <li><a href="#power">Power, Brownouts and Shared Circuits</a></li>
+            <li><a href="#error-codes">What an Incline Error Code Generally Means</a></li>
+            <li><a href="#when-to-call">When to Call for Service, and What It Costs</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="how-incline-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How the Incline System Works</h2>
+          <h2>How the Incline System Works</h2>
 <p>
             Knowing the parts makes the symptoms make sense. On a typical home treadmill the
             incline is raised by a small electric lift motor, usually driving a threaded screw or a
@@ -229,15 +196,13 @@ const schema = {
             into agreement, which is why it appears so often in this guide.
           </p>
           <p>
-            Grades are usually displayed as a percentage rather than an angle; our explainer on
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a>
-            covers the difference, which matters when you are judging whether the deck has really
+            Grades are usually displayed as a percentage rather than an angle; our explainer on <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a> covers the difference, which matters when you are judging whether the deck has really
             reached what the console says.
           </p>
         </div>
 
         <div id="first-checks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Five-Minute Checks Before Anything Else</h2>
+          <h2>Five-Minute Checks Before Anything Else</h2>
 <p>
             These cost nothing and resolve a surprising share of incline complaints.
           </p>
@@ -273,7 +238,7 @@ const schema = {
         </div>
 
         <div id="obstructions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Obstructions Under the Base</h2>
+          <h2>Obstructions Under the Base</h2>
 <p>
             When the incline lowers, parts of the frame move toward the floor and toward each
             other. Anything in that space stops the deck, and many machines respond by stopping the
@@ -290,9 +255,7 @@ const schema = {
             Unplug the machine, clear the space beneath and behind the frame, and make sure the
             machine is sitting level on a firm surface with the clearances the manual specifies.
             Then plug back in and try again with nobody on the belt. If the deck now travels its
-            full range, you have found it. Our guide to
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a>
-            covers the mat question, since a soft surface causes both incline and tracking
+            full range, you have found it. Our guide to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a> covers the mat question, since a soft surface causes both incline and tracking
             trouble.
           </p>
           <p>
@@ -303,7 +266,7 @@ const schema = {
         </div>
 
         <div id="calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Run the Calibration Routine</h2>
+          <h2>Run the Calibration Routine</h2>
 <p>
             Most powered-incline treadmills have a calibration routine, and running it is the
             single most effective repair an owner can make. It drives the incline to its lowest and
@@ -340,7 +303,7 @@ const schema = {
         </div>
 
         <div id="stuck-at-one-level" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. When It Stops at One Incline Level</h2>
+          <h2>When It Stops at One Incline Level</h2>
 <p>
             The most common complaint is an incline that rises to a certain grade and will go no
             higher, or sticks at one level and will not move at all. There are four usual reasons.
@@ -377,7 +340,7 @@ const schema = {
         </div>
 
         <div id="one-direction" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Goes Up But Not Down, or Down But Not Up</h2>
+          <h2>Goes Up But Not Down, or Down But Not Up</h2>
 <p>
             An incline that moves in only one direction is a specific and useful symptom, because
             it largely rules out a dead motor. If the motor can drive one way, it is getting power
@@ -399,7 +362,7 @@ const schema = {
         </div>
 
         <div id="incline-motor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Incline Motor Itself</h2>
+          <h2>The Incline Motor Itself</h2>
 <p>
             When the motor is the cause, the sound it makes when you press the incline button is
             the best clue you have.
@@ -420,9 +383,7 @@ const schema = {
           <p>
             <strong>Grinding or clicking while moving.</strong> Stripped gears or a damaged lift
             screw. The incline may still work for a while, often with jerky travel, before it
-            fails completely. Our
-            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping and clunking noise guide</a>
-            covers lift-mechanism noises that come before outright failure.
+            fails completely. Our <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">thumping and clunking noise guide</a> covers lift-mechanism noises that come before outright failure.
           </p>
           <p>
             <strong>Slow or weakening travel.</strong> An incline that takes noticeably longer
@@ -441,7 +402,7 @@ const schema = {
         </div>
 
         <div id="sensors" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Limit Switches and the Position Sensor</h2>
+          <h2>Limit Switches and the Position Sensor</h2>
 <p>
             The sensing side of the incline is small, cheap and easily disturbed, which is why it
             causes a disproportionate share of faults.
@@ -471,7 +432,7 @@ const schema = {
         </div>
 
         <div id="wiring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Wiring at the Upright and the Base</h2>
+          <h2>Wiring at the Upright and the Base</h2>
 <p>
             On most treadmills the cable from the console to the controller board runs down
             through one of the uprights, and the incline motor and sensor have their own cables
@@ -500,7 +461,7 @@ const schema = {
         </div>
 
         <div id="overheating" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Overheating and Duty Cycle</h2>
+          <h2>Overheating and Duty Cycle</h2>
 <p>
             Lift motors are generally built for intermittent work — raise, hold, lower — rather
             than continuous running. Many have thermal protection that cuts power when the motor
@@ -523,7 +484,7 @@ const schema = {
         </div>
 
         <div id="power" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Power, Brownouts and Shared Circuits</h2>
+          <h2>Power, Brownouts and Shared Circuits</h2>
 <p>
             Treadmills draw a lot of current, and the moment the incline motor starts while the
             drive motor is already working hard is one of the highest-demand moments in a session.
@@ -539,9 +500,7 @@ const schema = {
           <p>
             <strong>Shared circuits.</strong> A treadmill sharing a circuit with a space heater, a
             vacuum or an air conditioner can suffer brownouts whenever those switch on. A dedicated
-            circuit is the manufacturer's recommendation for many machines. Our guide to
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a>
-            covers what a typical machine draws.
+            circuit is the manufacturer's recommendation for many machines. Our guide to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a> covers what a typical machine draws.
           </p>
           <p>
             <strong>Power cuts and unplugging mid-incline.</strong> If the machine lost power
@@ -552,14 +511,12 @@ const schema = {
             Incline problems that coincide with other strange behaviour — the console resetting,
             the <a href="/treadmill-belt-jerking/" class="text-[#0F62FE] font-medium" data-autolink>belt surging</a>, the machine switching itself off — point toward the supply rather
             than the incline system, and those are worth investigating as a power problem first.
-            Our guide to a
-            <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a>
-            covers that side.
+            Our guide to a <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a> covers that side.
           </p>
         </div>
 
         <div id="error-codes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. What an Incline Error Code Generally Means</h2>
+          <h2>What an Incline Error Code Generally Means</h2>
 <p>
             There is no universal standard for treadmill error codes. The same number can mean
             different things on two brands, and sometimes on two models from the same brand, so a
@@ -578,14 +535,12 @@ const schema = {
             clear any obstruction, run calibration. A code that returns immediately after a
             successful calibration is pointing at hardware — the motor, sensor, wiring or board —
             and that is the point to call support with the code, the model and serial number, and
-            a description of what the motor does when asked to move. The broader
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            covers how codes group across the rest of the machine.
+            a description of what the motor does when asked to move. The broader <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> covers how codes group across the rest of the machine.
           </p>
         </div>
 
         <div id="when-to-call" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. When to Call for Service, and What It Costs</h2>
+          <h2>When to Call for Service, and What It Costs</h2>
 <p>
             <strong>Check the warranty first.</strong> Home <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill warranties</a> commonly cover
             parts for one to three years and labour for a year, with longer terms on motors and
@@ -606,154 +561,164 @@ const schema = {
             though it varies widely between models; sensors and switches are generally cheaper,
             and a controller board is often the most expensive item in the incline chain. Labour
             for a straightforward lift motor swap is typically in the same range as other bolt-on
-            repairs. Our
-            <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
-            covers when a repair stops being worth it on an older machine.
+            repairs. Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a> covers when a repair stops being worth it on an older machine.
           </p>
           <p>
             And if incline is the feature you actually train with, and the machine is old enough
             that the board is the likely culprit, it is worth knowing what a replacement would cost
-            before paying for a repair. Our roundup of the
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            is a reasonable benchmark.
+            before paying for a repair. Our roundup of the <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> is a reasonable benchmark.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill incline not working?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The most common causes are the machine losing track of the deck position (fixed by a power cycle and calibration), something under the frame blocking travel, a supply problem such as an extension lead or shared circuit, or the lift motor overheating during a long interval session. Faulty motors, sensors, wiring and boards are real but less common. Work through the cheap causes first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I recalibrate my treadmill incline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most powered-incline treadmills have a calibration routine that drives the deck to both ends of travel and re-learns its limits, but how you start it varies by manufacturer and model — a menu option on some, a service mode or button sequence on others. Use the procedure in your manual or ask the manufacturer's support line, and keep everyone off the belt and clear of the frame while it runs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill incline stop at one level?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because the controller believes the deck is already at maximum when it is not, which calibration corrects. Other causes are a limit switch tripping early, mechanical resistance in the lift screw or pivots that stalls the motor under load, or a programme, profile or setting that caps incline. If manual mode reaches higher, check settings before hardware.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why will my treadmill incline go up but not down?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                An incline that moves one way only rules out a completely dead motor. The usual causes are a limit switch at the end it will not travel toward, a position reading that has drifted, or the part of the board that switches motor direction. Run calibration first. If the deck is stuck high, do not force it down or loosen the lift mechanism — it is holding the deck's weight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does an incline error code on a treadmill mean?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no universal standard, so only your manual or the manufacturer can decode a specific number. Generally, incline codes mean the board asked the motor to move and the position did not change in time, the position reading is out of range, a limit was hit unexpectedly, or calibration has not been completed. Note it, power cycle, clear obstructions and calibrate before assuming a part has failed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill incline motor overheat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Lift motors are generally designed for intermittent use and many have thermal protection that cuts power when they get too hot. Programmes that change incline constantly can trigger it, giving an incline that stops responding partway through a session and works again later. Let it cool with the deck at rest. Overheating in normal use suggests resistance in the mechanism or a weakening motor.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Stuck Incline</h2>
+          <p>Incline faults attract a lot of unnecessary parts orders. These four mistakes account for most of them, and the third is the one that hurts people.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering a motor before calibrating</h3>
+              <p>A machine that has lost track of its deck position looks exactly like one with a failed motor: it refuses to move or stops early. Calibration takes a couple of minutes, costs nothing and resolves a large share of incline faults, particularly after a move or a power cut.</p>
+            </li>
+            <li>
+              <h3>Holding the button while the motor hums</h3>
+              <p>A hum without movement means the motor is powered but stalled. Every second it stays stalled it heats up, and repeated attempts are how a jammed screw or an obstruction turns into a burnt-out motor. Stop, unplug, and look for the resistance instead.</p>
+            </li>
+            <li>
+              <h3>Reaching under a raised deck</h3>
+              <p>The lift mechanism is strong enough to raise the deck with an adult on it, and it does not know a hand is there. Never reach under the frame while the incline can move, and never loosen lift hardware with the deck raised — it may be the only thing holding the deck up.</p>
+            </li>
+            <li>
+              <h3>Trusting an error code list for another machine</h3>
+              <p>Treadmill error codes are not standardised, and the same number means different things across brands and sometimes across models. Diagnosing from a forum list for someone else's machine sends people after the wrong part. The manual or the manufacturer is the only reliable source.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Stuck Incline</h2>
-          <p class="text-gray-700 leading-relaxed">Incline faults attract a lot of unnecessary parts orders. These four mistakes account for most of them, and the third is the one that hurts people.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a motor before calibrating</h3>
-              <p class="text-gray-700 text-sm m-0">A machine that has lost track of its deck position looks exactly like one with a failed motor: it refuses to move or stops early. Calibration takes a couple of minutes, costs nothing and resolves a large share of incline faults, particularly after a move or a power cut.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the button while the motor hums</h3>
-              <p class="text-gray-700 text-sm m-0">A hum without movement means the motor is powered but stalled. Every second it stays stalled it heats up, and repeated attempts are how a jammed screw or an obstruction turns into a burnt-out motor. Stop, unplug, and look for the resistance instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reaching under a raised deck</h3>
-              <p class="text-gray-700 text-sm m-0">The lift mechanism is strong enough to raise the deck with an adult on it, and it does not know a hand is there. Never reach under the frame while the incline can move, and never loosen lift hardware with the deck raised — it may be the only thing holding the deck up.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting an error code list for another machine</h3>
-              <p class="text-gray-700 text-sm m-0">Treadmill error codes are not standardised, and the same number means different things across brands and sometimes across models. Diagnosing from a forum list for someone else's machine sends people after the wrong part. The manual or the manufacturer is the only reliable source.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Diagnosis Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Troubleshooting</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every common fault sorted by symptom, including error code groups.</p>
-            </a>
-            <a href="/treadmill-thumping-noise/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Thumping or Clunking Noise</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Time the noise to find it, including lift-mechanism clunks.</p>
-            </a>
-            <a href="/treadmill-incline-percent-vs-degrees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Incline: Percent vs Degrees</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the number on the console actually means for the deck angle.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Start cheap and in order.</strong> Note any error code, power
             cycle at the wall for a full minute, try manual mode, clear the space under the frame,
             and run the calibration routine from your manual. Those steps resolve most incline
             faults, because most are position mismatches rather than broken parts.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If calibration fails or the fault comes straight back, the motor, sensor, wiring or board
             is involved — and procedures there are model-specific, so the manual and the
             manufacturer rule. Check the warranty, never reach under a deck that can move, and use
-            the
-            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>
-            for anything else the machine is doing at the same time.
+            the <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a> for anything else the machine is doing at the same time.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-troubleshooting/">Treadmill Troubleshooting Guide</a></li>
+            <li><a href="/treadmill-thumping-noise/">Treadmill Thumping or Clunking Noise</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why is my treadmill incline not working?</h3></summary>
+            <p class="faq-a">
+              The most common causes are the machine losing track of the deck position (fixed by a power cycle and calibration), something under the frame blocking travel, a supply problem such as an extension lead or shared circuit, or the lift motor overheating during a long interval session. Faulty motors, sensors, wiring and boards are real but less common. Work through the cheap causes first.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I recalibrate my treadmill incline?</h3></summary>
+            <p class="faq-a">
+              Most powered-incline treadmills have a calibration routine that drives the deck to both ends of travel and re-learns its limits, but how you start it varies by manufacturer and model — a menu option on some, a service mode or button sequence on others. Use the procedure in your manual or ask the manufacturer's support line, and keep everyone off the belt and clear of the frame while it runs.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill incline stop at one level?</h3></summary>
+            <p class="faq-a">
+              Usually because the controller believes the deck is already at maximum when it is not, which calibration corrects. Other causes are a limit switch tripping early, mechanical resistance in the lift screw or pivots that stalls the motor under load, or a programme, profile or setting that caps incline. If manual mode reaches higher, check settings before hardware.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why will my treadmill incline go up but not down?</h3></summary>
+            <p class="faq-a">
+              An incline that moves one way only rules out a completely dead motor. The usual causes are a limit switch at the end it will not travel toward, a position reading that has drifted, or the part of the board that switches motor direction. Run calibration first. If the deck is stuck high, do not force it down or loosen the lift mechanism — it is holding the deck's weight.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What does an incline error code on a treadmill mean?</h3></summary>
+            <p class="faq-a">
+              There is no universal standard, so only your manual or the manufacturer can decode a specific number. Generally, incline codes mean the board asked the motor to move and the position did not change in time, the position reading is out of range, a limit was hit unexpectedly, or calibration has not been completed. Note it, power cycle, clear obstructions and calibrate before assuming a part has failed.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill incline motor overheat?</h3></summary>
+            <p class="faq-a">
+              Yes. Lift motors are generally designed for intermittent use and many have thermal protection that cuts power when they get too hot. Programmes that change incline constantly can trigger it, giving an incline that stops responding partway through a session and works again later. Let it cool with the deck at rest. Overheating in normal use suggests resistance in the mechanism or a weakening motor.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Diagnosis Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-troubleshooting/" class="card">
+            <div class="c-kicker">Troubleshooting</div>
+            <div class="c-title">Treadmill Troubleshooting Guide</div>
+            <p class="c-blurb">Every common fault sorted by symptom, including error code groups.</p>
+          </a>
+          <a href="/treadmill-thumping-noise/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Thumping or Clunking Noise</div>
+            <p class="c-blurb">Time the noise to find it, including lift-mechanism clunks.</p>
+          </a>
+          <a href="/treadmill-incline-percent-vs-degrees/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Treadmill Incline: Percent vs Degrees</div>
+            <p class="c-blurb">What the number on the console actually means for the deck angle.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

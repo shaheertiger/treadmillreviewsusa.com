@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Long Should I Walk on a Treadmill? (2026): By Goal and Fitness";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-long-should-i-walk-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,111 +109,72 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Find Your Session Length", link: "#by-goal" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howlongshouldiwalkonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howlongshouldiwalkonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">How Long Should I Walk on a Treadmill?</h1>
+      <p class="ed-dek">
+        Around 30 minutes on most days covers the mainstream health guidelines. Weight loss usually asks for more, and beginners should start with less. Here is how to work out the right number for you — and how to make those minutes count.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Long Should I Walk <span class="text-[#5AA9FF]">on a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Around 30 minutes on most days covers the mainstream health guidelines. Weight loss usually asks for more, and beginners should start with less. Here is how to work out the right number for you — and how to make those minutes count.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#weight-loss" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Walking for Weight Loss
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page summarises mainstream public-health guidance so you can plan
-          treadmill sessions sensibly — it is not medical advice, coaching or a weight-loss
-          programme. If you have a heart or lung condition, diabetes, joint problems, are
-          pregnant, take medication that affects heart rate or balance, or have been inactive for a
-          long time, check with a doctor before increasing your activity.
-          <strong class="text-gray-900">On the figures below:</strong> session lengths, calorie
-          costs and step counts are typical ranges from public guidance and standard estimation
-          equations, not measurements of any individual.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#guidelines" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Guidelines Actually Say</a>
-          <a href="#by-goal" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Long to Walk, by Goal</a>
-          <a href="#weight-loss" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Can You Lose Weight Walking on a Treadmill?</a>
-          <a href="#make-it-moderate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Fast and Steep to Make the Minutes Count</a>
-          <a href="#beginners" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. A Beginner Progression</a>
-          <a href="#splitting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Does It Have to Be All at Once?</a>
-          <a href="#steps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Steps Versus Minutes</a>
-          <a href="#too-long" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Long Is Too Long?</a>
-          <a href="#desk-walking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What About Under-Desk Walking?</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Verdict</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most people asking this question want a number, so here it is: about 30 minutes of
           brisk walking on five days a week meets the core US activity guideline for adults. That
           is the floor, not the ceiling. How far above it you should go depends on what you want
           from the treadmill, how fit you are now, and how hard those minutes actually are.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This page summarises mainstream public-health guidance so you can plan
+          treadmill sessions sensibly — it is not medical advice, coaching or a weight-loss
+          programme. If you have a heart or lung condition, diabetes, joint problems, are
+          pregnant, take medication that affects heart rate or balance, or have been inactive for a
+          long time, check with a doctor before increasing your activity. <strong class="text-gray-900">On the figures below:</strong> session lengths, calorie
+          costs and step counts are typical ranges from public guidance and standard estimation
+          equations, not measurements of any individual.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#guidelines">What the Guidelines Actually Say</a></li>
+            <li><a href="#by-goal">How Long to Walk, by Goal</a></li>
+            <li><a href="#weight-loss">Can You Lose Weight Walking on a Treadmill?</a></li>
+            <li><a href="#make-it-moderate">How Fast and Steep to Make the Minutes Count</a></li>
+            <li><a href="#beginners">A Beginner Progression</a></li>
+            <li><a href="#splitting">Does It Have to Be All at Once?</a></li>
+            <li><a href="#steps">Steps Versus Minutes</a></li>
+            <li><a href="#too-long">How Long Is Too Long?</a></li>
+            <li><a href="#desk-walking">What About Under-Desk Walking?</a></li>
+            <li><a href="#verdict">The Verdict</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>For general health, aim for about 30 minutes of brisk treadmill walking on
             most days — 150 minutes a week in total.</strong> That matches the core
@@ -235,7 +201,7 @@ const schema = {
         </div>
 
         <div id="guidelines" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Guidelines Actually Say</h2>
+          <h2>What the Guidelines Actually Say</h2>
 <p>
             The US Physical Activity Guidelines for Americans (second edition, 2018) are the
             mainstream reference, and their recommendations for adults are worth knowing precisely
@@ -257,9 +223,7 @@ const schema = {
           </ul>
           <p>
             Older adults get the same aerobic target, with an added emphasis on balance training
-            and on adjusting effort to fitness level and any health conditions. Our
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            guide covers the equipment features — long handrails, low step-up height, a low
+            and on adjusting effort to fitness level and any health conditions. Our <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> guide covers the equipment features — long handrails, low step-up height, a low
             starting speed — that make that easier.
           </p>
           <p>
@@ -270,7 +234,7 @@ const schema = {
         </div>
 
         <div id="by-goal" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Long to Walk, by Goal</h2>
+          <h2>How Long to Walk, by Goal</h2>
 <p>
             Here is how the guidelines translate into treadmill sessions. These are typical
             ranges, not prescriptions, and they assume moderate effort.
@@ -287,11 +251,7 @@ const schema = {
             cited at 200 to 300 minutes a week. Maintenance is the phase most people find hardest,
             and it is where a daily treadmill habit earns its keep.</li>
             <li><strong>Building toward running:</strong> three to four sessions of 20 to 30
-            minutes of walk-run intervals. A structured
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K plan</a>
-            handles the progression for you, and
-            <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to run on a treadmill</a>
-            covers session length once you are running.</li>
+            minutes of walk-run intervals. A structured <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K plan</a> handles the progression for you, and <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to run on a treadmill</a> covers session length once you are running.</li>
             <li><strong>Desk walking:</strong> slow walking for an hour or more, spread across the
             working day. It counts as light activity and helps break up sitting, but it is usually
             too slow to count as moderate exercise.</li>
@@ -305,7 +265,7 @@ const schema = {
         </div>
 
         <div id="weight-loss" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Can You Lose Weight Walking on a Treadmill?</h2>
+          <h2>Can You Lose Weight Walking on a Treadmill?</h2>
 <p>
             <strong>Yes — but walking alone tends to produce modest weight loss, and it works best
             alongside changes to eating.</strong> That is the honest version, and it is worth
@@ -335,16 +295,13 @@ const schema = {
             not the scale moves.
           </p>
           <p>
-            For session ideas built specifically around this goal, see our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>.
-            And if belly fat is the specific concern, our page on
-            <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>
-            explains why no exercise targets one area.
+            For session ideas built specifically around this goal, see our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>.
+            And if belly fat is the specific concern, our page on <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a> explains why no exercise targets one area.
           </p>
         </div>
 
         <div id="make-it-moderate" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Fast and Steep to Make the Minutes Count</h2>
+          <h2>How Fast and Steep to Make the Minutes Count</h2>
 <p>
             The guideline minutes are moderate-intensity minutes. On a treadmill, that is a matter
             of speed and incline, and the right settings vary hugely between people — a pace that
@@ -359,24 +316,18 @@ const schema = {
           <p>
             <strong>Typical speeds.</strong> For many adults, brisk walking falls somewhere around
             3 to 4 mph on a flat belt — roughly 15 to 20 minutes per mile. Below about 2.5 mph,
-            most people are strolling. Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            converts speeds to minutes per mile and kilometre.
+            most people are strolling. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> converts speeds to minutes per mile and kilometre.
           </p>
           <p>
             <strong>Incline is the walker's best tool.</strong> If 3.5 mph feels too fast to walk
             naturally, keep the speed comfortable and raise the grade instead. A few percent of
             incline makes a large difference to effort without forcing an awkward, over-striding
-            gait. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk at</a>
-            covers the ranges in detail.
+            gait. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk at</a> covers the ranges in detail.
           </p>
           <p>
             <strong>Heart rate, if you want numbers.</strong> Moderate effort is often described as
             roughly 64 to 76% of maximum heart rate, but age-based maximum formulas miss many
-            individuals by a wide margin, and some medications make them meaningless. The
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart-rate zones guide</a>
-            explains the caveats. The talk test is usually just as useful.
+            individuals by a wide margin, and some medications make them meaningless. The <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart-rate zones guide</a> explains the caveats. The talk test is usually just as useful.
           </p>
           <p>
             And let go of the handrails once you are steady. Holding on takes a meaningful share of
@@ -385,7 +336,7 @@ const schema = {
         </div>
 
         <div id="beginners" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. A Beginner Progression</h2>
+          <h2>A Beginner Progression</h2>
 <p>
             If you have been mostly inactive, the right first target is not 150 minutes. It is a
             habit. This is a gentle eight-week build that many beginners can follow; adjust it
@@ -413,15 +364,13 @@ const schema = {
             dizziness are not normal: stop and get medical advice.
           </p>
           <p>
-            If you are shopping for a first machine, our
-            <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a>
-            guide focuses on the things that matter at this stage — a stable deck, sensible
+            If you are shopping for a first machine, our <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a> guide focuses on the things that matter at this stage — a stable deck, sensible
             handrails, a low starting speed — rather than top speed or horsepower.
           </p>
         </div>
 
         <div id="splitting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Does It Have to Be All at Once?</h2>
+          <h2>Does It Have to Be All at Once?</h2>
 <p>
             No. This is one of the most useful and least known changes in the current guidelines.
             Earlier advice said activity had to come in bouts of at least ten minutes to count.
@@ -436,8 +385,7 @@ const schema = {
             30-minute session.</li>
             <li>Three 10-minute brisk walks after meals. Some research suggests short walks after
             eating help blunt the rise in blood sugar, which is a pleasant side benefit.</li>
-            <li>A short walk at lunch on an
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill</a>,
+            <li>A short walk at lunch on an <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill</a>,
             with a longer session at the weekend.</li>
           </ul>
           <p>
@@ -453,7 +401,7 @@ const schema = {
         </div>
 
         <div id="steps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Steps Versus Minutes</h2>
+          <h2>Steps Versus Minutes</h2>
 <p>
             Many people track steps rather than minutes, and the two map onto each other more
             loosely than you might expect.
@@ -485,7 +433,7 @@ const schema = {
         </div>
 
         <div id="too-long" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Long Is Too Long?</h2>
+          <h2>How Long Is Too Long?</h2>
 <p>
             For healthy adults, walking is about as low-risk as exercise gets, and many people walk
             for an hour or more daily without problems. Still, there are limits worth respecting,
@@ -509,21 +457,17 @@ const schema = {
           <p>
             <strong>Take easy days.</strong> You do not need complete rest days from walking the way
             runners might, but alternating harder and easier sessions keeps you fresh and keeps the
-            habit enjoyable. If joints are a concern, our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a>
-            guide covers cushioning and deck features that help.
+            habit enjoyable. If joints are a concern, our <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a> guide covers cushioning and deck features that help.
           </p>
           <p>
             Long daily use also matters for the machine. A treadmill that sees an hour or more a
             day needs its belt checked and lubricated more often than one used three times a week
-            — our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
-            has the schedule.
+            — our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a> has the schedule.
           </p>
         </div>
 
         <div id="desk-walking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What About Under-Desk Walking?</h2>
+          <h2>What About Under-Desk Walking?</h2>
 <p>
             <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> and under-desk treadmills have made all-day walking popular, and the
             question of how long to walk on one is slightly different.
@@ -542,15 +486,13 @@ const schema = {
             your posture and stop for breaks, as you would with any desk setup.
           </p>
           <p>
-            If you are deciding between equipment for this, our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
-            comparison covers what you gain and lose with the compact machines — usually top speed,
+            If you are deciding between equipment for this, our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a> comparison covers what you gain and lose with the compact machines — usually top speed,
             incline and handrails.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Verdict</h2>
+          <h2>The Verdict</h2>
 <p>
             <strong>How long should you walk on a treadmill?</strong> About 30 minutes of brisk
             walking on most days for general health — 150 minutes a week — and more, often 45 to
@@ -568,139 +510,154 @@ const schema = {
             The best session length is, in the end, the one you will still be doing next year.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should I walk on the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For general health, about 30 minutes of brisk walking on five days a week, which meets the US guideline of at least 150 minutes of moderate activity weekly. Beginners should start with 10 to 15 minutes and build up over several weeks. Going beyond 300 minutes a week brings additional health benefits.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should I walk on a treadmill for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Plan on more than the health minimum — often 45 to 60 minutes on most days, putting you around the 200 to 300 minutes a week that weight-management guidance commonly cites. Walking works best for weight loss alongside changes to eating; on its own it usually produces modest results, but it is very effective for keeping weight off.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long to walk on a treadmill to lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no single number, because weight change depends mostly on overall energy balance, including food. As a typical range, 200 to 300 minutes a week of brisk or inclined walking, combined with a sustainable change in eating, is a reasonable target. Expect results over months, and judge them by the trend rather than week to week.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you lose weight walking on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Walking a mile typically uses very roughly 80 to 120 calories for most adults, more on an incline and more for heavier people. Over months that adds up, though the body partially compensates through appetite. People who combine regular walking with dietary changes generally lose more weight than those who rely on walking alone.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does walking on a treadmill help you lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It helps, especially as part of a wider plan. Treadmill walking adds energy expenditure, builds fitness and makes a daily habit easy to keep regardless of weather. Its biggest strength is weight maintenance after a loss. And its health benefits — for the heart, blood sugar, mood and sleep — arrive whether or not your weight changes.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it better to walk on a treadmill once a day or split it up?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Either works. The 2018 US guidelines removed the requirement that activity come in bouts of at least ten minutes, so two 15-minute walks count the same as one 30-minute walk. Short walks after meals may also help with blood sugar. Just make sure the split sessions reach a brisk pace rather than staying at a warm-up stroll.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Walking Time</h2>
+          <p>Most of these are about the quality of the minutes rather than the quantity — and the second one quietly undoes a lot of good work.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Counting slow strolling as moderate exercise</h3>
+              <p>The guideline minutes are moderate-intensity minutes. A gentle stroll at 2 mph is better than sitting, but for most people it is light activity. Use the talk test — able to talk, not sing — and raise the incline if your natural walking speed is not enough to get you there.</p>
+            </li>
+            <li>
+              <h3>Holding the handrails throughout</h3>
+              <p>Gripping the rails takes a meaningful share of the work off your legs, so the session is easier than the console suggests and the calorie estimate becomes badly optimistic. Use the rails to steady yourself when starting or changing settings, then walk hands-free once you are stable.</p>
+            </li>
+            <li>
+              <h3>Jumping straight to an hour a day</h3>
+              <p>Beginners who start with long, steep sessions often end up with sore shins, calves or heels within a fortnight, and a sore body is a powerful reason to stop. Start at 10 to 15 minutes, add a little each week, and change duration, incline and speed one at a time.</p>
+            </li>
+            <li>
+              <h3>Judging success by the console calorie count</h3>
+              <p>The calorie figure is an estimate that tends to run high, and treating it as food you have earned is a common way a walking habit stops producing weight loss. Use time, speed, incline and how you feel to track progress, and measure weight and waist trends over weeks.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Walking Time</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these are about the quality of the minutes rather than the quantity — and the second one quietly undoes a lot of good work.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Counting slow strolling as moderate exercise</h3>
-              <p class="text-gray-700 text-sm m-0">The guideline minutes are moderate-intensity minutes. A gentle stroll at 2 mph is better than sitting, but for most people it is light activity. Use the talk test — able to talk, not sing — and raise the incline if your natural walking speed is not enough to get you there.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the handrails throughout</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping the rails takes a meaningful share of the work off your legs, so the session is easier than the console suggests and the calorie estimate becomes badly optimistic. Use the rails to steady yourself when starting or changing settings, then walk hands-free once you are stable.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Jumping straight to an hour a day</h3>
-              <p class="text-gray-700 text-sm m-0">Beginners who start with long, steep sessions often end up with sore shins, calves or heels within a fortnight, and a sore body is a powerful reason to stop. Start at 10 to 15 minutes, add a little each week, and change duration, incline and speed one at a time.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging success by the console calorie count</h3>
-              <p class="text-gray-700 text-sm m-0">The calorie figure is an estimate that tends to run high, and treating it as food you have earned is a common way a walking habit stops producing weight loss. Use time, speed, incline and how you feel to track progress, and measure weight and waist trends over weeks.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-workout-for-weight-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Programme</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts for Weight Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sessions built around consistency rather than punishment.</p>
-            </a>
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace and Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Convert mph to minutes per mile and find your brisk pace.</p>
-            </a>
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Workouts</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A library of walking, incline and running sessions to rotate through.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">About 30 minutes of brisk walking on most days</strong> meets
             the core US guideline of 150 minutes a week. For weight loss or maintenance, plan on
             more — often 45 to 60 minutes on most days — alongside changes to eating.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Beginners should start at 10 to 15 minutes and build gradually; split sessions count.
             Make the minutes moderate with the talk test and some incline, and for structured
-            sessions see our
-            <a href="/treadmill-workouts/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts</a>.
+            sessions see our <a href="/treadmill-workouts/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-workout-for-weight-loss/">Treadmill Workouts for Weight Loss</a></li>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace and Speed Chart</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How long should I walk on the treadmill?</h3></summary>
+            <p class="faq-a">
+              For general health, about 30 minutes of brisk walking on five days a week, which meets the US guideline of at least 150 minutes of moderate activity weekly. Beginners should start with 10 to 15 minutes and build up over several weeks. Going beyond 300 minutes a week brings additional health benefits.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How long should I walk on a treadmill for weight loss?</h3></summary>
+            <p class="faq-a">
+              Plan on more than the health minimum — often 45 to 60 minutes on most days, putting you around the 200 to 300 minutes a week that weight-management guidance commonly cites. Walking works best for weight loss alongside changes to eating; on its own it usually produces modest results, but it is very effective for keeping weight off.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long to walk on a treadmill to lose weight?</h3></summary>
+            <p class="faq-a">
+              There is no single number, because weight change depends mostly on overall energy balance, including food. As a typical range, 200 to 300 minutes a week of brisk or inclined walking, combined with a sustainable change in eating, is a reasonable target. Expect results over months, and judge them by the trend rather than week to week.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you lose weight walking on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes. Walking a mile typically uses very roughly 80 to 120 calories for most adults, more on an incline and more for heavier people. Over months that adds up, though the body partially compensates through appetite. People who combine regular walking with dietary changes generally lose more weight than those who rely on walking alone.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does walking on a treadmill help you lose weight?</h3></summary>
+            <p class="faq-a">
+              It helps, especially as part of a wider plan. Treadmill walking adds energy expenditure, builds fitness and makes a daily habit easy to keep regardless of weather. Its biggest strength is weight maintenance after a loss. And its health benefits — for the heart, blood sugar, mood and sleep — arrive whether or not your weight changes.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it better to walk on a treadmill once a day or split it up?</h3></summary>
+            <p class="faq-a">
+              Either works. The 2018 US guidelines removed the requirement that activity come in bouts of at least ten minutes, so two 15-minute walks count the same as one 30-minute walk. Short walks after meals may also help with blood sugar. Just make sure the split sessions reach a brisk pace rather than staying at a warm-up stroll.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-workout-for-weight-loss/" class="card">
+            <div class="c-kicker">Programme</div>
+            <div class="c-title">Treadmill Workouts for Weight Loss</div>
+            <p class="c-blurb">Sessions built around consistency rather than punishment.</p>
+          </a>
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace and Speed Chart</div>
+            <p class="c-blurb">Convert mph to minutes per mile and find your brisk pace.</p>
+          </a>
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Workouts</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">A library of walking, incline and running sessions to rotate through.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

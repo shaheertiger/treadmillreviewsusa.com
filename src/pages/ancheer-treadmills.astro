@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "ANCHEER Treadmill Guide (2026): Folding Models, Manuals and Support";
 const description =
@@ -222,6 +221,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/ancheer-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -243,66 +248,67 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
+  stickyCta={{ text: "Newest ANCHEER: ANCHEER TR6056 Walking Pad", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-ancheertreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-ancheertreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">ANCHEER Treadmills: What You Are Buying, and From Whom</h1>
+      <p class="ed-dek">
+        ANCHEER is a marketplace brand: its walking pads and folding treadmills are sold almost entirely through Amazon listings, with no working treadmill website behind them. That does not make them bad machines, but it changes how you should read the listing, where you find a manual, and who you call when something breaks.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          ANCHEER Treadmills: <span class="text-[#5AA9FF]">What You Are Buying, and From Whom</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          ANCHEER is a marketplace brand: its walking pads and folding treadmills are sold almost entirely through Amazon listings, with no working treadmill website behind them. That does not make them bad machines, but it changes how you should read the listing, where you find a manual, and who you call when something breaks.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#manual" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Finding a Manual
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          ANCHEER treadmills turn up on Amazon at prices that make other walking pads look expensive: a pad
+          with a handlebar and a 12% incline for well under $200, a "6-in-1" pad with a vibration plate for not
+          much more. People searching for them usually want to know three things: whether ANCHEER still sells
+          treadmills, whether they are any good, and where to find the manual for the one they already own.
+          This guide answers all three, honestly, including the parts we could not confirm.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Newest ANCHEER:</span> <a href="#ancheer-tr6056">ANCHEER TR6056 Walking Pad</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest ANCHEER:</span> <a href="#ancheer-handle-pad">ANCHEER Walking Pad with Handle Bar and 12% Incline</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Alternative Pad:</span> <a href="#urevo-spacewalk-3s">UREVO SpaceWalk 3S</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Supported Alternative:</span> <a href="#sunny-treadpad-100">Sunny Health & Fitness Treadpad 100 SF-T724064</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we tried every web address we could find for ANCHEER (ancheer.com, ancheersport.com and
           ancheer.shop): the first two would not open with a valid security certificate, and ancheer.shop sells
@@ -317,71 +323,26 @@ const schema = {
           Sunny and UREVO cards use figures and prices from those makers’ own stores on 5 November 2026. We
           have not tested an ANCHEER machine. Prices change often, so confirm them before you order. As an
           Amazon Associate we earn from qualifying purchases.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Newest ANCHEER:</span>
-            <a href="#ancheer-tr6056" class="font-bold text-gray-900 no-underline hover:underline">ANCHEER TR6056 Walking Pad</a>
-            <a href="#ancheer-tr6056" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest ANCHEER:</span>
-            <a href="#ancheer-handle-pad" class="font-bold text-gray-900 no-underline hover:underline">ANCHEER Walking Pad with Handle Bar and 12% Incline</a>
-            <a href="#ancheer-handle-pad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Alternative Pad:</span>
-            <a href="#urevo-spacewalk-3s" class="font-bold text-gray-900 no-underline hover:underline">UREVO SpaceWalk 3S</a>
-            <a href="#urevo-spacewalk-3s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Supported Alternative:</span>
-            <a href="#sunny-treadpad-100" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Treadpad 100 SF-T724064</a>
-            <a href="#sunny-treadpad-100" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is ANCHEER a Good Treadmill Brand? The Short Answer</a>
-          <a href="#what-ancheer-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What ANCHEER Is: a Marketplace Brand</a>
-          <a href="#range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The ANCHEER Treadmills on Record in 2026</a>
-          <a href="#folding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. ANCHEER Folding Treadmills: the Older Models</a>
-          <a href="#reading-listing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Read an ANCHEER Listing</a>
-          <a href="#manual" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Finding an ANCHEER Treadmill Manual</a>
-          <a href="#warranty-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. ANCHEER Warranty, Returns and Support</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Recalls and Safety</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy an ANCHEER, and the Alternatives</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is ANCHEER a Good Treadmill Brand? The Short Answer</a></li>
+            <li><a href="#what-ancheer-is">What ANCHEER Is: a Marketplace Brand</a></li>
+            <li><a href="#range">The ANCHEER Treadmills on Record in 2026</a></li>
+            <li><a href="#folding">ANCHEER Folding Treadmills: the Older Models</a></li>
+            <li><a href="#reading-listing">How to Read an ANCHEER Listing</a></li>
+            <li><a href="#manual">Finding an ANCHEER Treadmill Manual</a></li>
+            <li><a href="#warranty-returns">ANCHEER Warranty, Returns and Support</a></li>
+            <li><a href="#safety">Recalls and Safety</a></li>
+            <li><a href="#who-should-buy">Who Should Buy an ANCHEER, and the Alternatives</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          ANCHEER treadmills turn up on Amazon at prices that make other walking pads look expensive: a pad
-          with a handlebar and a 12% incline for well under $200, a "6-in-1" pad with a vibration plate for not
-          much more. People searching for them usually want to know three things: whether ANCHEER still sells
-          treadmills, whether they are any good, and where to find the manual for the one they already own.
-          This guide answers all three, honestly, including the parts we could not confirm.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is ANCHEER a Good Treadmill Brand? The Short Answer</h2>
+          <h2>Is ANCHEER a Good Treadmill Brand? The Short Answer</h2>
 <p>
             <strong>ANCHEER walking pads can be acceptable for slow walking at a low price, but ANCHEER is a
             marketplace brand with no working treadmill website, listings that contradict themselves on motor
@@ -406,7 +367,7 @@ const schema = {
         </div>
 
         <div id="what-ancheer-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What ANCHEER Is: a Marketplace Brand</h2>
+          <h2>What ANCHEER Is: a Marketplace Brand</h2>
 <p>
             Most of the <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> this site covers have a website that lists their range, publishes
             specifications and states their warranty. ANCHEER does not, at least for treadmills. On 5 November
@@ -418,28 +379,23 @@ const schema = {
           <p>
             <strong>Who is behind it.</strong> The only official record we found naming a company is a 2022 CPSC
             e-bike recall, which names Shenzhen Sailvan Network Technology Ltd., doing business as ANCHEER, of
-            China, as the e-bikes’ distributor. We could not confirm whether the same company sells the ANCHEER
-            <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>treadmills on Amazon</a> today. Brand names on marketplaces are sometimes licensed, sold or shared, so
+            China, as the e-bikes’ distributor. We could not confirm whether the same company sells the ANCHEER <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>treadmills on Amazon</a> today. Brand names on marketplaces are sometimes licensed, sold or shared, so
             we treat the treadmill seller as unidentified beyond the name on the listing.
           </p>
           <p>
             <strong>What that means for you.</strong> On a marketplace listing, the brand, the seller and the
             company that ships the box can be three different parties. Your protection comes from the seller and
-            from Amazon, not from a brand website. Our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            explains how to tell who the seller is, and why "Ships from and sold by Amazon.com" is the line to
+            from Amazon, not from a brand website. Our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> explains how to tell who the seller is, and why "Ships from and sold by Amazon.com" is the line to
             look for on a brand like this.
           </p>
           <p>
             ANCHEER is not unusual in this. Many of the walking-pad brands on Amazon work the same way, and our
-            guides to <a href="/maxkare-treadmill/" class="text-[#0F62FE] font-medium">MaxKare</a>
-            and <a href="/famistar-treadmill/" class="text-[#0F62FE] font-medium">Famistar</a>
-            read their listings the same way this page reads ANCHEER’s.
+            guides to <a href="/maxkare-treadmill/" class="text-[#0F62FE] font-medium">MaxKare</a> and <a href="/famistar-treadmill/" class="text-[#0F62FE] font-medium">Famistar</a> read their listings the same way this page reads ANCHEER’s.
           </p>
         </div>
 
         <div id="range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The ANCHEER Treadmills on Record in 2026</h2>
+          <h2>The ANCHEER Treadmills on Record in 2026</h2>
 <p>
             Because ANCHEER has no treadmill website, there is no official range to list. These are the ANCHEER
             treadmills that independent trackers, manual archives and roundups recorded on Amazon in 2026, with
@@ -463,78 +419,67 @@ const schema = {
             on 5 November 2026.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="folding" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. ANCHEER Folding Treadmills: the Older Models</h2>
+          <h2>ANCHEER Folding Treadmills: the Older Models</h2>
 <p>
             Searches for an "ANCHEER folding treadmill" mostly find machines from earlier years. The two that
             come up most often are worth describing, because many are still in use and on the used market.
@@ -554,16 +499,13 @@ const schema = {
             <strong>Buying one used.</strong> A used marketplace treadmill has no transferable warranty and, in
             ANCHEER’s case, no manufacturer you can reach for parts. That makes it worth very little: check that
             it runs smoothly at every speed, that the belt tracks centrally, that the fold locks, and that the
-            safety key is present. Our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">used treadmill guide</a>
-            covers the inspection. If you want a new folding treadmill at a similar price with published figures,
-            the <a href="/sunny-health-fitness-treadmills/#sunny-sf-t4400smart" class="text-[#0F62FE] font-medium">Sunny SF-T4400SMART</a>
-            and the machines on our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
-            list are the place to start.
+            safety key is present. Our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">used treadmill guide</a> covers the inspection. If you want a new folding treadmill at a similar price with published figures,
+            the <a href="/sunny-health-fitness-treadmills/#sunny-sf-t4400smart" class="text-[#0F62FE] font-medium">Sunny SF-T4400SMART</a> and the machines on our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a> list are the place to start.
           </p>
         </div>
 
         <div id="reading-listing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Read an ANCHEER Listing</h2>
+          <h2>How to Read an ANCHEER Listing</h2>
 <p>
             Every ANCHEER listing we looked at through the trackers contradicted itself somewhere. That is common
             among marketplace pads, and it is manageable if you know which figure to believe.
@@ -573,16 +515,12 @@ const schema = {
             The TR6056 listing gives its motor as 1500 W in the copy, 1000 W in a comparison table and 2.5 HP in
             the technical details. The handlebar pad’s title says 3.0 HP and its feature list 1000 W. A 1000 W
             motor is about 1.3 HP if that is its continuous rating; the larger HP figures are peak or marketing
-            numbers. For a walking pad, about 1 HP continuous is normal and sufficient. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the conversion and why peak figures mislead.
+            numbers. For a walking pad, about 1 HP continuous is normal and sufficient. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the conversion and why peak figures mislead.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Weight capacity</h3>
           <p>
             The handlebar pad’s title says 320 lb and its features 350 lb. Plan on the lower figure, and leave a
-            margin under it, since a pad’s frame and motor wear faster near their limit; our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains why.
+            margin under it, since a pad’s frame and motor wear faster near their limit; our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains why.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline</h3>
           <p>
@@ -594,13 +532,12 @@ const schema = {
           <p>
             The handlebar pad’s stated price of $329.99 sat beside actual prices of $150 to $180 for most of 2026.
             A crossed-out price that high is not a guide to value; compare with what similar pads actually sell
-            for on our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            list.
+            for on our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> list.
           </p>
         </div>
 
         <div id="manual" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Finding an ANCHEER Treadmill Manual</h2>
+          <h2>Finding an ANCHEER Treadmill Manual</h2>
 <p>
             Because ANCHEER has no working treadmill website, there is no official manual library. These are the
             places to look, in order.
@@ -614,15 +551,12 @@ const schema = {
           <p>
             <strong>Without a manual,</strong> the routine jobs are the same as on any walking pad: lubricate the
             belt with 100% silicone lubricant when it feels dry or the motor strains, and adjust belt tension and
-            tracking with the two bolts at the rear roller, a quarter turn at a time. Our guides to
-            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
-            and <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting</a>
-            cover both, and what an error code usually means when you cannot look it up.
+            tracking with the two bolts at the rear roller, a quarter turn at a time. Our guides to <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a> and <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting</a> cover both, and what an error code usually means when you cannot look it up.
           </p>
         </div>
 
         <div id="warranty-returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. ANCHEER Warranty, Returns and Support</h2>
+          <h2>ANCHEER Warranty, Returns and Support</h2>
 <p>
             The TR6056 listing, as OCDevel recorded it, offers a one-year manufacturer warranty described as a
             "365-day service-first warranty". We found no published ANCHEER warranty document for treadmills,
@@ -642,15 +576,12 @@ const schema = {
           <p>
             <strong>Consider who will supply parts in three years.</strong> A brand with a website and a parts
             store can sell you a belt or a motor board long after the warranty ends. A marketplace brand whose
-            listing has disappeared usually cannot. For a $160 pad that may be an acceptable risk. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> and
-            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>
-            help you weigh it.
+            listing has disappeared usually cannot. For a $160 pad that may be an acceptable risk. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> and <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a> help you weigh it.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Recalls and Safety</h2>
+          <h2>Recalls and Safety</h2>
 <p>
             We searched the US Consumer Product Safety Commission’s recall database for ANCHEER on 5 November
             2026. We found no recall of any ANCHEER treadmill or walking pad. We did find one ANCHEER recall,
@@ -662,13 +593,12 @@ const schema = {
           <p>
             For any walking pad, the practical safety points are the same: use the safety key or clip where one
             is supplied, keep children and pets away while it runs and unplug it afterwards, and do not run a
-            pad from an extension cord. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers the rest.
+            pad from an extension cord. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers the rest.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy an ANCHEER, and the Alternatives</h2>
+          <h2>Who Should Buy an ANCHEER, and the Alternatives</h2>
 <p>
             <strong>An ANCHEER pad suits</strong> a buyer who wants the cheapest possible walking pad for slow
             desk walking, is comfortable relying on Amazon for returns and support, and plans on the lowest
@@ -678,159 +608,170 @@ const schema = {
             <strong>It suits less well</strong> anyone close to the stated weight limit, anyone who wants to jog,
             and anyone who wants a warranty from a company they can contact directly. For a few dollars more,
             brands such as UREVO and Sunny publish their figures, warranty and return terms on their own stores,
-            and their pads appear on our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            and <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>
-            lists. If you want a pad with a handrail like ANCHEER’s, our list of
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a>
-            compares the options.
+            and their pads appear on our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> and <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a> lists. If you want a pad with a handrail like ANCHEER’s, our list of <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a> compares the options.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does ANCHEER still sell treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Probably, on Amazon. Independent trackers recorded several ANCHEER walking pads on Amazon through 2026, including the TR6056 first listed in February 2026 and price changes on other listings in June and July. Amazon would not load for us on 5 November 2026, so we could not confirm a specific listing that day.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is ANCHEER a good treadmill brand?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                ANCHEER pads can be acceptable for slow walking at a low price, but ANCHEER has no working treadmill website, its listings contradict themselves on motor and capacity, and support runs through Amazon. Buy from a listing sold by Amazon.com and plan on the lowest published figures.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I find an ANCHEER treadmill manual?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check the Product guides and documents section of the Amazon listing from your order, note the model number and FCC ID from the label on the machine, then look for a copy on third-party manual archives filed under the ASIN or model number. You can also ask the seller for the manual through your Amazon order.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty does an ANCHEER treadmill have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The TR6056 listing offers a one-year manufacturer warranty, but we found no published ANCHEER warranty document. In practice, the Amazon return window is your first protection, and warranty claims go through the seller via your Amazon order.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Has ANCHEER had a recall?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for treadmills. The CPSC recalled about 22,000 ANCHEER e-bikes, model AM001907, in October 2022 because their batteries could ignite. We found no recall of any ANCHEER treadmill or walking pad when we searched on 5 November 2026.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes ANCHEER treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                ANCHEER does not say. The only official record we found is the 2022 CPSC e-bike recall, which names Shenzhen Sailvan Network Technology Ltd., doing business as ANCHEER, of China, as the distributor of the e-bikes. We could not confirm whether the same company sells the treadmills.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an ANCHEER Treadmill</h2>
+          <p>With a marketplace brand, most problems come from trusting the listing more than it deserves. These four matter most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Believing the biggest motor figure</h3>
+              <p>A listing that says 3.0 HP in the title and 1000 W in the features has a motor of about 1.3 HP at most. Plan on the smallest figure, and keep an ANCHEER pad to walking speeds.</p>
+            </li>
+            <li>
+              <h3>Buying from a third-party seller</h3>
+              <p>With no brand website to fall back on, the seller is your only support. A listing sold and shipped by Amazon.com puts Amazon’s return policy behind the purchase; a small third-party seller may set much tighter terms.</p>
+            </li>
+            <li>
+              <h3>Using the higher weight limit</h3>
+              <p>Where a listing gives 320 and 350 lb, the frame and motor may be rated for neither. Take the lower figure and leave a margin, or buy a pad from a brand that publishes one consistent rating.</p>
+            </li>
+            <li>
+              <h3>Not saving the manual and model number on day one</h3>
+              <p>Marketplace listings disappear. Download the manual from the listing as soon as the pad arrives, photograph the model label, and keep the order confirmation, so you can still find parts and instructions later.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an ANCHEER Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">With a marketplace brand, most problems come from trusting the listing more than it deserves. These four matter most.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Believing the biggest motor figure</h3>
-              <p class="text-gray-700 text-sm m-0">A listing that says 3.0 HP in the title and 1000 W in the features has a motor of about 1.3 HP at most. Plan on the smallest figure, and keep an ANCHEER pad to walking speeds.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying from a third-party seller</h3>
-              <p class="text-gray-700 text-sm m-0">With no brand website to fall back on, the seller is your only support. A listing sold and shipped by Amazon.com puts Amazon’s return policy behind the purchase; a small third-party seller may set much tighter terms.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the higher weight limit</h3>
-              <p class="text-gray-700 text-sm m-0">Where a listing gives 320 and 350 lb, the frame and motor may be rated for neither. Take the lower figure and leave a margin, or buy a pad from a brand that publishes one consistent rating.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not saving the manual and model number on day one</h3>
-              <p class="text-gray-700 text-sm m-0">Marketplace listings disappear. Download the manual from the listing as soon as the pad arrives, photograph the model label, and keep the order confirmation, so you can still find parts and instructions later.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Marketplace Brand Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/urevo-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">UREVO Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A walking-pad brand with its own store, read the same way.</p>
-            </a>
-            <a href="/maxkare-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">MaxKare Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Another Amazon-led brand, and how to read its listings.</p>
-            </a>
-            <a href="/buying-a-treadmill-on-amazon/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill on Amazon</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sellers, returns and warranties on a marketplace.</p>
-            </a>
-            <a href="/zofdim-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Zofdim Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to check a marketplace brand you cannot trace, and alternatives.</p>
-            </a>
-            <a href="/ajoosos-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">AJOOSOS 2-in-1 Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.</p>
-            </a>
-            <a href="/umay-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">UMAY Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">UMAY Fitness's SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">An ANCHEER walking pad can do the job for slow desk walking at a very low
           price, but you are buying from a listing, not from a brand you can contact.</strong> Buy from an
           Amazon-sold listing, plan on the lowest motor and capacity figures, save the manual on day one, and use
           the return window to check it properly.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you would rather pay a little more for published terms, compare ANCHEER with the pads on our
-          <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>
-          list, and read our guide to
-          <a href="/buying-a-treadmill-on-amazon/" class="text-[#5AA9FF] font-bold no-underline">buying a treadmill on Amazon</a>
-          before you order.
+          <p>
+            If you would rather pay a little more for published terms, compare ANCHEER with the pads on our <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a> list, and read our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#5AA9FF] font-bold no-underline">buying a treadmill on Amazon</a> before you order.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/urevo-treadmills/">UREVO Treadmills</a></li>
+            <li><a href="/maxkare-treadmill/">MaxKare Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does ANCHEER still sell treadmills?</h3></summary>
+            <p class="faq-a">
+              Probably, on Amazon. Independent trackers recorded several ANCHEER walking pads on Amazon through 2026, including the TR6056 first listed in February 2026 and price changes on other listings in June and July. Amazon would not load for us on 5 November 2026, so we could not confirm a specific listing that day.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is ANCHEER a good treadmill brand?</h3></summary>
+            <p class="faq-a">
+              ANCHEER pads can be acceptable for slow walking at a low price, but ANCHEER has no working treadmill website, its listings contradict themselves on motor and capacity, and support runs through Amazon. Buy from a listing sold by Amazon.com and plan on the lowest published figures.
             </p>
+          </details>
+          <details>
+            <summary><h3>Where can I find an ANCHEER treadmill manual?</h3></summary>
+            <p class="faq-a">
+              Check the Product guides and documents section of the Amazon listing from your order, note the model number and FCC ID from the label on the machine, then look for a copy on third-party manual archives filed under the ASIN or model number. You can also ask the seller for the manual through your Amazon order.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty does an ANCHEER treadmill have?</h3></summary>
+            <p class="faq-a">
+              The TR6056 listing offers a one-year manufacturer warranty, but we found no published ANCHEER warranty document. In practice, the Amazon return window is your first protection, and warranty claims go through the seller via your Amazon order.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Has ANCHEER had a recall?</h3></summary>
+            <p class="faq-a">
+              Not for treadmills. The CPSC recalled about 22,000 ANCHEER e-bikes, model AM001907, in October 2022 because their batteries could ignite. We found no recall of any ANCHEER treadmill or walking pad when we searched on 5 November 2026.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who makes ANCHEER treadmills?</h3></summary>
+            <p class="faq-a">
+              ANCHEER does not say. The only official record we found is the 2022 CPSC e-bike recall, which names Shenzhen Sailvan Network Technology Ltd., doing business as ANCHEER, of China, as the distributor of the e-bikes. We could not confirm whether the same company sells the treadmills.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Marketplace Brand Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/urevo-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">UREVO Treadmills</div>
+            <p class="c-blurb">A walking-pad brand with its own store, read the same way.</p>
+          </a>
+          <a href="/maxkare-treadmill/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">MaxKare Treadmills</div>
+            <p class="c-blurb">Another Amazon-led brand, and how to read its listings.</p>
+          </a>
+          <a href="/buying-a-treadmill-on-amazon/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Buying a Treadmill on Amazon</div>
+            <p class="c-blurb">Sellers, returns and warranties on a marketplace.</p>
+          </a>
+          <a href="/zofdim-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Zofdim Treadmills</div>
+            <p class="c-blurb">How to check a marketplace brand you cannot trace, and alternatives.</p>
+          </a>
+          <a href="/ajoosos-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">AJOOSOS 2-in-1 Treadmill</div>
+            <p class="c-blurb">A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.</p>
+          </a>
+          <a href="/umay-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">UMAY Treadmills</div>
+            <p class="c-blurb">UMAY Fitness's SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

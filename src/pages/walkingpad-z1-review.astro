@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "WalkingPad Z1 Review (2026): The Fold-in-Half Under Desk Pad";
 const description =
@@ -152,6 +151,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/walkingpad-z1-review/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -173,66 +178,54 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Who It Suits", link: "#who-it-suits" }}
+  stickyCta={{ text: "Folds Under a Bed: WalkingPad Z1", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-walkingpadz1review" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-walkingpadz1review)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Product Review</span>
+      </nav>
+      <h1 class="ed-title">WalkingPad Z1 Review: Folds in Half, Walks Only</h1>
+      <p class="ed-dek">
+        The Z1 is KingSmith’s cheapest fold-in-half WalkingPad: a 51 lb pad with a 47.6-inch walking area that folds to 5.4 inches tall and slides under a bed or sofa. Its size, weight and capacity are confirmed in three places. Its motor and noise figures are not, and its 242 lb limit and one-year warranty are the reasons to think twice.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Product Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          WalkingPad Z1 <span class="text-[#5AA9FF]">Review: Folds in Half, Walks Only</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Z1 is KingSmith’s cheapest fold-in-half WalkingPad: a 51 lb pad with a 47.6-inch walking area that folds to 5.4 inches tall and slides under a bed or sofa. Its size, weight and capacity are confirmed in three places. Its motor and noise figures are not, and its 242 lb limit and one-year warranty are the reasons to think twice.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#specifications" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What Is Confirmed
-          </a>
-          <a href="#alternatives" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Z1 vs A1 Pro and UREVO
-          </a>
-        </div>
+        <a href="#walkingpad-z1" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#walkingpad-z1"><img src="https://m.media-amazon.com/images/I/31oMu9TYTUL._SL500_.jpg" alt="WalkingPad Z1" width="448" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+        <figcaption>WalkingPad Z1</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The WalkingPad Z1 is the entry point to KingSmith’s fold-in-half walking pads: a slim,
+          walking-only machine with a long belt that halves its length for storage. That combination
+          is rare at around $300, which is why the Z1 already appears as a pick in several of our
+          roundups. This review goes further than a roundup card can. It sets out which figures
+          WalkingPad, Amazon and an independent hands-on review agree on, where they disagree and
+          why, what it costs and on what terms on 20 October 2026, how it compares with the A1 Pro
+          and the UREVO pads we cover, and who should buy something else.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           20 October 2026 we checked both Z1 listings on WalkingPad’s US store (the standard Z1 and
           the Z1 White), their specification tables, and WalkingPad’s return, refund and warranty
@@ -245,45 +238,26 @@ const schema = {
           motor rating, noise level and exact top speed conflict, and the page says so rather than
           choosing. We have not tested the Z1. Prices are those shown on the day we checked and
           change often.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is the WalkingPad Z1 Any Good? The Short Answer</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. WalkingPad Z1 Specifications: Confirmed, Conflicting and Claimed</a>
-          <a href="#folding-and-storage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Folding, Storage and Fitting It Under a Desk</a>
-          <a href="#speed-and-controls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Speed, Remote and the KS Fit App</a>
-          <a href="#motor-and-noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Motor and Noise: Why the Numbers Disagree</a>
-          <a href="#owner-reports" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What the Hands-On Review and Owners Report</a>
-          <a href="#price-warranty-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Price, Warranty, Returns and Safety Record</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. WalkingPad Z1 vs the A1 Pro and UREVO Pads</a>
-          <a href="#who-it-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who the WalkingPad Z1 Suits</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is the WalkingPad Z1 Any Good? The Short Answer</a></li>
+            <li><a href="#specifications">WalkingPad Z1 Specifications: Confirmed, Conflicting and Claimed</a></li>
+            <li><a href="#folding-and-storage">Folding, Storage and Fitting It Under a Desk</a></li>
+            <li><a href="#speed-and-controls">Speed, Remote and the KS Fit App</a></li>
+            <li><a href="#motor-and-noise">Motor and Noise: Why the Numbers Disagree</a></li>
+            <li><a href="#owner-reports">What the Hands-On Review and Owners Report</a></li>
+            <li><a href="#price-warranty-returns">Price, Warranty, Returns and Safety Record</a></li>
+            <li><a href="#alternatives">WalkingPad Z1 vs the A1 Pro and UREVO Pads</a></li>
+            <li><a href="#who-it-suits">Who the WalkingPad Z1 Suits</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The WalkingPad Z1 is the entry point to KingSmith’s fold-in-half walking pads: a slim,
-          walking-only machine with a long belt that halves its length for storage. That combination
-          is rare at around $300, which is why the Z1 already appears as a pick in several of our
-          roundups. This review goes further than a roundup card can. It sets out which figures
-          WalkingPad, Amazon and an independent hands-on review agree on, where they disagree and
-          why, what it costs and on what terms on 20 October 2026, how it compares with the A1 Pro
-          and the UREVO pads we cover, and who should buy something else.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is the WalkingPad Z1 Any Good? The Short Answer</h2>
+          <h2>Is the WalkingPad Z1 Any Good? The Short Answer</h2>
 <p>
             <strong>Yes, for the right person: the WalkingPad Z1 is one of the few pads under about
             $300 with a belt long enough for a normal walking stride that also folds small enough to
@@ -304,83 +278,70 @@ const schema = {
             So buy it on those terms. At $299 it is a fair price for a long-belt, fold-in-half pad
             sold and supported by the brand itself. Stay well inside the weight limit, put it on a
             dense mat, use the 30-day return window properly, and if you want a higher capacity or
-            a walking area you can make harder, look at the
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">other walking pads we cover</a>
-            instead.
+            a walking area you can make harder, look at the <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">other walking pads we cover</a> instead.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. WalkingPad Z1 Specifications: Confirmed, Conflicting and Claimed</h2>
+          <h2>WalkingPad Z1 Specifications: Confirmed, Conflicting and Claimed</h2>
 <p>
             The table separates the figures on which WalkingPad and at least one independent source
             agree from those that conflict or that only one source states. “Independent” here means
@@ -416,9 +377,7 @@ const schema = {
             — the remote steps in 0.5 km/h increments — so 6 km/h is the real ceiling, and “4 mph”
             is that figure rounded up. If you walk at 3.8 or 4.0 mph, the Z1 will not quite get you
             there. For most desk walkers it does not matter: typical working speeds are well under 3
-            mph, and our guide to
-            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
-            explains where brisk walking starts.
+            mph, and our guide to <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a> explains where brisk walking starts.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The figures that are settled</h3>
           <p>
@@ -426,9 +385,7 @@ const schema = {
             pad that stands 4.1 inches tall, folds to 31.8 inches long and 5.4 inches tall, and weighs
             51 lb. The shipping box is listed by WalkingPad at 35.6 by 25 by 7.8 inches and 60.5 lb.
             The 47.6-inch walking area is among the longest in any folding pad, and only an inch or
-            so shorter than many full treadmills built for walking. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explains why that length is the figure that most decides how a pad feels at a brisk
+            so shorter than many full treadmills built for walking. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains why that length is the figure that most decides how a pad feels at a brisk
             walk, and why the 15.7-inch width is narrower than ideal if you drift side to side.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which Z1 is which</h3>
@@ -445,7 +402,7 @@ const schema = {
         </div>
 
         <div id="folding-and-storage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Folding, Storage and Fitting It Under a Desk</h2>
+          <h2>Folding, Storage and Fitting It Under a Desk</h2>
 <p>
             The fold is the reason to choose a Z1 over a flat pad. A hinge across the middle lets the
             deck fold back on itself, halving its length from 56.1 to 31.8 inches. WalkingPad gives
@@ -460,18 +417,14 @@ const schema = {
             lowest point — usually a cross-rail or a centre support, not the edge you can see. Measure
             before you buy. Tom’s Guide’s nine-month follow-up gives the folded height as 5.2 inches,
             a small difference from the specification that is most likely a different way of
-            measuring; plan around 5.4. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space guide</a>
-            covers the clearances to leave around a pad in use.
+            measuring; plan around 5.4. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space guide</a> covers the clearances to leave around a pad in use.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Under a standing desk</h3>
           <p>
             Unfolded, the Z1 is 4.1 inches tall, and Tom’s Guide reports the walking surface sits about
             6.7 centimetres, or roughly 2.6 inches, off the floor. Either way, a walking pad raises you
             by a few inches, so your desk needs to go a few inches higher than your standing height.
-            Our guide to
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
-            shows how to work it out. At 22 inches wide the Z1 fits under most standing desks, but
+            Our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a> shows how to work it out. At 22 inches wide the Z1 fits under most standing desks, but
             check that the desk legs or crossbar leave room for the pad and for your feet behind it.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The weight is the catch</h3>
@@ -480,17 +433,13 @@ const schema = {
             carry. Tom’s Guide’s reviewer found it needed a second person on stairs, and listed its
             weight among the reasons to avoid it. If you will roll it on one floor, the wheels make
             this a non-issue. If you will carry it between floors every day, a lighter pad with a
-            shorter belt may suit you better, and our
-            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills roundup</a>
-            ranks the options by weight. When you fold and move it, follow the manual’s order of
-            steps; our general guide on
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a>
-            covers the habits that prevent pinched fingers and strained backs.
+            shorter belt may suit you better, and our <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills roundup</a> ranks the options by weight. When you fold and move it, follow the manual’s order of
+            steps; our general guide on <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">how to fold a treadmill</a> covers the habits that prevent pinched fingers and strained backs.
           </p>
         </div>
 
         <div id="speed-and-controls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Speed, Remote and the KS Fit App</h2>
+          <h2>Speed, Remote and the KS Fit App</h2>
 <p>
             The Z1 has no console you touch while walking. You control it with a small remote, which
             comes with a wristband, or with KingSmith’s KS Fit app. A display at the front of the deck
@@ -516,23 +465,19 @@ const schema = {
             heart rate. None of this needs a subscription on the evidence we found, but treat the app
             as a convenience rather than a feature you are paying for: an app can change, and the pad
             works without it. If you want your steps counted on your wrist as well, our guide to
-            whether
-            <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">a fitness tracker counts steps on a treadmill</a>
-            explains why a wrist device may undercount when your hands are on a keyboard.
+            whether <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">a fitness tracker counts steps on a treadmill</a> explains why a wrist device may undercount when your hands are on a keyboard.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Walking only</h3>
           <p>
             With a ceiling of 6 km/h and no handlebar, the Z1 is a walking machine. Tom’s Guide’s
             reviewer tried a jog at top speed and found it felt a little unstable without handles.
             That is a fair description of the category, not a fault. If you want to jog even
-            occasionally, read our page on whether you can
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">run on a walking pad</a>
-            before choosing a pad that does not have a raised bar.
+            occasionally, read our page on whether you can <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">run on a walking pad</a> before choosing a pad that does not have a raised bar.
           </p>
         </div>
 
         <div id="motor-and-noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Motor and Noise: Why the Numbers Disagree</h2>
+          <h2>Motor and Noise: Why the Numbers Disagree</h2>
 <p>
             These are the two figures most likely to sway a buyer and the two least reliable on the
             Z1, as on most walking pads.
@@ -546,9 +491,7 @@ const schema = {
             2.25 HP is a peak or a continuous figure. On walking pads an unlabelled number is usually
             a peak, which describes a brief maximum rather than what the motor sustains through an
             hour of slow walking, so the gap between 0.75 and 2.25 may simply be the gap between
-            continuous and peak. We cannot confirm that, so we have not printed a motor figure. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why continuous power is the number that matters for heavier walkers and long
+            continuous and peak. We cannot confirm that, so we have not printed a motor figure. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why continuous power is the number that matters for heavier walkers and long
             sessions.
           </p>
           <p>
@@ -571,16 +514,12 @@ const schema = {
           <p>
             In practice, the noise that bothers housemates and downstairs neighbours on a walking pad
             is usually footfall carried through the floor rather than motor hum. A dense rubber mat
-            under the pad helps more than any difference between motors. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            explains how sound travels from a treadmill, and our
-            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads roundup</a>
-            compares the pads with the best independent noise reports.
+            under the pad helps more than any difference between motors. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> explains how sound travels from a treadmill, and our <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads roundup</a> compares the pads with the best independent noise reports.
           </p>
         </div>
 
         <div id="owner-reports" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What the Hands-On Review and Owners Report</h2>
+          <h2>What the Hands-On Review and Owners Report</h2>
 <p>
             The most detailed independent account of the Z1 is Tom’s Guide’s review from June 2025,
             followed in March 2026 by the same publication’s report after nine months of use. We
@@ -602,9 +541,7 @@ const schema = {
               manual.</li>
             <li><strong>A remote that could do more.</strong> The 0.5 km/h steps described above.</li>
             <li><strong>A low profile that suits hard floors.</strong> The reviewer advises care on
-              carpet, where pile can rub against a belt this close to the floor. Our guide to using a
-              <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a>
-              explains why a firm mat between the two is the fix.</li>
+              carpet, where pile can rub against a belt this close to the floor. Our guide to using a <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a> explains why a firm mat between the two is the fix.</li>
             <li><strong>Weight.</strong> Fine on wheels, awkward on stairs.</li>
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What Amazon owners raise</h3>
@@ -615,16 +552,12 @@ const schema = {
             tear within a week. A recent review describes a difficult return and an uneven walking
             bed. We cannot verify individual reviews, and every walking pad attracts some of these.
             The pattern is worth acting on, though: check belt tracking in your first sessions, and
-            correct drift early with the small adjustments the manual describes. Our guide to
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a>
-            shows the method, and our guide to
-            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
-            explains how to weigh a handful of bad reports against many good ones.
+            correct drift early with the small adjustments the manual describes. Our guide to <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a> shows the method, and our guide to <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a> explains how to weigh a handful of bad reports against many good ones.
           </p>
         </div>
 
         <div id="price-warranty-returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Price, Warranty, Returns and Safety Record</h2>
+          <h2>Price, Warranty, Returns and Safety Record</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What it costs, as of October 20, 2026</h3>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -656,9 +589,7 @@ const schema = {
             third-party protection provider. One year is short for a machine whose motor and
             controller are the parts most likely to fail, and it is the same term as on the A1 Pro.
             Register the pad, keep the receipt, and before buying an extension, read who handles
-            claims and whether it covers the motor. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            lists the questions to ask.
+            claims and whether it covers the motor. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> lists the questions to ask.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns: 30 days, with costs</h3>
           <p>
@@ -670,11 +601,7 @@ const schema = {
             more for comparable pads such as the C2 and A1 Pro. Damaged, defective or wrong items are
             the company’s cost. Amazon’s listing gives a 30-day refund or replacement, notes that a
             return shipping fee may apply and that the item is not eligible for free returns. Either
-            way, a change of mind on a 60 lb box can cost real money. Our guides to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            and
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            explain how to avoid surprises. Keep the box until the window closes.
+            way, a change of mind on a 60 lb box can cost real money. Our guides to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> and <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> explain how to avoid surprises. Keep the box until the window closes.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Recalls and safety warnings</h3>
           <p>
@@ -688,7 +615,7 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. WalkingPad Z1 vs the A1 Pro and UREVO Pads</h2>
+          <h2>WalkingPad Z1 vs the A1 Pro and UREVO Pads</h2>
 <p>
             The Z1’s nearest rival is its own sibling, the WalkingPad A1 Pro. The <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> pads covered
             on this site are the alternatives most shoppers compare it with at a similar or lower
@@ -725,37 +652,26 @@ const schema = {
             A1 Pro starts lower, at 0.5 mph. Both carry one year of warranty, and WalkingPad’s own pages put both motors in
             the “under 65 dB” band. If you weigh over about 210 lb, walk for many hours a day, or want
             wider margins, the A1 Pro is the better buy. If you are comfortably under the Z1’s limit
-            and mainly want a long belt that stores away, the Z1 does the same job for less. Our
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads roundup</a>
-            ranks the A1 Pro first for that reason and the Z1 as its value alternative.
+            and mainly want a long belt that stores away, the Z1 does the same job for less. Our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads roundup</a> ranks the A1 Pro first for that reason and the Z1 as its value alternative.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Z1 or a UREVO pad?</h3>
           <p>
-            The UREVO pads trade the Z1’s long, folding deck for a lower price or an incline. The
-            <strong>SpaceWalk E1L</strong> costs about $130 less and is lighter, but its 35.4-inch belt
-            suits slow desk walking rather than a brisk stride, and it does not fold. The
-            <strong>SpaceWalk 3S</strong> costs about $50 less than the Z1 on UREVO’s store and adds a
+            The UREVO pads trade the Z1’s long, folding deck for a lower price or an incline. The <strong>SpaceWalk E1L</strong> costs about $130 less and is lighter, but its 35.4-inch belt
+            suits slow desk walking rather than a brisk stride, and it does not fold. The <strong>SpaceWalk 3S</strong> costs about $50 less than the Z1 on UREVO’s store and adds a
             powered 0–9% incline and a 265 lb rating, with a 42.5-inch belt that is five inches shorter; it does not
-            fold in half, so it needs a wider space to slide under. The <strong>Strol 2S Pro</strong>
-            adds a fold-up handlebar and a running mode, at a much higher price on UREVO’s store. If
+            fold in half, so it needs a wider space to slide under. The <strong>Strol 2S Pro</strong> adds a fold-up handlebar and a running mode, at a much higher price on UREVO’s store. If
             you want to make walking harder as you get fitter, incline matters more than belt length;
-            our
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline roundup</a>
-            compares the options. If you are over 242 lb, our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            covers pads with real margin.
+            our <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline roundup</a> compares the options. If you are over 242 lb, our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> covers pads with real margin.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Z1 or a folding treadmill?</h3>
           <p>
             If you want to jog, run, or hold on, a pad is the wrong tool whatever its size. Our
-            comparison of a
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad and a folding treadmill</a>
-            sets out what each gives up.
+            comparison of a <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad and a folding treadmill</a> sets out what each gives up.
           </p>
         </div>
 
         <div id="who-it-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who the WalkingPad Z1 Suits</h2>
+          <h2>Who the WalkingPad Z1 Suits</h2>
 <p>
             <strong>It suits a desk walker in a small home who needs the pad out of sight.</strong> A
             long walking area that folds to 5.4 inches tall and rolls on wheels is exactly what a
@@ -763,9 +679,7 @@ const schema = {
           </p>
           <p>
             <strong>It suits taller walkers on a budget, if they are not heavy.</strong> A 47.6-inch
-            walking area gives a natural stride at a brisk walk for most people; our
-            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>
-            roundup explains the belt lengths that matter.
+            walking area gives a natural stride at a brisk walk for most people; our <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a> roundup explains the belt lengths that matter.
           </p>
           <p>
             <strong>It does not suit anyone near 242 lb.</strong> Leave a margin of 10 to 15 percent
@@ -776,20 +690,15 @@ const schema = {
             no handlebar and a flat deck make it a walking machine only.
           </p>
           <p>
-            <strong>It does not suit someone who carries it upstairs daily or wants long cover.</strong>
-            Fifty-one pounds is a two-person carry on stairs, and the warranty is one year.
+            <strong>It does not suit someone who carries it upstairs daily or wants long cover.</strong> Fifty-one pounds is a two-person carry on stairs, and the warranty is one year.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Setting up and looking after it</h3>
           <ul>
             <li><strong>Start with a mat on a hard floor.</strong> It protects the floor, cuts
-              footfall noise and keeps carpet pile away from the belt. Our
-              <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats roundup</a>
-              covers sizes for pads.</li>
+              footfall noise and keeps carpet pile away from the belt. Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats roundup</a> covers sizes for pads.</li>
             <li><strong>Plug straight into a wall outlet.</strong> The cord is short, so plan the
               position around an outlet rather than an extension lead.</li>
-            <li><strong>Lubricate and check tracking as the manual says.</strong> Our
-              <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">walking pad lubrication guide</a>
-              shows the method on a low-profile pad.</li>
+            <li><strong>Lubricate and check tracking as the manual says.</strong> Our <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">walking pad lubrication guide</a> shows the method on a low-profile pad.</li>
             <li><strong>Walk at your real desk speed for your real session length in the first
               weeks.</strong> Belt drift, noise and controller faults show up under sustained use, and
               the return window is 30 days.</li>
@@ -800,116 +709,38 @@ const schema = {
             Desk walking is gentle exercise, but if you have a heart, joint or balance condition, or
             are returning to activity after a long break, check with a clinician before adding hours
             of walking to your day. The CDC’s guidance of about 150 minutes of moderate activity a week
-            for adults is a sensible target; our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            explains how to build up to it.
+            for adults is a sensible target; our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> explains how to build up to it.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the WalkingPad Z1 worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For a walker comfortably under 242 lb who needs a long-belt pad to fold away under a bed or sofa, yes. At $299 it offers a 47.6-inch walking area and a 5.4-inch folded height, figures WalkingPad, Amazon and Tom's Guide agree on. Its motor and noise figures conflict between sources, the warranty is one year, and it has no incline or handlebar.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the WalkingPad Z1 and A1 Pro?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Both fold in half and have walking areas of about 47 inches. The A1 Pro costs $529 on WalkingPad's store against $299 to $329 for the Z1, and adds a 300 lb capacity instead of 242 lb, a slightly wider 16.5-inch walking area and FootSense automatic speed control. The A1 Pro weighs 63 lb against 51 lb. Both have a one-year warranty.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How small does the WalkingPad Z1 fold?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                WalkingPad, Amazon and Tom's Guide all give a folded size of 31.8 by 22 by 5.4 inches, down from 56.1 by 22 by 4.1 inches unfolded. To store it under a bed or sofa, the gap needs to be a little more than 5.4 inches at its lowest point. Once folded it tips onto wheels and rolls.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the top speed of the WalkingPad Z1?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                WalkingPad lists 1 to 4 mph, or 6 km/h. Six km/h is 3.73 mph, which is the figure Tom's Guide gives, so the true ceiling is just under 4 mph. The remote changes speed in 0.5 km/h steps and the KS Fit app in 0.1 km/h steps. It is a walking pad, not a running machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit of the WalkingPad Z1?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                242 lb, or 110 kg, on WalkingPad's page, the Amazon listing and Tom's Guide's review. Leave a margin below any rated capacity; walkers above about 210 to 220 lb should look at a pad with a higher rating, such as the 300 lb WalkingPad A1 Pro.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the WalkingPad Z1 quiet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The claims conflict. WalkingPad's Z1 page says below 65 dB, Living.fit's listing says under 40 dB, and Tom's Guide measured an average of 57.3 dB with a phone app. The motor is brushless, which helps, but footfall carried through the floor is usually the louder problem, so use a dense mat and test it in your room during the 30-day return window.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Has the WalkingPad Z1 been recalled?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We found no CPSC recalls or product safety warnings for KingSmith or WalkingPad when we searched on 20 October 2026. Register your pad with the company so it can contact you, and search the brand on cpsc.gov from time to time.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a WalkingPad Z1</h2>
+          <p>Most disappointment with the Z1 comes from treating it as a smaller A1 Pro or a small treadmill. These are the four that matter.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying it close to the 242 lb limit</h3>
+              <p>The Z1's capacity is 242 lb, and its motor rating cannot be confirmed. A pad run near its limit for hours a day works its motor and deck hardest. If you are above about 210 to 220 lb, pay the extra for the 300 lb A1 Pro or choose another pad with real margin.</p>
+            </li>
+            <li>
+              <h3>Measuring the wrong gap under the bed</h3>
+              <p>The Z1 folds to 5.4 inches tall, and the visible edge of a bed or sofa is rarely the lowest point underneath. Measure the lowest cross-rail or centre support, allow a little clearance for the wheels and your hands, and check that the folded 31.8-inch length fits between legs.</p>
+            </li>
+            <li>
+              <h3>Choosing on the motor or noise figure</h3>
+              <p>Sources give the Z1's motor as 0.75, 2 or 2.25 HP, and its noise as under 40, 45 or 65 dB. Those numbers cannot be compared with each other or with other pads. Choose on belt length, capacity, folded size and return terms, and listen to it in your own room during the return window.</p>
+            </li>
+            <li>
+              <h3>Forgetting the cost of sending it back</h3>
+              <p>Both WalkingPad and Amazon give 30 days, but a change-of-mind return can mean paying to ship a 60 lb box, and WalkingPad's prepaid labels for comparable pads start at about $100. Measure your space and desk height before you order, keep the box, and test it properly in the first weeks.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a WalkingPad Z1</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointment with the Z1 comes from treating it as a smaller A1 Pro or a small treadmill. These are the four that matter.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it close to the 242 lb limit</h3>
-              <p class="text-gray-700 text-sm m-0">The Z1's capacity is 242 lb, and its motor rating cannot be confirmed. A pad run near its limit for hours a day works its motor and deck hardest. If you are above about 210 to 220 lb, pay the extra for the 300 lb A1 Pro or choose another pad with real margin.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the wrong gap under the bed</h3>
-              <p class="text-gray-700 text-sm m-0">The Z1 folds to 5.4 inches tall, and the visible edge of a bed or sofa is rarely the lowest point underneath. Measure the lowest cross-rail or centre support, allow a little clearance for the wheels and your hands, and check that the folded 31.8-inch length fits between legs.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing on the motor or noise figure</h3>
-              <p class="text-gray-700 text-sm m-0">Sources give the Z1's motor as 0.75, 2 or 2.25 HP, and its noise as under 40, 45 or 65 dB. Those numbers cannot be compared with each other or with other pads. Choose on belt length, capacity, folded size and return terms, and listen to it in your own room during the return window.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the cost of sending it back</h3>
-              <p class="text-gray-700 text-sm m-0">Both WalkingPad and Amazon give 30 days, but a change-of-mind return can mean paying to ship a 60 lb box, and WalkingPad's prepaid labels for comparable pads start at about $100. Measure your space and desk height before you order, keep the box, and test it properly in the first weeks.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The A1 Pro, the Z1 and four UREVO and MERACH pads, cross-checked.</p>
-            </a>
-            <a href="/best-portable-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Portable Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines ranked by weight, folded size and how easily they move.</p>
-            </a>
-            <a href="/walking-pad-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Which walking pad figures to trust, and which to discount.</p>
-            </a>
-            <a href="/walkingpad-a1-pro-review/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Model Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">WalkingPad A1 Pro Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">KingSmith's fold-in-half pad, still sold at $499: the 230 vs 300 lb versions, a three-way motor conflict.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The WalkingPad Z1 is a good-value, fold-in-half walking pad for
             walkers comfortably under 242 lb who need it out of sight.</strong> Its walking area,
             folded size, weight and capacity are confirmed across WalkingPad, Amazon and an independent
@@ -917,40 +748,129 @@ const schema = {
             itself, it is a fair buy for daily desk walking, with a one-year warranty and a 30-day
             return window that costs money to use.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you are heavier, want incline, or want to jog, look at the
-            <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>
-            and the
-            <a href="/best-walking-pads-with-incline/" class="text-[#5AA9FF] font-bold no-underline">walking pads with incline</a>
-            instead, and use the
-            <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>
-            to compare listings on the figures that hold up.
+          <p>
+            If you are heavier, want incline, or want to jog, look at the <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a> and the <a href="/best-walking-pads-with-incline/" class="text-[#5AA9FF] font-bold no-underline">walking pads with incline</a> instead, and use the <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a> to compare listings on the figures that hold up.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads/">Best Walking Pads</a></li>
+            <li><a href="/best-portable-treadmills/">Best Portable Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the WalkingPad Z1 worth it?</h3></summary>
+            <p class="faq-a">
+              For a walker comfortably under 242 lb who needs a long-belt pad to fold away under a bed or sofa, yes. At $299 it offers a 47.6-inch walking area and a 5.4-inch folded height, figures WalkingPad, Amazon and Tom's Guide agree on. Its motor and noise figures conflict between sources, the warranty is one year, and it has no incline or handlebar.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the WalkingPad Z1 and A1 Pro?</h3></summary>
+            <p class="faq-a">
+              Both fold in half and have walking areas of about 47 inches. The A1 Pro costs $529 on WalkingPad's store against $299 to $329 for the Z1, and adds a 300 lb capacity instead of 242 lb, a slightly wider 16.5-inch walking area and FootSense automatic speed control. The A1 Pro weighs 63 lb against 51 lb. Both have a one-year warranty.
             </p>
+          </details>
+          <details>
+            <summary><h3>How small does the WalkingPad Z1 fold?</h3></summary>
+            <p class="faq-a">
+              WalkingPad, Amazon and Tom's Guide all give a folded size of 31.8 by 22 by 5.4 inches, down from 56.1 by 22 by 4.1 inches unfolded. To store it under a bed or sofa, the gap needs to be a little more than 5.4 inches at its lowest point. Once folded it tips onto wheels and rolls.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the top speed of the WalkingPad Z1?</h3></summary>
+            <p class="faq-a">
+              WalkingPad lists 1 to 4 mph, or 6 km/h. Six km/h is 3.73 mph, which is the figure Tom's Guide gives, so the true ceiling is just under 4 mph. The remote changes speed in 0.5 km/h steps and the KS Fit app in 0.1 km/h steps. It is a walking pad, not a running machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit of the WalkingPad Z1?</h3></summary>
+            <p class="faq-a">
+              242 lb, or 110 kg, on WalkingPad's page, the Amazon listing and Tom's Guide's review. Leave a margin below any rated capacity; walkers above about 210 to 220 lb should look at a pad with a higher rating, such as the 300 lb WalkingPad A1 Pro.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the WalkingPad Z1 quiet?</h3></summary>
+            <p class="faq-a">
+              The claims conflict. WalkingPad's Z1 page says below 65 dB, Living.fit's listing says under 40 dB, and Tom's Guide measured an average of 57.3 dB with a phone app. The motor is brushless, which helps, but footfall carried through the floor is usually the louder problem, so use a dense mat and test it in your room during the 30-day return window.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Has the WalkingPad Z1 been recalled?</h3></summary>
+            <p class="faq-a">
+              We found no CPSC recalls or product safety warnings for KingSmith or WalkingPad when we searched on 20 October 2026. Register your pad with the company so it can contact you, and search the brand on cpsc.gov from time to time.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads</div>
+            <p class="c-blurb">The A1 Pro, the Z1 and four UREVO and MERACH pads, cross-checked.</p>
+          </a>
+          <a href="/best-portable-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Portable Treadmills</div>
+            <p class="c-blurb">Machines ranked by weight, folded size and how easily they move.</p>
+          </a>
+          <a href="/walking-pad-buying-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Walking Pad Buying Guide</div>
+            <p class="c-blurb">Which walking pad figures to trust, and which to discount.</p>
+          </a>
+          <a href="/walkingpad-a1-pro-review/" class="card">
+            <div class="c-kicker">Model Review</div>
+            <div class="c-title">WalkingPad A1 Pro Review</div>
+            <p class="c-blurb">KingSmith's fold-in-half pad, still sold at $499: the 230 vs 300 lb versions, a three-way motor conflict.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

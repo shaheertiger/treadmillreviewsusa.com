@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Is My Treadmill Speed Accurate? (2026): How to Check It";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/is-my-treadmill-speed-accurate/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,42 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Check It Yourself", link: "#check-it-yourself" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-ismytreadmillspeedaccurate" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-ismytreadmillspeedaccurate)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Is My Treadmill Speed Accurate?</h1>
+      <p class="ed-dek">
+        Probably close, but not exactly — a home treadmill reading a few percent off is common, and slip under load tends to make it read fast. You can find out for yourself with a tape measure, a chalk mark and a stopwatch. Here is how, with the arithmetic.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Is My Treadmill <span class="text-[#5AA9FF]">Speed Accurate?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Probably close, but not exactly — a home treadmill reading a few percent off is common, and slip under load tends to make it read fast. You can find out for yourself with a tape measure, a chalk mark and a stopwatch. Here is how, with the arithmetic.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#check-it-yourself" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Check It Yourself
-          </a>
-          <a href="#worked-example" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Worked Example
-          </a>
-        </div>
+        <a href="#check-it-yourself" class="btn-ghost">Check It Yourself</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A treadmill does not measure how fast you are moving. It measures how fast a roller or
+          the motor is turning, and works out belt speed from that. Most of the time that is a
+          perfectly good estimate. When it is not, the reasons are mechanical and specific, and
+          the check is simple enough to do in ten minutes without any special tools.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the figures below.</strong> The accuracy ranges on this
           page are typical editorial guidance for home treadmills, not a manufacturer
           specification or a measurement of any particular model, and the belt length in the
@@ -170,45 +153,29 @@ const schema = {
           machine, keep hands, hair and loose clothing clear of the belt and rollers, keep
           children and pets out of the room, and never reach under the belt or into the motor
           compartment while it is moving.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is My Treadmill Speed Accurate? The Short Answer</a>
-          <a href="#how-speed-is-measured" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How a Treadmill Measures Speed</a>
-          <a href="#why-it-drifts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Why Treadmill Speed Can Be Wrong</a>
-          <a href="#acceptable-error" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Accurate Should a Treadmill Be?</a>
-          <a href="#check-it-yourself" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Check Your Treadmill Speed Yourself</a>
-          <a href="#worked-example" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Worked Example: The Arithmetic</a>
-          <a href="#counting-precision" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Why You Should Count for Longer Than a Minute</a>
-          <a href="#if-it-is-off" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. If It Is Off: What to Fix First</a>
-          <a href="#calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Treadmill Speed Calibration Modes</a>
-          <a href="#watch-vs-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Why Your Watch and Treadmill Disagree</a>
-          <a href="#feels-different" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When the Speed Is Right but Feels Wrong</a>
-          <a href="#when-to-call" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. When to Call a Technician</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is My Treadmill Speed Accurate? The Short Answer</a></li>
+            <li><a href="#how-speed-is-measured">How a Treadmill Measures Speed</a></li>
+            <li><a href="#why-it-drifts">Why Treadmill Speed Can Be Wrong</a></li>
+            <li><a href="#acceptable-error">How Accurate Should a Treadmill Be?</a></li>
+            <li><a href="#check-it-yourself">How to Check Your Treadmill Speed Yourself</a></li>
+            <li><a href="#worked-example">Worked Example: The Arithmetic</a></li>
+            <li><a href="#counting-precision">Why You Should Count for Longer Than a Minute</a></li>
+            <li><a href="#if-it-is-off">If It Is Off: What to Fix First</a></li>
+            <li><a href="#calibration">Treadmill Speed Calibration Modes</a></li>
+            <li><a href="#watch-vs-treadmill">Why Your Watch and Treadmill Disagree</a></li>
+            <li><a href="#feels-different">When the Speed Is Right but Feels Wrong</a></li>
+            <li><a href="#when-to-call">When to Call a Technician</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A treadmill does not measure how fast you are moving. It measures how fast a roller or
-          the motor is turning, and works out belt speed from that. Most of the time that is a
-          perfectly good estimate. When it is not, the reasons are mechanical and specific, and
-          the check is simple enough to do in ten minutes without any special tools.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is My Treadmill Speed Accurate? The Short Answer</h2>
+          <h2>Is My Treadmill Speed Accurate? The Short Answer</h2>
 <p>
             <strong>Usually it is close but not exact.</strong> A home treadmill's displayed speed
             commonly sits within a few percent of the real belt speed, and that is accurate enough
@@ -235,7 +202,7 @@ const schema = {
         </div>
 
         <div id="how-speed-is-measured" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How a Treadmill Measures Speed</h2>
+          <h2>How a Treadmill Measures Speed</h2>
 <p>
             Most motorised treadmills use a <strong>speed sensor</strong> that counts revolutions of
             something that turns with the drive. Typically that is a magnet on the front roller
@@ -261,13 +228,12 @@ const schema = {
           <p>
             Distance is simply that calculated speed added up over time. Calories are then
             estimated from speed, incline and the weight you entered, which is a further layer of
-            approximation covered in our page on whether
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calories are accurate</a>.
+            approximation covered in our page on whether <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calories are accurate</a>.
           </p>
         </div>
 
         <div id="why-it-drifts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Why Treadmill Speed Can Be Wrong</h2>
+          <h2>Why Treadmill Speed Can Be Wrong</h2>
 <p>
             <strong>Running belt slip.</strong> The front roller drives the belt by friction. Under
             load — your weight landing on the belt at every step — a belt that is loose, worn or
@@ -275,23 +241,18 @@ const schema = {
             the sensor is satisfied, and the belt under your feet loses a little speed at every
             footstrike. The result is a machine that reads fast under load and correctly when
             empty. A severe case is obvious as a jerk or hesitation; a mild one is invisible except
-            to a count. Our guide to
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a>
-            covers it in full.
+            to a count. Our guide to <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt slipping</a> covers it in full.
           </p>
           <p>
             <strong>Friction and an overworked motor.</strong> A dry or <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> increases the
             drag the motor has to overcome. If it cannot hold the set speed under load, the belt
             slows while the console may keep showing the number you chose. If the belt visibly
-            slows when you step on, see our page on a
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows down when you step on it</a>.
+            slows when you step on, see our page on a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows down when you step on it</a>.
           </p>
           <p>
             <strong>Drive belt slip.</strong> If the speed sensor reads the motor rather than the
             roller, slip in the short drive belt between them is also invisible to the console. Our
-            guide to the
-            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a>
-            covers the signs.
+            guide to the <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a> covers the signs.
           </p>
           <p>
             <strong>A replacement belt or roller.</strong> The calculation assumes a particular
@@ -311,7 +272,7 @@ const schema = {
         </div>
 
         <div id="acceptable-error" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Accurate Should a Treadmill Be?</h2>
+          <h2>How Accurate Should a Treadmill Be?</h2>
 <p>
             There is no single published accuracy figure that applies across home treadmills, and
             individual machines vary. As rough editorial guidance:
@@ -328,9 +289,7 @@ const schema = {
           <p>
             Put in pace terms, a 3% error at a 10-minute-mile pace is roughly 18 seconds per mile.
             That matters if you are rehearsing a race pace, and does not matter at all if you are
-            walking for an hour after work. Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>
-            converts between mph and pace if you want to see what a given percentage means for
+            walking for an hour after work. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a> converts between mph and pace if you want to see what a given percentage means for
             your sessions.
           </p>
           <p>
@@ -342,7 +301,7 @@ const schema = {
         </div>
 
         <div id="check-it-yourself" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Check Your Treadmill Speed Yourself</h2>
+          <h2>How to Check Your Treadmill Speed Yourself</h2>
 <p>
             You need a tape measure, a piece of chalk or a washable marker (or a small strip of
             masking tape), a phone stopwatch, and ideally a helper for the loaded test.
@@ -389,7 +348,7 @@ const schema = {
         </div>
 
         <div id="worked-example" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Worked Example: The Arithmetic</h2>
+          <h2>Worked Example: The Arithmetic</h2>
 <p>
             The formula is: <strong>real speed in mph = revolutions per minute × belt length in
             feet × 60 ÷ 5,280</strong>. There are 5,280 feet in a mile and 60 minutes in an hour,
@@ -420,7 +379,7 @@ const schema = {
         </div>
 
         <div id="counting-precision" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Why You Should Count for Longer Than a Minute</h2>
+          <h2>Why You Should Count for Longer Than a Minute</h2>
 <p>
             The weak point of this method is the count, not the tape measure. You can easily be
             out by one revolution, because the mark may be part of the way round when you stop.
@@ -448,7 +407,7 @@ const schema = {
         </div>
 
         <div id="if-it-is-off" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. If It Is Off: What to Fix First</h2>
+          <h2>If It Is Off: What to Fix First</h2>
 <p>
             Work from the mechanical end first, because most speed errors under load are friction
             and slip rather than electronics, and fixing them also protects the motor.
@@ -456,15 +415,11 @@ const schema = {
           <p>
             <strong>Check belt tension.</strong> Unplugged, you should be able to lift the belt
             about two to three inches at the centre of the deck. If it lifts much more and slips
-            under load, it may need tightening a little, evenly on both sides. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
-            covers the test and the adjustment. Over-tightening to cure slip is its own mistake.
+            under load, it may need tightening a little, evenly on both sides. Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a> covers the test and the adjustment. Over-tightening to cure slip is its own mistake.
           </p>
           <p>
             <strong>Check lubrication.</strong> A dry deck adds drag at every step. Lubricate to the
-            manual's schedule, typically <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, as our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
-            explains — checking first whether your deck is pre-waxed.
+            manual's schedule, typically <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, as our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a> explains — checking first whether your deck is pre-waxed.
           </p>
           <p>
             <strong>Check the belt itself.</strong> A belt with a glazed, worn or frayed underside,
@@ -481,7 +436,7 @@ const schema = {
         </div>
 
         <div id="calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Treadmill Speed Calibration Modes</h2>
+          <h2>Treadmill Speed Calibration Modes</h2>
 <p>
             Many treadmills have a calibration routine, usually in a maintenance, service or
             engineering menu rather than the normal settings. What it does varies: some run the belt
@@ -502,9 +457,7 @@ const schema = {
           <p>
             Do not adjust anything on the controller board. Some boards have small adjustment
             controls; they are set at the factory and there is nothing to gain by turning them.
-            Our page on
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a>
-            makes the related point that a wrong or surging speed is more often a sensor, drive or
+            Our page on <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a> makes the related point that a wrong or surging speed is more often a sensor, drive or
             tension issue than something a calibration fixes.
           </p>
           <p>
@@ -513,7 +466,7 @@ const schema = {
         </div>
 
         <div id="watch-vs-treadmill" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Why Your Watch and Treadmill Disagree</h2>
+          <h2>Why Your Watch and Treadmill Disagree</h2>
 <p>
             This is the most common way people discover a speed question at all: the watch says
             2.8 miles and the treadmill says 3.0, and one of them must be wrong. Often both are, a
@@ -529,16 +482,14 @@ const schema = {
           </p>
           <p>
             The belt count settles the argument, because it measures the belt itself. If your count
-            agrees with the treadmill, trust the treadmill and correct the watch. Our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            covers how to adjust the watch's distance at the end of an indoor workout, where your
+            agrees with the treadmill, trust the treadmill and correct the watch. Our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> covers how to adjust the watch's distance at the end of an indoor workout, where your
             watch software offers it, and how GymKit machines avoid the disagreement by sharing the
             treadmill's own numbers.
           </p>
         </div>
 
         <div id="feels-different" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When the Speed Is Right but Feels Wrong</h2>
+          <h2>When the Speed Is Right but Feels Wrong</h2>
 <p>
             Sometimes the count confirms the treadmill is accurate and the pace still feels harder
             or easier than running the same speed outdoors. That is not a calibration problem.
@@ -548,21 +499,17 @@ const schema = {
             belt's cushioning and the lack of visual flow change how speed feels. Many runners find
             a given pace feels different indoors, in either direction, especially at first. The
             common habit of setting a small incline to approximate outdoor effort exists because of
-            this, and our comparison of
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill running versus running outside</a>
-            covers what the research generally suggests and where the differences come from.
+            this, and our comparison of <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill running versus running outside</a> covers what the research generally suggests and where the differences come from.
           </p>
           <p>
             If you are training to outdoor race paces, the practical approach is to confirm the
             treadmill is accurate with a count, then use effort and heart rate alongside the
-            numbers. Our guide to
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
-            covers that side.
+            numbers. Our guide to <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a> covers that side.
           </p>
         </div>
 
         <div id="when-to-call" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. When to Call a Technician</h2>
+          <h2>When to Call a Technician</h2>
 <p>
             Call for help when the problem is electronic rather than mechanical, or when the numbers
             do not behave in a way the mechanics explain.
@@ -577,145 +524,156 @@ const schema = {
           </p>
           <p>
             Stop using the machine altogether if the belt speed changes on its own or jerks
-            unpredictably, because that is a fall risk rather than a data problem. Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            sorts the wider set of symptoms by cause.
+            unpredictably, because that is a fall risk rather than a data problem. Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> sorts the wider set of symptoms by cause.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is my treadmill speed accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Probably within a few percent, which is normal for a home machine. Slip under load tends to make treadmills read slightly fast. You can check by measuring the belt's loop length, marking it, and counting revolutions for a timed period: revolutions per minute × belt length in feet × 60 ÷ 5,280 gives the real speed in mph.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I calibrate my treadmill speed?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Many treadmills have a speed calibration routine in a maintenance or service menu, but the procedure differs by brand and model and some are intended for technicians. Follow your manual or ask the manufacturer. Before calibrating, check belt tension and lubrication, because most errors that appear only under load are slip, not calibration.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is treadmill distance accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Distance is calculated from the same speed sensor, so it carries the same error. If the speed reads 4% fast, the distance does too. Incline does not change belt distance. The belt-count test checks both at once: divide the console's distance by the ratio you measured to correct it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill say a different distance than my Apple Watch?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Both are estimating. Without GPS the watch infers distance from wrist motion and a stride model calibrated on outdoor workouts; holding the rails or changing stride throws it off. The treadmill calculates from roller or motor revolutions and can be a few percent out. A belt count shows which is closer, and many watches let you adjust distance afterwards.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do treadmills read fast or slow?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It varies by machine, but slip under load pushes them toward reading fast: the roller keeps the set speed while the belt briefly slows at each footstrike. A treadmill that is accurate empty and fast with you on it usually has a tension, lubrication or belt-wear issue rather than a calibration fault.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How accurate should a treadmill be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As rough editorial guidance, within about 2 to 3% is good for a home treadmill, up to about 5% is common, and consistently more than about 5% — or a reading that gets much worse under load — is worth investigating. Consistency matters more than absolute accuracy for most training.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Checking Treadmill Speed</h2>
+          <p>Most bad conclusions about treadmill accuracy come from one of these, and the first is the easiest to rule out.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Not checking the units setting</h3>
+              <p>A console set to km/h shows 6 for about 3.7 mph. Before measuring anything, confirm the display units, and check that the distance unit matches what you are comparing against.</p>
+            </li>
+            <li>
+              <h3>Counting for only a few seconds</h3>
+              <p>At walking speed a typical belt turns roughly 26 times a minute, so one miscounted revolution in a one-minute count is about a 4% error. Count for three minutes, do each test twice, and average the results.</p>
+            </li>
+            <li>
+              <h3>Using the running surface as the belt length</h3>
+              <p>The figure you need is the full loop of the belt, which is roughly twice the running surface plus a roller circumference. Using the visible length alone will make the treadmill look about half as fast as it is.</p>
+            </li>
+            <li>
+              <h3>Calibrating to cure slip</h3>
+              <p>If the machine is accurate empty and fast under load, the belt is slipping or dragging. Recalibrating would make the unloaded reading wrong and leave the friction that is wearing the motor. Fix tension, lubrication and belt condition first.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Checking Treadmill Speed</h2>
-          <p class="text-gray-700 leading-relaxed">Most bad conclusions about treadmill accuracy come from one of these, and the first is the easiest to rule out.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking the units setting</h3>
-              <p class="text-gray-700 text-sm m-0">A console set to km/h shows 6 for about 3.7 mph. Before measuring anything, confirm the display units, and check that the distance unit matches what you are comparing against.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Counting for only a few seconds</h3>
-              <p class="text-gray-700 text-sm m-0">At walking speed a typical belt turns roughly 26 times a minute, so one miscounted revolution in a one-minute count is about a 4% error. Count for three minutes, do each test twice, and average the results.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the running surface as the belt length</h3>
-              <p class="text-gray-700 text-sm m-0">The figure you need is the full loop of the belt, which is roughly twice the running surface plus a roller circumference. Using the visible length alone will make the treadmill look about half as fast as it is.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating to cure slip</h3>
-              <p class="text-gray-700 text-sm m-0">If the machine is accurate empty and fast under load, the belt is slipping or dragging. Recalibrating would make the unloaded reading wrong and leave the friction that is wearing the motor. Fix tension, lubrication and belt condition first.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace and Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Convert mph to minutes per mile and kilometre.</p>
-            </a>
-            <a href="/treadmill-belt-slipping/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Slipping</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why the belt hesitates under load and how to fix it.</p>
-            </a>
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Devices</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Connect Apple Watch to a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">GymKit, Indoor Run and why distances disagree.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Most home treadmills are within a few percent</strong>, and slip
             under load tends to make them read fast. Count belt revolutions over three minutes,
             multiply by the loop length, and you have the real speed: rpm × feet × 60 ÷ 5,280.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If it is off only under load, fix
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">tension</a>
-            and lubrication before anything else. If it is off empty too,
-            <strong class="text-white">follow the manual's calibration procedure</strong> or ask the
+          <p>
+            If it is off only under load, fix <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">tension</a> and lubrication before anything else. If it is off empty too, <strong class="text-white">follow the manual's calibration procedure</strong> or ask the
             manufacturer — never guess a service-menu sequence.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace and Speed Chart</a></li>
+            <li><a href="/treadmill-belt-slipping/">Treadmill Belt Slipping</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is my treadmill speed accurate?</h3></summary>
+            <p class="faq-a">
+              Probably within a few percent, which is normal for a home machine. Slip under load tends to make treadmills read slightly fast. You can check by measuring the belt's loop length, marking it, and counting revolutions for a timed period: revolutions per minute × belt length in feet × 60 ÷ 5,280 gives the real speed in mph.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I calibrate my treadmill speed?</h3></summary>
+            <p class="faq-a">
+              Many treadmills have a speed calibration routine in a maintenance or service menu, but the procedure differs by brand and model and some are intended for technicians. Follow your manual or ask the manufacturer. Before calibrating, check belt tension and lubrication, because most errors that appear only under load are slip, not calibration.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is treadmill distance accurate?</h3></summary>
+            <p class="faq-a">
+              Distance is calculated from the same speed sensor, so it carries the same error. If the speed reads 4% fast, the distance does too. Incline does not change belt distance. The belt-count test checks both at once: divide the console's distance by the ratio you measured to correct it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill say a different distance than my Apple Watch?</h3></summary>
+            <p class="faq-a">
+              Both are estimating. Without GPS the watch infers distance from wrist motion and a stride model calibrated on outdoor workouts; holding the rails or changing stride throws it off. The treadmill calculates from roller or motor revolutions and can be a few percent out. A belt count shows which is closer, and many watches let you adjust distance afterwards.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do treadmills read fast or slow?</h3></summary>
+            <p class="faq-a">
+              It varies by machine, but slip under load pushes them toward reading fast: the roller keeps the set speed while the belt briefly slows at each footstrike. A treadmill that is accurate empty and fast with you on it usually has a tension, lubrication or belt-wear issue rather than a calibration fault.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How accurate should a treadmill be?</h3></summary>
+            <p class="faq-a">
+              As rough editorial guidance, within about 2 to 3% is good for a home treadmill, up to about 5% is common, and consistently more than about 5% — or a reading that gets much worse under load — is worth investigating. Consistency matters more than absolute accuracy for most training.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace and Speed Chart</div>
+            <p class="c-blurb">Convert mph to minutes per mile and kilometre.</p>
+          </a>
+          <a href="/treadmill-belt-slipping/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Belt Slipping</div>
+            <p class="c-blurb">Why the belt hesitates under load and how to fix it.</p>
+          </a>
+          <a href="/how-to-connect-apple-watch-to-treadmill/" class="card">
+            <div class="c-kicker">Devices</div>
+            <div class="c-title">Connect Apple Watch to a Treadmill</div>
+            <p class="c-blurb">GymKit, Indoor Run and why distances disagree.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

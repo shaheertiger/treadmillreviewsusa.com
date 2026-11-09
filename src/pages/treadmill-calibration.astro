@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Calibration (2026): Speed, Incline, Distance and Your Watch";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-calibration/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,88 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Do the Speed Check", link: "#manual-speed-check" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillcalibration" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillcalibration)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Spec Explainer</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Calibration: The Machine, the Watch and Which to Trust</h1>
+      <p class="ed-dek">
+        "Calibrate my treadmill" means two different jobs: making the machine report its true speed and incline, and teaching your watch or foot pod what the treadmill is actually doing. Here is how each works, how to check with nothing more than tape and a stopwatch, and when an error is a fault rather than a setting.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Spec Explainer
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Calibration: <span class="text-[#5AA9FF]">The Machine, the Watch and Which to Trust</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          "Calibrate my treadmill" means two different jobs: making the machine report its true speed and incline, and teaching your watch or foot pod what the treadmill is actually doing. Here is how each works, how to check with nothing more than tape and a stopwatch, and when an error is a fault rather than a setting.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#manual-speed-check" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Check Belt Speed Yourself
-          </a>
-          <a href="#watch-calibration" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Calibrating a Watch or Foot Pod
-          </a>
-        </div>
+        <a href="#manual-speed-check" class="btn-ghost">Check Belt Speed Yourself</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Calibration: The Short Answer</a>
-          <a href="#why-accuracy-drifts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why Treadmill Speed and Distance Drift in the First Place</a>
-          <a href="#manual-speed-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How to Check Belt Speed Yourself: The Mark-and-Time Method</a>
-          <a href="#service-mode" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Console Calibration and Service Modes</a>
-          <a href="#incline-calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Incline Calibration: Checking and Correcting Grade</a>
-          <a href="#watch-calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Calibrating a Watch or Foot Pod to the Treadmill</a>
-          <a href="#console-vs-watch" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Console Distance vs Watch Distance: Which to Trust?</a>
-          <a href="#reasonable-accuracy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Accuracy Is Reasonable to Expect?</a>
-          <a href="#when-its-a-fault" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When a Persistent Error Points to a Fault</a>
-          <a href="#calibration-routine" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. A Sensible Calibration Routine</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill console is a confident reporter of numbers it does not directly measure.
           Speed is usually inferred from the motor or a roller sensor, distance is derived from
           speed, and incline is a count of motor steps. Each can drift. Meanwhile the watch on your
@@ -194,8 +145,25 @@ const schema = {
           other — and it is far less mysterious than the word suggests.
         </p>
 
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Calibration: The Short Answer</a></li>
+            <li><a href="#why-accuracy-drifts">Why Treadmill Speed and Distance Drift in the First Place</a></li>
+            <li><a href="#manual-speed-check">How to Check Belt Speed Yourself: The Mark-and-Time Method</a></li>
+            <li><a href="#service-mode">Console Calibration and Service Modes</a></li>
+            <li><a href="#incline-calibration">Incline Calibration: Checking and Correcting Grade</a></li>
+            <li><a href="#watch-calibration">Calibrating a Watch or Foot Pod to the Treadmill</a></li>
+            <li><a href="#console-vs-watch">Console Distance vs Watch Distance: Which to Trust?</a></li>
+            <li><a href="#reasonable-accuracy">What Accuracy Is Reasonable to Expect?</a></li>
+            <li><a href="#when-its-a-fault">When a Persistent Error Points to a Fault</a></li>
+            <li><a href="#calibration-routine">A Sensible Calibration Routine</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Calibration: The Short Answer</h2>
+          <h2>Treadmill Calibration: The Short Answer</h2>
 <p>
             <strong>Calibrating a treadmill</strong> means one of two things, and it is worth
             deciding which you need before you start pressing buttons.
@@ -221,14 +189,12 @@ const schema = {
             What to expect: a well-maintained treadmill typically holds speed within a small margin
             of what it displays at walking pace, with the error growing at higher speeds and under
             heavier riders. A console that reads a long way off, or an error that gets worse week
-            by week, is a maintenance problem or a fault, not a calibration one. Our guide to
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a>
-            covers why consoles drift; this page covers what to do about it.
+            by week, is a maintenance problem or a fault, not a calibration one. Our guide to <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a> covers why consoles drift; this page covers what to do about it.
           </p>
         </div>
 
         <div id="why-accuracy-drifts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why Treadmill Speed and Distance Drift in the First Place</h2>
+          <h2>Why Treadmill Speed and Distance Drift in the First Place</h2>
 <p>
             Understanding what the console actually measures explains most calibration puzzles.
           </p>
@@ -238,16 +204,12 @@ const schema = {
             reads a sensor — often a magnet and reed switch, or an optical sensor — on the front
             roller or motor. Either way, the number assumes the belt is moving with the roller. If
             the belt slips on the roller, the display stays confident while your feet go slower.
-            Our guide to the
-            <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">treadmill speed sensor</a>
-            explains how that sensor works and how it fails.
+            Our guide to the <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">treadmill speed sensor</a> explains how that sensor works and how it fails.
           </p>
           <p>
             <strong>Distance is just speed multiplied by time.</strong> There is no separate
             measurement. Every speed error becomes a distance error of the same proportion, which is
-            why a treadmill that reads a little fast makes every mile a little short. Our guide to
-            <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a treadmill mile really is</a>
-            works through that relationship.
+            why a treadmill that reads a little fast makes every mile a little short. Our guide to <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a treadmill mile really is</a> works through that relationship.
           </p>
           <p>
             <strong>The belt slows under load.</strong> A belt turning freely with nobody on it may
@@ -270,14 +232,12 @@ const schema = {
             machines is a linear actuator with a position sensor, and the console tracks grade as a
             position between learned limits. If the limits are forgotten after a power loss or a
             board replacement, or the actuator skips, the displayed grade and the real grade part
-            company. Our guide to
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a>
-            covers what the number means in the first place.
+            company. Our guide to <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a> covers what the number means in the first place.
           </p>
         </div>
 
         <div id="manual-speed-check" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How to Check Belt Speed Yourself: The Mark-and-Time Method</h2>
+          <h2>How to Check Belt Speed Yourself: The Mark-and-Time Method</h2>
 <p>
             This is the one calibration check that works on every treadmill ever built, needs no
             service mode, and tells you the truth rather than what the controller believes. It
@@ -290,9 +250,7 @@ const schema = {
             tape measure along the surface as it goes, until the mark comes back round to the deck
             mark. That is the full belt circumference. On most home treadmills it is somewhere in
             the region of 100 to 130 inches, but measure yours; the manual sometimes states it, and
-            our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
-            explains how belt dimensions are quoted. Convert to feet or metres, whichever you prefer
+            our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> explains how belt dimensions are quoted. Convert to feet or metres, whichever you prefer
             to work in.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Time revolutions at a set speed</h3>
@@ -328,15 +286,13 @@ const schema = {
             is a maintenance issue rather than a calibration one, covered below.
           </p>
           <p>
-            Once you have the true speed, you can simply know it and use the
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            with corrected figures, adjust the console in its calibration mode if it has one, or
+            Once you have the true speed, you can simply know it and use the <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> with corrected figures, adjust the console in its calibration mode if it has one, or
             calibrate your watch or pod to the measured figure rather than the displayed one.
           </p>
         </div>
 
         <div id="service-mode" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Console Calibration and Service Modes</h2>
+          <h2>Console Calibration and Service Modes</h2>
 <p>
             Many treadmill consoles have a hidden calibration or engineering mode, reached with a
             key sequence at power-up or by holding a combination of buttons. What it does varies
@@ -382,7 +338,7 @@ const schema = {
         </div>
 
         <div id="incline-calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Incline Calibration: Checking and Correcting Grade</h2>
+          <h2>Incline Calibration: Checking and Correcting Grade</h2>
 <p>
             Incline errors are more common than people realise, because nobody checks. The console
             says 5 percent, the deck is at whatever angle it is at, and the two are only loosely
@@ -411,9 +367,7 @@ const schema = {
             runs the deck through its travel and re-learns the end points. If there is no such
             routine, some manuals describe a power-cycle procedure that forces the incline motor to
             re-home at start-up. If the deck does not move at all, or moves and stalls, that is a
-            fault rather than calibration, and our guide to a
-            <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline that is not working</a>
-            is the next stop.
+            fault rather than calibration, and our guide to a <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline that is not working</a> is the next stop.
           </p>
           <p>
             Keep perspective. For training purposes, a grade error of a fraction of a percent is
@@ -425,7 +379,7 @@ const schema = {
         </div>
 
         <div id="watch-calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Calibrating a Watch or Foot Pod to the Treadmill</h2>
+          <h2>Calibrating a Watch or Foot Pod to the Treadmill</h2>
 <p>
             The second thing people mean by treadmill calibration is the other way round: the
             treadmill is the reference, and the device on the wrist or shoe is what gets corrected.
@@ -458,9 +412,7 @@ const schema = {
             location services enabled, and then applies that model indoors. The practical advice is
             to record a handful of outdoor sessions at a range of paces on open ground where the GPS
             is good, and to let the watch do the rest. There is no manual distance entry at the end
-            of an indoor run on the stock app. Our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            covers what the watch can and cannot pull from the machine.
+            of an indoor run on the stock app. Our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> covers what the watch can and cannot pull from the machine.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Foot pods</h3>
           <p>
@@ -469,13 +421,12 @@ const schema = {
             at a known speed and adjusting until the pod agrees. The better ones need little
             correction; the cheaper ones need it at more than one pace. If you use the pod to feed a
             virtual running app, calibration also determines how honest your on-screen pace is, and
-            our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            goes into that side of it.
+            our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> goes into that side of it.
           </p>
         </div>
 
         <div id="console-vs-watch" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Console Distance vs Watch Distance: Which to Trust?</h2>
+          <h2>Console Distance vs Watch Distance: Which to Trust?</h2>
 <p>
             This is the question behind most searches for treadmill calibration: the console says
             5.0 miles, the watch says 4.6, and the runner wants to know which one to log. The
@@ -515,7 +466,7 @@ const schema = {
         </div>
 
         <div id="reasonable-accuracy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Accuracy Is Reasonable to Expect?</h2>
+          <h2>What Accuracy Is Reasonable to Expect?</h2>
 <p>
             Treadmill manufacturers rarely publish a speed tolerance, and we have not measured a
             representative sample ourselves, so what follows is drawn from the general experience of
@@ -546,7 +497,7 @@ const schema = {
         </div>
 
         <div id="when-its-a-fault" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When a Persistent Error Points to a Fault</h2>
+          <h2>When a Persistent Error Points to a Fault</h2>
 <p>
             Calibration corrects a steady, modest discrepancy between the display and reality. It
             does not fix a machine that cannot hold speed, and attempting to calibrate around a
@@ -556,11 +507,7 @@ const schema = {
           <ul>
             <li><strong>The belt hesitates or lurches with each footstrike.</strong> A momentary
             slow-down under load that recovers between steps is slip or a dry deck, not a speed
-            error. Our guides to a
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping belt</a>
-            and a
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows when you step on it</a>
-            cover tension, lubrication and the motor-side causes.</li>
+            error. Our guides to a <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping belt</a> and a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows when you step on it</a> cover tension, lubrication and the motor-side causes.</li>
             <li><strong>The error gets worse week by week.</strong> Drift from belt stretch is
             slow; a reading that changes noticeably between sessions points to a loosening belt,
             a failing speed sensor or a controller problem.</li>
@@ -585,7 +532,7 @@ const schema = {
         </div>
 
         <div id="calibration-routine" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. A Sensible Calibration Routine</h2>
+          <h2>A Sensible Calibration Routine</h2>
 <p>
             Pulling it together, this is the order that makes sense for most owners. None of it
             needs tools beyond a tape measure, masking tape and a stopwatch, and the whole routine
@@ -615,140 +562,153 @@ const schema = {
             something has changed, and you will catch belt drift months before it becomes a slip.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I calibrate my treadmill speed?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mark the belt, measure its full length, then time ten revolutions at a set speed with someone on the belt. True speed is belt length times revolutions divided by time; convert to mph or km/h. If the console has a calibration mode, adjust the speed value there until it matches your measurement, following the manual for the key sequence. Fix belt slip first, because calibration cannot correct it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I calibrate my Garmin watch for the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In general terms, record a treadmill run in indoor mode, and when you save it the watch offers to calibrate. Enter the distance the treadmill showed, or better, a distance you have verified yourself, and the watch corrects the run and refines its stride model. Several runs at different paces improve it. Menu names vary by model, so check the watch manual.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my watch distance not match the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Because neither measures distance directly. The console derives it from a roller or motor speed that may not reflect belt slip or under-load sag, and the watch estimates it from arm motion, which handrail use and arm carriage disrupt. Verify the treadmill with the mark-and-time method, then calibrate the watch to the verified figure, and use one source consistently.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I calibrate the incline on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most consoles have a calibration routine in a service mode that drives the deck to its lowest and highest positions and re-learns the limits; the manual gives the key sequence. To check grade yourself, measure the deck height at two points a known distance apart, divide the rise by the run and multiply by 100. A small built-in grade at zero is common.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is treadmill distance accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually within a few percent on a maintained machine, with the belt typically running slightly slower than displayed under load, so the real distance is a little less than the console shows. The error grows with speed, user weight, belt stretch and a dry deck. Checking belt speed with a mark and a stopwatch tells you the actual error on your machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Apple Watch need calibrating for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Apple Watch calibrates its stride model from outdoor walks and runs recorded with GPS rather than by correcting an indoor run at the end. Record a few outdoor sessions at a range of paces on open ground with location services on, and the watch applies what it learns to indoor workouts. There is no manual distance entry on the stock workout app.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Calibration</h2>
+          <p>Calibration goes wrong in predictable ways, and most of them involve trusting a number that nobody has checked.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Calibrating the watch to an unverified console</h3>
+              <p>Entering the console distance at the end of a run teaches the watch to agree with the treadmill, errors included. Do the mark-and-time check once under load, work out the true distance, and enter that. A watch calibrated to a measured figure is useful on any treadmill; one calibrated to a wrong console is wrong everywhere.</p>
+            </li>
+            <li>
+              <h3>Measuring belt speed with nobody on the belt</h3>
+              <p>An unloaded belt runs closer to the displayed speed than a loaded one, because every footstrike adds friction the motor has to overcome. Have someone time the revolutions while you walk or run at the speeds you actually use. The under-load figure is the one your training is based on, and the one worth writing down.</p>
+            </li>
+            <li>
+              <h3>Using service mode to paper over a mechanical fault</h3>
+              <p>A belt that slips, a dry deck or a tired motor will not be fixed by changing a calibration value; the error just moves. Sort tension, tracking and lubrication first. And never alter motor parameters you do not understand — a machine with its acceleration or top speed changed can surge and injure someone.</p>
+            </li>
+            <li>
+              <h3>Chasing perfection</h3>
+              <p>A small, consistent error of a few percent changes nothing about your training. Consistency matters more than absolute accuracy: pick one source, log it every time, and re-check the belt speed twice a year. Spend the hour you would have spent fine-tuning on a deck lubrication, which protects accuracy for longer.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Calibration</h2>
-          <p class="text-gray-700 leading-relaxed">Calibration goes wrong in predictable ways, and most of them involve trusting a number that nobody has checked.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating the watch to an unverified console</h3>
-              <p class="text-gray-700 text-sm m-0">Entering the console distance at the end of a run teaches the watch to agree with the treadmill, errors included. Do the mark-and-time check once under load, work out the true distance, and enter that. A watch calibrated to a measured figure is useful on any treadmill; one calibrated to a wrong console is wrong everywhere.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring belt speed with nobody on the belt</h3>
-              <p class="text-gray-700 text-sm m-0">An unloaded belt runs closer to the displayed speed than a loaded one, because every footstrike adds friction the motor has to overcome. Have someone time the revolutions while you walk or run at the speeds you actually use. The under-load figure is the one your training is based on, and the one worth writing down.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using service mode to paper over a mechanical fault</h3>
-              <p class="text-gray-700 text-sm m-0">A belt that slips, a dry deck or a tired motor will not be fixed by changing a calibration value; the error just moves. Sort tension, tracking and lubrication first. And never alter motor parameters you do not understand — a machine with its acceleration or top speed changed can surge and injure someone.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Chasing perfection</h3>
-              <p class="text-gray-700 text-sm m-0">A small, consistent error of a few percent changes nothing about your training. Consistency matters more than absolute accuracy: pick one source, log it every time, and re-check the belt speed twice a year. Spend the hour you would have spent fine-tuning on a deck lubrication, which protects accuracy for longer.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/is-my-treadmill-speed-accurate/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accuracy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is My Treadmill Speed Accurate?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why consoles drift, and how much it actually matters.</p>
-            </a>
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace and Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Convert mph, km/h and minutes per mile at a glance.</p>
-            </a>
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Wearables</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Connect an Apple Watch to a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the watch can pull from the machine and what it guesses.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Check the belt before you calibrate anything else.</strong>
-            Mark it, measure it, time ten revolutions under load, and work out the real speed. A
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Check the belt before you calibrate anything else.</strong> Mark it, measure it, time ten revolutions under load, and work out the real speed. A
             small consistent error is normal; a large or growing one is maintenance or a fault, and
             no calibration menu will fix a slipping belt.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Calibrate your watch or foot pod to the measured figure, not the console, and then use one
-            source consistently. If the numbers still puzzle you, our guide to
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#5AA9FF] font-bold no-underline">treadmill speed accuracy</a>
-            explains where the drift comes from.
+            source consistently. If the numbers still puzzle you, our guide to <a href="/is-my-treadmill-speed-accurate/" class="text-[#5AA9FF] font-bold no-underline">treadmill speed accuracy</a> explains where the drift comes from.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/is-my-treadmill-speed-accurate/">Is My Treadmill Speed Accurate?</a></li>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace and Speed Chart</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do I calibrate my treadmill speed?</h3></summary>
+            <p class="faq-a">
+              Mark the belt, measure its full length, then time ten revolutions at a set speed with someone on the belt. True speed is belt length times revolutions divided by time; convert to mph or km/h. If the console has a calibration mode, adjust the speed value there until it matches your measurement, following the manual for the key sequence. Fix belt slip first, because calibration cannot correct it.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I calibrate my Garmin watch for the treadmill?</h3></summary>
+            <p class="faq-a">
+              In general terms, record a treadmill run in indoor mode, and when you save it the watch offers to calibrate. Enter the distance the treadmill showed, or better, a distance you have verified yourself, and the watch corrects the run and refines its stride model. Several runs at different paces improve it. Menu names vary by model, so check the watch manual.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why does my watch distance not match the treadmill?</h3></summary>
+            <p class="faq-a">
+              Because neither measures distance directly. The console derives it from a roller or motor speed that may not reflect belt slip or under-load sag, and the watch estimates it from arm motion, which handrail use and arm carriage disrupt. Verify the treadmill with the mark-and-time method, then calibrate the watch to the verified figure, and use one source consistently.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I calibrate the incline on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Most consoles have a calibration routine in a service mode that drives the deck to its lowest and highest positions and re-learns the limits; the manual gives the key sequence. To check grade yourself, measure the deck height at two points a known distance apart, divide the rise by the run and multiply by 100. A small built-in grade at zero is common.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is treadmill distance accurate?</h3></summary>
+            <p class="faq-a">
+              Usually within a few percent on a maintained machine, with the belt typically running slightly slower than displayed under load, so the real distance is a little less than the console shows. The error grows with speed, user weight, belt stretch and a dry deck. Checking belt speed with a mark and a stopwatch tells you the actual error on your machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Apple Watch need calibrating for a treadmill?</h3></summary>
+            <p class="faq-a">
+              Apple Watch calibrates its stride model from outdoor walks and runs recorded with GPS rather than by correcting an indoor run at the end. Record a few outdoor sessions at a range of paces on open ground with location services on, and the watch applies what it learns to indoor workouts. There is no manual distance entry on the stock workout app.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/is-my-treadmill-speed-accurate/" class="card">
+            <div class="c-kicker">Accuracy</div>
+            <div class="c-title">Is My Treadmill Speed Accurate?</div>
+            <p class="c-blurb">Why consoles drift, and how much it actually matters.</p>
+          </a>
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace and Speed Chart</div>
+            <p class="c-blurb">Convert mph, km/h and minutes per mile at a glance.</p>
+          </a>
+          <a href="/how-to-connect-apple-watch-to-treadmill/" class="card">
+            <div class="c-kicker">Wearables</div>
+            <div class="c-title">Connect an Apple Watch to a Treadmill</div>
+            <p class="c-blurb">What the watch can pull from the machine and what it guesses.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

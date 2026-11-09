@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Pull Up Bar for Home (2026): Doorway, Wall and Ceiling";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-pull-up-bars/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,66 +275,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestpullupbars" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestpullupbars)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Pull Up Bar for Doorways, Walls and Ceilings</h1>
+      <p class="ed-dek">
+        A pull-up bar is only as strong as what it hangs from. The right choice depends less on the bar than on your door frame, your studs or joists and how much headroom you have. Here are five currently sold bars across doorway, wall and ceiling mounts, how to check your home before you order, and how to avoid the falls doorway bars are known for.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Pull Up Bar <span class="text-[#5AA9FF]">for Doorways, Walls and Ceilings</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A pull-up bar is only as strong as what it hangs from. The right choice depends less on the bar than on your door frame, your studs or joists and how much headroom you have. Here are five currently sold bars across doorway, wall and ceiling mounts, how to check your home before you order, and how to avoid the falls doorway bars are known for.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#door-frames" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Check Your Door Frame
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#titan-wall-mounted"><img src="https://m.media-amazon.com/images/I/21ytLwrwcCL._SL500_.jpg" alt="Titan Fitness Wall-Mounted Pull-Up Bar" width="500" height="500" decoding="async" /></a>
+          <a href="#iron-gym-total-upper-body"><img src="https://m.media-amazon.com/images/I/31hDoCbNbGS._SL500_.jpg" alt="Iron Gym Total Upper Body Workout Bar" width="500" height="290" decoding="async" /></a>
+          <a href="#ultimate-body-press-xl-doorway"><img src="https://m.media-amazon.com/images/I/31gwZSy02CL._SL500_.jpg" alt="Ultimate Body Press XL Doorway Pull Up Bar with Elevated Bar" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Titan Fitness Wall-Mounted Pull-Up Bar · Iron Gym Total Upper Body Workout Bar · Ultimate Body Press XL Doorway Pull Up Bar with Elevated Bar</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best pull up bar for most homes is a wall- or ceiling-mounted bar bolted into studs or
+          joists, because a mounted bar does not depend on door trim and allows a full range of
+          motion. Doorway bars are cheaper and need no drilling, but they only suit some door frames,
+          can mark paint and trim, and should never be used for kipping. If you cannot drill and have
+          no suitable doorway, a free-standing tower is the third route. The five bars below cover
+          the mounted and doorway options with products on sale now; the guide after them explains
+          how to check your frame, your walls and your ceiling before you buy.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#rep-wall-mounted-multi-grip">REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value Wall Mount:</span> <a href="#titan-wall-mounted">Titan Fitness Wall-Mounted Pull-Up Bar</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Ceiling Mount:</span> <a href="#ultimate-body-press-ceiling">Ultimate Body Press Ceiling Mount Pull Up Bar with Reversible Risers</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest Doorway Bar:</span> <a href="#iron-gym-total-upper-body">Iron Gym Total Upper Body Workout Bar</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Doorway Headroom:</span> <a href="#ultimate-body-press-xl-doorway">Ultimate Body Press XL Doorway Pull Up Bar with Elevated Bar</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           bars, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
           each bar as currently sold, on Amazon US or on the maker's own store, and checked the
@@ -347,86 +368,33 @@ const schema = {
           same date, along with pull-up, chin-up and doorway bars as a category. Prices are those we
           saw on that date, or typical ranges where Amazon did not show a price, and change often.
           We earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy, coaching, building or
           structural advice. Weight ratings are manufacturer figures that assume correct
           installation. If you have a shoulder, elbow, back or heart condition, are pregnant or
           returning from injury, talk to a qualified professional first, and if you are unsure what
           is behind your wall or ceiling, have a qualified tradesperson install a mounted bar.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#rep-wall-mounted-multi-grip" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar</a>
-            <a href="#rep-wall-mounted-multi-grip" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Wall Mount:</span>
-            <a href="#titan-wall-mounted" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Wall-Mounted Pull-Up Bar</a>
-            <a href="#titan-wall-mounted" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Ceiling Mount:</span>
-            <a href="#ultimate-body-press-ceiling" class="font-bold text-gray-900 no-underline hover:underline">Ultimate Body Press Ceiling Mount Pull Up Bar with Reversible Risers</a>
-            <a href="#ultimate-body-press-ceiling" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest Doorway Bar:</span>
-            <a href="#iron-gym-total-upper-body" class="font-bold text-gray-900 no-underline hover:underline">Iron Gym Total Upper Body Workout Bar</a>
-            <a href="#iron-gym-total-upper-body" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Doorway Headroom:</span>
-            <a href="#ultimate-body-press-xl-doorway" class="font-bold text-gray-900 no-underline hover:underline">Ultimate Body Press XL Doorway Pull Up Bar with Elevated Bar</a>
-            <a href="#ultimate-body-press-xl-doorway" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Pull-Up Bars</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Bars</a>
-          <a href="#types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Four Ways to Hang a Pull-Up Bar</a>
-          <a href="#door-frames" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Will a Doorway Bar Fit Your Door Frame?</a>
-          <a href="#mounting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Mounting Into Studs and Joists</a>
-          <a href="#weight-limits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Weight Limits and What They Mean</a>
-          <a href="#grips" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Grip Positions and Bar Diameter</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Safety: Avoiding Falls From Doorway Bars</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Pull-Up Bars</a></li>
+            <li><a href="#how-we-chose">How We Chose These Bars</a></li>
+            <li><a href="#types">The Four Ways to Hang a Pull-Up Bar</a></li>
+            <li><a href="#door-frames">Will a Doorway Bar Fit Your Door Frame?</a></li>
+            <li><a href="#mounting">Mounting Into Studs and Joists</a></li>
+            <li><a href="#weight-limits">Weight Limits and What They Mean</a></li>
+            <li><a href="#grips">Grip Positions and Bar Diameter</a></li>
+            <li><a href="#safety">Safety: Avoiding Falls From Doorway Bars</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best pull up bar for most homes is a wall- or ceiling-mounted bar bolted into studs or
-          joists, because a mounted bar does not depend on door trim and allows a full range of
-          motion. Doorway bars are cheaper and need no drilling, but they only suit some door frames,
-          can mark paint and trim, and should never be used for kipping. If you cannot drill and have
-          no suitable doorway, a free-standing tower is the third route. The five bars below cover
-          the mounted and doorway options with products on sale now; the guide after them explains
-          how to check your frame, your walls and your ceiling before you buy.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five bars, chosen by mounting type, because the mount decides almost everything else. If
             you can drill into a wall, start with the first two; if your only option is a ceiling,
@@ -448,16 +416,13 @@ const schema = {
           </table></div>
           <p>
             No room to drill and no suitable doorway? A free-standing power tower adds dips and knee
-            raises as well; our guide to the
-            <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">best power towers</a>
-            covers them, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            raises as well; our guide to the <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">best power towers</a> covers them, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
             guide in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Pull-Up Bars</h2>
+          <h2>The 5 Best Pull-Up Bars</h2>
 <p>
             Each card gives the rating, mount, fit and grips we could confirm, the price range we
             saw, and who the bar suits. On every card, the weight rating is the maker's or seller's
@@ -468,78 +433,67 @@ const schema = {
             say which figures are the seller's alone.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Bars</h2>
+          <h2>How We Chose These Bars</h2>
 <p>
             We have not tested these bars. They were chosen from published specifications,
             manufacturer product pages, Amazon listings, recall records and independent coverage,
@@ -580,14 +534,12 @@ const schema = {
             pick, and Bells of Steel's bar is BarBend's value pick, but both are sold mainly through
             their makers' own stores and we could not confirm either on Amazon on the day. BarBend's doorway picks (Iron Age and Sportneer pressure-fit bars) are
             useful benchmarks we cite below, but we could not confirm their current listings on the
-            day. Free-standing towers are left to our
-            <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower guide</a>
-            rather than repeated here.
+            day. Free-standing towers are left to our <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower guide</a> rather than repeated here.
           </p>
         </div>
 
         <div id="types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Four Ways to Hang a Pull-Up Bar</h2>
+          <h2>The Four Ways to Hang a Pull-Up Bar</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Doorway leverage bars</h3>
           <p>
             The best-selling type on Amazon. The bar hooks over the trim on one side of the doorway
@@ -618,17 +570,14 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rack-mounted and free-standing</h3>
           <p>
-            If you own a power rack, its pull-up bar is the simplest option; our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            covers anchoring and headroom for rack pull-ups. If you cannot drill and your doorways do
+            If you own a power rack, its pull-up bar is the simplest option; our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> covers anchoring and headroom for rack pull-ups. If you cannot drill and your doorways do
             not suit a doorway bar, a free-standing tower is the answer, with the caveat that light
-            towers can rock on hard pulls; see the
-            <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower guide</a>.
+            towers can rock on hard pulls; see the <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower guide</a>.
           </p>
         </div>
 
         <div id="door-frames" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Will a Doorway Bar Fit Your Door Frame?</h2>
+          <h2>Will a Doorway Bar Fit Your Door Frame?</h2>
 <p>
             Doorway bars fail most often because they were never suited to the doorway. Check these
             five things with a tape measure before you order.
@@ -667,7 +616,7 @@ const schema = {
         </div>
 
         <div id="mounting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Mounting Into Studs and Joists</h2>
+          <h2>Mounting Into Studs and Joists</h2>
 <p>
             A mounted bar's rating is conditional. REP rates its bar at 700 lb "when installed
             properly", and every maker's figure assumes the bar is fixed into solid structure with the
@@ -701,7 +650,7 @@ const schema = {
         </div>
 
         <div id="weight-limits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Weight Limits and What They Mean</h2>
+          <h2>Weight Limits and What They Mean</h2>
 <p>
             Pull-up bar ratings run from about 300 lb on doorway bars and light ceiling bars to 500 to
             700 lb on heavy wall mounts. Three things to know about them.
@@ -725,7 +674,7 @@ const schema = {
         </div>
 
         <div id="grips" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Grip Positions and Bar Diameter</h2>
+          <h2>Grip Positions and Bar Diameter</h2>
 <p>
             Most bars offer an overhand grip; better ones add a neutral (palms-facing) grip and
             angled or wide handles. The neutral grip is the one many people find easiest on the
@@ -741,16 +690,12 @@ const schema = {
           </p>
           <p>
             If you cannot yet do a pull-up, a resistance band looped over the bar is the usual way
-            to build up; our guide to the
-            <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">best resistance bands</a>
-            covers loop bands, and the
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            covers the other small kit that makes a bar more useful.
+            to build up; our guide to the <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">best resistance bands</a> covers loop bands, and the <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a> covers the other small kit that makes a bar more useful.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Safety: Avoiding Falls From Doorway Bars</h2>
+          <h2>Safety: Avoiding Falls From Doorway Bars</h2>
 <p>
             The typical doorway bar accident is a bar that shifts or lifts off the frame, or trim that
             gives way, with the user landing on their back or heels. A few habits prevent most of
@@ -778,170 +723,178 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you already own a power rack</strong>, use its pull-up bar or buy the maker's
             multi-grip upgrade; a second bar on the wall is rarely needed.
           </p>
           <p>
             <strong>If you rent and cannot drill</strong>, and your doorways do not suit a leverage
-            bar, a free-standing tower is the safer route than a pressure bar in a weak frame; see the
-            <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower guide</a>.
+            bar, a free-standing tower is the safer route than a pressure bar in a weak frame; see the <a href="/best-power-towers/" class="text-[#0F62FE] font-medium">power tower guide</a>.
           </p>
           <p>
             <strong>If you want a complete strength setup</strong>, a bench and dumbbells cover pushing
-            and rowing that a bar cannot; see our guides to the
-            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">best weight benches</a>
-            and
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>,
-            or the
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            for the bigger picture.
+            and rowing that a bar cannot; see our guides to the <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">best weight benches</a> and <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>,
+            or the <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> for the bigger picture.
           </p>
           <p>
             <strong>If your goal is mainly cardio</strong>, a pull-up bar complements a machine rather
-            than replacing it; our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machine guide</a>
-            covers the options.
+            than replacing it; our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machine guide</a> covers the options.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best pull up bar for home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most homes, a wall- or ceiling-mounted bar bolted into studs or joists, such as the REP Wall-Mounted Multi-Grip, because it does not depend on door trim and gives full range of motion. If you cannot drill, a doorway leverage bar suits a sound, trimmed doorway for strict pull-ups, and a free-standing tower suits rooms with neither.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do doorway pull up bars damage door frames?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They can. Leverage bars press on the trim and the wall above the door, which often scuffs paint and can dent drywall, and weak or loose trim can pull away. Pressure bars can mark the sides of the frame. Check the trim is solid, use a protective pad on the wall, and take the bar down between sessions.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much weight can a pull up bar hold?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Ratings run from about 300 lb for doorway and light ceiling bars to 500 to 700 lb for heavy wall-mounted bars. They are manufacturer figures for a correctly installed bar and a static hang, so a doorway bar is limited by your trim and a mounted bar by its fixings. Leave a margin for kipping or weighted pull-ups.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a doorway pull up bar fit my door?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure the inside width of the frame and the width of the trim, and compare both with the maker's ranges; one maker lists doorways 24 to 36 inches with trim up to 3.5 inches. Most leverage bars need trim to hook over. Choose a bar whose range your door sits comfortably inside, not at the edge.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you mount a pull up bar to studs or joists?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Find the studs or joists, usually 16 or 24 inches apart on centre, confirm them with a pilot hole, and fix the bar into their centres with the lag screws the maker specifies. If the holes do not line up, fix a plywood or timber backing board to the structure first. Masonry needs masonry anchors. If unsure, have a tradesperson install it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are doorway pull up bars safe?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are reasonably safe for strict pull-ups in a sound, correctly measured doorway, used with care. Falls usually happen when the bar shifts or lifts off, or the trim gives way. Test it with your feet on the floor every time, never kip or jump into it, step down rather than drop, and inspect the bar and frame regularly.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Pull-Up Bar</h2>
+          <p>Most pull-up bar problems are installation problems. These four cause the most damage and the most falls.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Not measuring the door frame and trim</h3>
+              <p>A doorway bar bought without measuring often sits at the very edge of its range, or over trim that is too wide, too narrow or too weak. Measure the opening and the trim, check the trim is solid, and choose a bar whose published ranges your door sits well inside. If the listing contradicts itself, pick another bar.</p>
+            </li>
+            <li>
+              <h3>Screwing a mounted bar into drywall</h3>
+              <p>Drywall anchors are not made for a person hanging and pulling. A mounted bar's rating assumes lag screws into the centre of studs or joists, or proper masonry anchors. Find the structure first, use a backing board if the holes do not line up, and get help if you are not sure what is behind the wall.</p>
+            </li>
+            <li>
+              <h3>Kipping on a doorway bar</h3>
+              <p>Swinging, kipping and jumping up into the bar create forces well above your body weight and can lift a leverage bar off its seat. Doorway bars are for strict pull-ups, chin-ups and hangs. If you want dynamic movements, install a wall- or ceiling-mounted bar whose maker allows them.</p>
+            </li>
+            <li>
+              <h3>Forgetting headroom</h3>
+              <p>At the top of a pull-up your head is above the bar, and at the bottom you need room to hang. Check the ceiling clearance above a mounted bar and the height of a doorway bar against your own height before buying. An inverted mount or an elevated doorway bar can help.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Pull-Up Bar</h2>
-          <p class="text-gray-700 leading-relaxed">Most pull-up bar problems are installation problems. These four cause the most damage and the most falls.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the door frame and trim</h3>
-              <p class="text-gray-700 text-sm m-0">A doorway bar bought without measuring often sits at the very edge of its range, or over trim that is too wide, too narrow or too weak. Measure the opening and the trim, check the trim is solid, and choose a bar whose published ranges your door sits well inside. If the listing contradicts itself, pick another bar.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Screwing a mounted bar into drywall</h3>
-              <p class="text-gray-700 text-sm m-0">Drywall anchors are not made for a person hanging and pulling. A mounted bar's rating assumes lag screws into the centre of studs or joists, or proper masonry anchors. Find the structure first, use a backing board if the holes do not line up, and get help if you are not sure what is behind the wall.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Kipping on a doorway bar</h3>
-              <p class="text-gray-700 text-sm m-0">Swinging, kipping and jumping up into the bar create forces well above your body weight and can lift a leverage bar off its seat. Doorway bars are for strict pull-ups, chin-ups and hangs. If you want dynamic movements, install a wall- or ceiling-mounted bar whose maker allows them.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting headroom</h3>
-              <p class="text-gray-700 text-sm m-0">At the top of a pull-up your head is above the bar, and at the bottom you need room to hang. Check the ceiling clearance above a mounted bar and the height of a doorway bar against your own height before buying. An inverted mount or an elevated doorway bar can help.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Gym Accessories Worth Buying</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Bands, flooring, a bench and the other small kit that make a pull-up bar more useful.</p>
-            </a>
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Strength</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rack pull-up bars, ceiling clearance and anchoring for dynamic movements.</p>
-            </a>
-            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where a pull-up bar fits among benches, dumbbells, racks and cardio machines.</p>
-            </a>
-            <a href="/gymproluxe-review/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">GymProLuxe Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What we could and could not verify about the seller and its products before you buy.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">If you can drill into a wall, buy the REP Wall-Mounted Multi-Grip</strong>
-            and install it into studs; the Titan bar does the same job with one straight grip for less.
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">If you can drill into a wall, buy the REP Wall-Mounted Multi-Grip</strong> and install it into studs; the Titan bar does the same job with one straight grip for less.
             If the ceiling is your only option, the Ultimate Body Press bar fits both common joist
             spacings. If you cannot drill, a doorway bar is a fair start for strict pull-ups — but only
             after you have measured the frame and the trim.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, treat the rating as conditional on the installation, test the bar before
             every session, and keep doorway bars for strict work. If none of these mounts suits your
-            home, a free-standing tower is the next step —
-            <a href="/best-power-towers/" class="text-[#5AA9FF] font-bold no-underline">our power tower guide</a>
-            covers them.
+            home, a free-standing tower is the next step — <a href="/best-power-towers/" class="text-[#5AA9FF] font-bold no-underline">our power tower guide</a> covers them.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-home-gym-accessories/">Home Gym Accessories Worth Buying</a></li>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for a Home Gym</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best pull up bar for home?</h3></summary>
+            <p class="faq-a">
+              For most homes, a wall- or ceiling-mounted bar bolted into studs or joists, such as the REP Wall-Mounted Multi-Grip, because it does not depend on door trim and gives full range of motion. If you cannot drill, a doorway leverage bar suits a sound, trimmed doorway for strict pull-ups, and a free-standing tower suits rooms with neither.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Do doorway pull up bars damage door frames?</h3></summary>
+            <p class="faq-a">
+              They can. Leverage bars press on the trim and the wall above the door, which often scuffs paint and can dent drywall, and weak or loose trim can pull away. Pressure bars can mark the sides of the frame. Check the trim is solid, use a protective pad on the wall, and take the bar down between sessions.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much weight can a pull up bar hold?</h3></summary>
+            <p class="faq-a">
+              Ratings run from about 300 lb for doorway and light ceiling bars to 500 to 700 lb for heavy wall-mounted bars. They are manufacturer figures for a correctly installed bar and a static hang, so a doorway bar is limited by your trim and a mounted bar by its fixings. Leave a margin for kipping or weighted pull-ups.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will a doorway pull up bar fit my door?</h3></summary>
+            <p class="faq-a">
+              Measure the inside width of the frame and the width of the trim, and compare both with the maker's ranges; one maker lists doorways 24 to 36 inches with trim up to 3.5 inches. Most leverage bars need trim to hook over. Choose a bar whose range your door sits comfortably inside, not at the edge.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do you mount a pull up bar to studs or joists?</h3></summary>
+            <p class="faq-a">
+              Find the studs or joists, usually 16 or 24 inches apart on centre, confirm them with a pilot hole, and fix the bar into their centres with the lag screws the maker specifies. If the holes do not line up, fix a plywood or timber backing board to the structure first. Masonry needs masonry anchors. If unsure, have a tradesperson install it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are doorway pull up bars safe?</h3></summary>
+            <p class="faq-a">
+              They are reasonably safe for strict pull-ups in a sound, correctly measured doorway, used with care. Falls usually happen when the bar shifts or lifts off, or the trim gives way. Test it with your feet on the floor every time, never kip or jump into it, step down rather than drop, and inspect the bar and frame regularly.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Home Gym Accessories Worth Buying</div>
+            <p class="c-blurb">Bands, flooring, a bench and the other small kit that make a pull-up bar more useful.</p>
+          </a>
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Strength</div>
+            <div class="c-title">Best Squat Racks for a Home Gym</div>
+            <p class="c-blurb">Rack pull-up bars, ceiling clearance and anchoring for dynamic movements.</p>
+          </a>
+          <a href="/home-workout-equipment-reviews/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Home Workout Equipment Reviews</div>
+            <p class="c-blurb">Where a pull-up bar fits among benches, dumbbells, racks and cardio machines.</p>
+          </a>
+          <a href="/gymproluxe-review/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">GymProLuxe Review</div>
+            <p class="c-blurb">What we could and could not verify about the seller and its products before you buy.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

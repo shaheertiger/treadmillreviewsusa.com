@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Workout for Beginners (2026): Your First Four Weeks";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-workout-for-beginners/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,44 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Plan", link: "#the-plan" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillworkoutforbeginners" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillworkoutforbeginners)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Workouts for Beginners: The First Four Weeks</h1>
+      <p class="ed-dek">
+        Most first treadmill plans fail in week three, because they start with running and add too much at once. This one starts with walking, adds running in short blocks only when walking is easy, and changes one thing a week. Here is the plan, the first session step by step, and the mistakes that end most beginnings.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Workouts for Beginners: <span class="text-[#5AA9FF]">The First Four Weeks</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most first treadmill plans fail in week three, because they start with running and add too much at once. This one starts with walking, adds running in short blocks only when walking is easy, and changes one thing a week. Here is the plan, the first session step by step, and the mistakes that end most beginnings.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#the-plan" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Four-Week Plan
-          </a>
-          <a href="#first-session" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Your First Session
-          </a>
-        </div>
+        <a href="#the-plan" class="btn-ghost">The Four-Week Plan</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A treadmill workout for beginners should be easier than you expect, shorter than you
+          expect, and repeated more often than you expect. The aim of the first month is not
+          fitness — that comes on its own — but the habit of getting on the machine, and legs,
+          feet and tendons that have adapted enough for the second month to add running without
+          anything hurting. This page gives you four weeks that do exactly that, starting with
+          walking, and the first session step by step.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review
           treadmills. This is a practical beginner plan for using one — it is not medical advice,
           physiotherapy, coaching or nutrition advice, and we are not qualified to give any of
@@ -172,61 +157,40 @@ const schema = {
           pain. <strong class="text-gray-900">On the figures below:</strong> speeds, inclines and
           durations are typical starting points for illustration, not prescriptions; the right
           numbers are the ones that feel right to you.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: A Beginner Treadmill Workout</a>
-          <a href="#why-walking-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Why the Plan Starts With Walking</a>
-          <a href="#the-plan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Four-Week Plan</a>
-          <a href="#progression-rules" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Rules for Progressing</a>
-          <a href="#first-session" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Your First Session, Step by Step</a>
-          <a href="#starting-speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Choosing a Starting Speed and Incline</a>
-          <a href="#soreness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Soreness Is Normal</a>
-          <a href="#treadmill-issues" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Treadmill-Specific Issues and How to Handle Them</a>
-          <a href="#beginner-errors" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Common Beginner Errors, and the Fix for Each</a>
-          <a href="#moving-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. When to Move On to a Structured Program</a>
-          <a href="#what-you-need" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. What a Beginner Actually Needs From a Treadmill</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: A Beginner Treadmill Workout</a></li>
+            <li><a href="#why-walking-first">Why the Plan Starts With Walking</a></li>
+            <li><a href="#the-plan">The Four-Week Plan</a></li>
+            <li><a href="#progression-rules">The Rules for Progressing</a></li>
+            <li><a href="#first-session">Your First Session, Step by Step</a></li>
+            <li><a href="#starting-speed">Choosing a Starting Speed and Incline</a></li>
+            <li><a href="#soreness">What Soreness Is Normal</a></li>
+            <li><a href="#treadmill-issues">Treadmill-Specific Issues and How to Handle Them</a></li>
+            <li><a href="#beginner-errors">Common Beginner Errors, and the Fix for Each</a></li>
+            <li><a href="#moving-on">When to Move On to a Structured Program</a></li>
+            <li><a href="#what-you-need">What a Beginner Actually Needs From a Treadmill</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A treadmill workout for beginners should be easier than you expect, shorter than you
-          expect, and repeated more often than you expect. The aim of the first month is not
-          fitness — that comes on its own — but the habit of getting on the machine, and legs,
-          feet and tendons that have adapted enough for the second month to add running without
-          anything hurting. This page gives you four weeks that do exactly that, starting with
-          walking, and the first session step by step.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: A Beginner Treadmill Workout</h2>
+          <h2>The Short Answer: A Beginner Treadmill Workout</h2>
 <p>
             A good <strong>beginner treadmill workout</strong> is 20 to 30 minutes of walking at a
             pace where you can talk in full sentences, three times a week, with a slow five-minute
             start and a slow five-minute finish. That is the whole of week one. In week two the
             sessions get a little longer. In week three a gentle incline or a few one-minute jogs
             appear, if walking has become easy. By week four you are doing 30 to 35 minutes with
-            short run blocks inside it, and you are ready for a structured program like
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K on a treadmill</a>
-            if running is the goal.
+            short run blocks inside it, and you are ready for a structured program like <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K on a treadmill</a> if running is the goal.
           </p>
           <p>
             Three rules carry the plan. <strong>Add time before pace.</strong> A longer easy session
-            does more for a beginner than a faster short one, and is far less likely to hurt.
-            <strong>Change one thing a week</strong> — duration, or incline, or run blocks, never
+            does more for a beginner than a faster short one, and is far less likely to hurt. <strong>Change one thing a week</strong> — duration, or incline, or run blocks, never
             all three. And <strong>use the talk test</strong>: if you cannot speak in full
             sentences during the walking parts, you are going too fast for this stage, whatever the
             display says.
@@ -235,14 +199,12 @@ const schema = {
             The treadmill-specific parts of starting out — the safety key, where to look, why you
             feel dizzy stepping off, how to handle the belt speeding up and slowing down — are
             covered in the first-session walkthrough below. If you have never used the machine at
-            all, our guide to
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>
-            covers the controls and the basics first.
+            all, our guide to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a> covers the controls and the basics first.
           </p>
         </div>
 
         <div id="why-walking-first" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Why the Plan Starts With Walking</h2>
+          <h2>Why the Plan Starts With Walking</h2>
 <p>
             Most beginner plans found online start with running, and most of the people who try
             them stop in the third week with sore shins or knees, or simply because the sessions
@@ -261,9 +223,7 @@ const schema = {
             Walking also builds the habit without drama. A 25-minute walk three times a week is
             achievable for almost everyone, it does not need recovery days, and it is easy to do on
             a day you do not feel like it — which is most of the days that decide whether a plan
-            works. Our
-            <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>
-            page has six structured walks for people who want to stay with walking after week four,
+            works. Our <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a> page has six structured walks for people who want to stay with walking after week four,
             which is a perfectly good choice.
           </p>
           <p>
@@ -274,7 +234,7 @@ const schema = {
         </div>
 
         <div id="the-plan" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Four-Week Plan</h2>
+          <h2>The Four-Week Plan</h2>
 <p>
             Three sessions a week, on non-consecutive days where possible. Every session begins
             with five minutes of slow walking and ends with five minutes of slow walking; the
@@ -333,7 +293,7 @@ const schema = {
         </div>
 
         <div id="progression-rules" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Rules for Progressing</h2>
+          <h2>The Rules for Progressing</h2>
 <p>
             The table gives one path; the rules are what let you adapt it, because nobody fits a
             table exactly.
@@ -375,7 +335,7 @@ const schema = {
         </div>
 
         <div id="first-session" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Your First Session, Step by Step</h2>
+          <h2>Your First Session, Step by Step</h2>
 <p>
             The first session is mostly about the machine, not the exercise. Allow 30 minutes and
             treat the whole thing as a walk with some admin at either end.
@@ -383,8 +343,7 @@ const schema = {
           <ol>
             <li><strong>Check the space.</strong> Nothing within a few feet behind the machine,
             nothing you could trip on beside it, and no children or pets in the room while the belt
-            is moving. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers the full list once.</li>
+            is moving. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers the full list once.</li>
             <li><strong>Stand on the side platforms, not the belt.</strong> Feet astride the belt
             on the fixed plastic or rubber strips either side of it. Most treadmills start the belt
             moving slowly a few seconds after you press start, and standing on it as it starts is a
@@ -426,7 +385,7 @@ const schema = {
         </div>
 
         <div id="starting-speed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Choosing a Starting Speed and Incline</h2>
+          <h2>Choosing a Starting Speed and Incline</h2>
 <p>
             The right starting speed is a personal number, not one from a chart, and the way to
             find it takes two minutes.
@@ -438,9 +397,7 @@ const schema = {
             that pace. If yes, that is your week-one speed. For most adults it lands somewhere
             around 2.5 to 3.5 mph, with shorter people, older people and those carrying more
             weight often lower and taller or fitter people higher, but the number matters far less
-            than the feel. Our guide to
-            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
-            goes into the ranges by goal.
+            than the feel. Our guide to <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a> goes into the ranges by goal.
           </p>
           <p>
             <strong>Incline.</strong> Flat or 1% for the first two weeks. The 1% is a convention
@@ -467,7 +424,7 @@ const schema = {
         </div>
 
         <div id="soreness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Soreness Is Normal</h2>
+          <h2>What Soreness Is Normal</h2>
 <p>
             Some discomfort in the first few weeks is expected, and knowing which kind is which
             saves a lot of worry and a few injuries.
@@ -499,14 +456,12 @@ const schema = {
           </p>
           <p>
             The general rule: muscle soreness that fades is fine and expected; joint or tendon
-            pain that persists is the plan going too fast. Our page on
-            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">whether treadmills are bad for your knees</a>
-            covers the knee question specifically, which is the one beginners ask most.
+            pain that persists is the plan going too fast. Our page on <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">whether treadmills are bad for your knees</a> covers the knee question specifically, which is the one beginners ask most.
           </p>
         </div>
 
         <div id="treadmill-issues" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Treadmill-Specific Issues and How to Handle Them</h2>
+          <h2>Treadmill-Specific Issues and How to Handle Them</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Feeling dizzy or unsteady stepping off</h3>
           <p>
             Almost every new treadmill user notices it: step off after a session and the floor
@@ -517,9 +472,7 @@ const schema = {
             the legs when you stop moving abruptly after exercise, which causes a brief drop in
             blood pressure. The fix for both is the same: slow down over the last five minutes,
             stop completely before stepping off, hold the rails as you do, and stand still for a
-            few seconds before walking away. Our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            covers the dizziness in more detail. Dizziness that is severe, that does not settle
+            few seconds before walking away. Our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> covers the dizziness in more detail. Dizziness that is severe, that does not settle
             within a minute, or that happens during the session rather than at the end is a reason
             to stop and talk to a doctor.
           </p>
@@ -539,9 +492,7 @@ const schema = {
             sessions, because they hold attention for longer; a programme or film saved for the
             treadmill only; sessions with structure, like the incline blocks, because a change every
             few minutes gives the mind something to track; and placing the machine somewhere with a
-            window or a screen rather than facing a wall. Our guide to
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill sessions less boring</a>
-            has a longer list.
+            window or a screen rather than facing a wall. Our guide to <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill sessions less boring</a> has a longer list.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Drifting on the belt</h3>
           <p>
@@ -554,14 +505,12 @@ const schema = {
           <p>
             A belt that hesitates when your foot lands, a <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium" data-autolink>thumping noise</a>, a burning smell, or a
             belt that does not stop when the safety key is pulled are not beginner problems and not
-            things to work around. Stop using the machine until it has been checked; our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            lists which symptoms mean stop immediately.
+            things to work around. Stop using the machine until it has been checked; our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> lists which symptoms mean stop immediately.
           </p>
         </div>
 
         <div id="beginner-errors" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Common Beginner Errors, and the Fix for Each</h2>
+          <h2>Common Beginner Errors, and the Fix for Each</h2>
 <p>
             The same handful of mistakes end most first months, and they are all avoidable.
           </p>
@@ -608,7 +557,7 @@ const schema = {
         </div>
 
         <div id="moving-on" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. When to Move On to a Structured Program</h2>
+          <h2>When to Move On to a Structured Program</h2>
 <p>
             Four weeks is enough to establish the habit and prepare the body. What comes next
             depends on whether running is the goal.
@@ -617,42 +566,29 @@ const schema = {
             <strong>If you want to run,</strong> the signal that you are ready for a structured
             walk-run program is being able to do the week-four runner session — six 90-second jogs
             inside a 35-minute walk — without anything hurting the next day and without the jogs
-            feeling like a struggle. At that point, a program such as
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K</a>
-            picks up almost exactly where this plan leaves off; its first weeks are similar
+            feeling like a struggle. At that point, a program such as <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K</a> picks up almost exactly where this plan leaves off; its first weeks are similar
             walk-run blocks, and it builds over about nine weeks to 30 minutes of continuous
             running. Starting it after this plan rather than from nothing makes its awkward middle
             weeks far more manageable, and the treadmill version of it has the advantage that the
-            speeds are set for you rather than guessed. Our guide to
-            <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to start running on a treadmill</a>
-            covers the running-specific basics a plan's table leaves out: form on the belt, how to
+            speeds are set for you rather than guessed. Our guide to <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to start running on a treadmill</a> covers the running-specific basics a plan's table leaves out: form on the belt, how to
             progress and the signs you are doing too much.
           </p>
           <p>
             <strong>If you want to keep walking,</strong> the next step is structure and gentle
             progression rather than a program: longer sessions, incline blocks that grow a percent
-            at a time, and eventually a steady incline walk of 30 to 45 minutes. Our
-            <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>
-            page sets out six sessions for exactly that, and our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            covers durations by goal.
+            at a time, and eventually a steady incline walk of 30 to 45 minutes. Our <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a> page sets out six sessions for exactly that, and our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> covers durations by goal.
           </p>
           <p>
             <strong>Whichever you choose,</strong> the four rules from the first month still apply
             for the rest of the year: time before pace, one change a week, the talk test, and
-            three sessions a week before any more. Our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a>
-            describes the four session types that a complete week is eventually built from, and
-            once you are running continuously, our
-            <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form guide</a>
-            is worth reading before bad habits set in. After week four, our
-            <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium">treadmill workout plan</a> continues with an eight-week
+            three sessions a week before any more. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a> describes the four session types that a complete week is eventually built from, and
+            once you are running continuously, our <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form guide</a> is worth reading before bad habits set in. After week four, our <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium">treadmill workout plan</a> continues with an eight-week
             progression for walkers and new runners.
           </p>
         </div>
 
         <div id="what-you-need" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. What a Beginner Actually Needs From a Treadmill</h2>
+          <h2>What a Beginner Actually Needs From a Treadmill</h2>
 <p>
             Less than the marketing suggests. For walking and the first months of walk-run, the
             things that matter are:
@@ -679,11 +615,7 @@ const schema = {
             the double figures, dozens of programs, or anything described as "commercial grade".
             Many first treadmills are bought at a price that assumes a level of use that never
             arrives, and the money would have been better spent on a simpler machine and a good
-            pair of shoes. Our
-            <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a>
-            roundup is built around exactly this list, and our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            covers matching the price to how you will actually use it.
+            pair of shoes. Our <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a> roundup is built around exactly this list, and our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a> covers matching the price to how you will actually use it.
           </p>
           <p>
             If you already have a machine, use it. A basic treadmill that works is more than
@@ -692,7 +624,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Walk first, add running later in short blocks, and change one thing a
             week.</strong> Twenty to thirty minutes of conversational walking three times a week
@@ -712,141 +644,156 @@ const schema = {
             four weeks are for.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good treadmill workout for beginners?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Twenty to thirty minutes of walking at a pace where you can talk in full sentences, three times a week, with five slow minutes at the start and end, flat or at 1% incline. Do that for two weeks, then add either short incline blocks or one-minute easy jogs in week three. Add time before pace and change only one thing a week.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I start running on a treadmill as a beginner?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Walk first. Build to 30 minutes of comfortable walking over two or three weeks, then add five one-minute jogs at the slowest pace that is still running, with three minutes of walking between. Grow the jogs to 90 seconds in week four, then move to a structured walk-run program such as couch to 5K. Three sessions a week, never consecutive days at first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a beginner walk on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Twenty minutes is enough for the first sessions if that is what feels comfortable, rising to 30 minutes by the end of week two and 35 by week four, including a five-minute slow start and finish. Session length matters more than speed for a beginner; add five minutes a week until 30 feels easy before raising the pace.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should a beginner use on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The speed at which you walk purposefully without hurrying and can still hold a conversation — for most adults somewhere around 2.5 to 3.5 mph, higher or lower depending on height, age and fitness. Find it by raising the belt a step at a time and checking the talk test, rather than copying a number. First jogs are barely faster than a brisk walk.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do I feel dizzy when I get off the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Two things: your brain has adjusted to a moving surface and takes a few seconds to readjust to a still one, and stopping abruptly after exercise lets blood pool in the legs, briefly dropping blood pressure. Slow down over the last five minutes, stop fully before stepping off, hold the rails, and stand still briefly. Severe or persistent dizziness needs a doctor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it normal to be sore after starting on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Dull, spread-out muscle soreness in the calves, thighs and glutes a day or two after a session, easing with movement and gone within a few days, is normal and fades over the weeks. Sharp pain, pain in one spot near a joint or tendon, pain that worsens during a session or changes how you walk is not — drop back a week and see a physical therapist if it persists.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Beginner Treadmill Workouts</h2>
+          <p>Most first months end for one of these four reasons, and none of them is a lack of fitness.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Running before walking is comfortable</h3>
+              <p>Lungs adapt in weeks; tendons and bones take months. A beginner who runs on day three because breathing allows it is loading tissue that has not caught up, and the result is shin, knee or heel pain in week three. Build to 30 easy minutes of walking first, then add running in one-minute blocks.</p>
+            </li>
+            <li>
+              <h3>Holding the rails on the incline</h3>
+              <p>Gripping the handrails at a grade removes much of the work, pushes the hips back and bends the trunk forward, and becomes a habit that is hard to lose. If the incline needs the rails, it is too steep for now. Lower it until you can walk with your chest up and arms swinging, and raise it only a percent at a time.</p>
+            </li>
+            <li>
+              <h3>Doing it every day</h3>
+              <p>Enthusiasm in week one produces five or six sessions and no rest, and the slow-adapting tissues never recover. Keep running sessions to three a week with a day between for the first two months. Walking on the other days is fine; the point is that the impact days are spaced out.</p>
+            </li>
+            <li>
+              <h3>Changing speed, incline and duration in the same week</h3>
+              <p>Three changes at once means you cannot tell which one caused the sore calf, and the usual answer is all of them. Pick one variable per week — duration first, then incline or run blocks, then pace — hold it for a week, and go back a step if anything lingers beyond ordinary soreness.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Beginner Treadmill Workouts</h2>
-          <p class="text-gray-700 leading-relaxed">Most first months end for one of these four reasons, and none of them is a lack of fitness.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running before walking is comfortable</h3>
-              <p class="text-gray-700 text-sm m-0">Lungs adapt in weeks; tendons and bones take months. A beginner who runs on day three because breathing allows it is loading tissue that has not caught up, and the result is shin, knee or heel pain in week three. Build to 30 easy minutes of walking first, then add running in one-minute blocks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails on the incline</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping the handrails at a grade removes much of the work, pushes the hips back and bends the trunk forward, and becomes a habit that is hard to lose. If the incline needs the rails, it is too steep for now. Lower it until you can walk with your chest up and arms swinging, and raise it only a percent at a time.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing it every day</h3>
-              <p class="text-gray-700 text-sm m-0">Enthusiasm in week one produces five or six sessions and no rest, and the slow-adapting tissues never recover. Keep running sessions to three a week with a day between for the first two months. Walking on the other days is fine; the point is that the impact days are spaced out.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Changing speed, incline and duration in the same week</h3>
-              <p class="text-gray-700 text-sm m-0">Three changes at once means you cannot tell which one caused the sore calf, and the usual answer is all of them. Pick one variable per week — duration first, then incline or run blocks, then pace — hold it for a week, and go back a step if anything lingers beyond ordinary soreness.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/couch-to-5k-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Program</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Couch to 5K on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The nine-week walk-to-run progression, with speeds to set and what to do when a week is too hard.</p>
-            </a>
-            <a href="/treadmill-walking-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Walking</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Walking Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six structured walks to progress through if running is not the goal.</p>
-            </a>
-            <a href="/how-to-use-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Basics</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Use a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The controls, the safety key, stance, starting and stopping.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Walk first, add running in short blocks, and change one thing
             a week.</strong> Twenty to thirty minutes of conversational walking three times a week
             for a fortnight, then incline blocks or one-minute jogs in week three, a little more in
             week four, with any week repeated as often as it needs to be. Add time before pace, and
             let the talk test decide the speed.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Clip the safety key on, keep your hands off the rails after the first minute, slow down
             for five minutes before you step off, and treat lingering joint or tendon pain as a
-            signal to go back a week. When the week-four run blocks feel easy, move on to
-            <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K on a treadmill</a>.
+            signal to go back a week. When the week-four run blocks feel easy, move on to <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K on a treadmill</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/couch-to-5k-treadmill/">Couch to 5K on a Treadmill</a></li>
+            <li><a href="/treadmill-walking-workouts/">Treadmill Walking Workouts</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a good treadmill workout for beginners?</h3></summary>
+            <p class="faq-a">
+              Twenty to thirty minutes of walking at a pace where you can talk in full sentences, three times a week, with five slow minutes at the start and end, flat or at 1% incline. Do that for two weeks, then add either short incline blocks or one-minute easy jogs in week three. Add time before pace and change only one thing a week.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I start running on a treadmill as a beginner?</h3></summary>
+            <p class="faq-a">
+              Walk first. Build to 30 minutes of comfortable walking over two or three weeks, then add five one-minute jogs at the slowest pace that is still running, with three minutes of walking between. Grow the jogs to 90 seconds in week four, then move to a structured walk-run program such as couch to 5K. Three sessions a week, never consecutive days at first.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long should a beginner walk on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Twenty minutes is enough for the first sessions if that is what feels comfortable, rising to 30 minutes by the end of week two and 35 by week four, including a five-minute slow start and finish. Session length matters more than speed for a beginner; add five minutes a week until 30 feels easy before raising the pace.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What speed should a beginner use on a treadmill?</h3></summary>
+            <p class="faq-a">
+              The speed at which you walk purposefully without hurrying and can still hold a conversation — for most adults somewhere around 2.5 to 3.5 mph, higher or lower depending on height, age and fitness. Find it by raising the belt a step at a time and checking the talk test, rather than copying a number. First jogs are barely faster than a brisk walk.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do I feel dizzy when I get off the treadmill?</h3></summary>
+            <p class="faq-a">
+              Two things: your brain has adjusted to a moving surface and takes a few seconds to readjust to a still one, and stopping abruptly after exercise lets blood pool in the legs, briefly dropping blood pressure. Slow down over the last five minutes, stop fully before stepping off, hold the rails, and stand still briefly. Severe or persistent dizziness needs a doctor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it normal to be sore after starting on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Dull, spread-out muscle soreness in the calves, thighs and glutes a day or two after a session, easing with movement and gone within a few days, is normal and fades over the weeks. Sharp pain, pain in one spot near a joint or tendon, pain that worsens during a session or changes how you walk is not — drop back a week and see a physical therapist if it persists.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/couch-to-5k-treadmill/" class="card">
+            <div class="c-kicker">Program</div>
+            <div class="c-title">Couch to 5K on a Treadmill</div>
+            <p class="c-blurb">The nine-week walk-to-run progression, with speeds to set and what to do when a week is too hard.</p>
+          </a>
+          <a href="/treadmill-walking-workouts/" class="card">
+            <div class="c-kicker">Walking</div>
+            <div class="c-title">Treadmill Walking Workouts</div>
+            <p class="c-blurb">Six structured walks to progress through if running is not the goal.</p>
+          </a>
+          <a href="/how-to-use-a-treadmill/" class="card">
+            <div class="c-kicker">Basics</div>
+            <div class="c-title">How to Use a Treadmill</div>
+            <p class="c-blurb">The controls, the safety key, stance, starting and stopping.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

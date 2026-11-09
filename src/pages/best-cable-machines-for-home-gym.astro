@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Cable Machines for a Home Gym (2026): Six Picks by Type";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-cable-machines-for-home-gym/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,85 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: REP Fitness Arcadia Functional Trainer", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestcablemachinesforhomegym" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestcablemachinesforhomegym)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Cable Machines for a Home Gym</h1>
+      <p class="ed-dek">
+        A home cable machine can be a freestanding functional trainer, an add-on for a rack you already own, a plate-loaded tower bolted to a wall, or a screen with motors behind it. Here are six that cover those types, what the pulley ratio on each really means, and the ceiling, anchoring and space checks to make before you order.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Cable Machines <span class="text-[#5AA9FF]">for a Home Gym</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A home cable machine can be a freestanding functional trainer, an add-on for a rack you already own, a plate-loaded tower bolted to a wall, or a screen with motors behind it. Here are six that cover those types, what the pulley ratio on each really means, and the ceiling, anchoring and space checks to make before you order.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#pulley-ratio" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            2:1 vs 1:1 Explained
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#rep-arcadia"><img src="https://m.media-amazon.com/images/I/41yfR9WS50L._SL500_.jpg" alt="REP Fitness Arcadia Functional Trainer" width="500" height="500" decoding="async" /></a>
+          <a href="#speediance-gym-monster-2"><img src="https://m.media-amazon.com/images/I/41sgv13FSlL._SL500_.jpg" alt="Speediance Gym Monster 2" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>REP Fitness Arcadia Functional Trainer · Speediance Gym Monster 2</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A cable machine is the most versatile single piece of strength equipment you can put in
+          a home gym, and also the easiest to buy badly. The weight on the stack is not the weight
+          you feel, the footprint on the listing is not the room you need, and a tall, narrow
+          tower that looks freestanding often is not meant to be. The six picks below each
+          represent a different way of getting cables into a home, and the guide after them
+          explains pulley ratios, ceiling height, anchoring and attachments in plain terms, so you
+          can tell which type suits your space and your training.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#rep-arcadia">REP Fitness Arcadia Functional Trainer</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Rack-Mounted:</span> <a href="#rep-athena">REP Fitness Athena Selectorized Side-Mount Functional Trainer</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget / Plate-Loaded:</span> <a href="#bells-of-steel-cable-tower">Bells of Steel Cable Tower (Plate-Loaded)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact All-in-One:</span> <a href="#bells-of-steel-all-in-one-trainer">Bells of Steel All-in-One Trainer</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Wall-Mounted Digital:</span> <a href="#tonal-2">Tonal 2</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Freestanding Digital:</span> <a href="#speediance-gym-monster-2">Speediance Gym Monster 2</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines, and no figure on this page is our own measurement. Each was confirmed as
           currently sold on 16 October 2026 on the maker's own store (REP Fitness, Bells of Steel,
@@ -367,94 +391,39 @@ const schema = {
           are those we saw on that date and change often; for the digital machines we give the
           hardware price only, and the membership or subscription is extra, so check the current
           price. We earn a commission if you buy through the Amazon links on this page; it does
-          not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           fitness equipment; we are not giving medical, physiotherapy, coaching or nutrition
           advice. Strength training loads your joints, spine and heart, so if you have an injury,
           a joint, back or heart condition, are pregnant or recently postpartum, or are returning
           from surgery, talk to a qualified professional before you start. Rated capacities on
           this page are manufacturer figures, not ours.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#rep-arcadia" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Arcadia Functional Trainer</a>
-            <a href="#rep-arcadia" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Rack-Mounted:</span>
-            <a href="#rep-athena" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Athena Selectorized Side-Mount Functional Trainer</a>
-            <a href="#rep-athena" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget / Plate-Loaded:</span>
-            <a href="#bells-of-steel-cable-tower" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel Cable Tower (Plate-Loaded)</a>
-            <a href="#bells-of-steel-cable-tower" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compact All-in-One:</span>
-            <a href="#bells-of-steel-all-in-one-trainer" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel All-in-One Trainer</a>
-            <a href="#bells-of-steel-all-in-one-trainer" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Wall-Mounted Digital:</span>
-            <a href="#tonal-2" class="font-bold text-gray-900 no-underline hover:underline">Tonal 2</a>
-            <a href="#tonal-2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Cable Machines for a Home Gym</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Machines</a>
-          <a href="#pulley-ratio" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Pulley Ratio: What 2:1 and 1:1 Mean in Plain Terms</a>
-          <a href="#types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Which Type of Cable Machine Suits Your Space</a>
-          <a href="#space-and-ceiling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Footprint, Ceiling Height and Cable Travel</a>
-          <a href="#anchoring-and-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Anchoring, Wall Mounting and Safe Use</a>
-          <a href="#attachments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Attachments: What Comes in the Box and What to Add</a>
-          <a href="#reading-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Reading a Cable Machine Listing</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Cable Machines for a Home Gym</a></li>
+            <li><a href="#how-we-chose">How We Chose These Machines</a></li>
+            <li><a href="#pulley-ratio">Pulley Ratio: What 2:1 and 1:1 Mean in Plain Terms</a></li>
+            <li><a href="#types">Which Type of Cable Machine Suits Your Space</a></li>
+            <li><a href="#space-and-ceiling">Footprint, Ceiling Height and Cable Travel</a></li>
+            <li><a href="#anchoring-and-safety">Anchoring, Wall Mounting and Safe Use</a></li>
+            <li><a href="#attachments">Attachments: What Comes in the Box and What to Add</a></li>
+            <li><a href="#reading-listings">Reading a Cable Machine Listing</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A cable machine is the most versatile single piece of strength equipment you can put in
-          a home gym, and also the easiest to buy badly. The weight on the stack is not the weight
-          you feel, the footprint on the listing is not the room you need, and a tall, narrow
-          tower that looks freestanding often is not meant to be. The six picks below each
-          represent a different way of getting cables into a home, and the guide after them
-          explains pulley ratios, ceiling height, anchoring and attachments in plain terms, so you
-          can tell which type suits your space and your training.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Six machines, one for each common way of adding cables to a home gym. The short
             version: the REP Arcadia if you have the floor space for a standalone functional
             trainer, the REP Athena if you already own a compatible REP rack, and the Bells of
             Steel Cable Tower if you want cables for the least money and already own plates. If you
-            are still deciding what belongs in the room at all, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put cables alongside the other big purchases.
+            are still deciding what belongs in the room at all, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> put cables alongside the other big purchases.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -472,15 +441,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            A cable machine often sits next to a rack. If you are planning both, read our guide to
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">the best squat racks for a home gym</a>
-            first, because the rack you choose decides whether a rack-mounted cable attachment is
+            A cable machine often sits next to a rack. If you are planning both, read our guide to <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">the best squat racks for a home gym</a> first, because the rack you choose decides whether a rack-mounted cable attachment is
             even an option.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Cable Machines for a Home Gym</h2>
+          <h2>The 6 Best Cable Machines for a Home Gym</h2>
 <p>
             Each card gives the figures we could confirm from two sources, the price range we saw
             on 16 October 2026, and who the machine suits. Read the ratio and the footprint lines
@@ -493,78 +460,67 @@ const schema = {
             price of the membership before you decide.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Machines</h2>
+          <h2>How We Chose These Machines</h2>
 <p>
             We have not tested these machines. They were chosen from published specifications,
             maker product pages and FAQs, and independent reviews, and the claims on this page are
@@ -609,7 +565,7 @@ const schema = {
         </div>
 
         <div id="pulley-ratio" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Pulley Ratio: What 2:1 and 1:1 Mean in Plain Terms</h2>
+          <h2>Pulley Ratio: What 2:1 and 1:1 Mean in Plain Terms</h2>
 <p>
             The pulley ratio is the single most misunderstood number on a cable machine, and it
             decides what the weight stack actually feels like in your hands.
@@ -658,7 +614,7 @@ const schema = {
         </div>
 
         <div id="types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Which Type of Cable Machine Suits Your Space</h2>
+          <h2>Which Type of Cable Machine Suits Your Space</h2>
 <p>
             The five types on this page solve different problems, and the right one usually
             follows from what you already own and how much floor you can give up.
@@ -696,8 +652,7 @@ const schema = {
             narrower uprights, a shorter lat bar, movements that are cramped. Choose this if you
             want one large machine instead of two. If you would rather have fixed press, leg and
             pulldown stations on a single weight stack than rack uprights, that is a different
-            machine, compared in our guide to
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">the best home gym machines</a>.
+            machine, compared in our guide to <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">the best home gym machines</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Connected digital-resistance machine</h3>
           <p>
@@ -711,7 +666,7 @@ const schema = {
         </div>
 
         <div id="space-and-ceiling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Footprint, Ceiling Height and Cable Travel</h2>
+          <h2>Footprint, Ceiling Height and Cable Travel</h2>
 <p>
             Three measurements decide whether a cable machine fits, and the listed footprint is
             only one of them.
@@ -733,9 +688,7 @@ const schema = {
             frame covers. Cable exercises happen in front of it, and often to the side: a standing
             cable row or a crossover needs several feet of clear floor in front of the machine,
             and a woodchop needs room to rotate. Tonal recommends a 7 x 7-foot floor area in front
-            of its unit, which is a sensible rule of thumb for any cable machine. Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements for treadmills</a>
-            uses the same approach — machine footprint plus a use zone plus a safety margin — and
+            of its unit, which is a sensible rule of thumb for any cable machine. Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements for treadmills</a> uses the same approach — machine footprint plus a use zone plus a safety margin — and
             the method transfers directly.
           </p>
           <p>
@@ -753,7 +706,7 @@ const schema = {
         </div>
 
         <div id="anchoring-and-safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Anchoring, Wall Mounting and Safe Use</h2>
+          <h2>Anchoring, Wall Mounting and Safe Use</h2>
 <p>
             A cable machine pulls sideways and upwards on its own frame every rep, and a tall,
             narrow frame is easier to tip than it looks. How each type is secured is part of the
@@ -764,8 +717,7 @@ const schema = {
             the plate-loaded All-in-One Trainer must be bolted down, and that both versions must be
             bolted down for barbell work; it recommends bolting its Cable Tower to a wall, the floor
             or a rack. Neither ships with the anchors. If you cannot drill your floor, many owners
-            build a timber platform and bolt the machine to that — see our guide to
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.</li>
+            build a timber platform and bolt the machine to that — see our guide to <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.</li>
             <li><strong>Rack attachments are only as secure as the rack.</strong> A rack-mounted
             stack adds weight and leverage to one side of the rack. Anchor the rack as its maker
             specifies before adding one.</li>
@@ -794,7 +746,7 @@ const schema = {
         </div>
 
         <div id="attachments" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Attachments: What Comes in the Box and What to Add</h2>
+          <h2>Attachments: What Comes in the Box and What to Add</h2>
 <p>
             Most cable machines come with very little. REP says the Arcadia ships with D-handles
             and the Athena with a urethane D-handle, and Bells of Steel lists adjustable nylon
@@ -823,14 +775,12 @@ const schema = {
             accessory bundles, priced separately from the unit, that are required to unlock many
             movements, and Speediance sells its machine in packages with different accessories.
             Price the accessories you need before comparing a digital machine with an iron one.
-            Our guide to
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
-            covers storage for all of it.
+            Our guide to <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a> covers storage for all of it.
           </p>
         </div>
 
         <div id="reading-listings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Reading a Cable Machine Listing</h2>
+          <h2>Reading a Cable Machine Listing</h2>
 <p>
             Cable machine listings are full of numbers that sound comparable and are not. Five
             checks will catch most of the traps.
@@ -866,7 +816,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you mainly want heavy compound lifts</strong>, a rack, a barbell and plates
             will do more for the money than any cable machine, and you can add a rack-mounted cable
@@ -876,162 +826,173 @@ const schema = {
           <p>
             <strong>If your budget is under a few hundred dollars</strong>, <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium" data-autolink>resistance bands</a> and a
             door anchor cover many cable movements for a fraction of the cost, and adjustable
-            dumbbells cover most of the rest. Our guide to
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            is the better starting point.
+            dumbbells cover most of the rest. Our guide to <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a> is the better starting point.
           </p>
           <p>
             <strong>If you need a commercial-duty machine</strong> for a studio or a shared
             building gym, look at commercial lines with longer cable warranties and service
-            networks. Our guide to
-            <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a>
-            explains what changes at that level.
+            networks. Our guide to <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a> explains what changes at that level.
           </p>
           <p>
             <strong>If cardio is the priority</strong>, a cable machine will not replace it. Many
-            home gyms pair one strength station with one cardio machine, and our
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            helps with that side of the decision, including whether a treadmill, bike or rower
+            home gyms pair one strength station with one cardio machine, and our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> helps with that side of the decision, including whether a treadmill, bike or rower
             earns the floor space next to your cable machine.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best cable machine for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people with the space, a dual-stack functional trainer such as the REP Arcadia, because weight and height changes are quick and it covers almost every cable movement. If you already own a compatible rack, a rack-mounted attachment saves floor space. On a tight budget with plates already owned, a plate-loaded tower is the cheapest proper option.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does a 2:1 pulley ratio mean on a cable machine?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A 2:1 ratio halves the felt resistance. With 100 pounds selected on the stack, you feel roughly 50 pounds at the handle, and the handle travels about twice as far as the stack moves. A 1:1 machine gives you the full selected weight with shorter cable travel. Always halve a 2:1 stack to know your real top load.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do I need for a cable machine?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure first. Many functional trainers and towers stand somewhere around six and a half to seven feet tall, flooring raises them further, and assembly often needs extra clearance above the frame. Tonal states that its wall unit needs 7 feet 10 inches of ceiling for the arms to extend fully. Check each maker's stated height and assembly clearance.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do cable machines need to be bolted down?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Many do. Bells of Steel says its plate-loaded All-in-One Trainer must be bolted down and recommends anchoring its Cable Tower to a wall, floor or rack. Tall, narrow frames can tip under sideways pulls. Follow the maker's instructions exactly, and if you cannot drill the floor, a bolted timber platform is a common alternative.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a functional trainer better than a rack-mounted cable attachment?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A standalone functional trainer is more versatile and works anywhere, but needs its own floor space. A rack attachment fits inside the rack footprint and usually costs less, but only fits specific racks, and the rack must be anchored. If you already own a compatible rack, the attachment is usually the better use of space.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do Tonal and Speediance need a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Tonal requires a 12-month membership commitment with each purchase, and an active membership is needed for most features. Speediance sells an optional subscription; reviewers report the machine works without it for basic strength training but some functions need it. Prices change, so check the current membership price before buying either machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Home Cable Machine</h2>
+          <p>Each of these turns an expensive, heavy purchase into one that disappoints or does not fit.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Reading stack weight as felt weight</h3>
+              <p>Two 170 lb stacks at 2:1 give about 85 pounds per handle, not 340. Buyers who plan heavy pulldowns and rows on a 2:1 machine often find it runs out early. Check the ratio, halve a 2:1 stack, and if heavy pulling matters, choose a machine with a 1:1 option or keep a barbell for those lifts.</p>
+            </li>
+            <li>
+              <h3>Measuring the floor but not the ceiling</h3>
+              <p>A machine that fits the floor can still fail at the ceiling: flooring raises it, beams and ducts sit exactly where you want it, and tall uprights need extra clearance to stand up during assembly. Measure at the exact spot, subtract flooring thickness, and check the stated assembly clearance as well as the frame height.</p>
+            </li>
+            <li>
+              <h3>Skipping the anchoring</h3>
+              <p>Tall, narrow cable frames are pulled sideways every rep, and several makers state they must be bolted to the floor, a wall or a rack, with hardware not included. Treat anchors as part of the purchase. If you cannot drill, plan a bolted platform before delivery rather than training on an unsecured frame.</p>
+            </li>
+            <li>
+              <h3>Pricing a digital machine on hardware alone</h3>
+              <p>The screen price is not the cost of ownership. Tonal requires a membership commitment and sells accessories separately; Speediance sells an optional subscription and bundles with different accessories. Add the membership, accessories and installation to the hardware price, then compare the total with an iron machine plus the attachments you would add to it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Home Cable Machine</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns an expensive, heavy purchase into one that disappoints or does not fit.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading stack weight as felt weight</h3>
-              <p class="text-gray-700 text-sm m-0">Two 170 lb stacks at 2:1 give about 85 pounds per handle, not 340. Buyers who plan heavy pulldowns and rows on a 2:1 machine often find it runs out early. Check the ratio, halve a 2:1 stack, and if heavy pulling matters, choose a machine with a 1:1 option or keep a barbell for those lifts.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the floor but not the ceiling</h3>
-              <p class="text-gray-700 text-sm m-0">A machine that fits the floor can still fail at the ceiling: flooring raises it, beams and ducts sit exactly where you want it, and tall uprights need extra clearance to stand up during assembly. Measure at the exact spot, subtract flooring thickness, and check the stated assembly clearance as well as the frame height.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the anchoring</h3>
-              <p class="text-gray-700 text-sm m-0">Tall, narrow cable frames are pulled sideways every rep, and several makers state they must be bolted to the floor, a wall or a rack, with hardware not included. Treat anchors as part of the purchase. If you cannot drill, plan a bolted platform before delivery rather than training on an unsecured frame.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Pricing a digital machine on hardware alone</h3>
-              <p class="text-gray-700 text-sm m-0">The screen price is not the cost of ownership. Tonal requires a membership commitment and sells accessories separately; Speediance sells an optional subscription and bundles with different accessories. Add the membership, accessories and installation to the hardware price, then compare the total with an iron machine plus the attachments you would add to it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The rack you choose decides whether a rack-mounted cable attachment is possible.</p>
-            </a>
-            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Overview</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where a cable machine fits among the big home gym purchases.</p>
-            </a>
-            <a href="/commercial-gym-equipment/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Commercial</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Gym Equipment</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What changes when cable machines are built for daily shared use.</p>
-            </a>
-            <a href="/best-leg-extension-machines/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Legs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Leg Extension Machines</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six leg extension machines and attachments, with knee alignment and fit explained.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">If you have the floor space, buy a dual-stack functional trainer
             such as the REP Arcadia</strong>; if you already own a compatible REP rack, the Athena
             puts the same stack inside it; and if money is tight and you own plates, the Bells of
             Steel Cable Tower gets you a proper adjustable cable for the least. Choose a digital
             machine for guided training and a clear floor, not for maximum load.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever type you choose, halve a 2:1 stack to know what it really feels like, measure
             the ceiling at the exact spot, and anchor the frame exactly as its maker specifies. If
-            a rack is also on your list, read our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">squat rack guide</a>
-            before you buy either.
+            a rack is also on your list, read our <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">squat rack guide</a> before you buy either.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for a Home Gym</a></li>
+            <li><a href="/home-workout-equipment-reviews/">Home Workout Equipment Reviews</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best cable machine for a home gym?</h3></summary>
+            <p class="faq-a">
+              For most people with the space, a dual-stack functional trainer such as the REP Arcadia, because weight and height changes are quick and it covers almost every cable movement. If you already own a compatible rack, a rack-mounted attachment saves floor space. On a tight budget with plates already owned, a plate-loaded tower is the cheapest proper option.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What does a 2:1 pulley ratio mean on a cable machine?</h3></summary>
+            <p class="faq-a">
+              A 2:1 ratio halves the felt resistance. With 100 pounds selected on the stack, you feel roughly 50 pounds at the handle, and the handle travels about twice as far as the stack moves. A 1:1 machine gives you the full selected weight with shorter cable travel. Always halve a 2:1 stack to know your real top load.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much ceiling height do I need for a cable machine?</h3></summary>
+            <p class="faq-a">
+              Measure first. Many functional trainers and towers stand somewhere around six and a half to seven feet tall, flooring raises them further, and assembly often needs extra clearance above the frame. Tonal states that its wall unit needs 7 feet 10 inches of ceiling for the arms to extend fully. Check each maker's stated height and assembly clearance.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do cable machines need to be bolted down?</h3></summary>
+            <p class="faq-a">
+              Many do. Bells of Steel says its plate-loaded All-in-One Trainer must be bolted down and recommends anchoring its Cable Tower to a wall, floor or rack. Tall, narrow frames can tip under sideways pulls. Follow the maker's instructions exactly, and if you cannot drill the floor, a bolted timber platform is a common alternative.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a functional trainer better than a rack-mounted cable attachment?</h3></summary>
+            <p class="faq-a">
+              A standalone functional trainer is more versatile and works anywhere, but needs its own floor space. A rack attachment fits inside the rack footprint and usually costs less, but only fits specific racks, and the rack must be anchored. If you already own a compatible rack, the attachment is usually the better use of space.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do Tonal and Speediance need a subscription?</h3></summary>
+            <p class="faq-a">
+              Tonal requires a 12-month membership commitment with each purchase, and an active membership is needed for most features. Speediance sells an optional subscription; reviewers report the machine works without it for basic strength training but some functions need it. Prices change, so check the current membership price before buying either machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Racks</div>
+            <div class="c-title">Best Squat Racks for a Home Gym</div>
+            <p class="c-blurb">The rack you choose decides whether a rack-mounted cable attachment is possible.</p>
+          </a>
+          <a href="/home-workout-equipment-reviews/" class="card">
+            <div class="c-kicker">Overview</div>
+            <div class="c-title">Home Workout Equipment Reviews</div>
+            <p class="c-blurb">Where a cable machine fits among the big home gym purchases.</p>
+          </a>
+          <a href="/commercial-gym-equipment/" class="card">
+            <div class="c-kicker">Commercial</div>
+            <div class="c-title">Commercial Gym Equipment</div>
+            <p class="c-blurb">What changes when cable machines are built for daily shared use.</p>
+          </a>
+          <a href="/best-leg-extension-machines/" class="card">
+            <div class="c-kicker">Legs</div>
+            <div class="c-title">Best Leg Extension Machines</div>
+            <p class="c-blurb">Six leg extension machines and attachments, with knee alignment and fit explained.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

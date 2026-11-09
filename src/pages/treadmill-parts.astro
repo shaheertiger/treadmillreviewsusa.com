@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Parts (2026): Where to Buy, OEM vs Aftermarket & What They Cost";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-parts/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -271,68 +276,71 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Where to Buy Parts", link: "#where-to-buy" }}
+  stickyCta={{ text: "Buy First: 100% Silicone Lubricant (Bottle + Applicator Tube)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillparts" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillparts)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Parts: Where to Buy the Right One</h1>
+      <p class="ed-dek">
+        Most treadmill repairs come down to one part: a belt, a key, a motor board. Getting the right one depends on a number printed on a sticker most owners have never looked at. Here is how to find it, which parts fail and what they cost, where each major brand sells its parts, and how to tell when a part is not worth buying.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Parts: <span class="text-[#5AA9FF]">Where to Buy the Right One</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most treadmill repairs come down to one part: a belt, a key, a motor board. Getting the right one depends on a number printed on a sticker most owners have never looked at. Here is how to find it, which parts fail and what they cost, where each major brand sells its parts, and how to tell when a part is not worth buying.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#where-to-buy" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Where to Buy by Brand
-          </a>
-          <a href="#model-and-serial" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Find Your Model Number
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Treadmill parts are not hard to buy. They are easy to buy wrong. The same model name can cover
+          several versions built years apart with different motors, belts and boards, and the only reliable
+          way to tell them apart is the model and serial number on the frame. Find that first, and the rest
+          of this page is a matter of choosing who to buy from.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What we checked, and what we have not done.</strong>
-          On 5 November 2026 we read, where they would load, the parts and support pages of iFIT (NordicTrack
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Buy First:</span> <a href="#silicone-lubricant">100% Silicone Lubricant (Bottle + Applicator Tube)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest Fix:</span> <a href="#universal-safety-key">Universal Magnetic Treadmill Safety Key</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Measure First:</span> <a href="#replacement-walking-belt">Replacement Treadmill Walking Belt (Sized to Your Deck)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Common Cheap Fix:</span> <a href="#motor-drive-belt">Treadmill Motor Drive Belt (Matched by Part Number)</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">For Older Motors:</span> <a href="#motor-brushes">Treadmill DC Motor Carbon Brushes (Matched to Your Motor)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On 5 November 2026 we read, where they would load, the parts and support pages of iFIT (NordicTrack
           and ProForm), Sole, Life Fitness and Precor, those brands’ owner’s manuals, and the catalogues of
           three independent parts sellers (FitnessRepairParts, Sears PartsDirect and Sportsmith). NordicTrack’s
           and ProForm’s own parts pages returned “too many requests” errors and iFIT’s returned not found, so
@@ -346,75 +354,26 @@ const schema = {
           dumbbells, a climber and a cable station). Repairs involve mains electricity: unplug the treadmill
           before opening any cover, and if you are unsure, use a technician. Prices change often. We earn a
           commission if you buy through the Amazon links on this page; it does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buy First:</span>
-            <a href="#silicone-lubricant" class="font-bold text-gray-900 no-underline hover:underline">100% Silicone Lubricant (Bottle + Applicator Tube)</a>
-            <a href="#silicone-lubricant" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest Fix:</span>
-            <a href="#universal-safety-key" class="font-bold text-gray-900 no-underline hover:underline">Universal Magnetic Treadmill Safety Key</a>
-            <a href="#universal-safety-key" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Measure First:</span>
-            <a href="#replacement-walking-belt" class="font-bold text-gray-900 no-underline hover:underline">Replacement Treadmill Walking Belt (Sized to Your Deck)</a>
-            <a href="#replacement-walking-belt" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Common Cheap Fix:</span>
-            <a href="#motor-drive-belt" class="font-bold text-gray-900 no-underline hover:underline">Treadmill Motor Drive Belt (Matched by Part Number)</a>
-            <a href="#motor-drive-belt" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">For Older Motors:</span>
-            <a href="#motor-brushes" class="font-bold text-gray-900 no-underline hover:underline">Treadmill DC Motor Carbon Brushes (Matched to Your Motor)</a>
-            <a href="#motor-brushes" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#at-a-glance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Parts at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Commonly Bought Treadmill Parts on Amazon</a>
-          <a href="#which-parts-fail" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Treadmill Parts Fail, and Why</a>
-          <a href="#model-and-serial" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Find Your Model and Serial Number First</a>
-          <a href="#oem-vs-aftermarket" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. OEM vs Aftermarket Treadmill Parts</a>
-          <a href="#where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Where to Buy Parts, Brand by Brand</a>
-          <a href="#warranty-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Check the Warranty Before You Buy Anything</a>
-          <a href="#worth-fixing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When the Part Costs More Than the Treadmill Is Worth</a>
-          <a href="#diy-or-technician" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Fit It Yourself or Call a Technician?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#at-a-glance">Treadmill Parts at a Glance</a></li>
+            <li><a href="#picks">Commonly Bought Treadmill Parts on Amazon</a></li>
+            <li><a href="#which-parts-fail">Which Treadmill Parts Fail, and Why</a></li>
+            <li><a href="#model-and-serial">Find Your Model and Serial Number First</a></li>
+            <li><a href="#oem-vs-aftermarket">OEM vs Aftermarket Treadmill Parts</a></li>
+            <li><a href="#where-to-buy">Where to Buy Parts, Brand by Brand</a></li>
+            <li><a href="#warranty-first">Check the Warranty Before You Buy Anything</a></li>
+            <li><a href="#worth-fixing">When the Part Costs More Than the Treadmill Is Worth</a></li>
+            <li><a href="#diy-or-technician">Fit It Yourself or Call a Technician?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Treadmill parts are not hard to buy. They are easy to buy wrong. The same model name can cover
-          several versions built years apart with different motors, belts and boards, and the only reliable
-          way to tell them apart is the model and serial number on the frame. Find that first, and the rest
-          of this page is a matter of choosing who to buy from.
-        </p>
 
         <div id="at-a-glance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Parts at a Glance</h2>
+          <h2>Treadmill Parts at a Glance</h2>
 <p>
             The parts that wear or fail most often, what they do, and the scale of what they cost. The prices
             are from one independent parts seller, FitnessRepairParts, for one home treadmill, a NordicTrack
@@ -442,14 +401,12 @@ const schema = {
           <p>
             Two things stand out. The parts that fail most often, the key, the lubricant and the drive belt,
             are cheap. The ones that end a treadmill’s life, the motor, the control board and the console, can
-            each cost a large share of what a budget machine sold for, before labour. Our
-            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
-            covers diagnosis; this page is about buying the part once you know which it is.
+            each cost a large share of what a budget machine sold for, before labour. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a> covers diagnosis; this page is about buying the part once you know which it is.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Commonly Bought Treadmill Parts on Amazon</h2>
+          <h2>Commonly Bought Treadmill Parts on Amazon</h2>
 <p>
             Amazon is a good place for the generic consumables and universal parts every treadmill uses, and
             a poor place for model-specific electronics, where a wrong match is easy and returns are slow.
@@ -457,104 +414,84 @@ const schema = {
             says how.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="which-parts-fail" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Treadmill Parts Fail, and Why</h2>
+          <h2>Which Treadmill Parts Fail, and Why</h2>
 <p>
             Treadmills fail in a fairly predictable order, and most of the order is driven by friction.
           </p>
           <p>
             <strong>The walking belt and deck.</strong> The belt slides over the deck thousands of times a
             session. Without lubricant, or with a worn belt, friction rises, the motor works harder and the
-            belt starts to slip or hesitate. Belts last years with care; our guide to
-            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often to replace a belt</a>
-            has the signs, and our
-            <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">belt replacement cost guide</a>
-            the prices. A worn deck often goes with a worn belt; see
-            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement</a>.
+            belt starts to slip or hesitate. Belts last years with care; our guide to <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often to replace a belt</a> has the signs, and our <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">belt replacement cost guide</a> the prices. A worn deck often goes with a worn belt; see <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement</a>.
           </p>
           <p>
             <strong>The drive belt.</strong> The short belt between the motor and the front roller stretches
             and glazes over time. A slipping drive belt feels like the walking belt hesitating under each
-            footstrike. It is cheap and, on most machines, reachable under the motor hood; our
-            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">drive belt guide</a>
-            explains how to tell the two belts’ faults apart.
+            footstrike. It is cheap and, on most machines, reachable under the motor hood; our <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">drive belt guide</a> explains how to tell the two belts’ faults apart.
           </p>
           <p>
             <strong>Motor brushes.</strong> Brushed DC motors, common in home treadmills, have carbon brushes
             that wear down. Worn brushes cause a loss of power or intermittent drive and are a small part to
-            replace; our
-            <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">motor brushes guide</a>
-            covers which motors have them.
+            replace; our <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">motor brushes guide</a> covers which motors have them.
           </p>
           <p>
             <strong>The motor control board.</strong> The board that drives the motor is the most common
@@ -563,18 +500,12 @@ const schema = {
           </p>
           <p>
             <strong>The drive motor.</strong> Motors usually outlast the rest of a home treadmill, but not
-            always; our guide to
-            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
-            sets out what shortens their life.
+            always; our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> sets out what shortens their life.
           </p>
           <p>
             <strong>Sensors, keys and consoles.</strong> A speed sensor that has slipped out of position, a
             safety key whose magnet has weakened, and consoles with failed buttons or displays are the common
-            electrical faults. Our guides to the
-            <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">speed sensor</a>, the
-            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">safety key</a>
-            and the <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">console</a>
-            help you rule out the cheap fixes first.
+            electrical faults. Our guides to the <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">speed sensor</a>, the <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">safety key</a> and the <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">console</a> help you rule out the cheap fixes first.
           </p>
           <p>
             Also on the list: rollers and their bearings (a rhythmic noise that rises with speed), incline
@@ -584,7 +515,7 @@ const schema = {
         </div>
 
         <div id="model-and-serial" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Find Your Model and Serial Number First</h2>
+          <h2>Find Your Model and Serial Number First</h2>
 <p>
             Every parts seller, official or not, asks for the model number, and most also need the serial
             number, because one model name can cover several builds. A Life Fitness parts guide from Sportsmith,
@@ -626,15 +557,12 @@ const schema = {
           </p>
           <p>
             <strong>Photograph the sticker.</strong> Stickers fade and peel. Take a photo the day you find it,
-            and keep it with the manual. Our guide to
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack</a>
-            and our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a>
-            both start with the same step.
+            and keep it with the manual. Our guide to <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack</a> and our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a> both start with the same step.
           </p>
         </div>
 
         <div id="oem-vs-aftermarket" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. OEM vs Aftermarket Treadmill Parts</h2>
+          <h2>OEM vs Aftermarket Treadmill Parts</h2>
 <p>
             An <strong>OEM</strong> part is made or supplied by the treadmill’s maker, the same part your
             machine left the factory with. An <strong>aftermarket</strong> part is made by someone else to fit.
@@ -651,9 +579,7 @@ const schema = {
             <strong>Aftermarket is often fine for belts and consumables.</strong> Walking belts, drive belts,
             lubricant and universal safety keys are made by specialist suppliers to the original dimensions,
             and a good aftermarket belt can be cheaper than the maker’s and as durable. The catch is matching:
-            a walking belt must be the exact length and width, and our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            shows how to measure. A drive belt must match the profile and length, ideally by the maker’s part
+            a walking belt must be the exact length and width, and our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> shows how to measure. A drive belt must match the profile and length, ideally by the maker’s part
             number.
           </p>
           <p>
@@ -670,14 +596,12 @@ const schema = {
           </p>
           <p>
             <strong>Lubricant is the exception to “generic is fine”.</strong> Most makers specify 100% silicone,
-            and some decks are pre-waxed and must not be oiled at all. Check the manual before you buy; our
-            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">lubricant guide</a>
-            explains how to tell.
+            and some decks are pre-waxed and must not be oiled at all. Check the manual before you buy; our <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">lubricant guide</a> explains how to tell.
           </p>
         </div>
 
         <div id="where-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Where to Buy Parts, Brand by Brand</h2>
+          <h2>Where to Buy Parts, Brand by Brand</h2>
 <p>
             Start with the maker if the machine is in warranty, and with the maker or an authorised parts
             seller for electronics. Use independent sellers for availability and price, and Amazon for
@@ -692,8 +616,7 @@ const schema = {
             the current route through their support sites. For ProForm treadmill parts and NordicTrack treadmill
             parts out of warranty, FitnessRepairParts and Sears PartsDirect list parts by model number and iFIT
             part number, including many for older machines; FitnessRepairParts marks parts that are no longer
-            available. Our pages on <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a>
-            and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a> cover the
+            available. Our pages on <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a> and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a> cover the
             brands’ warranties.
           </p>
           <p>
@@ -702,8 +625,7 @@ const schema = {
             Independent sellers including Sears PartsDirect, FitnessRepairParts and Tread Parts, a
             Pennsylvania retailer that concentrates on Sole machines, sell Sole treadmill parts by model and
             year. Sole’s F-series has been sold in several versions under the same names, so the serial number
-            matters; our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand guide</a>
-            explains the warranty.
+            matters; our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand guide</a> explains the warranty.
           </p>
           <p>
             <strong>Life Fitness.</strong> The Life Fitness Parts Store, on its support site, takes service and
@@ -711,35 +633,29 @@ const schema = {
             Fitness says it is open only to domestic US commercial customers; phone orders carry a $4.95
             convenience fee. Home owners should contact Life Fitness customer support with the serial number.
             Sportsmith and FitnessRepairParts sell Life Fitness treadmill parts by serial range, including for
-            discontinued home models such as the 95T. See our
-            <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness guide</a> for the
+            discontinued home models such as the 95T. See our <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness guide</a> for the
             current range.
           </p>
           <p>
             <strong>Precor.</strong> Precor sells replacement parts through its dealers and directly, asks for
             the serial number when you buy, and gives parts a one-year replacement warranty with no labour. Its
             technicians can recommend an authorised service provider. Precor treadmill parts also appear at
-            Sportsmith and FitnessRepairParts. Our
-            <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor guide</a> covers the
+            Sportsmith and FitnessRepairParts. Our <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor guide</a> covers the
             machines.
           </p>
           <p>
             <strong>Amazon.</strong> Best for silicone lubricant, universal safety keys, generic walking belts
             in common sizes and drive belts matched by part number. Check the listing’s dimensions or part
-            number against your machine, not just the brand name in the title. Our guide to
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories</a>
-            covers the non-part add-ons.
+            number against your machine, not just the brand name in the title. Our guide to <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories</a> covers the non-part add-ons.
           </p>
           <p>
             <strong>A local repair shop.</strong> Many fitness repair technicians stock common parts and can
-            source the rest, and they will confirm the diagnosis before you buy. Our guide to
-            <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">finding treadmill repair near you</a>
-            explains what a visit costs.
+            source the rest, and they will confirm the diagnosis before you buy. Our guide to <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">finding treadmill repair near you</a> explains what a visit costs.
           </p>
         </div>
 
         <div id="warranty-first" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Check the Warranty Before You Buy Anything</h2>
+          <h2>Check the Warranty Before You Buy Anything</h2>
 <p>
             Many owners buy a part their warranty would have covered. Before ordering:
           </p>
@@ -747,9 +663,7 @@ const schema = {
             <strong>Read your warranty’s parts term, not just the motor term.</strong> Treadmill warranties are
             split: a long or lifetime term on the frame and motor, and much shorter terms on parts, electronics
             and labour. A failed control board in year three may be outside the parts term even though the
-            motor is covered for life. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how the terms divide.
+            motor is covered for life. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how the terms divide.
           </p>
           <p>
             <strong>Register, or check your registration.</strong> iFIT shows warranty end dates in your account;
@@ -770,7 +684,7 @@ const schema = {
         </div>
 
         <div id="worth-fixing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When the Part Costs More Than the Treadmill Is Worth</h2>
+          <h2>When the Part Costs More Than the Treadmill Is Worth</h2>
 <p>
             A treadmill is worth repairing while the repair costs clearly less than replacing it with something
             as good. The arithmetic is simple; the inputs take a few minutes to find.
@@ -782,10 +696,7 @@ const schema = {
           </p>
           <p>
             <strong>2. Price the replacement.</strong> Not the original price, but what an equivalent machine
-            costs today, new or used. Our guides to
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what treadmills cost</a>
-            and <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">buying a used treadmill</a>
-            give the ranges.
+            costs today, new or used. Our guides to <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what treadmills cost</a> and <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">buying a used treadmill</a> give the ranges.
           </p>
           <p>
             <strong>3. Weigh the age and what else is worn.</strong> A machine needing a board and a belt in the
@@ -807,19 +718,15 @@ const schema = {
           </p>
           <p>
             If it is not worth fixing, a working-but-tired treadmill may still be worth something to a buyer who
-            repairs them, and a dead one has to be recycled properly; our guide to
-            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a>
-            covers the options.
+            repairs them, and a dead one has to be recycled properly; our guide to <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a> covers the options.
           </p>
         </div>
 
         <div id="diy-or-technician" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Fit It Yourself or Call a Technician?</h2>
+          <h2>Fit It Yourself or Call a Technician?</h2>
 <p>
             Most owners can fit a safety key, apply lubricant and adjust or replace a drive belt with basic
-            tools. A walking belt is a bigger job but a manageable one; our guide to
-            <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">replacing a treadmill belt</a>
-            walks through it. Motor control boards and consoles are plug-in parts on many machines, but you are
+            tools. A walking belt is a bigger job but a manageable one; our guide to <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">replacing a treadmill belt</a> walks through it. Motor control boards and consoles are plug-in parts on many machines, but you are
             working inside the motor compartment with mains wiring.
           </p>
           <p>
@@ -836,146 +743,161 @@ const schema = {
           </p>
           <p>
             Prevention is cheaper than either. Most expensive failures start with friction: keep the belt
-            lubricated, tensioned and centred, and the motor compartment clean. Our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">treadmill maintenance checklist</a>
-            sets out the routine.
+            lubricated, tensioned and centred, and the motor compartment clean. Our <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">treadmill maintenance checklist</a> sets out the routine.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I buy treadmill parts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                From the treadmill’s maker for electronics and anything under warranty; from independent parts sellers such as FitnessRepairParts, Sears PartsDirect and Sportsmith, which list parts by the maker’s part numbers; and from Amazon for lubricant, universal safety keys and belts matched by size or part number. A local repair technician can also source parts and confirm the diagnosis.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where do I find my treadmill’s model and serial number?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a decal on the frame. NordicTrack and ProForm manuals show the decal’s location on their front cover; it is often low on the frame at the front or rear. Life Fitness treadmills usually carry it on the frame underneath, and Precor says its label is near the power cord entry and under the left rear of the frame. Photograph it once you find it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where do I buy NordicTrack or ProForm treadmill parts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Both are iFIT brands, and their manuals direct you to iFIT customer service to order parts, quoting the model number, serial number and the part’s key number from the manual’s parts list. Your iFIT account shows your warranty end dates. Out of warranty, FitnessRepairParts and Sears PartsDirect list many NordicTrack and ProForm parts by model and part number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are aftermarket treadmill parts any good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For belts, drive belts, lubricant and safety keys, a good aftermarket part made to the original dimensions is usually fine. For motor control boards, consoles, sensors and motors, use the maker’s part: they are matched to your machine, and some makers, Precor among them, say non-approved parts can void the warranty.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can home owners buy Life Fitness treadmill parts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not through the Life Fitness Parts Store, which Life Fitness says is open only to domestic US commercial customers. Home owners should contact Life Fitness customer support with the serial number, or buy from independent sellers such as Sportsmith and FitnessRepairParts, which list Life Fitness parts by model and serial range.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth replacing a treadmill motor or control board?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a well-built machine whose frame and belt are sound, often yes. On a budget folding treadmill several years old, a motor or board can approach half the price of a comparable new machine once labour is added, and that is the point to compare it with replacing the treadmill. Rule out cheap causes such as the drive belt, brushes and lubrication first.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Treadmill Parts</h2>
+          <p>Each of these turns a cheap repair into an expensive one, or a working treadmill into a box of returned parts.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering by model name instead of serial number</h3>
+              <p>The same model name can cover several builds with different belts, boards and motors. Find the model and serial number on the frame, and order by those plus the maker’s part or key number. A part that fits “the 1750” may not fit yours.</p>
+            </li>
+            <li>
+              <h3>Buying the expensive part before the cheap diagnosis</h3>
+              <p>A belt that hesitates may be a $25 drive belt or a dry deck, not a $200 control board. Work through the cheap causes first, or pay a technician to diagnose before you order an expensive electronic part that is often non-returnable.</p>
+            </li>
+            <li>
+              <h3>Paying for a part the warranty covers</h3>
+              <p>Parts terms are shorter than motor and frame terms, but they are often longer than owners think. Check your warranty and registration before buying anything, and keep the old part in case the maker or seller wants it back.</p>
+            </li>
+            <li>
+              <h3>Replacing a board without fixing what killed it</h3>
+              <p>Control boards often fail because the motor was straining against a dry or worn belt. Fit a new board without fixing the friction, and it can fail again. Lubricate, check the belt and deck, and check the motor before you power up a new board.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Treadmill Parts</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a cheap repair into an expensive one, or a working treadmill into a box of returned parts.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering by model name instead of serial number</h3>
-              <p class="text-gray-700 text-sm m-0">The same model name can cover several builds with different belts, boards and motors. Find the model and serial number on the frame, and order by those plus the maker’s part or key number. A part that fits “the 1750” may not fit yours.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the expensive part before the cheap diagnosis</h3>
-              <p class="text-gray-700 text-sm m-0">A belt that hesitates may be a $25 drive belt or a dry deck, not a $200 control board. Work through the cheap causes first, or pay a technician to diagnose before you order an expensive electronic part that is often non-returnable.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for a part the warranty covers</h3>
-              <p class="text-gray-700 text-sm m-0">Parts terms are shorter than motor and frame terms, but they are often longer than owners think. Check your warranty and registration before buying anything, and keep the old part in case the maker or seller wants it back.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing a board without fixing what killed it</h3>
-              <p class="text-gray-700 text-sm m-0">Control boards often fail because the motor was straining against a dry or worn belt. Fit a new board without fixing the friction, and it can fail again. Lubricate, check the belt and deck, and check the motor before you power up a new board.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Repair &amp; Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-repair-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Repairs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Repair Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Diagnosing the common faults before you buy a part.</p>
-            </a>
-            <a href="/treadmill-belt-replacement-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Replacement Cost</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What a new walking belt costs, generic and OEM, fitted or DIY.</p>
-            </a>
-            <a href="/treadmill-repair-near-me/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Repairs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Repair Near Me</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Finding a technician and what a home visit costs.</p>
-            </a>
-            <a href="/treadmill-warranty-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Warranty</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Warranty Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How frame, motor, parts and labour terms divide.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Find the model and serial number on the frame before anything else, and confirm the fault before you
             buy. Keys, lubricant and drive belts are cheap and fix more problems than their price suggests;
             boards, motors and consoles are where you need the maker’s part, matched by serial number, and where
             you should compare the repair with the cost of replacing the machine.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             For NordicTrack and ProForm, go through iFIT; for Sole, its parts request form; for Precor, Precor or
-            a dealer; for Life Fitness at home, customer support or an independent seller. Our
-            <a href="/treadmill-repair-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill repair guide</a>
-            covers the diagnosis.
+            a dealer; for Life Fitness at home, customer support or an independent seller. Our <a href="/treadmill-repair-guide/" class="text-[#5AA9FF] font-bold no-underline">treadmill repair guide</a> covers the diagnosis.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-repair-guide/">Treadmill Repair Guide</a></li>
+            <li><a href="/treadmill-belt-replacement-cost/">Treadmill Belt Replacement Cost</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where can I buy treadmill parts?</h3></summary>
+            <p class="faq-a">
+              From the treadmill’s maker for electronics and anything under warranty; from independent parts sellers such as FitnessRepairParts, Sears PartsDirect and Sportsmith, which list parts by the maker’s part numbers; and from Amazon for lubricant, universal safety keys and belts matched by size or part number. A local repair technician can also source parts and confirm the diagnosis.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where do I find my treadmill’s model and serial number?</h3></summary>
+            <p class="faq-a">
+              On a decal on the frame. NordicTrack and ProForm manuals show the decal’s location on their front cover; it is often low on the frame at the front or rear. Life Fitness treadmills usually carry it on the frame underneath, and Precor says its label is near the power cord entry and under the left rear of the frame. Photograph it once you find it.
             </p>
+          </details>
+          <details>
+            <summary><h3>Where do I buy NordicTrack or ProForm treadmill parts?</h3></summary>
+            <p class="faq-a">
+              Both are iFIT brands, and their manuals direct you to iFIT customer service to order parts, quoting the model number, serial number and the part’s key number from the manual’s parts list. Your iFIT account shows your warranty end dates. Out of warranty, FitnessRepairParts and Sears PartsDirect list many NordicTrack and ProForm parts by model and part number.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are aftermarket treadmill parts any good?</h3></summary>
+            <p class="faq-a">
+              For belts, drive belts, lubricant and safety keys, a good aftermarket part made to the original dimensions is usually fine. For motor control boards, consoles, sensors and motors, use the maker’s part: they are matched to your machine, and some makers, Precor among them, say non-approved parts can void the warranty.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can home owners buy Life Fitness treadmill parts?</h3></summary>
+            <p class="faq-a">
+              Not through the Life Fitness Parts Store, which Life Fitness says is open only to domestic US commercial customers. Home owners should contact Life Fitness customer support with the serial number, or buy from independent sellers such as Sportsmith and FitnessRepairParts, which list Life Fitness parts by model and serial range.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth replacing a treadmill motor or control board?</h3></summary>
+            <p class="faq-a">
+              On a well-built machine whose frame and belt are sound, often yes. On a budget folding treadmill several years old, a motor or board can approach half the price of a comparable new machine once labour is added, and that is the point to compare it with replacing the treadmill. Rule out cheap causes such as the drive belt, brushes and lubrication first.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Repair &amp; Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-repair-guide/" class="card">
+            <div class="c-kicker">Repairs</div>
+            <div class="c-title">Treadmill Repair Guide</div>
+            <p class="c-blurb">Diagnosing the common faults before you buy a part.</p>
+          </a>
+          <a href="/treadmill-belt-replacement-cost/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">Treadmill Belt Replacement Cost</div>
+            <p class="c-blurb">What a new walking belt costs, generic and OEM, fitted or DIY.</p>
+          </a>
+          <a href="/treadmill-repair-near-me/" class="card">
+            <div class="c-kicker">Repairs</div>
+            <div class="c-title">Treadmill Repair Near Me</div>
+            <p class="c-blurb">Finding a technician and what a home visit costs.</p>
+          </a>
+          <a href="/treadmill-warranty-guide/" class="card">
+            <div class="c-kicker">Warranty</div>
+            <div class="c-title">Treadmill Warranty Guide</div>
+            <p class="c-blurb">How frame, motor, parts and labour terms divide.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

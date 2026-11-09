@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Workouts (2026): How to Structure a Week That Works";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-workouts/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,109 +109,71 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Four Session Types", link: "#four-types" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillworkouts" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillworkouts)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Training Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Workouts</h1>
+      <p class="ed-dek">
+        Most treadmill training fails for one of two reasons: every session is the same, or every session is hard. Four session types and one rule about how to combine them fix both.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill <span class="text-[#5AA9FF]">Workouts</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most treadmill training fails for one of two reasons: every session is the same, or every session is hard. Four session types and one rule about how to combine them fix both.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#four-types" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Four Session Types
-          </a>
-          <a href="#building-a-week" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Build Your Week
-          </a>
-        </div>
+        <a href="#four-types" class="btn-ghost">The Four Session Types</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="6.8k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">A note on what this is.</strong> We review treadmills; we
-          are not clinicians, coaches or dietitians. This is a guide to structuring training on a
-          machine, not personalised advice. If you have a heart condition, are pregnant, are
-          recovering from injury or surgery, or have been inactive for a long time, speak to your
-          doctor before starting. Stop and seek advice for chest pain, unusual breathlessness,
-          dizziness or an irregular heartbeat.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#why-plans-fail" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Most Treadmill Habits Die</a>
-          <a href="#four-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Four Session Types</a>
-          <a href="#easy-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Easy Steady: The One Everyone Skips</a>
-          <a href="#interval-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Intervals: Short, Hard, and Not Often</a>
-          <a href="#incline-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Incline: The Most Efficient Session on the Machine</a>
-          <a href="#long-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Long Sessions, and Why They Are Easy</a>
-          <a href="#building-a-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Building a Week</a>
-          <a href="#progression" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Progress Without Breaking</a>
-          <a href="#speed-vs-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Speed or Incline: Which to Turn Up</a>
-          <a href="#warm-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Warm-Up, Cool-Down and Treadmill-Specific Safety</a>
-          <a href="#console-numbers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. What the Console Is and Is Not Telling You</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Where to Start</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill can do exactly four useful things: let you go easy for a long time, go hard
           for a short time, go uphill, or go far. Almost every workout ever written is a
           combination of those four, and almost every failed treadmill habit is a failure to
           combine them at all.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">A note on what this is.</strong> We review treadmills; we
+          are not clinicians, coaches or dietitians. This is a guide to structuring training on a
+          machine, not personalised advice. If you have a heart condition, are pregnant, are
+          recovering from injury or surgery, or have been inactive for a long time, speak to your
+          doctor before starting. Stop and seek advice for chest pain, unusual breathlessness,
+          dizziness or an irregular heartbeat.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#why-plans-fail">Why Most Treadmill Habits Die</a></li>
+            <li><a href="#four-types">The Four Session Types</a></li>
+            <li><a href="#easy-sessions">Easy Steady: The One Everyone Skips</a></li>
+            <li><a href="#interval-sessions">Intervals: Short, Hard, and Not Often</a></li>
+            <li><a href="#incline-sessions">Incline: The Most Efficient Session on the Machine</a></li>
+            <li><a href="#long-sessions">Long Sessions, and Why They Are Easy</a></li>
+            <li><a href="#building-a-week">Building a Week</a></li>
+            <li><a href="#progression">How to Progress Without Breaking</a></li>
+            <li><a href="#speed-vs-incline">Speed or Incline: Which to Turn Up</a></li>
+            <li><a href="#warm-up">Warm-Up, Cool-Down and Treadmill-Specific Safety</a></li>
+            <li><a href="#console-numbers">What the Console Is and Is Not Telling You</a></li>
+            <li><a href="#verdict">Where to Start</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="why-plans-fail" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Most Treadmill Habits Die</h2>
+          <h2>Why Most Treadmill Habits Die</h2>
 <p>
             Two failure patterns account for the overwhelming majority of abandoned treadmills,
             and they look like opposites while sharing a cause.
@@ -216,8 +183,7 @@ const schema = {
             times a week, forever. It works for about six weeks, then the body adapts, progress
             stops, and the boredom that was tolerable while you were improving stops being
             tolerable. Nothing is wrong with the session; the problem is that it is the only one.
-            (Whether you can train every day at all is answered in
-            <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">can you use a treadmill every day</a>.)
+            (Whether you can train every day at all is answered in <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">can you use a treadmill every day</a>.)
           </p>
           <p>
             <strong>Every session is hard.</strong> The opposite error, usually from someone who
@@ -234,7 +200,7 @@ const schema = {
         </div>
 
         <div id="four-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Four Session Types</h2>
+          <h2>The Four Session Types</h2>
 <p>
             <strong>Easy steady.</strong> A conversational pace you could hold much longer than
             you do. This is the session most people skip because it does not feel like work, and
@@ -245,15 +211,12 @@ const schema = {
             <strong>Intervals.</strong> Short repeated efforts at a pace you could not hold, with
             recovery between. This is where speed and top-end fitness come from, and where most of
             the injury risk lives. One session a week is plenty for most people; two is the ceiling.
-            Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workout guide</a>
-            covers the structures.
+            Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workout guide</a> covers the structures.
           </p>
           <p>
             <strong>Incline.</strong> Walking or running uphill. More cardiovascular work per
             minute at the same impact, which makes it the most efficient session on the machine
-            for anyone protecting their joints. Our
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a>
-            covers the best-known version.
+            for anyone protecting their joints. Our <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a> covers the best-known version.
           </p>
           <p>
             <strong>Long.</strong> One session meaningfully longer than the rest. Builds
@@ -264,7 +227,7 @@ const schema = {
         </div>
 
         <div id="easy-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Easy Steady: The One Everyone Skips</h2>
+          <h2>Easy Steady: The One Everyone Skips</h2>
 <p>
             The defining test is conversational. If you could hold a conversation in full
             sentences without gasping, you are in the right zone. If you are answering in single
@@ -289,7 +252,7 @@ const schema = {
         </div>
 
         <div id="interval-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Intervals: Short, Hard, and Not Often</h2>
+          <h2>Intervals: Short, Hard, and Not Often</h2>
 <p>
             An interval session is repeated efforts hard enough that you are counting down to the
             recovery, separated by easy periods long enough that you can repeat the effort
@@ -313,14 +276,12 @@ const schema = {
             slow down naturally as you fatigue; on a machine the speed continues until you change
             it. Set intervals at a pace you can complete for the final round, not the first, and
             never step onto a moving belt at interval speed — use the rails and start it from
-            standing. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a>
-            has the full session library.
+            standing. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a> has the full session library.
           </p>
         </div>
 
         <div id="incline-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Incline: The Most Efficient Session on the Machine</h2>
+          <h2>Incline: The Most Efficient Session on the Machine</h2>
 <p>
             Incline is the treadmill's genuine advantage over running outdoors, and it is
             under-used. Raising the grade increases cardiovascular work substantially without
@@ -335,9 +296,7 @@ const schema = {
           <p>
             Build gradually. Start at 2 to 3% and add a percent at a time across weeks, not
             within a session. Steep grades shift work toward the quadriceps and the front of the
-            knee, which some people tolerate poorly — our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">guide for knee pain</a>
-            covers that.
+            knee, which some people tolerate poorly — our <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">guide for knee pain</a> covers that.
           </p>
           <p>
             The rule that matters most: do not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a>. Leaning on the handrails transfers
@@ -346,14 +305,13 @@ const schema = {
             light hand or none, the grade is too high.
           </p>
           <p>
-            Our <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a>
-            covers the most popular structured version, with a four-week build-up and an honest
+            Our <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a> covers the most popular structured version, with a four-week build-up and an honest
             account of who it suits.
           </p>
         </div>
 
         <div id="long-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Long Sessions, and Why They Are Easy</h2>
+          <h2>Long Sessions, and Why They Are Easy</h2>
 <p>
             One session a week noticeably longer than the others. For a walker that might be 60
             minutes against a usual 30; for a runner, 50 to 70 minutes against a usual 30 to 40.
@@ -379,7 +337,7 @@ const schema = {
         </div>
 
         <div id="building-a-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Building a Week</h2>
+          <h2>Building a Week</h2>
 <p>
             The principle underneath every version below: <strong>most of your week should be
             easy, and hard sessions should be genuinely hard and genuinely rare.</strong> Broadly
@@ -406,14 +364,13 @@ const schema = {
             two sessions a week sustained for a year is a genuinely good outcome.
           </p>
           <p>
-            For a week-by-week version of all of this, see our
-            <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium">12-week treadmill workout plan</a>, which sets the speed,
+            For a week-by-week version of all of this, see our <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium">12-week treadmill workout plan</a>, which sets the speed,
             incline and minutes for walkers, beginner runners and runners.
           </p>
         </div>
 
         <div id="progression" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How to Progress Without Breaking</h2>
+          <h2>How to Progress Without Breaking</h2>
 <p>
             Progress by changing one variable at a time, and by roughly ten per cent at a time.
             The order matters: <strong>frequency, then duration, then intensity.</strong>
@@ -444,7 +401,7 @@ const schema = {
         </div>
 
         <div id="speed-vs-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Speed or Incline: Which to Turn Up</h2>
+          <h2>Speed or Incline: Which to Turn Up</h2>
 <p>
             When you want a session to be harder, you have two dials. They are not equivalent.
           </p>
@@ -466,15 +423,12 @@ const schema = {
           <p>
             A useful conversion to keep in mind: walking at 3 mph on a 10% grade is roughly
             comparable in effort to jogging at 5 mph on the flat, at a fraction of the joint load.
-            Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            has the full conversions, and our
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade guide</a>
-            explains why 15% is far steeper than it sounds.
+            Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> has the full conversions, and our <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade guide</a> explains why 15% is far steeper than it sounds.
           </p>
         </div>
 
         <div id="warm-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Warm-Up, Cool-Down and Treadmill-Specific Safety</h2>
+          <h2>Warm-Up, Cool-Down and Treadmill-Specific Safety</h2>
 <p>
             <strong>Warm up for five to ten minutes</strong> at an easy pace before any session
             with intensity in it. Cold muscles and a sudden hard effort is the most avoidable
@@ -504,7 +458,7 @@ const schema = {
         </div>
 
         <div id="console-numbers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. What the Console Is and Is Not Telling You</h2>
+          <h2>What the Console Is and Is Not Telling You</h2>
 <p>
             Treadmill displays present several numbers with equal confidence, and they are not
             equally reliable.
@@ -524,9 +478,7 @@ const schema = {
           <p>
             <strong>Grip heart rate sensors are unreliable</strong>, particularly at higher
             intensities and when your hands are damp. If you are training by heart rate, a chest
-            strap or a decent wrist monitor is a different class of measurement. Our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            covers what to do with the number once you trust it.
+            strap or a decent wrist monitor is a different class of measurement. Our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a> covers what to do with the number once you trust it.
           </p>
           <p>
             The most reliable instrument available is your own breathing. Conversational means
@@ -536,7 +488,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Where to Start</h2>
+          <h2>Where to Start</h2>
 <p>
             If you are starting from nothing, do three sessions a week: two easy steady of 25 to
             30 minutes and one incline session. No intervals for the first month. Hold that for
@@ -548,11 +500,7 @@ const schema = {
             interval session. That single change is the most common fix.
           </p>
           <p>
-            If you want a specific goal, the spokes off this page cover them:
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval sessions</a>,
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">a beginner running progression</a>,
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">training for weight management</a>,
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate training</a>,
+            If you want a specific goal, the spokes off this page cover them: <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval sessions</a>, <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">a beginner running progression</a>, <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">training for weight management</a>, <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate training</a>,
             and the <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed reference</a>.
           </p>
           <p>
@@ -560,140 +508,154 @@ const schema = {
             hard, one change at a time.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should I use a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three to five times a week suits most people, with the majority of those sessions easy. Two sessions a week sustained for a year beats an ambitious five-session plan abandoned in week three. Add frequency before duration, and duration before intensity.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill workout for general fitness?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A week of two easy steady sessions of about 30 minutes and one incline session covers general fitness completely, with no intervals needed. Add one interval session per week only once that is comfortable and consistent — hard sessions should be genuinely hard and genuinely rare.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I increase speed or incline to make a workout harder?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Incline, unless your goal is specifically to run faster. Raising the grade increases cardiovascular demand without increasing impact per footfall or the risk of mis-stepping, whereas speed raises both. Walking at 3 mph on a 10% grade is roughly comparable in effort to jogging at 5 mph on the flat.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a treadmill workout be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Twenty to forty-five minutes covers almost everything. Interval sessions can be shorter — around 25 to 30 minutes including warm-up and cool-down — because the intensity does the work. One longer session of 50 to 70 minutes a week is useful if you are training toward a distance, and unnecessary otherwise.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are treadmill calorie counts accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not particularly, and they tend to be optimistic. They are calculated from speed, incline and time against a default body weight the machine usually does not know you have changed. Use the figure to compare one session with another rather than as an accounting of energy expended.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it bad to hold the treadmill handrails?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For balance, a light hand is fine. Leaning on them and supporting your weight is not, because it transfers load to your arms and the frame while the console keeps reporting the same workload. On incline especially, if you cannot walk the grade with a light hand or none, the grade is too high.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes in Treadmill Training</h2>
+          <p>The first two are the same error in opposite directions, and between them they account for most abandoned treadmill habits.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Making every session moderate</h3>
+              <p>Sessions that are all somewhat hard produce fatigue without the adaptation that genuinely easy work builds or the stimulus genuinely hard work provides. Make the easy sessions conversational — slower than feels satisfying — and let one session a week actually be difficult. Roughly four-fifths easy, one-fifth hard.</p>
+            </li>
+            <li>
+              <h3>Doing intervals three or four times a week</h3>
+              <p>High-intensity work is efficient per minute and expensive to recover from. One interval session a week is plenty for most people and two is the ceiling. More than that accumulates fatigue faster than fitness and ends in soreness or injury rather than progress.</p>
+            </li>
+            <li>
+              <h3>Adding speed before duration</h3>
+              <p>Progress in the order frequency, then duration, then intensity. Adding a fourth session to three is 33% more work; adding 0.5 mph is less additional work and considerably more impact. Change one variable at a time, by around ten per cent, and hold it two to three weeks before changing anything else.</p>
+            </li>
+            <li>
+              <h3>Setting interval speed for the first round</h3>
+              <p>The belt does not slow down as you tire the way you would outdoors — it holds the speed until you change it. Set interval pace at what you could complete on the final round, not the first, and never step onto a belt already moving at interval speed. Start from standing on the side rails.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes in Treadmill Training</h2>
-          <p class="text-gray-700 leading-relaxed">The first two are the same error in opposite directions, and between them they account for most abandoned treadmill habits.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Making every session moderate</h3>
-              <p class="text-gray-700 text-sm m-0">Sessions that are all somewhat hard produce fatigue without the adaptation that genuinely easy work builds or the stimulus genuinely hard work provides. Make the easy sessions conversational — slower than feels satisfying — and let one session a week actually be difficult. Roughly four-fifths easy, one-fifth hard.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing intervals three or four times a week</h3>
-              <p class="text-gray-700 text-sm m-0">High-intensity work is efficient per minute and expensive to recover from. One interval session a week is plenty for most people and two is the ceiling. More than that accumulates fatigue faster than fitness and ends in soreness or injury rather than progress.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Adding speed before duration</h3>
-              <p class="text-gray-700 text-sm m-0">Progress in the order frequency, then duration, then intensity. Adding a fourth session to three is 33% more work; adding 0.5 mph is less additional work and considerably more impact. Change one variable at a time, by around ten per cent, and hold it two to three weeks before changing anything else.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Setting interval speed for the first round</h3>
-              <p class="text-gray-700 text-sm m-0">The belt does not slow down as you tire the way you would outdoors — it holds the speed until you change it. Set interval pace at what you could complete on the final round, not the first, and never step onto a belt already moving at interval speed. Start from standing on the side rails.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-interval-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Intervals</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Interval Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Session structures, and how often is too often.</p>
-            </a>
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Reference</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace & Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">mph to pace to km/h, and what each incline is worth.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The best-known incline protocol, with a gentler build-up.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Four session types cover everything: <strong class="text-white">easy steady, intervals,
             incline and long</strong>. Most of your week should be easy, hard sessions should be
             rare and genuinely hard, and you should change one variable at a time.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Starting out? Two easy sessions and one incline session a week is complete and
-            sufficient. Turn up the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#5AA9FF] font-bold no-underline">incline</a>
-            rather than the speed unless you are training specifically to run faster, and trust
+            sufficient. Turn up the <a href="/12-3-30-treadmill-workout/" class="text-[#5AA9FF] font-bold no-underline">incline</a> rather than the speed unless you are training specifically to run faster, and trust
             your breathing over the console's calorie count.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-interval-workouts/">Treadmill Interval Workouts</a></li>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace & Speed Chart</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How often should I use a treadmill?</h3></summary>
+            <p class="faq-a">
+              Three to five times a week suits most people, with the majority of those sessions easy. Two sessions a week sustained for a year beats an ambitious five-session plan abandoned in week three. Add frequency before duration, and duration before intensity.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best treadmill workout for general fitness?</h3></summary>
+            <p class="faq-a">
+              A week of two easy steady sessions of about 30 minutes and one incline session covers general fitness completely, with no intervals needed. Add one interval session per week only once that is comfortable and consistent — hard sessions should be genuinely hard and genuinely rare.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should I increase speed or incline to make a workout harder?</h3></summary>
+            <p class="faq-a">
+              Incline, unless your goal is specifically to run faster. Raising the grade increases cardiovascular demand without increasing impact per footfall or the risk of mis-stepping, whereas speed raises both. Walking at 3 mph on a 10% grade is roughly comparable in effort to jogging at 5 mph on the flat.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should a treadmill workout be?</h3></summary>
+            <p class="faq-a">
+              Twenty to forty-five minutes covers almost everything. Interval sessions can be shorter — around 25 to 30 minutes including warm-up and cool-down — because the intensity does the work. One longer session of 50 to 70 minutes a week is useful if you are training toward a distance, and unnecessary otherwise.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are treadmill calorie counts accurate?</h3></summary>
+            <p class="faq-a">
+              Not particularly, and they tend to be optimistic. They are calculated from speed, incline and time against a default body weight the machine usually does not know you have changed. Use the figure to compare one session with another rather than as an accounting of energy expended.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it bad to hold the treadmill handrails?</h3></summary>
+            <p class="faq-a">
+              For balance, a light hand is fine. Leaning on them and supporting your weight is not, because it transfers load to your arms and the frame while the console keeps reporting the same workload. On incline especially, if you cannot walk the grade with a light hand or none, the grade is too high.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-interval-workouts/" class="card">
+            <div class="c-kicker">Intervals</div>
+            <div class="c-title">Treadmill Interval Workouts</div>
+            <p class="c-blurb">Session structures, and how often is too often.</p>
+          </a>
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Reference</div>
+            <div class="c-title">Treadmill Pace & Speed Chart</div>
+            <p class="c-blurb">mph to pace to km/h, and what each incline is worth.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">The best-known incline protocol, with a gentler build-up.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Weight Plates (2026): Iron and Rubber-Coated Picks";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-weight-plates/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,154 +274,43 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: REP Fitness Equalizer Urethane-Coated Plates", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestweightplates" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestweightplates)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Weight Plates for a Home Gym: Iron, Rubber and Urethane</h1>
+      <p class="ed-dek">
+        Weight plates are the simplest thing in a home gym and the easiest to overpay for. The real differences are the coating, the hole size, how close each plate is to its stated weight, whether it has handles, and what it costs per pound once you add up a full set. Here are five currently sold options from about $1.25 to about $3.45 per pound, and how to choose.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#cap-olympic-grip-plates"><img src="https://m.media-amazon.com/images/I/51ijp8MqYqL._SL500_.jpg" alt="CAP Barbell Olympic Cast Iron Grip Plates" width="500" height="500" decoding="async" /></a>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Weight Plates <span class="text-[#5AA9FF]">for a Home Gym: Iron, Rubber and Urethane</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Weight plates are the simplest thing in a home gym and the easiest to overpay for. The real differences are the coating, the hole size, how close each plate is to its stated weight, whether it has handles, and what it costs per pound once you add up a full set. Here are five currently sold options from about $1.25 to about $3.45 per pound, and how to choose.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#price-per-pound" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Price per Pound
-          </a>
-        </div>
-      </div>
-    </div>
+        <figcaption>CAP Barbell Olympic Cast Iron Grip Plates</figcaption>
+      </figure>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          plates, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
-          each plate as currently listed on its maker's own store (REP Fitness, CAP Barbell and Titan
-          Fitness) and checked its weights, hole size, tolerance and warranty against at least one
-          independent source: Garage Gym Reviews' weight plate guide, its in-depth review of REP's
-          Equalizer iron plates and its CAP grip plate page, and BarBend's weight plate guide. A
-          figure appears on a card only where the maker and an independent source agree; where they
-          conflicted — on one plate's warranty and finish — we left it out and say so on the card.
-          Titan's grip plate set is the exception: we found no independent review of it, so its card
-          carries Titan's own figures only and says so.
-          <strong class="text-gray-900">Where to buy.</strong> Amazon's pages would not load for us
-          that day, so Amazon availability was confirmed from Amazon US listings returned by search
-          and from review sites' Amazon links: we found REP's Old School iron plates and CAP's grip
-          plates listed there. We could not confirm Amazon listings for REP's two Equalizer plates or
-          Titan's grip plate set, so those buttons run an Amazon search that may show similar plates.
-          Every brand was checked against the US Consumer Product Safety Commission's recall database
-          on the same date, along with weight plates as a category. Single plates and small pairs
-          cost well under $100; the price ranges on the cards cover pairs and packs, and per-pound
-          figures are our arithmetic from the prices we saw. Prices change often. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
-          here is a training programme. Plates are heavy and can crush fingers and feet; load and
-          unload them evenly, use collars, and lift inside a rack with the safeties set. If you have a
-          back, shoulder, joint or heart condition, are pregnant or postpartum, or are new to lifting
-          or returning from injury, talk to a qualified professional before you start.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#rep-equalizer-urethane-plates" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Equalizer Urethane-Coated Plates</a>
-            <a href="#rep-equalizer-urethane-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#rep-old-school-iron-plates" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Old School Iron Plates</a>
-            <a href="#rep-old-school-iron-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Made in USA:</span>
-            <a href="#rep-equalizer-iron-plates-usa" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Equalizer Iron Plates (USA-Made)</a>
-            <a href="#rep-equalizer-iron-plates-usa" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest Price:</span>
-            <a href="#cap-olympic-grip-plates" class="font-bold text-gray-900 no-underline hover:underline">CAP Barbell Olympic Cast Iron Grip Plates</a>
-            <a href="#cap-olympic-grip-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Rubber-Coated Set:</span>
-            <a href="#titan-grip-plates-245" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Black Grip Plates (245 lb Set)</a>
-            <a href="#titan-grip-plates-245" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Weight Plate Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Weight Plates</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Weight Plates</a>
-          <a href="#iron-vs-coated" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Cast Iron, Rubber-Coated, Urethane or Bumper?</a>
-          <a href="#olympic-vs-standard" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Olympic 2-Inch vs Standard 1-Inch Plates</a>
-          <a href="#tolerance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Weight Tolerance: 3%, 2% or Calibrated</a>
-          <a href="#grip-handles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Grip Handles, Lips and Plate Exercises</a>
-          <a href="#price-per-pound" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Price per Pound: Sets vs Pairs</a>
-          <a href="#how-much" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Much Weight Should You Buy?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The best weight plates for most home gyms are Olympic 2-inch plates with grip handles,
           bought as a set that matches the lifts you do, from a maker that publishes a weight
           tolerance. Plain cast iron is the cheapest per pound and lasts for decades; rubber or
@@ -426,8 +320,79 @@ const schema = {
           the guide after them explains tolerance, hole sizes and how to price a set.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#rep-equalizer-urethane-plates">REP Fitness Equalizer Urethane-Coated Plates</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#rep-old-school-iron-plates">REP Fitness Old School Iron Plates</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Made in USA:</span> <a href="#rep-equalizer-iron-plates-usa">REP Fitness Equalizer Iron Plates (USA-Made)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lowest Price:</span> <a href="#cap-olympic-grip-plates">CAP Barbell Olympic Cast Iron Grip Plates</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Rubber-Coated Set:</span> <a href="#titan-grip-plates-245">Titan Fitness Black Grip Plates (245 lb Set)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          plates, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
+          each plate as currently listed on its maker's own store (REP Fitness, CAP Barbell and Titan
+          Fitness) and checked its weights, hole size, tolerance and warranty against at least one
+          independent source: Garage Gym Reviews' weight plate guide, its in-depth review of REP's
+          Equalizer iron plates and its CAP grip plate page, and BarBend's weight plate guide. A
+          figure appears on a card only where the maker and an independent source agree; where they
+          conflicted — on one plate's warranty and finish — we left it out and say so on the card.
+          Titan's grip plate set is the exception: we found no independent review of it, so its card
+          carries Titan's own figures only and says so. <strong class="text-gray-900">Where to buy.</strong> Amazon's pages would not load for us
+          that day, so Amazon availability was confirmed from Amazon US listings returned by search
+          and from review sites' Amazon links: we found REP's Old School iron plates and CAP's grip
+          plates listed there. We could not confirm Amazon listings for REP's two Equalizer plates or
+          Titan's grip plate set, so those buttons run an Amazon search that may show similar plates.
+          Every brand was checked against the US Consumer Product Safety Commission's recall database
+          on the same date, along with weight plates as a category. Single plates and small pairs
+          cost well under $100; the price ranges on the cards cover pairs and packs, and per-pound
+          figures are our arithmetic from the prices we saw. Prices change often. We earn a
+          commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
+          here is a training programme. Plates are heavy and can crush fingers and feet; load and
+          unload them evenly, use collars, and lift inside a rack with the safeties set. If you have a
+          back, shoulder, joint or heart condition, are pregnant or postpartum, or are new to lifting
+          or returning from injury, talk to a qualified professional before you start.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Weight Plate Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Weight Plates</a></li>
+            <li><a href="#how-we-chose">How We Chose These Weight Plates</a></li>
+            <li><a href="#iron-vs-coated">Cast Iron, Rubber-Coated, Urethane or Bumper?</a></li>
+            <li><a href="#olympic-vs-standard">Olympic 2-Inch vs Standard 1-Inch Plates</a></li>
+            <li><a href="#tolerance">Weight Tolerance: 3%, 2% or Calibrated</a></li>
+            <li><a href="#grip-handles">Grip Handles, Lips and Plate Exercises</a></li>
+            <li><a href="#price-per-pound">Price per Pound: Sets vs Pairs</a></li>
+            <li><a href="#how-much">How Much Weight Should You Buy?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Weight Plate Picks at a Glance</h2>
+          <h2>Our Weight Plate Picks at a Glance</h2>
 <p>
             Five picks, chosen so that each common type of iron plate — plain cast iron, coated iron
             with handles and precision-drilled US-made iron — is covered by something you can order
@@ -448,17 +413,14 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            Plates are only useful on the right bar. Our
-            <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbell guide</a> covers
+            Plates are only useful on the right bar. Our <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbell guide</a> covers
             Olympic bars, and if you plan to drop the bar — in cleans, snatches or heavy deadlifts —
-            our <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a>
-            is the one to read instead. The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>
-            collects every guide in this series.
+            our <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a> is the one to read instead. The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every guide in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Weight Plates</h2>
+          <h2>The 5 Best Weight Plates</h2>
 <p>
             Each card gives the figures we could confirm from the maker and an independent source,
             the price range we saw, and who the plates suit. All five are Olympic plates with 2-inch
@@ -470,78 +432,67 @@ const schema = {
             table further down puts them side by side.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Weight Plates</h2>
+          <h2>How We Chose These Weight Plates</h2>
 <p>
             We have not tested these plates. They were chosen from makers' product pages, published
             specifications, warranty terms, recall records and independent coverage, and the claims
@@ -577,16 +528,14 @@ const schema = {
             manufacturer fields and recall descriptions, and the category was searched for weight
             plates and Olympic plates. We found no recalls of iron or coated weight plates by any
             maker. The weight-plate recalls in the database involve adjustable dumbbells whose plates
-            can come loose — covered in our
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>
-            — and a 2021 recall of Impex's OBB-20 Olympic dumbbell handles, whose collars could slip
+            can come loose — covered in our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a> — and a 2021 recall of Impex's OBB-20 Olympic dumbbell handles, whose collars could slip
             and drop the plates. If you plan to load Olympic plates onto dumbbell handles, check the
             handles and collars before the plates.
           </p>
         </div>
 
         <div id="iron-vs-coated" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Cast Iron, Rubber-Coated, Urethane or Bumper?</h2>
+          <h2>Cast Iron, Rubber-Coated, Urethane or Bumper?</h2>
 <p>
             Every plate on this page has a cast-iron core. What differs is the outside, and that
             decides noise, floor protection, smell and price.
@@ -603,8 +552,7 @@ const schema = {
               longer than rubber, resists tearing and, according to both REP and Garage Gym Reviews,
               has little or no odour — which matters if your gym is in the house.</li>
             <li><strong>Bumper plates</strong> are solid rubber or urethane with a steel insert, built to
-              be dropped. They are much thicker and are a different purchase; see our
-              <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a>.</li>
+              be dropped. They are much thicker and are a different purchase; see our <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plate guide</a>.</li>
           </ul>
           <p>
             The rule that matters: <strong>coated iron plates are not bumper plates</strong>. REP says
@@ -617,7 +565,7 @@ const schema = {
         </div>
 
         <div id="olympic-vs-standard" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Olympic 2-Inch vs Standard 1-Inch Plates</h2>
+          <h2>Olympic 2-Inch vs Standard 1-Inch Plates</h2>
 <p>
             There are two incompatible sizes of plate. <strong>Olympic plates</strong> have a centre
             hole of about 2 inches — REP lists 52 mm on its Old School plates and Titan 50.6 mm on its
@@ -626,8 +574,7 @@ const schema = {
             whose ends usually do not rotate.
           </p>
           <p>
-            For a new home gym, buy Olympic. Every barbell in our
-            <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbell guide</a>, every
+            For a new home gym, buy Olympic. Every barbell in our <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbell guide</a>, every
             plate-loaded machine and every rack's plate storage is built around 2-inch plates, and
             standard bars are generally made for much lighter loads. Standard plates make sense only
             if you already own 1-inch bars or spinlock dumbbell handles. CAP still sells them: on
@@ -638,14 +585,12 @@ const schema = {
             Do not try to make standard plates work on an Olympic bar. Adapter sleeves exist, but a
             1-inch plate sitting loosely on a 2-inch sleeve is a poor and unsafe fit, and the money is
             better spent replacing the plates. Check, too, that any plate-loaded machine you own takes
-            2-inch plates; most do, and our
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine guide</a>
-            covers the plate-loaded options.
+            2-inch plates; most do, and our <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine guide</a> covers the plate-loaded options.
           </p>
         </div>
 
         <div id="tolerance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Weight Tolerance: 3%, 2% or Calibrated</h2>
+          <h2>Weight Tolerance: 3%, 2% or Calibrated</h2>
 <p>
             Cast-iron plates are poured into moulds, so no two come out identical. Makers publish a
             tolerance — how far from its stated weight a plate may be — and the plates here range from
@@ -681,7 +626,7 @@ const schema = {
         </div>
 
         <div id="grip-handles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Grip Handles, Lips and Plate Exercises</h2>
+          <h2>Grip Handles, Lips and Plate Exercises</h2>
 <p>
             Grip plates have cut-outs — six on REP's Equalizers — that make them
             easier to carry, load and unload, and to use on their own for plate presses, carries and
@@ -703,7 +648,7 @@ const schema = {
         </div>
 
         <div id="price-per-pound" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Price per Pound: Sets vs Pairs</h2>
+          <h2>Price per Pound: Sets vs Pairs</h2>
 <p>
             Per-pound prices are the fairest way to compare plates sold in different bundles. The
             figures below are our arithmetic from the prices on each maker's store on 19 October 2026,
@@ -744,7 +689,7 @@ const schema = {
         </div>
 
         <div id="how-much" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Much Weight Should You Buy?</h2>
+          <h2>How Much Weight Should You Buy?</h2>
 <p>
             Buy for the heaviest lift you will do in the next year, usually the deadlift, plus the
             small plates you need to progress. A common starting point is a 245 lb set — a pair each of
@@ -760,154 +705,161 @@ const schema = {
           </p>
           <p>
             Store plates on a tree or on your rack's plate horns, low and evenly loaded, not stacked
-            on the floor or leaning against a wall. Our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            explains why heavy storage belongs low on the rack, our
-            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench guide</a>
-            covers the bench you will press from, and our
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            covers plate trees and collars.
+            on the floor or leaning against a wall. Our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> explains why heavy storage belongs low on the rack, our <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench guide</a> covers the bench you will press from, and our <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a> covers plate trees and collars.
           </p>
           <p>
             Finally, protect the floor. Iron plates set down on concrete chip both the plates and the
-            slab; on wood, tile or vinyl they dent and crack. Even if you never drop the bar, a layer of
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">rubber gym flooring</a>
-            under the lifting area is worth having, and a
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform</a>
-            is the answer for heavy deadlifts.
+            slab; on wood, tile or vinyl they dent and crack. Even if you never drop the bar, a layer of <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">rubber gym flooring</a> under the lifting area is worth having, and a <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform</a> is the answer for heavy deadlifts.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best weight plates for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, Olympic 2-inch plates with grip handles from a maker that publishes a tolerance. REP's urethane-coated Equalizers are the best overall if you can pay about $3.45 a pound for a set; REP's Old School iron plates are the best value at about $2.16; CAP's grip plates are the cheapest at about $1.26.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are rubber-coated plates better than cast iron?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are quieter and kinder to floors and racks, and less likely to chip, but they cost more and can smell when new. Cast iron is cheaper, thinner and lasts indefinitely. Neither should be dropped. Choose coated plates for a gym in the house or a shared space, and iron for a garage on a budget.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between Olympic and standard weight plates?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Olympic plates have a centre hole of about 2 inches and fit Olympic bars with 50 mm rotating sleeves. Standard plates have a 1-inch hole and fit 1-inch bars and spinlock handles. They are not interchangeable. For a new home gym, buy Olympic plates, because racks, bars and plate-loaded machines are built around them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you drop rubber-coated weight plates?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Rubber- and urethane-coated plates are still iron plates, and REP says it does not recommend dropping any iron plate because it can damage the bar, the plates and the floor. If you plan to drop the bar in cleans, snatches or heavy deadlifts, buy bumper plates, which are made for it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much should weight plates cost per pound?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 19 October 2026, the plates we checked ranged from about $1.26 a pound for CAP's cast-iron grip plates in a large pack to about $3.45 for REP's urethane-coated plates in a 245 lb set. Small plates cost much more per pound than 45s, and shipping can change the comparison.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What weight plates should a beginner buy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A 245 lb set — a pair each of 45, 35, 25, 10, 5 and 2.5 lb plates — loads a 45 lb bar up to 290 lb and covers most beginners for a long time; a second pair of 10s fills the gaps between 5 lb steps. A 175 lb set without the 35s is a cheaper start; add a second pair of 45s when your deadlift needs it.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Weight Plates</h2>
+          <p>Each of these is easy to avoid before you order and expensive to correct afterwards.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying standard plates for an Olympic bar</h3>
+              <p>Cheap 1-inch standard plates will not fit a 2-inch Olympic sleeve properly, and adapters are a poor fix. Check the centre hole — about 2 inches for Olympic plates — before ordering, especially when buying used or in a bundle.</p>
+            </li>
+            <li>
+              <h3>Treating coated plates as bumpers</h3>
+              <p>Rubber and urethane coatings protect against knocks, not drops. Dropping coated iron plates can crack them, bend the bar and damage the floor. If your training includes drops, buy bumper plates for those lifts.</p>
+            </li>
+            <li>
+              <h3>Comparing prices by the plate, not the pound</h3>
+              <p>A set full of small plates looks cheap but costs more per pound, and freight can turn the cheapest set into the dearest. Work out the delivered price per pound for the plates you actually need before you compare.</p>
+            </li>
+            <li>
+              <h3>Skipping collars and uneven loading</h3>
+              <p>Plates slide on a moving bar, and one side loaded more than the other can tip a bar off its J-cups. Load and unload both sides alternately, use collars on every set, and keep heavy plates low on the rack's storage.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Weight Plates</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and expensive to correct afterwards.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying standard plates for an Olympic bar</h3>
-              <p class="text-gray-700 text-sm m-0">Cheap 1-inch standard plates will not fit a 2-inch Olympic sleeve properly, and adapters are a poor fix. Check the centre hole — about 2 inches for Olympic plates — before ordering, especially when buying used or in a bundle.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating coated plates as bumpers</h3>
-              <p class="text-gray-700 text-sm m-0">Rubber and urethane coatings protect against knocks, not drops. Dropping coated iron plates can crack them, bend the bar and damage the floor. If your training includes drops, buy bumper plates for those lifts.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing prices by the plate, not the pound</h3>
-              <p class="text-gray-700 text-sm m-0">A set full of small plates looks cheap but costs more per pound, and freight can turn the cheapest set into the dearest. Work out the delivered price per pound for the plates you actually need before you compare.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping collars and uneven loading</h3>
-              <p class="text-gray-700 text-sm m-0">Plates slide on a moving bar, and one side loaded more than the other can tip a bar off its J-cups. Load and unload both sides alternately, use collars on every set, and keep heavy plates low on the rack's storage.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rack types, plate storage and safeties for the bar and plates you choose.</p>
-            </a>
-            <a href="/best-weight-benches/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Benches</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Weight Benches</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Flat and adjustable benches, capacity figures and fitting a bench inside your rack.</p>
-            </a>
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Gym Accessories Worth Buying</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Plate trees, collars, flooring and the small kit that makes plates easier to live with.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most home gyms, buy REP's Old School iron plates</strong> if
             budget comes first, at about $2.16 a pound for a full set, or REP's urethane-coated
             Equalizers if you want quiet, odour-free plates with handles and can pay about $3.45. CAP's
             grip plates are the cheapest reputable option on Amazon, REP's USA-made Equalizer iron
             plates are the pick for US manufacture, and Titan's rubber-coated grip set sits in between.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, get Olympic 2-inch plates, weigh and pair them when they arrive, use
-            collars, and never drop iron plates, coated or not. If dropping is part of your training,
-            <a href="/best-bumper-plates/" class="text-[#5AA9FF] font-bold no-underline">our bumper plate guide</a>
-            covers the plates built for it.
+            collars, and never drop iron plates, coated or not. If dropping is part of your training, <a href="/best-bumper-plates/" class="text-[#5AA9FF] font-bold no-underline">our bumper plate guide</a> covers the plates built for it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for Home Gym</a></li>
+            <li><a href="/best-weight-benches/">Best Weight Benches</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What are the best weight plates for a home gym?</h3></summary>
+            <p class="faq-a">
+              For most people, Olympic 2-inch plates with grip handles from a maker that publishes a tolerance. REP's urethane-coated Equalizers are the best overall if you can pay about $3.45 a pound for a set; REP's Old School iron plates are the best value at about $2.16; CAP's grip plates are the cheapest at about $1.26.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are rubber-coated plates better than cast iron?</h3></summary>
+            <p class="faq-a">
+              They are quieter and kinder to floors and racks, and less likely to chip, but they cost more and can smell when new. Cast iron is cheaper, thinner and lasts indefinitely. Neither should be dropped. Choose coated plates for a gym in the house or a shared space, and iron for a garage on a budget.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between Olympic and standard weight plates?</h3></summary>
+            <p class="faq-a">
+              Olympic plates have a centre hole of about 2 inches and fit Olympic bars with 50 mm rotating sleeves. Standard plates have a 1-inch hole and fit 1-inch bars and spinlock handles. They are not interchangeable. For a new home gym, buy Olympic plates, because racks, bars and plate-loaded machines are built around them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you drop rubber-coated weight plates?</h3></summary>
+            <p class="faq-a">
+              No. Rubber- and urethane-coated plates are still iron plates, and REP says it does not recommend dropping any iron plate because it can damage the bar, the plates and the floor. If you plan to drop the bar in cleans, snatches or heavy deadlifts, buy bumper plates, which are made for it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much should weight plates cost per pound?</h3></summary>
+            <p class="faq-a">
+              On 19 October 2026, the plates we checked ranged from about $1.26 a pound for CAP's cast-iron grip plates in a large pack to about $3.45 for REP's urethane-coated plates in a 245 lb set. Small plates cost much more per pound than 45s, and shipping can change the comparison.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What weight plates should a beginner buy?</h3></summary>
+            <p class="faq-a">
+              A 245 lb set — a pair each of 45, 35, 25, 10, 5 and 2.5 lb plates — loads a 45 lb bar up to 290 lb and covers most beginners for a long time; a second pair of 10s fills the gaps between 5 lb steps. A 175 lb set without the 35s is a cheaper start; add a second pair of 45s when your deadlift needs it.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Racks</div>
+            <div class="c-title">Best Squat Racks for Home Gym</div>
+            <p class="c-blurb">Rack types, plate storage and safeties for the bar and plates you choose.</p>
+          </a>
+          <a href="/best-weight-benches/" class="card">
+            <div class="c-kicker">Benches</div>
+            <div class="c-title">Best Weight Benches</div>
+            <p class="c-blurb">Flat and adjustable benches, capacity figures and fitting a bench inside your rack.</p>
+          </a>
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Home Gym Accessories Worth Buying</div>
+            <p class="c-blurb">Plate trees, collars, flooring and the small kit that makes plates easier to live with.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

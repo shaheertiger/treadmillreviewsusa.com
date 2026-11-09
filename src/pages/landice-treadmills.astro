@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Landice Treadmill Guide (2026): L7, L8, M2 Genesis and Warranty";
 const description =
@@ -198,6 +197,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/landice-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -218,66 +223,67 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Current Range", link: "#lineup" }}
+  stickyCta={{ text: "Core Model: Landice L7", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-landicetreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-landicetreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">Landice Treadmills: Models, Warranty and Where to Buy</h1>
+      <p class="ed-dek">
+        Landice is a small, family-run American maker whose treadmills turn up in physiotherapy clinics, fire stations and expensive home gyms. This guide covers who makes them, what the current range is, how the warranty really works, and whether a Landice treadmill is worth its price for a home buyer.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Landice Treadmills: <span class="text-[#5AA9FF]">Models, Warranty and Where to Buy</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Landice is a small, family-run American maker whose treadmills turn up in physiotherapy clinics, fire stations and expensive home gyms. This guide covers who makes them, what the current range is, how the warranty really works, and whether a Landice treadmill is worth its price for a home buyer.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Current Range
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people who search for a Landice treadmill have met one somewhere other than a shop:
+          in a physical therapist's clinic, a university gym, a hospital rehab department, or a
+          friend's basement where it has been running for years. The name is far less familiar than
+          NordicTrack or Sole, partly because Landice does almost no mass-market retail. It builds a
+          short range of heavy, non-folding treadmills to order in New Jersey and sells them through
+          its own store and a network of specialist dealers, at prices that start where most home
+          treadmills stop. This guide sets out what the current range is, which figures the sources
+          agree on, how the warranty actually reads once you get past the word "lifetime", and who
+          should, and should not, spend this kind of money.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Core Model:</span> <a href="#landice-l7">Landice L7</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Tall and Heavy Users:</span> <a href="#landice-l8">Landice L8</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Only Folding Landice:</span> <a href="#landice-m2-genesis">Landice M2 Genesis</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we checked Landice's own online store (its residential, commercial and
           rehabilitation collections, the L7, L8, M2 Genesis and L10 Club product pages, its warranty
@@ -290,72 +296,28 @@ const schema = {
           Landice treadmill. Prices are what landice.com showed on the day and change with the
           console and options you pick. As an Amazon Associate we earn from qualifying purchases;
           Landice treadmills are mainly sold through Landice and its dealers rather than on Amazon.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Core Model:</span>
-            <a href="#landice-l7" class="font-bold text-gray-900 no-underline hover:underline">Landice L7</a>
-            <a href="#landice-l7" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Tall and Heavy Users:</span>
-            <a href="#landice-l8" class="font-bold text-gray-900 no-underline hover:underline">Landice L8</a>
-            <a href="#landice-l8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Only Folding Landice:</span>
-            <a href="#landice-m2-genesis" class="font-bold text-gray-900 no-underline hover:underline">Landice M2 Genesis</a>
-            <a href="#landice-m2-genesis" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are Landice Treadmills Worth It? The Short Answer</a>
-          <a href="#who-makes-landice" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes Landice Treadmills?</a>
-          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Landice Sells Now</a>
-          <a href="#l7-vs-l8" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Landice L7 vs L8: Which One?</a>
-          <a href="#motor-and-build" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What the Motor Rating and Build Actually Tell You</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Landice Warranty, Read Properly</a>
-          <a href="#where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Where Can You Buy a Landice Treadmill?</a>
-          <a href="#subscriptions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Does a Landice Treadmill Need a Subscription?</a>
-          <a href="#strengths-and-weaknesses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Landice Does Well, and Less Well</a>
-          <a href="#legacy-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Older Landice Models You Will See for Sale</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy a Landice, and Who Should Not</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Are Landice Treadmills Worth It? The Short Answer</a></li>
+            <li><a href="#who-makes-landice">Who Makes Landice Treadmills?</a></li>
+            <li><a href="#lineup">What Landice Sells Now</a></li>
+            <li><a href="#l7-vs-l8">Landice L7 vs L8: Which One?</a></li>
+            <li><a href="#motor-and-build">What the Motor Rating and Build Actually Tell You</a></li>
+            <li><a href="#warranty">The Landice Warranty, Read Properly</a></li>
+            <li><a href="#where-to-buy">Where Can You Buy a Landice Treadmill?</a></li>
+            <li><a href="#subscriptions">Does a Landice Treadmill Need a Subscription?</a></li>
+            <li><a href="#strengths-and-weaknesses">What Landice Does Well, and Less Well</a></li>
+            <li><a href="#legacy-models">Older Landice Models You Will See for Sale</a></li>
+            <li><a href="#who-should-buy">Who Should Buy a Landice, and Who Should Not</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people who search for a Landice treadmill have met one somewhere other than a shop:
-          in a physical therapist's clinic, a university gym, a hospital rehab department, or a
-          friend's basement where it has been running for years. The name is far less familiar than
-          NordicTrack or Sole, partly because Landice does almost no mass-market retail. It builds a
-          short range of heavy, non-folding treadmills to order in New Jersey and sells them through
-          its own store and a network of specialist dealers, at prices that start where most home
-          treadmills stop. This guide sets out what the current range is, which figures the sources
-          agree on, how the warranty actually reads once you get past the word "lifetime", and who
-          should, and should not, spend this kind of money.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are Landice Treadmills Worth It? The Short Answer</h2>
+          <h2>Are Landice Treadmills Worth It? The Short Answer</h2>
 <p>
             <strong>A Landice treadmill is worth the money if you want a heavy, simple machine built
             to last decades and backed by lifetime parts cover, and you will use it hard enough to
@@ -371,8 +333,7 @@ const schema = {
             and the cheapest at $3,999 when we checked. All three top out at 12 mph or a little
             above, so none is a sprint machine. The L-Series is also sold in club and
             rehabilitation versions, and there is a larger L10 for commercial use, which is why
-            Landice appears in our guide to
-            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>.
+            Landice appears in our guide to <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>.
           </p>
           <p>
             Two things on a Landice specification sheet need reading slowly. The first is the
@@ -380,82 +341,70 @@ const schema = {
             recommended for runners. The second is the warranty. Lifetime parts cover on the L7 and
             L8 is genuinely generous, but labour is one year, and Landice ties even that year to
             installation by a dealer near you. The rest of this page works through both, and
-            through where to try one — which, for many readers, is a
-            <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels store</a>.
+            through where to try one — which, for many readers, is a <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels store</a>.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="who-makes-landice" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes Landice Treadmills?</h2>
+          <h2>Who Makes Landice Treadmills?</h2>
 <p>
             Landice makes them itself. The company is registered at 111 Canfield Avenue in
             Randolph, New Jersey, in a federal contractor registry that gives 1967 as its founding
@@ -493,7 +442,7 @@ const schema = {
         </div>
 
         <div id="lineup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Landice Sells Now</h2>
+          <h2>What Landice Sells Now</h2>
 <p>
             On 14 October 2026 Landice's online store split its treadmills into three collections:
             residential, commercial and rehabilitation. The same few frames appear across all three,
@@ -547,7 +496,7 @@ const schema = {
         </div>
 
         <div id="l7-vs-l8" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Landice L7 vs L8: Which One?</h2>
+          <h2>Landice L7 vs L8: Which One?</h2>
 <p>
             The L7 suits most people; the L8 is for the tall, the heavy and the long-striding. The
             two share a motor rating, a speed range, an incline range, the console and belt choices
@@ -579,9 +528,7 @@ const schema = {
             out as slightly small for the price. For walking and incline walking it makes no
             practical difference. For a runner of average height at moderate pace it is workable.
             For a tall runner, or anyone who runs fast enough for the stride to lengthen, the L8's
-            63 inches is the reason to pay more. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            sets out the stride arithmetic.
+            63 inches is the reason to pay more. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> sets out the stride arithmetic.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Buy the L8 if</h3>
           <ul>
@@ -590,15 +537,12 @@ const schema = {
             <li>You have the floor space: the L8 is seven inches longer.</li>
           </ul>
           <p>
-            Otherwise the L7 is the better use of the money. Our guides to
-            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a>
-            and <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavier users</a>
-            set the L8 against the wider field.
+            Otherwise the L7 is the better use of the money. Our guides to <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a> and <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavier users</a> set the L8 against the wider field.
           </p>
         </div>
 
         <div id="motor-and-build" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What the Motor Rating and Build Actually Tell You</h2>
+          <h2>What the Motor Rating and Build Actually Tell You</h2>
 <p>
             Landice gives the L7 and L8 a 4 HP continuous-duty rating and the M2 a 3 HP one, and
             footnotes each as a laboratory-measured figure that indicates robustness rather than
@@ -610,9 +554,7 @@ const schema = {
             Continuous-duty ratings are the more useful kind, because they describe what a motor
             can sustain rather than a momentary peak. But brands measure them differently, and a
             4 HP figure from Landice is not automatically better or worse than a 4.0 CHP figure from
-            another maker. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the different ratings and why the motor warranty term is often the better
+            another maker. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the different ratings and why the motor warranty term is often the better
             signal. On that measure Landice does well: its residential L7 and L8 cover parts, the
             motor among them, for life.
           </p>
@@ -631,14 +573,12 @@ const schema = {
             otherwise. Its residential FAQ asks for six feet of clear <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium" data-autolink>space behind the treadmill</a>,
             three feet on each side and a foot in front for the cord, and says the machine must be
             in a temperature-controlled room — garages, porches, pool rooms, bathrooms and outdoor
-            areas are excluded. Read that last point before planning a garage gym. Our
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">guide to cords and dedicated circuits</a>
-            explains why a treadmill should not share a circuit or run through an extension lead.
+            areas are excluded. Read that last point before planning a garage gym. Our <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">guide to cords and dedicated circuits</a> explains why a treadmill should not share a circuit or run through an extension lead.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Landice Warranty, Read Properly</h2>
+          <h2>The Landice Warranty, Read Properly</h2>
 <p>
             The residential warranty on the L7 and L8 is lifetime on parts, five years on console
             parts and one year of labour, according to Landice's warranty page. Its product pages
@@ -666,14 +606,12 @@ const schema = {
           <p>
             Service is carried out by independent providers who repair in the home, found through
             Landice or its service locator. Ask the dealer who that provider is where you live and
-            how long a visit usually takes to arrange. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            covers the general questions to ask.
+            how long a visit usually takes to arrange. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> covers the general questions to ask.
           </p>
         </div>
 
         <div id="where-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Where Can You Buy a Landice Treadmill?</h2>
+          <h2>Where Can You Buy a Landice Treadmill?</h2>
 <p>
             You can buy direct from Landice's online store, through a Landice dealer, or at a
             handful of larger retailers that carry the brand. You will rarely find one on Amazon or
@@ -687,9 +625,7 @@ const schema = {
             running a promotion of free shipping, delivery and installation, plus a free orthopedic
             belt on the L7, for orders between 25 September and 5 November 2026. Promotions like
             that change, so check what is on offer when you buy. If you are thinking of paying from
-            a health account, read our
-            <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">HSA and FSA guide</a>
-            first; eligibility usually depends on a medical reason, not the seller.
+            a health account, read our <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">HSA and FSA guide</a> first; eligibility usually depends on a medical reason, not the seller.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Dealers and specialist stores</h3>
           <p>
@@ -701,11 +637,9 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Scheels</h3>
           <p>
-            Scheels is the most accessible place to see one. When we checked scheels.com it listed
-            <a href="/landice-l7-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Landice L7</a> and M2 models, with the L7 marked available in store only, which makes a
+            Scheels is the most accessible place to see one. When we checked scheels.com it listed <a href="/landice-l7-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Landice L7</a> and M2 models, with the L7 marked available in store only, which makes a
             Scheels store one of the few places where you can walk on a Landice next to mainstream
-            brands. Our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmill guide</a>
-            covers its returns, price matching and delivery.
+            brands. Our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmill guide</a> covers its returns, price matching and delivery.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Used</h3>
           <p>
@@ -718,7 +652,7 @@ const schema = {
         </div>
 
         <div id="subscriptions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Does a Landice Treadmill Need a Subscription?</h2>
+          <h2>Does a Landice Treadmill Need a Subscription?</h2>
 <p>
             No. Every Landice console works on its own, and Landice does not sell a membership of
             its own. The Elite touchscreen gives access to third-party entertainment and fitness
@@ -730,9 +664,7 @@ const schema = {
             machine built around a proprietary membership tends to do noticeably less once the
             trial ends, and loses value on the used market when the platform changes. A Landice
             with a Pro Sports or Achieve console simply runs, inclines and shows your data,
-            indefinitely. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a>
-            sets out the five-year arithmetic.
+            indefinitely. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a> sets out the five-year arithmetic.
           </p>
           <p>
             The flip side is that a Landice is not built for guided classes. If a trainer on a
@@ -742,7 +674,7 @@ const schema = {
         </div>
 
         <div id="strengths-and-weaknesses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Landice Does Well, and Less Well</h2>
+          <h2>What Landice Does Well, and Less Well</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Does well</h3>
           <ul>
             <li><strong>Warranty on the L-Series.</strong> Lifetime parts on a residential L7 or L8 is among the strongest cover sold in the US, with the dealer-labour condition understood.</li>
@@ -759,8 +691,7 @@ const schema = {
             <li><strong>Space.</strong> Only the M2 folds, and even that is 66 inches tall folded.</li>
           </ul>
           <p>
-            Set against the machines in our
-            <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">over-$2,500 roundup</a>,
+            Set against the machines in our <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">over-$2,500 roundup</a>,
             a Landice gives up screen-led features and some speed in exchange for frame, warranty and
             longevity. Whether that is the right trade depends on whether you want a machine for the
             next five years or the next twenty.
@@ -768,7 +699,7 @@ const schema = {
         </div>
 
         <div id="legacy-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Older Landice Models You Will See for Sale</h2>
+          <h2>Older Landice Models You Will See for Sale</h2>
 <p>
             Landice has kept its model names stable for a long time, which helps used buyers, but
             the consoles and details have changed underneath them. Older names you will meet
@@ -789,14 +720,12 @@ const schema = {
             what fails. Look instead at the belt and deck, the motor under load at your running
             speed, the incline through its full range, and the console's buttons and display.
             Check parts availability for the exact model before paying, and price a technician's
-            visit, because nothing transfers from the original owner's warranty. Our guide to
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">putting a gym treadmill in a home</a>
-            covers the power, weight and access questions that come with a club unit.
+            visit, because nothing transfers from the original owner's warranty. Our guide to <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">putting a gym treadmill in a home</a> covers the power, weight and access questions that come with a club unit.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy a Landice, and Who Should Not</h2>
+          <h2>Who Should Buy a Landice, and Who Should Not</h2>
 <p>
             <strong>Buy a Landice if you want one treadmill for the long term.</strong> If you walk
             or run most days, want a heavy non-folding machine, value a plain console that will not
@@ -814,10 +743,7 @@ const schema = {
           </p>
           <p>
             <strong>Look elsewhere if price per feature is the test.</strong> Machines with larger
-            screens, faster top speeds and decline sell for less. Our
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial-grade treadmill roundup</a>
-            and the <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit brand guide</a>
-            cover heavier home machines at lower prices, and TRUE is the other family-owned,
+            screens, faster top speeds and decline sell for less. Our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial-grade treadmill roundup</a> and the <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit brand guide</a> cover heavier home machines at lower prices, and TRUE is the other family-owned,
             dealer-sold American maker at a similar price (see our <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE treadmill guide</a>).
             For the step above Landice in price, see our <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway treadmill guide</a>.
           </p>
@@ -827,147 +753,162 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where are Landice treadmills made?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Landice is based in Randolph, New Jersey, and says it makes and assembles its treadmills in the USA, building each to order. It is a family-controlled private company founded in 1967. Landice does not publish where every component comes from, so if domestic sourcing matters to you, ask a dealer which parts are made where.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a Landice treadmill cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 14 October 2026 Landice listed the folding M2 Genesis at $3,999, the L7 from $5,429 and the L8 from $6,329. Those are the lowest configurations. With the 15.6-inch touchscreen console the L7 was $7,229 and the L8 $8,129. Delivery and installation terms vary with promotions, so confirm the delivered price before ordering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the Landice L7 and L8?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The L8 has a larger running area, 22 by 63 inches against 20 by 58, and a 500 lb user rating against 400 lb. Motor rating, speed, incline, console choices and residential warranty are the same. The L8 is seven inches longer overall and costs about $900 more at the lowest configurations we saw.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the Landice warranty really cover parts for life?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For the residential L7 and L8, Landice’s warranty page gives lifetime parts, five years on console parts and one year of labour. Labour applies only when a dealer installs the machine within 60 driving miles of its nearest store. You must register within 30 days, and cover belongs to the original owner. The M2 and club models carry different terms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Landice make a folding treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, one: the M2 Genesis. Landice lists a 21 by 62-inch running area, a 300 lb user rating, 15% incline and a 15.6-inch touchscreen. It folds to 55 inches long but stays 66 inches tall and weighs about 290 lb. It was listed at $3,999 on 14 October 2026. The L-Series models do not fold.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I see a Landice treadmill before buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, at a Landice dealer or some Scheels stores. When we checked, scheels.com listed the L7 as available in store only, so a Scheels visit is one of the easier ways to walk on one. Landice’s dealer locator lists specialist stores, and buying locally matters because residential labour cover depends on dealer installation.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Landice Treadmill</h2>
+          <p>Landice treadmills are straightforward machines sold in a less familiar way. These are the errors that cost buyers money or cover.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying from a distant seller and losing labour cover</h3>
+              <p>Landice ties residential labour cover to installation by a dealer within 60 driving miles of its nearest store. A lower online price from a seller across the country can mean parts without labour. Ask before you buy who will install the treadmill, and get written confirmation that the labour warranty applies at your address.</p>
+            </li>
+            <li>
+              <h3>Choosing the L7 as a tall runner</h3>
+              <p>The L7’s 58-inch running length is fine for walking and moderate running but short for a long stride. If you are over about six feet tall and run, walk on both the L7 and the L8 at your real pace before deciding, and expect the L8’s 63 inches to be the right answer.</p>
+            </li>
+            <li>
+              <h3>Comparing the motor label with another brand’s</h3>
+              <p>Landice footnotes its 4 HP and 3 HP figures as laboratory ratings. Another brand’s 4.0 CHP is not necessarily measured the same way, so the numbers do not compare directly. Use the motor warranty, which on the residential L-Series is lifetime, as the signal of confidence instead.</p>
+            </li>
+            <li>
+              <h3>Putting it in an unheated garage</h3>
+              <p>Landice’s residential FAQ excludes garages, porches, pool rooms, bathrooms and outdoor spaces, and asks for a temperature-controlled room on a dedicated 15-amp circuit. Placing an expensive treadmill where the manufacturer says not to risks both the machine and the warranty. Plan the room before you order.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Landice Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Landice treadmills are straightforward machines sold in a less familiar way. These are the errors that cost buyers money or cover.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying from a distant seller and losing labour cover</h3>
-              <p class="text-gray-700 text-sm m-0">Landice ties residential labour cover to installation by a dealer within 60 driving miles of its nearest store. A lower online price from a seller across the country can mean parts without labour. Ask before you buy who will install the treadmill, and get written confirmation that the labour warranty applies at your address.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing the L7 as a tall runner</h3>
-              <p class="text-gray-700 text-sm m-0">The L7’s 58-inch running length is fine for walking and moderate running but short for a long stride. If you are over about six feet tall and run, walk on both the L7 and the L8 at your real pace before deciding, and expect the L8’s 63 inches to be the right answer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing the motor label with another brand’s</h3>
-              <p class="text-gray-700 text-sm m-0">Landice footnotes its 4 HP and 3 HP figures as laboratory ratings. Another brand’s 4.0 CHP is not necessarily measured the same way, so the numbers do not compare directly. Use the motor warranty, which on the residential L-Series is lifetime, as the signal of confidence instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting it in an unheated garage</h3>
-              <p class="text-gray-700 text-sm m-0">Landice’s residential FAQ excludes garages, porches, pool rooms, bathrooms and outdoor spaces, and asks for a temperature-controlled room on a dedicated 15-amp circuit. Placing an expensive treadmill where the manufacturer says not to risks both the machine and the warranty. Plan the room before you order.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/scheels-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Scheels Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">One of the few chains where you can try a Landice in store.</p>
-            </a>
-            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial-Grade Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Gym-built machines for home, and what they ask of your space.</p>
-            </a>
-            <a href="/treadmills-over-2500/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Price</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills Over $2,500</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the top price tier buys, and where a Landice fits.</p>
-            </a>
-            <a href="/precor-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Precor</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Precor Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Peloton-owned and commercial-only now: the TRM lines, used prices, the 20-amp circuit and what the warranty covers.</p>
-            </a>
-            <a href="/vision-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Vision Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A Landice treadmill is a long-term purchase: a heavy, plain,
           build-to-order machine with lifetime parts cover on the residential L7 and L8, at prices
           that start above $5,000.</strong> The L7 suits most walkers and runners of average height,
           the L8 is for the tall and the heavy, and the M2 Genesis is the only one that folds.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Read the warranty for what it is — lifetime parts, one year of labour, and labour only with
-          local dealer installation — and walk on one before you buy. A
-          <a href="/scheels-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Scheels store</a>
-          or a Landice dealer is the place to start, and our
-          <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial-grade roundup</a>
-          shows what else the money could buy.
+          local dealer installation — and walk on one before you buy. A <a href="/scheels-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Scheels store</a> or a Landice dealer is the place to start, and our <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial-grade roundup</a> shows what else the money could buy.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/scheels-treadmills/">Scheels Treadmills</a></li>
+            <li><a href="/commercial-treadmills/">Commercial-Grade Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where are Landice treadmills made?</h3></summary>
+            <p class="faq-a">
+              Landice is based in Randolph, New Jersey, and says it makes and assembles its treadmills in the USA, building each to order. It is a family-controlled private company founded in 1967. Landice does not publish where every component comes from, so if domestic sourcing matters to you, ask a dealer which parts are made where.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does a Landice treadmill cost?</h3></summary>
+            <p class="faq-a">
+              On 14 October 2026 Landice listed the folding M2 Genesis at $3,999, the L7 from $5,429 and the L8 from $6,329. Those are the lowest configurations. With the 15.6-inch touchscreen console the L7 was $7,229 and the L8 $8,129. Delivery and installation terms vary with promotions, so confirm the delivered price before ordering.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between the Landice L7 and L8?</h3></summary>
+            <p class="faq-a">
+              The L8 has a larger running area, 22 by 63 inches against 20 by 58, and a 500 lb user rating against 400 lb. Motor rating, speed, incline, console choices and residential warranty are the same. The L8 is seven inches longer overall and costs about $900 more at the lowest configurations we saw.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the Landice warranty really cover parts for life?</h3></summary>
+            <p class="faq-a">
+              For the residential L7 and L8, Landice’s warranty page gives lifetime parts, five years on console parts and one year of labour. Labour applies only when a dealer installs the machine within 60 driving miles of its nearest store. You must register within 30 days, and cover belongs to the original owner. The M2 and club models carry different terms.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Landice make a folding treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, one: the M2 Genesis. Landice lists a 21 by 62-inch running area, a 300 lb user rating, 15% incline and a 15.6-inch touchscreen. It folds to 55 inches long but stays 66 inches tall and weighs about 290 lb. It was listed at $3,999 on 14 October 2026. The L-Series models do not fold.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I see a Landice treadmill before buying?</h3></summary>
+            <p class="faq-a">
+              Yes, at a Landice dealer or some Scheels stores. When we checked, scheels.com listed the L7 as available in store only, so a Scheels visit is one of the easier ways to walk on one. Landice’s dealer locator lists specialist stores, and buying locally matters because residential labour cover depends on dealer installation.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/scheels-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Scheels Treadmills</div>
+            <p class="c-blurb">One of the few chains where you can try a Landice in store.</p>
+          </a>
+          <a href="/commercial-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Commercial-Grade Treadmills</div>
+            <p class="c-blurb">Gym-built machines for home, and what they ask of your space.</p>
+          </a>
+          <a href="/treadmills-over-2500/" class="card">
+            <div class="c-kicker">Price</div>
+            <div class="c-title">Treadmills Over $2,500</div>
+            <p class="c-blurb">What the top price tier buys, and where a Landice fits.</p>
+          </a>
+          <a href="/precor-treadmills/" class="card">
+            <div class="c-kicker">Precor</div>
+            <div class="c-title">Precor Treadmills</div>
+            <p class="c-blurb">Peloton-owned and commercial-only now: the TRM lines, used prices, the 20-amp circuit and what the warranty covers.</p>
+          </a>
+          <a href="/vision-fitness-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Vision Fitness Treadmills</div>
+            <p class="c-blurb">One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>
