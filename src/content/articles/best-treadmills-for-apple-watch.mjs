@@ -17,7 +17,7 @@ export default {
     { label: 'See the Picks', href: '#quick-picks' },
     { label: 'GymKit vs FTMS vs Indoor Run', href: '#three-ways' },
   ],
-  tags: ['best treadmill for apple watch', 'apple gymkit treadmill', 'treadmill compatible with apple watch', 'gymkit home treadmill', 'apple watch indoor run treadmill', 'bowflex t6 gymkit', 'horizon 7.0 at apple watch'],
+  tags: ['best treadmill for apple watch', 'apple gymkit treadmill', 'treadmill compatible with apple watch', 'gymkit home treadmill', 'apple watch indoor run treadmill', 'horizon t101 connect apple watch', 'horizon 7.0 at apple watch'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           treadmills with an Apple Watch, or at all. On 15 October 2026 we checked each one against
@@ -27,7 +27,9 @@ export default {
           of the Horizon 7.0 AT and Bowflex T6. Apple's own support guide explains how GymKit pairing
           works and what label to look for, but it does not publish a list of compatible treadmills,
           so a machine is on this page only where the manufacturer states Apple Watch tap-to-connect
-          for that model and an independent source confirms it. On 9 November 2026 the Bowflex T9 card,
+          for that model and an independent source confirms it. On 9 November 2026 the Bowflex T6 card, which
+          Amazon does not sell, became the Horizon T101 Connect, a labelled budget pick without GymKit
+          whose figures are those checked for our auto incline guide, and the Bowflex T9 card,
           which Amazon does not sell, became the Bowflex T16, checked against Bowflex's product page
           and independent reviews from Tom's Guide and 9to5Mac. A figure appears in a product's
           specification line only where the sources agree; where they disagreed — on unit weight,
@@ -52,9 +54,10 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Four treadmills with Apple Watch tap-to-connect confirmed by the manufacturer, and one
-            labelled pick that does not have it. The short version: the Bowflex T6 or Horizon 7.0 AT
-            for most people, depending on which is cheaper on the day, the Bowflex T16 if you want a
+            Three treadmills with Apple Watch tap-to-connect confirmed by the manufacturer, and two
+            labelled picks that do not have it. The short version: the Horizon 7.0 AT for most people,
+            the Horizon T101 Connect if budget matters more than tap-to-pair (it stands in for the
+            Bowflex T6, a GymKit treadmill sold by Bowflex rather than on Amazon), the Bowflex T16 if you want a
             wider deck (it stands in for the Bowflex T9, which Amazon does not sell), and the <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness Run CX</a> if you want a heavier, non-folding machine with a
             long warranty. If you already own a treadmill, start with our guide to
             <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> —
@@ -69,10 +72,10 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GymKit tap-to-pair, 20 x 60 in. deck, 15% incline, about $1,000 on sale</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same job, often cheaper with a code</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The only current Horizon with GymKit; $934 with a code when we checked</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The only current Horizon with GymKit; $934 with a code when we checked</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bigger runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch-wide deck, a 375 lb rating and a 16-inch screen, with Apple Watch connection</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Run CX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A long-term, non-folding machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Track Connect 2.0 console with Apple Watch pairing, 400 lb rating, 10-year motor cover</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T101 Connect (no GymKit)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smallest budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $740 on Amazon; record an Indoor Run, 10% power incline</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT385 (no GymKit)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty over tap-to-pair</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Works fine with an Indoor Run; 10 years on parts and a lifetime deck warranty</td></tr>
             </tbody>
           </table></div>
@@ -87,11 +90,12 @@ export default {
       heading: 'The 5 Best Treadmills for Apple Watch Users',
       products: true,
       html: `          <p>
-            Four machines with Apple Watch tap-to-connect, in the order most buyers should consider
-            them, and one clearly labelled machine without it. The honest headline is that the GymKit
-            list for home treadmills is short. Two of the four come from the same company — Bowflex
-            and Horizon are both owned by Johnson Health Tech — and the T6 and 7.0 AT are close
-            relatives. If none of these suits your space or budget, you are not locked out of using an
+            Three machines with Apple Watch tap-to-connect, and two clearly labelled machines without
+            it. The honest headline is that the GymKit list for home treadmills is short, and shorter
+            still on Amazon: Bowflex's T6, the cheapest GymKit treadmill we verified, is sold by Bowflex
+            and its retailers rather than on Amazon, so its slot now shows a budget Horizon without
+            GymKit. Bowflex and Horizon are both owned by Johnson Health Tech, and the T6 and 7.0 AT are
+            close relatives, so the 7.0 AT is the nearest Amazon equivalent of the T6. If none of these suits your space or budget, you are not locked out of using an
             Apple Watch on a treadmill; you are choosing a slightly less automatic way to do it.
           </p>
           <p>
@@ -335,13 +339,14 @@ export default {
     },
     {
       id: 'choosing-between',
-      heading: 'Choosing Between the Four GymKit Machines',
+      heading: 'Choosing Between the GymKit Machines',
       html: `          <p>
-            Because the watch pairing works the same way on all four, the choice comes down to the
+            Because the watch pairing works the same way on all of them, the choice comes down to the
             treadmill underneath, your space and the price on the day.
           </p>
           <p>
-            <strong>Bowflex T6 or Horizon 7.0 AT.</strong> These two are the default. Both have a 20
+            <strong>Horizon 7.0 AT or Bowflex T6.</strong> These two are the default; the 7.0 AT is on
+            Amazon and the T6 is sold by Bowflex. Both have a 20
             by 60-inch deck, a 12 mph top speed, 15% incline, a 325 lb rating and a lifetime frame and
             motor warranty with three years on parts, and both come from the same parent company. Buy
             on price, and if the prices match, on console preference: Horizon's QuickDial controls and
@@ -406,29 +411,28 @@ export default {
   ],
   products: [
     {
-      id: 'bowflex-t6',
-      name: 'Bowflex T6',
-      reviewUrl: '/bowflex-t6-treadmill/',
-      category: 'Best Overall Treadmill for Apple Watch',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20',
-      priceRange: '$998–$1,299',
-      specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · Apple Watch tap-to-connect · Bluetooth FTMS',
+      id: 'horizon-t101-connect',
+      name: 'Horizon T101 Connect',
+      category: 'Cheapest Treadmill for an Indoor Run (No GymKit)',
+      badge: 'Best Budget, No GymKit',
+      amazonUrl: 'https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20',
+      priceRange: 'About $740 (Amazon, 6 Nov 2026)',
+      specs: 'No GymKit · 20 x 55 in. deck · 0–10% power incline · 0.5–10 mph · 300 lb capacity · folds · lifetime frame & motor warranty',
       pros: [
-        "Bowflex's owner's manual gives step-by-step Apple Watch pairing at the console's watch reader, and an independent review confirms GymKit",
-        'A full 60-inch deck, 12 mph and 15% incline, so the watch pairing sits on a proper running treadmill',
-        'Lifetime frame and motor warranty plus three years on parts',
-        'Usually on sale: $998 at a large retailer against a $1,299 regular price when we checked',
+        'Hundreds of dollars less than any GymKit treadmill on this page',
+        'A powered 10% incline with dial controls and one-touch incline keys',
+        'Lifetime frame and motor warranty, per the listing',
+        'Works with apps including Zwift and Peloton, per the listing',
       ],
       cons: [
-        'No touchscreen; you bring a tablet or phone for classes and apps',
-        'The 3.0 HP figure is a test rating that Bowflex says does not reflect operational horsepower',
-        'One year of in-home labour, which is short next to the parts and motor cover',
+        'No GymKit: you record an Indoor Run or Indoor Walk on the watch and correct the distance afterwards',
+        'A 55-inch deck and 10 mph top speed suit walking and jogging better than running',
+        'Incline stops at 10%',
       ],
       bottomLine:
-        'The treadmill to start with if you want GymKit at the lowest price we found on a proper running deck. If the Horizon 7.0 AT is cheaper on the day, the two are close.',
+        'For an Apple Watch user on a budget who is happy recording an Indoor Run rather than tapping to pair.',
       description:
-        "The T6 is the most affordable GymKit treadmill we could verify, and its Apple Watch support is documented by Bowflex itself. The owner's manual describes a smart watch reader on the console and gives the pairing steps: turn on Detect Gym Equipment, hold the watch on the marked icon for about five seconds, wait for the beep and the connected light, choose a workout on the watch, then press Start. An independent review published in August 2026 confirms GymKit and describes data passing both ways, with heart rate on the console and treadmill metrics on the watch. Underneath, Bowflex and a large US retailer agree on a 20 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a machine of about 234 lb that folds. The warranty is lifetime on frame and motor, three years on parts and one year of labour. It also broadcasts over Bluetooth FTMS for apps such as Zwift. On 15 October 2026 a retailer listed it at $998 against a $1,299 regular price.",
+        "This card replaces the Bowflex T6, the cheapest GymKit treadmill we could verify, which Bowflex and its retailers sell but Amazon does not. The other GymKit machines Amazon sells are already on this page, so this slot is now a second labelled exception: the least expensive full-size treadmill we would buy, without tap-to-pair. With an Apple Watch you start an Indoor Run or Indoor Walk on the watch, and calibrate or correct the distance at the end. The T101 Connect is Horizon's entry treadmill. Its Amazon listing gives a 0 to 10% power incline and 0.5 to 10 mph, changed with Horizon's EasyDial controls or one-touch keys, a 20 by 55-inch running area, a lifetime frame and motor warranty, a folding frame, and compatibility with apps including JRNY, Peloton and Zwift, which need their own subscriptions; Horizon's specification adds a 300 lb maximum user weight. Amazon listed it at $739.99 on 6 November 2026. If tap-to-pair matters to you, the Horizon 7.0 AT below is the cheapest GymKit treadmill on Amazon, or buy the T6 from Bowflex. The CPSC recalled an earlier model, the Horizon T101-05, in October 2022 (serial numbers starting TM734 or TM486, sold 2018 to 2022) because it could change speed or stop unexpectedly; the T101 Connect is a newer model not named in that recall, but check the serial if you are offered a used T101.",
     },
     {
       id: 'horizon-7-0-at',
@@ -451,7 +455,7 @@ export default {
         'An independent reviewer reports occasional watch disconnections mid-workout, easily reconnected',
       ],
       bottomLine:
-        'The same job as the Bowflex T6 from a sister brand, and the cheaper of the two when Horizon has a code running.',
+        'The cheapest GymKit treadmill on Amazon, and the closest relative of the Bowflex T6, which Amazon does not sell.',
       description:
         "The 7.0 AT is the only current Horizon treadmill with Apple GymKit, and Horizon says so plainly: its comparison table marks GymKit as yes for the 7.0 AT and no for the 7.4 AT and 7.8 AT, and the product page invites you to tap to connect an Apple Watch or Samsung Galaxy Watch and says the connection syncs calories, speed, distance, pace and time. An independent reviewer who tested the current version found pairing easy, with the watch offering an indoor run or walk once held over the console icon, but reported occasional random disconnections that were simple to fix. Horizon and that reviewer agree on a 20 by 60-inch deck, a 12 mph top speed, 0 to 15% incline, a 325 lb maximum user weight and a lifetime frame and motor, three-year parts and one-year labour warranty. On 15 October 2026 Horizon listed it at $1,099 against a $2,100 reference price, or $934 with a promotional code. Bowflex and Horizon share a parent company, and this and the T6 are close relatives; buy whichever is cheaper.",
     },
@@ -465,16 +469,16 @@ export default {
       specs: "22 x 60 in. deck · 0.5–12 mph · 0–15% incline · 375 lb capacity · Apple Watch connection · 16 in. HD touchscreen · Bluetooth FTMS",
       pros: [
         "Bowflex's product page says it connects to Apple Watch and Galaxy Watch, and an independent review paired it with an Apple Watch",
-        "A 22-inch-wide deck gives more lateral room than the T6 and 7.0 AT",
-        "375 lb maximum user weight against 325 lb on the T6",
+        "A 22-inch-wide deck gives more lateral room than the 7.0 AT",
+        "375 lb maximum user weight against 325 lb on the 7.0 AT",
         "Lifetime frame and motor warranty, three years on parts",
       ],
       cons: [
-        "Roughly $1,000 more than the T6, mostly for the screen, width and capacity rather than better watch features",
+        "Roughly $1,000 more than the 7.0 AT, mostly for the screen, width and capacity rather than better watch features",
         "Bowflex does not use the word GymKit for this model; one review says the current Bowflex range uses it",
         "The 3.5 HP figure is a Bowflex test rating, not a continuous-duty figure",
       ],
-      bottomLine: "For larger runners, or anyone who wants a wider deck and a big screen, who still wants the watch to connect at the console. Otherwise the T6 does the same Apple Watch job for less.",
+      bottomLine: "For larger runners, or anyone who wants a wider deck and a big screen, who still wants the watch to connect at the console. Otherwise the 7.0 AT does the same Apple Watch job for less.",
       description: "Bowflex's T9 is sold by Bowflex and its retailers rather than on Amazon, so this card shows its bigger-screened sibling, the T16, which Amazon does list. Bowflex's product page says the T16 connects to Apple Watch and Galaxy Watch to keep your metrics in sync, and a retailer page describes holding the watch near the console's reader and starting an indoor run; Tom's Guide paired it with an Apple Watch in its review and found the data consistent, and a 9to5Mac review says GymKit runs across Bowflex's current treadmill range, though Bowflex's own T16 page does not use the word. Bowflex lists a 22 by 60-inch running path, 0.5 to 12 mph, 15 levels of motorised incline, a 375 lb maximum user weight and lifetime frame and motor cover with three years on parts and one year of labour. The 16-inch HD touchscreen runs JRNY plus streaming apps on your own accounts, and Bowflex says it works without a JRNY subscription. Bowflex listed it at $1,999 against a $2,299 regular price on 9 November 2026. Pay the difference over the T6 for the width, capacity and screen, not for the watch.",
     },
     {
@@ -493,7 +497,7 @@ export default {
         'Three customisable speed presets and three incline presets on the lower control pad',
       ],
       cons: [
-        'Around five times the price of the Bowflex T6 for the same watch pairing',
+        'Several times the price of the Horizon 7.0 AT for the same watch pairing',
         'Does not fold, and it is a heavy, permanent fixture',
         'Apple Watch pairing belongs to the Track Connect 2.0 console only; older consoles lack it',
       ],
@@ -519,7 +523,7 @@ export default {
       cons: [
         'No GymKit: you record an Indoor Run on the watch, or log through an app',
         'Spirit and a retailer disagree on belt width and on how the incline range is expressed, so check both before ordering',
-        'Costs more than the Bowflex T6 and Horizon 7.0 AT',
+        'Costs more than the Horizon 7.0 AT and far more than the T101 Connect',
       ],
       bottomLine:
         'For an Apple Watch user who cares more about a long parts warranty than tap-to-pair, and is happy recording an Indoor Run.',
@@ -596,10 +600,11 @@ export default {
     },
   ],
   bottomLine: [
-    `For most Apple Watch users buying a treadmill, the <strong class="text-white">Bowflex T6</strong>
-            or the <strong class="text-white">Horizon 7.0 AT</strong> is the right buy — whichever is
-            cheaper on the day — with GymKit confirmed by the maker, a 60-inch deck and 15% incline at
-            around $1,000. The <strong class="text-white">Bowflex T16</strong> adds width, capacity and a big screen,
+    `For most Apple Watch users buying a treadmill, the <strong class="text-white">Horizon 7.0 AT</strong>
+            is the right buy, with GymKit confirmed by the maker, a 60-inch deck and 15% incline at
+            around $1,000 (Bowflex's T6, its close relative, is sold by Bowflex rather than on Amazon).
+            On a tighter budget, the <strong class="text-white">Horizon T101 Connect</strong> does the job
+            with an Indoor Run instead of tap-to-pair. The <strong class="text-white">Bowflex T16</strong> adds width, capacity and a big screen,
             and the <strong class="text-white">Life Fitness Run CX</strong> is the long-haul option.`,
     `GymKit is a convenience, not a requirement: every treadmill works with an Indoor Run. Whichever
             route you take, check the belt speed with our

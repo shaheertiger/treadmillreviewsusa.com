@@ -31,7 +31,9 @@ export default {
           dimensions — we left it out and say so. We quote warranty and environment language only
           where we read it ourselves, and only for the model named. The Spirit XT485 card, which
           stands in for the dealer-only XT685, carries the figures checked for our heavy-duty
-          treadmill guide on 6 November 2026. Prices are those we saw on 15
+          treadmill guide on 6 November 2026, and the Horizon T101 Connect card, which stands in for the
+          dealer-sold XT185, carries the figures checked for our auto incline guide; we did not read a
+          Horizon manual. Prices are those we saw on 15
           October 2026 and change often, and manuals are revised; confirm the price, the specification
           and the current warranty terms for the exact unit — ideally in writing — before you order.
           We earn a commission if you buy through the Amazon links on this page; it does not change
@@ -65,7 +67,7 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT485</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most garage gyms, bought on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The closest Amazon machine to our pick, the XT685 (sold by dealers): 22 x 60 in. folding deck, lifetime frame and motor</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT385</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A garage that also parks a car</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds to 43 inches long; same environment terms</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT185</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walkers and lower budgets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The cheapest Spirit; 55-inch deck and 10 mph top speed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T101 Connect</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walkers and lower budgets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stands in for the dealer-sold Spirit XT185; 55-inch deck, 10 mph, about $740; garage terms unchecked</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT285</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Runners who can live with 20 inches</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch running surface at a little less than the XT385</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Run CX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A heated garage gym, long term</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gym-built, 400 lb rating, 10-year motor cover; ask about garage terms first</td></tr>
             </tbody>
@@ -81,17 +83,19 @@ export default {
       heading: 'The 5 Best Treadmills for a Garage',
       products: true,
       html: `          <p>
-            Four Spirit treadmills and one premium alternative. Our first choice on the manuals we read,
+            Three Spirit treadmills, one budget Horizon and one premium alternative. Our first choice on the manuals we read,
             the non-folding Spirit XT685, is sold through Spirit's dealers rather than on Amazon US, so
-            the first card shows the XT485, the nearest Spirit that Amazon does sell; the XT185 is also
-            sold through dealers, and its button searches Amazon for it. None of them makes a cold, wet garage
+            the first card shows the XT485, the nearest Spirit that Amazon does sell; the walker's
+            XT185 is also sold through dealers, so its card shows Horizon's T101 Connect, the nearest
+            Amazon treadmill for walkers, labelled because we could not read Horizon's garage terms. None of them makes a cold, wet garage
             safe for a treadmill: Spirit's manuals still rule out high humidity and condensation, and
             the Spirit, Sole and Bowflex warranties we read all exclude corrosion. What they offer is terms that do not
             automatically void your cover because the machine lives in a garage.
           </p>
           <p>
-            Each card's specification line carries only figures Spirit or Life Fitness and an
-            independent retailer agree on. Incline is missing from all four Spirit cards for the same
+            Each Spirit and Life Fitness card's specification line carries only figures the maker and an
+            independent retailer agree on; the Horizon card's figures are those checked for our auto
+            incline guide. Incline is missing from all three Spirit cards for the same
             reason: Spirit gives incline as a number of levels and the retailer gives a percentage that
             does not obviously match, so we could not state a range with confidence.
           </p>`,
@@ -141,8 +145,10 @@ export default {
           <p>
             We could not open current manuals for several other major brands on the day, including
             Horizon and NordicTrack, so their absence is not a judgement on their garage terms — it means
-            we could not check them. We also searched the CPSC recall database for every brand on this
-            page and found no recall covering these models. Finally, the four Spirit machines deserve an
+            we could not check them. The one Horizon on this page, the T101 Connect, is there only
+            because the walker's Spirit is not on Amazon, and its card says its garage terms are
+            unchecked. We also searched the CPSC recall database for every brand on this
+            page and found no recall covering these models. Finally, the Spirit machines deserve an
             explanation: it is not a preference for the brand, it is that Spirit was the only maker
             whose current manuals we could read that state an environmental specification and leave
             garages out of the warranty exclusions.
@@ -350,7 +356,7 @@ export default {
             roundup covers more of them.
           </p>
           <p>
-            <strong>Folding</strong> machines such as the XT385, XT285 and XT185 earn their place where a
+            <strong>Folding</strong> machines such as the XT385, XT285 and T101 Connect earn their place where a
             car still has to fit. Spirit's folders have lift assist, and the XT385 folds to 43 inches
             long. Folded, a treadmill stands tall and narrow, so check the garage door's path and any
             storage racks, and fold it only when the belt has stopped and the deck is dry.
@@ -445,28 +451,28 @@ export default {
         "The XT385 is the folding answer for a shared garage. Its owner's manual, revised in January 2026, carries the same environment language as the XT685 — no outdoor or high-humidity use, a 40 degrees C temperature specification and 95% non-condensing humidity — and the same warranty exclusions, which do not name garages but do exclude corrosion. Spirit and a large US retailer agree on a 60-inch deck length, a 3.5 HP motor, 0.5 to 12 mph, a 375 lb maximum user weight, a machine of about 287 lb and a fold that brings it to 43 inches long. They disagree on width: Spirit gives a 22 by 60-inch running surface, while the retailer lists a 22-inch deck carrying a 20-inch belt, so we leave the width out. The console is a 7.5-inch LCD with Bluetooth, and Spirit describes a powder-coated frame. The home warranty is lifetime on frame, motor and deck, 10 years on parts and 1 year of labour. Spirit listed it at $2,699.99 on 15 October 2026 and a retailer at $2,399.99.",
     },
     {
-      id: 'spirit-xt185',
-      name: 'Spirit XT185',
-      category: 'Best Garage Treadmill for Walkers',
-      badge: 'Lowest Price',
-      amazonUrl: 'https://www.amazon.com/s?k=Spirit+Fitness+XT185+Treadmill&tag=sktiger-20',
-      priceRange: '$1,899–$2,199',
-      specs: '20 x 55 in. running surface · 3.0 HP · 0.5–10 mph · 275 lb capacity · folds to 42 in. long',
+      id: 'horizon-t101-connect',
+      name: 'Horizon T101 Connect',
+      category: 'Garage Treadmill for Walkers, Bought on Amazon',
+      badge: 'Lowest Price (Garage Terms Unchecked)',
+      amazonUrl: 'https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20',
+      priceRange: 'About $740 (Amazon, 6 Nov 2026)',
+      specs: '20 x 55 in. deck · 0–10% power incline · 0.5–10 mph · 300 lb capacity · folds · lifetime frame & motor warranty',
       pros: [
-        'The lowest price of the picks, with the same garage-tolerant manual language (June 2026 revision)',
-        'Lifetime frame, motor and deck warranty and 10 years on parts, unusually long at this price',
-        'Folds to 42 inches long',
-        'At about 225 lb, the lightest machine here',
+        'Less than half the price of the Spirit XT185 it replaces, with the same 55-inch walking deck and 10 mph top speed',
+        'A powered 10% incline with dial controls and a simple console, with little screen to suffer in a cold garage',
+        'Lifetime frame and motor warranty, per the listing',
+        'Folds, and Horizon says it assembles in about 30 minutes',
       ],
       cons: [
+        'We could not read Horizon\u2019s environment or garage terms, so we cannot tell you whether a garage affects the warranty',
         'A 55-inch deck and 10 mph top speed suit walking and jogging, not running',
-        'A 275 lb maximum user weight is the lowest of the picks',
-        'Corrosion is excluded from the warranty',
+        'Check Horizon\u2019s outlet requirements: its T202 page says that model is not compatible with GFCI outlets, common in garages',
       ],
       bottomLine:
-        'For walkers and occasional joggers who want garage-tolerant terms and a long parts warranty without paying for a running deck.',
+        'For walkers on a budget with a dry, temperature-steady garage, once Horizon has confirmed in writing that garage use does not affect the warranty.',
       description:
-        "The XT185 is the entry point to Spirit's range and the right garage machine for people who mainly walk. Its owner's manual, revised in June 2026, has the same environment and warranty language as the larger Spirits: not for outdoor or high-humidity use, a 40 degrees C temperature specification, 95% non-condensing humidity, and no garage in the warranty exclusions, though corrosion is excluded. Spirit and a large US retailer agree on a 20 by 55-inch running surface, a 3.0 HP motor, 0.5 to 10 mph, a 275 lb maximum user weight, a 225.3 lb machine, a 76 by 35-inch footprint and a fold to 42 inches long. Spirit gives incline as 10 levels and the retailer as a percentage, so we leave the range out. The 55-inch deck is the trade-off: comfortable for walking, short for a running stride. The home warranty is lifetime on frame, motor and deck, 10 years on parts and 1 year of labour. Spirit listed it at $2,199.99 on 15 October 2026 and a retailer at $1,899.99 for in-store and phone orders.",
+        "This card replaces the Spirit XT185, the walker's Spirit we chose on its garage-tolerant manual, which is sold through Spirit's dealers rather than on Amazon. The nearest Amazon treadmill for the same buyer is Horizon's entry T101 Connect: like the XT185 it has a 55-inch deck and a 10 mph top speed, and it costs far less. It carries a clear label, as the Run CX does: we could not open a current Horizon manual, so we have not read Horizon's environment or warranty terms, and you should ask Horizon in writing whether a garage affects the cover before you order. The Amazon listing gives a 0 to 10% power incline, 0.5 to 10 mph with EasyDial controls, a 20 by 55-inch running area, a lifetime frame and motor warranty, a folding frame and app compatibility; Horizon's specification adds a 300 lb maximum user weight. Horizon's page for the T202 says that model is not compatible with GFCI outlets, so check the T101's electrical requirements against your garage circuit. Amazon listed it at $739.99 on 6 November 2026. The CPSC recalled an earlier model, the Horizon T101-05, in October 2022 (serial numbers starting TM734 or TM486, sold 2018 to 2022) because it could change speed or stop unexpectedly; the T101 Connect is a newer model not named in that recall, but check the serial if you are offered a used T101.",
     },
     {
       id: 'spirit-xt285',
@@ -592,7 +598,8 @@ export default {
             does not exclude garages from the warranty. It is sold through dealers; on Amazon, the
             nearest Spirit is the folding <strong class="text-white">XT485</strong>. The <strong class="text-white">Spirit XT385</strong>
             is the folding alternative when a car shares the space, and the
-            <strong class="text-white">XT185</strong> suits walkers on a lower budget.`,
+            <strong class="text-white">Horizon T101 Connect</strong> suits walkers on a lower budget, once
+            Horizon confirms its garage terms (it stands in for Spirit's dealer-sold XT185).`,
     `Whatever you buy, read the manual's environment and exclusions sections before you order, give
             the machine its own properly installed circuit, and keep the air dry — our guide to
             <a href="/treadmill-in-garage/" class="text-[#5AA9FF] font-bold no-underline">keeping a treadmill in a garage</a>

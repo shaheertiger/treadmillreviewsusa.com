@@ -66,7 +66,7 @@ const PRODUCTS = [
     editorialScore: 4.6,
     category: "Best Quiet Machine Under $1,000",
     badge: "Best Value",
-    amazonUrl: "https://www.amazon.com/s?k=Sole+F63+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSXYZY4?tag=sktiger-20",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$899-$1,099",
     specs: "good cushioning · 325 lb capacity · folds upright",
@@ -111,29 +111,30 @@ const PRODUCTS = [
       "Running is the difficult version of this problem — impact energy rises sharply with speed, and a machine that is quiet at 3 mph can be unbearable downstairs at 7. The Commercial 1750 is the machine we would pick for a household where somebody runs, because its cushioning is engineered around exactly that load and its stronger motor is working further from its limit at speed. For a pure walker it offers no acoustic advantage over either Sole, so it is the wrong answer for that household. Turn the console volume down before the first session; the default audio level is the loudest thing about the machine.",
   },
   {
-    id: "proform-power-1295i",
-    name: "ProForm Power 1295i",
-    editorialScore: 4.2,
+    id: "proform-carbon-tlx",
+    name: "ProForm Carbon TLX",
     category: "Best Budget Apartment Option",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=ProForm+treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0C6DTYQ3G?tag=sktiger-20",
     reviewUrl: "/proform-power-1295i-treadmill/",
-    priceRange: "$899-$1,199",
-    specs: "folds upright · 300 lb capacity",
+    reviewLabel: "Read our ProForm Power 1295i review (not sold on Amazon)",
+    priceRange: "About $999 (Amazon, 6 Nov 2026)",
+    specs: "20 x 60 in. deck · 3.0 CHP · 0–12% incline · 300 lb capacity · folds",
     pros: [
-      "Cheapest machine here that we would put in an upstairs flat",
-      "Folds away, which helps in a shared living space",
+      "A full-size ProForm that folds away, which helps in a shared living space",
+      "ProShox cushioning, per the listing",
+      "A hydraulic lowering foot bar, so the deck comes down under control rather than dropping",
       "Workable at walking pace with a proper mat underneath",
-      "Folding frame lets you reposition it between sessions",
     ],
     cons: [
-      "Firmer deck is likely to transmit more impact downstairs",
-      "The mat is not optional with this one — it is part of the purchase",
+      "A lighter folding frame than the Sole machines, so expect more impact to reach the floor",
+      "The mat is not optional with this one; it is part of the purchase",
+      "No touchscreen; the 7-inch LCD shows stats only",
     ],
     bottomLine:
       "Workable in an apartment on a budget, but only with a dense rubber mat, which should be costed in from the start.",
     description:
-      "The 1295i is the budget option we would still consider for an upstairs flat, with one condition attached. Its deck is firmer than the Sole machines, and as a general tendency firmer decks pass more impact into the floor, so of the full-size machines here it is the one we would expect to be loudest downstairs. A dense rubber mat is the best way to close that gap, which is why we describe the mat as part of the purchase rather than an accessory. The issue is the deck rather than the motor, and the deck is the part a mat can help with.",
+      "This slot used to hold the ProForm Power 1295i, which ProForm sells through its own store rather than on Amazon, so the card now shows the closest ProForm folder that Amazon does sell. The Amazon listing for the Carbon TLX gives a 0–12 mph speed range, a 0–12% incline, ProShox cushioning and a folding frame with a hydraulic foot bar for lowering, and ProForm's specification adds a 20 by 60-inch deck, a 3.0 CHP motor and a 300 lb maximum user weight. It is the budget option we would still consider for an upstairs flat, with one condition attached. Nobody publishes a figure for how much impact a deck passes into the floor, but a folding frame at this price carries less mass than the Sole machines, and as a general tendency lighter frames and firmer decks pass more impact into the floor, so of the full-size machines here it is the one we would expect to be loudest downstairs. A dense rubber mat is the best way to close that gap, which is why we describe the mat as part of the purchase rather than an accessory. Amazon listed it at $999 on 6 November 2026.",
   },
 ];
 
@@ -407,6 +408,9 @@ const schema = {
           <p>
             The ranking below is by the properties that predict impact performance in the room below — frame mass and cushioning first — rather than by any advertised decibel value.
           </p>
+          <p>
+            One machine we used to list, the ProForm Power 1295i, is sold by ProForm rather than on Amazon, so its card now shows the closest ProForm folder Amazon does sell, the Carbon TLX.
+          </p>
         </div>
       </div>
 
@@ -460,7 +464,7 @@ const schema = {
                         Check Price on Amazon &rarr;
                       </a>
                       <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                        Read our full {product.name} review &rarr;
+                        {product.reviewLabel ?? `Read our full ${product.name} review`} &rarr;
                       </a>
                     </div>
                   </div>

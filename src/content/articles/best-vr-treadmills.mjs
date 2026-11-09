@@ -31,7 +31,9 @@ export default {
           single figure; confirm the price, what is in the box and the warranty before ordering. On
           9 November 2026 we replaced the three Virtuix Omni One cards with KAT's C3 Core, because
           Virtuix sells direct and through Meta's store rather than on Amazon; the C3 Core was
-          checked against its Amazon listing, KAT's store and Knoxlabs. We searched cpsc.gov for
+          checked against its Amazon listing, KAT's store and Knoxlabs. The C2 Core card now links
+          KAT's Amazon listing for the C2 Core, which does not use the word Enhanced, so its card asks
+          you to confirm the version. We searched cpsc.gov for
           Virtuix and KAT VR and found no recall or warning. These are gaming
           and VR locomotion devices, not exercise equipment in the usual sense, and nothing here is
           fitness or medical advice. We earn a commission if you buy through the Amazon links on
@@ -70,7 +72,7 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KATVR Walk C3 Core</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Meta Quest owners, newest KAT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899–$999 (Amazon, Nov 2026)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Plus Enhanced</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PC VR on a mid budget, with haptics</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,200–$1,700</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Core Enhanced</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$800–$1,500</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Core</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$800–$1,500</td></tr>
             </tbody>
           </table></div>`,
     },
@@ -375,11 +377,11 @@ export default {
     },
     {
       id: 'kat-walk-c2-core-enhanced',
-      name: 'KAT Walk C2 Core Enhanced',
+      name: 'KAT Walk C2 Core',
       category: 'Entry-level PC VR treadmill',
       badge: 'Lowest Price',
-      amazonUrl: 'https://www.amazon.com/s?k=KAT+Walk+C2+Core+VR+Treadmill&tag=sktiger-20',
-      priceRange: '$800–$1,500',
+      amazonUrl: 'https://www.amazon.com/dp/B0FJR33DXQ?tag=sktiger-20',
+      priceRange: 'About $799 on Amazon (9 Nov 2026); $800–$1,500 at KAT by bundle',
       specs: 'Users up to about 286 lb (130 kg) · PC VR headsets; Quest via Nexus adapter · seat module optional',
       pros: [
         'The lowest price of any home VR treadmill we could confirm',
@@ -391,11 +393,12 @@ export default {
         'No haptics, LED lighting or built-in wheels, and louder than the Plus by KAT’s account',
         'Needs a VR-ready PC unless you add the Nexus adapter',
         'Little independent coverage specific to the Core',
+        'The Amazon listing says "Core" rather than "Core Enhanced", and listings are split by shoe size, so confirm the version and size with KAT',
       ],
       bottomLine:
         'For PC VR players who want to try omnidirectional movement for the least money, and can live without haptics.',
       description:
-        "The C2 Core Enhanced is the stripped-back version of KAT's C2, and it is the cheapest route into a home VR treadmill we could confirm. KAT's store listed it at $999 on its own, $1,098 with the Nexus adapter for Quest, and up to $1,497 with the seat module and adapter, with promotion codes advertising $799 bundles when we checked; our band reflects that spread. It shares the C2 platform, so a university lab running a C2 and Knoxlabs give the same user limit of below 286 lb, or 130 kg. KAT's own comparison says the Core lacks the Plus's haptic feedback, LED lighting and built-in wheels, comes without the seat module unless you add it, and is louder. Independent hands-on coverage is mostly of the original C2; VRScout found it took a couple of hours to set up. If you are not sure VR locomotion is for you, this is the lowest-cost way to find out, but it still needs a VR-ready PC or a Quest with the adapter.",
+        "The C2 Core Enhanced is the stripped-back version of KAT's C2, and it is the cheapest route into a home VR treadmill we could confirm. KAT's store listed it at $999 on its own, $1,098 with the Nexus adapter for Quest, and up to $1,497 with the seat module and adapter, with promotion codes advertising $799 bundles when we checked; our band reflects that spread. It shares the C2 platform, so a university lab running a C2 and Knoxlabs give the same user limit of below 286 lb, or 130 kg. KAT's own comparison says the Core lacks the Plus's haptic feedback, LED lighting and built-in wheels, comes without the seat module unless you add it, and is louder. Independent hands-on coverage is mostly of the original C2; VRScout found it took a couple of hours to set up. If you are not sure VR locomotion is for you, this is the lowest-cost way to find out, but it still needs a VR-ready PC or a Quest with the adapter. KAT's Amazon store lists the C2 Core by shoe size at about $799 on 9 November 2026, and a Core with Seated Module at about $999; the listing title says Core rather than Core Enhanced, the name KAT's store uses, so check with KAT which version ships before ordering.",
     },
   ],
   faqs: [

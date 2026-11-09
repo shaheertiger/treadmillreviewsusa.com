@@ -140,6 +140,9 @@ const schema = {
     },
   ],
 };
+// The machine reviewed here is no longer sold new on Amazon, so the buttons and photo show the
+// closest product that Amazon does sell. The JSON-LD above still describes the reviewed machine.
+const AMAZON_ALT = { name: "Sunny Health & Fitness Smart Stepping Elliptical Cardio Climber (SF-E3919)", url: "https://www.amazon.com/dp/B07XTQ6SRG?tag=sktiger-20&linkCode=ll1" };
 ---
 
 <Layout
@@ -154,7 +157,7 @@ const schema = {
     tags: ["bowflex max trainer m5", "bowflex max trainer review", "hiit cardio machine", "low impact cardio", "jrny app"],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Check Price on Amazon", link: PRODUCT.amazonUrl }}
+  stickyCta={{ text: "See the Closest on Amazon", link: AMAZON_ALT.url }}
 >
   <article class="relative overflow-hidden legacy-article">
     <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
@@ -182,7 +185,7 @@ const schema = {
           legitimate low-impact alternative to a treadmill.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">Check Price on Amazon</a>
+          <a href={AMAZON_ALT.url} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">See the Closest on Amazon</a>
           <a href="#is-it-a-treadmill" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">Is This a Treadmill?</a>
         </div>
       </div>
@@ -212,11 +215,12 @@ const schema = {
           at a meaningfully lower price, with a simpler console and fewer
           resistance levels. It is not a treadmill, and can't replace one.
         </p>
-        <ProductImage name={PRODUCT.name} href={PRODUCT.amazonUrl} />
+        <ProductImage name={AMAZON_ALT.name} href={AMAZON_ALT.url} />
+        <p class="text-xs text-gray-500 mt-2 mb-0">Closest on Amazon: {AMAZON_ALT.name}. The {PRODUCT.name} is no longer sold new on Amazon US.</p>
         <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
           <p class="text-2xl font-black text-gray-900">{PRODUCT.priceRange}</p>
-          <a id="cta" href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Check Price on Amazon &rarr;
+          <a id="cta" href={AMAZON_ALT.url} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Closest on Amazon &rarr;
           </a>
         </div>
       </div>

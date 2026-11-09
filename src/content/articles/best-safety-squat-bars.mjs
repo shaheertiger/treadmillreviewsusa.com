@@ -43,8 +43,9 @@ export default {
           and Body-Solid's bar), checked against Titan's and Body-Solid's own listings, Garage Gym Reviews
           where it covers them, and their Amazon titles, and searched the CPSC database for Body-Solid,
           finding no recall. We also could not tie an Amazon listing to
-          Titan's bar with certainty; those buttons run an Amazon search that may show similar bars
-          rather than the exact one. Every brand was checked against the US Consumer Product Safety
+          Titan's imported budget bar, so on 9 November 2026 its card was replaced by VEVOR's 1,500 lb
+          bar, whose figures are the seller's listing claims (FactoryPure's listing gives the same);
+          we could not confirm them independently. Every brand was checked against the US Consumer Product Safety
           Commission's recall database on the same date, along with safety squat bars and barbells
           as a category. Prices are those we saw on that date and change often. We earn a commission
           if you buy through the Amazon links on this page; it does not change which products we
@@ -74,7 +75,7 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan TITAN Series Safety Squat Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Made in USA, knurled handles, 49 in. rackable length, 1,500 lb rating</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Safety Squat Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $280 on sale, 1,500 lb rating, Olympic sleeves</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">VEVOR Safety Squat Bar (1,500 lb)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $216, 1,500 lb rating by the listing; no independent review</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid Safety Squat Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Simple and light</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Traditional pads and handles, 47 lb, 1,000 lb rating</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel SS4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Versatility and Amazon buyers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Four handle styles, needle-bearing sleeves, lighter bar, on Amazon US</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Marrs-Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low-bar-style specialty squats</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45-degree camber drop, 1,200 lb rating, about $874</td></tr>
@@ -152,7 +153,9 @@ export default {
             bar on CAP Barbell's store. And we left out the many unbranded Amazon SSBs at $120 to
             $220, often rated at 700 lb: Garage Gym Reviews warns that cheap SSBs tend to whip, use
             poor padding and get the camber wrong, and we found no independent coverage of any
-            particular one.
+            particular one. The one budget card is VEVOR's 1,500 lb bar, a branded bar that Amazon
+            sells itself; its figures are the seller's claims, matched by FactoryPure's listing, and it
+            is carded with that caveat because Titan's reviewed budget bar is not on Amazon US.
           </p>`,
     },
     {
@@ -279,7 +282,9 @@ export default {
             <li><strong>REP:</strong> 49.1 inches between the cambers, which REP says sits flush even
               on 49-inch-wide racks. Garage Gym Reviews' tester used it in a 49-inch Rogue rack without
               trouble.</li>
-            <li><strong>Titan Safety Squat Bar:</strong> a 50-inch rackable width.</li>
+            <li><strong>Titan Safety Squat Bar</strong> (sold on Titan's store): a 50-inch rackable width.</li>
+            <li><strong>VEVOR Safety Squat Bar:</strong> its listing gives no rackable width, so measure
+              the straight section on arrival.</li>
             <li><strong>Titan TITAN Series:</strong> a 49-inch rackable length, and Garage Gym Reviews
               found it did not sit evenly in the J-cups of a wide rack.</li>
             <li><strong>Bells of Steel SS4:</strong> rests correctly in racks up to 49 inches between
@@ -429,28 +434,27 @@ export default {
         "Our favourite on paper, REP's Safety Squat Bar, and Rogue's SB-1 are sold on their makers' own stores and not on Amazon US, so the top card is the closest bar Amazon does sell: Titan's US-made TITAN Series. Titan's listing describes a bar designed and manufactured in the USA, with knurled handles machined from one piece of steel and spaced 12.75 inches apart, a 49-inch rackable length and a one-year warranty; Titan's listing and the Amazon title give a 1,500 lb rating, and the Amazon title a 5-inch camber, where Titan has described it as a 22-degree camber. Garage Gym Reviews, which reviewed it, describes the knurled handles and a black zinc coating that owners say scratches easily, and found it did not sit evenly in the J-cups of a wide rack. Titan gives 67 lb and Garage Gym Reviews 60 lb, so we have left the weight off the card. Amazon listed it at $459.99 on 9 November 2026; Titan's own store has shown it between about $400 on sale and $549.99.",
     },
     {
-      id: 'titan-safety-squat-bar',
-      name: 'Titan Fitness Safety Squat Bar',
-      category: 'Budget cambered SSB with rubber grips',
-      badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Rackable+Safety+Squat+Bar+Olympic+Sleeves+1500&tag=sktiger-20',
-      priceRange: '$280–$400',
-      specs: '1,500 lb rating (maker) · 5 in. camber drop · 50 in. rackable width · 14.75 in. Olympic sleeves · removable 35 mm rubber grips · 58 lb (Titan figure)',
+      id: 'vevor-safety-squat-bar',
+      name: 'VEVOR Safety Squat Bar (1,500 lb)',
+      category: 'Budget SSB on Amazon (listing claims only)',
+      badge: 'Lowest Price on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B0CN6YP8GY?tag=sktiger-20',
+      priceRange: '$215.90 on Amazon (9 Nov 2026)',
+      specs: 'Seller’s listing claims: 1,500 lb rating · 32 mm A3 steel shaft · 2 in. Olympic sleeves · shoulder and arm pads · about 87 in. long · 48.5 lb',
       pros: [
-        'The cheapest well-reviewed SSB we found, at about $280 on sale',
-        'Garage Gym Reviews’ top pick for most people, praising the padding and balance',
-        'Olympic sleeves that take standard collars',
-        'Removable grips for JM presses and other movements',
+        'The lowest price of any SSB on this page, sold and shipped by Amazon itself',
+        'A 1,500 lb rating, not the 700 lb of the cheapest unbranded bars',
+        'The listing and FactoryPure give the same rating, shaft, length and weight',
       ],
       cons: [
-        'Titan and Garage Gym Reviews give different camber angles and warranty terms',
-        'Reviewers report the chrome can surface-rust and the handles can spin',
-        'Imported, unlike Titan’s pricier TITAN Series bar',
+        'Figures are the seller’s listing claims; we found no independent review or load test',
+        'No rackable width or camber figure on the listing, so measure before ordering',
+        'VEVOR’s maker, Sanven Technology, has had CPSC recalls of other VEVOR products, though none of fitness equipment',
       ],
       bottomLine:
-        'The budget SSB that reviewers trust. Check the rack width against yours and buy it on sale.',
+        'Only for lifters on a strict budget who accept a bar no reviewer has covered. Measure your rack first, and spend more on a reviewed bar if you can.',
       description:
-        "Titan's imported Safety Squat Bar is the bar Garage Gym Reviews names best overall for most people, calling its version two a near copy of the EliteFTS SS Yoke at less than half the price. Titan lists a 1,500 lb rating, a 5-inch camber drop, a 50-inch rackable width, 14.75-inch chrome Olympic sleeves, a one-piece high-density pad with 8 inches between the shoulder pads, and removable 35 mm rubber grips 12.75 inches apart; Garage Gym Reviews gives the same 1,500 lb rating and praises the thick, durable padding, comfortable grips, Olympic sleeves and removable handles. Two figures conflict. Titan's page gives a 20-degree camber where Garage Gym Reviews describes a 22-degree camber for the version two, and Titan includes a one-year warranty where the review says there is none. Titan gives 58 lb, which we could not check independently. The review's criticisms are handles that tend to spin and chrome that surface-rusts fairly quickly. It was $279.97 on Titan's store on 19 October 2026 against a $399.99 list price. An Amazon US listing titled 'Rackable Safety Squat Bar, Olympic Sleeves, 1,500lb Rated' appeared in a search for Titan's bar at $321.97, but we could not open it to confirm the seller.",
+        "Titan's imported Safety Squat Bar, the budget bar Garage Gym Reviews names best overall for most people and which we discuss in the guide, is sold on Titan's store at about $280 on sale; we could not tie an Amazon US listing to it, so this card shows the cheapest branded SSB we found sold by Amazon itself. Its figures are the seller's listing claims, and we could not confirm them independently: the listing gives a 1,500 lb capacity, a 32 mm shaft of A3 steel with seamless welding, 2-inch Olympic sleeves, foam shoulder and neck pads with handles, a length of about 86.6 inches and a weight of 48.5 lb, and FactoryPure's listing for the same bar gives the same capacity, shaft, length and weight. The listing gives no camber angle, camber drop or rackable width, so check the distance between the cambers against your J-cups before ordering, and weigh the bar before you log lifts with it. VEVOR also sells a 700 lb bar under a similar title; make sure the listing says 1,500 lb. We found no independent review, so the cautions below about cheap SSBs apply: check the welds, pads and handle fit on arrival and return it if anything moves. A CPSC search found recalls of other VEVOR-branded products by its importer, Sanven Technology, including baby gates, steamers and bicycles, but none of strength equipment. Amazon listed it at $215.90 on 9 November 2026.",
     },
     {
       id: 'body-solid-safety-squat-bar',
@@ -527,7 +531,7 @@ export default {
   faqs: [
     {
       q: 'What is the best safety squat bar for a home gym?',
-      a: `For most home gyms, a bar with a moderate camber, a dense pad, removable handles and a width that suits a standard rack, such as REP's Safety Squat Bar from REP's own store or, on Amazon, Titan's TITAN Series bar. On a tighter budget, Titan's Safety Squat Bar is the reviewers' value pick. Whatever you choose, check that its width between the cambers suits your rack before ordering.`,
+      a: `For most home gyms, a bar with a moderate camber, a dense pad, removable handles and a width that suits a standard rack, such as REP's Safety Squat Bar from REP's own store or, on Amazon, Titan's TITAN Series bar. On a tighter budget, Titan's Safety Squat Bar from Titan's store is the reviewers' value pick; on Amazon, VEVOR's 1,500 lb bar is cheaper, but its figures are the seller's claims and we found no independent review. Whatever you choose, check that its width between the cambers suits your rack before ordering.`,
     },
     {
       q: 'Is a safety squat bar worth it?',
@@ -595,7 +599,7 @@ export default {
   bottomLine: [
     `<strong class="text-white">For most home gyms, REP's Safety Squat Bar is the one to buy from
             REP, and Titan's made-in-USA TITAN Series the one to buy on Amazon</strong>: both have knurled
-            handles and suit standard racks. Titan's Safety Squat Bar is the budget choice reviewers back,
+            handles and suit standard racks. Titan's Safety Squat Bar, sold on Titan's store, is the budget choice reviewers back, VEVOR's bar the cheapest branded one on Amazon,
             Body-Solid's is a simple, light bar for moderate loads, the Bells of Steel SS4 is the most
             adaptable, and the Marrs-Bar is a specialty bar for those who already own a conventional SSB.`,
     `Whichever you choose, measure your rack across the J-cups before ordering, log the bar's

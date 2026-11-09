@@ -30,7 +30,9 @@ export default {
           (Assault Fitness, SOLE, Tru Grit via its US dealers, Sunny Health &amp; Fitness, TrueForm
           and Woodway) and cross-checked against retailer listings and independent review coverage.
           The SB Fitness and Pro 6 figures are the sellers' own, as checked for our reviews of those
-          machines and our sprint treadmill guide in October and November 2026.
+          machines and our sprint treadmill guide in October and November 2026. Woodway sells through
+          its own store and dealers, not on Amazon, so on 9 November 2026 the Woodway card was replaced
+          by SB Fitness's CT550, whose figures are those checked for our CT550 review.
           Where sources disagreed — on several machines, the running-surface size or the machine
           weight — we left that figure out of the spec line and the table rather than guess. None
           of these are our own measurements: we have not tested these machines. Prices are the
@@ -44,8 +46,10 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Five of the seven sit between roughly $1,600 and $2,600, which is where most home
-            buyers will land. The Woodway and the Pro 6 cover the premium end. Two names many
+            Six of the seven sit between roughly $1,600 and $2,600, which is where most home
+            buyers will land, and the Pro 6 covers the premium end. Woodway's Curve LTG, the other
+            premium machine we compare, is sold through Woodway and its dealers rather than on Amazon,
+            so its card shows the closest Amazon alternative, SB Fitness's CT550. Two more names many
             buyers shortlist are missing: the AssaultRunner Pro and TrueForm's Trainer and Runner are
             sold direct and through dealers, not on Amazon, so we compare against them in the text
             but the cards show machines you can buy there. Our
@@ -69,7 +73,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#tru-grit-runner" class="text-[#0F62FE] font-medium">Tru Grit Runner</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sled pushes and resisted work</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Six resistance levels with dedicated sled-push settings, lifetime frame</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sunny-sf-x7110" class="text-[#0F62FE] font-medium">Sunny SF-X7110</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lightest, easiest to move</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">157 lb — roughly 100 lb lighter than most rivals — with app connectivity</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sb-fitness-ct400" class="text-[#0F62FE] font-medium">SB Fitness CT400</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A slatted curved trainer with three resistance levels for about $1,600</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#woodway-curve-ltg" class="text-[#0F62FE] font-medium">Woodway Curve LTG</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The original maker's home model</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Woodway's slat engineering at a home-gym price, when you can get one</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sb-fitness-ct550" class="text-[#0F62FE] font-medium">SB Fitness CT550</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closest on Amazon to the Woodway Curve LTG</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb rating and eight magnetic levels on a 62 x 20 in. deck (seller figures), about $2,000</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#pro-6-arcadia-air-runner" class="text-[#0F62FE] font-medium">Pro 6 Arcadia Air Runner</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Longest deck, studio use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">69 in. running surface, six resistance levels and a watts console</td></tr>
             </tbody>
           </table></div>`,
@@ -238,7 +242,8 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tru Grit Runner</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not confirmed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame, 2 yr belt, tread and monitor</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny SF-X7110</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">157 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 yr frame, 180 days other parts</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SB Fitness CT400</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not listed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not listed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated on the Amazon listing</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Woodway Curve LTG</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 yr frame, 3 yr belt and moving parts, 1 yr wear items and labour</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SB Fitness CT550</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">181 lb (seller)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb (seller)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 yr frame, 5 yr parts, 2 yr console, 1 yr labour (seller)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Woodway Curve LTG (not on Amazon)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 yr frame, 3 yr belt and moving parts, 1 yr wear items and labour</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro 6 Arcadia Air Runner</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb (seller)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not published</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 yr parts, home and commercial</td></tr>
             </tbody>
           </table></div>
@@ -283,17 +288,18 @@ export default {
           </p>
           <p>
             <strong>How much do you weigh, and how hard will you run?</strong> Heavier runners
-            should start with the 350 lb Woodway Curve LTG, then the SB Fitness CT700, whose seller
-            gives 350 to 475 lb in different places, so plan on 350. Off Amazon, the TrueForm Trainer
-            is rated at 400 lb. Leave a margin rather than buying to the limit. For all-out
+            should start with the 350 lb machines: the SB Fitness CT550 and CT700, whose sellers give
+            350 lb (the CT700's gives 350 to 475 lb in different places, so plan on 350). Off Amazon,
+            the Woodway Curve LTG is rated at 350 lb and the TrueForm Trainer at 400 lb. Leave a margin rather than buying to the limit. For all-out
             sprinting, a heavier frame stays more planted, which favours the 260 to 300 lb machines
             over the 157 lb Sunny.
           </p>
           <p>
             <strong>What is your ceiling on price and waiting time?</strong> Under about $1,600,
             the SB Fitness CT400 is the only option here. Under about $2,600, the SOLE C80, CT700,
-            Tru Grit Runner and Sunny SF-X7110 compete. At $3,500 to $4,600, the Woodway Curve LTG
-            and Pro 6 Arcadia Air Runner are the choices, and current stock may decide between them.
+            Tru Grit Runner, Sunny SF-X7110 and SB Fitness CT550 compete. At $3,500 to $4,600, the
+            Pro 6 Arcadia Air Runner and, from Woodway's dealers rather than Amazon, the Woodway Curve
+            LTG are the choices, and current stock may decide between them.
           </p>`,
     },
     {
@@ -505,36 +511,17 @@ export default {
         space. Amazon showed it at about $1,595 on 6 November 2026.`,
     },
     {
-      id: 'woodway-curve-ltg',
-      name: 'Woodway Curve LTG',
-      category: 'Home Version of a Commercial Curved Trainer',
-      badge: 'Best Ride Engineering',
-      amazonUrl: 'https://www.amazon.com/s?k=Woodway+Curve+LTG+Treadmill&tag=sktiger-20',
-      priceRange: '$3,500–$4,000',
-      specs: 'TPE slat belt · about 3% curvature · 350 lb max user · no motor or outlet needed',
-      pros: [
-        'From Woodway, maker of the commercial Curve long used in gyms and sports facilities',
-        'TPE slat belt that Woodway describes as softer than the industry average',
-        'Woodway positions it for home gyms as well as light commercial use',
-        'LCD console with heart-rate pairing',
-      ],
-      cons: [
-        "Woodway's own shop showed it sold out on 13 October 2026; availability needs checking",
-        'Shortest frame warranty of the premium picks at 5 years, with 1 year on labour',
-        'No resistance setting',
-      ],
-      bottomLine:
-        'For a buyer who wants Woodway engineering at home without paying for the full commercial Curve.',
-      description: `Woodway's commercial Curve is the machine many people first ran on in a gym or
-        sports facility, and the Curve LTG is the company's lighter model for home gyms and light
-        commercial use. It uses Woodway's TPE slat belt, which the company describes as softer than
-        the industry average, on a curve Woodway quotes at about 3%. It is rated for 350 lb users and
-        weighs about 300 lb. Woodway's store listed it at $3,495 on sale against $3,995, but showed
-        it sold out on the day we checked; it remains on Woodway's product pages and with dealers,
-        and we found no discontinuation notice, but you may have to wait or buy through a dealer. The
-        warranty is 5 years on the frame, 3 on the belt and moving parts and 1 on wear items and
-        labour — reasonable, but behind the SOLE C80's lifetime frame. There is no resistance setting.
-        If you can find one, it is the most direct route to the feel of the commercial original.`,
+      id: 'sb-fitness-ct550',
+      name: 'SB Fitness CT550',
+      category: 'Closest on Amazon to the Woodway Curve LTG',
+      badge: 'Amazon Alternative',
+      amazonUrl: 'https://www.amazon.com/dp/B0D15LFWNJ?tag=sktiger-20',
+      priceRange: "$1,995 direct (marketplace listings higher)",
+      specs: "Listed: 62 x 20 in. running surface · 8 magnetic resistance levels · 350 lb max user · no motor or power needed",
+      pros: ["A 20-inch wide curved deck, wider than several curved treadmills at similar prices", "Eight levels of magnetic resistance, which make the belt easier to control than a free-running curve", "No electricity, no motor and no subscription; the console runs on batteries", "Sold direct with a published 30-day return window, and scratch-and-dent units are sometimes available for less"],
+      cons: ["All figures are the seller’s claims; we found no independent measurement or long-term review", "The seller itself says its nylon track bearings make it less suited to sustained high-speed sprinting", "Change-of-mind returns carry a 20% restocking fee unless you accept store credit, and delivery is kerbside only", "Curved treadmills are harder to walk on slowly than flat ones, so it is a poor choice for easy walking"],
+      bottomLine: "A 350 lb-rated curved trainer for HIIT and intervals at about half the Woodway's price, if you accept seller-only figures. The wrong choice for slow walking or all-out sprint training.",
+      description: "Woodway's Curve LTG, the home version of the commercial Curve that we compare in the text, is sold through Woodway and its dealers rather than on Amazon, and Woodway's store showed it sold out when we checked. This card shows the closest machine we could check that Amazon lists: SB Fitness's CT550, which matches the Woodway's 350 lb rating and adds the magnetic resistance the Woodway lacks, for much less. It is not a Woodway: its figures are the seller's own, its track runs on nylon bearings that the seller itself says suit sustained sprinting less well, and there is no independent long-term review. The CT550 is a self-powered curved treadmill: there is no motor, and the belt moves only when you push it, with a curve that lets you speed up by moving forward and slow down by drifting back. SB Fitness Equipment lists a 62 by 20-inch running surface on hard rubber and nylon slats running on nylon track bearings, eight levels of magnetic resistance, a 350 lb maximum user weight, a machine weight of 181 lb, assembled dimensions of 70 by 34 by 57 inches and an 11-inch step-up height. The console is a battery-powered backlit LCD showing distance, speed, time, calories and total miles. The seller’s residential warranty is ten years on the frame, five on parts, two on the console and one on labour. On 14 October 2026 it was $1,995 on the seller’s store against a $2,995 list price, with a scratch-and-dent unit at $1,745. These are listing claims; one reseller gives a different machine weight. Our full SB Fitness CT550 review covers the return terms.",
     },
     {
       id: 'pro-6-arcadia-air-runner',
@@ -583,7 +570,7 @@ export default {
     },
     {
       q: 'Which curved treadmill is best for heavier runners?',
-      a: `Among the machines on this list, the Woodway Curve LTG is rated at 350 lb, and the SB Fitness CT700's seller gives 350, 400 and 475 lb in different places, so plan on 350. The SOLE C80, Tru Grit Runner and Sunny SF-X7110 are rated at 330 lb. Off Amazon, the TrueForm Trainer is rated at 400 lb. Choose a machine with clear headroom above your weight and confirm the rating with the seller before ordering.`,
+      a: `Among the machines carded on this page, the SB Fitness CT550's seller gives 350 lb, and the SB Fitness CT700's seller gives 350, 400 and 475 lb in different places, so plan on 350. The SOLE C80, Tru Grit Runner and Sunny SF-X7110 are rated at 330 lb. Off Amazon, the Woodway Curve LTG is rated at 350 lb and the TrueForm Trainer at 400 lb. Choose a machine with clear headroom above your weight and confirm the rating with the seller before ordering.`,
     },
     {
       q: 'Do curved treadmills need electricity?',

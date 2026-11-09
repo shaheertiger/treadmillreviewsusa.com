@@ -31,9 +31,11 @@ export default {
           Reviews' current jump rope guide and its WOD Nation review, Tom's Guide's weighted jump rope guide,
           and BarBend's jump rope guide. Five of the six had a live Amazon US listing under the brand's name on
           that date, including Crossrope's own seller account; we could not confirm a current Amazon listing
-          for Tangram's SmartRope, which Tangram sells through its own store, and say so on its card. WOD Nation,
-          DEGOL and Benvo sell mainly through Amazon, so their figures are listing claims cross-checked
-          against reviewers. WOD Nation's weighted rope, which replaced the Pulse rope on 9 November 2026,
+          for Tangram's SmartRope, which Tangram sells through its own store, and say so on its card. WOD Nation
+          and Benvo sell mainly through Amazon, so their figures are listing claims cross-checked
+          against reviewers. DEGOL's budget rope could not be tied to a current Amazon US listing on
+          9 November 2026, so its card was replaced by Loocio's bearing rope, whose figures are the
+          seller's listing claims; we could not confirm them independently. WOD Nation's weighted rope, which replaced the Pulse rope on 9 November 2026,
           was checked against its Amazon listing and Garage Gym Reviews. A figure appears on a card only where sources agree; where they conflicted we left
           it off and say so. We could not load Amazon's prices reliably on the day, so price ranges come from
           maker stores and recent independent coverage, and prices change often. Every brand was checked
@@ -63,7 +65,7 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WOD Nation Adjustable Speed Jump Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thin coated cable and bearing handles for under $20</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Crossrope Get Lean Set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Weighted, interchangeable</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two rope weights that clip on and off, sized to your height</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DEGOL Skipping Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget all-rounder</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bearings and foam handles for around $10</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Loocio Adjustable Ball-Bearing Jump Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget all-rounder</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bearings and foam handles for under $10, by its listing</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WOD Nation Weighted Jump Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Weighted handles, budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Removable handle weights, plus a speed cable for later</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tangram SmartRope Rookie</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smart counting rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Counts jumps in the handle and logs them to an app</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Benvo Weighted Ropeless Jump Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cordless</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The motion without a cable, for low ceilings and beginners</td></tr>
@@ -118,7 +120,7 @@ export default {
           </p>
           <p>
             Every brand was checked against the CPSC recall database by recall title, manufacturer name and
-            recall description, and we found no recalls for WOD Nation, Crossrope, DEGOL, Pulse, Tangram or
+            recall description, and we found no recalls for WOD Nation, Crossrope, DEGOL, Loocio, Pulse, Tangram or
             Benvo, or for Elite Jumps, whose beaded ropes we mention below. The only jump rope recall in the
             database is a 1997 recall of a children's elastic "Chinese jump rope", which is not this kind of
             product.
@@ -209,7 +211,7 @@ export default {
             Most speed ropes, including the WOD Nation speed rope, come with a 10-foot cable that you
             shorten by sliding the handles along it, fixing them with a small screw or stopper, and cutting off
             the excess. You cannot add cable back. Shorten it a couple of inches at a time, jump for a session
-            or two, and only then cut. You will need wire cutters or strong snips. Ropes like the DEGOL and the
+            or two, and only then cut. You will need wire cutters or strong snips. Ropes like the DEGOL budget rope and the
             Tangram adjust by threading the rope through the handle without cutting, which is more forgiving.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Handles and bearings</h3>
@@ -408,28 +410,27 @@ export default {
         "Crossrope's system pairs one set of handles with ropes of different weights that clip on and off. The Get Lean set is the lighter one: Crossrope lists slim handles with a quarter-pound and a half-pound rope, and Tom's Guide and Garage Gym Reviews both describe the same two ropes — Tom's Guide as 4 and 8 ounces — and the same $129 price, which Crossrope's store also showed on 19 October. The ropes are not adjustable; you pick a size from Crossrope's height chart, from XS (up to 5 feet half an inch) to XL (6 feet 2 and over). Reviewers liked the smooth bearings, the sizing and how easily the ropes switch; Garage Gym Reviews' tester found the rope itself less durable than the handles, and Crossrope's own warranty bears that out: the handles have a limited lifetime warranty and the ropes are excluded as wear items. Crossrope says indoor use and a mat greatly extend rope life. Its free app has workouts, with a paid membership for more. The set is sold on Amazon through Crossrope's own seller account, where sizes and stock vary; Crossrope's store carries every size.",
     },
     {
-      id: 'degol-skipping-rope',
-      name: 'DEGOL Skipping Rope',
-      category: 'Budget adjustable bearing rope',
+      id: 'loocio-bearing-jump-rope',
+      name: 'Loocio Adjustable Ball-Bearing Jump Rope',
+      category: 'Budget adjustable bearing rope (listing claims only)',
       badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=DEGOL+Skipping+Rope+Ball+Bearings+Adjustable&tag=sktiger-20',
-      priceRange: '$8–$12',
-      specs: 'Adjustable PVC-coated steel cable · ball-bearing handles · 6 in. memory foam handles',
+      amazonUrl: 'https://www.amazon.com/dp/B09DF9NWC7?tag=sktiger-20',
+      priceRange: '$8.99 on Amazon (9 Nov 2026)',
+      specs: 'Seller’s listing claims: PVC-coated steel cable · ball-bearing handles · foam-covered handles · adjustable length',
       pros: [
-        'Bearings and a coated steel cable for around $10',
-        'Adjusts by threading through the handle, so sizing is forgiving',
-        'Soft foam handles are comfortable for beginners',
-        'A long-running Amazon bestseller with a simple design',
+        'Bearings and a coated steel cable for under $10',
+        'The same design as the DEGOL rope reviewers recommend for beginners: foam handles, bearings, coated cable',
+        'Light enough to keep in a bag or a car as a spare',
       ],
       cons: [
-        'Garage Gym Reviews found it tangles and nicks easily on concrete',
-        'Long handles with no shorter option',
-        'No case, and no warranty listed',
+        'Figures are the seller’s listing claims; we found no independent review of this rope',
+        'The listing does not say how the length adjusts or how long the cable is',
+        'No case, and no warranty given on the listing',
       ],
       bottomLine:
-        'The rope to buy if you are not sure you will stick with it. If you do, upgrade to a speed or weighted rope later.',
+        'A rope to buy if you are not sure you will stick with it. If you do, upgrade to a speed or weighted rope later.',
       description:
-        "DEGOL sells through Amazon rather than its own store, so the figures here are its listing's claims, cross-checked against Garage Gym Reviews. Both describe an adjustable rope with ball-bearing handles, a PVC-coated steel wire cable and 6-inch memory foam handles. Garage Gym Reviews names it the best budget jump rope at about $9: its tester liked the smooth bearings and the easy adjustment, which threads the cable through the handle rather than cutting it, and was pleasantly surprised by the materials at the price. The criticisms are what you would expect at $9: it tangles, there is no shorter handle option, there is no case, and the coating nicks easily if you jump on concrete. Garage Gym Reviews gives the cable as 108 inches long; we could not confirm that on the listing, so it is not on the card. It is a sensible first rope, and a reasonable spare to keep in a bag or a car.",
+        "DEGOL's skipping rope, which Garage Gym Reviews names the best budget jump rope, is the classic $10 beginner's rope, but on 9 November 2026 we could not find a current Amazon US listing we could tie to DEGOL, so this card shows the closest rope we found there: Loocio's adjustable bearing rope, sold by HI-Active at $8.99. It is the same kind of rope, and its figures are the seller's listing claims, which we could not confirm independently: a steel-wire cable coated in PVC, built-in ball bearings in the handles, soft foam handle covers described as non-slip and moisture-wicking, and an adjustable length for children and adults. The listing does not say how the length adjusts, how long the cable is or whether there is a warranty. Reviewers' criticisms of ropes in this class apply: they tangle, foam handles come in one length, and the coating nicks quickly if you jump on concrete, so use a mat. A CPSC search found no recalls for Loocio. It is a sensible first rope, and a reasonable spare.",
     },
     {
       id: "wod-nation-weighted-rope",
@@ -506,7 +507,7 @@ export default {
   faqs: [
     {
       q: 'What is the best jump rope for beginners?',
-      a: `A rope that gives you feedback while you learn the rhythm: a lightly weighted rope such as the Crossrope Get Lean, a beaded rope, or an inexpensive bearing rope such as the DEGOL. Very fast, thin speed ropes are harder to time. If your ceiling is low or you are worried about tripping, start with a cordless trainer.`,
+      a: `A rope that gives you feedback while you learn the rhythm: a lightly weighted rope such as the Crossrope Get Lean, a beaded rope, or an inexpensive bearing rope such as the Loocio, the DEGOL-style rope we found on Amazon. Very fast, thin speed ropes are harder to time. If your ceiling is low or you are worried about tripping, start with a cordless trainer.`,
     },
     {
       q: 'How do I know what size jump rope to get?',
@@ -586,7 +587,7 @@ export default {
   bottomLine: [
     `<strong class="text-white">For most people, buy the WOD Nation speed rope</strong>, size it carefully
             and jump on a mat. If you are learning or want conditioning work, the Crossrope Get Lean set's
-            weighted ropes are easier to time and grow with you; on a tight budget, the DEGOL rope or WOD Nation's
+            weighted ropes are easier to time and grow with you; on a tight budget, the Loocio rope or WOD Nation's
             weighted rope will do. Buy the Tangram if counting keeps you going, and the Benvo cordless trainer
             if your ceiling is too low for any rope.`,
     `Whatever you buy, check your ceiling and floor before it arrives, start with short rounds, and

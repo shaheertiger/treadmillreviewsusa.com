@@ -28,7 +28,9 @@ export default {
           for example — we left the figure out and say so in the text. None of these figures are
           our own measurements. Prices are those we saw on the makers' stores on 15 October 2026,
           or on Amazon on 9 November 2026 for the Garmin HRM-Fit, which we checked against Garmin's
-          manual and independent reviews on that date, and change often, and compatibility lists change with firmware, so confirm the price and
+          manual and independent reviews on that date, or on Amazon on 9 November 2026 for the Garmin
+          Running Dynamics Pod (checked against its listing, retailers and DC Rainmaker's coverage) and
+          the HRM 200 (figures as checked for our heart rate monitor guide), and change often, and compatibility lists change with firmware, so confirm the price and
           that the sensor pairs with your exact watch or app before you order. We earn a commission
           if you buy through the Amazon links on this page; it does not change which products we
           list or what we say about them.`,
@@ -45,7 +47,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five sensors, and only one of them works with almost everything. The short version:
-            buy a Stryd 5.0 if you want a pod that pairs with most watches and with Zwift; buy the
+            buy a Stryd 5.0, from Stryd since it is not on Amazon, if you want a pod that pairs with most watches and with Zwift; buy the
             COROS POD 2 if you own a COROS watch; and if you are a Garmin runner who would rather
             not clip anything to a shoe, the HRM 600 chest strap does the same job for compatible
             Garmin watches. New to pods? Start with our
@@ -58,10 +60,10 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd 5.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most runners, and Zwift</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ANT+ and Bluetooth, on Zwift's footpod list, pairs with Garmin, COROS, Polar, Suunto and Apple Watch via its app</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd 5.0 (sold by Stryd); card: Garmin Running Dynamics Pod</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most runners, and Zwift</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The Stryd pairs with most watches and Zwift but is not on Amazon; the Garmin pod Amazon sells sends form metrics, not pace</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">COROS POD 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">COROS watch owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$99, self-calibrating, but works only with COROS watches</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin HRM 600</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin owners who want nothing on the shoe</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest strap that Garmin says sends treadmill pace and distance to compatible watches</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NPE Runn</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One home treadmill, several runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reads the belt rather than your stride; Zwift lists it as a treadmill sensor</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NPE Runn (sold by NPE); card: Garmin HRM 200</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One home treadmill, several runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The Runn reads the belt and is not on Amazon; the HRM 200 strap feeds heart rate, not speed, to a console, Zwift and a watch at once</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin HRM-Fit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin runners who train in a sports bra</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Clips to a sports bra; Garmin says it sends treadmill pace and distance to compatible watches</td></tr>
             </tbody>
           </table></div>
@@ -77,9 +79,11 @@ export default {
       heading: 'The 5 Best Foot Pods and Pace Sensors for Treadmills',
       products: true,
       html: `          <p>
-            Three of these clip to your shoe, one is a chest strap and one sits on the treadmill
-            itself. They are grouped together because they do the same job: give a watch or an app
-            a running speed that does not depend on GPS, which is useless indoors, or on wrist
+            Stryd sells its pods, and North Pole Engineering its Runn belt sensor, direct rather than
+            on Amazon US, so their two cards show the closest sensors Amazon does sell, a Garmin
+            running-form pod and a Garmin heart-rate strap, and each says plainly that it does not
+            measure pace. The other three, the COROS POD 2 and Garmin's HRM 600 and HRM-Fit, give a
+            watch a running speed that does not depend on GPS, which is useless indoors, or on wrist
             movement, which is a poor guide to leg speed. Each card says what the sensor pairs with,
             because that, more than accuracy, is what decides which one you should buy.
           </p>
@@ -133,7 +137,10 @@ export default {
             way: Garmin's HRM 600 chest strap and HRM-Fit clip-on sensor, and the Runn sensor from North
             Pole Engineering, which Zwift lists as its compatible treadmill sensor. Stryd's two-pod Duo,
             which an earlier version of this page carded, is sold direct by Stryd rather than on Amazon,
-            so the Garmin HRM-Fit, which is sold on Amazon, took its place.
+            so the Garmin HRM-Fit, which is sold on Amazon, took its place. In November 2026 the
+            Stryd 5.0 and Runn cards were also replaced, because neither is sold on Amazon US: the
+            Stryd's by Garmin's Running Dynamics Pod and the Runn's by Garmin's HRM 200 strap, neither
+            of which measures pace, as their cards say. Stryd and the Runn are still discussed throughout.
           </p>
           <p>
             <strong>Safety check.</strong> We searched the US Consumer Product Safety Commission's
@@ -401,27 +408,27 @@ export default {
   ],
   products: [
     {
-      id: 'stryd-5',
-      name: 'Stryd 5.0',
-      category: 'Best Overall Foot Pod for Treadmill',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Stryd+5.0+Footpod&tag=sktiger-20',
-      priceRange: 'Around $299',
-      specs: '8 g shoe pod · ANT+ + Bluetooth · rechargeable, about 20 hr of running · on Zwift footpod list',
+      id: 'garmin-running-dynamics-pod',
+      name: 'Garmin Running Dynamics Pod',
+      category: 'Closest on Amazon to the Stryd 5.0 (form metrics, not pace)',
+      badge: 'Closest on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B06XQ4KCVL?tag=sktiger-20',
+      priceRange: '$89.90 on Amazon (9 Nov 2026)',
+      specs: 'Waistband clip-on pod · six running dynamics metrics to compatible Garmin watches · replaceable coin cell, up to 1 yr at 1 hr/day · not a pace or distance sensor',
       pros: [
-        'Broadcasts ANT+ and Bluetooth, so it fits almost any watch and app combination',
-        'Stryd footpods are on Zwift’s compatible footpod list',
-        'Stryd says it is accurate out of the box and that most users need no calibration factor',
-        'Works on any treadmill and outdoors, so one sensor covers every run',
+        'The only clip-on running sensor other than the COROS POD 2 that we found sold on Amazon US',
+        'Sends six running-form metrics, such as cadence and ground contact time, to compatible Garmin watches',
+        'A replaceable battery rated at up to a year at an hour a day, by the listing and retailers',
       ],
       cons: [
-        'Expensive for a pace sensor; the lower advertised price requires a paid membership commitment',
-        'Sold mainly direct by Stryd in the US, and Apple Watch support runs through Stryd’s own app',
+        'Not a pace or distance sensor: Garmin describes form metrics only, and DC Rainmaker says it does not measure pace',
+        'Works only with compatible Garmin watches; not a speed source for Zwift or other brands',
+        'Sold on Amazon by a third-party seller, not by Garmin',
       ],
       bottomLine:
-        'The pod to buy if you want one sensor that works with Zwift and with most running watches. The price is the only real objection.',
+        'Buy it only for Garmin running-form data. For treadmill pace on Amazon, choose the HRM 600, HRM-Fit or, for a COROS watch, the POD 2; for Zwift, buy a Stryd direct.',
       description:
-        'Stryd is the one shoe pod that still covers nearly everything. The 5.0 is the current model: Stryd describes it as 15% smaller by volume than its predecessor, weighing 8 grams, with an extended antenna for more reliable pairing and a two-sided magnetic keychain charger. It connects over both ANT+ and Bluetooth, which Stryd states on its store and which independent reviews confirm. Stryd’s help centre lists compatible Garmin, COROS, Polar and Suunto watches and supports Apple Watch through the Stryd app, and Zwift names Stryd footpods among its compatible footpods. Stryd says the pod is accurate for pace and distance without calibration; owners on Zwift’s forum report mixed results, some seeing close agreement with a treadmill and others a small, consistent gap. Battery life is about 20 hours of running. On 15 October 2026 Stryd listed the pod at $299, or less with a commitment to its optional membership; a membership is not required to use the pod. It is primarily a running power meter, which some runners train by, but pace is all a treadmill runner needs from it.',
+        "Stryd's 5.0, the pod we recommend for most runners and for Zwift and describe throughout this guide, is sold direct by Stryd rather than on Amazon US, and no other pod that works with most watches and Zwift is sold there now, so this card shows the closest clip-on running sensor Amazon lists. Be clear about what it is. The Garmin Running Dynamics Pod clips to the back of your waistband and, by Garmin's description and its Amazon listing, computes six running dynamics metrics, such as cadence, stride length and ground contact time, and sends them to compatible Garmin watches. It is not a foot pod: DC Rainmaker's coverage says it does not measure pace, Garmin's instructions cover form metrics only, and we found no Garmin statement that it provides treadmill pace or distance. It does not pair with Zwift as a speed source or with other brands' watches. Retailers list a replaceable CR1632 coin cell rated at up to a year at an hour a day. On Amazon it was $89.90 from a third-party seller on 9 November 2026. If treadmill pace is what you need, the COROS POD 2, Garmin HRM 600 and HRM-Fit cards on this page provide it for their own watches; if you need Zwift, buy a Stryd from Stryd.",
     },
     {
       id: 'coros-pod-2',
@@ -470,27 +477,17 @@ export default {
         'Garmin no longer sells a foot pod, and when a runner asked on Garmin’s forum where to find one, a Garmin staff member pointed to this strap. Garmin’s product page and launch announcement say the HRM 600 sends pace and distance data from indoor track and treadmill runs to compatible Garmin smartwatches, and independent retail listings repeat that it needs a compatible watch for those metrics. It is also a capable heart rate strap: it transmits over ANT+ and Bluetooth, records on its own and syncs later, is rated 5 ATM, and is rechargeable with up to two months of battery at an hour a day. Garmin listed it at $169.99 on 15 October 2026, matching the launch price. The catch is scope: this is not a general-purpose foot pod. It feeds Garmin watches, not Zwift as a speed source and not other brands. Garmin also notes that some watches do not support every advanced feature, so confirm treadmill pace for your exact model before buying.',
     },
     {
-      id: 'npe-runn',
-      name: 'NPE Runn Smart Treadmill Sensor',
-      category: 'Best Belt Sensor for a Home Treadmill',
-      badge: 'Measures the Belt',
-      amazonUrl: 'https://www.amazon.com/s?k=NPE+Runn+Smart+Treadmill+Sensor&tag=sktiger-20',
-      priceRange: 'Around $125',
-      specs: 'Mounts on the treadmill · reads belt speed · ANT+ + Bluetooth · speed, incline and cadence',
-      pros: [
-        'Zwift names it as its compatible treadmill sensor',
-        'Measures the belt, so it works for anyone who runs on that treadmill with nothing on their shoe',
-        'Broadcasts speed, incline and cadence over ANT+ and Bluetooth',
-        'Can show whether your console reads fast, because it does not depend on the console',
-      ],
-      cons: [
-        'Installation involves adhesive mounting and marks on the belt, which reviewers say need renewing',
-        'Tied to one treadmill; no use in a gym, a hotel or outdoors',
-      ],
-      bottomLine:
-        'For a household with one treadmill and more than one runner, or anyone who wants to check the console. Not for runners who train in more than one place.',
-      description:
-        'Runn takes the opposite approach to a foot pod. It fixes to the rear of the treadmill frame and times marks on the belt as they pass under its sensor, so it reports the belt’s actual speed whoever is running. North Pole Engineering says it works on virtually any treadmill, provides ANT+ and Bluetooth connectivity and tracks speed, incline and cadence; Zwift’s support page lists it as the treadmill sensor that adds Bluetooth speed transmission to compatible treadmills by reading belt speed. An independent review describes the details: a cradle stuck to the frame, the sensor set a fraction of an inch above the belt, and white stickers on the belt that wear and may need replacing. The same review reports that it ships factory-calibrated, that a Garmin watch pairs with it as an ANT+ foot pod, and that it charges over USB. NPE listed it at $124.99 and in stock on 15 October 2026. It is a home-treadmill device: it stays on one machine.',
+      id: 'garmin-hrm-200',
+      name: 'Garmin HRM 200',
+      category: 'Closest on Amazon to the NPE Runn (heart rate, not speed)',
+      badge: 'Closest on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B0DQB2F5GD?tag=sktiger-20',
+      priceRange: "$70–$80",
+      specs: "Chest strap · CR2032 coin cell, up to 1 yr at 1 hr/day · ANT+ + Bluetooth (3 connections) · 3 ATM · no pace or speed",
+      pros: ["Up to three simultaneous Bluetooth connections plus unlimited ANT+", "Garmin rates the user-replaceable CR2032 at up to a year at an hour a day", "Quarter-turn battery door, so changing the cell needs no tools", "Independent reviews found its readings consistent with the Polar H10"],
+      cons: ["Does not measure belt speed or pace: it is a heart-rate strap, not a replacement for a belt sensor", "No 5 kHz output, so it will not work with a console that only has an analogue receiver", "No onboard memory and none of the running metrics of Garmin’s pricier strap"],
+      bottomLine: "Not a speed sensor. Buy it for heart rate on a Bluetooth treadmill console, Zwift and a watch at once; for real belt speed on a shared treadmill, buy the Runn from North Pole Engineering.",
+      description: "North Pole Engineering's Runn, the belt sensor described in this guide, is sold by NPE rather than on Amazon US, and Amazon sells no sensor that reads a treadmill belt, so this card shows the shared treadmill accessory we could check that Amazon does sell, with a clear limit: it measures heart rate, not speed. On a home treadmill with a Bluetooth console, Zwift on a tablet and a watch, its three Bluetooth connections and unlimited ANT+ let one strap feed all three. It will not give Zwift your running speed, and it will not check whether the console reads fast; for those, the Runn or a Stryd is still the answer. The HRM 200 is Garmin’s entry-level chest strap and, for most Garmin watch owners, the sensible one. It transmits over both ANT+ and Bluetooth, with retailer specifications listing three concurrent Bluetooth connections and no limit on ANT+, which makes it easy to run a watch, a phone app and a Bluetooth treadmill console at once. The battery is a standard CR2032 behind a quarter-turn door, rated by Garmin at up to a year at an hour a day, and the strap is rated 3 ATM. Independent reviewers have found its heart rate and HRV data consistent with the Polar H10, while noting that it lacks advanced running metrics and onboard storage, and one review pointed out that cheaper rivals now offer similar basics. The meaningful gap against the H10 for treadmill use is the absence of 5 kHz analogue output, so check that your console reads Bluetooth or ANT+ before choosing it over the Polar. Figures are those checked for our heart rate monitor guide.",
     },
     {
       id: "garmin-hrm-fit",
@@ -520,7 +517,7 @@ export default {
   faqs: [
     {
       q: 'What is the best foot pod for treadmill running?',
-      a: `For most runners in October 2026, the Stryd 5.0, because it broadcasts both ANT+ and Bluetooth, pairs with most running watch brands and is on Zwift's compatible footpod list. COROS watch owners should buy the COROS POD 2 instead, which costs far less but works only with COROS watches. Garmin owners can use the HRM 600 chest strap for treadmill pace.`,
+      a: `For most runners in October 2026, the Stryd 5.0, bought from Stryd since it is not sold on Amazon US, because it broadcasts both ANT+ and Bluetooth, pairs with most running watch brands and is on Zwift's compatible footpod list. COROS watch owners should buy the COROS POD 2 instead, which costs far less but works only with COROS watches. Garmin owners can use the HRM 600 chest strap for treadmill pace.`,
     },
     {
       q: 'Which foot pods work with Zwift?',
@@ -586,7 +583,7 @@ export default {
     },
   ],
   bottomLine: [
-    `<strong class="text-white">Buy the Stryd 5.0</strong> if you want one pace sensor that works
+    `<strong class="text-white">Buy the Stryd 5.0</strong>, from Stryd's own store, if you want one pace sensor that works
             with Zwift and with most running watches; it is expensive, but nothing else currently
             sold covers as many devices. COROS owners should buy the
             <strong class="text-white">COROS POD 2</strong> for $99, and Garmin owners who would
