@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Buy Treadmills (2026): Is Best Buy a Good Place to Buy One?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-buy-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Open-Box Treadmills", link: "#open-box" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestbuytreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestbuytreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Buying a Treadmill at Best Buy</h1>
+      <p class="ed-dek">
+        An electronics retailer is good at screens, delivery logistics and open-box returns, and less good at knowing what makes a treadmill deck last. Buying a running machine there works well when you bring the treadmill knowledge yourself.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Buying a Treadmill <span class="text-[#5AA9FF]">at Best Buy</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An electronics retailer is good at screens, delivery logistics and open-box returns, and less good at knowing what makes a treadmill deck last. Buying a running machine there works well when you bring the treadmill knowledge yourself.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#open-box" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Open-Box Treadmills
-          </a>
-          <a href="#returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Returns and Restocking
-          </a>
-        </div>
+        <a href="#open-box" class="btn-ghost">Open-Box Treadmills</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Best Buy. Product range, delivery and installation services, return
-          windows, restocking fees and membership benefits change over time and can differ by
-          product, region and membership level. Where this page describes how things typically
-          work, check the current policy on the product page or with the store before you buy.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Treadmill at Best Buy?</a>
-          <a href="#strengths-weaknesses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What an Electronics Retailer Is Good and Bad At</a>
-          <a href="#screens-and-specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Look Past the Screen</a>
-          <a href="#open-box" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Open-Box Treadmills: What to Check</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Delivery and Installation</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Return Windows and Restocking Fees</a>
-          <a href="#membership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Membership Programmes and Store Credit</a>
-          <a href="#prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Judging a Treadmill Price at an Electronics Retailer</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Warranty, Protection Plans and Service</a>
-          <a href="#compare-specialty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Best Buy vs a Specialty Fitness Store</a>
-          <a href="#who-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Best Buy Suits</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Before You Buy a Treadmill at Best Buy</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           This page does not list the treadmills Best Buy is selling now. The range changes, much of
           it may be online rather than on store floors, and any list would be out of date within
           weeks. It covers what a general electronics retailer is good and bad at when it sells
@@ -205,8 +144,36 @@ const schema = {
           returns, and how the result compares with buying from a specialist.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site is independent and
+          not affiliated with Best Buy. Product range, delivery and installation services, return
+          windows, restocking fees and membership benefits change over time and can differ by
+          product, region and membership level. Where this page describes how things typically
+          work, check the current policy on the product page or with the store before you buy.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a Treadmill at Best Buy?</a></li>
+            <li><a href="#strengths-weaknesses">What an Electronics Retailer Is Good and Bad At</a></li>
+            <li><a href="#screens-and-specs">Look Past the Screen</a></li>
+            <li><a href="#open-box">Open-Box Treadmills: What to Check</a></li>
+            <li><a href="#delivery">Delivery and Installation</a></li>
+            <li><a href="#returns">Return Windows and Restocking Fees</a></li>
+            <li><a href="#membership">Membership Programmes and Store Credit</a></li>
+            <li><a href="#prices">Judging a Treadmill Price at an Electronics Retailer</a></li>
+            <li><a href="#warranty">Warranty, Protection Plans and Service</a></li>
+            <li><a href="#compare-specialty">Best Buy vs a Specialty Fitness Store</a></li>
+            <li><a href="#who-suits">Who Best Buy Suits</a></li>
+            <li><a href="#checklist">Before You Buy a Treadmill at Best Buy</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Treadmill at Best Buy?</h2>
+          <h2>Should You Buy a Treadmill at Best Buy?</h2>
 <p>
             <strong>Best Buy can be a reasonable place to buy a treadmill, particularly a connected
             machine with a large screen, or an open-box unit at a genuine discount.</strong> Large
@@ -228,7 +195,7 @@ const schema = {
         </div>
 
         <div id="strengths-weaknesses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What an Electronics Retailer Is Good and Bad At</h2>
+          <h2>What an Electronics Retailer Is Good and Bad At</h2>
 <p>
             A treadmill is half appliance and half piece of sports equipment, and an electronics
             retailer is naturally stronger on one half.
@@ -253,14 +220,12 @@ const schema = {
           </ul>
           <p>
             None of that is a reason to avoid the store. It is a reason to arrive knowing the
-            specification you need. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>
-            covers the decisions to make first.
+            specification you need. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a> covers the decisions to make first.
           </p>
         </div>
 
         <div id="screens-and-specs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Look Past the Screen</h2>
+          <h2>Look Past the Screen</h2>
 <p>
             The first thing you notice about a connected treadmill in an electronics store is the
             screen, and it is the least important thing about whether the machine will last.
@@ -268,19 +233,14 @@ const schema = {
           <p>
             <strong>Check the mechanical specification first.</strong> Continuous motor horsepower
             rather than peak, the belt width and length of the running surface, maximum user weight,
-            top speed and incline range. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            and <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explain what to look for.
+            top speed and incline range. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> and <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explain what to look for.
           </p>
           <p>
             <strong>Then the subscription.</strong> Many screen-led treadmills are designed around a
             paid training subscription. Find out whether one is included, for how long, and what
             the machine can do without it — manual speed and incline control, at minimum. Over
             several years a subscription can cost a meaningful fraction of the machine. Our guides
-            to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            set out the trade-off.
+            to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> set out the trade-off.
           </p>
           <p>
             <strong>Then the screen.</strong> If it matters to you, check whether it is a built-in
@@ -291,7 +251,7 @@ const schema = {
         </div>
 
         <div id="open-box" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Open-Box Treadmills: What to Check</h2>
+          <h2>Open-Box Treadmills: What to Check</h2>
 <p>
             Electronics retailers are well known for selling open-box items — products returned,
             displayed or opened and then resold at a discount, usually with a condition rating. For
@@ -321,14 +281,12 @@ const schema = {
           <p>
             <strong>Compare with refurbished and model-year clearance.</strong> A manufacturer
             refurbished machine with a stated warranty, or last year's version of a current model,
-            can be better value than an open-box unit. Our
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
-            explains how the categories differ.
+            can be better value than an open-box unit. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a> explains how the categories differ.
           </p>
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Delivery and Installation</h2>
+          <h2>Delivery and Installation</h2>
 <p>
             Heavy-item delivery is something electronics retailers do every day, which can make the
             arrival of a treadmill smoother than from some other channels. What exactly is included
@@ -337,33 +295,26 @@ const schema = {
           <p>
             <strong>Find out where delivery ends.</strong> Kerbside, threshold and room-of-choice
             delivery are very different services for a box that may weigh as much as a person. Our
-            guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives typical figures.
+            guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives typical figures.
           </p>
           <p>
             <strong>Ask whether assembly or installation is available.</strong> Some retailers offer
             assembly as a paid service, sometimes through a partner. Ask who does it, whether it
             happens at delivery or on a separate visit, and whether packaging is taken away. If it
-            is yours to do, our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a>
-            sets out the job.
+            is yours to do, our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a> sets out the job.
           </p>
           <p>
             <strong>Plan the power and the space.</strong> A connected treadmill needs a suitable
-            outlet and, for streaming, a reliable connection where it will sit. Our guides to
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity use</a>
-            and <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements</a>
-            cover both.
+            outlet and, for streaming, a reliable connection where it will sit. Our guides to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity use</a> and <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements</a> cover both.
           </p>
           <p>
             <strong>Haul-away.</strong> If you are replacing an old treadmill, ask whether removal is
-            offered. If not, our guide to
-            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a>
-            covers the options.
+            offered. If not, our guide to <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a> covers the options.
           </p>
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Return Windows and Restocking Fees</h2>
+          <h2>Return Windows and Restocking Fees</h2>
 <p>
             Return terms at electronics retailers can vary by product category, by whether an item
             is open-box, and by membership level. Large items and fitness equipment may carry their
@@ -385,15 +336,13 @@ const schema = {
             Keep the box and packing until you are sure.
           </p>
           <p>
-            As at any retailer, treat the return policy as a safety net rather than a trial. Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            explains why the real cost of returning a treadmill makes careful choice beforehand
+            As at any retailer, treat the return policy as a safety net rather than a trial. Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> explains why the real cost of returning a treadmill makes careful choice beforehand
             worth more than a discount.
           </p>
         </div>
 
         <div id="membership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Membership Programmes and Store Credit</h2>
+          <h2>Membership Programmes and Store Credit</h2>
 <p>
             Electronics retailers commonly offer free or paid membership programmes and store
             credit cards. These can change the price you pay or the terms you get, but they rarely
@@ -411,14 +360,12 @@ const schema = {
           <p>
             <strong>Financing.</strong> Promotional financing can spread the cost, but read the terms
             carefully, including what happens if the balance is not cleared within any promotional
-            period. Our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            can help you set a budget before financing comes into it.
+            period. Our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a> can help you set a budget before financing comes into it.
           </p>
         </div>
 
         <div id="prices" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Judging a Treadmill Price at an Electronics Retailer</h2>
+          <h2>Judging a Treadmill Price at an Electronics Retailer</h2>
 <p>
             Electronics retailers are used to running sales events, and treadmills are often
             swept into them. A sale price is only useful information if you know what the machine
@@ -427,9 +374,7 @@ const schema = {
           <p>
             <strong>Ignore the crossed-out figure.</strong> Compare the price with what the same or
             an equivalent machine costs elsewhere today, not with the reference price beside it.
-            Our guide to
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
-            covers how to tell a real reduction from a presentational one.
+            Our guide to <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> covers how to tell a real reduction from a presentational one.
           </p>
           <p>
             <strong>Price the subscription in.</strong> A connected treadmill that is cheap up front
@@ -444,14 +389,12 @@ const schema = {
           <p>
             <strong>Know the calendar.</strong> <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>Treadmill prices</a> move through the year across the
             whole market, with real reductions at predictable points and higher prices when demand
-            peaks. Our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            sets out the cycle.
+            peaks. Our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> sets out the cycle.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Warranty, Protection Plans and Service</h2>
+          <h2>Warranty, Protection Plans and Service</h2>
 <p>
             The manufacturer's warranty is usually what covers a treadmill bought at an electronics
             retailer. Register the machine with the manufacturer if it asks you to, keep your receipt,
@@ -461,9 +404,7 @@ const schema = {
             <strong>Protection plans.</strong> Electronics retailers routinely offer extended
             protection plans at checkout. Before buying one for a treadmill, find out what it covers
             beyond the manufacturer's warranty — labour, in-home service, the screen, wear items —
-            who administers it, and whether it overlaps with cover you already have. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            discusses when extended cover is worth having.
+            who administers it, and whether it overlaps with cover you already have. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> discusses when extended cover is worth having.
           </p>
           <p>
             <strong>Service in practice.</strong> Ask whether repairs are handled by the
@@ -474,7 +415,7 @@ const schema = {
         </div>
 
         <div id="compare-specialty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Best Buy vs a Specialty Fitness Store</h2>
+          <h2>Best Buy vs a Specialty Fitness Store</h2>
 <p>
             The clearest alternative to an electronics retailer is a specialty fitness store, and
             the two are good at different things.
@@ -492,18 +433,13 @@ const schema = {
           </p>
           <p>
             A practical approach is to try machines at a specialty store or sporting goods chain,
-            settle the specification, and then compare delivered prices across channels — including
-            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">sporting goods stores</a>,
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon</a>,
-            <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a>
-            and <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco</a>.
-            Our guide to <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">finding a treadmill near you</a>
-            covers the store types and how to test a machine.
+            settle the specification, and then compare delivered prices across channels — including <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">sporting goods stores</a>, <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon</a>, <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a> and <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco</a>.
+            Our guide to <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">finding a treadmill near you</a> covers the store types and how to test a machine.
           </p>
         </div>
 
         <div id="who-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Best Buy Suits</h2>
+          <h2>Who Best Buy Suits</h2>
 <p>
             <strong>It suits</strong> buyers who want a connected <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>treadmill with a screen</a> and value
             help with the technology; buyers who already have a membership or account and know
@@ -522,7 +458,7 @@ const schema = {
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Before You Buy a Treadmill at Best Buy</h2>
+          <h2>Before You Buy a Treadmill at Best Buy</h2>
 <p>
             Run through these before you add the treadmill to the basket, in the store or online.
           </p>
@@ -537,140 +473,155 @@ const schema = {
             <li><strong>Delivered price compared.</strong> Against an equivalent machine elsewhere, including any membership fee.</li>
           </ul>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Best Buy sell treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Best Buy has sold fitness equipment including treadmills, but the range changes and may be larger online than in stores, where few machines may be on display. Check the website and call your local store before visiting if you want to see a particular model.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Best Buy a good place to buy a running machine?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, particularly for connected treadmills or open-box deals, and electronics retailers are experienced at delivering heavy items. It is less likely to offer fitness-specific advice, so judge the machine on continuous horsepower, running surface, user weight and warranty rather than on its screen.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are open-box treadmills at Best Buy worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They can be. Read the condition description, check every part and the safety key are included, ask whether the machine was assembled before, and confirm the manufacturer's warranty applies in full. Compare against manufacturer refurbished and model-year clearance prices before deciding.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the Best Buy return policy on treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Return windows and any restocking fees can vary by product category, open-box status and membership level, and policies change. Check the current terms for the specific treadmill before buying, and find out how a return would be collected.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Best Buy deliver and assemble treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Delivery is usually available for large items, but how far it goes — kerbside, threshold or room of choice — and whether assembly is offered varies by product and location. Ask before buying and budget for assembly if it is not included.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy a protection plan for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only after reading what it covers beyond the manufacturer's warranty. Check whether it includes labour, in-home service and the screen, who administers it, and whether it overlaps with existing cover. On a simple machine with a strong manufacturer warranty, it may add little.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill at an Electronics Retailer</h2>
+          <p>Most of them come from judging a treadmill as if it were a television.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Choosing by the screen</h3>
+              <p>The screen is the most visible feature and the least important to how long the machine lasts. Check continuous horsepower, running surface, frame and user weight first.</p>
+            </li>
+            <li>
+              <h3>Ignoring the subscription</h3>
+              <p>Screen-led treadmills are often designed around a paid subscription. Find out what is included, for how long, and what the machine can do without it.</p>
+            </li>
+            <li>
+              <h3>Buying open-box without asking about warranty</h3>
+              <p>An open-box discount is worth little if the warranty is shortened or started months ago. Confirm the warranty terms and check the unit is complete.</p>
+            </li>
+            <li>
+              <h3>Missing the restocking fee</h3>
+              <p>Some categories and open-box items can carry restocking fees or shorter windows. Check the current terms for this item before buying, not when you want to send it back.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill at an Electronics Retailer</h2>
-          <p class="text-gray-700 leading-relaxed">Most of them come from judging a treadmill as if it were a television.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing by the screen</h3>
-              <p class="text-gray-700 text-sm m-0">The screen is the most visible feature and the least important to how long the machine lasts. Check continuous horsepower, running surface, frame and user weight first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the subscription</h3>
-              <p class="text-gray-700 text-sm m-0">Screen-led treadmills are often designed around a paid subscription. Find out what is included, for how long, and what the machine can do without it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying open-box without asking about warranty</h3>
-              <p class="text-gray-700 text-sm m-0">An open-box discount is worth little if the warranty is shortened or started months ago. Confirm the warranty terms and check the unit is complete.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Missing the restocking fee</h3>
-              <p class="text-gray-700 text-sm m-0">Some categories and open-box items can carry restocking fees or shorter windows. Check the current terms for this item before buying, not when you want to send it back.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/where-to-buy-a-treadmill-near-me/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Near Me</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Store types and the ten-minute in-store test.</p>
-            </a>
-            <a href="/refurbished-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Value</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Refurbished Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Open-box, refurbished and returned: what each label means.</p>
-            </a>
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Bring the treadmill knowledge with you.</strong> An electronics
             retailer can be a good place to buy a connected treadmill or an open-box bargain, but
             judge the machine on its mechanical specification and read the return window and any
             restocking fee for that item.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Compare the delivered price with a specialty store and
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+          <p>
+            Compare the delivered price with a specialty store and <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
             If the specification fits and the warranty is complete, the store matters less than the
             machine.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/where-to-buy-a-treadmill-near-me/">Treadmill Near Me</a></li>
+            <li><a href="/refurbished-treadmills/">Refurbished Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does Best Buy sell treadmills?</h3></summary>
+            <p class="faq-a">
+              Best Buy has sold fitness equipment including treadmills, but the range changes and may be larger online than in stores, where few machines may be on display. Check the website and call your local store before visiting if you want to see a particular model.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is Best Buy a good place to buy a running machine?</h3></summary>
+            <p class="faq-a">
+              It can be, particularly for connected treadmills or open-box deals, and electronics retailers are experienced at delivering heavy items. It is less likely to offer fitness-specific advice, so judge the machine on continuous horsepower, running surface, user weight and warranty rather than on its screen.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are open-box treadmills at Best Buy worth it?</h3></summary>
+            <p class="faq-a">
+              They can be. Read the condition description, check every part and the safety key are included, ask whether the machine was assembled before, and confirm the manufacturer's warranty applies in full. Compare against manufacturer refurbished and model-year clearance prices before deciding.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the Best Buy return policy on treadmills?</h3></summary>
+            <p class="faq-a">
+              Return windows and any restocking fees can vary by product category, open-box status and membership level, and policies change. Check the current terms for the specific treadmill before buying, and find out how a return would be collected.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Best Buy deliver and assemble treadmills?</h3></summary>
+            <p class="faq-a">
+              Delivery is usually available for large items, but how far it goes — kerbside, threshold or room of choice — and whether assembly is offered varies by product and location. Ask before buying and budget for assembly if it is not included.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I buy a protection plan for a treadmill?</h3></summary>
+            <p class="faq-a">
+              Only after reading what it covers beyond the manufacturer's warranty. Check whether it includes labour, in-home service and the screen, who administers it, and whether it overlaps with existing cover. On a simple machine with a strong manufacturer warranty, it may add little.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/where-to-buy-a-treadmill-near-me/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmill Near Me</div>
+            <p class="c-blurb">Store types and the ten-minute in-store test.</p>
+          </a>
+          <a href="/refurbished-treadmills/" class="card">
+            <div class="c-kicker">Value</div>
+            <div class="c-title">Refurbished Treadmills</div>
+            <p class="c-blurb">Open-box, refurbished and returned: what each label means.</p>
+          </a>
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

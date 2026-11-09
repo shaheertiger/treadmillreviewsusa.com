@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Resistance Bands (2026): 6 Picks by Band Type";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-resistance-bands/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,85 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Bodylastics Pro Series 5-Band Resistance Band Set", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestresistancebands" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestresistancebands)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Resistance Bands for Every Kind of Home Workout</h1>
+      <p class="ed-dek">
+        Tube sets with handles, long power loops, mini bands, fabric hip circles and flat therapy bands do different jobs, and their resistance numbers are not comparable from one brand to the next. Here are six currently sold picks, one for each job, and how to use them without a band snapping back at you.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Resistance Bands <span class="text-[#5AA9FF]">for Every Kind of Home Workout</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Tube sets with handles, long power loops, mini bands, fabric hip circles and flat therapy bands do different jobs, and their resistance numbers are not comparable from one brand to the next. Here are six currently sold picks, one for each job, and how to use them without a band snapping back at you.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#ratings" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why Ratings Differ
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#bodylastics-pro-series"><img src="https://m.media-amazon.com/images/I/41P1g1R9awL._SL500_.jpg" alt="Bodylastics Pro Series 5-Band Resistance Band Set" width="500" height="500" decoding="async" /></a>
+          <a href="#whatafit-resistance-bands"><img src="https://m.media-amazon.com/images/I/51lUMWBbRFL._SL500_.jpg" alt="Whatafit Resistance Bands Set" width="500" height="500" decoding="async" /></a>
+          <a href="#serious-steel-pull-up-bands"><img src="https://m.media-amazon.com/images/I/51MvqcZ-X2L._SL500_.jpg" alt="Serious Steel Fitness 41&quot; Assisted Pull-Up Bands" width="500" height="412" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Bodylastics Pro Series 5-Band Resistance Band Set · Whatafit Resistance Bands Set · Serious Steel Fitness 41" Assisted Pull-Up Bands</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best resistance bands are the ones built for the job you have in mind. A set of tubes with
+          handles and a door anchor turns a doorway into a cable station; a long latex loop helps you up to
+          a pull-up bar; a short mini band or a fabric hip circle wakes up your glutes before squats; and a
+          flat therapy band is what a physical therapist hands you for shoulder rehab. Below are six bands
+          sold on Amazon, one for each of those jobs, followed by the things most listings will not tell
+          you: what the pound ratings really mean, which bands contain latex, and how to anchor them safely.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#bodylastics-pro-series">Bodylastics Pro Series 5-Band Resistance Band Set</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Tube Set:</span> <a href="#whatafit-resistance-bands">Whatafit Resistance Bands Set</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Power Bands:</span> <a href="#serious-steel-pull-up-bands">Serious Steel Fitness 41" Assisted Pull-Up Bands</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Mini Bands:</span> <a href="#fit-simplify-loop-bands">Fit Simplify Resistance Loop Exercise Bands, Set of 5</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Fabric Hip Band:</span> <a href="#sling-shot-hip-circle">Sling Shot Hip Circle</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Latex-Free:</span> <a href="#theraband-non-latex-beginner">TheraBand Non-Latex Resistance Bands Set, Beginner</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           bands, and no figure on this page is our own measurement. On 19 October 2026 we confirmed that
           each product has a live Amazon US listing under its brand's name and checked its figures against
@@ -368,83 +392,31 @@ const schema = {
           maker stores and recent independent coverage; Amazon's price, stock and seller change often. Every
           brand was checked against the US Consumer Product Safety Commission's recall database, and the
           recalled bands we found are excluded. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home exercise
+          this page; it does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home exercise
           equipment; we are not giving medical, physiotherapy or coaching advice. If you are using bands
           for rehabilitation, have a joint, back or heart condition, are pregnant or postpartum, or have a
           latex allergy, follow the advice of a qualified professional about which bands and exercises to use.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#bodylastics-pro-series" class="font-bold text-gray-900 no-underline hover:underline">Bodylastics Pro Series 5-Band Resistance Band Set</a>
-            <a href="#bodylastics-pro-series" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Tube Set:</span>
-            <a href="#whatafit-resistance-bands" class="font-bold text-gray-900 no-underline hover:underline">Whatafit Resistance Bands Set</a>
-            <a href="#whatafit-resistance-bands" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Power Bands:</span>
-            <a href="#serious-steel-pull-up-bands" class="font-bold text-gray-900 no-underline hover:underline">Serious Steel Fitness 41" Assisted Pull-Up Bands</a>
-            <a href="#serious-steel-pull-up-bands" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Mini Bands:</span>
-            <a href="#fit-simplify-loop-bands" class="font-bold text-gray-900 no-underline hover:underline">Fit Simplify Resistance Loop Exercise Bands, Set of 5</a>
-            <a href="#fit-simplify-loop-bands" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Fabric Hip Band:</span>
-            <a href="#sling-shot-hip-circle" class="font-bold text-gray-900 no-underline hover:underline">Sling Shot Hip Circle</a>
-            <a href="#sling-shot-hip-circle" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Resistance Bands</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Bands</a>
-          <a href="#ratings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Resistance Band Ratings Are Not Standardized</a>
-          <a href="#band-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Five Types of Resistance Band, and What Each Is For</a>
-          <a href="#latex" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Latex vs Non-Latex Bands</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Snapping, Anchors and Door Safety</a>
-          <a href="#bands-vs-dumbbells" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Resistance Bands vs Dumbbells</a>
-          <a href="#buyers-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Resistance Band Buyer's Guide</a>
-          <a href="#starter-kits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Three Starter Kits by Goal</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Resistance Bands</a></li>
+            <li><a href="#how-we-chose">How We Chose These Bands</a></li>
+            <li><a href="#ratings">Why Resistance Band Ratings Are Not Standardized</a></li>
+            <li><a href="#band-types">The Five Types of Resistance Band, and What Each Is For</a></li>
+            <li><a href="#latex">Latex vs Non-Latex Bands</a></li>
+            <li><a href="#safety">Snapping, Anchors and Door Safety</a></li>
+            <li><a href="#bands-vs-dumbbells">Resistance Bands vs Dumbbells</a></li>
+            <li><a href="#buyers-guide">Resistance Band Buyer's Guide</a></li>
+            <li><a href="#starter-kits">Three Starter Kits by Goal</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best resistance bands are the ones built for the job you have in mind. A set of tubes with
-          handles and a door anchor turns a doorway into a cable station; a long latex loop helps you up to
-          a pull-up bar; a short mini band or a fabric hip circle wakes up your glutes before squats; and a
-          flat therapy band is what a physical therapist hands you for shoulder rehab. Below are six bands
-          sold on Amazon, one for each of those jobs, followed by the things most listings will not tell
-          you: what the pound ratings really mean, which bands contain latex, and how to anchor them safely.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Six bands, chosen so that each common type of resistance band is represented by something
             currently listed on Amazon. If you want one purchase that covers the most exercises, buy the
@@ -467,16 +439,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you are still deciding whether bands should be your first purchase at all, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put them alongside dumbbells, benches, racks and cardio machines, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every guide
+            If you are still deciding whether bands should be your first purchase at all, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> put them alongside dumbbells, benches, racks and cardio machines, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every guide
             in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Resistance Bands</h2>
+          <h2>The 6 Best Resistance Bands</h2>
 <p>
             Each card gives the figures we could confirm from two sources, the price range we found, and who
             the band suits. Read the band type first. A tube set and a power loop are not substitutes for each
@@ -487,78 +456,67 @@ const schema = {
             The section after the cards explains why, and why that matters less than it seems.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Bands</h2>
+          <h2>How We Chose These Bands</h2>
 <p>
             We have not tested these bands. They were chosen from makers' product pages and listings,
             published specifications, recall records and independent coverage, and the claims on this page
@@ -607,15 +565,13 @@ const schema = {
           </p>
           <p>
             Two deliberate exclusions. Rogue Monster Bands are excellent power bands, but Rogue sells them
-            direct rather than on Amazon; our
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            covers them. And we left out several high-selling Amazon kits whose brand we could not find
+            direct rather than on Amazon; our <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a> covers them. And we left out several high-selling Amazon kits whose brand we could not find
             anywhere outside Amazon, or whose listings disagreed with themselves on what was in the box.
           </p>
         </div>
 
         <div id="ratings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Resistance Band Ratings Are Not Standardized</h2>
+          <h2>Why Resistance Band Ratings Are Not Standardized</h2>
 <p>
             There is no common standard for rating a resistance band, and the six picks on this page show it.
             A dumbbell marked 20 lb weighs 20 lb wherever you buy it. A band marked 20 lb tells you only what
@@ -658,7 +614,7 @@ const schema = {
         </div>
 
         <div id="band-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Five Types of Resistance Band, and What Each Is For</h2>
+          <h2>The Five Types of Resistance Band, and What Each Is For</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Tube bands with handles</h3>
           <p>
             Hollow latex tubes, usually about four feet long, that clip to handles, ankle straps and a door
@@ -675,8 +631,7 @@ const schema = {
             attach to barbells to add resistance at the top of a squat or bench press, and a strong stretching
             tool. Widths run from about a quarter inch to two inches or more, and each width is roughly a
             resistance level. <strong>Best for</strong> pull-up progressions, mobility, and barbell training.
-            If you are setting up a bar for them, our
-            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar guide</a> covers
+            If you are setting up a bar for them, our <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar guide</a> covers
             mounting.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Mini loop bands</h3>
@@ -690,16 +645,14 @@ const schema = {
           <p>
             A wide loop of woven fabric with elastic inside, sometimes with rubber grip strips. Fabric bands do
             the same job as mini bands but do not roll, pinch or slide down over leggings, and they tend to
-            last longer. They come in fewer tension levels and are sized to your body, so check the size chart.
-            <strong>Best for</strong> regular glute and hip work, especially before squats and deadlifts.
+            last longer. They come in fewer tension levels and are sized to your body, so check the size chart. <strong>Best for</strong> regular glute and hip work, especially before squats and deadlifts.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Flat therapy bands</h3>
           <p>
             Thin, wide sheets of rubber, typically about five feet long, that you tie, wrap or hold. They are
             the lightest bands available and come in long color-coded progressions, which is why physical
             therapists use them for shoulder, knee and ankle rehabilitation and older adults use them for
-            gentle strength work. They are also the type most often made in latex-free versions.
-            <strong>Best for</strong> rehab as directed by a professional, light strength and mobility work,
+            gentle strength work. They are also the type most often made in latex-free versions. <strong>Best for</strong> rehab as directed by a professional, light strength and mobility work,
             and anyone starting from a low base.
           </p>
           <p>
@@ -710,7 +663,7 @@ const schema = {
         </div>
 
         <div id="latex" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Latex vs Non-Latex Bands</h2>
+          <h2>Latex vs Non-Latex Bands</h2>
 <p>
             Most resistance bands, including four of the six on this page, are made from natural rubber
             latex. It is cheap, stretchy and durable, and for most people it is the best material. For people
@@ -740,7 +693,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Snapping, Anchors and Door Safety</h2>
+          <h2>Snapping, Anchors and Door Safety</h2>
 <p>
             A resistance band stores energy every time you stretch it. If it breaks, or comes loose from
             whatever it is attached to, that energy goes into the band, the handle or the anchor flying back
@@ -774,8 +727,7 @@ const schema = {
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other anchors</h3>
           <p>
-            A power rack upright, a bolted-down
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack</a> or a
+            A power rack upright, a bolted-down <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack</a> or a
             properly mounted pull-up bar makes a better anchor than any door. Furniture that can tip, a
             radiator, a stair spindle, a rough post that can cut the rubber, or a tree you have not checked are
             not. Wrap a band around smooth surfaces only, and use a band guard or anchor strap on anything
@@ -790,7 +742,7 @@ const schema = {
         </div>
 
         <div id="bands-vs-dumbbells" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Resistance Bands vs Dumbbells</h2>
+          <h2>Resistance Bands vs Dumbbells</h2>
 <p>
             Bands and dumbbells both build strength, and they do it differently enough that most home gyms
             are better with both than with either.
@@ -814,9 +766,7 @@ const schema = {
           <p>
             Bands are strong enough for most upper-body work and for glute and hip exercises, but heavy squats,
             lunges and hinges are hard to load with bands alone; you run out of band or the band runs out of
-            stretch. That is where a pair of
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            or a barbell earns its place.
+            stretch. That is where a pair of <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a> or a barbell earns its place.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Cost, space and safety</h3>
           <p>
@@ -829,15 +779,12 @@ const schema = {
           <p>
             Start with bands if your budget or space is tight, you travel, you are returning from a layoff or
             your main goal is general fitness. Add dumbbells when you want heavier lower-body work or precise
-            progression. If you have the space and budget for a single larger purchase that does both, a
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine</a> or a
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine</a>
-            gives you the constant cable pull bands imitate, with a weight stack you can count.
+            progression. If you have the space and budget for a single larger purchase that does both, a <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machine</a> or a <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine</a> gives you the constant cable pull bands imitate, with a weight stack you can count.
           </p>
         </div>
 
         <div id="buyers-guide" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Resistance Band Buyer's Guide</h2>
+          <h2>Resistance Band Buyer's Guide</h2>
 <p>
             Once you know the type you want, five things separate a good band from a disappointing one.
           </p>
@@ -868,16 +815,13 @@ const schema = {
           </p>
           <p>
             Two smaller points. If you train on a hard floor, a mat makes floor exercises with bands more
-            comfortable and protects the band from grit; our
-            <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga mat guide</a> covers the
-            options. And if your bands double as a warm-up before running, our guide to
-            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">doing cardio before or after weights</a>
-            covers how to order a combined session.
+            comfortable and protects the band from grit; our <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga mat guide</a> covers the
+            options. And if your bands double as a warm-up before running, our guide to <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">doing cardio before or after weights</a> covers how to order a combined session.
           </p>
         </div>
 
         <div id="starter-kits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Three Starter Kits by Goal</h2>
+          <h2>Three Starter Kits by Goal</h2>
 <p>
             You do not need every band on this page. Here is how the picks combine for three common goals.
           </p>
@@ -886,9 +830,7 @@ const schema = {
             anchor, plus a mini band or fabric hip circle for warm-ups. The Bodylastics set and the Sling Shot
             Hip Circle together cover pressing, pulling, curling, leg work and glute activation for well under
             the price of a pair of adjustable dumbbells, and the whole kit fits in a backpack. If floor space
-            is the real constraint, our
-            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small-space treadmill guide</a>
-            covers the cardio side of a compact setup.
+            is the real constraint, our <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small-space treadmill guide</a> covers the cardio side of a compact setup.
           </p>
           <p>
             <strong>Working toward a first pull-up.</strong> Two or three Serious Steel loops in different
@@ -900,148 +842,163 @@ const schema = {
             <strong>Gentle strength or rehab.</strong> The TheraBand set, used as a professional directs, with
             a mini band added once you are ready for lower-body work. If you are returning from an injury, the
             choice of band and exercise is your therapist's call, not ours. For recovery work after training,
-            our guide to
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for lifters</a>
-            covers foam rollers, <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium" data-autolink>massage guns</a> and similar kit.
+            our guide to <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for lifters</a> covers foam rollers, <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium" data-autolink>massage guns</a> and similar kit.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best resistance bands?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the job. For a full-body routine, a tube set with handles and a door anchor such as the Bodylastics Pro Series is the most versatile. For pull-ups, long layered loops such as Serious Steel's 41-inch bands. For glutes, a fabric hip circle or mini bands. For rehab or a latex allergy, TheraBand's non-latex flat bands.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are resistance band weight ratings accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not in a way you can compare. There is no common standard, a band's tension rises the further it is stretched, and makers measure at different stretches. Some give one number, some two, some a range, some only names like light and heavy. Compare bands within one brand, not between brands, and choose by how a band feels for 12 to 15 controlled reps.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can resistance bands replace dumbbells?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For general fitness, largely yes, especially for upper-body work, glutes and mobility. Bands are cheaper, smaller and safer to drop. They are weaker for heavy squats, lunges and hinges, and progress is harder to measure precisely. Many home gyms use bands for most exercises and a pair of dumbbells for heavy lower-body work.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are latex-free resistance bands as good as latex?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are good enough for most uses and essential for anyone with a latex allergy. Latex-free bands are usually made from synthetic rubber or thermoplastic elastomer; some reviewers find them slightly less stretchy or durable. Check the material field on the listing, because natural rubber is latex, and remember that fabric bands often have latex in their elastic.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to use a resistance band door anchor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if the door is solid and latches firmly. Put the anchor on the hinge side, train on the side the door opens away from so pulling closes it into the frame, lock it if you can, and check the anchor strap and stitching before each session. Never anchor to a sliding door, furniture that can tip, or anything with a sharp edge.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long do resistance bands last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on use and storage, but bands are consumables. Frequently used latex bands often need replacing within a year or two; light mini bands can wear out in months. Sunlight, heat and grit shorten their life. Inspect bands before each session and replace any with nicks, thin spots, cracking or a sticky feel.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying and Using Resistance Bands</h2>
+          <p>Each of these is easy to avoid, and the last two are how most band injuries happen.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing pound ratings between brands</h3>
+              <p>A 50 lb band from one maker and a 50 lb band from another can feel completely different, because each measures tension at a different stretch. Compare the order of bands within a set, read the lightest band as well as the heaviest, and treat stacked totals on the box as arithmetic rather than a measurement.</p>
+            </li>
+            <li>
+              <h3>Buying the wrong type for the exercise</h3>
+              <p>Mini bands will not help you do a pull-up, and a pull-up loop is clumsy for lateral walks. Decide what you will use bands for most — full-body strength, pull-ups, glutes or rehab — and buy that type first. A second type can follow once you know what you are missing.</p>
+            </li>
+            <li>
+              <h3>Using a worn band</h3>
+              <p>Latex ages with use, heat and sunlight, and a band that snaps under tension can strike your face. Check every band before each session for nicks, thinning, cracks and stickiness, look hardest where tubes meet their clips, and replace a band at the first sign of damage rather than after it breaks.</p>
+            </li>
+            <li>
+              <h3>Anchoring to something that can move</h3>
+              <p>A door that does not latch, a sliding door, a chair or a table leg can give way when you pull, sending the anchor or band back at you. Use the hinge side of a solid, latched door that closes away from you, or a rack or mounted bar, and check the anchor strap as carefully as the band.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying and Using Resistance Bands</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid, and the last two are how most band injuries happen.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing pound ratings between brands</h3>
-              <p class="text-gray-700 text-sm m-0">A 50 lb band from one maker and a 50 lb band from another can feel completely different, because each measures tension at a different stretch. Compare the order of bands within a set, read the lightest band as well as the heaviest, and treat stacked totals on the box as arithmetic rather than a measurement.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the wrong type for the exercise</h3>
-              <p class="text-gray-700 text-sm m-0">Mini bands will not help you do a pull-up, and a pull-up loop is clumsy for lateral walks. Decide what you will use bands for most — full-body strength, pull-ups, glutes or rehab — and buy that type first. A second type can follow once you know what you are missing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using a worn band</h3>
-              <p class="text-gray-700 text-sm m-0">Latex ages with use, heat and sunlight, and a band that snaps under tension can strike your face. Check every band before each session for nicks, thinning, cracks and stickiness, look hardest where tubes meet their clips, and replace a band at the first sign of damage rather than after it breaks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Anchoring to something that can move</h3>
-              <p class="text-gray-700 text-sm m-0">A door that does not latch, a sliding door, a chair or a table leg can give way when you pull, sending the anchor or band back at you. Use the hinge side of a solid, latched door that closes away from you, or a rack or mounted bar, and check the anchor strap as carefully as the band.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-adjustable-dumbbells/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Strength</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Adjustable Dumbbells</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When bands run out of resistance for squats and lunges, the dumbbells worth buying, and the recalls to check.</p>
-            </a>
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Gym Accessories Worth Buying</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Benches, flooring, a pull-up bar, Rogue Monster Bands and the rest of the small kit that earns its place.</p>
-            </a>
-            <a href="/best-cable-machines-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Machines</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cable Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The constant, measurable pull that tube bands imitate, and how much space a cable station really needs.</p>
-            </a>
-            <a href="/gymproluxe-review/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">GymProLuxe Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What we could and could not verify about the seller and its products before you buy.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, buy the Bodylastics Pro Series tube set</strong> and add
             a mini band set or a Sling Shot Hip Circle for warm-ups; on a tight budget, the Whatafit set does the
             same job if you inspect the clips and anchor carefully. If your goal is a pull-up, buy two or three
             Serious Steel loops instead. If you are allergic to latex or working with a therapist, start with
             TheraBand's non-latex set.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, ignore pound figures between brands, inspect bands before every session, and
             anchor them only to something that cannot move. When you want heavier lower-body work than bands
-            can give,
-            <a href="/best-adjustable-dumbbells/" class="text-[#5AA9FF] font-bold no-underline">our adjustable dumbbell guide</a>
-            is the next step.
+            can give, <a href="/best-adjustable-dumbbells/" class="text-[#5AA9FF] font-bold no-underline">our adjustable dumbbell guide</a> is the next step.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-adjustable-dumbbells/">Best Adjustable Dumbbells</a></li>
+            <li><a href="/best-home-gym-accessories/">Home Gym Accessories Worth Buying</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What are the best resistance bands?</h3></summary>
+            <p class="faq-a">
+              It depends on the job. For a full-body routine, a tube set with handles and a door anchor such as the Bodylastics Pro Series is the most versatile. For pull-ups, long layered loops such as Serious Steel's 41-inch bands. For glutes, a fabric hip circle or mini bands. For rehab or a latex allergy, TheraBand's non-latex flat bands.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are resistance band weight ratings accurate?</h3></summary>
+            <p class="faq-a">
+              Not in a way you can compare. There is no common standard, a band's tension rises the further it is stretched, and makers measure at different stretches. Some give one number, some two, some a range, some only names like light and heavy. Compare bands within one brand, not between brands, and choose by how a band feels for 12 to 15 controlled reps.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can resistance bands replace dumbbells?</h3></summary>
+            <p class="faq-a">
+              For general fitness, largely yes, especially for upper-body work, glutes and mobility. Bands are cheaper, smaller and safer to drop. They are weaker for heavy squats, lunges and hinges, and progress is harder to measure precisely. Many home gyms use bands for most exercises and a pair of dumbbells for heavy lower-body work.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are latex-free resistance bands as good as latex?</h3></summary>
+            <p class="faq-a">
+              They are good enough for most uses and essential for anyone with a latex allergy. Latex-free bands are usually made from synthetic rubber or thermoplastic elastomer; some reviewers find them slightly less stretchy or durable. Check the material field on the listing, because natural rubber is latex, and remember that fabric bands often have latex in their elastic.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to use a resistance band door anchor?</h3></summary>
+            <p class="faq-a">
+              Yes, if the door is solid and latches firmly. Put the anchor on the hinge side, train on the side the door opens away from so pulling closes it into the frame, lock it if you can, and check the anchor strap and stitching before each session. Never anchor to a sliding door, furniture that can tip, or anything with a sharp edge.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long do resistance bands last?</h3></summary>
+            <p class="faq-a">
+              It depends on use and storage, but bands are consumables. Frequently used latex bands often need replacing within a year or two; light mini bands can wear out in months. Sunlight, heat and grit shorten their life. Inspect bands before each session and replace any with nicks, thin spots, cracking or a sticky feel.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-adjustable-dumbbells/" class="card">
+            <div class="c-kicker">Strength</div>
+            <div class="c-title">Best Adjustable Dumbbells</div>
+            <p class="c-blurb">When bands run out of resistance for squats and lunges, the dumbbells worth buying, and the recalls to check.</p>
+          </a>
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Home Gym Accessories Worth Buying</div>
+            <p class="c-blurb">Benches, flooring, a pull-up bar, Rogue Monster Bands and the rest of the small kit that earns its place.</p>
+          </a>
+          <a href="/best-cable-machines-for-home-gym/" class="card">
+            <div class="c-kicker">Machines</div>
+            <div class="c-title">Best Cable Machines for Home</div>
+            <p class="c-blurb">The constant, measurable pull that tube bands imitate, and how much space a cable station really needs.</p>
+          </a>
+          <a href="/gymproluxe-review/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">GymProLuxe Review</div>
+            <p class="c-blurb">What we could and could not verify about the seller and its products before you buy.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

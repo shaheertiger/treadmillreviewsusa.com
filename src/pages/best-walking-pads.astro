@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Walking Pad (2026): 6 Picks and Which One to Buy";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-walking-pads/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -297,66 +302,86 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Best Walking Pads", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: WalkingPad Z1", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestwalkingpads" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestwalkingpads)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">What Is the Best Walking Pad?</h1>
+      <p class="ed-dek">
+        For most people it is a folding pad with a belt long enough for a natural stride and a weight limit with room to spare. Here are six walking pads worth buying in 2026, one for each of the jobs people actually buy them for, and the figures that held up when we checked them against the maker and an independent source.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Is the Best <span class="text-[#5AA9FF]">Walking Pad?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          For most people it is a folding pad with a belt long enough for a natural stride and a weight limit with room to spare. Here are six walking pads worth buying in 2026, one for each of the jobs people actually buy them for, and the figures that held up when we checked them against the maker and an independent source.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#which-type" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Which Type Do You Need?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#walkingpad-z1"><img src="https://m.media-amazon.com/images/I/31oMu9TYTUL._SL500_.jpg" alt="WalkingPad Z1" width="448" height="500" decoding="async" /></a>
+          <a href="#walkingpad-c2"><img src="https://m.media-amazon.com/images/I/31WUvcjXp-L._SL500_.jpg" alt="WalkingPad C2" width="500" height="500" decoding="async" /></a>
+          <a href="#urevo-smart-walking-pad"><img src="https://m.media-amazon.com/images/I/41bR35pRVJL._SL500_.jpg" alt="UREVO Smart Walking Pad" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
+        <figcaption>WalkingPad Z1 · WalkingPad C2 · UREVO Smart Walking Pad</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Ask which walking pad is best and the honest answer starts with a question back: best for
+          what? A pad for slow walking under a desk, a pad that slides under the sofa after an
+          evening walk, a pad for a 300 lb walker and a pad you can occasionally jog on are four
+          different machines. This page names the one we would point most people to, five more
+          for the jobs it does not do well, and the handful of specifications that decide whether
+          any walking pad suits you — belt length, weight limit, the real motor rating and
+          whether it folds — so you can judge a pad that is not on this list too.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#walkingpad-z1">WalkingPad Z1</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Compact Fold:</span> <a href="#walkingpad-c2">WalkingPad C2</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#urevo-smart-walking-pad">UREVO Smart Walking Pad</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Heavier Users:</span> <a href="#merach-novawalk-w50-trekpad">MERACH NovaWalk W50 TrekPad</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With Incline:</span> <a href="#urevo-cyberpad">UREVO CyberPad for Office</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Jogging:</span> <a href="#sunny-treadpad-auto-incline">Sunny Health & Fitness Treadpad Treadmill 7% Auto Incline</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           walking pads. The WalkingPad Z1 and MERACH W50 were confirmed on 18 October 2026 as sold on
           their makers' own US stores, and their specifications were checked on that date against
@@ -375,77 +400,25 @@ const schema = {
           warranty terms against the exact listing before you order. We earn a commission if you
           buy through the Amazon links on this page; it does not change which products we list or
           what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#walkingpad-z1" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad Z1</a>
-            <a href="#walkingpad-z1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Compact Fold:</span>
-            <a href="#walkingpad-c2" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad C2</a>
-            <a href="#walkingpad-c2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#urevo-smart-walking-pad" class="font-bold text-gray-900 no-underline hover:underline">UREVO Smart Walking Pad</a>
-            <a href="#urevo-smart-walking-pad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Heavier Users:</span>
-            <a href="#merach-novawalk-w50-trekpad" class="font-bold text-gray-900 no-underline hover:underline">MERACH NovaWalk W50 TrekPad</a>
-            <a href="#merach-novawalk-w50-trekpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best With Incline:</span>
-            <a href="#urevo-cyberpad" class="font-bold text-gray-900 no-underline hover:underline">UREVO CyberPad for Office</a>
-            <a href="#urevo-cyberpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Best Walking Pad: Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Walking Pads to Buy in 2026</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose the Best Walking Pads</a>
-          <a href="#which-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Which Type of Walking Pad Is Best for You?</a>
-          <a href="#what-matters" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Makes a Walking Pad Good</a>
-          <a href="#belt-length" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Long a Belt Do You Need?</a>
-          <a href="#left-out" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Walking Pads We Left Out, and Why</a>
-          <a href="#before-you-order" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Before You Order a Walking Pad</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">The Best Walking Pad: Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Walking Pads to Buy in 2026</a></li>
+            <li><a href="#how-we-chose">How We Chose the Best Walking Pads</a></li>
+            <li><a href="#which-type">Which Type of Walking Pad Is Best for You?</a></li>
+            <li><a href="#what-matters">What Makes a Walking Pad Good</a></li>
+            <li><a href="#belt-length">How Long a Belt Do You Need?</a></li>
+            <li><a href="#left-out">Walking Pads We Left Out, and Why</a></li>
+            <li><a href="#before-you-order">Before You Order a Walking Pad</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Ask which walking pad is best and the honest answer starts with a question back: best for
-          what? A pad for slow walking under a desk, a pad that slides under the sofa after an
-          evening walk, a pad for a 300 lb walker and a pad you can occasionally jog on are four
-          different machines. This page names the one we would point most people to, five more
-          for the jobs it does not do well, and the handful of specifications that decide whether
-          any walking pad suits you — belt length, weight limit, the real motor rating and
-          whether it folds — so you can judge a pad that is not on this list too.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Best Walking Pad: Our Picks at a Glance</h2>
+          <h2>The Best Walking Pad: Our Picks at a Glance</h2>
 <p>
             <strong>The best walking pad for most people is the WalkingPad Z1: it folds in half and has
             a 47.6-inch walking area that fits a normal stride, for about $300, if you are under its
@@ -477,19 +450,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you already know you want a pad for one narrower job, we have a full roundup for it:
-            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads for apartments</a>,
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>,
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a>,
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            and
-            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>.
+            If you already know you want a pad for one narrower job, we have a full roundup for it: <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads for apartments</a>, <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>, <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a>, <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> and <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>.
             This page is the general answer for everyone else.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Walking Pads to Buy in 2026</h2>
+          <h2>The 6 Best Walking Pads to Buy in 2026</h2>
 <p>
             Each card gives the figures that the maker and an independent source agreed on, the
             price range we saw and who the pad suits. Where a figure is missing from a card, that
@@ -500,90 +467,76 @@ const schema = {
             Two of the six are WalkingPad models and three are UREVO's. That is not a brand
             preference. These two makers sell the widest range of pads in the US under stable model
             names, and their product pages agreed with independent coverage more often than most of
-            the marketplace brands we looked at, which is the test every pick here had to pass. Our
-            <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO treadmill guide</a> covers the rest of UREVO's range, including the app registration its 18-month
+            the marketplace brands we looked at, which is the test every pick here had to pass. Our <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO treadmill guide</a> covers the rest of UREVO's range, including the app registration its 18-month
             warranty depends on.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose the Best Walking Pads</h2>
+          <h2>How We Chose the Best Walking Pads</h2>
 <p>
             We have not tested these walking pads. They were chosen from published specifications,
             maker and retailer listings, owner's manuals as summarised by an independent spec
             tracker, warranty terms and independent coverage, all checked on 18 October 2026, and
-            the claims on this page are limited to what those sources support. Our
-            <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
-            explain the process in more detail.
+            the claims on this page are limited to what those sources support. Our <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a> explain the process in more detail.
           </p>
           <p>
             Every pick had to clear four bars. It had to be on sale today, under its current name,
@@ -613,14 +566,12 @@ const schema = {
         </div>
 
         <div id="which-type" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Which Type of Walking Pad Is Best for You?</h2>
+          <h2>Which Type of Walking Pad Is Best for You?</h2>
 <p>
             Before comparing models, decide which of four kinds of pad you want. It narrows the
             field faster than any specification, and it is the most common reason people end up
             with the wrong one. If you are still deciding whether you want a pad at all, our guides
-            to <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a>
-            and <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>
-            are the place to start.
+            to <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> and <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a> are the place to start.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A flat pad</h3>
           <p>
@@ -647,32 +598,22 @@ const schema = {
             fitter. UREVO's CyberPad and the MERACH W50 TrekPad both have it. Incline pads are
             heavier and taller than flat ones, which matters under a desk, and the incline figures on
             listings need reading carefully: levels are not the same as percent, percent is not the
-            same as degrees, and one maker's description of our heavy-duty pick uses both. Our roundup of
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            covers powered, fixed and manual designs in depth.
+            same as degrees, and one maker's description of our heavy-duty pick uses both. Our roundup of <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a> covers powered, fixed and manual designs in depth.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A 2-in-1 pad</h3>
           <p>
             A pad with a handlebar that folds up. With the bar down it is a walking pad; with the bar
             raised, a higher top speed unlocks — 6 mph on Sunny's Treadpad with 7% auto incline. That makes a
             light jog possible, but it does not turn a pad into a running treadmill: the belt is
-            still far shorter than the 55 to 60 inches running treadmills commonly use. Our answer to
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a>
-            explains where the line is, and the
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">handrail roundup</a>
-            compares 2-in-1 designs.
+            still far shorter than the 55 to 60 inches running treadmills commonly use. Our answer to <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a> explains where the line is, and the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">handrail roundup</a> compares 2-in-1 designs.
           </p>
           <p>
-            If what you want is a proper run several times a week, skip pads altogether. Our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a>
-            and the guide to
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pads vs folding treadmills</a>
-            explain what you gain for the extra size and money.
+            If what you want is a proper run several times a week, skip pads altogether. Our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a> and the guide to <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pads vs folding treadmills</a> explain what you gain for the extra size and money.
           </p>
         </div>
 
         <div id="what-matters" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Makes a Walking Pad Good</h2>
+          <h2>What Makes a Walking Pad Good</h2>
 <p>
             A walking pad listing will lead with horsepower, a decibel figure and an app. The things
             that decide whether you are still using the pad in a year are less exciting and mostly
@@ -684,9 +625,7 @@ const schema = {
             is comfortable at 2 mph can feel cramped at 3.5 mph, with your toes near the motor cover
             and your heels near the back edge. Pads on this page range from about 35 to 47.6 inches.
             The short end suits slow desk walking for people of average height or less; the long end
-            suits brisk walking and taller walkers. Our guide to
-            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>
-            goes further into length.
+            suits brisk walking and taller walkers. Our guide to <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a> goes further into length.
           </p>
           <p>
             <strong>Weight limit, with a margin.</strong> Most pads are rated somewhere around 220 to
@@ -694,9 +633,7 @@ const schema = {
             wear sooner. A sensible rule is to stay comfortably below the stated figure, and to check
             the figure on the exact listing, because the same pad is often sold with different
             limits in different places. Several of the picks here had exactly that problem. If you
-            are near or above 250 lb, read our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            roundup.
+            are near or above 250 lb, read our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> roundup.
           </p>
           <p>
             <strong>The motor's continuous rating, not its peak.</strong> Pad listings quote peak
@@ -722,27 +659,22 @@ const schema = {
           <p>
             <strong>Height under a desk.</strong> The deck lifts you by a few inches, and an incline
             raises it further. Your standing desk has to rise by your normal desk height plus that
-            amount. Our guide to
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
-            shows how to work it out.
+            amount. Our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a> shows how to work it out.
           </p>
           <p>
             <strong>Warranty and support.</strong> One year is the norm for pads, sometimes with an
             extension if you register the machine in the maker's app. Check what registration
             requires, keep the receipt and the serial number, and favour a seller you can actually
-            reach. The
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what to look for in the wording.
+            reach. The <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what to look for in the wording.
           </p>
           <p>
-            Our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            takes each of these checks in turn and shows how to read a listing, which is useful if
+            Our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> takes each of these checks in turn and shows how to read a listing, which is useful if
             you are looking at a pad that is not on this page.
           </p>
         </div>
 
         <div id="belt-length" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Long a Belt Do You Need?</h2>
+          <h2>How Long a Belt Do You Need?</h2>
 <p>
             Because belt length matters more than anything else, it is worth a closer look. There is
             no universal formula, but the pattern is consistent: the faster you walk and the taller
@@ -773,7 +705,7 @@ const schema = {
         </div>
 
         <div id="left-out" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Walking Pads We Left Out, and Why</h2>
+          <h2>Walking Pads We Left Out, and Why</h2>
 <p>
             Several well-known pads are missing on purpose. Knowing why can save you from a similar
             pad on a marketplace listing.
@@ -785,8 +717,7 @@ const schema = {
           <p>
             <strong>DeerRun pads</strong> are not here because too few of their figures could be
             cross-checked; our <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium">Deer Run treadmill guide</a> reads its
-            listings claim by claim. If you want a pad that looks like furniture, our
-            <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad guide</a> explains which ones are actually wood.
+            listings claim by claim. If you want a pad that looks like furniture, our <a href="/wooden-walking-pad/" class="text-[#0F62FE] font-medium">wooden walking pad guide</a> explains which ones are actually wood.
           </p>
           <p>
             <strong>The WalkingPad R3 Hybrid+</strong> has the longest deck of any 2-in-1 pad we
@@ -797,26 +728,17 @@ const schema = {
             and tall-walker roundups.
           </p>
           <p>
-            <strong>The WalkingPad C2</strong> is a popular compact folding pad, and our
-            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a>
-            roundup includes it for small rooms. Here, the Z1 does the same job with a longer walking
+            <strong>The WalkingPad C2</strong> is a popular compact folding pad, and our <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a> roundup includes it for small rooms. Here, the Z1 does the same job with a longer walking
             area and a higher weight limit for less money on WalkingPad's own store, so the C2 lost
             its place.
           </p>
           <p>
-            <strong>Office treadmills</strong> such as the LifeSpan TR1200Pro Glow-Up and the
-            <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium">iMovR Unsit</a>
-            are heavier, non-folding machines built for hours a day under a desk. They cost several
-            times as much as a pad and do a different job; our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            comparison and the quiet-pad roundup cover them.
+            <strong>Office treadmills</strong> such as the LifeSpan TR1200Pro Glow-Up and the <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium">iMovR Unsit</a> are heavier, non-folding machines built for hours a day under a desk. They cost several
+            times as much as a pad and do a different job; our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> comparison and the quiet-pad roundup cover them.
           </p>
           <p>
-            <strong>Very cheap pads</strong> we have reviewed individually — the
-            <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a>,
-            the <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow 3100W</a>
-            and the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium">Goplus 2-in-1</a>
-            — sell for about the same as our budget pick and can make sense for light, occasional use.
+            <strong>Very cheap pads</strong> we have reviewed individually — the <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a>,
+            the <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow 3100W</a> and the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium">Goplus 2-in-1</a> — sell for about the same as our budget pick and can make sense for light, occasional use.
             Our reviews explain the caveats: in the TM037's case, an advertised motor that an
             independent teardown report contradicted and warranty wording that differs between
             listings; in the Goplus's, a 2.5 mph cap with the handlebar down. UREVO's Smart Walking Pad
@@ -830,7 +752,7 @@ const schema = {
         </div>
 
         <div id="before-you-order" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Before You Order a Walking Pad</h2>
+          <h2>Before You Order a Walking Pad</h2>
 <p>
             A few checks before you buy prevent most of the disappointments people describe after
             the first month.
@@ -850,114 +772,34 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, the WalkingPad Z1: it has a 47.6-inch walking area that fits a normal stride and a frame that folds in half for about $300, with a 242 lb limit. If you want to spend under $150, UREVO's flat Smart Walking Pad is our budget pick; for incline, UREVO's CyberPad; and for heavier walkers, the MERACH NovaWalk W50 TrekPad.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best walking pad to buy on a budget?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                UREVO's flat Smart Walking Pad, which Amazon showed at $134.99 on 6 November 2026. Its listing gives a 35.43 by 15-inch belt, 0.6 to 4 mph and a 265 lb limit. Its 35.4-inch belt suits slow desk walking rather than a brisk pace, so taller walkers and brisk walkers should look at the WalkingPad Z1 at about $300.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I look for in a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Belt length against your height and pace first, then the weight limit with a margin to spare, then whether it folds or has incline. Treat peak horsepower and decibel figures with caution, because listings disagree on them most. Check the deck height against your standing desk, the warranty terms and the return window before you order.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad the same as a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is a kind of treadmill, built smaller: a low deck, no tall console, a top speed around 4 mph and usually a belt of 35 to 48 inches. A full treadmill has a longer belt, a stronger motor, handrails and higher speeds, and it suits running. A walking pad suits walking at a desk or at home and stores away more easily.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you jog on a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not on most flat pads, which stop at about 3.75 to 4 mph. A 2-in-1 pad such as Sunny's Treadpad with 7% auto incline unlocks a higher speed when the handlebar is raised, which allows a light, easy jog. Its belt is still far shorter than a running treadmill's, so treat jogging as an occasional extra and follow the manual's limits.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long do walking pads last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on use, weight and maintenance more than on the brand. Under daily desk use, a budget pad commonly lasts a few years rather than a decade. Staying well under the weight limit, lubricating and centring the belt as the manual says, and keeping to walking speeds all help. Warranties on pads are usually one year, sometimes extended on registration.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Choosing a Walking Pad</h2>
+          <p>Each of these leads to a pad that is used for a month and then left under the sofa.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the shortest belt to save money</h3>
+              <p>A short belt is fine at a slow desk pace and cramped at a brisk walk, especially for taller walkers. If you expect to walk at 3 mph or more, or you are tall, a belt around 47 inches costs a little more and is far more comfortable than one in the mid-30s.</p>
+            </li>
+            <li>
+              <h3>Using the pad near its weight limit</h3>
+              <p>A pad worked close to its stated limit wears its motor, belt and deck faster, and the same pad is often sold with different limits on different listings. Choose a pad whose rating leaves a comfortable margin, check the figure on the exact listing, and pick a high-capacity model if you are near the limit.</p>
+            </li>
+            <li>
+              <h3>Choosing by peak horsepower or decibels</h3>
+              <p>Peak motor figures and noise claims are the numbers walking pad listings disagree on most, and they say little about how a pad copes with an hour of walking or how it sounds downstairs. Compare belt length, capacity and, where a maker publishes it, the continuous motor rating instead.</p>
+            </li>
+            <li>
+              <h3>Expecting a walking pad to replace a treadmill</h3>
+              <p>Most pads stop at a brisk walk, and even a 2-in-1 has a belt far shorter than a running treadmill's. If you want to run regularly or train on steep hills, buy a treadmill. A pad is for adding walking to time you would otherwise spend sitting, and it is very good at that.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Choosing a Walking Pad</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these leads to a pad that is used for a month and then left under the sofa.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the shortest belt to save money</h3>
-              <p class="text-gray-700 text-sm m-0">A short belt is fine at a slow desk pace and cramped at a brisk walk, especially for taller walkers. If you expect to walk at 3 mph or more, or you are tall, a belt around 47 inches costs a little more and is far more comfortable than one in the mid-30s.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the pad near its weight limit</h3>
-              <p class="text-gray-700 text-sm m-0">A pad worked close to its stated limit wears its motor, belt and deck faster, and the same pad is often sold with different limits on different listings. Choose a pad whose rating leaves a comfortable margin, check the figure on the exact listing, and pick a high-capacity model if you are near the limit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing by peak horsepower or decibels</h3>
-              <p class="text-gray-700 text-sm m-0">Peak motor figures and noise claims are the numbers walking pad listings disagree on most, and they say little about how a pad copes with an hour of walking or how it sounds downstairs. Compare belt length, capacity and, where a maker publishes it, the continuous motor rating instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a walking pad to replace a treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">Most pads stop at a brisk walk, and even a 2-in-1 has a belt far shorter than a running treadmill's. If you want to run regularly or train on steep hills, buy a treadmill. A pad is for adding walking to time you would otherwise spend sitting, and it is very good at that.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Walking Pad Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/walking-pad-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to judge any pad: belt length, motor ratings, weight limits and warranty.</p>
-            </a>
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Under Desk</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five walking pads compared for walking while you work.</p>
-            </a>
-            <a href="/best-quiet-walking-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Apartments</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Quiet Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Pads for flats, and why footsteps rather than motors bother the neighbours.</p>
-            </a>
-            <a href="/redliro-under-desk-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking pad</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Redliro Under Desk Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What Redliro listings claim, where they disagree, and the return terms to read first.</p>
-            </a>
-            <a href="/best-mini-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Mini Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five walking pads ranked by checked footprint and weight.</p>
-            </a>
-            <a href="/best-lightweight-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lightweight Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people the best walking pad is the WalkingPad Z1</strong>:
             a long belt and a frame that folds away for about $300, if you are under its 242 lb
             limit. On a tight budget UREVO's flat Smart Walking Pad is the one we would buy for slow
@@ -965,36 +807,134 @@ const schema = {
             TrekPad; for incline, UREVO's CyberPad; for an occasional jog, Sunny's Treadpad with 7%
             auto incline.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, match the belt to your stride, keep well under the weight limit and
-            check the exact model in your basket. To judge a pad that is not on this list, use our
-            <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>.
+            check the exact model in your basket. To judge a pad that is not on this list, use our <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/walking-pad-buying-guide/">Walking Pad Buying Guide</a></li>
+            <li><a href="/under-desk-treadmills/">Under-Desk Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best walking pad?</h3></summary>
+            <p class="faq-a">
+              For most people, the WalkingPad Z1: it has a 47.6-inch walking area that fits a normal stride and a frame that folds in half for about $300, with a 242 lb limit. If you want to spend under $150, UREVO's flat Smart Walking Pad is our budget pick; for incline, UREVO's CyberPad; and for heavier walkers, the MERACH NovaWalk W50 TrekPad.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best walking pad to buy on a budget?</h3></summary>
+            <p class="faq-a">
+              UREVO's flat Smart Walking Pad, which Amazon showed at $134.99 on 6 November 2026. Its listing gives a 35.43 by 15-inch belt, 0.6 to 4 mph and a 265 lb limit. Its 35.4-inch belt suits slow desk walking rather than a brisk pace, so taller walkers and brisk walkers should look at the WalkingPad Z1 at about $300.
             </p>
+          </details>
+          <details>
+            <summary><h3>What should I look for in a walking pad?</h3></summary>
+            <p class="faq-a">
+              Belt length against your height and pace first, then the weight limit with a margin to spare, then whether it folds or has incline. Treat peak horsepower and decibel figures with caution, because listings disagree on them most. Check the deck height against your standing desk, the warranty terms and the return window before you order.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad the same as a treadmill?</h3></summary>
+            <p class="faq-a">
+              It is a kind of treadmill, built smaller: a low deck, no tall console, a top speed around 4 mph and usually a belt of 35 to 48 inches. A full treadmill has a longer belt, a stronger motor, handrails and higher speeds, and it suits running. A walking pad suits walking at a desk or at home and stores away more easily.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you jog on a walking pad?</h3></summary>
+            <p class="faq-a">
+              Not on most flat pads, which stop at about 3.75 to 4 mph. A 2-in-1 pad such as Sunny's Treadpad with 7% auto incline unlocks a higher speed when the handlebar is raised, which allows a light, easy jog. Its belt is still far shorter than a running treadmill's, so treat jogging as an occasional extra and follow the manual's limits.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long do walking pads last?</h3></summary>
+            <p class="faq-a">
+              It depends on use, weight and maintenance more than on the brand. Under daily desk use, a budget pad commonly lasts a few years rather than a decade. Staying well under the weight limit, lubricating and centring the belt as the manual says, and keeping to walking speeds all help. Warranties on pads are usually one year, sometimes extended on registration.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Walking Pad Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/walking-pad-buying-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Walking Pad Buying Guide</div>
+            <p class="c-blurb">How to judge any pad: belt length, motor ratings, weight limits and warranty.</p>
+          </a>
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Under Desk</div>
+            <div class="c-title">Under-Desk Treadmills</div>
+            <p class="c-blurb">Five walking pads compared for walking while you work.</p>
+          </a>
+          <a href="/best-quiet-walking-pads/" class="card">
+            <div class="c-kicker">Apartments</div>
+            <div class="c-title">Best Quiet Walking Pads</div>
+            <p class="c-blurb">Pads for flats, and why footsteps rather than motors bother the neighbours.</p>
+          </a>
+          <a href="/redliro-under-desk-treadmill/" class="card">
+            <div class="c-kicker">Walking pad</div>
+            <div class="c-title">Redliro Under Desk Treadmill</div>
+            <p class="c-blurb">What Redliro listings claim, where they disagree, and the return terms to read first.</p>
+          </a>
+          <a href="/best-mini-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Mini Treadmills</div>
+            <p class="c-blurb">Five walking pads ranked by checked footprint and weight.</p>
+          </a>
+          <a href="/best-lightweight-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Lightweight Treadmills</div>
+            <p class="c-blurb">Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

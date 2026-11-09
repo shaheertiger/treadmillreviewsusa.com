@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Walking Workouts (2026): Six Sessions, Speeds and Inclines";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-walking-workouts/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,121 +109,80 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Six Sessions", link: "#the-sessions" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillwalkingworkouts" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillwalkingworkouts)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Walking Workouts</h1>
+      <p class="ed-dek">
+        A walk only becomes a workout when it has a structure. Here are six walking sessions with typical speed and incline ranges, a sensible week to put them in, and a way to make them harder without breaking into a run.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Walking <span class="text-[#5AA9FF]">Workouts</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A walk only becomes a workout when it has a structure. Here are six walking sessions with typical speed and incline ranges, a sensible week to put them in, and a way to make them harder without breaking into a run.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#the-sessions" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Six Sessions
-          </a>
-          <a href="#progression" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            A Six-Week Progression
-          </a>
-        </div>
+        <a href="#the-sessions" class="btn-ghost">The Six Sessions</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. These sessions are general examples of how people structure walking on a
-          treadmill — this site reviews equipment and does not give medical advice, and nothing
-          here is a personal training prescription. If you have a heart, lung, joint or balance
-          condition, take medication that affects heart rate, are pregnant, or are returning to
-          exercise after a long break, check with a doctor or physical therapist first.
-          <strong class="text-gray-900">On the figures below:</strong> speeds and inclines are
-          typical ranges for adults of ordinary fitness, not targets. Your numbers will differ,
-          and effort is the thing to match, not the console.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#set-your-numbers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Setting Your Own Numbers First</a>
-          <a href="#the-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Six Sessions</a>
-          <a href="#steady-brisk" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Session One: The Steady Brisk Walk (30-40 min)</a>
-          <a href="#incline-intervals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Session Two: Incline Intervals (30 min)</a>
-          <a href="#pyramid" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Session Three: The Incline Pyramid (35 min)</a>
-          <a href="#speed-intervals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Session Four: Speed-Walk Intervals (30 min)</a>
-          <a href="#long-easy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Session Five: The Long Easy Walk (45-75 min)</a>
-          <a href="#hill-climb" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Session Six: The Steady Hill Climb (25-35 min)</a>
-          <a href="#building-a-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Putting Them Into a Week</a>
-          <a href="#progression" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. A Six-Week Progression</a>
-          <a href="#form-and-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Form, Warm-Ups and Treadmill Safety</a>
-          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. If Your Treadmill Has No Incline</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. The Verdict</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">15. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most people walk on a treadmill the same way every time: same speed, same grade, same
           thirty minutes, until it stops doing anything and starts feeling like a chore. Walking
           is a genuinely good form of exercise, but it rewards a little structure — some variety
           in effort across the week, and a plan for making it harder over time.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. These sessions are general examples of how people structure walking on a
+          treadmill — this site reviews equipment and does not give medical advice, and nothing
+          here is a personal training prescription. If you have a heart, lung, joint or balance
+          condition, take medication that affects heart rate, are pregnant, or are returning to
+          exercise after a long break, check with a doctor or physical therapist first. <strong class="text-gray-900">On the figures below:</strong> speeds and inclines are
+          typical ranges for adults of ordinary fitness, not targets. Your numbers will differ,
+          and effort is the thing to match, not the console.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#set-your-numbers">Setting Your Own Numbers First</a></li>
+            <li><a href="#the-sessions">The Six Sessions</a></li>
+            <li><a href="#steady-brisk">Session One: The Steady Brisk Walk (30-40 min)</a></li>
+            <li><a href="#incline-intervals">Session Two: Incline Intervals (30 min)</a></li>
+            <li><a href="#pyramid">Session Three: The Incline Pyramid (35 min)</a></li>
+            <li><a href="#speed-intervals">Session Four: Speed-Walk Intervals (30 min)</a></li>
+            <li><a href="#long-easy">Session Five: The Long Easy Walk (45-75 min)</a></li>
+            <li><a href="#hill-climb">Session Six: The Steady Hill Climb (25-35 min)</a></li>
+            <li><a href="#building-a-week">Putting Them Into a Week</a></li>
+            <li><a href="#progression">A Six-Week Progression</a></li>
+            <li><a href="#form-and-safety">Form, Warm-Ups and Treadmill Safety</a></li>
+            <li><a href="#walking-pads">If Your Treadmill Has No Incline</a></li>
+            <li><a href="#verdict">The Verdict</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>A good treadmill walking workout is 30 to 45 minutes long, starts and ends with
-            a few minutes of easy flat walking, and spends the middle at a deliberate effort</strong>
-            — either a steady brisk pace with a modest incline, or alternating harder and easier
+            a few minutes of easy flat walking, and spends the middle at a deliberate effort</strong> — either a steady brisk pace with a modest incline, or alternating harder and easier
             blocks of speed or grade. A balanced week mixes both, plus one longer easy walk. If you
-            are wondering whether belt walking counts like the pavement, see
-            <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium">is walking on a treadmill the same as walking outside</a>.
+            are wondering whether belt walking counts like the pavement, see <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium">is walking on a treadmill the same as walking outside</a>.
           </p>
           <p>
             The six sessions on this page cover that range:
@@ -242,7 +206,7 @@ const schema = {
         </div>
 
         <div id="set-your-numbers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Setting Your Own Numbers First</h2>
+          <h2>Setting Your Own Numbers First</h2>
 <p>
             Every speed and grade on this page is a typical range. The right numbers for you depend
             on your height, fitness, age and how used you are to walking, so before following any
@@ -263,23 +227,19 @@ const schema = {
             somewhere between 3.5 and 4.5 mph, with taller walkers at the top of that range.
           </p>
           <p>
-            Our guide to
-            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
-            goes through finding these properly using the talk test. Once you have them, write them
+            Our guide to <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a> goes through finding these properly using the talk test. Once you have them, write them
             down. They are the numbers you will plug into each session, and they will creep up over
             the following months.
           </p>
           <p>
             If you use a <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>heart rate monitor</a>, easy walking usually lands in the lower zones and the
-            hard blocks in the moderate-to-hard range; our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            explains how to set those up. It is not necessary, though. The talk test is free and
+            hard blocks in the moderate-to-hard range; our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a> explains how to set those up. It is not necessary, though. The talk test is free and
             surprisingly reliable.
           </p>
         </div>
 
         <div id="the-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Six Sessions</h2>
+          <h2>The Six Sessions</h2>
 <p>
             Each session below includes a <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> and a typical range for speed and
             incline. Treat the ranges as a starting point, and adjust them so the effort matches
@@ -295,14 +255,12 @@ const schema = {
             One rule applies to all six: <strong>clip the safety key to your clothing and walk
             without holding the handrails.</strong> A light touch for balance when you change a
             setting is fine. Gripping the rails to survive a setting is a sign the setting is
-            wrong, and it quietly removes a large share of the work. Our
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a>
-            covers the basics if you are new to the machine.
+            wrong, and it quietly removes a large share of the work. Our <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a> covers the basics if you are new to the machine.
           </p>
         </div>
 
         <div id="steady-brisk" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Session One: The Steady Brisk Walk (30-40 min)</h2>
+          <h2>Session One: The Steady Brisk Walk (30-40 min)</h2>
 <p>
             This is the workhorse — the session you will do most often, and the one that builds
             the base everything else depends on.
@@ -324,15 +282,13 @@ const schema = {
             has genuinely become easy. Changing one variable a week is plenty.
           </p>
           <p>
-            Our page on
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            explains why the 3 to 6% range is the sweet spot for most everyday walks, and when to go
+            Our page on <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> explains why the 3 to 6% range is the sweet spot for most everyday walks, and when to go
             beyond it.
           </p>
         </div>
 
         <div id="incline-intervals" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Session Two: Incline Intervals (30 min)</h2>
+          <h2>Session Two: Incline Intervals (30 min)</h2>
 <p>
             Intervals on a walking treadmill are best done with the grade rather than the speed,
             because the speed stays somewhere comfortable and only the hill changes. It is the
@@ -359,14 +315,12 @@ const schema = {
           <p>
             <strong>How to progress it.</strong> Extend the steep blocks to 3 minutes, then add a
             sixth round, then raise the steep grade a percent. Once a week is enough for most
-            walkers, twice at most. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
-            has more structures if you want variations.
+            walkers, twice at most. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a> has more structures if you want variations.
           </p>
         </div>
 
         <div id="pyramid" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Session Three: The Incline Pyramid (35 min)</h2>
+          <h2>Session Three: The Incline Pyramid (35 min)</h2>
 <p>
             The pyramid is the session people tend to enjoy most, because it has a shape: you climb,
             reach a peak, and then everything gets easier. It also teaches you how different grades
@@ -395,7 +349,7 @@ const schema = {
         </div>
 
         <div id="speed-intervals" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Session Four: Speed-Walk Intervals (30 min)</h2>
+          <h2>Session Four: Speed-Walk Intervals (30 min)</h2>
 <p>
             This session works the other side of the trade-off: pace rather than grade. It is
             useful for people training for a walking event, for anyone whose treadmill has little
@@ -418,14 +372,13 @@ const schema = {
             <strong>When it turns into a jog.</strong> Most people naturally switch from walking to
             jogging somewhere around 4 to 4.5 mph. If your fast pace keeps tipping into a jog, you
             have found your ceiling — either back off by a tenth or two, or treat this as a sign
-            you might enjoy a structured walk-to-run plan like our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K on a treadmill</a>.
+            you might enjoy a structured walk-to-run plan like our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K on a treadmill</a>.
             There is nothing wrong with deciding you prefer walking, either.
           </p>
         </div>
 
         <div id="long-easy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Session Five: The Long Easy Walk (45-75 min)</h2>
+          <h2>Session Five: The Long Easy Walk (45-75 min)</h2>
 <p>
             The session most people skip, and the one that makes the others work. Easy, long and
             genuinely pleasant — closer to a stroll with purpose than a workout.
@@ -448,16 +401,13 @@ const schema = {
           <p>
             Long walks are also where shoes and the machine itself matter more. A cushioned deck and
             a belt long enough for your natural stride make an hour noticeably more comfortable;
-            our
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a>
-            guide covers machines built for exactly this kind of use. For how long to walk in total
-            across a week, see our page on
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>.
+            our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a> guide covers machines built for exactly this kind of use. For how long to walk in total
+            across a week, see our page on <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>.
           </p>
         </div>
 
         <div id="hill-climb" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Session Six: The Steady Hill Climb (25-35 min)</h2>
+          <h2>Session Six: The Steady Hill Climb (25-35 min)</h2>
 <p>
             The hardest session here, and one to work toward rather than start with: a sustained
             steep grade at a slower speed. It is the family of sessions that the well-known 12-3-30
@@ -479,12 +429,8 @@ const schema = {
           <p>
             <strong>Get there gradually.</strong> Reach this session by way of incline intervals
             and the pyramid, not by attempting it in week one. Once you can do 20 minutes at 10%
-            comfortably, the full
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            is a sensible next step, and that page has its own build-up and modified versions. If
-            you eventually want to take hill work into running, our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workouts</a>
-            pick up from there.
+            comfortably, the full <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> is a sensible next step, and that page has its own build-up and modified versions. If
+            you eventually want to take hill work into running, our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workouts</a> pick up from there.
           </p>
           <p>
             Lower the grade gradually at the end rather than dropping straight to flat. Going from
@@ -494,7 +440,7 @@ const schema = {
         </div>
 
         <div id="building-a-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Putting Them Into a Week</h2>
+          <h2>Putting Them Into a Week</h2>
 <p>
             The sessions are designed to be mixed, and the mix matters more than any individual
             session. The pattern that works for most people is mostly steady, a little hard, and
@@ -520,15 +466,13 @@ const schema = {
           <p>
             If your week falls apart, the steady brisk walk is the one to keep. It is the session
             that does most of the work over months, and a week of three steady walks is far better
-            than a week where an ambitious plan collapsed into nothing. Our pillar guide to
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts</a>
-            explains the logic behind this kind of mix in more depth, including how running
+            than a week where an ambitious plan collapsed into nothing. Our pillar guide to <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts</a> explains the logic behind this kind of mix in more depth, including how running
             sessions slot in.
           </p>
         </div>
 
         <div id="progression" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. A Six-Week Progression</h2>
+          <h2>A Six-Week Progression</h2>
 <p>
             This assumes you can already walk at a brisk pace for 20 to 30 minutes on a flat belt.
             If you cannot yet, spend two or three weeks doing just the steady brisk walk at a low
@@ -559,7 +503,7 @@ const schema = {
         </div>
 
         <div id="form-and-safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Form, Warm-Ups and Treadmill Safety</h2>
+          <h2>Form, Warm-Ups and Treadmill Safety</h2>
 <p>
             Walking is not complicated, but a few habits make treadmill walking more effective and
             more comfortable.
@@ -592,7 +536,7 @@ const schema = {
         </div>
 
         <div id="walking-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. If Your Treadmill Has No Incline</h2>
+          <h2>If Your Treadmill Has No Incline</h2>
 <p>
             Walking pads and many <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under-desk treadmills</a> have no incline at all, and some compact
             models top out at a modest speed. Several of the sessions above still work with
@@ -607,16 +551,12 @@ const schema = {
           </p>
           <p>
             A no-incline machine is a reasonable choice for steady walking and desk use, and a
-            limiting one for anyone who wants structured hill work. Our comparison of
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pads and treadmills</a>
-            sets out the trade-off, and our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            guide covers machines suited to the steeper sessions.
+            limiting one for anyone who wants structured hill work. Our comparison of <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pads and treadmills</a> sets out the trade-off, and our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> guide covers machines suited to the steeper sessions.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. The Verdict</h2>
+          <h2>The Verdict</h2>
 <p>
             <strong>A walking workout is a walk with a plan.</strong> Warm up, spend 20 to 40
             minutes at a deliberate effort, cool down — and vary that effort across the week with
@@ -632,139 +572,154 @@ const schema = {
             and the one that does the most over a year.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">15. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good treadmill walking workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A good starting workout is 5 minutes easy and flat, 20 to 30 minutes at a brisk pace (typically 3 to 3.5 mph) at 2 to 5% incline, then 5 minutes easy. Once that is comfortable, add variety across the week — incline intervals, a pyramid and a longer easy walk — and progress duration before grade and grade before speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many times a week should I do treadmill walking workouts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three to five sessions a week suits most people. Keep most of them steady or easy, make one or two harder (incline intervals or a pyramid), and include one longer easy walk. Avoid hard steep sessions on consecutive days, because calves and Achilles tendons recover more slowly than your heart and lungs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good incline treadmill walking workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Incline intervals are a good place to start: after a 5-minute flat warm-up, alternate 2 minutes at 6 to 10% with 2 minutes at 1 to 3% for five rounds at a constant brisk speed, then cool down. Build to a steady hill climb or the 12-3-30 workout only after several weeks of interval and pyramid sessions.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is walking on a treadmill a good workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if it has some structure. Brisk walking counts as moderate-intensity exercise, and adding incline makes it considerably harder without the impact of running. A plan that mixes steady walks, harder incline sessions and one long easy walk — and progresses gradually — is a genuinely effective workout for most people.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a treadmill walking workout be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most sessions work well at 30 to 45 minutes including a warm-up and cool-down, with one longer easy walk of 45 to 75 minutes a week. Total weekly minutes matter more than any single session; if you are starting out, 20 to 25 minutes is a perfectly good session to build from.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I do walking workouts on a walking pad with no incline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Partly. Steady brisk walks, long easy walks and speed-walk intervals all work at 0%, provided the pad reaches your fast walking pace. Incline intervals, pyramids and hill climbs need a powered incline, so on a flat pad replace those with extra speed-walk sessions or longer walks.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Walking Workouts</h2>
+          <p>Most walking plans fail through doing too much too soon rather than too little — and the first mistake is the one that quietly empties the rest.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Holding the handrails through the hard parts</h3>
+              <p>Gripping the rails on a steep grade transfers a large share of the work to your arms and the frame, flattens your posture and makes the console figures badly optimistic. If a setting needs the rails, lower the grade or the speed until you can walk it hands-free, using a light touch only for balance.</p>
+            </li>
+            <li>
+              <h3>Making every session hard</h3>
+              <p>Intervals, pyramids and hill climbs every day accumulate fatigue in the calves and Achilles faster than fitness improves, and the plan usually collapses within a few weeks. Keep most sessions steady or easy and limit the hard ones to one or two a week, on non-consecutive days.</p>
+            </li>
+            <li>
+              <h3>Starting with the steepest session</h3>
+              <p>The hill climb and the 12-3-30 workout are destinations, not starting points. Attempting them cold usually ends in rail-gripping or several days of sore calves. Build through steady incline walks, intervals and the pyramid over several weeks first.</p>
+            </li>
+            <li>
+              <h3>Raising speed, grade and time all at once</h3>
+              <p>Changing three variables in one week makes it impossible to tell what is working and is the most reliable route to soreness. Add duration first, then a percent of grade, then a little speed — one change at a time, and only once the current week feels comfortable.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Walking Workouts</h2>
-          <p class="text-gray-700 leading-relaxed">Most walking plans fail through doing too much too soon rather than too little — and the first mistake is the one that quietly empties the rest.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the handrails through the hard parts</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping the rails on a steep grade transfers a large share of the work to your arms and the frame, flattens your posture and makes the console figures badly optimistic. If a setting needs the rails, lower the grade or the speed until you can walk it hands-free, using a light touch only for balance.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Making every session hard</h3>
-              <p class="text-gray-700 text-sm m-0">Intervals, pyramids and hill climbs every day accumulate fatigue in the calves and Achilles faster than fitness improves, and the plan usually collapses within a few weeks. Keep most sessions steady or easy and limit the hard ones to one or two a week, on non-consecutive days.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting with the steepest session</h3>
-              <p class="text-gray-700 text-sm m-0">The hill climb and the 12-3-30 workout are destinations, not starting points. Attempting them cold usually ends in rail-gripping or several days of sore calves. Build through steady incline walks, intervals and the pyramid over several weeks first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Raising speed, grade and time all at once</h3>
-              <p class="text-gray-700 text-sm m-0">Changing three variables in one week makes it impossible to tell what is working and is the most reliable route to soreness. Add duration first, then a percent of grade, then a little speed — one change at a time, and only once the current week feels comfortable.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Incline Should I Walk On?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The grade-by-goal guide, from warm-up to steep hill work.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Workout</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The best-known steep walking session, with a four-week build-up.</p>
-            </a>
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Pillar Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types, and how to build a week that lasts.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Give your walks a structure.</strong> Warm up, spend 20 to 40
             minutes at a deliberate effort, cool down, and mix steady brisk walks, one harder
             incline session and one long easy walk across the week.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Progress one variable at a time — duration, then grade, then speed — walk hands-free,
             and earn the steep sessions over several weeks. When you are ready for a real hill,
-            work up to the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#5AA9FF] font-bold no-underline">12-3-30 workout</a>.
+            work up to the <a href="/12-3-30-treadmill-workout/" class="text-[#5AA9FF] font-bold no-underline">12-3-30 workout</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/what-incline-should-i-walk-on-a-treadmill/">What Incline Should I Walk On?</a></li>
+            <li><a href="/12-3-30-treadmill-workout/">The 12-3-30 Treadmill Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a good treadmill walking workout?</h3></summary>
+            <p class="faq-a">
+              A good starting workout is 5 minutes easy and flat, 20 to 30 minutes at a brisk pace (typically 3 to 3.5 mph) at 2 to 5% incline, then 5 minutes easy. Once that is comfortable, add variety across the week — incline intervals, a pyramid and a longer easy walk — and progress duration before grade and grade before speed.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How many times a week should I do treadmill walking workouts?</h3></summary>
+            <p class="faq-a">
+              Three to five sessions a week suits most people. Keep most of them steady or easy, make one or two harder (incline intervals or a pyramid), and include one longer easy walk. Avoid hard steep sessions on consecutive days, because calves and Achilles tendons recover more slowly than your heart and lungs.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is a good incline treadmill walking workout?</h3></summary>
+            <p class="faq-a">
+              Incline intervals are a good place to start: after a 5-minute flat warm-up, alternate 2 minutes at 6 to 10% with 2 minutes at 1 to 3% for five rounds at a constant brisk speed, then cool down. Build to a steady hill climb or the 12-3-30 workout only after several weeks of interval and pyramid sessions.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is walking on a treadmill a good workout?</h3></summary>
+            <p class="faq-a">
+              Yes, if it has some structure. Brisk walking counts as moderate-intensity exercise, and adding incline makes it considerably harder without the impact of running. A plan that mixes steady walks, harder incline sessions and one long easy walk — and progresses gradually — is a genuinely effective workout for most people.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should a treadmill walking workout be?</h3></summary>
+            <p class="faq-a">
+              Most sessions work well at 30 to 45 minutes including a warm-up and cool-down, with one longer easy walk of 45 to 75 minutes a week. Total weekly minutes matter more than any single session; if you are starting out, 20 to 25 minutes is a perfectly good session to build from.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I do walking workouts on a walking pad with no incline?</h3></summary>
+            <p class="faq-a">
+              Partly. Steady brisk walks, long easy walks and speed-walk intervals all work at 0%, provided the pad reaches your fast walking pace. Incline intervals, pyramids and hill climbs need a powered incline, so on a flat pad replace those with extra speed-walk sessions or longer walks.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/what-incline-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">What Incline Should I Walk On?</div>
+            <p class="c-blurb">The grade-by-goal guide, from warm-up to steep hill work.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Workout</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">The best-known steep walking session, with a four-week build-up.</p>
+          </a>
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Pillar Guide</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types, and how to build a week that lasts.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

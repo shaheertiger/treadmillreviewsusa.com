@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Foot Pods for Treadmill Running (2026): 5 Pace Sensors";
 const description =
@@ -245,6 +244,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-foot-pods-for-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -266,66 +271,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Stryd 5.0", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestfootpodsfortreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestfootpodsfortreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Foot Pods for Treadmill Running</h1>
+      <p class="ed-dek">
+        Most of the foot pods people still recommend for treadmills are gone: the Zwift RunPod, the Garmin Foot Pod and the Milestone Pod have all been discontinued. Here is what you can actually buy in October 2026, which watches and apps each one talks to, and how to tell whether you need a pod at all.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Foot Pods <span class="text-[#5AA9FF]">for Treadmill Running</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most of the foot pods people still recommend for treadmills are gone: the Zwift RunPod, the Garmin Foot Pod and the Milestone Pod have all been discontinued. Here is what you can actually buy in October 2026, which watches and apps each one talks to, and how to tell whether you need a pod at all.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#compatibility" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Which Watch Works With Which Pod
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#coros-pod-2"><img src="https://m.media-amazon.com/images/I/21QGNbA28ML._SL500_.jpg" alt="COROS POD 2" width="500" height="362" decoding="async" /></a>
+          <a href="#garmin-hrm-600"><img src="https://m.media-amazon.com/images/I/31DLbvOQoNL._SL500_.jpg" alt="Garmin HRM 600" width="500" height="500" decoding="async" /></a>
+          <a href="#garmin-hrm-fit"><img src="https://m.media-amazon.com/images/I/31rHkXq4nNL._SL500_.jpg" alt="Garmin HRM-Fit" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+        <figcaption>COROS POD 2 · Garmin HRM 600 · Garmin HRM-Fit</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A foot pod is the cheapest way to get honest treadmill pace into a watch or into Zwift,
+          and it works on any treadmill, connected or not. The awkward part in 2026 is that the
+          market has shrunk. Zwift's own pod, Garmin's long-running foot pod and the little Milestone
+          pod are no longer sold, and the pod most runners now buy costs more than they expect.
+          This page lists the sensors you can actually order today, says plainly which watches each
+          one pairs with, and explains when a belt sensor or the watch you already own is the
+          better answer.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#stryd-5">Stryd 5.0</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#coros-pod-2">COROS POD 2</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Garmin Pick:</span> <a href="#garmin-hrm-600">Garmin HRM 600</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Measures the Belt:</span> <a href="#npe-runn">NPE Runn Smart Treadmill Sensor</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Garmin Clip-On Pick:</span> <a href="#garmin-hrm-fit">Garmin HRM-Fit</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           sensors. On 15 October 2026 we checked each one against its maker's own store or product
           page (Stryd, COROS, Garmin and North Pole Engineering), the maker's help documentation
@@ -339,85 +360,32 @@ const schema = {
           that the sensor pairs with your exact watch or app before you order. We earn a commission
           if you buy through the Amazon links on this page; it does not change which products we
           list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#stryd-5" class="font-bold text-gray-900 no-underline hover:underline">Stryd 5.0</a>
-            <a href="#stryd-5" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#coros-pod-2" class="font-bold text-gray-900 no-underline hover:underline">COROS POD 2</a>
-            <a href="#coros-pod-2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Garmin Pick:</span>
-            <a href="#garmin-hrm-600" class="font-bold text-gray-900 no-underline hover:underline">Garmin HRM 600</a>
-            <a href="#garmin-hrm-600" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Measures the Belt:</span>
-            <a href="#npe-runn" class="font-bold text-gray-900 no-underline hover:underline">NPE Runn Smart Treadmill Sensor</a>
-            <a href="#npe-runn" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Garmin Clip-On Pick:</span>
-            <a href="#garmin-hrm-fit" class="font-bold text-gray-900 no-underline hover:underline">Garmin HRM-Fit</a>
-            <a href="#garmin-hrm-fit" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Foot Pods and Pace Sensors for Treadmills</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Sensors</a>
-          <a href="#bluetooth-vs-ant" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Bluetooth vs ANT+: Which Connection You Need</a>
-          <a href="#compatibility" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Which Watches and Apps Each Sensor Works With</a>
-          <a href="#calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Calibration: What Each Sensor Asks of You</a>
-          <a href="#battery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Batteries, Charging and Living With a Sensor</a>
-          <a href="#reading-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Read a Foot Pod Listing</a>
-          <a href="#pod-or-alternative" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Foot Pod, Belt Sensor or a Connected Treadmill?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Foot Pods and Pace Sensors for Treadmills</a></li>
+            <li><a href="#how-we-chose">How We Chose These Sensors</a></li>
+            <li><a href="#bluetooth-vs-ant">Bluetooth vs ANT+: Which Connection You Need</a></li>
+            <li><a href="#compatibility">Which Watches and Apps Each Sensor Works With</a></li>
+            <li><a href="#calibration">Calibration: What Each Sensor Asks of You</a></li>
+            <li><a href="#battery">Batteries, Charging and Living With a Sensor</a></li>
+            <li><a href="#reading-listings">How to Read a Foot Pod Listing</a></li>
+            <li><a href="#pod-or-alternative">Foot Pod, Belt Sensor or a Connected Treadmill?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A foot pod is the cheapest way to get honest treadmill pace into a watch or into Zwift,
-          and it works on any treadmill, connected or not. The awkward part in 2026 is that the
-          market has shrunk. Zwift's own pod, Garmin's long-running foot pod and the little Milestone
-          pod are no longer sold, and the pod most runners now buy costs more than they expect.
-          This page lists the sensors you can actually order today, says plainly which watches each
-          one pairs with, and explains when a belt sensor or the watch you already own is the
-          better answer.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five sensors, and only one of them works with almost everything. The short version:
             buy a Stryd 5.0 if you want a pod that pairs with most watches and with Zwift; buy the
             COROS POD 2 if you own a COROS watch; and if you are a Garmin runner who would rather
             not clip anything to a shoe, the HRM 600 chest strap does the same job for compatible
-            Garmin watches. New to pods? Start with our
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>.
+            Garmin watches. New to pods? Start with our <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -434,15 +402,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you are buying a pod for Zwift, also read
-            <a href="#bluetooth-vs-ant" class="text-[#0F62FE] font-medium">Bluetooth versus ANT+</a>
-            before you order. A pod that only speaks ANT+ needs extra hardware to reach Zwift on most
+            If you are buying a pod for Zwift, also read <a href="#bluetooth-vs-ant" class="text-[#0F62FE] font-medium">Bluetooth versus ANT+</a> before you order. A pod that only speaks ANT+ needs extra hardware to reach Zwift on most
             computers and tablets, and that one detail sinks more set-ups than any other.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Foot Pods and Pace Sensors for Treadmills</h2>
+          <h2>The 5 Best Foot Pods and Pace Sensors for Treadmills</h2>
 <p>
             Three of these clip to your shoe, one is a chest strap and one sits on the treadmill
             itself. They are grouped together because they do the same job: give a watch or an app
@@ -451,83 +417,70 @@ const schema = {
             because that, more than accuracy, is what decides which one you should buy.
           </p>
           <p>
-            If your goal is Zwift specifically, our
-            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            covers pairing step by step once the sensor arrives.
+            If your goal is Zwift specifically, our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> covers pairing step by step once the sensor arrives.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Sensors</h2>
+          <h2>How We Chose These Sensors</h2>
 <p>
             We have not tested these sensors, and nothing on this page should be read as if we had.
             The picks come from manufacturer stores and help centres, Zwift's support documentation,
@@ -581,7 +534,7 @@ const schema = {
         </div>
 
         <div id="bluetooth-vs-ant" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Bluetooth vs ANT+: Which Connection You Need</h2>
+          <h2>Bluetooth vs ANT+: Which Connection You Need</h2>
 <p>
             A foot pod is a small radio. It is only useful if it speaks the same language as the
             thing you want it to talk to, and there are two languages in running: Bluetooth Low
@@ -622,13 +575,12 @@ const schema = {
             Bluetooth speed transmission to compatible treadmills.</li>
           </ul>
           <p>
-            Our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift guide</a>
-            goes further into pairing order and the common dropout problems.
+            Our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift guide</a> goes further into pairing order and the common dropout problems.
           </p>
         </div>
 
         <div id="compatibility" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Which Watches and Apps Each Sensor Works With</h2>
+          <h2>Which Watches and Apps Each Sensor Works With</h2>
 <p>
             Compatibility is the real buying decision, and it is where listings are least helpful.
             The table below shows what each maker, or Zwift, states. "Not stated" means we could not
@@ -650,11 +602,8 @@ const schema = {
           <p>
             Three practical notes. First, <strong>Apple Watch</strong> is the awkward one. Apple's
             own documentation for the Workout app covers gym equipment through GymKit, but we found
-            no Apple documentation of pairing a running foot pod. Stryd supports <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a>
-            through its own watch app; its compatibility list was last updated in 2025 and does not
-            yet name the newest models, so check before buying. Our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            covers the alternatives.
+            no Apple documentation of pairing a running foot pod. Stryd supports <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> through its own watch app; its compatibility list was last updated in 2025 and does not
+            yet name the newest models, so check before buying. Our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> covers the alternatives.
           </p>
           <p>
             Second, <strong>COROS owners</strong> cannot run a Stryd and a POD 2 together: COROS's
@@ -664,23 +613,17 @@ const schema = {
             Third, <strong>Polar watches</strong> pair with Bluetooth stride sensors, according to
             Polar's current user manuals, and Polar no longer sells its own sensor in the US. A
             Stryd is the obvious route for a Polar runner. If you are still choosing the watch
-            itself, our roundup of the
-            <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">best running watches for treadmill running</a>
-            sorts current models by what they do indoors.
+            itself, our roundup of the <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">best running watches for treadmill running</a> sorts current models by what they do indoors.
           </p>
         </div>
 
         <div id="calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Calibration: What Each Sensor Asks of You</h2>
+          <h2>Calibration: What Each Sensor Asks of You</h2>
 <p>
             Every one of these sensors is an estimate, and the way each one is calibrated tells you a
             lot about how it is meant to be used. Before calibrating anything, check the treadmill.
             Pods are often calibrated against a console that reads a few percent fast, which simply
-            teaches the pod the same error. Our guide on
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a>
-            explains why consoles drift, and
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
-            shows the mark-and-stopwatch check.
+            teaches the pod the same error. Our guide on <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a> explains why consoles drift, and <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a> shows the mark-and-stopwatch check.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Stryd: designed not to need it</h3>
           <p>
@@ -716,7 +659,7 @@ const schema = {
         </div>
 
         <div id="battery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Batteries, Charging and Living With a Sensor</h2>
+          <h2>Batteries, Charging and Living With a Sensor</h2>
 <p>
             All five sensors on this page are rechargeable, which is a change from the coin-cell
             pods of a few years ago. That removes the annual battery swap but adds one more thing to
@@ -741,14 +684,12 @@ const schema = {
             Mounting matters as much as charge. A shoe pod should sit straight and tight on the
             laces; COROS's guidance, for example, is that the POD 2 should be as straight as
             possible on shoes with angled lacing. Swap it between shoes deliberately rather than
-            leaving it on a pair you no longer run in. The
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
-            has more on mounting.
+            leaving it on a pair you no longer run in. The <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a> has more on mounting.
           </p>
         </div>
 
         <div id="reading-listings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How to Read a Foot Pod Listing</h2>
+          <h2>How to Read a Foot Pod Listing</h2>
 <p>
             Foot pod listings are short, and the important information is usually missing rather
             than wrong. Four checks will save most buyers a return.
@@ -794,7 +735,7 @@ const schema = {
         </div>
 
         <div id="pod-or-alternative" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Foot Pod, Belt Sensor or a Connected Treadmill?</h2>
+          <h2>Foot Pod, Belt Sensor or a Connected Treadmill?</h2>
 <p>
             A foot pod is the right purchase for many treadmill runners, but not for all of them.
             Before you spend $100 to $600, check whether you already have something that does the
@@ -803,9 +744,7 @@ const schema = {
           <p>
             <strong>If your treadmill broadcasts Bluetooth FTMS</strong> and your app supports it,
             you may not need a sensor at all: the treadmill sends its own speed. Zwift publishes a
-            list of <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> with confirmed compatible models, and our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
-            roundup covers the machines whose makers name Zwift. Remember that the treadmill sends
+            list of <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> with confirmed compatible models, and our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a> roundup covers the machines whose makers name Zwift. Remember that the treadmill sends
             what its console believes, so the speed is only as accurate as the console.
           </p>
           <p>
@@ -823,149 +762,161 @@ const schema = {
             <strong>If you only walk,</strong> skip the pod. Treadmill walking pace is easy to read
             off the console, and the value of a pod is in running pace, where wrist estimates are at
             their weakest. And if heart rate rather than pace is what you want on screen, a strap is
-            the better buy; see the
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a>.
+            the better buy; see the <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a>.
           </p>
           <p>
             Finally, if you are deciding between keeping a basic treadmill and buying a connected
-            one, our
-            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmill</a>
-            comparison makes the wider case. For most people with a treadmill they like, a pod is
+            one, our <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmill</a> comparison makes the wider case. For most people with a treadmill they like, a pod is
             the cheaper fix.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best foot pod for treadmill running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most runners in October 2026, the Stryd 5.0, because it broadcasts both ANT+ and Bluetooth, pairs with most running watch brands and is on Zwift's compatible footpod list. COROS watch owners should buy the COROS POD 2 instead, which costs far less but works only with COROS watches. Garmin owners can use the HRM 600 chest strap for treadmill pace.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which foot pods work with Zwift?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Zwift's compatible hardware page lists the Zwift RunPod, Stryd footpods, the Polar Stride Sensor and the Garmin Foot Pod (ANT+ only), plus the Runn as a treadmill sensor. Of those, the RunPod and Garmin pod are discontinued and Polar no longer sells its sensor in the US, so Stryd and Runn are the practical new purchases. Zwift recommends calibrating a footpod before use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Zwift RunPod still sold?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Zwift's own RunPod FAQ says the RunPod has been discontinued and is no longer available to purchase. It is still on Zwift's compatibility list, so a second-hand unit will pair, though at least one owner on Zwift's forum called it inaccurate. For a new purchase, a Stryd footpod or the Runn treadmill sensor are the options Zwift lists that are still sold.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the Garmin Running Dynamics Pod give pace on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not as a foot pod replacement. Garmin forum replies and independent comparisons describe it as reporting cadence and running-form metrics such as ground contact time and vertical oscillation, not pace or distance. It also appears to be discontinued: retailers list it that way and its US product page no longer loads. Garmin now points runners to the HRM 600 for treadmill pace.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need to calibrate a foot pod on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the pod. Stryd says its pod is accurate out of the box and most users need no calibration factor, and COROS says the POD 2 calibrates itself. Zwift still recommends calibrating any footpod before use. Whatever you do, check the treadmill's real belt speed first, because calibrating to a console that reads fast copies its error.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use a foot pod with an Apple Watch?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not through any method Apple documents for its own Workout app, as far as we could find. Stryd supports Apple Watch through the Stryd watch app, though its published compatibility list predates the newest models. The COROS POD 2 and Garmin HRM 600 do not work with Apple Watch for pace. On GymKit-equipped gym treadmills, the treadmill can send its data to the watch instead.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill Foot Pod</h2>
+          <p>Most foot pod disappointments come from compatibility, not accuracy. These are the four we see most often.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a pod your watch cannot read</h3>
+              <p>The COROS POD 2 works only with COROS watches, the HRM 600 gives pace only to compatible Garmin watches, and Apple’s own Workout app documents no foot pod pairing. Check the pod maker’s compatibility list for your exact watch model, not just the brand, before ordering. If you might change watch brands, a pod that speaks both ANT+ and Bluetooth keeps your options open.</p>
+            </li>
+            <li>
+              <h3>Ordering a discontinued pod from an old list</h3>
+              <p>Many roundups still recommend the Zwift RunPod, the Garmin Foot Pod and the Milestone Pod, all of which have been discontinued. Marketplace listings for them are usually old stock or used units with no support. Zwift will still pair a RunPod, but you are buying hardware nobody will fix or replace. Confirm a product is on its maker’s store today.</p>
+            </li>
+            <li>
+              <h3>Ignoring Bluetooth and ANT+</h3>
+              <p>An ANT+ only sensor needs an adapter or bridge to reach Zwift on most tablets, phones and laptops, and a Bluetooth sensor already connected to your watch may not be free for Zwift at the same time. Decide where the data needs to go — watch, app or both — and choose a sensor that can reach every destination.</p>
+            </li>
+            <li>
+              <h3>Calibrating to an unchecked console</h3>
+              <p>Teaching a pod to agree with a treadmill console that reads a few percent fast makes the pod wrong too, and every run afterwards inherits the error. Measure the belt’s real speed with a mark, a tape and a stopwatch first, then decide whether the pod needs adjusting at all. Stryd says its pod usually does not.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill Foot Pod</h2>
-          <p class="text-gray-700 leading-relaxed">Most foot pod disappointments come from compatibility, not accuracy. These are the four we see most often.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a pod your watch cannot read</h3>
-              <p class="text-gray-700 text-sm m-0">The COROS POD 2 works only with COROS watches, the HRM 600 gives pace only to compatible Garmin watches, and Apple’s own Workout app documents no foot pod pairing. Check the pod maker’s compatibility list for your exact watch model, not just the brand, before ordering. If you might change watch brands, a pod that speaks both ANT+ and Bluetooth keeps your options open.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a discontinued pod from an old list</h3>
-              <p class="text-gray-700 text-sm m-0">Many roundups still recommend the Zwift RunPod, the Garmin Foot Pod and the Milestone Pod, all of which have been discontinued. Marketplace listings for them are usually old stock or used units with no support. Zwift will still pair a RunPod, but you are buying hardware nobody will fix or replace. Confirm a product is on its maker’s store today.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring Bluetooth and ANT+</h3>
-              <p class="text-gray-700 text-sm m-0">An ANT+ only sensor needs an adapter or bridge to reach Zwift on most tablets, phones and laptops, and a Bluetooth sensor already connected to your watch may not be free for Zwift at the same time. Decide where the data needs to go — watch, app or both — and choose a sensor that can reach every destination.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating to an unchecked console</h3>
-              <p class="text-gray-700 text-sm m-0">Teaching a pod to agree with a treadmill console that reads a few percent fast makes the pod wrong too, and every run afterwards inherits the error. Measure the belt’s real speed with a mark, a tape and a stopwatch first, then decide whether the pod needs adjusting at all. Stryd says its pod usually does not.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-foot-pod-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Foot Pod Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How pods measure pace, how to calibrate one against a checked belt, and when you need one.</p>
-            </a>
-            <a href="/treadmill-calibration/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accuracy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calibration</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Check belt speed and incline, then calibrate a watch or pod to the truth.</p>
-            </a>
-            <a href="/best-treadmills-for-zwift/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Zwift</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Zwift</p>
-              <p class="text-sm text-gray-500 leading-relaxed">FTMS treadmills that send their own speed, and when a pod is the smarter buy.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy the Stryd 5.0</strong> if you want one pace sensor that works
             with Zwift and with most running watches; it is expensive, but nothing else currently
-            sold covers as many devices. COROS owners should buy the
-            <strong class="text-white">COROS POD 2</strong> for $99, and Garmin owners who would
-            rather not clip anything to a shoe can use the <strong class="text-white">HRM 600</strong>
-            instead.
+            sold covers as many devices. COROS owners should buy the <strong class="text-white">COROS POD 2</strong> for $99, and Garmin owners who would
+            rather not clip anything to a shoe can use the <strong class="text-white">HRM 600</strong> instead.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, check the treadmill first — a pod calibrated to a console that reads
-            fast just copies the error. Our
-            <a href="/treadmill-calibration/" class="text-[#5AA9FF] font-bold no-underline">treadmill calibration guide</a>
-            shows the ten-minute belt check.
+            fast just copies the error. Our <a href="/treadmill-calibration/" class="text-[#5AA9FF] font-bold no-underline">treadmill calibration guide</a> shows the ten-minute belt check.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-foot-pod-guide/">Treadmill Foot Pod Guide</a></li>
+            <li><a href="/treadmill-calibration/">Treadmill Calibration</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best foot pod for treadmill running?</h3></summary>
+            <p class="faq-a">
+              For most runners in October 2026, the Stryd 5.0, because it broadcasts both ANT+ and Bluetooth, pairs with most running watch brands and is on Zwift's compatible footpod list. COROS watch owners should buy the COROS POD 2 instead, which costs far less but works only with COROS watches. Garmin owners can use the HRM 600 chest strap for treadmill pace.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Which foot pods work with Zwift?</h3></summary>
+            <p class="faq-a">
+              Zwift's compatible hardware page lists the Zwift RunPod, Stryd footpods, the Polar Stride Sensor and the Garmin Foot Pod (ANT+ only), plus the Runn as a treadmill sensor. Of those, the RunPod and Garmin pod are discontinued and Polar no longer sells its sensor in the US, so Stryd and Runn are the practical new purchases. Zwift recommends calibrating a footpod before use.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is the Zwift RunPod still sold?</h3></summary>
+            <p class="faq-a">
+              No. Zwift's own RunPod FAQ says the RunPod has been discontinued and is no longer available to purchase. It is still on Zwift's compatibility list, so a second-hand unit will pair, though at least one owner on Zwift's forum called it inaccurate. For a new purchase, a Stryd footpod or the Runn treadmill sensor are the options Zwift lists that are still sold.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the Garmin Running Dynamics Pod give pace on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Not as a foot pod replacement. Garmin forum replies and independent comparisons describe it as reporting cadence and running-form metrics such as ground contact time and vertical oscillation, not pace or distance. It also appears to be discontinued: retailers list it that way and its US product page no longer loads. Garmin now points runners to the HRM 600 for treadmill pace.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need to calibrate a foot pod on a treadmill?</h3></summary>
+            <p class="faq-a">
+              It depends on the pod. Stryd says its pod is accurate out of the box and most users need no calibration factor, and COROS says the POD 2 calibrates itself. Zwift still recommends calibrating any footpod before use. Whatever you do, check the treadmill's real belt speed first, because calibrating to a console that reads fast copies its error.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use a foot pod with an Apple Watch?</h3></summary>
+            <p class="faq-a">
+              Not through any method Apple documents for its own Workout app, as far as we could find. Stryd supports Apple Watch through the Stryd watch app, though its published compatibility list predates the newest models. The COROS POD 2 and Garmin HRM 600 do not work with Apple Watch for pace. On GymKit-equipped gym treadmills, the treadmill can send its data to the watch instead.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-foot-pod-guide/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">Treadmill Foot Pod Guide</div>
+            <p class="c-blurb">How pods measure pace, how to calibrate one against a checked belt, and when you need one.</p>
+          </a>
+          <a href="/treadmill-calibration/" class="card">
+            <div class="c-kicker">Accuracy</div>
+            <div class="c-title">Treadmill Calibration</div>
+            <p class="c-blurb">Check belt speed and incline, then calibrate a watch or pod to the truth.</p>
+          </a>
+          <a href="/best-treadmills-for-zwift/" class="card">
+            <div class="c-kicker">Zwift</div>
+            <div class="c-title">Best Treadmills for Zwift</div>
+            <p class="c-blurb">FTMS treadmills that send their own speed, and when a pod is the smarter buy.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills With Handrails (2026): Long Side Rails for Walkers";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-with-handrails/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,66 +275,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Best Treadmills With Handrails", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Exerpeutic Senior Fitness Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillswithhandrails" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillswithhandrails)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">The Best Treadmills With Handrails</h1>
+      <p class="ed-dek">
+        Most treadmills have short side handles near the console. For walkers who want something to hold along the whole belt — older adults, people returning to exercise, anyone less steady on their feet — a treadmill with long side rails makes a real difference. Here are five, and what to check before you buy one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          The Best Treadmills <span class="text-[#5AA9FF]">With Handrails</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most treadmills have short side handles near the console. For walkers who want something to hold along the whole belt — older adults, people returning to exercise, anyone less steady on their feet — a treadmill with long side rails makes a real difference. Here are five, and what to check before you buy one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#good-handrail" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Makes a Good Handrail
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#exerpeutic-senior-fitness-treadmill"><img src="https://m.media-amazon.com/images/I/41s4hBtFBAL._SL500_.jpg" alt="Exerpeutic Senior Fitness Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#redliro-walking-treadmill-for-seniors"><img src="https://m.media-amazon.com/images/I/41a2hQ3IOKL._SL500_.jpg" alt="Redliro Walking Treadmill for Seniors" width="425" height="500" decoding="async" /></a>
+          <a href="#lastforever-walking-treadmill"><img src="https://m.media-amazon.com/images/I/41KgtA2ZoyL._SL500_.jpg" alt="Lastforever Walking Treadmill" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 6, 2026</strong>
+        <figcaption>Exerpeutic Senior Fitness Treadmill · Redliro Walking Treadmill for Seniors · Lastforever Walking Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Every treadmill has handrails of some kind, but on most they are short stubs either side
+          of the console, there mainly to carry the pulse sensors and the speed buttons. If you want
+          to steady yourself as you step on, walk with a hand resting on a rail, or have something to
+          reach for along the whole length of the belt, those stubs are not enough. This guide is
+          about treadmills with long side rails — full-length or extended — and usually a front bar as
+          well. They are walking machines first, and the five picks below are chosen for the rails,
+          the low starting speed and the simple controls that make them easy to use, not for running
+          performance.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#exerpeutic-senior-fitness-treadmill">Exerpeutic Senior Fitness Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Longest Belt:</span> <a href="#redliro-walking-treadmill-for-seniors">Redliro Walking Treadmill for Seniors</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Fastest:</span> <a href="#lastforever-walking-treadmill">Lastforever Walking Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#yesoul-treadmill-for-seniors">Yesoul Treadmill for Seniors</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Easiest to Step On:</span> <a href="#sunny-low-deck-treadmill-extended-handrails">Sunny Health & Fitness Low Deck Treadmill with Extended Safety Handrails</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           treadmills. The five picks were confirmed on 6 November 2026 as currently sold on
           Amazon US, and the figures on each card come from the Amazon listing's own specification
@@ -344,78 +366,25 @@ const schema = {
           injury or surgery, ask your doctor or physiotherapist whether treadmill walking suits you
           and how to start. We earn a commission if you buy through the Amazon links on this page; it
           does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#exerpeutic-senior-fitness-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Exerpeutic Senior Fitness Treadmill</a>
-            <a href="#exerpeutic-senior-fitness-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Longest Belt:</span>
-            <a href="#redliro-walking-treadmill-for-seniors" class="font-bold text-gray-900 no-underline hover:underline">Redliro Walking Treadmill for Seniors</a>
-            <a href="#redliro-walking-treadmill-for-seniors" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Fastest:</span>
-            <a href="#lastforever-walking-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Lastforever Walking Treadmill</a>
-            <a href="#lastforever-walking-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#yesoul-treadmill-for-seniors" class="font-bold text-gray-900 no-underline hover:underline">Yesoul Treadmill for Seniors</a>
-            <a href="#yesoul-treadmill-for-seniors" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Easiest to Step On:</span>
-            <a href="#sunny-low-deck-treadmill-extended-handrails" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Low Deck Treadmill with Extended Safety Handrails</a>
-            <a href="#sunny-low-deck-treadmill-extended-handrails" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Best Treadmills With Handrails at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmills With Handrails in 2026</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Treadmills</a>
-          <a href="#good-handrail" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Makes a Good Treadmill Handrail</a>
-          <a href="#holding-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Should You Hold the Handrails While You Walk?</a>
-          <a href="#safety-features" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Other Safety Features to Look For</a>
-          <a href="#belt-and-capacity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Belt Size and Weight Rating</a>
-          <a href="#before-you-order" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Before You Order a Treadmill With Handrails</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">The Best Treadmills With Handrails at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Treadmills With Handrails in 2026</a></li>
+            <li><a href="#how-we-chose">How We Chose These Treadmills</a></li>
+            <li><a href="#good-handrail">What Makes a Good Treadmill Handrail</a></li>
+            <li><a href="#holding-on">Should You Hold the Handrails While You Walk?</a></li>
+            <li><a href="#safety-features">Other Safety Features to Look For</a></li>
+            <li><a href="#belt-and-capacity">Belt Size and Weight Rating</a></li>
+            <li><a href="#before-you-order">Before You Order a Treadmill With Handrails</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Every treadmill has handrails of some kind, but on most they are short stubs either side
-          of the console, there mainly to carry the pulse sensors and the speed buttons. If you want
-          to steady yourself as you step on, walk with a hand resting on a rail, or have something to
-          reach for along the whole length of the belt, those stubs are not enough. This guide is
-          about treadmills with long side rails — full-length or extended — and usually a front bar as
-          well. They are walking machines first, and the five picks below are chosen for the rails,
-          the low starting speed and the simple controls that make them easy to use, not for running
-          performance.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Best Treadmills With Handrails at a Glance</h2>
+          <h2>The Best Treadmills With Handrails at a Glance</h2>
 <p>
             <strong>The best treadmill with handrails for most walkers is the Exerpeutic Senior Fitness
             Treadmill: full-length padded side rails plus a forward rail, a start speed of 0.3 mph in
@@ -448,15 +417,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you would rather have a small, light machine that slides under a sofa, our roundup of
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a>
-            covers pads with a fold-up bar. Those usually give you one bar at the front, not rails down
+            If you would rather have a small, light machine that slides under a sofa, our roundup of <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with a handrail</a> covers pads with a fold-up bar. Those usually give you one bar at the front, not rails down
             both sides, which is the difference this page is about.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmills With Handrails in 2026</h2>
+          <h2>The 5 Best Treadmills With Handrails in 2026</h2>
 <p>
             Each card gives the figures stated by the Amazon listing or the maker, the price we saw and
             who the treadmill suits. Four are sold on Amazon at under $500. They are compact <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>walking
@@ -472,84 +439,71 @@ const schema = {
             and accept shorter rails.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Treadmills</h2>
+          <h2>How We Chose These Treadmills</h2>
 <p>
             We have not tested these treadmills. They were chosen from Amazon listings and makers'
             pages, checked on 6 November 2026, and the claims on this page
-            are limited to what those sources support. Our
-            <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
-            explain the process.
+            are limited to what those sources support. Our <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a> explain the process.
           </p>
           <p>
             Every pick had to have side handrails that run well beyond the console — described by the
@@ -567,7 +521,7 @@ const schema = {
         </div>
 
         <div id="good-handrail" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Makes a Good Treadmill Handrail</h2>
+          <h2>What Makes a Good Treadmill Handrail</h2>
 <p>
             A handrail is only useful if it is where your hand naturally falls, strong enough to take
             some of your weight for a moment, and comfortable to hold. A few features separate a good
@@ -603,7 +557,7 @@ const schema = {
         </div>
 
         <div id="holding-on" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Should You Hold the Handrails While You Walk?</h2>
+          <h2>Should You Hold the Handrails While You Walk?</h2>
 <p>
             Handrails are there for balance and safety, and using them is sensible, especially when you
             are starting out, stepping on and off, or changing speed. Two things are worth knowing.
@@ -617,9 +571,7 @@ const schema = {
           <p>
             Second, for someone who needs the rails for stability, that trade-off is worth making.
             Walking supported is far better than not walking, and many people find that as their
-            confidence and strength improve, they rely on the rails less. Our guide to
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails on a treadmill</a>
-            explains how to move from a firm grip to a light touch over time.
+            confidence and strength improve, they rely on the rails less. Our guide to <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails on a treadmill</a> explains how to move from a firm grip to a light touch over time.
           </p>
           <p>
             If you are using a treadmill as part of recovery from an injury, surgery or a fall, ask your
@@ -629,7 +581,7 @@ const schema = {
         </div>
 
         <div id="safety-features" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Other Safety Features to Look For</h2>
+          <h2>Other Safety Features to Look For</h2>
 <p>
             Long rails are the most visible safety feature, but several others matter as much for
             walkers who are less steady on their feet.
@@ -660,15 +612,13 @@ const schema = {
             around exactly that.
           </p>
           <p>
-            Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            cover setting up the space around the machine, including the clear area to leave behind the
+            Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> cover setting up the space around the machine, including the clear area to leave behind the
             belt.
           </p>
         </div>
 
         <div id="belt-and-capacity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Belt Size and Weight Rating</h2>
+          <h2>Belt Size and Weight Rating</h2>
 <p>
             Walking treadmills with long rails tend to have shorter belts than running treadmills, and
             that is usually fine at walking speeds. Still, a cramped belt makes people shorten their
@@ -678,8 +628,7 @@ const schema = {
             The picks range from 41.3 to 47.6 inches long and about 16 to 19 inches wide where the
             listing or maker gives a figure. For an average-height walker at a relaxed pace, the low 40s
             is enough. Taller walkers, and anyone who walks briskly, will be more comfortable on the
-            Redliro's 47.6 inches or the Sunny's 47.2 by 18.9 inches. A clinical treadmill such as
-            <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a>'s
+            Redliro's 47.6 inches or the Sunny's 47.2 by 18.9 inches. A clinical treadmill such as <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Landice</a>'s
             L7 Rehabilitation model, with a 58-inch surface, is in a different class.
           </p>
           <p>
@@ -689,14 +638,12 @@ const schema = {
             versions of the same treadmill with different capacities, as Redliro does.
           </p>
           <p>
-            For older walkers specifically, our roundup of the
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            weighs these picks against full-size machines with lower step-up heights and longer warranties.
+            For older walkers specifically, our roundup of the <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a> weighs these picks against full-size machines with lower step-up heights and longer warranties.
           </p>
         </div>
 
         <div id="before-you-order" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Before You Order a Treadmill With Handrails</h2>
+          <h2>Before You Order a Treadmill With Handrails</h2>
 <p>
             <strong>Measure the space, including behind.</strong> Leave clear space behind the belt and
             to the sides, so that a step backwards off the belt lands on open floor rather than a wall or
@@ -720,99 +667,34 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill with handrails?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most walkers, the Exerpeutic Senior Fitness Treadmill: full-length padded side rails and a forward rail, a 0.3 mph start in 0.1 mph steps, a 43.5 by 16-inch belt, a simple console and a 400 lb rating, at about $399 on Amazon on 6 November 2026. The Redliro Walking Treadmill for Seniors gives a longer 47.6-inch belt and folds.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are treadmills with long handrails safer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Long side rails give you something to hold along the whole belt, which helps with balance when stepping on and off and while walking. They are one part of safety, alongside a low starting speed, small speed steps, a safety key you always clip on and clear space behind the treadmill. If you have a balance problem, ask your doctor or physiotherapist how to use one.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it bad to hold the handrails on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not if you need them for balance. Holding on tightly or leaning on the rails makes the walk easier and changes your posture, so the effort and calorie figures will be lower than displayed. A light touch for balance avoids most of that, and many people need the rails less as their confidence grows.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill for seniors with handrails?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The Exerpeutic Senior Fitness Treadmill is our pick for most older walkers, for its full-length rails, 0.3 mph start and simple controls. For taller walkers, the Redliro has a 47.6-inch belt. Our separate roundup of the best treadmills for seniors also covers full-size machines with low step-up heights and longer warranties.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you add handrails to a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We would not recommend it. Treadmill rails are part of the frame's design and are fixed at points the maker has engineered to take the load. An improvised rail may not be strong enough or may sit at the wrong height. If you need long rails, buy a treadmill designed with them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad with a handle as good as a treadmill with handrails?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for support. Most walking pads with a handle have one fold-up bar at the front, which helps you steady yourself when facing forward but gives nothing to hold at your sides. A treadmill with long side rails supports you along the whole belt, which matters more for walkers who are less steady.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill With Handrails</h2>
+          <p>Each of these leads to a treadmill that does not give the support it was bought for.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Mistaking console handles for long rails</h3>
+              <p>Most treadmills have short handles near the console, and listings sometimes call them handrails. Check the photos: long rails run back along both sides of the belt, so you can hold on wherever you are standing.</p>
+            </li>
+            <li>
+              <h3>Ignoring the starting speed</h3>
+              <p>For someone unsteady, the first second on a moving belt matters most. A treadmill that starts at 0.3 mph and changes in 0.1 mph steps is gentler than one that starts at 0.6 mph or jumps in larger steps.</p>
+            </li>
+            <li>
+              <h3>Not clipping on the safety key</h3>
+              <p>A safety key only stops the belt if it is attached to your clothing. Clip it on every time, before you start the belt, and keep the space behind the treadmill clear in case you need to step off.</p>
+            </li>
+            <li>
+              <h3>Skipping advice when recovering from injury</h3>
+              <p>A treadmill with rails can be a good part of recovery, but speed, duration and how much to hold on vary from person to person. Ask your doctor or physiotherapist before starting, and follow their guidance on how fast to progress.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill With Handrails</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these leads to a treadmill that does not give the support it was bought for.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Mistaking console handles for long rails</h3>
-              <p class="text-gray-700 text-sm m-0">Most treadmills have short handles near the console, and listings sometimes call them handrails. Check the photos: long rails run back along both sides of the belt, so you can hold on wherever you are standing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the starting speed</h3>
-              <p class="text-gray-700 text-sm m-0">For someone unsteady, the first second on a moving belt matters most. A treadmill that starts at 0.3 mph and changes in 0.1 mph steps is gentler than one that starts at 0.6 mph or jumps in larger steps.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not clipping on the safety key</h3>
-              <p class="text-gray-700 text-sm m-0">A safety key only stops the belt if it is attached to your clothing. Clip it on every time, before you start the belt, and keep the space behind the treadmill clear in case you need to step off.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping advice when recovering from injury</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill with rails can be a good part of recovery, but speed, duration and how much to hold on vary from person to person. Ask your doctor or physiotherapist before starting, and follow their guidance on how fast to progress.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Handrail and Senior Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-seniors/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Seniors</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Seniors</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines with low step-up heights, slow starts and simple controls.</p>
-            </a>
-            <a href="/best-walking-pads-with-handrail/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Walking Pads</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pads With a Handrail</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Compact pads with a fold-up bar, and what that bar can and cannot do.</p>
-            </a>
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Technique</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Should You Hold the Handrails?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When holding on helps, when it does not, and how to rely on it less.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most walkers the best treadmill with handrails is the Exerpeutic Senior Fitness Treadmill</strong>:
             full-length padded rails and a front rail, a 0.3 mph start, simple controls and a 400 lb
             rating, for about $399. Taller walkers should look at the Redliro's longer belt; walkers
@@ -820,38 +702,121 @@ const schema = {
             for whom stepping on and off is the hard part, the Sunny low-deck treadmill with its 4-inch
             step-up.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, check the rails in the photos, clip on the safety key every time and
             start at the lowest speed. If you are recovering from an injury or have a balance condition,
             ask your doctor or physiotherapist before you begin. For more options aimed at older
-            walkers, see our guide to the
-            <a href="/best-treadmills-for-seniors/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for seniors</a>.
+            walkers, see our guide to the <a href="/best-treadmills-for-seniors/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for seniors</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-seniors/">Best Treadmills for Seniors</a></li>
+            <li><a href="/best-walking-pads-with-handrail/">Walking Pads With a Handrail</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best treadmill with handrails?</h3></summary>
+            <p class="faq-a">
+              For most walkers, the Exerpeutic Senior Fitness Treadmill: full-length padded side rails and a forward rail, a 0.3 mph start in 0.1 mph steps, a 43.5 by 16-inch belt, a simple console and a 400 lb rating, at about $399 on Amazon on 6 November 2026. The Redliro Walking Treadmill for Seniors gives a longer 47.6-inch belt and folds.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are treadmills with long handrails safer?</h3></summary>
+            <p class="faq-a">
+              Long side rails give you something to hold along the whole belt, which helps with balance when stepping on and off and while walking. They are one part of safety, alongside a low starting speed, small speed steps, a safety key you always clip on and clear space behind the treadmill. If you have a balance problem, ask your doctor or physiotherapist how to use one.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is it bad to hold the handrails on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Not if you need them for balance. Holding on tightly or leaning on the rails makes the walk easier and changes your posture, so the effort and calorie figures will be lower than displayed. A light touch for balance avoids most of that, and many people need the rails less as their confidence grows.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the best treadmill for seniors with handrails?</h3></summary>
+            <p class="faq-a">
+              The Exerpeutic Senior Fitness Treadmill is our pick for most older walkers, for its full-length rails, 0.3 mph start and simple controls. For taller walkers, the Redliro has a 47.6-inch belt. Our separate roundup of the best treadmills for seniors also covers full-size machines with low step-up heights and longer warranties.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you add handrails to a treadmill?</h3></summary>
+            <p class="faq-a">
+              We would not recommend it. Treadmill rails are part of the frame's design and are fixed at points the maker has engineered to take the load. An improvised rail may not be strong enough or may sit at the wrong height. If you need long rails, buy a treadmill designed with them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad with a handle as good as a treadmill with handrails?</h3></summary>
+            <p class="faq-a">
+              Not for support. Most walking pads with a handle have one fold-up bar at the front, which helps you steady yourself when facing forward but gives nothing to hold at your sides. A treadmill with long side rails supports you along the whole belt, which matters more for walkers who are less steady.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Handrail and Senior Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-seniors/" class="card">
+            <div class="c-kicker">Seniors</div>
+            <div class="c-title">Best Treadmills for Seniors</div>
+            <p class="c-blurb">Machines with low step-up heights, slow starts and simple controls.</p>
+          </a>
+          <a href="/best-walking-pads-with-handrail/" class="card">
+            <div class="c-kicker">Walking Pads</div>
+            <div class="c-title">Walking Pads With a Handrail</div>
+            <p class="c-blurb">Compact pads with a fold-up bar, and what that bar can and cannot do.</p>
+          </a>
+          <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="card">
+            <div class="c-kicker">Technique</div>
+            <div class="c-title">Should You Hold the Handrails?</div>
+            <p class="c-blurb">When holding on helps, when it does not, and how to rely on it less.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

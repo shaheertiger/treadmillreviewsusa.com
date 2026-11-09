@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Fans (2026): Five Picks for Treadmills and Home Gyms";
 const description =
@@ -247,6 +246,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-fans/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -268,66 +273,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Vornado 660 Large Whole Room Air Circulator", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillfans" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillfans)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Fans for Treadmill Running</h1>
+      <p class="ed-dek">
+        A treadmill takes away the one thing that keeps you cool outdoors: moving air. A proper fan puts it back, but only if it is strong enough, high enough and plugged in sensibly. Here are five fans that suit different rooms and budgets, and how to place and power whichever one you buy.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Fans <span class="text-[#5AA9FF]">for Treadmill Running</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill takes away the one thing that keeps you cool outdoors: moving air. A proper fan puts it back, but only if it is strong enough, high enough and plugged in sensibly. Here are five fans that suit different rooms and budgets, and how to place and power whichever one you buy.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#placement" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Where to Put It
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#vornado-660"><img src="https://m.media-amazon.com/images/I/41RlLLvlq-L._SL500_.jpg" alt="Vornado 660 Large Whole Room Air Circulator" width="500" height="500" decoding="async" /></a>
+          <a href="#wahoo-kickr-headwind"><img src="https://m.media-amazon.com/images/I/41IxfdsCyTL._SL500_.jpg" alt="Wahoo KICKR Headwind" width="500" height="500" decoding="async" /></a>
+          <a href="#vornado-683"><img src="https://m.media-amazon.com/images/I/412FldapIOL._SL500_.jpg" alt="Vornado 683 Pedestal Air Circulator" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+        <figcaption>Vornado 660 Large Whole Room Air Circulator · Wahoo KICKR Headwind · Vornado 683 Pedestal Air Circulator</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Ask treadmill owners what made the biggest difference to their sessions and a surprising
+          number will say the fan. Running in still indoor air is harder work than the same pace
+          outdoors, and the little fan in the console does not come close to fixing it. The right
+          fan is not complicated, but it has to reach your chest from the right place, run
+          quietly enough to live with, and stay off the treadmill's outlet. The five picks below
+          cover a dedicated training fan, two room circulators and two fans built for garages and
+          home gyms, and the guide after them covers placement, noise and power.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#vornado-660">Vornado 660 Large Whole Room Air Circulator</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Training Fan:</span> <a href="#wahoo-kickr-headwind">Wahoo KICKR Headwind</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Pedestal:</span> <a href="#vornado-683">Vornado 683 Pedestal Air Circulator</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Garages:</span> <a href="#lasko-cyclone-3520">Lasko Cyclone 20" Air Circulator Fan (3520)</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact:</span> <a href="#lasko-u12104">Lasko 12" Pivoting Pro High Velocity Blower Fan (U12104)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           fans. Speeds, features, warranty terms and airflow claims were checked on 15 October 2026
           against each maker's own product page or store and at least one independent review or
@@ -343,79 +364,27 @@ const schema = {
           site reviews equipment. It is not giving medical or exercise advice about heat, and a
           fan is not a safeguard against heat illness. If you have a condition affected by heat,
           or you feel unwell while exercising, stop and talk to a qualified professional.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#vornado-660" class="font-bold text-gray-900 no-underline hover:underline">Vornado 660 Large Whole Room Air Circulator</a>
-            <a href="#vornado-660" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Training Fan:</span>
-            <a href="#wahoo-kickr-headwind" class="font-bold text-gray-900 no-underline hover:underline">Wahoo KICKR Headwind</a>
-            <a href="#wahoo-kickr-headwind" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Pedestal:</span>
-            <a href="#vornado-683" class="font-bold text-gray-900 no-underline hover:underline">Vornado 683 Pedestal Air Circulator</a>
-            <a href="#vornado-683" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Garages:</span>
-            <a href="#lasko-cyclone-3520" class="font-bold text-gray-900 no-underline hover:underline">Lasko Cyclone 20" Air Circulator Fan (3520)</a>
-            <a href="#lasko-cyclone-3520" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compact:</span>
-            <a href="#lasko-u12104" class="font-bold text-gray-900 no-underline hover:underline">Lasko 12" Pivoting Pro High Velocity Blower Fan (U12104)</a>
-            <a href="#lasko-u12104" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Fans for Treadmill Running</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Fans</a>
-          <a href="#placement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Placement: In Front, To the Side, and How High</a>
-          <a href="#console-fans" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Built-In Console Fans Fall Short</a>
-          <a href="#airflow" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Reading Airflow Claims: CFM, Feet and Miles per Hour</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise: Living With a Fan and a Treadmill</a>
-          <a href="#power" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Power Draw and Sharing a Circuit With the Treadmill</a>
-          <a href="#garage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Fans for Garage and Basement Treadmills</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Fans for Treadmill Running</a></li>
+            <li><a href="#how-we-chose">How We Chose These Fans</a></li>
+            <li><a href="#placement">Placement: In Front, To the Side, and How High</a></li>
+            <li><a href="#console-fans">Why Built-In Console Fans Fall Short</a></li>
+            <li><a href="#airflow">Reading Airflow Claims: CFM, Feet and Miles per Hour</a></li>
+            <li><a href="#noise">Noise: Living With a Fan and a Treadmill</a></li>
+            <li><a href="#power">Power Draw and Sharing a Circuit With the Treadmill</a></li>
+            <li><a href="#garage">Fans for Garage and Basement Treadmills</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Ask treadmill owners what made the biggest difference to their sessions and a surprising
-          number will say the fan. Running in still indoor air is harder work than the same pace
-          outdoors, and the little fan in the console does not come close to fixing it. The right
-          fan is not complicated, but it has to reach your chest from the right place, run
-          quietly enough to live with, and stay off the treadmill's outlet. The five picks below
-          cover a dedicated training fan, two room circulators and two fans built for garages and
-          home gyms, and the guide after them covers placement, noise and power.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five fans for three kinds of treadmill room. The short version: the Vornado 660 for an
             indoor room where noise matters, the Lasko Cyclone for a garage, and the Wahoo KICKR
@@ -436,15 +405,14 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            Before buying, read our guide to
-            <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">staying cool on a treadmill</a>.
+            Before buying, read our guide to <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">staying cool on a treadmill</a>.
             The fan is the biggest single fix, but room temperature, humidity, clothing and timing
             all decide how much it can do.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Fans for Treadmill Running</h2>
+          <h2>The 5 Best Fans for Treadmill Running</h2>
 <p>
             Each card gives the features we could confirm, any airflow claim that both the maker
             and an independent source state, and the price range we saw. The first three suit an
@@ -457,78 +425,67 @@ const schema = {
             your chest.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Fans</h2>
+          <h2>How We Chose These Fans</h2>
 <p>
             We have not tested these fans. They were chosen from manufacturer specifications,
             store listings and independent reviews, and the claims on this page are limited to what
@@ -572,7 +529,7 @@ const schema = {
         </div>
 
         <div id="placement" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Placement: In Front, To the Side, and How High</h2>
+          <h2>Placement: In Front, To the Side, and How High</h2>
 <p>
             Placement decides how well any fan works on a treadmill, and three rules cover most
             of it.
@@ -605,14 +562,12 @@ const schema = {
             Never run a fan cable under the treadmill or across the deck, and keep the fan itself
             clear of the motor hood vents. Blowing air at the front of the machine is fine; parking
             the fan against the hood is not, because the motor needs room to draw in cool air. Our
-            guide to
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety</a>
-            covers the clearances around the machine more generally.
+            guide to <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety</a> covers the clearances around the machine more generally.
           </p>
         </div>
 
         <div id="console-fans" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Built-In Console Fans Fall Short</h2>
+          <h2>Why Built-In Console Fans Fall Short</h2>
 <p>
             Many treadmills have one or two small fans built into the console, and new owners often
             expect them to be enough. In general they are not, for reasons that apply across most
@@ -629,14 +584,12 @@ const schema = {
           </ul>
           <p>
             Treat a console fan as a pleasant extra on a short walk and plan on a standalone fan
-            for anything longer or faster. If yours has stopped working, check our guide to a
-            <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a>
-            if the fan stops along with other console functions.
+            for anything longer or faster. If yours has stopped working, check our guide to a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a> if the fan stops along with other console functions.
           </p>
         </div>
 
         <div id="airflow" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Reading Airflow Claims: CFM, Feet and Miles per Hour</h2>
+          <h2>Reading Airflow Claims: CFM, Feet and Miles per Hour</h2>
 <p>
             Fan makers describe airflow in three different ways, and none of them translates
             neatly into how cool you will feel on a treadmill.
@@ -677,7 +630,7 @@ const schema = {
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise: Living With a Fan and a Treadmill</h2>
+          <h2>Noise: Living With a Fan and a Treadmill</h2>
 <p>
             A fan adds a second noise source to a room that already has a motor and a belt in it.
             How much that matters depends on where the treadmill lives and who else is in the
@@ -693,11 +646,7 @@ const schema = {
           <p>
             Fan noise is mostly a steady rushing sound, and for many people it masks some of the
             treadmill's motor whine rather than adding to it. That is not a reason to put up with
-            a noisy machine. If the treadmill itself is the problem, our guide to
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            explains where the noise comes from, and our guide to
-            <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium">headphones for treadmill running</a>
-            covers the other way of dealing with it.
+            a noisy machine. If the treadmill itself is the problem, our guide to <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> explains where the noise comes from, and our guide to <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium">headphones for treadmill running</a> covers the other way of dealing with it.
           </p>
           <p>
             One caution: a fan that rattles is often a fan that is loose, not one that is loud.
@@ -707,14 +656,12 @@ const schema = {
         </div>
 
         <div id="power" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Power Draw and Sharing a Circuit With the Treadmill</h2>
+          <h2>Power Draw and Sharing a Circuit With the Treadmill</h2>
 <p>
             A household fan uses very little electricity next to a treadmill. As a typical range,
             room fans and circulators draw tens of watts, larger high-velocity fans somewhat more,
             while a running treadmill motor draws far more and draws a surge as it starts. Our guide
-            to
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a>
-            covers the treadmill side in detail. The fan is not going to make a noticeable
+            to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a> covers the treadmill side in detail. The fan is not going to make a noticeable
             difference to your bill.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Same circuit, different outlet</h3>
@@ -729,9 +676,7 @@ const schema = {
           <p>
             If your treadmill does trip the breaker, look first at the bigger loads that commonly
             share rooms with treadmills — space heaters, dehumidifiers, freezers, window air
-            conditioners. Our guide to a
-            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a>
-            explains how to tell a shared-circuit problem from a fault, and what not to do at the
+            conditioners. Our guide to a <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a> explains how to tell a shared-circuit problem from a fault, and what not to do at the
             panel.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fans with outlets</h3>
@@ -751,12 +696,10 @@ const schema = {
         </div>
 
         <div id="garage" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Fans for Garage and Basement Treadmills</h2>
+          <h2>Fans for Garage and Basement Treadmills</h2>
 <p>
             Garages and basements change the fan question. They are often hotter in summer and
-            more humid, the air is dustier, and noise matters less. Our guide to a
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in the garage</a>
-            covers the temperature and damp problems that affect the machine itself.
+            more humid, the air is dustier, and noise matters less. Our guide to a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in the garage</a> covers the temperature and damp problems that affect the machine itself.
           </p>
           <ul>
             <li><strong>Go bigger.</strong> A 20-inch fan such as the Lasko Cyclone moves more air
@@ -780,7 +723,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you only walk, briefly.</strong> For a 20-minute walk on a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> in
             a cool room, a desk fan you already own, raised on a shelf, may be all you need.
@@ -803,148 +746,162 @@ const schema = {
           </p>
           <p>
             <strong>If you are kitting out a new treadmill.</strong> The fan sits alongside a mat,
-            the right lubricant and a few sensors on a short list of genuinely useful extras. Our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            puts them in order.
+            the right lubricant and a few sensors on a short list of genuinely useful extras. Our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> puts them in order.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best fan for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most indoor rooms, a compact air circulator with a tilting head, such as the Vornado 660, raised on a stand in front of the treadmill. For a garage, a 20-inch fan that can be wall-mounted, such as the Lasko Cyclone. If you train with an ANT+ heart-rate strap and want automatic control, the Wahoo KICKR Headwind follows your heart rate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where should I put a fan for my treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In front of the treadmill and slightly to one side, raised so the air reaches your chest and face rather than your shins. The deck lifts you well off the floor, so use a stand, shelf, wall mount or tilting head. Keep the fan and its cable clear of the belt, the rear of the deck and the motor hood vents.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the fan on my treadmill console enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not. Console fans are small, close and aimed at a fixed point, so they move far less air than a standalone fan and may not reach your face. They are a pleasant extra on a short walk. For longer or faster sessions, plan on a separate fan placed in front of the machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I plug a fan into the same outlet as my treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Use a different outlet. Never share a power strip, extension cord or surge protector between the fan and the treadmill, and never plug the treadmill into a fan with built-in outlets. Many treadmill manuals ask for a dedicated outlet. A fan on the same circuit but a different outlet is rarely a problem on its own.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a fan use much electricity?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Very little compared with the treadmill. Room fans and circulators typically draw tens of watts, while a treadmill motor draws far more and surges when it starts. A fan will not make a noticeable difference to your bill or, on its own, trip a breaker. Fan-and-heater units are different when the heater is on.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Wahoo KICKR Headwind worth it for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if you use its heart-rate mode, which needs an ANT+ heart-rate strap. Then it speeds up as you work harder, which is genuinely useful in intervals. It was designed for cyclists, so on a treadmill you will need to raise it. If you would control it manually, a good air circulator costs much less.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Choosing a Treadmill Fan</h2>
+          <p>Each of these leaves you just as hot as before, or creates a new problem around the machine.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Leaving the fan on the floor</h3>
+              <p>The deck lifts you well off the floor, so a floor fan blows at your shins and the motor hood while your chest and face stay hot. Raise the fan on a sturdy stand, shelf or wall mount in front of the machine, or tilt its head upward, until you can feel the air on your chest at running height.</p>
+            </li>
+            <li>
+              <h3>Sharing a power strip with the treadmill</h3>
+              <p>Plugging the fan and the treadmill into the same strip, extension cord or surge protector turns a simple setup into one most treadmill manuals prohibit. Give the treadmill its own wall outlet and plug the fan in elsewhere. Never plug the treadmill into a blower fan's built-in outlets, however convenient they look.</p>
+            </li>
+            <li>
+              <h3>Buying on CFM alone</h3>
+              <p>Airflow figures on fan listings are inconsistent, and we found the same fan described with numbers more than double apart. Choose on size, speeds, a tilting head and a warranty you can check instead. A larger fan run on a low setting usually gives the same breeze more quietly than a small fan flat out.</p>
+            </li>
+            <li>
+              <h3>Running a cable across the deck</h3>
+              <p>A fan cable that runs under the treadmill or across the deck can be caught by the belt, pinched by the frame or tripped over as you step off. Route it along the wall, away from the rear of the machine and the step-off area, and place the fan so its cord reaches its outlet without crossing the treadmill.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing a Treadmill Fan</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these leaves you just as hot as before, or creates a new problem around the machine.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the fan on the floor</h3>
-              <p class="text-gray-700 text-sm m-0">The deck lifts you well off the floor, so a floor fan blows at your shins and the motor hood while your chest and face stay hot. Raise the fan on a sturdy stand, shelf or wall mount in front of the machine, or tilt its head upward, until you can feel the air on your chest at running height.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sharing a power strip with the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">Plugging the fan and the treadmill into the same strip, extension cord or surge protector turns a simple setup into one most treadmill manuals prohibit. Give the treadmill its own wall outlet and plug the fan in elsewhere. Never plug the treadmill into a blower fan's built-in outlets, however convenient they look.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying on CFM alone</h3>
-              <p class="text-gray-700 text-sm m-0">Airflow figures on fan listings are inconsistent, and we found the same fan described with numbers more than double apart. Choose on size, speeds, a tilting head and a warranty you can check instead. A larger fan run on a low setting usually gives the same breeze more quietly than a small fan flat out.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running a cable across the deck</h3>
-              <p class="text-gray-700 text-sm m-0">A fan cable that runs under the treadmill or across the deck can be caught by the belt, pinched by the frame or tripped over as you step off. Route it along the wall, away from the rear of the machine and the step-off area, and place the fan so its cord reaches its outlet without crossing the treadmill.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-stay-cool-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cooling</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Stay Cool on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Fan placement, room temperature, humidity, clothing and timing.</p>
-            </a>
-            <a href="/treadmill-in-garage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Garage</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill in the Garage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Heat, damp and dust, and what they do to the machine.</p>
-            </a>
-            <a href="/best-treadmill-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Accessories</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The short list of extras worth buying with a treadmill.</p>
-            </a>
-            <a href="/best-treadmill-covers/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Covers</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Covers</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Dust and garage covers, measuring folded versus unfolded, and why breathable matters.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            For a treadmill in an indoor room, buy the
-            <strong class="text-white">Vornado 660</strong>, raise it on a sturdy stand in front of
-            the machine and tilt it up at your chest. In a garage, a wall-mounted
-            <strong class="text-white">Lasko Cyclone</strong> does the same job with more air and
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            For a treadmill in an indoor room, buy the <strong class="text-white">Vornado 660</strong>, raise it on a sturdy stand in front of
+            the machine and tilt it up at your chest. In a garage, a wall-mounted <strong class="text-white">Lasko Cyclone</strong> does the same job with more air and
             more noise. Buy the Wahoo KICKR Headwind only if you train with an ANT+ heart-rate strap
             and want the fan to follow you.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, plug it into a different outlet from the treadmill, keep its cable
             clear of the deck, and run it below full speed most of the time. For the rest of the
-            heat problem — room, clothing and timing — read our guide to
-            <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">staying cool on a treadmill</a>.
+            heat problem — room, clothing and timing — read our guide to <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">staying cool on a treadmill</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-stay-cool-on-a-treadmill/">How to Stay Cool on a Treadmill</a></li>
+            <li><a href="/treadmill-in-garage/">Treadmill in the Garage</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best fan for a treadmill?</h3></summary>
+            <p class="faq-a">
+              For most indoor rooms, a compact air circulator with a tilting head, such as the Vornado 660, raised on a stand in front of the treadmill. For a garage, a 20-inch fan that can be wall-mounted, such as the Lasko Cyclone. If you train with an ANT+ heart-rate strap and want automatic control, the Wahoo KICKR Headwind follows your heart rate.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where should I put a fan for my treadmill?</h3></summary>
+            <p class="faq-a">
+              In front of the treadmill and slightly to one side, raised so the air reaches your chest and face rather than your shins. The deck lifts you well off the floor, so use a stand, shelf, wall mount or tilting head. Keep the fan and its cable clear of the belt, the rear of the deck and the motor hood vents.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is the fan on my treadmill console enough?</h3></summary>
+            <p class="faq-a">
+              Usually not. Console fans are small, close and aimed at a fixed point, so they move far less air than a standalone fan and may not reach your face. They are a pleasant extra on a short walk. For longer or faster sessions, plan on a separate fan placed in front of the machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I plug a fan into the same outlet as my treadmill?</h3></summary>
+            <p class="faq-a">
+              Use a different outlet. Never share a power strip, extension cord or surge protector between the fan and the treadmill, and never plug the treadmill into a fan with built-in outlets. Many treadmill manuals ask for a dedicated outlet. A fan on the same circuit but a different outlet is rarely a problem on its own.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a fan use much electricity?</h3></summary>
+            <p class="faq-a">
+              Very little compared with the treadmill. Room fans and circulators typically draw tens of watts, while a treadmill motor draws far more and surges when it starts. A fan will not make a noticeable difference to your bill or, on its own, trip a breaker. Fan-and-heater units are different when the heater is on.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Wahoo KICKR Headwind worth it for running?</h3></summary>
+            <p class="faq-a">
+              Only if you use its heart-rate mode, which needs an ANT+ heart-rate strap. Then it speeds up as you work harder, which is genuinely useful in intervals. It was designed for cyclists, so on a treadmill you will need to raise it. If you would control it manually, a good air circulator costs much less.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-stay-cool-on-a-treadmill/" class="card">
+            <div class="c-kicker">Cooling</div>
+            <div class="c-title">How to Stay Cool on a Treadmill</div>
+            <p class="c-blurb">Fan placement, room temperature, humidity, clothing and timing.</p>
+          </a>
+          <a href="/treadmill-in-garage/" class="card">
+            <div class="c-kicker">Garage</div>
+            <div class="c-title">Treadmill in the Garage</div>
+            <p class="c-blurb">Heat, damp and dust, and what they do to the machine.</p>
+          </a>
+          <a href="/best-treadmill-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Treadmill Accessories</div>
+            <p class="c-blurb">The short list of extras worth buying with a treadmill.</p>
+          </a>
+          <a href="/best-treadmill-covers/" class="card">
+            <div class="c-kicker">Covers</div>
+            <div class="c-title">Best Treadmill Covers</div>
+            <p class="c-blurb">Dust and garage covers, measuring folded versus unfolded, and why breathable matters.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

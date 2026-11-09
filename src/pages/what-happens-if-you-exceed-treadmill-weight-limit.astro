@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Happens If You Exceed a Treadmill Weight Limit? (2026)";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-happens-if-you-exceed-treadmill-weight-limit/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,45 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See What Fails First", link: "#what-fails-first" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whathappensifyouexceedtreadmillweightlimit" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whathappensifyouexceedtreadmillweightlimit)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">What Happens If You Exceed a Treadmill Weight Limit?</h1>
+      <p class="ed-dek">
+        Usually nothing dramatic on the first day, which is exactly why people do it. What happens instead is faster wear across the motor, the electronics, the belt, the deck and the rollers, a warranty that may no longer apply, and a small but real safety risk. Here is what fails first, how to spot it, and how much margin to buy instead.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Happens If You Exceed <span class="text-[#5AA9FF]">a Treadmill Weight Limit?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Usually nothing dramatic on the first day, which is exactly why people do it. What happens instead is faster wear across the motor, the electronics, the belt, the deck and the rollers, a warranty that may no longer apply, and a small but real safety risk. Here is what fails first, how to spot it, and how much margin to buy instead.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#what-fails-first" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What Fails First
-          </a>
-          <a href="#how-much-margin" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How Much Margin to Buy
-          </a>
-        </div>
+        <a href="#what-fails-first" class="btn-ghost">What Fails First</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A treadmill's weight limit is the heaviest user the manufacturer designed the machine
+          around and will stand behind under warranty. It is not the weight at which the machine
+          collapses, and that is the source of the confusion: people go a little over, nothing
+          happens, and they conclude the number did not matter. It did. It just shows up as heat,
+          wear and paperwork rather than a bang. This page explains what gives way first, how the
+          warning signs arrive, why walking pads are more sensitive than full treadmills, what it
+          usually means for your warranty, and what to do if you are already over the limit.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This page explains what happens to a machine used above its rated capacity — it is not
           medical, coaching or weight-loss advice, and we are not qualified to give any of those.
@@ -173,47 +159,28 @@ const schema = {
           force figures are typical ranges reported in biomechanics research, not measurements of any
           machine. Your owner's manual and warranty document are the authority on your model; unplug
           the machine at the wall before any inspection.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Happens If You Exceed a Treadmill Weight Limit? The Short Answer</a>
-          <a href="#what-the-limit-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Limit Actually Represents</a>
-          <a href="#what-fails-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Fails First, Component by Component</a>
-          <a href="#warning-signs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Warning Signs, in the Order They Usually Appear</a>
-          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why It Matters More on a Walking Pad</a>
-          <a href="#walking-vs-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Walking, Running and the Load You Actually Apply</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What It Usually Means for Your Warranty</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Safety Side</a>
-          <a href="#already-over" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. If You Are Already Over the Limit</a>
-          <a href="#how-much-margin" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Much Margin to Buy</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. If You Are Shopping for a Higher-Capacity Machine</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Happens If You Exceed a Treadmill Weight Limit? The Short Answer</a></li>
+            <li><a href="#what-the-limit-is">What the Limit Actually Represents</a></li>
+            <li><a href="#what-fails-first">What Fails First, Component by Component</a></li>
+            <li><a href="#warning-signs">The Warning Signs, in the Order They Usually Appear</a></li>
+            <li><a href="#walking-pads">Why It Matters More on a Walking Pad</a></li>
+            <li><a href="#walking-vs-running">Walking, Running and the Load You Actually Apply</a></li>
+            <li><a href="#warranty">What It Usually Means for Your Warranty</a></li>
+            <li><a href="#safety">The Safety Side</a></li>
+            <li><a href="#already-over">If You Are Already Over the Limit</a></li>
+            <li><a href="#how-much-margin">How Much Margin to Buy</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping for a Higher-Capacity Machine</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A treadmill's weight limit is the heaviest user the manufacturer designed the machine
-          around and will stand behind under warranty. It is not the weight at which the machine
-          collapses, and that is the source of the confusion: people go a little over, nothing
-          happens, and they conclude the number did not matter. It did. It just shows up as heat,
-          wear and paperwork rather than a bang. This page explains what gives way first, how the
-          warning signs arrive, why walking pads are more sensitive than full treadmills, what it
-          usually means for your warranty, and what to do if you are already over the limit.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Happens If You Exceed a Treadmill Weight Limit? The Short Answer</h2>
+          <h2>What Happens If You Exceed a Treadmill Weight Limit? The Short Answer</h2>
 <p>
             <strong>Usually accelerated wear rather than immediate failure: the motor and its control
             board run hotter, the belt and deck wear faster, the rollers and bearings carry more than
@@ -232,14 +199,12 @@ const schema = {
           <p>
             The fix is to buy with margin: at least 50 lb above the heaviest regular user for walking,
             more for jogging or long daily sessions. For heavier walkers looking at under-desk machines,
-            our guide to the
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">best walking pads for heavy people</a>
-            lists pads whose 330 to 400 lb ratings we could confirm across more than one source.
+            our guide to the <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">best walking pads for heavy people</a> lists pads whose 330 to 400 lb ratings we could confirm across more than one source.
           </p>
         </div>
 
         <div id="what-the-limit-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Limit Actually Represents</h2>
+          <h2>What the Limit Actually Represents</h2>
 <p>
             Before looking at what happens above the limit, it helps to be clear what the limit is. There
             is no single industry test behind the maximum user weight printed on a treadmill. Each
@@ -257,16 +222,14 @@ const schema = {
             places, and when figures conflict the lower one is the safer assumption.
           </p>
           <p>
-            Our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a>
-            covers how to read the number, how capacity tiers line up with motors, rollers and frames,
+            Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a> covers how to read the number, how capacity tiers line up with motors, rollers and frames,
             and how to tell an honest rating from a marketing one. This page picks up from there and
             concentrates on what happens when the number is exceeded.
           </p>
         </div>
 
         <div id="what-fails-first" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Fails First, Component by Component</h2>
+          <h2>What Fails First, Component by Component</h2>
 <p>
             Overload does not attack one part; it raises the stress on all of them at once. But they do
             not all fail at the same rate, and the order is fairly predictable.
@@ -282,12 +245,9 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The drive motor</h3>
           <p>
-            A motor under higher sustained load runs hotter, and heat ages its windings and, on brushed
-            <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motors</a>, wears the brushes faster. Low speeds are not automatically gentle: a heavy walker
+            A motor under higher sustained load runs hotter, and heat ages its windings and, on brushed <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motors</a>, wears the brushes faster. Low speeds are not automatically gentle: a heavy walker
             at 2.5 mph is asking the motor for torque, and torque is current. Incline walking adds the
-            work of lifting the body as well as moving the belt. Our guide to
-            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
-            explains why heat is the deciding factor.
+            work of lifting the body as well as moving the belt. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> explains why heat is the deciding factor.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The belt and deck</h3>
           <p>
@@ -321,7 +281,7 @@ const schema = {
         </div>
 
         <div id="warning-signs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Warning Signs, in the Order They Usually Appear</h2>
+          <h2>The Warning Signs, in the Order They Usually Appear</h2>
 <p>
             Because overload causes wear rather than sudden failure, it announces itself. The signs tend
             to arrive in a recognisable sequence:
@@ -344,14 +304,12 @@ const schema = {
             The first three are worth acting on immediately, because they are the stage at which the
             damage is still mostly to consumables. By the time a machine is cutting out or throwing
             codes, the board and motor have already been running hot for a while. If you notice a hot
-            smell, stop, unplug at the wall and let the machine cool before investigating; our guide to
-            <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
-            sets out the causes and checks in order.
+            smell, stop, unplug at the wall and let the machine cool before investigating; our guide to <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a> sets out the causes and checks in order.
           </p>
         </div>
 
         <div id="walking-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why It Matters More on a Walking Pad</h2>
+          <h2>Why It Matters More on a Walking Pad</h2>
 <p>
             Everything above applies to every motorised treadmill, but a walking pad has less in reserve
             at every point, so exceeding its limit costs more, sooner.
@@ -381,14 +339,12 @@ const schema = {
           <p>
             <strong>Rails are steadying aids.</strong> Fold-up bars and side handles on pads are bolted to
             a light deck. Leaning hard on them to take weight off your legs loosens fixings and stresses
-            the joint where the rail meets the frame. Our guide to whether you
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">should hold the handrails</a>
-            explains when holding on is sensible.
+            the joint where the rail meets the frame. Our guide to whether you <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">should hold the handrails</a> explains when holding on is sensible.
           </p>
         </div>
 
         <div id="walking-vs-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Walking, Running and the Load You Actually Apply</h2>
+          <h2>Walking, Running and the Load You Actually Apply</h2>
 <p>
             Body weight is the smallest load you ever put through a treadmill. Once you move, the load
             becomes dynamic, and that changes how much headroom you really have.
@@ -412,14 +368,12 @@ const schema = {
           <p>
             The practical consequence: if you are close to or above a machine's limit, walking at a steady
             pace is the least damaging way to use it, and running is the most. If running is in your plans,
-            size the machine for the runner you intend to become. Our page on whether you
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can run on a walking pad</a>
-            covers why pads in particular are a poor fit for it at any weight.
+            size the machine for the runner you intend to become. Our page on whether you <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can run on a walking pad</a> covers why pads in particular are a poor fit for it at any weight.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What It Usually Means for Your Warranty</h2>
+          <h2>What It Usually Means for Your Warranty</h2>
 <p>
             This is the most direct financial consequence, and it is worth reading your own warranty
             document rather than relying on a summary, because wording varies by brand.
@@ -449,15 +403,13 @@ const schema = {
             <strong>The heaviest user is the one who counts.</strong> The warranty is measured against
             whoever uses the machine, not whoever bought it. A pad bought for one person's desk that
             becomes the household's treadmill is only covered if every regular user is within the limit.
-            Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how frame, motor, parts and labour terms differ, which is useful context when you
+            Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how frame, motor, parts and labour terms differ, which is useful context when you
             read the exclusions on your own machine.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Safety Side</h2>
+          <h2>The Safety Side</h2>
 <p>
             Most overloaded treadmills simply wear out early. The reason the limit exists, though, is
             safety, and a few risks are worth naming plainly.
@@ -493,7 +445,7 @@ const schema = {
         </div>
 
         <div id="already-over" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If You Are Already Over the Limit</h2>
+          <h2>If You Are Already Over the Limit</h2>
 <p>
             Plenty of people find themselves using a machine rated below their weight — a hand-me-down,
             an impulse buy, a pad bought for someone else in the household. Replacing it is the right
@@ -525,7 +477,7 @@ const schema = {
         </div>
 
         <div id="how-much-margin" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Much Margin to Buy</h2>
+          <h2>How Much Margin to Buy</h2>
 <p>
             There is no industry standard for capacity margin, but the rule of thumb most reviewers land on
             is to buy a machine rated at least 50 lb above the heaviest regular user, and to scale that up
@@ -571,7 +523,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. If You Are Shopping for a Higher-Capacity Machine</h2>
+          <h2>If You Are Shopping for a Higher-Capacity Machine</h2>
 <p>
             If this page has made you look again at the rating on the machine you were planning to buy,
             the next step is to choose between a high-capacity walking pad and a full treadmill, and then
@@ -581,18 +533,14 @@ const schema = {
             <strong>For walking at a desk or in a small room,</strong> look for a pad with a capacity
             confirmed by the brand and at least one other source, a published continuous motor rating
             rather than peak horsepower alone, a belt wide enough for your stance, and written warranty
-            terms. Our roundup of
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity walking pads for heavier users</a>
-            lists five pads rated from 330 to 400 lb whose figures held up across sources, and explains
+            terms. Our roundup of <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity walking pads for heavier users</a> lists five pads rated from 330 to 400 lb whose figures held up across sources, and explains
             which capacity claims did not.
           </p>
           <p>
             <strong>For running, heavier users above roughly 300 to 320 lb, or anyone who wants full
             side rails,</strong> a full treadmill is the safer machine. Larger motors, longer and wider
             decks, heavier frames and longer warranties all add up to more reserve at the same printed
-            capacity. Our guide to the
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best treadmills for heavy people</a>
-            compares full treadmills built for heavier users, with ratings up to 400 lb.
+            capacity. Our guide to the <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best treadmills for heavy people</a> compares full treadmills built for heavier users, with ratings up to 400 lb.
           </p>
           <p>
             Whichever you choose, confirm the rating for your exact model number in writing if the sources
@@ -600,141 +548,155 @@ const schema = {
             inside its limit is one you will not have to think about.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens if you exceed a treadmill weight limit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually faster wear rather than immediate failure. The motor and control board run hotter, the belt and deck wear sooner, rollers and bearings carry more than they were sized for, and the frame works beyond its design margin. Many manufacturers treat use above the limit as voiding the warranty. Rarely, a frame, deck or fold latch can fail, which is a safety risk.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a treadmill break if I am over the weight limit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not usually straight away. Manufacturers build in a safety factor, which is why going a little over often seems harmless. The cost appears over weeks and months as heat, wear and electronic failures, typically starting with the motor control board. The warranty may no longer cover those failures, and structural failure, while uncommon, is the risk the limit exists to prevent.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does exceeding the weight limit void a treadmill warranty?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes. Many warranties make the maximum user weight a condition of cover, either explicitly or through a clause requiring use in line with the owner's manual. Horizon and Bowflex safety instructions, for example, state that failure to comply with the weight limit will void the warranty. Wording varies, so read your own warranty document or ask the manufacturer in writing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I walk slowly on a treadmill if I am over the weight limit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Slow, steady walking is the least damaging way to use an overloaded machine, but it is not risk-free. A heavy load at low speed still asks the motor for torque and raises friction on the deck. Keep sessions short, lubricate on schedule, avoid running and steep incline, inspect for cracks and loose rails, and plan to replace the machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much over the weight limit can a treadmill handle?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No manufacturer publishes a figure for this, and it would be guesswork to give one. Designs include a safety factor, but it exists to absorb the extra force of normal walking and running, not to raise the limit. Treat the printed capacity as a ceiling, and buy at least 50 lb above the heaviest regular user instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is exceeding the limit worse on a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. A walking pad has smaller rollers, a lighter deck and frame, and usually a modest continuous motor rating, so it has less in reserve than a full treadmill with the same printed capacity. Pads are also used for long desk sessions, which build heat. Leave more margin on a pad, and consider a full treadmill above about 300 to 320 lb.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Weight Limits</h2>
+          <p>Each of these comes from treating the printed capacity as a figure to aim for rather than one to stay well away from.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming nothing happened because nothing broke</h3>
+              <p>Going over the limit rarely causes an immediate failure, which convinces people it is harmless. The damage arrives as heat in the motor and board, a belt that hesitates, and a deck and rollers that wear early. Watch for those signs, and treat the first hot smell as a reason to stop and check.</p>
+            </li>
+            <li>
+              <h3>Buying a machine rated exactly at your weight</h3>
+              <p>A machine rated at 300 lb is at its design limit with a 300 lb user on every step, and any weight gain takes you outside the warranty. Buy at least 50 lb above the heaviest regular user for walking, and 75 to 100 lb above for regular running.</p>
+            </li>
+            <li>
+              <h3>Trusting the highest capacity figure you can find</h3>
+              <p>Budget machines and walking pads are often listed at different capacities on different pages. A margin worked out from an inflated listing figure is not a margin. Check the manufacturer's page and the manual, use the lowest figure, and get the seller to confirm the rating for your exact model in writing.</p>
+            </li>
+            <li>
+              <h3>Leaning on the rails to take weight off</h3>
+              <p>Handrails and fold-up bars, especially on walking pads, are steadying aids bolted to a light frame. Leaning hard on them loosens fixings and stresses the joints, and a loose rail is a fall risk. If you need real support, choose a full treadmill with full-length side rails.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Weight Limits</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these comes from treating the printed capacity as a figure to aim for rather than one to stay well away from.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming nothing happened because nothing broke</h3>
-              <p class="text-gray-700 text-sm m-0">Going over the limit rarely causes an immediate failure, which convinces people it is harmless. The damage arrives as heat in the motor and board, a belt that hesitates, and a deck and rollers that wear early. Watch for those signs, and treat the first hot smell as a reason to stop and check.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a machine rated exactly at your weight</h3>
-              <p class="text-gray-700 text-sm m-0">A machine rated at 300 lb is at its design limit with a 300 lb user on every step, and any weight gain takes you outside the warranty. Buy at least 50 lb above the heaviest regular user for walking, and 75 to 100 lb above for regular running.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the highest capacity figure you can find</h3>
-              <p class="text-gray-700 text-sm m-0">Budget machines and walking pads are often listed at different capacities on different pages. A margin worked out from an inflated listing figure is not a margin. Check the manufacturer's page and the manual, use the lowest figure, and get the seller to confirm the rating for your exact model in writing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaning on the rails to take weight off</h3>
-              <p class="text-gray-700 text-sm m-0">Handrails and fold-up bars, especially on walking pads, are steadying aids bolted to a light frame. Leaning hard on them loosens fixings and stresses the joints, and a loose rail is a fall risk. If you need real support, choose a full treadmill with full-length side rails.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads for Heavy People</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five pads rated 330 to 400 lb whose capacity figures held up.</p>
-            </a>
-            <a href="/treadmill-weight-capacity-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Weight Capacity Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the limit measures, capacity tiers, and how much you need.</p>
-            </a>
-            <a href="/best-treadmills-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Heavy People</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Full treadmills built for heavier users, rated up to 400 lb.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Exceeding a treadmill's weight limit rarely breaks it on the day,
             but it shortens its life and often its warranty.</strong> The motor and control board run
             hotter, the belt, deck and rollers wear faster, the frame works beyond its margin, and many
             manufacturers treat use above the limit as voiding cover. On a walking pad, all of that happens
             sooner.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Buy at least 50 lb above the heaviest regular user, more for running or long daily sessions,
-            and work from the lowest confirmed figure. For desk walking, our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">walking pads for heavy people</a>
-            lists pads whose ratings held up; above about 300 lb, start with a full treadmill instead.
+            and work from the lowest confirmed figure. For desk walking, our <a href="/best-walking-pads-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">walking pads for heavy people</a> lists pads whose ratings held up; above about 300 lb, start with a full treadmill instead.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads-for-heavy-people/">Best Walking Pads for Heavy People</a></li>
+            <li><a href="/treadmill-weight-capacity-guide/">Treadmill Weight Capacity Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What happens if you exceed a treadmill weight limit?</h3></summary>
+            <p class="faq-a">
+              Usually faster wear rather than immediate failure. The motor and control board run hotter, the belt and deck wear sooner, rollers and bearings carry more than they were sized for, and the frame works beyond its design margin. Many manufacturers treat use above the limit as voiding the warranty. Rarely, a frame, deck or fold latch can fail, which is a safety risk.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Will a treadmill break if I am over the weight limit?</h3></summary>
+            <p class="faq-a">
+              Not usually straight away. Manufacturers build in a safety factor, which is why going a little over often seems harmless. The cost appears over weeks and months as heat, wear and electronic failures, typically starting with the motor control board. The warranty may no longer cover those failures, and structural failure, while uncommon, is the risk the limit exists to prevent.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does exceeding the weight limit void a treadmill warranty?</h3></summary>
+            <p class="faq-a">
+              Often, yes. Many warranties make the maximum user weight a condition of cover, either explicitly or through a clause requiring use in line with the owner's manual. Horizon and Bowflex safety instructions, for example, state that failure to comply with the weight limit will void the warranty. Wording varies, so read your own warranty document or ask the manufacturer in writing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I walk slowly on a treadmill if I am over the weight limit?</h3></summary>
+            <p class="faq-a">
+              Slow, steady walking is the least damaging way to use an overloaded machine, but it is not risk-free. A heavy load at low speed still asks the motor for torque and raises friction on the deck. Keep sessions short, lubricate on schedule, avoid running and steep incline, inspect for cracks and loose rails, and plan to replace the machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much over the weight limit can a treadmill handle?</h3></summary>
+            <p class="faq-a">
+              No manufacturer publishes a figure for this, and it would be guesswork to give one. Designs include a safety factor, but it exists to absorb the extra force of normal walking and running, not to raise the limit. Treat the printed capacity as a ceiling, and buy at least 50 lb above the heaviest regular user instead.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is exceeding the limit worse on a walking pad?</h3></summary>
+            <p class="faq-a">
+              Yes. A walking pad has smaller rollers, a lighter deck and frame, and usually a modest continuous motor rating, so it has less in reserve than a full treadmill with the same printed capacity. Pads are also used for long desk sessions, which build heat. Leave more margin on a pad, and consider a full treadmill above about 300 to 320 lb.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads-for-heavy-people/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Walking Pads for Heavy People</div>
+            <p class="c-blurb">Five pads rated 330 to 400 lb whose capacity figures held up.</p>
+          </a>
+          <a href="/treadmill-weight-capacity-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Weight Capacity Guide</div>
+            <p class="c-blurb">What the limit measures, capacity tiers, and how much you need.</p>
+          </a>
+          <a href="/best-treadmills-for-heavy-people/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmills for Heavy People</div>
+            <p class="c-blurb">Full treadmills built for heavier users, rated up to 400 lb.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Zero Gravity Massage Chair (2026): 5 Chairs Compared";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-zero-gravity-massage-chairs/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,85 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Massage Chair Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Bob and Brad iMaster Pro Massage Chair", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestzerogravitymassagechairs" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestzerogravitymassagechairs)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Zero Gravity Massage Chair for Home Recovery</h1>
+      <p class="ed-dek">
+        A massage chair is furniture, an appliance and a delivery problem before it is a massage. Here are five currently sold chairs, from a $1,500 Real Relax to a $4,000 Osaki, what S, L and SL tracks and 2D, 3D and 4D rollers actually mean, how much wall clearance and doorway you need, and who the makers say should not use one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Zero Gravity Massage Chair <span class="text-[#5AA9FF]">for Home Recovery</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A massage chair is furniture, an appliance and a delivery problem before it is a massage. Here are five currently sold chairs, from a $1,500 Real Relax to a $4,000 Osaki, what S, L and SL tracks and 2D, 3D and 4D rollers actually mean, how much wall clearance and doorway you need, and who the makers say should not use one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#space" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Space and Clearance
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#bob-and-brad-imaster-pro"><img src="https://m.media-amazon.com/images/I/41ncVggMAAL._SL500_.jpg" alt="Bob and Brad iMaster Pro Massage Chair" width="500" height="500" decoding="async" /></a>
+          <a href="#osaki-os-3d-champ-ii"><img src="https://m.media-amazon.com/images/I/41tkhP1TnPL._SL500_.jpg" alt="Osaki OS-3D Champ II Massage Chair" width="500" height="469" decoding="async" /></a>
+          <a href="#real-relax-favor-06"><img src="https://m.media-amazon.com/images/I/41GSImFLmcL._SL500_.jpg" alt="Real Relax Favor-06 (2026) Zero Gravity Massage Chair" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Bob and Brad iMaster Pro Massage Chair · Osaki OS-3D Champ II Massage Chair · Real Relax Favor-06 (2026) Zero Gravity Massage Chair</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Zero gravity is the feature every massage chair listing leads with, and on its own it tells
+          you very little. Almost every full-body chair now reclines into a legs-up position; what
+          separates a good one for your home is whether its track reaches your lower back and
+          glutes, whether it fits your height and weight, whether it will physically get through your
+          front door and recline without hitting the wall, and who delivers and assembles a parcel
+          that weighs more than most adults. Prices also swing wildly between stores for the same
+          chair. The five chairs below were chosen to cover the realistic budgets with chairs that
+          are on sale today, and the guide after them explains tracks, roller "dimensions", space,
+          delivery, power and warranty — and the medical conditions the makers say rule a massage
+          chair out.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#bob-and-brad-imaster-pro">Bob and Brad iMaster Pro Massage Chair</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Space-Saving:</span> <a href="#osaki-os-3d-champ-ii">Osaki OS-3D Champ II Massage Chair</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#real-relax-favor-06">Real Relax Favor-06 (2026) Zero Gravity Massage Chair</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#titan-pro-4d-endor">Titan Pro 4D Endor Massage Chair</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Small Rooms:</span> <a href="#human-touch-wholebody-8">Human Touch WholeBody 8.0 Massage Chair</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not sat in or tested
           these chairs, and no figure on this page is our own measurement. On 19 October 2026 we
           confirmed each chair as currently sold on its maker's US store (Bob and Brad, Osaki, Titan,
@@ -347,91 +371,35 @@ const schema = {
           Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices are those we saw on that date and differ between stores for the same
           chair; they change often. We earn a commission if you buy through the Amazon links on this
-          page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          page; it does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           fitness and recovery equipment; we are not giving medical, chiropractic or physiotherapy
           advice, and we make no claim that a massage chair relieves pain, improves circulation or
           treats any condition. Makers market those benefits; on this page they are reported as the
           sellers' claims. Massage chairs are not suitable for everyone — see the section on who
           should not use one — and if you have a heart, spinal, bone, clotting or skin condition, a
           pacemaker, an injury, or you are pregnant, talk to a doctor before using one.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#bob-and-brad-imaster-pro" class="font-bold text-gray-900 no-underline hover:underline">Bob and Brad iMaster Pro Massage Chair</a>
-            <a href="#bob-and-brad-imaster-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Space-Saving:</span>
-            <a href="#osaki-os-3d-champ-ii" class="font-bold text-gray-900 no-underline hover:underline">Osaki OS-3D Champ II Massage Chair</a>
-            <a href="#osaki-os-3d-champ-ii" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#real-relax-favor-06" class="font-bold text-gray-900 no-underline hover:underline">Real Relax Favor-06 (2026) Zero Gravity Massage Chair</a>
-            <a href="#real-relax-favor-06" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#titan-pro-4d-endor" class="font-bold text-gray-900 no-underline hover:underline">Titan Pro 4D Endor Massage Chair</a>
-            <a href="#titan-pro-4d-endor" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Small Rooms:</span>
-            <a href="#human-touch-wholebody-8" class="font-bold text-gray-900 no-underline hover:underline">Human Touch WholeBody 8.0 Massage Chair</a>
-            <a href="#human-touch-wholebody-8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Zero Gravity Massage Chairs</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Massage Chairs</a>
-          <a href="#zero-gravity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Zero Gravity Actually Means</a>
-          <a href="#tracks-and-rollers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. S, L and SL Tracks, and 2D, 3D and 4D Rollers</a>
-          <a href="#fit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Height, Weight and Body Fit</a>
-          <a href="#space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Footprint, Wall Clearance and Doorways</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Delivery, Assembly and Moving a Massage Chair</a>
-          <a href="#power-and-warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Power, Warranty and the Price You Actually Pay</a>
-          <a href="#who-should-not" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Not Use a Massage Chair</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Zero Gravity Massage Chairs</a></li>
+            <li><a href="#how-we-chose">How We Chose These Massage Chairs</a></li>
+            <li><a href="#zero-gravity">What Zero Gravity Actually Means</a></li>
+            <li><a href="#tracks-and-rollers">S, L and SL Tracks, and 2D, 3D and 4D Rollers</a></li>
+            <li><a href="#fit">Height, Weight and Body Fit</a></li>
+            <li><a href="#space">Footprint, Wall Clearance and Doorways</a></li>
+            <li><a href="#delivery">Delivery, Assembly and Moving a Massage Chair</a></li>
+            <li><a href="#power-and-warranty">Power, Warranty and the Price You Actually Pay</a></li>
+            <li><a href="#who-should-not">Who Should Not Use a Massage Chair</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Zero gravity is the feature every massage chair listing leads with, and on its own it tells
-          you very little. Almost every full-body chair now reclines into a legs-up position; what
-          separates a good one for your home is whether its track reaches your lower back and
-          glutes, whether it fits your height and weight, whether it will physically get through your
-          front door and recline without hitting the wall, and who delivers and assembles a parcel
-          that weighs more than most adults. Prices also swing wildly between stores for the same
-          chair. The five chairs below were chosen to cover the realistic budgets with chairs that
-          are on sale today, and the guide after them explains tracks, roller "dimensions", space,
-          delivery, power and warranty — and the medical conditions the makers say rule a massage
-          chair out.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five chairs across the realistic budgets. If you want one sentence: <strong>the best zero
             gravity massage chair for most homes is the Bob and Brad iMaster Pro</strong>, because its
@@ -457,100 +425,83 @@ const schema = {
           </table></div>
           <p>
             A massage chair is the most expensive recovery purchase in this series. If you mainly
-            want to work on sore legs after training, our guides to
-            <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">the best massage guns</a>
-            and
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>
-            cover tools that cost a tenth as much, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide.
+            want to work on sore legs after training, our guides to <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">the best massage guns</a> and <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a> cover tools that cost a tenth as much, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Zero Gravity Massage Chairs</h2>
+          <h2>The 5 Best Zero Gravity Massage Chairs</h2>
 <p>
             Each card gives the track, recline and limits we could confirm from two sources, the price
             range we saw across stores, and who the chair suits. The Titan Pro 4D Astro is sold through
             Titan's and Osaki's stores rather than on Amazon, so its card shows the closest Titan on Amazon,
             the Pro 4D Endor; the Astro's figures still appear in the sections below. Read the reclined length and the
-            doorway figures in the
-            <a href="#space" class="text-[#0F62FE] font-medium">space section</a> before you fall for
+            doorway figures in the <a href="#space" class="text-[#0F62FE] font-medium">space section</a> before you fall for
             a chair: a chair that will not fit through the door or recline in your room is a very
             expensive return.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Massage Chairs</h2>
+          <h2>How We Chose These Massage Chairs</h2>
 <p>
             We have not tested these chairs. They were chosen from makers' product pages and
             manuals, published delivery and warranty terms, recall records and independent coverage,
@@ -599,7 +550,7 @@ const schema = {
         </div>
 
         <div id="zero-gravity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Zero Gravity Actually Means</h2>
+          <h2>What Zero Gravity Actually Means</h2>
 <p>
             "Zero gravity" in a massage chair is a reclined position with the legs raised to roughly
             the level of the heart or slightly above, so the body's weight is spread along the back
@@ -624,13 +575,12 @@ const schema = {
             The one practical downside is space. A chair that reclines fully needs room behind it, in
             front of it or both, and "space-saving" designs solve that by sliding the seat forward as
             the back reclines, so the chair needs only a few inches behind it but more in front. That
-            is the subject of the
-            <a href="#space" class="text-[#0F62FE] font-medium">space section</a> below.
+            is the subject of the <a href="#space" class="text-[#0F62FE] font-medium">space section</a> below.
           </p>
         </div>
 
         <div id="tracks-and-rollers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. S, L and SL Tracks, and 2D, 3D and 4D Rollers</h2>
+          <h2>S, L and SL Tracks, and 2D, 3D and 4D Rollers</h2>
 <p>
             Two sets of jargon describe how the back massage works: the track the rollers run on, and
             how many ways the rollers can move.
@@ -677,7 +627,7 @@ const schema = {
         </div>
 
         <div id="fit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Height, Weight and Body Fit</h2>
+          <h2>Height, Weight and Body Fit</h2>
 <p>
             A chair that does not fit your body gives a poor massage however good its mechanism is.
             Check three things.
@@ -713,7 +663,7 @@ const schema = {
         </div>
 
         <div id="space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Footprint, Wall Clearance and Doorways</h2>
+          <h2>Footprint, Wall Clearance and Doorways</h2>
 <p>
             This is the section to read with a tape measure. Three measurements decide whether a chair
             works in your room.
@@ -743,9 +693,7 @@ const schema = {
             gives a minimum door width of 29.5 in. for the Champ II (Brookstone's listing says 30 in.)
             and explains how to measure it: the narrowest inner width of the frame, minus an allowance
             for clearance. Chairs ship in one or two boxes weighing roughly 145 to 225 lb on the
-            figures makers publish, and many are delivered only to the curb or the first floor. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">guide to treadmill space requirements</a>
-            explains how to measure a room and a delivery route for a large machine, and the same
+            figures makers publish, and many are delivered only to the curb or the first floor. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">guide to treadmill space requirements</a> explains how to measure a room and a delivery route for a large machine, and the same
             method works here.
           </p>
           <p>
@@ -757,7 +705,7 @@ const schema = {
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Delivery, Assembly and Moving a Massage Chair</h2>
+          <h2>Delivery, Assembly and Moving a Massage Chair</h2>
 <p>
             Delivery terms decide a lot of the real cost, and they vary more than the chairs do.
           </p>
@@ -783,20 +731,17 @@ const schema = {
           <p>
             <strong>Moving it later.</strong> Most chairs have wheels at the back and tilt onto them,
             but Garage Gym Reviews notes that its 213 lb Bob and Brad chair needs two people to move.
-            The lifting principles in our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            apply: unplug it, remove what comes off, protect the floor, and do not carry it down
+            The lifting principles in our guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> apply: unplug it, remove what comes off, protect the floor, and do not carry it down
             stairs on your own.
           </p>
           <p>
-            Keep the box if you have room until the return window closes. Several sellers require the
-            <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> for a return, and return shipping on a 200 lb freight item is rarely
+            Keep the box if you have room until the return window closes. Several sellers require the <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> for a return, and return shipping on a 200 lb freight item is rarely
             free; check the current terms before you order, because they change.
           </p>
         </div>
 
         <div id="power-and-warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Power, Warranty and the Price You Actually Pay</h2>
+          <h2>Power, Warranty and the Price You Actually Pay</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Power</h3>
           <p>
             Every chair here runs on a standard 110 to 120 V household outlet. They draw little
@@ -807,9 +752,7 @@ const schema = {
             and Titan's manual says the same about the earth connection. Do not use an ungrounded
             adapter, keep the cord out of the recline mechanism, and do not use the chair with wet
             skin or on a damp floor. If you are tempted to run it from an extension cord, our guide
-            to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cords and treadmills</a>
-            explains why treadmill makers advise against them, and the same reasoning applies to a
+            to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cords and treadmills</a> explains why treadmill makers advise against them, and the same reasoning applies to a
             grounded appliance of this size.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Warranty</h3>
@@ -835,7 +778,7 @@ const schema = {
         </div>
 
         <div id="who-should-not" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Not Use a Massage Chair</h2>
+          <h2>Who Should Not Use a Massage Chair</h2>
 <p>
             Massage chairs press hard on the spine, ribs, shoulders and legs, and several add heat.
             The makers' manuals are explicit about who should not use them.
@@ -855,8 +798,7 @@ const schema = {
             <strong>Real Relax</strong> says in its Favor-06 FAQ that it does not recommend the chair
             for people aged 80 or older or for those with serious chronic back or spinal conditions
             such as severe osteoporosis, herniated discs or recent spinal surgery, and to consult a
-            healthcare provider with any specific concerns. Its auto programs stop after 15 minutes.
-            <strong>Human Touch's</strong> manual tells users to stop and consult a physician if they
+            healthcare provider with any specific concerns. Its auto programs stop after 15 minutes. <strong>Human Touch's</strong> manual tells users to stop and consult a physician if they
             feel any abnormal discomfort, and that children and people with reduced physical, sensory
             or mental capabilities need supervision.
           </p>
@@ -869,22 +811,16 @@ const schema = {
           </p>
           <p>
             The same caution applies to the other powered recovery tools in this series; our guides
-            to
-            <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium">compression boots</a>
-            and
-            <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plates</a>
-            carry their own makers' contraindication lists.
+            to <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium">compression boots</a> and <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plates</a> carry their own makers' contraindication lists.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you mainly want to treat sore legs after training</strong>, a massage chair is
-            an expensive way to do it. A
-            <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a>,
-            a <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a>
-            or a pair of compression boots reaches the hamstrings, quads and calves more directly for
+            an expensive way to do it. A <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a>,
+            a <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a> or a pair of compression boots reaches the hamstrings, quads and calves more directly for
             a fraction of the price.
           </p>
           <p>
@@ -900,111 +836,42 @@ const schema = {
           <p>
             <strong>If you are buying for an older parent</strong>, check the makers' age guidance —
             Titan and Real Relax both advise against use over 80 — and think about getting in and out
-            of a chair that reclines almost flat. Our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            covers the wider point about choosing equipment for older users.
+            of a chair that reclines almost flat. Our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> covers the wider point about choosing equipment for older users.
           </p>
           <p>
-            <strong>If you want recovery as part of a home gym</strong>, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put the money in context: a massage chair costs as much as a rack, bench, bar and plates,
+            <strong>If you want recovery as part of a home gym</strong>, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> put the money in context: a massage chair costs as much as a rack, bench, bar and plates,
             or a good treadmill.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best zero gravity massage chair?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most homes, the Bob and Brad iMaster Pro, at about $3,300 when we checked, because its 4D mechanism, 51.4 inch SL track, 166 degree recline and 6 ft 3 in, 265 lb limits are confirmed by the maker, an independent review and its Amazon listing. The Osaki Champ II suits tight rooms; the Real Relax Favor-06 is the budget choice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a zero gravity massage chair worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, if you will use it most days and it fits your body and room. Zero gravity is a comfortable reclined position that presses your back into the rollers; it is not a treatment. If your goal is sore legs after training, a massage gun, foam roller or compression boots cost far less. Claims of pain relief are the makers' marketing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between an S, L and SL track?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                An S-track follows the curve of the spine from neck to lower back. An L-track runs from the neck under the seat to the glutes and hamstrings but contours the spine less closely. An SL-track combines both, and is standard on full-body chairs. Track length, from about 34 to over 50 inches, decides how much of a tall user's back is covered.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much space does a zero gravity massage chair need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Plan for the reclined length, about 66 to 72 inches for the chairs here, plus room to get in and out. Space-saving chairs need only a few inches behind them, but makers' figures vary and sometimes conflict between a product page and its manual, so use the larger figure. Measure doorways too; Osaki gives about 30 inches for the Champ II.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who should not use a massage chair?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Makers' manuals list osteoporosis, vertebral fractures, herniated discs and spinal deformity, heart disease or a pacemaker, cancer, thrombosis or acute varicose veins, pregnancy or recent childbirth, reduced sensation from diabetes, skin inflammation and acute illness. Titan and Real Relax advise against use over age 80. Ask a doctor first if any apply, and keep sessions short.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do massage chairs need a special outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not usually. The chairs here run on a standard 110 to 120 volt household outlet and draw around 100 to 150 watts. Their manuals do require a properly grounded outlet, warn against modifying the plug or using adapters, and advise against use with wet skin or on a damp floor. Avoid running a chair from an extension cord.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Massage Chair</h2>
+          <p>Each of these is easy to avoid before you order and expensive to fix once a 200 lb box is on the porch.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Not measuring the delivery route</h3>
+              <p>A chair that will not fit through a door, round a hallway corner or up a stairwell is a freight return. Measure the narrowest point between the truck and the room against the maker's minimum doorway figure, check box dimensions, and ask whether delivery includes stairs before you pay.</p>
+            </li>
+            <li>
+              <h3>Forgetting the reclined length</h3>
+              <p>The upright footprint is not the one that matters. Chairs grow by a foot or more when reclined, and space-saving designs need room in front even if they need little behind. Use the larger of any conflicting clearance figures, and mark the reclined outline on the floor with tape before ordering.</p>
+            </li>
+            <li>
+              <h3>Ignoring the weight and height limits</h3>
+              <p>A chair used near or above its user limit is noisier, wears faster and may not position the rollers well. Check the limit for everyone who will use it, ask the seller to confirm in writing if figures conflict, and be wary of roundup sites that print much higher limits than the maker.</p>
+            </li>
+            <li>
+              <h3>Skipping the contraindications</h3>
+              <p>Massage chair manuals list conditions, from osteoporosis and disc problems to pacemakers, pregnancy and clots, that rule out use or need a doctor's approval. Read the list before you buy, keep sessions to the maker's suggested length, and stop for pain, numbness or dizziness.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Massage Chair</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and expensive to fix once a 200 lb box is on the porch.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the delivery route</h3>
-              <p class="text-gray-700 text-sm m-0">A chair that will not fit through a door, round a hallway corner or up a stairwell is a freight return. Measure the narrowest point between the truck and the room against the maker's minimum doorway figure, check box dimensions, and ask whether delivery includes stairs before you pay.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the reclined length</h3>
-              <p class="text-gray-700 text-sm m-0">The upright footprint is not the one that matters. Chairs grow by a foot or more when reclined, and space-saving designs need room in front even if they need little behind. Use the larger of any conflicting clearance figures, and mark the reclined outline on the floor with tape before ordering.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the weight and height limits</h3>
-              <p class="text-gray-700 text-sm m-0">A chair used near or above its user limit is noisier, wears faster and may not position the rollers well. Check the limit for everyone who will use it, ask the seller to confirm in writing if figures conflict, and be wary of roundup sites that print much higher limits than the maker.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the contraindications</h3>
-              <p class="text-gray-700 text-sm m-0">Massage chair manuals list conditions, from osteoporosis and disc problems to pacemakers, pregnancy and clots, that rule out use or need a doctor's approval. Read the list before you buy, keep sessions to the maker's suggested length, and stop for pain, numbness or dizziness.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-massage-guns/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Massage</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Massage Guns</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six percussion massagers for targeted work on legs and back at a fraction of the price.</p>
-            </a>
-            <a href="/best-recovery-tools-for-weightlifters/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Recovery Tools for Weightlifters</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rollers, balls, straps, a massage gun and boots, and the evidence behind each.</p>
-            </a>
-            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Space</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Space Requirements</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to measure a room and a delivery route for any large home machine.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, buy the Bob and Brad iMaster Pro</strong>: its
             limits, size and recline are the best documented of any chair here, and it is sold on
             Amazon. Choose the Osaki Champ II for a tight room and white-glove delivery, the Real Relax
@@ -1012,39 +879,120 @@ const schema = {
             want 4D on Amazon and will confirm its user limits first, and the Human Touch WholeBody 8.0 if you do not need zero
             gravity at all.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, measure the room and the route, read the manual's contraindications, and
             compare stores, because prices swing by hundreds of dollars. If you mainly want to recover
-            from training, start with
-            <a href="/best-massage-guns/" class="text-[#5AA9FF] font-bold no-underline">a massage gun</a>
-            or the other tools in our
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#5AA9FF] font-bold no-underline">recovery tools guide</a>.
+            from training, start with <a href="/best-massage-guns/" class="text-[#5AA9FF] font-bold no-underline">a massage gun</a> or the other tools in our <a href="/best-recovery-tools-for-weightlifters/" class="text-[#5AA9FF] font-bold no-underline">recovery tools guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-massage-guns/">Best Massage Guns</a></li>
+            <li><a href="/best-recovery-tools-for-weightlifters/">Best Recovery Tools for Weightlifters</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best zero gravity massage chair?</h3></summary>
+            <p class="faq-a">
+              For most homes, the Bob and Brad iMaster Pro, at about $3,300 when we checked, because its 4D mechanism, 51.4 inch SL track, 166 degree recline and 6 ft 3 in, 265 lb limits are confirmed by the maker, an independent review and its Amazon listing. The Osaki Champ II suits tight rooms; the Real Relax Favor-06 is the budget choice.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a zero gravity massage chair worth it?</h3></summary>
+            <p class="faq-a">
+              It can be, if you will use it most days and it fits your body and room. Zero gravity is a comfortable reclined position that presses your back into the rollers; it is not a treatment. If your goal is sore legs after training, a massage gun, foam roller or compression boots cost far less. Claims of pain relief are the makers' marketing.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the difference between an S, L and SL track?</h3></summary>
+            <p class="faq-a">
+              An S-track follows the curve of the spine from neck to lower back. An L-track runs from the neck under the seat to the glutes and hamstrings but contours the spine less closely. An SL-track combines both, and is standard on full-body chairs. Track length, from about 34 to over 50 inches, decides how much of a tall user's back is covered.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much space does a zero gravity massage chair need?</h3></summary>
+            <p class="faq-a">
+              Plan for the reclined length, about 66 to 72 inches for the chairs here, plus room to get in and out. Space-saving chairs need only a few inches behind them, but makers' figures vary and sometimes conflict between a product page and its manual, so use the larger figure. Measure doorways too; Osaki gives about 30 inches for the Champ II.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who should not use a massage chair?</h3></summary>
+            <p class="faq-a">
+              Makers' manuals list osteoporosis, vertebral fractures, herniated discs and spinal deformity, heart disease or a pacemaker, cancer, thrombosis or acute varicose veins, pregnancy or recent childbirth, reduced sensation from diabetes, skin inflammation and acute illness. Titan and Real Relax advise against use over age 80. Ask a doctor first if any apply, and keep sessions short.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do massage chairs need a special outlet?</h3></summary>
+            <p class="faq-a">
+              Not usually. The chairs here run on a standard 110 to 120 volt household outlet and draw around 100 to 150 watts. Their manuals do require a properly grounded outlet, warn against modifying the plug or using adapters, and advise against use with wet skin or on a damp floor. Avoid running a chair from an extension cord.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-massage-guns/" class="card">
+            <div class="c-kicker">Massage</div>
+            <div class="c-title">Best Massage Guns</div>
+            <p class="c-blurb">Six percussion massagers for targeted work on legs and back at a fraction of the price.</p>
+          </a>
+          <a href="/best-recovery-tools-for-weightlifters/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Recovery Tools for Weightlifters</div>
+            <p class="c-blurb">Rollers, balls, straps, a massage gun and boots, and the evidence behind each.</p>
+          </a>
+          <a href="/treadmill-dimensions-space-requirements/" class="card">
+            <div class="c-kicker">Space</div>
+            <div class="c-title">Treadmill Space Requirements</div>
+            <p class="c-blurb">How to measure a room and a delivery route for any large home machine.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

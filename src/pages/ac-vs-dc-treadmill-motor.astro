@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "AC vs DC Treadmill Motor (2026): Which One Do You Actually Need?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/ac-vs-dc-treadmill-motor/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,108 +109,70 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "What to Check Instead", link: "#what-to-care-about" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-acvsdctreadmillmotor" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-acvsdctreadmillmotor)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Spec Explainer</span>
+      </nav>
+      <h1 class="ed-title">AC vs DC Treadmill Motor</h1>
+      <p class="ed-dek">
+        Almost every home treadmill runs on a DC motor and almost every gym treadmill runs on AC. That split is not a quality ranking — it is two answers to two different jobs, and for most households the question that matters is not which type but how much motor.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Spec Explainer
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          AC vs DC <span class="text-[#5AA9FF]">Treadmill Motor</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Almost every home treadmill runs on a DC motor and almost every gym treadmill runs on AC. That split is not a quality ranking — it is two answers to two different jobs, and for most households the question that matters is not which type but how much motor.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#what-to-care-about" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What to Check Instead
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Lifespans, circuit ratings and
-          price points here are typical ranges drawn from how the category is built, not
-          measurements of any particular machine. The manual and the electrical label on your
-          treadmill rule on what circuit it needs, and anything inside the motor hood should be
-          done with the machine unplugged at the wall.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: AC or DC?</a>
-          <a href="#how-dc-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How a DC Motor Works</a>
-          <a href="#how-ac-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How an AC Motor Works</a>
-          <a href="#why-home-dc" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Home Machines Are DC</a>
-          <a href="#why-commercial-ac" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Gyms Use AC</a>
-          <a href="#power-and-circuits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Outlets and Circuits</a>
-          <a href="#brushless-dc" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Brushless DC Motors: The Middle Ground</a>
-          <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Brushes, Maintenance and Lifespan</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Noise: What You Will Actually Hear</a>
-          <a href="#what-to-care-about" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Home Buyers Should Check</a>
-          <a href="#when-ac-makes-sense" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When an AC Treadmill Is Worth It at Home</a>
-          <a href="#spec-sheet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Reading the Motor Line on a Spec Sheet</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The motor type is one of the first lines on a treadmill spec sheet and one of the least
           useful to a home buyer. Nearly every machine you will be choosing between at home uses the
           same kind of motor, and the differences that decide whether it lasts are in the numbers
           printed next to the word "DC", not the word itself.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Lifespans, circuit ratings and
+          price points here are typical ranges drawn from how the category is built, not
+          measurements of any particular machine. The manual and the electrical label on your
+          treadmill rule on what circuit it needs, and anything inside the motor hood should be
+          done with the machine unplugged at the wall.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: AC or DC?</a></li>
+            <li><a href="#how-dc-works">How a DC Motor Works</a></li>
+            <li><a href="#how-ac-works">How an AC Motor Works</a></li>
+            <li><a href="#why-home-dc">Why Home Machines Are DC</a></li>
+            <li><a href="#why-commercial-ac">Why Gyms Use AC</a></li>
+            <li><a href="#power-and-circuits">Outlets and Circuits</a></li>
+            <li><a href="#brushless-dc">Brushless DC Motors: The Middle Ground</a></li>
+            <li><a href="#maintenance">Brushes, Maintenance and Lifespan</a></li>
+            <li><a href="#noise">Noise: What You Will Actually Hear</a></li>
+            <li><a href="#what-to-care-about">What Home Buyers Should Check</a></li>
+            <li><a href="#when-ac-makes-sense">When an AC Treadmill Is Worth It at Home</a></li>
+            <li><a href="#spec-sheet">Reading the Motor Line on a Spec Sheet</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: AC or DC?</h2>
+          <h2>The Short Answer: AC or DC?</h2>
 <p>
             <strong>For a home treadmill, DC is the right motor and the one you will almost
             certainly get.</strong> DC motors run from a standard household outlet, are quieter at
@@ -217,13 +184,10 @@ const schema = {
           <p>
             AC starts to make sense at home only when the machine will genuinely run for more than
             about two hours a day, or when three or four people are training on it seriously. Below
-            that, you are paying for durability you will not use. The
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            sets out the same threshold.
+            that, you are paying for durability you will not use. The <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> sets out the same threshold.
           </p>
           <p>
-            What matters far more for a home buyer is the <strong>continuous horsepower (CHP)</strong>
-            rating, whether the manufacturer quotes it at all, how long the motor warranty runs,
+            What matters far more for a home buyer is the <strong>continuous horsepower (CHP)</strong> rating, whether the manufacturer quotes it at all, how long the motor warranty runs,
             and how heavy the users are. A well-specified DC motor with headroom will outlast a
             marginal one by years, and that difference is much larger than anything the AC or DC
             label tells you on a home machine.
@@ -231,7 +195,7 @@ const schema = {
         </div>
 
         <div id="how-dc-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How a DC Treadmill Motor Works</h2>
+          <h2>How a DC Treadmill Motor Works</h2>
 <p>
             Your house supplies alternating current, so a DC treadmill starts by converting it. The
             motor control board — the lower board under the motor hood, separate from the console
@@ -258,7 +222,7 @@ const schema = {
         </div>
 
         <div id="how-ac-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How an AC Treadmill Motor Works</h2>
+          <h2>How an AC Treadmill Motor Works</h2>
 <p>
             The AC motors used in commercial treadmills are induction motors. There are no brushes
             and no commutator: the stationary windings create a rotating magnetic field, and that
@@ -284,7 +248,7 @@ const schema = {
         </div>
 
         <div id="why-home-dc" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Home Treadmills Use DC Motors</h2>
+          <h2>Why Home Treadmills Use DC Motors</h2>
 <p>
             The reasons are practical, and every one of them happens to favour the buyer.
           </p>
@@ -310,14 +274,12 @@ const schema = {
             <strong>They suit the duty cycle.</strong> One or two people training for an hour or
             less a day is a light workload for a well-specified DC motor. A good mid-range DC motor
             in a home that maintains it should last many years, which is long enough that motor
-            type stops being the deciding factor in the machine's lifespan. Our
-            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">motor lifespan guide</a>
-            breaks that down by tier.
+            type stops being the deciding factor in the machine's lifespan. Our <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">motor lifespan guide</a> breaks that down by tier.
           </p>
         </div>
 
         <div id="why-commercial-ac" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Commercial Treadmills Use AC Motors</h2>
+          <h2>Why Commercial Treadmills Use AC Motors</h2>
 <p>
             A gym treadmill has a fundamentally different life. It may run for twelve or fourteen
             hours a day, with users of every weight, at every speed, back to back with no cooling
@@ -336,14 +298,12 @@ const schema = {
             floors are wired for the load, and noise disappears under music and a room full of
             people. Weight is irrelevant once the machine is in place. Purchase price is spread
             across thousands of users. At home every one of those costs lands on one buyer, which
-            is why AC remains a niche choice outside institutional settings. Our
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            covers what else changes when you move up to that class.
+            is why AC remains a niche choice outside institutional settings. Our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a> covers what else changes when you move up to that class.
           </p>
         </div>
 
         <div id="power-and-circuits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Outlets, Circuits and Power Draw</h2>
+          <h2>Outlets, Circuits and Power Draw</h2>
 <p>
             This is where AC versus DC turns from a spec-sheet curiosity into a practical
             question, particularly for anyone considering a used gym machine for the garage.
@@ -365,19 +325,13 @@ const schema = {
           </p>
           <p>
             A machine on a shared or undersized circuit tends to announce itself by tripping the
-            breaker at start-up or under load. Our guide to a
-            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a>
-            covers how to tell a crowded circuit from a fault, and the
-            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a>
-            covers what to plug the machine into. Running cost is a smaller matter than people
-            expect for either type; the
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity usage guide</a>
-            has the arithmetic.
+            breaker at start-up or under load. Our guide to a <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a> covers how to tell a crowded circuit from a fault, and the <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a> covers what to plug the machine into. Running cost is a smaller matter than people
+            expect for either type; the <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity usage guide</a> has the arithmetic.
           </p>
         </div>
 
         <div id="brushless-dc" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Brushless DC Motors: The Middle Ground</h2>
+          <h2>Brushless DC Motors: The Middle Ground</h2>
 <p>
             A third type appears on some spec sheets: the brushless DC motor. It is worth
             understanding because it is sometimes marketed as though it were simply a better DC
@@ -407,15 +361,13 @@ const schema = {
         </div>
 
         <div id="maintenance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Brushes, Maintenance and Lifespan</h2>
+          <h2>Brushes, Maintenance and Lifespan</h2>
 <p>
             The everyday maintenance of a treadmill is the same whatever the motor type: keep the
             belt lubricated as the manual specifies, keep the belt correctly tensioned, and keep
             dust and carpet fibre out of the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>. Friction and heat kill motors far
             more often than age does, and a dry belt-deck interface makes any motor draw more
-            current than it should. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the routine; the site's standing interval is every 40 to 50 hours of use unless
+            current than it should. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers the routine; the site's standing interval is every 40 to 50 hours of use unless
             your manual says otherwise.
           </p>
           <p>
@@ -424,11 +376,7 @@ const schema = {
             by the owner. Worn brushes can show up as intermittent power, hesitation, extra
             sparking visible through vents, or a hot electrical smell. Those symptoms overlap with
             other faults, so treat them as a reason to stop and investigate rather than a
-            diagnosis. Our guide to
-            <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">treadmill motor brushes</a>
-            covers inspection and replacement, and the
-            <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">burning smell guide</a>
-            covers when to stop using the machine.
+            diagnosis. Our guide to <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">treadmill motor brushes</a> covers inspection and replacement, and the <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">burning smell guide</a> covers when to stop using the machine.
           </p>
           <p>
             <strong>AC induction motors</strong> have no brushes, so the routine wear item is the
@@ -444,7 +392,7 @@ const schema = {
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Noise: What You Will Actually Hear</h2>
+          <h2>Noise: What You Will Actually Hear</h2>
 <p>
             People buying for an apartment or a room next to a nursery often ask whether the motor
             type will decide how loud the machine is. It contributes, but less than the other
@@ -465,15 +413,13 @@ const schema = {
           <p>
             If quiet running matters, the motor type is one consideration among several, and the
             higher-impact choices are deck construction, cushioning, a heavier frame and where the
-            machine stands. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            covers those. A brushless DC motor removes brush noise, which is a small improvement
+            machine stands. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> covers those. A brushless DC motor removes brush noise, which is a small improvement
             but not one that will change what the people downstairs hear.
           </p>
         </div>
 
         <div id="what-to-care-about" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Home Buyers Should Actually Care About</h2>
+          <h2>What Home Buyers Should Actually Care About</h2>
 <p>
             Since nearly every home machine is DC, the motor questions worth asking are about
             rating, headroom and cover.
@@ -484,9 +430,7 @@ const schema = {
             the continuous rating, and tells you very little about durability. If a listing only
             gives a peak or an unlabelled "HP" figure, treat the true continuous rating as
             meaningfully lower. As a broad guide, roughly 2.5 CHP suits walking, 3.0 suits regular
-            jogging, and 3.5 or more suits daily running, with more needed as user weight rises; the
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            has the full table.
+            jogging, and 3.5 or more suits daily running, with more needed as user weight rises; the <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> has the full table.
           </p>
           <p>
             <strong>A duty or continuous-use rating.</strong> Some manufacturers state how the
@@ -496,9 +440,7 @@ const schema = {
           <p>
             <strong>Headroom over your use.</strong> A motor doing a job well within its rating runs
             cooler and lasts longer than one working at its limit. Heavier users and frequent
-            runners should buy above the minimum, and our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains why the user limit and the motor are linked.
+            runners should buy above the minimum, and our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains why the user limit and the motor are linked.
           </p>
           <p>
             <strong>The motor warranty.</strong> Long motor warranties are common and useful, but
@@ -508,7 +450,7 @@ const schema = {
         </div>
 
         <div id="when-ac-makes-sense" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When an AC Treadmill Is Worth It at Home</h2>
+          <h2>When an AC Treadmill Is Worth It at Home</h2>
 <p>
             There are households where AC is the better purchase, and they are recognisable.
           </p>
@@ -523,9 +465,7 @@ const schema = {
             onto the used market regularly, and the motor is often the part with the most life left
             in it. The things to check are everything around the motor: the circuit it needs, the
             plug type, the condition of the belt and deck, the console, parts availability and who
-            will service it. Delivery is a real cost at these weights. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            covers the inspection.
+            will service it. Delivery is a real cost at these weights. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> covers the inspection.
           </p>
           <p>
             <strong>Somewhere noise does not matter.</strong> A detached garage or a basement with
@@ -540,7 +480,7 @@ const schema = {
         </div>
 
         <div id="spec-sheet" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Reading the Motor Line on a Spec Sheet</h2>
+          <h2>Reading the Motor Line on a Spec Sheet</h2>
 <p>
             A few patterns are worth recognising when you compare listings.
           </p>
@@ -572,141 +512,155 @@ const schema = {
             it covers labour.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an AC or DC treadmill motor better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better in general; they suit different jobs. DC motors are the right choice for home use — they run from a standard outlet, are quieter at home speeds and cost far less. AC motors are built for commercial duty cycles of many hours a day and are louder, heavier and pricier. AC is worth it at home only with very high daily use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do home treadmills use DC motors?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Because DC motors run from a standard 120-volt household outlet, give smooth and responsive speed control, are quieter at walking and jogging speeds, and are much cheaper and lighter to build. One or two people training for an hour or less a day is a light workload for a well-rated DC motor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do AC treadmills need a special outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes. Larger commercial AC treadmills are more likely to require a dedicated 20-amp circuit, and some ship with a 20-amp plug that has one blade turned sideways and will not fit a standard 15-amp receptacle. Check the manual and electrical label, have an electrician install the correct circuit, and never modify the plug or use an adapter.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a brushless DC treadmill motor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A DC motor with no brushes or commutator; the controller switches current between the windings electronically instead. It keeps the DC motor's quiet running and fine speed control while removing the main wear part. It is a genuine feature but not a power rating, so judge it by its continuous horsepower like any other motor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do DC treadmill motors need maintenance?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mostly the same maintenance as any treadmill: lubricate the belt as the manual specifies, keep tension correct and keep dust out of the motor compartment. Brushed DC motors also have carbon brushes that wear slowly and can be replaced on many motors. Always unplug the machine at the wall before opening the motor hood.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does a DC treadmill motor last compared with AC?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As typical ranges, a budget DC motor lasts roughly three to seven years and a mid-range DC motor seven to twelve, while a commercial AC motor can run fifteen to twenty-five years or more. Maintenance, user weight and how hard the motor works relative to its continuous rating move any motor within its range.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Comparing Treadmill Motors</h2>
+          <p>Most motor mistakes come from reading the wrong number, or from buying a type of motor for a job it was not designed for.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing peak horsepower</h3>
+              <p>Peak horsepower is a momentary figure, often 1.5 to 2 times the continuous rating, and it says almost nothing about durability. Compare continuous horsepower, and if a listing only gives an unlabelled HP number, assume the continuous figure is meaningfully lower until someone confirms otherwise.</p>
+            </li>
+            <li>
+              <h3>Buying a commercial AC machine without checking the circuit</h3>
+              <p>Commercial treadmills are more likely to need a dedicated 20-amp circuit and may ship with a plug that will not fit a standard outlet. Find out before delivery, budget for an electrician if needed, and never modify the plug or use an adapter to make it fit.</p>
+            </li>
+            <li>
+              <h3>Paying for AC durability you will not use</h3>
+              <p>For one or two people training an hour or less a day, an AC treadmill buys years of capacity the household will never consume and adds noise, weight and cost every session. The money is usually better spent on a stronger DC motor, a longer deck or a better warranty.</p>
+            </li>
+            <li>
+              <h3>Treating the motor as the only thing that wears</h3>
+              <p>Motors usually die of heat caused by friction, not of age. A dry belt, an over-tight or slipping belt and a motor compartment full of carpet fibre will shorten any motor, AC or DC. Lubrication, correct tension and a clean compartment protect the motor more than its type does.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Comparing Treadmill Motors</h2>
-          <p class="text-gray-700 leading-relaxed">Most motor mistakes come from reading the wrong number, or from buying a type of motor for a job it was not designed for.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing peak horsepower</h3>
-              <p class="text-gray-700 text-sm m-0">Peak horsepower is a momentary figure, often 1.5 to 2 times the continuous rating, and it says almost nothing about durability. Compare continuous horsepower, and if a listing only gives an unlabelled HP number, assume the continuous figure is meaningfully lower until someone confirms otherwise.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a commercial AC machine without checking the circuit</h3>
-              <p class="text-gray-700 text-sm m-0">Commercial treadmills are more likely to need a dedicated 20-amp circuit and may ship with a plug that will not fit a standard outlet. Find out before delivery, budget for an electrician if needed, and never modify the plug or use an adapter to make it fit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for AC durability you will not use</h3>
-              <p class="text-gray-700 text-sm m-0">For one or two people training an hour or less a day, an AC treadmill buys years of capacity the household will never consume and adds noise, weight and cost every session. The money is usually better spent on a stronger DC motor, a longer deck or a better warranty.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the motor as the only thing that wears</h3>
-              <p class="text-gray-700 text-sm m-0">Motors usually die of heat caused by friction, not of age. A dry belt, an over-tight or slipping belt and a motor compartment full of carpet fibre will shorten any motor, AC or DC. Lubrication, correct tension and a clean compartment protect the motor more than its type does.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Spec Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">CHP, peak HP and the figure to buy for your weight and pace.</p>
-            </a>
-            <a href="/how-long-do-treadmill-motors-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Lifespan</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmill Motors Last?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Typical years and running hours by motor tier, and what shortens them.</p>
-            </a>
-            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What changes when you move up to gym-grade machines.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy DC for home use.</strong> It runs from a normal outlet, is
             quieter at home speeds and costs far less, and a well-rated DC motor comfortably handles
             one or two people training an hour or less a day. AC earns its place only with very high
             daily hours, several serious users, or a well-priced used gym machine and the circuit to
             run it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             What decides a home motor's life is <strong class="text-white">continuous horsepower with
-            headroom</strong>, a clear warranty and basic maintenance. Check the
-            <a href="/treadmill-horsepower-guide/" class="text-[#5AA9FF] font-bold no-underline">horsepower guide</a>
-            for the figure to buy at your weight and pace.
+            headroom</strong>, a clear warranty and basic maintenance. Check the <a href="/treadmill-horsepower-guide/" class="text-[#5AA9FF] font-bold no-underline">horsepower guide</a> for the figure to buy at your weight and pace.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-horsepower-guide/">Treadmill Horsepower Guide</a></li>
+            <li><a href="/how-long-do-treadmill-motors-last/">How Long Do Treadmill Motors Last?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is an AC or DC treadmill motor better?</h3></summary>
+            <p class="faq-a">
+              Neither is better in general; they suit different jobs. DC motors are the right choice for home use — they run from a standard outlet, are quieter at home speeds and cost far less. AC motors are built for commercial duty cycles of many hours a day and are louder, heavier and pricier. AC is worth it at home only with very high daily use.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why do home treadmills use DC motors?</h3></summary>
+            <p class="faq-a">
+              Because DC motors run from a standard 120-volt household outlet, give smooth and responsive speed control, are quieter at walking and jogging speeds, and are much cheaper and lighter to build. One or two people training for an hour or less a day is a light workload for a well-rated DC motor.
             </p>
+          </details>
+          <details>
+            <summary><h3>Do AC treadmills need a special outlet?</h3></summary>
+            <p class="faq-a">
+              Often, yes. Larger commercial AC treadmills are more likely to require a dedicated 20-amp circuit, and some ship with a 20-amp plug that has one blade turned sideways and will not fit a standard 15-amp receptacle. Check the manual and electrical label, have an electrician install the correct circuit, and never modify the plug or use an adapter.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a brushless DC treadmill motor?</h3></summary>
+            <p class="faq-a">
+              A DC motor with no brushes or commutator; the controller switches current between the windings electronically instead. It keeps the DC motor's quiet running and fine speed control while removing the main wear part. It is a genuine feature but not a power rating, so judge it by its continuous horsepower like any other motor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do DC treadmill motors need maintenance?</h3></summary>
+            <p class="faq-a">
+              Mostly the same maintenance as any treadmill: lubricate the belt as the manual specifies, keep tension correct and keep dust out of the motor compartment. Brushed DC motors also have carbon brushes that wear slowly and can be replaced on many motors. Always unplug the machine at the wall before opening the motor hood.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does a DC treadmill motor last compared with AC?</h3></summary>
+            <p class="faq-a">
+              As typical ranges, a budget DC motor lasts roughly three to seven years and a mid-range DC motor seven to twelve, while a commercial AC motor can run fifteen to twenty-five years or more. Maintenance, user weight and how hard the motor works relative to its continuous rating move any motor within its range.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-horsepower-guide/" class="card">
+            <div class="c-kicker">Spec Explainer</div>
+            <div class="c-title">Treadmill Horsepower Guide</div>
+            <p class="c-blurb">CHP, peak HP and the figure to buy for your weight and pace.</p>
+          </a>
+          <a href="/how-long-do-treadmill-motors-last/" class="card">
+            <div class="c-kicker">Lifespan</div>
+            <div class="c-title">How Long Do Treadmill Motors Last?</div>
+            <p class="c-blurb">Typical years and running hours by motor tier, and what shortens them.</p>
+          </a>
+          <a href="/commercial-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Commercial Treadmills</div>
+            <p class="c-blurb">What changes when you move up to gym-grade machines.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

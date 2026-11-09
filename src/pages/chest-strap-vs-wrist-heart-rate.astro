@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Chest Strap vs Wrist Heart Rate (2026): Which to Trust on a Treadmill";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/chest-strap-vs-wrist-heart-rate/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,45 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Compare the Sensors", link: "#comparison-table" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-cheststrapvswristheartrate" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-cheststrapvswristheartrate)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Chest Strap vs Wrist Heart Rate Monitors</h1>
+      <p class="ed-dek">
+        A chest strap and a smartwatch can show the same number on an easy walk and wildly different ones in the first minute of an interval. That is not a fault in either; they measure different things in different ways. Here is how each sensor works, why the wrist lags and sometimes locks onto your stride, how arm bands and handrail grips fit in, and which to use for training zones on a treadmill.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Chest Strap vs Wrist <span class="text-[#5AA9FF]">Heart Rate Monitors</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A chest strap and a smartwatch can show the same number on an easy walk and wildly different ones in the first minute of an interval. That is not a fault in either; they measure different things in different ways. Here is how each sensor works, why the wrist lags and sometimes locks onto your stride, how arm bands and handrail grips fit in, and which to use for training zones on a treadmill.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#comparison-table" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Side-by-Side Comparison
-          </a>
-          <a href="#which-for-zones" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Which to Use for Zones
-          </a>
-        </div>
+        <a href="#comparison-table" class="btn-ghost">Side-by-Side Comparison</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Chest strap or wrist: which heart rate reading should you trust on a treadmill? For
+          steady walking and easy running, a well-fitted watch is often close enough. For
+          intervals, hill repeats and anything where the effort changes quickly, a chest strap is
+          more dependable, because it reads the heart's electrical signal directly rather than
+          inferring each beat from blood flow under the skin. Optical arm bands sit in between,
+          and treadmill handrail grips are a spot check at a walk and little more. This page
+          explains why, so you can choose the sensor that fits the way you actually train.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
           and the equipment used with them, and we have not run our own accuracy tests on heart
           rate sensors. This page explains how the different sensor types work and the
@@ -172,47 +158,28 @@ const schema = {
           number on a strap or watch. Chest pain, unusual breathlessness, dizziness or
           palpitations are reasons to stop the belt and seek advice, whatever the device
           reads.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Chest Strap vs Wrist Heart Rate: The Short Answer</a>
-          <a href="#how-chest-straps-work" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How a Chest Strap Measures Heart Rate</a>
-          <a href="#how-optical-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Optical Wrist Sensors Work</a>
-          <a href="#arm-bands-and-grips" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Arm Bands and Handrail Grips: The Other Two Options</a>
-          <a href="#why-wrist-lags" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Wrist Sensors Lag During Intervals</a>
-          <a href="#cadence-lock" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Cadence Lock: When the Watch Counts Your Steps Instead</a>
-          <a href="#fit-and-contact" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Fit and Skin Contact: Getting Each Sensor to Read Well</a>
-          <a href="#comparison-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Chest Strap vs Wrist vs Arm Band vs Grips: Side by Side</a>
-          <a href="#which-for-zones" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Which Sensor to Use for Heart Rate Zones</a>
-          <a href="#using-both" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Using a Strap and a Watch Together</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. If You Are Shopping for a Heart Rate Monitor</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Chest Strap vs Wrist Heart Rate: The Short Answer</a></li>
+            <li><a href="#how-chest-straps-work">How a Chest Strap Measures Heart Rate</a></li>
+            <li><a href="#how-optical-works">How Optical Wrist Sensors Work</a></li>
+            <li><a href="#arm-bands-and-grips">Arm Bands and Handrail Grips: The Other Two Options</a></li>
+            <li><a href="#why-wrist-lags">Why Wrist Sensors Lag During Intervals</a></li>
+            <li><a href="#cadence-lock">Cadence Lock: When the Watch Counts Your Steps Instead</a></li>
+            <li><a href="#fit-and-contact">Fit and Skin Contact: Getting Each Sensor to Read Well</a></li>
+            <li><a href="#comparison-table">Chest Strap vs Wrist vs Arm Band vs Grips: Side by Side</a></li>
+            <li><a href="#which-for-zones">Which Sensor to Use for Heart Rate Zones</a></li>
+            <li><a href="#using-both">Using a Strap and a Watch Together</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping for a Heart Rate Monitor</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Chest strap or wrist: which heart rate reading should you trust on a treadmill? For
-          steady walking and easy running, a well-fitted watch is often close enough. For
-          intervals, hill repeats and anything where the effort changes quickly, a chest strap is
-          more dependable, because it reads the heart's electrical signal directly rather than
-          inferring each beat from blood flow under the skin. Optical arm bands sit in between,
-          and treadmill handrail grips are a spot check at a walk and little more. This page
-          explains why, so you can choose the sensor that fits the way you actually train.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Chest Strap vs Wrist Heart Rate: The Short Answer</h2>
+          <h2>Chest Strap vs Wrist Heart Rate: The Short Answer</h2>
 <p>
             <strong>A chest strap is the more dependable heart rate sensor on a treadmill,
             especially for intervals; a wrist watch is usually fine for steady, easy
@@ -231,15 +198,13 @@ const schema = {
           </p>
           <p>
             An optical arm band, worn on the forearm or upper arm, is the compromise for people
-            who cannot get on with a chest strap. Our guide to the
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a>
-            covers straps and arm bands that work with treadmill consoles, watches and apps; this
+            who cannot get on with a chest strap. Our guide to the <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a> covers straps and arm bands that work with treadmill consoles, watches and apps; this
             page is about which type to choose and why.
           </p>
         </div>
 
         <div id="how-chest-straps-work" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How a Chest Strap Measures Heart Rate</h2>
+          <h2>How a Chest Strap Measures Heart Rate</h2>
 <p>
             Every heartbeat is triggered by an electrical impulse that spreads through the heart
             muscle. That impulse produces a tiny voltage that can be detected on the skin — the
@@ -274,7 +239,7 @@ const schema = {
         </div>
 
         <div id="how-optical-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Optical Wrist Sensors Work</h2>
+          <h2>How Optical Wrist Sensors Work</h2>
 <p>
             The sensor on the back of a smartwatch or fitness band uses a method called
             photoplethysmography, usually shortened to PPG. LEDs — commonly green — shine light
@@ -310,7 +275,7 @@ const schema = {
         </div>
 
         <div id="arm-bands-and-grips" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Arm Bands and Handrail Grips: The Other Two Options</h2>
+          <h2>Arm Bands and Handrail Grips: The Other Two Options</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Optical arm bands</h3>
           <p>
             An arm band uses the same optical method as a watch, but from the forearm or upper
@@ -339,14 +304,12 @@ const schema = {
           <p>
             Worse, they require you to <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a>, which takes weight off your legs and
             changes the workout you are trying to measure. Treat grip readings as an occasional
-            spot check, not a training tool. If yours read nothing at all, our guide to a
-            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart rate monitor that is not working</a>
-            covers the fixes in order.
+            spot check, not a training tool. If yours read nothing at all, our guide to a <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart rate monitor that is not working</a> covers the fixes in order.
           </p>
         </div>
 
         <div id="why-wrist-lags" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Wrist Sensors Lag During Intervals</h2>
+          <h2>Why Wrist Sensors Lag During Intervals</h2>
 <p>
             The most common complaint about wrist heart rate on a treadmill goes like this: the
             interval starts, you are clearly working hard, and the watch still shows a number from
@@ -370,15 +333,12 @@ const schema = {
             much blood is sent towards the skin, which changes the strength of the optical signal
             the watch is reading.</li>
             <li><strong>The heart itself takes time.</strong> Heart rate genuinely takes a while to
-            rise after the belt speeds up and to fall after it slows. Our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones guide</a>
-            notes that it takes one to three minutes to stabilise after a change in effort. Any
+            rise after the belt speeds up and to fall after it slows. Our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones guide</a> notes that it takes one to three minutes to stabilise after a change in effort. Any
             sensor lag adds to that physiological lag, so the wrist number arrives later
             still.</li>
           </ul>
           <p>
-            For short intervals — 30 seconds to two minutes, the shape of most <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium" data-autolink>treadmill HIIT</a>
-            sessions — the combined lag can mean the wrist never shows the true peak at all
+            For short intervals — 30 seconds to two minutes, the shape of most <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium" data-autolink>treadmill HIIT</a> sessions — the combined lag can mean the wrist never shows the true peak at all
             before the recovery starts. If those peaks are what you are training to, a strap is
             the right tool. For longer steady blocks, the lag washes out within the first part of
             the block and matters much less.
@@ -386,7 +346,7 @@ const schema = {
         </div>
 
         <div id="cadence-lock" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Cadence Lock: When the Watch Counts Your Steps Instead</h2>
+          <h2>Cadence Lock: When the Watch Counts Your Steps Instead</h2>
 <p>
             Cadence lock is a specific failure of optical sensors during running, and it is worth
             recognising because the number it produces can look perfectly believable.
@@ -423,7 +383,7 @@ const schema = {
         </div>
 
         <div id="fit-and-contact" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Fit and Skin Contact: Getting Each Sensor to Read Well</h2>
+          <h2>Fit and Skin Contact: Getting Each Sensor to Read Well</h2>
 <p>
             A large share of bad heart rate data from any sensor is a fit problem rather than a
             product problem. Each type has its own rules.
@@ -470,7 +430,7 @@ const schema = {
         </div>
 
         <div id="comparison-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Chest Strap vs Wrist vs Arm Band vs Grips: Side by Side</h2>
+          <h2>Chest Strap vs Wrist vs Arm Band vs Grips: Side by Side</h2>
 <p>
             The table summarises the four ways a treadmill user can get a heart rate reading. The
             judgements are general, drawn from how each method works and from independent coverage
@@ -507,7 +467,7 @@ const schema = {
         </div>
 
         <div id="which-for-zones" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Which Sensor to Use for Heart Rate Zones</h2>
+          <h2>Which Sensor to Use for Heart Rate Zones</h2>
 <p>
             The right sensor depends on what kind of training the number is steering. These are
             general recommendations for treadmill sessions.
@@ -521,9 +481,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Zone 2 and steady aerobic work</h3>
           <p>
             A well-fitted watch is often adequate, and an arm band is better. Steady effort is
-            exactly where optical sensors are strongest, and the point of
-            <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">Zone 2 training on a treadmill</a>
-            is staying under a ceiling over a long session, not catching every beat. Check the
+            exactly where optical sensors are strongest, and the point of <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">Zone 2 training on a treadmill</a> is staying under a ceiling over a long session, not catching every beat. Check the
             watch against a strap once or twice if you can borrow one; if they agree on your easy
             sessions, the watch is fine for them.
           </p>
@@ -556,7 +514,7 @@ const schema = {
         </div>
 
         <div id="using-both" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Using a Strap and a Watch Together</h2>
+          <h2>Using a Strap and a Watch Together</h2>
 <p>
             You do not have to choose. Most current sports watches can pair with an external
             chest strap or arm band and use it in place of the wrist sensor while it is connected,
@@ -578,9 +536,7 @@ const schema = {
             phone app may not appear on the console or another app.</li>
             <li><strong>Some straps add more than heart rate.</strong> Garmin says its HRM 600
             sends treadmill pace and distance to compatible Garmin watches, for example, which
-            overlaps with what a foot pod does. Our
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>
-            covers the pace side.</li>
+            overlaps with what a foot pod does. Our <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a> covers the pace side.</li>
           </ul>
           <p>
             When a strap and a watch disagree during the same session, the strap is usually the
@@ -592,7 +548,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. If You Are Shopping for a Heart Rate Monitor</h2>
+          <h2>If You Are Shopping for a Heart Rate Monitor</h2>
 <p>
             Summing up what to look for before you spend money:
           </p>
@@ -609,149 +565,160 @@ const schema = {
             rechargeable straps and arm bands need regular charging.</li>
           </ul>
           <p>
-            Our
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">roundup of heart rate straps and arm bands for treadmill users</a>
-            covers five chest straps, an optical arm band and a budget pick against exactly
+            Our <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">roundup of heart rate straps and arm bands for treadmill users</a> covers five chest straps, an optical arm band and a budget pick against exactly
             these points, with the specifications we could confirm. If you are kitting out a new
-            treadmill more broadly, our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            puts the strap alongside the mat, fan and foot pod.
+            treadmill more broadly, our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> puts the strap alongside the mat, fan and foot pod.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a chest strap more accurate than a wrist heart rate monitor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Generally, yes, especially when effort changes quickly. A chest strap reads the electrical signal of each heartbeat, while a wrist sensor estimates heart rate from blood flow using light, which arm movement, fit and cold skin can disturb. For steady walking and easy running a well-fitted watch is often close; for intervals, a strap is more dependable.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my watch heart rate wrong on the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The usual causes are a loose fit, the watch sitting on the wrist bone, cold skin early in the session, or cadence lock, where the sensor follows your step rate instead of your pulse. Tighten the watch, move it slightly up the forearm and warm up first. If it still misbehaves while running, use a chest strap or arm band.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is cadence lock?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Cadence lock is when an optical heart rate sensor mistakes the regular rhythm of your running stride for your pulse and reports your step rate as your heart rate. Because running cadence and hard-effort heart rate can fall in a similar range, the number can look plausible. A reading that sits flat and matches your cadence is the giveaway.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are optical arm bands as good as chest straps?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Close for steady running and walking, less so for sharp changes in effort. Arm bands use the same light-based method as a watch, but from the forearm or upper arm, where the sensor moves less and sits over more tissue. Independent coverage generally rates them much closer to a strap than a wrist watch, though they can lag at the start of an interval.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which heart rate monitor should I use for zone 2 training?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For steady Zone 2 work, a well-fitted watch is often adequate and an arm band is better, because optical sensors are at their strongest at steady effort. A chest strap is still the most dependable choice if you want certainty. Check your watch against a strap on a couple of easy sessions; if they agree, the watch will do.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use treadmill handrail sensors instead of a chest strap?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only as a spot check at a steady walk. Grip sensors need both hands still on the plates, they degrade with sweat and grip pressure, and they largely fail while running. Holding the rails also takes weight off your legs and changes the workout. For training by heart rate, a chest strap or arm band is far more useful.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Chest Straps and Wrist Sensors</h2>
+          <p>Most disappointing heart rate data comes from asking a sensor to do a job it is weak at, or wearing it in a way that guarantees a bad reading.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Training intervals by a wrist sensor</h3>
+              <p>Wrist optical readings smooth over several seconds and can lag the real change at the start and end of each interval, so short efforts may never show their true peak. If interval zones matter to you, wear a chest strap for those sessions and keep the watch for steady running and walking, where it performs best.</p>
+            </li>
+            <li>
+              <h3>Believing a suspiciously steady high reading</h3>
+              <p>A wrist reading that jumps early and then sits flat, close to your step rate, is probably cadence lock rather than your heart. Compare it with the cadence figure on the watch and with how the effort feels. If they match each other better than they match your breathing, tighten the watch or switch sensor.</p>
+            </li>
+            <li>
+              <h3>Wearing the strap dry</h3>
+              <p>A chest strap on dry skin often reads erratically, and commonly far too high, for the first few minutes until sweat makes contact. Wet the electrodes before putting it on, position it just below the chest muscles, and shorten it if it slides. Most strap complaints disappear with those three habits.</p>
+            </li>
+            <li>
+              <h3>Treating any reading as medical information</h3>
+              <p>Chest straps, arm bands, watches and handrail grips are training aids, not medical devices. If you have a heart condition or take medication that affects heart rate, your limits should come from your doctor. Any chest pain, dizziness, palpitations or unusual breathlessness means stop the belt, whatever the sensor says.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Chest Straps and Wrist Sensors</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointing heart rate data comes from asking a sensor to do a job it is weak at, or wearing it in a way that guarantees a bad reading.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Training intervals by a wrist sensor</h3>
-              <p class="text-gray-700 text-sm m-0">Wrist optical readings smooth over several seconds and can lag the real change at the start and end of each interval, so short efforts may never show their true peak. If interval zones matter to you, wear a chest strap for those sessions and keep the watch for steady running and walking, where it performs best.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Believing a suspiciously steady high reading</h3>
-              <p class="text-gray-700 text-sm m-0">A wrist reading that jumps early and then sits flat, close to your step rate, is probably cadence lock rather than your heart. Compare it with the cadence figure on the watch and with how the effort feels. If they match each other better than they match your breathing, tighten the watch or switch sensor.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Wearing the strap dry</h3>
-              <p class="text-gray-700 text-sm m-0">A chest strap on dry skin often reads erratically, and commonly far too high, for the first few minutes until sweat makes contact. Wet the electrodes before putting it on, position it just below the chest muscles, and shorten it if it slides. Most strap complaints disappear with those three habits.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating any reading as medical information</h3>
-              <p class="text-gray-700 text-sm m-0">Chest straps, arm bands, watches and handrail grips are training aids, not medical devices. If you have a heart condition or take medication that affects heart rate, your limits should come from your doctor. Any chest pain, dizziness, palpitations or unusual breathlessness means stop the belt, whatever the sensor says.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Heart Rate Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Heart Rate Monitors for Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five chest straps, an arm band and a budget pick, matched to consoles and watches.</p>
-            </a>
-            <a href="/treadmill-heart-rate-zones/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Zones</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the zones are, why 220 minus age misleads, and the talk test.</p>
-            </a>
-            <a href="/treadmill-heart-rate-not-working/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Troubleshooting</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Not Working</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Grips, straps and watches: why each fails and how to fix it.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A chest strap is the more dependable heart rate sensor on a
             treadmill; a wrist watch is usually fine for steady, easy sessions.</strong> The strap
             reads each heartbeat's electrical signal, while the watch infers it from blood flow and
             can lag in intervals or lock onto your stride.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Use a strap for intervals and HRV, an arm band if a strap is uncomfortable, your watch for
             steady easy work, and the handrail grips only as a spot check at a walk. For straps and
-            arm bands that work with consoles, watches and apps, see our
-            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#5AA9FF] font-bold no-underline">heart rate monitor roundup for treadmill training</a>.
+            arm bands that work with consoles, watches and apps, see our <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#5AA9FF] font-bold no-underline">heart rate monitor roundup for treadmill training</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-heart-rate-monitors-for-treadmill/">Best Heart Rate Monitors for Treadmill</a></li>
+            <li><a href="/treadmill-heart-rate-zones/">Treadmill Heart Rate Zones</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is a chest strap more accurate than a wrist heart rate monitor?</h3></summary>
+            <p class="faq-a">
+              Generally, yes, especially when effort changes quickly. A chest strap reads the electrical signal of each heartbeat, while a wrist sensor estimates heart rate from blood flow using light, which arm movement, fit and cold skin can disturb. For steady walking and easy running a well-fitted watch is often close; for intervals, a strap is more dependable.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why is my watch heart rate wrong on the treadmill?</h3></summary>
+            <p class="faq-a">
+              The usual causes are a loose fit, the watch sitting on the wrist bone, cold skin early in the session, or cadence lock, where the sensor follows your step rate instead of your pulse. Tighten the watch, move it slightly up the forearm and warm up first. If it still misbehaves while running, use a chest strap or arm band.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is cadence lock?</h3></summary>
+            <p class="faq-a">
+              Cadence lock is when an optical heart rate sensor mistakes the regular rhythm of your running stride for your pulse and reports your step rate as your heart rate. Because running cadence and hard-effort heart rate can fall in a similar range, the number can look plausible. A reading that sits flat and matches your cadence is the giveaway.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are optical arm bands as good as chest straps?</h3></summary>
+            <p class="faq-a">
+              Close for steady running and walking, less so for sharp changes in effort. Arm bands use the same light-based method as a watch, but from the forearm or upper arm, where the sensor moves less and sits over more tissue. Independent coverage generally rates them much closer to a strap than a wrist watch, though they can lag at the start of an interval.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which heart rate monitor should I use for zone 2 training?</h3></summary>
+            <p class="faq-a">
+              For steady Zone 2 work, a well-fitted watch is often adequate and an arm band is better, because optical sensors are at their strongest at steady effort. A chest strap is still the most dependable choice if you want certainty. Check your watch against a strap on a couple of easy sessions; if they agree, the watch will do.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use treadmill handrail sensors instead of a chest strap?</h3></summary>
+            <p class="faq-a">
+              Only as a spot check at a steady walk. Grip sensors need both hands still on the plates, they degrade with sweat and grip pressure, and they largely fail while running. Holding the rails also takes weight off your legs and changes the workout. For training by heart rate, a chest strap or arm band is far more useful.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Heart Rate Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-heart-rate-monitors-for-treadmill/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Heart Rate Monitors for Treadmill</div>
+            <p class="c-blurb">Five chest straps, an arm band and a budget pick, matched to consoles and watches.</p>
+          </a>
+          <a href="/treadmill-heart-rate-zones/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Treadmill Heart Rate Zones</div>
+            <p class="c-blurb">What the zones are, why 220 minus age misleads, and the talk test.</p>
+          </a>
+          <a href="/treadmill-heart-rate-not-working/" class="card">
+            <div class="c-kicker">Troubleshooting</div>
+            <div class="c-title">Treadmill Heart Rate Not Working</div>
+            <p class="c-blurb">Grips, straps and watches: why each fails and how to fix it.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

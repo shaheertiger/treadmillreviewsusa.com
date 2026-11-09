@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Exercise Bikes (2026): 5 Stationary Bikes Checked";
 const description =
@@ -258,6 +257,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-exercise-bikes/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -279,66 +284,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Schwinn IC4", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestexercisebikes" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestexercisebikes)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Exercise Bikes and Stationary Bikes for Home</h1>
+      <p class="ed-dek">
+        Five upright and indoor cycling bikes whose published figures held up when we checked them, from a $300 friction bike to a studio-grade Keiser. What resistance type, flywheel weight, fit range and app support actually mean, which bikes have been recalled, and why one big brand is not on the list.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Exercise Bikes <span class="text-[#5AA9FF]">and Stationary Bikes for Home</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Five upright and indoor cycling bikes whose published figures held up when we checked them, from a $300 friction bike to a studio-grade Keiser. What resistance type, flywheel weight, fit range and app support actually mean, which bikes have been recalled, and why one big brand is not on the list.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#resistance" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Magnetic vs Friction
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#schwinn-ic4"><img src="https://m.media-amazon.com/images/I/41s6fwc-DRL._SL500_.jpg" alt="Schwinn IC4" width="500" height="500" decoding="async" /></a>
+          <a href="#horizon-5-0u-upright-bike"><img src="https://m.media-amazon.com/images/I/310qkDy5lzL._SL500_.jpg" alt="Horizon 5.0U Upright Bike" width="500" height="500" decoding="async" /></a>
+          <a href="#keiser-m3i-indoor-bike"><img src="https://m.media-amazon.com/images/I/31b09AaUZOL._SL500_.jpg" alt="Keiser M3i Indoor Bike" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Schwinn IC4 · Horizon 5.0U Upright Bike · Keiser M3i Indoor Bike</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          An exercise bike is the easiest cardio machine to live with: quiet, compact, no impact, and
+          simple enough that it rarely breaks. It is also a category where listings lean hard on
+          numbers that sound decisive and are not — the weight of the flywheel, the count of
+          resistance levels, the list of apps it "works with". This page names five bikes whose basic
+          figures agreed between the maker and an independent source when we checked them, explains
+          which specifications are worth paying for, and sets out the recalls and lock-in that shaped
+          the list.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.0k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#schwinn-ic4">Schwinn IC4</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Upright Alternative:</span> <a href="#horizon-5-0u-upright-bike">Horizon 5.0U Upright Bike</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Premium:</span> <a href="#keiser-m3i-indoor-bike">Keiser M3i Indoor Bike</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best No-Frills:</span> <a href="#schwinn-ic3">Schwinn IC3</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#yosuda-indoor-cycling-bike">YOSUDA Indoor Cycling Bike</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
           2026 as currently sold on its maker's own store (Schwinn, BowFlex) or, for the YOSUDA and
@@ -359,79 +380,27 @@ const schema = {
           and is not.</strong> We review equipment; this is not medical or physiotherapy advice. If you
           have a heart, joint, back or balance condition, or are returning from injury, ask a doctor
           or physiotherapist what kind of exercise suits you before you buy.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#schwinn-ic4" class="font-bold text-gray-900 no-underline hover:underline">Schwinn IC4</a>
-            <a href="#schwinn-ic4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Upright Alternative:</span>
-            <a href="#horizon-5-0u-upright-bike" class="font-bold text-gray-900 no-underline hover:underline">Horizon 5.0U Upright Bike</a>
-            <a href="#horizon-5-0u-upright-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Premium:</span>
-            <a href="#keiser-m3i-indoor-bike" class="font-bold text-gray-900 no-underline hover:underline">Keiser M3i Indoor Bike</a>
-            <a href="#keiser-m3i-indoor-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best No-Frills:</span>
-            <a href="#schwinn-ic3" class="font-bold text-gray-900 no-underline hover:underline">Schwinn IC3</a>
-            <a href="#schwinn-ic3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#yosuda-indoor-cycling-bike" class="font-bold text-gray-900 no-underline hover:underline">YOSUDA Indoor Cycling Bike</a>
-            <a href="#yosuda-indoor-cycling-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Exercise Bikes</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Bikes</a>
-          <a href="#types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Exercise Bike or Stationary Bike? The Types Explained</a>
-          <a href="#resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Magnetic vs Friction Resistance</a>
-          <a href="#flywheel" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Flywheel Weight: The Most Misleading Number</a>
-          <a href="#fit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Fit: Rider Height, Inseam and Q-Factor</a>
-          <a href="#apps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Apps: Open Bluetooth vs Lock-In</a>
-          <a href="#noise-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Noise, Floors and Space</a>
-          <a href="#setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Setting Up and Looking After Your Bike</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Exercise Bikes</a></li>
+            <li><a href="#how-we-chose">How We Chose These Bikes</a></li>
+            <li><a href="#types">Exercise Bike or Stationary Bike? The Types Explained</a></li>
+            <li><a href="#resistance">Magnetic vs Friction Resistance</a></li>
+            <li><a href="#flywheel">Flywheel Weight: The Most Misleading Number</a></li>
+            <li><a href="#fit">Fit: Rider Height, Inseam and Q-Factor</a></li>
+            <li><a href="#apps">Apps: Open Bluetooth vs Lock-In</a></li>
+            <li><a href="#noise-space">Noise, Floors and Space</a></li>
+            <li><a href="#setup">Setting Up and Looking After Your Bike</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          An exercise bike is the easiest cardio machine to live with: quiet, compact, no impact, and
-          simple enough that it rarely breaks. It is also a category where listings lean hard on
-          numbers that sound decisive and are not — the weight of the flywheel, the count of
-          resistance levels, the list of apps it "works with". This page names five bikes whose basic
-          figures agreed between the maker and an independent source when we checked them, explains
-          which specifications are worth paying for, and sets out the recalls and lock-in that shaped
-          the list.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             <strong>The best exercise bike for most homes is the Schwinn IC4</strong>: quiet magnetic
             resistance, a 330 lb rating, and Bluetooth that works with apps you choose rather than one
@@ -458,18 +427,13 @@ const schema = {
           <p>
             All five are upright indoor cycling bikes — the kind you ride in a spin class — because
             that is what most people mean by "best exercise bike". If you want a seat with a backrest
-            and a frame you can step through, read our separate guide to the
-            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a>.
-            If you are still deciding between a bike and another machine entirely, our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            guide picks one of each type, and
-            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
-            covers calories, knees and bone loading head to head.
+            and a frame you can step through, read our separate guide to the <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a>.
+            If you are still deciding between a bike and another machine entirely, our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> guide picks one of each type, and <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a> covers calories, knees and bone loading head to head.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Exercise Bikes</h2>
+          <h2>The 5 Best Exercise Bikes</h2>
 <p>
             Each card gives only the figures that the maker and an independent source agreed on, the
             price range we saw, and who the bike suits. The Schwinn IC4 is the same bike as the one we
@@ -483,78 +447,67 @@ const schema = {
             after the cards explains it.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Bikes</h2>
+          <h2>How We Chose These Bikes</h2>
 <p>
             We have not ridden or measured these bikes. They were chosen from published
             specifications, maker and retailer listings, warranty terms and independent hands-on
@@ -623,7 +576,7 @@ const schema = {
         </div>
 
         <div id="types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Exercise Bike or Stationary Bike? The Types Explained</h2>
+          <h2>Exercise Bike or Stationary Bike? The Types Explained</h2>
 <p>
             "Exercise bike" and "stationary bike" mean the same thing, and both cover several quite
             different machines. Knowing which kind you want narrows the choice faster than any spec
@@ -638,16 +591,12 @@ const schema = {
           </ul>
           <p>
             If you are unsure whether you want a bike at all, the honest tie-breaker is which machine
-            you will actually use on a tired weekday evening. Our
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            walks through that decision, and if an elliptical appeals, our
-            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best ellipticals</a>
-            roundup is the companion to this page.
+            you will actually use on a tired weekday evening. Our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> walks through that decision, and if an elliptical appeals, our <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best ellipticals</a> roundup is the companion to this page.
           </p>
         </div>
 
         <div id="resistance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Magnetic vs Friction Resistance</h2>
+          <h2>Magnetic vs Friction Resistance</h2>
 <p>
             Resistance is what makes pedaling hard, and it is the biggest difference between a
             $300 bike and a $900 one. There are two common systems on indoor cycling bikes.
@@ -694,7 +643,7 @@ const schema = {
         </div>
 
         <div id="flywheel" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Flywheel Weight: The Most Misleading Number</h2>
+          <h2>Flywheel Weight: The Most Misleading Number</h2>
 <p>
             Budget bike listings often lead with the flywheel: 35 lb, 40 lb, 49 lb. The implication is
             that heavier is better. It is more complicated than that, and the most expensive bike on this
@@ -736,7 +685,7 @@ const schema = {
         </div>
 
         <div id="fit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Fit: Rider Height, Inseam and Q-Factor</h2>
+          <h2>Fit: Rider Height, Inseam and Q-Factor</h2>
 <p>
             A bike that does not fit is uncomfortable, and an uncomfortable bike does not get ridden. Fit
             is also where listings are least consistent, so it is worth checking three things.
@@ -764,9 +713,7 @@ const schema = {
             Look for a saddle that moves up, down, forward and back, and handlebars that move at least
             up and down. The IC3 and IC4 adjust both in four directions. Fore-aft saddle travel is the one
             budget bikes skimp on, and it decides whether your knee sits over the pedal at the front of
-            the stroke. Our
-            <a href="/treadmill-vs-exercise-bike/#knees" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
-            page explains why a saddle set too low is the usual cause of sore knees on a bike.
+            the stroke. Our <a href="/treadmill-vs-exercise-bike/#knees" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a> page explains why a saddle set too low is the usual cause of sore knees on a bike.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Q-factor: the width between your feet</h3>
           <p>
@@ -793,7 +740,7 @@ const schema = {
         </div>
 
         <div id="apps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Apps: Open Bluetooth vs Lock-In</h2>
+          <h2>Apps: Open Bluetooth vs Lock-In</h2>
 <p>
             Most bikes now talk to an app, and the business model behind that app can matter more over
             five years than the bike itself. There are three broad approaches.
@@ -818,9 +765,7 @@ const schema = {
             subscription. You get a large built-in screen and classes that can adjust the bike for you,
             but the content — and on some bikes, basic function — depends on keeping the membership.
             OutdoorGearLab reports that Echelon bikes now work only when connected to Echelon's servers.
-            Our
-            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
-            explains the two biggest ecosystems in more depth.
+            Our <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a> explains the two biggest ecosystems in more depth.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Zwift and the Peloton app on a non-Peloton bike</h3>
           <p>
@@ -831,9 +776,7 @@ const schema = {
             change it for you the way they can on a <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium" data-autolink>smart trainer</a>.
             OutdoorGearLab says the IC4 works with Peloton and Zwift, "though not perfectly". If accurate
             power is important to you — for structured training or racing — that is a job for a smart
-            trainer or power-meter pedals, not a home spin bike. Our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            covers the running side of the same app.
+            trainer or power-meter pedals, not a home spin bike. Our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> covers the running side of the same app.
           </p>
           <p>
             <strong>The Peloton app</strong> runs Peloton's classes on any bike, and OutdoorGearLab notes
@@ -845,14 +788,13 @@ const schema = {
           </p>
           <p>
             Whichever app you use, a chest-strap heart-rate monitor gives a better measure of effort than
-            a bike's console; see our guide to
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps vs wrist heart rate</a>.
+            a bike's console; see our guide to <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps vs wrist heart rate</a>.
             The IC4 and C6 include a Bluetooth armband monitor.
           </p>
         </div>
 
         <div id="noise-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Noise, Floors and Space</h2>
+          <h2>Noise, Floors and Space</h2>
 <p>
             An exercise bike is the quietest cardio machine you can buy, which is why it is the usual
             recommendation for apartments and upstairs rooms. A few things still make a difference.
@@ -863,9 +805,7 @@ const schema = {
             Chain-driven bikes, now uncommon at home, are the loudest. None of the five here uses a
             chain. Unlike a treadmill, there is no footfall, so very little reaches the room below — but
             a bike rocking on a springy floor during standing climbs can transmit a rhythmic thump. A
-            dense rubber mat helps with that and protects the floor from sweat; our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a>
-            explains which kinds work.
+            dense rubber mat helps with that and protects the floor from sweat; our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a> explains which kinds work.
           </p>
           <p>
             <strong>Footprint.</strong> The IC4 and C6 take about 54.6 by 30.7 inches of floor, the width
@@ -881,14 +821,12 @@ const schema = {
           <p>
             <strong>Moving it.</strong> Every bike here has front transport wheels, but you tip and roll
             a bike of roughly 70 to 115 lb rather than carry it. On stairs, it is a two-person job. If the bike
-            will live in a garage, our guide to
-            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">machines for the garage</a>
-            covers damp and temperature, which affect bikes' bearings and consoles too.
+            will live in a garage, our guide to <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">machines for the garage</a> covers damp and temperature, which affect bikes' bearings and consoles too.
           </p>
         </div>
 
         <div id="setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Setting Up and Looking After Your Bike</h2>
+          <h2>Setting Up and Looking After Your Bike</h2>
 <p>
             Most complaints about exercise bikes — sore knees, numb hands, an aching lower back — come
             from set-up, not the bike. Ten minutes on the first day is worth it.
@@ -910,147 +848,164 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best exercise bike for home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most homes, the Schwinn IC4: quiet magnetic resistance, a 330 lb rating, a 10-year frame warranty, and Bluetooth that works with Zwift, Peloton, JRNY and other apps without tying you to one. The BowFlex C6 is the same bike. On a tight budget, the YOSUDA friction bike covers the basics for about $300.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best stationary bike to buy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                "Stationary bike" and "exercise bike" mean the same thing. Decide first between an indoor cycling bike, an upright bike and a recumbent with a backrest, then choose magnetic resistance if you can afford it. Our pick is the Schwinn IC4; for back or balance concerns, a recumbent bike is the better type.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is magnetic or friction resistance better on an exercise bike?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Magnetic is better for most people. Nothing touches the flywheel, so it is quieter, consistent and needs no maintenance. Friction bikes use a pad pressing on the flywheel; they are cheaper and adjust continuously, but the pad wears and needs replacing and the ride can get noisier with age.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a heavier flywheel make a better exercise bike?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not on its own. Smoothness comes from the flywheel's inertia, which depends on its mass, where that mass sits and how fast the gearing spins it. Heavy front flywheels are a simple way to make cheap friction bikes smooth, but premium bikes such as the Keiser M3i use lighter, faster-spinning rear flywheels and ride very smoothly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Peloton bike recalled?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Two Peloton models have been recalled for seat posts that can break. The original Peloton Bike, model PL01, was recalled in May 2023, and the Original Series Bike+, model PL02 with serial numbers starting with T, in November 2025. Owners get a free replacement seat post. Peloton's current Cross Training Bike and Bike+ are not part of either recall.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use Zwift or the Peloton app with a Schwinn IC4?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Schwinn lists Zwift, Peloton, JRNY, Kinomap and Explore the World. Each needs its own subscription. The bike estimates power rather than measuring it, and the Peloton app cannot read or set the IC4's resistance, so riders follow the instructor's cues using the bike's own console. It works well for classes, less well for precise training numbers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What size exercise bike do I need for my height?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check the inseam range rather than height alone. Ranges vary widely: the YOSUDA listing gives 25 to 35 inches, Sunny's SF-B1002 31 to 42 inches, and the Keiser M3i fits riders from 4 ft 10 in. to 7 ft. Some makers publish conflicting figures, so if you are very short or tall, confirm with the seller before ordering.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an Exercise Bike</h2>
+          <p>Each of these is easy to avoid before you order and annoying to discover afterwards.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying on flywheel weight</h3>
+              <p>A 49 lb flywheel sounds better than a 35 lb one, but flywheel weight alone does not decide how smooth a bike feels, and premium bikes often use lighter wheels. Compare resistance type, adjustability and weight rating first, and use the flywheel figure only to separate two otherwise similar friction bikes.</p>
+            </li>
+            <li>
+              <h3>Ignoring the inseam range</h3>
+              <p>A bike that does not fit is a bike that does not get ridden. Measure your inseam in socks, check it against the bike's published range, and be wary when the maker gives two different ranges, as Schwinn's IC4 page does. If two people of very different heights will share the bike, check that both fit.</p>
+            </li>
+            <li>
+              <h3>Buying a used Peloton without checking the seat post</h3>
+              <p>Millions of recalled Peloton bikes were sold, and many are resold. Before buying a used PL01 Bike or PL02 Bike+, check the model and serial number on the front fork and ask whether the free replacement seat post has been fitted. If the seller cannot say, contact Peloton before anyone rides it.</p>
+            </li>
+            <li>
+              <h3>Choosing a bike that needs a subscription to work</h3>
+              <p>Some connected bikes depend on the maker's membership for their content, and OutdoorGearLab reports that Echelon bikes now need to connect to Echelon's servers to work at all. Before buying, find out what the bike does with no membership, and add the monthly fee over three to five years to the price.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Exercise Bike</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and annoying to discover afterwards.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying on flywheel weight</h3>
-              <p class="text-gray-700 text-sm m-0">A 49 lb flywheel sounds better than a 35 lb one, but flywheel weight alone does not decide how smooth a bike feels, and premium bikes often use lighter wheels. Compare resistance type, adjustability and weight rating first, and use the flywheel figure only to separate two otherwise similar friction bikes.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the inseam range</h3>
-              <p class="text-gray-700 text-sm m-0">A bike that does not fit is a bike that does not get ridden. Measure your inseam in socks, check it against the bike's published range, and be wary when the maker gives two different ranges, as Schwinn's IC4 page does. If two people of very different heights will share the bike, check that both fit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used Peloton without checking the seat post</h3>
-              <p class="text-gray-700 text-sm m-0">Millions of recalled Peloton bikes were sold, and many are resold. Before buying a used PL01 Bike or PL02 Bike+, check the model and serial number on the front fork and ask whether the free replacement seat post has been fitted. If the seller cannot say, contact Peloton before anyone rides it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing a bike that needs a subscription to work</h3>
-              <p class="text-gray-700 text-sm m-0">Some connected bikes depend on the maker's membership for their content, and OutdoorGearLab reports that Echelon bikes now need to connect to Echelon's servers to work at all. Before buying, find out what the bike does with no membership, and add the monthly fee over three to five years to the price.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-recumbent-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Recumbent Bikes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Step-through frames, backrests and seat adjustment for riders who want support.</p>
-            </a>
-            <a href="/treadmill-vs-exercise-bike/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs Exercise Bike</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Calories, knees, bone loading, space and noise, compared honestly.</p>
-            </a>
-            <a href="/best-cardio-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">One pick per machine type, from treadmill and rower to air bike and stepper.</p>
-            </a>
-            <a href="/best-folding-exercise-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Folding</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Exercise Bikes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, buy the Schwinn IC4</strong>, or the identical
             BowFlex C6 if it is cheaper on the day: quiet magnetic resistance, a 330 lb rating and apps
             of your choosing. On a tight budget, the YOSUDA friction bike does the basics for about
             $300 if you are under six feet; if you want a bike that fits everyone in the house and will
             last for decades, the Keiser M3i is worth its price.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Before you order, measure your inseam, decide whether you need an app at all, and check any
-            used bike against the recall list. If you would rather sit back than lean forward, our
-            <a href="/best-recumbent-bikes/" class="text-[#5AA9FF] font-bold no-underline">best recumbent bikes</a>
-            guide covers the more supportive alternative.
+            used bike against the recall list. If you would rather sit back than lean forward, our <a href="/best-recumbent-bikes/" class="text-[#5AA9FF] font-bold no-underline">best recumbent bikes</a> guide covers the more supportive alternative.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-recumbent-bikes/">Best Recumbent Bikes</a></li>
+            <li><a href="/treadmill-vs-exercise-bike/">Treadmill vs Exercise Bike</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best exercise bike for home?</h3></summary>
+            <p class="faq-a">
+              For most homes, the Schwinn IC4: quiet magnetic resistance, a 330 lb rating, a 10-year frame warranty, and Bluetooth that works with Zwift, Peloton, JRNY and other apps without tying you to one. The BowFlex C6 is the same bike. On a tight budget, the YOSUDA friction bike covers the basics for about $300.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best stationary bike to buy?</h3></summary>
+            <p class="faq-a">
+              "Stationary bike" and "exercise bike" mean the same thing. Decide first between an indoor cycling bike, an upright bike and a recumbent with a backrest, then choose magnetic resistance if you can afford it. Our pick is the Schwinn IC4; for back or balance concerns, a recumbent bike is the better type.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is magnetic or friction resistance better on an exercise bike?</h3></summary>
+            <p class="faq-a">
+              Magnetic is better for most people. Nothing touches the flywheel, so it is quieter, consistent and needs no maintenance. Friction bikes use a pad pressing on the flywheel; they are cheaper and adjust continuously, but the pad wears and needs replacing and the ride can get noisier with age.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a heavier flywheel make a better exercise bike?</h3></summary>
+            <p class="faq-a">
+              Not on its own. Smoothness comes from the flywheel's inertia, which depends on its mass, where that mass sits and how fast the gearing spins it. Heavy front flywheels are a simple way to make cheap friction bikes smooth, but premium bikes such as the Keiser M3i use lighter, faster-spinning rear flywheels and ride very smoothly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Peloton bike recalled?</h3></summary>
+            <p class="faq-a">
+              Two Peloton models have been recalled for seat posts that can break. The original Peloton Bike, model PL01, was recalled in May 2023, and the Original Series Bike+, model PL02 with serial numbers starting with T, in November 2025. Owners get a free replacement seat post. Peloton's current Cross Training Bike and Bike+ are not part of either recall.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use Zwift or the Peloton app with a Schwinn IC4?</h3></summary>
+            <p class="faq-a">
+              Yes. Schwinn lists Zwift, Peloton, JRNY, Kinomap and Explore the World. Each needs its own subscription. The bike estimates power rather than measuring it, and the Peloton app cannot read or set the IC4's resistance, so riders follow the instructor's cues using the bike's own console. It works well for classes, less well for precise training numbers.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What size exercise bike do I need for my height?</h3></summary>
+            <p class="faq-a">
+              Check the inseam range rather than height alone. Ranges vary widely: the YOSUDA listing gives 25 to 35 inches, Sunny's SF-B1002 31 to 42 inches, and the Keiser M3i fits riders from 4 ft 10 in. to 7 ft. Some makers publish conflicting figures, so if you are very short or tall, confirm with the seller before ordering.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-recumbent-bikes/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Recumbent Bikes</div>
+            <p class="c-blurb">Step-through frames, backrests and seat adjustment for riders who want support.</p>
+          </a>
+          <a href="/treadmill-vs-exercise-bike/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Treadmill vs Exercise Bike</div>
+            <p class="c-blurb">Calories, knees, bone loading, space and noise, compared honestly.</p>
+          </a>
+          <a href="/best-cardio-machines-for-home/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Best Cardio Machines for Home</div>
+            <p class="c-blurb">One pick per machine type, from treadmill and rower to air bike and stepper.</p>
+          </a>
+          <a href="/best-folding-exercise-bikes/" class="card">
+            <div class="c-kicker">Folding</div>
+            <div class="c-title">Best Folding Exercise Bikes</div>
+            <p class="c-blurb">Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Shuts Off by Itself? (2026): Diagnose It by When It Stops";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-shuts-off-by-itself/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,109 +109,71 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Sort It by Timing", link: "#when-it-stops" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillshutsoffbyitself" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillshutsoffbyitself)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Shuts Off by Itself?</h1>
+      <p class="ed-dek">
+        When a treadmill stops on its own matters more than the fact that it stops. Immediately, after twenty minutes, only with you on it, only at the top of the speed range — each points somewhere different, and most of the answers are cheap.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Shuts Off <span class="text-[#5AA9FF]">by Itself?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          When a treadmill stops on its own matters more than the fact that it stops. Immediately, after twenty minutes, only with you on it, only at the top of the speed range — each points somewhere different, and most of the answers are cheap.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#when-it-stops" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Sort It by Timing
-          </a>
-          <a href="#controller-board" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Is It the Board?
-          </a>
-        </div>
+        <a href="#when-it-stops" class="btn-ghost">Sort It by Timing</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before removing the motor hood, touching the belt or reaching under the deck. The
-          safety key is not an isolator, and controller boards can hold a charge after
-          disconnection. If you smell burning, see sparking, notice smoke, or the belt moves when
-          the machine is off, stop using it and get it looked at — those are not things to
-          troubleshoot.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#when-it-stops" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Start With When It Stops</a>
-          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Safety Key and Its Clip</a>
-          <a href="#power-supply" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Outlet, the Circuit and the Extension Cord</a>
-          <a href="#auto-stop-features" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Features That Stop the Belt on Purpose</a>
-          <a href="#under-load" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Stops Under Load: Friction and Overload Protection</a>
-          <a href="#lubrication-tension" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Lubrication and Belt Tension</a>
-          <a href="#after-minutes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Stops After a Set Number of Minutes: Heat</a>
-          <a href="#high-speed-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Stops Only at High Speed or Steep Incline</a>
-          <a href="#console-wiring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Loose Console Wiring at the Upright</a>
-          <a href="#motor-brushes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Worn Motor Brushes</a>
-          <a href="#controller-board" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When It Is the Controller Board</a>
-          <a href="#before-you-call" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. What to Write Down Before You Call Support</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill that cuts out mid-session is the most misdiagnosed fault in home fitness
           equipment, mainly because it works perfectly the moment you go to look at it. The way
           through is to stop asking what is broken and start asking when it stops — because the
           timing narrows a dozen candidates down to two or three.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
+          wall before removing the motor hood, touching the belt or reaching under the deck. The
+          safety key is not an isolator, and controller boards can hold a charge after
+          disconnection. If you smell burning, see sparking, notice smoke, or the belt moves when
+          the machine is off, stop using it and get it looked at — those are not things to
+          troubleshoot.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#when-it-stops">Start With When It Stops</a></li>
+            <li><a href="#safety-key">The Safety Key and Its Clip</a></li>
+            <li><a href="#power-supply">The Outlet, the Circuit and the Extension Cord</a></li>
+            <li><a href="#auto-stop-features">Features That Stop the Belt on Purpose</a></li>
+            <li><a href="#under-load">Stops Under Load: Friction and Overload Protection</a></li>
+            <li><a href="#lubrication-tension">Lubrication and Belt Tension</a></li>
+            <li><a href="#after-minutes">Stops After a Set Number of Minutes: Heat</a></li>
+            <li><a href="#high-speed-incline">Stops Only at High Speed or Steep Incline</a></li>
+            <li><a href="#console-wiring">Loose Console Wiring at the Upright</a></li>
+            <li><a href="#motor-brushes">Worn Motor Brushes</a></li>
+            <li><a href="#controller-board">When It Is the Controller Board</a></li>
+            <li><a href="#before-you-call">What to Write Down Before You Call Support</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="when-it-stops" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Start With When It Stops</h2>
+          <h2>Start With When It Stops</h2>
 <p>
             Before you touch anything, run the machine through a normal session and pay attention
             to two things: what the console does when the belt stops, and how long into the
@@ -247,7 +214,7 @@ const schema = {
         </div>
 
         <div id="safety-key" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Safety Key and Its Clip</h2>
+          <h2>The Safety Key and Its Clip</h2>
 <p>
             The safety key is the cheapest explanation for a treadmill that stops by itself, and
             it is the one people rule out too quickly because the key is visibly in place.
@@ -284,7 +251,7 @@ const schema = {
         </div>
 
         <div id="power-supply" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Outlet, the Circuit and the Extension Cord</h2>
+          <h2>The Outlet, the Circuit and the Extension Cord</h2>
 <p>
             Power problems account for a large share of treadmills that cut out, and they are
             frequently blamed on the machine. The tell is a shutdown where the console goes dark
@@ -304,9 +271,7 @@ const schema = {
             directly into a grounded wall outlet, which is what most owner's manuals tell you to do
             anyway. If that outlet shares a circuit with a space heater, a dehumidifier, a freezer
             or a window air conditioner — common company in basements and garages — try a
-            different circuit, or run the treadmill when the other appliance is off. Our guide to
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity use</a>
-            covers the circuit side in more detail.
+            different circuit, or run the treadmill when the other appliance is off. Our guide to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity use</a> covers the circuit side in more detail.
           </p>
           <p>
             Check the outlet itself, too. An outlet that grips a plug loosely, feels warm after a
@@ -318,13 +283,12 @@ const schema = {
           </p>
           <p>
             If the household breaker or a GFCI outlet is actually tripping — rather than the
-            machine simply stopping — that is a separate problem with its own causes, covered in
-            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill tripping the breaker</a>.
+            machine simply stopping — that is a separate problem with its own causes, covered in <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill tripping the breaker</a>.
           </p>
         </div>
 
         <div id="auto-stop-features" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Features That Stop the Belt on Purpose</h2>
+          <h2>Features That Stop the Belt on Purpose</h2>
 <p>
             Before suspecting a fault, rule out the machine doing exactly what it was programmed
             to do. Modern consoles carry several features that stop the belt deliberately, and
@@ -344,8 +308,7 @@ const schema = {
           </p>
           <p>
             <strong>Heart-rate programs.</strong> On machines with heart-rate-controlled workouts,
-            the console adjusts speed or incline to keep you near a target. If the chest strap or
-            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> lose your signal, or the reading crosses the program's ceiling, some
+            the console adjusts speed or incline to keep you near a target. If the chest strap or <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> lose your signal, or the reading crosses the program's ceiling, some
             machines slow or stop the belt rather than carry on blind. A strap that needs moistening
             or a fresh battery can look a great deal like a motor fault.
           </p>
@@ -368,7 +331,7 @@ const schema = {
         </div>
 
         <div id="under-load" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Stops Under Load: Friction and Overload Protection</h2>
+          <h2>Stops Under Load: Friction and Overload Protection</h2>
 <p>
             If the machine runs happily empty but stops when you are on it — or stops more often
             the faster you walk — the controller is almost certainly protecting itself from an
@@ -388,9 +351,7 @@ const schema = {
             The sign that friction is the problem is a belt that hesitates or slows as each foot
             lands, a dull rubbing noise, and a deck that feels dry when you reach under the edge of
             the belt. If you see the speed sag noticeably with each stride before the machine
-            stops, our guide to a
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows down when you step on it</a>
-            covers that symptom specifically.
+            stops, our guide to a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows down when you step on it</a> covers that symptom specifically.
           </p>
           <p>
             Weight matters too. Every treadmill carries a maximum user weight, and a user near or
@@ -402,7 +363,7 @@ const schema = {
         </div>
 
         <div id="lubrication-tension" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Lubrication and Belt Tension</h2>
+          <h2>Lubrication and Belt Tension</h2>
 <p>
             The two adjustments that change friction are lubrication and belt tension, and both
             are owner jobs on most machines — check your manual and warranty terms first.
@@ -414,17 +375,14 @@ const schema = {
             maintenance-free and must not be given silicone, so read the manual before buying
             anything. If your deck does take lubricant and you cannot remember when it last had
             any, that is your first suspect for a machine that stops under load. The full procedure
-            is in our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>.
+            is in our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>.
           </p>
           <p>
             <strong>Belt tension.</strong> An over-tightened belt clamps the rollers together,
             loads the bearings and raises the force the motor needs to turn everything over.
             People over-tighten belts to cure slipping, and the result can be a machine that no
             longer slips but now stops on overload. A belt that is too loose causes a different
-            problem — slipping and hesitation rather than shutdowns. Our guide to
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
-            covers the standard lift test.
+            problem — slipping and hesitation rather than shutdowns. Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a> covers the standard lift test.
           </p>
           <p>
             One warning about timing: a deck that has run dry for a long time can be worn past the
@@ -436,7 +394,7 @@ const schema = {
         </div>
 
         <div id="after-minutes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Stops After a Set Number of Minutes: Heat</h2>
+          <h2>Stops After a Set Number of Minutes: Heat</h2>
 <p>
             A machine that runs perfectly for the first fifteen or twenty minutes and then stops,
             reliably, at around the same point in each session is almost always protecting itself
@@ -456,12 +414,8 @@ const schema = {
           <p>
             The cheapest fix in this whole guide is often here. Unplug the machine, wait several
             minutes, remove the motor hood if your manual allows owners to, and vacuum the
-            compartment carefully without touching the board. Our guide to
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>
-            covers what to avoid. Then give the machine clearance from walls, and if it sits on
-            carpet, consider a firm equipment mat; our page on
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">using a treadmill on carpet</a>
-            explains why.
+            compartment carefully without touching the board. Our guide to <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a> covers what to avoid. Then give the machine clearance from walls, and if it sits on
+            carpet, consider a firm equipment mat; our page on <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">using a treadmill on carpet</a> explains why.
           </p>
           <p>
             Room temperature plays a part. A machine in a hot garage in summer starts every session
@@ -470,14 +424,12 @@ const schema = {
           </p>
           <p>
             Feel the motor hood after a session. Warm is normal. Too hot to keep your hand on is
-            not, and a hot-plastic or burning smell alongside it means stop — see our guide to a
-            <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">treadmill burning smell</a>
-            before running it again.
+            not, and a hot-plastic or burning smell alongside it means stop — see our guide to a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium">treadmill burning smell</a> before running it again.
           </p>
         </div>
 
         <div id="high-speed-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Stops Only at High Speed or Steep Incline</h2>
+          <h2>Stops Only at High Speed or Steep Incline</h2>
 <p>
             A machine that is fine at walking pace but cuts out when you push towards the top of
             the speed range or the steepest incline is running into a ceiling. Current draw peaks
@@ -500,14 +452,12 @@ const schema = {
             continue at the top of the range, the motor or the controller is struggling to deliver
             peak output. That is not unusual on budget machines used harder than their rating
             suggests, and it is often the first sign of a motor or board approaching the end of its
-            life. Our guide to
-            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
-            covers the realistic lifespans and what shortens them.
+            life. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> covers the realistic lifespans and what shortens them.
           </p>
         </div>
 
         <div id="console-wiring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Loose Console Wiring at the Upright</h2>
+          <h2>Loose Console Wiring at the Upright</h2>
 <p>
             If the stops are random and seem connected to movement of the console — grabbing the
             handrails hard, the machine being bumped, a fold and unfold before the session — the
@@ -537,7 +487,7 @@ const schema = {
         </div>
 
         <div id="motor-brushes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Worn Motor Brushes</h2>
+          <h2>Worn Motor Brushes</h2>
 <p>
             Most home treadmills use a DC motor with carbon brushes, which press against the
             rotating commutator to carry current into the motor. Brushes are designed to wear,
@@ -566,7 +516,7 @@ const schema = {
         </div>
 
         <div id="controller-board" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When It Is the Controller Board</h2>
+          <h2>When It Is the Controller Board</h2>
 <p>
             The motor controller board — the electronics under the motor hood that turn the
             console's instructions into motor power — is the most expensive common answer, and it
@@ -587,11 +537,7 @@ const schema = {
             is under warranty, call the manufacturer with your model, serial number, the error code
             and the timing pattern you wrote down. If it is not, get a quote. A fitted board on a
             mid-range home treadmill frequently costs a third to a half of a comparable new machine,
-            which is where the repair-or-replace arithmetic starts to bite; our
-            <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
-            and the
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting pillar</a>
-            cover that decision.
+            which is where the repair-or-replace arithmetic starts to bite; our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a> and the <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting pillar</a> cover that decision.
           </p>
           <p>
             Whatever you decide, fix the cause as well as the part. A new board on a machine with a
@@ -601,7 +547,7 @@ const schema = {
         </div>
 
         <div id="before-you-call" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. What to Write Down Before You Call Support</h2>
+          <h2>What to Write Down Before You Call Support</h2>
 <p>
             Intermittent faults are hard to diagnose over the phone, and a support agent or
             technician will get to the answer much faster with a clear record. Before calling,
@@ -623,140 +569,155 @@ const schema = {
             paying for a call-out to rediscover what you already knew.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill shut off by itself?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The most common causes are a safety key that is not seating firmly, a supply that sags under load because of an extension cord or shared circuit, and thermal or overload protection triggered by a dry deck or a dust-packed motor compartment. Built-in timers and heart-rate programs can also stop the belt deliberately. Diagnose by when it stops before assuming the controller board has failed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill stop after a few minutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A machine that stops after a fairly consistent number of minutes is usually protecting itself from heat. Friction from a dry deck makes the motor work harder, and dust in the motor compartment traps the heat. Lubricate the deck if your manual calls for it, vacuum the compartment with the machine unplugged, and give it clearance from walls and deep carpet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill stop when I step on it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If the machine runs empty but stops under your weight, the controller is usually cutting the motor because current draw is too high. A dry or worn deck, an over-tightened belt, or a user close to the weight limit are the usual causes. Lubricate, check belt tension, and plug directly into a wall outlet before suspecting the electronics.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill safety key cause it to stop randomly?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. The key is a magnet holding a switch closed, and a weak magnet or a key not fully seated can lose contact when the console flexes or the lanyard tugs. Clean the recess, clip the lanyard to a firm waistband with enough slack, and replace an old key. Never tape or bypass it, because it is the emergency stop.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can an extension cord make a treadmill shut off?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. A treadmill draws a large current at start-up and under load, and a long or thin extension cord drops the voltage enough for the controller to shut down protectively. Most manuals say to plug directly into a grounded wall outlet. Doing that, on a circuit not shared with another heavy appliance, resolves a surprising number of cut-outs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I know if my treadmill controller board is bad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                By elimination. If the supply, safety key, lubrication, belt tension, ventilation and console wiring are all ruled out and the machine still stops — often with a motor or controller error that becomes more frequent over time — the board is the likely cause. It is a technician diagnosis, and on a warrantied machine a call to the manufacturer.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Treadmill That Keeps Stopping</h2>
+          <p>Each of these either sends money toward the wrong part or removes a protection the machine needs.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Testing it with nothing else running</h3>
+              <p>A treadmill that cuts out because of a shared circuit or an extension cord will run perfectly when you test it on a quiet evening with the heater off. Reproduce the real conditions — the same outlet, the same cord, someone on the belt at the usual speed — or you will conclude the machine is fine and the fault will come straight back.</p>
+            </li>
+            <li>
+              <h3>Bypassing the safety key</h3>
+              <p>Taping a key in or placing a loose magnet over the switch stops the random cut-outs, and it also removes the emergency stop. A treadmill that cannot stop when someone falls is far more dangerous than one that stops occasionally for no reason. Clean the recess, fix the lanyard, and replace the key.</p>
+            </li>
+            <li>
+              <h3>Over-tightening the belt to cure hesitation</h3>
+              <p>A belt that hesitates under load is often a dry deck, not a loose belt. Cranking the tension bolts makes the hesitation feel better for a while and raises the load on the motor and rear roller bearings, which can turn a hesitation into an overload shutdown. Lubricate first, then set tension to the manual figure.</p>
+            </li>
+            <li>
+              <h3>Replacing the board without fixing the cause</h3>
+              <p>Controller boards usually die of cumulative heat and current, and the commonest source of both is a dry deck under a dusty motor hood. Fitting a new board without lubricating the deck and cleaning the compartment buys a new board the same life as the old one, at a third to a half of the price of a new machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Treadmill That Keeps Stopping</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these either sends money toward the wrong part or removes a protection the machine needs.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Testing it with nothing else running</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill that cuts out because of a shared circuit or an extension cord will run perfectly when you test it on a quiet evening with the heater off. Reproduce the real conditions — the same outlet, the same cord, someone on the belt at the usual speed — or you will conclude the machine is fine and the fault will come straight back.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Bypassing the safety key</h3>
-              <p class="text-gray-700 text-sm m-0">Taping a key in or placing a loose magnet over the switch stops the random cut-outs, and it also removes the emergency stop. A treadmill that cannot stop when someone falls is far more dangerous than one that stops occasionally for no reason. Clean the recess, fix the lanyard, and replace the key.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-tightening the belt to cure hesitation</h3>
-              <p class="text-gray-700 text-sm m-0">A belt that hesitates under load is often a dry deck, not a loose belt. Cranking the tension bolts makes the hesitation feel better for a while and raises the load on the motor and rear roller bearings, which can turn a hesitation into an overload shutdown. Lubricate first, then set tension to the manual figure.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing the board without fixing the cause</h3>
-              <p class="text-gray-700 text-sm m-0">Controller boards usually die of cumulative heat and current, and the commonest source of both is a dry deck under a dusty motor hood. Fitting a new board without lubricating the deck and cleaning the compartment buys a new board the same life as the old one, at a third to a half of the price of a new machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Fault Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-trips-breaker/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Electrical</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Tripping the Breaker</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Start-up surges, shared circuits, GFCI trips and when it is a real fault.</p>
-            </a>
-            <a href="/treadmill-burning-smell/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Stop Symptom</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Burning Smell</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rubber, hot plastic or dust — which smells mean stop now.</p>
-            </a>
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Belt Slows When You Step On It</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Friction, tension and motor causes of a belt that hesitates under load.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Diagnose by timing.</strong> Stops within seconds point at the
             key or the supply; after a set number of minutes, heat; only with you on it, friction;
             only at the top of the range, peak demand. Plug directly into a wall outlet, check the
             key, lubricate the deck and clean the motor compartment before suspecting electronics.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             The <strong class="text-white">controller board</strong> is the last candidate, reached by
             elimination. If you get there, fix the friction and heat that killed it as well, and
-            work the repair-or-replace numbers in our
-            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>.
+            work the repair-or-replace numbers in our <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-trips-breaker/">Treadmill Tripping the Breaker</a></li>
+            <li><a href="/treadmill-burning-smell/">Treadmill Burning Smell</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Why does my treadmill shut off by itself?</h3></summary>
+            <p class="faq-a">
+              The most common causes are a safety key that is not seating firmly, a supply that sags under load because of an extension cord or shared circuit, and thermal or overload protection triggered by a dry deck or a dust-packed motor compartment. Built-in timers and heart-rate programs can also stop the belt deliberately. Diagnose by when it stops before assuming the controller board has failed.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill stop after a few minutes?</h3></summary>
+            <p class="faq-a">
+              A machine that stops after a fairly consistent number of minutes is usually protecting itself from heat. Friction from a dry deck makes the motor work harder, and dust in the motor compartment traps the heat. Lubricate the deck if your manual calls for it, vacuum the compartment with the machine unplugged, and give it clearance from walls and deep carpet.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why does my treadmill stop when I step on it?</h3></summary>
+            <p class="faq-a">
+              If the machine runs empty but stops under your weight, the controller is usually cutting the motor because current draw is too high. A dry or worn deck, an over-tightened belt, or a user close to the weight limit are the usual causes. Lubricate, check belt tension, and plug directly into a wall outlet before suspecting the electronics.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill safety key cause it to stop randomly?</h3></summary>
+            <p class="faq-a">
+              Yes. The key is a magnet holding a switch closed, and a weak magnet or a key not fully seated can lose contact when the console flexes or the lanyard tugs. Clean the recess, clip the lanyard to a firm waistband with enough slack, and replace an old key. Never tape or bypass it, because it is the emergency stop.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can an extension cord make a treadmill shut off?</h3></summary>
+            <p class="faq-a">
+              Yes. A treadmill draws a large current at start-up and under load, and a long or thin extension cord drops the voltage enough for the controller to shut down protectively. Most manuals say to plug directly into a grounded wall outlet. Doing that, on a circuit not shared with another heavy appliance, resolves a surprising number of cut-outs.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I know if my treadmill controller board is bad?</h3></summary>
+            <p class="faq-a">
+              By elimination. If the supply, safety key, lubrication, belt tension, ventilation and console wiring are all ruled out and the machine still stops — often with a motor or controller error that becomes more frequent over time — the board is the likely cause. It is a technician diagnosis, and on a warrantied machine a call to the manufacturer.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Fault Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-trips-breaker/" class="card">
+            <div class="c-kicker">Electrical</div>
+            <div class="c-title">Treadmill Tripping the Breaker</div>
+            <p class="c-blurb">Start-up surges, shared circuits, GFCI trips and when it is a real fault.</p>
+          </a>
+          <a href="/treadmill-burning-smell/" class="card">
+            <div class="c-kicker">Stop Symptom</div>
+            <div class="c-title">Treadmill Burning Smell</div>
+            <p class="c-blurb">Rubber, hot plastic or dust — which smells mean stop now.</p>
+          </a>
+          <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Belt Slows When You Step On It</div>
+            <p class="c-blurb">Friction, tension and motor causes of a belt that hesitates under load.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

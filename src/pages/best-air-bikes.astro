@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Air Bikes (2026): 7 Fan Bikes and Assault Bikes Checked";
 const description =
@@ -304,6 +303,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-air-bikes/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -326,66 +331,91 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Air Bike Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Schwinn AirDyne AD7", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestairbikes" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestairbikes)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Air Bikes and Assault Bikes for Home</h1>
+      <p class="ed-dek">
+        An air bike is the hardest workout you can fit in a corner: a fan for resistance, handles for your arms and no plug. Here are seven air bikes sold on Amazon, with what we could and could not confirm about each, from the $400 Marcy AIR-1 to the Schwinn AirDyne AD7, and what belt drive, fan size, noise and footprint actually mean before you buy one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Air Bikes <span class="text-[#5AA9FF]">and Assault Bikes for Home</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An air bike is the hardest workout you can fit in a corner: a fan for resistance, handles for your arms and no plug. Here are seven air bikes sold on Amazon, with what we could and could not confirm about each, from the $400 Marcy AIR-1 to the Schwinn AirDyne AD7, and what belt drive, fan size, noise and footprint actually mean before you buy one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#belt-vs-chain" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Belt vs Chain Drive
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#schwinn-airdyne-ad7"><img src="https://m.media-amazon.com/images/I/41VL42J3pbL._SL500_.jpg" alt="Schwinn AirDyne AD7" width="500" height="500" decoding="async" /></a>
+          <a href="#xmark-cat-5-hurricane"><img src="https://m.media-amazon.com/images/I/51n3yHhhNkL._SL500_.jpg" alt="XMark CAT 5 Hurricane Commercial Air Bike" width="500" height="500" decoding="async" /></a>
+          <a href="#sunny-smart-heavy-duty-fan-bike"><img src="https://m.media-amazon.com/images/I/41JlzojWXEL._SL500_.jpg" alt="Sunny Health &amp; Fitness Smart Heavy-Duty Fan Bike" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Schwinn AirDyne AD7 · XMark CAT 5 Hurricane Commercial Air Bike · Sunny Health &amp; Fitness Smart Heavy-Duty Fan Bike</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Air bikes look simple, and they are: a big fan at the front, pedals linked to moving
+          handles, and resistance that rises the harder you push. That simplicity is why they last for
+          years in gyms and why they are such an efficient way to do hard intervals at home. It is
+          also why the differences between them are easy to miss. This page names seven air bikes that
+          are on sale on Amazon now, says which basic figures agreed between the maker and an
+          independent source and which rest on the maker or the listing alone, explains the few specifications that really separate one from
+          another — drive type, fan, frame, console and size — and is honest about the one thing no
+          air bike can avoid, which is noise.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#schwinn-airdyne-ad7">Schwinn AirDyne AD7</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Built for Hard Use:</span> <a href="#xmark-cat-5-hurricane">XMark CAT 5 Hurricane Commercial Air Bike</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Belt Drive Value:</span> <a href="#sunny-smart-heavy-duty-fan-bike">Sunny Health & Fitness Smart Heavy-Duty Fan Bike</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#yosuda-air-bike">YOSUDA Air-Resistance Exercise Bike with Dual-Drive System</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value:</span> <a href="#titan-fitness-fan-bike">Titan Fitness Fan Bike</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Simplest Console:</span> <a href="#marcy-air-1">Marcy AIR-1 Fan Bike</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Without Arms:</span> <a href="#concept2-bikeerg">Concept2 BikeErg</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
           2026 as currently sold on its maker's own store (Schwinn Fitness, Assault Fitness, Rogue
@@ -404,85 +434,31 @@ const schema = {
           and Marcy's AIR-1, checked against Sunny's and Marcy's stores, retailers and their Amazon listings;
           their cards say where a figure is the maker's or the listing's alone. Prices are those we saw on 19 October 2026
           and change often. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
+          does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
           this is not medical or coaching advice. Air bikes are built for very hard efforts. If you
           have a heart, blood pressure, joint or balance condition, are pregnant, or are new to
           vigorous exercise, ask a doctor what intensity suits you before you buy one.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#schwinn-airdyne-ad7" class="font-bold text-gray-900 no-underline hover:underline">Schwinn AirDyne AD7</a>
-            <a href="#schwinn-airdyne-ad7" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Built for Hard Use:</span>
-            <a href="#xmark-cat-5-hurricane" class="font-bold text-gray-900 no-underline hover:underline">XMark CAT 5 Hurricane Commercial Air Bike</a>
-            <a href="#xmark-cat-5-hurricane" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Belt Drive Value:</span>
-            <a href="#sunny-smart-heavy-duty-fan-bike" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Smart Heavy-Duty Fan Bike</a>
-            <a href="#sunny-smart-heavy-duty-fan-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#yosuda-air-bike" class="font-bold text-gray-900 no-underline hover:underline">YOSUDA Air-Resistance Exercise Bike with Dual-Drive System</a>
-            <a href="#yosuda-air-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
-            <a href="#titan-fitness-fan-bike" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Fan Bike</a>
-            <a href="#titan-fitness-fan-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 7 Best Air Bikes</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Air Bikes</a>
-          <a href="#how-air-bikes-work" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How an Air Bike Works, and Why It Feels So Hard</a>
-          <a href="#belt-vs-chain" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Belt vs Chain Drive</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Loud Is an Air Bike?</a>
-          <a href="#footprint" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Footprint, Weight and Moving It Around</a>
-          <a href="#consoles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Consoles, Apps and Power</a>
-          <a href="#workouts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How to Use an Air Bike at Home</a>
-          <a href="#buyers-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Air Bike Buyer's Guide: Six Questions to Ask</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 7 Best Air Bikes</a></li>
+            <li><a href="#how-we-chose">How We Chose These Air Bikes</a></li>
+            <li><a href="#how-air-bikes-work">How an Air Bike Works, and Why It Feels So Hard</a></li>
+            <li><a href="#belt-vs-chain">Belt vs Chain Drive</a></li>
+            <li><a href="#noise">How Loud Is an Air Bike?</a></li>
+            <li><a href="#footprint">Footprint, Weight and Moving It Around</a></li>
+            <li><a href="#consoles">Consoles, Apps and Power</a></li>
+            <li><a href="#workouts">How to Use an Air Bike at Home</a></li>
+            <li><a href="#buyers-guide">Air Bike Buyer's Guide: Six Questions to Ask</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Air bikes look simple, and they are: a big fan at the front, pedals linked to moving
-          handles, and resistance that rises the harder you push. That simplicity is why they last for
-          years in gyms and why they are such an efficient way to do hard intervals at home. It is
-          also why the differences between them are easy to miss. This page names seven air bikes that
-          are on sale on Amazon now, says which basic figures agreed between the maker and an
-          independent source and which rest on the maker or the listing alone, explains the few specifications that really separate one from
-          another — drive type, fan, frame, console and size — and is honest about the one thing no
-          air bike can avoid, which is noise.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             <strong>The best air bike for most homes is the Schwinn AirDyne AD7</strong>: a belt drive
             that reviewers found quieter and lower-maintenance than a chain, a 350 lb weight rating, a
@@ -515,18 +491,14 @@ const schema = {
             say "Hoover" for a vacuum. AssaultBike is a trademark of Assault Fitness, whose bikes are
             sold direct rather than on Amazon, but the Schwinn, XMark, Titan, Sunny, YOSUDA and Marcy bikes
             do the same job. If you are
-            still deciding between an air bike and another machine entirely, our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            guide picks one of each type and names the AirDyne AD7 as its air bike; this page goes
+            still deciding between an air bike and another machine entirely, our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> guide picks one of each type and names the AirDyne AD7 as its air bike; this page goes
             further into the category. For a quiet bike you can ride for an hour while watching
-            television, read our
-            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>
-            guide instead — an air bike is the wrong tool for that.
+            television, read our <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a> guide instead — an air bike is the wrong tool for that.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 7 Best Air Bikes</h2>
+          <h2>The 7 Best Air Bikes</h2>
 <p>
             Each card gives the figures that the maker and an independent source agreed on, the
             price range we saw, and who the bike suits; the Sunny, YOSUDA and Marcy cards say plainly
@@ -542,78 +514,67 @@ const schema = {
             $999 to $1,099 since then, and the descriptions say where a figure was left off and why.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Air Bikes</h2>
+          <h2>How We Chose These Air Bikes</h2>
 <p>
             We have not ridden or measured these bikes. They were chosen from makers' specification
             tables, retailer listings, warranty terms and independent hands-on reviews, all checked on 19
@@ -674,7 +635,7 @@ const schema = {
         </div>
 
         <div id="how-air-bikes-work" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How an Air Bike Works, and Why It Feels So Hard</h2>
+          <h2>How an Air Bike Works, and Why It Feels So Hard</h2>
 <p>
             Every air bike works the same way. The pedals and the handles are linked to a fan through a
             drive belt or chain. When you push, the fan spins and has to move air out of the way. Air
@@ -713,7 +674,7 @@ const schema = {
         </div>
 
         <div id="belt-vs-chain" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Belt vs Chain Drive</h2>
+          <h2>Belt vs Chain Drive</h2>
 <p>
             The single most useful specification on an air bike is how the pedals drive the fan. BarBend's
             reviewers called it the thing that most affects the experience, and every independent source
@@ -741,7 +702,7 @@ const schema = {
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Loud Is an Air Bike?</h2>
+          <h2>How Loud Is an Air Bike?</h2>
 <p>
             Louder than any other cardio machine you are likely to buy for home, and no drive type changes
             that. The fan has to move air to create resistance, and moving a lot of air quickly is noisy.
@@ -763,16 +724,12 @@ const schema = {
           </ul>
           <p>
             If noise is the deciding factor — you share walls, or someone sleeps while you train — an air
-            bike is the wrong machine, and a magnetic indoor bike from our
-            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">exercise bike roundup</a>
-            or a quiet rower from our
-            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">rowing machine guide</a>
-            will serve you better.
+            bike is the wrong machine, and a magnetic indoor bike from our <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">exercise bike roundup</a> or a quiet rower from our <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">rowing machine guide</a> will serve you better.
           </p>
         </div>
 
         <div id="footprint" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Footprint, Weight and Moving It Around</h2>
+          <h2>Footprint, Weight and Moving It Around</h2>
 <p>
             Air bikes are compact in floor area but heavy, and their published dimensions are less
             consistent than you would expect — partly because makers measure different things (the base,
@@ -798,14 +755,12 @@ const schema = {
             rivals use wider turf tires that roll better over <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium" data-autolink>rubber flooring</a> and grass. You still tip a
             95 to 125 lb bike onto its wheels rather than carry it, and on stairs it is a two-person job.
             None of the fan bikes needs an outlet, which is the great advantage for garages and patios;
-            if yours will live in a garage, our guide to
-            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">machines for the garage</a>
-            covers damp and temperature, which affect bearings and consoles too.
+            if yours will live in a garage, our guide to <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">machines for the garage</a> covers damp and temperature, which affect bearings and consoles too.
           </p>
         </div>
 
         <div id="consoles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Consoles, Apps and Power</h2>
+          <h2>Consoles, Apps and Power</h2>
 <p>
             Air bike consoles are deliberately basic, and on most of these bikes that is fine: the workout
             is intervals, and what you need is a clear timer, a work/rest prompt and a number to beat.
@@ -827,17 +782,14 @@ const schema = {
             are calculated from fan speed using each maker's own model, so a "calorie" on one brand is not
             the same as on another. They are excellent for beating your own last session on the same bike
             and poor for comparing with a friend's machine or a gym's. For effort, a chest-strap
-            heart-rate monitor is a better guide; see our comparison of
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps and wrist heart rate</a>.
+            heart-rate monitor is a better guide; see our comparison of <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps and wrist heart rate</a>.
           </p>
         </div>
 
         <div id="workouts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How to Use an Air Bike at Home</h2>
+          <h2>How to Use an Air Bike at Home</h2>
 <p>
-            Air bikes are interval machines. The same principles that structure a good
-            <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout</a>
-            apply, with one big practical advantage: on a bike there is no belt to jump onto or off, so
+            Air bikes are interval machines. The same principles that structure a good <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout</a> apply, with one big practical advantage: on a bike there is no belt to jump onto or off, so
             maximal sprints carry far less risk of a fall. A few starting points, all of them descriptions
             of common formats rather than prescriptions:
           </p>
@@ -848,13 +800,8 @@ const schema = {
           </ul>
           <p>
             Always warm up for five minutes or more before hard efforts, and pedal easily for a few minutes
-            after the last one rather than stopping dead; our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            explains why. Two or three hard sessions a week is plenty for most people, with easier days
-            between. If you like the treadmill version of the same idea, our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
-            and <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">sprint workout</a>
-            pages show how to structure them.
+            after the last one rather than stopping dead; our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> explains why. Two or three hard sessions a week is plenty for most people, with easier days
+            between. If you like the treadmill version of the same idea, our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a> and <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">sprint workout</a> pages show how to structure them.
           </p>
           <p>
             <strong>Set-up.</strong> Set the saddle so your knee is slightly bent at the bottom of the
@@ -867,7 +814,7 @@ const schema = {
         </div>
 
         <div id="buyers-guide" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Air Bike Buyer's Guide: Six Questions to Ask</h2>
+          <h2>Air Bike Buyer's Guide: Six Questions to Ask</h2>
 <ol>
             <li><strong>Where will it live?</strong> If the answer is an upstairs room with neighbors, reconsider the whole category. If it is a garage, a chain drive and a basic console are fine.</li>
             <li><strong>Belt or chain?</strong> Belt if it is indoors or you will never do maintenance; chain if price matters most and you are happy to lubricate it.</li>
@@ -882,110 +829,39 @@ const schema = {
             Marcy, $600 to $760 for the YOSUDA, Sunny and Titan, $1,099 for the Schwinn AD7, $1,119 to $1,279
             for the XMark CAT 5, and $1,100 direct or $1,429.99 on Amazon for the BikeErg. Shipping
             terms differ — Schwinn offered free standard shipping on 19 October, and Concept2
-            listed $60 ground shipping to the lower 48 states — so compare delivered prices. Our
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">Home Gym hub</a> lists the other
+            listed $60 ground shipping to the lower 48 states — so compare delivered prices. Our <a href="/home-gym/" class="text-[#0F62FE] font-medium">Home Gym hub</a> lists the other
             cardio and strength guides if you are building a whole room.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best air bike for home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most homes, the Schwinn AirDyne AD7: a belt drive that reviewers found quiet for an air bike, a 350 lb rating, a 10-year frame warranty and a battery console, for $1,099 on sale. Sunny's fan bike is a belt-driven alternative for $699.99, XMark's CAT 5 Hurricane the commercial-style one on Amazon, and Marcy's AIR-1 the cheapest from an established brand.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best assault bike?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                "Assault bike" usually means any fan bike with moving arms. Of Assault Fitness's own bikes, the Pro X is the best buy for most homes because it has a quieter, lower-maintenance belt drive and Bluetooth for $899. The Classic is $150 cheaper on sale but chain-driven; the Elite costs $1,499. Assault sells them direct rather than on Amazon; the closest belt-driven fan bike we found on Amazon is Sunny's, at $699.99.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a belt-drive or chain-drive air bike better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For indoor use, belt drive. Belts are quieter and need no lubrication. Chains are cheaper, strong and easy to service, but rattle and need lubricating and tension checks roughly monthly. Neither changes the fan noise, which is the loudest part of any air bike.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are air bikes loud?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. The fan has to move air to create resistance, so every air bike is loud during hard efforts, with a sound reviewers compare to a vacuum cleaner. A belt drive removes chain rattle and a mat stops vibration reaching the floor, but neither silences the fan. For shared walls, a magnetic exercise bike is quieter.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Concept2 BikeErg an air bike?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It uses air resistance from a flywheel, but it has fixed handlebars, so it is a legs-only bike rather than a fan bike with moving arms. It is lighter and smaller than any fan bike here, rides like a road bike and has a damper for changing the feel.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much space does an air bike need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Plan for roughly 4 to 4.5 feet by 2 feet of floor for the frame, plus room for the handles to swing and your elbows. The Titan is about 20 inches wide and Sunny gives its fan bike as 55.5 by 25.2 inches; a retailer gives the XMark CAT 5 as 53 by 26 inches. Check the maker's ceiling figure in a low basement.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an Air Bike</h2>
+          <p>Air bikes are simple machines, which makes these mistakes easy to make and annoying to live with.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Putting it in the wrong room</h3>
+              <p>Every air bike is loud during hard efforts, and no drive type or mat changes that. Decide where it will live before you choose a model. Garages, basements and ground-floor rooms suit air bikes; upstairs flats and rooms next to a sleeping child do not.</p>
+            </li>
+            <li>
+              <h3>Buying a chain drive and never servicing it</h3>
+              <p>Chain-driven bikes such as the Titan Fan Bike need their chains lubricating and tension checking regularly. A neglected chain gets noisier and wears faster. If you know you will not do it, pay more for a belt drive.</p>
+            </li>
+            <li>
+              <h3>Measuring the frame but not the swing</h3>
+              <p>Published footprints describe the base or frame, not the space the moving handles and your elbows need. Leave clear space beside and in front of the bike, and check the maker's minimum ceiling height if it will go in a basement.</p>
+            </li>
+            <li>
+              <h3>Comparing calories between brands</h3>
+              <p>Air bike consoles estimate calories and watts from fan speed with their own formulas, so the figures do not transfer between brands or match a gym's machine. Use them to beat your own last session on the same bike, and use a chest-strap heart-rate monitor to judge effort.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Air Bike</h2>
-          <p class="text-gray-700 leading-relaxed">Air bikes are simple machines, which makes these mistakes easy to make and annoying to live with.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting it in the wrong room</h3>
-              <p class="text-gray-700 text-sm m-0">Every air bike is loud during hard efforts, and no drive type or mat changes that. Decide where it will live before you choose a model. Garages, basements and ground-floor rooms suit air bikes; upstairs flats and rooms next to a sleeping child do not.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a chain drive and never servicing it</h3>
-              <p class="text-gray-700 text-sm m-0">Chain-driven bikes such as the Titan Fan Bike need their chains lubricating and tension checking regularly. A neglected chain gets noisier and wears faster. If you know you will not do it, pay more for a belt drive.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the frame but not the swing</h3>
-              <p class="text-gray-700 text-sm m-0">Published footprints describe the base or frame, not the space the moving handles and your elbows need. Leave clear space beside and in front of the bike, and check the maker's minimum ceiling height if it will go in a basement.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing calories between brands</h3>
-              <p class="text-gray-700 text-sm m-0">Air bike consoles estimate calories and watts from fan speed with their own formulas, so the figures do not transfer between brands or match a gym's machine. Use them to beat your own last session on the same bike, and use a chest-strap heart-rate monitor to judge effort.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-cardio-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">One pick per machine type, from treadmill and rower to air bike and stepper.</p>
-            </a>
-            <a href="/treadmill-hiit-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill HIIT Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five interval sessions and how to structure hard efforts safely.</p>
-            </a>
-            <a href="/best-exercise-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Exercise Bikes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Quiet magnetic and friction bikes for long rides, apps and classes.</p>
-            </a>
-            <a href="/best-folding-exercise-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Folding</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Exercise Bikes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, buy the Schwinn AirDyne AD7</strong>: a belt drive,
             a 350 lb rating and a 10-year frame warranty, with nothing to plug in. If you want a
             belt drive for less, Sunny's fan bike is the one on Amazon, and if every dollar counts, Marcy's
@@ -994,39 +870,125 @@ const schema = {
             on Amazon. Cyclists and
             anyone short of space should look at the Concept2 BikeErg instead of a fan bike.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, put it where the noise will not matter, leave room for the handles, and
             treat its calorie count as a personal benchmark rather than a fact. For one pick per machine
-            type, see our
-            <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">best cardio machines for home</a>
-            guide, and for sessions to use it for, our
-            <a href="/treadmill-hiit-workout/" class="text-[#5AA9FF] font-bold no-underline">HIIT workout guide</a>.
+            type, see our <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">best cardio machines for home</a> guide, and for sessions to use it for, our <a href="/treadmill-hiit-workout/" class="text-[#5AA9FF] font-bold no-underline">HIIT workout guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-cardio-machines-for-home/">Best Cardio Machines for Home</a></li>
+            <li><a href="/treadmill-hiit-workout/">Treadmill HIIT Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best air bike for home?</h3></summary>
+            <p class="faq-a">
+              For most homes, the Schwinn AirDyne AD7: a belt drive that reviewers found quiet for an air bike, a 350 lb rating, a 10-year frame warranty and a battery console, for $1,099 on sale. Sunny's fan bike is a belt-driven alternative for $699.99, XMark's CAT 5 Hurricane the commercial-style one on Amazon, and Marcy's AIR-1 the cheapest from an established brand.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best assault bike?</h3></summary>
+            <p class="faq-a">
+              "Assault bike" usually means any fan bike with moving arms. Of Assault Fitness's own bikes, the Pro X is the best buy for most homes because it has a quieter, lower-maintenance belt drive and Bluetooth for $899. The Classic is $150 cheaper on sale but chain-driven; the Elite costs $1,499. Assault sells them direct rather than on Amazon; the closest belt-driven fan bike we found on Amazon is Sunny's, at $699.99.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a belt-drive or chain-drive air bike better?</h3></summary>
+            <p class="faq-a">
+              For indoor use, belt drive. Belts are quieter and need no lubrication. Chains are cheaper, strong and easy to service, but rattle and need lubricating and tension checks roughly monthly. Neither changes the fan noise, which is the loudest part of any air bike.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are air bikes loud?</h3></summary>
+            <p class="faq-a">
+              Yes. The fan has to move air to create resistance, so every air bike is loud during hard efforts, with a sound reviewers compare to a vacuum cleaner. A belt drive removes chain rattle and a mat stops vibration reaching the floor, but neither silences the fan. For shared walls, a magnetic exercise bike is quieter.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Concept2 BikeErg an air bike?</h3></summary>
+            <p class="faq-a">
+              It uses air resistance from a flywheel, but it has fixed handlebars, so it is a legs-only bike rather than a fan bike with moving arms. It is lighter and smaller than any fan bike here, rides like a road bike and has a damper for changing the feel.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much space does an air bike need?</h3></summary>
+            <p class="faq-a">
+              Plan for roughly 4 to 4.5 feet by 2 feet of floor for the frame, plus room for the handles to swing and your elbows. The Titan is about 20 inches wide and Sunny gives its fan bike as 55.5 by 25.2 inches; a retailer gives the XMark CAT 5 as 53 by 26 inches. Check the maker's ceiling figure in a low basement.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-cardio-machines-for-home/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Best Cardio Machines for Home</div>
+            <p class="c-blurb">One pick per machine type, from treadmill and rower to air bike and stepper.</p>
+          </a>
+          <a href="/treadmill-hiit-workout/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Treadmill HIIT Workout</div>
+            <p class="c-blurb">Five interval sessions and how to structure hard efforts safely.</p>
+          </a>
+          <a href="/best-exercise-bikes/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Exercise Bikes</div>
+            <p class="c-blurb">Quiet magnetic and friction bikes for long rides, apps and classes.</p>
+          </a>
+          <a href="/best-folding-exercise-bikes/" class="card">
+            <div class="c-kicker">Folding</div>
+            <div class="c-title">Best Folding Exercise Bikes</div>
+            <p class="c-blurb">Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

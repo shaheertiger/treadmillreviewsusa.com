@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "LifeSmart Treadmills (2026): TM4500, TM6500, TM4000C and the PowerTouch Range";
 const description =
@@ -255,6 +254,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/lifesmart-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -276,66 +281,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Range", link: "#lineup" }}
+  stickyCta={{ text: "Closest on Amazon: ProForm Pro 2000", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-lifesmarttreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-lifesmarttreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer’s Guide</span>
+      </nav>
+      <h1 class="ed-title">LifeSmart Treadmills: The PowerTouch Range Explained</h1>
+      <p class="ed-dek">
+        LifeSmart treadmills are the self-folding PowerTouch machines you see at Costco and Dick’s Sporting Goods. The best-known of them, the TM4500, has been discontinued, and the range now runs from the TM3000 to the touchscreen TM6500, with Costco-only models alongside. This guide sets out what is current, what each model costs, which published figures disagree, and the one thing every buyer should know first: a one-year warranty.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer’s Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          LifeSmart Treadmills: <span class="text-[#5AA9FF]">The PowerTouch Range Explained</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          LifeSmart treadmills are the self-folding PowerTouch machines you see at Costco and Dick’s Sporting Goods. The best-known of them, the TM4500, has been discontinued, and the range now runs from the TM3000 to the touchscreen TM6500, with Costco-only models alongside. This guide sets out what is current, what each model costs, which published figures disagree, and the one thing every buyer should know first: a one-year warranty.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Range
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#proform-pro-2000"><img src="https://m.media-amazon.com/images/I/31M4plx9X1L._SL500_.jpg" alt="ProForm Pro 2000" width="500" height="446" decoding="async" /></a>
+          <a href="#lifesmart-tm3000"><img src="https://m.media-amazon.com/images/I/316uNl7L96L._SL500_.jpg" alt="LifeSmart TM3000" width="500" height="500" decoding="async" /></a>
+          <a href="#lifesmart-tm5000"><img src="https://m.media-amazon.com/images/I/4105NgoIU0L._SL500_.jpg" alt="LifeSmart TM5000" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>ProForm Pro 2000 · LifeSmart TM3000 · LifeSmart TM5000</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          LifeSmart's pitch is one feature: PowerTouch, a motorised fold that raises and lowers the deck at the press
+          of a button, with infrared sensors meant to stop it lowering onto a pet or a child. Around that it builds
+          brushless-motor folding treadmills with incline and a small decline, sold mainly through Costco and Dick's
+          Sporting Goods and on its own store. The names are confusing — TM3000, TM3000C, TM4000, TM4000C, TM4500,
+          TM4800, TM5000, TM6500, TM55, TM22X — and so are some of the figures. This guide sorts out which models are
+          current, which are retailer-specific, what each one costs, and how a LifeSmart compares with similarly priced
+          treadmills that carry much longer warranties.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#proform-pro-2000">ProForm Pro 2000</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Budget Pick:</span> <a href="#lifesmart-tm3000">LifeSmart TM3000</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Incline:</span> <a href="#lifesmart-tm5000">LifeSmart TM5000</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#nordictrack-t-series-16">NordicTrack T Series 16</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#nordictrack-commercial-1250">NordicTrack Commercial 1250</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we checked LifeSmart's US treadmill store (its full product catalogue with prices and stock
           flags, the TM3000, TM4000, TM4000C, TM4500 and TM5000 product pages, its warranty page and its About page),
@@ -350,77 +371,25 @@ const schema = {
           1250 cards, which stand in for the TM4000C and TM4500 because we could not find them on Amazon US, carry the
           figures checked for our iFIT and NordicTrack guides. We have not tested any LifeSmart treadmill. As an Amazon Associate we earn from
           qualifying purchases; that does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#proform-pro-2000" class="font-bold text-gray-900 no-underline hover:underline">ProForm Pro 2000</a>
-            <a href="#proform-pro-2000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Pick:</span>
-            <a href="#lifesmart-tm3000" class="font-bold text-gray-900 no-underline hover:underline">LifeSmart TM3000</a>
-            <a href="#lifesmart-tm3000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Incline:</span>
-            <a href="#lifesmart-tm5000" class="font-bold text-gray-900 no-underline hover:underline">LifeSmart TM5000</a>
-            <a href="#lifesmart-tm5000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#nordictrack-t-series-16" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T Series 16</a>
-            <a href="#nordictrack-t-series-16" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#nordictrack-commercial-1250" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1250</a>
-            <a href="#nordictrack-commercial-1250" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a LifeSmart Treadmill? The Short Answer</a>
-          <a href="#who-is-lifesmart" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes LifeSmart Treadmills?</a>
-          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Range</a>
-          <a href="#tm4500" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The TM4500</a>
-          <a href="#costco-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Costco Models</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Warranty</a>
-          <a href="#motors-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Motors and Decline</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. LifeSmart vs Similar Treadmills</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a LifeSmart Treadmill? The Short Answer</a></li>
+            <li><a href="#who-is-lifesmart">Who Makes LifeSmart Treadmills?</a></li>
+            <li><a href="#lineup">The Range</a></li>
+            <li><a href="#tm4500">The TM4500</a></li>
+            <li><a href="#costco-models">Costco Models</a></li>
+            <li><a href="#warranty">The Warranty</a></li>
+            <li><a href="#motors-decline">Motors and Decline</a></li>
+            <li><a href="#alternatives">LifeSmart vs Similar Treadmills</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          LifeSmart's pitch is one feature: PowerTouch, a motorised fold that raises and lowers the deck at the press
-          of a button, with infrared sensors meant to stop it lowering onto a pet or a child. Around that it builds
-          brushless-motor folding treadmills with incline and a small decline, sold mainly through Costco and Dick's
-          Sporting Goods and on its own store. The names are confusing — TM3000, TM3000C, TM4000, TM4000C, TM4500,
-          TM4800, TM5000, TM6500, TM55, TM22X — and so are some of the figures. This guide sorts out which models are
-          current, which are retailer-specific, what each one costs, and how a LifeSmart compares with similarly priced
-          treadmills that carry much longer warranties.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a LifeSmart Treadmill? The Short Answer</h2>
+          <h2>Should You Buy a LifeSmart Treadmill? The Short Answer</h2>
 <p>
             <strong>Only if the automatic PowerTouch fold matters to you. LifeSmart treadmills are reasonably specified
             for the price, but every LifeSmart carries a one-year limited warranty on functional parts, and the
@@ -436,14 +405,13 @@ const schema = {
           <p>
             The warranty is the deciding issue. LifeSmart's warranty page says it offers "a 1 year limited warranty on all
             products", covering functional parts for personal use, with claims made through the retailer. For similar
-            money, the <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a> and the
-            <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT</a> come with
+            money, the <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a> and the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT</a> come with
             far longer frame and motor cover. We have not tested any LifeSmart treadmill.
           </p>
         </div>
 
         <div id="who-is-lifesmart" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes LifeSmart Treadmills?</h2>
+          <h2>Who Makes LifeSmart Treadmills?</h2>
 <p>
             LifeSmart is a consumer-products brand rather than a fitness specialist. Its treadmill store's About page
             calls it "a trusted legacy brand" and lists its other products: space heaters sold at Walmart, Home Depot and
@@ -453,8 +421,7 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Not LifeSpan, and not the Chinese LifeSmart</h3>
           <p>
-            LifeSmart is easily confused with two other names. <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan Fitness</a>
-            is a separate Utah treadmill maker best known for walking and desk treadmills. And a Chinese smart-home
+            LifeSmart is easily confused with two other names. <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan Fitness</a> is a separate Utah treadmill maker best known for walking and desk treadmills. And a Chinese smart-home
             company also called LifeSmart is unrelated. Everything on this page refers to the US treadmill brand sold at
             Costco and Dick's.
           </p>
@@ -470,7 +437,7 @@ const schema = {
         </div>
 
         <div id="lineup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The LifeSmart Treadmill Range in November 2026</h2>
+          <h2>The LifeSmart Treadmill Range in November 2026</h2>
 <p>
             LifeSmart sells different models in different places, which is the main source of confusion. The table
             groups them by where we found them on 5 November 2026. LifeSmart sells mainly through its own store, Costco
@@ -506,78 +473,67 @@ const schema = {
             wireless charging console and 26 programs to the TM4000 — so check which one a retailer is selling.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="tm4500" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The LifeSmart TM4500: Discontinued, and What Replaced It</h2>
+          <h2>The LifeSmart TM4500: Discontinued, and What Replaced It</h2>
 <p>
             The TM4500 PowerTouch is the LifeSmart most people search for, at about 720 searches a month. LifeSmart's
             product page now says plainly that it "has been discontinued and will not be restocked", and recommends the
@@ -599,14 +555,12 @@ const schema = {
             Costco sold the TM4500 for $999.99, according to Sole's blog, and open-box and used units still circulate
             through liquidators and local listings. LifeSmart's warranty runs one year from the original purchase and is
             claimed through the retailer, so a second-hand TM4500 has effectively none. Pay well under the TM4000C's
-            $1,199 for one, test the PowerTouch fold and sensors before paying, and check the console works fully. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            covers the rest.
+            $1,199 for one, test the PowerTouch fold and sensors before paying, and check the console works fully. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> covers the rest.
           </p>
         </div>
 
         <div id="costco-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. LifeSmart at Costco: TM6500, TM4800 and TM55</h2>
+          <h2>LifeSmart at Costco: TM6500, TM4800 and TM55</h2>
 <p>
             Costco sells LifeSmart models you will not find on LifeSmart's own store, which is why model searches for the
             TM6500 and TM4800 are so common. Costco's pages would not show us prices on 5 November 2026, so the prices
@@ -636,13 +590,12 @@ const schema = {
           </p>
           <p>
             Costco's main advantage is its returns policy, which covers a treadmill that disappoints in a way LifeSmart's
-            one-year warranty may not. Our guide to <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a>
-            explains delivery, returns and the Costco-specific model numbers.
+            one-year warranty may not. Our guide to <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a> explains delivery, returns and the Costco-specific model numbers.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The LifeSmart Warranty: One Year</h2>
+          <h2>The LifeSmart Warranty: One Year</h2>
 <p>
             LifeSmart's warranty page states "a 1 year limited warranty on all products". It covers defects in materials
             and workmanship on functional parts for one year from purchase, for personal use only; cosmetic issues are
@@ -654,30 +607,21 @@ const schema = {
             That is short. The Bowflex T6, $999 on sale on the day we checked, has a lifetime motor warranty; Schwinn's
             $899 models carry 10 years on the frame and motor; Horizon gives lifetime frame and motor cover on its AT
             range. LifeSmart's brushless motors may well be durable — LifeSmart claims 20 times the life of a brushed
-            motor, which we cannot verify — but if one fails in year two, the repair is yours. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to weigh frame, motor, parts and labour terms, and when an extended plan is worth buying.
+            motor, which we cannot verify — but if one fails in year two, the repair is yours. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how to weigh frame, motor, parts and labour terms, and when an extended plan is worth buying.
           </p>
         </div>
 
         <div id="motors-decline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Brushless Motors, Decline and Other Claims</h2>
+          <h2>Brushless Motors, Decline and Other Claims</h2>
 <p>
             Every current LifeSmart PowerTouch model uses a brushless motor, rated from 2.75 HP (TM55) to 4.0 HP (TM5000
             and TM6500). LifeSmart does not say whether these are continuous or peak ratings, and on the TM3000, where an
             independent figure exists, it differs (3.0 HP at LifeSmart, 2.5 HP continuous at a retailer). Brushless motors
-            have no brushes to wear out and tend to run quieter; our guides to
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower</a> and
-            <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC vs DC motors</a>
-            explain what the ratings mean.
+            have no brushes to wear out and tend to run quieter; our guides to <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower</a> and <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC vs DC motors</a> explain what the ratings mean.
           </p>
           <p>
             Most LifeSmart models offer -3% decline as well as incline, which is uncommon at this price. Decline lets you
-            practise downhill running and work the muscles that brake you on descents; our guide to
-            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>
-            explains who benefits, and our
-            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">best treadmills with decline</a>
-            covers the alternatives.
+            practise downhill running and work the muscles that brake you on descents; our guide to <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a> explains who benefits, and our <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">best treadmills with decline</a> covers the alternatives.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Recalls</h3>
           <p>
@@ -688,25 +632,21 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. LifeSmart vs Similar Treadmills</h2>
+          <h2>LifeSmart vs Similar Treadmills</h2>
 <p>
             LifeSmart's prices put it against some well-established folding treadmills. On the day we checked:
           </p>
           <ul>
             <li><strong>Bowflex T6, $999 on sale:</strong> a 20 by 60-inch deck, 15 levels of incline, 325 lb and a
             lifetime motor warranty, but a manual fold.</li>
-            <li><strong><a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn SFT4.3</a>, $899:</strong>
-            a 20 by 60-inch deck, 12 mph and 12% incline, with 10 years on frame and motor.</li>
+            <li><strong><a href="/schwinn-treadmills/" class="text-[#0F62FE] font-medium">Schwinn SFT4.3</a>, $899:</strong> a 20 by 60-inch deck, 12 mph and 12% incline, with 10 years on frame and motor.</li>
             <li><strong>Horizon 7.0 AT:</strong> a 20 by 60-inch deck, 15% incline and 325 lb with Horizon's long frame and
             motor cover.</li>
           </ul>
           <p>
             None of those folds itself, and none offers LifeSmart's decline. If the PowerTouch fold is the reason you are
             looking, a LifeSmart is one of very few options at the price. If it is not, the alternatives give you more
-            protection for similar money. Our <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
-            and <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a>
-            compare more of them, and our <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods treadmills</a>
-            guide covers what that retailer carries.
+            protection for similar money. Our <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a> and <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">best treadmills under $1,000</a> compare more of them, and our <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods treadmills</a> guide covers what that retailer carries.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is LifeSmart on Amazon?</h3>
           <p>
@@ -721,146 +661,162 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the LifeSmart TM4500 discontinued?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. On 5 November 2026 LifeSmart’s product page said the TM4500 has been discontinued and will not be restocked, and recommended the TM4000C, with the same 3.5 HP brushless motor, 0 to 14 mph, 10% incline, -3% decline, 20 by 60-inch belt and PowerTouch fold, at $1,199.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty do LifeSmart treadmills have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                One year. LifeSmart’s warranty page states a 1-year limited warranty on all products, covering functional parts for personal use, with claims made through the retailer where you bought it. Extended plans were offered at checkout from $49.99 to $99.99.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes LifeSmart treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                LifeSmart is a consumer-products brand that also sells space heaters and massage chairs. Its treadmill store and support point to Supply Chain Sources (SCS), described by a retailer as based in Allen, Texas. It is not LifeSpan Fitness, and not the Chinese smart-home company of the same name.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the LifeSmart TM6500 specs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Costco lists a 4.0 HP brushless motor, up to 14 mph, a 20 by 60-inch belt, a 325 lb capacity, 231 lb, a 22-inch pivoting touchscreen and 30 programs. Its page gives two incline figures, 10% with -3% decline and 15%. It is sold online at Costco only.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is LifeSmart PowerTouch?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A motorised folding system that raises and lowers the deck at the press of a button, with sensors that LifeSmart says stop it lowering if something is underneath. It is the main reason to choose a LifeSmart over a conventional folding treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the LifeSmart TM3000 a good treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walking, it is adequate: LifeSmart lists 0 to 12.5 mph, 10% incline, -3% decline, a 20 by 55-inch belt and 300 lb, with PowerTouch folding, at $999. But its belt is short for running, its motor figures conflict, and its warranty is one year. Rivals at $999 offer longer decks and warranties.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I buy a LifeSmart treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                LifeSmart’s own online store, Dick’s Sporting Goods (TM3000 and TM4000) and Costco, which sells its own models such as the TM6500 and TM55 online and has carried the TM4800 in warehouses. Costco’s returns policy is a real advantage given the one-year warranty.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a LifeSmart Treadmill</h2>
+          <p>LifeSmart treadmills can suit the right buyer. These are the mistakes that make them a poor buy.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Not reading the warranty</h3>
+              <p>Every LifeSmart carries a one-year limited warranty on functional parts. At $1,199 to $1,699, rivals offer lifetime or 10-year motor cover. If you buy a LifeSmart, buy it where returns are easy, such as Costco, or price in an extended plan.</p>
+            </li>
+            <li>
+              <h3>Mixing up the C and non-C models</h3>
+              <p>The TM4000 and TM4000C, and TM3000 and TM3000C, are different versions at the same price. LifeSmart says the TM4000C adds a reinforced incline frame, wireless charging and more programs. Check the exact model in the listing.</p>
+            </li>
+            <li>
+              <h3>Trusting a single capacity figure</h3>
+              <p>TM4500 capacity is quoted as 300, 325 and 350 lb in different places, and the TM6500’s incline appears as both 10% and 15% on the same Costco page. Confirm figures on the box or with the seller before buying for a heavier user.</p>
+            </li>
+            <li>
+              <h3>Paying near-new for a used TM4500</h3>
+              <p>It is discontinued, and the warranty does not pass to a second owner. With the TM4000C new at $1,199, a used TM4500 is worth well under that.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a LifeSmart Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">LifeSmart treadmills can suit the right buyer. These are the mistakes that make them a poor buy.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not reading the warranty</h3>
-              <p class="text-gray-700 text-sm m-0">Every LifeSmart carries a one-year limited warranty on functional parts. At $1,199 to $1,699, rivals offer lifetime or 10-year motor cover. If you buy a LifeSmart, buy it where returns are easy, such as Costco, or price in an extended plan.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Mixing up the C and non-C models</h3>
-              <p class="text-gray-700 text-sm m-0">The TM4000 and TM4000C, and TM3000 and TM3000C, are different versions at the same price. LifeSmart says the TM4000C adds a reinforced incline frame, wireless charging and more programs. Check the exact model in the listing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a single capacity figure</h3>
-              <p class="text-gray-700 text-sm m-0">TM4500 capacity is quoted as 300, 325 and 350 lb in different places, and the TM6500’s incline appears as both 10% and 15% on the same Costco page. Confirm figures on the box or with the seller before buying for a heavier user.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying near-new for a used TM4500</h3>
-              <p class="text-gray-700 text-sm m-0">It is discontinued, and the warranty does not pass to a second owner. With the TM4000C new at $1,199, a used TM4500 is worth well under that.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/buying-a-treadmill-at-costco/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Retailer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill at Costco</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Costco’s LifeSmart models, delivery and the returns policy that matters here.</p>
-            </a>
-            <a href="/lifespan-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Not to be confused</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LifeSpan Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The Utah walking and desk treadmill maker with a similar name.</p>
-            </a>
-            <a href="/schwinn-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Schwinn Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four folding treadmills from $699 with 10-year frame and motor cover.</p>
-            </a>
-            <a href="/best-treadmills-with-decline/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Feature</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills With Decline</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The alternatives if decline is why you are looking at LifeSmart.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">LifeSmart's appeal is PowerTouch, a fold that does the lifting for you, plus decline
           at a mid-range price — but every LifeSmart has a one-year warranty.</strong> The TM4500 is discontinued; its
           named replacement, the TM4000C at $1,199, is the model to buy if you want one. Costco's TM6500 adds a 22-inch
           touchscreen, but Costco's own page gives two incline figures for it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If the automatic fold is not essential, the
-          <a href="/bowflex-t6-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Bowflex T6</a>
-          at $999 on sale or a <a href="/schwinn-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Schwinn SFT4.3</a>
-          at $899 gives a 60-inch deck with far longer motor cover.
+          <p>
+            If the automatic fold is not essential, the <a href="/bowflex-t6-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Bowflex T6</a> at $999 on sale or a <a href="/schwinn-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Schwinn SFT4.3</a> at $899 gives a 60-inch deck with far longer motor cover.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/buying-a-treadmill-at-costco/">Buying a Treadmill at Costco</a></li>
+            <li><a href="/lifespan-treadmills/">LifeSpan Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the LifeSmart TM4500 discontinued?</h3></summary>
+            <p class="faq-a">
+              Yes. On 5 November 2026 LifeSmart’s product page said the TM4500 has been discontinued and will not be restocked, and recommended the TM4000C, with the same 3.5 HP brushless motor, 0 to 14 mph, 10% incline, -3% decline, 20 by 60-inch belt and PowerTouch fold, at $1,199.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What warranty do LifeSmart treadmills have?</h3></summary>
+            <p class="faq-a">
+              One year. LifeSmart’s warranty page states a 1-year limited warranty on all products, covering functional parts for personal use, with claims made through the retailer where you bought it. Extended plans were offered at checkout from $49.99 to $99.99.
             </p>
+          </details>
+          <details>
+            <summary><h3>Who makes LifeSmart treadmills?</h3></summary>
+            <p class="faq-a">
+              LifeSmart is a consumer-products brand that also sells space heaters and massage chairs. Its treadmill store and support point to Supply Chain Sources (SCS), described by a retailer as based in Allen, Texas. It is not LifeSpan Fitness, and not the Chinese smart-home company of the same name.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What are the LifeSmart TM6500 specs?</h3></summary>
+            <p class="faq-a">
+              Costco lists a 4.0 HP brushless motor, up to 14 mph, a 20 by 60-inch belt, a 325 lb capacity, 231 lb, a 22-inch pivoting touchscreen and 30 programs. Its page gives two incline figures, 10% with -3% decline and 15%. It is sold online at Costco only.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is LifeSmart PowerTouch?</h3></summary>
+            <p class="faq-a">
+              A motorised folding system that raises and lowers the deck at the press of a button, with sensors that LifeSmart says stop it lowering if something is underneath. It is the main reason to choose a LifeSmart over a conventional folding treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the LifeSmart TM3000 a good treadmill?</h3></summary>
+            <p class="faq-a">
+              For walking, it is adequate: LifeSmart lists 0 to 12.5 mph, 10% incline, -3% decline, a 20 by 55-inch belt and 300 lb, with PowerTouch folding, at $999. But its belt is short for running, its motor figures conflict, and its warranty is one year. Rivals at $999 offer longer decks and warranties.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Where can I buy a LifeSmart treadmill?</h3></summary>
+            <p class="faq-a">
+              LifeSmart’s own online store, Dick’s Sporting Goods (TM3000 and TM4000) and Costco, which sells its own models such as the TM6500 and TM55 online and has carried the TM4800 in warehouses. Costco’s returns policy is a real advantage given the one-year warranty.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/buying-a-treadmill-at-costco/" class="card">
+            <div class="c-kicker">Retailer</div>
+            <div class="c-title">Buying a Treadmill at Costco</div>
+            <p class="c-blurb">Costco’s LifeSmart models, delivery and the returns policy that matters here.</p>
+          </a>
+          <a href="/lifespan-treadmills/" class="card">
+            <div class="c-kicker">Not to be confused</div>
+            <div class="c-title">LifeSpan Treadmills</div>
+            <p class="c-blurb">The Utah walking and desk treadmill maker with a similar name.</p>
+          </a>
+          <a href="/schwinn-treadmills/" class="card">
+            <div class="c-kicker">Brand guide</div>
+            <div class="c-title">Schwinn Treadmills</div>
+            <p class="c-blurb">Four folding treadmills from $699 with 10-year frame and motor cover.</p>
+          </a>
+          <a href="/best-treadmills-with-decline/" class="card">
+            <div class="c-kicker">Feature</div>
+            <div class="c-title">Best Treadmills With Decline</div>
+            <p class="c-blurb">The alternatives if decline is why you are looking at LifeSmart.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

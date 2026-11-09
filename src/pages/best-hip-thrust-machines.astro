@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Hip Thrust Machines (2026): 5 Picks, Band vs Plate";
 const description =
@@ -248,6 +247,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-hip-thrust-machines/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -268,66 +273,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Hip Thrust Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Plate-Loaded: Titan Fitness Standing Hip Thrust Machine", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besthipthrustmachines" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besthipthrustmachines)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Hip Thrust Machines for a Home Gym</h1>
+      <p class="ed-dek">
+        A hip thrust machine takes the barbell off your hips, the bench out from under your shoulders and most of the set-up out of the exercise. The catch is that it does one job and takes real floor space to do it. Here are five currently sold options, from a folding band machine to a commercial plate-loaded unit, and how to choose between bands and plates.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Hip Thrust Machines <span class="text-[#5AA9FF]">for a Home Gym</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A hip thrust machine takes the barbell off your hips, the bench out from under your shoulders and most of the set-up out of the exercise. The catch is that it does one job and takes real floor space to do it. Here are five currently sold options, from a folding band machine to a commercial plate-loaded unit, and how to choose between bands and plates.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#band-vs-plate" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Band vs Plate
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#titan-standing-hip-thrust"><img src="https://m.media-amazon.com/images/I/31u1vB+mpoL._SL500_.jpg" alt="Titan Fitness Standing Hip Thrust Machine" width="500" height="500" decoding="async" /></a>
+          <a href="#bootysprout"><img src="https://m.media-amazon.com/images/I/41u4wjTfEyL._SL500_.jpg" alt="BootySprout Hip Thrust Machine" width="500" height="500" decoding="async" /></a>
+          <a href="#balancefrom-hip-thrust"><img src="https://m.media-amazon.com/images/I/41wX1F7+CgL._SL500_.jpg" alt="BalanceFrom Hip Thrust Machine with Synclock Lever" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Titan Fitness Standing Hip Thrust Machine · BootySprout Hip Thrust Machine · BalanceFrom Hip Thrust Machine with Synclock Lever</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The hip thrust is one of the most effective ways to load the glutes, and one of the most
+          awkward lifts to set up at home. A loaded barbell has to be rolled over your legs, the
+          bench slides away from your shoulders, and the bar digs into your hip bones however much
+          padding you use. Hip thrust machines solve those problems in different ways: some replace
+          the barbell with bands, some build the bench, belt and plate horns into one frame, and
+          some are simply a better bench. This guide sets out five that were on sale when we
+          checked, explains how band and plate resistance feel different through the rep, and
+          covers the comfort and space questions that decide whether a machine gets used.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Plate-Loaded:</span> <a href="#titan-standing-hip-thrust">Titan Fitness Standing Hip Thrust Machine</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Band Machine:</span> <a href="#bootysprout">BootySprout Hip Thrust Machine</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget on Amazon:</span> <a href="#balancefrom-hip-thrust">BalanceFrom Hip Thrust Machine with Synclock Lever</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Hip Thrust Bench:</span> <a href="#bells-of-steel-soft-glute-bench">Bells of Steel Soft Glute Bench</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Commercial:</span> <a href="#nautilus-glute-drive">Nautilus Glute Drive</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines. On 19 October 2026 we checked each one against its maker's product page and,
           where one existed, an independent source: a published hands-on review, a second retailer
@@ -342,83 +364,29 @@ const schema = {
           Walmart listings and its Amazon listing that day. The RitFit is still discussed in the text. Prices are those we saw on 19 October 2026 and change often. We
           earn a commission if you buy through the Amazon links on this page; it does not change
           which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Plate-Loaded:</span>
-            <a href="#titan-standing-hip-thrust" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Standing Hip Thrust Machine</a>
-            <a href="#titan-standing-hip-thrust" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Band Machine:</span>
-            <a href="#bootysprout" class="font-bold text-gray-900 no-underline hover:underline">BootySprout Hip Thrust Machine</a>
-            <a href="#bootysprout" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget on Amazon:</span>
-            <a href="#balancefrom-hip-thrust" class="font-bold text-gray-900 no-underline hover:underline">BalanceFrom Hip Thrust Machine with Synclock Lever</a>
-            <a href="#balancefrom-hip-thrust" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Hip Thrust Bench:</span>
-            <a href="#bells-of-steel-soft-glute-bench" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel Soft Glute Bench</a>
-            <a href="#bells-of-steel-soft-glute-bench" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Commercial:</span>
-            <a href="#nautilus-glute-drive" class="font-bold text-gray-900 no-underline hover:underline">Nautilus Glute Drive</a>
-            <a href="#nautilus-glute-drive" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Hip Thrust Machines</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Hip Thrust Machines</a>
-          <a href="#band-vs-plate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Band vs Plate: How the Load Feels</a>
-          <a href="#types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Seated, Standing, Platform or Bench</a>
-          <a href="#comfort" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pad, Belt and Footplate: What Makes One Comfortable</a>
-          <a href="#footprint" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Footprint and Floor Space</a>
-          <a href="#do-you-need-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Do You Need a Machine? Barbell and Bench Alternatives</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Before You Buy a Hip Thrust Machine</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Hip Thrust Machines</a></li>
+            <li><a href="#how-we-chose">How We Chose These Hip Thrust Machines</a></li>
+            <li><a href="#band-vs-plate">Band vs Plate: How the Load Feels</a></li>
+            <li><a href="#types">Seated, Standing, Platform or Bench</a></li>
+            <li><a href="#comfort">Pad, Belt and Footplate: What Makes One Comfortable</a></li>
+            <li><a href="#footprint">Footprint and Floor Space</a></li>
+            <li><a href="#do-you-need-one">Do You Need a Machine? Barbell and Bench Alternatives</a></li>
+            <li><a href="#checklist">Before You Buy a Hip Thrust Machine</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The hip thrust is one of the most effective ways to load the glutes, and one of the most
-          awkward lifts to set up at home. A loaded barbell has to be rolled over your legs, the
-          bench slides away from your shoulders, and the bar digs into your hip bones however much
-          padding you use. Hip thrust machines solve those problems in different ways: some replace
-          the barbell with bands, some build the bench, belt and plate horns into one frame, and
-          some are simply a better bench. This guide sets out five that were on sale when we
-          checked, explains how band and plate resistance feel different through the rep, and
-          covers the comfort and space questions that decide whether a machine gets used.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Two dedicated machines, a hip-thrust platform, a purpose-built bench and one commercial
-            machine for those with the space and budget. The short version: the
-            <strong>Titan Standing Hip Thrust Machine</strong> if you want heavy plate-loaded work in
+            machine for those with the space and budget. The short version: the <strong>Titan Standing Hip Thrust Machine</strong> if you want heavy plate-loaded work in
             a smaller footprint than a seated machine; the <strong>BootySprout</strong> if the
             machine has to fold away; and the <strong>Bells of Steel Soft Glute Bench</strong> if you
             already own a barbell and plates and simply want the set-up to stop wobbling.
@@ -441,14 +409,12 @@ const schema = {
           </table></div>
           <p>
             Every pick here sells for $100 or more. If you are still deciding whether a dedicated
-            machine is worth it at all, the section on
-            <a href="#do-you-need-one" class="text-[#0F62FE] font-medium">barbell and bench alternatives</a>
-            explains what a good bench, a pad and a set of bands can do for far less.
+            machine is worth it at all, the section on <a href="#do-you-need-one" class="text-[#0F62FE] font-medium">barbell and bench alternatives</a> explains what a good bench, a pad and a set of bands can do for far less.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Hip Thrust Machines</h2>
+          <h2>The 5 Best Hip Thrust Machines</h2>
 <p>
             The cards give the figures that the maker and an independent source agreed on, the price
             we saw and who each machine suits. Where only the maker published a figure, the card
@@ -463,78 +429,67 @@ const schema = {
             set-up — at a fraction of the cost and floor area of a full machine.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Hip Thrust Machines</h2>
+          <h2>How We Chose These Hip Thrust Machines</h2>
 <p>
             We have not tested these machines. They were chosen from published specifications,
             maker and retailer listings, warranty terms and independent hands-on coverage, checked
@@ -572,7 +527,7 @@ const schema = {
         </div>
 
         <div id="band-vs-plate" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Band vs Plate: How the Load Feels</h2>
+          <h2>Band vs Plate: How the Load Feels</h2>
 <p>
             The biggest decision is not the brand but the source of resistance, because bands and
             plates load the hip thrust in different parts of the rep.
@@ -604,9 +559,7 @@ const schema = {
             loading. Adding a light band to a plate-loaded thrust makes the top of the rep harder
             without adding load at the bottom. It is a useful tool once you have learned the
             movement, but it makes progress harder to track, so change one variable at a time. Our
-            guide to the
-            <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">best resistance bands</a>
-            covers loop bands that fit standard pegs.
+            guide to the <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">best resistance bands</a> covers loop bands that fit standard pegs.
           </p>
           <p>
             In practice: if you mainly want higher-rep glute work in a small space, bands are
@@ -616,7 +569,7 @@ const schema = {
         </div>
 
         <div id="types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Seated, Standing, Platform or Bench</h2>
+          <h2>Seated, Standing, Platform or Bench</h2>
 <p>
             Hip thrust equipment comes in four basic shapes, and each suits a different room and a
             different lifter.
@@ -646,14 +599,12 @@ const schema = {
             off a normal flat bench is height and stability: standard benches are around 17 inches
             tall, which is too high for many shorter lifters, and a light bench slides backwards
             under load. A dedicated hip thrust bench fixes both. If you would rather have one bench
-            that does everything, our guide to the
-            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">best weight benches</a>
-            covers flat and adjustable benches and how to stop them sliding.
+            that does everything, our guide to the <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">best weight benches</a> covers flat and adjustable benches and how to stop them sliding.
           </p>
         </div>
 
         <div id="comfort" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pad, Belt and Footplate: What Makes One Comfortable</h2>
+          <h2>Pad, Belt and Footplate: What Makes One Comfortable</h2>
 <p>
             Comfort is not a luxury on a hip thrust machine. If the pad digs into your hips or your
             back slips off the edge, you will stop the set before your glutes do, and the machine
@@ -673,7 +624,7 @@ const schema = {
         </div>
 
         <div id="footprint" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Footprint and Floor Space</h2>
+          <h2>Footprint and Floor Space</h2>
 <p>
             Hip thrust machines are bigger than they look in photographs, and plate-loaded ones need
             room on both sides as well as their listed footprint.
@@ -703,9 +654,7 @@ const schema = {
           <p>
             <strong>Protect the floor.</strong> A loaded machine concentrates a lot of weight on
             small feet, and plates set down on the floor between sets do the damage. A section of
-            rubber flooring under the machine and the loading area is worth it; our guide to
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a>
-            covers thickness and the difference between mats and tiles.
+            rubber flooring under the machine and the loading area is worth it; our guide to <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> covers thickness and the difference between mats and tiles.
           </p>
           <p>
             <strong>Plan delivery.</strong> The heavier machines ship freight on a pallet. Booty
@@ -716,7 +665,7 @@ const schema = {
         </div>
 
         <div id="do-you-need-one" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Do You Need a Machine? Barbell and Bench Alternatives</h2>
+          <h2>Do You Need a Machine? Barbell and Bench Alternatives</h2>
 <p>
             A dedicated hip thrust machine is a single-exercise purchase, and that deserves an honest
             look before you spend $1,000 or more.
@@ -726,37 +675,28 @@ const schema = {
             is a thick bar pad and a way to stop the bench moving — wedging it against a wall or a
             rack, or a bench designed for the job like the Bells of Steel. The remaining annoyance
             is rolling a loaded bar over your legs, which bumper plates make easier because their
-            larger diameter lets the bar clear your thighs. Our guides to
-            <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plates</a> and
-            <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbells</a>
-            cover both.
+            larger diameter lets the bar clear your thighs. Our guides to <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium">bumper plates</a> and <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbells</a> cover both.
           </p>
           <p>
             <strong>If you have a rack and train heavy lower body already,</strong> a seated machine
             makes most sense when hip thrusts are a staple of your programme, several sessions a
-            week, and the barbell set-up is the thing stopping you. Our guide to
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
-            covers the rest of a lower-body set-up.
+            week, and the barbell set-up is the thing stopping you. Our guide to <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a> covers the rest of a lower-body set-up.
           </p>
           <p>
             <strong>If you are building a first home gym,</strong> a hip thrust machine is rarely the
             first thing to buy. A bench, <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium" data-autolink>adjustable dumbbells</a> and a set of bands train the glutes
-            well, and a guide like our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment overview</a>
-            sets out a sensible order of purchases.
+            well, and a guide like our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment overview</a> sets out a sensible order of purchases.
           </p>
           <p>
             <strong>If your goal is glute growth,</strong> remember that load matters more than the
             machine. Walking on an incline works the glutes harder than walking flat, but as our
-            article on
-            <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">whether incline walking builds glutes</a>
-            explains, progressive resistance training is what drives growth. A machine that makes
+            article on <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">whether incline walking builds glutes</a> explains, progressive resistance training is what drives growth. A machine that makes
             you more likely to do the hard sets is worth its price; one that sits unused is not.
           </p>
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Before You Buy a Hip Thrust Machine</h2>
+          <h2>Before You Buy a Hip Thrust Machine</h2>
 <ol>
             <li><strong>Decide bands or plates.</strong> Use the section above. If you are unsure, a machine with both plate horns and band pegs keeps your options open.</li>
             <li><strong>Read the capacity label.</strong> Plate capacity, user weight, combined and static capacity are different numbers. RitFit's 1,000 lb figure is static; Titan's 440 lb is plate capacity with a separate 300 lb user limit; the Glute Drive's 360 lb is its maximum load.</li>
@@ -767,107 +707,38 @@ const schema = {
           </ol>
           <p>
             If you want a broader machine that includes some glute work alongside everything else,
-            our guide to
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a>
-            compares all-in-one systems, and the sibling guide to
-            <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machines</a>
-            covers quad and hamstring isolation.
+            our guide to <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a> compares all-in-one systems, and the sibling guide to <a href="/best-leg-extension-machines/" class="text-[#0F62FE] font-medium">leg extension machines</a> covers quad and hamstring isolation.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best hip thrust machine for home use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most home gyms with the space, a plate-loaded machine like the Titan Standing Hip Thrust Machine, at about $1,000 with 440 lb of plate capacity, is the strongest all-round choice. If space is tight, the folding BootySprout band machine at $179 is easier to live with. If you already own a barbell, a dedicated bench such as the Bells of Steel Soft Glute Bench fixes most set-up problems for far less.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are band hip thrust machines as good as plate-loaded ones?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are different rather than worse. Bands are lightest at the bottom and hardest at lockout, which many people find comfortable and effective for glute work. Plates give exact, repeatable loads and far more total resistance, which matters for heavy strength training. Bands are enough for many home users for a long time; serious lifters usually end up wanting plates.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are hip thrust machines worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are worth it if hip thrusts are a regular part of your training and the barbell set-up is what stops you doing them. A machine removes the bar rolling, bench sliding and hip pain. They are not worth it for an occasional exercise, because they train essentially one movement and a plate-loaded machine takes a large patch of floor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much space does a hip thrust machine need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the type. A folding band machine can be stored under a bed. A standing machine like Titan's is about 38 by 47 inches. A commercial seated machine like the Nautilus Glute Drive is 60 by 62 inches, and plate-loaded machines need roughly 18 inches more on each side to load standard 45 lb plates.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good height for a hip thrust bench?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The bench edge should meet the bottom of your shoulder blades when you sit on the floor. For many people that is around 13 to 16 inches, lower than the 17 to 18 inches of a typical flat bench. Adjustable designs like the Bells of Steel Soft Glute Bench, which runs from 12 to 19 inches, let shorter and taller lifters both get it right.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you build glutes with a hip thrust machine alone?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A hip thrust machine is an excellent glute tool, but growth comes from progressively harder training across several movements. Combining hip thrusts with squats or leg presses, hinges such as Romanian deadlifts, and lunges or step-ups, and adding load or reps over time, works better than any single machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Hip Thrust Machine</h2>
+          <p>These are the errors that most often turn a hip thrust machine into an expensive coat rack.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing capacity figures that measure different things</h3>
+              <p>One maker quotes plate capacity, another maximum user weight, another a static or combined figure. A 1,000 lb static rating and a 440 lb plate capacity are not comparable. Read the label on each number, and choose a plate capacity comfortably above what you expect to lift in a year.</p>
+            </li>
+            <li>
+              <h3>Forgetting the room needed to load plates</h3>
+              <p>The listed footprint is the frame, not the space you use. Plate-loaded machines need clearance either side to slide plates on and off, and somewhere to keep the plates. Measure for the machine plus loading room, or you will be dragging it out from a wall every session.</p>
+            </li>
+            <li>
+              <h3>Buying bands when you already lift heavy</h3>
+              <p>If your squat and deadlift are already well into the hundreds of pounds, a band-only machine will feel light quickly, and stacking more bands gets awkward. Band machines are great for consistency and small spaces; if heavy loading is the goal, budget for a plate-loaded machine from the start.</p>
+            </li>
+            <li>
+              <h3>Ignoring fit for your height</h3>
+              <p>A back pad that sits too high or a belt that will not tighten turns every rep into a fight for position. If you are notably short or tall, check the adjustment range, ask the maker before buying and favour designs with an adjustable pad, belt or bench height.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Hip Thrust Machine</h2>
-          <p class="text-gray-700 leading-relaxed">These are the errors that most often turn a hip thrust machine into an expensive coat rack.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing capacity figures that measure different things</h3>
-              <p class="text-gray-700 text-sm m-0">One maker quotes plate capacity, another maximum user weight, another a static or combined figure. A 1,000 lb static rating and a 440 lb plate capacity are not comparable. Read the label on each number, and choose a plate capacity comfortably above what you expect to lift in a year.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the room needed to load plates</h3>
-              <p class="text-gray-700 text-sm m-0">The listed footprint is the frame, not the space you use. Plate-loaded machines need clearance either side to slide plates on and off, and somewhere to keep the plates. Measure for the machine plus loading room, or you will be dragging it out from a wall every session.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying bands when you already lift heavy</h3>
-              <p class="text-gray-700 text-sm m-0">If your squat and deadlift are already well into the hundreds of pounds, a band-only machine will feel light quickly, and stacking more bands gets awkward. Band machines are great for consistency and small spaces; if heavy loading is the goal, budget for a plate-loaded machine from the start.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring fit for your height</h3>
-              <p class="text-gray-700 text-sm m-0">A back pad that sits too high or a belt that will not tighten turns every rep into a fight for position. If you are notably short or tall, check the adjustment range, ask the maker before buying and favour designs with an adjustable pad, belt or bench height.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-weight-benches/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Benches</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Weight Benches</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Flat and adjustable benches for hip thrusts, presses and rows, and how to stop one sliding.</p>
-            </a>
-            <a href="/does-incline-walking-build-glutes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Does Incline Walking Build Glutes?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What incline walking does for the glutes, and why loaded training still drives growth.</p>
-            </a>
-            <a href="/best-home-gym-machines/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Machines</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Home Gym Machines</p>
-              <p class="text-sm text-gray-500 leading-relaxed">All-in-one systems that cover lower-body work alongside presses, rows and pulldowns.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For heavy glute work at home, the Titan Standing Hip Thrust Machine is
             the plate-loaded pick</strong>, and the BootySprout is the one to buy if it has to fold away.
             If you already own a barbell, start with the Bells of Steel Soft Glute Bench or the RitFit
@@ -875,38 +746,120 @@ const schema = {
             budget option on Amazon; the Nautilus Glute Drive is the commercial
             standard for those with the room and the budget.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, decide between bands and plates first, read what each capacity figure
             actually measures, and measure your room with space to load plates. Then build the rest of
-            your lower-body training around it —
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">our squat rack guide</a>
-            is the place to start.
+            your lower-body training around it — <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">our squat rack guide</a> is the place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-weight-benches/">Best Weight Benches</a></li>
+            <li><a href="/does-incline-walking-build-glutes/">Does Incline Walking Build Glutes?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best hip thrust machine for home use?</h3></summary>
+            <p class="faq-a">
+              For most home gyms with the space, a plate-loaded machine like the Titan Standing Hip Thrust Machine, at about $1,000 with 440 lb of plate capacity, is the strongest all-round choice. If space is tight, the folding BootySprout band machine at $179 is easier to live with. If you already own a barbell, a dedicated bench such as the Bells of Steel Soft Glute Bench fixes most set-up problems for far less.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are band hip thrust machines as good as plate-loaded ones?</h3></summary>
+            <p class="faq-a">
+              They are different rather than worse. Bands are lightest at the bottom and hardest at lockout, which many people find comfortable and effective for glute work. Plates give exact, repeatable loads and far more total resistance, which matters for heavy strength training. Bands are enough for many home users for a long time; serious lifters usually end up wanting plates.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are hip thrust machines worth it?</h3></summary>
+            <p class="faq-a">
+              They are worth it if hip thrusts are a regular part of your training and the barbell set-up is what stops you doing them. A machine removes the bar rolling, bench sliding and hip pain. They are not worth it for an occasional exercise, because they train essentially one movement and a plate-loaded machine takes a large patch of floor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much space does a hip thrust machine need?</h3></summary>
+            <p class="faq-a">
+              It depends on the type. A folding band machine can be stored under a bed. A standing machine like Titan's is about 38 by 47 inches. A commercial seated machine like the Nautilus Glute Drive is 60 by 62 inches, and plate-loaded machines need roughly 18 inches more on each side to load standard 45 lb plates.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a good height for a hip thrust bench?</h3></summary>
+            <p class="faq-a">
+              The bench edge should meet the bottom of your shoulder blades when you sit on the floor. For many people that is around 13 to 16 inches, lower than the 17 to 18 inches of a typical flat bench. Adjustable designs like the Bells of Steel Soft Glute Bench, which runs from 12 to 19 inches, let shorter and taller lifters both get it right.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you build glutes with a hip thrust machine alone?</h3></summary>
+            <p class="faq-a">
+              A hip thrust machine is an excellent glute tool, but growth comes from progressively harder training across several movements. Combining hip thrusts with squats or leg presses, hinges such as Romanian deadlifts, and lunges or step-ups, and adding load or reps over time, works better than any single machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-weight-benches/" class="card">
+            <div class="c-kicker">Benches</div>
+            <div class="c-title">Best Weight Benches</div>
+            <p class="c-blurb">Flat and adjustable benches for hip thrusts, presses and rows, and how to stop one sliding.</p>
+          </a>
+          <a href="/does-incline-walking-build-glutes/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Does Incline Walking Build Glutes?</div>
+            <p class="c-blurb">What incline walking does for the glutes, and why loaded training still drives growth.</p>
+          </a>
+          <a href="/best-home-gym-machines/" class="card">
+            <div class="c-kicker">Machines</div>
+            <div class="c-title">Best Home Gym Machines</div>
+            <p class="c-blurb">All-in-one systems that cover lower-body work alongside presses, rows and pulldowns.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

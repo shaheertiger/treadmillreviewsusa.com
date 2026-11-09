@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Warm Up and Cool Down (2026): How Long and What to Do";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-warm-up-and-cool-down/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,104 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Warm-Up", link: "#treadmill-warm-up" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillwarmupandcooldown" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillwarmupandcooldown)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Warm Up and Cool Down</h1>
+      <p class="ed-dek">
+        The five minutes at either end of a session are the ones people skip, and they are the ones that decide whether the middle goes well and whether you step off feeling fine. Here is how long each should take, and what to do in it.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Warm Up <span class="text-[#5AA9FF]">and Cool Down</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The five minutes at either end of a session are the ones people skip, and they are the ones that decide whether the middle goes well and whether you step off feeling fine. Here is how long each should take, and what to do in it.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#treadmill-warm-up" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Warm-Up
-          </a>
-          <a href="#dizziness" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Dizzy After Running?
-          </a>
-        </div>
+        <a href="#treadmill-warm-up" class="btn-ghost">The Warm-Up</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to starting and finishing a session sensibly — it
-          is not medical advice or a coaching plan. If you have a heart, blood-pressure or balance
-          condition, take medication that affects heart rate or blood pressure, are pregnant, or
-          regularly feel faint during or after exercise, talk to a doctor before relying on
-          anything here. Chest pain, fainting, a racing or irregular heartbeat, or dizziness that
-          does not settle within a few minutes of sitting down are reasons to stop and seek
-          medical help, not to adjust your cool-down.
-          <strong class="text-gray-900">On the figures below:</strong> durations and speeds are
-          typical ranges, not prescriptions.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#why-warm-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What a Warm-Up Is Actually For</a>
-          <a href="#how-long" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Long Should a Treadmill Warm-Up Be?</a>
-          <a href="#treadmill-warm-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. A Treadmill Warm-Up, Step by Step</a>
-          <a href="#dynamic-drills" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Dynamic Drills — Off the Belt</a>
-          <a href="#why-cool-down" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Cool Down at All?</a>
-          <a href="#treadmill-cool-down" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. A Treadmill Cool-Down, Step by Step</a>
-          <a href="#dizziness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Feeling Dizzy After Running on a Treadmill</a>
-          <a href="#programs-and-consoles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Built-In Programs, Auto Cool-Downs and the Stop Button</a>
-          <a href="#by-session-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Matching the Bookends to the Session</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A good treadmill warm-up takes five to ten minutes and simply builds from an easy walk to
           the effort of your main session, a little at a time. A good cool-down does the same in
           reverse. Neither needs to be elaborate, and the treadmill makes both easier than they are
@@ -209,8 +144,39 @@ const schema = {
           into getting on the belt safely anyway.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This is a practical guide to starting and finishing a session sensibly — it
+          is not medical advice or a coaching plan. If you have a heart, blood-pressure or balance
+          condition, take medication that affects heart rate or blood pressure, are pregnant, or
+          regularly feel faint during or after exercise, talk to a doctor before relying on
+          anything here. Chest pain, fainting, a racing or irregular heartbeat, or dizziness that
+          does not settle within a few minutes of sitting down are reasons to stop and seek
+          medical help, not to adjust your cool-down. <strong class="text-gray-900">On the figures below:</strong> durations and speeds are
+          typical ranges, not prescriptions.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#why-warm-up">What a Warm-Up Is Actually For</a></li>
+            <li><a href="#how-long">How Long Should a Treadmill Warm-Up Be?</a></li>
+            <li><a href="#treadmill-warm-up">A Treadmill Warm-Up, Step by Step</a></li>
+            <li><a href="#dynamic-drills">Dynamic Drills — Off the Belt</a></li>
+            <li><a href="#why-cool-down">Why Cool Down at All?</a></li>
+            <li><a href="#treadmill-cool-down">A Treadmill Cool-Down, Step by Step</a></li>
+            <li><a href="#dizziness">Feeling Dizzy After Running on a Treadmill</a></li>
+            <li><a href="#programs-and-consoles">Built-In Programs, Auto Cool-Downs and the Stop Button</a></li>
+            <li><a href="#by-session-type">Matching the Bookends to the Session</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>Warm up for 5 to 10 minutes.</strong> Start with an easy walk on a flat or
             near-flat deck, then raise the speed (and, if your session uses it, the incline) in
@@ -226,21 +192,19 @@ const schema = {
           <p>
             <strong>If you feel dizzy afterwards,</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the handrails</a>, step your feet onto
             the side rails, and sit down until it passes. A brief "the floor is moving" feeling is
-            common and harmless; feeling faint is not something to walk off. The
-            <a href="#dizziness" class="text-[#0F62FE] font-medium">dizziness section</a> below goes
+            common and harmless; feeling faint is not something to walk off. The <a href="#dizziness" class="text-[#0F62FE] font-medium">dizziness section</a> below goes
             through it.
           </p>
           <p>
             The rest of this page explains why those steps matter, how to set each one on a
             treadmill, and the few drills worth doing on the floor beside the machine before a
-            harder session. The step-on and step-off basics are covered in our guide to
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>,
+            harder session. The step-on and step-off basics are covered in our guide to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>,
             and this page builds on them rather than repeating them.
           </p>
         </div>
 
         <div id="why-warm-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What a Warm-Up Is Actually For</h2>
+          <h2>What a Warm-Up Is Actually For</h2>
 <p>
             The honest case for a warm-up is less dramatic than it is sometimes made to sound, and
             more convincing for being modest.
@@ -277,7 +241,7 @@ const schema = {
         </div>
 
         <div id="how-long" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Long Should a Treadmill Warm-Up Be?</h2>
+          <h2>How Long Should a Treadmill Warm-Up Be?</h2>
 <p>
             The rule of thumb is simple: the harder the main session, the longer the warm-up.
           </p>
@@ -307,15 +271,13 @@ const schema = {
           </p>
           <p>
             Do the warm-up minutes count toward your session? For general health targets, yes:
-            easy walking is still walking. Our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            covers weekly totals. For a structured run, it is usual to treat the warm-up and
+            easy walking is still walking. Our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> covers weekly totals. For a structured run, it is usual to treat the warm-up and
             cool-down as separate from the "main set", so the session is not quietly shortened.
           </p>
         </div>
 
         <div id="treadmill-warm-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. A Treadmill Warm-Up, Step by Step</h2>
+          <h2>A Treadmill Warm-Up, Step by Step</h2>
 <p>
             This is a sensible default before a run or a harder session. Shorten it for an easy
             walk; lengthen the final stage before intervals.
@@ -349,13 +311,12 @@ const schema = {
           </p>
           <p>
             Throughout: change one setting at a time, and change incline before speed when going
-            up. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            converts the mph on the display into minutes per mile if you think in outdoor paces.
+            up. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> converts the mph on the display into minutes per mile if you think in outdoor paces.
           </p>
         </div>
 
         <div id="dynamic-drills" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Dynamic Drills — Off the Belt</h2>
+          <h2>Dynamic Drills — Off the Belt</h2>
 <p>
             Before a hard run, many runners add a few minutes of dynamic movement — controlled,
             rhythmic movements through a range of motion — after the walking part of the warm-up.
@@ -390,15 +351,13 @@ const schema = {
             some evidence suggests it can briefly reduce power output. Moving does the warming.
           </p>
           <p>
-            If floor space beside your treadmill is tight, our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the clearances. Do not use the clear zone behind the deck for drills while
+            If floor space beside your treadmill is tight, our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the clearances. Do not use the clear zone behind the deck for drills while
             anyone else is on the machine.
           </p>
         </div>
 
         <div id="why-cool-down" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Why Cool Down at All?</h2>
+          <h2>Why Cool Down at All?</h2>
 <p>
             The cool-down has one clear, practical job and several claimed jobs that are less well
             supported.
@@ -428,7 +387,7 @@ const schema = {
         </div>
 
         <div id="treadmill-cool-down" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. A Treadmill Cool-Down, Step by Step</h2>
+          <h2>A Treadmill Cool-Down, Step by Step</h2>
 <p>
             Five to ten minutes, in this order:
           </p>
@@ -468,7 +427,7 @@ const schema = {
         </div>
 
         <div id="dizziness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Feeling Dizzy After Running on a Treadmill</h2>
+          <h2>Feeling Dizzy After Running on a Treadmill</h2>
 <p>
             Feeling odd after stepping off a treadmill is common, and there are two quite
             different sensations that get described as "dizziness". It helps to tell them apart.
@@ -505,9 +464,7 @@ const schema = {
           <p>
             <strong>Preventing it.</strong> Always cool down gradually, put a fan on yourself and
             keep the room cool, drink during long sessions, and avoid hard sessions on an empty
-            stomach if you know you are prone to it. Our
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill vs running outside</a>
-            page explains why heat is the hidden variable indoors.
+            stomach if you know you are prone to it. Our <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill vs running outside</a> page explains why heat is the hidden variable indoors.
           </p>
           <p>
             <strong>When it is a medical question.</strong> If you actually faint, if dizziness comes
@@ -519,7 +476,7 @@ const schema = {
         </div>
 
         <div id="programs-and-consoles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Built-In Programs, Auto Cool-Downs and the Stop Button</h2>
+          <h2>Built-In Programs, Auto Cool-Downs and the Stop Button</h2>
 <p>
             Consoles handle the ends of a session in different ways, and it is worth knowing how
             yours behaves before you rely on it. Your manual is the authority for your model.
@@ -551,7 +508,7 @@ const schema = {
         </div>
 
         <div id="by-session-type" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Matching the Bookends to the Session</h2>
+          <h2>Matching the Bookends to the Session</h2>
 <p>
             A quick reference for the most common session types. All figures are typical starting
             points.
@@ -561,9 +518,7 @@ const schema = {
             to your walking pace; 3 to 5 minutes easing back down at the end. No drills needed.
           </p>
           <p>
-            <strong>Incline walk, including the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30</a>:</strong>
-            5 minutes flat, then raise the grade a percent or two at a time to the working grade.
+            <strong>Incline walk, including the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30</a>:</strong> 5 minutes flat, then raise the grade a percent or two at a time to the working grade.
             At the end, step the grade down before the speed, then walk flat for 3 to 5 minutes.
             Calf raises beforehand are a sensible addition.
           </p>
@@ -574,10 +529,7 @@ const schema = {
           <p>
             <strong>Intervals or hill repeats:</strong> 10 to 15 minutes including pickups, with
             dynamic drills off the belt if you like them; 5 to 10 minutes of easy jogging and
-            walking at the end. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a>
-            and <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">hill workout guide</a>
-            have the main sets.
+            walking at the end. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a> and <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">hill workout guide</a> have the main sets.
           </p>
           <p>
             <strong>Long run:</strong> the first mile or two at a deliberately easy pace is the
@@ -591,7 +543,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Warm up for 5 to 10 minutes and cool down for 5 to 10 minutes.</strong> Build
             from an easy walk to the effort of your session in small steps, and come back down the
@@ -608,141 +560,155 @@ const schema = {
             doctor.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a treadmill warm up be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Five to ten minutes for most sessions: three to five minutes before an easy walk, and ten to fifteen before intervals, tempo runs or hill repeats. Start with an easy walk on a flat deck and raise the speed in small steps every minute or two until you are close to the pace of your main session.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you cool down on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Lower the incline to flat first, then reduce the speed in steps — from a run to a jog, then a brisk walk, then an easy walk — over five to ten minutes. Keep walking until your breathing settles and you could hold a conversation, then stop the belt, step onto the side rails and step off once it has stopped.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do I feel dizzy after running on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually one of two things. A brief sense that the floor is moving is a harmless after-effect of the belt and passes within a minute. Feeling lightheaded or faint is more often from stopping abruptly, heat, dehydration or not having eaten. Sit down until it passes; if you faint or it comes with chest pain or palpitations, see a doctor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I stretch before running on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Moving is a better warm-up than holding stretches. Walk and jog first, then add dynamic drills such as leg swings, lunges and calf raises — on the floor beside the treadmill, never on the moving belt. Long static stretches are better kept for after the session if you enjoy them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it bad to stop running on a treadmill suddenly?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is not dangerous for most people, but it is a common cause of lightheadedness, because blood pools in the legs when they stop pumping. It is also awkward on a belt. Slow to a walk and keep walking for a few minutes before pressing stop, and hold the rails if you need to stop quickly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the warm-up count as part of my treadmill workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For general activity totals, yes — easy walking is still walking. For a structured session such as intervals or a tempo run, it is usual to count the warm-up and cool-down separately from the main set so the hard part is not quietly shortened.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Warm-Ups and Cool-Downs</h2>
+          <p>None of these are dramatic, which is why they persist. The second and third are the ones that cause falls.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Jumping straight to session pace</h3>
+              <p>Using a quick key to go from standing to a run makes the first ten minutes feel far harder than they should and leaves no time to find your position on the belt. Build up in small steps with the arrow buttons over five to ten minutes instead.</p>
+            </li>
+            <li>
+              <h3>Doing drills on the moving belt</h3>
+              <p>Lunges, side-steps, skips and high knees on a moving belt are a straightforward route to a fall. Stop the belt, step off, do the drills on the floor beside the machine, then step back on and restart from a slow speed.</p>
+            </li>
+            <li>
+              <h3>Pressing stop at full speed and stepping off</h3>
+              <p>Stopping from a hard effort is the commonest cause of post-run lightheadedness, and stepping off a decelerating belt is the commonest way people fall. Walk for several minutes at the end, then stop the belt and step off only once it is still.</p>
+            </li>
+            <li>
+              <h3>Walking off dizziness</h3>
+              <p>If you feel faint after a session, the instinct is to stride away from the machine. Sit down instead and stay down until it passes completely. Fainting, chest pain, palpitations or dizziness during exercise are reasons to see a doctor rather than to tweak your cool-down.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Warm-Ups and Cool-Downs</h2>
-          <p class="text-gray-700 leading-relaxed">None of these are dramatic, which is why they persist. The second and third are the ones that cause falls.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Jumping straight to session pace</h3>
-              <p class="text-gray-700 text-sm m-0">Using a quick key to go from standing to a run makes the first ten minutes feel far harder than they should and leaves no time to find your position on the belt. Build up in small steps with the arrow buttons over five to ten minutes instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing drills on the moving belt</h3>
-              <p class="text-gray-700 text-sm m-0">Lunges, side-steps, skips and high knees on a moving belt are a straightforward route to a fall. Stop the belt, step off, do the drills on the floor beside the machine, then step back on and restart from a slow speed.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Pressing stop at full speed and stepping off</h3>
-              <p class="text-gray-700 text-sm m-0">Stopping from a hard effort is the commonest cause of post-run lightheadedness, and stepping off a decelerating belt is the commonest way people fall. Walk for several minutes at the end, then stop the belt and step off only once it is still.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Walking off dizziness</h3>
-              <p class="text-gray-700 text-sm m-0">If you feel faint after a session, the instinct is to stride away from the machine. Sit down instead and stay down until it passes completely. Fainting, chest pain, palpitations or dizziness during exercise are reasons to see a doctor rather than to tweak your cool-down.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-use-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Basics</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Use a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The safe first session: safety key, stepping on and off, and stopping.</p>
-            </a>
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sessions</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types and how to build a sustainable week.</p>
-            </a>
-            <a href="/treadmill-interval-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Speed Work</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Interval Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The sessions that most need a proper warm-up, easiest first.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Five to ten minutes at each end.</strong> Build from an easy
             walk to your session effort in small steps, and come back down the same way — incline
             first, then speed — until you can hold a conversation. Do drills on the floor, never on
             the moving belt.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If the floor feels like it is moving when you step off, hold the rail and stand still.
             If you feel faint, stop, step onto the side rails and sit down. The step-on and
-            step-off basics are in our
-            <a href="/how-to-use-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to use a treadmill</a>
-            guide, and repeated dizziness is a question for a doctor.
+            step-off basics are in our <a href="/how-to-use-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to use a treadmill</a> guide, and repeated dizziness is a question for a doctor.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-use-a-treadmill/">How to Use a Treadmill</a></li>
+            <li><a href="/treadmill-workouts/">Treadmill Workouts</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How long should a treadmill warm up be?</h3></summary>
+            <p class="faq-a">
+              Five to ten minutes for most sessions: three to five minutes before an easy walk, and ten to fifteen before intervals, tempo runs or hill repeats. Start with an easy walk on a flat deck and raise the speed in small steps every minute or two until you are close to the pace of your main session.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do you cool down on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Lower the incline to flat first, then reduce the speed in steps — from a run to a jog, then a brisk walk, then an easy walk — over five to ten minutes. Keep walking until your breathing settles and you could hold a conversation, then stop the belt, step onto the side rails and step off once it has stopped.
             </p>
+          </details>
+          <details>
+            <summary><h3>Why do I feel dizzy after running on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually one of two things. A brief sense that the floor is moving is a harmless after-effect of the belt and passes within a minute. Feeling lightheaded or faint is more often from stopping abruptly, heat, dehydration or not having eaten. Sit down until it passes; if you faint or it comes with chest pain or palpitations, see a doctor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I stretch before running on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Moving is a better warm-up than holding stretches. Walk and jog first, then add dynamic drills such as leg swings, lunges and calf raises — on the floor beside the treadmill, never on the moving belt. Long static stretches are better kept for after the session if you enjoy them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it bad to stop running on a treadmill suddenly?</h3></summary>
+            <p class="faq-a">
+              It is not dangerous for most people, but it is a common cause of lightheadedness, because blood pools in the legs when they stop pumping. It is also awkward on a belt. Slow to a walk and keep walking for a few minutes before pressing stop, and hold the rails if you need to stop quickly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the warm-up count as part of my treadmill workout?</h3></summary>
+            <p class="faq-a">
+              For general activity totals, yes — easy walking is still walking. For a structured session such as intervals or a tempo run, it is usual to count the warm-up and cool-down separately from the main set so the hard part is not quietly shortened.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-use-a-treadmill/" class="card">
+            <div class="c-kicker">Basics</div>
+            <div class="c-title">How to Use a Treadmill</div>
+            <p class="c-blurb">The safe first session: safety key, stepping on and off, and stopping.</p>
+          </a>
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Sessions</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types and how to build a sustainable week.</p>
+          </a>
+          <a href="/treadmill-interval-workouts/" class="card">
+            <div class="c-kicker">Speed Work</div>
+            <div class="c-title">Treadmill Interval Workouts</div>
+            <p class="c-blurb">The sessions that most need a proper warm-up, easiest first.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

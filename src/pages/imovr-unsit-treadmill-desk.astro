@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Unsit Treadmill Desk Bundle Review (2026): iMovR Unsit With the Lander";
 const description =
@@ -141,6 +140,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/imovr-unsit-treadmill-desk/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -162,66 +167,53 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#short-answer" }}
+  stickyCta={{ text: "Closest on Amazon: LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-imovrunsittreadmilldesk" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-imovrunsittreadmilldesk)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">Unsit Treadmill Desk Bundle Review</h1>
+      <p class="ed-dek">
+        The Unsit is an office treadmill built for walking slowly for hours under a standing desk, and iMovR sells it paired with its own desks, most often the Lander. It has the widest belt of any under-desk treadmill we cover and an unusually solid frame. It also has a price to match and a product page that contradicts itself on weight limit, motor and warranty.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Unsit Treadmill Desk <span class="text-[#5AA9FF]">Bundle Review</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Unsit is an office treadmill built for walking slowly for hours under a standing desk, and iMovR sells it paired with its own desks, most often the Lander. It has the widest belt of any under-desk treadmill we cover and an unusually solid frame. It also has a price to match and a product page that contradicts itself on weight limit, motor and warranty.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#bundle-cost" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What the Bundle Costs
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who It Suits
-          </a>
-        </div>
+        <a href="#lifespan-tr5000b-pro-glowup" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#lifespan-tr5000b-pro-glowup"><img src="https://m.media-amazon.com/images/I/314eClzr28L._SL500_.jpg" alt="LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        <figcaption>LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          An Unsit treadmill desk bundle is two products from two companies sold as one set: the
+          Unsit office treadmill, made by InMovement, and a standing desk from iMovR, which sells both.
+          The treadmill is the unusual part — a 30-inch-wide, 40-inch-long belt, a 2 mph ceiling and
+          a 162 lb steel frame, built for all-day walking rather than exercise. The desk is the part
+          that decides whether it works for you. This review sets out what the set costs today, what
+          we could confirm, where iMovR's own listing conflicts with itself, and who should pay for it.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we checked the Unsit and the Lander on iMovR's own store, including the
           product data behind each listing, then against independent coverage: Treadmill Review
@@ -240,46 +232,28 @@ const schema = {
           on 9 November 2026 against LifeSpan's store, its Amazon listing and independent reviews of the
           TR5000 family. The Unsit's own figures are in the sections below. We earn a commission
           if you buy through it; that does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#what-the-bundle-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Unsit Treadmill Desk Bundle Actually Is</a>
-          <a href="#unsit-specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Unsit Treadmill: Confirmed Figures and Conflicts</a>
-          <a href="#desk-fit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Fitting the Unsit Under a Desk</a>
-          <a href="#bundle-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What the Bundle Costs</a>
-          <a href="#delivery-and-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Delivery, Installation and Returns</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Warranty: Three Statements on One Page</a>
-          <a href="#reports" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Independent Coverage Consistently Reports</a>
-          <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Living With It: Use, Safety and Maintenance</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Alternatives on This Site</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy It, and Who Should Not</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#what-the-bundle-is">What the Unsit Treadmill Desk Bundle Actually Is</a></li>
+            <li><a href="#unsit-specifications">The Unsit Treadmill: Confirmed Figures and Conflicts</a></li>
+            <li><a href="#desk-fit">Fitting the Unsit Under a Desk</a></li>
+            <li><a href="#bundle-cost">What the Bundle Costs</a></li>
+            <li><a href="#delivery-and-returns">Delivery, Installation and Returns</a></li>
+            <li><a href="#warranty">The Warranty: Three Statements on One Page</a></li>
+            <li><a href="#reports">What Independent Coverage Consistently Reports</a></li>
+            <li><a href="#maintenance">Living With It: Use, Safety and Maintenance</a></li>
+            <li><a href="#alternatives">Alternatives on This Site</a></li>
+            <li><a href="#who-should-buy">Who Should Buy It, and Who Should Not</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          An Unsit treadmill desk bundle is two products from two companies sold as one set: the
-          Unsit office treadmill, made by InMovement, and a standing desk from iMovR, which sells both.
-          The treadmill is the unusual part — a 30-inch-wide, 40-inch-long belt, a 2 mph ceiling and
-          a 162 lb steel frame, built for all-day walking rather than exercise. The desk is the part
-          that decides whether it works for you. This review sets out what the set costs today, what
-          we could confirm, where iMovR's own listing conflicts with itself, and who should pay for it.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>The Unsit treadmill desk bundle is the most heavily built under-desk walking set we
             cover, and it is worth its price only if you will walk at your desk for hours almost every
@@ -310,78 +284,67 @@ const schema = {
             GlowUp, a heavier office base with a narrower belt, for less money and without a desk.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="what-the-bundle-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Unsit Treadmill Desk Bundle Actually Is</h2>
+          <h2>What the Unsit Treadmill Desk Bundle Actually Is</h2>
 <p>
             iMovR has sold treadmill desks for more than a decade. It used to make its own treadmill,
             the ThermoTread GT, which it has discontinued; the Unsit, made by <a href="/inmovement-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>InMovement</a>, replaced it.
@@ -414,7 +377,7 @@ const schema = {
         </div>
 
         <div id="unsit-specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Unsit Treadmill: Confirmed Figures and Conflicts</h2>
+          <h2>The Unsit Treadmill: Confirmed Figures and Conflicts</h2>
 <p>
             The table separates what iMovR and independent coverage agree on from what they do not.
           </p>
@@ -447,9 +410,7 @@ const schema = {
             walking stride at 2 mph, which is all the machine does. The catch, which WorkWhileWalking's
             review points out, is that a short deck has to sit in the right place under the desk: too far back
             and you walk off the front of your stride, too far forward and the console is out of reach.
-            Households where people of different heights share the desk may need to reposition it. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            covers stride arithmetic.
+            Households where people of different heights share the desk may need to reposition it. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> covers stride arithmetic.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Two miles an hour, on purpose</h3>
           <p>
@@ -457,9 +418,7 @@ const schema = {
             low-intensity movement that can be sustained while typing and talking. That is consistent
             with how most people actually use a treadmill desk: typing accuracy and call quality fall
             off quickly above about 2 mph. It also means the Unsit is not an exercise treadmill. If you
-            want a brisk walk or a jog after work, this machine will not do it. Our guide to
-            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking speeds</a>
-            puts 2 mph in context.
+            want a brisk walk or a jog after work, this machine will not do it. Our guide to <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking speeds</a> puts 2 mph in context.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The weight limit: three numbers</h3>
           <p>
@@ -470,9 +429,7 @@ const schema = {
             independent, reports that the Unsit was first marketed at 400 lb and that its reviewers
             de-rated it to 300 lb. We have not picked one. If your weight is anywhere near 300 lb, ask
             iMovR or InMovement for the rated limit in writing, and ask whether the warranty depends on
-            it. Our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains what the rating covers.
+            it. Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains what the rating covers.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The motor: two ratings and an estimate</h3>
           <p>
@@ -482,14 +439,12 @@ const schema = {
             those electrical figures to estimate a continuous output well under 1 HP and reads both
             advertised figures as peak ratings. That is an estimate, not a measurement, and we have not
             verified it. What it illustrates is that neither horsepower number on the page is a
-            continuous-duty rating, and that at 2 mph the motor is not being asked for much. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains peak and continuous ratings.
+            continuous-duty rating, and that at 2 mph the motor is not being asked for much. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains peak and continuous ratings.
           </p>
         </div>
 
         <div id="desk-fit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Fitting the Unsit Under a Desk</h2>
+          <h2>Fitting the Unsit Under a Desk</h2>
 <p>
             The Unsit is wider than almost any other under-desk treadmill, and that changes which desks
             work. iMovR is unusually specific about it, and that specificity is one of the better
@@ -518,8 +473,7 @@ const schema = {
             surface height of 23 to 49.125 inches for the current Lander, its solid-wood listing gives
             22.75 to 48.75 inches with the top, and WorkWhileWalking's review lists 24.5 to 50.5 inches.
             Those ranges differ by more than an inch at the top, which is enough to matter for a tall
-            walker. Work out the height you need with our
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">guide to standing desk height on a walking deck</a>,
+            walker. Work out the height you need with our <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">guide to standing desk height on a walking deck</a>,
             then ask iMovR to confirm the range for the exact frame and desktop you are ordering, and
             whether you need the extenders.
           </p>
@@ -528,14 +482,12 @@ const schema = {
             iMovR sells SteadyType keyboard trays designed for typing while walking — $385 and $485 on
             14 October 2026 — which hold the keyboard at a downward angle. A tray lowers the keyboard
             relative to the desktop; it does not add height, so it does not fix a desk that is too low.
-            Put the monitor at eye level for your standing-on-deck height, not your floor height. Our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers set-up.
+            Put the monitor at eye level for your standing-on-deck height, not your floor height. Our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers set-up.
           </p>
         </div>
 
         <div id="bundle-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What the Bundle Costs</h2>
+          <h2>What the Bundle Costs</h2>
 <p>
             Because iMovR sells the pieces separately, the bundle price is a sum. These are the prices
             on iMovR's store on 14 October 2026.
@@ -568,15 +520,13 @@ const schema = {
           </p>
           <p>
             That is the cost of the set. The cost of the idea is lower: a good walking pad and a
-            standing desk tall enough for it can be had for well under half as much, as our
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk roundup</a>
-            shows. The Unsit is worth the difference only for its width, its frame and long daily
+            standing desk tall enough for it can be had for well under half as much, as our <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desk roundup</a> shows. The Unsit is worth the difference only for its width, its frame and long daily
             sessions.
           </p>
         </div>
 
         <div id="delivery-and-returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Delivery, Installation and Returns</h2>
+          <h2>Delivery, Installation and Returns</h2>
 <p>
             iMovR's Unsit page sets out the delivery terms in more detail than most sellers.
           </p>
@@ -591,9 +541,7 @@ const schema = {
             At 162 lb and 39 inches wide, the Unsit is wider than many interior doorways once unboxed,
             and heavy enough that kerbside delivery leaves you a real job. iMovR describes rolling it in
             on its front wheels or carrying the carton in by its straps with two people. If stairs are
-            involved, the white-glove option is worth pricing. Our
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a>
-            covers the safe way to do it.
+            involved, the white-glove option is worth pricing. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a> covers the safe way to do it.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns: possible, but expensive</h3>
           <p>
@@ -602,14 +550,12 @@ const schema = {
             pallet, and return freight paid by you — iMovR estimates $280 to $500. Inside-delivery and
             white-glove fees are not refunded. Keep the packaging and pallet until you are sure. The
             Lander's laminate desks carry a separate 100-day satisfaction guarantee, refunded minus a
-            20% restocking fee because they are built to order. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">guide to return policies</a>
-            explains what to check.
+            20% restocking fee because they are built to order. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">guide to return policies</a> explains what to check.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Warranty: Three Statements on One Page</h2>
+          <h2>The Warranty: Three Statements on One Page</h2>
 <p>
             The Unsit's warranty is the other figure iMovR's page does not state consistently. Its
             warranty section, which says coverage, servicing and technical support are provided by
@@ -629,14 +575,12 @@ const schema = {
             The Lander's own warranty, as iMovR's desk page states it, is lifetime on the steel frame,
             10 years on motors and electronics, 10 years on 3D-laminate desktops and 5 years on
             solid-wood desktops. Some older reviews and owner comments quote 15 years on the desk's
-            parts; the current listing says 10. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            covers how to read a split like this.
+            parts; the current listing says 10. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> covers how to read a split like this.
           </p>
         </div>
 
         <div id="reports" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Independent Coverage Consistently Reports</h2>
+          <h2>What Independent Coverage Consistently Reports</h2>
 <p>
             We only repeat an observation here if it appears in more than one source, and we do not
             count WorkWhileWalking towards that.
@@ -663,14 +607,12 @@ const schema = {
           </p>
           <p>
             Owner ratings for the Unsit on iMovR's own store are based on very few reviews, so we have
-            not leaned on them. Our guide to
-            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
-            explains why small samples mislead.
+            not leaned on them. Our guide to <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a> explains why small samples mislead.
           </p>
         </div>
 
         <div id="maintenance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Living With It: Use, Safety and Maintenance</h2>
+          <h2>Living With It: Use, Safety and Maintenance</h2>
 <p>
             An office treadmill does a lot of slow miles. A few habits keep it running and keep you
             safe on it.
@@ -685,9 +627,7 @@ const schema = {
           <p>
             <strong>Lubricate on schedule.</strong> Long, slow sessions put steady friction on the belt
             and deck. WorkWhileWalking's review reports that the Unsit is harder to lubricate than
-            most treadmills, so follow the owner's manual for the method and interval rather than general advice. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
-            covers the principle.
+            most treadmills, so follow the owner's manual for the method and interval rather than general advice. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a> covers the principle.
           </p>
           <p>
             <strong>Level it.</strong> A treadmill that rocks under a desk transmits movement to your
@@ -697,44 +637,34 @@ const schema = {
           <p>
             <strong>Build up gradually.</strong> Walking for hours a day is a lot for anyone who has
             been sitting. Start with shorter sessions at a slow pace and add time over weeks. Our guides
-            to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk</a>
-            and to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">desk height</a>
-            help with comfort. This is equipment advice, not medical advice; if you have a health
+            to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk</a> and to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">desk height</a> help with comfort. This is equipment advice, not medical advice; if you have a health
             condition, ask your doctor how much walking suits you.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Alternatives on This Site</h2>
+          <h2>Alternatives on This Site</h2>
 <p>
             Most buyers comparing the Unsit set are choosing between three approaches.
           </p>
           <p>
-            <strong>Another integrated set.</strong> Our
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
-            roundup includes UPLIFT's desk and walking-pad set, which costs far less and adds incline,
+            <strong>Another integrated set.</strong> Our <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> roundup includes UPLIFT's desk and walking-pad set, which costs far less and adds incline,
             but has a narrower pad and a lower desk maximum.
           </p>
           <p>
             <strong>A standing desk plus a walking pad.</strong> This is how most people end up with a
-            treadmill desk, and it is usually much cheaper. Our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
-            and <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            cover the pads; the roundup above covers desks that rise high enough. What you give up is
+            treadmill desk, and it is usually much cheaper. Our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a> and <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> cover the pads; the roundup above covers desks that rise high enough. What you give up is
             the Unsit's width and its heavy frame.
           </p>
           <p>
-            <strong>A heavier-duty walking pad.</strong> If weight capacity is the concern, our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavier users</a>
-            roundup lists pads with confirmed ratings. And if you want to walk faster or jog as well as
+            <strong>A heavier-duty walking pad.</strong> If weight capacity is the concern, our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavier users</a> roundup lists pads with confirmed ratings. And if you want to walk faster or jog as well as
             work, a walking pad with a higher top speed, or a folding treadmill, does what the Unsit
-            deliberately does not; see
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill</a>.
+            deliberately does not; see <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill</a>.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy It, and Who Should Not</h2>
+          <h2>Who Should Buy It, and Who Should Not</h2>
 <p>
             <strong>Buy the set if you will walk for hours every working day.</strong> The Unsit's
             width, frame and weight sensors are built for exactly that, and the cost per hour of use
@@ -760,137 +690,152 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does iMovR sell an Unsit treadmill desk bundle?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                iMovR shows Unsit and desk combinations — most often with a Lander — but on 14 October 2026 it sold each piece separately rather than as one priced bundle. The Unsit was $2,595 and a compatible laminate Lander $1,295 to $1,695, so a set came to about $3,890 to $4,290 before extenders, a keyboard tray or installation. The desk and treadmill ship separately.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What desk does the Unsit treadmill fit under?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                iMovR says the Unsit needs at least 40 inches between a desk's lifting columns, and that any iMovR desk with a 53-inch or wider desktop fits. It lists Lander, Lander Lite, Jaxson and Q Desk models, with maximum heights of 56.5, 56.0, 53.6 and 46.625 inches respectively using its 6-inch height extenders.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit of the iMovR Unsit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is not consistent. iMovR's own page says 300 lb in its specification table, 350 lb in its description and 400 lb in its key specifications. Independent sources split between 300 and 400 lb. If you are near 300 lb, get the rated limit in writing from iMovR or InMovement before ordering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast does the Unsit treadmill go?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Up to 2.0 mph, which iMovR describes as deliberate for walking while working. iMovR's page gives a starting speed of 0.3 mph in one place and 0.1 mph in another. There is no incline. It is a desk walking machine, not an exercise treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Unsit treadmill quiet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                iMovR gives 42.9 dB measured at ear level at 2 mph, and independent coverage consistently describes it as quiet, with the belt rather than the motor making most of the sound. Footfall on a suspended floor is a separate matter; a mat and a light step help.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty comes with the Unsit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                iMovR's warranty section, provided by InMovement, lists a lifetime frame, two years on parts and one year of labour, matching an independent review. The same page also shows a 3-year motor badge and a 10-year motors-and-electronics statement. The lifetime frame is consistent; confirm the rest in writing. The Lander desk has its own warranty.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an Unsit Treadmill Desk</h2>
+          <p>The Unsit is a specialised machine, and most regrets come from the desk, the delivery or the paperwork rather than the treadmill.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering a desk that is too narrow or too low</h3>
+              <p>The Unsit needs at least 40 inches between the desk's lifting columns, and a 53-inch or wider desktop on iMovR's desks. Standing on a 5-inch deck also needs a desk about five inches higher than your standing height. Check both, and ask iMovR to confirm the height range for your exact Lander frame and top, since its listings differ.</p>
+            </li>
+            <li>
+              <h3>Taking the highest weight figure on the page</h3>
+              <p>iMovR's Unsit page states 300, 350 and 400 lb in different places. A buyer near the top of that range who relies on 400 could find the rated figure is 300. Ask for the limit in writing, and ask whether exceeding it affects the warranty, before you order.</p>
+            </li>
+            <li>
+              <h3>Choosing kerbside delivery for an upstairs office</h3>
+              <p>Free kerbside delivery leaves a 162 lb, 39-inch-wide machine on your driveway. Getting it up stairs and through doors takes several people. Price inside delivery ($249) or white-glove installation ($499) against the help you have, and measure doorways first.</p>
+            </li>
+            <li>
+              <h3>Throwing away the pallet</h3>
+              <p>The 30-day return requires written authorisation, the original carton and the original pallet, and return freight costs you $280 to $500. Keep all of the packaging until you are sure, and walk on the machine at your normal pace for full working sessions in the first days so any problem shows up in time.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Unsit Treadmill Desk</h2>
-          <p class="text-gray-700 leading-relaxed">The Unsit is a specialised machine, and most regrets come from the desk, the delivery or the paperwork rather than the treadmill.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a desk that is too narrow or too low</h3>
-              <p class="text-gray-700 text-sm m-0">The Unsit needs at least 40 inches between the desk's lifting columns, and a 53-inch or wider desktop on iMovR's desks. Standing on a 5-inch deck also needs a desk about five inches higher than your standing height. Check both, and ask iMovR to confirm the height range for your exact Lander frame and top, since its listings differ.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Taking the highest weight figure on the page</h3>
-              <p class="text-gray-700 text-sm m-0">iMovR's Unsit page states 300, 350 and 400 lb in different places. A buyer near the top of that range who relies on 400 could find the rated figure is 300. Ask for the limit in writing, and ask whether exceeding it affects the warranty, before you order.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing kerbside delivery for an upstairs office</h3>
-              <p class="text-gray-700 text-sm m-0">Free kerbside delivery leaves a 162 lb, 39-inch-wide machine on your driveway. Getting it up stairs and through doors takes several people. Price inside delivery ($249) or white-glove installation ($499) against the help you have, and measure doorways first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Throwing away the pallet</h3>
-              <p class="text-gray-700 text-sm m-0">The 30-day return requires written authorisation, the original carton and the original pallet, and return freight costs you $280 to $500. Keep all of the packaging until you are sure, and walk on the machine at your normal pace for full working sessions in the first days so any problem shows up in time.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Integrated sets and standing desks tall enough for a walking pad.</p>
-            </a>
-            <a href="/standing-desk-height-for-walking-pad/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Set-Up</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Standing Desk Height for a Walking Pad</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The formula and chart for how high your desk needs to go on a deck.</p>
-            </a>
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Alternatives</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Walking pads that do the same job for far less, with narrower belts.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy the Unsit with a Lander if you will walk at your desk for hours
-            every working day and want the widest, most solidly built under-desk treadmill we cover.</strong>
-            Its 30 by 40-inch belt, 5-inch step-up, weight sensors and steel frame suit long, slow office
+            every working day and want the widest, most solidly built under-desk treadmill we cover.</strong> Its 30 by 40-inch belt, 5-inch step-up, weight sensors and steel frame suit long, slow office
             walking, and iMovR's compatibility table takes the guesswork out of the desk. Get the weight
             limit, the warranty and the desk height for your configuration in writing first.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you will walk an hour or two a day, or the budget matters, a walking pad under a tall
-            standing desk does the core job for well under half the cost — start with our
-            <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">treadmill desk roundup</a>
-            and the
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#5AA9FF] font-bold no-underline">desk height guide</a>.
+            standing desk does the core job for well under half the cost — start with our <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">treadmill desk roundup</a> and the <a href="/standing-desk-height-for-walking-pad/" class="text-[#5AA9FF] font-bold no-underline">desk height guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-desks/">Best Treadmill Desks</a></li>
+            <li><a href="/standing-desk-height-for-walking-pad/">Standing Desk Height for a Walking Pad</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does iMovR sell an Unsit treadmill desk bundle?</h3></summary>
+            <p class="faq-a">
+              iMovR shows Unsit and desk combinations — most often with a Lander — but on 14 October 2026 it sold each piece separately rather than as one priced bundle. The Unsit was $2,595 and a compatible laminate Lander $1,295 to $1,695, so a set came to about $3,890 to $4,290 before extenders, a keyboard tray or installation. The desk and treadmill ship separately.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What desk does the Unsit treadmill fit under?</h3></summary>
+            <p class="faq-a">
+              iMovR says the Unsit needs at least 40 inches between a desk's lifting columns, and that any iMovR desk with a 53-inch or wider desktop fits. It lists Lander, Lander Lite, Jaxson and Q Desk models, with maximum heights of 56.5, 56.0, 53.6 and 46.625 inches respectively using its 6-inch height extenders.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit of the iMovR Unsit?</h3></summary>
+            <p class="faq-a">
+              It is not consistent. iMovR's own page says 300 lb in its specification table, 350 lb in its description and 400 lb in its key specifications. Independent sources split between 300 and 400 lb. If you are near 300 lb, get the rated limit in writing from iMovR or InMovement before ordering.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How fast does the Unsit treadmill go?</h3></summary>
+            <p class="faq-a">
+              Up to 2.0 mph, which iMovR describes as deliberate for walking while working. iMovR's page gives a starting speed of 0.3 mph in one place and 0.1 mph in another. There is no incline. It is a desk walking machine, not an exercise treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Unsit treadmill quiet?</h3></summary>
+            <p class="faq-a">
+              iMovR gives 42.9 dB measured at ear level at 2 mph, and independent coverage consistently describes it as quiet, with the belt rather than the motor making most of the sound. Footfall on a suspended floor is a separate matter; a mat and a light step help.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty comes with the Unsit?</h3></summary>
+            <p class="faq-a">
+              iMovR's warranty section, provided by InMovement, lists a lifetime frame, two years on parts and one year of labour, matching an independent review. The same page also shows a 3-year motor badge and a 10-year motors-and-electronics statement. The lifetime frame is consistent; confirm the rest in writing. The Lander desk has its own warranty.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-desks/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Treadmill Desks</div>
+            <p class="c-blurb">Integrated sets and standing desks tall enough for a walking pad.</p>
+          </a>
+          <a href="/standing-desk-height-for-walking-pad/" class="card">
+            <div class="c-kicker">Set-Up</div>
+            <div class="c-title">Standing Desk Height for a Walking Pad</div>
+            <p class="c-blurb">The formula and chart for how high your desk needs to go on a deck.</p>
+          </a>
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Alternatives</div>
+            <div class="c-title">Under-Desk Treadmills</div>
+            <p class="c-blurb">Walking pads that do the same job for far less, with narrower belts.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

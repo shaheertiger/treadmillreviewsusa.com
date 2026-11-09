@@ -70,15 +70,43 @@ const CHECKS = [
   { name: 'Article JSON-LD', test: (s) => /"@type":\s*"Article"/.test(s) },
 ];
 
+// Pages generated from specs use the editorial template (data-template="editorial"): a white
+// masthead, numbered product blocks and an FAQ accordion. They are held to the same structure
+// under the new markup. Hand-written pages keep the original checks above.
+const EDITORIAL_CHECKS = [
+  { name: 'Editorial masthead (crumbs, title, dek)', test: (s) => s.includes('class="ed-crumbs"') && s.includes('<h1 class="ed-title">') && s.includes('class="ed-dek"') },
+  { name: 'Byline with author link', test: (s) => s.includes('class="ed-byline"') && s.includes('rel="author"') },
+  { name: 'Affiliate disclosure', test: (s) => s.includes('class="ed-disclosure"') },
+  { name: 'Contents ("In this guide")', test: (s) => s.includes('class="ed-toc not-prose"') && s.includes('In this guide') },
+  { name: 'FAQ block', test: (s) => s.includes('<section id="faq" class="ed-faq scroll-mt-24">') && s.includes('Frequently asked questions') && /<details[\s>]/.test(s) },
+  {
+    name: 'Common Mistakes (4 items)',
+    test: (s) => {
+      const at = s.indexOf('class="ed-mistakes not-prose"');
+      if (at === -1) return false;
+      const list = s.slice(at, s.indexOf('</ol>', at));
+      return (list.match(/<li>/g) ?? []).length === 4;
+    },
+  },
+  { name: 'Related reading (3+ cards)', test: (s) => (s.match(/class="card"/g) ?? []).length >= 3 },
+  { name: 'Closing "The bottom line"', test: (s) => s.includes('class="ed-bottomline"') && s.includes('<h2>The bottom line</h2>') },
+  { name: 'Why trust us + author card', test: (s) => s.includes('id="why-trust-us"') && s.includes('class="author-card"') },
+  { name: 'jsonLd={schema} passed to Layout', test: (s) => s.includes('jsonLd={schema}') },
+  { name: 'BreadcrumbList JSON-LD', test: (s) => s.includes('"BreadcrumbList"') },
+  { name: 'FAQPage JSON-LD', test: (s) => s.includes('"FAQPage"') },
+  { name: 'Article JSON-LD', test: (s) => /"@type":\s*"Article"/.test(s) },
+];
+
 const files = walkPages(PAGES_DIR).filter((f) => !isLandingPage(f));
 
 let failed = 0;
 
-console.log('Auditing article page format (%d required elements)\n', CHECKS.length);
+console.log('Auditing article page format (%d legacy / %d editorial required elements)\n', CHECKS.length, EDITORIAL_CHECKS.length);
 
 for (const file of files) {
   const contents = readFileSync(join(PAGES_DIR, file), 'utf-8');
-  const missing = CHECKS.filter((check) => !check.test(contents)).map((c) => c.name);
+  const checks = contents.includes('data-template="editorial"') ? EDITORIAL_CHECKS : CHECKS;
+  const missing = checks.filter((check) => !check.test(contents)).map((c) => c.name);
 
   if (missing.length > 0) {
     failed += 1;

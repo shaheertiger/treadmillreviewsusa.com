@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Treadmill Should I Buy? (2026): Pick by How You'll Use It";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-treadmill-should-i-buy/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -105,103 +110,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Decision Table", link: "#decision-table" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whattreadmillshouldibuy" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whattreadmillshouldibuy)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">What Treadmill Should I Buy?</h1>
+      <p class="ed-dek">
+        The right treadmill follows from how you will use it, not from a brand or a feature list. Tell this page whether you will walk at a desk, walk, jog, run hard, share it with a heavier user, squeeze it into a small room or keep to a tight budget, and it will tell you the type to buy, the minimum specs to insist on and the guide that covers your case.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Treadmill <span class="text-[#5AA9FF]">Should I Buy?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The right treadmill follows from how you will use it, not from a brand or a feature list. Tell this page whether you will walk at a desk, walk, jog, run hard, share it with a heavier user, squeeze it into a small room or keep to a tight budget, and it will tell you the type to buy, the minimum specs to insist on and the guide that covers your case.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#decision-table" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Decision Table
-          </a>
-          <a href="#four-questions" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Four Questions
-          </a>
-        </div>
+        <a href="#decision-table" class="btn-ghost">The Decision Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Deck sizes, motor ratings,
-          weight-capacity margins and warranty terms on this page are rules of thumb drawn from our
-          own buying guides, belt-size guide, horsepower guide and weight-capacity guide, so that
-          this page and those agree. They are general thresholds, not specifications of any
-          particular machine, and price bands are typical US ranges as of October 18, 2026 that
-          move through the year. We have not tested the machines in our roundups hands-on; each
-          roundup says what was checked and when. The manufacturer's listing and manual for the
-          machine you are considering always take precedence over a rule of thumb. If you are
-          buying for rehabilitation or have a medical condition, your clinician's advice on what
-          you need comes first.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Treadmill Should I Buy? The Short Answer</a>
-          <a href="#decision-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Decision Table</a>
-          <a href="#four-questions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Four Questions</a>
-          <a href="#desk-walking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. If You Will Walk at a Desk: A Walking Pad</a>
-          <a href="#walking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. If You Will Walk for Exercise: A Folding Treadmill With Incline</a>
-          <a href="#jogging-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. If You Will Jog or Run: Deck Length First, Motor Second</a>
-          <a href="#heavy-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. If a Heavier User or a Busy Household Will Use It</a>
-          <a href="#small-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. If You Are Short of Space: Judge the Fold and the Folded Size</a>
-          <a href="#budget" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. If Budget Is the Constraint, or This Is Your First Treadmill</a>
-          <a href="#what-to-look-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What to Look For in a Home Treadmill, Whatever You Buy</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most people start choosing a treadmill by comparing models. That is the slow way round.
           Whether you should be looking at a walking pad, a folding treadmill, a heavy non-folding
           machine or an incline trainer is decided by four answers you already know: what you will
@@ -212,8 +148,39 @@ const schema = {
           product picks live in our roundups; this page routes you to the right ones.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Deck sizes, motor ratings,
+          weight-capacity margins and warranty terms on this page are rules of thumb drawn from our
+          own buying guides, belt-size guide, horsepower guide and weight-capacity guide, so that
+          this page and those agree. They are general thresholds, not specifications of any
+          particular machine, and price bands are typical US ranges as of October 18, 2026 that
+          move through the year. We have not tested the machines in our roundups hands-on; each
+          roundup says what was checked and when. The manufacturer's listing and manual for the
+          machine you are considering always take precedence over a rule of thumb. If you are
+          buying for rehabilitation or have a medical condition, your clinician's advice on what
+          you need comes first.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Treadmill Should I Buy? The Short Answer</a></li>
+            <li><a href="#decision-table">The Decision Table</a></li>
+            <li><a href="#four-questions">The Four Questions</a></li>
+            <li><a href="#desk-walking">If You Will Walk at a Desk: A Walking Pad</a></li>
+            <li><a href="#walking">If You Will Walk for Exercise: A Folding Treadmill With Incline</a></li>
+            <li><a href="#jogging-running">If You Will Jog or Run: Deck Length First, Motor Second</a></li>
+            <li><a href="#heavy-use">If a Heavier User or a Busy Household Will Use It</a></li>
+            <li><a href="#small-space">If You Are Short of Space: Judge the Fold and the Folded Size</a></li>
+            <li><a href="#budget">If Budget Is the Constraint, or This Is Your First Treadmill</a></li>
+            <li><a href="#what-to-look-for">What to Look For in a Home Treadmill, Whatever You Buy</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Treadmill Should I Buy? The Short Answer</h2>
+          <h2>What Treadmill Should I Buy? The Short Answer</h2>
 <p>
             <strong>Buy the type that matches your most demanding regular use: a walking pad for
             walking at a desk, a folding treadmill with incline for walking and light jogging, a
@@ -233,14 +200,12 @@ const schema = {
             The decision table below is the whole answer in one place. The sections after it explain
             each row, say why the thresholds are where they are, and point you to the roundup that
             lists current machines meeting them. If you have not yet decided whether a treadmill is
-            worth buying at all, start with our guide to
-            <a href="/should-i-buy-a-treadmill/" class="text-[#0F62FE] font-medium">whether you should buy a treadmill</a>
-            and come back here once the answer is yes.
+            worth buying at all, start with our guide to <a href="/should-i-buy-a-treadmill/" class="text-[#0F62FE] font-medium">whether you should buy a treadmill</a> and come back here once the answer is yes.
           </p>
         </div>
 
         <div id="decision-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Treadmill Is Good for You? The Decision Table</h2>
+          <h2>Which Treadmill Is Good for You? The Decision Table</h2>
 <p>
             Find the row that describes your most demanding regular use. If more than one fits, take
             the more demanding row: a machine built for jogging walks perfectly well, but a walking
@@ -287,7 +252,7 @@ const schema = {
         </div>
 
         <div id="four-questions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How to Choose a Treadmill: The Four Questions That Route You</h2>
+          <h2>How to Choose a Treadmill: The Four Questions That Route You</h2>
 <p>
             If no row in the table jumps out, work through these four questions in order. Each one
             narrows the choice, and the order matters: the early questions decide the type, the later
@@ -308,8 +273,7 @@ const schema = {
             for the money. A shared room that has to be something else most of the time points to a
             folding machine or a walking pad. Plan for about 6 feet of clear floor behind the belt
             and about 2 feet each side, check ceiling height against your height plus the deck
-            height plus a foot, and measure the delivery route. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> has the
+            height plus a foot, and measure the delivery route. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> has the
             numbers, and <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding</a> covers
             the trade.
           </p>
@@ -324,16 +288,13 @@ const schema = {
             use that almost any sensible machine handles; three to four is the typical committed home
             user that most mid-range machines are designed around; five or more, especially running,
             is heavy home use where frame, rollers and motor type start to matter within your
-            ownership. Our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            turns those answers into a budget, and the
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">complete treadmill buying guide</a> explains
+            ownership. Our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a> turns those answers into a budget, and the <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">complete treadmill buying guide</a> explains
             each specification from the beginning.
           </p>
         </div>
 
         <div id="desk-walking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. If You Will Walk at a Desk: A Walking Pad</h2>
+          <h2>If You Will Walk at a Desk: A Walking Pad</h2>
 <p>
             Walking while you work is a different job from walking as a workout. You will move
             slowly — usually 1 to 2 mph, because faster than that makes typing and calls difficult —
@@ -366,7 +327,7 @@ const schema = {
         </div>
 
         <div id="walking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. If You Will Walk for Exercise: A Folding Treadmill With Incline</h2>
+          <h2>If You Will Walk for Exercise: A Folding Treadmill With Incline</h2>
 <p>
             Brisk walking, often with incline, is what most home treadmills actually spend their
             lives doing, at every price. The good news is that it asks relatively little of the
@@ -376,34 +337,30 @@ const schema = {
             <strong>Deck.</strong> 50 to 55 inches long by 18 inches wide is enough for most walkers.
             At walking pace your feet land in a narrow, repeatable line, so width matters less than
             it does for runners, though 20 inches is more forgiving and is worth having if you are
-            tall or want a margin for stepping on and off. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> gives the sizes by height and
+            tall or want a margin for stepping on and off. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> gives the sizes by height and
             pace.
           </p>
           <p>
             <strong>Motor.</strong> 2.0 to 2.5 CHP comfortably handles walking. If the heaviest user is
             over 200 lb, move up to 2.5 to 3.0 CHP, because load matters more than speed. Anything
-            above that is money a walker will not feel underfoot; our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why.
+            above that is money a walker will not feel underfoot; our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why.
           </p>
           <p>
             <strong>Incline.</strong> A powered incline is the most useful feature a walker can buy.
             It makes a walk much harder without making it faster or higher-impact. Most home
             treadmills reach 10 to 15%, which is plenty for most people. If you are training for
             hiking or mountain events, or want very steep walking as your main workout, look at the
-            incline trainers and steep-grade machines in our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> roundup, and check the
+            incline trainers and steep-grade machines in our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> roundup, and check the
             ceiling height with the deck at full incline.
           </p>
           <p>
             <strong>Folding.</strong> Fold if the room has to be something else; do not pay for a fold
-            if the machine will stay down. Our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a>
-            roundup lists current machines built for this use.
+            if the machine will stay down. Our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">best walking treadmills</a> roundup lists current machines built for this use.
           </p>
         </div>
 
         <div id="jogging-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. If You Will Jog or Run: Deck Length First, Motor Second</h2>
+          <h2>If You Will Jog or Run: Deck Length First, Motor Second</h2>
 <p>
             Jogging and running change the requirements sharply, because stride length grows with
             pace much faster than it grows with height. A walker might put down 26 to 28 inches per
@@ -429,8 +386,7 @@ const schema = {
             wears motors out at this level; a top speed of about 12 mph covers almost any home
             training. A non-folding frame is the type to favour, since at the same price it usually
             buys a stiffer structure and a better deck. Read the warranty for the motor, parts and
-            labor terms separately, and prefer more than a year of labor. Our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a> roundup ranks
+            labor terms separately, and prefer more than a year of labor. Our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a> roundup ranks
             machines on exactly these points.
           </p>
           <p>
@@ -441,13 +397,12 @@ const schema = {
         </div>
 
         <div id="heavy-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. If a Heavier User or a Busy Household Will Use It</h2>
+          <h2>If a Heavier User or a Busy Household Will Use It</h2>
 <p>
             A heavier user changes the decision more than any other single factor, and the number to
             be most careful with is the one most buyers trust: the printed weight capacity. That
             figure is where the manufacturer's warranty stops, not where the machine starts to
-            struggle. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">roundup for heavy people</a>
-            suggests treating the stated capacity as though it were 50 to 75 lb lower than printed,
+            struggle. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">roundup for heavy people</a> suggests treating the stated capacity as though it were 50 to 75 lb lower than printed,
             so someone who weighs 280 lb shops machines rated 350 lb and above rather than 300.
           </p>
           <p>
@@ -462,8 +417,7 @@ const schema = {
             <strong>Warranty.</strong> Read it in full. Most warranties are voided by exceeding the
             stated capacity, and the expensive failures in this category are motors and controller
             boards, so a long parts term and more than one year of labor matter far more than a
-            lifetime frame. Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            and <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> go through both in detail.
+            lifetime frame. Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> and <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> go through both in detail.
           </p>
           <p>
             <strong>Several regular users.</strong> Two people sharing a machine can double the hours
@@ -475,7 +429,7 @@ const schema = {
         </div>
 
         <div id="small-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. If You Are Short of Space: Judge the Fold and the Folded Size</h2>
+          <h2>If You Are Short of Space: Judge the Fold and the Folded Size</h2>
 <p>
             When space is the binding constraint, the first question is still whether you walk or
             run. If you only walk, a walking pad is the space-saving answer: it slides under a sofa
@@ -500,14 +454,13 @@ const schema = {
             when it folds.
           </p>
           <p>
-            Our <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">best treadmills for small spaces</a>
-            roundup judges machines on the fold, the folded size and the deck that survives the
+            Our <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">best treadmills for small spaces</a> roundup judges machines on the fold, the folded size and the deck that survives the
             compromise.
           </p>
         </div>
 
         <div id="budget" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If Budget Is the Constraint, or This Is Your First Treadmill</h2>
+          <h2>If Budget Is the Constraint, or This Is Your First Treadmill</h2>
 <p>
             A tight budget does not mean a bad treadmill; it means being precise about the job. The
             cheapest types are cheapest because they do less, and the trick is to buy the cheapest
@@ -527,8 +480,7 @@ const schema = {
             <strong>Where not to economise.</strong> A stated continuous motor rating, a weight
             capacity with margin, at least a year of parts cover and a seller who sells spare parts.
             Where you can economise: screens, speakers, built-in programs and subscription platforms,
-            which add cost without adding motor, deck or frame. Our
-            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">best budget treadmills</a> roundup picks the best
+            which add cost without adding motor, deck or frame. Our <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium">best budget treadmills</a> roundup picks the best
             option at each price band, and buying used is often the best value of all if you inspect
             the machine properly.
           </p>
@@ -536,15 +488,14 @@ const schema = {
             <strong>First-time buyers.</strong> If this is your first treadmill and you mostly walk
             but might jog, a mid-range folding machine with a 55-inch deck and 2.5 to 3.0 CHP is the
             safe middle — enough for the jogging you might start, not so much that you pay for running
-            hardware you never use. Our
-            <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a> covers this
+            hardware you never use. Our <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a> covers this
             case, and the <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">treadmill buyer’s checklist</a> walks
             through the purchase in eight steps.
           </p>
         </div>
 
         <div id="what-to-look-for" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What to Look For in a Home Treadmill, Whatever You Buy</h2>
+          <h2>What to Look For in a Home Treadmill, Whatever You Buy</h2>
 <p>
             Once the type and the minimum specs are settled, a handful of checks apply to every
             machine on every row of the table. None of them takes long, and each one prevents a
@@ -573,142 +524,156 @@ const schema = {
             Read it once before you order.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I choose a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start with what you will actually do on it most weeks: walk at a desk, walk for exercise, jog or run. That decides the type. Then size the deck, motor and weight capacity for the tallest, heaviest and fastest regular user, measure the room including about 6 feet of clearance behind, and check the warranty and return terms before ordering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good treadmill to buy for walking?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walking as exercise, a folding motorized treadmill with a powered incline, a deck of about 50 to 55 by 18 inches, a continuous motor of 2.0 to 2.5 CHP and a weight capacity at least 50 lb above the heaviest user. For walking at a desk, a flat walking pad with a steady low speed is the better fit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What size treadmill do I need for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For regular running, buy a deck of at least 60 by 20 inches, and 60 to 62 by 22 inches if you are over about 6 foot 2 or do sprints. Joggers under about 5 foot 10 can manage on 55 by 20 inches. Pair the deck with 3.0 CHP or more, and 3.5 CHP or more for daily running.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a folding treadmill as good as a non-folding one?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walking and jogging, a well-built folding treadmill is fine. At the same price, a non-folding treadmill usually gives a stiffer frame, a longer deck and a stronger motor, because none of the budget goes on a hinge. Choose folding if the room has to be used for other things, and non-folding if the machine can stay down.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much should I spend on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most households land between about $600 and $1,200. A capable walking pad typically costs around $200 to $600, a full-size machine for jogging starts around $900, and a running treadmill with a 60-inch deck starts around $1,200 new or $800 used. These are typical ranges, and sales move them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which treadmill features are not worth paying for?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most buyers, large touchscreens, built-in speakers, dozens of preset programs and very high top speeds add cost without adding durability. Money spent there is money not spent on the motor, deck and frame. Count any required subscription as an ongoing cost, and check what the console does without it.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Choosing a Treadmill</h2>
+          <p>Choosing the wrong type of treadmill is more common than choosing a bad model. These four mistakes account for most of the mismatches.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Choosing for the runner you hope to become</h3>
+              <p>A walker who buys a 60-inch, 3.5 CHP running machine pays for size, weight and cost their use does not need. Choose for what you have done consistently over recent months, and upgrade if running becomes a habit.</p>
+            </li>
+            <li>
+              <h3>Buying a walking pad to jog on</h3>
+              <p>Walking pads are built for slow, steady walking, often with short decks, low top speeds and no handrail. They are excellent at that job and poor at running. If you will jog at all, buy a full treadmill with a deck sized for your stride.</p>
+            </li>
+            <li>
+              <h3>Sizing for the buyer instead of the heaviest user</h3>
+              <p>A machine bought for one person is often shared with a taller partner or a heavier teenager. Size the deck for the tallest regular user and the capacity and motor for the heaviest, with the margins in the decision table.</p>
+            </li>
+            <li>
+              <h3>Comparing peak horsepower</h3>
+              <p>Peak horsepower is a momentary figure that is typically 1.5 to 2 times the continuous rating. Compare continuous horsepower (CHP) only, and treat a listing that shows nothing but a peak figure as a walking machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Choosing a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Choosing the wrong type of treadmill is more common than choosing a bad model. These four mistakes account for most of the mismatches.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing for the runner you hope to become</h3>
-              <p class="text-gray-700 text-sm m-0">A walker who buys a 60-inch, 3.5 CHP running machine pays for size, weight and cost their use does not need. Choose for what you have done consistently over recent months, and upgrade if running becomes a habit.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a walking pad to jog on</h3>
-              <p class="text-gray-700 text-sm m-0">Walking pads are built for slow, steady walking, often with short decks, low top speeds and no handrail. They are excellent at that job and poor at running. If you will jog at all, buy a full treadmill with a deck sized for your stride.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sizing for the buyer instead of the heaviest user</h3>
-              <p class="text-gray-700 text-sm m-0">A machine bought for one person is often shared with a taller partner or a heavier teenager. Size the deck for the tallest regular user and the capacity and motor for the heaviest, with the margins in the decision table.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing peak horsepower</h3>
-              <p class="text-gray-700 text-sm m-0">Peak horsepower is a momentary figure that is typically 1.5 to 2 times the continuous rating. Compare continuous horsepower (CHP) only, and treat a listing that shows nothing but a peak figure as a walking machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/should-i-buy-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Before you choose</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Should I Buy a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Who gets value, who regrets one, cost per use and an eight-question self-test.</p>
-            </a>
-            <a href="/treadmill-buying-guide-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Pillar guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The Complete Treadmill Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Motor power, deck size, folding vs fixed and budget tiers, explained in full.</p>
-            </a>
-            <a href="/types-of-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Types of Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every kind of treadmill, what sets it apart and who it suits.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy the type that matches your most demanding regular use, then
             insist on the minimum specs for it.</strong> A walking pad for desk walking, a folding
             treadmill with incline for walking and light jogging, a non-folding machine with a
             60-inch deck for regular running, and a heavier wide-deck machine for heavy users or busy
             households.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Size everything for the tallest, heaviest and fastest regular user, compare continuous
             horsepower only, and measure the room before you shop. Then go to the roundup for your
-            row — starting with our
-            <a href="/best-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best treadmills of 2026</a>
-            if you are still between rows.
+            row — starting with our <a href="/best-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best treadmills of 2026</a> if you are still between rows.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/should-i-buy-a-treadmill/">Should I Buy a Treadmill?</a></li>
+            <li><a href="/treadmill-buying-guide-2026/">The Complete Treadmill Buying Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do I choose a treadmill?</h3></summary>
+            <p class="faq-a">
+              Start with what you will actually do on it most weeks: walk at a desk, walk for exercise, jog or run. That decides the type. Then size the deck, motor and weight capacity for the tallest, heaviest and fastest regular user, measure the room including about 6 feet of clearance behind, and check the warranty and return terms before ordering.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is a good treadmill to buy for walking?</h3></summary>
+            <p class="faq-a">
+              For walking as exercise, a folding motorized treadmill with a powered incline, a deck of about 50 to 55 by 18 inches, a continuous motor of 2.0 to 2.5 CHP and a weight capacity at least 50 lb above the heaviest user. For walking at a desk, a flat walking pad with a steady low speed is the better fit.
             </p>
+          </details>
+          <details>
+            <summary><h3>What size treadmill do I need for running?</h3></summary>
+            <p class="faq-a">
+              For regular running, buy a deck of at least 60 by 20 inches, and 60 to 62 by 22 inches if you are over about 6 foot 2 or do sprints. Joggers under about 5 foot 10 can manage on 55 by 20 inches. Pair the deck with 3.0 CHP or more, and 3.5 CHP or more for daily running.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a folding treadmill as good as a non-folding one?</h3></summary>
+            <p class="faq-a">
+              For walking and jogging, a well-built folding treadmill is fine. At the same price, a non-folding treadmill usually gives a stiffer frame, a longer deck and a stronger motor, because none of the budget goes on a hinge. Choose folding if the room has to be used for other things, and non-folding if the machine can stay down.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much should I spend on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Most households land between about $600 and $1,200. A capable walking pad typically costs around $200 to $600, a full-size machine for jogging starts around $900, and a running treadmill with a 60-inch deck starts around $1,200 new or $800 used. These are typical ranges, and sales move them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which treadmill features are not worth paying for?</h3></summary>
+            <p class="faq-a">
+              For most buyers, large touchscreens, built-in speakers, dozens of preset programs and very high top speeds add cost without adding durability. Money spent there is money not spent on the motor, deck and frame. Count any required subscription as an ongoing cost, and check what the console does without it.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/should-i-buy-a-treadmill/" class="card">
+            <div class="c-kicker">Before you choose</div>
+            <div class="c-title">Should I Buy a Treadmill?</div>
+            <p class="c-blurb">Who gets value, who regrets one, cost per use and an eight-question self-test.</p>
+          </a>
+          <a href="/treadmill-buying-guide-2026/" class="card">
+            <div class="c-kicker">Pillar guide</div>
+            <div class="c-title">The Complete Treadmill Buying Guide</div>
+            <p class="c-blurb">Motor power, deck size, folding vs fixed and budget tiers, explained in full.</p>
+          </a>
+          <a href="/types-of-treadmills/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Types of Treadmills</div>
+            <p class="c-blurb">Every kind of treadmill, what sets it apart and who it suits.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

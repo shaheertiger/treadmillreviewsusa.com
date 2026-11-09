@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Can You Watch Netflix on a NordicTrack? (2026): What iFIT Allows";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/can-you-watch-netflix-on-nordictrack/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -105,64 +110,46 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Which Apps Work", link: "#which-apps" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-canyouwatchnetflixonnordictrack" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-canyouwatchnetflixonnordictrack)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Can You Watch Netflix on a NordicTrack?</h1>
+      <p class="ed-dek">
+        Yes, on most current touchscreen models, through iFIT itself. The catch is that it needs the priciest iFIT plan on top of your own Netflix account, the app list is short, and the old "privileged mode" route to anything else has been closed and breaks the terms you agreed to.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Can You Watch Netflix <span class="text-[#5AA9FF]">on a NordicTrack?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Yes, on most current touchscreen models, through iFIT itself. The catch is that it needs the priciest iFIT plan on top of your own Netflix account, the app list is short, and the old "privileged mode" route to anything else has been closed and breaks the terms you agreed to.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#how-to-turn-on" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Turn It On
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people who type this question have just bought a NordicTrack, or are about to, and
+          are looking at a large, sharp touchscreen that seems perfectly capable of showing a film.
+          For years the honest answer was "not officially". That has changed: iFIT, the software
+          company behind NordicTrack and ProForm, now puts Netflix, Prime Video and a few other
+          apps on the screens of its touchscreen machines. But the way it does so — inside iFIT,
+          on the top membership tier, with a short list of approved apps — is narrower than most
+          buyers expect, and the unofficial workarounds that circulate online are a worse idea
+          now than they ever were.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is based on.</strong> On 20 October 2026 we
           read iFIT's equipment-membership page, its iFIT 2.0 release notes and its April 2026
           feature update, NordicTrack's own iFIT pages, the iFIT Terms of Use (last updated 9
@@ -174,51 +161,30 @@ const schema = {
           twice in two years, so treat this as the position on that date and confirm it for your
           exact model before you pay for a plan. This page does not explain how to unlock or
           modify a console, and it will not.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Can You Watch Netflix on a NordicTrack? The Short Answer</a>
-          <a href="#which-apps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Which Apps Work</a>
-          <a href="#which-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Models</a>
-          <a href="#which-plan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Which Plan</a>
-          <a href="#how-to-turn-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Turn It On</a>
-          <a href="#what-doesnt-work" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Does Not Work</a>
-          <a href="#privileged-mode" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Privileged Mode</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Safe Alternatives</a>
-          <a href="#other-brands" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Other Brands</a>
-          <a href="#recalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Recalls Worth Knowing About</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Can You Watch Netflix on a NordicTrack? The Short Answer</a></li>
+            <li><a href="#which-apps">Which Apps Work</a></li>
+            <li><a href="#which-models">Which Models</a></li>
+            <li><a href="#which-plan">Which Plan</a></li>
+            <li><a href="#how-to-turn-on">How to Turn It On</a></li>
+            <li><a href="#what-doesnt-work">What Does Not Work</a></li>
+            <li><a href="#privileged-mode">Privileged Mode</a></li>
+            <li><a href="#alternatives">Safe Alternatives</a></li>
+            <li><a href="#other-brands">Other Brands</a></li>
+            <li><a href="#recalls">Recalls Worth Knowing About</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people who type this question have just bought a NordicTrack, or are about to, and
-          are looking at a large, sharp touchscreen that seems perfectly capable of showing a film.
-          For years the honest answer was "not officially". That has changed: iFIT, the software
-          company behind NordicTrack and ProForm, now puts Netflix, Prime Video and a few other
-          apps on the screens of its touchscreen machines. But the way it does so — inside iFIT,
-          on the top membership tier, with a short list of approved apps — is narrower than most
-          buyers expect, and the unofficial workarounds that circulate online are a worse idea
-          now than they ever were.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Can You Watch Netflix on a NordicTrack? The Short Answer</h2>
+          <h2>Can You Watch Netflix on a NordicTrack? The Short Answer</h2>
 <p>
             <strong>Yes, on most current NordicTrack touchscreen treadmills and incline trainers,
-            if you pay for an iFIT Pro membership and have your own Netflix account.</strong>
-            Netflix runs inside iFIT, alongside Prime Video, Spotify and, since April 2026 in the
+            if you pay for an iFIT Pro membership and have your own Netflix account.</strong> Netflix runs inside iFIT, alongside Prime Video, Spotify and, since April 2026 in the
             US, YouTube TV and iHeartRadio. Without a paid iFIT Pro membership the apps are not
             available, and you cannot add apps of your own choosing.
           </p>
@@ -243,14 +209,12 @@ const schema = {
           <p>
             So the screen can show Netflix. What it cannot do is behave like a tablet: there is no
             app store of your choosing, no web browser, and no way to cast your phone to it. If
-            that matters, the alternatives section below is the useful part of this page, and our
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">guide to whether iFIT is worth it</a>
-            is the place to decide whether the Pro membership earns its cost for you.
+            that matters, the alternatives section below is the useful part of this page, and our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">guide to whether iFIT is worth it</a> is the place to decide whether the Pro membership earns its cost for you.
           </p>
         </div>
 
         <div id="which-apps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Streaming Apps iFIT Offers, and Which It Does Not</h2>
+          <h2>Which Streaming Apps iFIT Offers, and Which It Does Not</h2>
 <p>
             iFIT does not publish a single list of the apps on its equipment, so the list below is
             assembled from its own release notes and support answers, and checked against
@@ -303,7 +267,7 @@ const schema = {
         </div>
 
         <div id="which-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which NordicTrack Models and Consoles Can Stream</h2>
+          <h2>Which NordicTrack Models and Consoles Can Stream</h2>
 <p>
             iFIT's release notes say the iFIT 2.0 update, and with it the streaming services, is
             available for "select" NordicTrack and ProForm treadmills, incline trainers, bikes,
@@ -316,9 +280,7 @@ const schema = {
             <strong>The current range.</strong> All seven NordicTrack treadmills on sale in
             October 2026 have touchscreens of 10 inches or more: the T Series 10 and <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial
             1250</a> have 10-inch screens, the T Series 16, Commercial 1750 and X16 have 16-inch
-            screens, and the Commercial 2450 and X24 have 24-inch screens, as our
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a>
-            sets out. iFIT's representatives have confirmed streaming with iFIT Pro for the T
+            screens, and the Commercial 2450 and X24 have 24-inch screens, as our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a> sets out. iFIT's representatives have confirmed streaming with iFIT Pro for the T
             Series 10, the Commercial 1250 and the Commercial 2450 on Best Buy's question pages,
             and independent reviewers report it on the 1750. A bigger screen is a better place to
             watch a film, but on current information it does not unlock more apps.
@@ -329,17 +291,14 @@ const schema = {
             the size condition. T3's reviewer used the Netflix and Prime Video beta on an X22i in
             2024. If you own one of these, the apps should appear after the console has updated
             to iFIT 2.0, but "select" means a phone call to Member Care is the only way to be sure.
-            Our <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">X22i review</a>
-            covers the rest of that machine.
+            Our <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">X22i review</a> covers the rest of that machine.
           </p>
           <p>
             <strong>Small-screen and older machines.</strong> A machine with a screen under 10
             inches, such as the 7-inch <a href="/nordictrack-exp-7i-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>EXP 7i</a>, falls outside the size condition iFIT gives, and a
             console with a basic display, such as the five-inch display on the T 6.5 S, has no
             touchscreen to stream to. Machines from the generation that connected through an
-            external iFIT Wi-Fi module lost iFIT support in April 2023, as our
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">guide to using a NordicTrack without iFIT</a>
-            explains, so they will not gain anything new.
+            external iFIT Wi-Fi module lost iFIT support in April 2023, as our <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">guide to using a NordicTrack without iFIT</a> explains, so they will not gain anything new.
           </p>
           <p>
             <strong>The long view.</strong> iFIT's Terms of Use say that after the services
@@ -352,7 +311,7 @@ const schema = {
         </div>
 
         <div id="which-plan" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Which iFIT Plan You Need, and What It Costs</h2>
+          <h2>Which iFIT Plan You Need, and What It Costs</h2>
 <p>
             <strong>You need iFIT Pro.</strong> iFIT sells two plans. iFIT Train is built for
             phones and tablets, and iFIT's own comparison does not list streaming apps among its
@@ -388,7 +347,7 @@ const schema = {
         </div>
 
         <div id="how-to-turn-on" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Turn On Netflix on a NordicTrack</h2>
+          <h2>How to Turn On Netflix on a NordicTrack</h2>
 <p>
             There is no hidden setting to switch on. The apps come with the console software and
             the membership, so the steps are mostly about making sure both are current. Exact menu
@@ -427,23 +386,19 @@ const schema = {
             the account is Pro rather than Train or a free account, that you are signed in to the
             right account on the machine, that the console is online and fully updated, and then
             restart it. NordicTrack's guide gives the same order of checks for a membership that
-            does not show on the machine. If the console freezes or will not respond, our
-            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack reset guide</a>
-            covers the safe power-cycle and console reset. If none of that works, call iFIT Member
+            does not show on the machine. If the console freezes or will not respond, our <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack reset guide</a> covers the safe power-cycle and console reset. If none of that works, call iFIT Member
             Care and ask whether your model is one of the "select" machines.
           </p>
           <p>
             <strong>Safety.</strong> Watching anything on a treadmill takes some of your attention
             off the belt. Clip on the safety key, keep the speed where you can hold your stride
             without looking down, and pause the belt rather than the film when you need to reach
-            for the screen. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            cover the basics, especially for homes with children or pets.
+            for the screen. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> cover the basics, especially for homes with children or pets.
           </p>
         </div>
 
         <div id="what-doesnt-work" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Does Not Work on a NordicTrack Screen</h2>
+          <h2>What Does Not Work on a NordicTrack Screen</h2>
 <p>
             The limits are the part that most often disappoints people, so it is worth setting them
             out plainly.
@@ -471,14 +426,12 @@ const schema = {
             Audio is the one area with more flexibility. The current consoles have built-in
             speakers, and many models pair Bluetooth headphones so that a film does not have to
             compete with the belt and the fan. Check the specific model's listing, because how
-            Bluetooth audio is handled varies between consoles. Our guide to
-            <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium">headphones for treadmill running</a>
-            covers which kinds stay put at running pace.
+            Bluetooth audio is handled varies between consoles. Our guide to <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium">headphones for treadmill running</a> covers which kinds stay put at running pace.
           </p>
         </div>
 
         <div id="privileged-mode" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The "Privileged Mode" Hack: What It Is and Why to Leave It Alone</h2>
+          <h2>The "Privileged Mode" Hack: What It Is and Why to Leave It Alone</h2>
 <p>
             Search for this subject and the most common suggestion is not iFIT's app list at all,
             but a way to unlock the console. It deserves a careful explanation, because the risks
@@ -550,7 +503,7 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Safer Ways to Watch What You Want</h2>
+          <h2>Safer Ways to Watch What You Want</h2>
 <p>
             The simplest answer is usually the best one: let the treadmill be a treadmill and bring
             your own screen.
@@ -561,9 +514,7 @@ const schema = {
             replaced when it ages without touching the treadmill. The catch on a NordicTrack is
             placement, because the built-in screen occupies the obvious spot. A clamp-on holder on
             a handrail or upright, positioned so it does not cover the safety key or the controls,
-            solves that. Our
-            <a href="/best-treadmill-tablet-holders/" class="text-[#0F62FE] font-medium">treadmill tablet holder guide</a>
-            lists holders with checked fit ranges and explains where to mount one so it stays
+            solves that. Our <a href="/best-treadmill-tablet-holders/" class="text-[#0F62FE] font-medium">treadmill tablet holder guide</a> lists holders with checked fit ranges and explains where to mount one so it stays
             steady at running pace.</li>
             <li><strong>A wall-mounted television.</strong> In a dedicated room, a TV at eye height
             in front of the treadmill is the most comfortable screen of all. It also leaves the
@@ -586,13 +537,12 @@ const schema = {
             free iFIT account and agreement to terms are required to activate the equipment, and
             the same 10-inch screen condition applies. ProForm's cheaper models that use your own
             phone or tablet instead of a built-in screen are, in effect, already the tablet option.
-            Our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a>
-            covers the current range.
+            Our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a> covers the current range.
           </p>
         </div>
 
         <div id="other-brands" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Bowflex, Sole, Peloton and Aviron Handle Streaming</h2>
+          <h2>How Bowflex, Sole, Peloton and Aviron Handle Streaming</h2>
 <p>
             If built-in streaming is high on your list, it helps to know that NordicTrack's approach
             — streaming inside the platform, on the top tier — is only one of several. These are
@@ -622,19 +572,13 @@ const schema = {
             with streaming apps using your own subscriptions. Bowflex's footnotes still say a
             separate subscription is required for connected apps, and JRNY's own page describes
             All-Access as the required subscription on most of its touchscreen machines, so check
-            the terms for the exact model. Our
-            <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T16 review</a>
-            sets out what is free and what is not.
+            the terms for the exact model. Our <a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T16 review</a> sets out what is free and what is not.
           </p>
           <p>
             <strong>Sole.</strong> Sole's approach is the opposite of iFIT's: SOLE+ is free and
             nothing on its treadmills needs a membership. Independent reviewers describe Netflix,
-            Hulu and Disney+ on the 21.5-inch console of the F89, which our
-            <a href="/sole-f89-treadmill/" class="text-[#0F62FE] font-medium">Sole F89 review</a>
-            notes is no longer on Sole's US store. The 2026 F80 has a 10.1-inch touchscreen that
-            Sole calls a streaming touchscreen, with screen mirroring, as our
-            <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium">Sole F80 review</a>
-            describes.
+            Hulu and Disney+ on the 21.5-inch console of the F89, which our <a href="/sole-f89-treadmill/" class="text-[#0F62FE] font-medium">Sole F89 review</a> notes is no longer on Sole's US store. The 2026 F80 has a 10.1-inch touchscreen that
+            Sole calls a streaming touchscreen, with screen mirroring, as our <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium">Sole F80 review</a> describes.
           </p>
           <p>
             <strong>Peloton.</strong> Peloton Entertainment puts streaming services on the Tread's
@@ -643,15 +587,13 @@ const schema = {
             YouTube, YouTube TV, AMC+, DIRECTV and a Kindle app; launch coverage in November 2023
             also named Netflix, which Peloton's page does not list, so confirm Netflix if it is the
             one you want. Without the membership, Peloton's Just Run mode gives manual control and
-            basic metrics, as our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
-            explains.
+            basic metrics, as our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a> explains.
           </p>
           <p>
             <strong>Aviron.</strong> Aviron is the most generous of the five on this point. Aviron
             says its treadmills keep their streaming apps, including Netflix, Prime Video, Disney+,
             YouTube and Spotify, without the membership; the membership is for its games, classes
-            and competitions. Our <a href="/aviron-treadmill/" class="text-[#0F62FE] font-medium">Aviron treadmill guide</a>
-            covers the membership, and the condition that ties Aviron's longest warranty to it.
+            and competitions. Our <a href="/aviron-treadmill/" class="text-[#0F62FE] font-medium">Aviron treadmill guide</a> covers the membership, and the condition that ties Aviron's longest warranty to it.
           </p>
           <p>
             Two cautions apply to all of them. Each of these companies decides by software update
@@ -662,7 +604,7 @@ const schema = {
         </div>
 
         <div id="recalls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Recalls Worth Knowing About</h2>
+          <h2>Recalls Worth Knowing About</h2>
 <p>
             We searched the US Consumer Product Safety Commission's recall listing on 20 October
             2026 for each brand on this page. We found no recall of a NordicTrack or ProForm
@@ -682,146 +624,160 @@ const schema = {
             and the maker's recall page before you buy.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you watch Netflix on a NordicTrack treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, on most current touchscreen models, through iFIT. You need a paid iFIT Pro membership and your own Netflix account; iFIT says the feature is on select machines with touchscreens of 10 inches or larger. Without iFIT Pro the apps are unavailable, and you cannot install apps of your own.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which streaming apps work on a NordicTrack screen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 20 October 2026, iFIT sources named Netflix, Prime Video and Spotify, plus YouTube TV for US members and iHeartRadio from the April 2026 update. We found no iFIT source naming the free YouTube app, Disney+, Hulu, Max or Peacock. There is no web browser. Ask iFIT Member Care if one service matters to you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need iFIT Pro to watch Netflix on a NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. iFIT lists streaming apps as a feature of iFIT Pro, its plan for touchscreen equipment, and its representatives say third-party apps are unavailable without a paid membership. iFIT listed Pro at $39 a month on 20 October 2026. You also pay for the streaming service itself.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you cast or screen mirror a phone to a NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not officially. Asked about the Commercial 2450, iFIT’s representative said streaming from devices to the console is not currently available, and we found no NordicTrack page claiming AirPlay or Chromecast support. A tablet in a holder or a wall-mounted TV is the practical alternative.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to use privileged mode on a NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We advise against it. iFIT blocked owner access in 2021 for what it called security and safety reasons, and later updates have kept closing workarounds. iFIT’s Terms of Use prohibit bypassing access restrictions, and NordicTrack’s manual warranty is voided if the product is modified to alter functionality without iFIT’s written permission.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you watch Netflix on a ProForm treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, on the same terms. ProForm runs the same iFIT software, iFIT Pro is made for ProForm touchscreens too, and independent reviewers report Netflix and Prime Video on ProForm machines with iFIT and a touchscreen. ProForm models that use your own phone or tablet instead of a built-in screen rely on that device.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes About Streaming on a NordicTrack</h2>
+          <p>Most of these come from older advice, or from assuming the screen works like a tablet.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying for iFIT Pro only to watch Netflix</h3>
+              <p>At $39 a month on iFIT’s listing, the Pro plan is an expensive way to reach apps that a tablet runs for nothing extra. It is good value if you also use the classes and automatic control; if you only want films, put the money into a tablet and a holder instead.</p>
+            </li>
+            <li>
+              <h3>Expecting YouTube or Disney+ because Netflix is there</h3>
+              <p>iFIT offers a short list of approved apps, not an app store. On 20 October 2026 we found no iFIT source naming the free YouTube app or Disney+, and YouTube TV, which iFIT did add, is a separate paid live-TV service. Confirm the service you want before you subscribe.</p>
+            </li>
+            <li>
+              <h3>Unlocking the console to install other apps</h3>
+              <p>Privileged-mode workarounds break iFIT’s Terms of Use, can be undone by the next update, and give iFIT a clear reason to refuse a warranty claim under the "modified to alter functionality" clause. The console also controls a motorized belt, which is a poor place to experiment.</p>
+            </li>
+            <li>
+              <h3>Trusting a pre-2025 answer</h3>
+              <p>Built-in streaming arrived with iFIT 2.0 in 2024 and 2025, and iFIT added YouTube TV in April 2026. Forum threads and reviews from before then can be accurate for their time and wrong now, in both directions. Check the date on any answer, including this one.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes About Streaming on a NordicTrack</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from older advice, or from assuming the screen works like a tablet.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for iFIT Pro only to watch Netflix</h3>
-              <p class="text-gray-700 text-sm m-0">At $39 a month on iFIT’s listing, the Pro plan is an expensive way to reach apps that a tablet runs for nothing extra. It is good value if you also use the classes and automatic control; if you only want films, put the money into a tablet and a holder instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting YouTube or Disney+ because Netflix is there</h3>
-              <p class="text-gray-700 text-sm m-0">iFIT offers a short list of approved apps, not an app store. On 20 October 2026 we found no iFIT source naming the free YouTube app or Disney+, and YouTube TV, which iFIT did add, is a separate paid live-TV service. Confirm the service you want before you subscribe.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Unlocking the console to install other apps</h3>
-              <p class="text-gray-700 text-sm m-0">Privileged-mode workarounds break iFIT’s Terms of Use, can be undone by the next update, and give iFIT a clear reason to refuse a warranty claim under the "modified to alter functionality" clause. The console also controls a motorized belt, which is a poor place to experiment.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a pre-2025 answer</h3>
-              <p class="text-gray-700 text-sm m-0">Built-in streaming arrived with iFIT 2.0 in 2024 and 2025, and iFIT added YouTube TV in April 2026. Forum threads and reviews from before then can be accurate for their time and wrong now, in both directions. Check the date on any answer, including this one.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The Platform</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the membership includes, what it costs over the life of a treadmill, and who should skip it.</p>
-            </a>
-            <a href="/can-you-use-nordictrack-without-ifit/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Question Answered</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Can You Use a NordicTrack Without iFIT?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What still works with no membership, what stops, and what it means at resale.</p>
-            </a>
-            <a href="/best-treadmill-tablet-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Tablet Holders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Clamp and strap mounts with checked fit ranges, and where to put one on a console.</p>
-            </a>
-            <a href="/best-treadmill-tv-stands/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill TV Stands and Mounts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">You can watch Netflix on a current NordicTrack touchscreen, but
             only inside iFIT, on the iFIT Pro plan, with your own Netflix account, and only from
             iFIT's short list of approved apps.</strong> There is no casting, no browser and no
             app store, and the privileged-mode workarounds break iFIT's terms and put the
             warranty at risk.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If iFIT Pro is worth it to you for the classes, the apps are a pleasant extra. If you
-            only want something to watch, a tablet in a good holder does more for less. Our
-            <a href="/best-treadmill-tablet-holders/" class="text-[#5AA9FF] font-bold no-underline">tablet holder guide</a>
-            shows where to mount one on a console like NordicTrack's.
+            only want something to watch, a tablet in a good holder does more for less. Our <a href="/best-treadmill-tablet-holders/" class="text-[#5AA9FF] font-bold no-underline">tablet holder guide</a> shows where to mount one on a console like NordicTrack's.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/is-ifit-worth-it/">Is iFIT Worth It?</a></li>
+            <li><a href="/can-you-use-nordictrack-without-ifit/">Can You Use a NordicTrack Without iFIT?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Can you watch Netflix on a NordicTrack treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, on most current touchscreen models, through iFIT. You need a paid iFIT Pro membership and your own Netflix account; iFIT says the feature is on select machines with touchscreens of 10 inches or larger. Without iFIT Pro the apps are unavailable, and you cannot install apps of your own.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Which streaming apps work on a NordicTrack screen?</h3></summary>
+            <p class="faq-a">
+              On 20 October 2026, iFIT sources named Netflix, Prime Video and Spotify, plus YouTube TV for US members and iHeartRadio from the April 2026 update. We found no iFIT source naming the free YouTube app, Disney+, Hulu, Max or Peacock. There is no web browser. Ask iFIT Member Care if one service matters to you.
             </p>
+          </details>
+          <details>
+            <summary><h3>Do you need iFIT Pro to watch Netflix on a NordicTrack?</h3></summary>
+            <p class="faq-a">
+              Yes. iFIT lists streaming apps as a feature of iFIT Pro, its plan for touchscreen equipment, and its representatives say third-party apps are unavailable without a paid membership. iFIT listed Pro at $39 a month on 20 October 2026. You also pay for the streaming service itself.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you cast or screen mirror a phone to a NordicTrack?</h3></summary>
+            <p class="faq-a">
+              Not officially. Asked about the Commercial 2450, iFIT’s representative said streaming from devices to the console is not currently available, and we found no NordicTrack page claiming AirPlay or Chromecast support. A tablet in a holder or a wall-mounted TV is the practical alternative.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to use privileged mode on a NordicTrack?</h3></summary>
+            <p class="faq-a">
+              We advise against it. iFIT blocked owner access in 2021 for what it called security and safety reasons, and later updates have kept closing workarounds. iFIT’s Terms of Use prohibit bypassing access restrictions, and NordicTrack’s manual warranty is voided if the product is modified to alter functionality without iFIT’s written permission.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you watch Netflix on a ProForm treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, on the same terms. ProForm runs the same iFIT software, iFIT Pro is made for ProForm touchscreens too, and independent reviewers report Netflix and Prime Video on ProForm machines with iFIT and a touchscreen. ProForm models that use your own phone or tablet instead of a built-in screen rely on that device.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">The Platform</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">What the membership includes, what it costs over the life of a treadmill, and who should skip it.</p>
+          </a>
+          <a href="/can-you-use-nordictrack-without-ifit/" class="card">
+            <div class="c-kicker">Question Answered</div>
+            <div class="c-title">Can You Use a NordicTrack Without iFIT?</div>
+            <p class="c-blurb">What still works with no membership, what stops, and what it means at resale.</p>
+          </a>
+          <a href="/best-treadmill-tablet-holders/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill Tablet Holders</div>
+            <p class="c-blurb">Clamp and strap mounts with checked fit ranges, and where to put one on a console.</p>
+          </a>
+          <a href="/best-treadmill-tv-stands/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill TV Stands and Mounts</div>
+            <p class="c-blurb">Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Is iFIT Worth It? (2026): Membership Cost and Life Without It";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/is-ifit-worth-it/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,107 +109,69 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Long-Run Cost", link: "#long-run-cost" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-isifitworthit" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-isifitworthit)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership Cost</span>
+      </nav>
+      <h1 class="ed-title">Is iFIT Worth It?</h1>
+      <p class="ed-dek">
+        For people who will use trainer-led classes several times a week, often yes. For people who mostly press start and run, usually no — and over five to ten years the membership can cost more than the machine it runs on.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership Cost
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Is iFIT <span class="text-[#5AA9FF]">Worth It?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          For people who will use trainer-led classes several times a week, often yes. For people who mostly press start and run, usually no — and over five to ten years the membership can cost more than the machine it runs on.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#long-run-cost" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Long-Run Cost
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="3.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures.</strong> iFIT's plans, prices and what each
-          tier includes change over time and vary by region, and what a machine does without a
-          membership varies by model and firmware. Prices quoted below are described as historical
-          or illustrative, and the long-run sums are arithmetic rather than quotes. Check iFIT's
-          current plan prices and the specific model's documentation before relying on any of it.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
-          <a href="#what-ifit-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What iFIT Actually Is</a>
-          <a href="#what-you-get" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What the Membership Gets You</a>
-          <a href="#without-ifit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Can You Use a NordicTrack or ProForm Without iFIT?</a>
-          <a href="#membership-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What iFIT Costs — and Why You Should Check</a>
-          <a href="#long-run-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Five- and Ten-Year Arithmetic</a>
-          <a href="#worth-it-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Who iFIT Is Worth It For</a>
-          <a href="#not-worth-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip It</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Alternatives: Third-Party Apps and Bluetooth</a>
-          <a href="#resale" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Resale and the Long Tail</a>
-          <a href="#cancelling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Trials, Renewals and Cancelling</a>
-          <a href="#buying-decision" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. How It Should Change What You Buy</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           iFIT is the reason a NordicTrack or ProForm console looks the way it does, and the reason
           the machine was priced the way it was. Whether it is worth paying for depends far less
           on the content than on how you actually train — and on a sum most buyers never do.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures.</strong> iFIT's plans, prices and what each
+          tier includes change over time and vary by region, and what a machine does without a
+          membership varies by model and firmware. Prices quoted below are described as historical
+          or illustrative, and the long-run sums are arithmetic rather than quotes. Check iFIT's
+          current plan prices and the specific model's documentation before relying on any of it.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer</a></li>
+            <li><a href="#what-ifit-is">What iFIT Actually Is</a></li>
+            <li><a href="#what-you-get">What the Membership Gets You</a></li>
+            <li><a href="#without-ifit">Can You Use a NordicTrack or ProForm Without iFIT?</a></li>
+            <li><a href="#membership-cost">What iFIT Costs — and Why You Should Check</a></li>
+            <li><a href="#long-run-cost">The Five- and Ten-Year Arithmetic</a></li>
+            <li><a href="#worth-it-for">Who iFIT Is Worth It For</a></li>
+            <li><a href="#not-worth-it">Who Should Skip It</a></li>
+            <li><a href="#alternatives">Alternatives: Third-Party Apps and Bluetooth</a></li>
+            <li><a href="#resale">Resale and the Long Tail</a></li>
+            <li><a href="#cancelling">Trials, Renewals and Cancelling</a></li>
+            <li><a href="#buying-decision">How It Should Change What You Buy</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <h2>The Short Answer</h2>
 <p>
             <strong>iFIT is worth it if</strong> you are motivated by instructors, you will use
             classes or guided workouts several times a week, you like the machine changing speed
@@ -224,15 +191,13 @@ const schema = {
             model before you buy.
           </p>
           <p>
-            If you are still choosing a machine, our guide to
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            is the companion to this page, and covers the machines that work fully without any
+            If you are still choosing a machine, our guide to <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> is the companion to this page, and covers the machines that work fully without any
             recurring fee.
           </p>
         </div>
 
         <div id="what-ifit-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What iFIT Actually Is</h2>
+          <h2>What iFIT Actually Is</h2>
 <p>
             iFIT is a subscription fitness platform run by iFIT Health &amp; Fitness, the company
             that also owns NordicTrack and ProForm. That ownership is the important detail. iFIT
@@ -256,15 +221,12 @@ const schema = {
             they will use only partly.
           </p>
           <p>
-            Our brand guides to
-            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a> and
-            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a>
-            cover the hardware side of both ranges.
+            Our brand guides to <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a> and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a> cover the hardware side of both ranges.
           </p>
         </div>
 
         <div id="what-you-get" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What the Membership Gets You</h2>
+          <h2>What the Membership Gets You</h2>
 <p>
             The content is the obvious part, but the feature that most owners describe as the
             reason they keep paying is the machine controlling itself.
@@ -300,12 +262,10 @@ const schema = {
         </div>
 
         <div id="without-ifit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Can You Use a NordicTrack or ProForm Without iFIT?</h2>
+          <h2>Can You Use a NordicTrack or ProForm Without iFIT?</h2>
 <p>
             Yes — the treadmill does not stop being a treadmill. What it becomes without a
-            membership is the question, and the honest answer is that it varies; our answer to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">whether a NordicTrack works without iFIT</a>
-            goes through it feature by feature. Gold's Gym machines were ICON-made too; see <a href="/golds-gym-treadmill/" class="text-[#0F62FE] font-medium">Gold's Gym treadmills</a>.
+            membership is the question, and the honest answer is that it varies; our answer to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">whether a NordicTrack works without iFIT</a> goes through it feature by feature. Gold's Gym machines were ICON-made too; see <a href="/golds-gym-treadmill/" class="text-[#0F62FE] font-medium">Gold's Gym treadmills</a>.
           </p>
           <p>
             <strong>What works on the machines we are aware of:</strong> a manual mode in which you
@@ -332,15 +292,13 @@ const schema = {
             <strong>How to check before you buy:</strong> read the specific model's manual and
             support pages for what it calls manual mode, look for owner reviews describing use
             without a membership, and ask the retailer directly what the console does with no
-            active plan. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription guide</a>
-            explains the three tiers of subscription dependence and how to tell which a machine
+            active plan. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription guide</a> explains the three tiers of subscription dependence and how to tell which a machine
             sits in.
           </p>
         </div>
 
         <div id="membership-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What iFIT Costs — and Why You Should Check</h2>
+          <h2>What iFIT Costs — and Why You Should Check</h2>
 <p>
             iFIT's prices have changed several times, and the plan line-up has been restructured
             more than once, so any figure on a review site — this one included — should be treated
@@ -367,12 +325,10 @@ const schema = {
         </div>
 
         <div id="long-run-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Five- and Ten-Year Arithmetic</h2>
+          <h2>The Five- and Ten-Year Arithmetic</h2>
 <p>
             Treadmills are long-lived purchases. A well-maintained mid-range machine can be in use
-            for many years, and our guide to
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            covers what to expect. Spread a membership over that life and the numbers change
+            for many years, and our guide to <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> covers what to expect. Spread a membership over that life and the numbers change
             character.
           </p>
           <p>
@@ -393,16 +349,12 @@ const schema = {
             That is not an argument against subscribing. A gym membership costs money every month
             too, and people pay it gladly when they use it. It is an argument for comparing
             machines on total cost rather than sticker price. A subscription-free treadmill at a
-            higher price can be the cheaper machine to own, which is exactly the comparison our
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">spending guide</a>
-            and
-            <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs. premium comparison</a>
-            encourage.
+            higher price can be the cheaper machine to own, which is exactly the comparison our <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">spending guide</a> and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs. premium comparison</a> encourage.
           </p>
         </div>
 
         <div id="worth-it-for" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who iFIT Is Worth It For</h2>
+          <h2>Who iFIT Is Worth It For</h2>
 <p>
             <strong>People who need someone else to set the session.</strong> If the hardest part
             of training is deciding what to do and then doing it, a trainer and a machine that
@@ -434,7 +386,7 @@ const schema = {
         </div>
 
         <div id="not-worth-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip It</h2>
+          <h2>Who Should Skip It</h2>
 <p>
             <strong>People who just run.</strong> If your sessions are "press start, set a speed,
             watch something, finish", you are paying for features you will not use. A
@@ -449,9 +401,7 @@ const schema = {
             <strong>People who watch their own content.</strong> If the treadmill sits in front of
             a television or you train to podcasts, the screen is redundant. iFIT Pro now adds a short
             list of streaming apps to touchscreen machines, but there is no browser or casting; our
-            guide to
-            <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">whether you can watch Netflix on a NordicTrack</a>
-            sets out exactly what works.
+            guide to <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">whether you can watch Netflix on a NordicTrack</a> sets out exactly what works.
           </p>
           <p>
             <strong>Occasional users.</strong> At once a week, the per-session cost of a membership
@@ -460,14 +410,12 @@ const schema = {
           <p>
             <strong>Buyers at the top of their budget.</strong> If the hardware itself stretches
             you, a recurring fee on top is how a treadmill purchase becomes a regret. Buy the best
-            subscription-free machine the budget allows; our
-            <a href="/best-treadmills-under-2000/" class="text-[#0F62FE] font-medium">under-$2,000 guide</a>
-            covers the range where most of these decisions are made.
+            subscription-free machine the budget allows; our <a href="/best-treadmills-under-2000/" class="text-[#0F62FE] font-medium">under-$2,000 guide</a> covers the range where most of these decisions are made.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Alternatives: Third-Party Apps and Bluetooth</h2>
+          <h2>Alternatives: Third-Party Apps and Bluetooth</h2>
 <p>
             iFIT is not the only way to get guided or scenic workouts on a treadmill, though the
             alternatives come with caveats about compatibility.
@@ -487,15 +435,12 @@ const schema = {
             assuming.
           </p>
           <p>
-            <strong>Footpods.</strong> Where a treadmill does not broadcast its data, a shoe-mounted
-            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>footpod</a> can supply pace to an app instead. Accuracy depends on calibration, but it is
+            <strong>Footpods.</strong> Where a treadmill does not broadcast its data, a shoe-mounted <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>footpod</a> can supply pace to an app instead. Accuracy depends on calibration, but it is
             a widely used workaround and works on any treadmill, motorized or not.
           </p>
           <p>
             <strong>Free and low-cost options.</strong> A tablet on the console shelf running video
-            workouts, a podcast, or a printed interval plan cost little or nothing. Our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a>
-            has structured sessions that need nothing but manual mode.
+            workouts, a podcast, or a printed interval plan cost little or nothing. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a> has structured sessions that need nothing but manual mode.
           </p>
           <p>
             If the real question is iFIT against the other large connected-fitness platform, our comparison of <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs. Peloton</a> sets out hardware lock-in, training feel and what each is like without the subscription.
@@ -503,7 +448,7 @@ const schema = {
         </div>
 
         <div id="resale" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Resale and the Long Tail</h2>
+          <h2>Resale and the Long Tail</h2>
 <p>
             A connected treadmill raises questions that a plain one does not, and they surface
             when you come to sell or keep the machine for many years.
@@ -513,9 +458,7 @@ const schema = {
             will simply start their own membership. But the console is part of the value, and a
             screen whose usefulness depends on a subscription is worth less to a buyer who does
             not want one. Before selling, remove the machine from your account and factory-reset
-            the console as the manufacturer describes, so the next owner can register it. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs. used guide</a>
-            covers what secondhand buyers look for.
+            the console as the manufacturer describes, so the next owner can register it. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs. used guide</a> covers what secondhand buyers look for.
           </p>
           <p>
             <strong>Console life.</strong> Touchscreens and their software age faster than frames
@@ -532,7 +475,7 @@ const schema = {
         </div>
 
         <div id="cancelling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Trials, Renewals and Cancelling</h2>
+          <h2>Trials, Renewals and Cancelling</h2>
 <p>
             Most of the frustration owners report with connected-fitness subscriptions comes from
             renewals they did not expect rather than from the service itself. A few habits avoid
@@ -562,7 +505,7 @@ const schema = {
         </div>
 
         <div id="buying-decision" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. How It Should Change What You Buy</h2>
+          <h2>How It Should Change What You Buy</h2>
 <p>
             The most useful time to decide whether iFIT is worth it is before you buy the
             treadmill, because the answer changes which machine makes sense.
@@ -576,9 +519,7 @@ const schema = {
           <p>
             <strong>If you will not,</strong> you are paying for a screen you will use only
             partly. Spend the money on a better deck, motor and warranty from a brand that does not
-            depend on a subscription, and add a tablet or app later if you want content. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription guide</a>
-            covers those machines.
+            depend on a subscription, and add a tablet or app later if you want content. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription guide</a> covers those machines.
           </p>
           <p>
             <strong>If you are unsure,</strong> buy a machine whose manual mode you would be happy
@@ -587,146 +528,160 @@ const schema = {
             underused screen.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is iFIT worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For people who will use trainer-led classes or scenic workouts several times a week, and who like the machine adjusting speed and incline for them, often yes. For people who mostly set a speed and run, or would use it occasionally, usually no. Over five to ten years the membership can cost as much as the treadmill, so price it in before deciding.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does iFIT cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Prices change, so check iFIT's current plan page. Historically, plans have been priced in the region of $15 a month for an individual membership and around $39 a month for a family plan, with annual billing generally cheaper per month. Many machines also come with a trial or prepaid period that converts to a paid plan when it ends.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a NordicTrack without iFIT?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. On the machines we are aware of, the treadmill runs in a manual mode with speed and incline control and basic metrics. On many current models the touchscreen does considerably less without a membership, and what is available varies by model and firmware. Check the specific model's documentation and owner reviews before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use Zwift or other apps on a NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the model and firmware. Some treadmills broadcast data over Bluetooth that apps like Zwift and Kinomap can read, while others built around a proprietary platform do not. Where a machine does not broadcast its data, a shoe-mounted footpod can supply pace to the app instead. Check compatibility for the specific model.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens if I cancel my iFIT membership?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The treadmill keeps working in manual mode, but you lose the classes, automatic speed and incline adjustments, scenic workouts and, on many models, much of what the touchscreen displays. Check how cancellation is handled and whether annual plans are refundable in the terms you agreed to, and note any trial end date so it does not renew unexpectedly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill without a subscription better value?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, if you will not use the classes. A subscription-free machine costs only its purchase price, while a membership over many years can add as much again. For people who will use the content regularly, the subscription can be worth it. The right comparison is total cost over the years you expect to own the machine, not the price at checkout.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With iFIT and Treadmill Subscriptions</h2>
+          <p>Nearly every regret about iFIT comes from one of these four, and none of them is about the content.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing treadmills on sticker price alone</h3>
+              <p>A machine that needs a membership to be fully useful costs its price plus the membership over the years you own it. Over five to ten years that can equal the hardware. Compare total cost, and a pricier subscription-free machine can turn out to be the cheaper one to own.</p>
+            </li>
+            <li>
+              <h3>Assuming manual mode is the same on every model</h3>
+              <p>What a NordicTrack or ProForm does without a membership varies by model, model year and firmware, and the same product name can behave differently from one year to the next. Check the specific model's documentation and recent owner reports rather than relying on a general description.</p>
+            </li>
+            <li>
+              <h3>Letting a trial renew on the wrong plan</h3>
+              <p>Bundled trials commonly convert automatically, sometimes to a family tier a single user does not need. Note the end date when the machine arrives, check which plan it converts to, and decide deliberately rather than discovering the charge on a statement.</p>
+            </li>
+            <li>
+              <h3>Buying the big screen and never subscribing</h3>
+              <p>The touchscreen is a meaningful part of what you pay for on connected machines. If you already know you will not subscribe, that money is better spent on deck size, motor quality and warranty from a brand whose console does not depend on a membership.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With iFIT and Treadmill Subscriptions</h2>
-          <p class="text-gray-700 leading-relaxed">Nearly every regret about iFIT comes from one of these four, and none of them is about the content.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing treadmills on sticker price alone</h3>
-              <p class="text-gray-700 text-sm m-0">A machine that needs a membership to be fully useful costs its price plus the membership over the years you own it. Over five to ten years that can equal the hardware. Compare total cost, and a pricier subscription-free machine can turn out to be the cheaper one to own.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming manual mode is the same on every model</h3>
-              <p class="text-gray-700 text-sm m-0">What a NordicTrack or ProForm does without a membership varies by model, model year and firmware, and the same product name can behave differently from one year to the next. Check the specific model's documentation and recent owner reports rather than relying on a general description.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting a trial renew on the wrong plan</h3>
-              <p class="text-gray-700 text-sm m-0">Bundled trials commonly convert automatically, sometimes to a family tier a single user does not need. Note the end date when the machine arrives, check which plan it converts to, and decide deliberately rather than discovering the charge on a statement.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the big screen and never subscribing</h3>
-              <p class="text-gray-700 text-sm m-0">The touchscreen is a meaningful part of what you pay for on connected machines. If you already know you will not subscribe, that money is better spent on deck size, motor quality and warranty from a brand whose console does not depend on a membership.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Cost Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buyer's Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Without Subscriptions</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What you own vs. what you rent, and the five-year cost.</p>
-            </a>
-            <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The hardware behind the iFIT console, model by model.</p>
-            </a>
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Budget</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Much Should You Spend on a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What each price band buys, and where the money goes.</p>
-            </a>
-            <a href="/best-ifit-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best iFIT Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six treadmills with iFIT from NordicTrack and ProForm, checked against Amazon listings on 6 November…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">iFIT is worth it if you will use it often.</strong> Classes,
             automatic incline and scenic routes genuinely change how a treadmill gets used for
             people who need structure. For people who just run, it is an ongoing cost for features
             they will not use, and over a decade it can match the price of the machine.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             A NordicTrack or ProForm still runs without a membership, but on many current models the
             screen does much less, so check the specific model. If you will not subscribe, buy
-            from our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">no-subscription list</a>
-            instead.
+            from our <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">no-subscription list</a> instead.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-without-subscriptions/">Best Treadmills Without Subscriptions</a></li>
+            <li><a href="/nordictrack/">NordicTrack Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is iFIT worth it?</h3></summary>
+            <p class="faq-a">
+              For people who will use trainer-led classes or scenic workouts several times a week, and who like the machine adjusting speed and incline for them, often yes. For people who mostly set a speed and run, or would use it occasionally, usually no. Over five to ten years the membership can cost as much as the treadmill, so price it in before deciding.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does iFIT cost?</h3></summary>
+            <p class="faq-a">
+              Prices change, so check iFIT's current plan page. Historically, plans have been priced in the region of $15 a month for an individual membership and around $39 a month for a family plan, with annual billing generally cheaper per month. Many machines also come with a trial or prepaid period that converts to a paid plan when it ends.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you use a NordicTrack without iFIT?</h3></summary>
+            <p class="faq-a">
+              Yes. On the machines we are aware of, the treadmill runs in a manual mode with speed and incline control and basic metrics. On many current models the touchscreen does considerably less without a membership, and what is available varies by model and firmware. Check the specific model's documentation and owner reviews before buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use Zwift or other apps on a NordicTrack?</h3></summary>
+            <p class="faq-a">
+              It depends on the model and firmware. Some treadmills broadcast data over Bluetooth that apps like Zwift and Kinomap can read, while others built around a proprietary platform do not. Where a machine does not broadcast its data, a shoe-mounted footpod can supply pace to the app instead. Check compatibility for the specific model.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What happens if I cancel my iFIT membership?</h3></summary>
+            <p class="faq-a">
+              The treadmill keeps working in manual mode, but you lose the classes, automatic speed and incline adjustments, scenic workouts and, on many models, much of what the touchscreen displays. Check how cancellation is handled and whether annual plans are refundable in the terms you agreed to, and note any trial end date so it does not renew unexpectedly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a treadmill without a subscription better value?</h3></summary>
+            <p class="faq-a">
+              Often, if you will not use the classes. A subscription-free machine costs only its purchase price, while a membership over many years can add as much again. For people who will use the content regularly, the subscription can be worth it. The right comparison is total cost over the years you expect to own the machine, not the price at checkout.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Ownership Cost Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-without-subscriptions/" class="card">
+            <div class="c-kicker">Buyer's Guide</div>
+            <div class="c-title">Best Treadmills Without Subscriptions</div>
+            <p class="c-blurb">What you own vs. what you rent, and the five-year cost.</p>
+          </a>
+          <a href="/nordictrack/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">NordicTrack Treadmills</div>
+            <p class="c-blurb">The hardware behind the iFIT console, model by model.</p>
+          </a>
+          <a href="/how-much-should-you-spend-on-a-treadmill/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">How Much Should You Spend on a Treadmill?</div>
+            <p class="c-blurb">What each price band buys, and where the money goes.</p>
+          </a>
+          <a href="/best-ifit-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best iFIT Treadmills</div>
+            <p class="c-blurb">Six treadmills with iFIT from NordicTrack and ProForm, checked against Amazon listings on 6 November…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

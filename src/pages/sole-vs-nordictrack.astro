@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Sole vs NordicTrack (2026): Hardware-First or iFIT-First?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/sole-vs-nordictrack/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,104 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Compare the Warranties", link: "#warranty" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-solevsnordictrack" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-solevsnordictrack)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Sole vs NordicTrack</h1>
+      <p class="ed-dek">
+        Sole builds the treadmill and lets you bring the entertainment; NordicTrack builds the treadmill around iFIT and charges for the classes that make it smart. Both make good machines. The right one depends on whether you want a platform, and on which part of the warranty you would rather have long.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Sole vs <span class="text-[#5AA9FF]">NordicTrack</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Sole builds the treadmill and lets you bring the entertainment; NordicTrack builds the treadmill around iFIT and charges for the classes that make it smart. Both make good machines. The right one depends on whether you want a platform, and on which part of the warranty you would rather have long.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#warranty" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Warranties Compared
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Where the figures come from.</strong> Every specification
-          and warranty term on this page is taken from our
-          <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole range guide</a>
-          and our
-          <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a>,
-          both of which checked the manufacturer's current US listings against independent
-          coverage on 13 October 2026 and carry only figures those sources agree on. Both brands
-          keep model names while changing the hardware, and Sole's 2026 redesign means several of
-          its model names now describe different machines from the ones most reviews cover. We
-          have not tested these machines. Confirm the specification, the warranty and the model
-          year for the exact unit before you order.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Sole vs NordicTrack: The Short Answer</a>
-          <a href="#philosophy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Two Philosophies: Hardware-First vs Platform-First</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Warranty Structures Compared</a>
-          <a href="#subscription" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Subscriptions and Screens</a>
-          <a href="#incline-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Incline, Decline and Speed</a>
-          <a href="#deck-and-capacity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Decks, User Ratings and Build</a>
-          <a href="#spec-confusion" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Both Brands Reuse Model Names</a>
-          <a href="#owning-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Living With Each One</a>
-          <a href="#who-buys-which" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Which</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If You Are Shopping: What to Look For</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Sole and NordicTrack are the two names most often shortlisted together for a home
           treadmill in the mid-price bracket, and they are built on opposite ideas. Sole sells a
           heavy machine with long frame and motor cover, a plain or app-free console, and no
@@ -211,8 +146,37 @@ const schema = {
           point. The real comparison is between two ways of owning a treadmill.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Where the figures come from.</strong> Every specification
+          and warranty term on this page is taken from our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole range guide</a> and our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a>,
+          both of which checked the manufacturer's current US listings against independent
+          coverage on 13 October 2026 and carry only figures those sources agree on. Both brands
+          keep model names while changing the hardware, and Sole's 2026 redesign means several of
+          its model names now describe different machines from the ones most reviews cover. We
+          have not tested these machines. Confirm the specification, the warranty and the model
+          year for the exact unit before you order.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Sole vs NordicTrack: The Short Answer</a></li>
+            <li><a href="#philosophy">Two Philosophies: Hardware-First vs Platform-First</a></li>
+            <li><a href="#warranty">Warranty Structures Compared</a></li>
+            <li><a href="#subscription">Subscriptions and Screens</a></li>
+            <li><a href="#incline-decline">Incline, Decline and Speed</a></li>
+            <li><a href="#deck-and-capacity">Decks, User Ratings and Build</a></li>
+            <li><a href="#spec-confusion">Both Brands Reuse Model Names</a></li>
+            <li><a href="#owning-one">Living With Each One</a></li>
+            <li><a href="#who-buys-which">Who Should Buy Which</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping: What to Look For</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Sole vs NordicTrack: The Short Answer</h2>
+          <h2>Sole vs NordicTrack: The Short Answer</h2>
 <p>
             <strong>Buy Sole if you want the longest frame and motor warranty, more incline on a
             folding machine, and no subscription at all. Buy NordicTrack if trainer-led classes and
@@ -228,17 +192,13 @@ const schema = {
             Series. Sole is weak on labour cover — 90 days — where NordicTrack gives a year.
           </p>
           <p>
-            If you are leaning towards Sole, our
-            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">ranking of the best Sole treadmills</a>
-            sets out which 2026 figures are confirmed and which conflict. If you are leaning
-            towards NordicTrack, the
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a>
-            does the same for its seven current models.
+            If you are leaning towards Sole, our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">ranking of the best Sole treadmills</a> sets out which 2026 figures are confirmed and which conflict. If you are leaning
+            towards NordicTrack, the <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a> does the same for its seven current models.
           </p>
         </div>
 
         <div id="philosophy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Two Philosophies: Hardware-First vs Platform-First</h2>
+          <h2>Two Philosophies: Hardware-First vs Platform-First</h2>
 <p>
             The two brands make different bets about what a buyer is paying for, and nearly every
             difference below follows from that.
@@ -269,7 +229,7 @@ const schema = {
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Warranty Structures Compared</h2>
+          <h2>Warranty Structures Compared</h2>
 <p>
             Both brands split their warranty by component, and the splits are almost mirror
             images of each other. This table carries the terms as stated on our two range guides.
@@ -316,7 +276,7 @@ const schema = {
         </div>
 
         <div id="subscription" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Subscriptions and Screens</h2>
+          <h2>Subscriptions and Screens</h2>
 <p>
             This is the clearest practical difference, and the one most buyers underestimate.
           </p>
@@ -331,18 +291,14 @@ const schema = {
             <strong>NordicTrack: built around iFIT.</strong> NordicTrack says manual mode is always
             available without a subscription, and independent reviews describe the free tier as
             manual mode plus a few template workouts. The class library, automatic control and
-            entertainment apps need the paid membership. Our guide to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
-            covers what stops and what keeps working in detail.
+            entertainment apps need the paid membership. Our guide to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a> covers what stops and what keeps working in detail.
           </p>
           <p>
             <strong>What that does to the real price.</strong> On a NordicTrack, the membership is
             a recurring cost for every year you want the classes, and over several years it can add
             up to more than the hardware did. On a Sole, the price you pay is the price. When you
             compare the two, add the iFIT membership for every year you expect to use it to the
-            NordicTrack's sale price before deciding which is cheaper. Our
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a>
-            works through that arithmetic without quoting prices that change.
+            NordicTrack's sale price before deciding which is cheaper. Our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a> works through that arithmetic without quoting prices that change.
           </p>
           <p>
             <strong>What Sole does not give you.</strong> A class library that controls the
@@ -352,7 +308,7 @@ const schema = {
         </div>
 
         <div id="incline-decline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Incline, Decline and Speed</h2>
+          <h2>Incline, Decline and Speed</h2>
 <p>
             On the confirmed figures, the two brands trade advantages here.
           </p>
@@ -372,9 +328,7 @@ const schema = {
             Series to -6%. On Sole's current listings, the only model with decline is the TT8,
             which was sold out when we checked. Sole's 2026 F85 listing gives an incline range
             starting at zero, even though earlier F85s and many reviews describe decline — so if
-            decline matters, NordicTrack is the reliable route, and our
-            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">decline treadmill roundup</a>
-            covers other options.
+            decline matters, NordicTrack is the reliable route, and our <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">decline treadmill roundup</a> covers other options.
           </p>
           <p>
             <strong>Speed: level, with one exception.</strong> Sole's folding models and most
@@ -384,7 +338,7 @@ const schema = {
         </div>
 
         <div id="deck-and-capacity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Decks, User Ratings and Build</h2>
+          <h2>Decks, User Ratings and Build</h2>
 <p>
             Both brands sell 60-inch decks across most of their ranges, and the confirmed figures
             are close. The differences are at the edges.
@@ -419,7 +373,7 @@ const schema = {
         </div>
 
         <div id="spec-confusion" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Both Brands Reuse Model Names</h2>
+          <h2>Both Brands Reuse Model Names</h2>
 <p>
             One problem the two brands share is that a model name is not a specification. Both
             keep names for years while changing what is underneath, and it catches buyers on both
@@ -431,18 +385,14 @@ const schema = {
             other sources still quote 3.5 HP and 22 by 60 inches. The F85's current listing gives
             3.5 HP, a 350 lb rating and no decline, where older sources give 4.0 HP, 375 lb and
             decline to -6%. Only the F63's headline figures have stayed consistent. Our Sole range
-            guide sets the conflicts out model by model, and our
-            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand overview</a>
-            covers how the company builds and warrants its machines, though its model details
+            guide sets the conflicts out model by model, and our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand overview</a> covers how the company builds and warrants its machines, though its model details
             predate the 2026 range.
           </p>
           <p>
             <strong>On NordicTrack,</strong> the motor ratings of the T Series 10 and of the
             Commercial 1250 and 1750, and the 1750's deck width and user rating, are quoted
             differently across sources and model years. Older names — the C-Series, the <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>X22i</a> and
-            X32i — have dropped off its site but still appear at retailers. Our
-            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand overview</a>
-            explains how the brand and iFIT fit together, but describes an older lineup, so use the
+            X32i — have dropped off its site but still appear at retailers. Our <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand overview</a> explains how the brand and iFIT fit together, but describes an older lineup, so use the
             range guide for current figures.
           </p>
           <p>
@@ -453,7 +403,7 @@ const schema = {
         </div>
 
         <div id="owning-one" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Living With Each One</h2>
+          <h2>Living With Each One</h2>
 <p>
             The ownership experience differs in ways that do not show on a specification sheet,
             and they are worth thinking through before you choose.
@@ -492,7 +442,7 @@ const schema = {
         </div>
 
         <div id="who-buys-which" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Which</h2>
+          <h2>Who Should Buy Which</h2>
 <p>
             <strong>Buy a Sole if</strong> you do not want a subscription; you want lifetime frame
             and motor cover without paying for a flagship; you incline-walk and want 15% on a
@@ -516,14 +466,12 @@ const schema = {
           <p>
             <strong>Consider ProForm if</strong> you want iFIT but not NordicTrack's prices. It is
             NordicTrack's sister brand on the same platform, with lighter machines and shorter
-            motor cover; our
-            <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">assessment of ProForm as a brand</a>
-            sets out the trade-offs.
+            motor cover; our <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">assessment of ProForm as a brand</a> sets out the trade-offs.
           </p>
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If You Are Shopping: What to Look For</h2>
+          <h2>If You Are Shopping: What to Look For</h2>
 <p>
             Whichever brand you lean towards, the same short list decides whether a particular
             machine is a good buy.
@@ -551,149 +499,160 @@ const schema = {
             confirm the deck, motor and user rating for the unit in the box.
           </p>
           <p>
-            For the confirmed figures and the disputed ones on every current Sole, see our
-            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole treadmill rankings</a>;
-            for the NordicTrack side, our
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>.
-            And if avoiding a subscription is the deciding factor, our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            roundup compares Sole with other brands built the same way.
+            For the confirmed figures and the disputed ones on every current Sole, see our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole treadmill rankings</a>;
+            for the NordicTrack side, our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>.
+            And if avoiding a subscription is the deciding factor, our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> roundup compares Sole with other brands built the same way.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Sole better than NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on what you value. Sole gives lifetime frame and motor cover on every folding model, 15% incline and no subscription. NordicTrack gives iFIT classes with automatic control, decline on its Commercial series and 40% incline on its X Series, plus a year of labour cover against Sole’s 90 days. If you will not pay for classes, Sole is usually better value.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do Sole treadmills need a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Sole describes its app as free with no monthly subscription, and every model’s console controls speed, incline and the built-in programmes on its own. The touchscreen models add streaming apps, but nothing on Sole’s listings suggests any treadmill feature is locked behind a membership. NordicTrack, by contrast, is built around a paid iFIT membership.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which has the better warranty, Sole or NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sole is better on the frame and motor: lifetime on both for every folding model, where NordicTrack gives ten years on the frame and lifetime motor cover only on the Commercial 1750, 2450 and X Series. NordicTrack is better on labour, with a year against Sole’s 90 days, and on wear parts. Confirm the terms for your exact unit and model year.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which is better for incline walking, Sole or NordicTrack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On folding treadmills, Sole: the F63, F65, F80 and F85 reach 15%, against 12% on NordicTrack’s T Series and Commercial series. For steep incline, NordicTrack’s X16 and X24 trainers reach 40%, but they do not fold and need plenty of headroom. NordicTrack also offers decline, which current in-stock Soles do not.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Sole F80 better than the NordicTrack Commercial 1750?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They suit different buyers. The F80 has a 10.1-inch touchscreen, 15% incline, a 350 lb rating, lifetime frame and motor cover and no subscription, but its motor and deck width are disputed between sources. The 1750 has a 16-inch pivoting screen, -3% to 12% incline, lifetime motor cover and iFIT. Choose on whether you want iFIT.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use iFIT on a Sole treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only in a limited way. The iFIT app can run on a phone or tablet beside another treadmill, but the automatic speed and incline control that defines iFIT needs a compatible iFIT machine, so on a Sole you follow the workout and adjust the console by hand. If automatic control during classes is what you want, buy an iFIT machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Comparing Sole and NordicTrack</h2>
+          <p>Most of these come from comparing the two on the same terms, when they are built on different ideas.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing sticker prices only</h3>
+              <p>A NordicTrack’s real cost includes the iFIT membership for every year you use the classes; a Sole’s price is the whole price. Add the membership to the NordicTrack’s sale price over the years you expect to own it before deciding which is cheaper.</p>
+            </li>
+            <li>
+              <h3>Reading lifetime as covering everything</h3>
+              <p>Sole’s lifetime cover applies to the frame and motor. Wear parts get a year and labour 90 days, so a service visit after the first three months is usually at your expense. NordicTrack’s lifetime motor cover similarly sits beside a year of labour.</p>
+            </li>
+            <li>
+              <h3>Assuming every NordicTrack has lifetime motor cover</h3>
+              <p>Only the Commercial 1750, 2450 and X Series do. The T Series and Commercial 1250 have two years. If motor cover is your comparison point with Sole, compare the F63 with a 1750, not with a T Series.</p>
+            </li>
+            <li>
+              <h3>Trusting an old Sole review</h3>
+              <p>Sole’s 2026 F65, F80 and F85 differ from earlier versions on deck width, motor rating, user rating or decline. A review praising an F85’s decline may describe a machine Sole no longer lists. Read Sole’s current page for the exact model.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Comparing Sole and NordicTrack</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from comparing the two on the same terms, when they are built on different ideas.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing sticker prices only</h3>
-              <p class="text-gray-700 text-sm m-0">A NordicTrack’s real cost includes the iFIT membership for every year you use the classes; a Sole’s price is the whole price. Add the membership to the NordicTrack’s sale price over the years you expect to own it before deciding which is cheaper.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading lifetime as covering everything</h3>
-              <p class="text-gray-700 text-sm m-0">Sole’s lifetime cover applies to the frame and motor. Wear parts get a year and labour 90 days, so a service visit after the first three months is usually at your expense. NordicTrack’s lifetime motor cover similarly sits beside a year of labour.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming every NordicTrack has lifetime motor cover</h3>
-              <p class="text-gray-700 text-sm m-0">Only the Commercial 1750, 2450 and X Series do. The T Series and Commercial 1250 have two years. If motor cover is your comparison point with Sole, compare the F63 with a 1750, not with a T Series.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting an old Sole review</h3>
-              <p class="text-gray-700 text-sm m-0">Sole’s 2026 F65, F80 and F85 differ from earlier versions on deck width, motor rating, user rating or decline. A review praising an F85’s decline may describe a machine Sole no longer lists. Read Sole’s current page for the exact model.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-sole-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Sole Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sole’s 2026 range ranked, with the confirmed figures and the ones that conflict.</p>
-            </a>
-            <a href="/best-nordictrack-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best NordicTrack Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">All seven current NordicTrack treadmills ranked on deck, incline and warranty.</p>
-            </a>
-            <a href="/sole-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">The Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Sole Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How Sole builds, warrants and sells its treadmills.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Sole is the hardware-first choice and NordicTrack the
             platform-first one.</strong> Sole gives lifetime frame and motor cover on every folding
             model, 15% incline and no subscription; NordicTrack gives iFIT classes with automatic
             control, decline and steep-incline trainers, plus a longer labour term.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you will not pay for classes, Sole is usually the better long-term buy; if the classes
             are what will keep you training, a NordicTrack Commercial 1750 earns its membership. To
-            choose a model on the Sole side, start with our
-            <a href="/best-sole-treadmills/" class="text-[#5AA9FF] font-bold no-underline">guide to the best Sole treadmills</a>.
+            choose a model on the Sole side, start with our <a href="/best-sole-treadmills/" class="text-[#5AA9FF] font-bold no-underline">guide to the best Sole treadmills</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-sole-treadmills/">Best Sole Treadmills</a></li>
+            <li><a href="/best-nordictrack-treadmills/">Best NordicTrack Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is Sole better than NordicTrack?</h3></summary>
+            <p class="faq-a">
+              It depends on what you value. Sole gives lifetime frame and motor cover on every folding model, 15% incline and no subscription. NordicTrack gives iFIT classes with automatic control, decline on its Commercial series and 40% incline on its X Series, plus a year of labour cover against Sole’s 90 days. If you will not pay for classes, Sole is usually better value.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Do Sole treadmills need a subscription?</h3></summary>
+            <p class="faq-a">
+              No. Sole describes its app as free with no monthly subscription, and every model’s console controls speed, incline and the built-in programmes on its own. The touchscreen models add streaming apps, but nothing on Sole’s listings suggests any treadmill feature is locked behind a membership. NordicTrack, by contrast, is built around a paid iFIT membership.
             </p>
+          </details>
+          <details>
+            <summary><h3>Which has the better warranty, Sole or NordicTrack?</h3></summary>
+            <p class="faq-a">
+              Sole is better on the frame and motor: lifetime on both for every folding model, where NordicTrack gives ten years on the frame and lifetime motor cover only on the Commercial 1750, 2450 and X Series. NordicTrack is better on labour, with a year against Sole’s 90 days, and on wear parts. Confirm the terms for your exact unit and model year.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which is better for incline walking, Sole or NordicTrack?</h3></summary>
+            <p class="faq-a">
+              On folding treadmills, Sole: the F63, F65, F80 and F85 reach 15%, against 12% on NordicTrack’s T Series and Commercial series. For steep incline, NordicTrack’s X16 and X24 trainers reach 40%, but they do not fold and need plenty of headroom. NordicTrack also offers decline, which current in-stock Soles do not.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the Sole F80 better than the NordicTrack Commercial 1750?</h3></summary>
+            <p class="faq-a">
+              They suit different buyers. The F80 has a 10.1-inch touchscreen, 15% incline, a 350 lb rating, lifetime frame and motor cover and no subscription, but its motor and deck width are disputed between sources. The 1750 has a 16-inch pivoting screen, -3% to 12% incline, lifetime motor cover and iFIT. Choose on whether you want iFIT.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use iFIT on a Sole treadmill?</h3></summary>
+            <p class="faq-a">
+              Only in a limited way. The iFIT app can run on a phone or tablet beside another treadmill, but the automatic speed and incline control that defines iFIT needs a compatible iFIT machine, so on a Sole you follow the workout and adjust the console by hand. If automatic control during classes is what you want, buy an iFIT machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Brand Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-sole-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Sole Treadmills</div>
+            <p class="c-blurb">Sole’s 2026 range ranked, with the confirmed figures and the ones that conflict.</p>
+          </a>
+          <a href="/best-nordictrack-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best NordicTrack Treadmills</div>
+            <p class="c-blurb">All seven current NordicTrack treadmills ranked on deck, incline and warranty.</p>
+          </a>
+          <a href="/sole-fitness/" class="card">
+            <div class="c-kicker">The Brand</div>
+            <div class="c-title">Sole Fitness Treadmills</div>
+            <p class="c-blurb">How Sole builds, warrants and sells its treadmills.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

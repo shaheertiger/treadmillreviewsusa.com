@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Warranty Explained (2026): What It Covers and What Voids It";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-warranty-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "What Voids a Warranty", link: "#what-voids" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillwarrantyguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillwarrantyguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Warranties Explained</h1>
+      <p class="ed-dek">
+        A treadmill warranty is really four warranties of different lengths stacked together, and the longest one usually covers the part least likely to fail. Here is how to read the terms, what typically voids them, whether extended cover is worth buying, and how to make a claim that succeeds.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Warranties <span class="text-[#5AA9FF]">Explained</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill warranty is really four warranties of different lengths stacked together, and the longest one usually covers the part least likely to fail. Here is how to read the terms, what typically voids them, whether extended cover is worth buying, and how to make a claim that succeeds.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#what-voids" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What Voids a Warranty
-          </a>
-          <a href="#extended-warranties" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Extended Warranties
-          </a>
-        </div>
+        <a href="#what-voids" class="btn-ghost">What Voids a Warranty</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the terms below.</strong> This page describes how treadmill
-          warranties are typically structured in the US, not the terms of any particular brand or
-          model. Warranty terms vary between manufacturers, change between model years, and can
-          differ by retailer and country. The warranty document for your machine — usually in the
-          manual or on the manufacturer's website — is the only authority on what you are covered
-          for. Nothing here is legal advice.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Does a Treadmill Warranty Cover? The Short Answer</a>
-          <a href="#tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Four Tiers: Frame, Motor, Parts and Labour</a>
-          <a href="#lifetime" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What "Lifetime" Actually Means</a>
-          <a href="#labour-in-home" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Labour and In-Home Service: The Terms That Matter Most</a>
-          <a href="#registration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Registration and Proof of Purchase</a>
-          <a href="#residential-commercial" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Residential vs Commercial Use Clauses</a>
-          <a href="#what-voids" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Voids a Treadmill Warranty</a>
-          <a href="#wear-items" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Wear Items: Belts, Decks and Other Exclusions</a>
-          <a href="#extended-warranties" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Are Extended Treadmill Warranties Worth It?</a>
-          <a href="#how-to-claim" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How to Make a Treadmill Warranty Claim</a>
-          <a href="#comparing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Comparing Warranties When You Buy</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Treadmill marketing leads with the biggest number in the warranty — a lifetime frame, a
           lifetime motor — and the biggest number is almost never the one that decides what a
           repair costs you. What decides it is the labour term, whether service is in-home, and
@@ -205,14 +144,40 @@ const schema = {
           becomes a useful buying signal rather than a slogan.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the terms below.</strong> This page describes how treadmill
+          warranties are typically structured in the US, not the terms of any particular brand or
+          model. Warranty terms vary between manufacturers, change between model years, and can
+          differ by retailer and country. The warranty document for your machine — usually in the
+          manual or on the manufacturer's website — is the only authority on what you are covered
+          for. Nothing here is legal advice.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Does a Treadmill Warranty Cover? The Short Answer</a></li>
+            <li><a href="#tiers">The Four Tiers: Frame, Motor, Parts and Labour</a></li>
+            <li><a href="#lifetime">What "Lifetime" Actually Means</a></li>
+            <li><a href="#labour-in-home">Labour and In-Home Service: The Terms That Matter Most</a></li>
+            <li><a href="#registration">Registration and Proof of Purchase</a></li>
+            <li><a href="#residential-commercial">Residential vs Commercial Use Clauses</a></li>
+            <li><a href="#what-voids">What Voids a Treadmill Warranty</a></li>
+            <li><a href="#wear-items">Wear Items: Belts, Decks and Other Exclusions</a></li>
+            <li><a href="#extended-warranties">Are Extended Treadmill Warranties Worth It?</a></li>
+            <li><a href="#how-to-claim">How to Make a Treadmill Warranty Claim</a></li>
+            <li><a href="#comparing">Comparing Warranties When You Buy</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Does a Treadmill Warranty Cover? The Short Answer</h2>
+          <h2>What Does a Treadmill Warranty Cover? The Short Answer</h2>
 <p>
             A treadmill warranty covers defects in materials and workmanship — parts that fail
             because they were made or assembled badly — for a set period. It is almost always split
-            into separate terms for the <strong>frame</strong>, the <strong>drive motor</strong>,
-            <strong>parts</strong> (electronics and mechanical components) and <strong>labour</strong>
-            (a technician's time), each with its own length.
+            into separate terms for the <strong>frame</strong>, the <strong>drive motor</strong>, <strong>parts</strong> (electronics and mechanical components) and <strong>labour</strong> (a technician's time), each with its own length.
           </p>
           <p>
             It typically does not cover normal wear items such as the belt and deck beyond a limited
@@ -227,7 +192,7 @@ const schema = {
         </div>
 
         <div id="tiers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Four Tiers: Frame, Motor, Parts and Labour</h2>
+          <h2>The Four Tiers: Frame, Motor, Parts and Labour</h2>
 <p>
             <strong>Frame.</strong> The steel or aluminium structure and its welds. Terms are
             commonly long — ten years or "lifetime" on many home machines. It is the longest term
@@ -262,7 +227,7 @@ const schema = {
         </div>
 
         <div id="lifetime" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What "Lifetime" Actually Means</h2>
+          <h2>What "Lifetime" Actually Means</h2>
 <p>
             "Lifetime" in a treadmill warranty almost never means your lifetime or the machine's
             lifetime in any open-ended sense. It usually means one of these, and the warranty
@@ -280,19 +245,15 @@ const schema = {
             None of that makes a lifetime term worthless. A lifetime motor warranty on a well-made
             machine is genuinely useful, because motor replacement is an expensive repair. But it
             is a parts warranty for one component, and it sits alongside a labour term that has
-            usually expired long before the motor fails. Our guide to
-            <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
-            covers what drives motor life, and it is mostly maintenance.
+            usually expired long before the motor fails. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> covers what drives motor life, and it is mostly maintenance.
           </p>
         </div>
 
         <div id="labour-in-home" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Labour and In-Home Service: The Terms That Matter Most</h2>
+          <h2>Labour and In-Home Service: The Terms That Matter Most</h2>
 <p>
             Labour is a large share of most <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill repairs</a>, and a service call-out alone
-            commonly costs somewhere around $80 to $150 before any parts or work. Our guide to
-            <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance costs</a>
-            breaks down typical repair figures. A long parts term with a short labour term means a
+            commonly costs somewhere around $80 to $150 before any parts or work. Our guide to <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance costs</a> breaks down typical repair figures. A long parts term with a short labour term means a
             free part and a bill for fitting it.
           </p>
           <p>
@@ -311,7 +272,7 @@ const schema = {
         </div>
 
         <div id="registration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Registration and Proof of Purchase</h2>
+          <h2>Registration and Proof of Purchase</h2>
 <p>
             Some manufacturers require you to register the treadmill to receive the full warranty,
             or within a set window after purchase; others cover you from the purchase date with
@@ -331,7 +292,7 @@ const schema = {
         </div>
 
         <div id="residential-commercial" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Residential vs Commercial Use Clauses</h2>
+          <h2>Residential vs Commercial Use Clauses</h2>
 <p>
             Home treadmill warranties apply to residential use: the machine in a private home, used
             by the household. Most define commercial use broadly and either void the warranty or cut
@@ -347,20 +308,16 @@ const schema = {
           <p>
             If your use falls in between, ask the manufacturer before you buy and get the answer in
             writing. Machines sold for light-commercial or commercial use carry warranties written
-            for that environment, often with different terms. Our guide to
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>
-            covers what changes.
+            for that environment, often with different terms. Our guide to <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a> covers what changes.
           </p>
           <p>
             A related clause is the user weight limit. Using a treadmill above its stated maximum
-            user weight can be grounds for declining a claim on the frame, deck or motor. Our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains what that rating means.
+            user weight can be grounds for declining a claim on the frame, deck or motor. Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains what that rating means.
           </p>
         </div>
 
         <div id="what-voids" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Voids a Treadmill Warranty</h2>
+          <h2>What Voids a Treadmill Warranty</h2>
 <p>
             Strictly, most of these do not void the whole warranty; they exclude the damage they
             cause. In practice the effect is the same — a declined claim on an expensive part. The
@@ -370,16 +327,12 @@ const schema = {
             <strong>Wrong lubricant or no lubrication.</strong> Manuals specify a lubricant type,
             usually 100% silicone, and some decks are pre-waxed and must not be lubricated at all.
             Damage from the wrong product is identifiable, and some manufacturers can decline a
-            motor claim on a deck that was obviously never maintained. Our page on
-            <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium">using WD-40 on a treadmill</a>
-            covers the commonest wrong product.
+            motor claim on a deck that was obviously never maintained. Our page on <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium">using WD-40 on a treadmill</a> covers the commonest wrong product.
           </p>
           <p>
             <strong>Environment.</strong> Many manuals specify indoor, climate-controlled use. Damage
             from damp, condensation or temperature extremes — in a garage, porch or outbuilding — may
-            be excluded. Our guide to keeping a
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in a garage</a>
-            covers the clause to check.
+            be excluded. Our guide to keeping a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in a garage</a> covers the clause to check.
           </p>
           <p>
             <strong>Commercial use</strong> of a residential machine, and <strong>exceeding the user
@@ -408,7 +361,7 @@ const schema = {
         </div>
 
         <div id="wear-items" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Wear Items: Belts, Decks and Other Exclusions</h2>
+          <h2>Wear Items: Belts, Decks and Other Exclusions</h2>
 <p>
             Some parts wear out in normal use, and warranties treat them differently from
             defects. The belt and deck are the obvious ones: they are consumed by use, and many
@@ -419,9 +372,7 @@ const schema = {
           <p>
             This matters because wear items are the parts most likely to need attention in the
             first few years. A belt that needs replacing at year four is ordinary ownership cost,
-            not a warranty claim. Our guide to
-            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a>
-            covers what to expect.
+            not a warranty claim. Our guide to <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a> covers what to expect.
           </p>
           <p>
             The distinction between a defect and wear is where many disputes happen. A belt that
@@ -432,7 +383,7 @@ const schema = {
         </div>
 
         <div id="extended-warranties" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Are Extended Treadmill Warranties Worth It?</h2>
+          <h2>Are Extended Treadmill Warranties Worth It?</h2>
 <p>
             Retailers sell extended cover on treadmills hard, and the honest answer depends on the
             price tier of the machine and on what the policy covers.
@@ -440,9 +391,7 @@ const schema = {
           <p>
             <strong>Budget machines: generally no.</strong> An extension that costs a large share of
             the purchase price insures a machine whose major failure may be close to a write-off
-            anyway. That money usually does more good spent on a better machine. Our comparison of
-            <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap and premium treadmills</a>
-            makes the broader case.
+            anyway. That money usually does more good spent on a better machine. Our comparison of <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap and premium treadmills</a> makes the broader case.
           </p>
           <p>
             <strong>Mid-range machines: genuinely arguable.</strong> These machines are worth
@@ -471,7 +420,7 @@ const schema = {
         </div>
 
         <div id="how-to-claim" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How to Make a Treadmill Warranty Claim</h2>
+          <h2>How to Make a Treadmill Warranty Claim</h2>
 <p>
             Most claims go smoothly when the owner arrives with the right information. The
             sequence:
@@ -480,10 +429,7 @@ const schema = {
             <li><strong>Describe the fault precisely.</strong> When it happens, at what speed or
             incline, what you see and hear, and any message on the console. A short phone video of
             the problem is often the most useful thing you can send.</li>
-            <li><strong>Check the basics first.</strong> Our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            covers the checks a support agent will ask about anyway — safety key, outlet, breaker,
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>.</li>
+            <li><strong>Check the basics first.</strong> Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> covers the checks a support agent will ask about anyway — safety key, outlet, breaker, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>.</li>
             <li><strong>Gather the paperwork:</strong> serial number, model, proof of purchase and
             date, and your maintenance notes.</li>
             <li><strong>Contact the manufacturer,</strong> not the retailer, unless you are still
@@ -503,7 +449,7 @@ const schema = {
         </div>
 
         <div id="comparing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Comparing Warranties When You Buy</h2>
+          <h2>Comparing Warranties When You Buy</h2>
 <p>
             A warranty is one of the more honest signals in a treadmill listing, because it is a
             commitment the manufacturer has to pay for. When comparing machines, put these
@@ -521,148 +467,159 @@ const schema = {
           <p>
             A machine with a modest frame term and generous in-home parts and labour can be the
             better-protected purchase than one advertising a lifetime frame with one year of labour.
-            Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
-            covers how warranty fits alongside motor, deck and price. If you are considering a
-            used machine, our guide to
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used treadmills</a>
-            covers what losing the warranty is worth.
+            Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> covers how warranty fits alongside motor, deck and price. If you are considering a
+            used machine, our guide to <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used treadmills</a> covers what losing the warranty is worth.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does a treadmill warranty cover?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Defects in materials and workmanship, usually split into separate terms for the frame, the drive motor, parts such as electronics and rollers, and labour. It typically does not cover wear items like the belt and deck beyond a limited period, damage from misuse or missing maintenance, commercial use of a home machine, or use outside the environment the manual specifies.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does a lifetime warranty on a treadmill mean?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually that a specific component — often the frame or the drive motor — is covered for as long as the original purchaser owns the machine, in residential use. It rarely includes labour, often excludes related parts such as the motor controller, and may depend on registration. Selling the machine typically ends it. The warranty document defines it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an extended warranty on a treadmill worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Generally not on a budget machine, where the cost is a large share of the price. On a mid-range machine it is arguable, depending on whether service is in-home, whether wear items are excluded and whether a maintenance record is required. On premium machines with long factory terms it is often unnecessary. Compare it line by line with the factory warranty.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What voids a treadmill warranty?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Commonly: commercial use of a residential machine, exceeding the user weight limit, the wrong lubricant or no maintenance, use in an environment the manual excludes such as a damp or unheated garage, extension cords or prohibited outlets, incorrect assembly, modifications and unauthorised repairs. Most warranties also end when the machine is sold.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a treadmill warranty cover labor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually for a limited period — often one year on home machines, sometimes more on premium models — and that is the term to read first. After it expires, covered parts may still be supplied free, but you fit them yourself or pay a technician. Check whether labour is in-home or return-to-base, since shipping a treadmill is rarely practical.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill warranty transferable?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not. Most home treadmill warranties apply only to the original purchaser, so a used treadmill normally comes without one. A few manufacturers allow transfers, sometimes for a fee or with registration. If you are buying used, assume there is no warranty unless the manufacturer confirms otherwise in writing.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Warranties</h2>
+          <p>Most declined or disappointing claims trace back to one of these four, and all four are decided before anything breaks.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying on the headline term</h3>
+              <p>A lifetime frame covers the part least likely to fail. The labour term and whether service is in-home decide what a typical repair costs you, and they are often one year and buried further down the page. Compare those first.</p>
+            </li>
+            <li>
+              <h3>Not registering or keeping proof of purchase</h3>
+              <p>Some warranties require registration, and every claim needs a serial number and proof of purchase. Register the week the machine arrives, and keep the receipt, serial number and manual together, with photos on your phone as a backup.</p>
+            </li>
+            <li>
+              <h3>Skipping maintenance — or doing it wrong</h3>
+              <p>The wrong lubricant, or none at all, leaves visible evidence on the deck, and a motor claim on a neglected deck may be declined. Follow the manual's lubricant type and schedule, and keep brief notes of what you did and when.</p>
+            </li>
+            <li>
+              <h3>Buying extended cover without reading it</h3>
+              <p>Extended plans commonly exclude wear items, can require maintenance records, may be administered by a third party and sometimes overlap the factory warranty for years. Read the exclusions and the start date before paying, and check whether your credit card already extends the warranty.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Warranties</h2>
-          <p class="text-gray-700 leading-relaxed">Most declined or disappointing claims trace back to one of these four, and all four are decided before anything breaks.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying on the headline term</h3>
-              <p class="text-gray-700 text-sm m-0">A lifetime frame covers the part least likely to fail. The labour term and whether service is in-home decide what a typical repair costs you, and they are often one year and buried further down the page. Compare those first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not registering or keeping proof of purchase</h3>
-              <p class="text-gray-700 text-sm m-0">Some warranties require registration, and every claim needs a serial number and proof of purchase. Register the week the machine arrives, and keep the receipt, serial number and manual together, with photos on your phone as a backup.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping maintenance — or doing it wrong</h3>
-              <p class="text-gray-700 text-sm m-0">The wrong lubricant, or none at all, leaves visible evidence on the deck, and a motor claim on a neglected deck may be declined. Follow the manual's lubricant type and schedule, and keep brief notes of what you did and when.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying extended cover without reading it</h3>
-              <p class="text-gray-700 text-sm m-0">Extended plans commonly exclude wear items, can require maintenance records, may be administered by a third party and sometimes overlap the factory warranty for years. Read the exclusions and the start date before paying, and check whether your credit card already extends the warranty.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-maintenance-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Costs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Cost</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What wear parts and repairs typically cost, year by year.</p>
-            </a>
-            <a href="/treadmill-buying-guide-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Buying Guide 2026</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Motor, deck, warranty and price — what matters at each tier.</p>
-            </a>
-            <a href="/new-vs-used-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">New vs Used Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What you save buying used, and what losing the warranty costs.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Read the labour term, the in-home clause and the exclusions
             first.</strong> The lifetime frame figure is the least important number on the page.
             Register the machine, keep proof of purchase, and follow the manual on lubricant,
             environment and use.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Extended cover is rarely worth it on budget machines</strong> and
             only sometimes on mid-range ones. Regular maintenance prevents the same failures for far
-            less — our
-            <a href="/treadmill-maintenance-checklist/" class="text-[#5AA9FF] font-bold no-underline">maintenance checklist</a>
-            is the cheaper insurance.
+            less — our <a href="/treadmill-maintenance-checklist/" class="text-[#5AA9FF] font-bold no-underline">maintenance checklist</a> is the cheaper insurance.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-maintenance-cost/">Treadmill Maintenance Cost</a></li>
+            <li><a href="/treadmill-buying-guide-2026/">Treadmill Buying Guide 2026</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What does a treadmill warranty cover?</h3></summary>
+            <p class="faq-a">
+              Defects in materials and workmanship, usually split into separate terms for the frame, the drive motor, parts such as electronics and rollers, and labour. It typically does not cover wear items like the belt and deck beyond a limited period, damage from misuse or missing maintenance, commercial use of a home machine, or use outside the environment the manual specifies.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What does a lifetime warranty on a treadmill mean?</h3></summary>
+            <p class="faq-a">
+              Usually that a specific component — often the frame or the drive motor — is covered for as long as the original purchaser owns the machine, in residential use. It rarely includes labour, often excludes related parts such as the motor controller, and may depend on registration. Selling the machine typically ends it. The warranty document defines it.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is an extended warranty on a treadmill worth it?</h3></summary>
+            <p class="faq-a">
+              Generally not on a budget machine, where the cost is a large share of the price. On a mid-range machine it is arguable, depending on whether service is in-home, whether wear items are excluded and whether a maintenance record is required. On premium machines with long factory terms it is often unnecessary. Compare it line by line with the factory warranty.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What voids a treadmill warranty?</h3></summary>
+            <p class="faq-a">
+              Commonly: commercial use of a residential machine, exceeding the user weight limit, the wrong lubricant or no maintenance, use in an environment the manual excludes such as a damp or unheated garage, extension cords or prohibited outlets, incorrect assembly, modifications and unauthorised repairs. Most warranties also end when the machine is sold.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a treadmill warranty cover labor?</h3></summary>
+            <p class="faq-a">
+              Usually for a limited period — often one year on home machines, sometimes more on premium models — and that is the term to read first. After it expires, covered parts may still be supplied free, but you fit them yourself or pay a technician. Check whether labour is in-home or return-to-base, since shipping a treadmill is rarely practical.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a treadmill warranty transferable?</h3></summary>
+            <p class="faq-a">
+              Usually not. Most home treadmill warranties apply only to the original purchaser, so a used treadmill normally comes without one. A few manufacturers allow transfers, sometimes for a fee or with registration. If you are buying used, assume there is no warranty unless the manufacturer confirms otherwise in writing.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-maintenance-cost/" class="card">
+            <div class="c-kicker">Costs</div>
+            <div class="c-title">Treadmill Maintenance Cost</div>
+            <p class="c-blurb">What wear parts and repairs typically cost, year by year.</p>
+          </a>
+          <a href="/treadmill-buying-guide-2026/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Buying Guide 2026</div>
+            <p class="c-blurb">Motor, deck, warranty and price — what matters at each tier.</p>
+          </a>
+          <a href="/new-vs-used-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">New vs Used Treadmill</div>
+            <p class="c-blurb">What you save buying used, and what losing the warranty costs.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

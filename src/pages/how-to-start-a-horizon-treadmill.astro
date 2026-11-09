@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Start a Horizon Treadmill (2026): Switch, Key and Start";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-start-a-horizon-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,48 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Steps", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtostartahorizontreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtostartahorizontreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">How to Start a Horizon Treadmill</h1>
+      <p class="ed-dek">
+        Horizon’s current owner’s manuals give the same six-step start for the T101, T202 and 7.0 and 7.4 AT: clear the belt, switch on next to the power cord, stand on the side rails, clip the safety key to your clothing, fit it in the console, then press Start. Here is that sequence with the model differences, the app and watch start, and the checks Horizon lists when nothing happens.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Start a <span class="text-[#5AA9FF]">Horizon Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Horizon’s current owner’s manuals give the same six-step start for the T101, T202 and 7.0 and 7.4 AT: clear the belt, switch on next to the power cord, stand on the side rails, clip the safety key to your clothing, fit it in the console, then press Start. Here is that sequence with the model differences, the app and watch start, and the checks Horizon lists when nothing happens.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Steps in Order
-          </a>
-          <a href="#wont-start" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            If It Will Not Start
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Steps in Order</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Horizon treadmills are simple to start once you know where three things are: the power
+          switch, which is down at the front of the frame next to the cord rather than on the
+          console; the safety key, without which the machine will not start at all; and the Start
+          key, which on every current model doubles as a one-press quick start. Most "my Horizon
+          won’t start" searches come down to one of those three, or to the outlet the treadmill is
+          plugged into, which Horizon is unusually strict about. This page sets out the start
+          sequence as Horizon’s own manuals give it, names the manual each step comes from, and
+          covers the app and smartwatch starts, the display that shows only dashes, the messages
+          that stop the belt, and the T101 recall that anyone starting an older T101 should check
+          first.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           18 October 2026 we read the "Getting Started", console, safety-key, power and
           troubleshooting sections of four Horizon owner’s manuals hosted on Horizon’s help centre
@@ -178,50 +167,28 @@ const schema = {
           differs from this page. Never remove the motor cover or console faceplate with the
           machine plugged in; for anything inside the machine, unplug it and contact Horizon or a
           technician.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Start a Horizon Treadmill: The Short Answer</a>
-          <a href="#before-first-start" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Before the First Start: Outlet, Circuit and Placement</a>
-          <a href="#power-switch" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Where Is the Power Switch on a Horizon Treadmill?</a>
-          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Horizon Safety Key: Clip, Slot or Magnet</a>
-          <a href="#start-by-model" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Quick Start and Programs by Model</a>
-          <a href="#apps-and-watches" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Starting With an App or Watch</a>
-          <a href="#sleep-and-dashes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Energy Saver, Sleep and Dashes</a>
-          <a href="#wont-start" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. If It Won’t Start</a>
-          <a href="#messages" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Messages and Error Codes Horizon Documents</a>
-          <a href="#t101-recall" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Starting an Older T101: Check the Recall First</a>
-          <a href="#turning-off" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Turning a Horizon Treadmill Off</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Start a Horizon Treadmill: The Short Answer</a></li>
+            <li><a href="#before-first-start">Before the First Start: Outlet, Circuit and Placement</a></li>
+            <li><a href="#power-switch">Where Is the Power Switch on a Horizon Treadmill?</a></li>
+            <li><a href="#safety-key">The Horizon Safety Key: Clip, Slot or Magnet</a></li>
+            <li><a href="#start-by-model">Quick Start and Programs by Model</a></li>
+            <li><a href="#apps-and-watches">Starting With an App or Watch</a></li>
+            <li><a href="#sleep-and-dashes">Energy Saver, Sleep and Dashes</a></li>
+            <li><a href="#wont-start">If It Won’t Start</a></li>
+            <li><a href="#messages">Messages and Error Codes Horizon Documents</a></li>
+            <li><a href="#t101-recall">Starting an Older T101: Check the Recall First</a></li>
+            <li><a href="#turning-off">Turning a Horizon Treadmill Off</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Horizon treadmills are simple to start once you know where three things are: the power
-          switch, which is down at the front of the frame next to the cord rather than on the
-          console; the safety key, without which the machine will not start at all; and the Start
-          key, which on every current model doubles as a one-press quick start. Most "my Horizon
-          won’t start" searches come down to one of those three, or to the outlet the treadmill is
-          plugged into, which Horizon is unusually strict about. This page sets out the start
-          sequence as Horizon’s own manuals give it, names the manual each step comes from, and
-          covers the app and smartwatch starts, the display that shows only dashes, the messages
-          that stop the belt, and the T101 recall that anyone starting an older T101 should check
-          first.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Start a Horizon Treadmill: The Short Answer</h2>
+          <h2>How to Start a Horizon Treadmill: The Short Answer</h2>
 <p>
             <strong>Plug the treadmill into a grounded wall outlet on a dedicated circuit, turn on the
             ON/OFF switch next to the power cord at the front of the frame, stand on the side rails,
@@ -250,15 +217,13 @@ const schema = {
             Horizon’s help centre adds the one rule that explains most "dead" machines: "Your treadmill
             will not start unless the safety key is placed in position." If the console lights but
             shows only dashes or "SAFETY KEY OFF", the key is the first thing to check. If nothing
-            lights at all, start with the outlet and the switch, in the order set out
-            <a href="#wont-start" class="text-[#0F62FE] font-medium">further down this page</a>.
-            The general version of this sequence for every brand is in our guide to
-            <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>.
+            lights at all, start with the outlet and the switch, in the order set out <a href="#wont-start" class="text-[#0F62FE] font-medium">further down this page</a>.
+            The general version of this sequence for every brand is in our guide to <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>.
           </p>
         </div>
 
         <div id="before-first-start" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Before the First Start: Outlet, Circuit and Placement</h2>
+          <h2>Before the First Start: Outlet, Circuit and Placement</h2>
 <p>
             Horizon’s electrical requirements are stricter than many owners expect, and getting them
             wrong produces exactly the symptoms people search for: a console that will not light, a
@@ -281,11 +246,7 @@ const schema = {
             document we read says the same.</li>
           </ul>
           <p>
-            Our guides to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a>
-            and
-            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protectors</a>
-            explain why manufacturers differ on these points; on a Horizon, follow Horizon. If you are
+            Our guides to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a> and <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protectors</a> explain why manufacturers differ on these points; on a Horizon, follow Horizon. If you are
             unsure whether the outlet is grounded or the circuit is dedicated, ask an electrician to
             check before you rely on the machine.
           </p>
@@ -308,7 +269,7 @@ const schema = {
         </div>
 
         <div id="power-switch" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Where Is the Power Switch on a Horizon Treadmill?</h2>
+          <h2>Where Is the Power Switch on a Horizon Treadmill?</h2>
 <p>
             On the current Horizon treadmills whose manuals we read, the ON/OFF switch is at the front
             of the machine, next to where the power cord plugs into the frame. The parts diagrams in
@@ -328,8 +289,7 @@ const schema = {
             The same manuals say the serial number is on a white barcode sticker near the on/off power
             switch and power cord. Write it down the first time you find the switch. You need the
             serial number and model name for any call to Horizon, for the right manual and software,
-            and — for a T101 — to check the
-            <a href="#t101-recall" class="text-[#0F62FE] font-medium">2022 recall</a>.
+            and — for a T101 — to check the <a href="#t101-recall" class="text-[#0F62FE] font-medium">2022 recall</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Does the switch light up?</h3>
           <p>
@@ -342,7 +302,7 @@ const schema = {
         </div>
 
         <div id="safety-key" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Horizon Safety Key: Clip, Slot or Magnet</h2>
+          <h2>The Horizon Safety Key: Clip, Slot or Magnet</h2>
 <p>
             Every Horizon manual we read gives the safety key the same job and the same wording: the
             treadmill "will not start unless the safety key is placed in position," and the key "is
@@ -367,9 +327,7 @@ const schema = {
             If the key is lost or damaged, Horizon’s help centre directs owners to its parts site,
             parts.horizonfitness.com, for a replacement, and links a short video on replacing the 7.0
             AT key. Use the key made for your model; a generic magnet or a key from another brand may
-            not seat or trigger the sensor the same way. Our guide to a
-            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>
-            covers the general fault-finding.
+            not seat or trigger the sensor the same way. Our guide to a <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a> covers the general fault-finding.
           </p>
           <p>
             Do not try to bypass the key. Horizon’s technician-level troubleshooting sheets describe
@@ -380,7 +338,7 @@ const schema = {
         </div>
 
         <div id="start-by-model" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Quick Start, Programs and the GO Light, Model by Model</h2>
+          <h2>Quick Start, Programs and the GO Light, Model by Model</h2>
 <p>
             Once the key is in, every current Horizon offers two ways to begin. The quick start is the
             same on all of them; choosing a program differs by console. This table sets out what each
@@ -436,7 +394,7 @@ const schema = {
         </div>
 
         <div id="apps-and-watches" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Starting With an App, Apple Watch or Galaxy Watch</h2>
+          <h2>Starting With an App, Apple Watch or Galaxy Watch</h2>
 <p>
             Horizon’s consoles are not touchscreens and do not need an app to start. Every current model
             lists Bluetooth FTMS on its specification sheet, which lets apps such as Peloton and Zwift
@@ -474,16 +432,12 @@ const schema = {
           </p>
           <p>
             For the T101 Connect, Horizon’s product information lists Bluetooth app sync — including
-            Peloton, JRNY and Zwift — and the free optional atZone app. Our
-            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>
-            covers its console, and our
-            <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a>
-            covers the 7.0 AT’s.
+            Peloton, JRNY and Zwift — and the free optional atZone app. Our <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a> covers its console, and our <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a> covers the 7.0 AT’s.
           </p>
         </div>
 
         <div id="sleep-and-dashes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Energy Saver Mode, Sleep and a Display of Dashes</h2>
+          <h2>Energy Saver Mode, Sleep and a Display of Dashes</h2>
 <p>
             Horizon’s current information pages list "Energy Saver Mode" among the features of the
             T202, 7.0 AT, 7.4 AT and 7.8 AT, and the owner’s manuals refer to the treadmill going "into
@@ -511,7 +465,7 @@ const schema = {
         </div>
 
         <div id="wont-start" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Horizon Treadmill Won’t Start? Work Through This Order</h2>
+          <h2>Horizon Treadmill Won’t Start? Work Through This Order</h2>
 <p>
             Horizon’s help centre and the Treadmill Guide split this into two problems, and the fix
             depends on which one you have.
@@ -527,8 +481,7 @@ const schema = {
             <li>Check that the breaker has not tripped, and reset it if it has.</li>
             <li>Confirm the treadmill is on a dedicated 15-amp circuit, not on a GFCI-equipped outlet,
             and not plugged into a power strip, surge protector or extension cord.</li>
-            <li>Check the power cord is not pinched or damaged, and is plugged in properly at the outlet
-            <strong>and</strong> at the machine.</li>
+            <li>Check the power cord is not pinched or damaged, and is plugged in properly at the outlet <strong>and</strong> at the machine.</li>
             <li>Check the power switch is on.</li>
           </ul>
           <p>
@@ -537,11 +490,7 @@ const schema = {
             the wiring on the lower board. That is a job for someone comfortable working on electrical
             equipment, with the treadmill unplugged throughout. If that is not you, stop here and contact
             Horizon with the model name, serial number and proof of purchase, which its Treadmill Guide
-            says you will be asked for. Our guides to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won’t turn on</a>
-            and a
-            <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a>
-            set out the general sequence.
+            says you will be asked for. Our guides to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won’t turn on</a> and a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a> set out the general sequence.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. The console lights, but the treadmill will not start</h3>
           <ul>
@@ -555,22 +504,18 @@ const schema = {
             <li><strong>The console works but the belt does not move, or moves briefly.</strong> Horizon’s
             first check is the same power list: dedicated 15-amp circuit, no GFCI, no strip or cord. Its
             later checks involve the drive belt and wiring under the motor cover, which again means
-            unplugging and, for most owners, calling Horizon. Our guide to a
-            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill that turns on but the belt won’t move</a>
-            explains the likely causes.</li>
+            unplugging and, for most owners, calling Horizon. Our guide to a <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill that turns on but the belt won’t move</a> explains the likely causes.</li>
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">3. It starts, then the breaker trips</h3>
           <p>
             Horizon’s checks for a breaker that trips during a workout are the same three: a dedicated
             15-amp circuit, no extension cord or surge protector, and no GFCI outlet on the circuit.
-            Never fit a larger breaker to stop the trips. Our guide to a
-            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a>
-            covers the rest.
+            Never fit a larger breaker to stop the trips. Our guide to a <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a> covers the rest.
           </p>
         </div>
 
         <div id="messages" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Messages and Error Codes Horizon Documents</h2>
+          <h2>Messages and Error Codes Horizon Documents</h2>
 <p>
             Horizon’s manuals are organised by symptom rather than by a long list of numbered codes.
             These are the messages its manuals and help centre explain, and what each says to do.
@@ -599,21 +544,17 @@ const schema = {
             3 months or 150 miles, while the 2018 T101-05 guide said 300 miles. Follow the document for
             your version. The Treadmill Guide also says you can press any key to suspend the message
             until after your next workout, and that some older models need STOP held for 5 seconds to
-            suspend it for 5 miles. Our guide to
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
-            explains the job itself; Horizon’s manuals specify 100% silicone.
+            suspend it for 5 miles. Our guide to <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a> explains the job itself; Horizon’s manuals specify 100% silicone.
           </p>
           <p>
             For E1, E2 and anything else not listed here, Horizon’s help centre is the place to look,
             and BarBend’s independent Horizon troubleshooting guide agrees with it on the safety-key,
-            E1 and stuck-key messages. Our general
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
-            covers symptoms that are not Horizon-specific.
+            E1 and stuck-key messages. Our general <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a> covers symptoms that are not Horizon-specific.
           </p>
         </div>
 
         <div id="t101-recall" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Starting an Older T101: Check the Recall First</h2>
+          <h2>Starting an Older T101: Check the Recall First</h2>
 <p>
             If you are about to start a T101 that is not a new T101 Connect — a used one, an inherited
             one, or one that has sat in a basement for a few years — check its label before you use it.
@@ -640,15 +581,13 @@ const schema = {
           <p>
             This matters for starting in particular, because an unexpected surge or stop is most
             dangerous when you are stepping on or are not yet settled on the belt. The current T101
-            Connect is a later version and is not named in the recall. Our
-            <a href="/horizon-t101-treadmill/#recall" class="text-[#0F62FE] font-medium">T101 review</a>
-            sets out the recall and the software update in detail. We searched the CPSC recall database
+            Connect is a later version and is not named in the recall. Our <a href="/horizon-t101-treadmill/#recall" class="text-[#0F62FE] font-medium">T101 review</a> sets out the recall and the software update in detail. We searched the CPSC recall database
             again on 18 October 2026 and found no later Horizon treadmill recall.
           </p>
         </div>
 
         <div id="turning-off" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Turning a Horizon Treadmill Off</h2>
+          <h2>Turning a Horizon Treadmill Off</h2>
 <p>
             Horizon’s instruction for the end of a session is in its "Proper Usage" section: "When not
             in use, remove the safety key, turn the on/off switch to off and unplug the power cord."
@@ -671,149 +610,159 @@ const schema = {
             shocks can spring open.
           </p>
           <p>
-            If you are still choosing a machine, our
-            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>
-            compares the current range, and our
-            <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a>
-            sets out what to check before buying any of them.
+            If you are still choosing a machine, our <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a> compares the current range, and our <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon Fitness brand guide</a> sets out what to check before buying any of them.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where is the on/off switch on a Horizon treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On the current models whose manuals we read — the T101 Connect, T202, 7.0 AT and 7.4 AT — it is at the front of the frame, next to where the power cord plugs in, low down below the motor cover. Horizon notes that some older models have the switch behind the console instead. The serial-number label is next to the switch.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why won’t my Horizon treadmill start?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The most common reason is the safety key: Horizon says the treadmill will not start unless the key is in position, and a display of dashes or SAFETY KEY OFF means it is not. If nothing lights, check the outlet, the breaker, the power switch and the cord, and make sure the treadmill is on a dedicated 15-amp circuit, not a GFCI outlet, power strip or extension cord.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is there a GO button on a Horizon treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not as a separate key on the consoles we checked. The START key begins a quick start or a program. On the T101 Connect, GO is an LED that flashes once a program is set, telling you to press START to begin.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I plug a Horizon treadmill into a GFCI outlet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Horizon says not to. Its manuals and help centre say the treadmill should be on a dedicated 15-amp circuit, not on a GFCI-equipped outlet or a circuit with one, and not on a power strip, surge protector or extension cord. If you are unsure what your outlet is, ask an electrician.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I reset a Horizon treadmill console?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Hold STOP for 3 seconds. Horizon’s manuals for the T101, T202, 7.0 AT and 7.4 AT all give that as the console reset. To clear a LUBE BELT message after lubricating, press and hold SPEED UP, then STOP, and hold both for 5 to 7 seconds. Software updates are different and can erase saved user data.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I start a Horizon treadmill with my Apple Watch?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On the 7.0 AT, turn on Detect Gym Equipment in the watch’s Workout settings, hold the watch face-first on the console’s watch icon for about 5 seconds until it beeps, choose a workout type and wait for Start Treadmill, then press START on the treadmill. Horizon lists watch tap-to-connect only for the 7.0 AT in its current range.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Starting a Horizon Treadmill</h2>
+          <p>Horizon’s start sequence is short. These are the slips that make a working machine look broken, or make the first few seconds riskier than they need to be.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Plugging it into a power strip or GFCI outlet</h3>
+              <p>Horizon asks for a grounded outlet on a dedicated 15-amp circuit, with no GFCI, power strip, surge protector or extension cord. A treadmill on the wrong supply can stay dark, stop and start, or trip the breaker. Check the circuit before you suspect the machine.</p>
+            </li>
+            <li>
+              <h3>Looking for the power switch on the console</h3>
+              <p>On current Horizons the ON/OFF switch is down at the front of the frame, next to the power cord. Owners who only look at the console assume the machine is dead. If yours has a red light on the switch, it also tells you whether power is reaching the treadmill.</p>
+            </li>
+            <li>
+              <h3>Standing on the belt when pressing START</h3>
+              <p>Horizon’s manuals say to stand on the side rails while the treadmill starts and to step on only once the belt is moving, never to start at a fast speed and jump on. Start slowly and build up in small steps.</p>
+            </li>
+            <li>
+              <h3>Using an older T101 without checking the label</h3>
+              <p>T101-05 units with serial numbers beginning TM734 or TM486 were recalled in 2022 because they could change speed or stop without input. If you cannot confirm the free software repair was installed, stop using it and contact Horizon before your next start.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Starting a Horizon Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Horizon’s start sequence is short. These are the slips that make a working machine look broken, or make the first few seconds riskier than they need to be.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Plugging it into a power strip or GFCI outlet</h3>
-              <p class="text-gray-700 text-sm m-0">Horizon asks for a grounded outlet on a dedicated 15-amp circuit, with no GFCI, power strip, surge protector or extension cord. A treadmill on the wrong supply can stay dark, stop and start, or trip the breaker. Check the circuit before you suspect the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Looking for the power switch on the console</h3>
-              <p class="text-gray-700 text-sm m-0">On current Horizons the ON/OFF switch is down at the front of the frame, next to the power cord. Owners who only look at the console assume the machine is dead. If yours has a red light on the switch, it also tells you whether power is reaching the treadmill.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Standing on the belt when pressing START</h3>
-              <p class="text-gray-700 text-sm m-0">Horizon’s manuals say to stand on the side rails while the treadmill starts and to step on only once the belt is moving, never to start at a fast speed and jump on. Start slowly and build up in small steps.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using an older T101 without checking the label</h3>
-              <p class="text-gray-700 text-sm m-0">T101-05 units with serial numbers beginning TM734 or TM486 were recalled in 2022 because they could change speed or stop without input. If you cannot confirm the free software repair was installed, stop using it and contact Horizon before your next start.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Horizon and First-Use Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-turn-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">First use</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Turn On a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The general start sequence for every brand, and what to check when nothing happens.</p>
-            </a>
-            <a href="/horizon-t101-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon T101 Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The T101 Connect against Horizon’s listing, the manuals, and the 2022 T101-05 recall.</p>
-            </a>
-            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Fault finding</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Won’t Turn On</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Outlet, breaker, key and cord, worked through in order.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">To start a Horizon treadmill, switch on at the ON/OFF switch next to
             the power cord, stand on the side rails, clip the safety key to your clothing and fit it
             in the console, then press START.</strong> That sequence comes straight from Horizon’s
             current manuals, and it is the same on the T101 Connect, T202, 7.0 AT and 7.4 AT.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If it will not start, check the key first, then the supply Horizon insists on: a grounded
             outlet on a dedicated 15-amp circuit with no GFCI, strip or extension cord. Check any older
             T101 against the 2022 recall before using it, and leave anything under the motor cover to
-            Horizon or a technician. Our guide to a
-            <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">treadmill that won’t turn on</a>
-            covers the general fault-finding.
+            Horizon or a technician. Our guide to a <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">treadmill that won’t turn on</a> covers the general fault-finding.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-turn-on-a-treadmill/">How to Turn On a Treadmill</a></li>
+            <li><a href="/horizon-t101-treadmill/">Horizon T101 Review</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where is the on/off switch on a Horizon treadmill?</h3></summary>
+            <p class="faq-a">
+              On the current models whose manuals we read — the T101 Connect, T202, 7.0 AT and 7.4 AT — it is at the front of the frame, next to where the power cord plugs in, low down below the motor cover. Horizon notes that some older models have the switch behind the console instead. The serial-number label is next to the switch.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why won’t my Horizon treadmill start?</h3></summary>
+            <p class="faq-a">
+              The most common reason is the safety key: Horizon says the treadmill will not start unless the key is in position, and a display of dashes or SAFETY KEY OFF means it is not. If nothing lights, check the outlet, the breaker, the power switch and the cord, and make sure the treadmill is on a dedicated 15-amp circuit, not a GFCI outlet, power strip or extension cord.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is there a GO button on a Horizon treadmill?</h3></summary>
+            <p class="faq-a">
+              Not as a separate key on the consoles we checked. The START key begins a quick start or a program. On the T101 Connect, GO is an LED that flashes once a program is set, telling you to press START to begin.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I plug a Horizon treadmill into a GFCI outlet?</h3></summary>
+            <p class="faq-a">
+              Horizon says not to. Its manuals and help centre say the treadmill should be on a dedicated 15-amp circuit, not on a GFCI-equipped outlet or a circuit with one, and not on a power strip, surge protector or extension cord. If you are unsure what your outlet is, ask an electrician.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I reset a Horizon treadmill console?</h3></summary>
+            <p class="faq-a">
+              Hold STOP for 3 seconds. Horizon’s manuals for the T101, T202, 7.0 AT and 7.4 AT all give that as the console reset. To clear a LUBE BELT message after lubricating, press and hold SPEED UP, then STOP, and hold both for 5 to 7 seconds. Software updates are different and can erase saved user data.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I start a Horizon treadmill with my Apple Watch?</h3></summary>
+            <p class="faq-a">
+              On the 7.0 AT, turn on Detect Gym Equipment in the watch’s Workout settings, hold the watch face-first on the console’s watch icon for about 5 seconds until it beeps, choose a workout type and wait for Start Treadmill, then press START on the treadmill. Horizon lists watch tap-to-connect only for the 7.0 AT in its current range.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Horizon and First-Use Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-turn-on-a-treadmill/" class="card">
+            <div class="c-kicker">First use</div>
+            <div class="c-title">How to Turn On a Treadmill</div>
+            <p class="c-blurb">The general start sequence for every brand, and what to check when nothing happens.</p>
+          </a>
+          <a href="/horizon-t101-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">Horizon T101 Review</div>
+            <p class="c-blurb">The T101 Connect against Horizon’s listing, the manuals, and the 2022 T101-05 recall.</p>
+          </a>
+          <a href="/treadmill-wont-turn-on/" class="card">
+            <div class="c-kicker">Fault finding</div>
+            <div class="c-title">Treadmill Won’t Turn On</div>
+            <p class="c-blurb">Outlet, breaker, key and cord, worked through in order.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Weight Bench for Home (2026): 5 Flat, FID and Folding Picks";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-weight-benches/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,66 +275,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: REP Fitness AB-3000 2.0 FID Adjustable Weight Bench", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestweightbenches" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestweightbenches)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Weight Bench for a Home Gym</h1>
+      <p class="ed-dek">
+        A bench roughly doubles what a pair of dumbbells or a barbell can do, but listings make it hard to compare them: capacity figures that mean different things, pad heights nobody prints and pad gaps you only notice once you lie down. Here are five currently sold benches across flat, adjustable and folding designs, and how to read a bench listing honestly.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Weight Bench <span class="text-[#5AA9FF]">for a Home Gym</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A bench roughly doubles what a pair of dumbbells or a barbell can do, but listings make it hard to compare them: capacity figures that mean different things, pad heights nobody prints and pad gaps you only notice once you lie down. Here are five currently sold benches across flat, adjustable and folding designs, and how to read a bench listing honestly.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#capacity" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Read a Capacity Claim
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#rep-ab-3000-2"><img src="https://m.media-amazon.com/images/I/31fSfMSMDgL._SL500_.jpg" alt="REP Fitness AB-3000 2.0 FID Adjustable Weight Bench" width="500" height="427" decoding="async" /></a>
+          <a href="#rep-fb-3000"><img src="https://m.media-amazon.com/images/I/31XA+PpTYAL._SL500_.jpg" alt="REP Fitness FB-3000 Flat Weight Bench" width="500" height="500" decoding="async" /></a>
+          <a href="#bowflex-5-1s"><img src="https://m.media-amazon.com/images/I/318XCd-QUSL._SL500_.jpg" alt="BowFlex 5.1S Stowable Bench" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>REP Fitness AB-3000 2.0 FID Adjustable Weight Bench · REP Fitness FB-3000 Flat Weight Bench · BowFlex 5.1S Stowable Bench</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best weight bench for most home gyms is an adjustable flat-incline-decline bench that
+          stays put when you sit down hard with heavy dumbbells, puts the pad at a height your feet
+          can drive from, and leaves only a small gap between seat and back pad. Flat benches are
+          simpler, steadier and cheaper; folding and stowable benches trade some of that steadiness
+          for floor space. The five benches below cover each of those choices with a product that is
+          on sale now, and the guide after them explains what the numbers on a listing actually
+          promise.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#rep-ab-3000-2">REP Fitness AB-3000 2.0 FID Adjustable Weight Bench</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Flat Bench:</span> <a href="#rep-fb-3000">REP Fitness FB-3000 Flat Weight Bench</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Stowable:</span> <a href="#bowflex-5-1s">BowFlex 5.1S Stowable Bench</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Folding:</span> <a href="#flybird-wb5">FLYBIRD WB5 Adjustable Weight Bench</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Cheapest Flat Bench:</span> <a href="#marcy-sb-315">Marcy SB-315 Flat Utility Bench</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           benches, and no figure on this page is our own measurement; where a measurement appears,
           it is attributed to the reviewer who took it. On 19 October 2026 we confirmed each bench
@@ -347,84 +368,31 @@ const schema = {
           as well. Amazon did not display prices for several of these listings when we checked, so
           price ranges come from the maker's store or are labelled as typical; prices change often.
           We earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy or coaching advice. Weight
           ratings are manufacturer figures, not a guide to what you should lift. If you have a back,
           shoulder, joint or heart condition, are pregnant or postpartum, or are returning from
           injury, talk to a qualified professional before starting or changing a strength programme.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#rep-ab-3000-2" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness AB-3000 2.0 FID Adjustable Weight Bench</a>
-            <a href="#rep-ab-3000-2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Flat Bench:</span>
-            <a href="#rep-fb-3000" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness FB-3000 Flat Weight Bench</a>
-            <a href="#rep-fb-3000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Stowable:</span>
-            <a href="#bowflex-5-1s" class="font-bold text-gray-900 no-underline hover:underline">BowFlex 5.1S Stowable Bench</a>
-            <a href="#bowflex-5-1s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Folding:</span>
-            <a href="#flybird-wb5" class="font-bold text-gray-900 no-underline hover:underline">FLYBIRD WB5 Adjustable Weight Bench</a>
-            <a href="#flybird-wb5" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest Flat Bench:</span>
-            <a href="#marcy-sb-315" class="font-bold text-gray-900 no-underline hover:underline">Marcy SB-315 Flat Utility Bench</a>
-            <a href="#marcy-sb-315" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Weight Benches</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Benches</a>
-          <a href="#capacity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What a Weight Capacity Claim Actually Means</a>
-          <a href="#pad-height-and-gap" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Pad Height, Pad Gap and Pad Width</a>
-          <a href="#stability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Stability and Wobble: What to Check</a>
-          <a href="#flat-vs-adjustable" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Flat, Adjustable (FID) or Folding?</a>
-          <a href="#footprint-and-rack" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Footprint, Moving It, and Using It in a Rack</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Weight Benches</a></li>
+            <li><a href="#how-we-chose">How We Chose These Benches</a></li>
+            <li><a href="#capacity">What a Weight Capacity Claim Actually Means</a></li>
+            <li><a href="#pad-height-and-gap">Pad Height, Pad Gap and Pad Width</a></li>
+            <li><a href="#stability">Stability and Wobble: What to Check</a></li>
+            <li><a href="#flat-vs-adjustable">Flat, Adjustable (FID) or Folding?</a></li>
+            <li><a href="#footprint-and-rack">Footprint, Moving It, and Using It in a Rack</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best weight bench for most home gyms is an adjustable flat-incline-decline bench that
-          stays put when you sit down hard with heavy dumbbells, puts the pad at a height your feet
-          can drive from, and leaves only a small gap between seat and back pad. Flat benches are
-          simpler, steadier and cheaper; folding and stowable benches trade some of that steadiness
-          for floor space. The five benches below cover each of those choices with a product that is
-          on sale now, and the guide after them explains what the numbers on a listing actually
-          promise.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five benches, one per job. If you are buying one bench for dumbbells and a barbell, the
             first is the default answer. The flat bench is the better buy if you only press flat and
@@ -447,16 +415,13 @@ const schema = {
           </table></div>
           <p>
             If you are still deciding whether a bench should come before a rack or a set of
-            dumbbells, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            put them side by side, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            dumbbells, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> put them side by side, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
             guide in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Weight Benches</h2>
+          <h2>The 5 Best Weight Benches</h2>
 <p>
             Each card gives the rating, pad height, pad gap, angles and footprint we could confirm
             from two sources, the price range we saw, and who the bench suits. Read the capacity
@@ -472,78 +437,67 @@ const schema = {
             choosing a figure.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Benches</h2>
+          <h2>How We Chose These Benches</h2>
 <p>
             We have not tested these benches. They were chosen from published specifications,
             manufacturer product pages, Amazon listings, warranty terms, recall records and
@@ -573,9 +527,7 @@ const schema = {
             and an incline bracket. REP's only record is a 2021 recall of strap-safety brackets for
             its racks, not a bench, and Rogue's records cover timers, door anchors and barbell
             brackets. The best-known Bowflex recall, of SelectTech 552 and 1090 dumbbells in 2025,
-            covers the dumbbells and not the 5.1S bench; our
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>
-            explains it.
+            covers the dumbbells and not the 5.1S bench; our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a> explains it.
           </p>
           <p>
             <strong>Deliberate exclusions.</strong> REP's AB-5000 Zero Gap, the bench that made the
@@ -594,7 +546,7 @@ const schema = {
         </div>
 
         <div id="capacity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What a Weight Capacity Claim Actually Means</h2>
+          <h2>What a Weight Capacity Claim Actually Means</h2>
 <p>
             Every bench listing leads with a weight capacity, and most buyers compare the numbers
             directly. That is a mistake, because the numbers are not stated on the same terms.
@@ -602,8 +554,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Static versus dynamic load</h3>
           <p>
             A bench carries two kinds of load. <strong>Static load</strong> is weight that sits
-            still: you lying on the pad holding a barbell at lockout. <strong>Dynamic load</strong>
-            is weight that moves or arrives suddenly: dropping onto the seat with a pair of heavy
+            still: you lying on the pad holding a barbell at lockout. <strong>Dynamic load</strong> is weight that moves or arrives suddenly: dropping onto the seat with a pair of heavy
             dumbbells, the kick of a bench press, a box-jump-style step-up. Dynamic loads put far more
             stress on welds, pins and the adjustment ladder than the same weight held still. Very few
             makers say which kind of load their figure describes, and none of the five here publishes
@@ -644,7 +595,7 @@ const schema = {
         </div>
 
         <div id="pad-height-and-gap" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Pad Height, Pad Gap and Pad Width</h2>
+          <h2>Pad Height, Pad Gap and Pad Width</h2>
 <p>
             These three figures decide how a bench feels far more than its capacity does, and they
             are the ones listings most often leave out.
@@ -684,7 +635,7 @@ const schema = {
         </div>
 
         <div id="stability" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Stability and Wobble: What to Check</h2>
+          <h2>Stability and Wobble: What to Check</h2>
 <p>
             A bench that rocks, flexes or walks across the floor is unpleasant at light weights and
             unsafe at heavy ones. Four things decide stability.
@@ -701,11 +652,7 @@ const schema = {
               foot, two rear) sits steady on an uneven floor more easily than four feet, though some
               FB-5000 owners report a slight rock on uneven ground from the single front leg.</li>
             <li><strong>The floor itself.</strong> Thin foam tiles let any bench sink and rock. A
-              firm rubber mat is the better surface; our guide to
-              <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">home gym flooring</a>
-              covers the options, and for barbell work our
-              <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
-              explains when a platform is worth it.</li>
+              firm rubber mat is the better surface; our guide to <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">home gym flooring</a> covers the options, and for barbell work our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a> explains when a platform is worth it.</li>
           </ul>
           <p>
             When the bench arrives, sit on the end of the seat and lean back hard, then lie flat and
@@ -716,7 +663,7 @@ const schema = {
         </div>
 
         <div id="flat-vs-adjustable" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Flat, Adjustable (FID) or Folding?</h2>
+          <h2>Flat, Adjustable (FID) or Folding?</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Flat bench</h3>
           <p>
             A flat bench is a pad on a frame. It is the steadiest, cheapest and lowest-maintenance
@@ -744,16 +691,12 @@ const schema = {
             including the AB-3000, cannot be stored upright at all, a point BarBend raises.
           </p>
           <p>
-            If you are deciding between a bench and a full machine, our guide to
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a>
-            covers all-in-one stations, and the
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a>
-            looks at functional trainers, which pair well with an adjustable bench.
+            If you are deciding between a bench and a full machine, our guide to <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a> covers all-in-one stations, and the <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a> looks at functional trainers, which pair well with an adjustable bench.
           </p>
         </div>
 
         <div id="footprint-and-rack" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Footprint, Moving It, and Using It in a Rack</h2>
+          <h2>Footprint, Moving It, and Using It in a Rack</h2>
 <p>
             <strong>Measure the bench and the space around it.</strong> REP lists the AB-3000 2.0 at
             56.6 inches long and 25.8 inches wide, a footprint it puts at 9.85 square feet; the
@@ -778,43 +721,30 @@ const schema = {
             push the bench deeper into the rack. Third, height: a pad at about 17 inches lines up
             with the J-cup and safety positions most racks are designed around. Fourth, safeties:
             when you bench press alone, set the rack's safeties or spotter arms just below the bar's
-            lowest point every time. Our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            covers hole spacing and safeties in detail.
+            lowest point every time. Our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> covers hole spacing and safeties in detail.
           </p>
           <p>
             <strong>Without a rack</strong>, do not bench press a barbell heavy enough that you could
             fail a rep. Dumbbells are the safer solo choice because you can drop them to the sides;
-            our guide to the
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a>
-            pairs well with any bench here.
+            our guide to the <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a> pairs well with any bench here.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you train mostly with your body weight</strong>, a bench is useful for dips,
             step-ups and split squats, but a well-mounted bar does more for your back and arms; see
-            our guide to the
-            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">best pull-up bars</a>,
-            and our
-            <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a>
-            for assistance.
+            our guide to the <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">best pull-up bars</a>,
+            and our <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a> for assistance.
           </p>
           <p>
             <strong>If you want to press heavy without a spotter or a rack</strong>, a machine may
-            suit you better; our
-            <a href="/best-converging-chest-press-machines/" class="text-[#0F62FE] font-medium">converging chest press guide</a>
-            looks at machines that let you push hard without a bar over your face.
+            suit you better; our <a href="/best-converging-chest-press-machines/" class="text-[#0F62FE] font-medium">converging chest press guide</a> looks at machines that let you push hard without a bar over your face.
           </p>
           <p>
             <strong>If your main goal is cardiovascular fitness</strong>, a bench is a complement,
-            not a substitute. Our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machine guide</a>
-            covers the machines, and if you combine both, our guide to
-            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">doing cardio before or after weights</a>
-            covers the order of a session.
+            not a substitute. Our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">home cardio machine guide</a> covers the machines, and if you combine both, our guide to <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">doing cardio before or after weights</a> covers the order of a session.
           </p>
           <p>
             <strong>If you weigh more than 300 lb</strong>, check the user limit as well as the total
@@ -823,137 +753,154 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best weight bench for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, an adjustable flat-incline-decline bench with a 17-inch pad height, a small pad gap and a high rating, such as the REP AB-3000 2.0. Choose a flat bench like the REP FB-3000, or REP's heavier FB-5000 from REP's own store, if you mainly press flat, a stowable bench like the Bowflex 5.1S if it must stand in a corner, and a folding budget bench if space and money are both tight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How high should a weight bench be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About 17 inches from the floor to the top of the pad is the standard, and powerlifting federations specify a bench close to that. It lets most lifters plant their feet for leg drive. Shorter lifters find benches much above 17 inches hard to press from, and some budget benches sit closer to 19 inches.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What weight capacity do I need in a weight bench?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Add your body weight to the heaviest load you expect to hold in the next year and buy a bench rated comfortably above it. Check how the rating is stated: some are a total for user plus weights, and some split it, such as a 300 lb user limit plus 300 lb of weights. Capacity figures are manufacturer claims and usually describe static, not sudden, loads.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a flat or adjustable bench better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                An adjustable bench is more useful for most home gyms because incline presses and chest-supported rows are used constantly. A flat bench is steadier, cheaper and has no pad gap, so it suits lifters who mainly bench press with a barbell or want a second bench. Many home gyms end up with one of each.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a pad gap on a weight bench?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is the space between the seat pad and the back pad on an adjustable bench. When the bench is flat it sits under your lower back or hips, and a large gap is uncomfortable on presses. About two inches is typical; some premium benches slide the seat to close it, and flat benches have no gap at all.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a weight bench fit in my squat rack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, but check. Compare the bench's length and foot width with the rack's internal depth and the spacing of its uprights and base bars, and make sure the pad height suits the J-cup and safety positions. Tripod flat benches slide in most easily. Always set the safeties just below the bar's lowest point when you bench alone.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Weight Bench</h2>
+          <p>Most bench regrets come from reading the listing too quickly. These four are the most common.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing capacity numbers at face value</h3>
+              <p>A 600 lb rating that includes a 300 lb user limit and an 800 lb rating that a reviewer says feels like 300 lb are not comparable with a 1,000 lb rating on heavy steel. Read how each figure is stated, add your body weight to your heaviest load, and treat every rating as a static manufacturer claim rather than a measured strength.</p>
+            </li>
+            <li>
+              <h3>Ignoring pad height</h3>
+              <p>A bench that sits two inches higher than standard can stop a shorter lifter planting their feet, which costs stability on every press. Look for a pad height near 17 inches, or a reviewer's measurement if the maker does not publish one, and think about who else in the house will use the bench.</p>
+            </li>
+            <li>
+              <h3>Buying an adjustable bench for flat barbell pressing</h3>
+              <p>If almost all of your bench work is a flat barbell press in a rack, the pad gap and the extra joints of an adjustable bench are a cost with no benefit. A solid flat bench is steadier, cheaper and has no gap. Buy adjustable for dumbbells and incline work.</p>
+            </li>
+            <li>
+              <h3>Not checking the bench against the rack</h3>
+              <p>A rear foot that will not pass between the uprights, or a bench too long for the rack's depth, means pressing half outside the safeties. Measure the rack's internal depth and upright spacing before ordering, and set the safeties for every solo barbell press.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Weight Bench</h2>
-          <p class="text-gray-700 leading-relaxed">Most bench regrets come from reading the listing too quickly. These four are the most common.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing capacity numbers at face value</h3>
-              <p class="text-gray-700 text-sm m-0">A 600 lb rating that includes a 300 lb user limit and an 800 lb rating that a reviewer says feels like 300 lb are not comparable with a 1,000 lb rating on heavy steel. Read how each figure is stated, add your body weight to your heaviest load, and treat every rating as a static manufacturer claim rather than a measured strength.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring pad height</h3>
-              <p class="text-gray-700 text-sm m-0">A bench that sits two inches higher than standard can stop a shorter lifter planting their feet, which costs stability on every press. Look for a pad height near 17 inches, or a reviewer's measurement if the maker does not publish one, and think about who else in the house will use the bench.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying an adjustable bench for flat barbell pressing</h3>
-              <p class="text-gray-700 text-sm m-0">If almost all of your bench work is a flat barbell press in a rack, the pad gap and the extra joints of an adjustable bench are a cost with no benefit. A solid flat bench is steadier, cheaper and has no gap. Buy adjustable for dumbbells and incline work.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking the bench against the rack</h3>
-              <p class="text-gray-700 text-sm m-0">A rear foot that will not pass between the uprights, or a bench too long for the rack's depth, means pressing half outside the safeties. Measure the rack's internal depth and upright spacing before ordering, and set the safeties for every solo barbell press.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Strength</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rack depth, hole spacing and safeties: what a bench has to fit into for barbell pressing.</p>
-            </a>
-            <a href="/best-adjustable-dumbbells/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Dumbbells</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Adjustable Dumbbells</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The mechanisms, the recalls and which set suits a bench-based home gym.</p>
-            </a>
-            <a href="/best-lifting-platforms/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Flooring</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lifting Platforms</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A firm, level floor under the bench and the bar, and when a platform is worth it.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most home gyms, buy the REP AB-3000 2.0</strong>: every angle
             most people use, a 1,000 lb rating and a pad at the standard 17-inch height. If you mainly
             press flat, the FB-3000 is cheaper and has no pad gap, and REP's own FB-5000 is steadier under a heavy bar; if the bench must disappear
             between sessions, the Bowflex 5.1S stands in a corner; and on a tight budget the FLYBIRD
             folds away and the Marcy covers dumbbell work for about $90.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, read the capacity on the maker's terms, check the pad height against the
             shortest person who will use it, and measure the rack before the bench arrives. Then put it
-            on a firm floor and press inside the safeties —
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">our squat rack guide</a>
-            covers both.
+            on a firm floor and press inside the safeties — <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">our squat rack guide</a> covers both.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for a Home Gym</a></li>
+            <li><a href="/best-adjustable-dumbbells/">Best Adjustable Dumbbells</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best weight bench for a home gym?</h3></summary>
+            <p class="faq-a">
+              For most people, an adjustable flat-incline-decline bench with a 17-inch pad height, a small pad gap and a high rating, such as the REP AB-3000 2.0. Choose a flat bench like the REP FB-3000, or REP's heavier FB-5000 from REP's own store, if you mainly press flat, a stowable bench like the Bowflex 5.1S if it must stand in a corner, and a folding budget bench if space and money are both tight.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How high should a weight bench be?</h3></summary>
+            <p class="faq-a">
+              About 17 inches from the floor to the top of the pad is the standard, and powerlifting federations specify a bench close to that. It lets most lifters plant their feet for leg drive. Shorter lifters find benches much above 17 inches hard to press from, and some budget benches sit closer to 19 inches.
             </p>
+          </details>
+          <details>
+            <summary><h3>What weight capacity do I need in a weight bench?</h3></summary>
+            <p class="faq-a">
+              Add your body weight to the heaviest load you expect to hold in the next year and buy a bench rated comfortably above it. Check how the rating is stated: some are a total for user plus weights, and some split it, such as a 300 lb user limit plus 300 lb of weights. Capacity figures are manufacturer claims and usually describe static, not sudden, loads.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a flat or adjustable bench better?</h3></summary>
+            <p class="faq-a">
+              An adjustable bench is more useful for most home gyms because incline presses and chest-supported rows are used constantly. A flat bench is steadier, cheaper and has no pad gap, so it suits lifters who mainly bench press with a barbell or want a second bench. Many home gyms end up with one of each.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a pad gap on a weight bench?</h3></summary>
+            <p class="faq-a">
+              It is the space between the seat pad and the back pad on an adjustable bench. When the bench is flat it sits under your lower back or hips, and a large gap is uncomfortable on presses. About two inches is typical; some premium benches slide the seat to close it, and flat benches have no gap at all.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will a weight bench fit in my squat rack?</h3></summary>
+            <p class="faq-a">
+              Usually, but check. Compare the bench's length and foot width with the rack's internal depth and the spacing of its uprights and base bars, and make sure the pad height suits the J-cup and safety positions. Tripod flat benches slide in most easily. Always set the safeties just below the bar's lowest point when you bench alone.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Strength</div>
+            <div class="c-title">Best Squat Racks for a Home Gym</div>
+            <p class="c-blurb">Rack depth, hole spacing and safeties: what a bench has to fit into for barbell pressing.</p>
+          </a>
+          <a href="/best-adjustable-dumbbells/" class="card">
+            <div class="c-kicker">Dumbbells</div>
+            <div class="c-title">Best Adjustable Dumbbells</div>
+            <p class="c-blurb">The mechanisms, the recalls and which set suits a bench-based home gym.</p>
+          </a>
+          <a href="/best-lifting-platforms/" class="card">
+            <div class="c-kicker">Flooring</div>
+            <div class="c-title">Best Lifting Platforms</div>
+            <p class="c-blurb">A firm, level floor under the bench and the bar, and when a platform is worth it.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

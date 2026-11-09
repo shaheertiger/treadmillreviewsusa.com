@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Under Desk Elliptical (2026): Seated Pedalers and Bikes";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-under-desk-ellipticals/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,66 +275,81 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Under-Desk Elliptical: Cubii Move Under-Desk Elliptical", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestunderdeskellipticals" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestunderdeskellipticals)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Under Desk Ellipticals and Under-Desk Bikes</h1>
+      <p class="ed-dek">
+        A seated pedaler only works if it fits under your desk with your knees still clear, stays put when your chair wants to roll away, and is quiet enough for a video call. Here are five currently sold under-desk ellipticals and bikes, the measurements to take before you order, and an honest look at the calorie numbers on their screens.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Under Desk Ellipticals <span class="text-[#5AA9FF]">and Under-Desk Bikes</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A seated pedaler only works if it fits under your desk with your knees still clear, stays put when your chair wants to roll away, and is quiet enough for a video call. Here are five currently sold under-desk ellipticals and bikes, the measurements to take before you order, and an honest look at the calorie numbers on their screens.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#clearance" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Measure Your Clearance
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#cubii-move"><img src="https://m.media-amazon.com/images/I/315YP-de87L._SL500_.jpg" alt="Cubii Move Under-Desk Elliptical" width="500" height="340" decoding="async" /></a>
+          <a href="#sunny-sf-e323017"><img src="https://m.media-amazon.com/images/I/41ZYCRYT73L._SL500_.jpg" alt="Sunny Health &amp; Fitness Smart Under Desk Mini Elliptical (SF-E323017)" width="500" height="500" decoding="async" /></a>
+          <a href="#sunny-sf-e3959smart"><img src="https://m.media-amazon.com/images/I/41iJGrGXy-L._SL500_.jpg" alt="Sunny Health &amp; Fitness Smart Motorized Under Desk Mini Elliptical (SF-E3959SMART)" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Cubii Move Under-Desk Elliptical · Sunny Health &amp; Fitness Smart Under Desk Mini Elliptical (SF-E323017) · Sunny Health &amp; Fitness Smart Motorized Under Desk Mini Elliptical (SF-E3959SMART)</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          An under-desk elliptical or pedal bike is the smallest piece of exercise equipment most people
+          will ever buy, and the easiest to get wrong. The machine itself is simple: a pair of pedals,
+          a small flywheel, a resistance knob and a tiny screen. What decides whether you keep using it
+          is the space around it — the height under your desk, the height your knees reach, the floor
+          under your chair. The five picks below were chosen to cover seated ellipticals, a motorized
+          model and under-desk bikes, and the guide after them shows how to measure for one.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Under-Desk Elliptical:</span> <a href="#cubii-move">Cubii Move Under-Desk Elliptical</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Elliptical:</span> <a href="#sunny-sf-e323017">Sunny Health & Fitness Smart Under Desk Mini Elliptical (SF-E323017)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">If You Want Motorized:</span> <a href="#sunny-sf-e3959smart">Sunny Health & Fitness Smart Motorized Under Desk Mini Elliptical (SF-E3959SMART)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Under-Desk Bike:</span> <a href="#deskcycle-2">DeskCycle 2 Under Desk Bike Pedal Exerciser</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Bike:</span> <a href="#sunny-sf-b0891smart">Sunny Health & Fitness Smart Low-profile Magnetic Mini Exercise Bike (SF-B0891SMART)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines, and no figure on this page is our own measurement. Each was confirmed as currently
           sold on 19 October 2026 on the maker's own store or product page (Cubii and Sunny Health &amp;
@@ -346,89 +366,36 @@ const schema = {
           the cards say so. Every brand was checked against the US Consumer Product Safety Commission's
           recall database. Prices are those we saw on or shortly before 19 October 2026 and change
           often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
+          change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
           equipment; this is not medical, physiotherapy or weight-loss advice. Health claims on this
           page, such as better circulation, are the sellers' claims, not ours. If you have a heart or
           circulation condition, a history of blood clots, knee or hip problems, are pregnant, or are
           recovering from surgery or injury, ask a doctor or physiotherapist before using one,
           especially if a seller markets it for rehabilitation.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Under-Desk Elliptical:</span>
-            <a href="#cubii-move" class="font-bold text-gray-900 no-underline hover:underline">Cubii Move Under-Desk Elliptical</a>
-            <a href="#cubii-move" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Elliptical:</span>
-            <a href="#sunny-sf-e323017" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Smart Under Desk Mini Elliptical (SF-E323017)</a>
-            <a href="#sunny-sf-e323017" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">If You Want Motorized:</span>
-            <a href="#sunny-sf-e3959smart" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Smart Motorized Under Desk Mini Elliptical (SF-E3959SMART)</a>
-            <a href="#sunny-sf-e3959smart" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Under-Desk Bike:</span>
-            <a href="#deskcycle-2" class="font-bold text-gray-900 no-underline hover:underline">DeskCycle 2 Under Desk Bike Pedal Exerciser</a>
-            <a href="#deskcycle-2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Bike:</span>
-            <a href="#sunny-sf-b0891smart" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Smart Low-profile Magnetic Mini Exercise Bike (SF-B0891SMART)</a>
-            <a href="#sunny-sf-b0891smart" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Under Desk Ellipticals and Bikes</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Under-Desk Machines</a>
-          <a href="#clearance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Desk Height and Knee Clearance</a>
-          <a href="#chair" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Stopping the Chair Rolling Away</a>
-          <a href="#elliptical-vs-bike" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Under Desk Elliptical vs Under Desk Bike</a>
-          <a href="#noise-resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise and Resistance Levels</a>
-          <a href="#calories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What the Calorie Numbers Mean</a>
-          <a href="#which-desk-machine" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Under-Desk Elliptical, Bike or Walking Pad?</a>
-          <a href="#using-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Using an Under-Desk Elliptical Comfortably</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Under Desk Ellipticals and Bikes</a></li>
+            <li><a href="#how-we-chose">How We Chose These Under-Desk Machines</a></li>
+            <li><a href="#clearance">Desk Height and Knee Clearance</a></li>
+            <li><a href="#chair">Stopping the Chair Rolling Away</a></li>
+            <li><a href="#elliptical-vs-bike">Under Desk Elliptical vs Under Desk Bike</a></li>
+            <li><a href="#noise-resistance">Noise and Resistance Levels</a></li>
+            <li><a href="#calories">What the Calorie Numbers Mean</a></li>
+            <li><a href="#which-desk-machine">Under-Desk Elliptical, Bike or Walking Pad?</a></li>
+            <li><a href="#using-it">Using an Under-Desk Elliptical Comfortably</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          An under-desk elliptical or pedal bike is the smallest piece of exercise equipment most people
-          will ever buy, and the easiest to get wrong. The machine itself is simple: a pair of pedals,
-          a small flywheel, a resistance knob and a tiny screen. What decides whether you keep using it
-          is the space around it — the height under your desk, the height your knees reach, the floor
-          under your chair. The five picks below were chosen to cover seated ellipticals, a motorized
-          model and under-desk bikes, and the guide after them shows how to measure for one.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Best Under Desk Ellipticals and Bikes at a Glance</h2>
+          <h2>The Best Under Desk Ellipticals and Bikes at a Glance</h2>
 <p>
-            Five machines: three seated ellipticals and two under-desk bikes. If you only read one line:
-            <strong>the Cubii Move is the best under desk elliptical for most people, and the DeskCycle 2
+            Five machines: three seated ellipticals and two under-desk bikes. If you only read one line: <strong>the Cubii Move is the best under desk elliptical for most people, and the DeskCycle 2
             is the best under desk bike</strong>, because it pairs real resistance with one of the
             lowest pedal heights on sale.
           </p>
@@ -448,18 +415,12 @@ const schema = {
           </table></div>
           <p>
             Thinking of walking instead? A walking pad under a standing desk burns more energy and
-            needs a different set-up; our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            and
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            guides cover that route, and the section on
-            <a href="#which-desk-machine" class="text-[#0F62FE] font-medium">which desk machine suits you</a>
-            below compares the three.
+            needs a different set-up; our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> and <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> guides cover that route, and the section on <a href="#which-desk-machine" class="text-[#0F62FE] font-medium">which desk machine suits you</a> below compares the three.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Under Desk Ellipticals and Bikes</h2>
+          <h2>The 5 Best Under Desk Ellipticals and Bikes</h2>
 <p>
             Each card gives the figures we could confirm, the price range we saw and who the machine
             suits. On this kind of equipment, the pedal height and the overall height matter more than
@@ -470,78 +431,67 @@ const schema = {
             left off.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Under-Desk Machines</h2>
+          <h2>How We Chose These Under-Desk Machines</h2>
 <p>
             We have not tested these machines. They were chosen from manufacturer product pages and
             specification tags, published hands-on reviews, warranty terms and the CPSC recall
@@ -588,7 +538,7 @@ const schema = {
         </div>
 
         <div id="clearance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Desk Height and Knee Clearance: Measure Before You Buy</h2>
+          <h2>Desk Height and Knee Clearance: Measure Before You Buy</h2>
 <p>
             This is the section that decides whether an under-desk elliptical works for you. The device
             has to fit under the desk, and — the part people forget — your knees have to stay below the
@@ -634,16 +584,12 @@ const schema = {
               further back so your knees are not under the desk's front edge.</li>
             <li><strong>Remove the keyboard tray</strong> or move the drawer unit to one side.</li>
             <li><strong>Raise a sit-stand desk</strong> an inch or two while you pedal and raise your
-              chair to match, keeping your elbows at about desk height. Our guide to
-              <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
-              covers the elbow-height rule, and our
-              <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
-              list desks with a wide height range.</li>
+              chair to match, keeping your elbows at about desk height. Our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a> covers the elbow-height rule, and our <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> list desks with a wide height range.</li>
           </ul>
         </div>
 
         <div id="chair" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Stopping the Chair Rolling Away</h2>
+          <h2>Stopping the Chair Rolling Away</h2>
 <p>
             Every push on a pedal also pushes you, and your chair, backwards. On an office chair with
             casters on a hard floor or a smooth chair mat, that means the chair creeps away a little with
@@ -672,7 +618,7 @@ const schema = {
         </div>
 
         <div id="elliptical-vs-bike" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Under Desk Elliptical vs Under Desk Bike</h2>
+          <h2>Under Desk Elliptical vs Under Desk Bike</h2>
 <p>
             The two look similar and suit different desks and different people.
           </p>
@@ -699,7 +645,7 @@ const schema = {
         </div>
 
         <div id="noise-resistance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise and Resistance Levels</h2>
+          <h2>Noise and Resistance Levels</h2>
 <p>
             We have not measured the noise of any machine here, and we do not repeat makers' decibel
             claims. What independent use reports is reassuring: Garage Gym Reviews' tester called the
@@ -724,25 +670,20 @@ const schema = {
         </div>
 
         <div id="calories" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What the Calorie Numbers on an Under-Desk Elliptical Mean</h2>
+          <h2>What the Calorie Numbers on an Under-Desk Elliptical Mean</h2>
 <p>
             Every machine on this page shows a calorie figure, and several listings use calorie burn to
-            sell them. Treat those numbers with the same caution as a treadmill console's. Our guide to
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>
-            explains why consoles tend to run high, and an under-desk machine has less to go on than a
+            sell them. Treat those numbers with the same caution as a treadmill console's. Our guide to <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a> explains why consoles tend to run high, and an under-desk machine has less to go on than a
             treadmill: it rarely knows your weight, it cannot see how hard you are pushing beyond the
             pedal speed and level, and it does not know whether you are pedalling gently or bracing
             against the chair.
           </p>
           <p>
             Here is the arithmetic, so you can see the scale. Energy use is commonly estimated from METs,
-            where 1 MET is your resting rate; our
-            <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to METs</a>
-            explains the standard formula: calories per minute = METs x 3.5 x body weight in kg / 200.
+            where 1 MET is your resting rate; our <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to METs</a> explains the standard formula: calories per minute = METs x 3.5 x body weight in kg / 200.
             Suppose, purely for illustration, that easy seated pedalling costs twice your resting rate, 2
             METs. For a 176 lb (80 kg) person that is 2 x 3.5 x 80 / 200 = 2.8 calories a minute, or
-            about 168 an hour. But about 84 of those you would have used sitting still, so the
-            <strong>extra</strong> energy from an hour of pedalling is closer to 84 calories.
+            about 168 an hour. But about 84 of those you would have used sitting still, so the <strong>extra</strong> energy from an hour of pedalling is closer to 84 calories.
           </p>
           <p>
             That illustration is an estimate built on an assumed figure, not a measurement, and your own
@@ -751,14 +692,12 @@ const schema = {
             you does less work than one you pedal yourself, so treat its calorie figure as the least
             reliable of all. An under-desk elliptical is a good way to break up sitting and add gentle
             movement; it is not a substitute for exercise that raises your heart rate, and it will not
-            move the scale much on its own. Our guide to
-            <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">whether walking pads help you lose weight</a>
-            makes the same point about desk walking.
+            move the scale much on its own. Our guide to <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">whether walking pads help you lose weight</a> makes the same point about desk walking.
           </p>
         </div>
 
         <div id="which-desk-machine" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Under-Desk Elliptical, Bike or Walking Pad?</h2>
+          <h2>Under-Desk Elliptical, Bike or Walking Pad?</h2>
 <p>
             If your aim is to move more during the working day, there are three main options, and the
             right one depends on your desk and how you work.
@@ -779,19 +718,13 @@ const schema = {
           <p>
             Walking uses more energy than seated pedalling and loads your bones, but it needs a desk that
             reaches well above your seated height plus the deck, a power socket and more floor space.
-            Our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers setting one up, the
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
-            cover the desk itself, and if noise is the concern, our
-            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a>
-            guide looks at the pads easiest to live with. Plenty of people end up alternating: a walking
+            Our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers setting one up, the <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> cover the desk itself, and if noise is the concern, our <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a> guide looks at the pads easiest to live with. Plenty of people end up alternating: a walking
             pad for calls and reading, a seated pedaler for focused typing.
           </p>
         </div>
 
         <div id="using-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Using an Under-Desk Elliptical Comfortably</h2>
+          <h2>Using an Under-Desk Elliptical Comfortably</h2>
 <p>
             A few habits make the difference between a machine you use every day and one that ends up
             in a cupboard.
@@ -815,15 +748,11 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you want real cardio sessions,</strong> an under-desk machine is too light. A full
-            exercise bike or elliptical is the better buy; see the
-            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>,
-            the
-            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a>
-            if you want a supported seat, or the
-            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>.
+            exercise bike or elliptical is the better buy; see the <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>,
+            the <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a> if you want a supported seat, or the <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>.
           </p>
           <p>
             <strong>If you already have a standing desk that rises high enough,</strong> a walking pad
@@ -839,148 +768,162 @@ const schema = {
             whether a motorized machine is suitable, before choosing.
           </p>
           <p>
-            For the rest of the room, our
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> and
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            cover the bigger machines.
+            For the rest of the room, our <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> and <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> cover the bigger machines.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best under desk elliptical?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, the Cubii Move: a low-profile seated elliptical with six resistance levels for about $200, sold through Cubii's Amazon store. If you want an app and published dimensions for less, Sunny's SF-E323017 is a budget alternative, though its figures are Sunny's own and we found no independent review.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best under desk bike?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The DeskCycle 2. Its adjustable-height version puts the pedals 9 or 10 inches off the floor, among the lowest of any under-desk bike, it has eight magnetic levels, and an independent tester found it virtually silent. Sunny's low-profile magnetic mini bike is a cheaper, more portable option with lighter resistance.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much clearance do you need for an under desk elliptical?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Your knee at the top of the stroke must stay below the lowest thing under the desk, with an inch or two to spare. Sit at your working height, raise one foot to the machine's highest pedal position, measure to the top of your knee and compare it with the floor-to-underside measurement. Seated ellipticals need less room than bikes.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do under desk ellipticals really burn calories?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some, but less than the screen suggests. Console figures are estimates and include calories you would burn sitting still. As an illustration, if easy pedalling cost 2 METs, an 80 kg person would use about 168 calories an hour in total but only about 84 more than sitting. It helps break up sitting; it is not a substitute for exercise.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I stop my chair rolling when using an under desk elliptical?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Use a chair without casters or with locking casters, put the chair on a rug or carpet, tether the machine to a chair leg with a sturdy strap, or brace it against a wall or the desk. Lower resistance also reduces the push. Keep the machine itself on a firm surface so it does not wobble.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an under desk elliptical better than a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on your desk. An under-desk elliptical works at the desk you already have, if your knees clear, and suits focused typing. A walking pad needs a standing desk that rises high enough, but gives more movement and energy use and is weight-bearing. Many people use both at different times of day.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an Under Desk Elliptical</h2>
+          <p>Almost every disappointment with an under-desk machine comes down to one of these four.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Measuring the desktop instead of the gap</h3>
+              <p>The height that matters is the lowest thing under the desk — the underside, an apron, a drawer or a keyboard tray — not the work surface. Measure that, then check your knee height at the machine's highest pedal position. A desk that looks tall enough often is not once the tray is counted.</p>
+            </li>
+            <li>
+              <h3>Choosing a bike for a low desk</h3>
+              <p>A pedal bike turns your feet in a full circle and lifts the knee higher than a seated elliptical. If your clearance is tight, an elliptical with a published pedal height is the safer buy, and a motorized model with higher pedal travel is the riskiest.</p>
+            </li>
+            <li>
+              <h3>Ignoring the chair</h3>
+              <p>An office chair on casters will roll back with every push. Plan for a chair that stays put, locking casters, a rug, or a tether before the machine arrives, or the first week will be spent chasing your chair across the room.</p>
+            </li>
+            <li>
+              <h3>Believing the calorie readout</h3>
+              <p>The number on the screen is an estimate, usually without your weight, and includes calories you would have used sitting still. Use the machine to move more during the day, and judge progress by how you feel and how much you use it, not by the console.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Under Desk Elliptical</h2>
-          <p class="text-gray-700 leading-relaxed">Almost every disappointment with an under-desk machine comes down to one of these four.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the desktop instead of the gap</h3>
-              <p class="text-gray-700 text-sm m-0">The height that matters is the lowest thing under the desk — the underside, an apron, a drawer or a keyboard tray — not the work surface. Measure that, then check your knee height at the machine's highest pedal position. A desk that looks tall enough often is not once the tray is counted.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing a bike for a low desk</h3>
-              <p class="text-gray-700 text-sm m-0">A pedal bike turns your feet in a full circle and lifts the knee higher than a seated elliptical. If your clearance is tight, an elliptical with a published pedal height is the safer buy, and a motorized model with higher pedal travel is the riskiest.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the chair</h3>
-              <p class="text-gray-700 text-sm m-0">An office chair on casters will roll back with every push. Plan for a chair that stays put, locking casters, a rug, or a tether before the machine arrives, or the first week will be spent chasing your chair across the room.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Believing the calorie readout</h3>
-              <p class="text-gray-700 text-sm m-0">The number on the screen is an estimate, usually without your weight, and includes calories you would have used sitting still. Use the machine to move more during the day, and judge progress by how you feel and how much you use it, not by the console.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Desk Walking</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Walking pads made for desk use, and what they need from the desk above them.</p>
-            </a>
-            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Desks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Integrated sets and sit-stand desks with the height range for a pad.</p>
-            </a>
-            <a href="/standing-desk-height-for-walking-pad/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Set-Up</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Standing Desk Height for a Walking Pad</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The elbow-height formula, a chart by height, and monitor placement.</p>
-            </a>
-            <a href="/best-ellipticals-for-seniors/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Seniors</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Ellipticals for Seniors</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Low step-up standing ellipticals and seated cross trainers for older users.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people, the Cubii Move is the under desk elliptical to
             buy, and the DeskCycle 2 is the under desk bike</strong> if your desk has the room. Sunny's
             models are the budget alternatives, with unusually complete published specifications, and its
             motorized elliptical suits only people who want assisted movement and have the knee room.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Before you order, measure the gap under the desk and your knee height at the top of the
             stroke, and decide how you will stop the chair rolling. Then treat the calorie number as an
-            estimate. If you have a standing desk, compare with a walking pad first —
-            <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">our under-desk treadmill guide</a>
-            covers the walking route.
+            estimate. If you have a standing desk, compare with a walking pad first — <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">our under-desk treadmill guide</a> covers the walking route.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/under-desk-treadmills/">Best Under-Desk Treadmills</a></li>
+            <li><a href="/best-treadmill-desks/">Best Treadmill Desks</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best under desk elliptical?</h3></summary>
+            <p class="faq-a">
+              For most people, the Cubii Move: a low-profile seated elliptical with six resistance levels for about $200, sold through Cubii's Amazon store. If you want an app and published dimensions for less, Sunny's SF-E323017 is a budget alternative, though its figures are Sunny's own and we found no independent review.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best under desk bike?</h3></summary>
+            <p class="faq-a">
+              The DeskCycle 2. Its adjustable-height version puts the pedals 9 or 10 inches off the floor, among the lowest of any under-desk bike, it has eight magnetic levels, and an independent tester found it virtually silent. Sunny's low-profile magnetic mini bike is a cheaper, more portable option with lighter resistance.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much clearance do you need for an under desk elliptical?</h3></summary>
+            <p class="faq-a">
+              Your knee at the top of the stroke must stay below the lowest thing under the desk, with an inch or two to spare. Sit at your working height, raise one foot to the machine's highest pedal position, measure to the top of your knee and compare it with the floor-to-underside measurement. Seated ellipticals need less room than bikes.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do under desk ellipticals really burn calories?</h3></summary>
+            <p class="faq-a">
+              Some, but less than the screen suggests. Console figures are estimates and include calories you would burn sitting still. As an illustration, if easy pedalling cost 2 METs, an 80 kg person would use about 168 calories an hour in total but only about 84 more than sitting. It helps break up sitting; it is not a substitute for exercise.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I stop my chair rolling when using an under desk elliptical?</h3></summary>
+            <p class="faq-a">
+              Use a chair without casters or with locking casters, put the chair on a rug or carpet, tether the machine to a chair leg with a sturdy strap, or brace it against a wall or the desk. Lower resistance also reduces the push. Keep the machine itself on a firm surface so it does not wobble.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is an under desk elliptical better than a walking pad?</h3></summary>
+            <p class="faq-a">
+              It depends on your desk. An under-desk elliptical works at the desk you already have, if your knees clear, and suits focused typing. A walking pad needs a standing desk that rises high enough, but gives more movement and energy use and is weight-bearing. Many people use both at different times of day.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Desk Walking</div>
+            <div class="c-title">Best Under-Desk Treadmills</div>
+            <p class="c-blurb">Walking pads made for desk use, and what they need from the desk above them.</p>
+          </a>
+          <a href="/best-treadmill-desks/" class="card">
+            <div class="c-kicker">Desks</div>
+            <div class="c-title">Best Treadmill Desks</div>
+            <p class="c-blurb">Integrated sets and sit-stand desks with the height range for a pad.</p>
+          </a>
+          <a href="/standing-desk-height-for-walking-pad/" class="card">
+            <div class="c-kicker">Set-Up</div>
+            <div class="c-title">Standing Desk Height for a Walking Pad</div>
+            <p class="c-blurb">The elbow-height formula, a chart by height, and monitor placement.</p>
+          </a>
+          <a href="/best-ellipticals-for-seniors/" class="card">
+            <div class="c-kicker">Seniors</div>
+            <div class="c-title">Best Ellipticals for Seniors</div>
+            <p class="c-blurb">Low step-up standing ellipticals and seated cross trainers for older users.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

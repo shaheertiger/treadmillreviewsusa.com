@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "ProForm Carbon TLS Treadmill Review (2026): Specs, iFIT, Warranty";
 const description =
@@ -142,6 +141,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/proform-carbon-tls-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -162,66 +167,54 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+  stickyCta={{ text: "Budget iFIT Pick: ProForm Carbon TLS", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-proformcarbontlstreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-proformcarbontlstreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">ProForm Carbon TLS Treadmill Review</h1>
+      <p class="ed-dek">
+        The Carbon TLS is the cheapest treadmill ProForm sells and the smallest: a folding walking machine with a 12% incline and no built-in screen, designed to run iFIT workouts from your own phone or tablet. This review sets out what is confirmed, where ProForm’s own pages disagree with each other, and who it suits.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          ProForm Carbon TLS <span class="text-[#5AA9FF]">Treadmill Review</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Carbon TLS is the cheapest treadmill ProForm sells and the smallest: a folding walking machine with a 12% incline and no built-in screen, designed to run iFIT workouts from your own phone or tablet. This review sets out what is confirmed, where ProForm’s own pages disagree with each other, and who it suits.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#specifications" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Specifications
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy It
-          </a>
-        </div>
+        <a href="#proform-carbon-tls" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#proform-carbon-tls"><img src="https://m.media-amazon.com/images/I/31+1EXxOMRL._SL500_.jpg" alt="ProForm Carbon TLS" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        <figcaption>ProForm Carbon TLS</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The ProForm Carbon TLS treadmill is ProForm’s entry model, and its figures describe a walking
+          machine with a useful incline rather than a running treadmill: an 18 by 55-inch belt, a top
+          speed of 10 mph, incline from 0 to 12%, a 300 lb user capacity and a folding frame with the
+          smallest footprint ProForm lists. There is no touchscreen; you connect your own phone or tablet,
+          and iFIT then steers the speed and incline to follow its trainers. Two things need reading
+          carefully before you buy: what the machine does without a paid iFIT membership, and a warranty
+          that ProForm’s own pages state in more than one way.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> We read
           ProForm’s US product page for the Carbon TLS (model PFTL79925) and its Carbon Series page,
           including the specification tables, warranty statements, iFIT terms, trial and price-guarantee
@@ -237,51 +230,31 @@ const schema = {
           the Carbon TLS. We have not tested it, and none of these figures are our own measurements.
           Prices change often. We earn a commission if you buy through the Amazon link on this page; it
           does not change what we say about the machine.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. ProForm Carbon TLS Treadmill: The Short Answer</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. ProForm Carbon TLS Specifications, Checked</a>
-          <a href="#deck-and-size" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. An 18 by 55-Inch Belt: Who It Suits</a>
-          <a href="#motor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Motor Rating, and What It Means</a>
-          <a href="#ifit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. iFIT on Your Own Device: What You Get With and Without It</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Warranty: What ProForm Says, and Where It Disagrees</a>
-          <a href="#buying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Price, Price Guarantee, Delivery and the 30-Day Trial</a>
-          <a href="#owner-reports" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Reviews and Owners Report</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Carbon TLS vs Carbon TLX and the Alternatives</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy the ProForm Carbon TLS</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">ProForm Carbon TLS Treadmill: The Short Answer</a></li>
+            <li><a href="#specifications">ProForm Carbon TLS Specifications, Checked</a></li>
+            <li><a href="#deck-and-size">An 18 by 55-Inch Belt: Who It Suits</a></li>
+            <li><a href="#motor">The Motor Rating, and What It Means</a></li>
+            <li><a href="#ifit">iFIT on Your Own Device: What You Get With and Without It</a></li>
+            <li><a href="#warranty">The Warranty: What ProForm Says, and Where It Disagrees</a></li>
+            <li><a href="#buying">Price, Price Guarantee, Delivery and the 30-Day Trial</a></li>
+            <li><a href="#owner-reports">What Reviews and Owners Report</a></li>
+            <li><a href="#alternatives">Carbon TLS vs Carbon TLX and the Alternatives</a></li>
+            <li><a href="#who-should-buy">Who Should Buy the ProForm Carbon TLS</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The ProForm Carbon TLS treadmill is ProForm’s entry model, and its figures describe a walking
-          machine with a useful incline rather than a running treadmill: an 18 by 55-inch belt, a top
-          speed of 10 mph, incline from 0 to 12%, a 300 lb user capacity and a folding frame with the
-          smallest footprint ProForm lists. There is no touchscreen; you connect your own phone or tablet,
-          and iFIT then steers the speed and incline to follow its trainers. Two things need reading
-          carefully before you buy: what the machine does without a paid iFIT membership, and a warranty
-          that ProForm’s own pages state in more than one way.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. ProForm Carbon TLS Treadmill: The Short Answer</h2>
+          <h2>ProForm Carbon TLS Treadmill: The Short Answer</h2>
 <p>
             <strong>The ProForm Carbon TLS treadmill is a compact, folding walking treadmill with a 12%
             incline, built to run iFIT from your own phone or tablet, and it makes sense for walkers who
-            want iFIT’s automatic speed and incline changes at the lowest price ProForm offers.</strong>
-            It is not a running treadmill: an 18 by 55-inch belt and a 10 mph ceiling are walking and
+            want iFIT’s automatic speed and incline changes at the lowest price ProForm offers.</strong> It is not a running treadmill: an 18 by 55-inch belt and a 10 mph ceiling are walking and
             light-jogging figures.
           </p>
           <p>
@@ -298,78 +271,67 @@ const schema = {
             ProForm’s figures, a retailer listing and independent coverage show.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. ProForm Carbon TLS Specifications, Checked</h2>
+          <h2>ProForm Carbon TLS Specifications, Checked</h2>
 <p>
             The first part of this table lists figures that ProForm publishes and at least one other
             source confirms. The second part lists what only ProForm gives, or what conflicts.
@@ -413,7 +375,7 @@ const schema = {
         </div>
 
         <div id="deck-and-size" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. An 18 by 55-Inch Belt: Who It Suits</h2>
+          <h2>An 18 by 55-Inch Belt: Who It Suits</h2>
 <p>
             The belt is the specification that decides who the Carbon TLS is for. Fifty-five inches of
             length is enough for walking and gentle jogging; a full running stride for most adults wants
@@ -425,11 +387,8 @@ const schema = {
           </p>
           <p>
             A 10 mph top speed is a six-minute mile, which almost no walker or jogger will approach, so the
-            speed ceiling is not the limitation; the belt is. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through stride length by height and speed, and if you intend to run regularly the
-            Carbon TLX below, or a machine from our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>,
+            speed ceiling is not the limitation; the belt is. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> works through stride length by height and speed, and if you intend to run regularly the
+            Carbon TLX below, or a machine from our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running guide</a>,
             is the better buy.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The case for small</h3>
@@ -438,15 +397,12 @@ const schema = {
             about 14.8 square feet. Folded with ProForm’s EasyLift design it is 32.9 inches long and
             65.7 inches tall, about 7.2 square feet. The step-up height of 7.75 inches is low for a folding
             treadmill, which helps anyone who finds stepping onto a deck awkward. For a spare room, an
-            apartment or a corner of a bedroom, those figures matter; our
-            <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small-space roundup</a>
-            and <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad or folding treadmill</a>
-            guide set out the alternatives.
+            apartment or a corner of a bedroom, those figures matter; our <a href="/best-treadmills-for-small-spaces/" class="text-[#0F62FE] font-medium">small-space roundup</a> and <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad or folding treadmill</a> guide set out the alternatives.
           </p>
         </div>
 
         <div id="motor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Motor Rating, and What It Means</h2>
+          <h2>The Motor Rating, and What It Means</h2>
 <p>
             ProForm lists a 2.6 CHP motor and so does the Scheels listing for the same model. ProForm
             footnotes the figure carefully: continuous horsepower is measured in laboratory testing with a
@@ -461,14 +417,12 @@ const schema = {
             load, and on a treadmill rated to 300 lb, a heavy user walking uphill for an hour is about the
             hardest thing you can ask of it. The clearest signal of a maker’s confidence is the motor
             warranty term, and that is exactly where ProForm’s pages disagree, which is why the next
-            section matters. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains peak, continuous and test ratings.
+            section matters. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains peak, continuous and test ratings.
           </p>
         </div>
 
         <div id="ifit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. iFIT on Your Own Device: What You Get With and Without It</h2>
+          <h2>iFIT on Your Own Device: What You Get With and Without It</h2>
 <p>
             The Carbon TLS has no built-in touchscreen. Instead it has a 5-inch LCD for the basics and a
             shelf for your phone or tablet, which you connect to the treadmill over Bluetooth. With an
@@ -494,11 +448,7 @@ const schema = {
             incline "on your own connected device or using the push buttons", and the LCD shows distance,
             speed and incline. What you lose is the trainer-led content and the automatic control. An independent review of the
             sister Carbon TLX reported that the treadmill had to be unlocked through the iFIT app on a
-            phone or tablet before first use, even without a subscription, so expect the same here; our guide to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT machine without iFIT</a>
-            covers how that works across NordicTrack and ProForm, and
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it</a>
-            sets out the five-year arithmetic.
+            phone or tablet before first use, even without a subscription, so expect the same here; our guide to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT machine without iFIT</a> covers how that works across NordicTrack and ProForm, and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it</a> sets out the five-year arithmetic.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other features</h3>
           <p>
@@ -510,7 +460,7 @@ const schema = {
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Warranty: What ProForm Says, and Where It Disagrees</h2>
+          <h2>The Warranty: What ProForm Says, and Where It Disagrees</h2>
 <p>
             Every ProForm statement we found agrees on a ten-year frame warranty. Beyond that, ProForm’s
             own pages, checked on 13 October 2026, say different things:
@@ -530,11 +480,7 @@ const schema = {
           <p>
             Even on the more generous reading, the motor term is short beside the lifetime motor cover
             Horizon and Bowflex offer on their entry treadmills, which is a fair point to weigh against
-            iFIT’s automatic control. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains how to read frame, motor, parts and labour terms, and our
-            <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a>
-            covers the common faults once you own one.
+            iFIT’s automatic control. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains how to read frame, motor, parts and labour terms, and our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a> covers the common faults once you own one.
           </p>
           <p>
             Safety record: we searched the US Consumer Product Safety Commission’s recall database on
@@ -544,7 +490,7 @@ const schema = {
         </div>
 
         <div id="buying" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Price, Price Guarantee, Delivery and the 30-Day Trial</h2>
+          <h2>Price, Price Guarantee, Delivery and the 30-Day Trial</h2>
 <p>
             <strong>Price.</strong> On 13 October 2026 proform.com listed the Carbon TLS at $1,099.99, down
             from $1,299.99, with an extra-5% weekend code that expired on 12 October. On 14 October Scheels
@@ -563,22 +509,18 @@ const schema = {
           <p>
             <strong>Delivery.</strong> ProForm offers free curbside shipping with an upgrade to in-home
             delivery and assembly. The box is about 77.8 by 32.3 by 11.3 inches and weighs about 205 lb, so
-            plan for two people to get it indoors. Our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a>
-            covers the job.
+            plan for two people to get it indoors. Our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a> covers the job.
           </p>
           <p>
             <strong>Returns.</strong> ProForm’s 30-day in-home trial refunds the purchase price less a
             $249.99 return shipping charge, and delivery and assembly costs are not refunded. Use the
             first weeks to walk at the inclines you plan to use, and to check that your phone or tablet
-            pairs reliably, because that is how the machine is meant to be used. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">return policies guide</a>
-            compares the major brands.
+            pairs reliably, because that is how the machine is meant to be used. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">return policies guide</a> compares the major brands.
           </p>
         </div>
 
         <div id="owner-reports" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Reviews and Owners Report</h2>
+          <h2>What Reviews and Owners Report</h2>
 <p>
             Independent coverage of the Carbon TLS is thinner than for most treadmills we review. The
             review site we checked lists it with an easy-to-read LCD, SmartAdjust and iFIT compatibility as
@@ -590,47 +532,37 @@ const schema = {
             Owner reviews on Scheels’ listing were positive about quiet operation, stability, easy folding
             and the simple console, with assembly needing two people and time as the commonest complaint.
             They are one retailer’s reviews and several are marked as incentivised, so we do not treat them
-            as an established pattern. Our guide to
-            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
-            explains why.
+            as an established pattern. Our guide to <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a> explains why.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Carbon TLS vs Carbon TLX and the Alternatives</h2>
+          <h2>Carbon TLS vs Carbon TLX and the Alternatives</h2>
 <p>
             <strong>ProForm Carbon TLX.</strong> The TLS’s sibling adds a 20 by 60-inch belt, 12 mph and a
             7-inch LCD, with the same 12% incline and 300 lb capacity, and ProForm lists a 3.0 CHP motor for
             it. On 13 October 2026 proform.com had it at $1,299.99, $200 more than the TLS. If you will jog
-            or run at all, that extra belt is the best use of the money. Our
-            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a>
-            ranks all four current <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm treadmills</a>, and notes that the Carbon Pro 2000 with a built-in
+            or run at all, that extra belt is the best use of the money. Our <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a> ranks all four current <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm treadmills</a>, and notes that the Carbon Pro 2000 with a built-in
             touchscreen was selling for the same price as the TLX.
           </p>
           <p>
             <strong>Horizon T101 Connect.</strong> A walking treadmill without a subscription and with a
             lifetime frame and motor warranty, on a 20 by 55-inch deck to 10% incline. It was sold out at
-            Horizon on 14 October 2026. Apps read its data but mostly do not control it. See our
-            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>.
+            Horizon on 14 October 2026. Apps read its data but mostly do not control it. See our <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>.
           </p>
           <p>
             <strong>Horizon T202.</strong> A 20 by 60-inch deck, 12 mph and 12% incline, with lifetime frame
             and motor cover and no subscription, at $899 on Horizon’s store on 14 October, or $799 with a
             code. If you want a longer deck and do not need iFIT to drive the machine, it is the closest
-            like-for-like alternative; our
-            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon roundup</a>
-            covers it.
+            like-for-like alternative; our <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon roundup</a> covers it.
           </p>
           <p>
-            For the brand question, our
-            <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">is ProForm a good brand</a>
-            and <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm</a>
-            guides set out how ProForm fits alongside its sister brand.
+            For the brand question, our <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">is ProForm a good brand</a> and <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm</a> guides set out how ProForm fits alongside its sister brand.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy the ProForm Carbon TLS</h2>
+          <h2>Who Should Buy the ProForm Carbon TLS</h2>
 <p>
             <strong>Buy it if you walk and want iFIT to drive the machine.</strong> Trainer-led walks and
             hikes that change the incline for you, on a compact folding frame with a 12% ceiling, is
@@ -647,10 +579,7 @@ const schema = {
           <p>
             <strong>Do not buy it if you never want to deal with iFIT.</strong> Activation needs a free
             account, and most of its value is in the paid content. A no-subscription walking treadmill
-            from Horizon may suit you better; our
-            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a>
-            and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription roundup</a>
-            cover the options.
+            from Horizon may suit you better; our <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a> and <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">no-subscription roundup</a> cover the options.
           </p>
           <p>
             <strong>Shop the price and confirm the warranty.</strong> Compare ProForm with authorised
@@ -658,136 +587,152 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the ProForm Carbon TLS treadmill good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walking and incline walking, on its published figures, yes: an 18 by 55-inch belt, 0 to 12% incline, 10 mph, a 300 lb capacity and a compact fold, with iFIT able to change speed and incline from your own device. It is not built for regular running, and its warranty terms are stated inconsistently. We have not tested it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use the ProForm Carbon TLS without iFIT?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Partly. ProForm says a free iFIT account is required to activate the equipment, and a paid membership and Wi-Fi to access the full content and features. Once activated you can set speed and incline with the push buttons and see your data on the 5-inch LCD, but trainer-led workouts and automatic control need the paid membership.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the warranty on the ProForm Carbon TLS?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Every ProForm statement agrees on ten years for the frame. Beyond that its pages disagree: a badge says one year on the motor, a comparison table says two years on the motor and parts with one year of labour, and an independent source gives one year on motor and parts. Get the terms for model PFTL79925 in writing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">ProForm Carbon TLS vs TLX: which should I buy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Both reach 12% incline and carry 300 lb. The TLX adds a 20 by 60-inch belt instead of 18 by 55, a 12 mph top speed instead of 10, and a 7-inch LCD, for about $200 more on proform.com on 13 October 2026. Buy the TLX if you will jog or run; the TLS suits walkers who need the smaller footprint.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How big is the ProForm Carbon TLS?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                ProForm lists it at 67.5 inches long, 31.6 wide and 56.2 tall in use, and 32.9 inches long and 65.7 tall when folded, with a 7.75-inch step-up height. It ships in a box of about 77.8 by 32.3 by 11.3 inches weighing about 205 lb.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What motor does the ProForm Carbon TLS have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                ProForm lists 2.6 CHP and footnotes it as a laboratory dynamometer rating that does not denote operational horsepower in household use. A Scheels listing repeats it, but one independent source checked for our ProForm roundup quoted a different rating, so we treat 2.6 CHP as ProForm’s figure rather than confirmed.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a ProForm Carbon TLS</h2>
+          <p>The Carbon TLS is simple to buy well if you know where its figures and terms need checking.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying it to run on</h3>
+              <p>An 18 by 55-inch belt is a walking and light-jogging deck. Runners, and anyone tall or broad, are better served by the Carbon TLX or another 60-inch treadmill, even if that means spending a little more.</p>
+            </li>
+            <li>
+              <h3>Assuming the warranty on the badge</h3>
+              <p>ProForm’s pages give one-year and two-year motor terms in different places. Ask for the terms for model PFTL79925 in writing before you buy, and keep them with your receipt.</p>
+            </li>
+            <li>
+              <h3>Paying the first price you see</h3>
+              <p>On the days we checked, ProForm listed it at $1,099.99 and Scheels at $799.99. Compare authorised retailers on the day, price the delivered total, and ask about ProForm’s price guarantee if you want to buy direct.</p>
+            </li>
+            <li>
+              <h3>Forgetting the cost of returning it</h3>
+              <p>ProForm’s 30-day trial refunds the price less $249.99 in return shipping, and delivery and assembly are not refunded. Measure the space, check your device pairs, and be sure about the belt size before it arrives.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a ProForm Carbon TLS</h2>
-          <p class="text-gray-700 leading-relaxed">The Carbon TLS is simple to buy well if you know where its figures and terms need checking.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it to run on</h3>
-              <p class="text-gray-700 text-sm m-0">An 18 by 55-inch belt is a walking and light-jogging deck. Runners, and anyone tall or broad, are better served by the Carbon TLX or another 60-inch treadmill, even if that means spending a little more.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the warranty on the badge</h3>
-              <p class="text-gray-700 text-sm m-0">ProForm’s pages give one-year and two-year motor terms in different places. Ask for the terms for model PFTL79925 in writing before you buy, and keep them with your receipt.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying the first price you see</h3>
-              <p class="text-gray-700 text-sm m-0">On the days we checked, ProForm listed it at $1,099.99 and Scheels at $799.99. Compare authorised retailers on the day, price the delivered total, and ask about ProForm’s price guarantee if you want to buy direct.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the cost of returning it</h3>
-              <p class="text-gray-700 text-sm m-0">ProForm’s 30-day trial refunds the price less $249.99 in return shipping, and delivery and assembly are not refunded. Measure the space, check your device pairs, and be sure about the belt size before it arrives.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-proform-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best ProForm Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">All four current ProForm treadmills ranked, from the Carbon TLS to the Carbon Pro 9000.</p>
-            </a>
-            <a href="/is-proform-a-good-brand/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is ProForm a Good Brand?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">iFIT dependence, warranty patterns and who ProForm suits.</p>
-            </a>
-            <a href="/horizon-t101-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Rival</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon T101 Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The subscription-free walking treadmill with lifetime frame and motor cover.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The ProForm Carbon TLS treadmill is a compact folding walking
-            treadmill for people who want iFIT to steer the speed and incline from their own tablet.</strong>
-            An 18 by 55-inch belt, 12% incline, 10 mph, a 300 lb rating and the smallest footprint ProForm
+            treadmill for people who want iFIT to steer the speed and incline from their own tablet.</strong> An 18 by 55-inch belt, 12% incline, 10 mph, a 300 lb rating and the smallest footprint ProForm
             sells make it a good fit for walkers in a small space, and a poor one for runners.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Shop the price — retailer and ProForm prices were about $300 apart on the days we checked — and
-            confirm the motor and parts warranty in writing. Runners should look at the Carbon TLX in our
-            <a href="/best-proform-treadmills/" class="text-[#5AA9FF] font-bold no-underline">ProForm roundup</a>,
-            and walkers who would rather avoid a subscription at the
-            <a href="/best-horizon-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Horizon range</a>.
+            confirm the motor and parts warranty in writing. Runners should look at the Carbon TLX in our <a href="/best-proform-treadmills/" class="text-[#5AA9FF] font-bold no-underline">ProForm roundup</a>,
+            and walkers who would rather avoid a subscription at the <a href="/best-horizon-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Horizon range</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-proform-treadmills/">Best ProForm Treadmills</a></li>
+            <li><a href="/is-proform-a-good-brand/">Is ProForm a Good Brand?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the ProForm Carbon TLS treadmill good?</h3></summary>
+            <p class="faq-a">
+              For walking and incline walking, on its published figures, yes: an 18 by 55-inch belt, 0 to 12% incline, 10 mph, a 300 lb capacity and a compact fold, with iFIT able to change speed and incline from your own device. It is not built for regular running, and its warranty terms are stated inconsistently. We have not tested it.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you use the ProForm Carbon TLS without iFIT?</h3></summary>
+            <p class="faq-a">
+              Partly. ProForm says a free iFIT account is required to activate the equipment, and a paid membership and Wi-Fi to access the full content and features. Once activated you can set speed and incline with the push buttons and see your data on the 5-inch LCD, but trainer-led workouts and automatic control need the paid membership.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the warranty on the ProForm Carbon TLS?</h3></summary>
+            <p class="faq-a">
+              Every ProForm statement agrees on ten years for the frame. Beyond that its pages disagree: a badge says one year on the motor, a comparison table says two years on the motor and parts with one year of labour, and an independent source gives one year on motor and parts. Get the terms for model PFTL79925 in writing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>ProForm Carbon TLS vs TLX: which should I buy?</h3></summary>
+            <p class="faq-a">
+              Both reach 12% incline and carry 300 lb. The TLX adds a 20 by 60-inch belt instead of 18 by 55, a 12 mph top speed instead of 10, and a 7-inch LCD, for about $200 more on proform.com on 13 October 2026. Buy the TLX if you will jog or run; the TLS suits walkers who need the smaller footprint.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How big is the ProForm Carbon TLS?</h3></summary>
+            <p class="faq-a">
+              ProForm lists it at 67.5 inches long, 31.6 wide and 56.2 tall in use, and 32.9 inches long and 65.7 tall when folded, with a 7.75-inch step-up height. It ships in a box of about 77.8 by 32.3 by 11.3 inches weighing about 205 lb.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What motor does the ProForm Carbon TLS have?</h3></summary>
+            <p class="faq-a">
+              ProForm lists 2.6 CHP and footnotes it as a laboratory dynamometer rating that does not denote operational horsepower in household use. A Scheels listing repeats it, but one independent source checked for our ProForm roundup quoted a different rating, so we treat 2.6 CHP as ProForm’s figure rather than confirmed.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-proform-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best ProForm Treadmills</div>
+            <p class="c-blurb">All four current ProForm treadmills ranked, from the Carbon TLS to the Carbon Pro 9000.</p>
+          </a>
+          <a href="/is-proform-a-good-brand/" class="card">
+            <div class="c-kicker">Brand</div>
+            <div class="c-title">Is ProForm a Good Brand?</div>
+            <p class="c-blurb">iFIT dependence, warranty patterns and who ProForm suits.</p>
+          </a>
+          <a href="/horizon-t101-treadmill/" class="card">
+            <div class="c-kicker">Rival</div>
+            <div class="c-title">Horizon T101 Review</div>
+            <p class="c-blurb">The subscription-free walking treadmill with lifetime frame and motor cover.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Lightweight Treadmills (2026): 5 Picks Under 70 lb";
 const description =
@@ -241,6 +240,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-lightweight-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -262,135 +267,45 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Lightweight Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: WalkingPad Z1R", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestlightweighttreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestlightweighttreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Lightweight Treadmills</h1>
+      <p class="ed-dek">
+        A light treadmill is one you can move, carry up a flight of stairs and put away without help. Here are five folding machines that weigh 44 to 66 lb by their own figures, which one suits which job, and what a light frame gives up compared with a full-size treadmill.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#walkingpad-z1r"><img src="https://m.media-amazon.com/images/I/419oUO9ShtL._SL500_.jpg" alt="WalkingPad Z1R" width="500" height="500" decoding="async" /></a>
+          <a href="#urevo-strol-2e-pro"><img src="https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg" alt="UREVO Strol 2E Pro" width="500" height="500" decoding="async" /></a>
+          <a href="#sunny-manual-walking-treadmill"><img src="https://m.media-amazon.com/images/I/41x5USYdbyL._SL500_.jpg" alt="Sunny Health &amp; Fitness Foldable Manual Walking Treadmill" width="500" height="500" decoding="async" /></a>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Lightweight <span class="text-[#5AA9FF]">Treadmills</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A light treadmill is one you can move, carry up a flight of stairs and put away without help. Here are five folding machines that weigh 44 to 66 lb by their own figures, which one suits which job, and what a light frame gives up compared with a full-size treadmill.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#what-counts" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Counts as Light?
-          </a>
-        </div>
-      </div>
-    </div>
+        <figcaption>WalkingPad Z1R · UREVO Strol 2E Pro · Sunny Health &amp; Fitness Foldable Manual Walking Treadmill</figcaption>
+      </figure>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the products below.</strong> We have not tested or weighed
-          these treadmills. Each was confirmed as currently sold on Amazon US on 6 November 2026. Unit
-          weights and other figures on each card come from the Amazon listing's own bullet points or
-          the maker's website, and we say which. Where the listing and the maker disagreed — on the
-          Sunny manual treadmill's weight limit, for example — we left the figure off the card and
-          explain the difference in the text. None of these figures are our own measurements. Prices
-          are those Amazon showed on 6 November 2026 and change often. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or what we
-          say about them.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#walkingpad-z1r" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad Z1R</a>
-            <a href="#walkingpad-z1r" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lightest Motorized:</span>
-            <a href="#urevo-strol-2e-pro" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E Pro</a>
-            <a href="#urevo-strol-2e-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">No Outlet Needed:</span>
-            <a href="#sunny-manual-walking-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Foldable Manual Walking Treadmill</a>
-            <a href="#sunny-manual-walking-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Smallest Folded:</span>
-            <a href="#walkingpad-c2" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad C2</a>
-            <a href="#walkingpad-c2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Light Jogging:</span>
-            <a href="#sunny-treadpad-compact" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Treadpad Compact Treadmill</a>
-            <a href="#sunny-treadpad-compact" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Best Lightweight Treadmills: Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Lightweight Treadmills</a>
-          <a href="#what-counts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Counts as a Lightweight Treadmill?</a>
-          <a href="#trade-offs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What a Light Frame Gives Up</a>
-          <a href="#moving" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Moving and Carrying a Light Treadmill</a>
-          <a href="#manual" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Manual Treadmills: Light Because There Is No Motor</a>
-          <a href="#weight-figures" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How to Read the Weight Figures in a Listing</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How We Chose These Treadmills</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most people searching for a lightweight treadmill have one of three problems: a treadmill
           that has to be moved every day, a flat up a flight of stairs with no lift, or a body that
           cannot safely lift 150 lb. A full-size folding treadmill weighs well over 100 lb, and many
@@ -400,8 +315,62 @@ const schema = {
           how to read the weight figures in a listing so you can judge one that is not on this list.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#walkingpad-z1r">WalkingPad Z1R</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lightest Motorized:</span> <a href="#urevo-strol-2e-pro">UREVO Strol 2E Pro</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">No Outlet Needed:</span> <a href="#sunny-manual-walking-treadmill">Sunny Health & Fitness Foldable Manual Walking Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Smallest Folded:</span> <a href="#walkingpad-c2">WalkingPad C2</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Light Jogging:</span> <a href="#sunny-treadpad-compact">Sunny Health & Fitness Treadpad Compact Treadmill</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the products below.</strong> We have not tested or weighed
+          these treadmills. Each was confirmed as currently sold on Amazon US on 6 November 2026. Unit
+          weights and other figures on each card come from the Amazon listing's own bullet points or
+          the maker's website, and we say which. Where the listing and the maker disagreed — on the
+          Sunny manual treadmill's weight limit, for example — we left the figure off the card and
+          explain the difference in the text. None of these figures are our own measurements. Prices
+          are those Amazon showed on 6 November 2026 and change often. We earn a commission if you buy
+          through the Amazon links on this page; it does not change which products we list or what we
+          say about them.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Best Lightweight Treadmills: Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Lightweight Treadmills</a></li>
+            <li><a href="#what-counts">What Counts as a Lightweight Treadmill?</a></li>
+            <li><a href="#trade-offs">What a Light Frame Gives Up</a></li>
+            <li><a href="#moving">Moving and Carrying a Light Treadmill</a></li>
+            <li><a href="#manual">Manual Treadmills: Light Because There Is No Motor</a></li>
+            <li><a href="#weight-figures">How to Read the Weight Figures in a Listing</a></li>
+            <li><a href="#how-we-chose">How We Chose These Treadmills</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Best Lightweight Treadmills: Our Picks at a Glance</h2>
+          <h2>Best Lightweight Treadmills: Our Picks at a Glance</h2>
 <p>
             <strong>For most people the best lightweight treadmill is the WalkingPad Z1R: 57.7 lb by
             WalkingPad's figure, a 47.6-inch walking area, a removable handle and a deck that folds in
@@ -434,85 +403,74 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Lightweight Treadmills</h2>
+          <h2>The 5 Best Lightweight Treadmills</h2>
 <p>
             The weight on each card is the unit weight, not the <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium" data-autolink>shipping weight</a>, and comes from the
             source named. A box adds 10 lb or more. Where a listing gave no weight at all, the machine
             did not qualify for this page, however light it looked.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="what-counts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Counts as a Lightweight Treadmill?</h2>
+          <h2>What Counts as a Lightweight Treadmill?</h2>
 <p>
             There is no standard, so here is a practical one based on what one adult can reasonably
             handle. Treadmill weights fall into four rough bands, and the band tells you most of what
@@ -541,7 +499,7 @@ const schema = {
         </div>
 
         <div id="trade-offs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What a Light Frame Gives Up</h2>
+          <h2>What a Light Frame Gives Up</h2>
 <p>
             Weight in a treadmill is mostly steel, motor and deck board, and each of those does a job.
             Taking it out has consequences that are worth knowing before you buy.
@@ -556,8 +514,7 @@ const schema = {
           <p>
             Light frames tend to carry lower user limits. On this page the stated limits run from
             220 lb (WalkingPad C2) to 245 lb (Sunny Treadpad Compact) and 242 lb (WalkingPad Z1R), and
-            the Sunny manual treadmill's figure differs between sources. Full <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>
-            commonly state 300 lb or more. If you are near a light machine's limit, buy a heavier one;
+            the Sunny manual treadmill's figure differs between sources. Full <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> commonly state 300 lb or more. If you are near a light machine's limit, buy a heavier one;
             working a pad close to its limit wears it out faster.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Stability at speed</h3>
@@ -575,7 +532,7 @@ const schema = {
         </div>
 
         <div id="moving" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Moving and Carrying a Light Treadmill</h2>
+          <h2>Moving and Carrying a Light Treadmill</h2>
 <p>
             All five machines here have transport wheels at the front. On a hard floor, rolling is
             easy: lift the back end to tilt the machine onto its wheels and walk it like a wheelbarrow.
@@ -599,14 +556,13 @@ const schema = {
           <p>
             A light treadmill is easier on a floor than a heavy one when it is standing still, but
             impact noise depends on your footfalls, not the machine's weight. On an upper floor, use a
-            mat, keep to walking or easy jogging, and if you share a building, read our
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a> guide on what travels
+            mat, keep to walking or easy jogging, and if you share a building, read our <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a> guide on what travels
             through floors.
           </p>
         </div>
 
         <div id="manual" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Manual Treadmills: Light Because There Is No Motor</h2>
+          <h2>Manual Treadmills: Light Because There Is No Motor</h2>
 <p>
             A manual treadmill has no motor: your feet drive the belt, and a fixed incline helps gravity
             do some of the work. That makes it light, silent apart from the belt, and usable anywhere
@@ -629,7 +585,7 @@ const schema = {
         </div>
 
         <div id="weight-figures" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How to Read the Weight Figures in a Listing</h2>
+          <h2>How to Read the Weight Figures in a Listing</h2>
 <p>
             Treadmill weights in listings are less reliable than they look, for three reasons.
           </p>
@@ -651,7 +607,7 @@ const schema = {
         </div>
 
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How We Chose These Treadmills</h2>
+          <h2>How We Chose These Treadmills</h2>
 <p>
             We searched Amazon US for folding treadmills, walking pads and manual treadmills from
             established brands, and kept those that met three tests: a unit weight stated in the Amazon
@@ -669,130 +625,148 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the lightest treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Of the machines we could confirm, the UREVO Strol 2E Pro is the lightest motorized treadmill at 44 lb by its Amazon listing, and Sunny's foldable manual walking treadmill is 46.9 lb by Sunny's figure. Some pads claim to be lighter but give no unit weight in their listings.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a lightweight treadmill weigh?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Walking pads and manual treadmills typically weigh about 35 to 60 lb, 2-in-1 pads with a running mode about 45 to 80 lb, compact folding treadmills about 90 to 130 lb, and full folding treadmills 150 lb or more. The machines on this page range from 44 to 66.1 lb.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can one person move a lightweight treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a hard floor, yes: tilt it onto its front wheels and roll it. Stairs are different. Even a 44 lb machine is long and awkward, with its weight at the motor end, so two people is the safe way to carry one up or down a flight.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a lightweight treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                You can jog on some. The Sunny Treadpad Compact reaches 6 mph, the UREVO Strol 2E Pro 6.2 mph and the WalkingPad Z1R 5 mph, but their belts are 42 to 48 inches long against 55 to 60 inches on running treadmills. For regular running, a heavier folding treadmill is the better tool.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a lightweight folding treadmill less durable?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not necessarily, but it has less margin. Light machines tend to have lower weight limits and smaller motors designed around walking. Staying well under the stated limit, keeping to the intended speeds and lubricating the belt as the manual says matter more on a light machine than a heavy one.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Lightweight Treadmill</h2>
+          <p>Each of these comes from choosing on weight alone.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the word "lightweight"</h3>
+              <p>Many listings call themselves lightweight without giving a unit weight, and some give only the shipping weight. Look for a product or net weight in the bullets or on the maker's site, and if two figures disagree, plan on the heavier one.</p>
+            </li>
+            <li>
+              <h3>Ignoring the weight limit</h3>
+              <p>Lighter frames usually carry lower user limits: 220 to 245 lb on most of the machines here. If you are close to the limit, a light machine will wear out faster and feel less stable. Choose a heavier machine with a stated limit that leaves a margin.</p>
+            </li>
+            <li>
+              <h3>Expecting a light machine to run like a full treadmill</h3>
+              <p>A 44 lb pad cannot hold a 60-inch deck or a motor built for hour-long runs. If you plan to run several times a week, accept the weight of a folding treadmill and choose one with good wheels, or put it where it does not need to move.</p>
+            </li>
+            <li>
+              <h3>Carrying it up stairs alone</h3>
+              <p>A treadmill's weight sits at the motor end and its length makes it hard to control on a staircase. Ask for help, fold it first, keep the motor end low, and never lift it by a 2-in-1's handle bar, which is not designed to carry the machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Lightweight Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these comes from choosing on weight alone.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the word "lightweight"</h3>
-              <p class="text-gray-700 text-sm m-0">Many listings call themselves lightweight without giving a unit weight, and some give only the shipping weight. Look for a product or net weight in the bullets or on the maker's site, and if two figures disagree, plan on the heavier one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the weight limit</h3>
-              <p class="text-gray-700 text-sm m-0">Lighter frames usually carry lower user limits: 220 to 245 lb on most of the machines here. If you are close to the limit, a light machine will wear out faster and feel less stable. Choose a heavier machine with a stated limit that leaves a margin.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a light machine to run like a full treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">A 44 lb pad cannot hold a 60-inch deck or a motor built for hour-long runs. If you plan to run several times a week, accept the weight of a folding treadmill and choose one with good wheels, or put it where it does not need to move.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Carrying it up stairs alone</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill's weight sits at the motor end and its length makes it hard to control on a staircase. Ask for help, fold it first, keep the motor end low, and never lift it by a 2-in-1's handle bar, which is not designed to carry the machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Compact Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six walking pads for desks, long strides, heavier walkers and incline.</p>
-            </a>
-            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Space</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Dimensions and Space</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How much floor, ceiling and storage room a treadmill really needs.</p>
-            </a>
-            <a href="/best-treadmills-for-small-spaces/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Small homes</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Small Spaces</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Compact and folding machines for rooms where every inch counts.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people the best lightweight treadmill is the WalkingPad Z1R</strong>:
             57.7 lb, a 47.6-inch walking area, a removable handle and a fold-in-half deck for about
             $359. If every pound counts, the UREVO Strol 2E Pro is 44 lb with an incline; if you have no
             outlet, Sunny's manual treadmill is 46.9 lb; if folded size matters most, the WalkingPad C2;
             and for light jogging under $300, the Sunny Treadpad Compact.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             A light treadmill is a walking machine with a jog in reserve, not a running treadmill. Buy
             one for the days you need to move it, keep well under its weight limit, and carry it with
-            help on stairs. If you need a full running deck, our
-            <a href="/best-portable-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best portable treadmills</a> guide covers heavier machines that still roll easily.
+            help on stairs. If you need a full running deck, our <a href="/best-portable-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best portable treadmills</a> guide covers heavier machines that still roll easily.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads/">Best Walking Pads</a></li>
+            <li><a href="/treadmill-dimensions-space-requirements/">Treadmill Dimensions and Space</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the lightest treadmill?</h3></summary>
+            <p class="faq-a">
+              Of the machines we could confirm, the UREVO Strol 2E Pro is the lightest motorized treadmill at 44 lb by its Amazon listing, and Sunny's foldable manual walking treadmill is 46.9 lb by Sunny's figure. Some pads claim to be lighter but give no unit weight in their listings.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does a lightweight treadmill weigh?</h3></summary>
+            <p class="faq-a">
+              Walking pads and manual treadmills typically weigh about 35 to 60 lb, 2-in-1 pads with a running mode about 45 to 80 lb, compact folding treadmills about 90 to 130 lb, and full folding treadmills 150 lb or more. The machines on this page range from 44 to 66.1 lb.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can one person move a lightweight treadmill?</h3></summary>
+            <p class="faq-a">
+              On a hard floor, yes: tilt it onto its front wheels and roll it. Stairs are different. Even a 44 lb machine is long and awkward, with its weight at the motor end, so two people is the safe way to carry one up or down a flight.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a lightweight treadmill?</h3></summary>
+            <p class="faq-a">
+              You can jog on some. The Sunny Treadpad Compact reaches 6 mph, the UREVO Strol 2E Pro 6.2 mph and the WalkingPad Z1R 5 mph, but their belts are 42 to 48 inches long against 55 to 60 inches on running treadmills. For regular running, a heavier folding treadmill is the better tool.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a lightweight folding treadmill less durable?</h3></summary>
+            <p class="faq-a">
+              Not necessarily, but it has less margin. Light machines tend to have lower weight limits and smaller motors designed around walking. Staying well under the stated limit, keeping to the intended speeds and lubricating the belt as the manual says matter more on a light machine than a heavy one.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Compact Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads</div>
+            <p class="c-blurb">Six walking pads for desks, long strides, heavier walkers and incline.</p>
+          </a>
+          <a href="/treadmill-dimensions-space-requirements/" class="card">
+            <div class="c-kicker">Space</div>
+            <div class="c-title">Treadmill Dimensions and Space</div>
+            <p class="c-blurb">How much floor, ceiling and storage room a treadmill really needs.</p>
+          </a>
+          <a href="/best-treadmills-for-small-spaces/" class="card">
+            <div class="c-kicker">Small homes</div>
+            <div class="c-title">Best Treadmills for Small Spaces</div>
+            <p class="c-blurb">Compact and folding machines for rooms where every inch counts.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

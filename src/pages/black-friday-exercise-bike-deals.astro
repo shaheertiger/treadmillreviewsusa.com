@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Black Friday Exercise Bike Deals 2026: 6 Worth Watching";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/black-friday-exercise-bike-deals/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -298,66 +303,85 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Bikes to Watch", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Schwinn IC4", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-blackfridayexercisebikedeals" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-blackfridayexercisebikedeals)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Black Friday 2026</span>
+      </nav>
+      <h1 class="ed-title">Black Friday Exercise Bike Deals 2026</h1>
+      <p class="ed-dek">
+        Six exercise bikes sold on Amazon that are worth watching this Black Friday — a spin bike, a recumbent, an air bike, a folding bike, a budget bike and a studio bike — with the prices we could actually source, the price we would wait for, and the tricks this category uses to make an ordinary price look like a sale.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 28, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Black Friday 2026
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Black Friday <span class="text-[#5AA9FF]">Exercise Bike Deals 2026</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Six exercise bikes sold on Amazon that are worth watching this Black Friday — a spin bike, a recumbent, an air bike, a folding bike, a budget bike and a studio bike — with the prices we could actually source, the price we would wait for, and the tricks this category uses to make an ordinary price look like a sale.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Bikes to Watch
-          </a>
-          <a href="#discounting" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Bike Discounts Look Like
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#schwinn-ic4"><img src="https://m.media-amazon.com/images/I/41s6fwc-DRL._SL500_.jpg" alt="Schwinn IC4" width="500" height="500" decoding="async" /></a>
+          <a href="#horizon-5-0r-recumbent-bike"><img src="https://m.media-amazon.com/images/I/410jbkHPlkL._SL500_.jpg" alt="Horizon 5.0R Recumbent Bike" width="500" height="500" decoding="async" /></a>
+          <a href="#schwinn-airdyne-ad7"><img src="https://m.media-amazon.com/images/I/41VL42J3pbL._SL500_.jpg" alt="Schwinn AirDyne AD7" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 28, 2026</strong>
+        <figcaption>Schwinn IC4 · Horizon 5.0R Recumbent Bike · Schwinn AirDyne AD7</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Exercise bikes are one of the most heavily promoted categories every November, and one of
+          the easiest in which to be sold an ordinary price dressed up as a sale. List prices that
+          nobody pays, memberships counted as money off, and a big percentage on a bike that was the
+          same price a fortnight earlier are all routine. This page names six bikes on Amazon worth
+          watching, gives the most recent price we could source for each with its date, and says
+          what we would wait for before calling it a Black Friday deal.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#schwinn-ic4">Schwinn IC4</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Recumbent:</span> <a href="#horizon-5-0r-recumbent-bike">Horizon 5.0R Recumbent Bike</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Air Bike:</span> <a href="#schwinn-airdyne-ad7">Schwinn AirDyne AD7</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#yosuda-indoor-cycling-bike">YOSUDA Indoor Cycling Bike</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Folding:</span> <a href="#marcy-foldable-upright-ns-652">Marcy Foldable Upright Exercise Bike NS-652</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Premium:</span> <a href="#keiser-m3i-indoor-bike">Keiser M3i Indoor Bike</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the prices and products below.</strong> We have not
           tested these bikes, and no figure on this page is our own measurement. The six were chosen
           from our existing exercise bike, recumbent, air bike and folding bike roundups, whose
@@ -373,84 +397,29 @@ const schema = {
           daily, so confirm the price, seller and model number on the listing before you order. We
           earn a commission if you buy through the Amazon links on this page; it does not change
           which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#schwinn-ic4" class="font-bold text-gray-900 no-underline hover:underline">Schwinn IC4</a>
-            <a href="#schwinn-ic4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Recumbent:</span>
-            <a href="#horizon-5-0r-recumbent-bike" class="font-bold text-gray-900 no-underline hover:underline">Horizon 5.0R Recumbent Bike</a>
-            <a href="#horizon-5-0r-recumbent-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Air Bike:</span>
-            <a href="#schwinn-airdyne-ad7" class="font-bold text-gray-900 no-underline hover:underline">Schwinn AirDyne AD7</a>
-            <a href="#schwinn-airdyne-ad7" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#yosuda-indoor-cycling-bike" class="font-bold text-gray-900 no-underline hover:underline">YOSUDA Indoor Cycling Bike</a>
-            <a href="#yosuda-indoor-cycling-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Folding:</span>
-            <a href="#marcy-foldable-upright-ns-652" class="font-bold text-gray-900 no-underline hover:underline">Marcy Foldable Upright Exercise Bike NS-652</a>
-            <a href="#marcy-foldable-upright-ns-652" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Bikes to Watch at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. 6 Bikes Worth Watching</a>
-          <a href="#discounting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Exercise Bike Discounting Actually Looks Like</a>
-          <a href="#subscriptions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Subscription Bundles Counted as Savings</a>
-          <a href="#resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Magnetic vs Friction Resistance</a>
-          <a href="#apps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Bluetooth, Zwift and Locked Ecosystems</a>
-          <a href="#peloton" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Peloton and the Seat-Post Recalls</a>
-          <a href="#delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Parcel vs Freight Delivery</a>
-          <a href="#timeline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When the 2026 Deals Start</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">The Bikes to Watch at a Glance</a></li>
+            <li><a href="#picks">6 Bikes Worth Watching</a></li>
+            <li><a href="#discounting">What Exercise Bike Discounting Actually Looks Like</a></li>
+            <li><a href="#subscriptions">Subscription Bundles Counted as Savings</a></li>
+            <li><a href="#resistance">Magnetic vs Friction Resistance</a></li>
+            <li><a href="#apps">Bluetooth, Zwift and Locked Ecosystems</a></li>
+            <li><a href="#peloton">Peloton and the Seat-Post Recalls</a></li>
+            <li><a href="#delivery">Parcel vs Freight Delivery</a></li>
+            <li><a href="#timeline">When the 2026 Deals Start</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Exercise bikes are one of the most heavily promoted categories every November, and one of
-          the easiest in which to be sold an ordinary price dressed up as a sale. List prices that
-          nobody pays, memberships counted as money off, and a big percentage on a bike that was the
-          same price a fortnight earlier are all routine. This page names six bikes on Amazon worth
-          watching, gives the most recent price we could source for each with its date, and says
-          what we would wait for before calling it a Black Friday deal.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Bikes to Watch at a Glance</h2>
+          <h2>The Bikes to Watch at a Glance</h2>
 <p>
             One bike per type, so whichever kind you have already decided on, there is a sensible
-            model to put on your watch list. If you have not decided yet, settle that first: our
-            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes guide</a>
-            explains the types, and
-            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
-            covers the bigger choice. Black Friday 2026 is Friday 27 November and Cyber Monday is
+            model to put on your watch list. If you have not decided yet, settle that first: our <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes guide</a> explains the types, and <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a> covers the bigger choice. Black Friday 2026 is Friday 27 November and Cyber Monday is
             30 November; none of the prices below are Black Friday prices, because none had been
             announced on 28 October.
           </p>
@@ -476,14 +445,13 @@ const schema = {
             The right-hand column is our judgement of a price worth acting on, based on what each
             bike has sold for recently and, where we could find dated records, in past sales. It is
             not a forecast of what any retailer will charge. Before you trust any reduction you see in
-            November, read our
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">guide to judging a Black Friday deal</a>;
+            November, read our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">guide to judging a Black Friday deal</a>;
             it is written about treadmills, but every step applies to bikes.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. 6 Exercise Bikes Worth Watching on Black Friday 2026</h2>
+          <h2>6 Exercise Bikes Worth Watching on Black Friday 2026</h2>
 <p>
             Every bike here is currently sold, appears in one of our verified roundups, and either
             has an Amazon listing we could confirm or is sold through Amazon by its maker. The
@@ -494,83 +462,71 @@ const schema = {
           </p>
           <p>
             Two bikes are missing on purpose. The original Peloton Bike and the original Bike+ have
-            both been recalled for seat posts that can break during use, and the
-            <a href="#peloton" class="text-[#0F62FE] font-medium">Peloton section below</a> explains
+            both been recalled for seat posts that can break during use, and the <a href="#peloton" class="text-[#0F62FE] font-medium">Peloton section below</a> explains
             what that means for anyone tempted by a cheap one this November.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="discounting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Exercise Bike Discounting Actually Looks Like</h2>
+          <h2>What Exercise Bike Discounting Actually Looks Like</h2>
 <p>
             Exercise bikes do get genuinely cheaper in late November. They also get promoted in ways
             that make an everyday price look like a once-a-year event. Four patterns came up
@@ -599,8 +555,7 @@ const schema = {
             today's sales have been the same, or close, for years.
           </p>
           <p>
-            <strong>Cheap bikes discount in coupons, expensive ones quietly or not at all.</strong>
-            Amazon-first brands such as YOSUDA and Marcy price in tens of dollars, and their "deals"
+            <strong>Cheap bikes discount in coupons, expensive ones quietly or not at all.</strong> Amazon-first brands such as YOSUDA and Marcy price in tens of dollars, and their "deals"
             are often clip-on coupons or colour-by-colour price differences that come and go all
             year; BarBend saw Marcy's folding bike at $179.29 in black and $140 in white on Amazon at
             the same time. At the other end, Keiser's own store says it runs "specials every now and
@@ -608,15 +563,14 @@ const schema = {
             directly before assuming the Amazon price is the best one available.
           </p>
           <p>
-            Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday method page</a>
-            covers the general rules — record prices before the sale, compare the delivered price at
+            Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday method page</a> covers the general rules — record prices before the sale, compare the delivered price at
             more than one retailer, and ignore the "was" price — so we will not repeat them here.
             The rest of this page is about what is particular to bikes.
           </p>
         </div>
 
         <div id="subscriptions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Subscription Bundles Counted as Savings</h2>
+          <h2>Subscription Bundles Counted as Savings</h2>
 <p>
             The most common way an exercise bike deal is inflated is by counting a membership as
             money off. A year of an app's subscription is added to the box, its full retail value is
@@ -648,14 +602,12 @@ const schema = {
           <p>
             We do not quote subscription prices on this page, because the big platforms have changed
             them in the past year and we could not confirm current figures on the day. Check the
-            platform's own pricing page before you count a membership as part of a deal. Our
-            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
-            explains how the two largest ecosystems work and what you lose if you stop paying.
+            platform's own pricing page before you count a membership as part of a deal. Our <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a> explains how the two largest ecosystems work and what you lose if you stop paying.
           </p>
         </div>
 
         <div id="resistance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Magnetic vs Friction Resistance: Do Not Let a Discount Decide</h2>
+          <h2>Magnetic vs Friction Resistance: Do Not Let a Discount Decide</h2>
 <p>
             The biggest price gaps between similar-looking spin bikes usually come down to how the
             resistance works, and a Black Friday discount can make the cheaper kind look like the
@@ -678,9 +630,7 @@ const schema = {
           <p>
             <strong>Fan resistance</strong>, on air bikes like the AirDyne AD7, is different again:
             the harder you pedal, the more air the fan moves and the harder it gets. There are no
-            levels to set. It suits hard intervals and is the loudest of the three; our
-            <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium">air bike guide</a>
-            explains the trade-offs.
+            levels to set. It suits hard intervals and is the loudest of the three; our <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium">air bike guide</a> explains the trade-offs.
           </p>
           <p>
             How this plays out in a sale: at full price, the friction YOSUDA and a magnetic bike like
@@ -695,7 +645,7 @@ const schema = {
         </div>
 
         <div id="apps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Bluetooth, Zwift and Locked Ecosystems</h2>
+          <h2>Bluetooth, Zwift and Locked Ecosystems</h2>
 <p>
             "Works with <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>" and "compatible with Peloton" appear on a great many Black Friday
             listings, and they mean less than they suggest. Before a discount persuades you, check
@@ -716,9 +666,7 @@ const schema = {
             set resistance by hand, so Zwift's virtual hills cannot change it for you, and the power
             figure is calculated from cadence and resistance rather than measured. That is fine for
             following along; it is not a power meter. If accurate, app-controlled resistance is the
-            point, look at
-            <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium">smart bike trainers</a>
-            instead, which get their own November discounts.
+            point, look at <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium">smart bike trainers</a> instead, which get their own November discounts.
           </p>
           <p>
             <strong>Whether the bike is locked to one platform.</strong> Peloton, Echelon and
@@ -732,7 +680,7 @@ const schema = {
         </div>
 
         <div id="peloton" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Peloton on Black Friday: The Recalls and What to Check</h2>
+          <h2>Peloton on Black Friday: The Recalls and What to Check</h2>
 <p>
             Many people searching for Black Friday bike deals are really looking for a cheap Peloton.
             We have not listed one, for two reasons.
@@ -761,14 +709,12 @@ const schema = {
             get Peloton and an independent source to agree on key figures, and Peloton says a
             membership is required to use its content. That keeps them off a list built on open
             bikes with checkable figures. If what you want is Peloton's classes, the cheaper route is
-            usually the Peloton app on an open bike such as the IC4; our
-            <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives guide</a>
-            goes through the options.
+            usually the Peloton app on an open bike such as the IC4; our <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives guide</a> goes through the options.
           </p>
         </div>
 
         <div id="delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Parcel or Freight, and the Box You Have to Carry</h2>
+          <h2>Parcel or Freight, and the Box You Have to Carry</h2>
 <p>
             Bikes sit across the line between parcel and freight, and Black Friday delivery terms
             are where a cheap price can stop being cheap. The bike's own weight is a rough guide to
@@ -801,7 +747,7 @@ const schema = {
         </div>
 
         <div id="timeline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When the 2026 Deals Start</h2>
+          <h2>When the 2026 Deals Start</h2>
 <p>
             None of the retailers on this page had announced Black Friday 2026 dates or prices when we
             wrote this on 28 October. The pattern in recent years has been consistent enough to plan
@@ -825,148 +771,158 @@ const schema = {
             November, waiting is a reasonable choice, not a lost opportunity.</li>
           </ul>
           <p>
-            For the rest of the home gym, our
-            <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a>
-            page covers strength and cardio equipment, and if you are torn between a bike and a
-            cross-trainer, see
-            <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a>.
-            Treadmills are covered in our
-            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>.
+            For the rest of the home gym, our <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a> page covers strength and cardio equipment, and if you are torn between a bike and a
+            cross-trainer, see <a href="/black-friday-elliptical-deals/" class="text-[#0F62FE] font-medium">Black Friday elliptical deals</a>.
+            Treadmills are covered in our <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are Black Friday exercise bike deals worth waiting for?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, if you already know which bike you want. Late November is one of the stronger sale periods for home cardio equipment. But many advertised savings are measured against list prices the bikes rarely sell at, so compare the Black Friday price with what the bike sold for in October, not with the "was" price.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good Black Friday price for a Schwinn IC4?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In our view, $749 or less. Schwinn had it at $799 on 16 October 2026 and $899 on 19 October, against a $999 list price, so $799 is an ordinary sale price rather than a Black Friday one. It sold for $499.99 in 2022 and 2023 promotions, but those are old prices, not a forecast.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy a Peloton on Black Friday?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Be careful with the original models. The Peloton Bike (PL01) was recalled in May 2023 and the original Bike+ (PL02, serials starting with T) in November 2025, both because the seat post can break. If you are offered one, confirm the replacement seat post has been fitted. Peloton's bikes also need a membership for their content, so price that in.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a free year of app membership part of the discount?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if you would have paid for that app anyway. Take the membership out and judge the bike price on its own against what it sold for recently. Check what the included period renews into, and whether the bike needs the membership to work properly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Magnetic or friction resistance: which should I buy in a sale?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Magnetic, if the sale brings it within about $100 of a friction bike you were considering. Magnetic resistance is quieter and has no pad to wear out. Friction bikes are cheaper and work well, but the pad needs replacing over time and can become noisy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">When do Amazon exercise bike deals start for Black Friday 2026?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Amazon had not announced its 2026 dates when we checked on 28 October. Its Black Friday event has typically started about a week before Thanksgiving, which this year falls on 26 November, and runs through Cyber Monday on 30 November. Maker stores run their own sales through the autumn.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an Exercise Bike on Black Friday</h2>
+          <p>Most of these come from judging the deal before judging the bike, which is easy to do when a timer is counting down.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Measuring the saving from the list price</h3>
+              <p>Exercise bike list prices are often prices nobody pays. The Horizon 5.0R sold at $649 against a $999 list in October, so "35% off" in November would be its normal price. Record what your shortlist sells for in late October and early November and judge any deal against that.</p>
+            </li>
+            <li>
+              <h3>Counting the membership as money off</h3>
+              <p>A bundled year of an app can make a small reduction look large. Take it out, look at the bike price alone, and check what the membership renews into. It is worth something only if you would have paid for that app anyway.</p>
+            </li>
+            <li>
+              <h3>Buying a closed bike for the hardware price</h3>
+              <p>A big discount on a bike tied to one platform still leaves the membership to pay for as long as you ride it, and some bikes lose features without it. Add the membership over three years before comparing it with an open bike like the IC4.</p>
+            </li>
+            <li>
+              <h3>Buying a cheap original Peloton without checking the seat post</h3>
+              <p>The original Peloton Bike (PL01) and Bike+ (PL02 with a "T" serial) have both been recalled for seat posts that can break. If one is offered cheaply second-hand or by a marketplace seller, check the model and serial number and confirm the free replacement seat post has been fitted before anyone rides it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Exercise Bike on Black Friday</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from judging the deal before judging the bike, which is easy to do when a timer is counting down.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the saving from the list price</h3>
-              <p class="text-gray-700 text-sm m-0">Exercise bike list prices are often prices nobody pays. The Horizon 5.0R sold at $649 against a $999 list in October, so "35% off" in November would be its normal price. Record what your shortlist sells for in late October and early November and judge any deal against that.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Counting the membership as money off</h3>
-              <p class="text-gray-700 text-sm m-0">A bundled year of an app can make a small reduction look large. Take it out, look at the bike price alone, and check what the membership renews into. It is worth something only if you would have paid for that app anyway.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a closed bike for the hardware price</h3>
-              <p class="text-gray-700 text-sm m-0">A big discount on a bike tied to one platform still leaves the membership to pay for as long as you ride it, and some bikes lose features without it. Add the membership over three years before comparing it with an open bike like the IC4.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a cheap original Peloton without checking the seat post</h3>
-              <p class="text-gray-700 text-sm m-0">The original Peloton Bike (PL01) and Bike+ (PL02 with a "T" serial) have both been recalled for seat posts that can break. If one is offered cheaply second-hand or by a marketplace seller, check the model and serial number and confirm the free replacement seat post has been fitted before anyone rides it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Exercise Bike Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-exercise-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Exercise Bikes</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five upright and spin bikes checked against makers and independent reviews, with resistance types explained.</p>
-            </a>
-            <a href="/best-peloton-alternatives/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Alternatives</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Peloton Alternatives</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Open bikes, smart bikes and trainers for riders who want classes without the lock-in.</p>
-            </a>
-            <a href="/treadmill-black-friday-deals/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Timing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Judge a Black Friday Deal</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Price history, inflated list prices, bundles and the delivered price — the method behind this page.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             For most homes the bike to watch is the <strong class="text-white">Schwinn IC4</strong>:
             quiet, open to the app of your choice, and $799 to $899 at Schwinn in October. We would
-            wait for $749 or less. For comfort, the <strong class="text-white">Horizon 5.0R</strong>
-            is worth buying under $600; for hard intervals, the
-            <strong class="text-white">AirDyne AD7</strong> at $999 or less.
+            wait for $749 or less. For comfort, the <strong class="text-white">Horizon 5.0R</strong> is worth buying under $600; for hard intervals, the <strong class="text-white">AirDyne AD7</strong> at $999 or less.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you are watching, the deal is the delivered price of the bike on its own, compared
             with what it sold for in October — not the list price, and not the membership in the box.
-            Record your prices now, and read our
-            <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">Black Friday deal method</a>
-            before the sales start. If you have not chosen a bike yet, start with our
-            <a href="/best-exercise-bikes/" class="text-[#5AA9FF] font-bold no-underline">best exercise bikes guide</a>.
+            Record your prices now, and read our <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">Black Friday deal method</a> before the sales start. If you have not chosen a bike yet, start with our <a href="/best-exercise-bikes/" class="text-[#5AA9FF] font-bold no-underline">best exercise bikes guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-exercise-bikes/">Best Exercise Bikes</a></li>
+            <li><a href="/best-peloton-alternatives/">Best Peloton Alternatives</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Are Black Friday exercise bike deals worth waiting for?</h3></summary>
+            <p class="faq-a">
+              Often, if you already know which bike you want. Late November is one of the stronger sale periods for home cardio equipment. But many advertised savings are measured against list prices the bikes rarely sell at, so compare the Black Friday price with what the bike sold for in October, not with the "was" price.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is a good Black Friday price for a Schwinn IC4?</h3></summary>
+            <p class="faq-a">
+              In our view, $749 or less. Schwinn had it at $799 on 16 October 2026 and $899 on 19 October, against a $999 list price, so $799 is an ordinary sale price rather than a Black Friday one. It sold for $499.99 in 2022 and 2023 promotions, but those are old prices, not a forecast.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should I buy a Peloton on Black Friday?</h3></summary>
+            <p class="faq-a">
+              Be careful with the original models. The Peloton Bike (PL01) was recalled in May 2023 and the original Bike+ (PL02, serials starting with T) in November 2025, both because the seat post can break. If you are offered one, confirm the replacement seat post has been fitted. Peloton's bikes also need a membership for their content, so price that in.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a free year of app membership part of the discount?</h3></summary>
+            <p class="faq-a">
+              Only if you would have paid for that app anyway. Take the membership out and judge the bike price on its own against what it sold for recently. Check what the included period renews into, and whether the bike needs the membership to work properly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Magnetic or friction resistance: which should I buy in a sale?</h3></summary>
+            <p class="faq-a">
+              Magnetic, if the sale brings it within about $100 of a friction bike you were considering. Magnetic resistance is quieter and has no pad to wear out. Friction bikes are cheaper and work well, but the pad needs replacing over time and can become noisy.
+            </p>
+          </details>
+          <details>
+            <summary><h3>When do Amazon exercise bike deals start for Black Friday 2026?</h3></summary>
+            <p class="faq-a">
+              Amazon had not announced its 2026 dates when we checked on 28 October. Its Black Friday event has typically started about a week before Thanksgiving, which this year falls on 26 November, and runs through Cyber Monday on 30 November. Maker stores run their own sales through the autumn.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Exercise Bike Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-exercise-bikes/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Exercise Bikes</div>
+            <p class="c-blurb">Five upright and spin bikes checked against makers and independent reviews, with resistance types explained.</p>
+          </a>
+          <a href="/best-peloton-alternatives/" class="card">
+            <div class="c-kicker">Alternatives</div>
+            <div class="c-title">Best Peloton Alternatives</div>
+            <p class="c-blurb">Open bikes, smart bikes and trainers for riders who want classes without the lock-in.</p>
+          </a>
+          <a href="/treadmill-black-friday-deals/" class="card">
+            <div class="c-kicker">Timing</div>
+            <div class="c-title">How to Judge a Black Friday Deal</div>
+            <p class="c-blurb">Price history, inflated list prices, bundles and the delivered price — the method behind this page.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

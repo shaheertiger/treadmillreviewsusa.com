@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Dog Treadmill Harnesses (2026): Five Picks and the Safety Rules";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-dog-treadmill-harnesses/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -270,135 +275,45 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Blue-9 Balance Harness", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestdogtreadmillharnesses" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestdogtreadmillharnesses)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Dog Harnesses for Treadmill Training</h1>
+      <p class="ed-dek">
+        A harness on a treadmill is for guiding and steadying a dog by hand, never for fixing it to the machine. The right one leaves the shoulders free, cannot slip off, and has nothing loose to catch in a moving belt. Here are five that fit that brief, and how to use one safely.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#blue-9-balance-harness"><img src="https://m.media-amazon.com/images/I/318NNpWxf0L._SL500_.jpg" alt="Blue-9 Balance Harness" width="500" height="500" decoding="async" /></a>
+          <a href="#ruffwear-front-range-harness"><img src="https://m.media-amazon.com/images/I/41i89sfnXVL._SL500_.jpg" alt="Ruffwear Front Range Harness" width="500" height="500" decoding="async" /></a>
+          <a href="#julius-k9-idc-powerharness"><img src="https://m.media-amazon.com/images/I/51OFP583veL._SL500_.jpg" alt="Julius-K9 IDC Powerharness" width="500" height="500" decoding="async" /></a>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Dog Harnesses <span class="text-[#5AA9FF]">for Treadmill Training</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A harness on a treadmill is for guiding and steadying a dog by hand, never for fixing it to the machine. The right one leaves the shoulders free, cannot slip off, and has nothing loose to catch in a moving belt. Here are five that fit that brief, and how to use one safely.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#never-tether" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Safety Rules
-          </a>
-        </div>
-      </div>
-    </div>
+        <figcaption>Blue-9 Balance Harness · Ruffwear Front Range Harness · Julius-K9 IDC Powerharness</figcaption>
+      </figure>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          harnesses. Adjustment points, attachment points, materials and sizes were checked on 6 November
-          2026 against each harness's Amazon US listing. None of these figures are our own measurements, and
-          we have not fitted these harnesses to dogs. Prices are the Amazon prices we saw on that date for the
-          size and colour we checked; they vary by size and change often. This page is general information,
-          not veterinary advice: before starting treadmill work, ask your vet whether it suits your dog's age,
-          breed, weight and health, especially for puppies, older dogs, flat-faced breeds and dogs with joint,
-          heart or breathing problems. We earn a commission if you buy through the Amazon links on this page;
-          it does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#blue-9-balance-harness" class="font-bold text-gray-900 no-underline hover:underline">Blue-9 Balance Harness</a>
-            <a href="#blue-9-balance-harness" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Comfortable:</span>
-            <a href="#ruffwear-front-range-harness" class="font-bold text-gray-900 no-underline hover:underline">Ruffwear Front Range Harness</a>
-            <a href="#ruffwear-front-range-harness" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best With a Handle:</span>
-            <a href="#julius-k9-idc-powerharness" class="font-bold text-gray-900 no-underline hover:underline">Julius-K9 IDC Powerharness</a>
-            <a href="#julius-k9-idc-powerharness" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Car and Treadmill:</span>
-            <a href="#kurgo-tru-fit-smart-harness" class="font-bold text-gray-900 no-underline hover:underline">Kurgo Tru-Fit Smart Harness</a>
-            <a href="#kurgo-tru-fit-smart-harness" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#rabbitgoo-no-pull-harness" class="font-bold text-gray-900 no-underline hover:underline">rabbitgoo No Pull Dog Harness</a>
-            <a href="#rabbitgoo-no-pull-harness" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Harnesses for Dog Treadmill Training</a>
-          <a href="#never-tether" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Rule That Matters Most: Never Tie a Dog to a Treadmill</a>
-          <a href="#what-to-look-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Makes a Harness Suit the Treadmill</a>
-          <a href="#fitting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Measuring and Fitting a Harness</a>
-          <a href="#introducing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Using the Harness in the First Sessions</a>
-          <a href="#dog-vs-human" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Dog Treadmill or Human Treadmill?</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When a Treadmill Is Not the Answer</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The best dog harness for treadmill training is an ordinary, well-made walking harness that
           fits your dog closely, leaves its shoulders free to move, and has no dangling straps, tags or
           tethers that could reach the belt. There is no special "treadmill harness" that makes it safe to
@@ -409,8 +324,62 @@ const schema = {
           our guide to the <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#blue-9-balance-harness">Blue-9 Balance Harness</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Comfortable:</span> <a href="#ruffwear-front-range-harness">Ruffwear Front Range Harness</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With a Handle:</span> <a href="#julius-k9-idc-powerharness">Julius-K9 IDC Powerharness</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Car and Treadmill:</span> <a href="#kurgo-tru-fit-smart-harness">Kurgo Tru-Fit Smart Harness</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#rabbitgoo-no-pull-harness">rabbitgoo No Pull Dog Harness</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          harnesses. Adjustment points, attachment points, materials and sizes were checked on 6 November
+          2026 against each harness's Amazon US listing. None of these figures are our own measurements, and
+          we have not fitted these harnesses to dogs. Prices are the Amazon prices we saw on that date for the
+          size and colour we checked; they vary by size and change often. This page is general information,
+          not veterinary advice: before starting treadmill work, ask your vet whether it suits your dog's age,
+          breed, weight and health, especially for puppies, older dogs, flat-faced breeds and dogs with joint,
+          heart or breathing problems. We earn a commission if you buy through the Amazon links on this page;
+          it does not change which products we list or what we say about them.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Harnesses for Dog Treadmill Training</a></li>
+            <li><a href="#never-tether">The Rule That Matters Most: Never Tie a Dog to a Treadmill</a></li>
+            <li><a href="#what-to-look-for">What Makes a Harness Suit the Treadmill</a></li>
+            <li><a href="#fitting">Measuring and Fitting a Harness</a></li>
+            <li><a href="#introducing">Using the Harness in the First Sessions</a></li>
+            <li><a href="#dog-vs-human">Dog Treadmill or Human Treadmill?</a></li>
+            <li><a href="#who-should-skip">When a Treadmill Is Not the Answer</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Any of these will do the job if it fits your dog well. Choose by your dog's build and by
             whether you want a handle on top, which is useful for steadying a dog while it learns.
@@ -432,84 +401,73 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Harnesses for Dog Treadmill Training</h2>
+          <h2>The 5 Best Harnesses for Dog Treadmill Training</h2>
 <p>
             Each card gives the features from the Amazon listing and what to watch for on a treadmill. Remove
             any tether, seatbelt strap or loose tag before a session, whichever harness you choose.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="never-tether" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Rule That Matters Most: Never Tie a Dog to a Treadmill</h2>
+          <h2>The Rule That Matters Most: Never Tie a Dog to a Treadmill</h2>
 <p>
             Search results and some product photos show dogs clipped to a treadmill's frame or console. Do
             not copy them. A dog attached to a machine cannot step off when it needs to, and the belt keeps
@@ -535,13 +493,12 @@ const schema = {
             <li>Ask your vet before starting, and about how much exercise suits your dog.</li>
           </ul>
           <p>
-            Our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmill training for dogs</a>
-            covers sessions, speeds and durations in more detail.
+            Our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmill training for dogs</a> covers sessions, speeds and durations in more detail.
           </p>
         </div>
 
         <div id="what-to-look-for" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Makes a Harness Suit the Treadmill</h2>
+          <h2>What Makes a Harness Suit the Treadmill</h2>
 <p>
             The features that matter on a treadmill are slightly different from those that matter on a walk,
             because the dog moves continuously at a steady pace, close to moving machinery.
@@ -578,7 +535,7 @@ const schema = {
         </div>
 
         <div id="fitting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Measuring and Fitting a Harness</h2>
+          <h2>Measuring and Fitting a Harness</h2>
 <p>
             Most harness sizing is by chest girth, the widest part of the ribcage just behind the front legs.
             Some makers also give a neck measurement. Measure with a soft tape, with your dog standing.
@@ -608,7 +565,7 @@ const schema = {
         </div>
 
         <div id="introducing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Using the Harness in the First Sessions</h2>
+          <h2>Using the Harness in the First Sessions</h2>
 <p>
             The harness should be familiar before the treadmill is. Let your dog wear it for walks for a week or
             two so it associates it with good things, then introduce the machine.
@@ -634,7 +591,7 @@ const schema = {
         </div>
 
         <div id="dog-vs-human" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Dog Treadmill or Human Treadmill?</h2>
+          <h2>Dog Treadmill or Human Treadmill?</h2>
 <p>
             A harness does not change the machine. Dog treadmills are built for a dog's gait: longer belts for
             their body length, side panels so they cannot step off sideways by accident, low decks, and speed
@@ -645,9 +602,7 @@ const schema = {
             Some owners do use a human treadmill for a calm, medium-sized dog at walking pace, under constant
             supervision. If you do, everything above applies with more force: <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a> must suit the dog's
             stride, a lead must never be attached to the frame, and the gap at the rear roller must be watched
-            constantly. Our comparison of a
-            <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmill and a human treadmill</a>
-            sets out the differences.
+            constantly. Our comparison of a <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmill and a human treadmill</a> sets out the differences.
           </p>
           <p>
             One note on search terms: "treadmill harness" also describes body-weight support harnesses used in
@@ -657,7 +612,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When a Treadmill Is Not the Answer</h2>
+          <h2>When a Treadmill Is Not the Answer</h2>
 <p>
             <strong>Puppies</strong> are still growing, and repetitive exercise on a belt is a question for your vet
             before you start.
@@ -677,135 +632,153 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best dog harness for treadmill training?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A well-fitting walking harness that leaves the shoulders free, cannot slip off, and has nothing loose to catch in the belt. The Blue-9 Balance Harness suits most dogs because of its six adjustment points. If you want a handle for steadying a dog while it learns, consider the Julius-K9 IDC Powerharness or the rabbitgoo harness.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you tie a dog to a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. A dog attached to a treadmill cannot step off if it stumbles, panics or tires, and the belt keeps moving. Stay beside your dog, keep the stop control in reach, and if you use a lead while it learns, hold it in your hand, short and loose, clipped to the harness's back ring.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a harness or a collar better on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A harness. If a dog stumbles or pulls back, a harness spreads the force across the chest instead of the neck. But neither makes it safe to attach a dog to the machine; the harness is for guiding by hand.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which ring should the lead clip to on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The back ring. Front or chest rings are designed to turn a pulling dog sideways on walks, and a lead clipped there pulls the dog off line if it is held under any tension on a belt.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a human treadmill for a dog?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some owners do for a calm, medium-sized dog at walking pace, under constant supervision, but dog treadmills are safer: they have longer belts for a dog's body, side panels and low decks. Never attach a lead to the frame, and watch the gap at the rear roller closely.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I ask my vet before treadmill training my dog?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Your vet can tell you whether treadmill work suits your dog's age, breed, weight and health, and how much exercise is appropriate. That matters most for puppies, older dogs, flat-faced breeds and dogs with joint, heart or breathing problems.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Dog Treadmill Harnesses</h2>
+          <p>Most of these come from treating the harness as a restraint rather than a way to guide a dog by hand.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Clipping the lead to the treadmill</h3>
+              <p>A dog fixed to the machine cannot step off when it stumbles or panics, and the belt keeps moving. Hold the lead yourself, short and loose, or let a confident dog walk without one, and never leave it unsupervised.</p>
+            </li>
+            <li>
+              <h3>Leaving a tether or tag hanging</h3>
+              <p>Seatbelt tethers, long strap ends, lights and tags can reach the belt or rear roller. Remove the tether, tuck or trim strap ends, and take off anything that dangles below the chest before every session.</p>
+            </li>
+            <li>
+              <h3>Using the front clip</h3>
+              <p>Chest rings are for redirecting pulling on walks. On a belt, a lead clipped to the front pulls the dog sideways if you hold any tension. Use the back ring.</p>
+            </li>
+            <li>
+              <h3>Not checking the shoulders</h3>
+              <p>A harness that presses across the front of the shoulders shortens the stride, and on a treadmill that stride repeats for the whole session. Watch your dog trot in the harness first, and change style if its front reach looks restricted.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Dog Treadmill Harnesses</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from treating the harness as a restraint rather than a way to guide a dog by hand.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Clipping the lead to the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">A dog fixed to the machine cannot step off when it stumbles or panics, and the belt keeps moving. Hold the lead yourself, short and loose, or let a confident dog walk without one, and never leave it unsupervised.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving a tether or tag hanging</h3>
-              <p class="text-gray-700 text-sm m-0">Seatbelt tethers, long strap ends, lights and tags can reach the belt or rear roller. Remove the tether, tuck or trim strap ends, and take off anything that dangles below the chest before every session.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the front clip</h3>
-              <p class="text-gray-700 text-sm m-0">Chest rings are for redirecting pulling on walks. On a belt, a lead clipped to the front pulls the dog sideways if you hold any tension. Use the back ring.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking the shoulders</h3>
-              <p class="text-gray-700 text-sm m-0">A harness that presses across the front of the shoulders shortens the stride, and on a treadmill that stride repeats for the whole session. Watch your dog trot in the harness first, and change style if its front reach looks restricted.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Dog Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-dog-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Purpose-built dog treadmills sized by breed, with the safety rules that matter.</p>
-            </a>
-            <a href="/dog-treadmill-vs-human-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Dog Treadmill vs Human Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Belt length, side panels and speed: why the machines differ.</p>
-            </a>
-            <a href="/treadmill-for-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Training for Dogs</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to introduce a dog to a treadmill, and how long sessions should be.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             The right dog treadmill harness is a well-fitting walking harness used to guide a dog by hand, never to
             fix it to the machine. The <strong class="text-white">Blue-9 Balance Harness</strong> suits most dogs for
             its fit and freedom of movement; the Ruffwear Front Range is the most comfortable, and the Julius-K9 IDC
             Powerharness has the best handle for steadying a learner, if your dog moves freely in it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, <strong class="text-white">never tie a dog to a treadmill</strong>, never leave it
             unsupervised, clip any lead to the back ring and remove anything that dangles. Ask your vet before you
-            start. For the machines, see our guide to the
-            <a href="/best-dog-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best dog treadmills</a>.
+            start. For the machines, see our guide to the <a href="/best-dog-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best dog treadmills</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-dog-treadmills/">Best Dog Treadmills</a></li>
+            <li><a href="/dog-treadmill-vs-human-treadmill/">Dog Treadmill vs Human Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best dog harness for treadmill training?</h3></summary>
+            <p class="faq-a">
+              A well-fitting walking harness that leaves the shoulders free, cannot slip off, and has nothing loose to catch in the belt. The Blue-9 Balance Harness suits most dogs because of its six adjustment points. If you want a handle for steadying a dog while it learns, consider the Julius-K9 IDC Powerharness or the rabbitgoo harness.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Should you tie a dog to a treadmill?</h3></summary>
+            <p class="faq-a">
+              No. A dog attached to a treadmill cannot step off if it stumbles, panics or tires, and the belt keeps moving. Stay beside your dog, keep the stop control in reach, and if you use a lead while it learns, hold it in your hand, short and loose, clipped to the harness's back ring.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a harness or a collar better on a treadmill?</h3></summary>
+            <p class="faq-a">
+              A harness. If a dog stumbles or pulls back, a harness spreads the force across the chest instead of the neck. But neither makes it safe to attach a dog to the machine; the harness is for guiding by hand.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which ring should the lead clip to on a treadmill?</h3></summary>
+            <p class="faq-a">
+              The back ring. Front or chest rings are designed to turn a pulling dog sideways on walks, and a lead clipped there pulls the dog off line if it is held under any tension on a belt.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use a human treadmill for a dog?</h3></summary>
+            <p class="faq-a">
+              Some owners do for a calm, medium-sized dog at walking pace, under constant supervision, but dog treadmills are safer: they have longer belts for a dog's body, side panels and low decks. Never attach a lead to the frame, and watch the gap at the rear roller closely.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I ask my vet before treadmill training my dog?</h3></summary>
+            <p class="faq-a">
+              Yes. Your vet can tell you whether treadmill work suits your dog's age, breed, weight and health, and how much exercise is appropriate. That matters most for puppies, older dogs, flat-faced breeds and dogs with joint, heart or breathing problems.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Dog Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-dog-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Dog Treadmills</div>
+            <p class="c-blurb">Purpose-built dog treadmills sized by breed, with the safety rules that matter.</p>
+          </a>
+          <a href="/dog-treadmill-vs-human-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Dog Treadmill vs Human Treadmill</div>
+            <p class="c-blurb">Belt length, side panels and speed: why the machines differ.</p>
+          </a>
+          <a href="/treadmill-for-dogs/" class="card">
+            <div class="c-kicker">Guide</div>
+            <div class="c-title">Treadmill Training for Dogs</div>
+            <p class="c-blurb">How to introduce a dog to a treadmill, and how long sessions should be.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

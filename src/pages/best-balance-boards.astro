@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Balance Boards (2026): Wobble, Rocker, Roller and Desk";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-balance-boards/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best for a Standing Desk: FluidStance Plane Balance Board", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestbalanceboards" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestbalanceboards)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Balance Boards for Home, Sport and the Standing Desk</h1>
+      <p class="ed-dek">
+        A balance board can be a gentle fidget under a standing desk or a genuinely hard roller board for surf and snowboard practice. Here are five currently sold boards across the four common designs, how difficult each one is, what the weight ratings say, and how to use one without falling off it.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Balance Boards <span class="text-[#5AA9FF]">for Home, Sport and the Standing Desk</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A balance board can be a gentle fidget under a standing desk or a genuinely hard roller board for surf and snowboard practice. Here are five currently sold boards across the four common designs, how difficult each one is, what the weight ratings say, and how to use one without falling off it.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#types" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Types and Difficulty
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#fluidstance-plane"><img src="https://m.media-amazon.com/images/I/51ZtINKHbzS._SL500_.jpg" alt="FluidStance Plane Balance Board" width="500" height="500" decoding="async" /></a>
+          <a href="#strongtek-professional-wooden"><img src="https://m.media-amazon.com/images/I/21tDOGygbbL._SL500_.jpg" alt="StrongTek Professional Wooden Balance Board" width="400" height="500" decoding="async" /></a>
+          <a href="#yes4all-wooden-wobble"><img src="https://m.media-amazon.com/images/I/41fhxF74-HL._SL500_.jpg" alt="Yes4All Wooden Wobble Balance Board" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>FluidStance Plane Balance Board · StrongTek Professional Wooden Balance Board · Yes4All Wooden Wobble Balance Board</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          "Balance board" covers products that have almost nothing in common. A rocker board tips one
+          way and is easy enough to stand on while you answer email. A wobble board tilts in every
+          direction and asks more of your ankles. A roller board sits on a loose cylinder and will
+          throw you off if you lose concentration. Buying the wrong kind is the most common reason a
+          balance board ends up under the bed. The five boards below cover all four designs with
+          products you can buy on Amazon now, and the guide after them explains which suits a
+          standing desk, which suits sport practice, and who should talk to a clinician first.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for a Standing Desk:</span> <a href="#fluidstance-plane">FluidStance Plane Balance Board</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Rocker Board:</span> <a href="#strongtek-professional-wooden">StrongTek Professional Wooden Balance Board</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Wobble Board:</span> <a href="#yes4all-wooden-wobble">Yes4All Wooden Wobble Balance Board</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Classic Roller Board:</span> <a href="#indo-board-original">Indo Board Original</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Sport Training:</span> <a href="#revbalance-101-v2">Revbalance 101 V2</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           boards, and no figure on this page is our own measurement. Each was confirmed on 19
           October 2026 as listed on Amazon US, in most cases by the brand's own Amazon store, and
@@ -341,86 +362,33 @@ const schema = {
           retailers and we found no in-depth independent review of either, so their figures are
           the listings' own claims, repeated by other retailers. Prices are those we saw on that
           date and change often. We earn a commission if you buy through the Amazon links on this
-          page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">This is not medical advice.</strong> We review equipment;
+          page; it does not change which products we list or what we say about them. <strong class="text-gray-900">This is not medical advice.</strong> We review equipment;
           we are not giving medical, physiotherapy or rehabilitation advice, and we make no claim
           that any board improves balance, prevents falls or injuries, or treats any condition.
           Where a seller makes such claims, we present them as the seller's. A balance board is
           designed to be unstable, so falling off is a real risk. If you have a balance problem,
           dizziness, a history of falls, osteoporosis, a recent injury or surgery, or are pregnant,
           talk to a doctor or physical therapist before using one.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for a Standing Desk:</span>
-            <a href="#fluidstance-plane" class="font-bold text-gray-900 no-underline hover:underline">FluidStance Plane Balance Board</a>
-            <a href="#fluidstance-plane" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Rocker Board:</span>
-            <a href="#strongtek-professional-wooden" class="font-bold text-gray-900 no-underline hover:underline">StrongTek Professional Wooden Balance Board</a>
-            <a href="#strongtek-professional-wooden" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Wobble Board:</span>
-            <a href="#yes4all-wooden-wobble" class="font-bold text-gray-900 no-underline hover:underline">Yes4All Wooden Wobble Balance Board</a>
-            <a href="#yes4all-wooden-wobble" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Classic Roller Board:</span>
-            <a href="#indo-board-original" class="font-bold text-gray-900 no-underline hover:underline">Indo Board Original</a>
-            <a href="#indo-board-original" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Sport Training:</span>
-            <a href="#revbalance-101-v2" class="font-bold text-gray-900 no-underline hover:underline">Revbalance 101 V2</a>
-            <a href="#revbalance-101-v2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Balance Boards</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Boards</a>
-          <a href="#types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Types of Balance Board, From Easiest to Hardest</a>
-          <a href="#uses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What People Use Balance Boards For</a>
-          <a href="#desk" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Using a Balance Board at a Standing Desk</a>
-          <a href="#buyers-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What to Look For: Deck, Weight Limit and Size</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Safety: Falls, and Who Should Ask a Clinician First</a>
-          <a href="#who-should-buy-what" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Which Balance Board Should You Buy?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Balance Boards</a></li>
+            <li><a href="#how-we-chose">How We Chose These Boards</a></li>
+            <li><a href="#types">Types of Balance Board, From Easiest to Hardest</a></li>
+            <li><a href="#uses">What People Use Balance Boards For</a></li>
+            <li><a href="#desk">Using a Balance Board at a Standing Desk</a></li>
+            <li><a href="#buyers-guide">What to Look For: Deck, Weight Limit and Size</a></li>
+            <li><a href="#safety">Safety: Falls, and Who Should Ask a Clinician First</a></li>
+            <li><a href="#who-should-buy-what">Which Balance Board Should You Buy?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          "Balance board" covers products that have almost nothing in common. A rocker board tips one
-          way and is easy enough to stand on while you answer email. A wobble board tilts in every
-          direction and asks more of your ankles. A roller board sits on a loose cylinder and will
-          throw you off if you lose concentration. Buying the wrong kind is the most common reason a
-          balance board ends up under the bed. The five boards below cover all four designs with
-          products you can buy on Amazon now, and the guide after them explains which suits a
-          standing desk, which suits sport practice, and who should talk to a clinician first.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five boards, one or more for each design, listed roughly from easiest to hardest. If
             you want something to stand on at a desk, start at the top of the table. If you want a
@@ -443,19 +411,12 @@ const schema = {
           </table></div>
           <p>
             If the reason you are looking is to move more during a working day, a balance board is
-            one option among several. Our guides to
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desks</a>,
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
-            and
-            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk ellipticals</a>
-            cover the others, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>
-            links every guide in this series.
+            one option among several. Our guides to <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">treadmill desks</a>, <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a> and <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk ellipticals</a> cover the others, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Balance Boards</h2>
+          <h2>The 5 Best Balance Boards</h2>
 <p>
             Each card gives the figures we could confirm, the prices we saw and who the board suits.
             Where a figure is missing, the sources disagreed and the card says so. None of these
@@ -463,78 +424,67 @@ const schema = {
             describe what the board is, how it moves and what owners and reviewers commonly report.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Boards</h2>
+          <h2>How We Chose These Boards</h2>
 <p>
             We have not tested these boards. They were chosen from published specifications, maker
             and Amazon listings, and independent reviews, and every claim on this page is limited to
@@ -575,7 +525,7 @@ const schema = {
         </div>
 
         <div id="types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Types of Balance Board, From Easiest to Hardest</h2>
+          <h2>Types of Balance Board, From Easiest to Hardest</h2>
 <p>
             The design decides how a board moves, and how it moves decides how hard it is. This is
             the order most people find them, from gentlest to most demanding, though the exact
@@ -620,7 +570,7 @@ const schema = {
         </div>
 
         <div id="uses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What People Use Balance Boards For</h2>
+          <h2>What People Use Balance Boards For</h2>
 <p>
             There are three broad reasons people buy a balance board, and they point to different
             products.
@@ -653,14 +603,12 @@ const schema = {
             wobble board — which make a familiar exercise less stable. Treat that as an advanced
             variation, not a starting point, and never load a balance board with weights unless you
             are already very comfortable on it and the maker's rating allows for the total load.
-            For general home-gym equipment, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            are a better starting place.
+            For general home-gym equipment, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> are a better starting place.
           </p>
         </div>
 
         <div id="desk" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Using a Balance Board at a Standing Desk</h2>
+          <h2>Using a Balance Board at a Standing Desk</h2>
 <p>
             A board under a standing desk has to suit long periods and divided attention. A few
             practical points decide whether it works.
@@ -669,9 +617,7 @@ const schema = {
             <strong>Height.</strong> A board raises you, so your desk has to go higher to keep your
             elbows at the right height. FluidStance's own listing says its Plane adds roughly 2.5 to
             3 inches, and a dealer listing gives the same range for its Level board. Measure before you buy, and
-            check the desk's maximum height. Our guide to
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
-            explains the elbow-height calculation; it works the same way with a board, using the
+            check the desk's maximum height. Our guide to <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a> explains the elbow-height calculation; it works the same way with a board, using the
             board's height instead of the pad's deck.
           </p>
           <p>
@@ -694,16 +640,12 @@ const schema = {
           <p>
             <strong>Keep it away from treadmills.</strong> Never put a balance board on a walking pad
             or treadmill belt, and do not use one beside a running treadmill. If you want to walk
-            while you work, use a walking pad set up for it; our guides to
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">the best treadmill desks</a>
-            and the
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            cover that set-up.
+            while you work, use a walking pad set up for it; our guides to <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">the best treadmill desks</a> and the <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> cover that set-up.
           </p>
         </div>
 
         <div id="buyers-guide" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What to Look For: Deck, Weight Limit and Size</h2>
+          <h2>What to Look For: Deck, Weight Limit and Size</h2>
 <p>
             Once you know the type, four specifications separate a good board from a frustrating one.
           </p>
@@ -733,9 +675,7 @@ const schema = {
             <strong>Floor protection.</strong> Wooden bases and hard plastic domes can mark
             hardwood and slide on tile. A rubber base, an anti-slip strip, or a mat underneath helps.
             For roller boards, a thick carpet or a foam mat underneath is the usual advice for
-            beginners, as one Revbalance owner recommends on Amazon. A yoga or exercise mat works; our
-            <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga mat guide</a>
-            covers the options.
+            beginners, as one Revbalance owner recommends on Amazon. A yoga or exercise mat works; our <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga mat guide</a> covers the options.
           </p>
           <p>
             <strong>Price.</strong> Wobble and rocker boards from Yes4All and StrongTek cost roughly
@@ -746,7 +686,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Safety: Falls, and Who Should Ask a Clinician First</h2>
+          <h2>Safety: Falls, and Who Should Ask a Clinician First</h2>
 <p>
             A balance board is designed to be unstable, which means the most likely injury is the
             obvious one: falling off it, often sideways or backwards, sometimes onto furniture.
@@ -781,11 +721,7 @@ const schema = {
             feet, see a clinician about the unsteadiness first; balance problems have causes that
             deserve proper assessment, and a board is not a substitute for that. If you are looking
             for equipment you can use safely with a balance concern, a machine with handrails is
-            usually a better fit than a board; our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            and our
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a>
-            cover those options.
+            usually a better fit than a board; our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> and our <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a> cover those options.
           </p>
           <p>
             Stop using a board if you feel dizzy, faint, short of breath or have chest pain, or if a
@@ -794,7 +730,7 @@ const schema = {
         </div>
 
         <div id="who-should-buy-what" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Which Balance Board Should You Buy?</h2>
+          <h2>Which Balance Board Should You Buy?</h2>
 <p>
             <strong>For a standing desk</strong>, buy the FluidStance Plane if you want a board made
             for the job with a softer top, or the StrongTek rocker if you want to spend much less.
@@ -817,153 +753,165 @@ const schema = {
           </p>
           <p>
             <strong>If your goal is general fitness</strong>, a balance board is a small add-on, not
-            the centre of a home gym. A
-            <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder</a>
-            or the bigger equipment in our
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            will do more for most people's training, and vibration platforms, which are sometimes
-            marketed for balance, are covered separately in our
-            <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plate guide</a>.
+            the centre of a home gym. A <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder</a> or the bigger equipment in our <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a> will do more for most people's training, and vibration platforms, which are sometimes
+            marketed for balance, are covered separately in our <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plate guide</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best balance board?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on what you want it for. For a standing desk, a low, gentle board such as the FluidStance Plane, or a cheap rocker like the StrongTek wooden board. For a first board at home, a rocker and then a wobble board such as the Yes4All. For surf or snowboard practice, a roller board such as the Indo Board Original or the Revbalance 101 V2.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between a wobble board and a rocker board?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A rocker board tips along one axis, front to back or side to side, so it is easier to control and a good first board. A wobble board sits on a dome and tilts in every direction, which is harder and asks more of the ankles and hips. Roller boards, which travel sideways on a cylinder, are harder still.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are balance boards good for standing desks?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A low, gentle board can make standing at a desk more comfortable by letting you shift your weight, and many people like that. Choose a desk board or rocker, not a roller board, check that your desk goes high enough to make up for the board's height, and alternate it with sitting and standing on the floor. Seller claims about calorie burn are the seller's own.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are balance boards safe?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are designed to be unstable, so falling is the main risk. Clear space around the board, start next to a wall or sturdy support, begin with an easy design, and use roller boards on carpet with the stops close together. Talk to a doctor or physical therapist first if you have a balance problem, dizziness, a history of falls, osteoporosis, a recent injury or are pregnant.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a balance board help with balance problems?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We cannot tell you that, and you should not use a board to treat unsteadiness yourself. Balance problems have causes that need proper assessment, so see a doctor or physical therapist first. If they recommend balance work, they can tell you whether a board is appropriate and how to use it safely. This page is not medical advice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much weight can a balance board hold?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It varies by board and maker. Our picks are rated from 300 lb for the Yes4All wobble board to 400 lb for the Revbalance 101 V2, with the StrongTek and Indo boards at 350 lb. Listings for the same board sometimes disagree, so check the maker's current page and stay below the limit, especially if you hold weights.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Balance Boards</h2>
+          <p>Most balance-board problems come from choosing the wrong design or starting too hard.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Starting on a roller board</h3>
+              <p>A roller board moves out from under you, which is what makes it useful for board-sport practice and what makes it the easiest to fall off. Learn on a rocker or wobble board first, then move to a roller board with the stops close together, on carpet, next to a wall.</p>
+            </li>
+            <li>
+              <h3>Using it with no clear space or support</h3>
+              <p>People fall off balance boards sideways and backwards, often into furniture. Clear the space around the board, keep away from stairs, glass and other equipment, and have a wall or sturdy counter within reach. A standing desk is not a handrail and can tip if you grab it.</p>
+            </li>
+            <li>
+              <h3>Forgetting the desk height</h3>
+              <p>A board raises you by a couple of inches or more, so a standing desk that was right on the floor may now be too low. Measure your elbow height standing on the board and check the desk can reach it before you buy, or you will end up hunched over the keyboard.</p>
+            </li>
+            <li>
+              <h3>Treating it as a balance treatment</h3>
+              <p>If you are unsteady on your feet, recovering from an injury, or have had a fall, see a doctor or physical therapist before buying a board. They can assess the cause and say whether balance work on a board is appropriate. Using one unsupervised to fix a balance problem can make a fall more likely.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Balance Boards</h2>
-          <p class="text-gray-700 leading-relaxed">Most balance-board problems come from choosing the wrong design or starting too hard.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting on a roller board</h3>
-              <p class="text-gray-700 text-sm m-0">A roller board moves out from under you, which is what makes it useful for board-sport practice and what makes it the easiest to fall off. Learn on a rocker or wobble board first, then move to a roller board with the stops close together, on carpet, next to a wall.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using it with no clear space or support</h3>
-              <p class="text-gray-700 text-sm m-0">People fall off balance boards sideways and backwards, often into furniture. Clear the space around the board, keep away from stairs, glass and other equipment, and have a wall or sturdy counter within reach. A standing desk is not a handrail and can tip if you grab it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the desk height</h3>
-              <p class="text-gray-700 text-sm m-0">A board raises you by a couple of inches or more, so a standing desk that was right on the floor may now be too low. Measure your elbow height standing on the board and check the desk can reach it before you buy, or you will end up hunched over the keyboard.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating it as a balance treatment</h3>
-              <p class="text-gray-700 text-sm m-0">If you are unsteady on your feet, recovering from an injury, or have had a fall, see a doctor or physical therapist before buying a board. They can assess the cause and say whether balance work on a board is appropriate. Using one unsupervised to fix a balance problem can make a fall more likely.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Treadmill Desks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Desk-and-treadmill sets and standing desks that suit a walking pad.</p>
-            </a>
-            <a href="/standing-desk-height-for-walking-pad/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Desk Set-Up</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Standing Desk Height for a Walking Pad</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to work out the desk height you need once you are standing on something.</p>
-            </a>
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Home Gym Accessories</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The smaller kit that makes a home gym safer and easier to train in.</p>
-            </a>
-            <a href="/lifepro-waver-vibration-plate-review/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LifePro Waver Vibration Plate Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The specifications checked, the marketing claims read carefully, and who should ask a doctor first.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Match the board to the job.</strong> For a standing desk, the
             FluidStance Plane or the cheaper StrongTek rocker; for a first board at home, the StrongTek
             rocker and then the Yes4All wobble board; for surf, skate or snowboard practice, the Indo
             Board Original or the Revbalance 101 V2, whose adjustable stops make it easier to progress
             safely.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, clear the space, start next to something solid, and remember that the
             board is designed to make you fall if you stop paying attention. If unsteadiness is the
             reason you are looking, see a clinician first. And if what you really want is to move
-            more while you work, our guide to
-            <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">the best treadmill desks</a>
-            covers the walking alternative.
+            more while you work, our guide to <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">the best treadmill desks</a> covers the walking alternative.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-desks/">Best Treadmill Desks</a></li>
+            <li><a href="/standing-desk-height-for-walking-pad/">Standing Desk Height for a Walking Pad</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best balance board?</h3></summary>
+            <p class="faq-a">
+              It depends on what you want it for. For a standing desk, a low, gentle board such as the FluidStance Plane, or a cheap rocker like the StrongTek wooden board. For a first board at home, a rocker and then a wobble board such as the Yes4All. For surf or snowboard practice, a roller board such as the Indo Board Original or the Revbalance 101 V2.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between a wobble board and a rocker board?</h3></summary>
+            <p class="faq-a">
+              A rocker board tips along one axis, front to back or side to side, so it is easier to control and a good first board. A wobble board sits on a dome and tilts in every direction, which is harder and asks more of the ankles and hips. Roller boards, which travel sideways on a cylinder, are harder still.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are balance boards good for standing desks?</h3></summary>
+            <p class="faq-a">
+              A low, gentle board can make standing at a desk more comfortable by letting you shift your weight, and many people like that. Choose a desk board or rocker, not a roller board, check that your desk goes high enough to make up for the board's height, and alternate it with sitting and standing on the floor. Seller claims about calorie burn are the seller's own.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are balance boards safe?</h3></summary>
+            <p class="faq-a">
+              They are designed to be unstable, so falling is the main risk. Clear space around the board, start next to a wall or sturdy support, begin with an easy design, and use roller boards on carpet with the stops close together. Talk to a doctor or physical therapist first if you have a balance problem, dizziness, a history of falls, osteoporosis, a recent injury or are pregnant.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a balance board help with balance problems?</h3></summary>
+            <p class="faq-a">
+              We cannot tell you that, and you should not use a board to treat unsteadiness yourself. Balance problems have causes that need proper assessment, so see a doctor or physical therapist first. If they recommend balance work, they can tell you whether a board is appropriate and how to use it safely. This page is not medical advice.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much weight can a balance board hold?</h3></summary>
+            <p class="faq-a">
+              It varies by board and maker. Our picks are rated from 300 lb for the Yes4All wobble board to 400 lb for the Revbalance 101 V2, with the StrongTek and Indo boards at 350 lb. Listings for the same board sometimes disagree, so check the maker's current page and stay below the limit, especially if you hold weights.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-desks/" class="card">
+            <div class="c-kicker">Treadmill Desks</div>
+            <div class="c-title">Best Treadmill Desks</div>
+            <p class="c-blurb">Desk-and-treadmill sets and standing desks that suit a walking pad.</p>
+          </a>
+          <a href="/standing-desk-height-for-walking-pad/" class="card">
+            <div class="c-kicker">Desk Set-Up</div>
+            <div class="c-title">Standing Desk Height for a Walking Pad</div>
+            <p class="c-blurb">How to work out the desk height you need once you are standing on something.</p>
+          </a>
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Home Gym Accessories</div>
+            <p class="c-blurb">The smaller kit that makes a home gym safer and easier to train in.</p>
+          </a>
+          <a href="/lifepro-waver-vibration-plate-review/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">LifePro Waver Vibration Plate Review</div>
+            <p class="c-blurb">The specifications checked, the marketing claims read carefully, and who should ask a doctor first.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

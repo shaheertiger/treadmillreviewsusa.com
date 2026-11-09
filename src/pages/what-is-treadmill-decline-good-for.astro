@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Is Treadmill Decline Good For? (2026): Uses, Risks, How Much";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-is-treadmill-decline-good-for/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,119 +109,77 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See How to Start", link: "#introducing" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whatistreadmilldeclinegoodfor" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whatistreadmilldeclinegoodfor)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">What Is Treadmill Decline Actually Good For?</h1>
+      <p class="ed-dek">
+        Decline tilts the deck below level so you walk or run downhill. It is the least-used setting on the few treadmills that have it, and for a specific group of people it is the most useful. Here is what it trains, how much of it you need, how to start without a week of sore thighs, and who should leave it alone.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Is Treadmill Decline <span class="text-[#5AA9FF]">Actually Good For?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Decline tilts the deck below level so you walk or run downhill. It is the least-used setting on the few treadmills that have it, and for a specific group of people it is the most useful. Here is what it trains, how much of it you need, how to start without a week of sore thighs, and who should leave it alone.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#how-much" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            How Much Decline to Use
-          </a>
-          <a href="#introducing" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            A Four-Week Introduction
-          </a>
-        </div>
+        <a href="#how-much" class="btn-ghost">How Much Decline to Use</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Treadmill decline is good for one thing above all: preparing your legs for going downhill.
+          That matters to runners with a hilly or net-downhill race, to hikers heading somewhere with
+          long descents, and to anyone who has finished a hilly event with thighs that hurt for days.
+          It is not a gentler way to exercise, and it does little for most people who walk or run on
+          the flat. If you are deciding whether to pay for it, our guide to the <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">best treadmills with decline</a> lists the machines that genuinely have it; this page is about what it does once you do.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This is a guide to what a treadmill setting does and how people commonly use it — it is
           not medical, physiotherapy or coaching advice, and we are not qualified to give any of
           those. Downhill walking and running load the front of the knee and the thigh muscles in a
           way flat and uphill work do not. If you have knee pain, a knee, hip or ankle condition, a
           recent injury or surgery, a balance problem, or any concern about exercise, talk to a
-          doctor or physical therapist before using decline, and stop for sharp or joint pain.
-          <strong class="text-gray-900">On the figures below:</strong> grade conversions and
+          doctor or physical therapist before using decline, and stop for sharp or joint pain. <strong class="text-gray-900">On the figures below:</strong> grade conversions and
           height-per-mile figures are arithmetic; session lengths and progressions are illustrations
           rather than prescriptions; and the decline ranges quoted for named machines are the
           manufacturers' figures as listed on our roundup.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Is Treadmill Decline Good For? The Short Answer</a>
-          <a href="#what-it-changes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Decline Changes About Walking and Running</a>
-          <a href="#downhill-races" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Preparing for a Downhill or Hilly Race</a>
-          <a href="#hiking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Hiking and Mountain Trips: Training the Way Down</a>
-          <a href="#eccentric-soreness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Eccentric Quad Loading and the Soreness It Causes</a>
-          <a href="#how-much" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Much Decline, and for How Long</a>
-          <a href="#introducing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How to Introduce Decline: A Four-Week Start</a>
-          <a href="#who-should-avoid" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Avoid Decline, or Check First</a>
-          <a href="#without-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. If Your Treadmill Has No Decline</a>
-          <a href="#if-shopping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If You Are Shopping for a Treadmill With Decline</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Is Treadmill Decline Good For? The Short Answer</a></li>
+            <li><a href="#what-it-changes">What Decline Changes About Walking and Running</a></li>
+            <li><a href="#downhill-races">Preparing for a Downhill or Hilly Race</a></li>
+            <li><a href="#hiking">Hiking and Mountain Trips: Training the Way Down</a></li>
+            <li><a href="#eccentric-soreness">Eccentric Quad Loading and the Soreness It Causes</a></li>
+            <li><a href="#how-much">How Much Decline, and for How Long</a></li>
+            <li><a href="#introducing">How to Introduce Decline: A Four-Week Start</a></li>
+            <li><a href="#who-should-avoid">Who Should Avoid Decline, or Check First</a></li>
+            <li><a href="#without-decline">If Your Treadmill Has No Decline</a></li>
+            <li><a href="#if-shopping">If You Are Shopping for a Treadmill With Decline</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Treadmill decline is good for one thing above all: preparing your legs for going downhill.
-          That matters to runners with a hilly or net-downhill race, to hikers heading somewhere with
-          long descents, and to anyone who has finished a hilly event with thighs that hurt for days.
-          It is not a gentler way to exercise, and it does little for most people who walk or run on
-          the flat. If you are deciding whether to pay for it, our guide to the
-          <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">best treadmills with decline</a>
-          lists the machines that genuinely have it; this page is about what it does once you do.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Is Treadmill Decline Good For? The Short Answer</h2>
+          <h2>What Is Treadmill Decline Good For? The Short Answer</h2>
 <p>
             <strong>Decline is good for training the descent: it prepares the thigh muscles for the
-            braking work of downhill running and walking, which flat and uphill training do not.</strong>
-            That makes it useful for downhill or hilly races, for hiking and mountain trips, and for
+            braking work of downhill running and walking, which flat and uphill training do not.</strong> That makes it useful for downhill or hilly races, for hiking and mountain trips, and for
             reducing the severe muscle soreness that a first long descent tends to cause.
           </p>
           <p>
@@ -239,7 +202,7 @@ const schema = {
         </div>
 
         <div id="what-it-changes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Decline Changes About Walking and Running</h2>
+          <h2>What Decline Changes About Walking and Running</h2>
 <p>
             Tilting the deck down by a few per cent changes the work your legs do more than the
             number suggests.
@@ -286,13 +249,12 @@ const schema = {
           </table></div>
           <p>
             Percentages read steeper than they are, which is why -3% sounds modest and feels
-            definite. For the full conversion between per cent and degrees, see our explainer on
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent versus degrees</a>.
+            definite. For the full conversion between per cent and degrees, see our explainer on <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent versus degrees</a>.
           </p>
         </div>
 
         <div id="downhill-races" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Preparing for a Downhill or Hilly Race</h2>
+          <h2>Preparing for a Downhill or Hilly Race</h2>
 <p>
             This is the most common reason runners want decline, and the best-supported use of it.
           </p>
@@ -301,9 +263,7 @@ const schema = {
             which describes anyone training mainly on a treadmill without decline — can arrive at a
             course with long descents with legs that are fit but not prepared for the braking load.
             The uphills feel fine; the downhills are where the thighs start to fail, often in the
-            second half, and the soreness afterwards can be severe. Our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a>
-            guide calls this the downhill gap, and it is the gap decline exists to close.
+            second half, and the soreness afterwards can be severe. Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a> guide calls this the downhill gap, and it is the gap decline exists to close.
           </p>
           <p>
             <strong>Working out how much downhill your race has.</strong> Divide the height lost by
@@ -324,9 +284,7 @@ const schema = {
             the race, build to one decline session a week, and keep the last hard decline session at
             least ten days or so before race day, so any soreness has long gone. Short segments of
             gentle decline inside an easy run can continue closer to the race. Treat these numbers as
-            a widely used pattern rather than a rule, and fit them to your own plan; our guide to
-            <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training</a>
-            covers the same downhill gap for long races, and how to blend treadmill and outdoor
+            a widely used pattern rather than a rule, and fit them to your own plan; our guide to <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training</a> covers the same downhill gap for long races, and how to blend treadmill and outdoor
             running around it.
           </p>
           <p>
@@ -338,7 +296,7 @@ const schema = {
         </div>
 
         <div id="hiking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Hiking and Mountain Trips: Training the Way Down</h2>
+          <h2>Hiking and Mountain Trips: Training the Way Down</h2>
 <p>
             Hikers tend to train the climb, because the climb is what feels hard. The descent is where
             tired legs give out, knees complain and footing goes wrong, and a long day in the hills is
@@ -375,7 +333,7 @@ const schema = {
         </div>
 
         <div id="eccentric-soreness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Eccentric Quad Loading and the Soreness It Causes</h2>
+          <h2>Eccentric Quad Loading and the Soreness It Causes</h2>
 <p>
             The soreness after downhill exercise is the main thing people notice about decline, and
             the main reason to use it carefully.
@@ -408,7 +366,7 @@ const schema = {
         </div>
 
         <div id="how-much" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Much Decline, and for How Long</h2>
+          <h2>How Much Decline, and for How Long</h2>
 <p>
             The right amount depends on what you are preparing for. The table below is a starting
             framework, not a prescription; adjust it to your fitness and how your legs respond.
@@ -449,7 +407,7 @@ const schema = {
         </div>
 
         <div id="introducing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How to Introduce Decline: A Four-Week Start</h2>
+          <h2>How to Introduce Decline: A Four-Week Start</h2>
 <p>
             The aim of the first month is to get the soreness out of the way in small doses, so later
             sessions can be about the race or hike rather than recovery. The plan below is an
@@ -498,7 +456,7 @@ const schema = {
         </div>
 
         <div id="who-should-avoid" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Avoid Decline, or Check First</h2>
+          <h2>Who Should Avoid Decline, or Check First</h2>
 <p>
             Decline is a useful training tool for healthy legs and a poor choice for some people. This
             is general information rather than medical advice; if any of these apply, a doctor or
@@ -508,9 +466,7 @@ const schema = {
           <ul>
             <li><strong>Anyone with pain at the front of the knee.</strong> The familiar ache around or
             behind the kneecap is the kind of knee problem downhill loading most often aggravates. See
-            a physio before adding decline, not after it has made things worse. Our guide to whether
-            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
-            covers incline, decline and joint load more broadly.</li>
+            a physio before adding decline, not after it has made things worse. Our guide to whether <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a> covers incline, decline and joint load more broadly.</li>
             <li><strong>Anyone recovering from a knee, hip or ankle injury or surgery.</strong> Some
             rehabilitation programmes do use controlled downhill walking, but as a deliberate,
             supervised step. That is a clinician's call, not something to improvise.</li>
@@ -532,14 +488,12 @@ const schema = {
           </p>
           <p>
             And if your reason for wanting a treadmill is to be kind to your knees, decline is the
-            feature to care least about. Our roundup of the
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">best treadmills for bad knees</a>
-            focuses on cushioning and low-impact use instead.
+            feature to care least about. Our roundup of the <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">best treadmills for bad knees</a> focuses on cushioning and low-impact use instead.
           </p>
         </div>
 
         <div id="without-decline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If Your Treadmill Has No Decline</h2>
+          <h2>If Your Treadmill Has No Decline</h2>
 <p>
             Most home treadmills go no lower than flat. If yours is one of them, there are honest
             alternatives, and one thing not to do.
@@ -570,7 +524,7 @@ const schema = {
         </div>
 
         <div id="if-shopping" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If You Are Shopping for a Treadmill With Decline</h2>
+          <h2>If You Are Shopping for a Treadmill With Decline</h2>
 <p>
             If what you have read here describes your training — a downhill or hilly race, a hiking
             goal, or route workouts with real descents — decline is worth paying for. If it does not,
@@ -580,8 +534,7 @@ const schema = {
             <strong>What to look for:</strong>
           </p>
           <ul>
-            <li><strong>A decline figure confirmed on the manufacturer's own specification page.</strong>
-            Model names persist while hardware changes, and reviews sometimes describe decline that the
+            <li><strong>A decline figure confirmed on the manufacturer's own specification page.</strong> Model names persist while hardware changes, and reviews sometimes describe decline that the
             current model does not have.</li>
             <li><strong>The right range for your goal.</strong> -3% for most road runners; -6% for
             hikers and trail runners. On the machines our roundup could confirm, that meant the
@@ -594,150 +547,160 @@ const schema = {
             model before ordering.</li>
           </ul>
           <p>
-            Our roundup of
-            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills that genuinely decline</a>
-            sets out the five current machines with manufacturer-confirmed decline, their ranges,
+            Our roundup of <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills that genuinely decline</a> sets out the five current machines with manufacturer-confirmed decline, their ranges,
             warranties and caveats, and explains which brands we checked and found without it. Because
-            decline in the home market lives mostly at NordicTrack, our wider
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>
-            is also worth a look if you want to compare the decline models with the rest of the range.
+            decline in the home market lives mostly at NordicTrack, our wider <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a> is also worth a look if you want to compare the decline models with the rest of the range.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does decline on a treadmill do?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It tilts the front of the deck below level so you walk or run downhill. That shifts the work towards the front of the thighs, which lengthen under load as they brake each step, and it slightly reduces the effort on the heart and lungs at a given speed. Its main use is preparing the legs for downhill races and hiking descents.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is decline walking on a treadmill good for you?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For healthy legs with a reason to train the descent, yes: it prepares the thighs for downhill loading and reduces the soreness a long descent would otherwise cause. It is not a gentler alternative to flat walking, though, and it loads the front of the knee more. For general fitness, incline walking is usually the more useful direction.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much decline should I use on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start at -1% for a few short segments inside a normal session and build over about four weeks. For road races, -2% to -3% is usually enough; hikers and trail runners can work towards -6% where the machine allows it. Once adapted, one focused decline session a week is plenty for most goals.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is treadmill decline bad for your knees?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for healthy knees introduced to it gradually, which adapt to the extra load. Decline does increase the force at the front of the knee, so it can aggravate pain around or behind the kneecap. This is general information, not medical advice: if your knees already hurt, see a doctor or physical therapist before using decline.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why are my legs so sore after decline running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Because downhill work makes the thigh muscles lengthen while they resist load, which is known for causing delayed-onset soreness that peaks a day or two later. The good news is that muscles adapt fast, and a repeat session causes far less. Start with a few minutes at a gentle grade and build up rather than doubling the dose.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is -3% decline enough to train for a downhill race?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most road races, yes. Minus three per cent is a clearly falling road, covers most downhill sections, and is enough to train the braking work of the thighs. Check your course profile for its steepest, longest descents and match your sessions to those. Steep trail and mountain descents go well beyond any home treadmill's range.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Decline</h2>
+          <p>Decline is simple to use and easy to overdo. Most problems come from treating it like incline in the other direction.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Starting with a long descent</h3>
+              <p>Because a decline session feels easy on the breathing, people do far too much the first time and spend three days with stiff, sore thighs. Begin with two or three short segments at -1% inside a normal session, and build the total time on decline over several weeks before attempting long continuous blocks.</p>
+            </li>
+            <li>
+              <h3>Leaning back and overstriding</h3>
+              <p>Leaning back to feel in control lands the heel well ahead of the body and turns every step into a hard brake through the knee. Stay upright with hips over feet, shorten the stride, quicken the cadence and land softly. If each footfall is audible, the stride is too long.</p>
+            </li>
+            <li>
+              <h3>Leaving the first decline sessions until the last fortnight</h3>
+              <p>Eccentric soreness is worst the first time, so a first decline session close to a race or trip can leave you heavier-legged on the day than if you had done none. Start six to ten weeks out, and keep the last hard decline session well clear of race day.</p>
+            </li>
+            <li>
+              <h3>Propping up the back of a treadmill without decline</h3>
+              <p>Raising the rear feet on blocks changes how the deck sits on its frame and the floor, can make the machine unstable and runs it outside its design conditions. Use the manual's set-up only. If your treadmill does not decline, add some outdoor downhill walking or running instead.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Decline</h2>
-          <p class="text-gray-700 leading-relaxed">Decline is simple to use and easy to overdo. Most problems come from treating it like incline in the other direction.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting with a long descent</h3>
-              <p class="text-gray-700 text-sm m-0">Because a decline session feels easy on the breathing, people do far too much the first time and spend three days with stiff, sore thighs. Begin with two or three short segments at -1% inside a normal session, and build the total time on decline over several weeks before attempting long continuous blocks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaning back and overstriding</h3>
-              <p class="text-gray-700 text-sm m-0">Leaning back to feel in control lands the heel well ahead of the body and turns every step into a hard brake through the knee. Stay upright with hips over feet, shorten the stride, quicken the cadence and land softly. If each footfall is audible, the stride is too long.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the first decline sessions until the last fortnight</h3>
-              <p class="text-gray-700 text-sm m-0">Eccentric soreness is worst the first time, so a first decline session close to a race or trip can leave you heavier-legged on the day than if you had done none. Start six to ten weeks out, and keep the last hard decline session well clear of race day.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Propping up the back of a treadmill without decline</h3>
-              <p class="text-gray-700 text-sm m-0">Raising the rear feet on blocks changes how the deck sits on its frame and the floor, can make the machine unstable and runs it outside its design conditions. Use the manual's set-up only. If your treadmill does not decline, add some outdoor downhill walking or running instead.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-with-decline/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills With Decline</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five machines with manufacturer-confirmed powered decline, from -3% to -6%.</p>
-            </a>
-            <a href="/treadmill-hill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Workouts</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Hill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four incline sessions, plus the downhill gap and how to close it.</p>
-            </a>
-            <a href="/are-treadmills-bad-for-your-knees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Knees</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Treadmills Bad for Your Knees?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the evidence says about treadmill running, incline, decline and joint load.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Treadmill decline is for training the way down.</strong> It
             prepares the thighs for the braking work of downhill running and walking, which makes it
             genuinely useful before a hilly or net-downhill race, a hiking trip with long descents, or
             any event that has left your legs wrecked before.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Start with a few minutes at -1%, build over about four weeks, keep your stride short, and
             treat knee pain as a reason to stop and get advice. If decline fits your goals and you are
-            choosing a machine, our guide to the
-            <a href="/best-treadmills-with-decline/" class="text-[#5AA9FF] font-bold no-underline">treadmills with real powered decline</a>
-            sets out which ones have it and how far they go.
+            choosing a machine, our guide to the <a href="/best-treadmills-with-decline/" class="text-[#5AA9FF] font-bold no-underline">treadmills with real powered decline</a> sets out which ones have it and how far they go.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-with-decline/">Best Treadmills With Decline</a></li>
+            <li><a href="/treadmill-hill-workout/">Treadmill Hill Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What does decline on a treadmill do?</h3></summary>
+            <p class="faq-a">
+              It tilts the front of the deck below level so you walk or run downhill. That shifts the work towards the front of the thighs, which lengthen under load as they brake each step, and it slightly reduces the effort on the heart and lungs at a given speed. Its main use is preparing the legs for downhill races and hiking descents.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is decline walking on a treadmill good for you?</h3></summary>
+            <p class="faq-a">
+              For healthy legs with a reason to train the descent, yes: it prepares the thighs for downhill loading and reduces the soreness a long descent would otherwise cause. It is not a gentler alternative to flat walking, though, and it loads the front of the knee more. For general fitness, incline walking is usually the more useful direction.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much decline should I use on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Start at -1% for a few short segments inside a normal session and build over about four weeks. For road races, -2% to -3% is usually enough; hikers and trail runners can work towards -6% where the machine allows it. Once adapted, one focused decline session a week is plenty for most goals.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is treadmill decline bad for your knees?</h3></summary>
+            <p class="faq-a">
+              Not for healthy knees introduced to it gradually, which adapt to the extra load. Decline does increase the force at the front of the knee, so it can aggravate pain around or behind the kneecap. This is general information, not medical advice: if your knees already hurt, see a doctor or physical therapist before using decline.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why are my legs so sore after decline running?</h3></summary>
+            <p class="faq-a">
+              Because downhill work makes the thigh muscles lengthen while they resist load, which is known for causing delayed-onset soreness that peaks a day or two later. The good news is that muscles adapt fast, and a repeat session causes far less. Start with a few minutes at a gentle grade and build up rather than doubling the dose.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is -3% decline enough to train for a downhill race?</h3></summary>
+            <p class="faq-a">
+              For most road races, yes. Minus three per cent is a clearly falling road, covers most downhill sections, and is enough to train the braking work of the thighs. Check your course profile for its steepest, longest descents and match your sessions to those. Steep trail and mountain descents go well beyond any home treadmill's range.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-with-decline/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Treadmills With Decline</div>
+            <p class="c-blurb">Five machines with manufacturer-confirmed powered decline, from -3% to -6%.</p>
+          </a>
+          <a href="/treadmill-hill-workout/" class="card">
+            <div class="c-kicker">Workouts</div>
+            <div class="c-title">Treadmill Hill Workout</div>
+            <p class="c-blurb">Four incline sessions, plus the downhill gap and how to close it.</p>
+          </a>
+          <a href="/are-treadmills-bad-for-your-knees/" class="card">
+            <div class="c-kicker">Knees</div>
+            <div class="c-title">Are Treadmills Bad for Your Knees?</div>
+            <p class="c-blurb">What the evidence says about treadmill running, incline, decline and joint load.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

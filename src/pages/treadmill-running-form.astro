@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Running Form (2026): How to Run Properly on a Belt";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-running-form/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Checklist", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillrunningform" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillrunningform)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Running Form: How to Run Properly on a Belt</h1>
+      <p class="ed-dek">
+        Good treadmill form is mostly good running form, with a few belt-specific habits on top. Here is what to pay attention to, what to ignore, and how to change your stride without breaking anything.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Running Form: <span class="text-[#5AA9FF]">How to Run Properly on a Belt</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Good treadmill form is mostly good running form, with a few belt-specific habits on top. Here is what to pay attention to, what to ignore, and how to change your stride without breaking anything.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Checklist
-          </a>
-          <a href="#common-faults" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Common Faults
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Checklist</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is general guidance on running technique on a belt — it is not medical
-          advice, a gait analysis or physiotherapy. If you have pain while running, a current
-          injury, or a history of recurring injuries, a physical therapist or sports medicine
-          clinician can assess your running properly and is a much better source than a website.
-          Change technique gradually, and stop if a change causes pain.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: A Form Checklist</a>
-          <a href="#posture" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Posture: Tall, With a Lean From the Ankles</a>
-          <a href="#cadence" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Cadence: Shorter, Quicker Steps (If You Need Them)</a>
-          <a href="#overstriding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Overstriding: The Fault Worth Fixing</a>
-          <a href="#footstrike" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Footstrike: Heel, Midfoot or Forefoot?</a>
-          <a href="#arms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Arm Swing</a>
-          <a href="#hands-off" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Do Not Hold the Rails</a>
-          <a href="#belt-position" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Where to Run on the Belt</a>
-          <a href="#belt-pulling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Is the Belt Pulling Your Legs? Myth and Reality</a>
-          <a href="#common-faults" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Common Treadmill Form Faults, and Fixes</a>
-          <a href="#changing-form" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How to Change Your Form Without Getting Hurt</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           To run properly on a treadmill: stand tall with a slight forward lean from the ankles,
           look ahead rather than down, land with your foot roughly under your hips rather than out
           in front, take slightly shorter and quicker steps than feels natural if you overstride,
@@ -206,8 +144,37 @@ const schema = {
           the belt. Everything else is detail — useful detail, but detail.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This is general guidance on running technique on a belt — it is not medical
+          advice, a gait analysis or physiotherapy. If you have pain while running, a current
+          injury, or a history of recurring injuries, a physical therapist or sports medicine
+          clinician can assess your running properly and is a much better source than a website.
+          Change technique gradually, and stop if a change causes pain.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: A Form Checklist</a></li>
+            <li><a href="#posture">Posture: Tall, With a Lean From the Ankles</a></li>
+            <li><a href="#cadence">Cadence: Shorter, Quicker Steps (If You Need Them)</a></li>
+            <li><a href="#overstriding">Overstriding: The Fault Worth Fixing</a></li>
+            <li><a href="#footstrike">Footstrike: Heel, Midfoot or Forefoot?</a></li>
+            <li><a href="#arms">Arm Swing</a></li>
+            <li><a href="#hands-off">Do Not Hold the Rails</a></li>
+            <li><a href="#belt-position">Where to Run on the Belt</a></li>
+            <li><a href="#belt-pulling">Is the Belt Pulling Your Legs? Myth and Reality</a></li>
+            <li><a href="#common-faults">Common Treadmill Form Faults, and Fixes</a></li>
+            <li><a href="#changing-form">How to Change Your Form Without Getting Hurt</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: A Form Checklist</h2>
+          <h2>The Short Answer: A Form Checklist</h2>
 <p>
             If you only read one section, make it this one. Run through the list in the first few
             minutes of an easy run, one item at a time, rather than trying to fix everything at
@@ -232,14 +199,13 @@ const schema = {
           </ul>
           <p>
             If you are new to the machine itself — the safety key, stepping on and off, stopping —
-            start with our guide to
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>.
+            start with our guide to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>.
             This page assumes you are comfortable on a moving belt and want to run better on it.
           </p>
         </div>
 
         <div id="posture" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Posture: Tall, With a Lean From the Ankles</h2>
+          <h2>Posture: Tall, With a Lean From the Ankles</h2>
 <p>
             Good running posture looks like good standing posture tipped very slightly forward.
             Imagine a line from your ear through your shoulder and hip to your ankle, and lean that
@@ -267,14 +233,12 @@ const schema = {
           <p>
             <strong>On an incline</strong>, the lean increases naturally, but it should still come
             from the ankles. If you find yourself folding at the hips on a grade, it is often too
-            steep for the speed. Our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">hill workout guide</a>
-            covers form on climbs.
+            steep for the speed. Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">hill workout guide</a> covers form on climbs.
           </p>
         </div>
 
         <div id="cadence" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Cadence: Shorter, Quicker Steps (If You Need Them)</h2>
+          <h2>Cadence: Shorter, Quicker Steps (If You Need Them)</h2>
 <p>
             Cadence is the number of steps you take per minute. It has become one of the most
             discussed variables in running form, partly because it is easy to measure and partly
@@ -307,7 +271,7 @@ const schema = {
         </div>
 
         <div id="overstriding" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Overstriding: The Fault Worth Fixing</h2>
+          <h2>Overstriding: The Fault Worth Fixing</h2>
 <p>
             Overstriding means reaching out in front with a long step and landing with your foot
             well ahead of your hips, usually on a straightish leg. It is the most common running
@@ -335,15 +299,12 @@ const schema = {
           <p>
             Short decks encourage the opposite problem — a cramped, choppy stride — because people
             are wary of kicking the motor hood. If you feel squeezed on your belt, the belt may be
-            short for your stride; our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            covers running lengths, and taller runners should see our guide to
-            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a>.
+            short for your stride; our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> covers running lengths, and taller runners should see our guide to <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a>.
           </p>
         </div>
 
         <div id="footstrike" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Footstrike: Heel, Midfoot or Forefoot?</h2>
+          <h2>Footstrike: Heel, Midfoot or Forefoot?</h2>
 <p>
             Few running topics generate more argument for less practical benefit. Most recreational
             runners land heel first, many good runners land midfoot, and some land on the
@@ -371,7 +332,7 @@ const schema = {
         </div>
 
         <div id="arms" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Arm Swing</h2>
+          <h2>Arm Swing</h2>
 <p>
             Your arms balance the rotation of your legs. They do not need to do anything clever,
             but they do need to move freely.
@@ -396,7 +357,7 @@ const schema = {
         </div>
 
         <div id="hands-off" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Do Not Hold the Rails</h2>
+          <h2>Do Not Hold the Rails</h2>
 <p>
             Holding the handrails or the front of the console while running changes almost
             everything on this page. Arm swing stops, posture tips, stride shortens and stiffens,
@@ -412,14 +373,12 @@ const schema = {
             The rails are for stepping on and off, changing settings, recovering your balance and
             anyone whose balance genuinely needs support. If you need to hold on to keep up, the
             belt is too fast or too steep — turn it down. Grip-sensor heart rate is a common reason
-            people hold on, and our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            explains why a chest strap or wrist monitor is a better tool anyway.
+            people hold on, and our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a> explains why a chest strap or wrist monitor is a better tool anyway.
           </p>
         </div>
 
         <div id="belt-position" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Where to Run on the Belt</h2>
+          <h2>Where to Run on the Belt</h2>
 <p>
             Aim for the middle of the belt, roughly an arm's length from the console, and centred
             side to side. That gives you margin in every direction: room to stride without
@@ -440,15 +399,12 @@ const schema = {
           <p>
             Your position also tells you something about the machine. A belt that is off-centre on
             the deck can make you feel pushed to one side, and a belt that hesitates on every
-            footfall will push you backward. Our guides to
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a>
-            and a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows when you step on it</a>
-            cover those faults.
+            footfall will push you backward. Our guides to <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a> and a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows when you step on it</a> cover those faults.
           </p>
         </div>
 
         <div id="belt-pulling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Is the Belt Pulling Your Legs? Myth and Reality</h2>
+          <h2>Is the Belt Pulling Your Legs? Myth and Reality</h2>
 <p>
             A common belief is that the treadmill "does the work" by pulling your feet backward,
             so you only have to lift them. On a well-functioning machine, that is mostly a myth.
@@ -470,8 +426,7 @@ const schema = {
             find their stride feels choppy as a result.
           </p>
           <p>
-            Our <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill vs running outside</a>
-            page covers all three in detail. The practical upshot for form: run on the belt the way
+            Our <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill vs running outside</a> page covers all three in detail. The practical upshot for form: run on the belt the way
             you would run outdoors, and do not shuffle on the assumption that the machine will move
             your legs for you. If you find yourself "lifting and placing" rather than pushing off,
             your stride is being shaped by the belt rather than your running.
@@ -479,7 +434,7 @@ const schema = {
         </div>
 
         <div id="common-faults" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Common Treadmill Form Faults, and Fixes</h2>
+          <h2>Common Treadmill Form Faults, and Fixes</h2>
 <p>
             Most treadmill form problems fall into a short list. Each fix is a cue to try for a
             few minutes at a time on an easy run.
@@ -511,7 +466,7 @@ const schema = {
         </div>
 
         <div id="changing-form" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How to Change Your Form Without Getting Hurt</h2>
+          <h2>How to Change Your Form Without Getting Hurt</h2>
 <p>
             Your current stride is the one your body has adapted to over years. Changing it shifts
             load to tissues that are not used to it, which is why sudden technique changes are a
@@ -536,19 +491,15 @@ const schema = {
           </p>
           <p>
             <strong>Consider your shoes and deck, briefly.</strong> Very worn shoes and very firm
-            or very soft decks all change how running feels. Our guide to
-            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
-            explains what deck suspension does and does not do, and if knees are your concern, our
-            page on <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills and knees</a>
-            covers that question directly.
+            or very soft decks all change how running feels. Our guide to <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a> explains what deck suspension does and does not do, and if knees are your concern, our
+            page on <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills and knees</a> covers that question directly.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
-            <strong>Run tall, look ahead, land under your hips and let your arms swing.</strong>
-            Keep off the rails and stay in the middle of the belt. That covers most of what good
+            <strong>Run tall, look ahead, land under your hips and let your arms swing.</strong> Keep off the rails and stay in the middle of the belt. That covers most of what good
             treadmill form is.
           </p>
           <p>
@@ -562,145 +513,159 @@ const schema = {
             rather than everything at once.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you run properly on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Stand tall with a slight forward lean from the ankles, look ahead rather than at your feet, land with your foot roughly under your hips, let your arms swing forward and back, and run in the middle of the belt without holding the rails. If you overstride, take slightly shorter, quicker steps.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is good treadmill running form?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The same as good outdoor running form: relaxed upright posture, eyes forward, a foot landing close to under the body with a slightly bent knee, a free arm swing that does not cross the body, and reasonably quiet footfalls. On a treadmill, add two habits — hands off the rails and stay centred on the belt.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What cadence should I run at on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no single correct number, and 180 steps per minute is not a universal target. Cadence varies with height and speed. If you overstride, raising your natural step rate by about 5 to 10% is a well-supported way to shorten the stride. If you already land under your body without pain, you do not need to change it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I run on my toes on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not necessarily. No footstrike pattern has been shown to prevent injury overall; switching to the forefoot mainly moves load from the knee to the calf and Achilles. Focus on landing under your hips rather than out in front. If you change footstrike, do it gradually, ideally with a physical therapist's guidance.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the treadmill belt pull your legs back?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a well-functioning machine, mostly no. Running on a steadily moving belt is physically equivalent to running over still ground — you still push off and swing your legs. The real differences are no air resistance, a perfectly even surface, and a belt that briefly slows at each footfall on underpowered machines.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do I keep drifting back on the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because the speed is slightly beyond what you can hold comfortably, because you are looking down, or because you are overstriding and braking with each step. Lift your eyes to a point ahead, check your foot lands under your hips, and lower the speed slightly if needed. A belt that hesitates on each step can also push you back.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Running Form</h2>
+          <p>Most of these come from trying too hard rather than not trying at all.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Chasing 180 steps per minute</h3>
+              <p>The number came from elite runners at race pace and was never a universal target. Forcing a big jump in cadence produces a tense, shuffling stride. If you overstride, a 5 to 10% increase on your natural step rate is plenty — and if you do not, leave it alone.</p>
+            </li>
+            <li>
+              <h3>Switching to a forefoot strike overnight</h3>
+              <p>A sudden change of footstrike moves load onto the calves and Achilles tendons, which adapt slowly. It is a classic route to weeks of calf soreness or tendon trouble. Fix where the foot lands first, and change footstrike only gradually, if at all.</p>
+            </li>
+            <li>
+              <h3>Running while watching the console</h3>
+              <p>Staring at the display or the belt drops the head, rounds the shoulders and shortens the stride, and it makes drifting on the belt more likely. Put a point of focus or a screen at eye level straight ahead and glance down only when you need to.</p>
+            </li>
+            <li>
+              <h3>Fixing everything at once</h3>
+              <p>Correcting posture, cadence, arm swing and footstrike in the same run produces stiff, self-conscious running and nothing that lasts. Pick one cue, use it for a few minutes in each easy run, and add the next only when the first feels natural.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Running Form</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from trying too hard rather than not trying at all.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Chasing 180 steps per minute</h3>
-              <p class="text-gray-700 text-sm m-0">The number came from elite runners at race pace and was never a universal target. Forcing a big jump in cadence produces a tense, shuffling stride. If you overstride, a 5 to 10% increase on your natural step rate is plenty — and if you do not, leave it alone.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Switching to a forefoot strike overnight</h3>
-              <p class="text-gray-700 text-sm m-0">A sudden change of footstrike moves load onto the calves and Achilles tendons, which adapt slowly. It is a classic route to weeks of calf soreness or tendon trouble. Fix where the foot lands first, and change footstrike only gradually, if at all.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running while watching the console</h3>
-              <p class="text-gray-700 text-sm m-0">Staring at the display or the belt drops the head, rounds the shoulders and shortens the stride, and it makes drifting on the belt more likely. Put a point of focus or a screen at eye level straight ahead and glance down only when you need to.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fixing everything at once</h3>
-              <p class="text-gray-700 text-sm m-0">Correcting posture, cadence, arm swing and footstrike in the same run produces stiff, self-conscious running and nothing that lasts. Pick one cue, use it for a few minutes in each easy run, and add the next only when the first feels natural.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Running Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-use-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Basics</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Use a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Safety key, stepping on and off, and a safe first session.</p>
-            </a>
-            <a href="/treadmill-vs-running-outside/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Indoors vs Out</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs Running Outside</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why the belt does not pull you, and what really differs.</p>
-            </a>
-            <a href="/best-treadmills-for-running/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Machines</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Running</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Decks long enough for a running stride and motors that hold speed.</p>
-            </a>
-            <a href="/how-to-start-running-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Beginner</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Start Running on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Walk-run intervals, starting speeds, form on the belt and an eight-week progression.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Run tall, look ahead, land under your hips, swing your
             arms and keep off the rails.</strong> If you overstride, take slightly quicker steps —
             a few percent above your natural cadence, not a leap to 180.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Do not force a forefoot strike, change one thing at a time, and film yourself side-on to
             see what is really happening. The belt does not run for you; the basics of getting on
-            and off safely are in our
-            <a href="/how-to-use-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to use a treadmill</a>
-            guide.
+            and off safely are in our <a href="/how-to-use-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">how to use a treadmill</a> guide.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-use-a-treadmill/">How to Use a Treadmill</a></li>
+            <li><a href="/treadmill-vs-running-outside/">Treadmill vs Running Outside</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you run properly on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Stand tall with a slight forward lean from the ankles, look ahead rather than at your feet, land with your foot roughly under your hips, let your arms swing forward and back, and run in the middle of the belt without holding the rails. If you overstride, take slightly shorter, quicker steps.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is good treadmill running form?</h3></summary>
+            <p class="faq-a">
+              The same as good outdoor running form: relaxed upright posture, eyes forward, a foot landing close to under the body with a slightly bent knee, a free arm swing that does not cross the body, and reasonably quiet footfalls. On a treadmill, add two habits — hands off the rails and stay centred on the belt.
             </p>
+          </details>
+          <details>
+            <summary><h3>What cadence should I run at on a treadmill?</h3></summary>
+            <p class="faq-a">
+              There is no single correct number, and 180 steps per minute is not a universal target. Cadence varies with height and speed. If you overstride, raising your natural step rate by about 5 to 10% is a well-supported way to shorten the stride. If you already land under your body without pain, you do not need to change it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I run on my toes on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Not necessarily. No footstrike pattern has been shown to prevent injury overall; switching to the forefoot mainly moves load from the knee to the calf and Achilles. Focus on landing under your hips rather than out in front. If you change footstrike, do it gradually, ideally with a physical therapist's guidance.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the treadmill belt pull your legs back?</h3></summary>
+            <p class="faq-a">
+              On a well-functioning machine, mostly no. Running on a steadily moving belt is physically equivalent to running over still ground — you still push off and swing your legs. The real differences are no air resistance, a perfectly even surface, and a belt that briefly slows at each footfall on underpowered machines.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do I keep drifting back on the treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually because the speed is slightly beyond what you can hold comfortably, because you are looking down, or because you are overstriding and braking with each step. Lift your eyes to a point ahead, check your foot lands under your hips, and lower the speed slightly if needed. A belt that hesitates on each step can also push you back.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Running Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-use-a-treadmill/" class="card">
+            <div class="c-kicker">Basics</div>
+            <div class="c-title">How to Use a Treadmill</div>
+            <p class="c-blurb">Safety key, stepping on and off, and a safe first session.</p>
+          </a>
+          <a href="/treadmill-vs-running-outside/" class="card">
+            <div class="c-kicker">Indoors vs Out</div>
+            <div class="c-title">Treadmill vs Running Outside</div>
+            <p class="c-blurb">Why the belt does not pull you, and what really differs.</p>
+          </a>
+          <a href="/best-treadmills-for-running/" class="card">
+            <div class="c-kicker">Machines</div>
+            <div class="c-title">Best Treadmills for Running</div>
+            <p class="c-blurb">Decks long enough for a running stride and motors that hold speed.</p>
+          </a>
+          <a href="/how-to-start-running-on-a-treadmill/" class="card">
+            <div class="c-kicker">Beginner</div>
+            <div class="c-title">How to Start Running on a Treadmill</div>
+            <p class="c-blurb">Walk-run intervals, starting speeds, form on the belt and an eight-week progression.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

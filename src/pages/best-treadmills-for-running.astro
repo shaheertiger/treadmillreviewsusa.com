@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills for Running (2026): Deck Length First, Motor Second";
 const description =
@@ -270,6 +269,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-for-running/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -290,66 +295,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Top Pick", link: "#nordictrack-commercial-1750" }}
+  stickyCta={{ text: "Best Overall: NordicTrack Commercial 1750", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillsforrunning" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsforrunning)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills for Running</h1>
+      <p class="ed-dek">
+        Six machines, compared on the specifications that matter at 7 mph and faster. The ranking is decided by deck length and frame rigidity — not by the horsepower figure on the box.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills for <span class="text-[#5AA9FF]">Running</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Six machines, compared on the specifications that matter at 7 mph and faster. The ranking is decided by deck length and frame rigidity — not by the horsepower figure on the box.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#nordictrack-commercial-1750" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Top Pick
-          </a>
-          <a href="#criteria" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Runner’s Four Specs
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-commercial-1750"><img src="https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg" alt="NordicTrack Commercial 1750" width="500" height="500" decoding="async" /></a>
+          <a href="#sole-f65"><img src="https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg" alt="Sole F65" width="500" height="500" decoding="async" /></a>
+          <a href="#proform-pro-2000"><img src="https://m.media-amazon.com/images/I/31M4plx9X1L._SL500_.jpg" alt="ProForm Pro 2000" width="500" height="446" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
+        <figcaption>NordicTrack Commercial 1750 · Sole F65 · ProForm Pro 2000</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A walker can be happy on almost any treadmill. A runner cannot, and the reason is
+          geometry rather than power: at 8 mph your stride is roughly twice as long as it is at
+          3 mph, and the deck either has room for it or it does not. No amount of motor solves
+          a short deck.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="4.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#nordictrack-commercial-1750">NordicTrack Commercial 1750</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">No Subscription:</span> <a href="#sole-f65">Sole F65</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#proform-pro-2000">ProForm Pro 2000</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Hills:</span> <a href="#nordictrack-commercial-2450">NordicTrack Commercial 2450</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Longest Lasting:</span> <a href="#life-fitness-t3">Life Fitness T3</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Gym Grade:</span> <a href="#matrix-t7xe">Matrix Fitness T7xe</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the numbers below.</strong> Deck dimensions, motor
           ratings and weight capacities are the manufacturers' published figures, and price
           bands are typical street prices rather than live pricing. Specifications change
@@ -357,74 +379,25 @@ const schema = {
           motor rating against the exact unit you are buying before you order. We have not
           tested these machines: the judgements below come from those published figures and from
           what the specifications imply for a runner. None of them are our own measurements.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
-            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">No Subscription:</span>
-            <a href="#sole-f65" class="font-bold text-gray-900 no-underline hover:underline">Sole F65</a>
-            <a href="#sole-f65" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#proform-pro-2000" class="font-bold text-gray-900 no-underline hover:underline">ProForm Pro 2000</a>
-            <a href="#proform-pro-2000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Hills:</span>
-            <a href="#nordictrack-commercial-2450" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 2450</a>
-            <a href="#nordictrack-commercial-2450" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Longest Lasting:</span>
-            <a href="#life-fitness-t3" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness T3</a>
-            <a href="#life-fitness-t3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#why-running-differs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Running Changes the Ranking Completely</a>
-          <a href="#criteria" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Four Specs That Actually Decide It</a>
-          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Six Best Treadmills for Running</a>
-          <a href="#tall-runners" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. If You Are Over Six Feet</a>
-          <a href="#cushioning" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Cushioning, Shin Splints and Transfer to Road</a>
-          <a href="#incline-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Incline, Decline and Why Decline Is Rare</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#why-running-differs">Why Running Changes the Ranking Completely</a></li>
+            <li><a href="#criteria">The Four Specs That Actually Decide It</a></li>
+            <li><a href="#how-we-tested">How We Chose</a></li>
+            <li><a href="#picks">The Six Best Treadmills for Running</a></li>
+            <li><a href="#tall-runners">If You Are Over Six Feet</a></li>
+            <li><a href="#cushioning">Cushioning, Shin Splints and Transfer to Road</a></li>
+            <li><a href="#incline-decline">Incline, Decline and Why Decline Is Rare</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A walker can be happy on almost any treadmill. A runner cannot, and the reason is
-          geometry rather than power: at 8 mph your stride is roughly twice as long as it is at
-          3 mph, and the deck either has room for it or it does not. No amount of motor solves
-          a short deck.
-        </p>
 
         <div id="why-running-differs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Running Changes the Ranking Completely</h2>
+          <h2>Why Running Changes the Ranking Completely</h2>
 <p>
             Most treadmill roundups are written around a general home user, which in practice
             means someone walking and jogging between 3 and 5 mph. At those speeds the deck is
@@ -451,22 +424,18 @@ const schema = {
           <p>
             Motor horsepower, which is the specification most people shop on, is the one that
             matters least once you clear a low bar. Any machine rated 3.0 CHP or above will hold
-            pace for a runner of ordinary weight. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why the peak-horsepower figure on the box is close to meaningless.
+            pace for a runner of ordinary weight. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why the peak-horsepower figure on the box is close to meaningless.
           </p>
         </div>
 
         <div id="criteria" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Four Specs That Actually Decide It</h2>
+          <h2>The Four Specs That Actually Decide It</h2>
 <p>
             <strong>Deck length.</strong> The single most important number for a runner. Sixty
             inches is the working minimum for anyone over about 5'8", and 60 inches is what we
             would treat as non-negotiable for someone over 6 feet or running faster than 8 mph.
             Fifty-five-inch decks are fine for walking and jogging and become a constraint the
-            moment you extend. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through the stride arithmetic properly.
+            moment you extend. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> works through the stride arithmetic properly.
           </p>
           <p>
             <strong>Deck width.</strong> Twenty inches is standard and adequate. Twenty-two
@@ -494,7 +463,7 @@ const schema = {
         </div>
 
         <div id="how-we-tested" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose</h2>
+          <h2>How We Chose</h2>
 <p>
             We have not run on these machines, and nothing on this page should be read as if we
             had. Each one was chosen and ranked from the manufacturer's published specifications,
@@ -514,90 +483,78 @@ const schema = {
             Runner size matters as much as the machine. A lighter runner and a taller, heavier
             one can reach opposite verdicts on the same treadmill, so where a machine's deck or
             frame makes it better suited to one than the other, its entry says so. Our
-            full <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
-            explains how we assess machines from published data.
+            full <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a> explains how we assess machines from published data.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Six Best Treadmills for Running</h2>
+          <h2>The Six Best Treadmills for Running</h2>
 <p>
             Ranked for running specifically. Where a machine ranks differently in our general
             guides, we have said why in its entry.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="tall-runners" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. If You Are Over Six Feet</h2>
+          <h2>If You Are Over Six Feet</h2>
 <p>
             Height changes the shortlist more than any other personal variable. The stride
             arithmetic is unforgiving: at 6'2" and above, a 55-inch deck leaves almost no margin
@@ -610,14 +567,12 @@ const schema = {
             treadmill deck sits 6 to 10 inches off the floor, and a <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runner</a> on an inclined
             deck needs meaningfully more headroom than the room's dimensions suggest. Add your
             height to the deck height, then add a few inches of stride bounce, and compare that
-            against the ceiling before ordering — our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a>
-            covers the full clearance arithmetic including the six feet you need behind the deck.
+            against the ceiling before ordering — our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a> covers the full clearance arithmetic including the six feet you need behind the deck.
           </p>
         </div>
 
         <div id="cushioning" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Cushioning, Shin Splints and Transfer to Road</h2>
+          <h2>Cushioning, Shin Splints and Transfer to Road</h2>
 <p>
             The most persistent myth in this category is that maximum cushioning prevents injury.
             It does not, and the mechanism is worth understanding. Running is an elastic activity:
@@ -635,15 +590,14 @@ const schema = {
             If you are training for a road race, there is a second argument for a firmer deck:
             what you train on should resemble what you race on. Runners who do their entire
             build-up on a very soft treadmill and then race on tarmac frequently report calf and
-            shin soreness in the first hard road sessions. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
-            covers how to structure a week around that. Mixing surfaces through a training
+            shin soreness in the first hard road sessions. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a> covers how to structure a week around that. Mixing surfaces through a training
             block is the sensible answer, and if the treadmill is your only option, firmer is the
             better default.
           </p>
         </div>
 
         <div id="incline-decline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Incline, Decline and Why Decline Is Rare</h2>
+          <h2>Incline, Decline and Why Decline Is Rare</h2>
 <p>
             Incline is close to free training value for a runner: it raises intensity without
             raising impact, and it is the most efficient way to make a treadmill session harder
@@ -656,16 +610,12 @@ const schema = {
             you forward — and it is the single most effective way to prepare for a downhill race
             and the single most effective way to make yourself sore. If you are training for a
             course with significant descent, a decline-capable machine is genuinely useful. If you
-            are not, it is a specification you will use twice. Our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill guide</a>
-            covers the steep-grade trainers in detail, and our
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade conversion guide</a>
-            explains why 15% is a far steeper hill than it sounds.
+            are not, it is a specification you will use twice. Our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill guide</a> covers the steep-grade trainers in detail, and our <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade conversion guide</a> explains why 15% is a far steeper hill than it sounds.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             For most runners, the <strong>NordicTrack Commercial 1750</strong> is the machine to
             buy. It has the deck length that matters, enough frame mass to stay planted at
@@ -688,143 +638,156 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What deck length do I need to run on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sixty inches is the working minimum for anyone over about 5'8", and we would treat it as non-negotiable above 6 feet or above 8 mph. Fifty-five-inch decks are adequate for walking and jogging and become a real constraint once your stride extends, because you shorten your gait to stay clear of the rear roller. Deck length is the specification we would compromise on last.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much horsepower does a treadmill need for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three continuous-duty horsepower (3.0 CHP) is sufficient for almost any home runner, and above that the returns are small. Ignore peak horsepower figures entirely — they describe a burst the motor cannot sustain and exist mainly for the box. A 3.0 CHP machine with a 60-inch deck is a better running treadmill than a 4.0 CHP machine with a 55-inch one, every time.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is running on a treadmill worse for your knees than running outside?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No — if anything the cushioned deck reduces peak impact compared with tarmac. The more common treadmill-specific complaints are calf and Achilles related, and they usually come from a shortened stride on a deck that is too small or from an over-soft surface that absorbs the elastic return your lower leg is meant to get back. A correctly sized, firm deck largely removes both.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I set the treadmill to 1% incline to simulate outdoor running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The 1% convention comes from a 1996 study and applies mainly at faster paces, roughly 7 mph and above, where air resistance outdoors becomes significant. At easier paces the difference is small enough to ignore. Setting 1% as a default does no harm and is a reasonable habit, but it is not the meaningful variable people often treat it as.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a decline function?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if you are training for a course with significant descent. Downhill running loads the quadriceps eccentrically, which is both the most effective way to prepare for a descent and the most effective way to make yourself very sore. It is genuinely valuable for that specific purpose and close to unused for anything else, so do not let it drive the buying decision.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How loud is a treadmill at running speed?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Expect a marked step up from walking. Most of the noise a downstairs neighbour hears is not the motor but footfall energy travelling through the frame into the floor, which is why heavier machines on a proper mat are quieter downstairs despite being louder beside the deck. If a shared floor is a concern, our quiet treadmill guide covers the distinction and what actually helps.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Running Treadmill</h2>
+          <p>Three of these four come from shopping on the specifications that are easiest to compare rather than the ones that determine whether you enjoy running on the machine.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying on horsepower instead of deck length</h3>
+              <p>Motor power is the headline specification and the least important one above 3.0 CHP, because a home runner never approaches the motor's limit. Deck length is the constraint you meet on every single stride. If your budget forces a choice — and it often does around $1,000 — take the longer deck and the smaller motor without hesitation.</p>
+            </li>
+            <li>
+              <h3>Assuming more cushioning is better</h3>
+              <p>Very soft decks absorb the elastic energy your calves and Achilles return on each stride, which makes long runs feel disproportionately hard and trains a gait that does not transfer to road. Firm with a quick return is what you want. Judge a deck on a 40-minute run, not on how plush it feels for the first minute in a showroom.</p>
+            </li>
+            <li>
+              <h3>Ignoring assembled weight</h3>
+              <p>Frame mass is the closest thing to a single-number quality proxy for a runner, because mass is what resists the movement your footfall puts into the machine. Under 200 lbs assembled expect perceptible flex at pace. It is also the specification that most affects delivery and placement, and the one people discover last.</p>
+            </li>
+            <li>
+              <h3>Forgetting the six feet behind the deck</h3>
+              <p>Safety guidance calls for clear space behind a treadmill because that is where you go if you lose your footing, and at running speed that matters far more than at walking speed. A machine that fits the room but not the clearance is a machine in the wrong room. Measure the run-off space before ordering, not after delivery.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Running Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Three of these four come from shopping on the specifications that are easiest to compare rather than the ones that determine whether you enjoy running on the machine.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying on horsepower instead of deck length</h3>
-              <p class="text-gray-700 text-sm m-0">Motor power is the headline specification and the least important one above 3.0 CHP, because a home runner never approaches the motor's limit. Deck length is the constraint you meet on every single stride. If your budget forces a choice — and it often does around $1,000 — take the longer deck and the smaller motor without hesitation.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming more cushioning is better</h3>
-              <p class="text-gray-700 text-sm m-0">Very soft decks absorb the elastic energy your calves and Achilles return on each stride, which makes long runs feel disproportionately hard and trains a gait that does not transfer to road. Firm with a quick return is what you want. Judge a deck on a 40-minute run, not on how plush it feels for the first minute in a showroom.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring assembled weight</h3>
-              <p class="text-gray-700 text-sm m-0">Frame mass is the closest thing to a single-number quality proxy for a runner, because mass is what resists the movement your footfall puts into the machine. Under 200 lbs assembled expect perceptible flex at pace. It is also the specification that most affects delivery and placement, and the one people discover last.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the six feet behind the deck</h3>
-              <p class="text-gray-700 text-sm m-0">Safety guidance calls for clear space behind a treadmill because that is where you go if you lose your footing, and at running speed that matters far more than at walking speed. A machine that fits the room but not the clearance is a machine in the wrong room. Measure the run-off space before ordering, not after delivery.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Running &amp; Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmill-for-home-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Flagship Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Home Use</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The general home ranking, across walking, jogging and running use.</p>
-            </a>
-            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Spec</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Deck length and width by stride, with the arithmetic worked through.</p>
-            </a>
-            <a href="/best-incline-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Incline Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Steep-grade trainers for hill work, from 12% to 40%.</p>
-            </a>
-            <a href="/best-treadmills-for-hiit/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">HIIT</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for HIIT</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Fast speed and incline changes, motors for hard efforts, and the curved-treadmill option.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Buy the deck first. A 60-inch belt on a heavy frame is what makes a treadmill feel like
-            running rather than like managing a machine, and the
-            <strong class="text-white">NordicTrack Commercial 1750</strong> delivers that at the
-            best price on this page. If you would rather not join a subscription ecosystem, the
-            <strong class="text-white">Sole F65</strong> does the same job without asking
+            running rather than like managing a machine, and the <strong class="text-white">NordicTrack Commercial 1750</strong> delivers that at the
+            best price on this page. If you would rather not join a subscription ecosystem, the <strong class="text-white">Sole F65</strong> does the same job without asking
             anything of you.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Running high mileage for years? The
-            <a href="/life-fitness-t3-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Life Fitness T3</a>
-            is the machine that will still be right in a decade. Working to a budget? The
-            <a href="/proform-pro-2000-treadmill/" class="text-[#5AA9FF] font-bold no-underline">ProForm Pro 2000</a>
-            gets you the deck length that matters for the least money.
+          <p>
+            Running high mileage for years? The <a href="/life-fitness-t3-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Life Fitness T3</a> is the machine that will still be right in a decade. Working to a budget? The <a href="/proform-pro-2000-treadmill/" class="text-[#5AA9FF] font-bold no-underline">ProForm Pro 2000</a> gets you the deck length that matters for the least money.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmill-for-home-reviews/">Best Treadmills for Home Use</a></li>
+            <li><a href="/treadmill-belt-size-guide/">Treadmill Belt Size Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What deck length do I need to run on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Sixty inches is the working minimum for anyone over about 5'8", and we would treat it as non-negotiable above 6 feet or above 8 mph. Fifty-five-inch decks are adequate for walking and jogging and become a real constraint once your stride extends, because you shorten your gait to stay clear of the rear roller. Deck length is the specification we would compromise on last.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much horsepower does a treadmill need for running?</h3></summary>
+            <p class="faq-a">
+              Three continuous-duty horsepower (3.0 CHP) is sufficient for almost any home runner, and above that the returns are small. Ignore peak horsepower figures entirely — they describe a burst the motor cannot sustain and exist mainly for the box. A 3.0 CHP machine with a 60-inch deck is a better running treadmill than a 4.0 CHP machine with a 55-inch one, every time.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is running on a treadmill worse for your knees than running outside?</h3></summary>
+            <p class="faq-a">
+              No — if anything the cushioned deck reduces peak impact compared with tarmac. The more common treadmill-specific complaints are calf and Achilles related, and they usually come from a shortened stride on a deck that is too small or from an over-soft surface that absorbs the elastic return your lower leg is meant to get back. A correctly sized, firm deck largely removes both.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I set the treadmill to 1% incline to simulate outdoor running?</h3></summary>
+            <p class="faq-a">
+              The 1% convention comes from a 1996 study and applies mainly at faster paces, roughly 7 mph and above, where air resistance outdoors becomes significant. At easier paces the difference is small enough to ignore. Setting 1% as a default does no harm and is a reasonable habit, but it is not the meaningful variable people often treat it as.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a decline function?</h3></summary>
+            <p class="faq-a">
+              Only if you are training for a course with significant descent. Downhill running loads the quadriceps eccentrically, which is both the most effective way to prepare for a descent and the most effective way to make yourself very sore. It is genuinely valuable for that specific purpose and close to unused for anything else, so do not let it drive the buying decision.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How loud is a treadmill at running speed?</h3></summary>
+            <p class="faq-a">
+              Expect a marked step up from walking. Most of the noise a downstairs neighbour hears is not the motor but footfall energy travelling through the frame into the floor, which is why heavier machines on a proper mat are quieter downstairs despite being louder beside the deck. If a shared floor is a concern, our quiet treadmill guide covers the distinction and what actually helps.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Running &amp; Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmill-for-home-reviews/" class="card">
+            <div class="c-kicker">Flagship Guide</div>
+            <div class="c-title">Best Treadmills for Home Use</div>
+            <p class="c-blurb">The general home ranking, across walking, jogging and running use.</p>
+          </a>
+          <a href="/treadmill-belt-size-guide/" class="card">
+            <div class="c-kicker">Spec</div>
+            <div class="c-title">Treadmill Belt Size Guide</div>
+            <p class="c-blurb">Deck length and width by stride, with the arithmetic worked through.</p>
+          </a>
+          <a href="/best-incline-treadmills/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Best Incline Treadmills</div>
+            <p class="c-blurb">Steep-grade trainers for hill work, from 12% to 40%.</p>
+          </a>
+          <a href="/best-treadmills-for-hiit/" class="card">
+            <div class="c-kicker">HIIT</div>
+            <div class="c-title">Best Treadmills for HIIT</div>
+            <p class="c-blurb">Fast speed and incline changes, motors for hard efforts, and the curved-treadmill option.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

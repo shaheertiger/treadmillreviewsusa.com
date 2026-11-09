@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Elliptical Machines for Home (2026): Six Picks, Small to Large";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-elliptical-machines-for-home/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,86 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: SOLE E35", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestellipticalmachinesforhome" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestellipticalmachinesforhome)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Elliptical Machines for Home</h1>
+      <p class="ed-dek">
+        A good home elliptical is mostly a matter of fit: a stride that suits your height, pedals that stay clear of your ceiling and a footprint your room can take. Here are six currently sold machines across the price range, and the measurements to check before you choose one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Elliptical Machines <span class="text-[#5AA9FF]">for Home</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A good home elliptical is mostly a matter of fit: a stride that suits your height, pedals that stay clear of your ceiling and a footprint your room can take. Here are six currently sold machines across the price range, and the measurements to check before you choose one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#stride-length" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Stride Length and Height
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sole-e35"><img src="https://m.media-amazon.com/images/I/31HXgp0-tML._SL500_.jpg" alt="SOLE E35" width="500" height="333" decoding="async" /></a>
+          <a href="#horizon-ex-59"><img src="https://m.media-amazon.com/images/I/31iHFcKjvPL._SL500_.jpg" alt="Horizon Fitness EX-59" width="500" height="351" decoding="async" /></a>
+          <a href="#schwinn-411"><img src="https://m.media-amazon.com/images/I/41tQXV8F9FL._SL500_.jpg" alt="Schwinn 411 Compact Elliptical" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>SOLE E35 · Horizon Fitness EX-59 · Schwinn 411 Compact Elliptical</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Ellipticals are easy to buy badly. The listings lead with screens, programmes and
+          flywheel weights, while the things that decide whether you will actually use the machine —
+          whether the stride is long enough for your legs, whether your head clears the ceiling at
+          the top of the pedal path, whether the frame fits the room — are buried in the spec sheet
+          or missing from it. This page names six machines whose basic figures held up when we
+          checked them, from a compact $699 model to a connected machine near $3,000, and then
+          walks through the measurements that matter more than any feature list.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#sole-e35">SOLE E35</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#horizon-ex-59">Horizon Fitness EX-59</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Small Spaces:</span> <a href="#schwinn-411">Schwinn 411 Compact Elliptical</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Compact Incline:</span> <a href="#schwinn-490">Schwinn 490 Elliptical</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Adjustable Stride:</span> <a href="#sole-e95s">SOLE E95S</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Connected:</span> <a href="#nordictrack-x16">NordicTrack X16 Elliptical</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines. Each was confirmed on 16 October 2026 as currently sold, and its specifications
           were checked on that date against the maker's own product page and specification table
@@ -368,85 +393,32 @@ const schema = {
           stores and Amazon on 16 October 2026; they change often, and app subscription prices are
           not quoted here at all, so check the current price before you buy. We earn a commission
           if you buy through the Amazon links on this page; it does not change which products we
-          list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review
           equipment. Nothing here is medical, physiotherapy or coaching advice. If you have a joint,
           heart or balance condition, are recovering from an injury, or are unsure whether an
           elliptical suits you, talk to a doctor or a qualified professional before you buy or
           start training.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#sole-e35" class="font-bold text-gray-900 no-underline hover:underline">SOLE E35</a>
-            <a href="#sole-e35" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#horizon-ex-59" class="font-bold text-gray-900 no-underline hover:underline">Horizon Fitness EX-59</a>
-            <a href="#horizon-ex-59" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Small Spaces:</span>
-            <a href="#schwinn-411" class="font-bold text-gray-900 no-underline hover:underline">Schwinn 411 Compact Elliptical</a>
-            <a href="#schwinn-411" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Compact Incline:</span>
-            <a href="#schwinn-490" class="font-bold text-gray-900 no-underline hover:underline">Schwinn 490 Elliptical</a>
-            <a href="#schwinn-490" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Adjustable Stride:</span>
-            <a href="#sole-e95s" class="font-bold text-gray-900 no-underline hover:underline">SOLE E95S</a>
-            <a href="#sole-e95s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Elliptical Machines for Home</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Ellipticals</a>
-          <a href="#stride-length" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Stride Length and Your Height</a>
-          <a href="#drive-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Front Drive, Rear Drive and Centre Drive</a>
-          <a href="#ceiling-height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Ceiling Height: Check the Top of the Stride</a>
-          <a href="#small-spaces" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Ellipticals for Small Spaces: Footprint, Folding and Power</a>
-          <a href="#incline-noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Incline Ramps, Resistance and Noise</a>
-          <a href="#subscriptions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Apps and Subscriptions: What You Pay After Delivery</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Elliptical Machines for Home</a></li>
+            <li><a href="#how-we-chose">How We Chose These Ellipticals</a></li>
+            <li><a href="#stride-length">Stride Length and Your Height</a></li>
+            <li><a href="#drive-type">Front Drive, Rear Drive and Centre Drive</a></li>
+            <li><a href="#ceiling-height">Ceiling Height: Check the Top of the Stride</a></li>
+            <li><a href="#small-spaces">Ellipticals for Small Spaces: Footprint, Folding and Power</a></li>
+            <li><a href="#incline-noise">Incline Ramps, Resistance and Noise</a></li>
+            <li><a href="#subscriptions">Apps and Subscriptions: What You Pay After Delivery</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Ellipticals are easy to buy badly. The listings lead with screens, programmes and
-          flywheel weights, while the things that decide whether you will actually use the machine —
-          whether the stride is long enough for your legs, whether your head clears the ceiling at
-          the top of the pedal path, whether the frame fits the room — are buried in the spec sheet
-          or missing from it. This page names six machines whose basic figures held up when we
-          checked them, from a compact $699 model to a connected machine near $3,000, and then
-          walks through the measurements that matter more than any feature list.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Six machines, chosen to cover the realistic home budgets and the most common
             constraints: a small room, a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, a tall user, a household of different
@@ -473,18 +445,13 @@ const schema = {
           </table></div>
           <p>
             If you are still deciding whether an elliptical is the right machine at all, read our
-            comparison of a
-            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill and an elliptical</a>
-            first — or, if calorie burn is the deciding question, our breakdown of
-            <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a> —
-            or the wider
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            guide, which sets ellipticals against bikes, rowers and treadmills.
+            comparison of a <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill and an elliptical</a> first — or, if calorie burn is the deciding question, our breakdown of <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a> —
+            or the wider <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> guide, which sets ellipticals against bikes, rowers and treadmills.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Elliptical Machines for Home</h2>
+          <h2>The 6 Best Elliptical Machines for Home</h2>
 <p>
             Two budget machines, two mid-range and two premium, each with a clear reason to choose
             it. The specification line on each card carries only figures that the maker and at
@@ -498,78 +465,67 @@ const schema = {
             essential, see the small-spaces section below for what to look for instead.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Ellipticals</h2>
+          <h2>How We Chose These Ellipticals</h2>
 <p>
             We have not tested these machines. The picks were made from manufacturer specification
             tables, retailer listings, warranty terms and independent coverage, all checked on 16
@@ -579,8 +535,7 @@ const schema = {
           <p>
             Four rules decided the list. <strong>Currently sold:</strong> each machine had to be on
             sale under that name on its maker's own store on 16 October 2026; the NordicTrack X16
-            and SOLE E95S are sold through their brands' stores rather than on Amazon.
-            <strong>Agreement:</strong> stride length, user capacity, flywheel weight and footprint
+            and SOLE E95S are sold through their brands' stores rather than on Amazon. <strong>Agreement:</strong> stride length, user capacity, flywheel weight and footprint
             had to match between the maker and a source that does not make the product. Where they
             did not, the figure was left out of the card. <strong>A real warranty:</strong> every pick
             carries a published frame warranty of at least ten years, and the brand has its own
@@ -604,14 +559,12 @@ const schema = {
             numbers independently. The SOLE E25 and E20 are both sound and both currently sold;
             they appear in the text below as alternatives rather than cards. Stepper-style
             machines such as <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a>'s Max Trainers are not ellipticals in the usual sense, so they are
-            covered in our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines guide</a>
-            instead.
+            covered in our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines guide</a> instead.
           </p>
         </div>
 
         <div id="stride-length" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Stride Length and Your Height</h2>
+          <h2>Stride Length and Your Height</h2>
 <p>
             Stride length is the distance the pedals travel from front to back, and it is the
             single figure most likely to decide whether an elliptical feels natural or cramped. Too
@@ -657,7 +610,7 @@ const schema = {
         </div>
 
         <div id="drive-type" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Front Drive, Rear Drive and Centre Drive</h2>
+          <h2>Front Drive, Rear Drive and Centre Drive</h2>
 <p>
             The drive is where the flywheel sits, and it shapes the motion, the footprint and the
             feel. Listings mention it often without explaining what it changes, so here is the
@@ -698,7 +651,7 @@ const schema = {
         </div>
 
         <div id="ceiling-height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Ceiling Height: Check the Top of the Stride</h2>
+          <h2>Ceiling Height: Check the Top of the Stride</h2>
 <p>
             This is the measurement people forget, and the one that sends machines back. On an
             elliptical you stand on pedals that rise as they travel. At the top of the stride your
@@ -728,14 +681,12 @@ const schema = {
             Step-on height is the related figure for getting on and off. Horizon lists the EX-59's
             at 10 inches, and an independent review flags that as high for a budget machine. If
             anyone in the household has trouble stepping up, it is worth asking for this figure
-            before you buy. Our guide to
-            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
-            covers basements, upstairs rooms and garages, and the same reasoning applies here.
+            before you buy. Our guide to <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a> covers basements, upstairs rooms and garages, and the same reasoning applies here.
           </p>
         </div>
 
         <div id="small-spaces" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Ellipticals for Small Spaces: Footprint, Folding and Power</h2>
+          <h2>Ellipticals for Small Spaces: Footprint, Folding and Power</h2>
 <p>
             The best elliptical for a small space is usually a short one, not a folding one. Full-size
             home ellipticals are typically somewhere around 70 to 85 inches long once assembled; the
@@ -749,8 +700,7 @@ const schema = {
             also notes, with a full 20-inch stride and motorised incline.</li>
             <li><strong>NordicTrack X16:</strong> a 58.5-inch footprint, but 74 inches tall, so
             check the ceiling as well as the floor.</li>
-            <li><strong>SOLE E35:</strong> 70 inches long and 31 wide. <strong>SOLE E95S:</strong>
-            84 by 32 inches — the biggest machine on the page.</li>
+            <li><strong>SOLE E35:</strong> 70 inches long and 31 wide. <strong>SOLE E95S:</strong> 84 by 32 inches — the biggest machine on the page.</li>
           </ul>
           <p>
             Remember the space around the machine. You need room to step on and off from the
@@ -775,22 +725,18 @@ const schema = {
             says the EX-59 is not compatible with GFCI outlets, the kind often fitted in garages,
             basements and bathrooms. If your only nearby socket is GFCI-protected, ask the retailer
             before you order. Ellipticals draw far less power than a treadmill, but the same advice
-            applies about plugging directly into the wall; see our guide to
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cords</a>
-            for why. Some cheaper ellipticals run without mains power at all, using a generator or
+            applies about plugging directly into the wall; see our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cords</a> for why. Some cheaper ellipticals run without mains power at all, using a generator or
             batteries for the console; none of our picks is one of them.
           </p>
           <p>
             Finally, the floor. Full-size ellipticals are heavy, and the
             moving pedals transmit some vibration. A firm equipment mat
-            protects flooring and steadies the frame on carpet; our
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats guide</a>
-            covers sizes and materials, and the same mats suit an elliptical.
+            protects flooring and steadies the frame on carpet; our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats guide</a> covers sizes and materials, and the same mats suit an elliptical.
           </p>
         </div>
 
         <div id="incline-noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Incline Ramps, Resistance and Noise</h2>
+          <h2>Incline Ramps, Resistance and Noise</h2>
 <p>
             <strong>Incline.</strong> An incline ramp tilts the pedal path so the motion becomes
             more of a climb. Makers and reviewers commonly describe it as shifting more of the work
@@ -830,14 +776,12 @@ const schema = {
             operating smoothly and quietly. What makes noise is wear — rail wheels, pedal-arm
             bushings, a loose bolt — and the incline motor while it moves. For a flat or upstairs,
             the floor transmits more than the air: a dense mat underneath helps more than any
-            choice of model. If noise is the deciding factor, our
-            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a>
-            explains why an elliptical is usually the quieter of the two.
+            choice of model. If noise is the deciding factor, our <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a> explains why an elliptical is usually the quieter of the two.
           </p>
         </div>
 
         <div id="subscriptions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Apps and Subscriptions: What You Pay After Delivery</h2>
+          <h2>Apps and Subscriptions: What You Pay After Delivery</h2>
 <p>
             Every machine on this page works without a subscription, but how much of the machine
             you can use without one varies a great deal, and that is worth knowing before you
@@ -856,22 +800,18 @@ const schema = {
             <li><strong>NordicTrack X16</strong> is built around <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>. NordicTrack's page states that
             a paid iFIT Pro subscription and Wi-Fi are needed for the full content and features on
             the machine, and one month is included with purchase. Without it you lose most of what
-            the screen is for. Our page on
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using NordicTrack without iFIT</a>
-            covers what still works.</li>
+            the screen is for. Our page on <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using NordicTrack without iFIT</a> covers what still works.</li>
           </ul>
           <p>
             We do not quote subscription prices because they change; check the current price
             before you buy, and add a few years of it to the machine's cost when comparing a
             connected model with a plain one. A $2,300 machine with a subscription can cost more
-            over its life than a $2,700 machine without one. Our comparison of
-            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT and Peloton</a>
-            explains how the two main platforms differ.
+            over its life than a $2,700 machine without one. Our comparison of <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT and Peloton</a> explains how the two main platforms differ.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             An elliptical is a good answer for low-impact cardio at home. It is not the right
             answer for everyone, and a few buyers should spend the money differently.
@@ -879,177 +819,183 @@ const schema = {
           <p>
             <strong>If you are training for running,</strong> an elliptical builds fitness but not
             the specific impact tolerance and rhythm that running needs. A treadmill is the better
-            tool; start with our guide to the
-            <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>.
+            tool; start with our guide to the <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>.
           </p>
           <p>
             <strong>If your ceiling is low and you are tall,</strong> an <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike</a> sidesteps the
-            pedal-height problem entirely. Our
-            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
-            comparison covers what a bike does and does not replace.
+            pedal-height problem entirely. Our <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a> comparison covers what a bike does and does not replace.
           </p>
           <p>
             <strong>If you want the most work in the least space,</strong> a rower folds or stands
-            upright and trains the upper body harder than an elliptical's moving handles do; see
-            <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a>
-            and our
-            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a>.
+            upright and trains the upper body harder than an elliptical's moving handles do; see <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a> and our <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a>.
           </p>
           <p>
             <strong>If you will only use it occasionally,</strong> be honest with yourself about the
-            numbers. Our comparison of a
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home machine and a gym membership</a>
-            works through the cost per session, and a gym gives you a dozen ellipticals to try.
+            numbers. Our comparison of a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home machine and a gym membership</a> works through the cost per session, and a gym gives you a dozen ellipticals to try.
           </p>
           <p>
             <strong>If you have a joint or heart condition,</strong> an elliptical is often
             described as gentle, and for many people it is. But that is general information, not
             advice for you. Talk to your doctor or physiotherapist about what kind of exercise suits
             you before you choose a machine. And if you are building out a whole room rather than
-            buying one machine, our
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> are the
+            buying one machine, our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> are the
             places to start.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best elliptical machine for home use?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, a full-size machine with a 20-inch stride, magnetic resistance and a frame warranty of ten years or more. The SOLE E35 fits that description and adds a power incline. If space or budget is tight, the Horizon EX-59 or Schwinn 411 are sensible smaller machines; if users differ a lot in height, look at an adjustable stride such as the SOLE E95S.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What stride length do I need on an elliptical?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no official standard. A common rule of thumb is that 18 inches suits most users up to average height, 20 inches suits most adults, and people over about six feet often prefer 21 inches or more. Treat that as a starting point. If several people of different heights will use the machine, an adjustable stride is the safest choice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do I need for an elliptical?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Add your height, the machine's maximum pedal height and a few inches of headroom, then compare with the lowest point of your ceiling. Some makers publish a minimum ceiling directly; Schwinn lists its 411 as user height plus 17 inches. Machines with an incline ramp need more, because raising the ramp lifts the pedals. Basements with seven-foot ceilings often rule out taller users.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best elliptical for a small space?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Look for a short machine rather than a folding one. The Schwinn 411 is under 54 inches long by Schwinn's figures, and the Schwinn 490 fits a 20-inch stride and powered incline into a 58-inch frame. Remember to leave clear space around the machine to get on and off, and check the ceiling as well as the floor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a front drive or rear drive elliptical better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better in itself. Front-drive machines are the most common in homes, tend to give a slightly more uphill, climbing feel and are usually cheaper to build well. Rear-drive machines are often described as flatter and closer to walking. Centre-drive designs save length. Stride length and frame quality matter more than drive position for most buyers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do home ellipticals need a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                None of the machines on this page needs one to work. SOLE offers its app free, Horizon's EX-59 has built-in programmes, and Schwinn's machines work as plain ellipticals without JRNY. NordicTrack's X16 runs without iFIT, but NordicTrack says a paid iFIT Pro subscription is needed for the full content and features. Check the current subscription price before you buy.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Home Elliptical</h2>
+          <p>Most elliptical regrets come down to fit and space rather than features, and all four of these are avoidable with a tape measure and ten minutes with the spec sheet.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Forgetting the ceiling</h3>
+              <p>People measure the floor and forget that the pedals lift you up to a foot or more off it, higher still with an incline ramp raised. A tall user in a basement can find their head at the ceiling on the first stride. Add your height, the maker's pedal height or ceiling figure and a few inches of headroom before you order.</p>
+            </li>
+            <li>
+              <h3>Buying a short stride for a tall user</h3>
+              <p>An 18-inch stride is fine for many people and cramped for tall ones, and a short stride is the most common reason an elliptical ends up as a clothes rail. If the main user is over about six feet, or users vary a lot in height, choose a 20-inch stride at least, or an adjustable one.</p>
+            </li>
+            <li>
+              <h3>Comparing flywheel weights as if they were standard</h3>
+              <p>Flywheel weight is quoted as a shorthand for smoothness, but makers do not measure it the same way and design matters as much as mass. Use it as one clue among several. A machine with a confirmed 20-inch stride, a long frame warranty and consistent figures across sources is a better bet than one that wins on a single number.</p>
+            </li>
+            <li>
+              <h3>Ignoring the cost after delivery</h3>
+              <p>A connected elliptical's screen may need a paid subscription to do most of what was advertised, and delivery, assembly and protection plans add up. Before comparing prices, add the subscription you will actually keep, delivery to the room you need, and the cost of a mat. The cheaper machine is sometimes the dearer one after a year.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Home Elliptical</h2>
-          <p class="text-gray-700 leading-relaxed">Most elliptical regrets come down to fit and space rather than features, and all four of these are avoidable with a tape measure and ten minutes with the spec sheet.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the ceiling</h3>
-              <p class="text-gray-700 text-sm m-0">People measure the floor and forget that the pedals lift you up to a foot or more off it, higher still with an incline ramp raised. A tall user in a basement can find their head at the ceiling on the first stride. Add your height, the maker's pedal height or ceiling figure and a few inches of headroom before you order.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a short stride for a tall user</h3>
-              <p class="text-gray-700 text-sm m-0">An 18-inch stride is fine for many people and cramped for tall ones, and a short stride is the most common reason an elliptical ends up as a clothes rail. If the main user is over about six feet, or users vary a lot in height, choose a 20-inch stride at least, or an adjustable one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing flywheel weights as if they were standard</h3>
-              <p class="text-gray-700 text-sm m-0">Flywheel weight is quoted as a shorthand for smoothness, but makers do not measure it the same way and design matters as much as mass. Use it as one clue among several. A machine with a confirmed 20-inch stride, a long frame warranty and consistent figures across sources is a better bet than one that wins on a single number.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the cost after delivery</h3>
-              <p class="text-gray-700 text-sm m-0">A connected elliptical's screen may need a paid subscription to do most of what was advertised, and delivery, assembly and protection plans add up. Before comparing prices, add the subscription you will actually keep, delivery to the room you need, and the cost of a mat. The cheaper machine is sometimes the dearer one after a year.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-cardio-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Ellipticals set against treadmills, bikes, rowers and air bikes, with picks for each.</p>
-            </a>
-            <a href="/treadmill-vs-elliptical/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs Elliptical</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Impact, calories, space, noise and cost: which machine suits which goal.</p>
-            </a>
-            <a href="/home-cardio-equipment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Cardio Equipment Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to choose between machine types and what to check before you buy any of them.</p>
-            </a>
-            <a href="/stepper-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Steppers</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Stepper Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mini, twist, handlebar and full-size steppers: what each costs and suits, hydraulic time limits, calories and recalls.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most homes, the SOLE E35 is the elliptical to buy:</strong> a
             20-inch stride, a 350 lb rating, power incline and no subscription for about $1,700. If
             the budget stops under $1,000, the <strong class="text-white">Horizon EX-59</strong> is
             the sound simpler choice; if space is the limit, the <strong class="text-white">Schwinn
-            411</strong> is the one that fits; and for households of very different heights, the
-            <strong class="text-white">SOLE E95S</strong> lets everyone set their own stride.
+            411</strong> is the one that fits; and for households of very different heights, the <strong class="text-white">SOLE E95S</strong> lets everyone set their own stride.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, measure twice: the floor, the clear space around the machine, and
             the ceiling at the top of the stride. If you are still choosing between machine types,
-            our
-            <a href="/treadmill-vs-elliptical/" class="text-[#5AA9FF] font-bold no-underline">treadmill vs elliptical comparison</a>
-            is the place to settle that first.
+            our <a href="/treadmill-vs-elliptical/" class="text-[#5AA9FF] font-bold no-underline">treadmill vs elliptical comparison</a> is the place to settle that first.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-cardio-machines-for-home/">Best Cardio Machines for Home</a></li>
+            <li><a href="/treadmill-vs-elliptical/">Treadmill vs Elliptical</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best elliptical machine for home use?</h3></summary>
+            <p class="faq-a">
+              For most people, a full-size machine with a 20-inch stride, magnetic resistance and a frame warranty of ten years or more. The SOLE E35 fits that description and adds a power incline. If space or budget is tight, the Horizon EX-59 or Schwinn 411 are sensible smaller machines; if users differ a lot in height, look at an adjustable stride such as the SOLE E95S.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What stride length do I need on an elliptical?</h3></summary>
+            <p class="faq-a">
+              There is no official standard. A common rule of thumb is that 18 inches suits most users up to average height, 20 inches suits most adults, and people over about six feet often prefer 21 inches or more. Treat that as a starting point. If several people of different heights will use the machine, an adjustable stride is the safest choice.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much ceiling height do I need for an elliptical?</h3></summary>
+            <p class="faq-a">
+              Add your height, the machine's maximum pedal height and a few inches of headroom, then compare with the lowest point of your ceiling. Some makers publish a minimum ceiling directly; Schwinn lists its 411 as user height plus 17 inches. Machines with an incline ramp need more, because raising the ramp lifts the pedals. Basements with seven-foot ceilings often rule out taller users.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the best elliptical for a small space?</h3></summary>
+            <p class="faq-a">
+              Look for a short machine rather than a folding one. The Schwinn 411 is under 54 inches long by Schwinn's figures, and the Schwinn 490 fits a 20-inch stride and powered incline into a 58-inch frame. Remember to leave clear space around the machine to get on and off, and check the ceiling as well as the floor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a front drive or rear drive elliptical better?</h3></summary>
+            <p class="faq-a">
+              Neither is better in itself. Front-drive machines are the most common in homes, tend to give a slightly more uphill, climbing feel and are usually cheaper to build well. Rear-drive machines are often described as flatter and closer to walking. Centre-drive designs save length. Stride length and frame quality matter more than drive position for most buyers.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do home ellipticals need a subscription?</h3></summary>
+            <p class="faq-a">
+              None of the machines on this page needs one to work. SOLE offers its app free, Horizon's EX-59 has built-in programmes, and Schwinn's machines work as plain ellipticals without JRNY. NordicTrack's X16 runs without iFIT, but NordicTrack says a paid iFIT Pro subscription is needed for the full content and features. Check the current subscription price before you buy.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-cardio-machines-for-home/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Best Cardio Machines for Home</div>
+            <p class="c-blurb">Ellipticals set against treadmills, bikes, rowers and air bikes, with picks for each.</p>
+          </a>
+          <a href="/treadmill-vs-elliptical/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Treadmill vs Elliptical</div>
+            <p class="c-blurb">Impact, calories, space, noise and cost: which machine suits which goal.</p>
+          </a>
+          <a href="/home-cardio-equipment-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Home Cardio Equipment Guide</div>
+            <p class="c-blurb">How to choose between machine types and what to check before you buy any of them.</p>
+          </a>
+          <a href="/stepper-buying-guide/" class="card">
+            <div class="c-kicker">Steppers</div>
+            <div class="c-title">Stepper Buying Guide</div>
+            <p class="c-blurb">Mini, twist, handlebar and full-size steppers: what each costs and suits, hydraulic time limits, calories and recalls.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

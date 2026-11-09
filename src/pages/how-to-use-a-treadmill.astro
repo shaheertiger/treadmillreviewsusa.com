@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Use a Treadmill (2026): A Safe First Session, Step by Step";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-use-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Your First Session", link: "#first-session" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtouseatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtouseatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Beginner Guide</span>
+      </nav>
+      <h1 class="ed-title">How to Use a Treadmill</h1>
+      <p class="ed-dek">
+        A treadmill is the simplest piece of cardio equipment in the house and still the one that sends people to the floor most often. Almost every fall comes from the same three or four habits, and all of them are easy to fix on day one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Beginner Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Use <span class="text-[#5AA9FF]">a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill is the simplest piece of cardio equipment in the house and still the one that sends people to the floor most often. Almost every fall comes from the same three or four habits, and all of them are easy to fix on day one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#first-session" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Your First Session
-          </a>
-          <a href="#first-week" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            First-Week Plan
-          </a>
-        </div>
+        <a href="#first-session" class="btn-ghost">Your First Session</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before you start.</strong> We review treadmills; this is a
-          practical guide to operating one, not medical or coaching advice. If you have a heart,
-          joint or balance condition, are pregnant, or have been inactive for a long time, check
-          with a doctor before starting a new exercise routine. Stop and seek advice for chest
-          pain, dizziness, unusual breathlessness or a heartbeat that feels irregular. And
-          whatever your fitness, read your machine's manual — controls, speed ranges and safety
-          features differ between models, and the manual is the authority for yours.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#what-it-does" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What a Treadmill Does</a>
-          <a href="#before-first-session" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Before Your First Session</a>
-          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Safety Key: Clip It On, Every Time</a>
-          <a href="#first-session" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Your First Session, Step by Step</a>
-          <a href="#posture-rails" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Posture, and Why You Should Let Go of the Rails</a>
-          <a href="#stopping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Stopping and Stepping Off Safely</a>
-          <a href="#emergency-stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Emergency Stop</a>
-          <a href="#using-incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Using the Incline</a>
-          <a href="#running-form" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How to Run on a Treadmill</a>
-          <a href="#first-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. A Sensible First-Week Plan</a>
-          <a href="#warm-up-cool-down" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Warming Up and Cooling Down</a>
-          <a href="#cleaning-down" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Cleaning Down After a Session</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Using a treadmill comes down to a short sequence: clip the safety key to your clothing,
           stand on the side rails, start the belt at its slowest speed, step on, and only then
           build up. Stopping is the same sequence in reverse. Everything else on this page —
@@ -207,8 +144,38 @@ const schema = {
           right every single time.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before you start.</strong> We review treadmills; this is a
+          practical guide to operating one, not medical or coaching advice. If you have a heart,
+          joint or balance condition, are pregnant, or have been inactive for a long time, check
+          with a doctor before starting a new exercise routine. Stop and seek advice for chest
+          pain, dizziness, unusual breathlessness or a heartbeat that feels irregular. And
+          whatever your fitness, read your machine's manual — controls, speed ranges and safety
+          features differ between models, and the manual is the authority for yours.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#what-it-does">What a Treadmill Does</a></li>
+            <li><a href="#before-first-session">Before Your First Session</a></li>
+            <li><a href="#safety-key">The Safety Key: Clip It On, Every Time</a></li>
+            <li><a href="#first-session">Your First Session, Step by Step</a></li>
+            <li><a href="#posture-rails">Posture, and Why You Should Let Go of the Rails</a></li>
+            <li><a href="#stopping">Stopping and Stepping Off Safely</a></li>
+            <li><a href="#emergency-stop">The Emergency Stop</a></li>
+            <li><a href="#using-incline">Using the Incline</a></li>
+            <li><a href="#running-form">How to Run on a Treadmill</a></li>
+            <li><a href="#first-week">A Sensible First-Week Plan</a></li>
+            <li><a href="#warm-up-cool-down">Warming Up and Cooling Down</a></li>
+            <li><a href="#cleaning-down">Cleaning Down After a Session</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="what-it-does" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What a Treadmill Does</h2>
+          <h2>What a Treadmill Does</h2>
 <p>
             A treadmill is a motor-driven belt that moves backward under your feet at a speed you
             set, so you walk or run in place while covering the equivalent ground. Most home and
@@ -227,22 +194,18 @@ const schema = {
           <p>
             What it does well is make consistent exercise easy: the weather, the dark and the
             traffic stop being reasons not to go, and you can control speed and gradient
-            precisely. For what to actually do once you are comfortable on the belt, our
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a>
-            covers the four session types worth knowing.
+            precisely. For what to actually do once you are comfortable on the belt, our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a> covers the four session types worth knowing.
           </p>
         </div>
 
         <div id="before-first-session" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Before Your First Session</h2>
+          <h2>Before Your First Session</h2>
 <p>
             <strong>Check the space around it.</strong> The area behind the treadmill matters
             more than the area in front. If you do slip off the back, you want empty floor, not a
             wall, a radiator or a glass door. Manufacturers typically specify a clear zone of
             roughly 6.5 feet behind the deck and a foot or two at each side; your manual gives the
-            figure for your machine, and our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            goes through it in detail.
+            figure for your machine, and our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> goes through it in detail.
           </p>
           <p>
             <strong>Wear proper shoes.</strong> Running or <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>walking shoes</a> with a secure fit. Not
@@ -265,7 +228,7 @@ const schema = {
         </div>
 
         <div id="safety-key" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Safety Key: Clip It On, Every Time</h2>
+          <h2>The Safety Key: Clip It On, Every Time</h2>
 <p>
             Nearly every motorised treadmill has a safety key — a magnetic or plug-in key on a
             cord with a clip on the other end. The machine will not run unless the key is in
@@ -294,7 +257,7 @@ const schema = {
         </div>
 
         <div id="first-session" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Your First Session, Step by Step</h2>
+          <h2>Your First Session, Step by Step</h2>
 <p>
             This is the sequence to use every time until it is automatic. It takes about thirty
             seconds longer than jumping on a moving belt, and it removes most of the ways people
@@ -339,7 +302,7 @@ const schema = {
         </div>
 
         <div id="posture-rails" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Posture, and Why You Should Let Go of the Rails</h2>
+          <h2>Posture, and Why You Should Let Go of the Rails</h2>
 <p>
             Good treadmill posture is the same as good walking posture: stand tall, look ahead
             rather than down at your feet, relax your shoulders and let your arms swing naturally
@@ -361,14 +324,12 @@ const schema = {
             changing speed, if you feel unsteady, and for anyone whose balance genuinely needs the
             support. If you need to hold on to keep up with the belt, the speed or incline is too
             high — turn it down rather than hanging on. For people who will rely on the rails
-            for balance, our guide to the
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            covers rail design, step-up height and low starting speeds.
+            for balance, our guide to the <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a> covers rail design, step-up height and low starting speeds.
           </p>
         </div>
 
         <div id="stopping" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Stopping and Stepping Off Safely</h2>
+          <h2>Stopping and Stepping Off Safely</h2>
 <p>
             Stepping off a moving belt is the most common way people fall, because the instinct
             is to stop walking — and the belt does not stop with you. The safe sequence is the
@@ -400,7 +361,7 @@ const schema = {
         </div>
 
         <div id="emergency-stop" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Emergency Stop</h2>
+          <h2>The Emergency Stop</h2>
 <p>
             There are usually two ways to stop the belt in a hurry, and you should know both
             before you need either.
@@ -424,14 +385,12 @@ const schema = {
           <p>
             If the belt ever moves when it should not, speeds up on its own, fails to stop, or
             you notice burning smells, smoke or sparking, stop using the treadmill, unplug it at
-            the wall, and work through our
-            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            or contact the manufacturer before running it again.
+            the wall, and work through our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> or contact the manufacturer before running it again.
           </p>
         </div>
 
         <div id="using-incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Using the Incline</h2>
+          <h2>Using the Incline</h2>
 <p>
             Incline is the most underused control on most home treadmills, and for walkers it is
             often more useful than speed. Raising the deck makes each step harder without making
@@ -455,16 +414,12 @@ const schema = {
           </p>
           <p>
             Incline is shown as a percentage grade, not degrees: a 10% incline is a rise of 10
-            feet per 100 feet of horizontal travel, which is under six degrees. Our explainer on
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent vs degrees</a>
-            covers the conversion, and the popular
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            is a good example of a structured incline session once you are ready for one.
+            feet per 100 feet of horizontal travel, which is under six degrees. Our explainer on <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent vs degrees</a> covers the conversion, and the popular <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> is a good example of a structured incline session once you are ready for one.
           </p>
         </div>
 
         <div id="running-form" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How to Run on a Treadmill</h2>
+          <h2>How to Run on a Treadmill</h2>
 <p>
             Running on a treadmill is mostly the same skill as running outside, with a few
             differences that are worth adjusting for. Get comfortable walking first, then build
@@ -501,14 +456,12 @@ const schema = {
             running on a level belt is slightly easier than running at the same speed outside. A
             common rule of thumb is to set a <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium" data-autolink>1% incline</a> to roughly compensate at typical running
             speeds. It is an approximation rather than a law, and it matters less than simply
-            being consistent. Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            converts belt speed into minutes per mile if you want to compare with outdoor runs.
+            being consistent. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> converts belt speed into minutes per mile if you want to compare with outdoor runs.
           </p>
         </div>
 
         <div id="first-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. A Sensible First-Week Plan</h2>
+          <h2>A Sensible First-Week Plan</h2>
 <p>
             The aim of week one is not fitness. It is getting comfortable with the machine, so
             that starting, stopping and changing speed become automatic. Keep every session at an
@@ -530,16 +483,12 @@ const schema = {
           <p>
             These durations are a starting point, not a prescription — shorten them if you have
             been inactive for a while, and stretch them if walking is already easy for you. If
-            you want to work up to running, the
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5k treadmill plan</a>
-            builds from walking to thirty minutes of continuous jogging over nine weeks, which is
+            you want to work up to running, the <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5k treadmill plan</a> builds from walking to thirty minutes of continuous jogging over nine weeks, which is
             a far better route than simply turning the speed up and seeing what happens.
           </p>
           <p>
             In week two, add a few minutes to each session or one more session per week, but not
-            both at once. Our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            covers sensible session lengths once the first week is behind you. Changing one variable at a time is how you find out what your body
+            both at once. Our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> covers sensible session lengths once the first week is behind you. Changing one variable at a time is how you find out what your body
             tolerates.
           </p>
           <p>
@@ -548,7 +497,7 @@ const schema = {
         </div>
 
         <div id="warm-up-cool-down" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Warming Up and Cooling Down</h2>
+          <h2>Warming Up and Cooling Down</h2>
 <p>
             The treadmill makes warming up easy, because the slow start is built into the
             routine. Spend the first three to five minutes walking at an easy pace before
@@ -570,7 +519,7 @@ const schema = {
         </div>
 
         <div id="cleaning-down" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Cleaning Down After a Session</h2>
+          <h2>Cleaning Down After a Session</h2>
 <p>
             Sweat is mildly corrosive and it gets everywhere: the console, the handrails, the
             side rails and the frame. A quick wipe after each session is the cheapest maintenance
@@ -585,11 +534,7 @@ const schema = {
           <p>
             Every so often, unplug the machine and wipe the exposed belt surface and the floor
             around the treadmill, since dust and debris migrate under the belt and increase
-            friction. Our guide to
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
-            covers the deeper job, and the
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
-            sets out the full owner's schedule, including belt lubrication and tension checks.
+            friction. Our guide to <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a> covers the deeper job, and the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a> sets out the full owner's schedule, including belt lubrication and tension checks.
           </p>
           <p>
             Finally, take the safety key out and put it somewhere away from the machine. If
@@ -597,145 +542,159 @@ const schema = {
             make sure the deck is fully latched before you walk away.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you use a treadmill for the first time?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Clip the safety key to your waistband, stand with a foot on each side rail, and start the belt at its slowest speed. Step on, walk in the middle of the belt, and raise the speed gradually with the arrow buttons until you reach a comfortable walk. Stop by slowing down first, pressing stop, and stepping off only once the belt has come to rest.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does a treadmill do?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A treadmill is a motor-driven belt that moves backward under your feet at a speed you set, so you can walk or run in place. Most also have a powered incline that tilts the deck to simulate a hill, and a console that estimates distance, pace, time and calories. Because the belt keeps moving whatever you do, you have to match its pace — which is why the safety key matters.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you run on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Warm up with a few minutes of walking, then increase the speed gradually to a jog. Take slightly shorter, quicker steps so your feet land under your hips rather than out in front, look ahead rather than down, keep your arms relaxed and stay in the middle of the belt. Do not hold the rails while running. A 1% incline is a common rule of thumb to offset the lack of air resistance.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you hold the handrails on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only when stepping on and off, changing speed, or if you feel unsteady — or if your balance genuinely requires support. Leaning on the rails shortens your stride, stops your arms swinging and takes weight off your legs, which makes the session easier than the console reports. If you need to hold on to keep up, turn the speed or incline down.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the safety key on a treadmill for?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The safety key stops the belt if it is pulled from the console. Clipped to your clothing at waist height, it pulls free if you stumble or drift toward the back of the deck, so the belt stops before it can throw you off. Remove it after each session and store it away from the machine so children cannot start the treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What speed should a beginner walk on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most adults find a comfortable walking pace somewhere around 2.5 to 3.5 mph, but the right speed is the one where you can walk steadily without holding the rails and still hold a conversation. Start lower than you think you need, and increase gradually. Ten to twenty minutes at that effort is plenty for the first few sessions.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Beginners Make on a Treadmill</h2>
+          <p>Most treadmill falls and most stalled routines come from one of these four, and every one of them is a habit rather than a lack of fitness.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Leaving the safety key dangling</h3>
+              <p>A key that is in the console but not clipped to you lets the machine run with none of the protection it exists to provide. Clip it to your waistband every session, with the cord slack while you walk normally, and take it out of the machine when you are finished.</p>
+            </li>
+            <li>
+              <h3>Stepping off a moving belt</h3>
+              <p>The instinct is to stop walking, but the belt does not stop with you. Slow down first, press stop and keep walking until the belt has come to rest — or step out onto the side rails while holding on. Never turn around or hop off while it is still moving.</p>
+            </li>
+            <li>
+              <h3>Holding the rails to manage a speed you cannot sustain</h3>
+              <p>Gripping the front rail lets you set a speed or incline your legs cannot actually handle, changes your gait, and inflates the calorie readout. If you need to hold on to keep up, turn the setting down. You will get more from a slower session done properly.</p>
+            </li>
+            <li>
+              <h3>Doing too much in the first fortnight</h3>
+              <p>Enthusiasm in week one is the most common reason people stop in week three. Short, easy sessions build the habit and let joints and tendons adapt. Increase duration or frequency, not both, and keep most sessions at a conversational effort.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Beginners Make on a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most treadmill falls and most stalled routines come from one of these four, and every one of them is a habit rather than a lack of fitness.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the safety key dangling</h3>
-              <p class="text-gray-700 text-sm m-0">A key that is in the console but not clipped to you lets the machine run with none of the protection it exists to provide. Clip it to your waistband every session, with the cord slack while you walk normally, and take it out of the machine when you are finished.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Stepping off a moving belt</h3>
-              <p class="text-gray-700 text-sm m-0">The instinct is to stop walking, but the belt does not stop with you. Slow down first, press stop and keep walking until the belt has come to rest — or step out onto the side rails while holding on. Never turn around or hop off while it is still moving.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails to manage a speed you cannot sustain</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping the front rail lets you set a speed or incline your legs cannot actually handle, changes your gait, and inflates the calorie readout. If you need to hold on to keep up, turn the setting down. You will get more from a slower session done properly.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doing too much in the first fortnight</h3>
-              <p class="text-gray-700 text-sm m-0">Enthusiasm in week one is the most common reason people stop in week three. Short, easy sessions build the habit and let joints and tendons adapt. Increase duration or frequency, not both, and keep most sessions at a conversational effort.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types and how to build a week from them.</p>
-            </a>
-            <a href="/couch-to-5k-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Program</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Couch to 5K on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Nine weeks from walking to thirty minutes of jogging.</p>
-            </a>
-            <a href="/best-treadmills-for-beginners/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Beginners</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Simple consoles, low starting speeds and sturdy frames.</p>
-            </a>
-            <a href="/types-of-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Types of Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every kind of treadmill explained, from walking pads to incline trainers, with who each one suits.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Clip the key, straddle the belt, start slow.</strong> Step on
             only once the belt is moving at its lowest speed, build up gradually, let go of the
             rails once you are steady, and stop by slowing down first and stepping off only when
             the belt has come to rest.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Keep the first week short and conversational, add incline in small steps, and run with
-            shorter, quicker strides while looking ahead. When the routine is automatic, our
-            <a href="/treadmill-workouts/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts guide</a>
-            shows what to do with it.
+            shorter, quicker strides while looking ahead. When the routine is automatic, our <a href="/treadmill-workouts/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts guide</a> shows what to do with it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-workouts/">Treadmill Workouts</a></li>
+            <li><a href="/couch-to-5k-treadmill/">Couch to 5K on a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you use a treadmill for the first time?</h3></summary>
+            <p class="faq-a">
+              Clip the safety key to your waistband, stand with a foot on each side rail, and start the belt at its slowest speed. Step on, walk in the middle of the belt, and raise the speed gradually with the arrow buttons until you reach a comfortable walk. Stop by slowing down first, pressing stop, and stepping off only once the belt has come to rest.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What does a treadmill do?</h3></summary>
+            <p class="faq-a">
+              A treadmill is a motor-driven belt that moves backward under your feet at a speed you set, so you can walk or run in place. Most also have a powered incline that tilts the deck to simulate a hill, and a console that estimates distance, pace, time and calories. Because the belt keeps moving whatever you do, you have to match its pace — which is why the safety key matters.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do you run on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Warm up with a few minutes of walking, then increase the speed gradually to a jog. Take slightly shorter, quicker steps so your feet land under your hips rather than out in front, look ahead rather than down, keep your arms relaxed and stay in the middle of the belt. Do not hold the rails while running. A 1% incline is a common rule of thumb to offset the lack of air resistance.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should you hold the handrails on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Only when stepping on and off, changing speed, or if you feel unsteady — or if your balance genuinely requires support. Leaning on the rails shortens your stride, stops your arms swinging and takes weight off your legs, which makes the session easier than the console reports. If you need to hold on to keep up, turn the speed or incline down.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the safety key on a treadmill for?</h3></summary>
+            <p class="faq-a">
+              The safety key stops the belt if it is pulled from the console. Clipped to your clothing at waist height, it pulls free if you stumble or drift toward the back of the deck, so the belt stops before it can throw you off. Remove it after each session and store it away from the machine so children cannot start the treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What speed should a beginner walk on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Most adults find a comfortable walking pace somewhere around 2.5 to 3.5 mph, but the right speed is the one where you can walk steadily without holding the rails and still hold a conversation. Start lower than you think you need, and increase gradually. Ten to twenty minutes at that effort is plenty for the first few sessions.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Pillar Guide</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types and how to build a week from them.</p>
+          </a>
+          <a href="/couch-to-5k-treadmill/" class="card">
+            <div class="c-kicker">Program</div>
+            <div class="c-title">Couch to 5K on a Treadmill</div>
+            <p class="c-blurb">Nine weeks from walking to thirty minutes of jogging.</p>
+          </a>
+          <a href="/best-treadmills-for-beginners/" class="card">
+            <div class="c-kicker">Buying</div>
+            <div class="c-title">Best Treadmills for Beginners</div>
+            <p class="c-blurb">Simple consoles, low starting speeds and sturdy frames.</p>
+          </a>
+          <a href="/types-of-treadmills/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Types of Treadmills</div>
+            <p class="c-blurb">Every kind of treadmill explained, from walking pads to incline trainers, with who each one suits.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

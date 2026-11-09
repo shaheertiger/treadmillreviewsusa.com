@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Are METs on a Treadmill? (2026): Meaning, Table and Calories";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-are-mets-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,105 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the MET Table", link: "#met-table" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whataremetsonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whataremetsonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">What Are METs on a Treadmill?</h1>
+      <p class="ed-dek">
+        METs are the number on the console that nobody explains. A MET is a multiple of the energy you use sitting still, so 6 METs means roughly six times your resting rate. Here is what it means, the standard equations consoles are typically based on, a table of estimates by speed and incline, how to turn METs into calories and MET-minutes, and why every figure is an estimate.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Are METs <span class="text-[#5AA9FF]">on a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          METs are the number on the console that nobody explains. A MET is a multiple of the energy you use sitting still, so 6 METs means roughly six times your resting rate. Here is what it means, the standard equations consoles are typically based on, a table of estimates by speed and incline, how to turn METs into calories and MET-minutes, and why every figure is an estimate.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#met-table" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Treadmill MET Table
-          </a>
-          <a href="#mets-to-calories" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            METs to Calories
-          </a>
-        </div>
+        <a href="#met-table" class="btn-ghost">Treadmill MET Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is an explanation of a number on the console, built from published standard
-          equations and simple arithmetic — it is not medical, coaching or nutrition advice, and we
-          are not qualified to give any of those. If you have a heart, lung, metabolic, joint or
-          other condition, are recovering from illness or injury, or have been given a MET or
-          heart-rate limit by a clinician, follow their advice on intensity rather than anything
-          here, and talk to a doctor before starting or stepping up an exercise programme.
-          <strong class="text-gray-900">On the figures below:</strong> MET values are estimates
-          calculated from the ACSM walking and running metabolic equations for an average person at
-          the stated speed and grade; calorie figures are arithmetic from those estimates. They
-          assume hands-free walking or running and an accurate speed and incline display, and real
-          individuals can differ from them meaningfully.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Are METs on a Treadmill? The Short Answer</a>
-          <a href="#what-is-a-met" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Exactly Is a MET?</a>
-          <a href="#why-consoles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Why Does My Treadmill Show METs?</a>
-          <a href="#how-calculated" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Are Treadmill METs Calculated?</a>
-          <a href="#met-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Treadmill METs by Speed and Incline: An Estimate Table</a>
-          <a href="#walk-or-run-equation" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Which Equation Applies Between 4 and 5 mph?</a>
-          <a href="#mets-to-calories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Do You Convert METs to Calories?</a>
-          <a href="#met-minutes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Are MET-Minutes, and How Many Do You Need a Week?</a>
-          <a href="#good-mets" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Is a Good MET Number on a Treadmill?</a>
-          <a href="#limitations" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Accurate Are Treadmill METs?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           If your treadmill console shows a figure labelled METs, it is telling you how hard the
           current speed and incline are, expressed as a multiple of the energy a person uses at
           rest. One MET is sitting quietly; three METs is roughly an easy walk; ten METs is a
@@ -213,8 +147,40 @@ const schema = {
           speeds and inclines, how to use it, and where it stops being trustworthy.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is an explanation of a number on the console, built from published standard
+          equations and simple arithmetic — it is not medical, coaching or nutrition advice, and we
+          are not qualified to give any of those. If you have a heart, lung, metabolic, joint or
+          other condition, are recovering from illness or injury, or have been given a MET or
+          heart-rate limit by a clinician, follow their advice on intensity rather than anything
+          here, and talk to a doctor before starting or stepping up an exercise programme. <strong class="text-gray-900">On the figures below:</strong> MET values are estimates
+          calculated from the ACSM walking and running metabolic equations for an average person at
+          the stated speed and grade; calorie figures are arithmetic from those estimates. They
+          assume hands-free walking or running and an accurate speed and incline display, and real
+          individuals can differ from them meaningfully.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Are METs on a Treadmill? The Short Answer</a></li>
+            <li><a href="#what-is-a-met">What Exactly Is a MET?</a></li>
+            <li><a href="#why-consoles">Why Does My Treadmill Show METs?</a></li>
+            <li><a href="#how-calculated">How Are Treadmill METs Calculated?</a></li>
+            <li><a href="#met-table">Treadmill METs by Speed and Incline: An Estimate Table</a></li>
+            <li><a href="#walk-or-run-equation">Which Equation Applies Between 4 and 5 mph?</a></li>
+            <li><a href="#mets-to-calories">How Do You Convert METs to Calories?</a></li>
+            <li><a href="#met-minutes">What Are MET-Minutes, and How Many Do You Need a Week?</a></li>
+            <li><a href="#good-mets">What Is a Good MET Number on a Treadmill?</a></li>
+            <li><a href="#limitations">How Accurate Are Treadmill METs?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Are METs on a Treadmill? The Short Answer</h2>
+          <h2>What Are METs on a Treadmill? The Short Answer</h2>
 <p>
             <strong>METs (metabolic equivalents) on a treadmill show how hard you are working as a
             multiple of your resting energy use: 1 MET is sitting quietly, so 4 METs means roughly
@@ -243,7 +209,7 @@ const schema = {
         </div>
 
         <div id="what-is-a-met" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Exactly Is a MET?</h2>
+          <h2>What Exactly Is a MET?</h2>
 <p>
             A MET is a unit of energy use equal to the rate at which an average adult uses oxygen
             sitting quietly at rest, conventionally set at 3.5 millilitres of oxygen per kilogram of
@@ -280,7 +246,7 @@ const schema = {
         </div>
 
         <div id="why-consoles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Why Does My Treadmill Show METs?</h2>
+          <h2>Why Does My Treadmill Show METs?</h2>
 <p>
             Treadmills show METs because it is a standard, weight-independent way of describing
             exercise intensity, used in exercise physiology, clinical exercise testing, cardiac
@@ -310,7 +276,7 @@ const schema = {
         </div>
 
         <div id="how-calculated" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Are Treadmill METs Calculated?</h2>
+          <h2>How Are Treadmill METs Calculated?</h2>
 <p>
             Treadmill METs are typically calculated from belt speed and incline using metabolic
             equations like the American College of Sports Medicine (ACSM) walking and running
@@ -361,7 +327,7 @@ const schema = {
         </div>
 
         <div id="met-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Treadmill METs by Speed and Incline: An Estimate Table</h2>
+          <h2>Treadmill METs by Speed and Incline: An Estimate Table</h2>
 <p>
             The tables below are calculated from the ACSM equations above, rounded to one decimal
             place. They are estimates for an average person walking or running hands-free at the
@@ -414,9 +380,7 @@ const schema = {
             Two patterns stand out. First, incline moves the number much more for walkers than
             speed does: going from 3.0 to 3.5 mph on the flat adds about 0.4 METs, while raising the
             grade from 0% to 5% at 3.0 mph adds about 2.1. That is the arithmetic behind the
-            popularity of incline walking, which our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            puts into practice. Second, in the running equation each percent of grade adds
+            popularity of incline walking, which our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> puts into practice. Second, in the running equation each percent of grade adds
             relatively little — the climbing coefficient is half the walking one — so for runners,
             speed is the bigger lever.
           </p>
@@ -428,7 +392,7 @@ const schema = {
         </div>
 
         <div id="walk-or-run-equation" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Which Equation Applies Between 4 and 5 mph?</h2>
+          <h2>Which Equation Applies Between 4 and 5 mph?</h2>
 <p>
             Between about 4 and 5 mph, use the equation that matches what you are actually doing —
             the walking one if you are walking, the running one if you are jogging — because the two
@@ -456,13 +420,12 @@ const schema = {
             though your effort barely changed. If your console's MET reading leaps between two
             adjacent speeds, this is a plausible explanation. For walkers who want a harder session, the cleaner
             route is usually to add incline at a comfortable walking speed rather than pushing into
-            the awkward zone; see our guide to
-            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>.
+            the awkward zone; see our guide to <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>.
           </p>
         </div>
 
         <div id="mets-to-calories" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Do You Convert METs to Calories?</h2>
+          <h2>How Do You Convert METs to Calories?</h2>
 <p>
             To convert METs to calories, multiply METs by your body weight in kilograms and by the
             time in hours: calories ≈ METs × kg × hours. For weight in pounds, divide by 2.2 first.
@@ -493,15 +456,13 @@ const schema = {
           </p>
           <p>
             For tables of calorie estimates across speeds, inclines and body weights, see our
-            reference on
-            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>;
-            for why the console figure often runs high, see whether
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calories are accurate</a>.
+            reference on <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>;
+            for why the console figure often runs high, see whether <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calories are accurate</a>.
           </p>
         </div>
 
         <div id="met-minutes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Are MET-Minutes, and How Many Do You Need a Week?</h2>
+          <h2>What Are MET-Minutes, and How Many Do You Need a Week?</h2>
 <p>
             MET-minutes are METs multiplied by minutes of activity, and the US physical activity
             guidelines' recommendation of 150 to 300 minutes of moderate activity a week is commonly
@@ -537,14 +498,12 @@ const schema = {
             and the MET-minute figure is only as good as the MET estimate underneath it. And the
             guidelines are written for the general adult population; if you have a medical
             condition, how much and how hard you should exercise is a question for your doctor. For
-            planning a week around the number, our guide to
-            <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">using a treadmill every day</a>
-            covers spreading sessions and recovery.
+            planning a week around the number, our guide to <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">using a treadmill every day</a> covers spreading sessions and recovery.
           </p>
         </div>
 
         <div id="good-mets" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Is a Good MET Number on a Treadmill?</h2>
+          <h2>What Is a Good MET Number on a Treadmill?</h2>
 <p>
             There is no single good MET number on a treadmill; the right figure depends on your
             fitness and what the session is for. As a broad guide, about 3 to 6 METs is moderate
@@ -565,9 +524,7 @@ const schema = {
             <li><strong>The talk test.</strong> At moderate intensity you can talk in full sentences
             but not sing; at vigorous intensity you can only manage a few words at a time.</li>
             <li><strong>Heart rate,</strong> measured with a chest strap or a reasonably fitted
-            watch, interpreted against your own zones. Our guide to
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
-            explains how to set them and their limits.</li>
+            watch, interpreted against your own zones. Our guide to <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a> explains how to set them and their limits.</li>
             <li><strong>Perceived effort,</strong> rated honestly on a simple scale.</li>
           </ul>
           <p>
@@ -579,7 +536,7 @@ const schema = {
         </div>
 
         <div id="limitations" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Accurate Are Treadmill METs?</h2>
+          <h2>How Accurate Are Treadmill METs?</h2>
 <p>
             Treadmill METs are reasonable estimates for an average person, but they are not a
             measurement of you: they assume average movement efficiency, a conventional resting
@@ -594,14 +551,10 @@ const schema = {
             standard value, not your resting rate, which affects any conversion into calories.</li>
             <li><strong>Holding the rails.</strong> The equations assume you support your own weight.
             Gripping the rails, especially on an incline, reduces the real cost while the MET display
-            stays the same. Our guide to
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">holding the handrails</a>
-            explains the effect.</li>
+            stays the same. Our guide to <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">holding the handrails</a> explains the effect.</li>
             <li><strong>Display accuracy.</strong> The console calculates METs from the speed and
             incline it thinks it is running at. If the belt is slow or the incline is off, the MET
-            figure is off with them; our guide to
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
-            covers checking both.</li>
+            figure is off with them; our guide to <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a> covers checking both.</li>
             <li><strong>The walk-run switch.</strong> As explained above, the equations differ
             sharply between walking and running, and the console has to guess which you are
             doing.</li>
@@ -616,141 +569,156 @@ const schema = {
             precise calorie counts, or treat it as a personal measurement.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does METs mean on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                METs stands for metabolic equivalents. It shows how hard the current speed and incline are as a multiple of the energy an average person uses at rest. One MET is sitting quietly, so a reading of 5 means roughly five times your resting energy use. The console typically estimates it from speed and incline, not from anything measured on you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many METs is walking on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Using the standard ACSM walking equation, a 2.5 mph walk on the flat is about 2.9 METs, 3 mph is about 3.3, 3.5 mph is about 3.7 and 4 mph is about 4.1. Incline raises it quickly: 3 mph at 5% is about 5.4 METs and at 10% about 7.4. These are estimates for an average person walking hands-free.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you convert treadmill METs to calories?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Multiply METs by your weight in kilograms and the time in hours. For example, 6 METs for 30 minutes at 160 lb, which is about 72.6 kg, is 6 times 72.6 times 0.5, or roughly 220 calories. Subtract one MET first if you want only the extra calories above resting. Treat the result as an estimate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good MET level on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on your fitness and goal. Around 3 to 6 METs is conventionally moderate intensity and 6 or more is vigorous, but the same figure can be easy for a fit person and very hard for a beginner. The talk test, heart rate and perceived effort are better guides to how hard a session is for you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are MET-minutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                MET-minutes are METs multiplied by minutes of activity, combining intensity and time into one number. Thirty minutes at 4 METs is 120 MET-minutes. The US guideline of 150 to 300 minutes of moderate activity a week is commonly framed as roughly 500 to 1,000 MET-minutes, since 150 minutes at 3 to 6 METs is 450 to 900.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are treadmill METs accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are reasonable estimates for an average person, not measurements of you. They assume typical movement efficiency, a conventional resting rate, hands-free walking and accurate speed and incline readings. Holding the rails, an inaccurate belt speed or the console guessing wrongly between walking and running can all push the figure off. Use it to compare sessions on one machine.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill METs</h2>
+          <p>METs are a useful scale. The mistakes come from reading them as a personal measurement or forgetting what they assume.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating METs as a measure of how hard it is for you</h3>
+              <p>METs describe the absolute cost of the settings for an average person, not your relative effort. A 6-MET walk can be easy for one person and near-maximal for another. Use the talk test, heart rate or perceived effort to judge intensity, and METs to compare settings and add up weekly totals.</p>
+            </li>
+            <li>
+              <h3>Holding the rails and trusting the reading</h3>
+              <p>The equations assume you carry your own weight. Gripping the front rail on an incline can take a large share of the climbing work away while the MET figure stays the same. If you want the display to mean anything, walk hands-free at a setting you can manage, even if it is lower.</p>
+            </li>
+            <li>
+              <h3>Comparing MET figures across machines</h3>
+              <p>Each console calculates METs from the speed and incline it believes it is running at, and many home machines are a few percent off on either. Consoles may also switch between walking and running equations at different speeds. Compare sessions on the same treadmill rather than across a gym machine and a home one.</p>
+            </li>
+            <li>
+              <h3>Using gross calories as calories earned</h3>
+              <p>Converting METs to calories gives a gross figure that includes the energy you would have used at rest anyway. For the extra calories the session cost, subtract one MET first. Either way the result is an estimate with a margin of error, not a precise allowance for food.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill METs</h2>
-          <p class="text-gray-700 leading-relaxed">METs are a useful scale. The mistakes come from reading them as a personal measurement or forgetting what they assume.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating METs as a measure of how hard it is for you</h3>
-              <p class="text-gray-700 text-sm m-0">METs describe the absolute cost of the settings for an average person, not your relative effort. A 6-MET walk can be easy for one person and near-maximal for another. Use the talk test, heart rate or perceived effort to judge intensity, and METs to compare settings and add up weekly totals.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails and trusting the reading</h3>
-              <p class="text-gray-700 text-sm m-0">The equations assume you carry your own weight. Gripping the front rail on an incline can take a large share of the climbing work away while the MET figure stays the same. If you want the display to mean anything, walk hands-free at a setting you can manage, even if it is lower.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing MET figures across machines</h3>
-              <p class="text-gray-700 text-sm m-0">Each console calculates METs from the speed and incline it believes it is running at, and many home machines are a few percent off on either. Consoles may also switch between walking and running equations at different speeds. Compare sessions on the same treadmill rather than across a gym machine and a home one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using gross calories as calories earned</h3>
-              <p class="text-gray-700 text-sm m-0">Converting METs to calories gives a gross figure that includes the energy you would have used at rest anyway. For the extra calories the session cost, subtract one MET first. Either way the result is an estimate with a margin of error, not a precise allowance for food.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-calories-burned/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Calories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calories Burned</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Estimates by speed, incline and weight, and how they are calculated.</p>
-            </a>
-            <a href="/are-treadmill-calories-accurate/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accuracy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Treadmill Calories Accurate?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why console calorie counts usually run high, and how to get a better number.</p>
-            </a>
-            <a href="/treadmill-heart-rate-zones/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Heart Rate</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Zones</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to set zones, what they are worth, and why grip sensors mislead.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">METs on a treadmill show how hard the current speed and incline
             are, as a multiple of resting energy use.</strong> A 3 mph walk is about 3.3 METs, 3.5 mph
             at 5% about 6, and a 6 mph run about 10, by the standard ACSM equations the console
             typically relies on.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Multiply METs by kilograms and hours for an estimate of calories, or by minutes for
             MET-minutes, with roughly 500 to 1,000 a week matching the US activity guidelines. Treat
             every figure as an estimate for an average person, not a measurement of you. For calorie
-            tables by speed and weight, see our reference on
-            <a href="/treadmill-calories-burned/" class="text-[#5AA9FF] font-bold no-underline">treadmill calories burned</a>.
+            tables by speed and weight, see our reference on <a href="/treadmill-calories-burned/" class="text-[#5AA9FF] font-bold no-underline">treadmill calories burned</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-calories-burned/">Treadmill Calories Burned</a></li>
+            <li><a href="/are-treadmill-calories-accurate/">Are Treadmill Calories Accurate?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What does METs mean on a treadmill?</h3></summary>
+            <p class="faq-a">
+              METs stands for metabolic equivalents. It shows how hard the current speed and incline are as a multiple of the energy an average person uses at rest. One MET is sitting quietly, so a reading of 5 means roughly five times your resting energy use. The console typically estimates it from speed and incline, not from anything measured on you.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How many METs is walking on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Using the standard ACSM walking equation, a 2.5 mph walk on the flat is about 2.9 METs, 3 mph is about 3.3, 3.5 mph is about 3.7 and 4 mph is about 4.1. Incline raises it quickly: 3 mph at 5% is about 5.4 METs and at 10% about 7.4. These are estimates for an average person walking hands-free.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do you convert treadmill METs to calories?</h3></summary>
+            <p class="faq-a">
+              Multiply METs by your weight in kilograms and the time in hours. For example, 6 METs for 30 minutes at 160 lb, which is about 72.6 kg, is 6 times 72.6 times 0.5, or roughly 220 calories. Subtract one MET first if you want only the extra calories above resting. Treat the result as an estimate.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a good MET level on a treadmill?</h3></summary>
+            <p class="faq-a">
+              It depends on your fitness and goal. Around 3 to 6 METs is conventionally moderate intensity and 6 or more is vigorous, but the same figure can be easy for a fit person and very hard for a beginner. The talk test, heart rate and perceived effort are better guides to how hard a session is for you.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What are MET-minutes?</h3></summary>
+            <p class="faq-a">
+              MET-minutes are METs multiplied by minutes of activity, combining intensity and time into one number. Thirty minutes at 4 METs is 120 MET-minutes. The US guideline of 150 to 300 minutes of moderate activity a week is commonly framed as roughly 500 to 1,000 MET-minutes, since 150 minutes at 3 to 6 METs is 450 to 900.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are treadmill METs accurate?</h3></summary>
+            <p class="faq-a">
+              They are reasonable estimates for an average person, not measurements of you. They assume typical movement efficiency, a conventional resting rate, hands-free walking and accurate speed and incline readings. Holding the rails, an inaccurate belt speed or the console guessing wrongly between walking and running can all push the figure off. Use it to compare sessions on one machine.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-calories-burned/" class="card">
+            <div class="c-kicker">Calories</div>
+            <div class="c-title">Treadmill Calories Burned</div>
+            <p class="c-blurb">Estimates by speed, incline and weight, and how they are calculated.</p>
+          </a>
+          <a href="/are-treadmill-calories-accurate/" class="card">
+            <div class="c-kicker">Accuracy</div>
+            <div class="c-title">Are Treadmill Calories Accurate?</div>
+            <p class="c-blurb">Why console calorie counts usually run high, and how to get a better number.</p>
+          </a>
+          <a href="/treadmill-heart-rate-zones/" class="card">
+            <div class="c-kicker">Heart Rate</div>
+            <div class="c-title">Treadmill Heart Rate Zones</div>
+            <p class="c-blurb">How to set zones, what they are worth, and why grip sensors mislead.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

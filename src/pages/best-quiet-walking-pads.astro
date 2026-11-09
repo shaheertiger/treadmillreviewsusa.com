@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Quiet Walking Pads (2026): Five Picks for Apartments";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-quiet-walking-pads/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Quiet Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best for Apartments: LifeSpan TX6 Under Desk Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestquietwalkingpads" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestquietwalkingpads)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Quiet Walking Pads for Apartments</h1>
+      <p class="ed-dek">
+        Almost every walking pad is sold as whisper-quiet, and the decibel figures on the listings cannot be compared. What the people below you hear is mostly your footsteps, not the motor. Here are five pads and under-desk treadmills worth considering, what actually makes one quieter, and how to set it up so the neighbours notice less.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Quiet Walking Pads <span class="text-[#5AA9FF]">for Apartments</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Almost every walking pad is sold as whisper-quiet, and the decibel figures on the listings cannot be compared. What the people below you hear is mostly your footsteps, not the motor. Here are five pads and under-desk treadmills worth considering, what actually makes one quieter, and how to set it up so the neighbours notice less.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#what-downstairs-hears" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Downstairs Hears
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#lifespan-tx6"><img src="https://m.media-amazon.com/images/I/31wESmkNoZL._SL500_.jpg" alt="LifeSpan TX6 Under Desk Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#lifespan-tr5000b-pro-glowup"><img src="https://m.media-amazon.com/images/I/314eClzr28L._SL500_.jpg" alt="LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#walkingpad-z1r"><img src="https://m.media-amazon.com/images/I/419oUO9ShtL._SL500_.jpg" alt="WalkingPad Z1R" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+        <figcaption>LifeSpan TX6 Under Desk Treadmill · LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill · WalkingPad Z1R</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Search for a quiet walking pad and every result claims to be the quietest, usually with a
+          decibel figure to prove it. Those figures are the seller's own, measured in conditions
+          nobody publishes, and they describe the motor hum you hear in the room — not the thud the
+          neighbour below hears through the ceiling. This page does three things: it names five
+          machines whose basic specifications held up when we checked them and whose construction
+          or independent coverage gives a real reason to expect less noise, it explains where
+          walking-pad noise actually comes from, and it sets out the set-up choices that matter
+          more than which pad you buy.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Apartments:</span> <a href="#lifespan-tx6">LifeSpan TX6 Under Desk Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Premium Pick:</span> <a href="#lifespan-tr5000b-pro-glowup">LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Folding Pad:</span> <a href="#walkingpad-z1r">WalkingPad Z1R</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Small Rooms:</span> <a href="#walkingpad-c2">WalkingPad C2</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#walkingpad-z1">WalkingPad Z1</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines and have not measured their noise. Each was confirmed on 15 October 2026 as
           currently sold on the maker's own store, and its specifications were checked on that
@@ -346,87 +368,33 @@ const schema = {
           independent reviews of the TR5000 family. The WalkingPad A1 Pro card, not sold on Amazon US, became the
           WalkingPad Z1R the same day, with the figures checked for our lightweight treadmill guide. We earn a commission if you buy through the Amazon links on
           this page; it does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Apartments:</span>
-            <a href="#lifespan-tx6" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TX6 Under Desk Treadmill</a>
-            <a href="#lifespan-tx6" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Premium Pick:</span>
-            <a href="#lifespan-tr5000b-pro-glowup" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TR5000B Pro+ GlowUp Under Desk Treadmill</a>
-            <a href="#lifespan-tr5000b-pro-glowup" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Folding Pad:</span>
-            <a href="#walkingpad-z1r" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad Z1R</a>
-            <a href="#walkingpad-z1r" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Small Rooms:</span>
-            <a href="#walkingpad-c2" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad C2</a>
-            <a href="#walkingpad-c2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#walkingpad-z1" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad Z1</a>
-            <a href="#walkingpad-z1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Quiet Walking Pads</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Walking Pads</a>
-          <a href="#what-downstairs-hears" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Downstairs Actually Hears</a>
-          <a href="#decibel-claims" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Read a Decibel Claim</a>
-          <a href="#what-makes-quiet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Makes One Walking Pad Quieter Than Another</a>
-          <a href="#folding-or-fixed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Folding Pad or Office Treadmill?</a>
-          <a href="#setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Setting Up a Walking Pad for the Neighbours</a>
-          <a href="#apartment-checks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Before You Buy for an Apartment</a>
-          <a href="#first-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Testing a New Pad in Your Flat</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Quiet Walking Pads</a></li>
+            <li><a href="#how-we-chose">How We Chose These Walking Pads</a></li>
+            <li><a href="#what-downstairs-hears">What Downstairs Actually Hears</a></li>
+            <li><a href="#decibel-claims">How to Read a Decibel Claim</a></li>
+            <li><a href="#what-makes-quiet">What Makes One Walking Pad Quieter Than Another</a></li>
+            <li><a href="#folding-or-fixed">Folding Pad or Office Treadmill?</a></li>
+            <li><a href="#setup">Setting Up a Walking Pad for the Neighbours</a></li>
+            <li><a href="#apartment-checks">Before You Buy for an Apartment</a></li>
+            <li><a href="#first-week">Testing a New Pad in Your Flat</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Search for a quiet walking pad and every result claims to be the quietest, usually with a
-          decibel figure to prove it. Those figures are the seller's own, measured in conditions
-          nobody publishes, and they describe the motor hum you hear in the room — not the thud the
-          neighbour below hears through the ceiling. This page does three things: it names five
-          machines whose basic specifications held up when we checked them and whose construction
-          or independent coverage gives a real reason to expect less noise, it explains where
-          walking-pad noise actually comes from, and it sets out the set-up choices that matter
-          more than which pad you buy.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Two heavier, non-folding office treadmills and three folding pads. The short version:
             the LifeSpan TX6 if the people below you are the main concern and you can leave a
             machine in place; the WalkingPad Z1R if it has to fold away (it stands in for the A1 Pro, which is
-            not sold on Amazon US); and the
-            <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> if you want a quiet-running pad on a budget and are under its weight
+            not sold on Amazon US); and the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> if you want a quiet-running pad on a budget and are under its weight
             limit.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -448,14 +416,12 @@ const schema = {
           <p>
             None of these will make walking above someone silent, and the set-up advice later on this
             page matters as much as the choice of machine. For the broader picture of noise from any
-            treadmill, read our guide to
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            alongside this one.
+            treadmill, read our guide to <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> alongside this one.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Quiet Walking Pads</h2>
+          <h2>The 5 Best Quiet Walking Pads</h2>
 <p>
             The cards give the figures that the maker and an independent source agreed on, the price
             range we saw and who each machine suits. You will not find a decibel figure in any
@@ -469,78 +435,67 @@ const schema = {
             points that matter here.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Walking Pads</h2>
+          <h2>How We Chose These Walking Pads</h2>
 <p>
             We have not tested these machines or measured their noise. They were chosen from
             published specifications, maker and retailer listings, warranty terms and independent
@@ -577,7 +532,7 @@ const schema = {
         </div>
 
         <div id="what-downstairs-hears" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Downstairs Actually Hears</h2>
+          <h2>What Downstairs Actually Hears</h2>
 <p>
             Walking-pad noise comes in two kinds, and they travel very differently. Most buying
             decisions focus on the wrong one.
@@ -604,9 +559,7 @@ const schema = {
             The practical consequence is that a pad with a very quiet motor can still be a bad
             neighbour, and a pad with an audible hum can be a good one, if it is heavier and better
             damped. A light pad sitting directly on a suspended timber floor is close to the worst
-            case. Our guide to
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a>
-            covers the same problem for full-size machines.
+            case. Our guide to <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">treadmills for apartments</a> covers the same problem for full-size machines.
           </p>
           <p>
             A simple test settles which kind you have. Ask someone to stand in the room below while
@@ -617,7 +570,7 @@ const schema = {
         </div>
 
         <div id="decibel-claims" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Read a Decibel Claim</h2>
+          <h2>How to Read a Decibel Claim</h2>
 <p>
             Nearly every walking pad listing quotes a noise figure, and nearly all of them are
             impossible to compare. Two examples from the same brand on the day we checked make the
@@ -646,7 +599,7 @@ const schema = {
         </div>
 
         <div id="what-makes-quiet" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Makes One Walking Pad Quieter Than Another</h2>
+          <h2>What Makes One Walking Pad Quieter Than Another</h2>
 <p>
             Without a common test, you are left reasoning from construction. These are the
             differences that plausibly matter, roughly in order of how much.
@@ -675,21 +628,16 @@ const schema = {
             <strong>Incidental noise.</strong> In practice, many complaints are about beeps on
             every speed change, a remote that chirps, a hinge that clunks when the pad is unfolded,
             or a belt that squeaks for want of lubricant. An independent reviewer noted that the A1
-            Pro can make a loud tearing sound when unfolded if the belt sticks, and that the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a>
-            Z10's beeps cannot be silenced. These are small things that become big things at 7 am.
+            Pro can make a loud tearing sound when unfolded if the belt sticks, and that the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> Z10's beeps cannot be silenced. These are small things that become big things at 7 am.
           </p>
           <p>
             <strong>Condition.</strong> A dry belt, a loose bolt or a belt that has drifted off centre
-            makes noise that no specification predicts. Our guides to
-            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
-            and to
-            <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">squeaking treadmill noise</a>
-            cover the fixes.
+            makes noise that no specification predicts. Our guides to <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a> and to <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">squeaking treadmill noise</a> cover the fixes.
           </p>
         </div>
 
         <div id="folding-or-fixed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Folding Pad or Office Treadmill?</h2>
+          <h2>Folding Pad or Office Treadmill?</h2>
 <p>
             The biggest decision on this page is not between brands but between two kinds of
             machine, and it is mostly decided by your room.
@@ -712,14 +660,12 @@ const schema = {
           <p>
             A middle path is a folding pad that, in practice, never moves: left in place on a dense
             mat with isolation feet underneath. That recovers some of what an office treadmill does
-            for the floor, at a fraction of the price, though it will not match the mass. Our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a>
-            covers the wider trade-offs.
+            for the floor, at a fraction of the price, though it will not match the mass. Our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a> covers the wider trade-offs.
           </p>
         </div>
 
         <div id="setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Setting Up a Walking Pad for the Neighbours</h2>
+          <h2>Setting Up a Walking Pad for the Neighbours</h2>
 <p>
             How you set a pad up can matter more than which pad you buy. In rough order of
             usefulness:
@@ -733,16 +679,12 @@ const schema = {
             <li><strong>Maintain it.</strong> Lubricate the belt on the maker's schedule, check that it runs centred and tighten the frame bolts occasionally. A dry or loose pad gets noisier with age.</li>
           </ol>
           <p>
-            If you are buying a pad specifically to use under a standing desk, our guide to the
-            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height you need for a walking pad</a>
-            covers the ergonomics, and the
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills guide</a>
-            covers the wider choice of machines.
+            If you are buying a pad specifically to use under a standing desk, our guide to the <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height you need for a walking pad</a> covers the ergonomics, and the <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills guide</a> covers the wider choice of machines.
           </p>
         </div>
 
         <div id="apartment-checks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Before You Buy for an Apartment</h2>
+          <h2>Before You Buy for an Apartment</h2>
 <p>
             A few checks before ordering save an awkward conversation later.
           </p>
@@ -759,9 +701,7 @@ const schema = {
           <p>
             <strong>Check the weight limit honestly.</strong> A pad used near its limit works its
             motor and deck harder, and in practice harder-worked pads tend to get noisier. Several
-            pads on this page have limits around 220 to 242 lb, and our page on
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            covers machines rated higher.
+            pads on this page have limits around 220 to 242 lb, and our page on <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> covers machines rated higher.
           </p>
           <p>
             <strong>Check the return terms.</strong> You will only know how a pad sounds in your flat
@@ -769,15 +709,13 @@ const schema = {
             answer on who pays return shipping for a 50 to 160 lb box, is worth having.
           </p>
           <p>
-            <strong>Plan for its life.</strong> Our guide to
-            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>
-            sets realistic expectations; noise that develops over months is often the first sign of
+            <strong>Plan for its life.</strong> Our guide to <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a> sets realistic expectations; noise that develops over months is often the first sign of
             wear.
           </p>
         </div>
 
         <div id="first-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Testing a New Pad in Your Flat</h2>
+          <h2>Testing a New Pad in Your Flat</h2>
 <p>
             You only find out how a pad sounds in your building once it is in your building, so use
             the return window deliberately rather than hoping for the best.
@@ -798,12 +736,10 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you want to jog</strong>, a walking pad is the wrong machine for an apartment,
-            quiet or not. Jogging multiplies impact noise, and most pads are not built for it. Our
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            explains the limits, and a full treadmill on a dense mat is the better route if running
+            quiet or not. Jogging multiplies impact noise, and most pads are not built for it. Our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> explains the limits, and a full treadmill on a dense mat is the better route if running
             matters to you.
           </p>
           <p>
@@ -819,110 +755,38 @@ const schema = {
           </p>
           <p>
             <strong>If you would rather not walk at your desk at all</strong>, a full desk set-up
-            may suit you better than a loose pad. Our guide to the
-            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
-            compares the complete options.
+            may suit you better than a loose pad. Our guide to the <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> compares the complete options.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the quietest walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no reliable answer, because walking pad makers do not measure noise the same way and listing decibel figures cannot be compared. For neighbours below, heavier non-folding machines such as the LifeSpan TX6 or TR5000B Pro+ are the safer bet. Among folding pads, independent reviewers found the WalkingPad A1 Pro fairly quiet at desk speeds.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can downstairs neighbours hear a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes, though usually as a rhythmic thud from your footsteps rather than motor noise. Impact travels through the floor structure far more easily than motor hum does. A dense rubber mat, a heavier machine, a slower pace, softer steps and keeping the pad away from shared walls all reduce it. On a timber floor, some noise usually still gets through.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are walking pad decibel ratings accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Treat them as the seller's claim. Listings rarely say how far from the machine, at what speed or with what load the figure was taken, and two listings from the same brand can quote very different numbers for similar pads. Even a careful airborne measurement says nothing about impact noise in the room below, which is the usual complaint.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a mat make a walking pad quieter?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A dense rubber mat reduces some of the impact noise that reaches the floor and stops rattles, and it protects the floor. A thin vinyl mat mainly protects the floor. Neither does much for motor hum in your own room. Soft foam is a poor choice because it lets the pad rock. A mat helps; it does not make a pad silent.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad quieter than a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In the room, usually yes, because walking pads run slower with smaller motors. Through the floor, not necessarily: a light pad has little mass and cushioning to absorb your steps before they reach the floor, so a heavier treadmill at the same walking pace can be the better neighbour. What matters most is pace, mass and what sits underneath.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What time is it OK to use a walking pad in an apartment?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Check your lease or building rules first, because some set quiet hours. Otherwise, impact noise is most intrusive early in the morning and late at night when the flat below is quiet. Daytime use is less likely to cause complaints. If you plan regular early walks, a short conversation with the neighbour below is worth having.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Quiet Walking Pad</h2>
+          <p>Each of these leads to a pad that is louder downstairs than the listing promised.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Choosing by the decibel figure</h3>
+              <p>Listing dB figures are the seller's claims, measured in unknown conditions, and they describe motor hum rather than the thud below. Two listings from the same brand quoted 40 and 65 dB for similar pads on the day we checked. Choose by mass, deck, speed range and independent descriptions of noise, and treat any number as marketing.</p>
+            </li>
+            <li>
+              <h3>Putting a light pad straight on a timber floor</h3>
+              <p>A 50 lb folding pad on a suspended timber floor passes most of each footstep into the structure. Put a dense rubber mat underneath, keep the pad away from shared walls and away from the middle of a long span, and consider a heavier non-folding machine if you walk for hours above someone's bedroom.</p>
+            </li>
+            <li>
+              <h3>Walking too fast with a heavy heel strike</h3>
+              <p>Impact noise rises sharply with pace and with how hard your heels land. A brisk 4 mph walk in hard-soled shoes is the loudest way to use any pad. Slow down to a pace you can hold with a soft, rolling step, wear cushioned shoes, and save faster walking for times when the flat below is empty.</p>
+            </li>
+            <li>
+              <h3>Ignoring beeps, hinges and maintenance</h3>
+              <p>Many complaints are about incidental noise: beeps on every speed change that cannot be muted, a hinge that clunks on unfolding, or a dry belt that squeaks. Check whether the beeps can be silenced before buying, unfold a folding pad gently, and lubricate and centre the belt on the maker's schedule so the pad stays quiet as it ages.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Quiet Walking Pad</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these leads to a pad that is louder downstairs than the listing promised.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing by the decibel figure</h3>
-              <p class="text-gray-700 text-sm m-0">Listing dB figures are the seller's claims, measured in unknown conditions, and they describe motor hum rather than the thud below. Two listings from the same brand quoted 40 and 65 dB for similar pads on the day we checked. Choose by mass, deck, speed range and independent descriptions of noise, and treat any number as marketing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting a light pad straight on a timber floor</h3>
-              <p class="text-gray-700 text-sm m-0">A 50 lb folding pad on a suspended timber floor passes most of each footstep into the structure. Put a dense rubber mat underneath, keep the pad away from shared walls and away from the middle of a long span, and consider a heavier non-folding machine if you walk for hours above someone's bedroom.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Walking too fast with a heavy heel strike</h3>
-              <p class="text-gray-700 text-sm m-0">Impact noise rises sharply with pace and with how hard your heels land. A brisk 4 mph walk in hard-soled shoes is the loudest way to use any pad. Slow down to a pace you can hold with a soft, rolling step, wear cushioned shoes, and save faster walking for times when the flat below is empty.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring beeps, hinges and maintenance</h3>
-              <p class="text-gray-700 text-sm m-0">Many complaints are about incidental noise: beeps on every speed change that cannot be muted, a hinge that clunks on unfolding, or a dry belt that squeaks. Check whether the beeps can be silenced before buying, unfold a folding pad gently, and lubricate and centre the belt on the maker's schedule so the pad stays quiet as it ages.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Noise</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Airborne versus impact noise, and what neighbours actually hear from any treadmill.</p>
-            </a>
-            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Under Desk</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The wider choice of machines for walking while you work.</p>
-            </a>
-            <a href="/best-treadmill-anti-vibration-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Isolation</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Anti-Vibration Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The isolation feet and pads that go under a machine to cut vibration into the floor.</p>
-            </a>
-            <a href="/wooden-walking-pad/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking pads</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Wooden Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Wood-look pads, solid-wood manual desk treadmills and wooden slat machines: what wood changes, US prices, warranties and care.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">If the people below you are the concern, buy a heavier non-folding
             machine such as the LifeSpan TX6</strong>, put it on a dense rubber mat and
             walk at a gentle pace. If it has to fold away, the WalkingPad A1 Pro is the folding pad
@@ -930,37 +794,125 @@ const schema = {
             WalkingPad Z1R is the long-belt folding pad that is, and the WalkingPad Z1 is the budget
             choice for a lighter walker.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, ignore the decibel figure on the listing, test with someone in the room
             below, and fix placement before blaming the machine. For the full explanation of why
-            footsteps, not motors, are the usual problem, read our guide to
-            <a href="/quiet-treadmills/" class="text-[#5AA9FF] font-bold no-underline">quiet treadmills</a>.
+            footsteps, not motors, are the usual problem, read our guide to <a href="/quiet-treadmills/" class="text-[#5AA9FF] font-bold no-underline">quiet treadmills</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/quiet-treadmills/">Quiet Treadmills</a></li>
+            <li><a href="/under-desk-treadmills/">Under-Desk Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the quietest walking pad?</h3></summary>
+            <p class="faq-a">
+              There is no reliable answer, because walking pad makers do not measure noise the same way and listing decibel figures cannot be compared. For neighbours below, heavier non-folding machines such as the LifeSpan TX6 or TR5000B Pro+ are the safer bet. Among folding pads, independent reviewers found the WalkingPad A1 Pro fairly quiet at desk speeds.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can downstairs neighbours hear a walking pad?</h3></summary>
+            <p class="faq-a">
+              Often, yes, though usually as a rhythmic thud from your footsteps rather than motor noise. Impact travels through the floor structure far more easily than motor hum does. A dense rubber mat, a heavier machine, a slower pace, softer steps and keeping the pad away from shared walls all reduce it. On a timber floor, some noise usually still gets through.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are walking pad decibel ratings accurate?</h3></summary>
+            <p class="faq-a">
+              Treat them as the seller's claim. Listings rarely say how far from the machine, at what speed or with what load the figure was taken, and two listings from the same brand can quote very different numbers for similar pads. Even a careful airborne measurement says nothing about impact noise in the room below, which is the usual complaint.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a mat make a walking pad quieter?</h3></summary>
+            <p class="faq-a">
+              A dense rubber mat reduces some of the impact noise that reaches the floor and stops rattles, and it protects the floor. A thin vinyl mat mainly protects the floor. Neither does much for motor hum in your own room. Soft foam is a poor choice because it lets the pad rock. A mat helps; it does not make a pad silent.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad quieter than a treadmill?</h3></summary>
+            <p class="faq-a">
+              In the room, usually yes, because walking pads run slower with smaller motors. Through the floor, not necessarily: a light pad has little mass and cushioning to absorb your steps before they reach the floor, so a heavier treadmill at the same walking pace can be the better neighbour. What matters most is pace, mass and what sits underneath.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What time is it OK to use a walking pad in an apartment?</h3></summary>
+            <p class="faq-a">
+              Check your lease or building rules first, because some set quiet hours. Otherwise, impact noise is most intrusive early in the morning and late at night when the flat below is quiet. Daytime use is less likely to cause complaints. If you plan regular early walks, a short conversation with the neighbour below is worth having.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/quiet-treadmills/" class="card">
+            <div class="c-kicker">Noise</div>
+            <div class="c-title">Quiet Treadmills</div>
+            <p class="c-blurb">Airborne versus impact noise, and what neighbours actually hear from any treadmill.</p>
+          </a>
+          <a href="/under-desk-treadmills/" class="card">
+            <div class="c-kicker">Under Desk</div>
+            <div class="c-title">Under-Desk Treadmills</div>
+            <p class="c-blurb">The wider choice of machines for walking while you work.</p>
+          </a>
+          <a href="/best-treadmill-anti-vibration-pads/" class="card">
+            <div class="c-kicker">Isolation</div>
+            <div class="c-title">Best Treadmill Anti-Vibration Pads</div>
+            <p class="c-blurb">The isolation feet and pads that go under a machine to cut vibration into the floor.</p>
+          </a>
+          <a href="/wooden-walking-pad/" class="card">
+            <div class="c-kicker">Walking pads</div>
+            <div class="c-title">Wooden Walking Pads</div>
+            <p class="c-blurb">Wood-look pads, solid-wood manual desk treadmills and wooden slat machines: what wood changes, US prices, warranties and care.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Costco Treadmills (2026): Is Buying a Treadmill at Costco Worth It?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/buying-a-treadmill-at-costco/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,99 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "How to Judge a Costco Model", link: "#exclusive-models" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-buyingatreadmillatcostco" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-buyingatreadmillatcostco)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Buying a Treadmill at Costco</h1>
+      <p class="ed-dek">
+        Costco can be a good place to buy a treadmill, mainly because of its return reputation and its delivered pricing. It is a poor place to browse, because the selection is small and rotating — and the model on the shelf is often a version you cannot compare directly with anything else.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Buying a Treadmill <span class="text-[#5AA9FF]">at Costco</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Costco can be a good place to buy a treadmill, mainly because of its return reputation and its delivered pricing. It is a poor place to browse, because the selection is small and rotating — and the model on the shelf is often a version you cannot compare directly with anything else.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#exclusive-models" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Judging a Costco Model
-          </a>
-          <a href="#returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Returns and Delivery
-          </a>
-        </div>
+        <a href="#exclusive-models" class="btn-ghost">Judging a Costco Model</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Costco. Membership terms, return rules, delivery options and the
-          treadmills offered change over time and can differ by region and channel. Where this page
-          describes how things typically work, check the current policy on the product page or with
-          the warehouse before you buy.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Treadmill at Costco?</a>
-          <a href="#what-costco-sells" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Costco Typically Sells</a>
-          <a href="#membership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Membership: The Cost Before the Price</a>
-          <a href="#exclusive-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Judge a Costco-Exclusive Model Number</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Costco's Return Policy and Treadmills</a>
-          <a href="#delivery-assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Delivery and Assembly Options</a>
-          <a href="#warranty-service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Warranty, Parts and Service</a>
-          <a href="#compare-channels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How Costco Compares With Other Places to Buy</a>
-          <a href="#timing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When to Look</a>
-          <a href="#who-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Costco Suits, and Who It Does Not</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Before You Buy a Treadmill at Costco</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           This page does not list what Costco is selling right now, because that changes through
           the year, differs between warehouses and the website, and would be stale within weeks.
           It covers how to judge whatever is on offer when you look: what the model number means,
@@ -204,8 +144,35 @@ const schema = {
           other places you could buy the same kind of machine.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site is independent and
+          not affiliated with Costco. Membership terms, return rules, delivery options and the
+          treadmills offered change over time and can differ by region and channel. Where this page
+          describes how things typically work, check the current policy on the product page or with
+          the warehouse before you buy.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a Treadmill at Costco?</a></li>
+            <li><a href="#what-costco-sells">What Costco Typically Sells</a></li>
+            <li><a href="#membership">Membership: The Cost Before the Price</a></li>
+            <li><a href="#exclusive-models">How to Judge a Costco-Exclusive Model Number</a></li>
+            <li><a href="#returns">Costco's Return Policy and Treadmills</a></li>
+            <li><a href="#delivery-assembly">Delivery and Assembly Options</a></li>
+            <li><a href="#warranty-service">Warranty, Parts and Service</a></li>
+            <li><a href="#compare-channels">How Costco Compares With Other Places to Buy</a></li>
+            <li><a href="#timing">When to Look</a></li>
+            <li><a href="#who-suits">Who Costco Suits, and Who It Does Not</a></li>
+            <li><a href="#checklist">Before You Buy a Treadmill at Costco</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Treadmill at Costco?</h2>
+          <h2>Should You Buy a Treadmill at Costco?</h2>
 <p>
             <strong>Costco is worth checking if you are already a member and one of the treadmills it
             carries at the time matches what you need.</strong> Its prices on large items are often
@@ -231,7 +198,7 @@ const schema = {
         </div>
 
         <div id="what-costco-sells" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Costco Typically Sells</h2>
+          <h2>What Costco Typically Sells</h2>
 <p>
             Costco's treadmill range is narrow by design. At any given time there may be only a
             handful of models, sometimes fewer, and what is available in one warehouse may not be in
@@ -254,9 +221,7 @@ const schema = {
             <strong>The mix covers several categories.</strong> Depending on the season you may
             find walking pads or compact folding machines alongside full-size <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>,
             and occasionally larger machines online. These are very different products, and the
-            label "treadmill" on the box does not tell you which you are looking at. Our
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
-            comparison covers that distinction.
+            label "treadmill" on the box does not tell you which you are looking at. Our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a> comparison covers that distinction.
           </p>
           <p>
             The practical result is that you cannot plan to buy a particular model at Costco. You
@@ -265,7 +230,7 @@ const schema = {
         </div>
 
         <div id="membership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Membership: The Cost Before the Price</h2>
+          <h2>Membership: The Cost Before the Price</h2>
 <p>
             Buying at Costco generally requires a membership, and that has two consequences worth
             thinking about before you compare prices.
@@ -285,14 +250,12 @@ const schema = {
           </p>
           <p>
             If you are already a member, the comparison is straightforward: the delivered price at
-            Costco against the delivered price for the closest equivalent machine elsewhere. Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy guide</a>
-            sets out what each channel usually includes, which is what makes the comparison fair.
+            Costco against the delivered price for the closest equivalent machine elsewhere. Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy guide</a> sets out what each channel usually includes, which is what makes the comparison fair.
           </p>
         </div>
 
         <div id="exclusive-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Judge a Costco-Exclusive Model Number</h2>
+          <h2>How to Judge a Costco-Exclusive Model Number</h2>
 <p>
             This is the most important skill for buying fitness equipment at a warehouse club. Many
             treadmills sold through large retailers, Costco included, are retailer-specific variants
@@ -328,7 +291,7 @@ const schema = {
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Costco's Return Policy and Treadmills</h2>
+          <h2>Costco's Return Policy and Treadmills</h2>
 <p>
             Costco's return policy is widely regarded as generous, and for many members it is the
             main reason to buy a treadmill there. A treadmill is hard to judge in a showroom and
@@ -352,14 +315,12 @@ const schema = {
           <p>
             <strong>Do not treat the return policy as a trial plan.</strong> Buying a machine that does
             not meet your specification on the basis that you can always return it costs you time and
-            effort, and a return is not a substitute for choosing the right machine. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a>
-            covers the decisions to make first.
+            effort, and a return is not a substitute for choosing the right machine. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">buying guide</a> covers the decisions to make first.
           </p>
         </div>
 
         <div id="delivery-assembly" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Delivery and Assembly Options</h2>
+          <h2>Delivery and Assembly Options</h2>
 <p>
             How a Costco treadmill gets into your home depends on where you buy it.
           </p>
@@ -368,9 +329,7 @@ const schema = {
             and it is up to you to transport it, carry it in and assemble it. Boxed treadmills are
             heavy and awkward; even a compact machine can be more than one adult wants to handle
             alone, and a full-size folding treadmill in its box needs two or more people and a vehicle
-            that can take it. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives typical figures by type, including boxed weight.
+            that can take it. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives typical figures by type, including boxed weight.
           </p>
           <p>
             <strong>Online purchases are often delivered.</strong> Online listings for large items
@@ -381,20 +340,16 @@ const schema = {
           <p>
             <strong>Assembly is often yours to arrange.</strong> If the listing does not include
             assembly, plan for it: either your own time with the manual, or a third-party assembler.
-            Our guide to
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a>
-            sets out what the job involves.
+            Our guide to <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a> sets out what the job involves.
             Budget for it in the comparison with retailers that include it.
           </p>
           <p>
-            Before either, measure the route from the door to the room and the room itself. Our
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a>
-            covers stairs and tight corners.
+            Before either, measure the route from the door to the room and the room itself. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a> covers stairs and tight corners.
           </p>
         </div>
 
         <div id="warranty-service" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Warranty, Parts and Service</h2>
+          <h2>Warranty, Parts and Service</h2>
 <p>
             A treadmill is a machine that will at some point need a part or a technician, so it is
             worth knowing who you will call before you buy.
@@ -418,16 +373,12 @@ const schema = {
           </p>
           <p>
             None of this is a reason to avoid Costco. It is a reason to check warranty terms on the
-            specific model, not on the brand in general, and to keep good records. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains how to read the terms, and our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
-            covers the routine that keeps warranty claims rare.
+            specific model, not on the brand in general, and to keep good records. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains how to read the terms, and our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a> covers the routine that keeps warranty claims rare.
           </p>
         </div>
 
         <div id="compare-channels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How Costco Compares With Other Places to Buy</h2>
+          <h2>How Costco Compares With Other Places to Buy</h2>
 <p>
             Every channel has a strength, and Costco's are price on its selected models, delivery
             included in many online prices, and its return reputation. Here is how it compares.
@@ -450,20 +401,16 @@ const schema = {
           </p>
           <p>
             <strong>The used market</strong> offers the lowest prices for those prepared to inspect a
-            machine properly. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            covers that trade-off.
+            machine properly. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> covers that trade-off.
           </p>
           <p>
-            Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            goes further into each channel. The fair comparison is always the same: the delivered
+            Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> goes further into each channel. The fair comparison is always the same: the delivered
             price for an equivalent specification, with the return terms and warranty alongside.
           </p>
         </div>
 
         <div id="timing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When to Look</h2>
+          <h2>When to Look</h2>
 <p>
             Because the selection rotates, timing at Costco is partly about what is in stock as well
             as what it costs.
@@ -477,11 +424,7 @@ const schema = {
           </p>
           <p>
             Judge any Costco price exactly as you would elsewhere: against what equivalent machines
-            are actually selling for, not against a "was" price. Our guide to
-            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
-            covers how to tell a real reduction from a presentational one, and the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            sets out the wider price cycle.
+            are actually selling for, not against a "was" price. Our guide to <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a> covers how to tell a real reduction from a presentational one, and the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> sets out the wider price cycle.
           </p>
           <p>
             One caution: because warehouse stock is limited and may not be replenished, a machine you
@@ -492,7 +435,7 @@ const schema = {
         </div>
 
         <div id="who-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Costco Suits, and Who It Does Not</h2>
+          <h2>Who Costco Suits, and Who It Does Not</h2>
 <p>
             <strong>Costco suits</strong> existing members who know what they need and find a machine
             that matches it; buyers who value a strong return policy because they are unsure how a
@@ -503,8 +446,7 @@ const schema = {
             <strong>It suits less well</strong> serious runners who need a long deck and a strong
             continuous motor, since the selection may not include a machine at that level at any
             given time; heavier users who need a high weight capacity and the motor to match, as
-            covered in our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>;
+            covered in our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>;
             buyers who want a specific, well-reviewed model; and anyone who needs delivery to an
             upstairs room with assembly and does not want to arrange it separately.
           </p>
@@ -517,7 +459,7 @@ const schema = {
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Before You Buy a Treadmill at Costco</h2>
+          <h2>Before You Buy a Treadmill at Costco</h2>
 <p>
             Run through these before you load a box onto the cart or place the order.
           </p>
@@ -533,155 +475,168 @@ const schema = {
             <li><strong>Delivered price compared.</strong> Is it competitive against an equivalent machine elsewhere, including membership if you are joining for it?</li>
           </ul>
           <p>
-            If you are unsure how much machine you need, our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            is the place to start.
+            If you are unsure how much machine you need, our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a> is the place to start.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Costco sell treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, usually, though the selection is small and rotates through the year. What is available in a warehouse can differ from what is listed online and from other warehouses. Fitness equipment tends to be most visible around the new year. Check both the warehouse and the website, and expect the range to change.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are Costco treadmills good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some are good value and some are modest machines suited to walking. Many are retailer-specific variants of mainstream models, so judge each one on its specifications — continuous horsepower, deck size, maximum user weight and warranty — compared with the nearest mainstream model from the same manufacturer, rather than on the brand or the store.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is Costco's return policy on treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Costco's return policy is widely regarded as generous, but terms can differ for some categories and for large or delivered items, and policies change. Check the current return terms on the product page or at the warehouse before buying, and find out how a return would work in practice for a heavy machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Costco deliver and assemble treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the channel. Warehouse purchases are usually taken home by the member. Online listings for large items often include delivery in the price, but the level of delivery varies, and assembly may not be included or offered. Read the delivery terms on the listing and plan for assembly if it is not included.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why can't I find the Costco treadmill model anywhere else?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Because many treadmills sold through large retailers are retailer-specific variants with their own model numbers. They are usually close to a mainstream model from the same manufacturer, but can differ in console, accessories, warranty or specifications. Compare specifications line by line, and ask the manufacturer what the model is based on.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it cheaper to buy a treadmill at Costco?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sometimes. Prices on its selected models are often competitive and online prices frequently include delivery. Compare the delivered price against an equivalent specification elsewhere, include the membership fee if you are joining only for this, and weigh the return terms and warranty alongside the price.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill at Costco</h2>
+          <p>The warehouse format rewards buyers who arrive with a specification and catches out those who arrive with a shopping trolley.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming the model is the one reviewed elsewhere</h3>
+              <p>A similar name and the same brand do not mean the same machine. Retailer-specific variants can differ in console, accessories, warranty and sometimes specification. Compare continuous horsepower, deck size, user weight and warranty line by line against the manufacturer's published figures.</p>
+            </li>
+            <li>
+              <h3>Relying on the return reputation without reading the terms</h3>
+              <p>Return policies can differ for large, delivered or specific categories of item, and they change. Read the current terms for the product you are buying, and work out how you would physically return a heavy machine before you need to.</p>
+            </li>
+            <li>
+              <h3>Not planning how to get the box home</h3>
+              <p>A warehouse treadmill leaves with you in its box. Even compact machines are heavy, and full-size folding treadmills need two or more people and a suitable vehicle. Measure your vehicle, your doorway and the route to the room before you buy.</p>
+            </li>
+            <li>
+              <h3>Buying because it is in front of you</h3>
+              <p>Limited and rotating stock creates pressure to buy now. A treadmill bought on impulse during a grocery run is the one most likely to go unused. Decide your specification first and only buy if what is on the pallet meets it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill at Costco</h2>
-          <p class="text-gray-700 leading-relaxed">The warehouse format rewards buyers who arrive with a specification and catches out those who arrive with a shopping trolley.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the model is the one reviewed elsewhere</h3>
-              <p class="text-gray-700 text-sm m-0">A similar name and the same brand do not mean the same machine. Retailer-specific variants can differ in console, accessories, warranty and sometimes specification. Compare continuous horsepower, deck size, user weight and warranty line by line against the manufacturer's published figures.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Relying on the return reputation without reading the terms</h3>
-              <p class="text-gray-700 text-sm m-0">Return policies can differ for large, delivered or specific categories of item, and they change. Read the current terms for the product you are buying, and work out how you would physically return a heavy machine before you need to.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not planning how to get the box home</h3>
-              <p class="text-gray-700 text-sm m-0">A warehouse treadmill leaves with you in its box. Even compact machines are heavy, and full-size folding treadmills need two or more people and a suitable vehicle. Measure your vehicle, your doorway and the route to the room before you buy.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying because it is in front of you</h3>
-              <p class="text-gray-700 text-sm m-0">Limited and rotating stock creates pressure to buy now. A treadmill bought on impulse during a grocery run is the one most likely to go unused. Decide your specification first and only buy if what is on the pallet meets it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Price Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-            <a href="/treadmill-black-friday-deals/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Timing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Black Friday Deals</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to tell a real discount from an inflated list price.</p>
-            </a>
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Timing</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Time of Year to Buy a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The annual price cycle and the weeks to avoid.</p>
-            </a>
-            <a href="/sams-club-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Sam's Club Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.</p>
-            </a>
-            <a href="/lifesmart-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LifeSmart Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Costco is worth checking, not worth starting with.</strong> Its
             prices on selected models are often competitive, online listings frequently include
             delivery, and its return policy is widely regarded as generous — but check the current
             terms for the specific item, and plan how a heavy machine would actually go back.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Judge any Costco treadmill by its specifications against the nearest mainstream model from
-            the same manufacturer, and compare the delivered price with
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+            the same manufacturer, and compare the delivered price with <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
             If it meets your specification and the numbers work, it is a sound place to buy.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+            <li><a href="/treadmill-black-friday-deals/">Treadmill Black Friday Deals</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does Costco sell treadmills?</h3></summary>
+            <p class="faq-a">
+              Yes, usually, though the selection is small and rotates through the year. What is available in a warehouse can differ from what is listed online and from other warehouses. Fitness equipment tends to be most visible around the new year. Check both the warehouse and the website, and expect the range to change.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are Costco treadmills good?</h3></summary>
+            <p class="faq-a">
+              Some are good value and some are modest machines suited to walking. Many are retailer-specific variants of mainstream models, so judge each one on its specifications — continuous horsepower, deck size, maximum user weight and warranty — compared with the nearest mainstream model from the same manufacturer, rather than on the brand or the store.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is Costco's return policy on treadmills?</h3></summary>
+            <p class="faq-a">
+              Costco's return policy is widely regarded as generous, but terms can differ for some categories and for large or delivered items, and policies change. Check the current return terms on the product page or at the warehouse before buying, and find out how a return would work in practice for a heavy machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Costco deliver and assemble treadmills?</h3></summary>
+            <p class="faq-a">
+              It depends on the channel. Warehouse purchases are usually taken home by the member. Online listings for large items often include delivery in the price, but the level of delivery varies, and assembly may not be included or offered. Read the delivery terms on the listing and plan for assembly if it is not included.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why can't I find the Costco treadmill model anywhere else?</h3></summary>
+            <p class="faq-a">
+              Because many treadmills sold through large retailers are retailer-specific variants with their own model numbers. They are usually close to a mainstream model from the same manufacturer, but can differ in console, accessories, warranty or specifications. Compare specifications line by line, and ask the manufacturer what the model is based on.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it cheaper to buy a treadmill at Costco?</h3></summary>
+            <p class="faq-a">
+              Sometimes. Prices on its selected models are often competitive and online prices frequently include delivery. Compare the delivered price against an equivalent specification elsewhere, include the membership fee if you are joining only for this, and weigh the return terms and warranty alongside the price.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Price Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+          <a href="/treadmill-black-friday-deals/" class="card">
+            <div class="c-kicker">Timing</div>
+            <div class="c-title">Treadmill Black Friday Deals</div>
+            <p class="c-blurb">How to tell a real discount from an inflated list price.</p>
+          </a>
+          <a href="/best-time-of-year-to-buy-a-treadmill/" class="card">
+            <div class="c-kicker">Timing</div>
+            <div class="c-title">Best Time of Year to Buy a Treadmill</div>
+            <p class="c-blurb">The annual price cycle and the weeks to avoid.</p>
+          </a>
+          <a href="/sams-club-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Sam's Club Treadmills</div>
+            <p class="c-blurb">Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.</p>
+          </a>
+          <a href="/lifesmart-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">LifeSmart Treadmills</div>
+            <p class="c-blurb">The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

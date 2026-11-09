@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Home Workout Equipment Reviews (2026): Best Pick in Each Category";
 const description =
@@ -301,6 +300,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/home-workout-equipment-reviews/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -323,66 +328,90 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Treadmill: Sole F63", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-homeworkoutequipmentreviews" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-homeworkoutequipmentreviews)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Home Workout Equipment Reviews: The Best in Each Category</h1>
+      <p class="ed-dek">
+        One treadmill, one bike, one rower, one elliptical, one set of adjustable dumbbells, one rack and one bench — the pick we would start with in each category, checked against the maker and at least one independent source. Then the part most review pages skip: how to tell an honest equipment review from a sales page.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Home Workout Equipment Reviews: <span class="text-[#5AA9FF]">The Best in Each Category</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          One treadmill, one bike, one rower, one elliptical, one set of adjustable dumbbells, one rack and one bench — the pick we would start with in each category, checked against the maker and at least one independent source. Then the part most review pages skip: how to tell an honest equipment review from a sales page.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#reading-reviews" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Read Reviews
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sole-f63"><img src="https://m.media-amazon.com/images/I/31Ka8IzhlWL._SL500_.jpg" alt="Sole F63" width="500" height="333" decoding="async" /></a>
+          <a href="#schwinn-ic4"><img src="https://m.media-amazon.com/images/I/41s6fwc-DRL._SL500_.jpg" alt="Schwinn IC4" width="500" height="500" decoding="async" /></a>
+          <a href="#concept2-rowerg"><img src="https://m.media-amazon.com/images/I/31v8qFAXPJL._SL500_.jpg" alt="Concept2 RowErg" width="500" height="309" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>Sole F63 · Schwinn IC4 · Concept2 RowErg</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most "home workout equipment reviews" are lists of things to buy with a star rating attached
+          and no way to tell what, if anything, was checked. This page takes the opposite approach.
+          It names one product in each of the seven categories most home gyms are built from, says
+          exactly what each was checked against and when, and leaves out any figure the sources
+          could not agree on. Then it explains the equipment types, how to read a review without
+          being sold to, how this site checks products, and the order to buy things in if the
+          budget will not stretch to everything at once.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Treadmill:</span> <a href="#sole-f63">Sole F63</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Bike:</span> <a href="#schwinn-ic4">Schwinn IC4</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Rower:</span> <a href="#concept2-rowerg">Concept2 RowErg</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Elliptical:</span> <a href="#sole-e35">Sole E35</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Dumbbells:</span> <a href="#powerblock-elite-usa-90">PowerBlock Elite USA 90 Adjustable Dumbbells</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Rack:</span> <a href="#rep-pr-1100">REP Fitness PR-1100</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Bench:</span> <a href="#rep-ab-3000">REP Fitness AB-3000 2.0</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           products. Each was confirmed on 16 October 2026 as currently sold on its maker's own store
           (Sole, Schwinn, Concept2, PowerBlock and REP Fitness), and its figures were checked on that
@@ -401,79 +430,27 @@ const schema = {
           here is a training programme. If you have a heart, joint, back or balance condition, are
           returning from injury, or are unsure whether a type of exercise is right for you, talk to
           a doctor or another qualified professional before you start.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Treadmill:</span>
-            <a href="#sole-f63" class="font-bold text-gray-900 no-underline hover:underline">Sole F63</a>
-            <a href="#sole-f63" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Bike:</span>
-            <a href="#schwinn-ic4" class="font-bold text-gray-900 no-underline hover:underline">Schwinn IC4</a>
-            <a href="#schwinn-ic4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Rower:</span>
-            <a href="#concept2-rowerg" class="font-bold text-gray-900 no-underline hover:underline">Concept2 RowErg</a>
-            <a href="#concept2-rowerg" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Elliptical:</span>
-            <a href="#sole-e35" class="font-bold text-gray-900 no-underline hover:underline">Sole E35</a>
-            <a href="#sole-e35" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Dumbbells:</span>
-            <a href="#powerblock-elite-usa-90" class="font-bold text-gray-900 no-underline hover:underline">PowerBlock Elite USA 90 Adjustable Dumbbells</a>
-            <a href="#powerblock-elite-usa-90" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 7 Best Pieces of Home Workout Equipment</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Products</a>
-          <a href="#equipment-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Equipment Types Explained</a>
-          <a href="#reading-reviews" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Read Exercise Equipment Reviews Honestly</a>
-          <a href="#where-to-find" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Where to Find Exercise Equipment Reviews Worth Trusting</a>
-          <a href="#how-we-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How This Site Checks Products: Behind the Scenes</a>
-          <a href="#strength-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Using Strength Equipment Safely at Home</a>
-          <a href="#budget-order" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Buying Order for a Home Gym on a Budget</a>
-          <a href="#deeper-reads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. The Deeper Guides for Each Category</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 7 Best Pieces of Home Workout Equipment</a></li>
+            <li><a href="#how-we-chose">How We Chose These Products</a></li>
+            <li><a href="#equipment-types">The Equipment Types Explained</a></li>
+            <li><a href="#reading-reviews">How to Read Exercise Equipment Reviews Honestly</a></li>
+            <li><a href="#where-to-find">Where to Find Exercise Equipment Reviews Worth Trusting</a></li>
+            <li><a href="#how-we-check">How This Site Checks Products: Behind the Scenes</a></li>
+            <li><a href="#strength-safety">Using Strength Equipment Safely at Home</a></li>
+            <li><a href="#budget-order">Buying Order for a Home Gym on a Budget</a></li>
+            <li><a href="#deeper-reads">The Deeper Guides for Each Category</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most "home workout equipment reviews" are lists of things to buy with a star rating attached
-          and no way to tell what, if anything, was checked. This page takes the opposite approach.
-          It names one product in each of the seven categories most home gyms are built from, says
-          exactly what each was checked against and when, and leaves out any figure the sources
-          could not agree on. Then it explains the equipment types, how to read a review without
-          being sold to, how this site checks products, and the order to buy things in if the
-          budget will not stretch to everything at once.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Seven products, one per category. These are the picks we would start a home gym with if
             we were spending our own money, not the cheapest or the most impressive in each class.
@@ -499,17 +476,14 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If cardio is the priority and you are not yet sure which machine suits you, our
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            walks through the decision by goal, joints, space and noise before you look at a single
-            product. Everything on this page also sits within our new
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>, where each
+            If cardio is the priority and you are not yet sure which machine suits you, our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> walks through the decision by goal, joints, space and noise before you look at a single
+            product. Everything on this page also sits within our new <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>, where each
             category has its own deeper roundup.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 7 Best Pieces of Home Workout Equipment</h2>
+          <h2>The 7 Best Pieces of Home Workout Equipment</h2>
 <p>
             Four cardio machines and three pieces of strength equipment. The specification line on
             each card carries only figures that the maker and at least one independent source agree
@@ -522,92 +496,78 @@ const schema = {
             print only the figures that did not change between the versions.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Products</h2>
+          <h2>How We Chose These Products</h2>
 <p>
             We have not tested these products. The picks were made from manufacturer specifications
             and manuals, published hands-on reviews, retailer listings, warranty terms and the US
             Consumer Product Safety Commission's recall database, all checked on 16 October 2026.
-            The Sole F63 has
-            <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">its own review on this site</a>,
+            The Sole F63 has <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">its own review on this site</a>,
             and that review is also a reading of the published evidence, not a hands-on test.
           </p>
           <p>
             Four rules decided the list. <strong>Currently sold:</strong> each product had to be on
-            sale on its maker's own store, under that name, on the day we checked.
-            <strong>Agreement:</strong> the core figures — capacity, size, range of adjustment —
-            had to match between the maker and a source that does not sell the product.
-            <strong>A reachable maker:</strong> every brand here sells direct and publishes its
+            sale on its maker's own store, under that name, on the day we checked. <strong>Agreement:</strong> the core figures — capacity, size, range of adjustment —
+            had to match between the maker and a source that does not sell the product. <strong>A reachable maker:</strong> every brand here sells direct and publishes its
             warranty, so there is someone to call when a part fails after the retailer's return
             window. <strong>No safety action:</strong> we searched the CPSC's recall database by
             brand name for every maker on the list, and checked its published warnings.
@@ -624,8 +584,7 @@ const schema = {
             dumbbell secondhand, check the model against the CPSC database first.
           </p>
           <p>
-            <strong>NordicTrack RW900 rower.</strong> In October 2025 iFIT recalled NordicTrack
-            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> with model number NTRW19147 because the screen console can overheat and
+            <strong>NordicTrack RW900 rower.</strong> In October 2025 iFIT recalled NordicTrack <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> with model number NTRW19147 because the screen console can overheat and
             ignite. The remedy is a repair, but a recalled machine is not one we would point a new
             buyer towards.
           </p>
@@ -643,7 +602,7 @@ const schema = {
         </div>
 
         <div id="equipment-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Equipment Types Explained</h2>
+          <h2>The Equipment Types Explained</h2>
 <p>
             "Fitness gym equipment" covers a lot of hardware, but a home gym is usually built from
             seven types. Here is what each one trains, how much room it takes and what it typically
@@ -655,11 +614,8 @@ const schema = {
             <strong>Trains:</strong> walking, running and incline walking — the most natural
             movement there is, and the easiest to start with. <strong>Space:</strong> the largest
             footprint of any cardio machine. A full-size folding treadmill such as the BowFlex T6 is
-            76 by 35 inches set up, and you need clear space behind it. <strong>Cost band:</strong>
-            walking pads from roughly $150 to $400; full-size folding treadmills with a 60-inch deck
-            from roughly $900 to $1,500 on sale. Our
-            <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>
-            roundup is the deeper read.
+            76 by 35 inches set up, and you need clear space behind it. <strong>Cost band:</strong> walking pads from roughly $150 to $400; full-size folding treadmills with a 60-inch deck
+            from roughly $900 to $1,500 on sale. Our <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a> roundup is the deeper read.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Exercise bike</h3>
           <p>
@@ -682,27 +638,21 @@ const schema = {
             <strong>Trains:</strong> legs, with moving handles adding arms, in a gliding motion
             where your feet never leave the pedals. <strong>Space:</strong> a footprint similar to a
             bike but much taller, because you stand on pedals that rise as they travel; check the
-            ceiling. <strong>Cost band:</strong> roughly $500 to $2,500. See our
-            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>.
+            ceiling. <strong>Cost band:</strong> roughly $500 to $2,500. See our <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Adjustable dumbbells</h3>
           <p>
             <strong>Trains:</strong> almost everything — presses, rows, squats, lunges, curls — with
             one pair replacing a rack of fixed weights. <strong>Space:</strong> a stand about the
             size of a small side table. <strong>Cost band:</strong> roughly $200 to $900 for a pair,
-            depending on maximum weight and build. Our
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a>
-            page compares the mechanisms.
+            depending on maximum weight and build. Our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a> page compares the mechanisms.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Squat or power rack</h3>
           <p>
             <strong>Trains:</strong> heavy barbell squats, bench presses and overhead presses, with
             safeties that catch the bar if you fail a rep — which is what makes heavy lifting alone
             reasonably safe. <strong>Space:</strong> about 4 by 5 feet of floor and, for most
-            full-height racks, at least 7 feet of ceiling; the REP PR-1100 is 85 inches tall.
-            <strong>Cost band:</strong> roughly $300 to $1,500, before a barbell and plates. The
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">best squat racks for a home gym</a>
-            guide goes through heights, depths and attachments.
+            full-height racks, at least 7 feet of ceiling; the REP PR-1100 is 85 inches tall. <strong>Cost band:</strong> roughly $300 to $1,500, before a barbell and plates. The <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">best squat racks for a home gym</a> guide goes through heights, depths and attachments.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Adjustable bench</h3>
           <p>
@@ -719,12 +669,10 @@ const schema = {
         </div>
 
         <div id="reading-reviews" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Read Exercise Equipment Reviews Honestly</h2>
+          <h2>How to Read Exercise Equipment Reviews Honestly</h2>
 <p>
             The same habits that protect you when buying a treadmill work for every category; our
-            guide on
-            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read treadmill reviews</a>
-            goes into them in detail. The short version is to ask three questions of any review
+            guide on <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read treadmill reviews</a> goes into them in detail. The short version is to ask three questions of any review
             before you believe its verdict: who paid for it, what was actually done, and do its
             numbers match the maker's.
           </p>
@@ -775,7 +723,7 @@ const schema = {
         </div>
 
         <div id="where-to-find" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Where to Find Exercise Equipment Reviews Worth Trusting</h2>
+          <h2>Where to Find Exercise Equipment Reviews Worth Trusting</h2>
 <p>
             No single source is enough. The approach that works is to triangulate: read what the
             maker claims, see whether an independent source agrees, and check what owners say after
@@ -802,15 +750,13 @@ const schema = {
             on long-term durability.</li>
           </ol>
           <p>
-            If you are deciding between equipment at home and a membership, run the numbers in our
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs gym membership</a>
-            comparison first. The same logic applies to a whole home gym, and for some people the
+            If you are deciding between equipment at home and a membership, run the numbers in our <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs gym membership</a> comparison first. The same logic applies to a whole home gym, and for some people the
             honest answer is the membership.
           </p>
         </div>
 
         <div id="how-we-check" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How This Site Checks Products: Behind the Scenes</h2>
+          <h2>How This Site Checks Products: Behind the Scenes</h2>
 <p>
             Since this is a page about honest reviewing, here is exactly how ours are made, including
             what we do not do.
@@ -850,7 +796,7 @@ const schema = {
         </div>
 
         <div id="strength-safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Using Strength Equipment Safely at Home</h2>
+          <h2>Using Strength Equipment Safely at Home</h2>
 <p>
             Cardio machines have safety keys and stop buttons. Strength equipment relies on you, so
             it is worth being plain about the basics. This is general guidance about equipment, not
@@ -873,9 +819,7 @@ const schema = {
             barbell and plates concentrate a lot of weight on a small footprint, and dropping
             weights adds shock loads. Ground floors and garages on concrete are the easy case. For
             an upper floor, a converted loft or anything unusual about the structure, consult a
-            structural engineer or builder before installing heavy equipment. Our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">best lifting platforms</a>
-            guide covers protecting the floor itself.</li>
+            structural engineer or builder before installing heavy equipment. Our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">best lifting platforms</a> guide covers protecting the floor itself.</li>
             <li><strong>Inspect adjustable dumbbells before each session.</strong> Check that the
             selector pin or dial is fully engaged and that nothing rattles. The BowFlex recall described
             above involved plates dislodging from the handle during use.</li>
@@ -885,7 +829,7 @@ const schema = {
         </div>
 
         <div id="budget-order" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Buying Order for a Home Gym on a Budget</h2>
+          <h2>Buying Order for a Home Gym on a Budget</h2>
 <p>
             Few people buy all seven pieces at once, and they should not have to. The order below
             gets the most training out of each dollar, assuming you want both cardio and strength.
@@ -900,19 +844,13 @@ const schema = {
             <li><strong>One cardio machine — the one you will use.</strong> Not the one with the
             best reviews. If you like walking, a treadmill or walking pad; if your knees complain, a
             bike or elliptical; if you want the most work in the least time and are willing to learn
-            technique, a rower. The
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            roundup compares every type.</li>
+            technique, a rower. The <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> roundup compares every type.</li>
             <li><strong>Flooring.</strong> Rubber mats protect the floor and the equipment and cut
-            noise. It is the purchase people most regret skipping. See
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
-            and, for treadmills,
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>.</li>
+            noise. It is the purchase people most regret skipping. See <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a> and, for treadmills, <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>.</li>
             <li><strong>A rack, barbell and plates.</strong> The big step: it is where strength
             training gets serious, and where space and floor loading start to matter. Budget for
             the barbell and plates as well as the rack; they often cost more than it does.</li>
-            <li><strong>Everything else.</strong> Cable machines, specialist machines,
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">all-in-one home gym machines</a>,
+            <li><strong>Everything else.</strong> Cable machines, specialist machines, <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">all-in-one home gym machines</a>,
             recovery tools — once you know from experience what is missing.</li>
           </ol>
           <p>
@@ -924,35 +862,20 @@ const schema = {
         </div>
 
         <div id="deeper-reads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. The Deeper Guides for Each Category</h2>
+          <h2>The Deeper Guides for Each Category</h2>
 <p>
             This page is the starting point. Each category below has its own roundup with more
             options, more detail on what to look for, and the trade-offs between them.
           </p>
           <ul>
             <li><strong>Cardio:</strong>
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>,
-            <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>
-            and
-            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines</a>,
-            with the
-            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            for choosing between machine types.</li>
+            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>, <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a> and <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines</a>,
+            with the <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> for choosing between machine types.</li>
             <li><strong>Strength:</strong>
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>,
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a>,
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machines</a>,
-            <a href="/best-converging-chest-press-machines/" class="text-[#0F62FE] font-medium">converging chest press machines</a>
-            and
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.</li>
-            <li><strong>Gym-grade kit at home:</strong> what changes when you buy
-            <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a>
-            for a home or garage.</li>
+            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>, <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a>, <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machines</a>, <a href="/best-converging-chest-press-machines/" class="text-[#0F62FE] font-medium">converging chest press machines</a> and <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.</li>
+            <li><strong>Gym-grade kit at home:</strong> what changes when you buy <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a> for a home or garage.</li>
             <li><strong>Around the workout:</strong>
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>,
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>
-            and
-            <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">boxing equipment for home</a>.</li>
+            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>, <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a> and <a href="/best-boxing-equipment-for-home/" class="text-[#0F62FE] font-medium">boxing equipment for home</a>.</li>
           </ul>
           <p>
             Every one of those pages follows the same rules as this one: checked on a stated date,
@@ -960,137 +883,153 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best home workout equipment to buy first?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, a pair of adjustable dumbbells. They train almost every muscle group, fit in a small room and cost a few hundred dollars. Add an adjustable bench next, then one cardio machine that matches how you like to exercise. A rack, barbell and plates come later, once you know you will use them and have checked your space and floor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I find honest exercise equipment reviews?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Combine sources rather than trusting one. Read the maker's page and manual for specifications and warranty, a hands-on reviewer who explains their method for performance, and recent low-rated owner reviews for how the company handles failures. Check the CPSC recall database for safety. Treat any review with no date, no method and no negatives with suspicion.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How can you tell if an equipment review is sponsored?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Look for a disclosure near the top that mentions affiliate links, free products or payment from the brand. In the US, reviewers are expected to disclose such relationships clearly. Phrases like "thanks to the brand for sending this" buried at the end mean the review is sponsored. A review that only lists positives, or uses urgency to push a sale, deserves caution either way.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the main types of home gym equipment?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most home gyms are built from seven types: treadmills, exercise bikes, rowing machines and ellipticals for cardio, and adjustable dumbbells, a squat or power rack, and an adjustable bench for strength. Beyond those come cable machines, plate-loaded machines, lifting platforms, accessories such as flooring and storage, and recovery tools.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do specifications differ between equipment listings?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because a product was updated without a new name, and older reviews or retailer listings still describe the previous version. Retailers also copy specifications loosely between models. When figures disagree, trust the maker's current product page and the manual for the unit you are buying, and confirm anything important, such as capacity or dimensions, with the seller in writing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to put a squat rack in an upstairs room?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, but check first. A loaded rack concentrates a lot of weight on a small area, and dropped weights add shock loads. Ground floors and concrete garage slabs are straightforward. For an upper floor, a loft or any unusual structure, ask a structural engineer or builder before installing, use proper flooring, and follow the rack maker's instructions on anchoring.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying Home Workout Equipment</h2>
+          <p>Most regrets in a home gym come from buying in the wrong order or believing the wrong number, not from choosing the wrong brand.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the machine with the best reviews instead of the one you will use</h3>
+              <p>A top-rated rower is a poor buy for someone who hates rowing. Equipment only works if it gets used, and enjoyment predicts use better than any specification. If you are unsure, try the movement at a gym or a friend’s house first, or start with the cheapest version of the category before committing to the expensive one.</p>
+            </li>
+            <li>
+              <h3>Trusting a capacity figure without checking where it came from</h3>
+              <p>A rack or bench rating is the maker’s own number, and an old review may quote a figure from an earlier version. Check the current spec sheet, stay well inside the rating, and remember that a bench capacity usually includes your body weight. For racks, read how the maker expects it to be anchored before you load it.</p>
+            </li>
+            <li>
+              <h3>Forgetting the space around the equipment</h3>
+              <p>A footprint is not the space you need. Treadmills need clearance behind, ellipticals and racks need ceiling height, rowers need room to sit and move, and barbell work needs room at both ends of the bar. Measure the room with the equipment in use, not just standing still, before you order.</p>
+            </li>
+            <li>
+              <h3>Buying secondhand without checking for recalls</h3>
+              <p>Several adjustable dumbbells, rowers and treadmills sold in recent years have been recalled, and a secondhand seller may not know. Before you buy anything used, find the model and serial number and check them against the CPSC recall database. For powered machines, also ask for proof of purchase so the warranty question is settled.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying Home Workout Equipment</h2>
-          <p class="text-gray-700 leading-relaxed">Most regrets in a home gym come from buying in the wrong order or believing the wrong number, not from choosing the wrong brand.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the machine with the best reviews instead of the one you will use</h3>
-              <p class="text-gray-700 text-sm m-0">A top-rated rower is a poor buy for someone who hates rowing. Equipment only works if it gets used, and enjoyment predicts use better than any specification. If you are unsure, try the movement at a gym or a friend’s house first, or start with the cheapest version of the category before committing to the expensive one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a capacity figure without checking where it came from</h3>
-              <p class="text-gray-700 text-sm m-0">A rack or bench rating is the maker’s own number, and an old review may quote a figure from an earlier version. Check the current spec sheet, stay well inside the rating, and remember that a bench capacity usually includes your body weight. For racks, read how the maker expects it to be anchored before you load it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the space around the equipment</h3>
-              <p class="text-gray-700 text-sm m-0">A footprint is not the space you need. Treadmills need clearance behind, ellipticals and racks need ceiling height, rowers need room to sit and move, and barbell work needs room at both ends of the bar. Measure the room with the equipment in use, not just standing still, before you order.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying secondhand without checking for recalls</h3>
-              <p class="text-gray-700 text-sm m-0">Several adjustable dumbbells, rowers and treadmills sold in recent years have been recalled, and a secondhand seller may not know. Before you buy anything used, find the model and serial number and check them against the CPSC recall database. For powered machines, also ask for proof of purchase so the warranty question is settled.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-cardio-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Treadmill, bike, rower, elliptical, air bike, stepper and walking pad picks, compared.</p>
-            </a>
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Strength</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Heights, depths, anchoring and attachments for the centre of a strength setup.</p>
-            </a>
-            <a href="/how-to-read-treadmill-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Read Treadmill Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The habits that separate an honest review from a sales page, in detail.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Start with what you will use, then build in a sensible order.</strong>
-            For most people that means the PowerBlock Elite USA 90 and the REP AB-3000 2.0 first,
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Start with what you will use, then build in a sensible order.</strong> For most people that means the PowerBlock Elite USA 90 and the REP AB-3000 2.0 first,
             one cardio machine next — the Sole F63, Schwinn IC4, Concept2 RowErg or Sole E35,
             depending on how you like to train — and the REP PR-1100 once you are ready for a
             barbell and have checked your floor.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, read reviews the way this page is written: look for a date, a method,
             figures that match the maker's current page, and an honest list of weaknesses. If cardio
-            is where you are starting, the
-            <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">best cardio machines for home</a>
-            roundup compares every machine type side by side.
+            is where you are starting, the <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">best cardio machines for home</a> roundup compares every machine type side by side.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-cardio-machines-for-home/">Best Cardio Machines for Home</a></li>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for a Home Gym</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best home workout equipment to buy first?</h3></summary>
+            <p class="faq-a">
+              For most people, a pair of adjustable dumbbells. They train almost every muscle group, fit in a small room and cost a few hundred dollars. Add an adjustable bench next, then one cardio machine that matches how you like to exercise. A rack, barbell and plates come later, once you know you will use them and have checked your space and floor.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where can I find honest exercise equipment reviews?</h3></summary>
+            <p class="faq-a">
+              Combine sources rather than trusting one. Read the maker's page and manual for specifications and warranty, a hands-on reviewer who explains their method for performance, and recent low-rated owner reviews for how the company handles failures. Check the CPSC recall database for safety. Treat any review with no date, no method and no negatives with suspicion.
             </p>
+          </details>
+          <details>
+            <summary><h3>How can you tell if an equipment review is sponsored?</h3></summary>
+            <p class="faq-a">
+              Look for a disclosure near the top that mentions affiliate links, free products or payment from the brand. In the US, reviewers are expected to disclose such relationships clearly. Phrases like "thanks to the brand for sending this" buried at the end mean the review is sponsored. A review that only lists positives, or uses urgency to push a sale, deserves caution either way.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What are the main types of home gym equipment?</h3></summary>
+            <p class="faq-a">
+              Most home gyms are built from seven types: treadmills, exercise bikes, rowing machines and ellipticals for cardio, and adjustable dumbbells, a squat or power rack, and an adjustable bench for strength. Beyond those come cable machines, plate-loaded machines, lifting platforms, accessories such as flooring and storage, and recovery tools.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do specifications differ between equipment listings?</h3></summary>
+            <p class="faq-a">
+              Usually because a product was updated without a new name, and older reviews or retailer listings still describe the previous version. Retailers also copy specifications loosely between models. When figures disagree, trust the maker's current product page and the manual for the unit you are buying, and confirm anything important, such as capacity or dimensions, with the seller in writing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to put a squat rack in an upstairs room?</h3></summary>
+            <p class="faq-a">
+              It can be, but check first. A loaded rack concentrates a lot of weight on a small area, and dropped weights add shock loads. Ground floors and concrete garage slabs are straightforward. For an upper floor, a loft or any unusual structure, ask a structural engineer or builder before installing, use proper flooring, and follow the rack maker's instructions on anchoring.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-cardio-machines-for-home/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Cardio Machines for Home</div>
+            <p class="c-blurb">Treadmill, bike, rower, elliptical, air bike, stepper and walking pad picks, compared.</p>
+          </a>
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Strength</div>
+            <div class="c-title">Best Squat Racks for a Home Gym</div>
+            <p class="c-blurb">Heights, depths, anchoring and attachments for the centre of a strength setup.</p>
+          </a>
+          <a href="/how-to-read-treadmill-reviews/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">How to Read Treadmill Reviews</div>
+            <p class="c-blurb">The habits that separate an honest review from a sales page, in detail.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Calories Burned (2026): Estimates by Speed and Weight";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-calories-burned/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,44 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Estimates", link: "#estimate-table" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillcaloriesburned" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillcaloriesburned)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Calories Burned: Realistic Estimates and Honest Caveats</h1>
+      <p class="ed-dek">
+        The calorie figure on a treadmill console is the most quoted and least reliable number the machine produces. Here is what actually drives calorie expenditure, a table of rough estimates by speed, incline and body weight, and how to use the numbers without being misled by them.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Calories Burned: <span class="text-[#5AA9FF]">Realistic Estimates and Honest Caveats</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The calorie figure on a treadmill console is the most quoted and least reliable number the machine produces. Here is what actually drives calorie expenditure, a table of rough estimates by speed, incline and body weight, and how to use the numbers without being misled by them.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#estimate-table" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Estimate Table
-          </a>
-          <a href="#console" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why the Console Is Wrong
-          </a>
-        </div>
+        <a href="#estimate-table" class="btn-ghost">The Estimate Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A treadmill does not burn calories; you do, and the machine is a convenient place to do it
+          at a known speed and grade. How many calories you burn in a session depends mostly on
+          how much you weigh, how far you travel, how steep the belt is and whether you are
+          walking or running. It depends surprisingly little on how hard the session felt. The
+          console offers a number because people want one, and that number is usually generous.
+          This page gives you a better one, with the arithmetic shown.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This is a reference page about how calorie estimates are produced and how far to trust
           them — it is not medical, nutrition or coaching advice, and we are not qualified to give
@@ -172,46 +157,28 @@ const schema = {
           is a rounded estimate from standard metabolic-equivalent arithmetic, not a measurement of
           you. Individual variation is substantial, and the real figure for any one person on any
           one day can differ from the table by a meaningful margin in either direction.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Many Calories Does a Treadmill Burn? The Short Answer</a>
-          <a href="#what-drives-the-number" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Actually Determines Calories Burned on a Treadmill</a>
-          <a href="#estimate-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Calories Burned in 30 Minutes: An Estimate Table</a>
-          <a href="#the-method" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How These Estimates Are Calculated</a>
-          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why Incline Changes the Number So Much</a>
-          <a href="#handrails" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Holding the Rails Reduces It</a>
-          <a href="#console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Why the Treadmill Console Is Often Wrong</a>
-          <a href="#heart-rate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Heart-Rate Monitors and the Fat-Burning Zone</a>
-          <a href="#walking-vs-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Walking Versus Running: Per Minute and Per Mile</a>
-          <a href="#worked-examples" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Three Worked Examples</a>
-          <a href="#using-the-numbers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How to Use the Numbers Sensibly</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Many Calories Does a Treadmill Burn? The Short Answer</a></li>
+            <li><a href="#what-drives-the-number">What Actually Determines Calories Burned on a Treadmill</a></li>
+            <li><a href="#estimate-table">Calories Burned in 30 Minutes: An Estimate Table</a></li>
+            <li><a href="#the-method">How These Estimates Are Calculated</a></li>
+            <li><a href="#incline">Why Incline Changes the Number So Much</a></li>
+            <li><a href="#handrails">Why Holding the Rails Reduces It</a></li>
+            <li><a href="#console">Why the Treadmill Console Is Often Wrong</a></li>
+            <li><a href="#heart-rate">Heart-Rate Monitors and the Fat-Burning Zone</a></li>
+            <li><a href="#walking-vs-running">Walking Versus Running: Per Minute and Per Mile</a></li>
+            <li><a href="#worked-examples">Three Worked Examples</a></li>
+            <li><a href="#using-the-numbers">How to Use the Numbers Sensibly</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A treadmill does not burn calories; you do, and the machine is a convenient place to do it
-          at a known speed and grade. How many calories you burn in a session depends mostly on
-          how much you weigh, how far you travel, how steep the belt is and whether you are
-          walking or running. It depends surprisingly little on how hard the session felt. The
-          console offers a number because people want one, and that number is usually generous.
-          This page gives you a better one, with the arithmetic shown.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Many Calories Does a Treadmill Burn? The Short Answer</h2>
+          <h2>How Many Calories Does a Treadmill Burn? The Short Answer</h2>
 <p>
             <strong>In 30 minutes on a treadmill</strong>, a person of roughly average weight
             burns somewhere in the region of 100 to 150 calories walking at a comfortable pace on
@@ -231,8 +198,7 @@ const schema = {
           </p>
           <p>
             Two warnings before you use any of it. First, the console figure on most home
-            treadmills runs optimistic, often by a large margin, for reasons covered in our guide to
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>.
+            treadmills runs optimistic, often by a large margin, for reasons covered in our guide to <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>.
             Second, no estimate — ours, the console's or a wrist tracker's — is precise enough to
             plan a diet around to the calorie. Use the numbers to compare sessions with each other
             and to keep expectations realistic, not as a ledger.
@@ -240,7 +206,7 @@ const schema = {
         </div>
 
         <div id="what-drives-the-number" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Actually Determines Calories Burned on a Treadmill</h2>
+          <h2>What Actually Determines Calories Burned on a Treadmill</h2>
 <p>
             The energy cost of moving your body across the ground is, to a first approximation,
             the cost of moving a mass over a distance against gravity and friction. That framing
@@ -284,7 +250,7 @@ const schema = {
         </div>
 
         <div id="estimate-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Calories Burned in 30 Minutes: An Estimate Table</h2>
+          <h2>Calories Burned in 30 Minutes: An Estimate Table</h2>
 <p>
             The figures below are rounded estimates derived from standard metabolic-equivalent
             (MET-style) arithmetic, explained in the next section. They are for a 30-minute block
@@ -317,9 +283,7 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            A few things stand out. Walking 3 mph at a 12% grade — the
-            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            — lands in the same region as a 5 mph jog, which is why that session has the reputation
+            A few things stand out. Walking 3 mph at a 12% grade — the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> — lands in the same region as a 5 mph jog, which is why that session has the reputation
             it has. The jump from 2 mph to 4 mph on the flat is modest; the jump from flat to 10%
             at the same 3 mph is large. And the heaviest column is consistently around half as
             much again as the lightest, because weight multiplies everything.
@@ -334,7 +298,7 @@ const schema = {
         </div>
 
         <div id="the-method" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How These Estimates Are Calculated</h2>
+          <h2>How These Estimates Are Calculated</h2>
 <p>
             The arithmetic behind the table is the standard one used in exercise physiology
             textbooks, fitness apps and, in some form, treadmill consoles. It rests on the idea of
@@ -361,9 +325,7 @@ const schema = {
             the column closest to your weight, and scale. Someone of 180 lb sits between the 160
             and 200 columns; someone of 240 lb is about 1.5 times the 160 column. For a 45-minute
             session, multiply the 30-minute figure by 1.5. For a mixed session, estimate each block
-            separately and add them up. The
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            helps if your console shows pace rather than mph.
+            separately and add them up. The <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> helps if your console shows pace rather than mph.
           </p>
           <p>
             <strong>Why this is only an estimate.</strong> The equations describe an average person
@@ -377,7 +339,7 @@ const schema = {
         </div>
 
         <div id="incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why Incline Changes the Number So Much</h2>
+          <h2>Why Incline Changes the Number So Much</h2>
 <p>
             On the flat, the work of walking is mostly swinging the legs, absorbing each landing
             and overcoming a little friction. The body's centre of mass bobs up and down slightly
@@ -398,9 +360,7 @@ const schema = {
             the impact. A fast walk at a steep grade can cost as much as a moderate jog on the
             flat, with each foot staying in contact with the belt rather than landing from the
             air. For people with joint concerns, heavier bodies or no interest in running, that is
-            the whole case for the incline button, and our comparison of
-            <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking versus running</a>
-            works through the trade-offs in detail.
+            the whole case for the incline button, and our comparison of <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking versus running</a> works through the trade-offs in detail.
           </p>
           <p>
             Two caveats. The first is that incline readings vary between treadmills: a machine that
@@ -411,7 +371,7 @@ const schema = {
         </div>
 
         <div id="handrails" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Why Holding the Rails Reduces It</h2>
+          <h2>Why Holding the Rails Reduces It</h2>
 <p>
             Holding the handrails or leaning on the console is the single most effective way to
             make a treadmill session easier while keeping the console figure the same. The machine
@@ -438,17 +398,13 @@ const schema = {
             The practical rule: if you cannot hold a speed and grade combination with your hands
             free, it is too much for now, and the honest fix is to lower one of them. Light contact
             for balance is fine, particularly for older or less steady users; for everyone else,
-            the rails are for getting on and off, and our page on
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails</a>
-            covers how to wean off them. Our guide to
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
-            notes the same problem from the other side: holding the rails also lowers heart rate,
+            the rails are for getting on and off, and our page on <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails</a> covers how to wean off them. Our guide to <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a> notes the same problem from the other side: holding the rails also lowers heart rate,
             so a chest strap will quietly confirm that the session got easier.
           </p>
         </div>
 
         <div id="console" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Why the Treadmill Console Is Often Wrong</h2>
+          <h2>Why the Treadmill Console Is Often Wrong</h2>
 <p>
             A console calorie figure is not a measurement. Nothing on the machine measures energy.
             The number is a calculation from speed, grade and elapsed time, run through a formula
@@ -473,9 +429,7 @@ const schema = {
             <strong>It trusts its own speed and incline.</strong> If the belt is running a little
             slower than displayed, or the incline is lower than the reading, the calculation
             inherits that error. Belt speed under load on a budget machine can lag the display
-            noticeably; our guide to
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">treadmill speed accuracy</a>
-            explains why.
+            noticeably; our guide to <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">treadmill speed accuracy</a> explains why.
           </p>
           <p>
             <strong>It cannot see the handrails.</strong> As above, a rail-assisted session is
@@ -490,15 +444,13 @@ const schema = {
           <p>
             Put together, owners commonly find that console figures run optimistic by a noticeable
             margin, and the error is worst for lighter users, slower sessions and people who hold
-            the rails. Our dedicated guide on
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie accuracy</a>
-            goes through how to improve the figure on your own machine, starting with entering
+            the rails. Our dedicated guide on <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie accuracy</a> goes through how to improve the figure on your own machine, starting with entering
             your weight.
           </p>
         </div>
 
         <div id="heart-rate" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Heart-Rate Monitors and the Fat-Burning Zone</h2>
+          <h2>Heart-Rate Monitors and the Fat-Burning Zone</h2>
 <p>
             A chest strap or a good <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium" data-autolink>wrist sensor</a> gives you something the console does not have:
             a live physiological signal from your body rather than a calculation about the belt.
@@ -522,9 +474,7 @@ const schema = {
             dehydration, caffeine, stress and poor sleep without a matching rise in calories
             burned, so a hot room produces a flattering estimate. Wrist optical sensors also lose
             the signal during fast arm movement or a tight grip on the rails, and some treadmill
-            pulse-grip sensors are poor enough to be ignored; our guide to a
-            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart-rate sensor that is not working</a>
-            covers the usual causes.
+            pulse-grip sensors are poor enough to be ignored; our guide to a <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart-rate sensor that is not working</a> covers the usual causes.
           </p>
           <p>
             A reasonable view is that a well-set-up strap gives a somewhat better estimate than a
@@ -552,15 +502,13 @@ const schema = {
             zone". Walk or run at whatever intensity you can sustain and repeat. Easy sessions are
             valuable because you can do a lot of them and recover; harder sessions are valuable
             because they burn more per minute and build fitness. Neither is a magic setting. Our
-            guide to
-            <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>
-            covers the related question of whether you can target where the fat comes from — the
+            guide to <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a> covers the related question of whether you can target where the fat comes from — the
             honest answer being no.
           </p>
         </div>
 
         <div id="walking-vs-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Walking Versus Running: Per Minute and Per Mile</h2>
+          <h2>Walking Versus Running: Per Minute and Per Mile</h2>
 <p>
             People ask whether running burns more than walking, and the answer depends on whether
             you are comparing by time or by distance.
@@ -583,26 +531,23 @@ const schema = {
             So the sensible framing is: if you have a fixed amount of time, running or incline
             walking gets more done in it; if you have a fixed distance in mind, walking it is not
             far behind running it, it simply takes longer. The same arithmetic applied to an
-            elliptical is in our guide to
-            <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a>.
+            elliptical is in our guide to <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a>.
             How long each takes is the subject of
-            our guide to
-            <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a mile takes on a treadmill</a>.
+            our guide to <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a mile takes on a treadmill</a>.
             Choose by what your joints, schedule and enthusiasm will tolerate for months, not by
             which row of a table is bigger.
           </p>
         </div>
 
         <div id="worked-examples" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Three Worked Examples</h2>
+          <h2>Three Worked Examples</h2>
 <p>
             To show how the table and the method fit together in practice, here are three common
             sessions worked through end to end. Every figure is rounded and carries the same
             caveats as the table.
           </p>
           <p>
-            <strong>"I walk 3.5 mph for 45 minutes on the flat and I weigh about 180 lb."</strong>
-            The 3.5 mph flat row gives roughly 135 calories per half hour at 160 lb and 165 at 200
+            <strong>"I walk 3.5 mph for 45 minutes on the flat and I weigh about 180 lb."</strong> The 3.5 mph flat row gives roughly 135 calories per half hour at 160 lb and 165 at 200
             lb, so 180 lb sits around 150. Scale to 45 minutes by multiplying by 1.5, which gives
             somewhere around 225 calories, of which perhaps 60 to 70 would have been burned
             sitting still for the same period. A console with no profile might show more; one
@@ -635,7 +580,7 @@ const schema = {
         </div>
 
         <div id="using-the-numbers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How to Use the Numbers Sensibly</h2>
+          <h2>How to Use the Numbers Sensibly</h2>
 <p>
             Given everything above, it would be easy to conclude that calorie figures are useless.
             They are not; they are just not precise, and the trick is to use them for what they
@@ -665,147 +610,159 @@ const schema = {
             margin. A half-hour walk is in the region of a modest snack; a hard run is in the
             region of a meal. Exercise earns its place through fitness, health, mood and the
             ability to do more — all of which are better reasons to use the treadmill than the
-            number in the corner of the display. If weight is the goal, our guide to a
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a>
-            builds a week around sessions people actually keep doing, which is where the result
+            number in the corner of the display. If weight is the goal, our guide to a <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a> builds a week around sessions people actually keep doing, which is where the result
             comes from.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many calories does a treadmill burn in 30 minutes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Roughly 100 to 150 calories walking comfortably on the flat, around 200 to 300 walking briskly up a meaningful incline, and around 300 to 500 running at an easy to moderate pace, for a person of average weight. Heavier people burn more and lighter people less, and every figure is an estimate rather than a measurement.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many calories does walking on a treadmill burn?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Walking at 3 mph on the flat costs somewhere in the region of 95 to 150 calories per half hour depending on body weight, using standard MET arithmetic. Adding incline changes it far more than adding speed: the same 3 mph at a 10% grade is roughly double. Holding the rails reduces the real figure without changing the display.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the calorie counter on a treadmill accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not very. It is a calculation from speed, grade and time, not a measurement, and it often assumes a default body weight, trusts its own speed reading and cannot see handrail use. Owners commonly find console figures run generous. Entering your weight helps; treating the figure as a comparison between your own sessions helps more.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline on a treadmill burn more calories?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, substantially. On an incline every stride lifts your body weight through a vertical distance, and that climbing work is added to the cost of flat walking. Walking at 3 mph on a 10% grade costs roughly double the same speed on the flat, provided you are not holding the rails, which hands the climbing work to your arms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How are treadmill calories calculated?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The standard method multiplies a MET value for the activity by your body weight in kilograms and the time in hours. A MET is a multiple of resting energy use; brisk flat walking is a little over 3 METs, easy running is roughly 8 to 10. Consoles use a version of this arithmetic, often with an assumed weight unless you enter yours.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does running burn more calories than walking on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Per minute, considerably more, because you cover more ground and each stride costs more. Per mile, the gap is smaller: a running mile costs roughly half as much again as a walking mile on the flat for the same person. Incline walking can close the per-minute gap while keeping impact low, which is why steep walks are popular.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Calorie Figures</h2>
+          <p>The figure itself is only an estimate. These four are how people turn an estimate into a problem.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Never entering your weight</h3>
+              <p>A console without a user profile assumes a default weight, and since weight multiplies everything, every figure it shows belongs to someone else. Set up a profile, enter your current weight, and update it as it changes. It takes a minute and it is the single largest improvement available to the console estimate.</p>
+            </li>
+            <li>
+              <h3>Eating back the console figure</h3>
+              <p>Console figures commonly run generous, so eating a snack sized to match the display can cancel the session entirely and then some. If you track food, log exercise conservatively — a fraction of the displayed figure — or leave it out of the ledger altogether and let the sessions show up in the trend over weeks instead.</p>
+            </li>
+            <li>
+              <h3>Holding the rails on an incline</h3>
+              <p>Gripping the rails on a steep grade hands a share of the climbing work to your arms while the display carries on as if your legs did all of it. If a speed and grade cannot be held hands-free, lower one of them. Light fingertip contact for balance is fine; hanging off the console is not.</p>
+            </li>
+            <li>
+              <h3>Comparing figures across machines and devices</h3>
+              <p>The console, a chest strap and a wrist tracker each use different arithmetic and different assumptions, so their numbers will disagree and none of them is the truth. Choose one source, use it every session, and compare only within it. Consistency of method is worth far more than chasing accuracy.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Calorie Figures</h2>
-          <p class="text-gray-700 leading-relaxed">The figure itself is only an estimate. These four are how people turn an estimate into a problem.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never entering your weight</h3>
-              <p class="text-gray-700 text-sm m-0">A console without a user profile assumes a default weight, and since weight multiplies everything, every figure it shows belongs to someone else. Set up a profile, enter your current weight, and update it as it changes. It takes a minute and it is the single largest improvement available to the console estimate.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Eating back the console figure</h3>
-              <p class="text-gray-700 text-sm m-0">Console figures commonly run generous, so eating a snack sized to match the display can cancel the session entirely and then some. If you track food, log exercise conservatively — a fraction of the displayed figure — or leave it out of the ledger altogether and let the sessions show up in the trend over weeks instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails on an incline</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping the rails on a steep grade hands a share of the climbing work to your arms while the display carries on as if your legs did all of it. If a speed and grade cannot be held hands-free, lower one of them. Light fingertip contact for balance is fine; hanging off the console is not.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing figures across machines and devices</h3>
-              <p class="text-gray-700 text-sm m-0">The console, a chest strap and a wrist tracker each use different arithmetic and different assumptions, so their numbers will disagree and none of them is the truth. Choose one source, use it every session, and compare only within it. Consistency of method is worth far more than chasing accuracy.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/are-treadmill-calories-accurate/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accuracy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Are Treadmill Calories Accurate?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why the console runs generous and how to improve the figure on your machine.</p>
-            </a>
-            <a href="/treadmill-workout-for-weight-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Weight Loss</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workout for Weight Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A week of sessions people actually keep doing, built around consistency.</p>
-            </a>
-            <a href="/treadmill-heart-rate-zones/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Heart Rate</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Zones</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Training by effort rather than by the display, and what the zones mean.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Calories burned on a treadmill depend on your weight, the
             distance, the incline and whether you walk or run.</strong> Effort at a given setting
             changes the figure far less than people expect, and the console estimate is a
             calculation with generous assumptions rather than a measurement of you.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Use the table as a rough guide, enter your weight, keep your hands off the rails, and
             compare sessions only against each other. For the honest account of what the display
-            gets wrong, see our guide to
-            <a href="/are-treadmill-calories-accurate/" class="text-[#5AA9FF] font-bold no-underline">whether treadmill calories are accurate</a>
-            — and remember that what you eat sets the budget; the treadmill only adjusts it.
+            gets wrong, see our guide to <a href="/are-treadmill-calories-accurate/" class="text-[#5AA9FF] font-bold no-underline">whether treadmill calories are accurate</a> — and remember that what you eat sets the budget; the treadmill only adjusts it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/are-treadmill-calories-accurate/">Are Treadmill Calories Accurate?</a></li>
+            <li><a href="/treadmill-workout-for-weight-loss/">Treadmill Workout for Weight Loss</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How many calories does a treadmill burn in 30 minutes?</h3></summary>
+            <p class="faq-a">
+              Roughly 100 to 150 calories walking comfortably on the flat, around 200 to 300 walking briskly up a meaningful incline, and around 300 to 500 running at an easy to moderate pace, for a person of average weight. Heavier people burn more and lighter people less, and every figure is an estimate rather than a measurement.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How many calories does walking on a treadmill burn?</h3></summary>
+            <p class="faq-a">
+              Walking at 3 mph on the flat costs somewhere in the region of 95 to 150 calories per half hour depending on body weight, using standard MET arithmetic. Adding incline changes it far more than adding speed: the same 3 mph at a 10% grade is roughly double. Holding the rails reduces the real figure without changing the display.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is the calorie counter on a treadmill accurate?</h3></summary>
+            <p class="faq-a">
+              Usually not very. It is a calculation from speed, grade and time, not a measurement, and it often assumes a default body weight, trusts its own speed reading and cannot see handrail use. Owners commonly find console figures run generous. Entering your weight helps; treating the figure as a comparison between your own sessions helps more.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does incline on a treadmill burn more calories?</h3></summary>
+            <p class="faq-a">
+              Yes, substantially. On an incline every stride lifts your body weight through a vertical distance, and that climbing work is added to the cost of flat walking. Walking at 3 mph on a 10% grade costs roughly double the same speed on the flat, provided you are not holding the rails, which hands the climbing work to your arms.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How are treadmill calories calculated?</h3></summary>
+            <p class="faq-a">
+              The standard method multiplies a MET value for the activity by your body weight in kilograms and the time in hours. A MET is a multiple of resting energy use; brisk flat walking is a little over 3 METs, easy running is roughly 8 to 10. Consoles use a version of this arithmetic, often with an assumed weight unless you enter yours.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does running burn more calories than walking on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Per minute, considerably more, because you cover more ground and each stride costs more. Per mile, the gap is smaller: a running mile costs roughly half as much again as a walking mile on the flat for the same person. Incline walking can close the per-minute gap while keeping impact low, which is why steep walks are popular.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/are-treadmill-calories-accurate/" class="card">
+            <div class="c-kicker">Accuracy</div>
+            <div class="c-title">Are Treadmill Calories Accurate?</div>
+            <p class="c-blurb">Why the console runs generous and how to improve the figure on your machine.</p>
+          </a>
+          <a href="/treadmill-workout-for-weight-loss/" class="card">
+            <div class="c-kicker">Weight Loss</div>
+            <div class="c-title">Treadmill Workout for Weight Loss</div>
+            <p class="c-blurb">A week of sessions people actually keep doing, built around consistency.</p>
+          </a>
+          <a href="/treadmill-heart-rate-zones/" class="card">
+            <div class="c-kicker">Heart Rate</div>
+            <div class="c-title">Treadmill Heart Rate Zones</div>
+            <p class="c-blurb">Training by effort rather than by the display, and what the zones mean.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "NordicTrack C950i Treadmill (2026): Specs, iFIT, Buying Used";
 const description =
@@ -193,6 +192,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/nordictrack-c950i-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -213,66 +218,74 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Verdict", link: "#verdict" }}
+  stickyCta={{ text: "Instead of Used: NordicTrack T 6.5 S", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-nordictrackc950itreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-nordictrackc950itreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">NordicTrack C950i Treadmill: Buying One Now</h1>
+      <p class="ed-dek">
+        The C950i was a mid-priced folding NordicTrack from the iFIT-compatible era, and it is no longer made. If you are looking at one secondhand, or own one and wonder what it is worth keeping, this page sets out what is known about it, what iFIT and parts support look like in 2026, and which current NordicTrack does the same job.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          NordicTrack C950i <span class="text-[#5AA9FF]">Treadmill: Buying One Now</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The C950i was a mid-priced folding NordicTrack from the iFIT-compatible era, and it is no longer made. If you are looking at one secondhand, or own one and wonder what it is worth keeping, this page sets out what is known about it, what iFIT and parts support look like in 2026, and which current NordicTrack does the same job.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#buying-used" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Buying a Used C950i
-          </a>
-          <a href="#replacements" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Replaced It
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-t-6-5-s"><img src="https://m.media-amazon.com/images/I/416-QGAbmaL._SL500_.jpg" alt="NordicTrack T 6.5 S" width="446" height="500" decoding="async" /></a>
+          <a href="#nordictrack-t-series-10"><img src="https://m.media-amazon.com/images/I/31zk9ulTbQL._SL500_.jpg" alt="NordicTrack T Series 10" width="500" height="500" decoding="async" /></a>
+          <a href="#nordictrack-commercial-1250"><img src="https://m.media-amazon.com/images/I/31Hhl3ePz5L._SL500_.jpg" alt="NordicTrack Commercial 1250" width="460" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>NordicTrack T 6.5 S · NordicTrack T Series 10 · NordicTrack Commercial 1250</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The NordicTrack C950i is a folding treadmill that NordicTrack no longer makes or sells. It still
+          turns up on local marketplaces, and people who search for it are usually deciding whether a used
+          one is worth the asking price, or whether the one in their basement is worth repairing. The
+          honest answer depends on three things this page covers: what the machine was when new, which is
+          documented thinly; what iFIT’s decision to end support for older machines in 2023 means for its
+          console; and whether the parts that wear out can still be found. We end with the current
+          NordicTrack models that do the same job new.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Instead of Used:</span> <a href="#nordictrack-t-6-5-s">NordicTrack T 6.5 S</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest Replacement:</span> <a href="#nordictrack-t-series-10">NordicTrack T Series 10</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Step Up:</span> <a href="#nordictrack-commercial-1250">NordicTrack Commercial 1250</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           5 November 2026 we searched for the C950i on NordicTrack’s US site (which refused our automated
           requests on the day), in owner’s-manual archives, in parts retailers’ catalogues and in independent
@@ -291,67 +304,25 @@ const schema = {
           found recalls of NordicTrack rowing machines (2025) and iSelect dumbbells (2024), and none of the
           C950i. We have not tested a C950i. We earn a commission if you buy through an Amazon link on this
           page; it does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Instead of Used:</span>
-            <a href="#nordictrack-t-6-5-s" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T 6.5 S</a>
-            <a href="#nordictrack-t-6-5-s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest Replacement:</span>
-            <a href="#nordictrack-t-series-10" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T Series 10</a>
-            <a href="#nordictrack-t-series-10" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Step Up:</span>
-            <a href="#nordictrack-commercial-1250" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1250</a>
-            <a href="#nordictrack-commercial-1250" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. NordicTrack C950i: The Short Answer</a>
-          <a href="#what-it-was" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the C950i Was</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. C950i Specifications: What Is Known</a>
-          <a href="#ifit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. iFIT on a C950i in 2026</a>
-          <a href="#parts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Parts and Repairs</a>
-          <a href="#buying-used" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Buying a Used NordicTrack C950i</a>
-          <a href="#replacements" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What Replaced the C950i</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Should You Buy a NordicTrack C950i?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">NordicTrack C950i: The Short Answer</a></li>
+            <li><a href="#what-it-was">What the C950i Was</a></li>
+            <li><a href="#specifications">C950i Specifications: What Is Known</a></li>
+            <li><a href="#ifit">iFIT on a C950i in 2026</a></li>
+            <li><a href="#parts">Parts and Repairs</a></li>
+            <li><a href="#buying-used">Buying a Used NordicTrack C950i</a></li>
+            <li><a href="#replacements">What Replaced the C950i</a></li>
+            <li><a href="#verdict">Should You Buy a NordicTrack C950i?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The NordicTrack C950i is a folding treadmill that NordicTrack no longer makes or sells. It still
-          turns up on local marketplaces, and people who search for it are usually deciding whether a used
-          one is worth the asking price, or whether the one in their basement is worth repairing. The
-          honest answer depends on three things this page covers: what the machine was when new, which is
-          documented thinly; what iFIT’s decision to end support for older machines in 2023 means for its
-          console; and whether the parts that wear out can still be found. We end with the current
-          NordicTrack models that do the same job new.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. NordicTrack C950i: The Short Answer</h2>
+          <h2>NordicTrack C950i: The Short Answer</h2>
 <p>
             <strong>The NordicTrack C950i is discontinued, so the only way to buy one is used, and a used one
             is only worth buying cheaply, after a proper test, and on the understanding that it is a manual
@@ -371,81 +342,69 @@ const schema = {
             T 6.5 S, as the price point to weigh a used C950i against. We have not tested any of them.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="what-it-was" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the C950i Was</h2>
+          <h2>What the C950i Was</h2>
 <p>
-            The C950i belonged to NordicTrack’s older "C" folding range, the family that also included the
-            <a href="/nordictrack-c-990-treadmill/" class="text-[#0F62FE] font-medium">C 990</a> and that the
+            The C950i belonged to NordicTrack’s older "C" folding range, the family that also included the <a href="/nordictrack-c-990-treadmill/" class="text-[#0F62FE] font-medium">C 990</a> and that the
             current <a href="/nordictrack-c-700-treadmill/" class="text-[#0F62FE] font-medium">C 700</a> carries
             on. The "i" marked it as iFIT-compatible: it could connect to iFIT’s workouts, Google Maps routes and
             trainer-led sessions, which changed speed and incline automatically.
@@ -466,7 +425,7 @@ const schema = {
         </div>
 
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. C950i Specifications: What Is Known</h2>
+          <h2>C950i Specifications: What Is Known</h2>
 <p>
             NordicTrack no longer publishes a C950i page, and we found only one independent source with a full
             specification. The table shows what that source says and how far each figure is supported.
@@ -498,7 +457,7 @@ const schema = {
         </div>
 
         <div id="ifit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. iFIT on a C950i in 2026</h2>
+          <h2>iFIT on a C950i in 2026</h2>
 <p>
             iFIT announced that it was discontinuing support for older-generation machines on 30 April 2023.
             Its notice says affected machines lose access to all iFIT software updates and workouts, but can
@@ -515,15 +474,12 @@ const schema = {
           </p>
           <p>
             That is less of a loss than it sounds if you mostly walk or run at set speeds; a phone app or a
-            watch can track the workout. Our guide to
-            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
-            covers what still works, and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it</a>
-            covers the membership on a current machine.
+            watch can track the workout. Our guide to <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a> covers what still works, and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it</a> covers the membership on a current machine.
           </p>
         </div>
 
         <div id="parts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Parts and Repairs</h2>
+          <h2>Parts and Repairs</h2>
 <p>
             The good news for a C950i owner is that the parts that wear most are still listed. In search results
             on 5 November 2026 we saw:
@@ -537,25 +493,19 @@ const schema = {
             None of these come from NordicTrack, and we have not checked fitment. Start from the model number on
             the decal on the frame, since the .0, .2 and .5 versions may use different parts, and use the
             exploded drawing in your manual to identify the part. A walking belt is a reasonable home job with
-            our <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">belt replacement guide</a>;
-            <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">belt replacement cost</a>
-            sets out what a technician charges.
+            our <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">belt replacement guide</a>; <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">belt replacement cost</a> sets out what a technician charges.
           </p>
           <p>
             The harder failures are consoles and control boards. A console for an older iFIT machine can cost a
             large share of what a used C950i is worth, and a replacement board is only worthwhile if the motor
-            and deck are sound. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
-            helps judge that, and <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack</a>
-            is worth trying before you buy any electronics.
+            and deck are sound. Our guide to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a> helps judge that, and <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack</a> is worth trying before you buy any electronics.
           </p>
         </div>
 
         <div id="buying-used" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Buying a Used NordicTrack C950i</h2>
+          <h2>Buying a Used NordicTrack C950i</h2>
 <p>
-            A C950i on a local marketplace is likely to be several years old. Use our
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">guide to where to buy a used treadmill</a>
-            to find one, and check these on the spot:
+            A C950i on a local marketplace is likely to be several years old. Use our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">guide to where to buy a used treadmill</a> to find one, and check these on the spot:
           </p>
           <ol>
             <li><strong>The decal.</strong> Note the model number (831.25044.0, .2 or .5) and the maximum user weight printed on the warning label.</li>
@@ -569,13 +519,12 @@ const schema = {
           <p>
             On price, we do not publish a figure because used prices vary so much by area. Measure it against a
             new machine: a used C950i has no warranty, no iFIT and an ageing belt and console, so it should cost
-            a small fraction of a new T Series 10. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            sets out how much a used machine typically loses.
+            a small fraction of a new T Series 10. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> sets out how much a used machine typically loses.
           </p>
         </div>
 
         <div id="replacements" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What Replaced the C950i</h2>
+          <h2>What Replaced the C950i</h2>
 <p>
             NordicTrack has not named a direct successor. Garage Gym Reviews pointed C950i readers to the EXP 10i,
             which has itself since been replaced by the T Series 10. Today the closest current models are:
@@ -595,26 +544,19 @@ const schema = {
           </table></div>
           <p>
             <strong>T Series 10.</strong> The same idea in current form: a folding 60-inch <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>iFIT treadmill</a> at a
-            mid-range price, with a bigger screen and a warranty. Our
-            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series review</a>
-            covers it and the T Series 16.
+            mid-range price, with a bigger screen and a warranty. Our <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series review</a> covers it and the T Series 16.
           </p>
           <p>
-            <strong>Commercial 1250.</strong> A sturdier folding frame with a wider 22-inch belt, decline and a 400 lb rating; our
-            <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1250 review</a>
-            covers it.
+            <strong>Commercial 1250.</strong> A sturdier folding frame with a wider 22-inch belt, decline and a 400 lb rating; our <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1250 review</a> covers it.
           </p>
           <p>
             One thing has been lost: neither current model reaches the 15% incline the review gives for the
-            C950i. If steep walking is the point, NordicTrack’s incline trainers or the machines in our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill roundup</a>
-            go further. The whole current range is ranked in
-            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>.
+            C950i. If steep walking is the point, NordicTrack’s incline trainers or the machines in our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmill roundup</a> go further. The whole current range is ranked in <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Should You Buy a NordicTrack C950i?</h2>
+          <h2>Should You Buy a NordicTrack C950i?</h2>
 <p>
             <strong>Buy one if it is cheap, runs cleanly at speed and incline, and you are happy to use it as a
             manual treadmill.</strong> For walking and moderate running, a sound C950i still does the basic job,
@@ -636,133 +578,151 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack C950i discontinued?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. NordicTrack no longer lists it, and Garage Gym Reviews says it is no longer in production. It is only available used.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does iFIT still work on the NordicTrack C950i?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Assume not. iFIT ended support for older-generation machines on 30 April 2023, including those using an external iFIT Wifi Module. Affected machines still work in manual mode and with their preloaded workouts. iFIT can confirm a specific machine at upgrade@ifit.com or 844-867-4562.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit of the NordicTrack C950i?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                One independent review gives 350 lb, but we found no second source, and NordicTrack folding machines of that era were often rated lower. Read the maximum user weight on the warning decal on the machine and use the lower figure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the model number of the NordicTrack C950i?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Manual archives list 831.25044.0, and parts catalogues also list 831.25044.2 and 831.25044.5 versions. Check the decal on the frame, since parts can differ between versions.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you still get parts for a NordicTrack C950i?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Common wear parts are listed by third-party sellers: on 5 November 2026 search results showed walking belts around $120 to $130, a drive belt around $38 and a lower motor control board around $200. Match part numbers to your exact model before ordering.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What replaced the NordicTrack C950i?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                NordicTrack has not named a direct successor. The closest current models are the T Series 10, a folding 20 by 60-inch iFIT treadmill, and the sturdier Commercial 1250, which adds decline and a 400 lb rating. Neither reaches the 15% incline one review gives for the C950i.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Used C950i</h2>
+          <p>A discontinued machine is only a bargain if nothing expensive is about to fail. These are the errors to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying extra for iFIT</h3>
+              <p>iFIT ended support for older-generation machines in 2023. Price a C950i as a manual treadmill, and do not pay more because a listing says "iFIT compatible".</p>
+            </li>
+            <li>
+              <h3>Trusting a listing’s weight capacity</h3>
+              <p>The 350 lb figure rests on one review. Read the maximum user weight on the machine’s own decal and stay well inside it.</p>
+            </li>
+            <li>
+              <h3>Not testing at speed and incline</h3>
+              <p>A treadmill that walks smoothly can still labour or flex at running pace or full incline. Run it at 6 mph or more and at the top incline before paying.</p>
+            </li>
+            <li>
+              <h3>Ordering parts by name instead of number</h3>
+              <p>Walking belts are listed under two different part numbers, and there are at least three model versions. Order by your model number and the part number in its parts list.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Used C950i</h2>
-          <p class="text-gray-700 leading-relaxed">A discontinued machine is only a bargain if nothing expensive is about to fail. These are the errors to avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying extra for iFIT</h3>
-              <p class="text-gray-700 text-sm m-0">iFIT ended support for older-generation machines in 2023. Price a C950i as a manual treadmill, and do not pay more because a listing says "iFIT compatible".</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a listing’s weight capacity</h3>
-              <p class="text-gray-700 text-sm m-0">The 350 lb figure rests on one review. Read the maximum user weight on the machine’s own decal and stay well inside it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not testing at speed and incline</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill that walks smoothly can still labour or flex at running pace or full incline. Run it at 6 mph or more and at the top incline before paying.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering parts by name instead of number</h3>
-              <p class="text-gray-700 text-sm m-0">Walking belts are listed under two different part numbers, and there are at least three model versions. Order by your model number and the part number in its parts list.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-nordictrack-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best NordicTrack Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The current NordicTrack range ranked, from the T Series to the X24.</p>
-            </a>
-            <a href="/nordictrack-t-series-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Replacement</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack T Series Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The current folding 60-inch NordicTrack closest to the C950i.</p>
-            </a>
-            <a href="/where-to-buy-a-used-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Where to Buy a Used Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Marketplaces, dealers and refurbishers, and what each is good for.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The NordicTrack C950i is discontinued and only worth buying used, cheaply,
             and as a manual treadmill</strong>: iFIT ended support for machines of its generation in 2023, and
             its capacity, incline and motor figures rest on a single review. Common wear parts are still listed.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Test any used one at speed and full incline, read the weight decal, and compare its price with a new
-            <a href="/nordictrack-t-series-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack T Series 10</a>,
+          <p>
+            Test any used one at speed and full incline, read the weight decal, and compare its price with a new <a href="/nordictrack-t-series-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack T Series 10</a>,
             the closest current replacement.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-nordictrack-treadmills/">Best NordicTrack Treadmills</a></li>
+            <li><a href="/nordictrack-t-series-treadmill/">NordicTrack T Series Review</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the NordicTrack C950i discontinued?</h3></summary>
+            <p class="faq-a">
+              Yes. NordicTrack no longer lists it, and Garage Gym Reviews says it is no longer in production. It is only available used.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Does iFIT still work on the NordicTrack C950i?</h3></summary>
+            <p class="faq-a">
+              Assume not. iFIT ended support for older-generation machines on 30 April 2023, including those using an external iFIT Wifi Module. Affected machines still work in manual mode and with their preloaded workouts. iFIT can confirm a specific machine at upgrade@ifit.com or 844-867-4562.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit of the NordicTrack C950i?</h3></summary>
+            <p class="faq-a">
+              One independent review gives 350 lb, but we found no second source, and NordicTrack folding machines of that era were often rated lower. Read the maximum user weight on the warning decal on the machine and use the lower figure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the model number of the NordicTrack C950i?</h3></summary>
+            <p class="faq-a">
+              Manual archives list 831.25044.0, and parts catalogues also list 831.25044.2 and 831.25044.5 versions. Check the decal on the frame, since parts can differ between versions.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you still get parts for a NordicTrack C950i?</h3></summary>
+            <p class="faq-a">
+              Common wear parts are listed by third-party sellers: on 5 November 2026 search results showed walking belts around $120 to $130, a drive belt around $38 and a lower motor control board around $200. Match part numbers to your exact model before ordering.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What replaced the NordicTrack C950i?</h3></summary>
+            <p class="faq-a">
+              NordicTrack has not named a direct successor. The closest current models are the T Series 10, a folding 20 by 60-inch iFIT treadmill, and the sturdier Commercial 1250, which adds decline and a 400 lb rating. Neither reaches the 15% incline one review gives for the C950i.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-nordictrack-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best NordicTrack Treadmills</div>
+            <p class="c-blurb">The current NordicTrack range ranked, from the T Series to the X24.</p>
+          </a>
+          <a href="/nordictrack-t-series-treadmill/" class="card">
+            <div class="c-kicker">Replacement</div>
+            <div class="c-title">NordicTrack T Series Review</div>
+            <p class="c-blurb">The current folding 60-inch NordicTrack closest to the C950i.</p>
+          </a>
+          <a href="/where-to-buy-a-used-treadmill/" class="card">
+            <div class="c-kicker">Buying Used</div>
+            <div class="c-title">Where to Buy a Used Treadmill</div>
+            <p class="c-blurb">Marketplaces, dealers and refurbishers, and what each is good for.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

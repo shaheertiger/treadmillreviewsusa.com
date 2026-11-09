@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Use a Manual Treadmill (2026): Flat and Curved, Step by Step";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-use-a-manual-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,43 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Step-by-Step", link: "#getting-on" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtouseamanualtreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtouseamanualtreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Guide</span>
+      </nav>
+      <h1 class="ed-title">How to Use a Manual Treadmill Without Fighting the Belt</h1>
+      <p class="ed-dek">
+        A manual treadmill has no motor, so the belt moves only when you move it. That changes how you get on, how you stand, how you control speed and how you stop. Here is the technique for both kinds — the flat folding walker and the curved trainer — plus a first fortnight and what the usual aches mean.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Use a Manual Treadmill <span class="text-[#5AA9FF]">Without Fighting the Belt</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A manual treadmill has no motor, so the belt moves only when you move it. That changes how you get on, how you stand, how you control speed and how you stop. Here is the technique for both kinds — the flat folding walker and the curved trainer — plus a first fortnight and what the usual aches mean.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#getting-on" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Getting On and Starting
-          </a>
-          <a href="#first-sessions" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Your First Two Weeks
-          </a>
-        </div>
+        <a href="#getting-on" class="btn-ghost">Getting On and Starting</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Using a manual treadmill is mostly about one idea: you are the motor. On a flat folding
+          walker your feet push the belt back down a fixed slope; on a curved trainer your position
+          on the curve decides how fast the belt runs. Get that idea into your body and everything
+          else — starting, holding a pace, stopping — follows. Miss it and the machine feels either
+          stuck or out of control. If you are still choosing a machine, our roundup of the <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a> covers both kinds; this page is about using the one you have.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This is a practical guide to operating a type of equipment — it is not medical,
           physiotherapy or coaching advice, and we are not qualified to give any of those. If you
@@ -173,52 +157,32 @@ const schema = {
           figures below:</strong> session lengths and settings are illustrations rather than
           prescriptions, and your machine's manual is the authority on its own controls, limits and
           safety features.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Use a Manual Treadmill: The Short Answer</a>
-          <a href="#which-kind" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. First, Which Kind of Manual Treadmill You Have</a>
-          <a href="#setting-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Before You Start: Slope, Resistance, Shoes and Space</a>
-          <a href="#getting-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Getting On and Starting the Belt</a>
-          <a href="#posture-flat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Posture on a Flat Manual: Lean, Push and Use the Rails Lightly</a>
-          <a href="#posture-curved" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Posture on a Curved Manual: Your Position Is the Throttle</a>
-          <a href="#resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Using the Resistance and Incline Settings</a>
-          <a href="#stopping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Stopping and Getting Off Safely</a>
-          <a href="#first-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Your First Two Weeks on a Manual Treadmill</a>
-          <a href="#common-discomforts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Common Discomforts and What They Usually Mean</a>
-          <a href="#if-shopping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. If You Are Still Shopping: What to Look For</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Use a Manual Treadmill: The Short Answer</a></li>
+            <li><a href="#which-kind">First, Which Kind of Manual Treadmill You Have</a></li>
+            <li><a href="#setting-up">Before You Start: Slope, Resistance, Shoes and Space</a></li>
+            <li><a href="#getting-on">Getting On and Starting the Belt</a></li>
+            <li><a href="#posture-flat">Posture on a Flat Manual: Lean, Push and Use the Rails Lightly</a></li>
+            <li><a href="#posture-curved">Posture on a Curved Manual: Your Position Is the Throttle</a></li>
+            <li><a href="#resistance">Using the Resistance and Incline Settings</a></li>
+            <li><a href="#stopping">Stopping and Getting Off Safely</a></li>
+            <li><a href="#first-sessions">Your First Two Weeks on a Manual Treadmill</a></li>
+            <li><a href="#common-discomforts">Common Discomforts and What They Usually Mean</a></li>
+            <li><a href="#if-shopping">If You Are Still Shopping: What to Look For</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Using a manual treadmill is mostly about one idea: you are the motor. On a flat folding
-          walker your feet push the belt back down a fixed slope; on a curved trainer your position
-          on the curve decides how fast the belt runs. Get that idea into your body and everything
-          else — starting, holding a pace, stopping — follows. Miss it and the machine feels either
-          stuck or out of control. If you are still choosing a machine, our roundup of the
-          <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>
-          covers both kinds; this page is about using the one you have.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Use a Manual Treadmill: The Short Answer</h2>
+          <h2>How to Use a Manual Treadmill: The Short Answer</h2>
 <p>
             <strong>Hold the handrails, step onto the belt, and start walking: on a flat manual you
             lean slightly forward and push the belt back with each step; on a curved manual you
-            walk a little up the front of the curve and the belt starts moving under you.</strong>
-            Speed comes from effort and position rather than from buttons, and you stop by easing
+            walk a little up the front of the curve and the belt starts moving under you.</strong> Speed comes from effort and position rather than from buttons, and you stop by easing
             off — slowing your steps on a flat machine, drifting back to the bottom of the curve on
             a curved one — until the belt comes to rest.
           </p>
@@ -235,18 +199,14 @@ const schema = {
           <p>
             Two points before anything else. First, check which kind you have, because the rest of
             this page splits on it. Second, if you are new to treadmills entirely, our general guide
-            to
-            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>
-            covers shoes, space and the habits that apply to any machine; this page covers only
+            to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a> covers shoes, space and the habits that apply to any machine; this page covers only
             what is different when there is no motor. If you want the mechanical reasons a manual
-            belt behaves the way it does, our
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual versus motorised comparison</a>
-            explains them.
+            belt behaves the way it does, our <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual versus motorised comparison</a> explains them.
           </p>
         </div>
 
         <div id="which-kind" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. First, Which Kind of Manual Treadmill You Have</h2>
+          <h2>First, Which Kind of Manual Treadmill You Have</h2>
 <p>
             "Manual treadmill" covers two machines that share nothing but the absence of a motor,
             and the technique for one is wrong for the other.
@@ -279,7 +239,7 @@ const schema = {
         </div>
 
         <div id="setting-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Before You Start: Slope, Resistance, Shoes and Space</h2>
+          <h2>Before You Start: Slope, Resistance, Shoes and Space</h2>
 <p>
             A few minutes of setup make the first session far easier, and most of it is done once.
           </p>
@@ -307,9 +267,7 @@ const schema = {
           <p>
             <strong>Put it on a firm, level surface, ideally a mat.</strong> Light flat manuals can
             shift and walk across a hard floor under a determined push, and curved trainers send
-            vibration into a suspended floor. A rubber mat helps with both; our roundup of the
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>
-            covers the thicknesses that suit a heavy machine and a light one.
+            vibration into a suspended floor. A rubber mat helps with both; our roundup of the <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a> covers the thicknesses that suit a heavy machine and a light one.
           </p>
           <p>
             <strong>Wear trainers with grip.</strong> On a flat manual the sole of your shoe is what
@@ -333,7 +291,7 @@ const schema = {
         </div>
 
         <div id="getting-on" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Getting On and Starting the Belt</h2>
+          <h2>Getting On and Starting the Belt</h2>
 <p>
             The getting-on sequence is simpler than on a motorised treadmill because the belt is
             stationary until you move it. The two kinds still differ.
@@ -374,7 +332,7 @@ const schema = {
         </div>
 
         <div id="posture-flat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Posture on a Flat Manual: Lean, Push and Use the Rails Lightly</h2>
+          <h2>Posture on a Flat Manual: Lean, Push and Use the Rails Lightly</h2>
 <p>
             A flat manual treadmill asks for a posture that would be poor technique on a motorised
             belt. That is not a contradiction; it is a different machine.
@@ -419,12 +377,11 @@ const schema = {
         </div>
 
         <div id="posture-curved" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Posture on a Curved Manual: Your Position Is the Throttle</h2>
+          <h2>Posture on a Curved Manual: Your Position Is the Throttle</h2>
 <p>
             On a curved trainer you stand and run upright, close to how you would on the ground,
             and speed is controlled by where your body is on the curve. The mechanics of why are
-            in our
-            <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>;
+            in our <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>;
             the practical rules are short.
           </p>
           <p>
@@ -466,7 +423,7 @@ const schema = {
         </div>
 
         <div id="resistance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Using the Resistance and Incline Settings</h2>
+          <h2>Using the Resistance and Incline Settings</h2>
 <p>
             Manual treadmills have far fewer settings than motorised ones, and what there is behaves
             differently from what the labels suggest.
@@ -508,9 +465,7 @@ const schema = {
           <p>
             If your curved trainer has no resistance setting, as on the AssaultRunner Pro, effort
             comes entirely from how hard you run. That is not a shortcoming for running and
-            sprinting; it only rules out true sled-style pushes. Our guide to
-            <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>
-            sets out sessions for both kinds.
+            sprinting; it only rules out true sled-style pushes. Our guide to <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a> sets out sessions for both kinds.
           </p>
           <p>
             <strong>Incline on a curved trainer.</strong> Curved trainers have no settable incline in
@@ -521,7 +476,7 @@ const schema = {
         </div>
 
         <div id="stopping" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Stopping and Getting Off Safely</h2>
+          <h2>Stopping and Getting Off Safely</h2>
 <p>
             Stopping is where a manual treadmill is kindest. The belt stops because you stop
             driving it, so there is no rush. There is still a right way to do it.
@@ -558,7 +513,7 @@ const schema = {
         </div>
 
         <div id="first-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Your First Two Weeks on a Manual Treadmill</h2>
+          <h2>Your First Two Weeks on a Manual Treadmill</h2>
 <p>
             The first fortnight is about learning the machine and letting your calves, shins and
             feet get used to it, not about the workout. Both kinds of manual treadmill feel harder
@@ -607,7 +562,7 @@ const schema = {
         </div>
 
         <div id="common-discomforts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Common Discomforts and What They Usually Mean</h2>
+          <h2>Common Discomforts and What They Usually Mean</h2>
 <p>
             New manual treadmill users report a familiar set of aches. Most come from the machine's
             demands — a fixed climb, a forefoot-led stride, a belt you push — and settle as you
@@ -653,7 +608,7 @@ const schema = {
         </div>
 
         <div id="if-shopping" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. If You Are Still Shopping: What to Look For</h2>
+          <h2>If You Are Still Shopping: What to Look For</h2>
 <p>
             How you will use the machine should decide which kind you buy, and the technique above
             makes the trade-off clear.
@@ -672,150 +627,160 @@ const schema = {
             can live. Between the two kinds, there is very little worth buying.
           </p>
           <p>
-            Our roundup of the
-            <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">manual treadmills worth buying</a>
-            covers three flat walkers and two curved trainers, with the specifications, warranties
-            and caveats for each. If you have already decided on curved, the
-            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill roundup</a>
-            goes into seven of them, from about $2,100 to the premium end.
+            Our roundup of the <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">manual treadmills worth buying</a> covers three flat walkers and two curved trainers, with the specifications, warranties
+            and caveats for each. If you have already decided on curved, the <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill roundup</a> goes into seven of them, from about $2,100 to the premium end.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you start a manual treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Hold the handrails and step on, then start walking. On a flat manual, lean slightly forward from the ankles and push the belt back with short steps; the first few are the hardest while the flywheels get moving. On a curved trainer, step on at the lowest point and walk slightly up the front of the curve, and the belt begins to roll.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why is my manual treadmill so hard to walk on?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually because it is on its shallowest slope, where gravity helps least, or the magnetic resistance is turned up. Set the steepest slope and lowest resistance, check that the belt is centred and not rubbing the frame, and wear shoes with grip. A flat manual will always take more effort than a motorised belt, but it should not feel stuck.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you hold the handrails on a manual treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a flat manual, light contact with the rails is how the design is used, because the belt is short, narrow and resists each step. Rest your hands; do not hang off them or pull yourself forward. On a curved trainer, hold them while learning, then let go and run upright once you can hold a steady pace.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you control speed on a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                By your position on the curve. Move your body a little further up the front slope and the belt speeds up; drift back towards the lowest point and it slows. Lean from the ankles rather than reaching with your front foot. There are no speed buttons, and holding an exact pace takes practice and the occasional glance at the console.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you set a flat manual treadmill to level?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. A flat manual relies on a fixed slope, usually between 5 and 10 degrees, so that your body weight helps drive the belt. Without it the belt would barely move. Some machines offer two or three settings, all of them steep. If you want to walk on a level surface, you need a motorised treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should you walk on a manual treadmill as a beginner?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Five to ten minutes for the first couple of sessions is plenty, building to around 20 to 25 minutes over two weeks, three or four times a week. Manual treadmills feel harder than motorised ones at the same pace and load the shins and calves, so increase session length gradually and repeat a stage if you are sore afterwards.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Using a Manual Treadmill</h2>
+          <p>Almost every complaint about a manual treadmill traces back to one of these. None is a fault in the machine, and all four are easy to fix.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Starting a flat manual on its shallowest setting</h3>
+              <p>It feels like the sensible, gentle option and it is the opposite: on the shallowest slope gravity does least to drive the belt, so it feels almost stuck. Start on the steepest setting with the lowest resistance, and move shallower only once the steep walk is comfortable and the belt moves freely.</p>
+            </li>
+            <li>
+              <h3>Bending at the waist to push the belt</h3>
+              <p>A forward lean is needed on a flat manual, but leaning from the hips with the head forward loads the lower back and shortens sessions. Lean from the ankles in a straight line, stand tall, and move your hands along the rails so you are not reaching. If your back aches afterwards, this is the first thing to check.</p>
+            </li>
+            <li>
+              <h3>Overstriding on a curved trainer</h3>
+              <p>Reaching forward with the front foot to go faster lands it far up the curve and makes the belt lurch. Speed on a curved trainer comes from moving your whole body forward a few inches, not from longer steps. Keep the foot landing under the hips and let the position, not the stride, set the pace.</p>
+            </li>
+            <li>
+              <h3>Braking by stamping</h3>
+              <p>On a curved trainer, the way to slow down is to drift back towards the bottom of the curve and shorten your stride. Stamping to stop the belt jars the knees and wears the slats. On a flat manual, slow your steps over several strides and keep walking until the flywheels stop, rather than stopping dead.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Using a Manual Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Almost every complaint about a manual treadmill traces back to one of these. None is a fault in the machine, and all four are easy to fix.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting a flat manual on its shallowest setting</h3>
-              <p class="text-gray-700 text-sm m-0">It feels like the sensible, gentle option and it is the opposite: on the shallowest slope gravity does least to drive the belt, so it feels almost stuck. Start on the steepest setting with the lowest resistance, and move shallower only once the steep walk is comfortable and the belt moves freely.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Bending at the waist to push the belt</h3>
-              <p class="text-gray-700 text-sm m-0">A forward lean is needed on a flat manual, but leaning from the hips with the head forward loads the lower back and shortens sessions. Lean from the ankles in a straight line, stand tall, and move your hands along the rails so you are not reaching. If your back aches afterwards, this is the first thing to check.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Overstriding on a curved trainer</h3>
-              <p class="text-gray-700 text-sm m-0">Reaching forward with the front foot to go faster lands it far up the curve and makes the belt lurch. Speed on a curved trainer comes from moving your whole body forward a few inches, not from longer steps. Keep the foot landing under the hips and let the position, not the stride, set the pace.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Braking by stamping</h3>
-              <p class="text-gray-700 text-sm m-0">On a curved trainer, the way to slow down is to drift back towards the bottom of the curve and shorten your stride. Stamping to stop the belt jars the knees and wears the slats. On a flat manual, slow your steps over several strides and keep walking until the flywheels stop, rather than stopping dead.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-manual-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Manual Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Three flat folding walkers and two curved trainers, with the caveats for each.</p>
-            </a>
-            <a href="/manual-vs-motorized-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Manual vs Motorized Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cost, effort, gait, joints and safety compared, and who should buy which.</p>
-            </a>
-            <a href="/curved-treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Workouts</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sprint repeats, tempo, sled-style pushes and a progression for a curved trainer.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">On a manual treadmill you are the motor.</strong> On a flat
             folding walker, start on the steepest slope with the lowest resistance, lean from the
             ankles and push the belt back with short steps, hands resting on the rails. On a curved
             trainer, walk up the front of the curve to start, move forward to speed up and drift back
             to slow down.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Stop by easing off rather than braking, build up over a fortnight rather than a day, and
             treat sharp or lingering pain as a reason to stop. If you are still choosing a machine,
-            our guide to the
-            <a href="/best-manual-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best manual treadmills for walking and running</a>
-            sets out which kind suits which job.
+            our guide to the <a href="/best-manual-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best manual treadmills for walking and running</a> sets out which kind suits which job.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-manual-treadmills/">Best Manual Treadmills</a></li>
+            <li><a href="/manual-vs-motorized-treadmill/">Manual vs Motorized Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you start a manual treadmill?</h3></summary>
+            <p class="faq-a">
+              Hold the handrails and step on, then start walking. On a flat manual, lean slightly forward from the ankles and push the belt back with short steps; the first few are the hardest while the flywheels get moving. On a curved trainer, step on at the lowest point and walk slightly up the front of the curve, and the belt begins to roll.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Why is my manual treadmill so hard to walk on?</h3></summary>
+            <p class="faq-a">
+              Usually because it is on its shallowest slope, where gravity helps least, or the magnetic resistance is turned up. Set the steepest slope and lowest resistance, check that the belt is centred and not rubbing the frame, and wear shoes with grip. A flat manual will always take more effort than a motorised belt, but it should not feel stuck.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should you hold the handrails on a manual treadmill?</h3></summary>
+            <p class="faq-a">
+              On a flat manual, light contact with the rails is how the design is used, because the belt is short, narrow and resists each step. Rest your hands; do not hang off them or pull yourself forward. On a curved trainer, hold them while learning, then let go and run upright once you can hold a steady pace.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do you control speed on a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              By your position on the curve. Move your body a little further up the front slope and the belt speeds up; drift back towards the lowest point and it slows. Lean from the ankles rather than reaching with your front foot. There are no speed buttons, and holding an exact pace takes practice and the occasional glance at the console.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you set a flat manual treadmill to level?</h3></summary>
+            <p class="faq-a">
+              No. A flat manual relies on a fixed slope, usually between 5 and 10 degrees, so that your body weight helps drive the belt. Without it the belt would barely move. Some machines offer two or three settings, all of them steep. If you want to walk on a level surface, you need a motorised treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should you walk on a manual treadmill as a beginner?</h3></summary>
+            <p class="faq-a">
+              Five to ten minutes for the first couple of sessions is plenty, building to around 20 to 25 minutes over two weeks, three or four times a week. Manual treadmills feel harder than motorised ones at the same pace and load the shins and calves, so increase session length gradually and repeat a stage if you are sore afterwards.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-manual-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Manual Treadmills</div>
+            <p class="c-blurb">Three flat folding walkers and two curved trainers, with the caveats for each.</p>
+          </a>
+          <a href="/manual-vs-motorized-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Manual vs Motorized Treadmill</div>
+            <p class="c-blurb">Cost, effort, gait, joints and safety compared, and who should buy which.</p>
+          </a>
+          <a href="/curved-treadmill-workouts/" class="card">
+            <div class="c-kicker">Workouts</div>
+            <div class="c-title">Curved Treadmill Workouts</div>
+            <p class="c-blurb">Sprint repeats, tempo, sled-style pushes and a progression for a curved trainer.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

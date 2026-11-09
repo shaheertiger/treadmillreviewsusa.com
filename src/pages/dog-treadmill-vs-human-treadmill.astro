@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Dog Treadmill vs Human Treadmill (2026): What Differs, What Matters";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/dog-treadmill-vs-human-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,45 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Compare the Differences", link: "#at-a-glance" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-dogtreadmillvshumantreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-dogtreadmillvshumantreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Dog Treadmill vs Human Treadmill The Differences That Matter</h1>
+      <p class="ed-dek">
+        A dog treadmill and a human treadmill are the same idea — a motorised belt — built around very different users. This is the feature-by-feature comparison: belt length against a dog's stride, side panels, what sits at the front and back of the deck, speed range, noise and where the controls are, and what it all means if you already own a treadmill.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Dog Treadmill vs Human Treadmill <span class="text-[#5AA9FF]">The Differences That Matter</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A dog treadmill and a human treadmill are the same idea — a motorised belt — built around very different users. This is the feature-by-feature comparison: belt length against a dog's stride, side panels, what sits at the front and back of the deck, speed range, noise and where the controls are, and what it all means if you already own a treadmill.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#at-a-glance" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Differences at a Glance
-          </a>
-          <a href="#belt-length" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Belt Length vs Stride
-          </a>
-        </div>
+        <a href="#at-a-glance" class="btn-ghost">The Differences at a Glance</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          If you already own a treadmill and have a dog with energy to spare, it is natural to wonder
+          what a dog treadmill actually adds. The answer is less about the motor and more about the
+          shape of everything around it: how long the belt is against a four-legged stride, what
+          stops a dog drifting sideways, what its nose meets at the front, how slowly it can start,
+          how loud it is, and whether you can stop it from where you stand. For purpose-built
+          machines sized from toy to giant breeds, see our guide to the <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>;
+          this page explains what separates them from the one you run on.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
           for people. This page compares two kinds of equipment — it is not veterinary advice,
           dog-training advice or a recommendation to exercise any particular dog on any machine, and
@@ -172,62 +158,39 @@ const schema = {
           sizes for dog treadmills are the figures stated on our dog treadmill roundup; human
           treadmill sizes are typical ranges rather than any one model; and the sizing rule of thumb
           is exactly that — a widely used convention, not a measurement of your dog.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Dog Treadmill vs Human Treadmill: The Short Answer</a>
-          <a href="#at-a-glance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Differences at a Glance</a>
-          <a href="#belt-length" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Belt Length Against Your Dog's Stride</a>
-          <a href="#side-panels" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Side Panels, Width and Keeping a Dog Centred</a>
-          <a href="#front-and-rear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Front Clearance, Deck Height and the Rear Roller</a>
-          <a href="#speed-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Speed Ranges: The Bottom Matters, Not the Top</a>
-          <a href="#noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise, Vibration and Sound-Sensitive Dogs</a>
-          <a href="#controls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Controls You Can Reach From Beside the Machine</a>
-          <a href="#can-a-dog-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Can a Dog Use a Human Treadmill? When It Works and When It Is a Poor Fit</a>
-          <a href="#cost-and-wear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Cost, Space and What a Dog Does to a Shared Machine</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. What to Buy if You Decide on a Dog Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Dog Treadmill vs Human Treadmill: The Short Answer</a></li>
+            <li><a href="#at-a-glance">The Differences at a Glance</a></li>
+            <li><a href="#belt-length">Belt Length Against Your Dog's Stride</a></li>
+            <li><a href="#side-panels">Side Panels, Width and Keeping a Dog Centred</a></li>
+            <li><a href="#front-and-rear">Front Clearance, Deck Height and the Rear Roller</a></li>
+            <li><a href="#speed-range">Speed Ranges: The Bottom Matters, Not the Top</a></li>
+            <li><a href="#noise">Noise, Vibration and Sound-Sensitive Dogs</a></li>
+            <li><a href="#controls">Controls You Can Reach From Beside the Machine</a></li>
+            <li><a href="#can-a-dog-use">Can a Dog Use a Human Treadmill? When It Works and When It Is a Poor Fit</a></li>
+            <li><a href="#cost-and-wear">Cost, Space and What a Dog Does to a Shared Machine</a></li>
+            <li><a href="#what-to-buy">What to Buy if You Decide on a Dog Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          If you already own a treadmill and have a dog with energy to spare, it is natural to wonder
-          what a dog treadmill actually adds. The answer is less about the motor and more about the
-          shape of everything around it: how long the belt is against a four-legged stride, what
-          stops a dog drifting sideways, what its nose meets at the front, how slowly it can start,
-          how loud it is, and whether you can stop it from where you stand. For purpose-built
-          machines sized from toy to giant breeds, see our guide to the
-          <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>;
-          this page explains what separates them from the one you run on.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Dog Treadmill vs Human Treadmill: The Short Answer</h2>
+          <h2>Dog Treadmill vs Human Treadmill: The Short Answer</h2>
 <p>
             <strong>A dog treadmill is built around a dog's length, height and behaviour: a running
             area sized to a four-legged stride, side panels to keep the dog centred, nothing at nose
             height at the front, a low step-on, and controls you can reach from beside the
-            machine.</strong> A human treadmill is built around a person who can see the deck edges,
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a> and pull a safety key — none of which a dog can do.
+            machine.</strong> A human treadmill is built around a person who can see the deck edges, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a> and pull a safety key — none of which a dog can do.
           </p>
           <p>
             That does not make a human treadmill unusable for every dog. Some healthy adult dogs can
             walk slowly on one, with an owner standing beside the machine throughout and after a vet
             has agreed. But it is a compromise, it suits walking rather than trotting or running, and
-            for small dogs, nervous dogs and dogs that need to run it is a poor fit. Our guide to
-            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">using a treadmill with a dog</a>
-            covers that question, the dogs it is wrong for and how to introduce one, in full; this page
+            for small dogs, nervous dogs and dogs that need to run it is a poor fit. Our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">using a treadmill with a dog</a> covers that question, the dogs it is wrong for and how to introduce one, in full; this page
             stays on the equipment differences.
           </p>
           <p>
@@ -246,7 +209,7 @@ const schema = {
         </div>
 
         <div id="at-a-glance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Differences at a Glance</h2>
+          <h2>The Differences at a Glance</h2>
 <p>
             The table compares the typical home human treadmill with a typical purpose-built
             motorised dog treadmill. Individual machines vary, so treat it as a map of what to check
@@ -280,7 +243,7 @@ const schema = {
         </div>
 
         <div id="belt-length" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Belt Length Against Your Dog's Stride</h2>
+          <h2>Belt Length Against Your Dog's Stride</h2>
 <p>
             Belt length is the single most important specification for a dog, and it is measured
             against the dog's body rather than its weight. A trotting or running dog reaches forward
@@ -325,9 +288,7 @@ const schema = {
             <strong>Why the human figure flatters itself.</strong> A dog's head and front legs reach
             towards the front of the deck, where a human treadmill has its motor hood and uprights. A
             dog cannot use the very front of the belt the way a person's toes can, so the usable
-            length for a dog is a little shorter than the stated figure. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
-            explains how belt sizes are quoted for human users.
+            length for a dog is a little shorter than the stated figure. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> explains how belt sizes are quoted for human users.
           </p>
           <p>
             <strong>Weight ratings are the wrong place to start.</strong> A human treadmill rated for
@@ -338,7 +299,7 @@ const schema = {
         </div>
 
         <div id="side-panels" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Side Panels, Width and Keeping a Dog Centred</h2>
+          <h2>Side Panels, Width and Keeping a Dog Centred</h2>
 <p>
             A person on a treadmill knows where the edges of the belt are without looking. A dog does
             not, and a dog that is anxious, distracted or looking at its owner will drift.
@@ -374,7 +335,7 @@ const schema = {
         </div>
 
         <div id="front-and-rear" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Front Clearance, Deck Height and the Rear Roller</h2>
+          <h2>Front Clearance, Deck Height and the Rear Roller</h2>
 <p>
             The ends of the deck are where a human treadmill's design is furthest from a dog's needs.
           </p>
@@ -405,14 +366,12 @@ const schema = {
           </p>
           <p>
             <strong>Clearance around the machine.</strong> Whichever kind you use, keep clear space
-            behind and beside it, so a dog that wants to leave the belt can do so instantly. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers clearances and keeping pets and children away from a treadmill that is not in use.
+            behind and beside it, so a dog that wants to leave the belt can do so instantly. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers clearances and keeping pets and children away from a treadmill that is not in use.
           </p>
         </div>
 
         <div id="speed-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Speed Ranges: The Bottom Matters, Not the Top</h2>
+          <h2>Speed Ranges: The Bottom Matters, Not the Top</h2>
 <p>
             Listings for both kinds of treadmill advertise the top speed. For a dog, the bottom of the
             range and how the belt gets there matter far more.
@@ -449,7 +408,7 @@ const schema = {
         </div>
 
         <div id="noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise, Vibration and Sound-Sensitive Dogs</h2>
+          <h2>Noise, Vibration and Sound-Sensitive Dogs</h2>
 <p>
             Motor whine, belt rumble and the beep of a console bother many dogs more than they bother
             people wearing <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a>. Noise is a real difference between machines, but less of a clean
@@ -458,9 +417,7 @@ const schema = {
           <p>
             <strong>Human treadmills.</strong> Noise comes from the motor, the belt running over the
             deck, the rollers, and footfalls through the frame into the floor, plus console beeps on
-            many machines every time a button is pressed. Our guide to
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            explains where each comes from. On a human treadmill some of this can be reduced — a mat
+            many machines every time a button is pressed. Our guide to <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> explains where each comes from. On a human treadmill some of this can be reduced — a mat
             underneath, a well-lubricated belt, a console with the beep switched off where the menu
             allows it — but the motor is what it is.
           </p>
@@ -478,14 +435,12 @@ const schema = {
           <p>
             <strong>Vibration and the floor.</strong> Any treadmill transmits rumble into a suspended
             floor, and a dog may react to the vibration as much as to the sound. A dense rubber mat
-            under the machine helps with both; our roundup of the
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>
-            covers sizes for full-length decks.
+            under the machine helps with both; our roundup of the <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a> covers sizes for full-length decks.
           </p>
         </div>
 
         <div id="controls" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Controls You Can Reach From Beside the Machine</h2>
+          <h2>Controls You Can Reach From Beside the Machine</h2>
 <p>
             With a dog on the belt, the owner is the safety system. That makes where the controls are,
             and how quickly they stop the belt, a central difference between the two kinds of
@@ -523,7 +478,7 @@ const schema = {
         </div>
 
         <div id="can-a-dog-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Can a Dog Use a Human Treadmill? When It Works and When It Is a Poor Fit</h2>
+          <h2>Can a Dog Use a Human Treadmill? When It Works and When It Is a Poor Fit</h2>
 <p>
             Put the differences together and the answer is consistent with everything above: a human
             treadmill can work for some dogs, at a walk, under strict conditions, and is a poor fit for
@@ -560,14 +515,13 @@ const schema = {
             reach, and never leave a dog on a moving belt. <strong>Consult your vet</strong> before the
             first session. <strong>Stop at the first sign of stress</strong> — lagging to the back,
             heavy panting, a change in gait, trying to get off. And introduce the machine gradually,
-            with the belt stopped for most of the early stages; our guide sets out
-            <a href="/treadmill-for-dogs/#training-a-dog" class="text-[#0F62FE] font-medium">how to introduce a dog to a moving belt</a>,
+            with the belt stopped for most of the early stages; our guide sets out <a href="/treadmill-for-dogs/#training-a-dog" class="text-[#0F62FE] font-medium">how to introduce a dog to a moving belt</a>,
             and the same approach applies on a dog treadmill.
           </p>
         </div>
 
         <div id="cost-and-wear" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Cost, Space and What a Dog Does to a Shared Machine</h2>
+          <h2>Cost, Space and What a Dog Does to a Shared Machine</h2>
 <p>
             The obvious argument for using your own treadmill is that it is already paid for. The
             comparison is less one-sided than it looks.
@@ -586,9 +540,7 @@ const schema = {
             wraps around the fan and drive belt and settles on the control board; hair and grit work
             under the belt and abrade the deck; claws score the belt surface; and drool and the
             occasional accident need cleaning before they dry. If a dog uses your machine, plan to
-            vacuum the motor compartment far more often than the manual suggests — our guide to
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>
-            covers how, starting with unplugging it — lubricate more often, and expect a shorter
+            vacuum the motor compartment far more often than the manual suggests — our guide to <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a> covers how, starting with unplugging it — lubricate more often, and expect a shorter
             belt life. It is also worth checking whether your warranty says anything about use by
             animals.
           </p>
@@ -603,7 +555,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. What to Buy if You Decide on a Dog Treadmill</h2>
+          <h2>What to Buy if You Decide on a Dog Treadmill</h2>
 <p>
             If the comparison points to a purpose-built machine, the checks follow directly from the
             differences above, in this order:
@@ -622,152 +574,162 @@ const schema = {
             <li><strong>Delivery, returns and warranty terms</strong> read before you order.</li>
           </ol>
           <p>
-            Our roundup of the
-            <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills by dog size</a>
-            sets out six machines from toy to giant breeds, plus a slatmill for high-drive dogs, with
+            Our roundup of the <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills by dog size</a> sets out six machines from toy to giant breeds, plus a slatmill for high-drive dogs, with
             the figures sources agreed on and the disagreements flagged. It also explains the choice
             between a motorised dog treadmill and a dog-powered slatmill, which mirrors the difference
             between motorised and manual treadmills for people. If you are tempted to make one rather
-            than buy, our guide to
-            <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium">how to build a dog treadmill</a>
-            covers homemade slatmills and carpet mills, and why a motorised build is a bad idea.
+            than buy, our guide to <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium">how to build a dog treadmill</a> covers homemade slatmills and carpet mills, and why a motorised build is a bad idea.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between a dog treadmill and a human treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A dog treadmill is built around a dog: a running area sized to a four-legged stride, side panels to keep the dog centred, nothing at nose height at the front, a lower step-on and a stop the owner can reach from beside the machine. A human treadmill assumes a user who can see the edges, hold the rails and pull a safety key.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a dog use a regular treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some healthy adult dogs can walk slowly on one, with an owner beside the machine throughout, after a vet has agreed. It is a compromise: the belt is usually short for a trotting dog, the motor hood sits at nose height and there are no side panels. Never tether the dog, never leave it, and stop at any sign of stress.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a dog treadmill belt be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure your dog from nose to the base of the tail. A widely used rule of thumb is that the running area should be at least twice that length for a dog to extend fully at a trot or run. A 55-inch human belt meets that for a dog up to about 27.5 inches long; many medium and large dogs are longer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are dog treadmills quieter than human treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sometimes, but not reliably. Purpose-built machines are often described as designed to run quietly, yet independent coverage has described at least one popular model as fairly loud. Noise varies more between individual machines than between the two categories. For a sound-sensitive dog, put a mat underneath, check reviews for noise and plan a slow introduction.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a dog treadmill worth it if I already have a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is worth it if your dog needs to trot or run, is small, will use it regularly, or has a vet-directed programme. For an occasional slow walk with a suitable adult dog, a human treadmill can serve, at the cost of extra wear from fur and claws. For many dogs, more walks are the better answer than either machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does a dog treadmill need side panels?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A dog cannot see or feel the edges of a moving belt the way a person can, and will drift when anxious or distracted. Side panels give a visual boundary, keep the dog centred and stop it stepping sideways off the belt or landing half on a foot rail. On a human treadmill, only the owner standing alongside provides that guidance.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Comparing Dog and Human Treadmills</h2>
+          <p>Most mistakes in this comparison come from reading the specification sheet the way a human runner would. A dog needs different numbers.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Judging fit by the weight rating</h3>
+              <p>A human treadmill rated for 300 pounds will carry any dog, and that says nothing about whether the dog can stretch out on it. Measure your dog nose to base of tail, double it, and compare that with the running area. Length decides fit; weight is a check you do afterwards.</p>
+            </li>
+            <li>
+              <h3>Assuming a wider belt is safer</h3>
+              <p>Human belts are usually wider than dog treadmill belts, but width without side walls gives a dog more room to drift onto a foot rail or towards an edge. What keeps a dog centred is side guidance. Do not improvise walls with boards or furniture; anything that blocks the way off removes the dog's escape route.</p>
+            </li>
+            <li>
+              <h3>Standing in front of the machine</h3>
+              <p>Owners stand at the front so the dog can see them, which draws the dog forward into the motor hood at nose height. Stand beside the machine, level with the dog, with a hand near the stop button or key. Reward from the side for walking in the middle of the belt.</p>
+            </li>
+            <li>
+              <h3>Clipping the safety key or a lead to the dog</h3>
+              <p>The safety key is designed for a falling person to pull out; it must never be attached to a dog, and nor should a lead be tied to the frame, rails or anything nearby. A tethered dog that stumbles is dragged. The dog must always be free to step off, with you beside it to stop the belt.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Comparing Dog and Human Treadmills</h2>
-          <p class="text-gray-700 leading-relaxed">Most mistakes in this comparison come from reading the specification sheet the way a human runner would. A dog needs different numbers.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging fit by the weight rating</h3>
-              <p class="text-gray-700 text-sm m-0">A human treadmill rated for 300 pounds will carry any dog, and that says nothing about whether the dog can stretch out on it. Measure your dog nose to base of tail, double it, and compare that with the running area. Length decides fit; weight is a check you do afterwards.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a wider belt is safer</h3>
-              <p class="text-gray-700 text-sm m-0">Human belts are usually wider than dog treadmill belts, but width without side walls gives a dog more room to drift onto a foot rail or towards an edge. What keeps a dog centred is side guidance. Do not improvise walls with boards or furniture; anything that blocks the way off removes the dog's escape route.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Standing in front of the machine</h3>
-              <p class="text-gray-700 text-sm m-0">Owners stand at the front so the dog can see them, which draws the dog forward into the motor hood at nose height. Stand beside the machine, level with the dog, with a hand near the stop button or key. Reward from the side for walking in the middle of the belt.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Clipping the safety key or a lead to the dog</h3>
-              <p class="text-gray-700 text-sm m-0">The safety key is designed for a falling person to pull out; it must never be attached to a dog, and nor should a lead be tied to the frame, rails or anything nearby. A tethered dog that stumbles is dragged. The dog must always be free to step off, with you beside it to stop the belt.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-dog-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six machines sized from toy to giant breeds, plus a slatmill for high-drive dogs.</p>
-            </a>
-            <a href="/treadmill-for-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Before You Start</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Can a Dog Use a Human Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The safety rules, the dogs it is wrong for and how to introduce a moving belt.</p>
-            </a>
-            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Deck Size</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What belt length and width figures mean, and why a stride needs more than you think.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The real differences are length, side guidance, the front of the
             deck and where the stop is.</strong> A dog treadmill is sized to a four-legged stride, keeps
             the dog centred with side panels, has nothing at nose height and puts the controls beside
             the owner. A human treadmill can serve some adult dogs for a slow, supervised walk, and is a
             poor fit for small dogs, nervous dogs and dogs that need to run.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you use, talk to your vet first, never tether the dog and never leave it on a
-            moving belt. If the comparison points to a purpose-built machine, our guide to the
-            <a href="/best-dog-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best dog treadmills for every size of dog</a>
-            sets out which to buy for your dog's length and weight.
+            moving belt. If the comparison points to a purpose-built machine, our guide to the <a href="/best-dog-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best dog treadmills for every size of dog</a> sets out which to buy for your dog's length and weight.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-dog-treadmills/">Best Dog Treadmills</a></li>
+            <li><a href="/treadmill-for-dogs/">Can a Dog Use a Human Treadmill?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the difference between a dog treadmill and a human treadmill?</h3></summary>
+            <p class="faq-a">
+              A dog treadmill is built around a dog: a running area sized to a four-legged stride, side panels to keep the dog centred, nothing at nose height at the front, a lower step-on and a stop the owner can reach from beside the machine. A human treadmill assumes a user who can see the edges, hold the rails and pull a safety key.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can a dog use a regular treadmill?</h3></summary>
+            <p class="faq-a">
+              Some healthy adult dogs can walk slowly on one, with an owner beside the machine throughout, after a vet has agreed. It is a compromise: the belt is usually short for a trotting dog, the motor hood sits at nose height and there are no side panels. Never tether the dog, never leave it, and stop at any sign of stress.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long should a dog treadmill belt be?</h3></summary>
+            <p class="faq-a">
+              Measure your dog from nose to the base of the tail. A widely used rule of thumb is that the running area should be at least twice that length for a dog to extend fully at a trot or run. A 55-inch human belt meets that for a dog up to about 27.5 inches long; many medium and large dogs are longer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are dog treadmills quieter than human treadmills?</h3></summary>
+            <p class="faq-a">
+              Sometimes, but not reliably. Purpose-built machines are often described as designed to run quietly, yet independent coverage has described at least one popular model as fairly loud. Noise varies more between individual machines than between the two categories. For a sound-sensitive dog, put a mat underneath, check reviews for noise and plan a slow introduction.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a dog treadmill worth it if I already have a treadmill?</h3></summary>
+            <p class="faq-a">
+              It is worth it if your dog needs to trot or run, is small, will use it regularly, or has a vet-directed programme. For an occasional slow walk with a suitable adult dog, a human treadmill can serve, at the cost of extra wear from fur and claws. For many dogs, more walks are the better answer than either machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why does a dog treadmill need side panels?</h3></summary>
+            <p class="faq-a">
+              A dog cannot see or feel the edges of a moving belt the way a person can, and will drift when anxious or distracted. Side panels give a visual boundary, keep the dog centred and stop it stepping sideways off the belt or landing half on a foot rail. On a human treadmill, only the owner standing alongside provides that guidance.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-dog-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Dog Treadmills</div>
+            <p class="c-blurb">Six machines sized from toy to giant breeds, plus a slatmill for high-drive dogs.</p>
+          </a>
+          <a href="/treadmill-for-dogs/" class="card">
+            <div class="c-kicker">Before You Start</div>
+            <div class="c-title">Can a Dog Use a Human Treadmill?</div>
+            <p class="c-blurb">The safety rules, the dogs it is wrong for and how to introduce a moving belt.</p>
+          </a>
+          <a href="/treadmill-belt-size-guide/" class="card">
+            <div class="c-kicker">Deck Size</div>
+            <div class="c-title">Treadmill Belt Size Guide</div>
+            <p class="c-blurb">What belt length and width figures mean, and why a stride needs more than you think.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

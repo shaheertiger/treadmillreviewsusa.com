@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "MaxKare Treadmill Guide (2026): Models, Claims and Warranty";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/maxkare-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,44 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-maxkaretreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-maxkaretreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">MaxKare Treadmill: Models, Claims and Warranty</h1>
+      <p class="ed-dek">
+        MaxKare is a budget home-goods brand that sells folding treadmills and walking pads mostly through Walmart.com and its own web store. A MaxKare treadmill can be a reasonable cheap machine for walking, as long as you treat every figure on the listing as a claim and get the warranty terms in writing before you pay.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          MaxKare Treadmill: <span class="text-[#5AA9FF]">Models, Claims and Warranty</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          MaxKare is a budget home-goods brand that sells folding treadmills and walking pads mostly through Walmart.com and its own web store. A MaxKare treadmill can be a reasonable cheap machine for walking, as long as you treat every figure on the listing as a claim and get the warranty terms in writing before you pay.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#current-range" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Current Range
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          If you searched for a MaxKare treadmill, you most likely saw one on Walmart.com: a folding
+          machine with a 3.5 HP badge, 15 incline levels and a price well under the big brands. The
+          brand is real, it does sell those machines, and some of them are in stock. What it does not
+          have is any independent record of what its treadmills are actually built from. This guide
+          sets out who MaxKare is, what it sells now, which listing figures contradict each other,
+          what the warranty really says, and who should buy something else.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we read every treadmill and walking-pad listing in MaxKare’s own web store
           (maxkare.net), including stock status and prices, and the store’s about, warranty, returns
@@ -173,46 +158,28 @@ const schema = {
           current MaxKare treadmill, so every figure on this page is the seller’s claim, and where
           two MaxKare listings disagree we say so rather than choosing. We have not tested a MaxKare
           treadmill. Prices change often; the ones here are those shown on the day we checked.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is a MaxKare Treadmill Any Good? The Short Answer</a>
-          <a href="#who-sells-maxkare" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Is MaxKare, and Where Is It Sold?</a>
-          <a href="#current-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current MaxKare Treadmill Range</a>
-          <a href="#reading-the-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Where MaxKare Listings Contradict Themselves</a>
-          <a href="#twenty-inch-model" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The 20-Inch, 3.5 HP Model: The One Most Searches Mean</a>
-          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. MaxKare Walking Pads and 2-in-1 Machines</a>
-          <a href="#warranty-and-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. MaxKare Warranty, Returns and Support</a>
-          <a href="#safety-record" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Recalls: What the CPSC Record Shows</a>
-          <a href="#older-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Older MaxKare Treadmills People Still Search For</a>
-          <a href="#strengths-and-weaknesses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What MaxKare Does Well, and Less Well</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy a MaxKare Treadmill, and What to Read Next</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is a MaxKare Treadmill Any Good? The Short Answer</a></li>
+            <li><a href="#who-sells-maxkare">Who Is MaxKare, and Where Is It Sold?</a></li>
+            <li><a href="#current-range">The Current MaxKare Treadmill Range</a></li>
+            <li><a href="#reading-the-listings">Where MaxKare Listings Contradict Themselves</a></li>
+            <li><a href="#twenty-inch-model">The 20-Inch, 3.5 HP Model: The One Most Searches Mean</a></li>
+            <li><a href="#walking-pads">MaxKare Walking Pads and 2-in-1 Machines</a></li>
+            <li><a href="#warranty-and-returns">MaxKare Warranty, Returns and Support</a></li>
+            <li><a href="#safety-record">Recalls: What the CPSC Record Shows</a></li>
+            <li><a href="#older-models">Older MaxKare Treadmills People Still Search For</a></li>
+            <li><a href="#strengths-and-weaknesses">What MaxKare Does Well, and Less Well</a></li>
+            <li><a href="#who-should-buy">Who Should Buy a MaxKare Treadmill, and What to Read Next</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          If you searched for a MaxKare treadmill, you most likely saw one on Walmart.com: a folding
-          machine with a 3.5 HP badge, 15 incline levels and a price well under the big brands. The
-          brand is real, it does sell those machines, and some of them are in stock. What it does not
-          have is any independent record of what its treadmills are actually built from. This guide
-          sets out who MaxKare is, what it sells now, which listing figures contradict each other,
-          what the warranty really says, and who should buy something else.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is a MaxKare Treadmill Any Good? The Short Answer</h2>
+          <h2>Is a MaxKare Treadmill Any Good? The Short Answer</h2>
 <p>
             <strong>A MaxKare treadmill is a budget folding machine sold mainly through Walmart.com and
             MaxKare’s own store; it can suit light walking and occasional jogging, but none of its
@@ -239,7 +206,7 @@ const schema = {
         </div>
 
         <div id="who-sells-maxkare" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Is MaxKare, and Where Is It Sold?</h2>
+          <h2>Who Is MaxKare, and Where Is It Sold?</h2>
 <p>
             MaxKare describes itself on its own website as “an ecommerce retailer” serving customers
             in home comfort, relaxation and massagers, heated products and baby care. Treadmills are a
@@ -277,16 +244,12 @@ const schema = {
           </p>
           <p>
             If you are deciding between the two main retailers in general rather than for this brand,
-            our guides to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            and to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            explain how marketplace sellers change who stands behind the machine.
+            our guides to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> and to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> explain how marketplace sellers change who stands behind the machine.
           </p>
         </div>
 
         <div id="current-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current MaxKare Treadmill Range</h2>
+          <h2>The Current MaxKare Treadmill Range</h2>
 <p>
             These are the treadmills and walking pads in MaxKare’s own store on 14 October 2026, with
             the figures the store listing gives and whether the listing was marked as available.
@@ -322,14 +285,12 @@ const schema = {
             listed three times at three prices, and Walmart listings that appeared in search results
             showed the same model for substantially less. Treat any “was” price on a MaxKare listing
             as a reference point rather than a measure of the discount, and compare against similar
-            machines in our
-            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a>
-            before deciding the deal is a good one.
+            machines in our <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 guide</a> before deciding the deal is a good one.
           </p>
         </div>
 
         <div id="reading-the-listings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Where MaxKare Listings Contradict Themselves</h2>
+          <h2>Where MaxKare Listings Contradict Themselves</h2>
 <p>
             <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Budget treadmill</a> listings are written to sell, and figures drift as listings are copied
             between models and marketplaces. MaxKare’s are a clear example. These are the
@@ -341,9 +302,7 @@ const schema = {
             repeats 300 lb in its specification block. The same listing’s feature text says the belt
             is “designed for users up to 286lbs”. One of the walking pads does the same thing in the
             other direction: 286 lb in the title, “can hold up to 265LBS” in the text. When a seller
-            gives two limits, plan around the lower one, and leave a margin below it as well. Our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains why the rating is a boundary rather than a target.
+            gives two limits, plan around the lower one, and leave a margin below it as well. Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains why the rating is a boundary rather than a target.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline in levels, degrees and percent</h3>
           <p>
@@ -352,9 +311,7 @@ const schema = {
             described as “0-15° electric slope”. One auto-incline walking pad has “0-12°” in one
             paragraph and “1-12%” in another. Degrees and percent are not the same thing: 15 degrees
             is roughly a 27% grade, which no budget folding treadmill offers, so the degree figures
-            are almost certainly mislabelled levels or percent. Our explainer on
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a>
-            sets out the conversion. The practical reading is that these machines offer a modest
+            are almost certainly mislabelled levels or percent. Our explainer on <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a> sets out the conversion. The practical reading is that these machines offer a modest
             powered incline in numbered steps, and the top step is probably around 12 to 15 percent.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Horsepower without a continuous rating</h3>
@@ -363,9 +320,7 @@ const schema = {
             kind of figure it is: “DC motor, peak power 3.0HP”. Peak ratings describe a brief maximum,
             not what the motor can sustain for an hour of walking, and they are always larger than
             the continuous (CHP) figure better-documented brands publish. A MaxKare 3.5 HP motor and a
-            3.5 CHP motor on a <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a> are not comparable numbers. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the difference.
+            3.5 CHP motor on a <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a> are not comparable numbers. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the difference.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Marketing figures with no method</h3>
           <p>
@@ -377,7 +332,7 @@ const schema = {
         </div>
 
         <div id="twenty-inch-model" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The 20-Inch, 3.5 HP Model: The One Most Searches Mean</h2>
+          <h2>The 20-Inch, 3.5 HP Model: The One Most Searches Mean</h2>
 <p>
             The MaxKare treadmill that turns up most often is the 20-inch folding model: a 3.5 HP
             motor badge, 0.6 to 12 mph, 15 levels of powered incline, a 20 by 48-inch running surface,
@@ -392,9 +347,7 @@ const schema = {
             about if you drift sideways while walking. The 48-inch length is the catch. Forty-eight
             inches is a walking length. Most adults need 55 inches or more to jog comfortably and 60
             inches to run, and the 12 mph top speed is a long way beyond what a 48-inch belt can
-            safely accommodate for most people. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through stride length against belt length. The short version is that this is a
+            safely accommodate for most people. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> works through stride length against belt length. The short version is that this is a
             wide walking treadmill with a fast top speed, not a running treadmill.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline, programs and apps</h3>
@@ -404,23 +357,19 @@ const schema = {
             are the kind of features budget consoles add cheaply; body-fat readings from handlebar
             sensors are rough estimates at best. The listing names Zwift and Bluetooth. Whether a
             given budget treadmill reports speed reliably to Zwift varies, and a listing that names an
-            app is not a guarantee of a smooth connection. Our
-            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            explains how those connections work and what to check.
+            app is not a guarantee of a smooth connection. Our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> explains how those connections work and what to check.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Size and folding</h3>
           <p>
             MaxKare lists the 20-inch model at about 63.6 inches long, 30.5 inches wide and 49.6
             inches high, folding to about 35 inches long. No listing we read gave the machine’s own
             weight, which matters for moving it and as a rough guide to how much steel is underneath.
-            Ask the seller before you buy, and check our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            for the clearance you need behind and beside any treadmill.
+            Ask the seller before you buy, and check our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> for the clearance you need behind and beside any treadmill.
           </p>
         </div>
 
         <div id="walking-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. MaxKare Walking Pads and 2-in-1 Machines</h2>
+          <h2>MaxKare Walking Pads and 2-in-1 Machines</h2>
 <p>
             MaxKare has sold several walking pads: an ultra-thin under-desk pad listed at 4.7 inches
             high and 38.6 lb with a 3.8 mph ceiling, a 2.5 HP pad with a fold-up rail, and two 2-in-1
@@ -437,16 +386,12 @@ const schema = {
             jogging; treat the running mode as occasional.
           </p>
           <p>
-            For under-desk walking specifically, our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
-            covers better-documented pads, and the
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            explains which pad specifications to trust and which to discount.
+            For under-desk walking specifically, our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a> covers better-documented pads, and the <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> explains which pad specifications to trust and which to discount.
           </p>
         </div>
 
         <div id="warranty-and-returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. MaxKare Warranty, Returns and Support</h2>
+          <h2>MaxKare Warranty, Returns and Support</h2>
 <p>
             This is the part of a MaxKare purchase that most deserves attention before you order.
           </p>
@@ -463,9 +408,7 @@ const schema = {
           <p>
             Before buying, ask the seller you are buying from, in writing, how long the warranty runs
             on the frame, the motor and the electronics, whether it covers parts only or labour too,
-            and who pays to ship a faulty part or machine. Keep the reply with your receipt. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            lists the questions in full.
+            and who pays to ship a faulty part or machine. Keep the reply with your receipt. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> lists the questions in full.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns from MaxKare’s own store</h3>
           <p>
@@ -490,14 +433,12 @@ const schema = {
             MaxKare’s contact page directs support requests to email. There is no published parts
             catalogue, which is normal for marketplace brands and means that a failed motor controller
             after the warranty period is likely to end the machine’s life rather than lead to a
-            repair. Our
-            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">repair guide</a>
-            explains when a repair is worth it on a budget treadmill.
+            repair. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">repair guide</a> explains when a repair is worth it on a budget treadmill.
           </p>
         </div>
 
         <div id="safety-record" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Recalls: What the CPSC Record Shows</h2>
+          <h2>Recalls: What the CPSC Record Shows</h2>
 <p>
             We searched the US Consumer Product Safety Commission’s recall database for MaxKare on
             14 October 2026. There is no recall of a MaxKare treadmill or walking pad, and no CPSC
@@ -515,14 +456,12 @@ const schema = {
           <p>
             Whatever brand you buy, the safety basics are the same: use the safety key, keep children
             and pets away from a running or plugged-in machine, unplug before any maintenance, and
-            stop using a treadmill that surges in speed, smells of burning or trips a breaker. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers the rest.
+            stop using a treadmill that surges in speed, smells of burning or trips a breaker. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers the rest.
           </p>
         </div>
 
         <div id="older-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Older MaxKare Treadmills People Still Search For</h2>
+          <h2>Older MaxKare Treadmills People Still Search For</h2>
 <p>
             Several MaxKare models have come and gone, and some still circulate on resale sites. The
             ones you are most likely to meet are the early manual-incline folding treadmills, which
@@ -555,22 +494,18 @@ const schema = {
           <p>
             For any used MaxKare, the rules are the same as for any discontinued budget treadmill:
             see it run through its speed and incline range, check the belt and deck for wear, and pay
-            a price that makes sense if the controller fails next month. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            walks through the inspection.
+            a price that makes sense if the controller fails next month. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> walks through the inspection.
           </p>
         </div>
 
         <div id="strengths-and-weaknesses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What MaxKare Does Well, and Less Well</h2>
+          <h2>What MaxKare Does Well, and Less Well</h2>
 <p>
             <strong>What it does well.</strong> MaxKare offers features at a low price that more
             established brands charge more for: a 20-inch belt width, powered incline, a folding deck
             with a soft-drop mechanism, Bluetooth and a remote on the walking pads. The machines are
             sold largely pre-assembled. And there is no subscription: nothing on a MaxKare listing
-            requires a paid app to use the treadmill, which our guide to
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            treats as a real advantage for buyers who want to keep running costs at zero.
+            requires a paid app to use the treadmill, which our guide to <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> treats as a real advantage for buyers who want to keep running costs at zero.
           </p>
           <p>
             <strong>What it does less well.</strong> Documentation. The motor figures are not
@@ -591,182 +526,185 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy a MaxKare Treadmill, and What to Read Next</h2>
+          <h2>Who Should Buy a MaxKare Treadmill, and What to Read Next</h2>
 <p>
             <strong>It suits a walker on a tight budget who wants incline.</strong> If your plan is
             brisk walking and incline walking a few times a week, a MaxKare folding treadmill at a low
-            Walmart price can do that, and the wide belt helps. Our
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to walking incline</a>
-            covers how to use it.
+            Walmart price can do that, and the wide belt helps. Our <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to walking incline</a> covers how to use it.
           </p>
           <p>
             <strong>Runners should buy something else.</strong> A 48-inch belt is too short for
-            running whatever the top speed says. Look for 55 to 60 inches of belt in our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a>.
+            running whatever the top speed says. Look for 55 to 60 inches of belt in our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a>.
           </p>
           <p>
             <strong>Heavier users should leave a wide margin.</strong> With a 286 lb figure sitting
             beside the 300 lb one, and a motor rated only by its peak, a user anywhere near either
-            number is asking a lot of the machine. Start with our guide to
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavier users</a>.
+            number is asking a lot of the machine. Start with our guide to <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavier users</a>.
           </p>
           <p>
             <strong>Anyone who wants to buy on Amazon, or wants written cover, should compare
-            first.</strong> Our pages on the
-            <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a>
-            and the
-            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>
-            list machines whose figures we could cross-check, and the
-            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a>
-            covers an entry-level folding treadmill from a brand with published warranty terms.
+            first.</strong> Our pages on the <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> and the <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a> list machines whose figures we could cross-check, and the <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101 review</a> covers an entry-level folding treadmill from a brand with published warranty terms.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes MaxKare treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                MaxKare describes itself as an ecommerce retailer of home comfort, massage, heated and baby-care products, and its treadmills are sold under its name. The brand does not name a manufacturer or parent company, and we could not confirm one. Like most marketplace brands, the machines are made by contract manufacturers and sold mainly through Walmart.com.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I buy a MaxKare treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly on Walmart.com, where most MaxKare treadmills are listed, and on the brand’s own store at maxkare.net. We found no MaxKare treadmill in Amazon’s US product data on 14 October 2026. On Walmart, check whether Walmart or a marketplace seller is selling the unit, because that decides who handles returns.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the MaxKare 3.5 HP treadmill good for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for most people. It lists a 12 mph top speed, but its running surface is listed at 20 by 48 inches, and 48 inches is a walking length. Most adults need 55 inches or more to jog comfortably and about 60 to run. The 3.5 HP figure is not a continuous rating, so it cannot be compared with CHP figures on other brands.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on a MaxKare treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the model, and some listings give two figures. The 20-inch model is titled 300 lb but its own text says 286 lb; a walking pad says 286 lb in its title and 265 lb in its text. Older models were listed at 220 lb. Plan around the lower figure on any listing, and leave a margin below it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty does MaxKare offer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The store advertises an 18-month warranty in a banner, but its warranty page gives no length; it promises replacement of products defective due to manufacturer flaws and refunds within 30 days. The listings we read did not state a term either. Ask the seller for the length and coverage in writing before you buy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Has MaxKare had any recalls?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not for treadmills. The CPSC recall database lists no MaxKare treadmill or walking pad recall as of 14 October 2026. In June 2025 about 8,560 MaxKare electric blankets sold exclusively on Walmart.com were recalled for overheating and fire hazards, with a refund remedy. That recall concerns a different product made by a different contract manufacturer.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a MaxKare Treadmill</h2>
+          <p>Most disappointment with marketplace treadmills comes from trusting the listing more than it deserves. These are the four mistakes that matter most with MaxKare.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Taking the higher weight limit</h3>
+              <p>Two MaxKare listings give two different limits for the same machine. Buyers who see 300 lb in the title miss the 286 lb in the text. Use the lower figure, keep your own weight well below it, and remember that a peak-rated motor has less headroom for a heavy user than its badge suggests.</p>
+            </li>
+            <li>
+              <h3>Buying for the top speed rather than the belt</h3>
+              <p>A 12 mph top speed looks like a running treadmill. A 48-inch belt is not one. Decide whether you will walk, jog or run, then check the running-surface length against that use before the speed figure. If you want to run, the belt length rules out the 20-inch model for most adults.</p>
+            </li>
+            <li>
+              <h3>Relying on the warranty banner</h3>
+              <p>The 18-month figure appears in a banner, not in the warranty terms, which give no length. If the motor or controller fails at month ten, the written terms are what you will be held to. Get the coverage from your seller in writing, including whether labour and shipping are included.</p>
+            </li>
+            <li>
+              <h3>Buying a sale item from the brand store without reading the refund policy</h3>
+              <p>MaxKare’s refund policy says sale items cannot be refunded and that buyers pay return shipping. On a treadmill that can make a change of mind expensive or impossible. Read the policy on the day you buy, and compare it with the return terms on the Walmart listing for the same machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a MaxKare Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointment with marketplace treadmills comes from trusting the listing more than it deserves. These are the four mistakes that matter most with MaxKare.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Taking the higher weight limit</h3>
-              <p class="text-gray-700 text-sm m-0">Two MaxKare listings give two different limits for the same machine. Buyers who see 300 lb in the title miss the 286 lb in the text. Use the lower figure, keep your own weight well below it, and remember that a peak-rated motor has less headroom for a heavy user than its badge suggests.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying for the top speed rather than the belt</h3>
-              <p class="text-gray-700 text-sm m-0">A 12 mph top speed looks like a running treadmill. A 48-inch belt is not one. Decide whether you will walk, jog or run, then check the running-surface length against that use before the speed figure. If you want to run, the belt length rules out the 20-inch model for most adults.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Relying on the warranty banner</h3>
-              <p class="text-gray-700 text-sm m-0">The 18-month figure appears in a banner, not in the warranty terms, which give no length. If the motor or controller fails at month ten, the written terms are what you will be held to. Get the coverage from your seller in writing, including whether labour and shipping are included.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a sale item from the brand store without reading the refund policy</h3>
-              <p class="text-gray-700 text-sm m-0">MaxKare’s refund policy says sale items cannot be refunded and that buyers pay return shipping. On a treadmill that can make a change of mind expensive or impossible. Read the policy on the day you buy, and compare it with the return terms on the Walmart listing for the same machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-under-300/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Price Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $300</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Budget machines whose figures we could cross-check.</p>
-            </a>
-            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Spec Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Peak versus continuous ratings, and why it matters.</p>
-            </a>
-            <a href="/famistar-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Famistar Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Another Walmart-led budget brand, read the same way.</p>
-            </a>
-            <a href="/ancheer-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">ANCHEER Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.</p>
-            </a>
-            <a href="/zofdim-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Zofdim Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How to check a marketplace brand you cannot trace, and alternatives.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A MaxKare treadmill is a budget folding machine whose figures are
           the seller’s claims, some of them contradictory, sold mainly on Walmart.com with a warranty
           you should get in writing.</strong> At a low price it can be a sensible walking and incline
           treadmill with a usefully wide belt; it is not a running machine, and it is not a brand to
           buy on trust.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you want a cheap treadmill with figures we could check, start with our
-          <a href="/best-treadmills-under-300/" class="text-[#5AA9FF] font-bold no-underline">best treadmills under $300</a>,
-          and if you do buy a MaxKare, read the
-          <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
-          first.
+          <p>
+            If you want a cheap treadmill with figures we could check, start with our <a href="/best-treadmills-under-300/" class="text-[#5AA9FF] font-bold no-underline">best treadmills under $300</a>,
+          and if you do buy a MaxKare, read the <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a> first.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-under-300/">Best Treadmills Under $300</a></li>
+            <li><a href="/treadmill-horsepower-guide/">Treadmill Horsepower Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Who makes MaxKare treadmills?</h3></summary>
+            <p class="faq-a">
+              MaxKare describes itself as an ecommerce retailer of home comfort, massage, heated and baby-care products, and its treadmills are sold under its name. The brand does not name a manufacturer or parent company, and we could not confirm one. Like most marketplace brands, the machines are made by contract manufacturers and sold mainly through Walmart.com.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where can I buy a MaxKare treadmill?</h3></summary>
+            <p class="faq-a">
+              Mainly on Walmart.com, where most MaxKare treadmills are listed, and on the brand’s own store at maxkare.net. We found no MaxKare treadmill in Amazon’s US product data on 14 October 2026. On Walmart, check whether Walmart or a marketplace seller is selling the unit, because that decides who handles returns.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is the MaxKare 3.5 HP treadmill good for running?</h3></summary>
+            <p class="faq-a">
+              Not for most people. It lists a 12 mph top speed, but its running surface is listed at 20 by 48 inches, and 48 inches is a walking length. Most adults need 55 inches or more to jog comfortably and about 60 to run. The 3.5 HP figure is not a continuous rating, so it cannot be compared with CHP figures on other brands.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the weight limit on a MaxKare treadmill?</h3></summary>
+            <p class="faq-a">
+              It depends on the model, and some listings give two figures. The 20-inch model is titled 300 lb but its own text says 286 lb; a walking pad says 286 lb in its title and 265 lb in its text. Older models were listed at 220 lb. Plan around the lower figure on any listing, and leave a margin below it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty does MaxKare offer?</h3></summary>
+            <p class="faq-a">
+              The store advertises an 18-month warranty in a banner, but its warranty page gives no length; it promises replacement of products defective due to manufacturer flaws and refunds within 30 days. The listings we read did not state a term either. Ask the seller for the length and coverage in writing before you buy.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Has MaxKare had any recalls?</h3></summary>
+            <p class="faq-a">
+              Not for treadmills. The CPSC recall database lists no MaxKare treadmill or walking pad recall as of 14 October 2026. In June 2025 about 8,560 MaxKare electric blankets sold exclusively on Walmart.com were recalled for overheating and fire hazards, with a refund remedy. That recall concerns a different product made by a different contract manufacturer.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-under-300/" class="card">
+            <div class="c-kicker">Price Guide</div>
+            <div class="c-title">Best Treadmills Under $300</div>
+            <p class="c-blurb">Budget machines whose figures we could cross-check.</p>
+          </a>
+          <a href="/treadmill-horsepower-guide/" class="card">
+            <div class="c-kicker">Spec Explainer</div>
+            <div class="c-title">Treadmill Horsepower Guide</div>
+            <p class="c-blurb">Peak versus continuous ratings, and why it matters.</p>
+          </a>
+          <a href="/famistar-treadmill/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Famistar Treadmill Guide</div>
+            <p class="c-blurb">Another Walmart-led budget brand, read the same way.</p>
+          </a>
+          <a href="/ancheer-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">ANCHEER Treadmills</div>
+            <p class="c-blurb">An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.</p>
+          </a>
+          <a href="/zofdim-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Zofdim Treadmills</div>
+            <p class="c-blurb">How to check a marketplace brand you cannot trace, and alternatives.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

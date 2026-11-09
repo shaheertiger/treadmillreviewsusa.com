@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Incline Walking vs Running (2026): An Honest Treadmill Comparison";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/incline-walking-vs-running/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,44 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Comparison", link: "#comparison-table" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-inclinewalkingvsrunning" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-inclinewalkingvsrunning)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Incline Walking vs Running: Which Is Better on a Treadmill?</h1>
+      <p class="ed-dek">
+        Incline walking has become the fashionable alternative to running, and some of what is claimed for it is true. Here is a straight comparison — calories, impact, heart, muscles, time, weight loss and who each one suits — without pretending either is the answer for everyone.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Incline Walking vs Running: <span class="text-[#5AA9FF]">Which Is Better on a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Incline walking has become the fashionable alternative to running, and some of what is claimed for it is true. Here is a straight comparison — calories, impact, heart, muscles, time, weight loss and who each one suits — without pretending either is the answer for everyone.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#comparison-table" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Comparison Table
-          </a>
-          <a href="#weight-loss" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            For Weight Loss
-          </a>
-        </div>
+        <a href="#comparison-table" class="btn-ghost">The Comparison Table</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Incline walking and running are both good, both train the heart, and at a matched effort
+          both use a broadly similar amount of energy per minute. Where they differ is in impact,
+          in the muscles that do the work, in how high an intensity each can reach, in who can do
+          each comfortably, and in the one problem specific to incline walking — the handrails.
+          This page sets the two side by side without pretending either is the answer for
+          everyone, because for most people the honest answer is both.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review
           treadmills. This is a plain-English comparison of two ways of using one — it is not
           medical advice, physiotherapy, coaching or nutrition advice, and we are not qualified to
@@ -172,48 +157,30 @@ const schema = {
           say incline walking "can approach" or "is commonly reported" to match something, that is
           the general picture, not a measured number for you; calorie and effort figures vary
           between people and machines, and console estimates are rough at best.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Incline Walking vs Running: The Short Answer</a>
-          <a href="#comparison-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Trade-Offs at a Glance</a>
-          <a href="#energy-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Energy Cost: Calories Walking Uphill vs Running</a>
-          <a href="#impact" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Impact and Injury Risk</a>
-          <a href="#cardiovascular" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Heart and Lung Adaptation</a>
-          <a href="#muscles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Muscle Emphasis: Where the Work Goes</a>
-          <a href="#time-efficiency" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Time Efficiency</a>
-          <a href="#weight-loss" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Incline Walking vs Running for Weight Loss</a>
-          <a href="#who-each-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Each One Suits</a>
-          <a href="#for-runners" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Does Incline Walking Build Running Fitness?</a>
-          <a href="#rails" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Rail-Holding Problem</a>
-          <a href="#combined" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Combined Approach</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Incline Walking vs Running: The Short Answer</a></li>
+            <li><a href="#comparison-table">The Trade-Offs at a Glance</a></li>
+            <li><a href="#energy-cost">Energy Cost: Calories Walking Uphill vs Running</a></li>
+            <li><a href="#impact">Impact and Injury Risk</a></li>
+            <li><a href="#cardiovascular">Heart and Lung Adaptation</a></li>
+            <li><a href="#muscles">Muscle Emphasis: Where the Work Goes</a></li>
+            <li><a href="#time-efficiency">Time Efficiency</a></li>
+            <li><a href="#weight-loss">Incline Walking vs Running for Weight Loss</a></li>
+            <li><a href="#who-each-suits">Who Each One Suits</a></li>
+            <li><a href="#for-runners">Does Incline Walking Build Running Fitness?</a></li>
+            <li><a href="#rails">The Rail-Holding Problem</a></li>
+            <li><a href="#combined">The Combined Approach</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Incline walking and running are both good, both train the heart, and at a matched effort
-          both use a broadly similar amount of energy per minute. Where they differ is in impact,
-          in the muscles that do the work, in how high an intensity each can reach, in who can do
-          each comfortably, and in the one problem specific to incline walking — the handrails.
-          This page sets the two side by side without pretending either is the answer for
-          everyone, because for most people the honest answer is both.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Incline Walking vs Running: The Short Answer</h2>
+          <h2>Incline Walking vs Running: The Short Answer</h2>
 <p>
             <strong>Incline walking</strong> at a brisk pace on a steep grade, hands off the rails,
             is commonly reported to use energy at a rate approaching that of easy running, with
@@ -221,8 +188,7 @@ const schema = {
             calves. <strong>Running</strong> reaches higher intensities than walking can, builds
             running-specific fitness that walking does not, and covers more distance in the same
             time — at the cost of a flight phase on every stride, which is where the impact comes
-            from. If you only want the walking side, see
-            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
+            from. If you only want the walking side, see <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
           </p>
           <p>
             For general fitness and weight loss, the two are closer than the marketing on either
@@ -236,14 +202,12 @@ const schema = {
             One caveat colours everything below: incline walking only delivers what is claimed for
             it if you are not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the handrails</a>. Steep grades pull people onto the rails, and
             leaning on them removes a large share of the work. If the grade needs the rails, it is
-            too steep for that speed. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            covers finding the right one.
+            too steep for that speed. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> covers finding the right one.
           </p>
         </div>
 
         <div id="comparison-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Trade-Offs at a Glance</h2>
+          <h2>The Trade-Offs at a Glance</h2>
 <p>
             The table is qualitative on purpose. Exact figures depend on your weight, fitness,
             speed, grade and machine, and most of the numbers quoted online are either console
@@ -276,7 +240,7 @@ const schema = {
         </div>
 
         <div id="energy-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Energy Cost: Calories Walking Uphill vs Running</h2>
+          <h2>Energy Cost: Calories Walking Uphill vs Running</h2>
 <p>
             Walking on the flat uses far less energy per minute than running. Raising the grade
             changes that steadily: every percent of incline asks the legs to lift your body weight
@@ -306,9 +270,7 @@ const schema = {
             <strong>Console calories are estimates.</strong> Treadmill consoles calculate calories
             from speed, grade, time and sometimes a typed-in weight, using generic formulas. They
             are a rough guide at best, usually generous, and no basis for comparing one activity
-            against another on the same machine, let alone across machines. Our
-            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories guide</a>
-            explains what the console does and how far to trust it.
+            against another on the same machine, let alone across machines. Our <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories guide</a> explains what the console does and how far to trust it.
           </p>
           <p>
             The honest summary: at a matched effort — the same breathing, the same ability to
@@ -319,7 +281,7 @@ const schema = {
         </div>
 
         <div id="impact" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Impact and Injury Risk</h2>
+          <h2>Impact and Injury Risk</h2>
 <p>
             This is the clearest difference between the two, and the one that most often decides
             the question for an individual.
@@ -328,9 +290,7 @@ const schema = {
             <strong>Walking has no flight phase.</strong> One foot is always on the belt, so there
             is never a moment where your whole body weight lands from the air. Running does exactly
             that on every stride, which is why the forces through the feet, shins, knees and hips
-            are much higher per step. Treadmill cushioning softens the landing somewhat — our
-            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning guide</a>
-            covers how much — but it does not remove the flight phase. For anyone whose knees,
+            are much higher per step. Treadmill cushioning softens the landing somewhat — our <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning guide</a> covers how much — but it does not remove the flight phase. For anyone whose knees,
             shins or feet complain when running, incline walking is a way to reach a similar effort
             without that repeated landing.
           </p>
@@ -348,9 +308,7 @@ const schema = {
             <strong>Running injuries are mostly overuse, not impact as such.</strong> The common
             running injuries — shin pain, runner's knee, plantar fasciitis, Achilles problems —
             appear when the volume or intensity rises faster than the tissues adapt. Running is not
-            dangerous for knees in itself; our page on
-            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills and knees</a>
-            covers the evidence. But the margin for error is smaller than with walking, because the
+            dangerous for knees in itself; our page on <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills and knees</a> covers the evidence. But the margin for error is smaller than with walking, because the
             forces are higher and the build-up needs to be slower.
           </p>
           <p>
@@ -362,7 +320,7 @@ const schema = {
         </div>
 
         <div id="cardiovascular" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Heart and Lung Adaptation</h2>
+          <h2>Heart and Lung Adaptation</h2>
 <p>
             Both train the heart. The heart does not know whether the legs are walking or running;
             it responds to how hard it is asked to work and for how long. At a matched effort,
@@ -384,21 +342,17 @@ const schema = {
             at 5 to 10% grade, hands off, commonly puts a reasonably fit adult into a moderate zone
             — the one where you can still speak in short sentences — and that is where most of a
             sensible week should sit anyway. It is also the zone that is hardest for many people to
-            reach by walking on the flat and easiest to overshoot by running. Our
-            <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 guide</a>
-            uses incline walking for exactly that reason.
+            reach by walking on the flat and easiest to overshoot by running. Our <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 guide</a> uses incline walking for exactly that reason.
           </p>
           <p>
             Heart-rate readings make this comparison easier to see than any calorie figure, with
             the usual caveats: chest straps beat wrist sensors, both beat the console grips, and the
-            number lags the effort by a minute or two. Our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            covers the zones and the lag.
+            number lags the effort by a minute or two. Our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a> covers the zones and the lag.
           </p>
         </div>
 
         <div id="muscles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Muscle Emphasis: Where the Work Goes</h2>
+          <h2>Muscle Emphasis: Where the Work Goes</h2>
 <p>
             The two activities use the same legs in different proportions, and people usually
             notice the difference within a week.
@@ -435,7 +389,7 @@ const schema = {
         </div>
 
         <div id="time-efficiency" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Time Efficiency</h2>
+          <h2>Time Efficiency</h2>
 <p>
             Running wins on work per minute once you are running at a moderate pace or harder,
             and that matters for anyone whose constraint is time. A 25-minute run at a steady
@@ -455,9 +409,7 @@ const schema = {
             walking at a moderate effort is compatible with a podcast, a call or a screen; running
             at a moderate effort is less so, and hard running is not. For people who use the
             treadmill partly to make time usable rather than to maximise work per minute, that is a
-            point for walking. Our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            sets out session lengths by goal.
+            point for walking. Our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> sets out session lengths by goal.
           </p>
           <p>
             The practical answer for a time-limited person who can run: alternate. Two shorter runs
@@ -466,7 +418,7 @@ const schema = {
         </div>
 
         <div id="weight-loss" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Incline Walking vs Running for Weight Loss</h2>
+          <h2>Incline Walking vs Running for Weight Loss</h2>
 <p>
             This is the search that brings most people to the comparison, and the honest answer is
             less exciting than either side's advocates would like.
@@ -492,11 +444,7 @@ const schema = {
             is modest next to what a day of eating supplies, and it is easy to replace a session's
             worth of calories with a single large snack. Either activity helps — on its own, for
             appetite, for sleep, for mood and for keeping muscle while losing fat — but the diet
-            side decides most of the outcome. Our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a>
-            page sets out a plan that treats the treadmill as one part of that, and our page on
-            <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether treadmills burn belly fat</a>
-            deals with the most common version of the question.
+            side decides most of the outcome. Our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a> page sets out a plan that treats the treadmill as one part of that, and our page on <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether treadmills burn belly fat</a> deals with the most common version of the question.
           </p>
           <p>
             <strong>Two specific traps.</strong> The incline walker who holds the rails and trusts
@@ -508,14 +456,12 @@ const schema = {
         </div>
 
         <div id="who-each-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Each One Suits</h2>
+          <h2>Who Each One Suits</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Beginners and people returning to exercise</h3>
           <p>
             Incline walking, almost always. The skill is already there, the impact is low, the
             effort can be raised in small steps with the grade, and a session does not leave the
-            next day in ruins. Running can come later, built on a base of walking, and our
-            <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a>
-            page has structured sessions to build from. The exception is the former runner who
+            next day in ruins. Running can come later, built on a base of walking, and our <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium">treadmill walking workouts</a> page has structured sessions to build from. The exception is the former runner who
             misses it and will not stick with walking; for them, a gentle walk-run progression is
             the better plan.
           </p>
@@ -524,9 +470,7 @@ const schema = {
             Incline walking, for the impact reason above. Landing forces in running scale with
             body weight, and the tissues that absorb them do not adapt faster because there is
             more to carry. Steep grades still load the calves, so build the incline gradually, and
-            check the machine is rated for your weight with a margin; our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>
-            roundup covers the frame and deck side.
+            check the machine is rated for your weight with a margin; our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a> roundup covers the frame and deck side.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">People with knee, hip or foot pain</h3>
           <p>
@@ -555,7 +499,7 @@ const schema = {
         </div>
 
         <div id="for-runners" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Does Incline Walking Build Running Fitness?</h2>
+          <h2>Does Incline Walking Build Running Fitness?</h2>
 <p>
             Partly, and the part it does not build is the part runners most want.
           </p>
@@ -583,14 +527,12 @@ const schema = {
             and the cross-training in a runner's week, with the running kept for the sessions that
             need to be running — the long run, the tempo, the intervals. Hikers and trail runners
             get an extra benefit, because sustained steep walking is exactly what the uphill
-            sections of their events demand. Our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout guide</a>
-            has a long incline walk session built for that.
+            sections of their events demand. Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout guide</a> has a long incline walk session built for that.
           </p>
         </div>
 
         <div id="rails" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Rail-Holding Problem</h2>
+          <h2>The Rail-Holding Problem</h2>
 <p>
             It deserves its own section because it undermines almost every claim made for incline
             walking.
@@ -621,15 +563,14 @@ const schema = {
             is. That is the real incline walk.</li>
           </ul>
           <p>
-            The well-known <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
-            — 12% grade, 3 mph, 30 minutes — is where this problem is most visible, because 12% is
+            The well-known <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> — 12% grade, 3 mph, 30 minutes — is where this problem is most visible, because 12% is
             steep enough that most newcomers cannot do it hands-free. The honest version is to
             start at a grade you can manage hands-off and build toward 12%, which the page covers.
           </p>
         </div>
 
         <div id="combined" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Combined Approach</h2>
+          <h2>The Combined Approach</h2>
 <p>
             For most people who can do both, the right answer to incline walking versus running is
             a week that contains both. A workable template:
@@ -655,15 +596,12 @@ const schema = {
             On the machine side, a combined approach asks for both an incline range worth using
             and a deck that is comfortable to run on. Not every treadmill offers both well; walking
             machines often have modest incline and short decks, and some running machines have
-            little incline. Our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            roundup covers the machines that do both, and our
-            <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a>
-            comparison covers the steep-grade specialists that are better for walking than running.
+            little incline. Our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> roundup covers the machines that do both, and our <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a> comparison covers the steep-grade specialists that are better for walking than running.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Incline walking is as good as easy running for general fitness and weight
             loss, provided the rails stay out of it; running is better for getting fast and for
@@ -683,142 +621,156 @@ const schema = {
             figure as entertainment.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is incline walking as good as running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For general fitness and weight loss, broadly yes, at a matched effort and with hands off the rails: brisk steep walking is commonly reported to use energy at a rate approaching easy running, with less impact. It is not as good for getting faster or for the highest-intensity training, because walking has a ceiling that running does not.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline walking burn as many calories as running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Brisk walking at a steep grade, hands off, can approach the energy use of easy running per minute. Moderate and hard running use more, and walking cannot reach those rates. Holding the rails reduces the cost substantially, and console calorie figures are rough estimates, so treat any exact comparison with suspicion.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is incline walking or running better for weight loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither, decisively. Calories are similar at matched effort, adherence over months matters far more than the activity, and diet is the larger lever. Beginners and heavier people usually sustain incline walking better; people who enjoy running sustain running. Choose the one you will still be doing in six months.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is incline walking easier on the knees than running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, because walking has no flight phase, so no stride lands from the air. Steep grades do load the calves and Achilles tendons more, and a few knee conditions are aggravated by incline, so find the grade by trial. Persistent knee pain with either is a reason to see a physical therapist rather than switch activities.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does incline walking build running fitness?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Partly. It builds aerobic base, and strengthens glutes and calves, which is why it suits injured or returning runners and adds volume without impact. It does not build running economy — the efficiency and tendon qualities that come only from running — so it supplements running rather than replacing it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I hold the handrails while incline walking?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A fingertip touch for balance while learning is fine; leaning on them is not, because it moves weight into your arms, reduces the effort well below what the display suggests and bends posture. If you need the rails to keep up, lower the grade or the speed until you do not. Older walkers who need them for safety should keep them and lower the grade.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Incline Walking vs Running</h2>
+          <p>Most of the disappointment with either comes from one of these four, and the first is by far the most common.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Holding the rails and trusting the calorie display</h3>
+              <p>Leaning on the handrails at a steep grade shifts weight into the arms, so the legs do far less than the display assumes and the console keeps counting calories for a hands-free walk. If the grade needs the rails, it is too steep for that speed. Lower it until you can walk with your chest up and arms swinging.</p>
+            </li>
+            <li>
+              <h3>Starting to run without a walking base</h3>
+              <p>Running is not dangerous, but the margin for error is smaller because the forces per stride are higher. Jumping from no exercise to running three times a week is the classic route to shin or knee pain in week three. Build four to six weeks of brisk and incline walking first, then add running in short walk-run blocks.</p>
+            </li>
+            <li>
+              <h3>Jumping straight to steep grades</h3>
+              <p>Incline walking is low-impact, not low-load. Calves and Achilles tendons take more on every uphill step and adapt more slowly than the heart does, so a session that feels fine on the day can hurt two days later. Add grade a percent or two at a time, and add minutes before grade.</p>
+            </li>
+            <li>
+              <h3>Expecting either to do the work of a diet</h3>
+              <p>A 40-minute session uses a modest amount of energy next to what a day of eating supplies, and either activity can be undone by one large snack. Use the treadmill for the many things it does well — fitness, mood, appetite, keeping muscle — and let food carry most of the weight-loss arithmetic.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Incline Walking vs Running</h2>
-          <p class="text-gray-700 leading-relaxed">Most of the disappointment with either comes from one of these four, and the first is by far the most common.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails and trusting the calorie display</h3>
-              <p class="text-gray-700 text-sm m-0">Leaning on the handrails at a steep grade shifts weight into the arms, so the legs do far less than the display assumes and the console keeps counting calories for a hands-free walk. If the grade needs the rails, it is too steep for that speed. Lower it until you can walk with your chest up and arms swinging.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting to run without a walking base</h3>
-              <p class="text-gray-700 text-sm m-0">Running is not dangerous, but the margin for error is smaller because the forces per stride are higher. Jumping from no exercise to running three times a week is the classic route to shin or knee pain in week three. Build four to six weeks of brisk and incline walking first, then add running in short walk-run blocks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Jumping straight to steep grades</h3>
-              <p class="text-gray-700 text-sm m-0">Incline walking is low-impact, not low-load. Calves and Achilles tendons take more on every uphill step and adapt more slowly than the heart does, so a session that feels fine on the day can hurt two days later. Add grade a percent or two at a time, and add minutes before grade.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting either to do the work of a diet</h3>
-              <p class="text-gray-700 text-sm m-0">A 40-minute session uses a modest amount of energy next to what a day of eating supplies, and either activity can be undone by one large snack. Use the treadmill for the many things it does well — fitness, mood, appetite, keeping muscle — and let food carry most of the weight-loss arithmetic.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Incline</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Incline Should I Walk On?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Finding the grade by goal, and a progression that keeps you off the rails.</p>
-            </a>
-            <a href="/treadmill-workout-for-weight-loss/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Weight Loss</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workout for Weight Loss</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A plan built around adherence rather than calorie counts.</p>
-            </a>
-            <a href="/12-3-30-treadmill-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Steady Climb</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">The 12-3-30 Treadmill Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The best-known incline walk, with a build-up for people who cannot yet do it hands-free.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Incline walking matches easy running for general fitness and
             weight loss; running wins for speed and the top end.</strong> At a matched effort the
             calories are similar, both train the heart, and the real differences are impact, which
             muscles work, and how hard each can go. Beginners, heavier people and sore knees should
             start uphill; runners should keep running and walk uphill on easy days.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Neither delivers if the rails are doing part of the work or if the console calorie figure
             is doing the planning. Pick the one you will still be doing in six months, build it a
-            step at a time, and see our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">treadmill weight-loss plan</a>
-            for how either fits into the bigger picture.
+            step at a time, and see our <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">treadmill weight-loss plan</a> for how either fits into the bigger picture.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/what-incline-should-i-walk-on-a-treadmill/">What Incline Should I Walk On?</a></li>
+            <li><a href="/treadmill-workout-for-weight-loss/">Treadmill Workout for Weight Loss</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is incline walking as good as running?</h3></summary>
+            <p class="faq-a">
+              For general fitness and weight loss, broadly yes, at a matched effort and with hands off the rails: brisk steep walking is commonly reported to use energy at a rate approaching easy running, with less impact. It is not as good for getting faster or for the highest-intensity training, because walking has a ceiling that running does not.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Does incline walking burn as many calories as running?</h3></summary>
+            <p class="faq-a">
+              Brisk walking at a steep grade, hands off, can approach the energy use of easy running per minute. Moderate and hard running use more, and walking cannot reach those rates. Holding the rails reduces the cost substantially, and console calorie figures are rough estimates, so treat any exact comparison with suspicion.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is incline walking or running better for weight loss?</h3></summary>
+            <p class="faq-a">
+              Neither, decisively. Calories are similar at matched effort, adherence over months matters far more than the activity, and diet is the larger lever. Beginners and heavier people usually sustain incline walking better; people who enjoy running sustain running. Choose the one you will still be doing in six months.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is incline walking easier on the knees than running?</h3></summary>
+            <p class="faq-a">
+              Usually, because walking has no flight phase, so no stride lands from the air. Steep grades do load the calves and Achilles tendons more, and a few knee conditions are aggravated by incline, so find the grade by trial. Persistent knee pain with either is a reason to see a physical therapist rather than switch activities.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does incline walking build running fitness?</h3></summary>
+            <p class="faq-a">
+              Partly. It builds aerobic base, and strengthens glutes and calves, which is why it suits injured or returning runners and adds volume without impact. It does not build running economy — the efficiency and tendon qualities that come only from running — so it supplements running rather than replacing it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I hold the handrails while incline walking?</h3></summary>
+            <p class="faq-a">
+              A fingertip touch for balance while learning is fine; leaning on them is not, because it moves weight into your arms, reduces the effort well below what the display suggests and bends posture. If you need the rails to keep up, lower the grade or the speed until you do not. Older walkers who need them for safety should keep them and lower the grade.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/what-incline-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Incline</div>
+            <div class="c-title">What Incline Should I Walk On?</div>
+            <p class="c-blurb">Finding the grade by goal, and a progression that keeps you off the rails.</p>
+          </a>
+          <a href="/treadmill-workout-for-weight-loss/" class="card">
+            <div class="c-kicker">Weight Loss</div>
+            <div class="c-title">Treadmill Workout for Weight Loss</div>
+            <p class="c-blurb">A plan built around adherence rather than calorie counts.</p>
+          </a>
+          <a href="/12-3-30-treadmill-workout/" class="card">
+            <div class="c-kicker">Steady Climb</div>
+            <div class="c-title">The 12-3-30 Treadmill Workout</div>
+            <p class="c-blurb">The best-known incline walk, with a build-up for people who cannot yet do it hands-free.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

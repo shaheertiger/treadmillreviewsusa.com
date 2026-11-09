@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Used Treadmill Near Me (2026): Where to Buy Used Exercise Equipment";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/where-to-buy-a-used-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,99 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Where to Look", link: "#sources" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-wheretobuyausedtreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-wheretobuyausedtreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Where to Buy a Used Treadmill</h1>
+      <p class="ed-dek">
+        Used treadmills are everywhere, because so many are bought with good intentions and barely used. Finding one is easy. Finding a good one, collecting it safely, getting it home and not losing a deposit to someone who never owned it takes a little more planning.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Where to Buy <span class="text-[#5AA9FF]">a Used Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Used treadmills are everywhere, because so many are bought with good intentions and barely used. Finding one is easy. Finding a good one, collecting it safely, getting it home and not losing a deposit to someone who never owned it takes a little more planning.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#sources" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Where to Look
-          </a>
-          <a href="#scams" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Scams to Avoid
-          </a>
-        </div>
+        <a href="#sources" class="btn-ghost">Where to Look</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Secondhand prices vary a great
-          deal by region, season, condition and how keen the seller is to clear the space. The
-          ratios on this page are typical ranges, consistent with our new vs used guide, not quotes.
-          Check local listings before treating any figure as a benchmark. This site is not
-          affiliated with any marketplace or dealer mentioned.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Where to Find a Used Treadmill Near You</a>
-          <a href="#sources" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Where Used Treadmills Turn Up</a>
-          <a href="#compare-sources" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How the Sources Compare</a>
-          <a href="#searching" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Searching Listings Efficiently</a>
-          <a href="#prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What to Expect to Pay</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Meeting a Seller Safely</a>
-          <a href="#moving" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Moving It Home</a>
-          <a href="#scams" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Used Treadmill Scams to Avoid</a>
-          <a href="#before-paying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Before You Hand Over the Money</a>
-          <a href="#first-week" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. The First Week After You Buy</a>
-          <a href="#when-not-used" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When Used Is Not the Right Answer</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           This page is about the sourcing side of buying secondhand: where used treadmills turn up,
           how each source compares, how to collect safely and move the machine home, what a fair
           price looks like, and the scams that follow this market around. It deliberately does not
@@ -204,8 +144,35 @@ const schema = {
           you should run it on any machine before money changes hands.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Secondhand prices vary a great
+          deal by region, season, condition and how keen the seller is to clear the space. The
+          ratios on this page are typical ranges, consistent with our new vs used guide, not quotes.
+          Check local listings before treating any figure as a benchmark. This site is not
+          affiliated with any marketplace or dealer mentioned.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Where to Find a Used Treadmill Near You</a></li>
+            <li><a href="#sources">Where Used Treadmills Turn Up</a></li>
+            <li><a href="#compare-sources">How the Sources Compare</a></li>
+            <li><a href="#searching">Searching Listings Efficiently</a></li>
+            <li><a href="#prices">What to Expect to Pay</a></li>
+            <li><a href="#safety">Meeting a Seller Safely</a></li>
+            <li><a href="#moving">Moving It Home</a></li>
+            <li><a href="#scams">Used Treadmill Scams to Avoid</a></li>
+            <li><a href="#before-paying">Before You Hand Over the Money</a></li>
+            <li><a href="#first-week">The First Week After You Buy</a></li>
+            <li><a href="#when-not-used">When Used Is Not the Right Answer</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Where to Find a Used Treadmill Near You</h2>
+          <h2>Where to Find a Used Treadmill Near You</h2>
 <p>
             <strong>The main places to find a used treadmill locally are online marketplaces and
             classifieds, used fitness equipment stores, gym and hotel liquidations, and estate or
@@ -220,16 +187,12 @@ const schema = {
             shipping payment to a seller you have not met for a machine you have not seen.
           </p>
           <p>
-            Before you start, decide whether used is right for you at all. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            sets out when the savings are worth the loss of warranty and recourse, and when new or
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished</a>
-            is the better buy.
+            Before you start, decide whether used is right for you at all. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> sets out when the savings are worth the loss of warranty and recourse, and when new or <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished</a> is the better buy.
           </p>
         </div>
 
         <div id="sources" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Where Used Treadmills Turn Up</h2>
+          <h2>Where Used Treadmills Turn Up</h2>
 <p>
             <strong>Local online marketplaces.</strong> The largest source by far. Neighbourhood
             marketplaces and buy-and-sell groups carry a steady supply of home treadmills, many
@@ -253,9 +216,7 @@ const schema = {
             <strong>Gym and hotel liquidations.</strong> When a facility refits or closes, its
             equipment is sold, sometimes directly, sometimes through a dealer or auction. These are
             commercial machines built for heavy use, often at low prices, but usually sold as-is in
-            volume, heavy, rarely folding, and sometimes needing a dedicated circuit. Our
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            covers what to expect.
+            volume, heavy, rarely folding, and sometimes needing a dedicated circuit. Our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a> covers what to expect.
           </p>
           <p>
             <strong>Estate sales and moving sales.</strong> Occasional bargains from sellers who need
@@ -269,7 +230,7 @@ const schema = {
         </div>
 
         <div id="compare-sources" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How the Sources Compare</h2>
+          <h2>How the Sources Compare</h2>
 <p>
             Each source trades price against recourse in a slightly different way.
           </p>
@@ -282,14 +243,12 @@ const schema = {
           <p>
             The general rule is that the more the seller does for you — servicing, warranty,
             delivery — the more you pay, and the closer the price gets to a discounted new or
-            refurbished machine. Hold every option against the new market before deciding; our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            shows what new machines cost in each price band.
+            refurbished machine. Hold every option against the new market before deciding; our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> shows what new machines cost in each price band.
           </p>
         </div>
 
         <div id="searching" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Searching Listings Efficiently</h2>
+          <h2>Searching Listings Efficiently</h2>
 <p>
             Used treadmill listings are inconsistent, and a little technique saves a lot of wasted
             trips.
@@ -302,10 +261,7 @@ const schema = {
           <p>
             <strong>Ask for the model number and look it up.</strong> The manufacturer's site or an
             archived review will give you the motor rating, deck size and original price, which tell
-            you whether the asking price makes sense. Our guides to the
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">motor ratings</a>
-            and <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt sizes</a>
-            you need help you filter quickly.
+            you whether the asking price makes sense. Our guides to the <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">motor ratings</a> and <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt sizes</a> you need help you filter quickly.
           </p>
           <p>
             <strong>Ask for a video of it running.</strong> A short clip of the machine running at
@@ -315,26 +271,21 @@ const schema = {
           <p>
             <strong>Save searches and be patient.</strong> Supply of used treadmills follows the
             seasons: more appear in late winter and spring, when good intentions fade, and when people
-            move house. Our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            covers the used market's own calendar.
+            move house. Our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> covers the used market's own calendar.
           </p>
         </div>
 
         <div id="prices" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What to Expect to Pay</h2>
+          <h2>What to Expect to Pay</h2>
 <p>
             Treadmills lose value steeply in the first few years and then flatten. As a typical
             pattern, a home treadmill sells for roughly half its original price at about two years
             old and around a third at three to five years, then holds close to that for years
-            afterwards because the remaining value is essentially the frame. Our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            works through what that buys at each budget.
+            afterwards because the remaining value is essentially the frame. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> works through what that buys at each budget.
           </p>
           <p>
             <strong>Adjust for condition and hours.</strong> A lightly used, well-maintained machine
-            justifies the upper end of that range; a machine with no maintenance history, a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn belt</a>
-            or a polished deck justifies the lower end or less. A high-hour machine is worth less
+            justifies the upper end of that range; a machine with no maintenance history, a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn belt</a> or a polished deck justifies the lower end or less. A high-hour machine is worth less
             regardless of age.
           </p>
           <p>
@@ -351,14 +302,12 @@ const schema = {
           </p>
           <p>
             <strong>Negotiate on what you find.</strong> A worn belt, <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium" data-autolink>missing safety key</a> or no manual
-            are reasonable grounds for a lower price. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
-            lists what to inspect and how to price what you find.
+            are reasonable grounds for a lower price. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a> lists what to inspect and how to price what you find.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Meeting a Seller Safely</h2>
+          <h2>Meeting a Seller Safely</h2>
 <p>
             Unlike most secondhand purchases, a treadmill cannot be handed over in a car park. You
             will almost always be going to the seller's home, and that calls for a few sensible
@@ -380,7 +329,7 @@ const schema = {
         </div>
 
         <div id="moving" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Moving It Home</h2>
+          <h2>Moving It Home</h2>
 <p>
             Transport is the part buyers most often underestimate. A full-size treadmill typically
             weighs 200 to 350 lb, is heavier at the motor end, and does not fit in an ordinary car.
@@ -403,15 +352,12 @@ const schema = {
           <p>
             <strong>Consider paying for help.</strong> A local courier or moving service can be
             money well spent on a heavy machine or a difficult staircase, and is part of the real
-            price. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a>
-            covers lifting, stairs and transport in detail, and the guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives figures by type.
+            price. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a> covers lifting, stairs and transport in detail, and the guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives figures by type.
           </p>
         </div>
 
         <div id="scams" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Used Treadmill Scams to Avoid</h2>
+          <h2>Used Treadmill Scams to Avoid</h2>
 <p>
             Large, desirable items that are awkward to collect attract scams, and treadmills fit the
             profile. Most follow a handful of patterns.
@@ -453,10 +399,9 @@ const schema = {
         </div>
 
         <div id="before-paying" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Before You Hand Over the Money</h2>
+          <h2>Before You Hand Over the Money</h2>
 <p>
-            When you are standing in front of the machine, run the full inspection from our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>.
+            When you are standing in front of the machine, run the full inspection from our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>.
             It covers the run test, the belt and deck checks, the hour meter and the walk-away
             signs, and it is the single most important step in buying used.
           </p>
@@ -474,7 +419,7 @@ const schema = {
         </div>
 
         <div id="first-week" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. The First Week After You Buy</h2>
+          <h2>The First Week After You Buy</h2>
 <p>
             Treat any used treadmill as a machine with an unknown maintenance history and service
             it straight away, before the first proper workout.
@@ -482,18 +427,12 @@ const schema = {
           <p>
             Level it on its new floor, check the manual for the deck type and lubricate the belt if
             the manual calls for it, check belt tension and tracking, and vacuum around and under the
-            machine. Our guides to
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication</a>,
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension</a>
-            and <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring the belt</a>
-            cover each step, and the
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
-            sets the routine from there. Unplug the machine at the wall before working on it.
+            machine. Our guides to <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication</a>, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension</a> and <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring the belt</a> cover each step, and the <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a> sets the routine from there. Unplug the machine at the wall before working on it.
           </p>
         </div>
 
         <div id="when-not-used" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When Used Is Not the Right Answer</h2>
+          <h2>When Used Is Not the Right Answer</h2>
 <p>
             Used is not always the better buy. Consider new or refurbished if you cannot arrange
             transport for a heavy machine, if you are not confident judging a motor and belt by ear
@@ -501,157 +440,167 @@ const schema = {
             already buys good hardware with full warranty cover.
           </p>
           <p>
-            In those cases, a manufacturer
-            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmill</a>
-            or a local store's floor model can offer much of the saving with some recourse attached.
-            Our guide to <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">buying a treadmill near you</a>
-            covers the store options and how to test a machine before you buy.
+            In those cases, a manufacturer <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmill</a> or a local store's floor model can offer much of the saving with some recourse attached.
+            Our guide to <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">buying a treadmill near you</a> covers the store options and how to test a machine before you buy.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I find a used treadmill near me?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Local online marketplaces and classifieds have the most listings and the lowest prices. Used fitness equipment stores sell serviced machines, often with a short warranty. Gym and hotel liquidations and estate sales occasionally offer good machines cheaply. See any machine running before paying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I buy used exercise equipment near me?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Used fitness equipment dealers, local marketplaces, classifieds, gym closures and estate sales all sell used exercise equipment. Dealers charge more but usually service machines and may include a warranty or delivery. Private sellers are cheaper with no recourse.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much should I pay for a used treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As a typical guide, roughly half the original price at about two years old and around a third at three to five years, then it flattens. Adjust for condition, hours and maintenance history, and add $80 to $200 for transport if you are collecting it yourself.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to buy a used treadmill from a marketplace?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, with precautions. Take someone with you, tell someone where you are going, check the seller's profile, test the machine running before paying, and never send a deposit or shipping payment for a machine you have not seen.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I get a used treadmill home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Plan for a van or pickup, at least two capable people, straps or a dolly and tie-downs. Measure doorways and stairs at both ends, fold and lock the machine if it folds, and consider paying a local courier for heavy machines or difficult stairs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are common used treadmill scams?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Requests for a deposit to hold the machine, offers to ship it after payment, payment by gift card, wire or cryptocurrency, fake payment confirmations and premium machines priced far below the market. Pay only on collection after testing, and keep messages on the platform.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Used Treadmill</h2>
+          <p>Most of them happen before the buyer ever sees the machine.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying a deposit sight unseen</h3>
+              <p>A deposit sent to hold a machine you have not seen is the most common way to lose money in this market. Pay only on collection, after testing.</p>
+            </li>
+            <li>
+              <h3>Not planning the move</h3>
+              <p>A full-size treadmill typically weighs 200 to 350 lb. Arriving with a hatchback and one friend turns a bargain into a problem. Plan the vehicle, people and route first.</p>
+            </li>
+            <li>
+              <h3>Judging price by age alone</h3>
+              <p>Condition, hours and maintenance history matter more than the year. A lightly used machine at a higher price can be better value than a neglected one at a lower price.</p>
+            </li>
+            <li>
+              <h3>Skipping the inspection</h3>
+              <p>Private sales are sold as seen, and warranties rarely transfer. Run the full checklist before paying; it is your only protection.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Used Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most of them happen before the buyer ever sees the machine.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying a deposit sight unseen</h3>
-              <p class="text-gray-700 text-sm m-0">A deposit sent to hold a machine you have not seen is the most common way to lose money in this market. Pay only on collection, after testing.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not planning the move</h3>
-              <p class="text-gray-700 text-sm m-0">A full-size treadmill typically weighs 200 to 350 lb. Arriving with a hatchback and one friend turns a bargain into a problem. Plan the vehicle, people and route first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging price by age alone</h3>
-              <p class="text-gray-700 text-sm m-0">Condition, hours and maintenance history matter more than the year. A lightly used machine at a higher price can be better value than a neglected one at a lower price.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the inspection</h3>
-              <p class="text-gray-700 text-sm m-0">Private sales are sold as seen, and warranties rarely transfer. Run the full checklist before paying; it is your only protection.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Used &amp; Value Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/used-treadmill-buying-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Used Treadmill Buying Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The inspection to run before you pay.</p>
-            </a>
-            <a href="/new-vs-used-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Value</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">New vs Used Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the same money buys, and when used wins.</p>
-            </a>
-            <a href="/refurbished-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Value</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Refurbished Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Most of the used saving with a warranty attached.</p>
-            </a>
-            <a href="/used-peloton-tread/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Used Peloton Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The 2021 recalls, the activation fee, and fair used prices.</p>
-            </a>
-            <a href="/nordictrack-c950i-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Model Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack C950i</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">Used treadmills are easy to find and worth buying carefully.</strong>
-            Local marketplaces are cheapest, used fitness stores add servicing and a short warranty,
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">Used treadmills are easy to find and worth buying carefully.</strong> Local marketplaces are cheapest, used fitness stores add servicing and a short warranty,
             and gym liquidations offer commercial hardware. Wherever you buy, see it running, plan
             the move first, and never pay a deposit sight unseen.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Run the
-            <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used treadmill checklist</a>
-            before handing over money, and service the machine in its first week. Done that way, used
+          <p>
+            Run the <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used treadmill checklist</a> before handing over money, and service the machine in its first week. Done that way, used
             is the best value in the category.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/used-treadmill-buying-checklist/">Used Treadmill Buying Checklist</a></li>
+            <li><a href="/new-vs-used-treadmill/">New vs Used Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where can I find a used treadmill near me?</h3></summary>
+            <p class="faq-a">
+              Local online marketplaces and classifieds have the most listings and the lowest prices. Used fitness equipment stores sell serviced machines, often with a short warranty. Gym and hotel liquidations and estate sales occasionally offer good machines cheaply. See any machine running before paying.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where can I buy used exercise equipment near me?</h3></summary>
+            <p class="faq-a">
+              Used fitness equipment dealers, local marketplaces, classifieds, gym closures and estate sales all sell used exercise equipment. Dealers charge more but usually service machines and may include a warranty or delivery. Private sellers are cheaper with no recourse.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much should I pay for a used treadmill?</h3></summary>
+            <p class="faq-a">
+              As a typical guide, roughly half the original price at about two years old and around a third at three to five years, then it flattens. Adjust for condition, hours and maintenance history, and add $80 to $200 for transport if you are collecting it yourself.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to buy a used treadmill from a marketplace?</h3></summary>
+            <p class="faq-a">
+              It can be, with precautions. Take someone with you, tell someone where you are going, check the seller's profile, test the machine running before paying, and never send a deposit or shipping payment for a machine you have not seen.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I get a used treadmill home?</h3></summary>
+            <p class="faq-a">
+              Plan for a van or pickup, at least two capable people, straps or a dolly and tie-downs. Measure doorways and stairs at both ends, fold and lock the machine if it folds, and consider paying a local courier for heavy machines or difficult stairs.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What are common used treadmill scams?</h3></summary>
+            <p class="faq-a">
+              Requests for a deposit to hold the machine, offers to ship it after payment, payment by gift card, wire or cryptocurrency, fake payment confirmations and premium machines priced far below the market. Pay only on collection after testing, and keep messages on the platform.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Used &amp; Value Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/used-treadmill-buying-checklist/" class="card">
+            <div class="c-kicker">Used</div>
+            <div class="c-title">Used Treadmill Buying Checklist</div>
+            <p class="c-blurb">The inspection to run before you pay.</p>
+          </a>
+          <a href="/new-vs-used-treadmill/" class="card">
+            <div class="c-kicker">Value</div>
+            <div class="c-title">New vs Used Treadmill</div>
+            <p class="c-blurb">What the same money buys, and when used wins.</p>
+          </a>
+          <a href="/refurbished-treadmills/" class="card">
+            <div class="c-kicker">Value</div>
+            <div class="c-title">Refurbished Treadmills</div>
+            <p class="c-blurb">Most of the used saving with a warranty attached.</p>
+          </a>
+          <a href="/used-peloton-tread/" class="card">
+            <div class="c-kicker">Buying Used</div>
+            <div class="c-title">Buying a Used Peloton Treadmill</div>
+            <p class="c-blurb">The 2021 recalls, the activation fee, and fair used prices.</p>
+          </a>
+          <a href="/nordictrack-c950i-treadmill/" class="card">
+            <div class="c-kicker">Model Review</div>
+            <div class="c-title">NordicTrack C950i</div>
+            <p class="c-blurb">Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

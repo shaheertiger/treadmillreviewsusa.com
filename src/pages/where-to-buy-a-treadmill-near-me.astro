@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Near Me (2026): Where to Buy and How to Test One In Store";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/where-to-buy-a-treadmill-near-me/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,97 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "The 10-Minute Test", link: "#ten-minute-test" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-wheretobuyatreadmillnearme" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-wheretobuyatreadmillnearme)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Treadmills Near Me: Where to Go and What to Test</h1>
+      <p class="ed-dek">
+        The best reason to buy a treadmill locally is that you can stand on it first. Ten minutes on a floor model, a short list of questions for the salesperson and a willingness to ask for a better deal are worth more than any amount of reading listings.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmills Near Me: <span class="text-[#5AA9FF]">Where to Go and What to Test</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The best reason to buy a treadmill locally is that you can stand on it first. Ten minutes on a floor model, a short list of questions for the salesperson and a willingness to ask for a better deal are worth more than any amount of reading listings.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#ten-minute-test" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The 10-Minute Test
-          </a>
-          <a href="#questions" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Questions to Ask
-          </a>
-        </div>
+        <a href="#ten-minute-test" class="btn-ghost">The 10-Minute Test</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.9k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with any retailer. Store ranges, delivery and assembly services, return
-          policies and warranty terms vary by store and region and change over time. Treat this page
-          as a guide to what to check, and confirm the current terms with the store before you buy.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Where to Buy a Treadmill Near You</a>
-          <a href="#store-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Six Kinds of Store Selling Treadmills</a>
-          <a href="#which-store" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Kind of Store Suits You</a>
-          <a href="#before-you-go" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Before You Go to the Store</a>
-          <a href="#ten-minute-test" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Ten-Minute In-Store Test</a>
-          <a href="#questions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Questions to Ask the Salesperson</a>
-          <a href="#negotiating" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Negotiating at a Local Store</a>
-          <a href="#buy-local-or-online" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Test Locally, Buy Where?</a>
-          <a href="#renting-trying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Other Ways to Try Before You Buy</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Before You Pay at a Local Store</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A search for treadmills near you returns a map of very different kinds of shop. They
           differ in what they stock, how much the staff know, what delivery and service they offer
           and how much room there is to negotiate. This page explains which kind of store suits which
@@ -203,8 +145,33 @@ const schema = {
           treadmills for sale guide covers the numbers.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the details below.</strong> This site is independent and
+          not affiliated with any retailer. Store ranges, delivery and assembly services, return
+          policies and warranty terms vary by store and region and change over time. Treat this page
+          as a guide to what to check, and confirm the current terms with the store before you buy.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Where to Buy a Treadmill Near You</a></li>
+            <li><a href="#store-types">The Six Kinds of Store Selling Treadmills</a></li>
+            <li><a href="#which-store">Which Kind of Store Suits You</a></li>
+            <li><a href="#before-you-go">Before You Go to the Store</a></li>
+            <li><a href="#ten-minute-test">The Ten-Minute In-Store Test</a></li>
+            <li><a href="#questions">Questions to Ask the Salesperson</a></li>
+            <li><a href="#negotiating">Negotiating at a Local Store</a></li>
+            <li><a href="#buy-local-or-online">Test Locally, Buy Where?</a></li>
+            <li><a href="#renting-trying">Other Ways to Try Before You Buy</a></li>
+            <li><a href="#checklist">Before You Pay at a Local Store</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Where to Buy a Treadmill Near You</h2>
+          <h2>Where to Buy a Treadmill Near You</h2>
 <p>
             <strong>For most buyers, the best local starting point is a specialty fitness store,
             followed by a sporting goods chain.</strong> Specialty stores usually have the widest
@@ -227,7 +194,7 @@ const schema = {
         </div>
 
         <div id="store-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Six Kinds of Store Selling Treadmills</h2>
+          <h2>The Six Kinds of Store Selling Treadmills</h2>
 <p>
             <strong>Specialty fitness stores.</strong> Independent shops and regional chains that
             sell only exercise equipment. Expect the widest range of machines on the floor, including
@@ -238,24 +205,16 @@ const schema = {
           <p>
             <strong>Sporting goods chains.</strong> Large stores selling equipment for many sports,
             typically with a selection of mainstream home treadmills and often some floor models.
-            More locations, regular promotions, and staff whose knowledge varies. Our guide to
-            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">buying at Dick's Sporting Goods</a>
-            covers this kind of store.
+            More locations, regular promotions, and staff whose knowledge varies. Our guide to <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">buying at Dick's Sporting Goods</a> covers this kind of store.
           </p>
           <p>
             <strong>Warehouse clubs.</strong> A small, rotating range, often boxed, with competitive
-            prices and strong return reputations, and usually nothing set up to try. See our
-            <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco guide</a>.
+            prices and strong return reputations, and usually nothing set up to try. See our <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">Costco guide</a>.
           </p>
           <p>
             <strong>Big-box and electronics retailers.</strong> General retailers that sell fitness
             equipment alongside everything else. Range is often larger online than in store, and
-            floor models may be few. Our
-            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy guide</a>
-            covers what an electronics retailer does well and badly here, and our guides to
-            <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a> and
-            <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot</a>
-            cover two general retailers whose treadmill ranges are almost entirely online.
+            floor models may be few. Our <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy guide</a> covers what an electronics retailer does well and badly here, and our guides to <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a> and <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot</a> cover two general retailers whose treadmill ranges are almost entirely online.
           </p>
           <p>
             <strong>Manufacturer showrooms.</strong> Some brands operate their own showrooms or
@@ -265,25 +224,20 @@ const schema = {
           <p>
             <strong>Used fitness equipment stores.</strong> Dealers that buy machines from gyms,
             hotels and homeowners, service them and resell them, often with a short warranty. The
-            best local source of commercial-grade machines at a fraction of new prices. Our guide to
-            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>
-            covers this and other secondhand sources.
+            best local source of commercial-grade machines at a fraction of new prices. Our guide to <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a> covers this and other secondhand sources.
           </p>
         </div>
 
         <div id="which-store" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Kind of Store Suits You</h2>
+          <h2>Which Kind of Store Suits You</h2>
 <p>
             <strong>First-time buyers</strong> benefit most from trying several machines side by side,
             which points to a specialty store or a sporting goods chain with floor models. Our guide
-            to the <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a>
-            explains what a first machine needs.
+            to the <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">best treadmills for beginners</a> explains what a first machine needs.
           </p>
           <p>
             <strong>Runners</strong> need to test deck length and motor response at running speed,
-            and are most likely to find suitable machines at a specialty store. Our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a>
-            explains why deck length matters most.
+            and are most likely to find suitable machines at a specialty store. Our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">running treadmill guide</a> explains why deck length matters most.
           </p>
           <p>
             <strong>Buyers living upstairs or without help</strong> should favour a store that
@@ -293,14 +247,12 @@ const schema = {
           <p>
             <strong>Tight budgets</strong> stretch furthest at a used fitness equipment store or a
             warehouse club. <strong>Older users or those with joint concerns</strong> benefit from
-            trying cushioning, step-up height and handrails in person; our guide to the
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            covers the features to look for.
+            trying cushioning, step-up height and handrails in person; our guide to the <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a> covers the features to look for.
           </p>
         </div>
 
         <div id="before-you-go" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Before You Go to the Store</h2>
+          <h2>Before You Go to the Store</h2>
 <p>
             A store visit is far more useful if you arrive with a few things settled.
           </p>
@@ -318,7 +270,7 @@ const schema = {
         </div>
 
         <div id="ten-minute-test" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Ten-Minute In-Store Test</h2>
+          <h2>The Ten-Minute In-Store Test</h2>
 <p>
             Most buyers spend less than a minute on a floor model. Spend ten, in this order, and ask
             the staff to stay nearby to show you the controls and emergency stop. Clip on the safety
@@ -332,16 +284,12 @@ const schema = {
           <p>
             <strong>Minutes 3 to 5: run, or walk fast.</strong> Go to the fastest speed you would
             realistically use. If you run, run. Notice whether your stride feels cramped at the
-            front or back of the deck, and whether the frame or console shakes. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explains the lengths that suit different strides.
+            front or back of the deck, and whether the frame or console shakes. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains the lengths that suit different strides.
           </p>
           <p>
             <strong>Minutes 5 to 6: incline.</strong> Raise the incline through the range you expect
             to use and back down. Notice how quickly it responds and whether the machine feels
-            stable at the top. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            covers the settings most people actually use.
+            stable at the top. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> covers the settings most people actually use.
           </p>
           <p>
             <strong>Minute 7: stand on the deck edges.</strong> With the belt stopped, step onto the
@@ -352,9 +300,7 @@ const schema = {
           <p>
             <strong>Minute 8: listen.</strong> Run at a moderate speed and listen to the motor, the
             belt and the rollers. A shop floor is noisy, so stand close. A whine that rises with
-            speed or a rhythmic thump is worth noting, and if quiet matters at home, our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            explains what makes the difference.
+            speed or a rhythmic thump is worth noting, and if quiet matters at home, our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> explains what makes the difference.
           </p>
           <p>
             <strong>Minute 9: console.</strong> Check you can reach speed and incline controls without
@@ -364,20 +310,16 @@ const schema = {
           </p>
           <p>
             <strong>Minute 10: fold.</strong> If it folds, fold and unfold it yourself, not the
-            salesperson. Notice the lift weight and the locking mechanism. Our guide to
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a>
-            covers what to expect.
+            salesperson. Notice the lift weight and the locking mechanism. Our guide to <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a> covers what to expect.
           </p>
           <p>
             Then write down the exact model number of the machine you tested. If you are buying a
-            used machine, the
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            has a separate run test aimed at spotting wear.
+            used machine, the <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> has a separate run test aimed at spotting wear.
           </p>
         </div>
 
         <div id="questions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Questions to Ask the Salesperson</h2>
+          <h2>Questions to Ask the Salesperson</h2>
 <p>
             These are the questions that decide how the purchase goes once the machine leaves the
             store. Ask them all, and get the answers on the order or in writing.
@@ -400,9 +342,7 @@ const schema = {
           <p>
             <strong>Warranty labour.</strong> What is the labour term, as distinct from parts? A
             long parts warranty with a short labour term means you may pay for a technician's visit
-            sooner than you expect. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains how the tiers work.
+            sooner than you expect. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains how the tiers work.
           </p>
           <p>
             <strong>Returns.</strong> How long is the return window, must the machine be unassembled
@@ -411,14 +351,12 @@ const schema = {
           <p>
             <strong>Specification.</strong> What is the continuous motor rating, and the belt width
             and length? If the salesperson only knows peak horsepower, look it up on the
-            manufacturer's site before you buy. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the difference.
+            manufacturer's site before you buy. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the difference.
           </p>
         </div>
 
         <div id="negotiating" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Negotiating at a Local Store</h2>
+          <h2>Negotiating at a Local Store</h2>
 <p>
             <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>Treadmill prices</a> at local stores are often more flexible than the ticket suggests,
             particularly at independent specialty stores and on floor models. Negotiating is not
@@ -441,8 +379,7 @@ const schema = {
           </p>
           <p>
             <strong>Time it.</strong> Prices across the market move through the year. Our guide to
-            the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            sets out the cycle; at a quiet time, a store has more reason to make a deal.
+            the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> sets out the cycle; at a quiet time, a store has more reason to make a deal.
           </p>
           <p>
             <strong>Be ready to buy.</strong> A store is more flexible with a customer who will buy
@@ -451,7 +388,7 @@ const schema = {
         </div>
 
         <div id="buy-local-or-online" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Test Locally, Buy Where?</h2>
+          <h2>Test Locally, Buy Where?</h2>
 <p>
             Many buyers try treadmills in a store and then buy online. That is understandable, but
             it is worth weighing what you give up.
@@ -463,20 +400,17 @@ const schema = {
           </p>
           <p>
             <strong>What online may add:</strong> a lower headline price, a wider range and many
-            reviews. Our <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon guide</a>
-            covers the checks to make there.
+            reviews. Our <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">Amazon guide</a> covers the checks to make there.
           </p>
           <p>
             If the local store's delivered, assembled price is close to the online one, the local
             purchase is often the better deal once service is counted. If the gap is large, ask the
-            store whether it can close it. For what to pay and how each channel compares, our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            has the price bands and the channel-by-channel picture.
+            store whether it can close it. For what to pay and how each channel compares, our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> has the price bands and the channel-by-channel picture.
           </p>
         </div>
 
         <div id="renting-trying" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Other Ways to Try Before You Buy</h2>
+          <h2>Other Ways to Try Before You Buy</h2>
 <p>
             If there is no store near you with machines to try, there are other ways to get time on a
             treadmill before committing.
@@ -485,15 +419,11 @@ const schema = {
             <strong>Use a gym.</strong> A short gym membership or day pass lets you try commercial
             treadmills and work out which features you actually use. Commercial machines feel
             different from most home ones, so treat it as a guide to deck length and incline rather
-            than to a specific model. Our comparison of a
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs a gym membership</a>
-            covers the wider trade-off.
+            than to a specific model. Our comparison of a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs a gym membership</a> covers the wider trade-off.
           </p>
           <p>
             <strong>Rent one.</strong> Renting a treadmill for a few months shows you whether you will
-            use one at home before you buy. Our guide to
-            <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">renting a treadmill</a>
-            explains how it works.
+            use one at home before you buy. Our guide to <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">renting a treadmill</a> explains how it works.
           </p>
           <p>
             <strong>Try a friend's.</strong> Ten minutes on a friend's home treadmill, using the test
@@ -502,7 +432,7 @@ const schema = {
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Before You Pay at a Local Store</h2>
+          <h2>Before You Pay at a Local Store</h2>
 <ul>
             <li><strong>Tested properly:</strong> walk, run, incline, deck edges, noise, console and fold, in your own shoes.</li>
             <li><strong>Model number</strong> of the machine you tested matches the one you are buying.</li>
@@ -515,144 +445,157 @@ const schema = {
             <li><strong>Price:</strong> compared, delivered and assembled, with an equivalent machine elsewhere.</li>
           </ul>
           <p>
-            If you are unsure how much to spend, our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
-            is the place to start.
+            If you are unsure how much to spend, our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a> is the place to start.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where can I find a treadmill near me?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Specialty fitness stores, sporting goods chains, warehouse clubs, big-box and electronics retailers, manufacturer showrooms and used fitness equipment stores all sell treadmills. Specialty stores usually have the most to try and the most knowledgeable staff. Call ahead to check which machines are on the floor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where are treadmills for sale near me cheapest?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Used fitness equipment stores and private sellers are usually cheapest, followed by warehouse clubs and promotions at big-box retailers. Compare the delivered and assembled price for an equivalent specification, not the ticket price, and include the value of warranty and local service.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I try running machines near me before buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, at most specialty fitness stores and many sporting goods chains, which keep floor models. Wear your own shoes and spend about ten minutes: walk, run, use the incline, stand on the deck edges, listen to the motor, check the console and fold the machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best exercise equipment stores near me?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For treadmills, independent or regional specialty fitness stores usually offer the widest range to try, knowledgeable staff and their own delivery and service. Sporting goods chains are more widespread. Judge any store by its delivery, assembly, service network and warranty support as well as its prices.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do fitness equipment stores negotiate on price?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, particularly independent specialty stores and on floor models or outgoing model years. Ask for extras such as room-of-choice delivery, assembly or haul-away as well as a discount, and bring a comparable delivered price from elsewhere.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I ask when buying a treadmill in a store?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Ask where delivery ends, whether assembly is included, who handles repairs and whether they cover your area, the warranty labour term as well as parts, the return window and conditions, and the continuous motor rating and running surface size.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Treadmill Locally</h2>
+          <p>The store gives you the chance to find out before you buy. Most mistakes come from not using it.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>A one-minute test in the wrong shoes</h3>
+              <p>A short walk in boots tells you almost nothing. Spend ten minutes in your training shoes, run if you run, use the incline, listen and fold the machine.</p>
+            </li>
+            <li>
+              <h3>Not asking about service</h3>
+              <p>A treadmill will eventually need a repair. Find out who carries it out and whether they cover your area before buying, not when the belt stops.</p>
+            </li>
+            <li>
+              <h3>Negotiating only on price</h3>
+              <p>Room-of-choice delivery, assembly, haul-away or a longer labour warranty can be worth more than a discount, and stores often find them easier to give.</p>
+            </li>
+            <li>
+              <h3>Forgetting to measure</h3>
+              <p>Arriving without measurements for the room and the route to it is how a machine ends up in the wrong place. Measure before you go.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Treadmill Locally</h2>
-          <p class="text-gray-700 leading-relaxed">The store gives you the chance to find out before you buy. Most mistakes come from not using it.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">A one-minute test in the wrong shoes</h3>
-              <p class="text-gray-700 text-sm m-0">A short walk in boots tells you almost nothing. Spend ten minutes in your training shoes, run if you run, use the incline, listen and fold the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not asking about service</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill will eventually need a repair. Find out who carries it out and whether they cover your area before buying, not when the belt stops.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Negotiating only on price</h3>
-              <p class="text-gray-700 text-sm m-0">Room-of-choice delivery, assembly, haul-away or a longer labour warranty can be worth more than a discount, and stores often find them easier to give.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting to measure</h3>
-              <p class="text-gray-700 text-sm m-0">Arriving without measurements for the room and the route to it is how a machine ends up in the wrong place. Measure before you go.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-            <a href="/where-to-buy-a-used-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Used</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Where to Buy a Used Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Local sources, safety, transport and scams to avoid.</p>
-            </a>
-            <a href="/treadmill-buying-guide-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Buying Guide 2026</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The decisions to make before you visit a store.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Use the local store for what only it can give you.</strong> Ten
             minutes on the floor model — walking, running, incline, deck edges, noise, console and
             fold — tells you more than any listing, and the right questions about delivery, service
             and warranty labour decide how the purchase goes.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Then negotiate on extras as well as price, and compare the delivered, assembled figure with
-            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+          <p>
+            Then negotiate on extras as well as price, and compare the delivered, assembled figure with <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
             Close on price with better service usually means buy local.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+            <li><a href="/where-to-buy-a-used-treadmill/">Where to Buy a Used Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where can I find a treadmill near me?</h3></summary>
+            <p class="faq-a">
+              Specialty fitness stores, sporting goods chains, warehouse clubs, big-box and electronics retailers, manufacturer showrooms and used fitness equipment stores all sell treadmills. Specialty stores usually have the most to try and the most knowledgeable staff. Call ahead to check which machines are on the floor.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Where are treadmills for sale near me cheapest?</h3></summary>
+            <p class="faq-a">
+              Used fitness equipment stores and private sellers are usually cheapest, followed by warehouse clubs and promotions at big-box retailers. Compare the delivered and assembled price for an equivalent specification, not the ticket price, and include the value of warranty and local service.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can I try running machines near me before buying?</h3></summary>
+            <p class="faq-a">
+              Yes, at most specialty fitness stores and many sporting goods chains, which keep floor models. Wear your own shoes and spend about ten minutes: walk, run, use the incline, stand on the deck edges, listen to the motor, check the console and fold the machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What are the best exercise equipment stores near me?</h3></summary>
+            <p class="faq-a">
+              For treadmills, independent or regional specialty fitness stores usually offer the widest range to try, knowledgeable staff and their own delivery and service. Sporting goods chains are more widespread. Judge any store by its delivery, assembly, service network and warranty support as well as its prices.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do fitness equipment stores negotiate on price?</h3></summary>
+            <p class="faq-a">
+              Often, particularly independent specialty stores and on floor models or outgoing model years. Ask for extras such as room-of-choice delivery, assembly or haul-away as well as a discount, and bring a comparable delivered price from elsewhere.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should I ask when buying a treadmill in a store?</h3></summary>
+            <p class="faq-a">
+              Ask where delivery ends, whether assembly is included, who handles repairs and whether they cover your area, the warranty labour term as well as parts, the return window and conditions, and the continuous motor rating and running surface size.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+          <a href="/where-to-buy-a-used-treadmill/" class="card">
+            <div class="c-kicker">Used</div>
+            <div class="c-title">Where to Buy a Used Treadmill</div>
+            <p class="c-blurb">Local sources, safety, transport and scams to avoid.</p>
+          </a>
+          <a href="/treadmill-buying-guide-2026/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Buying Guide 2026</div>
+            <p class="c-blurb">The decisions to make before you visit a store.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

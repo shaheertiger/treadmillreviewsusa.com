@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Sam’s Club Treadmills (2026): NordicTrack, Returns and Membership";
 const description =
@@ -222,6 +221,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/sams-club-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "price");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -243,66 +248,76 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "What Sam’s Club Sells", link: "#what-sams-sells" }}
+  stickyCta={{ text: "Most Listed at Sam’s: NordicTrack Commercial 1250", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-samsclubtreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-samsclubtreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/price/">By Price</a>
+        <span aria-hidden="true">›</span>
+        <span>Where to Buy</span>
+      </nav>
+      <h1 class="ed-title">Treadmills at Sam’s Club: What It Sells and How to Buy</h1>
+      <p class="ed-dek">
+        Sam’s Club sells treadmills mainly from two brands, NordicTrack and ProForm, both made by iFIT, with prices that are often shown only to members. It can be a good place to buy one of those machines. This guide covers what Sam’s lists, how to compare its models with the same machines elsewhere, what its return policy does and does not say about treadmills, and how it compares with Costco.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Where to Buy
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmills at Sam’s Club: <span class="text-[#5AA9FF]">What It Sells and How to Buy</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Sam’s Club sells treadmills mainly from two brands, NordicTrack and ProForm, both made by iFIT, with prices that are often shown only to members. It can be a good place to buy one of those machines. This guide covers what Sam’s lists, how to compare its models with the same machines elsewhere, what its return policy does and does not say about treadmills, and how it compares with Costco.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#what-sams-sells" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What Sam’s Sells
-          </a>
-          <a href="#returns" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Returns and Delivery
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-commercial-1250"><img src="https://m.media-amazon.com/images/I/31Hhl3ePz5L._SL500_.jpg" alt="NordicTrack Commercial 1250" width="460" height="500" decoding="async" /></a>
+          <a href="#nordictrack-commercial-1750"><img src="https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg" alt="NordicTrack Commercial 1750" width="500" height="500" decoding="async" /></a>
+          <a href="#nordictrack-t-6-5-s"><img src="https://m.media-amazon.com/images/I/416-QGAbmaL._SL500_.jpg" alt="NordicTrack T 6.5 S" width="446" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>NordicTrack Commercial 1250 · NordicTrack Commercial 1750 · NordicTrack T 6.5 S</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Search "treadmills at Sam’s" and you will find a short list of NordicTrack and ProForm machines,
+          several with a "members only" price, alongside the same names at Costco, Best Buy, Dick’s and the
+          makers’ own stores. Sam’s Club is a reasonable place to buy one of them if you are already a member, but
+          it is not a place with its own range: the value is in the price, the return policy and the delivery,
+          and each needs checking against the alternatives.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Listed at Sam’s:</span> <a href="#nordictrack-commercial-1250">NordicTrack Commercial 1250</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lifetime Motor Warranty:</span> <a href="#nordictrack-commercial-1750">NordicTrack Commercial 1750</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Amazon Alternative:</span> <a href="#nordictrack-t-6-5-s">NordicTrack T 6.5 S</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lowest Price:</span> <a href="#proform-carbon-tls">ProForm Carbon TLS</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> This site is
           independent and not affiliated with Sam’s Club, Walmart, Costco or iFIT. On 5 November 2026 samsclub.com
           and Sam’s Club’s help centre refused automated access with a bot check, so we could not read live
@@ -316,72 +331,27 @@ const schema = {
           database. We have not bought a treadmill from Sam’s Club. Prices, stock, membership terms and return
           rules change, so check the product page before buying. As an Amazon Associate we earn from qualifying
           purchases.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Listed at Sam’s:</span>
-            <a href="#nordictrack-commercial-1250" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1250</a>
-            <a href="#nordictrack-commercial-1250" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lifetime Motor Warranty:</span>
-            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
-            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Amazon Alternative:</span>
-            <a href="#nordictrack-t-6-5-s" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T 6.5 S</a>
-            <a href="#nordictrack-t-6-5-s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest Price:</span>
-            <a href="#proform-carbon-tls" class="font-bold text-gray-900 no-underline hover:underline">ProForm Carbon TLS</a>
-            <a href="#proform-carbon-tls" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Treadmill at Sam’s Club?</a>
-          <a href="#what-sams-sells" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Treadmills Sam’s Club Sells</a>
-          <a href="#nordictrack-at-sams" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. NordicTrack at Sam’s Club: Which Model Is It?</a>
-          <a href="#membership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Membership: the Cost Before the Price</a>
-          <a href="#returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Sam’s Club’s Return Policy and Treadmills</a>
-          <a href="#delivery-assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Delivery, Assembly and Warranty</a>
-          <a href="#vs-costco" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Sam’s Club vs Costco for a Treadmill</a>
-          <a href="#timing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When to Look</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Recalls to Know About</a>
-          <a href="#checklist" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Before You Buy a Treadmill at Sam’s Club</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Buy a Treadmill at Sam’s Club?</a></li>
+            <li><a href="#what-sams-sells">What Treadmills Sam’s Club Sells</a></li>
+            <li><a href="#nordictrack-at-sams">NordicTrack at Sam’s Club: Which Model Is It?</a></li>
+            <li><a href="#membership">Membership: the Cost Before the Price</a></li>
+            <li><a href="#returns">Sam’s Club’s Return Policy and Treadmills</a></li>
+            <li><a href="#delivery-assembly">Delivery, Assembly and Warranty</a></li>
+            <li><a href="#vs-costco">Sam’s Club vs Costco for a Treadmill</a></li>
+            <li><a href="#timing">When to Look</a></li>
+            <li><a href="#safety">Recalls to Know About</a></li>
+            <li><a href="#checklist">Before You Buy a Treadmill at Sam’s Club</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Search "treadmills at Sam’s" and you will find a short list of NordicTrack and ProForm machines,
-          several with a "members only" price, alongside the same names at Costco, Best Buy, Dick’s and the
-          makers’ own stores. Sam’s Club is a reasonable place to buy one of them if you are already a member, but
-          it is not a place with its own range: the value is in the price, the return policy and the delivery,
-          and each needs checking against the alternatives.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Treadmill at Sam’s Club?</h2>
+          <h2>Should You Buy a Treadmill at Sam’s Club?</h2>
 <p>
             <strong>Sam’s Club is worth checking if you are already a member and want a NordicTrack or
             ProForm treadmill, because its member prices on those machines can undercut other retailers and its
@@ -398,14 +368,12 @@ const schema = {
           </p>
           <p>
             If you are not a member, add the $60 or $120 membership fee to the price before comparing, and
-            remember Sam’s offers a fee refund under its membership guarantee. Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a>
-            sets out what each kind of retailer usually includes, which is how the comparison should be made.
+            remember Sam’s offers a fee refund under its membership guarantee. Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale guide</a> sets out what each kind of retailer usually includes, which is how the comparison should be made.
           </p>
         </div>
 
         <div id="what-sams-sells" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Treadmills Sam’s Club Sells</h2>
+          <h2>What Treadmills Sam’s Club Sells</h2>
 <p>
             Sam’s Club’s treadmill category, as search engines indexed it in the run-up to 5 November 2026, was
             dominated by NordicTrack and ProForm, the two treadmill brands of iFIT. We found no Member’s Mark
@@ -425,9 +393,7 @@ const schema = {
           <p>
             <strong>What this means.</strong> Buying a treadmill at Sam’s is, in practice, buying a NordicTrack
             or ProForm. If you have already decided on one of those brands, Sam’s is a channel to compare. If you
-            have not, start with our <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm</a>
-            comparison and our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>
-            guide, and compare with brands Sam’s does not sell, such as Sole and Horizon, before deciding.
+            have not, start with our <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm</a> comparison and our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a> guide, and compare with brands Sam’s does not sell, such as Sole and Horizon, before deciding.
           </p>
           <p>
             The four cards below are machines Sam’s Club has listed, with the figures this site has verified
@@ -437,78 +403,67 @@ const schema = {
             instead of a touchscreen.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="nordictrack-at-sams" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. NordicTrack at Sam’s Club: Which Model Is It?</h2>
+          <h2>NordicTrack at Sam’s Club: Which Model Is It?</h2>
 <p>
             "Sam’s Club NordicTrack treadmill" is a common search, and the most useful thing to know is that a
             NordicTrack at Sam’s is usually one of the models sold everywhere else, sometimes under a slightly
@@ -520,9 +475,7 @@ const schema = {
             are NordicTrack’s mainstream folding running treadmills. The names have been used for several
             generations, and the figures changed between them: older 1250s had a 20-inch belt and a 300 lb
             limit; the current one has a 22-inch belt and a 400 lb limit. Check that the Sam’s listing gives
-            the current figures, and our
-            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">Commercial 1250 vs 1750</a>
-            comparison explains the difference between the two.
+            the current figures, and our <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">Commercial 1250 vs 1750</a> comparison explains the difference between the two.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Commercial LE</h3>
           <p>
@@ -531,23 +484,18 @@ const schema = {
             speed, swaps the touchscreen for a 7-inch display and a device holder, and its motor rating differs
             between retailers. Retailer models are common and not a bad sign in themselves. They do mean you
             should ask NordicTrack directly what the model is based on, its continuous motor rating, its
-            capacity and its warranty, and get the answer in writing. Our
-            <a href="/buying-a-treadmill-at-costco/#exclusive-models" class="text-[#0F62FE] font-medium">guide to judging a retailer-exclusive model</a>
-            sets out the line-by-line check.
+            capacity and its warranty, and get the answer in writing. Our <a href="/buying-a-treadmill-at-costco/#exclusive-models" class="text-[#0F62FE] font-medium">guide to judging a retailer-exclusive model</a> sets out the line-by-line check.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">iFIT</h3>
           <p>
             Every NordicTrack and ProForm with a touchscreen is designed around a paid iFIT membership, and
             some retail bundles include a trial period. Find out how long the included membership lasts and what
-            the screen does without it; our guides to
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            and <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
-            cover both.
+            the screen does without it; our guides to <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> and <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a> cover both.
           </p>
         </div>
 
         <div id="membership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Membership: the Cost Before the Price</h2>
+          <h2>Membership: the Cost Before the Price</h2>
 <p>
             Sam’s Club raised its fees on 1 May 2026: the Club membership went from $50 to $60 a year and Plus from
             $110 to $120, according to news reports at the time; existing members pay the new rate at their next
@@ -568,7 +516,7 @@ const schema = {
         </div>
 
         <div id="returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Sam’s Club’s Return Policy and Treadmills</h2>
+          <h2>Sam’s Club’s Return Policy and Treadmills</h2>
 <p>
             Sam’s Club’s returns page, as it read in search results on 5 November 2026, sets out its policy in
             tiers. Most items can be returned at any time unless they are listed as an exception. Electronics and
@@ -588,10 +536,7 @@ const schema = {
             that online purchases can generally be returned to any US club. For a treadmill that means getting a
             boxed or part-assembled machine of 250 to 310 lb back to the club, unless Sam’s arranges a collection
             for that order. For a full refund you may need to return all the original contents and packaging, so
-            keep the box. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies guide</a>
-            compares Sam’s terms with other retailers’, and our guide to
-            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">disassembling a treadmill</a>
-            covers the job if you need to move one.
+            keep the box. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies guide</a> compares Sam’s terms with other retailers’, and our guide to <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">disassembling a treadmill</a> covers the job if you need to move one.
           </p>
           <p>
             <strong>A return is not a trial plan.</strong> A generous policy is a safety net for a machine that
@@ -600,20 +545,16 @@ const schema = {
         </div>
 
         <div id="delivery-assembly" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Delivery, Assembly and Warranty</h2>
+          <h2>Delivery, Assembly and Warranty</h2>
 <p>
             <strong>Delivery.</strong> Most of Sam’s Club’s full-size treadmills are sold online and delivered,
             rather than taken from a club floor. Read the delivery line on the listing carefully: kerbside,
             threshold and room-of-choice delivery are very different services for a box that weighs 300 lb, and
-            whether shipping is included can depend on the item and your membership tier. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives boxed weights by type.
+            whether shipping is included can depend on the item and your membership tier. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives boxed weights by type.
           </p>
           <p>
             <strong>Assembly.</strong> If the listing does not include assembly, plan for it: a NordicTrack
-            Commercial takes two people a few hours with the manual. Our guide to
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a>
-            sets out the job, and its cost belongs in the price comparison with retailers that include it.
+            Commercial takes two people a few hours with the manual. Our guide to <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a> sets out the job, and its cost belongs in the price comparison with retailers that include it.
           </p>
           <p>
             <strong>Warranty.</strong> Sam’s sells the treadmill; NordicTrack or ProForm services it. A Sam’s
@@ -621,13 +562,12 @@ const schema = {
             frame, two years on parts and one year of labour, which matches NordicTrack’s terms on the Commercial
             1250; the 1750 adds a lifetime motor warranty. Register the machine with the manufacturer, keep your
             Sam’s receipt, and note the model and serial numbers. Sam’s may also offer a protection plan at
-            checkout; our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            explains how to judge one.
+            checkout; our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> explains how to judge one.
           </p>
         </div>
 
         <div id="vs-costco" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Sam’s Club vs Costco for a Treadmill</h2>
+          <h2>Sam’s Club vs Costco for a Treadmill</h2>
 <p>
             The two warehouse clubs are the obvious comparison, and for treadmills they overlap more than you might
             expect: both have listed the NordicTrack Commercial 1750, and Costco has listed the 1250.
@@ -640,17 +580,12 @@ const schema = {
           </ul>
           <p>
             If you belong to one club, check that one first; the difference is rarely worth a second membership.
-            Our guide to <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a>
-            covers Costco’s side in detail, and our guides to
-            <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a>,
-            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy treadmills</a> and
-            <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmills</a>
-            cover the other large retailers.
+            Our guide to <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium">buying a treadmill at Costco</a> covers Costco’s side in detail, and our guides to <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a>, <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy treadmills</a> and <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmills</a> cover the other large retailers.
           </p>
         </div>
 
         <div id="timing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When to Look</h2>
+          <h2>When to Look</h2>
 <p>
             Sam’s Club runs member promotions through the year, and fitness equipment draws the most attention in
             the weeks around Black Friday and the new year. <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday 2026</a> is 27 November. NordicTrack and
@@ -659,15 +594,12 @@ const schema = {
           </p>
           <p>
             Judge any Sam’s Club price against what the same model is actually selling for elsewhere that week,
-            not against Sam’s "was" price. Our <a href="/nordictrack-black-friday-deals/" class="text-[#0F62FE] font-medium">NordicTrack Black Friday guide</a>
-            tracks what the main NordicTrack models have sold for, and our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
-            sets out the wider cycle.
+            not against Sam’s "was" price. Our <a href="/nordictrack-black-friday-deals/" class="text-[#0F62FE] font-medium">NordicTrack Black Friday guide</a> tracks what the main NordicTrack models have sold for, and our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a> sets out the wider cycle.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Recalls to Know About</h2>
+          <h2>Recalls to Know About</h2>
 <p>
             We searched the US Consumer Product Safety Commission’s recall database on 5 November 2026. We found
             no recall of any NordicTrack or ProForm treadmill, and no treadmill recall naming Sam’s Club as a
@@ -679,7 +611,7 @@ const schema = {
         </div>
 
         <div id="checklist" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Before You Buy a Treadmill at Sam’s Club</h2>
+          <h2>Before You Buy a Treadmill at Sam’s Club</h2>
 <ul>
             <li><strong>Model check.</strong> Does the listing match the current manufacturer model, including belt size and capacity?</li>
             <li><strong>Retailer models.</strong> If it is a model like the Commercial LE, has NordicTrack confirmed the motor, capacity and warranty?</li>
@@ -690,140 +622,155 @@ const schema = {
             <li><strong>Membership cost.</strong> If you are joining for this, have you added the fee?</li>
           </ul>
           <p>
-            If you are unsure how much treadmill you need, start with our guide to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
+            If you are unsure how much treadmill you need, start with our guide to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What treadmills does Sam’s Club sell?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly NordicTrack and ProForm, both made by iFIT. Sam’s Club’s own pages have listed the NordicTrack Commercial Series 1250, 1750 and 2450, the Commercial LE, X16, EXP Series 7i and T Series models, and the ProForm Carbon TLS, Carbon TLX and Carbon Pro 9000. Stock and prices change, and some prices are shown only to members.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Sam’s Club sell the NordicTrack Commercial 1750?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sam’s Club has listed it as the NordicTrack Commercial Series 1750, with a members-only price. Check that the listing describes the current model, with a 22 by 60-inch belt, a 400 lb rating and a 16-inch pivoting screen.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the NordicTrack Commercial LE?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A retailer model sold at Sam’s Club, Abt, Best Buy and Nebraska Furniture Mart but not on NordicTrack’s own US range. It has a -3% to 12% grade range, 12 mph and a 7-inch display instead of a touchscreen. Retailers disagree on its motor rating, so confirm it with NordicTrack before buying. Amazon does not sell it; the nearest NordicTrack there without a touchscreen is the T 6.5 S, a walking treadmill with less incline.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is Sam’s Club’s return policy on treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sam’s Club’s returns page lets most items be returned at any time, with 90 days for electronics and major appliances. Treadmills are not named, so check the return terms on the treadmill’s product page or ask Member Services. Items bought in a club cannot be shipped back, and online purchases can generally go to any US club.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need a membership to buy a treadmill at Sam’s Club?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Generally yes, and several treadmill prices are shown only to signed-in members. The Club membership is $60 a year and Plus $120 since May 2026. Sam’s membership guarantee offers a refund of the current year’s fee if you are unsatisfied.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Sam’s Club or Costco better for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is consistently cheaper. Both have listed the NordicTrack Commercial 1750, both have broad return policies with electronics exceptions, and Costco’s basic membership costs $65 against Sam’s $60. If you already belong to one, check that one first and compare the delivered price on the same day.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill at Sam’s Club</h2>
+          <p>Warehouse-club treadmill purchases go wrong in predictable ways. These four matter most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming the name means the current model</h3>
+              <p>NordicTrack has used names like Commercial 1250 for several generations with different belts, motors and weight limits. Check the belt size and capacity on the Sam’s listing against the current manufacturer figures before buying.</p>
+            </li>
+            <li>
+              <h3>Comparing a non-member price</h3>
+              <p>Several Sam’s treadmill listings show their real price only when you sign in. Comparing the price a non-member sees, or a crossed-out "was" price, with another retailer’s delivered price gives the wrong answer.</p>
+            </li>
+            <li>
+              <h3>Relying on "return at any time" without reading the item</h3>
+              <p>Sam’s general policy does not name treadmills, and electronics have a 90-day limit. Read the item page or ask Member Services, keep the box, and plan how you would get a 300 lb machine back to a club.</p>
+            </li>
+            <li>
+              <h3>Forgetting iFIT and assembly in the price</h3>
+              <p>A touchscreen NordicTrack is designed around a paid iFIT membership, and assembly may not be included. Add both to the Sam’s price before comparing it with a retailer that includes them.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill at Sam’s Club</h2>
-          <p class="text-gray-700 leading-relaxed">Warehouse-club treadmill purchases go wrong in predictable ways. These four matter most.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the name means the current model</h3>
-              <p class="text-gray-700 text-sm m-0">NordicTrack has used names like Commercial 1250 for several generations with different belts, motors and weight limits. Check the belt size and capacity on the Sam’s listing against the current manufacturer figures before buying.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing a non-member price</h3>
-              <p class="text-gray-700 text-sm m-0">Several Sam’s treadmill listings show their real price only when you sign in. Comparing the price a non-member sees, or a crossed-out "was" price, with another retailer’s delivered price gives the wrong answer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Relying on "return at any time" without reading the item</h3>
-              <p class="text-gray-700 text-sm m-0">Sam’s general policy does not name treadmills, and electronics have a 90-day limit. Read the item page or ask Member Services, keep the box, and plan how you would get a 300 lb machine back to a club.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting iFIT and assembly in the price</h3>
-              <p class="text-gray-700 text-sm m-0">A touchscreen NordicTrack is designed around a paid iFIT membership, and assembly may not be included. Add both to the Sam’s price before comparing it with a retailer that includes them.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Where-to-Buy Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/buying-a-treadmill-at-costco/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill at Costco</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The other warehouse club, and how to judge an exclusive model.</p>
-            </a>
-            <a href="/treadmills-for-sale/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills for Sale</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where to buy, what to pay and what each channel includes.</p>
-            </a>
-            <a href="/treadmill-return-policies/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Returns</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Return Policies</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The main retailers’ return terms for a treadmill, compared.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Sam’s Club is a sensible place to buy a NordicTrack or ProForm treadmill if
           you are a member and the signed-in price beats the delivered price elsewhere.</strong> Match the listing
           to the current model, confirm any retailer-only model such as the Commercial LE with NordicTrack, and
           read the item’s own return terms, because Sam’s policy does not name treadmills.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Compare it with <a href="/buying-a-treadmill-at-costco/" class="text-[#5AA9FF] font-bold no-underline">Costco</a>
-          and the other channels in our
-          <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">treadmills for sale guide</a>
-          before you order.
+          <p>
+            Compare it with <a href="/buying-a-treadmill-at-costco/" class="text-[#5AA9FF] font-bold no-underline">Costco</a> and the other channels in our <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">treadmills for sale guide</a> before you order.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/buying-a-treadmill-at-costco/">Buying a Treadmill at Costco</a></li>
+            <li><a href="/treadmills-for-sale/">Treadmills for Sale</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What treadmills does Sam’s Club sell?</h3></summary>
+            <p class="faq-a">
+              Mainly NordicTrack and ProForm, both made by iFIT. Sam’s Club’s own pages have listed the NordicTrack Commercial Series 1250, 1750 and 2450, the Commercial LE, X16, EXP Series 7i and T Series models, and the ProForm Carbon TLS, Carbon TLX and Carbon Pro 9000. Stock and prices change, and some prices are shown only to members.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Does Sam’s Club sell the NordicTrack Commercial 1750?</h3></summary>
+            <p class="faq-a">
+              Sam’s Club has listed it as the NordicTrack Commercial Series 1750, with a members-only price. Check that the listing describes the current model, with a 22 by 60-inch belt, a 400 lb rating and a 16-inch pivoting screen.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is the NordicTrack Commercial LE?</h3></summary>
+            <p class="faq-a">
+              A retailer model sold at Sam’s Club, Abt, Best Buy and Nebraska Furniture Mart but not on NordicTrack’s own US range. It has a -3% to 12% grade range, 12 mph and a 7-inch display instead of a touchscreen. Retailers disagree on its motor rating, so confirm it with NordicTrack before buying. Amazon does not sell it; the nearest NordicTrack there without a touchscreen is the T 6.5 S, a walking treadmill with less incline.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is Sam’s Club’s return policy on treadmills?</h3></summary>
+            <p class="faq-a">
+              Sam’s Club’s returns page lets most items be returned at any time, with 90 days for electronics and major appliances. Treadmills are not named, so check the return terms on the treadmill’s product page or ask Member Services. Items bought in a club cannot be shipped back, and online purchases can generally go to any US club.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you need a membership to buy a treadmill at Sam’s Club?</h3></summary>
+            <p class="faq-a">
+              Generally yes, and several treadmill prices are shown only to signed-in members. The Club membership is $60 a year and Plus $120 since May 2026. Sam’s membership guarantee offers a refund of the current year’s fee if you are unsatisfied.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is Sam’s Club or Costco better for a treadmill?</h3></summary>
+            <p class="faq-a">
+              Neither is consistently cheaper. Both have listed the NordicTrack Commercial 1750, both have broad return policies with electronics exceptions, and Costco’s basic membership costs $65 against Sam’s $60. If you already belong to one, check that one first and compare the delivered price on the same day.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in By Price">
+          <h2 class="section-title">More in By Price</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/price/" class="btn-ghost">See all By Price</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Where-to-Buy Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/buying-a-treadmill-at-costco/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Buying a Treadmill at Costco</div>
+            <p class="c-blurb">The other warehouse club, and how to judge an exclusive model.</p>
+          </a>
+          <a href="/treadmills-for-sale/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Treadmills for Sale</div>
+            <p class="c-blurb">Where to buy, what to pay and what each channel includes.</p>
+          </a>
+          <a href="/treadmill-return-policies/" class="card">
+            <div class="c-kicker">Returns</div>
+            <div class="c-title">Treadmill Return Policies</div>
+            <p class="c-blurb">The main retailers’ return terms for a treadmill, compared.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "What Muscles Does a Treadmill Work? (2026): Walking, Running, Incline";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/what-muscles-does-a-treadmill-work/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Muscles at a Glance", link: "#at-a-glance" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-whatmusclesdoesatreadmillwork" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-whatmusclesdoesatreadmillwork)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">What Muscles Does a Treadmill Work?</h1>
+      <p class="ed-dek">
+        A treadmill is a cardiovascular machine first and a muscle trainer a distant second. Your legs, hips and core do the moving, and the mix shifts depending on whether you walk, run, climb or walk backwards. Here is where the work goes in each, what treadmill exercise does to the rest of your body, and the muscles it barely touches.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          What Muscles Does a <span class="text-[#5AA9FF]">Treadmill Work?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill is a cardiovascular machine first and a muscle trainer a distant second. Your legs, hips and core do the moving, and the mix shifts depending on whether you walk, run, climb or walk backwards. Here is where the work goes in each, what treadmill exercise does to the rest of your body, and the muscles it barely touches.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#at-a-glance" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Muscles at a Glance
-          </a>
-          <a href="#what-it-misses" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What It Does Not Train
-          </a>
-        </div>
+        <a href="#at-a-glance" class="btn-ghost">Muscles at a Glance</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page describes, in general terms, which muscles treadmill walking and running use —
-          it is not medical, physiotherapy or coaching advice, and we are not qualified to give
-          any of those. If you have a heart, joint, back or other condition, are recovering from
-          injury, are pregnant, or feel pain during or after exercise, talk to a doctor or
-          physical therapist before starting or changing a routine.
-          <strong class="text-gray-900">On the descriptions below:</strong> muscle emphasis is
-          described qualitatively from how walking and running mechanics are generally
-          understood, not from measurements of your body, and individual technique changes the
-          picture.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Muscles Does a Treadmill Work? The Short Answer</a>
-          <a href="#walking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Muscles Does Walking on a Treadmill Work?</a>
-          <a href="#running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Muscles Does Running on a Treadmill Work?</a>
-          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Changes When You Add Incline?</a>
-          <a href="#backwards" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Muscles Does Walking Backwards on a Treadmill Work?</a>
-          <a href="#at-a-glance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Treadmill Muscles at a Glance</a>
-          <a href="#core-and-arms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Does a Treadmill Work Your Core or Arms?</a>
-          <a href="#whole-body" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Does a Treadmill Do to Your Body?</a>
-          <a href="#build-muscle" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Will a Treadmill Build Muscle or Strength?</a>
-          <a href="#what-it-misses" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Does a Treadmill Not Train, and What Should You Add?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           People ask what muscles a treadmill works for two different reasons. Some want to know
           whether it will tone their legs or build their glutes; others want to know whether it
           is a complete workout or needs something added. The answer to both starts in the same
@@ -211,8 +147,38 @@ const schema = {
           body as a whole.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This page describes, in general terms, which muscles treadmill walking and running use —
+          it is not medical, physiotherapy or coaching advice, and we are not qualified to give
+          any of those. If you have a heart, joint, back or other condition, are recovering from
+          injury, are pregnant, or feel pain during or after exercise, talk to a doctor or
+          physical therapist before starting or changing a routine. <strong class="text-gray-900">On the descriptions below:</strong> muscle emphasis is
+          described qualitatively from how walking and running mechanics are generally
+          understood, not from measurements of your body, and individual technique changes the
+          picture.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Muscles Does a Treadmill Work? The Short Answer</a></li>
+            <li><a href="#walking">What Muscles Does Walking on a Treadmill Work?</a></li>
+            <li><a href="#running">What Muscles Does Running on a Treadmill Work?</a></li>
+            <li><a href="#incline">What Changes When You Add Incline?</a></li>
+            <li><a href="#backwards">What Muscles Does Walking Backwards on a Treadmill Work?</a></li>
+            <li><a href="#at-a-glance">Treadmill Muscles at a Glance</a></li>
+            <li><a href="#core-and-arms">Does a Treadmill Work Your Core or Arms?</a></li>
+            <li><a href="#whole-body">What Does a Treadmill Do to Your Body?</a></li>
+            <li><a href="#build-muscle">Will a Treadmill Build Muscle or Strength?</a></li>
+            <li><a href="#what-it-misses">What Does a Treadmill Not Train, and What Should You Add?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Muscles Does a Treadmill Work? The Short Answer</h2>
+          <h2>What Muscles Does a Treadmill Work? The Short Answer</h2>
 <p>
             <strong>A treadmill works the quadriceps, hamstrings, glutes, calves and hip flexors,
             with the core helping to keep you upright — but its main training effect is on your
@@ -232,14 +198,12 @@ const schema = {
             nothing beyond a natural arm swing, and the legs are worked with light, repeated
             effort rather than the heavy, progressively increasing loads that build real strength.
             For most people, a treadmill is the cardio part of a routine, and some form of
-            strength training is the other part. Our page on the
-            <a href="/benefits-of-treadmill-exercise/" class="text-[#0F62FE] font-medium">benefits of treadmill exercise</a>
-            covers the wider case for the machine; this one is about where the work goes.
+            strength training is the other part. Our page on the <a href="/benefits-of-treadmill-exercise/" class="text-[#0F62FE] font-medium">benefits of treadmill exercise</a> covers the wider case for the machine; this one is about where the work goes.
           </p>
         </div>
 
         <div id="walking" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Muscles Does Walking on a Treadmill Work?</h2>
+          <h2>What Muscles Does Walking on a Treadmill Work?</h2>
 <p>
             Walking on a flat belt works the calves, hip flexors, quadriceps, hamstrings and
             glutes, all at a low level of effort, with the core and the small stabilising muscles
@@ -273,13 +237,12 @@ const schema = {
             One treadmill-specific note: walking on a belt is very close to walking on a flat
             floor, but without the small variations of outdoor ground. The stabilising muscles
             around the ankles work a little less on a perfectly even surface. It is a minor
-            difference, and not a reason to avoid the treadmill, but it is part of why mixing in
-            <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a> has value.
+            difference, and not a reason to avoid the treadmill, but it is part of why mixing in <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a> has value.
           </p>
         </div>
 
         <div id="running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Muscles Does Running on a Treadmill Work?</h2>
+          <h2>What Muscles Does Running on a Treadmill Work?</h2>
 <p>
             Running uses the same leg muscles as walking, but harder and in a different pattern,
             because every stride includes a moment when both feet are off the ground and a landing
@@ -307,15 +270,13 @@ const schema = {
             the basic work, despite the persistent myth; with the belt moving at a constant speed,
             running on it is mechanically very close to running over still ground at that speed.
             The differences that matter are the absence of air resistance, the absence of
-            downhills and turns, and the perfectly even surface. Our guide to
-            <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a>
-            covers the belt myth and the form habits — overstriding, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> — that
+            downhills and turns, and the perfectly even surface. Our guide to <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a> covers the belt myth and the form habits — overstriding, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> — that
             change how the load is shared.
           </p>
         </div>
 
         <div id="incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Changes When You Add Incline?</h2>
+          <h2>What Changes When You Add Incline?</h2>
 <p>
             Incline shifts work towards the glutes, hamstrings and calves. Walking uphill means the
             foot lands with the hip more bent, and every step lifts your body weight as well as
@@ -334,11 +295,8 @@ const schema = {
             It is still endurance work for the muscles. If the question on your mind is whether
             incline walking will grow your glutes, the short answer is that it helps beginners
             and adds useful conditioning, but progressive strength training does much more; our
-            page on
-            <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">whether incline walking builds glutes</a>
-            covers the grades commonly suggested and the form that matters. For the heart-rate,
-            calorie and joint effects of walking uphill, see
-            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
+            page on <a href="/does-incline-walking-build-glutes/" class="text-[#0F62FE] font-medium">whether incline walking builds glutes</a> covers the grades commonly suggested and the form that matters. For the heart-rate,
+            calorie and joint effects of walking uphill, see <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
           </p>
           <p>
             <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium" data-autolink>Incline running</a> works the same muscles harder still. It is a demanding session, and
@@ -348,7 +306,7 @@ const schema = {
         </div>
 
         <div id="backwards" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Muscles Does Walking Backwards on a Treadmill Work?</h2>
+          <h2>What Muscles Does Walking Backwards on a Treadmill Work?</h2>
 <p>
             Walking backwards makes the quadriceps and the calves do much more of the work, and
             reverses the usual pattern at the ankle and knee. Instead of landing on the heel and
@@ -365,15 +323,13 @@ const schema = {
           </p>
           <p>
             Backward walking is a useful variation rather than a main workout: a few minutes at a
-            slow pace to vary the load on the legs. Our full guide to
-            <a href="/walking-backwards-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking backwards on a treadmill</a>
-            covers the mechanics, the muscles in more detail, how to start safely and who should
+            slow pace to vary the load on the legs. Our full guide to <a href="/walking-backwards-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking backwards on a treadmill</a> covers the mechanics, the muscles in more detail, how to start safely and who should
             skip it.
           </p>
         </div>
 
         <div id="at-a-glance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Treadmill Muscles at a Glance</h2>
+          <h2>Treadmill Muscles at a Glance</h2>
 <p>
             The table summarises the descriptions above. It is a qualitative guide to where the
             emphasis typically lies, based on how walking and running mechanics are generally
@@ -411,7 +367,7 @@ const schema = {
         </div>
 
         <div id="core-and-arms" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Does a Treadmill Work Your Core or Arms?</h2>
+          <h2>Does a Treadmill Work Your Core or Arms?</h2>
 <p>
             The core, a little; the arms, hardly at all. The trunk muscles work throughout walking
             and running to keep you upright and to control the twisting that comes from swinging
@@ -437,7 +393,7 @@ const schema = {
         </div>
 
         <div id="whole-body" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Does a Treadmill Do to Your Body?</h2>
+          <h2>What Does a Treadmill Do to Your Body?</h2>
 <p>
             Most of what a treadmill does is cardiovascular and metabolic rather than muscular.
             Used regularly, at an effort that raises your breathing and heart rate, it does the
@@ -466,13 +422,12 @@ const schema = {
           </p>
           <p>
             For a fuller look at each of these — with the downsides stated honestly — see our page
-            on the
-            <a href="/benefits-of-treadmill-exercise/" class="text-[#0F62FE] font-medium">benefits of treadmill exercise</a>.
+            on the <a href="/benefits-of-treadmill-exercise/" class="text-[#0F62FE] font-medium">benefits of treadmill exercise</a>.
           </p>
         </div>
 
         <div id="build-muscle" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Will a Treadmill Build Muscle or Strength?</h2>
+          <h2>Will a Treadmill Build Muscle or Strength?</h2>
 <p>
             Not much, for most people. Muscle growth and meaningful strength gains generally come
             from working a muscle hard against resistance that increases over time. Walking and
@@ -502,7 +457,7 @@ const schema = {
         </div>
 
         <div id="what-it-misses" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Does a Treadmill Not Train, and What Should You Add?</h2>
+          <h2>What Does a Treadmill Not Train, and What Should You Add?</h2>
 <p>
             A treadmill leaves three gaps: the upper body, heavy lower-body strength, and the
             balance and agility that varied ground and other sports demand. For a rounded routine,
@@ -524,148 +479,161 @@ const schema = {
             Public health guidance in many countries recommends that adults combine regular
             aerobic activity with muscle-strengthening activity on at least two days a week. A
             treadmill handles the first part very well. If you train both on the same day, the
-            order matters; our page on
-            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a>
-            explains how to sequence them for your main goal. If you are new to strength training,
+            order matters; our page on <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a> explains how to sequence them for your main goal. If you are new to strength training,
             a qualified coach or physical therapist can help with technique and a sensible
             starting load.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What muscles does the treadmill work?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Mainly the quadriceps, hamstrings, glutes, calves and hip flexors, with the core stabilising the trunk. Flat walking leans on the calves and hip flexors; running works everything harder; incline shifts work to the glutes, hamstrings and calves; walking backwards emphasises the quadriceps. The biggest training effect is on the heart and lungs rather than the muscles.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What does a treadmill do to your body?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Used regularly, it trains your heart and lungs, raises daily energy use, provides weight-bearing exercise, and builds leg endurance. Many people also report better mood and sleep. It does little for the upper body or for strength, and overdoing it can cause sore calves, shins and overuse injuries, so build up gradually and vary sessions.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a treadmill build leg muscle?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not much for most people. It builds leg endurance through light, repeated effort. Very inactive people may gain some strength in the first weeks, especially with incline, but the gains level off because the treadmill cannot keep adding resistance. Squats, lunges, hinges and step-ups with increasing load build leg muscle far more effectively.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does walking on a treadmill tone your legs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can firm them modestly, mainly by conditioning the muscles and contributing to fat loss over time. Toning is really a combination of a bit more muscle and a bit less fat, and walking contributes a little to both. Adding incline and pairing walking with strength training and sensible eating produces more visible change.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a treadmill work your abs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only lightly. The core works throughout walking and running to keep you upright and control twisting, more so when running or climbing, but this is low-level stabilising work. It will not strengthen the abdominal muscles much. Planks, carries and anti-rotation exercises do far more, and visible abs depend mainly on body fat.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is running or walking better for working muscles on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Running works the leg muscles harder, particularly the calves, quadriceps and hip flexors, and raises heart rate more. Incline walking can match or exceed running for glute and hamstring work while keeping impact low. Neither builds much strength. Choose based on your fitness, joints and goals, and add strength training for muscle.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes About Treadmill Muscles</h2>
+          <p>Most of the mistakes come from expecting a cardio machine to do a strength machine’s job, or from habits that take the legs out of the work.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating the treadmill as a complete workout</h3>
+              <p>A treadmill trains the heart, lungs and leg endurance very well, but leaves the upper body untouched and the legs without heavy resistance. Relying on it alone leaves gaps in strength. Add two short strength sessions a week covering pushing, pulling, squatting and hinging, and keep the treadmill for cardio.</p>
+            </li>
+            <li>
+              <h3>Holding the rails throughout</h3>
+              <p>Gripping the handrails or console takes weight off the legs, reduces the core work of balancing, and distorts posture, so fewer muscles do less work than the session suggests. Use a light touch for balance when learning, then let go. If you cannot walk the setting hands-free, lower the speed or grade.</p>
+            </li>
+            <li>
+              <h3>Ramping up speed or grade too quickly</h3>
+              <p>The calves and Achilles are busy in every treadmill mode, and they are usually first to complain when speed or incline rises fast. Increase one variable at a time by small steps over weeks, and treat persistent pain in the calf, shin or back of the heel as a reason to ease off.</p>
+            </li>
+            <li>
+              <h3>Expecting incline walking to build big glutes</h3>
+              <p>Incline does shift work to the glutes and hamstrings, but it remains light, repeated effort. People hoping for noticeably bigger glutes from walking alone are usually disappointed. Use incline walking for conditioning and pair it with hip thrusts, squats, lunges and hinges with load that increases over time.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes About Treadmill Muscles</h2>
-          <p class="text-gray-700 leading-relaxed">Most of the mistakes come from expecting a cardio machine to do a strength machine’s job, or from habits that take the legs out of the work.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the treadmill as a complete workout</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill trains the heart, lungs and leg endurance very well, but leaves the upper body untouched and the legs without heavy resistance. Relying on it alone leaves gaps in strength. Add two short strength sessions a week covering pushing, pulling, squatting and hinging, and keep the treadmill for cardio.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the rails throughout</h3>
-              <p class="text-gray-700 text-sm m-0">Gripping the handrails or console takes weight off the legs, reduces the core work of balancing, and distorts posture, so fewer muscles do less work than the session suggests. Use a light touch for balance when learning, then let go. If you cannot walk the setting hands-free, lower the speed or grade.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ramping up speed or grade too quickly</h3>
-              <p class="text-gray-700 text-sm m-0">The calves and Achilles are busy in every treadmill mode, and they are usually first to complain when speed or incline rises fast. Increase one variable at a time by small steps over weeks, and treat persistent pain in the calf, shin or back of the heel as a reason to ease off.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting incline walking to build big glutes</h3>
-              <p class="text-gray-700 text-sm m-0">Incline does shift work to the glutes and hamstrings, but it remains light, repeated effort. People hoping for noticeably bigger glutes from walking alone are usually disappointed. Use incline walking for conditioning and pair it with hip thrusts, squats, lunges and hinges with load that increases over time.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/benefits-of-treadmill-exercise/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Benefits</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Benefits of Treadmill Exercise</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What regular treadmill use does for you, with the downsides stated honestly.</p>
-            </a>
-            <a href="/walking-backwards-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Technique</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Backwards on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The mechanics, the muscles, and how to start safely.</p>
-            </a>
-            <a href="/treadmill-running-form/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Running</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Running Form</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Posture, cadence, overstriding and the belt myth.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A treadmill works the quadriceps, hamstrings, glutes, calves and
             hip flexors, but it is cardiovascular exercise first.</strong> Walking, running,
             incline and walking backwards shift the emphasis between those muscles, while the
             biggest training effect lands on the heart and lungs, with leg endurance rather than
             strength or size.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Use it for cardio, let go of the rails so the legs do the work, build speed and grade
             gradually, and add strength training for the upper body and for real leg strength. For
-            the wider case for the machine, see our guide to the
-            <a href="/benefits-of-treadmill-exercise/" class="text-[#5AA9FF] font-bold no-underline">benefits of treadmill exercise</a>.
+            the wider case for the machine, see our guide to the <a href="/benefits-of-treadmill-exercise/" class="text-[#5AA9FF] font-bold no-underline">benefits of treadmill exercise</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/benefits-of-treadmill-exercise/">Benefits of Treadmill Exercise</a></li>
+            <li><a href="/walking-backwards-on-a-treadmill/">Walking Backwards on a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What muscles does the treadmill work?</h3></summary>
+            <p class="faq-a">
+              Mainly the quadriceps, hamstrings, glutes, calves and hip flexors, with the core stabilising the trunk. Flat walking leans on the calves and hip flexors; running works everything harder; incline shifts work to the glutes, hamstrings and calves; walking backwards emphasises the quadriceps. The biggest training effect is on the heart and lungs rather than the muscles.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What does a treadmill do to your body?</h3></summary>
+            <p class="faq-a">
+              Used regularly, it trains your heart and lungs, raises daily energy use, provides weight-bearing exercise, and builds leg endurance. Many people also report better mood and sleep. It does little for the upper body or for strength, and overdoing it can cause sore calves, shins and overuse injuries, so build up gradually and vary sessions.
             </p>
+          </details>
+          <details>
+            <summary><h3>Does a treadmill build leg muscle?</h3></summary>
+            <p class="faq-a">
+              Not much for most people. It builds leg endurance through light, repeated effort. Very inactive people may gain some strength in the first weeks, especially with incline, but the gains level off because the treadmill cannot keep adding resistance. Squats, lunges, hinges and step-ups with increasing load build leg muscle far more effectively.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does walking on a treadmill tone your legs?</h3></summary>
+            <p class="faq-a">
+              It can firm them modestly, mainly by conditioning the muscles and contributing to fat loss over time. Toning is really a combination of a bit more muscle and a bit less fat, and walking contributes a little to both. Adding incline and pairing walking with strength training and sensible eating produces more visible change.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a treadmill work your abs?</h3></summary>
+            <p class="faq-a">
+              Only lightly. The core works throughout walking and running to keep you upright and control twisting, more so when running or climbing, but this is low-level stabilising work. It will not strengthen the abdominal muscles much. Planks, carries and anti-rotation exercises do far more, and visible abs depend mainly on body fat.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is running or walking better for working muscles on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Running works the leg muscles harder, particularly the calves, quadriceps and hip flexors, and raises heart rate more. Incline walking can match or exceed running for glute and hamstring work while keeping impact low. Neither builds much strength. Choose based on your fitness, joints and goals, and add strength training for muscle.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/benefits-of-treadmill-exercise/" class="card">
+            <div class="c-kicker">Benefits</div>
+            <div class="c-title">Benefits of Treadmill Exercise</div>
+            <p class="c-blurb">What regular treadmill use does for you, with the downsides stated honestly.</p>
+          </a>
+          <a href="/walking-backwards-on-a-treadmill/" class="card">
+            <div class="c-kicker">Technique</div>
+            <div class="c-title">Walking Backwards on a Treadmill</div>
+            <p class="c-blurb">The mechanics, the muscles, and how to start safely.</p>
+          </a>
+          <a href="/treadmill-running-form/" class="card">
+            <div class="c-kicker">Running</div>
+            <div class="c-title">Treadmill Running Form</div>
+            <p class="c-blurb">Posture, cadence, overstriding and the belt myth.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

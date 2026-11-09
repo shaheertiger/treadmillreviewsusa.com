@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Outdoor Saunas (2026): Barrel and Cabin Picks";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-outdoor-saunas/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: SaunaLife Model E7 Ergo Series Barrel Sauna", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestoutdoorsaunas" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestoutdoorsaunas)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Outdoor Saunas Barrel or Cabin, and What Goes Under It</h1>
+      <p class="ed-dek">
+        An outdoor sauna is a small building with a 240-volt appliance inside. Here are five barrel and cabin saunas on sale now, what the makers say about foundations, wiring and permits, and how wood-fired heat changes the job.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Outdoor Saunas <span class="text-[#5AA9FF]">Barrel or Cabin, and What Goes Under It</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An outdoor sauna is a small building with a 240-volt appliance inside. Here are five barrel and cabin saunas on sale now, what the makers say about foundations, wiring and permits, and how wood-fired heat changes the job.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#barrel-vs-cabin" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Barrel or Cabin?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#saunalife-e7"><img src="https://m.media-amazon.com/images/I/61fLabgEOoL._SL500_.jpg" alt="SaunaLife Model E7 Ergo Series Barrel Sauna" width="500" height="500" decoding="async" /></a>
+          <a href="#saunalife-e6"><img src="https://m.media-amazon.com/images/I/61gh9XGn7aL._SL500_.jpg" alt="SaunaLife Model E6 Ergo Series Barrel Sauna" width="500" height="500" decoding="async" /></a>
+          <a href="#saunalife-cl5g"><img src="https://m.media-amazon.com/images/I/51jsRugZdaL._SL500_.jpg" alt="SaunaLife Model CL5G Cube Luxury Series Outdoor Sauna" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>SaunaLife Model E7 Ergo Series Barrel Sauna · SaunaLife Model E6 Ergo Series Barrel Sauna · SaunaLife Model CL5G Cube Luxury Series Outdoor Sauna</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Buying an outdoor sauna is less like buying fitness equipment and more like building a shed
+          with a stove in it. The kit is the easy part. Before it arrives you need a level base that
+          can carry well over half a ton, a licensed electrician to run a 240-volt circuit or a plan
+          for a wood-burning stove and its chimney, and a word with your local building department.
+          The five saunas below, all sold on Amazon, are traditional, stove-heated
+          barrels and cabins from makers who publish their specifications and manuals, and this guide
+          walks through the site work each one assumes.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#saunalife-e7">SaunaLife Model E7 Ergo Series Barrel Sauna</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Two or Three:</span> <a href="#saunalife-e6">SaunaLife Model E6 Ergo Series Barrel Sauna</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Cube Style:</span> <a href="#saunalife-cl5g">SaunaLife Model CL5G Cube Luxury Series Outdoor Sauna</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lowest Price on Amazon:</span> <a href="#eurosauna-2-person-barrel">EuroSauna 2-Person Outdoor Barrel Sauna</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Cabin on Amazon:</span> <a href="#saunalife-gl4">SaunaLife Model GL4 Garden Luxury Series Outdoor Sauna</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym and
           recovery equipment; this is not medical, electrical or building advice. Sauna sellers market
           circulation, detox, sleep and recovery benefits; on this page those are reported as the
@@ -336,8 +357,7 @@ const schema = {
           before using a sauna, and pregnant women in particular to check with a physician first —
           see the safety section below. All electrical work for these saunas must be done by a
           licensed electrician, and your local building and fire codes decide what you may build and
-          where; check with your building department before you order.
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          where; check with your building department before you order. <strong class="text-gray-900">On the products below.</strong> We have not tested these
           saunas, and no temperature or heat-up figure here is our own measurement. On 19 October 2026
           we confirmed the three SaunaLife saunas as listed and available to order on Amazon US (the E7
           showed as usually shipping in 9 to 10 days) — two sold by
@@ -354,79 +374,27 @@ const schema = {
           against the US Consumer Product Safety Commission's recall database. Prices are those we saw
           on that date and change often. We earn a commission if you buy through the Amazon links on
           this page; it does not change which products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#saunalife-e7" class="font-bold text-gray-900 no-underline hover:underline">SaunaLife Model E7 Ergo Series Barrel Sauna</a>
-            <a href="#saunalife-e7" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Two or Three:</span>
-            <a href="#saunalife-e6" class="font-bold text-gray-900 no-underline hover:underline">SaunaLife Model E6 Ergo Series Barrel Sauna</a>
-            <a href="#saunalife-e6" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Cube Style:</span>
-            <a href="#saunalife-cl5g" class="font-bold text-gray-900 no-underline hover:underline">SaunaLife Model CL5G Cube Luxury Series Outdoor Sauna</a>
-            <a href="#saunalife-cl5g" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest Price on Amazon:</span>
-            <a href="#eurosauna-2-person-barrel" class="font-bold text-gray-900 no-underline hover:underline">EuroSauna 2-Person Outdoor Barrel Sauna</a>
-            <a href="#eurosauna-2-person-barrel" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Cabin on Amazon:</span>
-            <a href="#saunalife-gl4" class="font-bold text-gray-900 no-underline hover:underline">SaunaLife Model GL4 Garden Luxury Series Outdoor Sauna</a>
-            <a href="#saunalife-gl4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#barrel-vs-cabin" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Barrel or Cabin: Which Outdoor Sauna Shape?</a>
-          <a href="#who-should-not" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Who Should Not Use a Sauna Without Medical Advice</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 5 Best Outdoor Saunas</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How We Chose These Saunas</a>
-          <a href="#site-prep" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Foundation, Permits and Placement</a>
-          <a href="#electrical" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Electrical Requirements for an Outdoor Sauna</a>
-          <a href="#wood-vs-electric" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Wood-Fired or Electric?</a>
-          <a href="#buyers-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Outdoor Sauna Buying Guide: Wood, Assembly and Weather</a>
-          <a href="#using-safely" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Using an Outdoor Sauna Safely</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#barrel-vs-cabin">Barrel or Cabin: Which Outdoor Sauna Shape?</a></li>
+            <li><a href="#who-should-not">Who Should Not Use a Sauna Without Medical Advice</a></li>
+            <li><a href="#picks">The 5 Best Outdoor Saunas</a></li>
+            <li><a href="#how-we-chose">How We Chose These Saunas</a></li>
+            <li><a href="#site-prep">Foundation, Permits and Placement</a></li>
+            <li><a href="#electrical">Electrical Requirements for an Outdoor Sauna</a></li>
+            <li><a href="#wood-vs-electric">Wood-Fired or Electric?</a></li>
+            <li><a href="#buyers-guide">Outdoor Sauna Buying Guide: Wood, Assembly and Weather</a></li>
+            <li><a href="#using-safely">Using an Outdoor Sauna Safely</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Buying an outdoor sauna is less like buying fitness equipment and more like building a shed
-          with a stove in it. The kit is the easy part. Before it arrives you need a level base that
-          can carry well over half a ton, a licensed electrician to run a 240-volt circuit or a plan
-          for a wood-burning stove and its chimney, and a word with your local building department.
-          The five saunas below, all sold on Amazon, are traditional, stove-heated
-          barrels and cabins from makers who publish their specifications and manuals, and this guide
-          walks through the site work each one assumes.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             <strong>The best outdoor sauna you can order on Amazon is the SaunaLife Model E7</strong>, a
             four-person barrel in thick thermally modified spruce that the Amazon listing sells with a
@@ -452,18 +420,14 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you want an indoor sauna that plugs into a 120-volt outlet instead, see our guide to
-            <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium">the best home saunas</a>.
-            For the cold half of a sauna routine, our
-            <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a>
-            covers tubs and chillers, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            If you want an indoor sauna that plugs into a 120-volt outlet instead, see our guide to <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium">the best home saunas</a>.
+            For the cold half of a sauna routine, our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> covers tubs and chillers, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
             guide in this series.
           </p>
         </div>
 
         <div id="barrel-vs-cabin" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Barrel or Cabin: Which Outdoor Sauna Shape?</h2>
+          <h2>Barrel or Cabin: Which Outdoor Sauna Shape?</h2>
 <p>
             <strong>A barrel sauna</strong> is a cylinder of tongue-and-groove staves held by steel bands
             on two cradles. It is the cheapest way to build a traditional sauna, assembles from a kit in
@@ -492,7 +456,7 @@ const schema = {
         </div>
 
         <div id="who-should-not" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Who Should Not Use a Sauna Without Medical Advice</h2>
+          <h2>Who Should Not Use a Sauna Without Medical Advice</h2>
 <p>
             A traditional sauna runs hotter than an infrared cabin — Almost Heaven's manual for its Wall
             heater says it heats a sauna to 175 to 185 degrees Fahrenheit — and the manuals are explicit about
@@ -511,8 +475,7 @@ const schema = {
             <li>Never sleep in a sauna while the heater is on.</li>
           </ul>
           <p>
-            Almost Heaven's indoor manual, and the Golden Designs manuals we read for our
-            <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium">home sauna guide</a>, add that
+            Almost Heaven's indoor manual, and the Golden Designs manuals we read for our <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium">home sauna guide</a>, add that
             pregnant or possibly pregnant women should contact a physician first because excessive heat
             can harm a fetus, and Golden Designs names heart disease, high or low blood pressure,
             circulatory problems, diabetes, obesity and medication as reasons to consult a doctor. The
@@ -524,7 +487,7 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 5 Best Outdoor Saunas</h2>
+          <h2>The 5 Best Outdoor Saunas</h2>
 <p>
             Each card gives the size, capacity, heater, wiring requirement and warranty we could confirm
             from two sources, and the price we saw on 19 October. Read the wiring line first: every sauna
@@ -541,78 +504,67 @@ const schema = {
             those, buying from the maker is the reliable route.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How We Chose These Saunas</h2>
+          <h2>How We Chose These Saunas</h2>
 <p>
             We have not tested these saunas. They were chosen from the makers' product pages and
             manuals, the Amazon listings, dealer listings, recall records and independent coverage, and
@@ -669,7 +621,7 @@ const schema = {
         </div>
 
         <div id="site-prep" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Foundation, Permits and Placement</h2>
+          <h2>Foundation, Permits and Placement</h2>
 <p>
             The base is the part buyers most often underestimate. Every maker here puts the
             responsibility on the owner, and a sauna that settles out of level will leak, stick and
@@ -701,15 +653,12 @@ const schema = {
           </ul>
           <p>
             If your sauna will sit on a garage floor or patio, the same principles apply as for heavy gym
-            equipment; our guides to
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> and
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">putting equipment in a garage</a>
-            cover slopes, moisture and load.
+            equipment; our guides to <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> and <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">putting equipment in a garage</a> cover slopes, moisture and load.
           </p>
         </div>
 
         <div id="electrical" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Electrical Requirements for an Outdoor Sauna</h2>
+          <h2>Electrical Requirements for an Outdoor Sauna</h2>
 <p>
             Every electric heater on this page is a 6 kW, 240-volt appliance. Almost Heaven's manual for
             Harvia's 6 kW Wall heater — the heater family SaunaLife's Amazon kits include — gives the
@@ -735,14 +684,12 @@ const schema = {
             an hour uses 6 kWh, about $1.02 at 17 cents per kWh. Almost Heaven says its Wall heater takes
             45 to 60 minutes to reach temperature, and heaters cycle once they get there, so a typical
             heat-up plus a 20-minute session uses less than that ceiling would suggest. Use your own
-            tariff. For a sense of how this compares with other home equipment, our
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity guide</a>
-            shows the same calculation for a treadmill.
+            tariff. For a sense of how this compares with other home equipment, our <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity guide</a> shows the same calculation for a treadmill.
           </p>
         </div>
 
         <div id="wood-vs-electric" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Wood-Fired or Electric?</h2>
+          <h2>Wood-Fired or Electric?</h2>
 <p>
             A wood-burning stove needs no electrician and works off-grid, and many people prefer the soft
             heat and the ritual of lighting it. It also brings a chimney through the roof, a fire to tend
@@ -772,7 +719,7 @@ const schema = {
         </div>
 
         <div id="buyers-guide" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Outdoor Sauna Buying Guide: Wood, Assembly and Weather</h2>
+          <h2>Outdoor Sauna Buying Guide: Wood, Assembly and Weather</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Wood and thickness</h3>
           <p>
             Cedar is the classic outdoor sauna wood: aromatic and naturally resistant to rot. Thermally
@@ -822,7 +769,7 @@ const schema = {
         </div>
 
         <div id="using-safely" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Using an Outdoor Sauna Safely</h2>
+          <h2>Using an Outdoor Sauna Safely</h2>
 <ul>
             <li><strong>Heat it, then check it.</strong> Before each session look at the heater, the stones
               and the area around it. Almost Heaven warns never to put towels, swimwear, a wooden bucket or
@@ -842,112 +789,40 @@ const schema = {
               long periods.</li>
           </ul>
           <p>
-            If you alternate the sauna with cold water, read the cold-shock cautions in our
-            <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> first, and
-            for the cool-down side of training, our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            explains what a cool-down is for. Other recovery tools, from
-            <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium">compression boots</a> to
-            <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage guns</a>, cost a fraction of a
-            sauna and need no permit; our
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools guide</a>
-            says what each can and cannot do.
+            If you alternate the sauna with cold water, read the cold-shock cautions in our <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge guide</a> first, and
+            for the cool-down side of training, our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> explains what a cool-down is for. Other recovery tools, from <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium">compression boots</a> to <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage guns</a>, cost a fraction of a
+            sauna and need no permit; our <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools guide</a> says what each can and cannot do.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best outdoor sauna?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For buyers who want to order on Amazon, the SaunaLife Model E7 is the strongest pick we could verify: a four-person barrel in thick thermo-spruce sold with a Harvia 6 kW heater. For less money, the EuroSauna two-person barrel is about $4,000 on Amazon, and SaunaLife's GL4 is the cabin-style option there. If you are happy to buy direct, Almost Heaven's American-made Pinnacle barrel and the Redwood Outdoors Cabin, which Garage Gym Reviews tested, are both well regarded. All of them need a level base and a 240-volt circuit.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are barrel saunas better than cabin saunas?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Barrels cost less per seat, assemble quickly and have less air to heat, but have curved floors and less headroom at the sides. Cabins cost more and take longer to build but give a flat floor, upright walls and two bench heights. Almost Heaven notes barrels can let in a little water at the top and sides, which a roof kit or rain jacket solves.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What foundation does an outdoor sauna need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A firm, level, load-bearing base. Almost Heaven says its barrels and their users weigh 1,000 lb or more and can sit on a deck or concrete slab, or on paver stones under the cradles if on the ground. SaunaLife says to replace the soil under the sauna with well-drained, load-bearing material and keep plants from growing beneath it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need a permit for an outdoor sauna?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on where you live. A permanent structure may need a building permit or have to meet setback rules, homeowners' associations may need to approve it, and the 240-volt wiring usually needs an electrical permit and inspection. Wood-burning stoves can raise fire-code questions. Almost Heaven's manual tells owners to follow local building codes; call your building department first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What electrical service does an outdoor sauna need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The 6 kW electric heaters on these saunas need a 240-volt circuit. Almost Heaven's manual for Harvia's 6 kW Wall heater specifies a 30-amp double-pole breaker and 10/2 copper wire, and says not to use a GFCI on that heater; the 8 kW version needs 40 amps. A licensed electrician must do the work, and lighting usually needs a separate 120-volt supply.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a wood-fired sauna better than electric?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Neither is better for everyone. Wood needs no electrician and works off-grid, but needs a chimney, a qualified installer and fire-code checks; Almost Heaven listed Harvia's M3 stove at $1,093 alone and $3,513 with its chimney kit. Electric heaters are simpler to run and permit in most backyards with power nearby.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying an Outdoor Sauna</h2>
+          <p>Each of these turns up in the makers’ manuals or in the listings we checked, and each costs more to fix after the sauna is built.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ordering before the base is ready</h3>
+              <p>A sauna that settles out of level leaks and sticks. Prepare a slab, deck or compacted gravel pad with pavers under the cradles, check it with a long level, and confirm it can carry 1,000 lb or more before delivery day.</p>
+            </li>
+            <li>
+              <h3>Leaving the electrician until last</h3>
+              <p>Every heater here needs a 240-volt, 30-amp circuit, and your panel may not have room. Get two or three quotes, and any permit, before you order, so a finished sauna is not sitting cold for weeks.</p>
+            </li>
+            <li>
+              <h3>Trusting a listing’s specifications without checking the maker</h3>
+              <p>Several Amazon barrel listings we opened carried dimensions copied from a different sauna. Match the model, size and heater to the maker’s own page and manual, and ask whether the heater and stones are included.</p>
+            </li>
+            <li>
+              <h3>Assuming the warranty covers the heater</h3>
+              <p>Sauna warranties often split the room from the heater, and SaunaLife’s current document excludes heaters entirely. Get both warranties in writing, register the heater with its maker, and keep the paperwork together.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying an Outdoor Sauna</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns up in the makers’ manuals or in the listings we checked, and each costs more to fix after the sauna is built.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering before the base is ready</h3>
-              <p class="text-gray-700 text-sm m-0">A sauna that settles out of level leaks and sticks. Prepare a slab, deck or compacted gravel pad with pavers under the cradles, check it with a long level, and confirm it can carry 1,000 lb or more before delivery day.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the electrician until last</h3>
-              <p class="text-gray-700 text-sm m-0">Every heater here needs a 240-volt, 30-amp circuit, and your panel may not have room. Get two or three quotes, and any permit, before you order, so a finished sauna is not sitting cold for weeks.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a listing’s specifications without checking the maker</h3>
-              <p class="text-gray-700 text-sm m-0">Several Amazon barrel listings we opened carried dimensions copied from a different sauna. Match the model, size and heater to the maker’s own page and manual, and ask whether the heater and stones are included.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the warranty covers the heater</h3>
-              <p class="text-gray-700 text-sm m-0">Sauna warranties often split the room from the heater, and SaunaLife’s current document excludes heaters entirely. Get both warranties in writing, register the heater with its maker, and keep the paperwork together.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-home-saunas/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Home Saunas</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Indoor infrared cabins on 120 volts: dedicated circuits, footprint, wood, heaters and EMF claims.</p>
-            </a>
-            <a href="/best-cold-plunges/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Cold Plunges</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Tubs with and without chillers, sanitation, GFCI power, floor loads and cold-water safety.</p>
-            </a>
-            <a href="/best-gym-flooring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Home Gym</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Gym Flooring</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mats and tiles for garages and patios, and how to deal with slopes, moisture and heavy loads.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">If you are ordering on Amazon, buy the SaunaLife E7</strong> for up to
             four people, or the E6 if it is usually one or two of you; both come with a Harvia 6 kW heater
             in the Amazon kit. Choose the CL5G for a squarer room and a glass front, the GL4 for a full cabin, or
@@ -955,37 +830,120 @@ const schema = {
             direct, Almost Heaven's Pinnacle is the American-made cedar barrel with the clearest paperwork,
             and the Redwood Outdoors Cabin is the tested traditional cabin with two bench heights.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, the work outside the box decides how it goes: a level, load-bearing base,
             a licensed electrician and a 240-volt circuit, a call to your building department, and a doctor's
-            advice if you have any health condition. For an indoor option on a 120-volt outlet, see our
-            <a href="/best-home-saunas/" class="text-[#5AA9FF] font-bold no-underline">home sauna guide</a>.
+            advice if you have any health condition. For an indoor option on a 120-volt outlet, see our <a href="/best-home-saunas/" class="text-[#5AA9FF] font-bold no-underline">home sauna guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-home-saunas/">Best Home Saunas</a></li>
+            <li><a href="/best-cold-plunges/">Best Cold Plunges</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best outdoor sauna?</h3></summary>
+            <p class="faq-a">
+              For buyers who want to order on Amazon, the SaunaLife Model E7 is the strongest pick we could verify: a four-person barrel in thick thermo-spruce sold with a Harvia 6 kW heater. For less money, the EuroSauna two-person barrel is about $4,000 on Amazon, and SaunaLife's GL4 is the cabin-style option there. If you are happy to buy direct, Almost Heaven's American-made Pinnacle barrel and the Redwood Outdoors Cabin, which Garage Gym Reviews tested, are both well regarded. All of them need a level base and a 240-volt circuit.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are barrel saunas better than cabin saunas?</h3></summary>
+            <p class="faq-a">
+              Barrels cost less per seat, assemble quickly and have less air to heat, but have curved floors and less headroom at the sides. Cabins cost more and take longer to build but give a flat floor, upright walls and two bench heights. Almost Heaven notes barrels can let in a little water at the top and sides, which a roof kit or rain jacket solves.
             </p>
+          </details>
+          <details>
+            <summary><h3>What foundation does an outdoor sauna need?</h3></summary>
+            <p class="faq-a">
+              A firm, level, load-bearing base. Almost Heaven says its barrels and their users weigh 1,000 lb or more and can sit on a deck or concrete slab, or on paver stones under the cradles if on the ground. SaunaLife says to replace the soil under the sauna with well-drained, load-bearing material and keep plants from growing beneath it.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you need a permit for an outdoor sauna?</h3></summary>
+            <p class="faq-a">
+              It depends on where you live. A permanent structure may need a building permit or have to meet setback rules, homeowners' associations may need to approve it, and the 240-volt wiring usually needs an electrical permit and inspection. Wood-burning stoves can raise fire-code questions. Almost Heaven's manual tells owners to follow local building codes; call your building department first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What electrical service does an outdoor sauna need?</h3></summary>
+            <p class="faq-a">
+              The 6 kW electric heaters on these saunas need a 240-volt circuit. Almost Heaven's manual for Harvia's 6 kW Wall heater specifies a 30-amp double-pole breaker and 10/2 copper wire, and says not to use a GFCI on that heater; the 8 kW version needs 40 amps. A licensed electrician must do the work, and lighting usually needs a separate 120-volt supply.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a wood-fired sauna better than electric?</h3></summary>
+            <p class="faq-a">
+              Neither is better for everyone. Wood needs no electrician and works off-grid, but needs a chimney, a qualified installer and fire-code checks; Almost Heaven listed Harvia's M3 stove at $1,093 alone and $3,513 with its chimney kit. Electric heaters are simpler to run and permit in most backyards with power nearby.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-home-saunas/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Home Saunas</div>
+            <p class="c-blurb">Indoor infrared cabins on 120 volts: dedicated circuits, footprint, wood, heaters and EMF claims.</p>
+          </a>
+          <a href="/best-cold-plunges/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Cold Plunges</div>
+            <p class="c-blurb">Tubs with and without chillers, sanitation, GFCI power, floor loads and cold-water safety.</p>
+          </a>
+          <a href="/best-gym-flooring/" class="card">
+            <div class="c-kicker">Home Gym</div>
+            <div class="c-title">Best Gym Flooring</div>
+            <p class="c-blurb">Mats and tiles for garages and patios, and how to deal with slopes, moisture and heavy loads.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

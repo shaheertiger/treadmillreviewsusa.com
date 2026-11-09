@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Fast Do Treadmills Go? (2026): Top Speeds by Type Explained";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-fast-do-treadmills-go/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,111 +109,72 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Top Speeds by Type", link: "#speeds-by-type" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howfastdotreadmillsgo" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howfastdotreadmillsgo)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Spec Explainer</span>
+      </nav>
+      <h1 class="ed-title">How Fast Do Treadmills Go?</h1>
+      <p class="ed-dek">
+        Faster than almost anyone needs. Most home treadmills reach 10 to 12 mph, which is a five-minute mile. Here are the typical top and bottom speeds by type, the speeds people actually use, and the specs that matter more than the maximum.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Spec Explainer
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Fast Do <span class="text-[#5AA9FF]">Treadmills Go?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Faster than almost anyone needs. Most home treadmills reach 10 to 12 mph, which is a five-minute mile. Here are the typical top and bottom speeds by type, the speeds people actually use, and the specs that matter more than the maximum.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#speeds-by-type" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Top Speeds by Type
-          </a>
-          <a href="#speeds-people-use" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Speeds People Use
-          </a>
-        </div>
+        <a href="#speeds-by-type" class="btn-ghost">Top Speeds by Type</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> These are typical speed ranges
-          by machine type, not specifications for any particular model, and individual treadmills
-          fall outside them in both directions. Check the manufacturer's spec sheet for the exact
-          minimum and maximum speed of a machine you are considering. If you are new to exercise or
-          have a health condition, build speed gradually and check with a clinician first — we
-          review equipment and do not give medical advice.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: How Fast Can a Treadmill Go?</a>
-          <a href="#speeds-by-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Typical Treadmill Top Speeds by Type</a>
-          <a href="#minimum-speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Slow Do Treadmills Go?</a>
-          <a href="#speeds-people-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Speeds Do People Actually Use?</a>
-          <a href="#pace-conversion" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Converting Treadmill Speed to Pace</a>
-          <a href="#kmh-vs-mph" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. km/h vs. mph Consoles</a>
-          <a href="#acceleration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Acceleration: How Quickly the Speed Changes</a>
-          <a href="#motor-chp" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Motor Power and Sustained Speed</a>
-          <a href="#why-max-rarely-matters" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Why Top Speed Is Rarely the Constraint</a>
-          <a href="#who-needs-more" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Actually Needs More Than 12 mph?</a>
-          <a href="#safety-at-speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Running Safely at Higher Speeds</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most home treadmills go up to 10 to 12 mph, walking pads usually top out somewhere around
           4 to 6 mph, and commercial gym treadmills typically reach 12 to 15 mph. Almost every
           motorized machine starts at around 0.5 mph. For nearly everyone, the top speed is not the
           specification that decides whether a treadmill suits them.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> These are typical speed ranges
+          by machine type, not specifications for any particular model, and individual treadmills
+          fall outside them in both directions. Check the manufacturer's spec sheet for the exact
+          minimum and maximum speed of a machine you are considering. If you are new to exercise or
+          have a health condition, build speed gradually and check with a clinician first — we
+          review equipment and do not give medical advice.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: How Fast Can a Treadmill Go?</a></li>
+            <li><a href="#speeds-by-type">Typical Treadmill Top Speeds by Type</a></li>
+            <li><a href="#minimum-speed">How Slow Do Treadmills Go?</a></li>
+            <li><a href="#speeds-people-use">What Speeds Do People Actually Use?</a></li>
+            <li><a href="#pace-conversion">Converting Treadmill Speed to Pace</a></li>
+            <li><a href="#kmh-vs-mph">km/h vs. mph Consoles</a></li>
+            <li><a href="#acceleration">Acceleration: How Quickly the Speed Changes</a></li>
+            <li><a href="#motor-chp">Motor Power and Sustained Speed</a></li>
+            <li><a href="#why-max-rarely-matters">Why Top Speed Is Rarely the Constraint</a></li>
+            <li><a href="#who-needs-more">Who Actually Needs More Than 12 mph?</a></li>
+            <li><a href="#safety-at-speed">Running Safely at Higher Speeds</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: How Fast Can a Treadmill Go?</h2>
+          <h2>The Short Answer: How Fast Can a Treadmill Go?</h2>
 <p>
-            As typical ranges: a <strong>walking pad</strong> tops out at roughly 4 to 6 mph, a
-            <strong>home treadmill</strong> at 10 to 12 mph, and a <strong>commercial
+            As typical ranges: a <strong>walking pad</strong> tops out at roughly 4 to 6 mph, a <strong>home treadmill</strong> at 10 to 12 mph, and a <strong>commercial
             treadmill</strong> at 12 to 15 mph. A small number of specialist high-speed treadmills,
             built for sports-performance and research settings, go faster still. <strong>Curved
             non-motorized treadmills</strong> have no motor-imposed limit at all: they go as fast
@@ -223,15 +189,13 @@ const schema = {
             your stride at that speed.
           </p>
           <p>
-            Our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>
-            converts every common treadmill speed to minutes per mile and km/h. The rest of this
+            Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a> converts every common treadmill speed to minutes per mile and km/h. The rest of this
             page explains what the speed figures mean and what to look for instead.
           </p>
         </div>
 
         <div id="speeds-by-type" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Typical Treadmill Top Speeds by Type</h2>
+          <h2>Typical Treadmill Top Speeds by Type</h2>
 <ul>
             <li><strong>Walking pads and under-desk treadmills: about 4-6 mph.</strong> Many cap at
             around 4 mph in walking mode. Some models with a fold-up handrail unlock a faster mode
@@ -254,14 +218,12 @@ const schema = {
           <p>
             Flat <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual treadmills</a>, the inexpensive non-motorized kind, are effectively walking
             machines: the belt is driven by your feet against friction, which makes running on
-            them awkward. Our comparison of
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual and motorized treadmills</a>
-            explains why the flat and curved designs behave so differently.
+            them awkward. Our comparison of <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual and motorized treadmills</a> explains why the flat and curved designs behave so differently.
           </p>
         </div>
 
         <div id="minimum-speed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Slow Do Treadmills Go?</h2>
+          <h2>How Slow Do Treadmills Go?</h2>
 <p>
             The minimum speed on most motorized treadmills is around 0.5 mph, and many machines
             change speed in 0.1 mph steps from there. That slow end matters more than it seems for
@@ -276,14 +238,12 @@ const schema = {
           <p>
             Some <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> and specialist rehabilitation machines start a little lower, and a
             few budget machines start a little higher. If very slow walking is your main use, check
-            the minimum speed specifically rather than assuming. Our guide to the
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
-            looks at low start speeds alongside handrails and step-up height.
+            the minimum speed specifically rather than assuming. Our guide to the <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a> looks at low start speeds alongside handrails and step-up height.
           </p>
         </div>
 
         <div id="speeds-people-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Speeds Do People Actually Use?</h2>
+          <h2>What Speeds Do People Actually Use?</h2>
 <p>
             Here are the bands most people fall into, as rough guides rather than targets. Your
             own speeds depend on height, fitness, stride and incline.
@@ -303,18 +263,16 @@ const schema = {
           <p>
             The practical consequence is that most users spend nearly all their treadmill time
             below 7 mph, and many spend it below 4. If you are following a beginner plan such as
-            our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K treadmill programme</a>,
+            our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K treadmill programme</a>,
             your running intervals are likely to sit in the 4.5 to 6 mph range for weeks.
           </p>
         </div>
 
         <div id="pace-conversion" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Converting Treadmill Speed to Pace</h2>
+          <h2>Converting Treadmill Speed to Pace</h2>
 <p>
             Treadmills in the US show speed in miles per hour, while runners usually think in
-            minutes per mile. The conversion is simple: <strong>divide 60 by the speed in mph</strong>
-            to get minutes per mile.
+            minutes per mile. The conversion is simple: <strong>divide 60 by the speed in mph</strong> to get minutes per mile.
           </p>
           <ul>
             <li><strong>3 mph</strong> = 20:00 per mile (a steady walk)</li>
@@ -333,14 +291,12 @@ const schema = {
             for more than a short interval.
           </p>
           <p>
-            Our full
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
-            covers every 0.5 mph step with km/h equivalents and what each speed feels like.
+            Our full <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a> covers every 0.5 mph step with km/h equivalents and what each speed feels like.
           </p>
         </div>
 
         <div id="kmh-vs-mph" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. km/h vs. mph Consoles</h2>
+          <h2>km/h vs. mph Consoles</h2>
 <p>
             Treadmills sold in the US usually display mph by default, but many consoles can switch
             to km/h, and machines sold elsewhere may default to metric. If a speed figure looks
@@ -361,7 +317,7 @@ const schema = {
         </div>
 
         <div id="acceleration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Acceleration: How Quickly the Speed Changes</h2>
+          <h2>Acceleration: How Quickly the Speed Changes</h2>
 <p>
             Top speed is a ceiling. Acceleration is how long it takes to get anywhere, and on a
             treadmill it is often the more noticeable of the two.
@@ -376,9 +332,7 @@ const schema = {
           <p>
             It matters most for interval training. If your plan calls for 30 seconds fast and 60
             seconds easy, several seconds of each interval spent ramping up and down changes the
-            workout. Machines with responsive controllers and quick-speed keys make
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
-            noticeably easier to run as written. Many runners adapt by starting the speed change a
+            workout. Machines with responsive controllers and quick-speed keys make <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a> noticeably easier to run as written. Many runners adapt by starting the speed change a
             few seconds early, which works fine once you know your machine.
           </p>
           <p>
@@ -388,7 +342,7 @@ const schema = {
         </div>
 
         <div id="motor-chp" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Motor Power and Sustained Speed</h2>
+          <h2>Motor Power and Sustained Speed</h2>
 <p>
             The motor decides whether a treadmill can hold a speed comfortably, rather than merely
             reach it. A small motor may be able to spin the belt to 10 mph with nobody on it, but
@@ -403,17 +357,13 @@ const schema = {
           </p>
           <p>
             An under-powered motor running near its limit tends to surge or slow when your foot
-            lands, runs hotter and wears faster. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
-            explains how to read motor ratings and what to buy for your weight and pace. If your
-            belt already hesitates under foot, our guide to a
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">treadmill belt that slows when you step on it</a>
-            covers the likely causes.
+            lands, runs hotter and wears faster. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a> explains how to read motor ratings and what to buy for your weight and pace. If your
+            belt already hesitates under foot, our guide to a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">treadmill belt that slows when you step on it</a> covers the likely causes.
           </p>
         </div>
 
         <div id="why-max-rarely-matters" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Why Top Speed Is Rarely the Constraint</h2>
+          <h2>Why Top Speed Is Rarely the Constraint</h2>
 <p>
             For the great majority of buyers, a 10 mph treadmill and a 12 mph treadmill are
             equally fast in practice, because neither person will ever reach 10 mph. The specs
@@ -422,9 +372,7 @@ const schema = {
           <p>
             <strong>Deck length.</strong> Stride lengthens as speed rises. A deck that feels fine
             at a jog can feel cramped at a fast run, and taller runners feel it first. Around
-            60 inches is the commonly recommended length for running; our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
-            explains why.
+            60 inches is the commonly recommended length for running; our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> explains why.
           </p>
           <p>
             <strong>Motor rating.</strong> Holding a speed for a full session matters more than
@@ -437,14 +385,12 @@ const schema = {
           <p>
             <strong>Incline.</strong> Many people use incline rather than speed to raise effort,
             which is gentler on the joints at a given heart rate. A walker at 3.5 mph on a steep
-            grade can be working very hard on a machine that never goes above 4 mph. Our guide to
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent vs. degrees</a>
-            explains what the incline numbers mean.
+            grade can be working very hard on a machine that never goes above 4 mph. Our guide to <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent vs. degrees</a> explains what the incline numbers mean.
           </p>
         </div>
 
         <div id="who-needs-more" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Actually Needs More Than 12 mph?</h2>
+          <h2>Who Actually Needs More Than 12 mph?</h2>
 <p>
             A small group. Competitive runners who do short, fast repetitions on a treadmill may
             want headroom above 12 mph. Sprint-focused athletes and coaches often prefer curved
@@ -454,21 +400,17 @@ const schema = {
           <p>
             If you are in that group, look at commercial and premium machines rated to 15 mph, and
             pay close attention to deck length, motor rating and frame weight, because running at
-            those speeds asks more of every part of the machine. Our
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            covers what that category is built for.
+            those speeds asks more of every part of the machine. Our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a> covers what that category is built for.
           </p>
           <p>
             For everyone else, the 12 mph ceiling on a typical running treadmill is generous, and
             paying extra purely for a higher top speed is money that would be better spent on a
-            longer deck or a stronger motor. Our list of the
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
-            weighs those specs together.
+            longer deck or a stronger motor. Our list of the <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a> weighs those specs together.
           </p>
         </div>
 
         <div id="safety-at-speed" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Running Safely at Higher Speeds</h2>
+          <h2>Running Safely at Higher Speeds</h2>
 <p>
             Faster speeds raise the consequences of a misstep, so the basics are worth repeating.
             Clip the safety key to your clothing every session; it stops the belt if you drift too
@@ -488,139 +430,152 @@ const schema = {
             is appropriate before chasing faster speeds.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast do treadmills go?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most home treadmills go up to 10 to 12 mph, walking pads usually reach about 4 to 6 mph, and commercial gym treadmills typically reach 12 to 15 mph. Specialist high-speed machines go faster, and curved non-motorized treadmills have no set limit. Most motorized treadmills start at about 0.5 mph.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast can a treadmill go?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On consumer machines, 12 mph is the common maximum for home running treadmills and 15 mph for many commercial gym models. That is a five-minute and four-minute mile respectively. Specialist sports-performance treadmills can exceed 15 mph, and a curved non-motorized treadmill goes as fast as you can run.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is 12 mph on a treadmill in minutes per mile?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                12 mph is a five-minute mile, or about 19.3 km/h. To convert any speed, divide 60 by the mph figure to get minutes per mile: 6 mph is a 10-minute mile, 7.5 mph is an 8-minute mile, and 10 mph is a 6-minute mile.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast does a walking pad go?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Typically about 4 mph in walking mode, with some models offering a faster mode up to around 6 mph when a handrail is raised. Walking pads are designed for walking; their short decks and small motors make them a poor choice for regular running even when they offer a jogging speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good walking speed on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most people walk comfortably at about 2.5 to 3.5 mph, with 3.5 to 4 mph a brisk walk. Adding incline is an effective way to increase effort without walking faster. These are typical figures, not targets; the right speed depends on your height, fitness and any guidance from a clinician.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a 10 mph treadmill fast enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most users, yes. 10 mph is a six-minute mile, faster than most recreational runners sustain. If you run regularly, a strong continuous-duty motor and a deck around 60 inches long will matter far more than whether the top speed is 10 or 12 mph.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes About Treadmill Speed</h2>
+          <p>Speed is one of the most prominent numbers on a spec sheet and one of the least informative. These are the misreadings we see most often.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying on top speed alone</h3>
+              <p>A 12 mph maximum says nothing about whether the motor can hold your running speed for an hour, or whether the deck is long enough for your stride. Compare continuous horsepower and deck length first; top speed is a tiebreaker at most.</p>
+            </li>
+            <li>
+              <h3>Treating a walking pad as a running machine</h3>
+              <p>A walking pad with a 6 mph jogging mode is still a walking pad. Its short deck and small motor are built for walking, and regular running on one tends to shorten its life and feel cramped.</p>
+            </li>
+            <li>
+              <h3>Misreading km/h as mph</h3>
+              <p>A console set to km/h shows numbers about 1.6 times higher than mph. Setting what you think is a 6 mph jog at "6" on a metric console gives you a brisk walk; setting "10" thinking it is km/h on an mph console gives you a six-minute mile.</p>
+            </li>
+            <li>
+              <h3>Ignoring acceleration for intervals</h3>
+              <p>Short intervals lose several seconds to ramping up and down on many machines. Start speed changes a little early, use quick-speed keys if your treadmill has them, and judge responsiveness before buying if intervals are your main workout.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes About Treadmill Speed</h2>
-          <p class="text-gray-700 leading-relaxed">Speed is one of the most prominent numbers on a spec sheet and one of the least informative. These are the misreadings we see most often.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying on top speed alone</h3>
-              <p class="text-gray-700 text-sm m-0">A 12 mph maximum says nothing about whether the motor can hold your running speed for an hour, or whether the deck is long enough for your stride. Compare continuous horsepower and deck length first; top speed is a tiebreaker at most.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating a walking pad as a running machine</h3>
-              <p class="text-gray-700 text-sm m-0">A walking pad with a 6 mph jogging mode is still a walking pad. Its short deck and small motor are built for walking, and regular running on one tends to shorten its life and feel cramped.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Misreading km/h as mph</h3>
-              <p class="text-gray-700 text-sm m-0">A console set to km/h shows numbers about 1.6 times higher than mph. Setting what you think is a 6 mph jog at "6" on a metric console gives you a brisk walk; setting "10" thinking it is km/h on an mph console gives you a six-minute mile.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring acceleration for intervals</h3>
-              <p class="text-gray-700 text-sm m-0">Short intervals lose several seconds to ramping up and down on many machines. Start speed changes a little early, use quick-speed keys if your treadmill has them, and judge responsiveness before buying if intervals are your main workout.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Speed and Spec Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-pace-and-speed-chart/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Chart</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Pace and Speed Chart</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Every common speed in mph, minutes per mile and km/h.</p>
-            </a>
-            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Spec Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Horsepower Do I Need?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">CHP, peak HP and the motor rating that predicts survival.</p>
-            </a>
-            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Spec Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How long and wide a deck you need at your speed and height.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Typical top speeds:</strong> walking pads about 4-6 mph, home
             treadmills 10-12 mph and commercial machines 12-15 mph, with most starting around
             0.5 mph. A 12 mph ceiling is a five-minute mile, faster than nearly anyone trains.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Judge a treadmill on <strong class="text-white">motor rating, deck length and stability</strong>
-            rather than its maximum speed, and use our
-            <a href="/treadmill-pace-and-speed-chart/" class="text-[#5AA9FF] font-bold no-underline">pace and speed chart</a>
-            to translate the console into the pace you actually run.
+          <p>
+            Judge a treadmill on <strong class="text-white">motor rating, deck length and stability</strong> rather than its maximum speed, and use our <a href="/treadmill-pace-and-speed-chart/" class="text-[#5AA9FF] font-bold no-underline">pace and speed chart</a> to translate the console into the pace you actually run.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-pace-and-speed-chart/">Treadmill Pace and Speed Chart</a></li>
+            <li><a href="/treadmill-horsepower-guide/">What Horsepower Do I Need?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How fast do treadmills go?</h3></summary>
+            <p class="faq-a">
+              Most home treadmills go up to 10 to 12 mph, walking pads usually reach about 4 to 6 mph, and commercial gym treadmills typically reach 12 to 15 mph. Specialist high-speed machines go faster, and curved non-motorized treadmills have no set limit. Most motorized treadmills start at about 0.5 mph.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How fast can a treadmill go?</h3></summary>
+            <p class="faq-a">
+              On consumer machines, 12 mph is the common maximum for home running treadmills and 15 mph for many commercial gym models. That is a five-minute and four-minute mile respectively. Specialist sports-performance treadmills can exceed 15 mph, and a curved non-motorized treadmill goes as fast as you can run.
             </p>
+          </details>
+          <details>
+            <summary><h3>What is 12 mph on a treadmill in minutes per mile?</h3></summary>
+            <p class="faq-a">
+              12 mph is a five-minute mile, or about 19.3 km/h. To convert any speed, divide 60 by the mph figure to get minutes per mile: 6 mph is a 10-minute mile, 7.5 mph is an 8-minute mile, and 10 mph is a 6-minute mile.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How fast does a walking pad go?</h3></summary>
+            <p class="faq-a">
+              Typically about 4 mph in walking mode, with some models offering a faster mode up to around 6 mph when a handrail is raised. Walking pads are designed for walking; their short decks and small motors make them a poor choice for regular running even when they offer a jogging speed.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a good walking speed on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Most people walk comfortably at about 2.5 to 3.5 mph, with 3.5 to 4 mph a brisk walk. Adding incline is an effective way to increase effort without walking faster. These are typical figures, not targets; the right speed depends on your height, fitness and any guidance from a clinician.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a 10 mph treadmill fast enough?</h3></summary>
+            <p class="faq-a">
+              For most users, yes. 10 mph is a six-minute mile, faster than most recreational runners sustain. If you run regularly, a strong continuous-duty motor and a deck around 60 inches long will matter far more than whether the top speed is 10 or 12 mph.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Speed and Spec Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-pace-and-speed-chart/" class="card">
+            <div class="c-kicker">Chart</div>
+            <div class="c-title">Treadmill Pace and Speed Chart</div>
+            <p class="c-blurb">Every common speed in mph, minutes per mile and km/h.</p>
+          </a>
+          <a href="/treadmill-horsepower-guide/" class="card">
+            <div class="c-kicker">Spec Explainer</div>
+            <div class="c-title">What Horsepower Do I Need?</div>
+            <p class="c-blurb">CHP, peak HP and the motor rating that predicts survival.</p>
+          </a>
+          <a href="/treadmill-belt-size-guide/" class="card">
+            <div class="c-kicker">Spec Explainer</div>
+            <div class="c-title">Treadmill Belt Size Guide</div>
+            <p class="c-blurb">How long and wide a deck you need at your speed and height.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

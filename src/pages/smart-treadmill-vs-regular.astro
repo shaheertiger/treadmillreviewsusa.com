@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Smart vs Regular Treadmill (2026): Are Smart Treadmills Worth It?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/smart-treadmill-vs-regular/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,114 +109,74 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Who Should Buy Which", link: "#who-smart" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-smarttreadmillvsregular" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-smarttreadmillvsregular)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Smart Treadmill vs Regular Treadmill</h1>
+      <p class="ed-dek">
+        A smart treadmill is a regular treadmill with a computer bolted to the front and, usually, a monthly bill attached. Whether that is worth it depends less on the screen than on whether you will use the classes — and on how long you expect the computer to outlast its software.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Smart Treadmill vs <span class="text-[#5AA9FF]">Regular Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A smart treadmill is a regular treadmill with a computer bolted to the front and, usually, a monthly bill attached. Whether that is worth it depends less on the screen than on whether you will use the classes — and on how long you expect the computer to outlast its software.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#who-smart" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy Which
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Subscription prices, feature
-          sets and what works without a membership change often and differ by brand, model and
-          firmware. Where this page gives typical ranges or general patterns, check the specific
-          machine's current terms before you buy.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are Smart Treadmills Worth It? The Short Answer</a>
-          <a href="#what-smart-means" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What "Smart" Actually Means on a Treadmill</a>
-          <a href="#touchscreens" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Touchscreen: What It Adds and What It Costs</a>
-          <a href="#auto-adjust" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Auto-Adjusting Speed and Incline</a>
-          <a href="#subscriptions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Subscription Is the Real Price</a>
-          <a href="#bluetooth-ftms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Bluetooth and Third-Party Apps</a>
-          <a href="#failure-point" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Screen as a Failure Point</a>
-          <a href="#without-membership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Still Works Without the Membership</a>
-          <a href="#resale" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Resale Value</a>
-          <a href="#privacy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Privacy, Accounts and Your Data</a>
-          <a href="#who-smart" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy a Smart Treadmill</a>
-          <a href="#who-regular" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Who Should Buy a Regular Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The word "smart" covers a wide range on treadmill listings, from a Bluetooth chip that
           talks to your phone to a large touchscreen that streams live classes and changes your
           speed for you. The useful question is not whether smart features are good, but which ones
           you would pay for twice: once in the purchase price, and again every month.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Subscription prices, feature
+          sets and what works without a membership change often and differ by brand, model and
+          firmware. Where this page gives typical ranges or general patterns, check the specific
+          machine's current terms before you buy.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Are Smart Treadmills Worth It? The Short Answer</a></li>
+            <li><a href="#what-smart-means">What "Smart" Actually Means on a Treadmill</a></li>
+            <li><a href="#touchscreens">The Touchscreen: What It Adds and What It Costs</a></li>
+            <li><a href="#auto-adjust">Auto-Adjusting Speed and Incline</a></li>
+            <li><a href="#subscriptions">The Subscription Is the Real Price</a></li>
+            <li><a href="#bluetooth-ftms">Bluetooth and Third-Party Apps</a></li>
+            <li><a href="#failure-point">The Screen as a Failure Point</a></li>
+            <li><a href="#without-membership">What Still Works Without the Membership</a></li>
+            <li><a href="#resale">Resale Value</a></li>
+            <li><a href="#privacy">Privacy, Accounts and Your Data</a></li>
+            <li><a href="#who-smart">Who Should Buy a Smart Treadmill</a></li>
+            <li><a href="#who-regular">Who Should Buy a Regular Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are Smart Treadmills Worth It? The Short Answer</h2>
+          <h2>Are Smart Treadmills Worth It? The Short Answer</h2>
 <p>
             <strong>A smart treadmill is worth it if you will use trainer-led or scenic workouts
             several times a week for years, and you are comfortable paying a subscription for as
             long as you own it.</strong> For that person, auto-adjusting classes are a genuinely
-            effective motivator and remove the planning from every session. If that is you, our
-            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a>
-            compares the ecosystems.
+            effective motivator and remove the planning from every session. If that is you, our <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a> compares the ecosystems.
           </p>
           <p>
             <strong>For most other buyers, a regular treadmill with good mechanicals is the better
@@ -230,7 +195,7 @@ const schema = {
         </div>
 
         <div id="what-smart-means" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What "Smart" Actually Means on a Treadmill</h2>
+          <h2>What "Smart" Actually Means on a Treadmill</h2>
 <p>
             There is no standard definition, so it helps to separate four things that get bundled
             together under the label.
@@ -264,7 +229,7 @@ const schema = {
         </div>
 
         <div id="touchscreens" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Touchscreen: What It Adds and What It Costs</h2>
+          <h2>The Touchscreen: What It Adds and What It Costs</h2>
 <p>
             The touchscreen is the feature buyers see first, and it does make a difference to the
             experience of using the machine. Classes fill the time, scenic routes make a long walk
@@ -292,7 +257,7 @@ const schema = {
         </div>
 
         <div id="auto-adjust" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Auto-Adjusting Speed and Incline</h2>
+          <h2>Auto-Adjusting Speed and Incline</h2>
 <p>
             Of all the smart features, automatic control is the one that changes how you train. A
             class or route sets your speed and incline as it goes, so an interval session or a hilly
@@ -311,18 +276,14 @@ const schema = {
           <p>
             You can get structured variety without a smart platform. Most regular treadmills have
             built-in programmes that vary speed and incline, and a written session is easy to follow
-            from a phone. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts</a>
-            and
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts</a>
-            pages are written to be followed on any machine. The difference is that you have to press
+            from a phone. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts</a> and <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts</a> pages are written to be followed on any machine. The difference is that you have to press
             the buttons, which some people find perfectly fine and others find is exactly why they
             stop.
           </p>
         </div>
 
         <div id="subscriptions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Subscription Is the Real Price</h2>
+          <h2>The Subscription Is the Real Price</h2>
 <p>
             The purchase price of a smart treadmill is only part of what you pay for it. Most smart
             platforms run on a monthly or annual membership, and over the life of a machine the
@@ -333,11 +294,7 @@ const schema = {
             The right way to compare is total cost over the period you expect to own the machine:
             purchase price, delivery, and membership for five years at the current rate. On that
             basis a regular treadmill that costs more up front can be the cheaper machine by a wide
-            margin. Our page on
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
-            sets out the five-year arithmetic, and
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">Is iFIT worth it?</a>
-            works through it for the largest platform in the category.
+            margin. Our page on <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a> sets out the five-year arithmetic, and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">Is iFIT worth it?</a> works through it for the largest platform in the category.
           </p>
           <p>
             Two details deserve attention. Many smart treadmills come with a trial or an included
@@ -349,7 +306,7 @@ const schema = {
         </div>
 
         <div id="bluetooth-ftms" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Bluetooth, FTMS and Third-Party Apps</h2>
+          <h2>Bluetooth, FTMS and Third-Party Apps</h2>
 <p>
             The quiet development that changes this comparison is that many regular treadmills now
             speak to apps on your own devices.
@@ -371,9 +328,7 @@ const schema = {
           </p>
           <p>
             <strong>Wearables</strong> can record treadmill sessions on their own, and some can pair
-            with compatible machines for better data. Our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            covers how that works.
+            with compatible machines for better data. Our guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a> covers how that works.
           </p>
           <p>
             Put together, a regular treadmill with FTMS, a sturdy tablet holder and an app you
@@ -383,7 +338,7 @@ const schema = {
         </div>
 
         <div id="failure-point" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Screen as a Failure and Obsolescence Point</h2>
+          <h2>The Screen as a Failure and Obsolescence Point</h2>
 <p>
             A treadmill frame, deck and motor can reasonably last a decade or more with basic care.
             A built-in computer is a different kind of product. Its processor, storage and software
@@ -408,9 +363,7 @@ const schema = {
             screen, the more a screen fault takes the treadmill out of service. A machine with
             physical speed and incline controls and a basic manual mode is more resilient than one
             that cannot be operated without its software. Before buying, find out what manual
-            control looks like if the screen is slow, frozen or out of support. Our guide to a
-            <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a>
-            covers what to check when it happens.
+            control looks like if the screen is slow, frozen or out of support. Our guide to a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a> covers what to check when it happens.
           </p>
           <p>
             A regular console with a separate tablet sidesteps most of this. When the tablet ages,
@@ -419,7 +372,7 @@ const schema = {
         </div>
 
         <div id="without-membership" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Still Works Without the Membership</h2>
+          <h2>What Still Works Without the Membership</h2>
 <p>
             This is the question to ask a seller directly, in writing if possible, because the
             answer varies more than buyers expect and can change with software updates.
@@ -443,14 +396,12 @@ const schema = {
           <p>
             If you are buying a smart treadmill partly for its mechanical quality and expect to drop
             the membership eventually, the answers to these questions are part of the specification.
-            Our
-            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a>
-            covers how this works on NordicTrack and ProForm machines in more detail.
+            Our <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">iFIT guide</a> covers how this works on NordicTrack and ProForm machines in more detail.
           </p>
         </div>
 
         <div id="resale" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Resale Value</h2>
+          <h2>Resale Value</h2>
 <p>
             Buyers sometimes assume a smart treadmill will hold its value better because it had the
             more impressive feature list when new. In the used market the opposite is often true.
@@ -470,14 +421,12 @@ const schema = {
           <p>
             Whichever type you sell, transfer it cleanly: remove your account from the console,
             cancel or transfer any membership according to the platform's terms, and perform a
-            factory reset if the machine supports one. For used buyers, our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
-            covers what to check before handing over money.
+            factory reset if the machine supports one. For used buyers, our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a> covers what to check before handing over money.
           </p>
         </div>
 
         <div id="privacy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Privacy, Accounts and Your Data</h2>
+          <h2>Privacy, Accounts and Your Data</h2>
 <p>
             A smart treadmill is a connected device in your home, and it is reasonable to treat it
             like one.
@@ -505,7 +454,7 @@ const schema = {
         </div>
 
         <div id="who-smart" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy a Smart Treadmill</h2>
+          <h2>Who Should Buy a Smart Treadmill</h2>
 <p>
             The smart treadmill is the right purchase for a recognisable set of buyers.
           </p>
@@ -518,9 +467,7 @@ const schema = {
           <p>
             <strong>Walkers who want variety.</strong> Scenic routes with <a href="/best-auto-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>automatic incline</a> turn a
             long walk into something people actually look forward to, and incline walking is where a
-            lot of the training value lies. Our
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmills guide</a>
-            covers machines built for it.
+            lot of the training value lies. Our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline treadmills guide</a> covers machines built for it.
           </p>
           <p>
             <strong>Households that will share one platform.</strong> Several users on one membership
@@ -534,7 +481,7 @@ const schema = {
         </div>
 
         <div id="who-regular" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Who Should Buy a Regular Treadmill</h2>
+          <h2>Who Should Buy a Regular Treadmill</h2>
 <p>
             A regular treadmill is the better choice for anyone who already knows what they will do
             on it.
@@ -551,11 +498,7 @@ const schema = {
           </p>
           <p>
             <strong>Buyers on a fixed budget</strong> will usually get a better machine by putting the
-            screen money into mechanicals. Our guides to
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a>
-            and
-            <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs premium treadmills</a>
-            show where the money makes a difference.
+            screen money into mechanicals. Our guides to <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a> and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs premium treadmills</a> show where the money makes a difference.
           </p>
           <p>
             <strong>Anyone who dislikes accounts and recurring bills</strong> will be happier with a
@@ -564,141 +507,155 @@ const schema = {
             subscription later and cancel without consequences for the hardware.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are smart treadmills worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are worth it if you will use trainer-led or scenic classes several times a week for years and are happy to pay a subscription for most of the time you own the machine. If you mostly set a pace and watch TV, a regular treadmill with a better motor and deck is usually the better value.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between a smart treadmill and a regular treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A smart treadmill typically adds a built-in touchscreen, streamed classes, automatic speed and incline control, Wi-Fi and an account-based subscription. A regular treadmill has a simpler console and built-in programmes. Many regular models now also broadcast data over Bluetooth, so the gap is narrower than the marketing suggests.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a smart treadmill without a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually yes in some form, but what remains varies by brand, model and firmware. Some keep a fully usable manual mode; others reduce programmes, history or automatic control without a membership. Ask the seller exactly what works with no account and no subscription before you buy.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use my own apps on a regular treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes. Many treadmills broadcast speed and distance over Bluetooth FTMS, which compatible third-party apps can read, and some allow apps to control speed and incline. Support varies by model and firmware, so check the specific machine. Where there is no data output, a footpod or wearable can track the session instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What happens when a smart treadmill screen stops being supported?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on the machine. Older consoles may stop receiving updates, slow down or lose features, and if the treadmill is controlled mainly through the screen a fault can take it out of service. Machines with physical controls and a basic manual mode are more resilient. Check the console's warranty terms separately from the frame and motor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do smart treadmills hold their value better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often not. Used buyers are mainly paying for the motor, deck and frame, and a console that is already some years into its supported life, plus a subscription they may not want, tends to reduce what they will pay. A regular treadmill with a well-regarded drivetrain is usually easier to value and sell.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Choosing a Smart Treadmill</h2>
+          <p>Most regret with smart treadmills is about money spent on the wrong part of the machine, or a bill nobody budgeted for.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing purchase prices instead of five-year cost</h3>
+              <p>A smart treadmill with a membership can cost far more over five years than a pricier regular machine. Add the purchase price, delivery and the current membership rate for the years you expect to own it, and compare totals rather than sticker prices.</p>
+            </li>
+            <li>
+              <h3>Buying a big screen on a weak drivetrain</h3>
+              <p>The screen is the most visible feature and the least durable one. If the motor, deck and frame are marginal for your weight and pace, a large display will not make the machine last longer. Choose the mechanicals first and treat the screen as an option on top.</p>
+            </li>
+            <li>
+              <h3>Not asking what works without the membership</h3>
+              <p>Assuming a smart treadmill behaves like a regular machine once the membership lapses is a common surprise. Programmes, history or automatic control may be reduced. Ask the seller in writing what works with no account and no subscription.</p>
+            </li>
+            <li>
+              <h3>Leaving the account on the machine when selling</h3>
+              <p>A smart console can hold your profile, workout history and linked services. Before you sell or dispose of it, remove your account, deal with the membership under the platform terms and reset the console if it supports a factory reset.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Choosing a Smart Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most regret with smart treadmills is about money spent on the wrong part of the machine, or a bill nobody budgeted for.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing purchase prices instead of five-year cost</h3>
-              <p class="text-gray-700 text-sm m-0">A smart treadmill with a membership can cost far more over five years than a pricier regular machine. Add the purchase price, delivery and the current membership rate for the years you expect to own it, and compare totals rather than sticker prices.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a big screen on a weak drivetrain</h3>
-              <p class="text-gray-700 text-sm m-0">The screen is the most visible feature and the least durable one. If the motor, deck and frame are marginal for your weight and pace, a large display will not make the machine last longer. Choose the mechanicals first and treat the screen as an option on top.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not asking what works without the membership</h3>
-              <p class="text-gray-700 text-sm m-0">Assuming a smart treadmill behaves like a regular machine once the membership lapses is a common surprise. Programmes, history or automatic control may be reduced. Ask the seller in writing what works with no account and no subscription.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the account on the machine when selling</h3>
-              <p class="text-gray-700 text-sm m-0">A smart console can hold your profile, workout history and linked services. Before you sell or dispose of it, remove your account, deal with the membership under the platform terms and reset the console if it supports a factory reset.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Ownership Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Membership cost, life without it and the ten-year arithmetic.</p>
-            </a>
-            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Best Lists</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Without Subscriptions</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What you own vs what you rent, and the machines that need nothing extra.</p>
-            </a>
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Budget</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Much Should You Spend on a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where extra money changes the machine and where it does not.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy smart if you will use the classes.</strong> Trainer-led and
             scenic workouts with automatic speed and incline genuinely help some people train
             consistently, and for them the membership is the product. Count it in the price for
             every year you expect to own the machine.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             For everyone else, <strong class="text-white">a regular treadmill with better mechanicals
             and Bluetooth output</strong> is usually the better buy: a screen you can upgrade cheaply,
-            apps you can switch, and no bill to keep the machine useful. Compare the
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills that need no subscription</a>
-            before deciding.
+            apps you can switch, and no bill to keep the machine useful. Compare the <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">treadmills that need no subscription</a> before deciding.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/is-ifit-worth-it/">Is iFIT Worth It?</a></li>
+            <li><a href="/best-treadmills-without-subscriptions/">Best Treadmills Without Subscriptions</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Are smart treadmills worth it?</h3></summary>
+            <p class="faq-a">
+              They are worth it if you will use trainer-led or scenic classes several times a week for years and are happy to pay a subscription for most of the time you own the machine. If you mostly set a pace and watch TV, a regular treadmill with a better motor and deck is usually the better value.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between a smart treadmill and a regular treadmill?</h3></summary>
+            <p class="faq-a">
+              A smart treadmill typically adds a built-in touchscreen, streamed classes, automatic speed and incline control, Wi-Fi and an account-based subscription. A regular treadmill has a simpler console and built-in programmes. Many regular models now also broadcast data over Bluetooth, so the gap is narrower than the marketing suggests.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you use a smart treadmill without a subscription?</h3></summary>
+            <p class="faq-a">
+              Usually yes in some form, but what remains varies by brand, model and firmware. Some keep a fully usable manual mode; others reduce programmes, history or automatic control without a membership. Ask the seller exactly what works with no account and no subscription before you buy.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use my own apps on a regular treadmill?</h3></summary>
+            <p class="faq-a">
+              Often, yes. Many treadmills broadcast speed and distance over Bluetooth FTMS, which compatible third-party apps can read, and some allow apps to control speed and incline. Support varies by model and firmware, so check the specific machine. Where there is no data output, a footpod or wearable can track the session instead.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What happens when a smart treadmill screen stops being supported?</h3></summary>
+            <p class="faq-a">
+              It depends on the machine. Older consoles may stop receiving updates, slow down or lose features, and if the treadmill is controlled mainly through the screen a fault can take it out of service. Machines with physical controls and a basic manual mode are more resilient. Check the console's warranty terms separately from the frame and motor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do smart treadmills hold their value better?</h3></summary>
+            <p class="faq-a">
+              Often not. Used buyers are mainly paying for the motor, deck and frame, and a console that is already some years into its supported life, plus a subscription they may not want, tends to reduce what they will pay. A regular treadmill with a well-regarded drivetrain is usually easier to value and sell.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">Ownership Cost</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">Membership cost, life without it and the ten-year arithmetic.</p>
+          </a>
+          <a href="/best-treadmills-without-subscriptions/" class="card">
+            <div class="c-kicker">Best Lists</div>
+            <div class="c-title">Best Treadmills Without Subscriptions</div>
+            <p class="c-blurb">What you own vs what you rent, and the machines that need nothing extra.</p>
+          </a>
+          <a href="/how-much-should-you-spend-on-a-treadmill/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">How Much Should You Spend on a Treadmill?</div>
+            <p class="c-blurb">Where extra money changes the machine and where it does not.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

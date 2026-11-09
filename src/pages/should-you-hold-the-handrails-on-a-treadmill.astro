@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Should You Hold the Handrails on a Treadmill? (2026): When and Why";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/should-you-hold-the-handrails-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,46 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "How to Let Go Safely", link: "#how-to-stop" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-shouldyouholdthehandrailsonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-shouldyouholdthehandrailsonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Should You Hold the Handrails on a Treadmill?</h1>
+      <p class="ed-dek">
+        Yes, at the right moments, and anyone who needs them for balance should use them without apology. What most people are really asking is whether gripping the rails for a whole session is costing them anything. It is: less work, a changed stride, and a calorie figure that drifts further from the truth. Here is when to hold on, when to let go, and how to wean yourself off.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Should You Hold the Handrails <span class="text-[#5AA9FF]">on a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Yes, at the right moments, and anyone who needs them for balance should use them without apology. What most people are really asking is whether gripping the rails for a whole session is costing them anything. It is: less work, a changed stride, and a calorie figure that drifts further from the truth. Here is when to hold on, when to let go, and how to wean yourself off.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#when-to-hold" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            When to Hold On
-          </a>
-          <a href="#how-to-stop" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Stop Holding On
-          </a>
-        </div>
+        <a href="#when-to-hold" class="btn-ghost">When to Hold On</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The handrails on a treadmill are there for a reason, and the reason is safety: getting on,
+          getting off, steadying yourself while the belt changes speed, and giving support to people
+          who need it. They are not there to be held for the whole of a workout by someone who could
+          manage without them. Gripping or leaning on them habitually takes work away from your legs,
+          changes the way you stand and stride, and makes the console's calorie estimate — which
+          assumes your hands are free — even less reliable than it already is. This page explains
+          each of those effects, the one legitimate reason to grip the front of the console during a
+          session, and how to stop holding on without making yourself unsafe.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
           This is general guidance on using the machine — it is not medical, physiotherapy or
           coaching advice, and we are not qualified to give any of those. If you have a balance,
@@ -173,47 +160,27 @@ const schema = {
           higher console estimate) rather than putting a number on it, because the size depends on
           how hard you hold, how you lean and the speed and grade, and nobody can measure that from
           a console.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Hold the Handrails on a Treadmill? The Short Answer</a>
-          <a href="#when-to-hold" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. When Should You Hold the Handrails?</a>
-          <a href="#calories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Does Holding Onto the Treadmill Burn Fewer Calories?</a>
-          <a href="#console-estimates" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Does Holding On Make the Console Calories Further Off?</a>
-          <a href="#posture" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Does Holding the Rails Do to Your Posture and Stride?</a>
-          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Is Holding On Worst on an Incline?</a>
-          <a href="#heart-rate-grips" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What About the Heart-Rate Grips on the Handlebars?</a>
-          <a href="#who-should-hold" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Keep Holding On?</a>
-          <a href="#how-to-stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Do You Stop Holding the Handrails?</a>
-          <a href="#running-and-other-cases" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Is It Different When Running, Walking Backwards or on a Walking Pad?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should You Hold the Handrails on a Treadmill? The Short Answer</a></li>
+            <li><a href="#when-to-hold">When Should You Hold the Handrails?</a></li>
+            <li><a href="#calories">Does Holding Onto the Treadmill Burn Fewer Calories?</a></li>
+            <li><a href="#console-estimates">Why Does Holding On Make the Console Calories Further Off?</a></li>
+            <li><a href="#posture">What Does Holding the Rails Do to Your Posture and Stride?</a></li>
+            <li><a href="#incline">Why Is Holding On Worst on an Incline?</a></li>
+            <li><a href="#heart-rate-grips">What About the Heart-Rate Grips on the Handlebars?</a></li>
+            <li><a href="#who-should-hold">Who Should Keep Holding On?</a></li>
+            <li><a href="#how-to-stop">How Do You Stop Holding the Handrails?</a></li>
+            <li><a href="#running-and-other-cases">Is It Different When Running, Walking Backwards or on a Walking Pad?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The handrails on a treadmill are there for a reason, and the reason is safety: getting on,
-          getting off, steadying yourself while the belt changes speed, and giving support to people
-          who need it. They are not there to be held for the whole of a workout by someone who could
-          manage without them. Gripping or leaning on them habitually takes work away from your legs,
-          changes the way you stand and stride, and makes the console's calorie estimate — which
-          assumes your hands are free — even less reliable than it already is. This page explains
-          each of those effects, the one legitimate reason to grip the front of the console during a
-          session, and how to stop holding on without making yourself unsafe.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Hold the Handrails on a Treadmill? The Short Answer</h2>
+          <h2>Should You Hold the Handrails on a Treadmill? The Short Answer</h2>
 <p>
             <strong>Hold the handrails when you step on and off, when the speed or incline is
             changing, when you need to steady yourself, and throughout if you need support for
@@ -245,7 +212,7 @@ const schema = {
         </div>
 
         <div id="when-to-hold" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. When Should You Hold the Handrails?</h2>
+          <h2>When Should You Hold the Handrails?</h2>
 <p>
             You should hold the handrails at every moment when your footing is most at risk, which
             on a treadmill means transitions. Most of the falls and stumbles people describe happen
@@ -258,9 +225,7 @@ const schema = {
             speed, and as you step onto the moving belt. Do the same in reverse at the end: slow the
             belt right down, hold on, step off onto the side rails, and only then let the belt stop
             or step away. Never step onto a belt that is already moving at walking speed from a
-            standstill. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            cover the full start and stop routine, including clipping on the safety key before the
+            standstill. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> cover the full start and stop routine, including clipping on the safety key before the
             belt ever moves.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">When the speed or incline changes</h3>
@@ -291,7 +256,7 @@ const schema = {
         </div>
 
         <div id="calories" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Does Holding Onto the Treadmill Burn Fewer Calories?</h2>
+          <h2>Does Holding Onto the Treadmill Burn Fewer Calories?</h2>
 <p>
             Yes — holding onto the treadmill generally means you burn fewer calories than you would
             at the same speed and incline with your hands free, because your arms are taking some
@@ -318,15 +283,14 @@ const schema = {
           </p>
           <p>
             For the calorie arithmetic itself — how speed, incline and body weight combine into an
-            estimate, with tables — see our reference on
-            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>.
+            estimate, with tables — see our reference on <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>.
             The short version for this page is that every number in those tables assumes hands-free
             walking or running, and holding on moves you below them.
           </p>
         </div>
 
         <div id="console-estimates" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Does Holding On Make the Console Calories Further Off?</h2>
+          <h2>Why Does Holding On Make the Console Calories Further Off?</h2>
 <p>
             Holding on makes the console's calorie figure further off because the console has no
             idea you are doing it. It calculates the estimate from the belt speed, the incline, the
@@ -337,10 +301,7 @@ const schema = {
           <p>
             That matters because the console figure is already an estimate with generous
             assumptions. Many consoles use a default body weight if you do not enter yours, the
-            underlying equations describe an average person rather than you, and the <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium" data-autolink>displayed speed</a>
-            and incline are themselves not always exact. Our guide to whether
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calories are accurate</a>
-            goes through those sources of error. Holding on adds one more error, and it always
+            underlying equations describe an average person rather than you, and the <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium" data-autolink>displayed speed</a> and incline are themselves not always exact. Our guide to whether <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calories are accurate</a> goes through those sources of error. Holding on adds one more error, and it always
             pushes in the same direction: the display overstates what you did.
           </p>
           <p>
@@ -362,7 +323,7 @@ const schema = {
         </div>
 
         <div id="posture" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Does Holding the Rails Do to Your Posture and Stride?</h2>
+          <h2>What Does Holding the Rails Do to Your Posture and Stride?</h2>
 <p>
             Holding the rails changes your posture and stride, usually for the worse: you tend to
             lean (forward onto the console or back against your arms), your stride shortens or
@@ -387,9 +348,7 @@ const schema = {
             swing opposite to the legs and help to balance the rotation of the trunk. Clamp your hands
             to a rail and that rhythm goes. Many people respond by shuffling with shorter steps, or
             by walking with their feet closer to the front of the belt to stay near the rail, which
-            raises the chance of kicking the motor hood. Our guide to
-            <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a>
-            covers arm swing, belt position and posture for runners in more detail.
+            raises the chance of kicking the motor hood. Our guide to <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a> covers arm swing, belt position and posture for runners in more detail.
           </p>
           <p>
             <strong>Balance practice.</strong> One of the quiet benefits of walking is that every
@@ -402,7 +361,7 @@ const schema = {
         </div>
 
         <div id="incline" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Why Is Holding On Worst on an Incline?</h2>
+          <h2>Why Is Holding On Worst on an Incline?</h2>
 <p>
             Holding on matters most on an incline because incline is where most of the extra work
             comes from — lifting your body weight up the slope — and gripping the front rail lets
@@ -428,16 +387,12 @@ const schema = {
             Popular steep-incline walking routines are a common place for this habit to start,
             because the published settings are steep and people hold on to keep up. If you want
             an incline walk to do what it says, pick a grade you can manage without holding on and
-            raise it slowly. Our guide to
-            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
-            suggests starting points by goal and fitness, and the batch guide to
-            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>
-            explains why the hands-free version is the one worth doing.
+            raise it slowly. Our guide to <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a> suggests starting points by goal and fitness, and the batch guide to <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a> explains why the hands-free version is the one worth doing.
           </p>
         </div>
 
         <div id="heart-rate-grips" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What About the Heart-Rate Grips on the Handlebars?</h2>
+          <h2>What About the Heart-Rate Grips on the Handlebars?</h2>
 <p>
             The heart-rate grips are the one part of the handlebars you are meant to hold during a
             session — but only briefly, to take a reading, not for the whole workout. They work by
@@ -448,9 +403,7 @@ const schema = {
             Most people get the cleanest reading by holding the grips with both hands, gently but
             firmly, while walking smoothly or for a few seconds at a steady pace, then letting go.
             Readings tend to be least reliable while running, when the hands bounce on the pads and
-            the arm muscles add electrical noise of their own. Our guide to a
-            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart rate monitor that is not working</a>
-            explains why grip readings fall apart at speed and how to improve them.
+            the arm muscles add electrical noise of their own. Our guide to a <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium">treadmill heart rate monitor that is not working</a> explains why grip readings fall apart at speed and how to improve them.
           </p>
           <p>
             The trap is using the grips as a reason to hold on for the entire session in order to
@@ -469,7 +422,7 @@ const schema = {
         </div>
 
         <div id="who-should-hold" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Keep Holding On?</h2>
+          <h2>Who Should Keep Holding On?</h2>
 <p>
             Anyone who feels unsteady without the rails, or who has been advised to use support by a
             doctor or physical therapist, should keep holding on. The goal of walking on a treadmill
@@ -499,14 +452,12 @@ const schema = {
           </ul>
           <p>
             If you are choosing a machine with support in mind, longer side rails, a low step-up
-            height and a slow minimum speed make a real difference. Our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            explains what to look for, and the advice applies to anyone who will rely on the rails.
+            height and a slow minimum speed make a real difference. Our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> explains what to look for, and the advice applies to anyone who will rely on the rails.
           </p>
         </div>
 
         <div id="how-to-stop" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Do You Stop Holding the Handrails?</h2>
+          <h2>How Do You Stop Holding the Handrails?</h2>
 <p>
             The way to stop holding the handrails is to lower the speed or incline until you can walk
             comfortably with your hands free, then build back up gradually — not to let go at the
@@ -541,14 +492,12 @@ const schema = {
             Expect the first hands-free sessions to feel harder than the old held sessions did, even
             at lower settings. That is the point. Your legs are doing the whole job for the first
             time, and your heart rate will tell you so. Within a few weeks most people find they are
-            back near their old settings and doing considerably more work at them. Our guide to
-            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
-            has sensible starting speeds if you are resetting from scratch.
+            back near their old settings and doing considerably more work at them. Our guide to <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a> has sensible starting speeds if you are resetting from scratch.
           </p>
         </div>
 
         <div id="running-and-other-cases" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Is It Different When Running, Walking Backwards or on a Walking Pad?</h2>
+          <h2>Is It Different When Running, Walking Backwards or on a Walking Pad?</h2>
 <p>
             The principle is the same in every case — rails for transitions and genuine support,
             hands free otherwise — but the details shift a little depending on what you are
@@ -565,9 +514,7 @@ const schema = {
           <p>
             <strong>Walking backwards.</strong> Backwards walking is a case where a light hand on
             the rails is commonly suggested, at least while learning, because you cannot see where
-            you are on the belt. Keep the speed very low and the safety key attached. Our guide to
-            <a href="/walking-backwards-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking backwards on a treadmill</a>
-            covers how to start.
+            you are on the belt. Keep the speed very low and the safety key attached. Our guide to <a href="/walking-backwards-on-a-treadmill/" class="text-[#0F62FE] font-medium">walking backwards on a treadmill</a> covers how to start.
           </p>
           <p>
             <strong>Walking pads and under-desk treadmills.</strong> Many <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> have no
@@ -583,141 +530,156 @@ const schema = {
             to do, then go back to hands-free walking.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does holding onto the treadmill burn fewer calories?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Gripping or leaning on the rails lets your arms take some of your body weight or help pull you along, so your legs do less work and you burn less than you would hands-free at the same settings. The effect is small with a light touch and larger when leaning or hanging on an incline. The console does not know, so its figure stays the same.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it bad to hold onto the treadmill while walking?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is not bad if you need the support; safety comes first and the walking still counts. If you can walk safely without holding on, gripping the rails for the whole session reduces the work, encourages leaning and a shorter stride, and makes the calorie estimate less accurate. Lower the speed or incline until you can manage hands-free instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you hold the handrails on an incline treadmill walk?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Hold them while the incline is changing or if you need support, but try not to hang off the front rail during the walk. Leaning back with straight arms takes a large share of the climbing work away from your legs. If you cannot manage a grade hands-free, the grade is too steep for now, so lower it and build up gradually.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">When should I hold the treadmill handrails?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Hold them when stepping on and off, while the belt is starting or stopping, when speed or incline changes, when you reach for something, if you stumble or feel unwell, and throughout the session if you need them for balance. Keep the safety key clipped on as well, so the belt stops if you drift too far back.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need to hold the treadmill grips to get my heart rate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only briefly. The metal grip sensors read your heartbeat through your palms, so hold them with both hands for a few seconds to get a reading, then let go. Holding them for the whole session gives a lower, less natural workout, and grip readings are often unreliable while running. A chest strap or watch suits continuous monitoring.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I stop holding onto the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Lower the incline, then the speed, until you can walk comfortably with your hands free. Walk hands-free in short blocks, look ahead rather than down, stay in the middle of the belt, and lengthen the blocks over a week or two. Raise speed or incline one small step at a time. If balance is a concern, ask a physical therapist first.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Handrails</h2>
+          <p>Most handrail mistakes come from treating the rails as part of the workout rather than as safety equipment.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Letting go before you are ready</h3>
+              <p>Reading that holding on reduces the workout is not a reason to let go if you feel unsteady. A fall from a moving belt is a far worse outcome than a slightly easier session. If you need support, use it, keep the settings modest, keep the safety key on, and work towards hands-free walking only with confidence or a therapist's guidance.</p>
+            </li>
+            <li>
+              <h3>Keeping the settings and just holding on harder</h3>
+              <p>If you need the rails to keep up with a speed or incline, the settings are too high for hands-free walking. Holding on at those settings gives you an easier session than the display suggests and a calorie figure that overstates it. Lower the speed or grade instead, walk hands-free, and build back up.</p>
+            </li>
+            <li>
+              <h3>Holding the grips for a whole run to see heart rate</h3>
+              <p>Grip sensors are for quick spot readings, not continuous monitoring. Holding them throughout reduces the work, cramps your stride and often gives jumpy numbers at running speed. Take a reading for a few seconds and let go, or use a chest strap or a watch if you want heart rate on screen for the whole session.</p>
+            </li>
+            <li>
+              <h3>Grabbing the rail only after something goes wrong</h3>
+              <p>Transitions are when footing is most at risk, so the habit to build is holding on before you step on or off, before a speed change and before reaching for a bottle or screen. Reaching for the rail mid-stumble is harder and later than it needs to be. Hold first, then do the other thing.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Handrails</h2>
-          <p class="text-gray-700 leading-relaxed">Most handrail mistakes come from treating the rails as part of the workout rather than as safety equipment.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting go before you are ready</h3>
-              <p class="text-gray-700 text-sm m-0">Reading that holding on reduces the workout is not a reason to let go if you feel unsteady. A fall from a moving belt is a far worse outcome than a slightly easier session. If you need support, use it, keep the settings modest, keep the safety key on, and work towards hands-free walking only with confidence or a therapist's guidance.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Keeping the settings and just holding on harder</h3>
-              <p class="text-gray-700 text-sm m-0">If you need the rails to keep up with a speed or incline, the settings are too high for hands-free walking. Holding on at those settings gives you an easier session than the display suggests and a calorie figure that overstates it. Lower the speed or grade instead, walk hands-free, and build back up.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding the grips for a whole run to see heart rate</h3>
-              <p class="text-gray-700 text-sm m-0">Grip sensors are for quick spot readings, not continuous monitoring. Holding them throughout reduces the work, cramps your stride and often gives jumpy numbers at running speed. Take a reading for a few seconds and let go, or use a chest strap or a watch if you want heart rate on screen for the whole session.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Grabbing the rail only after something goes wrong</h3>
-              <p class="text-gray-700 text-sm m-0">Transitions are when footing is most at risk, so the habit to build is holding on before you step on or off, before a speed change and before reaching for a bottle or screen. Reaching for the rail mid-stumble is harder and later than it needs to be. Hold first, then do the other thing.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-calories-burned/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Calories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calories Burned</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Estimates by speed, incline and weight, and why holding the rails lowers them.</p>
-            </a>
-            <a href="/treadmill-safety-tips/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Safety</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Safety Tips</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Safety keys, getting on and off, clearance, children and pets.</p>
-            </a>
-            <a href="/treadmill-heart-rate-not-working/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Heart Rate</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Heart Rate Monitor Not Working?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How grip sensors work, why they fail while running, and what to use instead.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Hold the rails to get on and off, through speed changes, when
             anything unexpected happens, and throughout if you need support.</strong> Safety comes
             first, and nobody who needs the rails should feel they are exercising wrongly by using
             them.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you can walk safely hands-free, though, habitual gripping takes work from your legs,
             bends your posture and leaves the console overstating what you did. Lower the speed or
             incline until you can let go, then build back up. For how speed, incline and weight turn
-            into a calorie estimate, see our reference on
-            <a href="/treadmill-calories-burned/" class="text-[#5AA9FF] font-bold no-underline">treadmill calories burned</a>.
+            into a calorie estimate, see our reference on <a href="/treadmill-calories-burned/" class="text-[#5AA9FF] font-bold no-underline">treadmill calories burned</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-calories-burned/">Treadmill Calories Burned</a></li>
+            <li><a href="/treadmill-safety-tips/">Treadmill Safety Tips</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does holding onto the treadmill burn fewer calories?</h3></summary>
+            <p class="faq-a">
+              Yes. Gripping or leaning on the rails lets your arms take some of your body weight or help pull you along, so your legs do less work and you burn less than you would hands-free at the same settings. The effect is small with a light touch and larger when leaning or hanging on an incline. The console does not know, so its figure stays the same.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is it bad to hold onto the treadmill while walking?</h3></summary>
+            <p class="faq-a">
+              It is not bad if you need the support; safety comes first and the walking still counts. If you can walk safely without holding on, gripping the rails for the whole session reduces the work, encourages leaning and a shorter stride, and makes the calorie estimate less accurate. Lower the speed or incline until you can manage hands-free instead.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should you hold the handrails on an incline treadmill walk?</h3></summary>
+            <p class="faq-a">
+              Hold them while the incline is changing or if you need support, but try not to hang off the front rail during the walk. Leaning back with straight arms takes a large share of the climbing work away from your legs. If you cannot manage a grade hands-free, the grade is too steep for now, so lower it and build up gradually.
+            </p>
+          </details>
+          <details>
+            <summary><h3>When should I hold the treadmill handrails?</h3></summary>
+            <p class="faq-a">
+              Hold them when stepping on and off, while the belt is starting or stopping, when speed or incline changes, when you reach for something, if you stumble or feel unwell, and throughout the session if you need them for balance. Keep the safety key clipped on as well, so the belt stops if you drift too far back.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need to hold the treadmill grips to get my heart rate?</h3></summary>
+            <p class="faq-a">
+              Only briefly. The metal grip sensors read your heartbeat through your palms, so hold them with both hands for a few seconds to get a reading, then let go. Holding them for the whole session gives a lower, less natural workout, and grip readings are often unreliable while running. A chest strap or watch suits continuous monitoring.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I stop holding onto the treadmill?</h3></summary>
+            <p class="faq-a">
+              Lower the incline, then the speed, until you can walk comfortably with your hands free. Walk hands-free in short blocks, look ahead rather than down, stay in the middle of the belt, and lengthen the blocks over a week or two. Raise speed or incline one small step at a time. If balance is a concern, ask a physical therapist first.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-calories-burned/" class="card">
+            <div class="c-kicker">Calories</div>
+            <div class="c-title">Treadmill Calories Burned</div>
+            <p class="c-blurb">Estimates by speed, incline and weight, and why holding the rails lowers them.</p>
+          </a>
+          <a href="/treadmill-safety-tips/" class="card">
+            <div class="c-kicker">Safety</div>
+            <div class="c-title">Treadmill Safety Tips</div>
+            <p class="c-blurb">Safety keys, getting on and off, clearance, children and pets.</p>
+          </a>
+          <a href="/treadmill-heart-rate-not-working/" class="card">
+            <div class="c-kicker">Heart Rate</div>
+            <div class="c-title">Treadmill Heart Rate Monitor Not Working?</div>
+            <p class="c-blurb">How grip sensors work, why they fail while running, and what to use instead.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

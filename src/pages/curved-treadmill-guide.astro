@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Curved Treadmill Guide (2026): Benefits, Drawbacks and Curved vs Flat";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/curved-treadmill-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Buying Checklist", link: "#what-to-check" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-curvedtreadmillguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-curvedtreadmillguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Curved Treadmills: How They Work, Who They Suit and Who They Do Not</h1>
+      <p class="ed-dek">
+        A curved treadmill has no motor, no buttons and no set pace: the belt moves because you move it. That makes it brilliant for sprints and intervals and awkward for a long easy run. Here is how the design works, which of the claimed benefits are real, what it costs you in incline, space and money, and how to decide between curved, flat manual and motorised.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Curved Treadmills: <span class="text-[#5AA9FF]">How They Work, Who They Suit and Who They Do Not</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A curved treadmill has no motor, no buttons and no set pace: the belt moves because you move it. That makes it brilliant for sprints and intervals and awkward for a long easy run. Here is how the design works, which of the claimed benefits are real, what it costs you in incline, space and money, and how to decide between curved, flat manual and motorised.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#benefits" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Benefits: Real and Claimed
-          </a>
-          <a href="#who-should-not" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Not Buy One
-          </a>
-        </div>
+        <a href="#benefits" class="btn-ghost">Benefits: Real and Claimed</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a guide to how a type of equipment works and who it suits — it is
-          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. Claims about energy cost, foot strike and injury on curved treadmills are reported
-          by manufacturers, coaches and owners; we have not measured them ourselves and we label
-          them accordingly. If you have an injury, a condition affecting your heart, joints or
-          balance, or any concern about sprint training, talk to a doctor or physical therapist
-          before using one.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are Curved Treadmills Worth It? The Short Answer</a>
-          <a href="#how-it-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How a Curved Treadmill Works</a>
-          <a href="#benefits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Claimed Benefits, and How Much of Each Is Real</a>
-          <a href="#drawbacks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Drawbacks, Honestly</a>
-          <a href="#who-they-suit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Who a Curved Treadmill Suits</a>
-          <a href="#who-should-not" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Who Should Not Buy One</a>
-          <a href="#curved-vs-flat-vs-motorised" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Curved vs Flat Manual vs Motorised</a>
-          <a href="#learning-to-use-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Learning to Use a Curved Treadmill</a>
-          <a href="#what-to-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What to Check Before Buying a Curved Treadmill</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Our View: A Specialist Tool, Not a Better Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Curved treadmills arrived in commercial gyms and sports facilities first and have been
           working their way into home gyms since. They look dramatic, they are usually expensive,
           and the marketing around them makes claims about effort, form and injury that deserve
@@ -207,8 +145,37 @@ const schema = {
           running and a poor choice for most of what people buy treadmills to do.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This is a guide to how a type of equipment works and who it suits — it is
+          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
+          those. Claims about energy cost, foot strike and injury on curved treadmills are reported
+          by manufacturers, coaches and owners; we have not measured them ourselves and we label
+          them accordingly. If you have an injury, a condition affecting your heart, joints or
+          balance, or any concern about sprint training, talk to a doctor or physical therapist
+          before using one.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Are Curved Treadmills Worth It? The Short Answer</a></li>
+            <li><a href="#how-it-works">How a Curved Treadmill Works</a></li>
+            <li><a href="#benefits">The Claimed Benefits, and How Much of Each Is Real</a></li>
+            <li><a href="#drawbacks">The Drawbacks, Honestly</a></li>
+            <li><a href="#who-they-suit">Who a Curved Treadmill Suits</a></li>
+            <li><a href="#who-should-not">Who Should Not Buy One</a></li>
+            <li><a href="#curved-vs-flat-vs-motorised">Curved vs Flat Manual vs Motorised</a></li>
+            <li><a href="#learning-to-use-one">Learning to Use a Curved Treadmill</a></li>
+            <li><a href="#what-to-check">What to Check Before Buying a Curved Treadmill</a></li>
+            <li><a href="#verdict">Our View: A Specialist Tool, Not a Better Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are Curved Treadmills Worth It? The Short Answer</h2>
+          <h2>Are Curved Treadmills Worth It? The Short Answer</h2>
 <p>
             A <strong>curved treadmill</strong> is a non-motorised treadmill with a concave running
             surface, usually made of rubber-topped slats on a bearing-mounted belt. There is no
@@ -229,14 +196,12 @@ const schema = {
             space or budget. Most curved treadmills have no incline control, they are heavy and do
             not fold, they are generally priced at the premium end alongside commercial machines,
             and holding a steady easy pace on one takes more concentration than it does on a
-            motorised belt. Our
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorised treadmill comparison</a>
-            sets out the broader trade-off; this page is about the curved design specifically.
+            motorised belt. Our <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorised treadmill comparison</a> sets out the broader trade-off; this page is about the curved design specifically.
           </p>
         </div>
 
         <div id="how-it-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How a Curved Treadmill Works</h2>
+          <h2>How a Curved Treadmill Works</h2>
 <p>
             The design is simple enough to explain in a paragraph and subtle enough that it takes
             most people a few sessions to feel natural on one.
@@ -276,7 +241,7 @@ const schema = {
         </div>
 
         <div id="benefits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Claimed Benefits, and How Much of Each Is Real</h2>
+          <h2>The Claimed Benefits, and How Much of Each Is Real</h2>
 <p>
             Curved treadmill marketing makes a consistent set of claims. Some follow directly from
             the physics, some are widely reported by users and coaches, and one or two are mostly
@@ -298,14 +263,11 @@ const schema = {
             the belt. Most people naturally shift to landing under or slightly ahead of the hips
             on the midfoot. Whether that is better for you is a separate question that depends on
             your body and history; it is a change, not automatically an improvement, and our guide
-            to <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a>
-            goes into foot strike with more nuance.</li>
+            to <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a> goes into foot strike with more nuance.</li>
             <li><strong>No electricity — simply true.</strong> There is no motor to power, no
             plug, no breaker to trip. For a garage or shed with no outlet, or someone who dislikes
             the running cost, it is a genuine advantage, although the actual cost of running a
-            motorised treadmill is smaller than people assume; our guide to
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a>
-            puts a figure on it.</li>
+            motorised treadmill is smaller than people assume; our guide to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a> puts a figure on it.</li>
             <li><strong>Sprint-friendly — true, and the strongest case for the design.</strong> A
             motorised belt has a top speed and an acceleration ramp; a curved belt goes as fast as
             you can drive it, right now. Accelerating from a jog to a flat-out sprint and back is
@@ -328,7 +290,7 @@ const schema = {
         </div>
 
         <div id="drawbacks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Drawbacks, Honestly</h2>
+          <h2>The Drawbacks, Honestly</h2>
 <p>
             The drawbacks are not small, and they are the reason curved treadmills remain a
             minority choice at home despite decades in gyms.
@@ -337,9 +299,7 @@ const schema = {
             <li><strong>Price.</strong> Curved treadmills are generally priced as commercial
             equipment, and the better-known models sit at or above the top of the home-treadmill
             market. There are cheaper ones, usually with continuous belts or lighter frames, but
-            even those are not budget machines. Our guide to
-            <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">treadmills over $2,500</a>
-            covers the price band most of them live in.</li>
+            even those are not budget machines. Our guide to <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">treadmills over $2,500</a> covers the price band most of them live in.</li>
             <li><strong>No incline on most.</strong> The curve gives a fixed geometry. A small
             number of designs offer adjustable incline, but the large majority do not, and the
             resistance setting is not a substitute: it makes the belt harder to turn, which is a
@@ -376,7 +336,7 @@ const schema = {
         </div>
 
         <div id="who-they-suit" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Who a Curved Treadmill Suits</h2>
+          <h2>Who a Curved Treadmill Suits</h2>
 <p>
             Matching the machine to the user is the whole decision here, so it is worth being
             concrete.
@@ -387,11 +347,7 @@ const schema = {
             repeat sprints for a field sport — a curved treadmill is close to ideal. The instant
             acceleration, the self-limiting speed and the absence of a motor to catch up with you
             make it safer and more effective for this than a motorised belt, which has a top speed
-            and a ramp. Our
-            <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>
-            and
-            <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout guide</a>
-            both work on a curved machine, and arguably work better there.
+            and a ramp. Our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a> and <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout guide</a> both work on a curved machine, and arguably work better there.
           </p>
           <p>
             <strong>Athletes and coaches.</strong> Team-sport athletes, track sprinters doing
@@ -402,9 +358,7 @@ const schema = {
           <p>
             <strong>Gyms and shared facilities.</strong> No electrical supply, no controller to
             fail, no deck to lubricate, and a surface that survives heavy use. That is why they
-            appear in commercial gyms, and our guide to
-            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>
-            explains the construction standards they share.
+            appear in commercial gyms, and our guide to <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a> explains the construction standards they share.
           </p>
           <p>
             <strong>People who want no electronics.</strong> Some buyers simply want a machine with
@@ -420,7 +374,7 @@ const schema = {
         </div>
 
         <div id="who-should-not" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Who Should Not Buy One</h2>
+          <h2>Who Should Not Buy One</h2>
 <p>
             This list is longer, and it describes the majority of home treadmill buyers.
           </p>
@@ -469,7 +423,7 @@ const schema = {
         </div>
 
         <div id="curved-vs-flat-vs-motorised" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Curved vs Flat Manual vs Motorised</h2>
+          <h2>Curved vs Flat Manual vs Motorised</h2>
 <p>
             There are three distinct categories here, and conflating the two manual ones is a
             common mistake.
@@ -509,15 +463,13 @@ const schema = {
             commercial-grade machine with nothing electrical in it, consider curved — and consider
             whether you also need a motorised machine for everything else, because many serious
             buyers end up with both. For a home that only has room for one machine, our guide to
-            putting a
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill in your home</a>
-            is a useful comparison point, since curved machines sit in the same weight and footprint
+            putting a <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill in your home</a> is a useful comparison point, since curved machines sit in the same weight and footprint
             class.
           </p>
         </div>
 
         <div id="learning-to-use-one" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Learning to Use a Curved Treadmill</h2>
+          <h2>Learning to Use a Curved Treadmill</h2>
 <p>
             If you do buy one, or encounter one at a gym, the first few sessions go better with
             some guidance.
@@ -553,12 +505,11 @@ const schema = {
         </div>
 
         <div id="what-to-check" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What to Check Before Buying a Curved Treadmill</h2>
+          <h2>What to Check Before Buying a Curved Treadmill</h2>
 <p>
             Because this is a smaller market with a wide spread of quality, the checklist is a
             little different from a motorised machine's. This page gives no model specifications —
-            our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
-            roundup does — and these are the questions to put to any listing or showroom.
+            our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a> roundup does — and these are the questions to put to any listing or showroom.
           </p>
           <ul>
             <li><strong>Slat belt or continuous belt?</strong> Slats are the premium design:
@@ -597,7 +548,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Our View: A Specialist Tool, Not a Better Treadmill</h2>
+          <h2>Our View: A Specialist Tool, Not a Better Treadmill</h2>
 <p>
             The simplest honest summary is that a curved treadmill is not an upgrade on a motorised
             treadmill. It is a different machine that is better at a narrow set of things and
@@ -623,145 +574,158 @@ const schema = {
             amount of reading substitutes for that.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a curved treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A non-motorised treadmill with a concave, bowl-shaped running surface, usually made of rubber-topped slats on bearings. Your foot lands on the front slope and drives the belt backwards, so the belt moves at whatever speed you make it move and slows when you ease off. There is no motor, no speed setting and, on most models, no incline adjustment.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are curved treadmills harder than regular treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At a given pace, running on a curved treadmill is commonly reported to feel harder and to raise heart rate more than on a motorised belt, because you drive the belt yourself and hold position on a slope. How much harder depends on the machine, any resistance setting and the runner. We have not measured it, so treat specific percentages you see quoted as estimates.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are curved treadmills good for walking?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They work for walking, but they are not the best tool for it. Most have no incline, walking still needs attention to position on the curve, and the price buys a far more capable motorised walking machine. A walker who wants incline, a set pace and programmes should choose a motorised treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do curved treadmills have incline?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most do not. The curve is a fixed shape and the only adjustment on the majority of machines is belt resistance, which makes the belt harder to turn rather than tilting the surface. A small number of designs offer adjustable incline. If incline is important to you, check this specifically or look at a motorised machine instead.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a curved treadmill good for beginners?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not. Beginners benefit from setting a pace and holding it, from programmes that progress sessions, and from a belt that does not accelerate when form wobbles. A curved treadmill offers none of those and has its own learning curve. A confident runner who wants sprint and interval work is the better fit; a beginner is better served by a motorised machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much do curved treadmills cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are generally priced as commercial equipment, with the better-known slat-belt machines sitting at or above the top of the home-treadmill market, and cheaper continuous-belt designs below that but still well above a typical motorised home treadmill. Check current prices, and compare what a motorised machine with incline and a long warranty offers at the same figure.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying a Curved Treadmill</h2>
+          <p>Curved treadmills disappoint when they are bought for the wrong job. These four cover most of the regrets owners describe.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying one for walking or easy running</h3>
+              <p>The design is at its best for sprints and intervals and at its weakest for steady easy pace and incline walking, which is most of what home treadmills are used for. Be honest about your actual sessions. If most of them are forty minutes at a conversational pace, a motorised machine with incline will serve you better and cost less.</p>
+            </li>
+            <li>
+              <h3>Confusing it with a flat manual treadmill</h3>
+              <p>A cheap flat manual treadmill and a curved slat-belt machine share only the absence of a motor. One is a light, foldable walking device; the other is heavy commercial equipment built for running hard. Expecting curved-treadmill performance from a flat manual, or a flat manual price from a curved machine, leads to disappointment either way.</p>
+            </li>
+            <li>
+              <h3>Not measuring the room or the route in</h3>
+              <p>Curved treadmills are long, heavy and do not fold, and the running surface sits high. Measure the floor space, the ceiling height for your tallest user, the doorways and the stairs before ordering, and confirm how the machine will be delivered and assembled. A machine that cannot reach the room is an expensive problem.</p>
+            </li>
+            <li>
+              <h3>Skipping the test run</h3>
+              <p>More than any other treadmill type, this one divides people, and the learning curve means a first minute is not a fair trial. Find a gym with one and run on it several times across a couple of sessions. If it clicks, buy with confidence; if it never feels natural, you have saved yourself a premium purchase and a large object in the spare room.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying a Curved Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Curved treadmills disappoint when they are bought for the wrong job. These four cover most of the regrets owners describe.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying one for walking or easy running</h3>
-              <p class="text-gray-700 text-sm m-0">The design is at its best for sprints and intervals and at its weakest for steady easy pace and incline walking, which is most of what home treadmills are used for. Be honest about your actual sessions. If most of them are forty minutes at a conversational pace, a motorised machine with incline will serve you better and cost less.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Confusing it with a flat manual treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">A cheap flat manual treadmill and a curved slat-belt machine share only the absence of a motor. One is a light, foldable walking device; the other is heavy commercial equipment built for running hard. Expecting curved-treadmill performance from a flat manual, or a flat manual price from a curved machine, leads to disappointment either way.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the room or the route in</h3>
-              <p class="text-gray-700 text-sm m-0">Curved treadmills are long, heavy and do not fold, and the running surface sits high. Measure the floor space, the ceiling height for your tallest user, the doorways and the stairs before ordering, and confirm how the machine will be delivered and assembled. A machine that cannot reach the room is an expensive problem.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the test run</h3>
-              <p class="text-gray-700 text-sm m-0">More than any other treadmill type, this one divides people, and the learning curve means a first minute is not a fair trial. Find a gym with one and run on it several times across a couple of sessions. If it clicks, buy with confidence; if it never feels natural, you have saved yourself a premium purchase and a large object in the spare room.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Comparison Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/manual-vs-motorized-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Manual vs Motorized Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The broader trade-off between self-powered and motor-driven belts.</p>
-            </a>
-            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Commercial</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What gym-grade construction means and whether it belongs at home.</p>
-            </a>
-            <a href="/treadmill-sprint-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Sprint Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sprint sessions that suit a curved belt, and how to do them on a motorised one.</p>
-            </a>
-            <a href="/sb-fitness-ct550-curved-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Curved</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">SB Fitness CT550 Curved Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">A curved treadmill is a specialist tool, not a better treadmill.</strong>
-            For sprints, intervals, resisted running and a commercial-grade machine with no
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">A curved treadmill is a specialist tool, not a better treadmill.</strong> For sprints, intervals, resisted running and a commercial-grade machine with no
             electronics, it is excellent. For walking with incline, easy steady running, set paces,
             programmes, small rooms and tight budgets, a motorised machine does more for less.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Try one at a gym before buying, check the slat belt, rails, resistance and footprint, and
-            measure the route into the room. If you are still weighing the broader question, our
-            <a href="/manual-vs-motorized-treadmill/" class="text-[#5AA9FF] font-bold no-underline">manual vs motorised comparison</a>
-            covers the ground.
+            measure the route into the room. If you are still weighing the broader question, our <a href="/manual-vs-motorized-treadmill/" class="text-[#5AA9FF] font-bold no-underline">manual vs motorised comparison</a> covers the ground.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/manual-vs-motorized-treadmill/">Manual vs Motorized Treadmill</a></li>
+            <li><a href="/commercial-treadmills/">Commercial Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a curved treadmill?</h3></summary>
+            <p class="faq-a">
+              A non-motorised treadmill with a concave, bowl-shaped running surface, usually made of rubber-topped slats on bearings. Your foot lands on the front slope and drives the belt backwards, so the belt moves at whatever speed you make it move and slows when you ease off. There is no motor, no speed setting and, on most models, no incline adjustment.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are curved treadmills harder than regular treadmills?</h3></summary>
+            <p class="faq-a">
+              At a given pace, running on a curved treadmill is commonly reported to feel harder and to raise heart rate more than on a motorised belt, because you drive the belt yourself and hold position on a slope. How much harder depends on the machine, any resistance setting and the runner. We have not measured it, so treat specific percentages you see quoted as estimates.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are curved treadmills good for walking?</h3></summary>
+            <p class="faq-a">
+              They work for walking, but they are not the best tool for it. Most have no incline, walking still needs attention to position on the curve, and the price buys a far more capable motorised walking machine. A walker who wants incline, a set pace and programmes should choose a motorised treadmill.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do curved treadmills have incline?</h3></summary>
+            <p class="faq-a">
+              Most do not. The curve is a fixed shape and the only adjustment on the majority of machines is belt resistance, which makes the belt harder to turn rather than tilting the surface. A small number of designs offer adjustable incline. If incline is important to you, check this specifically or look at a motorised machine instead.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a curved treadmill good for beginners?</h3></summary>
+            <p class="faq-a">
+              Usually not. Beginners benefit from setting a pace and holding it, from programmes that progress sessions, and from a belt that does not accelerate when form wobbles. A curved treadmill offers none of those and has its own learning curve. A confident runner who wants sprint and interval work is the better fit; a beginner is better served by a motorised machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much do curved treadmills cost?</h3></summary>
+            <p class="faq-a">
+              They are generally priced as commercial equipment, with the better-known slat-belt machines sitting at or above the top of the home-treadmill market, and cheaper continuous-belt designs below that but still well above a typical motorised home treadmill. Check current prices, and compare what a motorised machine with incline and a long warranty offers at the same figure.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Comparison Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/manual-vs-motorized-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Manual vs Motorized Treadmill</div>
+            <p class="c-blurb">The broader trade-off between self-powered and motor-driven belts.</p>
+          </a>
+          <a href="/commercial-treadmills/" class="card">
+            <div class="c-kicker">Commercial</div>
+            <div class="c-title">Commercial Treadmills</div>
+            <p class="c-blurb">What gym-grade construction means and whether it belongs at home.</p>
+          </a>
+          <a href="/treadmill-sprint-workout/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Treadmill Sprint Workout</div>
+            <p class="c-blurb">Sprint sessions that suit a curved belt, and how to do them on a motorised one.</p>
+          </a>
+          <a href="/sb-fitness-ct550-curved-treadmill/" class="card">
+            <div class="c-kicker">Curved</div>
+            <div class="c-title">SB Fitness CT550 Curved Treadmill</div>
+            <p class="c-blurb">A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

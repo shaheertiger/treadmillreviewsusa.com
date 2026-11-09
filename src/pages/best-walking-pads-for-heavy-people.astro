@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Walking Pads for Heavy People (2026): 300 to 400 lb Picks";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-walking-pads-for-heavy-people/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -272,66 +277,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: MERACH NovaWalk W50 TrekPad", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestwalkingpadsforheavypeople" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestwalkingpadsforheavypeople)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Walking Pads for Heavy People</h1>
+      <p class="ed-dek">
+        Most walking pads are rated for 220 to 265 lb, and the few that claim more often disagree with their own manuals. Here are five high-capacity pads whose ratings we could check, what the number on the box does and does not tell you, and when a full treadmill is the safer buy.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Walking Pads <span class="text-[#5AA9FF]">for Heavy People</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most walking pads are rated for 220 to 265 lb, and the few that claim more often disagree with their own manuals. Here are five high-capacity pads whose ratings we could check, what the number on the box does and does not tell you, and when a full treadmill is the safer buy.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#capacity-margin" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Why Capacity Margin Matters
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#merach-novawalk-w50-trekpad"><img src="https://m.media-amazon.com/images/I/41N86eQUrbL._SL500_.jpg" alt="MERACH NovaWalk W50 TrekPad" width="500" height="500" decoding="async" /></a>
+          <a href="#lifespan-tx6-glowup"><img src="https://m.media-amazon.com/images/I/31wESmkNoZL._SL500_.jpg" alt="LifeSpan TX6-GlowUp" width="500" height="500" decoding="async" /></a>
+          <a href="#walkingpad-mx8"><img src="https://m.media-amazon.com/images/I/318wExIbelL._SL500_.jpg" alt="WalkingPad MX8" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+        <figcaption>MERACH NovaWalk W50 TrekPad · LifeSpan TX6-GlowUp · WalkingPad MX8</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          If you weigh 250 lb or more, most walking pads are not built for you, even when the
+          listing says otherwise. The typical pad is rated somewhere between 220 and 265 lb, and the
+          handful sold as heavy-duty quote figures — 300, 350, 400, occasionally 450 lb — that do
+          not always survive a look at the manual or a second listing for the same product. This
+          page lists the high-capacity pads whose ratings we could check against more than one
+          source, explains why the margin above your weight matters more than the headline
+          number, and says plainly when a full treadmill is the better machine.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.3k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#merach-novawalk-w50-trekpad">MERACH NovaWalk W50 TrekPad</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Premium:</span> <a href="#lifespan-tx6-glowup">LifeSpan TX6-GlowUp</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With Handles:</span> <a href="#walkingpad-mx8">WalkingPad MX8</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Low Profile:</span> <a href="#merach-w50-lite-trekpad">MERACH W50 Lite TrekPad</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With a Rail:</span> <a href="#urevo-foldimix-5l">UREVO FoldiMix 5L</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           walking pads. The specifications on this page were checked on 13 October 2026 against
           each brand's own product page (MERACH, LifeSpan, WalkingPad and UREVO), the retailer or
@@ -347,82 +368,29 @@ const schema = {
           exact unit before you order. Nothing on this page is medical advice. We earn a
           commission if you buy through the Amazon links on this page; it does not change which
           products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#merach-novawalk-w50-trekpad" class="font-bold text-gray-900 no-underline hover:underline">MERACH NovaWalk W50 TrekPad</a>
-            <a href="#merach-novawalk-w50-trekpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Premium:</span>
-            <a href="#lifespan-tx6-glowup" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TX6-GlowUp</a>
-            <a href="#lifespan-tx6-glowup" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best With Handles:</span>
-            <a href="#walkingpad-mx8" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad MX8</a>
-            <a href="#walkingpad-mx8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Low Profile:</span>
-            <a href="#merach-w50-lite-trekpad" class="font-bold text-gray-900 no-underline hover:underline">MERACH W50 Lite TrekPad</a>
-            <a href="#merach-w50-lite-trekpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best With a Rail:</span>
-            <a href="#urevo-foldimix-5l" class="font-bold text-gray-900 no-underline hover:underline">UREVO FoldiMix 5L</a>
-            <a href="#urevo-foldimix-5l" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Walking Pads for Heavy People</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Walking Pads</a>
-          <a href="#capacity-margin" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Capacity Margin Matters on a Walking Pad</a>
-          <a href="#deck-frame-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Deck, Frame and Belt Width</a>
-          <a href="#motor-rating" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Motor: Read the Continuous Rating, Not the Peak</a>
-          <a href="#handrail-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Should You Get a Handrail Model?</a>
-          <a href="#full-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When a Full Treadmill Is the Better Choice</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Walking Pads for Heavy People</a></li>
+            <li><a href="#how-we-chose">How We Chose These Walking Pads</a></li>
+            <li><a href="#capacity-margin">Why Capacity Margin Matters on a Walking Pad</a></li>
+            <li><a href="#deck-frame-belt">Deck, Frame and Belt Width</a></li>
+            <li><a href="#motor-rating">Motor: Read the Continuous Rating, Not the Peak</a></li>
+            <li><a href="#handrail-models">Should You Get a Handrail Model?</a></li>
+            <li><a href="#full-treadmill">When a Full Treadmill Is the Better Choice</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          If you weigh 250 lb or more, most walking pads are not built for you, even when the
-          listing says otherwise. The typical pad is rated somewhere between 220 and 265 lb, and the
-          handful sold as heavy-duty quote figures — 300, 350, 400, occasionally 450 lb — that do
-          not always survive a look at the manual or a second listing for the same product. This
-          page lists the high-capacity pads whose ratings we could check against more than one
-          source, explains why the margin above your weight matters more than the headline
-          number, and says plainly when a full treadmill is the better machine.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five pads, each with a different reason to exist. The short version: the MERACH NovaWalk
             W50 TrekPad for most heavier walkers, the LifeSpan TX6-GlowUp if you walk for hours every
-            working day and can pay for it, and the WalkingPad MX8 if you want something to hold. Why margin matters is explained in
-            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens when you exceed a treadmill weight limit</a>.
+            working day and can pay for it, and the WalkingPad MX8 if you want something to hold. Why margin matters is explained in <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens when you exceed a treadmill weight limit</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -441,8 +409,7 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you only read one more section, read
-            <a href="#capacity-margin" class="text-[#0F62FE] font-medium">why capacity margin matters</a>.
+            If you only read one more section, read <a href="#capacity-margin" class="text-[#0F62FE] font-medium">why capacity margin matters</a>.
             A pad rated exactly at your weight is a pad running at its limit every time you step on
             it, and on a machine this light that shows up quickly in the belt, the deck and the
             motor.
@@ -450,7 +417,7 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Walking Pads for Heavy People</h2>
+          <h2>The 5 Best Walking Pads for Heavy People</h2>
 <p>
             Two 400 lb pads, one 350 lb pad, one 330 lb pad with handles, and one handrail model whose
             rating we could not pin down but whose maker is unusually candid about it. Each entry
@@ -459,78 +426,67 @@ const schema = {
             why one card has no capacity at all: on that product, the sources disagreed.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Walking Pads</h2>
+          <h2>How We Chose These Walking Pads</h2>
 <p>
             We have not tested these <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, and nothing on this page should be read as if we
             had. The picks were made from published specifications, manufacturer and retailer
@@ -549,8 +505,7 @@ const schema = {
           </p>
           <p>
             Beyond capacity, we looked for <strong>a motor rating that means something</strong> —
-            ideally a published continuous figure rather than a <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium" data-autolink>peak horsepower</a> number alone —
-            <strong>a belt wide enough for a broader stance</strong>, and <strong>a seller with
+            ideally a published continuous figure rather than a <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium" data-autolink>peak horsepower</a> number alone — <strong>a belt wide enough for a broader stance</strong>, and <strong>a seller with
             written warranty terms</strong>. We also searched the US Consumer Product Safety
             Commission's notices for every brand on the shortlist. Sperax, which sells walking pads
             marketed at high capacities, is excluded for that reason: in April 2026 the CPSC warned
@@ -558,8 +513,7 @@ const schema = {
             uncontrolled speed changes, falls and overheating.
           </p>
           <p>
-            Some pads you may have seen recommended elsewhere are missing on purpose. LifeSpan's
-            <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>TR1200</a> desk treadmill is quoted at 330 lb, 350 lb and 400 lb in different places,
+            Some pads you may have seen recommended elsewhere are missing on purpose. LifeSpan's <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>TR1200</a> desk treadmill is quoted at 330 lb, 350 lb and 400 lb in different places,
             depending on which version and which listing you read, and the current model was sold
             out on LifeSpan's own store. WalkingPad's A1 Pro is sold in both 230 lb and 300 lb
             versions under the same name, and the 300 lb version was not reliably in stock. Pads
@@ -569,7 +523,7 @@ const schema = {
         </div>
 
         <div id="capacity-margin" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Capacity Margin Matters on a Walking Pad</h2>
+          <h2>Why Capacity Margin Matters on a Walking Pad</h2>
 <p>
             A weight capacity is the most heavily marketed number on a high-capacity pad and the
             least well defined. Brands do not publish how they arrive at it, whether it assumes
@@ -578,9 +532,7 @@ const schema = {
             operating point.
           </p>
           <p>
-            The rule of thumb in our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a>
-            is to buy a machine rated at least 50 lb above your weight if you only walk, and more if
+            The rule of thumb in our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a> is to buy a machine rated at least 50 lb above your weight if you only walk, and more if
             you will jog or if several people will use it. On a walking pad that margin matters more
             than on a full treadmill, for three reasons.
           </p>
@@ -609,8 +561,7 @@ const schema = {
             same product is often listed at different capacities in different places. On one pad on
             this page, the brand says 400 lb while European listings say 136 kg, about 300 lb. On a
             pad we excluded, the US listing, the Amazon listing and the European manual gave three
-            different figures between 300 and 400 lb. In our list of
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>,
+            different figures between 300 and 400 lb. In our list of <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>,
             one maker's own pages quoted both 330 and 400 lb for the same pad. When figures
             conflict, plan on the lowest one, and get the seller to confirm the rating for your
             exact model number in writing before you order.
@@ -625,7 +576,7 @@ const schema = {
         </div>
 
         <div id="deck-frame-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Deck, Frame and Belt Width</h2>
+          <h2>Deck, Frame and Belt Width</h2>
 <p>
             Capacity is a single number, and the things that actually carry your weight are not.
             Three are worth checking on any high-capacity pad.
@@ -658,16 +609,14 @@ const schema = {
           </p>
           <p>
             <strong>Belt length</strong> matters too, especially for taller walkers, and the
-            general advice in our
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            applies here unchanged: 40 inches or more suits most adults at desk pace, and longer is
+            general advice in our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> applies here unchanged: 40 inches or more suits most adults at desk pace, and longer is
             more forgiving if you drift backwards while concentrating on a screen. The TX6's
             48-inch belt is the longest on this page.
           </p>
         </div>
 
         <div id="motor-rating" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Motor: Read the Continuous Rating, Not the Peak</h2>
+          <h2>Motor: Read the Continuous Rating, Not the Peak</h2>
 <p>
             Almost every pad advertises its motor in horsepower, and almost every one of those
             figures is a peak rating — what the motor can produce briefly, not what it can sustain.
@@ -700,15 +649,14 @@ const schema = {
             maximum session length is telling you something worth knowing.</li>
           </ul>
           <p>
-            Our explainer on <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC and DC treadmill motors</a>
-            covers how motor ratings work in more detail. The short version for a pad: ignore the
+            Our explainer on <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC and DC treadmill motors</a> covers how motor ratings work in more detail. The short version for a pad: ignore the
             peak horsepower, look for a continuous figure, and expect a pad with no published
             continuous rating to have a modest one.
           </p>
         </div>
 
         <div id="handrail-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Should You Get a Handrail Model?</h2>
+          <h2>Should You Get a Handrail Model?</h2>
 <p>
             A handrail on a walking pad is a steadying aid, not a support you can lean on. That
             distinction matters more for a heavier walker than for anyone else, for two reasons.
@@ -718,9 +666,7 @@ const schema = {
             for resting a hand on, for steadying yourself while the belt changes speed, and for
             stepping on and off. They are not designed to carry a large share of your body weight,
             and leaning on them hard and often loosens fixings and stresses the joint where the
-            rail meets the deck. Our guide to
-            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails</a>
-            explains when holding on is sensible and when it gets in the way.
+            rail meets the deck. Our guide to <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails</a> explains when holding on is sensible and when it gets in the way.
           </p>
           <p>
             Second, on many 2-in-1 pads, raising the rail is what unlocks higher speeds. If you are
@@ -734,9 +680,7 @@ const schema = {
             without reaching forward. The UREVO FoldiMix 5L has a single front rail with a desk tray
             that folds down flat. Side handles suit someone who wants a hand free to steady
             themselves at walking pace; a front rail suits someone who wants a desk surface and the
-            option to jog. Our list of the
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best walking pads with a handrail</a>
-            covers the wider category.
+            option to jog. Our list of the <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">best walking pads with a handrail</a> covers the wider category.
           </p>
           <p>
             If you need real support — a rail you can hold throughout, on both sides, that will
@@ -746,7 +690,7 @@ const schema = {
         </div>
 
         <div id="full-treadmill" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When a Full Treadmill Is the Better Choice</h2>
+          <h2>When a Full Treadmill Is the Better Choice</h2>
 <p>
             A high-capacity pad is a good answer to a specific question: how to walk at a desk, or in
             a small room, at a weight most pads are not built for. It is the wrong answer to several
@@ -756,21 +700,15 @@ const schema = {
             <strong>If you weigh more than about 300 to 320 lb,</strong> the margin even a 400 lb
             pad leaves is thinner than we would like for daily use. Full treadmills with confirmed
             ratings of 350 to 400 lb have larger motors, longer and wider decks, heavier frames and
-            longer warranties. Our guide to the
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best treadmills for heavy people</a>
-            covers those machines.
+            longer warranties. Our guide to the <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">best treadmills for heavy people</a> covers those machines.
           </p>
           <p>
             <strong>If you want to jog or run,</strong> a pad is a poor fit at any weight, and the
-            impact of running multiplies the load on a light deck. Our page on
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a>
-            explains the limits.
+            impact of running multiplies the load on a light deck. Our page on <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a> explains the limits.
           </p>
           <p>
             <strong>If you need something solid to hold,</strong> buy a treadmill with full-length
-            side rails and a low step-up height. The
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors guide</a>
-            covers machines built around stability, and most of its advice applies to anyone who
+            side rails and a low step-up height. The <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors guide</a> covers machines built around stability, and most of its advice applies to anyone who
             wants a rail they can rely on.
           </p>
           <p>
@@ -787,146 +725,158 @@ const schema = {
             chest discomfort.
           </p>
           <p>
-            And if you are still weighing up a pad against a treadmill in general, our comparison of
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pads and treadmills</a>
-            is a better starting point than any list of products.
+            And if you are still weighing up a pad against a treadmill in general, our comparison of <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pads and treadmills</a> is a better starting point than any list of products.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the highest weight capacity for a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The highest ratings we could confirm across more than one source were 400 lb, on the MERACH NovaWalk W50 TrekPad and the LifeSpan TX6-GlowUp. Some listings advertise 440 or 450 lb, but we could not find a manufacturer page or independent coverage to check those against, so we have not recommended them. Most walking pads are rated between 220 and 265 lb.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a 300 lb person use a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, on a pad with a confirmed rating well above 300 lb and a decent continuous motor rating, such as a 400 lb model, and for walking rather than running. Leave a margin of at least 50 lb, plan on the lowest capacity figure if listings disagree, and start with shorter sessions. Above about 320 lb, a full treadmill rated for heavier users is the safer choice.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much weight capacity margin should I leave?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At least 50 lb above your weight for walking, and more if you will jog, use it for long daily sessions or share it with others. A pad's rollers, deck and motor are small, so running it at its limit wears it faster than the same load on a full treadmill. If two listings for the same pad disagree on capacity, use the lower figure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do walking pad weight capacities differ between listings?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Budget pads are often sold under one name across a brand site, Amazon and other retailers, with listings written separately and specifications revised without a new model name. Some brands also rate capacity differently at walking and running speeds, and a few sell two capacity versions under the same name. Confirm the rating for your exact model number with the seller in writing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a walking pad with a handrail better for heavy people?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can help with balance, especially when stepping on and off or when the speed changes, but a pad's rail or handles are a steadying aid, not a support to lean on. They are bolted to a light deck and not built to carry much of your weight. If you need a rail you can rely on, a full treadmill with side rails is safer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does motor horsepower matter for heavier users?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, but the continuous rating matters, not the peak figure on the box. A heavier walker at slow speed asks the motor for sustained torque, which is what the continuous rating describes. Many pads advertised at 2.5 to 3.5 HP have continuous ratings under 1 HP. Look for a brand that publishes a continuous figure, such as MERACH's 1.25 HP on the W50 TrekPad.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Walking Pad as a Heavier User</h2>
+          <p>Two of these come from trusting a single number on a listing, and two from asking a pad to do a treadmill’s job.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying a pad rated exactly at your weight</h3>
+              <p>A pad rated at 300 lb is at its limit with a 300 lb walker on it, every session. On a machine with small rollers and a light deck that shows up as belt wear, motor heat and a shorter life. Leave at least 50 lb of margin for walking and more for long daily use, and if that pushes you past 400 lb, look at a full treadmill.</p>
+            </li>
+            <li>
+              <h3>Trusting the highest capacity figure you can find</h3>
+              <p>High-capacity pads are often listed at different ratings in different places, and the highest one is usually on the marketplace listing. Check the brand’s own page and, where you can, the manual. If they disagree, plan on the lowest figure, and ask the seller to confirm the rating for your exact model number in writing before you order.</p>
+            </li>
+            <li>
+              <h3>Judging the motor by peak horsepower</h3>
+              <p>A 3.5 HP figure on the box is almost always a peak rating. What carries a heavier walker through a long session is the continuous rating, which on many pads is under 1 HP. Prefer a brand that publishes a continuous figure, and treat a pad with only a peak number as having a modest motor.</p>
+            </li>
+            <li>
+              <h3>Leaning on a pad’s handrail for support</h3>
+              <p>A fold-up rail or side handles on a pad are bolted to a light deck and designed for a steadying hand. Leaning on them hard loosens fixings and puts strain where the rail meets the frame. If you need to hold on throughout or take weight off your legs, a treadmill with full-length side rails is the right machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Walking Pad as a Heavier User</h2>
-          <p class="text-gray-700 leading-relaxed">Two of these come from trusting a single number on a listing, and two from asking a pad to do a treadmill’s job.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a pad rated exactly at your weight</h3>
-              <p class="text-gray-700 text-sm m-0">A pad rated at 300 lb is at its limit with a 300 lb walker on it, every session. On a machine with small rollers and a light deck that shows up as belt wear, motor heat and a shorter life. Leave at least 50 lb of margin for walking and more for long daily use, and if that pushes you past 400 lb, look at a full treadmill.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the highest capacity figure you can find</h3>
-              <p class="text-gray-700 text-sm m-0">High-capacity pads are often listed at different ratings in different places, and the highest one is usually on the marketplace listing. Check the brand’s own page and, where you can, the manual. If they disagree, plan on the lowest figure, and ask the seller to confirm the rating for your exact model number in writing before you order.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging the motor by peak horsepower</h3>
-              <p class="text-gray-700 text-sm m-0">A 3.5 HP figure on the box is almost always a peak rating. What carries a heavier walker through a long session is the continuous rating, which on many pads is under 1 HP. Prefer a brand that publishes a continuous figure, and treat a pad with only a peak number as having a modest motor.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaning on a pad’s handrail for support</h3>
-              <p class="text-gray-700 text-sm m-0">A fold-up rail or side handles on a pad are bolted to a light deck and designed for a steadying hand. Leaning on them hard loosens fixings and puts strain where the rail meets the frame. If you need to hold on throughout or take weight off your legs, a treadmill with full-length side rails is the right machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related High-Capacity Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Heavy People</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Full-size treadmills with 350 to 400 lb ratings, longer decks and bigger motors.</p>
-            </a>
-            <a href="/treadmill-weight-capacity-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Weight Capacity Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the capacity figure means, how much margin to leave, and why running changes it.</p>
-            </a>
-            <a href="/walking-pad-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Belt size, motor, height, controls and warranty — everything to check on any pad.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            For most heavier walkers the <strong class="text-white">MERACH NovaWalk W50 TrekPad</strong>
-            is the pad to buy: a 400 lb rating that holds up across sources, a published continuous
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            For most heavier walkers the <strong class="text-white">MERACH NovaWalk W50 TrekPad</strong> is the pad to buy: a 400 lb rating that holds up across sources, a published continuous
             motor figure and a wide belt, for around $300. If you walk for hours every working day
             and can pay for it, the <strong class="text-white">LifeSpan TX6-GlowUp</strong> adds a
-            20-inch belt and a 10-year frame warranty; if you want handles, the
-            <strong class="text-white">WalkingPad MX8</strong> has them on both sides.
+            20-inch belt and a 10-year frame warranty; if you want handles, the <strong class="text-white">WalkingPad MX8</strong> has them on both sides.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, buy the margin, not the number. Plan on the lowest capacity any source
             gives, leave at least 50 lb above your weight, and if that rules out every pad, a full
-            treadmill is the better machine — start with the
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for heavy people</a>,
-            and read the
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#5AA9FF] font-bold no-underline">weight capacity guide</a>
-            first if you are unsure where you sit.
+            treadmill is the better machine — start with the <a href="/best-treadmills-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for heavy people</a>,
+            and read the <a href="/treadmill-weight-capacity-guide/" class="text-[#5AA9FF] font-bold no-underline">weight capacity guide</a> first if you are unsure where you sit.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-heavy-people/">Best Treadmills for Heavy People</a></li>
+            <li><a href="/treadmill-weight-capacity-guide/">Treadmill Weight Capacity Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the highest weight capacity for a walking pad?</h3></summary>
+            <p class="faq-a">
+              The highest ratings we could confirm across more than one source were 400 lb, on the MERACH NovaWalk W50 TrekPad and the LifeSpan TX6-GlowUp. Some listings advertise 440 or 450 lb, but we could not find a manufacturer page or independent coverage to check those against, so we have not recommended them. Most walking pads are rated between 220 and 265 lb.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can a 300 lb person use a walking pad?</h3></summary>
+            <p class="faq-a">
+              Yes, on a pad with a confirmed rating well above 300 lb and a decent continuous motor rating, such as a 400 lb model, and for walking rather than running. Leave a margin of at least 50 lb, plan on the lowest capacity figure if listings disagree, and start with shorter sessions. Above about 320 lb, a full treadmill rated for heavier users is the safer choice.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much weight capacity margin should I leave?</h3></summary>
+            <p class="faq-a">
+              At least 50 lb above your weight for walking, and more if you will jog, use it for long daily sessions or share it with others. A pad's rollers, deck and motor are small, so running it at its limit wears it faster than the same load on a full treadmill. If two listings for the same pad disagree on capacity, use the lower figure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do walking pad weight capacities differ between listings?</h3></summary>
+            <p class="faq-a">
+              Budget pads are often sold under one name across a brand site, Amazon and other retailers, with listings written separately and specifications revised without a new model name. Some brands also rate capacity differently at walking and running speeds, and a few sell two capacity versions under the same name. Confirm the rating for your exact model number with the seller in writing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a walking pad with a handrail better for heavy people?</h3></summary>
+            <p class="faq-a">
+              It can help with balance, especially when stepping on and off or when the speed changes, but a pad's rail or handles are a steadying aid, not a support to lean on. They are bolted to a light deck and not built to carry much of your weight. If you need a rail you can rely on, a full treadmill with side rails is safer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does motor horsepower matter for heavier users?</h3></summary>
+            <p class="faq-a">
+              Yes, but the continuous rating matters, not the peak figure on the box. A heavier walker at slow speed asks the motor for sustained torque, which is what the continuous rating describes. Many pads advertised at 2.5 to 3.5 HP have continuous ratings under 1 HP. Look for a brand that publishes a continuous figure, such as MERACH's 1.25 HP on the W50 TrekPad.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related High-Capacity Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-heavy-people/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmills for Heavy People</div>
+            <p class="c-blurb">Full-size treadmills with 350 to 400 lb ratings, longer decks and bigger motors.</p>
+          </a>
+          <a href="/treadmill-weight-capacity-guide/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Treadmill Weight Capacity Guide</div>
+            <p class="c-blurb">What the capacity figure means, how much margin to leave, and why running changes it.</p>
+          </a>
+          <a href="/walking-pad-buying-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Walking Pad Buying Guide</div>
+            <p class="c-blurb">Belt size, motor, height, controls and warranty — everything to check on any pad.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

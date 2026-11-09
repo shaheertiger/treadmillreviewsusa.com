@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Underwater Treadmill for Dogs (2026): Hydrotherapy, Costs, Access";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/underwater-treadmill-for-dogs/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "What Sessions Cost", link: "#session-costs" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-underwatertreadmillfordogs" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-underwatertreadmillfordogs)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Explainer</span>
+      </nav>
+      <h1 class="ed-title">Underwater Treadmill for Dogs: Canine Hydrotherapy Explained</h1>
+      <p class="ed-dek">
+        An underwater treadmill lets a dog walk in warm water that takes some of its weight and adds gentle resistance. It is a rehabilitation tool used by veterinary rehab practices, not a piece of home gym kit. Here is how it works, who provides it, what sessions typically cost, and why so few owners have one at home.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Explainer
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Underwater Treadmill for Dogs: <span class="text-[#5AA9FF]">Canine Hydrotherapy Explained</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An underwater treadmill lets a dog walk in warm water that takes some of its weight and adds gentle resistance. It is a rehabilitation tool used by veterinary rehab practices, not a piece of home gym kit. Here is how it works, who provides it, what sessions typically cost, and why so few owners have one at home.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#session-costs" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What It Costs
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is an equipment explainer, not veterinary or medical advice, and we are not qualified
-          to give any. Whether hydrotherapy suits your dog, when it should start after surgery, at
-          what water depth and for how long, is for your veterinarian or a veterinary
-          rehabilitation professional to decide after examining the dog; the same applies to people
-          and their doctor or physical therapist for the human aquatic treadmills mentioned below.
-          <strong class="text-gray-900">On the figures below:</strong> session prices are examples
-          published by individual US clinics and reported in veterinary trade coverage, checked on
-          14 October 2026; equipment prices are dated trade figures, not current quotes. We have not
-          used or tested any equipment or service described here.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Is an Underwater Treadmill for Dogs? The Short Answer</a>
-          <a href="#how-it-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Does Canine Hydrotherapy on a Treadmill Work?</a>
-          <a href="#who-it-helps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Which Dogs Is It Used For?</a>
-          <a href="#who-provides-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Who Provides Underwater Treadmill Therapy?</a>
-          <a href="#session-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Much Does an Underwater Treadmill Session Cost?</a>
-          <a href="#first-session" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Happens at the First Session?</a>
-          <a href="#home-units" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Can You Buy an Underwater Treadmill for Home?</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Are the Alternatives if Hydrotherapy Is Not Available?</a>
-          <a href="#human-water-treadmills" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What About Water Treadmills for People?</a>
-          <a href="#questions-to-ask" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Should You Ask a Hydrotherapy Provider?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Search for a treadmill for your dog and sooner or later you meet the underwater version: a
           glass-sided tank with a treadmill in the floor, a dog walking calmly in water up to its
           chest, and a therapist alongside. It looks like a luxury and is in fact a fairly
@@ -208,13 +144,41 @@ const schema = {
           arthritis and for neurological recovery. This page explains what an underwater treadmill
           for dogs does, who should be operating it, what owners typically pay, and why buying one
           for home is rarely realistic. If you are looking for a dry treadmill to exercise a
-          healthy dog, our guide to the
-          <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>
-          is the page you want.
+          healthy dog, our guide to the <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a> is the page you want.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is an equipment explainer, not veterinary or medical advice, and we are not qualified
+          to give any. Whether hydrotherapy suits your dog, when it should start after surgery, at
+          what water depth and for how long, is for your veterinarian or a veterinary
+          rehabilitation professional to decide after examining the dog; the same applies to people
+          and their doctor or physical therapist for the human aquatic treadmills mentioned below. <strong class="text-gray-900">On the figures below:</strong> session prices are examples
+          published by individual US clinics and reported in veterinary trade coverage, checked on
+          14 October 2026; equipment prices are dated trade figures, not current quotes. We have not
+          used or tested any equipment or service described here.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Is an Underwater Treadmill for Dogs? The Short Answer</a></li>
+            <li><a href="#how-it-works">How Does Canine Hydrotherapy on a Treadmill Work?</a></li>
+            <li><a href="#who-it-helps">Which Dogs Is It Used For?</a></li>
+            <li><a href="#who-provides-it">Who Provides Underwater Treadmill Therapy?</a></li>
+            <li><a href="#session-costs">How Much Does an Underwater Treadmill Session Cost?</a></li>
+            <li><a href="#first-session">What Happens at the First Session?</a></li>
+            <li><a href="#home-units">Can You Buy an Underwater Treadmill for Home?</a></li>
+            <li><a href="#alternatives">What Are the Alternatives if Hydrotherapy Is Not Available?</a></li>
+            <li><a href="#human-water-treadmills">What About Water Treadmills for People?</a></li>
+            <li><a href="#questions-to-ask">What Should You Ask a Hydrotherapy Provider?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Is an Underwater Treadmill for Dogs? The Short Answer</h2>
+          <h2>What Is an Underwater Treadmill for Dogs? The Short Answer</h2>
 <p>
             <strong>An underwater treadmill for dogs is a sealed, water-filled tank with a motorised
             treadmill belt in its floor; the dog walks on the belt while warm water, filled to a
@@ -234,14 +198,12 @@ const schema = {
             Owning one is a different matter. Clinical units are large, plumbed, heated and filtered
             installations that have cost tens of thousands of dollars, and very few owners have one
             at home. For a healthy dog that needs exercise rather than rehabilitation, a dry dog
-            treadmill or ordinary walks are the practical tools, and our guide to whether a
-            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">dog can use a treadmill</a>
-            covers that side.
+            treadmill or ordinary walks are the practical tools, and our guide to whether a <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">dog can use a treadmill</a> covers that side.
           </p>
         </div>
 
         <div id="how-it-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Does Canine Hydrotherapy on a Treadmill Work?</h2>
+          <h2>How Does Canine Hydrotherapy on a Treadmill Work?</h2>
 <p>
             Canine hydrotherapy on an underwater treadmill uses three properties of water at once:
             buoyancy, which reduces the load on joints; resistance, which makes muscles work harder
@@ -279,7 +241,7 @@ const schema = {
         </div>
 
         <div id="who-it-helps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Dogs Is It Used For?</h2>
+          <h2>Which Dogs Is It Used For?</h2>
 <p>
             Underwater treadmills are used most often for dogs recovering from orthopaedic surgery,
             dogs with arthritis, dogs with neurological conditions affecting walking, overweight
@@ -311,7 +273,7 @@ const schema = {
         </div>
 
         <div id="who-provides-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Who Provides Underwater Treadmill Therapy?</h2>
+          <h2>Who Provides Underwater Treadmill Therapy?</h2>
 <p>
             Underwater treadmill therapy for dogs is provided by veterinary rehabilitation
             practices, specialist veterinary hospitals, some general practices with a rehabilitation
@@ -353,7 +315,7 @@ const schema = {
         </div>
 
         <div id="session-costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Much Does an Underwater Treadmill Session Cost?</h2>
+          <h2>How Much Does an Underwater Treadmill Session Cost?</h2>
 <p>
             On the examples we checked, a single underwater treadmill session for a dog in the US
             typically cost somewhere in the region of $50 to $125, with an initial consultation
@@ -415,7 +377,7 @@ const schema = {
         </div>
 
         <div id="first-session" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Happens at the First Session?</h2>
+          <h2>What Happens at the First Session?</h2>
 <p>
             The first visit is usually an assessment: a rehabilitation professional examines the
             dog, reviews its history with the referring vet, and decides whether and how to use the
@@ -443,7 +405,7 @@ const schema = {
         </div>
 
         <div id="home-units" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Can You Buy an Underwater Treadmill for Home?</h2>
+          <h2>Can You Buy an Underwater Treadmill for Home?</h2>
 <p>
             You can, but very few owners do: clinical underwater treadmills are large, heavy,
             plumbed installations that have cost tens of thousands of dollars, and they need
@@ -477,15 +439,12 @@ const schema = {
           </p>
           <p>
             For a dog that needs regular exercise rather than rehabilitation, a dry, purpose-built
-            dog treadmill is far more practical; see our
-            <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>
-            and the comparison of a
-            <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmill vs a human treadmill</a>.
+            dog treadmill is far more practical; see our <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a> and the comparison of a <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmill vs a human treadmill</a>.
           </p>
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Are the Alternatives if Hydrotherapy Is Not Available?</h2>
+          <h2>What Are the Alternatives if Hydrotherapy Is Not Available?</h2>
 <p>
             If there is no underwater treadmill nearby, or the cost is out of reach, ask your vet
             about a land-based rehabilitation plan, swimming-based hydrotherapy, or a mix of
@@ -501,9 +460,7 @@ const schema = {
             dog's plan.</li>
             <li><strong>A dry treadmill, under direction.</strong> Some rehabilitation plans use a
             land treadmill for controlled walking at a set speed. If your vet or therapist
-            suggests it, our guide to whether a
-            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">dog can use a human treadmill</a>
-            covers the safety rules.</li>
+            suggests it, our guide to whether a <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">dog can use a human treadmill</a> covers the safety rules.</li>
             <li><strong>Fewer, well-planned sessions.</strong> If cost is the issue, ask whether a
             shorter course of supervised sessions, with exercises at home between them, can meet
             the same goals.</li>
@@ -511,7 +468,7 @@ const schema = {
         </div>
 
         <div id="human-water-treadmills" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What About Water Treadmills for People?</h2>
+          <h2>What About Water Treadmills for People?</h2>
 <p>
             Water treadmills for people exist too: they are usually built into therapy pools in
             physical therapy clinics, hospitals and sports facilities, where the floor of the pool is
@@ -527,9 +484,7 @@ const schema = {
           </p>
           <p>
             For people, the closest dry-land equivalent is the anti-gravity treadmill, which uses
-            air pressure rather than water to reduce body weight; our explainer on the
-            <a href="/anti-gravity-treadmill/" class="text-[#0F62FE] font-medium">anti-gravity treadmill</a>
-            covers how it works and what sessions cost. Water treadmills are also used for horses,
+            air pressure rather than water to reduce body weight; our explainer on the <a href="/anti-gravity-treadmill/" class="text-[#0F62FE] font-medium">anti-gravity treadmill</a> covers how it works and what sessions cost. Water treadmills are also used for horses,
             in larger and considerably more expensive installations.
           </p>
           <p>
@@ -539,7 +494,7 @@ const schema = {
         </div>
 
         <div id="questions-to-ask" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Should You Ask a Hydrotherapy Provider?</h2>
+          <h2>What Should You Ask a Hydrotherapy Provider?</h2>
 <p>
             Before booking, ask who will assess and supervise your dog, how the provider works with
             your vet, what the whole course is likely to cost, and how the water is kept clean.
@@ -559,142 +514,156 @@ const schema = {
             <li><strong>Will you give me exercises to do at home?</strong></li>
           </ol>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is an underwater treadmill for dogs used for?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is used in canine hydrotherapy to help dogs recover strength and mobility after orthopaedic surgery or injury, to keep arthritic dogs moving more comfortably, in neurological recovery, and sometimes for weight management or conditioning. Warm water supports part of the dog's weight and adds resistance while it walks on the belt. A vet or rehabilitation professional sets the plan.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does dog hydrotherapy on a water treadmill cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On the US examples we checked, a single session commonly cost somewhere in the region of $50 to $125, depending on length and location, with an initial consultation of around $100 to $190 charged separately at the practices that published one. Packages lower the per-session price. Call local providers for current prices.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who should operate an underwater treadmill for my dog?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Ideally a veterinarian or a professional certified in canine rehabilitation, such as a CCRP from the University of Tennessee programme or a CCRT from the Canine Rehabilitation Institute, who has assessed your dog and works with your vet. Trained veterinary technicians or assistants may run sessions under that plan.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I buy an underwater treadmill for my dog at home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is possible but rare. Clinical units are large plumbed installations that have cost tens of thousands of dollars, and they need heating, filtration, drainage and a floor that can carry a lot of water. They should also be used to a professional's plan. For a healthy dog that needs exercise, a dry dog treadmill is far more practical.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an underwater treadmill better than swimming for dogs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They do different jobs. On an underwater treadmill the dog walks with a normal gait at a controlled speed and water depth, which many therapists prefer for retraining walking. Swimming uses the legs differently and suits some conditions better than others. A rehabilitation professional chooses between them for the individual dog.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does pet insurance cover hydrotherapy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some policies cover rehabilitation or hydrotherapy when a vet refers the dog for a covered condition, while others exclude it or cap the amount. Read your policy wording, ask the insurer before starting, and keep the vet's referral and the provider's invoices, since most claims need both.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Canine Hydrotherapy</h2>
+          <p>Most problems with hydrotherapy come from starting at the wrong time, with the wrong provider, or without a plan.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Starting without the surgeon or vet</h3>
+              <p>After surgery, the incision and the repair need to be ready before the dog goes in the water, and only the surgeon or vet can say when that is. Get clearance in writing and pass any restrictions to the hydrotherapy provider.</p>
+            </li>
+            <li>
+              <h3>Choosing a provider on price alone</h3>
+              <p>A cheap session without a proper assessment or trained staff can do the wrong exercise at the wrong depth. Ask who assesses the dog, what their credentials are, and how they report to your vet.</p>
+            </li>
+            <li>
+              <h3>Paying session by session with no plan</h3>
+              <p>Without an expected number of sessions and a way to measure progress, costs drift and it is hard to know whether it is working. Ask for a plan and a total cost estimate at the assessment.</p>
+            </li>
+            <li>
+              <h3>Forcing a frightened dog</h3>
+              <p>A dog that is pushed into the tank and panics learns to fear it. Good providers introduce the water slowly, use treats and familiar people, and stop when a dog is overwhelmed. If a provider forces it, go elsewhere.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Canine Hydrotherapy</h2>
-          <p class="text-gray-700 leading-relaxed">Most problems with hydrotherapy come from starting at the wrong time, with the wrong provider, or without a plan.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting without the surgeon or vet</h3>
-              <p class="text-gray-700 text-sm m-0">After surgery, the incision and the repair need to be ready before the dog goes in the water, and only the surgeon or vet can say when that is. Get clearance in writing and pass any restrictions to the hydrotherapy provider.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing a provider on price alone</h3>
-              <p class="text-gray-700 text-sm m-0">A cheap session without a proper assessment or trained staff can do the wrong exercise at the wrong depth. Ask who assesses the dog, what their credentials are, and how they report to your vet.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying session by session with no plan</h3>
-              <p class="text-gray-700 text-sm m-0">Without an expected number of sessions and a way to measure progress, costs drift and it is hard to know whether it is working. Ask for a plan and a total cost estimate at the assessment.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forcing a frightened dog</h3>
-              <p class="text-gray-700 text-sm m-0">A dog that is pushed into the tank and panics learns to fear it. Good providers introduce the water slowly, use treats and familiar people, and stop when a dog is overwhelmed. If a provider forces it, go elsewhere.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Dog Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-dog-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Purpose-built dry treadmills by dog size, for exercise rather than rehab.</p>
-            </a>
-            <a href="/treadmill-for-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Safety</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Can a Dog Use a Human Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The safety rules, and the dogs it is plainly wrong for.</p>
-            </a>
-            <a href="/dog-treadmill-vs-human-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Dog Treadmill vs Human Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Belt length, side panels and speed ranges compared.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">An underwater treadmill for dogs is a rehabilitation tool: warm
             water supports part of the dog's weight and resists its movement while it walks on a
             belt.</strong> It is provided by veterinary rehabilitation practices and hydrotherapy
             centres, ideally led by a certified professional working with your vet, and sessions on
             the examples we checked ran in the region of $50 to $125.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">For nearly every owner it is something you book, not something
             you buy.</strong> Clinical units cost tens of thousands of dollars and need plumbing,
-            heating and a professional plan. If your dog needs exercise rather than rehab, our
-            <a href="/best-dog-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best dog treadmills</a>
-            guide is the place to start.
+            heating and a professional plan. If your dog needs exercise rather than rehab, our <a href="/best-dog-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best dog treadmills</a> guide is the place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-dog-treadmills/">Best Dog Treadmills</a></li>
+            <li><a href="/treadmill-for-dogs/">Can a Dog Use a Human Treadmill?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is an underwater treadmill for dogs used for?</h3></summary>
+            <p class="faq-a">
+              It is used in canine hydrotherapy to help dogs recover strength and mobility after orthopaedic surgery or injury, to keep arthritic dogs moving more comfortably, in neurological recovery, and sometimes for weight management or conditioning. Warm water supports part of the dog's weight and adds resistance while it walks on the belt. A vet or rehabilitation professional sets the plan.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does dog hydrotherapy on a water treadmill cost?</h3></summary>
+            <p class="faq-a">
+              On the US examples we checked, a single session commonly cost somewhere in the region of $50 to $125, depending on length and location, with an initial consultation of around $100 to $190 charged separately at the practices that published one. Packages lower the per-session price. Call local providers for current prices.
             </p>
+          </details>
+          <details>
+            <summary><h3>Who should operate an underwater treadmill for my dog?</h3></summary>
+            <p class="faq-a">
+              Ideally a veterinarian or a professional certified in canine rehabilitation, such as a CCRP from the University of Tennessee programme or a CCRT from the Canine Rehabilitation Institute, who has assessed your dog and works with your vet. Trained veterinary technicians or assistants may run sessions under that plan.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I buy an underwater treadmill for my dog at home?</h3></summary>
+            <p class="faq-a">
+              It is possible but rare. Clinical units are large plumbed installations that have cost tens of thousands of dollars, and they need heating, filtration, drainage and a floor that can carry a lot of water. They should also be used to a professional's plan. For a healthy dog that needs exercise, a dry dog treadmill is far more practical.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is an underwater treadmill better than swimming for dogs?</h3></summary>
+            <p class="faq-a">
+              They do different jobs. On an underwater treadmill the dog walks with a normal gait at a controlled speed and water depth, which many therapists prefer for retraining walking. Swimming uses the legs differently and suits some conditions better than others. A rehabilitation professional chooses between them for the individual dog.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does pet insurance cover hydrotherapy?</h3></summary>
+            <p class="faq-a">
+              Some policies cover rehabilitation or hydrotherapy when a vet refers the dog for a covered condition, while others exclude it or cap the amount. Read your policy wording, ask the insurer before starting, and keep the vet's referral and the provider's invoices, since most claims need both.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Dog Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-dog-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Dog Treadmills</div>
+            <p class="c-blurb">Purpose-built dry treadmills by dog size, for exercise rather than rehab.</p>
+          </a>
+          <a href="/treadmill-for-dogs/" class="card">
+            <div class="c-kicker">Safety</div>
+            <div class="c-title">Can a Dog Use a Human Treadmill?</div>
+            <p class="c-blurb">The safety rules, and the dogs it is plainly wrong for.</p>
+          </a>
+          <a href="/dog-treadmill-vs-human-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Dog Treadmill vs Human Treadmill</div>
+            <p class="c-blurb">Belt length, side panels and speed ranges compared.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Incline Trainers (2026): 30–45% Incline Treadmills Compared";
 const description =
@@ -248,6 +247,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-incline-trainers/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Best Incline Trainers", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Sunny Health & Fitness Versatile Treadmill", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestinclinetrainers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestinclinetrainers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">The Best Incline Trainers</h1>
+      <p class="ed-dek">
+        An incline trainer is a treadmill built to climb: 30% or more, usually with a decline as well, where an ordinary treadmill stops at 12 to 15%. Here are the machines on Amazon that reach that range, the nearest Amazon alternatives to the commercial trainers that are not sold there, what each costs, and the trade-offs in speed, space and wiring that come with steep grades.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          The Best <span class="text-[#5AA9FF]">Incline Trainers</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          An incline trainer is a treadmill built to climb: 30% or more, usually with a decline as well, where an ordinary treadmill stops at 12 to 15%. Here are the machines on Amazon that reach that range, the nearest Amazon alternatives to the commercial trainers that are not sold there, what each costs, and the trade-offs in speed, space and wiring that come with steep grades.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#what-is" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Counts as an Incline Trainer?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sunny-versatile-treadmill"><img src="https://m.media-amazon.com/images/I/41DuYz0yB9L._SL500_.jpg" alt="Sunny Health &amp; Fitness Versatile Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#therun-20-auto-incline-treadmill"><img src="https://m.media-amazon.com/images/I/41YnGG85+YL._SL500_.jpg" alt="THERUN 20% Auto Incline Treadmill" width="500" height="500" decoding="async" /></a>
+          <a href="#sole-tt8"><img src="https://m.media-amazon.com/images/I/41PV053eTOL._SL500_.jpg" alt="Sole TT8" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 6, 2026</strong>
+        <figcaption>Sunny Health &amp; Fitness Versatile Treadmill · THERUN 20% Auto Incline Treadmill · Sole TT8</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most treadmills sold as "incline treadmills" reach 12 or 15 percent. An incline trainer
+          goes much further — 30, 40, even 45 percent — and that changes what the machine is for.
+          At those grades walking becomes hard work, and you can get your heart rate up at 2 or 3
+          mph without the impact of running. The category is small, expensive and dominated by
+          machines sold directly by their makers, so this guide does two things: it names the
+          incline trainers you can order on Amazon today, with the nearest Amazon alternatives to two
+          commercial machines worth knowing, and it explains where NordicTrack's X-series, the best-known incline trainers,
+          fit in.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#sunny-versatile-treadmill">Sunny Health & Fitness Versatile Treadmill</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Climb and Run:</span> <a href="#therun-20-auto-incline-treadmill">THERUN 20% Auto Incline Treadmill</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Heavy-Duty Alternative:</span> <a href="#sole-tt8">Sole TT8</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">On Amazon, Check Seller:</span> <a href="#freemotion-i11-9-incline-trainer">FreeMotion i11.9 Incline Trainer</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#cursor-40-incline-treadmill">CURSOR 40% Incline Treadmill</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines. The five picks were confirmed on 6 November 2026 as currently sold on
           Amazon US, and their figures come from the Amazon listing's own specification bullets.
@@ -341,79 +363,26 @@ const schema = {
           specification and warranty against the exact listing before you order. We earn a
           commission if you buy through the Amazon links on this page; it does not change which
           products we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#sunny-versatile-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Versatile Treadmill</a>
-            <a href="#sunny-versatile-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Climb and Run:</span>
-            <a href="#therun-20-auto-incline-treadmill" class="font-bold text-gray-900 no-underline hover:underline">THERUN 20% Auto Incline Treadmill</a>
-            <a href="#therun-20-auto-incline-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Heavy-Duty Alternative:</span>
-            <a href="#sole-tt8" class="font-bold text-gray-900 no-underline hover:underline">Sole TT8</a>
-            <a href="#sole-tt8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">On Amazon, Check Seller:</span>
-            <a href="#freemotion-i11-9-incline-trainer" class="font-bold text-gray-900 no-underline hover:underline">FreeMotion i11.9 Incline Trainer</a>
-            <a href="#freemotion-i11-9-incline-trainer" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#cursor-40-incline-treadmill" class="font-bold text-gray-900 no-underline hover:underline">CURSOR 40% Incline Treadmill</a>
-            <a href="#cursor-40-incline-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Best Incline Trainers at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Incline Trainers in 2026</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Incline Trainers</a>
-          <a href="#what-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Counts as an Incline Trainer?</a>
-          <a href="#nordictrack-x-series" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Where the NordicTrack X-Series Fits</a>
-          <a href="#grades" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Reading Incline Figures: Percent, Degrees and Levels</a>
-          <a href="#speed-and-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Speed Limits, Ceiling Height and Power</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Buy an Incline Trainer, and Who Should Not</a>
-          <a href="#before-you-order" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Before You Order an Incline Trainer</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">The Best Incline Trainers at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Incline Trainers in 2026</a></li>
+            <li><a href="#how-we-chose">How We Chose These Incline Trainers</a></li>
+            <li><a href="#what-is">What Counts as an Incline Trainer?</a></li>
+            <li><a href="#nordictrack-x-series">Where the NordicTrack X-Series Fits</a></li>
+            <li><a href="#grades">Reading Incline Figures: Percent, Degrees and Levels</a></li>
+            <li><a href="#speed-and-space">Speed Limits, Ceiling Height and Power</a></li>
+            <li><a href="#who-should-buy">Who Should Buy an Incline Trainer, and Who Should Not</a></li>
+            <li><a href="#before-you-order">Before You Order an Incline Trainer</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most treadmills sold as "incline treadmills" reach 12 or 15 percent. An incline trainer
-          goes much further — 30, 40, even 45 percent — and that changes what the machine is for.
-          At those grades walking becomes hard work, and you can get your heart rate up at 2 or 3
-          mph without the impact of running. The category is small, expensive and dominated by
-          machines sold directly by their makers, so this guide does two things: it names the
-          incline trainers you can order on Amazon today, with the nearest Amazon alternatives to two
-          commercial machines worth knowing, and it explains where NordicTrack's X-series, the best-known incline trainers,
-          fit in.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Best Incline Trainers at a Glance</h2>
+          <h2>The Best Incline Trainers at a Glance</h2>
 <p>
             <strong>The best incline trainer you can order on Amazon is the Sunny Health &amp; Fitness
             Versatile Treadmill: a powered incline to 45% and a decline to -3%, multi-grip handrails for
@@ -451,13 +420,12 @@ const schema = {
           <p>
             The machine missing from this table is the one many readers came for: NordicTrack's
             X-series. The X16 and X24 reach 40% with a -6% decline, but we could not find either sold
-            on Amazon US when we checked. We cover where they fit, and what they cost direct, in
-            <a href="#nordictrack-x-series" class="text-[#0F62FE] font-medium">the X-series section below</a>.
+            on Amazon US when we checked. We cover where they fit, and what they cost direct, in <a href="#nordictrack-x-series" class="text-[#0F62FE] font-medium">the X-series section below</a>.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Incline Trainers in 2026</h2>
+          <h2>The 5 Best Incline Trainers in 2026</h2>
 <p>
             Each card gives the figures stated by the Amazon listing or the maker, the price we saw and
             who the machine suits. The commercial incline trainers from TRUE and Freemotion are sold
@@ -468,89 +436,74 @@ const schema = {
             The list is short for a reason. Very few treadmills sold for home use reach 30%, and fewer
             still are sold on Amazon. Three of the five cards genuinely climb to 30% or more; the other
             two are labelled as stand-ins, not described as incline trainers. If 15% is enough for you — and
-            for most people it is — our roundup of the
-            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
-            covers those, at much lower prices.
+            for most people it is — our roundup of the <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a> covers those, at much lower prices.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Incline Trainers</h2>
+          <h2>How We Chose These Incline Trainers</h2>
 <p>
             We have not tested these machines. They were chosen from published specifications, Amazon
             listings and the makers' pages, and the claims on this page are limited to what those
-            sources support. Our
-            <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
-            explain the process.
+            sources support. Our <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a> explain the process.
           </p>
           <p>
             Every pick had to reach at least 30% incline, which is the line we use for a true incline
@@ -570,7 +523,7 @@ const schema = {
         </div>
 
         <div id="what-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Counts as an Incline Trainer?</h2>
+          <h2>What Counts as an Incline Trainer?</h2>
 <p>
             "Incline trainer" was originally NordicTrack's name for its X-series, and it has become the
             general name for treadmills whose main job is climbing. There is no formal definition, but
@@ -597,24 +550,20 @@ const schema = {
             speed as the grade rises.
           </p>
           <p>
-            Our explainer on
-            <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainers vs treadmills</a>
-            goes into who needs the extra range and who is better served by a 15% treadmill and the
+            Our explainer on <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainers vs treadmills</a> goes into who needs the extra range and who is better served by a 15% treadmill and the
             money saved. The short version: if you will mostly walk at 10 to 15% and sometimes run, buy
             a treadmill. If steep walking is the workout, buy an incline trainer.
           </p>
         </div>
 
         <div id="nordictrack-x-series" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Where the NordicTrack X-Series Fits</h2>
+          <h2>Where the NordicTrack X-Series Fits</h2>
 <p>
             NordicTrack's X-series is the incline trainer most people have heard of, and the search
             term "incline trainer" is still largely about it. The current models are the X16 and the
             X24, both with a -6% to 40% range, a 22 by 60-inch belt and a 400 lb maximum user weight by
             NordicTrack's figures. On 5 November 2026 NordicTrack's checkout pages listed the X16 at
-            $3,699 and the X24 at $4,299. Our
-            <a href="/nordictrack-x24-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X24 review</a>
-            covers the flagship in detail, including the speed limits independent reviewers report at
+            $3,699 and the X24 at $4,299. Our <a href="/nordictrack-x24-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X24 review</a> covers the flagship in detail, including the speed limits independent reviewers report at
             steep grades.
           </p>
           <p>
@@ -626,11 +575,7 @@ const schema = {
           </p>
           <p>
             You will also see older X-series names in searches and on the second-hand market. The X22i
-            and the X9i were earlier incline trainers in the same family, and our reviews of the
-            <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X22i</a>
-            and the
-            <a href="/nordictrack-x9i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X9i</a>
-            explain what to check if you are offered one. A used incline trainer can be good value, but
+            and the X9i were earlier incline trainers in the same family, and our reviews of the <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X22i</a> and the <a href="/nordictrack-x9i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X9i</a> explain what to check if you are offered one. A used incline trainer can be good value, but
             the incline motor and the console are the parts most worth testing before you pay, and the
             warranty rarely transfers.
           </p>
@@ -643,15 +588,14 @@ const schema = {
         </div>
 
         <div id="grades" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Reading Incline Figures: Percent, Degrees and Levels</h2>
+          <h2>Reading Incline Figures: Percent, Degrees and Levels</h2>
 <p>
             Incline is quoted in three ways, and listings mix them, which makes some machines look
             steeper than they are.
           </p>
           <p>
             <strong>Percent</strong> is rise over run: a 30% grade rises 30 feet for every 100 feet of
-            horizontal distance. It is the standard on treadmills from established makers.
-            <strong>Degrees</strong> is the angle of the deck, which is always a smaller number: 15% is
+            horizontal distance. It is the standard on treadmills from established makers. <strong>Degrees</strong> is the angle of the deck, which is always a smaller number: 15% is
             about 8.5 degrees, 30% about 16.7 degrees, 40% about 21.8 degrees and 45% about 24.2
             degrees. <strong>Levels</strong> are the maker's own steps, and they tell you nothing about
             the actual grade unless the listing also gives a percentage.
@@ -676,13 +620,12 @@ const schema = {
             of their time between 10 and 25%, and the top of the range is for short, hard intervals.
             What matters as much is whether the incline is powered, how quickly it moves, and how fast
             the belt is allowed to go at the grade you want. For a longer explanation of the
-            conversions, see our page on
-            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline in percent vs degrees</a>.
+            conversions, see our page on <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline in percent vs degrees</a>.
           </p>
         </div>
 
         <div id="speed-and-space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Speed Limits, Ceiling Height and Power</h2>
+          <h2>Speed Limits, Ceiling Height and Power</h2>
 <p>
             Three practical limits catch out incline trainer buyers more than any specification.
           </p>
@@ -718,7 +661,7 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Buy an Incline Trainer, and Who Should Not</h2>
+          <h2>Who Should Buy an Incline Trainer, and Who Should Not</h2>
 <p>
             <strong>Buy one if</strong> steep walking is the workout you want: training for a hiking
             trip, building leg strength without impact, or getting hard cardio from walking because
@@ -738,14 +681,12 @@ const schema = {
           </p>
           <p>
             And if the budget will not stretch to an incline trainer, the cheapest route to steep
-            walking is a 15% treadmill used well. Our guide to
-            <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>
-            ranks machines from 40% down to 15%, so you can see how much grade each price buys.
+            walking is a 15% treadmill used well. Our guide to <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a> ranks machines from 40% down to 15%, so you can see how much grade each price buys.
           </p>
         </div>
 
         <div id="before-you-order" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Before You Order an Incline Trainer</h2>
+          <h2>Before You Order an Incline Trainer</h2>
 <p>
             Most incline trainer problems are delivery and installation problems. A short checklist:
           </p>
@@ -772,99 +713,34 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is an incline trainer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                An incline trainer is a treadmill built for climbing. Where an ordinary home treadmill reaches 10 to 15% incline, an incline trainer reaches 30% or more, and most also decline to -3% or -6%. They are usually heavier, taller at full incline and non-folding, and many reduce the top speed at steep grades.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best incline trainer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The best incline trainer you can order on Amazon is the Sunny Health & Fitness Versatile Treadmill, with a -3% to 45% powered incline and a 5 mph top speed, at about $2,200 on 6 November 2026. If you want to run as well as climb, the TRUE Alpine Runner and Freemotion i22.9 reach 30% on commercial frames, at five times the price, but are sold through dealers or direct rather than on Amazon; the THERUN 20% Auto Incline Treadmill is the closest climb-and-run option we found there.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is an incline trainer better than a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if steep walking is your main workout. An incline trainer gives you grades of 30% or more and a decline, but it costs more, takes more room and often limits speed at steep grades. If you mostly run, or 15% incline is enough, a treadmill is cheaper and more versatile.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you buy a NordicTrack incline trainer on Amazon?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We could not find NordicTrack's current X16 or X24 sold on Amazon US under NordicTrack's own listing on 6 November 2026, only covers and parts made to fit them. NordicTrack's own checkout listed the X16 at $3,699 and the X24 at $4,299 on 5 November 2026.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How steep is 40% incline in degrees?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About 21.8 degrees. Treadmill incline is quoted as a percentage grade, rise over run, which is always a larger number than the angle: 15% is about 8.5 degrees, 30% about 16.7 degrees and 45% about 24.2 degrees.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do incline trainers need a special electrical circuit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Some do. TRUE specifies a dedicated 120-volt, 20-amp circuit for the Alpine Runner, and commercial machines commonly require one. Check the manual for the exact model before delivery, plug the machine directly into a grounded wall outlet, and have an electrician install a dedicated circuit if the maker requires it.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying an Incline Trainer</h2>
+          <p>Each of these turns an expensive climbing machine into one that cannot be used as intended.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying an incline trainer to run fast</h3>
+              <p>Many incline trainers cut the top speed at steep grades, and some stop at a walking pace altogether. If running is your main workout, a 15% treadmill with a full speed range is the better machine; check the speed limits before buying a climber.</p>
+            </li>
+            <li>
+              <h3>Not measuring the ceiling at full incline</h3>
+              <p>The front of the deck rises a long way at 30 to 45%, and that is where you stand. Measure the ceiling height where the machine will go and allow for your height, the deck and some headroom, or you will never use the top of the range.</p>
+            </li>
+            <li>
+              <h3>Treating a manual incline as the same thing</h3>
+              <p>A machine whose incline you change by hand cannot run hill programs or change grade mid-walk. It can be a cheap way to try steep walking, but compare it with powered incline trainers as a different product, not a cheaper version of the same one.</p>
+            </li>
+            <li>
+              <h3>Starting at the steepest grade</h3>
+              <p>Steep walking loads the calves and Achilles tendons hard. Start at 10 to 15% for the first sessions and build up over weeks, hold the rails lightly for balance rather than hanging on them, and ask a doctor first if you have a heart, joint or balance condition.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying an Incline Trainer</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns an expensive climbing machine into one that cannot be used as intended.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying an incline trainer to run fast</h3>
-              <p class="text-gray-700 text-sm m-0">Many incline trainers cut the top speed at steep grades, and some stop at a walking pace altogether. If running is your main workout, a 15% treadmill with a full speed range is the better machine; check the speed limits before buying a climber.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the ceiling at full incline</h3>
-              <p class="text-gray-700 text-sm m-0">The front of the deck rises a long way at 30 to 45%, and that is where you stand. Measure the ceiling height where the machine will go and allow for your height, the deck and some headroom, or you will never use the top of the range.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating a manual incline as the same thing</h3>
-              <p class="text-gray-700 text-sm m-0">A machine whose incline you change by hand cannot run hill programs or change grade mid-walk. It can be a cheap way to try steep walking, but compare it with powered incline trainers as a different product, not a cheaper version of the same one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting at the steepest grade</h3>
-              <p class="text-gray-700 text-sm m-0">Steep walking loads the calves and Achilles tendons hard. Start at 10 to 15% for the first sessions and build up over weeks, hold the rails lightly for balance rather than hanging on them, and ask a doctor first if you have a heart, joint or balance condition.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Incline Trainer Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/incline-trainer-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Explainer</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Incline Trainer vs Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Who needs 40% incline, and who is better off with a 15% treadmill.</p>
-            </a>
-            <a href="/nordictrack-x24-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack X24</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The 40% incline trainer most people mean, and its speed limits at steep grades.</p>
-            </a>
-            <a href="/best-incline-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Incline Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Treadmills with 12 to 15% incline that also suit running.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The best incline trainer you can order on Amazon is the Sunny Health &amp; Fitness Versatile Treadmill</strong>,
             with a 45% incline, a -3% decline and grips for steep walking, as long as you do not need
             to run. For climbing and running on a commercial frame, the TRUE Alpine Runner and the
@@ -873,37 +749,119 @@ const schema = {
             FreeMotion i11.9 is a 30% option if the seller can confirm its condition and warranty. The CURSOR is a cheap way to
             try steep walking first.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you want NordicTrack's X16 or X24, buy direct, and compare them with these picks on speed
-            at steep grades, size and price. And if 15% would do, our guide to the
-            <a href="/best-incline-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best incline treadmills</a>
-            will save you a great deal of money.
+            at steep grades, size and price. And if 15% would do, our guide to the <a href="/best-incline-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best incline treadmills</a> will save you a great deal of money.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/incline-trainer-vs-treadmill/">Incline Trainer vs Treadmill</a></li>
+            <li><a href="/nordictrack-x24-treadmill/">NordicTrack X24</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is an incline trainer?</h3></summary>
+            <p class="faq-a">
+              An incline trainer is a treadmill built for climbing. Where an ordinary home treadmill reaches 10 to 15% incline, an incline trainer reaches 30% or more, and most also decline to -3% or -6%. They are usually heavier, taller at full incline and non-folding, and many reduce the top speed at steep grades.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best incline trainer?</h3></summary>
+            <p class="faq-a">
+              The best incline trainer you can order on Amazon is the Sunny Health & Fitness Versatile Treadmill, with a -3% to 45% powered incline and a 5 mph top speed, at about $2,200 on 6 November 2026. If you want to run as well as climb, the TRUE Alpine Runner and Freemotion i22.9 reach 30% on commercial frames, at five times the price, but are sold through dealers or direct rather than on Amazon; the THERUN 20% Auto Incline Treadmill is the closest climb-and-run option we found there.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is an incline trainer better than a treadmill?</h3></summary>
+            <p class="faq-a">
+              Only if steep walking is your main workout. An incline trainer gives you grades of 30% or more and a decline, but it costs more, takes more room and often limits speed at steep grades. If you mostly run, or 15% incline is enough, a treadmill is cheaper and more versatile.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you buy a NordicTrack incline trainer on Amazon?</h3></summary>
+            <p class="faq-a">
+              We could not find NordicTrack's current X16 or X24 sold on Amazon US under NordicTrack's own listing on 6 November 2026, only covers and parts made to fit them. NordicTrack's own checkout listed the X16 at $3,699 and the X24 at $4,299 on 5 November 2026.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How steep is 40% incline in degrees?</h3></summary>
+            <p class="faq-a">
+              About 21.8 degrees. Treadmill incline is quoted as a percentage grade, rise over run, which is always a larger number than the angle: 15% is about 8.5 degrees, 30% about 16.7 degrees and 45% about 24.2 degrees.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do incline trainers need a special electrical circuit?</h3></summary>
+            <p class="faq-a">
+              Some do. TRUE specifies a dedicated 120-volt, 20-amp circuit for the Alpine Runner, and commercial machines commonly require one. Check the manual for the exact model before delivery, plug the machine directly into a grounded wall outlet, and have an electrician install a dedicated circuit if the maker requires it.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Incline Trainer Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/incline-trainer-vs-treadmill/" class="card">
+            <div class="c-kicker">Explainer</div>
+            <div class="c-title">Incline Trainer vs Treadmill</div>
+            <p class="c-blurb">Who needs 40% incline, and who is better off with a 15% treadmill.</p>
+          </a>
+          <a href="/nordictrack-x24-treadmill/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">NordicTrack X24</div>
+            <p class="c-blurb">The 40% incline trainer most people mean, and its speed limits at steep grades.</p>
+          </a>
+          <a href="/best-incline-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Incline Treadmills</div>
+            <p class="c-blurb">Treadmills with 12 to 15% incline that also suit running.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

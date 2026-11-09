@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Squat Racks for Home Gym (2026): Six Racks by Type and Budget";
 const description =
@@ -275,6 +274,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-squat-racks-for-home-gym/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -295,66 +300,87 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall on Amazon: Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestsquatracksforhomegym" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestsquatracksforhomegym)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Squat Racks for a Home Gym</h1>
+      <p class="ed-dek">
+        The right squat rack is the one that fits your ceiling, your floor and the way you lift, and the safety system matters more than the logo. Here are six racks across the four main types and a wide price range, what each is honestly good for, and how to choose between 3x3 and 2x3 uprights.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Squat Racks <span class="text-[#5AA9FF]">for a Home Gym</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The right squat rack is the one that fits your ceiling, your floor and the way you lift, and the safety system matters more than the logo. Here are six racks across the four main types and a wide price range, what each is honestly good for, and how to choose between 3x3 and 2x3 uprights.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#uprights" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            3x3 vs 2x3 Uprights
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#titan-x-3-tall-bolt-down-power-rack"><img src="https://m.media-amazon.com/images/I/31nVezYA6ML._SL500_.jpg" alt="Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth)" width="500" height="500" decoding="async" /></a>
+          <a href="#titan-t-3-tall-power-rack"><img src="https://m.media-amazon.com/images/I/31nIy0pe1qL._SL500_.jpg" alt="Titan Fitness T-3 Series Tall Power Rack (36 in. Depth)" width="500" height="500" decoding="async" /></a>
+          <a href="#titan-x-3-half-rack"><img src="https://m.media-amazon.com/images/I/31Lc3LzQgtL._SL500_.jpg" alt="Titan Fitness X-3 Series Half Rack" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth) · Titan Fitness T-3 Series Tall Power Rack (36 in. Depth) · Titan Fitness X-3 Series Half Rack</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A squat rack is the piece of home gym equipment that everything else is built around,
+          and it is also the one people most often buy for the wrong reasons. The common mistakes
+          are buying by tube size alone, forgetting to measure the ceiling, skipping the safeties
+          to save money, and ignoring what the maker says about bolting the rack down. The six
+          racks below cover the four main types — a full power rack, a half rack, a squat stand
+          and a folding wall-mounted rack — at prices from under $400 to over $1,000, and the
+          guide after them covers the measurements and safety decisions that matter more than
+          the brand.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall on Amazon:</span> <a href="#titan-x-3-tall-bolt-down-power-rack">Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best 2x3 Rack on Amazon:</span> <a href="#titan-t-3-tall-power-rack">Titan Fitness T-3 Series Tall Power Rack (36 in. Depth)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Half Rack on Amazon:</span> <a href="#titan-x-3-half-rack">Titan Fitness X-3 Series Half Rack</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Folding Rack:</span> <a href="#prx-profile-pro">PRx Performance Profile PRO Squat Rack</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Squat Stand:</span> <a href="#titan-t-3-squat-stand">Titan Fitness T-3 Series Short Squat Stand</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Power Rack:</span> <a href="#rep-pr-1100">REP Fitness PR-1100 Power Rack</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           racks, and no figure on this page is our own measurement. Each was confirmed as
           currently sold on 16 October 2026 on the maker's own store (REP Fitness, Rogue Fitness,
@@ -370,8 +396,7 @@ const schema = {
           on that date and change often, and several of these racks are configurable, so the
           price depends on the options you choose. We earn a commission if you buy through the
           Amazon links on this page; it does not change which products we list or what we say
-          about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review
           equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
           here is a training programme. Heavy barbell training carries a real risk of injury.
           Use the safeties every session, anchor or bolt the rack exactly as its maker
@@ -381,80 +406,27 @@ const schema = {
           qualified coach — before you start. If you plan to put a heavy rack and plates in an
           upstairs room or on an unusual floor structure, ask a structural engineer or builder
           to check it first.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall on Amazon:</span>
-            <a href="#titan-x-3-tall-bolt-down-power-rack" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth)</a>
-            <a href="#titan-x-3-tall-bolt-down-power-rack" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best 2x3 Rack on Amazon:</span>
-            <a href="#titan-t-3-tall-power-rack" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness T-3 Series Tall Power Rack (36 in. Depth)</a>
-            <a href="#titan-t-3-tall-power-rack" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Half Rack on Amazon:</span>
-            <a href="#titan-x-3-half-rack" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness X-3 Series Half Rack</a>
-            <a href="#titan-x-3-half-rack" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Folding Rack:</span>
-            <a href="#prx-profile-pro" class="font-bold text-gray-900 no-underline hover:underline">PRx Performance Profile PRO Squat Rack</a>
-            <a href="#prx-profile-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Squat Stand:</span>
-            <a href="#titan-t-3-squat-stand" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness T-3 Series Short Squat Stand</a>
-            <a href="#titan-t-3-squat-stand" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Squat Racks for a Home Gym</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Racks</a>
-          <a href="#rack-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Squat Stand, Half Rack, Full Rack or Folding Rack</a>
-          <a href="#uprights" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. 3x3 vs 2x3 Uprights</a>
-          <a href="#ceiling-height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Ceiling Height and Pull-Ups</a>
-          <a href="#j-cups-safeties" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. J-Cups, Safeties and Rated Capacity</a>
-          <a href="#bolting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Bolting and Anchoring, Per the Maker</a>
-          <a href="#floor-protection" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Floor Protection and Floor Loading</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Squat Racks for a Home Gym</a></li>
+            <li><a href="#how-we-chose">How We Chose These Racks</a></li>
+            <li><a href="#rack-types">Squat Stand, Half Rack, Full Rack or Folding Rack</a></li>
+            <li><a href="#uprights">3x3 vs 2x3 Uprights</a></li>
+            <li><a href="#ceiling-height">Ceiling Height and Pull-Ups</a></li>
+            <li><a href="#j-cups-safeties">J-Cups, Safeties and Rated Capacity</a></li>
+            <li><a href="#bolting">Bolting and Anchoring, Per the Maker</a></li>
+            <li><a href="#floor-protection">Floor Protection and Floor Loading</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A squat rack is the piece of home gym equipment that everything else is built around,
-          and it is also the one people most often buy for the wrong reasons. The common mistakes
-          are buying by tube size alone, forgetting to measure the ceiling, skipping the safeties
-          to save money, and ignoring what the maker says about bolting the rack down. The six
-          racks below cover the four main types — a full power rack, a half rack, a squat stand
-          and a folding wall-mounted rack — at prices from under $400 to over $1,000, and the
-          guide after them covers the measurements and safety decisions that matter more than
-          the brand.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Six racks, chosen so that each of the four common types and three broad budgets is
             covered. Most people setting up a garage or basement gym will be best served by one
@@ -478,16 +450,14 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you are still deciding what a home gym should include, start with our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a>,
+            If you are still deciding what a home gym should include, start with our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a>,
             which puts the rack alongside the bar, plates, bench and flooring. Everything we
-            cover for strength training is gathered on our
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
+            cover for strength training is gathered on our <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Squat Racks for a Home Gym</h2>
+          <h2>The 6 Best Squat Racks for a Home Gym</h2>
 <p>
             Rogue's R-3 and HR-2, which we rate highly and discuss throughout this guide, are sold only
             through Rogue's own store, not on Amazon, so their places on the cards go to the closest
@@ -504,78 +474,67 @@ const schema = {
             usually carry their own ratings.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Racks</h2>
+          <h2>How We Chose These Racks</h2>
 <p>
             We have not tested these racks, and nothing here should be read as if we had. The
             picks were made from maker product pages, specification tables, FAQs and assembly
@@ -623,7 +582,7 @@ const schema = {
         </div>
 
         <div id="rack-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Squat Stand, Half Rack, Full Rack or Folding Rack</h2>
+          <h2>Squat Stand, Half Rack, Full Rack or Folding Rack</h2>
 <p>
             The type of rack decides how you will set up the safeties, how much floor it needs,
             whether it has to be bolted down, and how much you can add to it later. Choose the
@@ -669,7 +628,7 @@ const schema = {
         </div>
 
         <div id="uprights" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. 3x3 vs 2x3 Uprights</h2>
+          <h2>3x3 vs 2x3 Uprights</h2>
 <p>
             Upright size is the specification that rack shoppers argue about most, and it matters
             less than the arguments suggest. Here is what the numbers mean, what they change, and
@@ -715,12 +674,10 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Hole spacing and hole size</h3>
           <p>
-            Two other upright details matter as much as tube size. <strong>Hole spacing</strong>
-            sets how finely you can adjust J-cups and safeties. "Westside" spacing puts holes 1
+            Two other upright details matter as much as tube size. <strong>Hole spacing</strong> sets how finely you can adjust J-cups and safeties. "Westside" spacing puts holes 1
             inch apart through the bench and pulling zone and 2 inches apart above and below, so
             you can set a bench-press J-cup and safety height precisely; wider spacing, such as
-            the 3 inches on the budget pick, means the right height is often between two holes.
-            <strong>Hole size</strong> and hardware size — commonly 5/8 inch or 1 inch on home
+            the 3 inches on the budget pick, means the right height is often between two holes. <strong>Hole size</strong> and hardware size — commonly 5/8 inch or 1 inch on home
             racks — decide which attachments fit.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Attachment compatibility</h3>
@@ -737,7 +694,7 @@ const schema = {
         </div>
 
         <div id="ceiling-height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Ceiling Height and Pull-Ups</h2>
+          <h2>Ceiling Height and Pull-Ups</h2>
 <p>
             Ceiling height rules out more racks than any other measurement, and it is easy to
             measure wrongly. Do it before you choose a model, not after the delivery arrives.
@@ -781,7 +738,7 @@ const schema = {
         </div>
 
         <div id="j-cups-safeties" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. J-Cups, Safeties and Rated Capacity</h2>
+          <h2>J-Cups, Safeties and Rated Capacity</h2>
 <p>
             J-cups hold the bar when you are not lifting it. Safeties catch it when a lift goes
             wrong. Treat them as two different jobs, and never rely on J-cups to catch a missed
@@ -833,7 +790,7 @@ const schema = {
         </div>
 
         <div id="bolting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Bolting and Anchoring, Per the Maker</h2>
+          <h2>Bolting and Anchoring, Per the Maker</h2>
 <p>
             Whether a rack must be bolted down is not a matter of preference. The maker designs
             the rack with or without anchoring, and its instructions are the authority. The six
@@ -873,7 +830,7 @@ const schema = {
         </div>
 
         <div id="floor-protection" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Floor Protection and Floor Loading</h2>
+          <h2>Floor Protection and Floor Loading</h2>
 <p>
             A rack concentrates a lot of weight on a small area — the rack, the stored plates,
             the bar and the lifter — and barbells occasionally land on the floor. Plan the floor
@@ -885,17 +842,13 @@ const schema = {
             loud. Heavy rubber, such as 3/4-inch stall mats, under and around the rack protects
             the slab and the equipment and gives a stable, grippy surface. If you deadlift or
             drop weights, a lifting platform in front of or inside the rack does the job better;
-            our guide to the
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">best lifting platforms</a>
-            covers platforms, drop pads and the DIY stall-mat route.
+            our guide to the <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">best lifting platforms</a> covers platforms, drop pads and the DIY stall-mat route.
           </p>
           <p>
             <strong>On a finished floor</strong> — wood, laminate, vinyl or tile — protection is
             essential, because rack feet and dropped plates will dent or crack it. Use dense
             rubber across the whole area, not just under the feet. The same principles that
-            apply under treadmills apply here at a heavier scale; our guide to
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>
-            explains density versus thickness and why rubber can discolour some floors.
+            apply under treadmills apply here at a heavier scale; our guide to <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a> explains density versus thickness and why rubber can discolour some floors.
           </p>
           <p>
             <strong>Upstairs, check the structure first.</strong> A loaded rack and plate storage
@@ -909,28 +862,21 @@ const schema = {
           </p>
           <p>
             If the rack shares a garage with a treadmill, give each its own footprint and
-            clearance. Our guide to
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">keeping a treadmill in a garage</a>
-            covers damp, temperature and space planning that apply to a rack too.
+            clearance. Our guide to <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">keeping a treadmill in a garage</a> covers damp, temperature and space planning that apply to a rack too.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you will not train with a barbell</strong>, you do not need a rack. A pair
-            of adjustable dumbbells and a
-            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">good adjustable weight bench</a>
-            cover a great deal of strength training in a
-            fraction of the space; see our guide to the
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a>.
+            of adjustable dumbbells and a <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">good adjustable weight bench</a> cover a great deal of strength training in a
+            fraction of the space; see our guide to the <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a>.
           </p>
           <p>
             <strong>If you want guided movements or cable work</strong> more than free weights, a
             cable machine or functional trainer may suit you better than a rack with a cable
-            attachment. Our
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">home cable machine guide</a>
-            compares the options.
+            attachment. Our <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">home cable machine guide</a> compares the options.
           </p>
           <p>
             <strong>If you are new to barbell lifting and training alone</strong>, a rack is not
@@ -945,107 +891,38 @@ const schema = {
           </p>
           <p>
             <strong>If your main goal is cardio</strong>, put the budget into the machine you will
-            use most. Our guide to the
-            <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>
-            covers that side, and our comparison of a
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill versus a gym membership</a>
-            sets out the cost reasoning that applies to a home rack as well.
+            use most. Our guide to the <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a> covers that side, and our comparison of a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill versus a gym membership</a> sets out the cost reasoning that applies to a home rack as well.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best squat rack for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most garage or basement gyms, a 3x3 or 2x3 11-gauge power rack with safeties included or added, such as the REP PR-5000 or Rogue R-3 (or, on Amazon, Titan's T-3 Series), set up as the maker specifies. If you cannot bolt into the floor, a half rack like the Rogue HR-2 or Titan's X-3 Series is a strong alternative. Low ceilings and small budgets point to a squat stand with spotter arms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a 3x3 or 2x3 power rack more stable?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A 3x3 tube is stiffer than a 2x3 tube of the same gauge, but stability depends more on the base than the uprights. A deep footprint, bolting or a stabiliser where the maker requires it, plates stored low and a firm level floor matter more. The main practical advantage of 3x3 is a larger range of compatible attachments.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do I need for a squat rack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure to the lowest beam, light or door track and subtract any flooring, then compare that with the rack's overall height and allow room to stand the uprights during assembly. For pull-ups you need clearance above the bar for your head and shoulders, so a tall rack under a low ceiling may not allow them. Short racks and stands exist for low rooms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I have to bolt my squat rack to the floor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the maker says so, and then you must. Some racks must be bolted, some need bolting only with certain attachments, some are designed to stand freely, and some cannot be bolted at all. Follow the manual for your exact rack and use the fixings it specifies, into a sound concrete slab where anchoring is required.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I put a power rack upstairs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Possibly, but check the structure first. A loaded rack and plate storage put a heavy, concentrated load on the floor, and dropped weights add impact. Ask a structural engineer or experienced builder to assess the floor before installing a rack upstairs, especially in an old or altered building, use dense rubber flooring, and avoid dropping weights.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are safety bars necessary on a squat rack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, for anyone squatting or benching without a spotter. J-cups hold the bar between sets; they are not designed to catch a missed lift. Pin-and-pipe safeties, strap safeties or spotter arms set just below the bottom of each lift are what make solo barbell training reasonably safe. Several racks sell them separately, so budget for them.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Squat Rack</h2>
+          <p>Each of these turns a good rack into an unsafe or unusable one, and each is easy to avoid at the planning stage.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Measuring the ceiling at the wrong point</h3>
+              <p>People measure the open ceiling and forget the beam, light fitting or garage-door track directly above the rack, or the flooring that raises it. Measure to the lowest obstruction above the rack's footprint, subtract mats or platform, and compare with the overall height plus room to assemble. For pull-ups, check the headroom above the bar.</p>
+            </li>
+            <li>
+              <h3>Buying the rack and not the safeties</h3>
+              <p>Several racks sell safeties or spotter arms separately, and it is tempting to train without them until they arrive. Do not. J-cups are not designed to catch a missed rep. Add safeties to the order, set them just below the bottom of each lift, and test the height with an empty bar first.</p>
+            </li>
+            <li>
+              <h3>Ignoring the maker on anchoring</h3>
+              <p>Some racks must be bolted, some only with certain attachments, and some cannot be bolted at all. Treating that as optional is how racks tip during kipping pull-ups or band work. Read the manual for your configuration, use the specified fixings into a sound slab, and re-check them after the first few sessions.</p>
+            </li>
+            <li>
+              <h3>Choosing by tube size alone</h3>
+              <p>A 3x3 rack on soft flooring, unbolted against the maker's advice, can feel less steady than a properly installed 2x3 rack. Check footprint, depth, anchoring and floor first, then hole spacing and attachment fit. Choose 3x3 for its attachment range and stiffness, not as a substitute for installing the rack correctly.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Squat Rack</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a good rack into an unsafe or unusable one, and each is easy to avoid at the planning stage.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the ceiling at the wrong point</h3>
-              <p class="text-gray-700 text-sm m-0">People measure the open ceiling and forget the beam, light fitting or garage-door track directly above the rack, or the flooring that raises it. Measure to the lowest obstruction above the rack's footprint, subtract mats or platform, and compare with the overall height plus room to assemble. For pull-ups, check the headroom above the bar.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the rack and not the safeties</h3>
-              <p class="text-gray-700 text-sm m-0">Several racks sell safeties or spotter arms separately, and it is tempting to train without them until they arrive. Do not. J-cups are not designed to catch a missed rep. Add safeties to the order, set them just below the bottom of each lift, and test the height with an empty bar first.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the maker on anchoring</h3>
-              <p class="text-gray-700 text-sm m-0">Some racks must be bolted, some only with certain attachments, and some cannot be bolted at all. Treating that as optional is how racks tip during kipping pull-ups or band work. Read the manual for your configuration, use the specified fixings into a sound slab, and re-check them after the first few sessions.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing by tube size alone</h3>
-              <p class="text-gray-700 text-sm m-0">A 3x3 rack on soft flooring, unbolted against the maker's advice, can feel less steady than a properly installed 2x3 rack. Check footprint, depth, anchoring and floor first, then hole spacing and attachment fit. Choose 3x3 for its attachment range and stiffness, not as a substitute for installing the rack correctly.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-lifting-platforms/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Flooring</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lifting Platforms</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Platforms, drop pads and the stall-mat DIY route for the floor in front of your rack.</p>
-            </a>
-            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Setup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How the rack fits with the bar, plates, bench and flooring in a home gym.</p>
-            </a>
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Home Gym Accessories</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The smaller kit that makes a rack-based home gym work day to day.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most home gyms with a concrete floor, buy a power rack you can
             set up exactly as the maker specifies</strong> — the REP PR-5000 if you want one 3x3
             system to grow into (or Titan's X-3 bolt-down rack for a 3x3 rack on Amazon), the Rogue R-3 if you want a complete 2x3 rack and can bolt it
@@ -1054,38 +931,120 @@ const schema = {
             to fold away, the Titan stand for a low ceiling or small budget, and the REP PR-1100
             if you want a full cage under $400 and accept its limits.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you choose, measure the ceiling to the lowest obstruction, budget for safeties
             from day one, follow the maker on bolting, and plan the floor at the same time as the
-            rack. Our guide to the
-            <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">best lifting platforms</a>
-            covers what goes underneath.
+            rack. Our guide to the <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">best lifting platforms</a> covers what goes underneath.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-lifting-platforms/">Best Lifting Platforms</a></li>
+            <li><a href="/home-workout-equipment-reviews/">Home Workout Equipment Reviews</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best squat rack for a home gym?</h3></summary>
+            <p class="faq-a">
+              For most garage or basement gyms, a 3x3 or 2x3 11-gauge power rack with safeties included or added, such as the REP PR-5000 or Rogue R-3 (or, on Amazon, Titan's T-3 Series), set up as the maker specifies. If you cannot bolt into the floor, a half rack like the Rogue HR-2 or Titan's X-3 Series is a strong alternative. Low ceilings and small budgets point to a squat stand with spotter arms.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a 3x3 or 2x3 power rack more stable?</h3></summary>
+            <p class="faq-a">
+              A 3x3 tube is stiffer than a 2x3 tube of the same gauge, but stability depends more on the base than the uprights. A deep footprint, bolting or a stabiliser where the maker requires it, plates stored low and a firm level floor matter more. The main practical advantage of 3x3 is a larger range of compatible attachments.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much ceiling height do I need for a squat rack?</h3></summary>
+            <p class="faq-a">
+              Measure to the lowest beam, light or door track and subtract any flooring, then compare that with the rack's overall height and allow room to stand the uprights during assembly. For pull-ups you need clearance above the bar for your head and shoulders, so a tall rack under a low ceiling may not allow them. Short racks and stands exist for low rooms.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I have to bolt my squat rack to the floor?</h3></summary>
+            <p class="faq-a">
+              Only if the maker says so, and then you must. Some racks must be bolted, some need bolting only with certain attachments, some are designed to stand freely, and some cannot be bolted at all. Follow the manual for your exact rack and use the fixings it specifies, into a sound concrete slab where anchoring is required.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I put a power rack upstairs?</h3></summary>
+            <p class="faq-a">
+              Possibly, but check the structure first. A loaded rack and plate storage put a heavy, concentrated load on the floor, and dropped weights add impact. Ask a structural engineer or experienced builder to assess the floor before installing a rack upstairs, especially in an old or altered building, use dense rubber flooring, and avoid dropping weights.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are safety bars necessary on a squat rack?</h3></summary>
+            <p class="faq-a">
+              Yes, for anyone squatting or benching without a spotter. J-cups hold the bar between sets; they are not designed to catch a missed lift. Pin-and-pipe safeties, strap safeties or spotter arms set just below the bottom of each lift are what make solo barbell training reasonably safe. Several racks sell them separately, so budget for them.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-lifting-platforms/" class="card">
+            <div class="c-kicker">Flooring</div>
+            <div class="c-title">Best Lifting Platforms</div>
+            <p class="c-blurb">Platforms, drop pads and the stall-mat DIY route for the floor in front of your rack.</p>
+          </a>
+          <a href="/home-workout-equipment-reviews/" class="card">
+            <div class="c-kicker">Setup</div>
+            <div class="c-title">Home Workout Equipment Reviews</div>
+            <p class="c-blurb">How the rack fits with the bar, plates, bench and flooring in a home gym.</p>
+          </a>
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Home Gym Accessories</div>
+            <p class="c-blurb">The smaller kit that makes a rack-based home gym work day to day.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

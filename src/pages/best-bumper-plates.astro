@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Bumper Plates (2026): 6 Sets by Bounce, Width and Price";
 const description =
@@ -284,6 +283,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-bumper-plates/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -304,66 +309,86 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: REP Fitness Black Bumper Plates (LB)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestbumperplates" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestbumperplates)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Bumper Plates for a Home Gym, by Bounce and Bar Space</h1>
+      <p class="ed-dek">
+        Bumper plates are what let you drop a loaded bar, but they differ more than their identical black faces suggest: how much they bounce, how thick they are, how close they come to their stated weight and how long they smell. Here are six currently sold sets from about $1 to about $3.30 per pound, and how to choose between them.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Bumper Plates <span class="text-[#5AA9FF]">for a Home Gym, by Bounce and Bar Space</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Bumper plates are what let you drop a loaded bar, but they differ more than their identical black faces suggest: how much they bounce, how thick they are, how close they come to their stated weight and how long they smell. Here are six currently sold sets from about $1 to about $3.30 per pound, and how to choose between them.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#thickness" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How Many Fit on a Bar?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#rep-black-bumper-plates"><img src="https://m.media-amazon.com/images/I/41bxU0fe6DL._SL500_.jpg" alt="REP Fitness Black Bumper Plates (LB)" width="500" height="500" decoding="async" /></a>
+          <a href="#fringe-sport-black-bumper-plates"><img src="https://m.media-amazon.com/images/I/417lfG9ujZL._SL500_.jpg" alt="Fringe Sport Black Bumper Plates" width="500" height="500" decoding="async" /></a>
+          <a href="#fringe-sport-savage-bumper-plates"><img src="https://m.media-amazon.com/images/I/41zSkK1TL4L._SL500_.jpg" alt="Fringe Sport Savage Bumper Plates" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>REP Fitness Black Bumper Plates (LB) · Fringe Sport Black Bumper Plates · Fringe Sport Savage Bumper Plates</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best bumper plates for most home gyms are virgin-rubber training plates with a steel
+          insert, a published weight tolerance of about 1% and a low bounce, bought as a set. That
+          covers several brands at prices from around $2 to $2.50 a pound. Cheaper plates exist and
+          are fine for some people, competition plates cost more and are worth it for a few, and the
+          differences that matter in a garage — bounce, thickness, smell and how the 10 lb plates
+          survive — are rarely on the front of the box. The six sets below cover that range, and the
+          guide after them explains each figure and what it costs you.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#rep-black-bumper-plates">REP Fitness Black Bumper Plates (LB)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Sets:</span> <a href="#fringe-sport-black-bumper-plates">Fringe Sport Black Bumper Plates</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Pairs to 55 lb:</span> <a href="#fringe-sport-savage-bumper-plates">Fringe Sport Savage Bumper Plates</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Widest Range:</span> <a href="#titan-economy-black-bumper-plates">Titan Fitness Economy Black Bumper Plates</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Competition:</span> <a href="#rep-competition-bumper-plates-kg">REP Fitness Competition Bumper Plates (KG)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lowest Price:</span> <a href="#cap-economy-bumper-plate-set">CAP Barbell Economy Olympic Bumper Plate Set</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           plates, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
           each set as currently listed on its maker's own store (REP Fitness, Fringe Sport, Titan
@@ -373,8 +398,7 @@ const schema = {
           a card only where the maker and an independent source agree; where they conflicted — on
           one set's warranty and on durometer figures quoted from older listings — we left it out and
           say so on the card. CAP's Economy set is the exception: we found no independent review
-          with figures we could check, so its card carries CAP's own description only and says so.
-          <strong class="text-gray-900">Where to buy.</strong> Amazon's pages would not load for us
+          with figures we could check, so its card carries CAP's own description only and says so. <strong class="text-gray-900">Where to buy.</strong> Amazon's pages would not load for us
           that day, so Amazon availability was confirmed from Amazon US listings returned by search:
           we found REP's black bumper plates, Fringe Sport's black bumper sets (listed under its
           former name, OneFitWonder) and Titan's Economy bumpers there, and REP's competition plates
@@ -387,85 +411,32 @@ const schema = {
           Commission's recall database on the same date, along with bumper and weight plates as a
           category. Prices are those we saw on that date and change often, and per-pound figures are
           our arithmetic from those prices. We earn a commission if you buy through the Amazon links
-          on this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          on this page; it does not change which products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
           here is a training programme. Olympic lifts and dropped barbells carry a real risk of injury
           to you and to anyone nearby. If you have a back, shoulder, joint or heart condition, are
           pregnant or postpartum, or are new to lifting or returning from injury, talk to a qualified
           professional before you start, and learn the lifts from a qualified coach.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#rep-black-bumper-plates" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Black Bumper Plates (LB)</a>
-            <a href="#rep-black-bumper-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Sets:</span>
-            <a href="#fringe-sport-black-bumper-plates" class="font-bold text-gray-900 no-underline hover:underline">Fringe Sport Black Bumper Plates</a>
-            <a href="#fringe-sport-black-bumper-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pairs to 55 lb:</span>
-            <a href="#fringe-sport-savage-bumper-plates" class="font-bold text-gray-900 no-underline hover:underline">Fringe Sport Savage Bumper Plates</a>
-            <a href="#fringe-sport-savage-bumper-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Widest Range:</span>
-            <a href="#titan-economy-black-bumper-plates" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Economy Black Bumper Plates</a>
-            <a href="#titan-economy-black-bumper-plates" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Competition:</span>
-            <a href="#rep-competition-bumper-plates-kg" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Competition Bumper Plates (KG)</a>
-            <a href="#rep-competition-bumper-plates-kg" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Bumper Plate Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Bumper Plates</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Bumper Plates</a>
-          <a href="#bounce" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Bounce and Durometer</a>
-          <a href="#thickness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Thickness and Bar Space: How Many Plates Fit?</a>
-          <a href="#tolerance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Weight Tolerance: How Close to 45 lb Is a 45?</a>
-          <a href="#smell-care" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Smell, Grease and the 10 lb Plate Problem</a>
-          <a href="#competition-vs-training" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Competition vs Training Bumpers</a>
-          <a href="#price-per-pound" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Price per Pound and Sets vs Pairs</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Bumper Plate Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Bumper Plates</a></li>
+            <li><a href="#how-we-chose">How We Chose These Bumper Plates</a></li>
+            <li><a href="#bounce">Bounce and Durometer</a></li>
+            <li><a href="#thickness">Thickness and Bar Space: How Many Plates Fit?</a></li>
+            <li><a href="#tolerance">Weight Tolerance: How Close to 45 lb Is a 45?</a></li>
+            <li><a href="#smell-care">Smell, Grease and the 10 lb Plate Problem</a></li>
+            <li><a href="#competition-vs-training">Competition vs Training Bumpers</a></li>
+            <li><a href="#price-per-pound">Price per Pound and Sets vs Pairs</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best bumper plates for most home gyms are virgin-rubber training plates with a steel
-          insert, a published weight tolerance of about 1% and a low bounce, bought as a set. That
-          covers several brands at prices from around $2 to $2.50 a pound. Cheaper plates exist and
-          are fine for some people, competition plates cost more and are worth it for a few, and the
-          differences that matter in a garage — bounce, thickness, smell and how the 10 lb plates
-          survive — are rarely on the front of the box. The six sets below cover that range, and the
-          guide after them explains each figure and what it costs you.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Bumper Plate Picks at a Glance</h2>
+          <h2>Our Bumper Plate Picks at a Glance</h2>
 <p>
             Six sets, chosen so that each common kind of bumper — virgin-rubber training plates,
             budget plates, competition plates and the cheapest sets — is covered by something you can
@@ -488,17 +459,12 @@ const schema = {
           </table></div>
           <p>
             Bumpers are one part of a lifting setup. You also need a bar with proper Olympic
-            sleeves — our <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbell guide</a>
-            covers those — and a surface to drop onto, which is where a
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform</a>
-            or <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">rubber gym flooring</a>
-            comes in. The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>
-            collects every guide in this series.
+            sleeves — our <a href="/best-barbells/" class="text-[#0F62FE] font-medium">barbell guide</a> covers those — and a surface to drop onto, which is where a <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform</a> or <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">rubber gym flooring</a> comes in. The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every guide in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Bumper Plates</h2>
+          <h2>The 6 Best Bumper Plates</h2>
 <p>
             Each card gives the figures we could confirm from the maker and an independent source,
             the price range we saw, and who the plates suit. All of them fit Olympic bars with 2-inch
@@ -510,78 +476,67 @@ const schema = {
             in the buyer's guide below puts them on the same footing.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Bumper Plates</h2>
+          <h2>How We Chose These Bumper Plates</h2>
 <p>
             We have not tested these plates. They were chosen from makers' product pages, published
             specifications, warranty terms, recall records and independent coverage, and the claims
@@ -619,14 +574,13 @@ const schema = {
             any maker. The only REP recall we found is a 2021 recall of strap safety brackets for its
             racks, and we found none for Titan Fitness, Fringe Sport, CAP Barbell, Synergee or Yes4All.
             The weight-plate recalls in the database involve adjustable dumbbells whose plates can
-            detach, which our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>
-            covers in detail, and a 2021 recall of Impex Olympic dumbbell handles whose collars could
+            detach, which our <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a> covers in detail, and a 2021 recall of Impex Olympic dumbbell handles whose collars could
             slip.
           </p>
         </div>
 
         <div id="bounce" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Bounce and Durometer</h2>
+          <h2>Bounce and Durometer</h2>
 <p>
             Every bumper bounces a little. The question is how much, because a bar that rebounds hard
             off the floor can hop sideways, hit the rack or come back up towards the lifter's shins.
@@ -650,14 +604,12 @@ const schema = {
             Two things affect bounce as much as the rubber. The floor matters: plates bounce more off
             a hard platform or concrete than off thick rubber mats. And the load matters: a heavy bar
             bounces less than a light one, which is why most people notice bounce most with a
-            barbell carrying only a pair of 10s or 15s. Our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
-            explains how a stiff platform under rubber controls both bounce and noise.
+            barbell carrying only a pair of 10s or 15s. Our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a> explains how a stiff platform under rubber controls both bounce and noise.
           </p>
         </div>
 
         <div id="thickness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Thickness and Bar Space: How Many Plates Fit?</h2>
+          <h2>Thickness and Bar Space: How Many Plates Fit?</h2>
 <p>
             Bumpers are far thicker than iron plates of the same weight, because the rubber has to
             absorb the drop. That limits how much you can load. A typical 20 kg bar has about 16
@@ -690,15 +642,13 @@ const schema = {
             For most home lifters 450 to 500 lb of bumpers is more than enough. If you deadlift more
             than that, the usual answer is not thinner bumpers but iron plates on the inside for heavy
             pulls you lower under control, or competition plates, which are thinner for their weight.
-            Our <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium">weight plate guide</a>
-            covers the iron side. Sleeve length also limits trap bars, many of which have shorter
-            sleeves than a barbell; our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar guide</a>
-            gives the figures.
+            Our <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium">weight plate guide</a> covers the iron side. Sleeve length also limits trap bars, many of which have shorter
+            sleeves than a barbell; our <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">trap bar guide</a> gives the figures.
           </p>
         </div>
 
         <div id="tolerance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Weight Tolerance: How Close to 45 lb Is a 45?</h2>
+          <h2>Weight Tolerance: How Close to 45 lb Is a 45?</h2>
 <p>
             Weight tolerance is how far a plate may be from its stated weight. Training bumpers are
             usually sold at ±1% to ±3%; competition plates at ±10 grams.
@@ -728,7 +678,7 @@ const schema = {
         </div>
 
         <div id="smell-care" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Smell, Grease and the 10 lb Plate Problem</h2>
+          <h2>Smell, Grease and the 10 lb Plate Problem</h2>
 <p>
             New rubber plates often smell, and some arrive greasy. Fringe Sport's own FAQ says the
             smell comes from the manufacturing process and is not permanent, suggests airing the plates
@@ -754,14 +704,12 @@ const schema = {
             warranty is void if the plates are used with its smaller Hi-Temp plates, because the larger
             plate takes the whole impact; the same logic applies to mixing bumpers and iron plates.
             Store plates vertically on a rack or tree, not in a pile, and keep them out of direct
-            sunlight once the smell has gone. Our
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            covers plate storage and collars.
+            sunlight once the smell has gone. Our <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a> covers plate storage and collars.
           </p>
         </div>
 
         <div id="competition-vs-training" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Competition vs Training Bumpers</h2>
+          <h2>Competition vs Training Bumpers</h2>
 <p>
             Competition bumpers are built to the International Weightlifting Federation's standard:
             ±10 g tolerance, colour-coded by weight (red, blue, yellow and green for 25, 20, 15 and 10
@@ -784,7 +732,7 @@ const schema = {
         </div>
 
         <div id="price-per-pound" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Price per Pound and Sets vs Pairs</h2>
+          <h2>Price per Pound and Sets vs Pairs</h2>
 <p>
             Per-pound prices are the fairest way to compare plates sold in different bundles. The
             figures below are our arithmetic from the prices on each maker's store on 19 October 2026,
@@ -821,105 +769,34 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the best bumper plates for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, virgin-rubber training bumpers with a steel insert and a ±1% tolerance, such as REP's black bumper plates or Fringe Sport's black or MilSpec plates. They cost roughly $1.90 to $2.50 a pound. Budget plates like Titan's Economy or CAP's Economy sets cost less but have looser or unpublished tolerances.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What durometer should bumper plates be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Higher means harder rubber and less bounce. Garage Gym Reviews treats 85 Shore A and above as a low, dead bounce and readings in the 60s as moderately bouncy. Fringe Sport publishes 90 for its 10 and 15 lb plates and 85 for heavier plates. Many makers publish no figure, so treat an unrated low-bounce claim as marketing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much weight can you fit on a barbell with bumper plates?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a typical 20 kg bar with about 16 inches of sleeve, five 45 lb bumpers about 2.9 inches thick fit on each side with room for a collar, which is about 494 lb including the bar. Thicker plates or a 15 kg bar with shorter sleeves hold less. Iron or competition plates fit more.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are competition bumper plates worth it at home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not. Competition plates are accurate to within 10 grams, colour-coded and thinner, but REP's cost about 50% more per pound than its training plates. They are worth it if you compete or coach weightlifting, or want plates that will hold their accuracy for many years. Training bumpers at ±1% suit most home gyms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why do bumper plates smell, and does it go away?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The smell comes from the rubber and the manufacturing process. Fringe Sport says it is not permanent and suggests airing the plates in the sun for about five days; some plates also arrive with a grease that can be wiped off. Virgin rubber generally smells less than recycled or crumb rubber.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you drop 10 lb bumper plates on their own?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the maker says so. Thin 10 lb bumpers can bend when dropped alone on a bar. REP makes its 10s an inch thick, and Fringe says its black 10s survive drops on their own, but Titan's own listing warns its Economy 10s are not designed to be used alone on a bar.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a platform for bumper plates?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                You need a suitable surface. Bumpers protect the bar and plates, not the floor. Drop them onto a lifting platform or thick rubber mats over concrete; on a wooden, tiled or upstairs floor, a platform and a check of the structure are essential.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying Bumper Plates</h2>
+          <p>Each of these is easy to avoid before you order and annoying to discover afterwards.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Forgetting how thick bumpers are</h3>
+              <p>Bumpers take far more sleeve space than iron plates of the same weight. If you deadlift heavy, check the plate widths against your bar's loadable sleeve length before ordering, or plan to use iron plates for heavy lifts you lower under control.</p>
+            </li>
+            <li>
+              <h3>Dropping thin 10s on their own</h3>
+              <p>A pair of thin 10 lb bumpers dropped alone on a bar can fold. Check whether the maker designs its 10s to be dropped alone; if not, load them with heavier plates or use a technique bar and training plates for light work.</p>
+            </li>
+            <li>
+              <h3>Dropping onto the wrong floor</h3>
+              <p>Bumpers protect the bar and plates, not the floor. Dropped onto tile, hardwood or thin foam, a loaded bar can still crack or dent the surface beneath. Use a lifting platform or thick rubber flooring, and get a structural check before lifting heavy upstairs.</p>
+            </li>
+            <li>
+              <h3>Mixing plates of different diameters</h3>
+              <p>Loading bumpers with iron plates, or with thinner high-temperature bumpers, means the largest plate takes the whole impact, which damages it and can void the warranty. Keep each bar to one type of plate when you plan to drop it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Bumper Plates</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and annoying to discover afterwards.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting how thick bumpers are</h3>
-              <p class="text-gray-700 text-sm m-0">Bumpers take far more sleeve space than iron plates of the same weight. If you deadlift heavy, check the plate widths against your bar's loadable sleeve length before ordering, or plan to use iron plates for heavy lifts you lower under control.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Dropping thin 10s on their own</h3>
-              <p class="text-gray-700 text-sm m-0">A pair of thin 10 lb bumpers dropped alone on a bar can fold. Check whether the maker designs its 10s to be dropped alone; if not, load them with heavier plates or use a technique bar and training plates for light work.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Dropping onto the wrong floor</h3>
-              <p class="text-gray-700 text-sm m-0">Bumpers protect the bar and plates, not the floor. Dropped onto tile, hardwood or thin foam, a loaded bar can still crack or dent the surface beneath. Use a lifting platform or thick rubber flooring, and get a structural check before lifting heavy upstairs.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Mixing plates of different diameters</h3>
-              <p class="text-gray-700 text-sm m-0">Loading bumpers with iron plates, or with thinner high-temperature bumpers, means the largest plate takes the whole impact, which damages it and can void the warranty. Keep each bar to one type of plate when you plan to drop it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-lifting-platforms/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Flooring</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lifting Platforms</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Deadlift and Olympic platforms that control bounce and noise when you drop the bar.</p>
-            </a>
-            <a href="/best-gym-flooring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Flooring</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Gym Flooring</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rubber tiles, mats and rolls for a home gym, and which ones can take dropped weights.</p>
-            </a>
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Racks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Racks, safeties and plate storage for the bar and bumpers you choose.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most home gyms, buy REP's black bumper plates</strong>: ±1%
             tolerance, durable inch-thick 10s and an Amazon listing, for about $2.22 a pound in 45s.
             Fringe Sport's black plates are the set to choose for published low-bounce figures, and its
@@ -928,37 +805,125 @@ const schema = {
             competition plates (kilograms on Amazon) suit lifters who compete, and CAP's Economy sets
             are the cheapest way in.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, check the plate widths against your bar, treat thin 10s with care, and
-            give the plates something to land on —
-            <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">our lifting platform guide</a>
-            covers the surfaces that protect both the floor and the plates.
+            give the plates something to land on — <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">our lifting platform guide</a> covers the surfaces that protect both the floor and the plates.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-lifting-platforms/">Best Lifting Platforms</a></li>
+            <li><a href="/best-gym-flooring/">Best Gym Flooring</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What are the best bumper plates for a home gym?</h3></summary>
+            <p class="faq-a">
+              For most people, virgin-rubber training bumpers with a steel insert and a ±1% tolerance, such as REP's black bumper plates or Fringe Sport's black or MilSpec plates. They cost roughly $1.90 to $2.50 a pound. Budget plates like Titan's Economy or CAP's Economy sets cost less but have looser or unpublished tolerances.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What durometer should bumper plates be?</h3></summary>
+            <p class="faq-a">
+              Higher means harder rubber and less bounce. Garage Gym Reviews treats 85 Shore A and above as a low, dead bounce and readings in the 60s as moderately bouncy. Fringe Sport publishes 90 for its 10 and 15 lb plates and 85 for heavier plates. Many makers publish no figure, so treat an unrated low-bounce claim as marketing.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much weight can you fit on a barbell with bumper plates?</h3></summary>
+            <p class="faq-a">
+              On a typical 20 kg bar with about 16 inches of sleeve, five 45 lb bumpers about 2.9 inches thick fit on each side with room for a collar, which is about 494 lb including the bar. Thicker plates or a 15 kg bar with shorter sleeves hold less. Iron or competition plates fit more.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are competition bumper plates worth it at home?</h3></summary>
+            <p class="faq-a">
+              Usually not. Competition plates are accurate to within 10 grams, colour-coded and thinner, but REP's cost about 50% more per pound than its training plates. They are worth it if you compete or coach weightlifting, or want plates that will hold their accuracy for many years. Training bumpers at ±1% suit most home gyms.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why do bumper plates smell, and does it go away?</h3></summary>
+            <p class="faq-a">
+              The smell comes from the rubber and the manufacturing process. Fringe Sport says it is not permanent and suggests airing the plates in the sun for about five days; some plates also arrive with a grease that can be wiped off. Virgin rubber generally smells less than recycled or crumb rubber.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you drop 10 lb bumper plates on their own?</h3></summary>
+            <p class="faq-a">
+              Only if the maker says so. Thin 10 lb bumpers can bend when dropped alone on a bar. REP makes its 10s an inch thick, and Fringe says its black 10s survive drops on their own, but Titan's own listing warns its Economy 10s are not designed to be used alone on a bar.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a platform for bumper plates?</h3></summary>
+            <p class="faq-a">
+              You need a suitable surface. Bumpers protect the bar and plates, not the floor. Drop them onto a lifting platform or thick rubber mats over concrete; on a wooden, tiled or upstairs floor, a platform and a check of the structure are essential.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-lifting-platforms/" class="card">
+            <div class="c-kicker">Flooring</div>
+            <div class="c-title">Best Lifting Platforms</div>
+            <p class="c-blurb">Deadlift and Olympic platforms that control bounce and noise when you drop the bar.</p>
+          </a>
+          <a href="/best-gym-flooring/" class="card">
+            <div class="c-kicker">Flooring</div>
+            <div class="c-title">Best Gym Flooring</div>
+            <p class="c-blurb">Rubber tiles, mats and rolls for a home gym, and which ones can take dropped weights.</p>
+          </a>
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Racks</div>
+            <div class="c-title">Best Squat Racks for Home Gym</div>
+            <p class="c-blurb">Racks, safeties and plate storage for the bar and bumpers you choose.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

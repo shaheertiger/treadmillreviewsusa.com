@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Long Should I Run on a Treadmill? (2026): By Goal and Level";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-long-should-i-run-on-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,102 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Lengths by Goal", link: "#by-goal" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howlongshouldirunonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howlongshouldirunonatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">How Long Should I Run on a Treadmill?</h1>
+      <p class="ed-dek">
+        There is no single right number, but there is a sensible starting point and a sensible way to build from it. A beginner is usually best served by 20 to 30 minutes including walk breaks; a regular runner by sessions that vary in length across the week. Here is how long to run by goal and experience, what the US guidelines actually ask for, how fast to add time, and how to stay on the belt long enough to get there.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 9, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Long Should I Run <span class="text-[#5AA9FF]">on a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          There is no single right number, but there is a sensible starting point and a sensible way to build from it. A beginner is usually best served by 20 to 30 minutes including walk breaks; a regular runner by sessions that vary in length across the week. Here is how long to run by goal and experience, what the US guidelines actually ask for, how fast to add time, and how to stay on the belt long enough to get there.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#by-goal" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Session Length by Goal
-          </a>
-          <a href="#beginners" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            If You Are a Beginner
-          </a>
-        </div>
+        <a href="#by-goal" class="btn-ghost">Session Length by Goal</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 9, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a general guide to session length — it is not medical, coaching or nutrition
-          advice, and we are not qualified to give any of those. How long you should run depends
-          on your health, history, current fitness and goals; if you have a heart, lung, joint or
-          other condition, an injury, are pregnant, or have not exercised for a long time, talk
-          to a doctor or physical therapist before you start, and stop and get checked if
-          something hurts or feels wrong. <strong class="text-gray-900">On the figures below:</strong>
-          the weekly activity amounts are the US physical activity guidelines; session lengths and
-          progression rates are typical starting points and rules of thumb, not prescriptions.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How Long Should I Run on a Treadmill? The Short Answer</a>
-          <a href="#guidelines" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Much Running Do the Guidelines Suggest?</a>
-          <a href="#by-goal" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How Long Should a Treadmill Run Be, by Goal?</a>
-          <a href="#beginners" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Long Should a Beginner Run on a Treadmill?</a>
-          <a href="#building-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Quickly Can You Run Longer?</a>
-          <a href="#long-runs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Long Should a Long Run on a Treadmill Be?</a>
-          <a href="#intervals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Why Are Interval Sessions Shorter?</a>
-          <a href="#too-long" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How Long Is Too Long to Run on a Treadmill?</a>
-          <a href="#boredom" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Do You Stay on the Treadmill Long Enough?</a>
-          <a href="#sample-weeks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Does a Sensible Week Look Like?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           How long you should run on a treadmill depends on two things: what you are running for,
           and how much running your body is used to. A complete beginner and someone training for a
           half marathon need very different answers, and the same person needs different answers
@@ -209,8 +146,37 @@ const schema = {
           heat, boredom and a belt that never changes.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is a general guide to session length — it is not medical, coaching or nutrition
+          advice, and we are not qualified to give any of those. How long you should run depends
+          on your health, history, current fitness and goals; if you have a heart, lung, joint or
+          other condition, an injury, are pregnant, or have not exercised for a long time, talk
+          to a doctor or physical therapist before you start, and stop and get checked if
+          something hurts or feels wrong. <strong class="text-gray-900">On the figures below:</strong> the weekly activity amounts are the US physical activity guidelines; session lengths and
+          progression rates are typical starting points and rules of thumb, not prescriptions.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How Long Should I Run on a Treadmill? The Short Answer</a></li>
+            <li><a href="#guidelines">How Much Running Do the Guidelines Suggest?</a></li>
+            <li><a href="#by-goal">How Long Should a Treadmill Run Be, by Goal?</a></li>
+            <li><a href="#beginners">How Long Should a Beginner Run on a Treadmill?</a></li>
+            <li><a href="#building-up">How Quickly Can You Run Longer?</a></li>
+            <li><a href="#long-runs">How Long Should a Long Run on a Treadmill Be?</a></li>
+            <li><a href="#intervals">Why Are Interval Sessions Shorter?</a></li>
+            <li><a href="#too-long">How Long Is Too Long to Run on a Treadmill?</a></li>
+            <li><a href="#boredom">How Do You Stay on the Treadmill Long Enough?</a></li>
+            <li><a href="#sample-weeks">What Does a Sensible Week Look Like?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How Long Should I Run on a Treadmill? The Short Answer</h2>
+          <h2>How Long Should I Run on a Treadmill? The Short Answer</h2>
 <p>
             <strong>If you are new to running, start with 20 to 30 minutes in total, including a
             warm-up, walk breaks and a cool-down, three times a week.</strong> If you already run
@@ -240,14 +206,13 @@ const schema = {
         </div>
 
         <div id="guidelines" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Much Running Do the Guidelines Suggest?</h2>
+          <h2>How Much Running Do the Guidelines Suggest?</h2>
 <p>
             The figures most often quoted come from the US physical activity guidelines for
             adults. In outline, they suggest:
           </p>
           <ul>
-            <li><strong>At least 150 minutes a week of moderate-intensity aerobic activity</strong>
-            — the kind that raises your breathing and heart rate but still lets you talk, such as
+            <li><strong>At least 150 minutes a week of moderate-intensity aerobic activity</strong> — the kind that raises your breathing and heart rate but still lets you talk, such as
             brisk walking — <strong>or at least 75 minutes a week of vigorous activity</strong>,
             such as running, or an equivalent combination of the two.</li>
             <li><strong>More than that brings additional benefit</strong>, with the guidelines
@@ -274,14 +239,12 @@ const schema = {
             building to it needs time.
           </p>
           <p>
-            If you also walk on the treadmill, our guide to
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
-            covers the moderate side of the same guidelines in detail.
+            If you also walk on the treadmill, our guide to <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a> covers the moderate side of the same guidelines in detail.
           </p>
         </div>
 
         <div id="by-goal" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How Long Should a Treadmill Run Be, by Goal?</h2>
+          <h2>How Long Should a Treadmill Run Be, by Goal?</h2>
 <p>
             The table below gives typical starting points by goal. They are rules of thumb drawn
             from common training practice rather than prescriptions, and they assume you are
@@ -318,14 +281,12 @@ const schema = {
           <p>
             For weight management specifically, the honest answer is that running time is only
             part of it. The calories a run uses depend on your weight, speed and incline, and the
-            console's figure is an estimate. Our reference on
-            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>
-            covers the arithmetic.
+            console's figure is an estimate. Our reference on <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a> covers the arithmetic.
           </p>
         </div>
 
         <div id="beginners" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Long Should a Beginner Run on a Treadmill?</h2>
+          <h2>How Long Should a Beginner Run on a Treadmill?</h2>
 <p>
             About 20 to 30 minutes in total, and most of that will not be running at first. A
             typical beginner session is five minutes of brisk walking to warm up, then alternating
@@ -347,9 +308,7 @@ const schema = {
           <p>
             That is a sketch rather than a plan, and many people need to repeat a week, which is
             completely normal. If you want a structured version that runs from the first jog to
-            running a 5K, our
-            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K treadmill plan</a>
-            sets out each session.
+            running a 5K, our <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K treadmill plan</a> sets out each session.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How fast should the running parts be?</h3>
           <p>
@@ -369,7 +328,7 @@ const schema = {
         </div>
 
         <div id="building-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Quickly Can You Run Longer?</h2>
+          <h2>How Quickly Can You Run Longer?</h2>
 <p>
             Gradually. The most widely quoted rule of thumb is to increase your weekly running
             time or distance by no more than about 10% from one week to the next. It is a rough
@@ -402,13 +361,12 @@ const schema = {
             If something starts to hurt — pain that worsens as you run, a tender spot on a bone,
             pain the next morning — stop building, reduce, and get it checked if it does not
             settle within a few days. Whether daily running is wise is its own question, answered
-            in
-            <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">can you use a treadmill every day</a>.
+            in <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">can you use a treadmill every day</a>.
           </p>
         </div>
 
         <div id="long-runs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Long Should a Long Run on a Treadmill Be?</h2>
+          <h2>How Long Should a Long Run on a Treadmill Be?</h2>
 <p>
             It depends on what you are training for, and it should be clearly longer than your
             other runs without dominating the week. A long run for a 10K is often 50 to 75
@@ -439,14 +397,12 @@ const schema = {
             Many runners training for longer events do their long runs outdoors when they can and
             use the treadmill for the rest of the week. That is not because the treadmill is
             inadequate, but because a race is outside, with hills, turns and weather, and some
-            practice on that surface helps. Our comparison of
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill versus running outside</a>
-            covers how runners blend the two.
+            practice on that surface helps. Our comparison of <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill versus running outside</a> covers how runners blend the two.
           </p>
         </div>
 
         <div id="intervals" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Why Are Interval Sessions Shorter?</h2>
+          <h2>Why Are Interval Sessions Shorter?</h2>
 <p>
             Because the hard running is the point, and there is not much of it. A typical interval
             session might be a 10-minute warm-up, six repeats of 1 to 3 minutes at a hard pace
@@ -465,9 +421,7 @@ const schema = {
             The treadmill is very good at intervals: the speed is exact, the recoveries are exact,
             and you cannot cheat on a hill or a tailwind. Its one hazard is the transition. Change
             speed with the buttons rather than jumping on and off the belt, and never straddle the
-            rails while the belt is at full speed and then step back on. Our guide to
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
-            has sessions for different levels.
+            rails while the belt is at full speed and then step back on. Our guide to <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a> has sessions for different levels.
           </p>
           <p>
             The warm-up and cool-down count towards the session length, and they matter more for
@@ -477,7 +431,7 @@ const schema = {
         </div>
 
         <div id="too-long" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How Long Is Too Long to Run on a Treadmill?</h2>
+          <h2>How Long Is Too Long to Run on a Treadmill?</h2>
 <p>
             There is no fixed limit, but there are signs that a session has gone on too long for
             you, today. A run is probably too long if:
@@ -502,14 +456,12 @@ const schema = {
             There is also the machine to consider. Home treadmills vary widely in how well they
             cope with long continuous use, especially at running speed with a heavier user. A
             motor that smells hot, a belt that hesitates or a console that shuts down mid-run is
-            the machine telling you it is at its limit. Our guide to
-            <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
-            covers what causes it and what to check.
+            the machine telling you it is at its limit. Our guide to <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a> covers what causes it and what to check.
           </p>
         </div>
 
         <div id="boredom" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Do You Stay on the Treadmill Long Enough?</h2>
+          <h2>How Do You Stay on the Treadmill Long Enough?</h2>
 <p>
             For many people the limit is not fitness but boredom. Thirty minutes on a belt can
             feel longer than an hour outdoors, because there is nothing to look at and the display
@@ -532,15 +484,13 @@ const schema = {
             continuous run and still do the job.</li>
           </ul>
           <p>
-            Our guide to
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
-            has the longer list. The short version is to give your mind something other than the
+            Our guide to <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a> has the longer list. The short version is to give your mind something other than the
             belt and the clock to think about.
           </p>
         </div>
 
         <div id="sample-weeks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Does a Sensible Week Look Like?</h2>
+          <h2>What Does a Sensible Week Look Like?</h2>
 <p>
             Here are three example weeks, to show how session lengths fit together. They are
             illustrations, not plans, and they assume you have built up to them.
@@ -564,145 +514,158 @@ const schema = {
           <p>
             Each week has easy days, at most one or two hard sessions, at least one rest day, and
             only one session much longer than the rest. That shape is more important than the
-            exact minutes. Our guide to
-            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">structuring a week of treadmill workouts</a>
-            explains the four session types and how to combine them.
+            exact minutes. Our guide to <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">structuring a week of treadmill workouts</a> explains the four session types and how to combine them.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is 30 minutes of running on a treadmill enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For general health, 30 minutes of steady running three times a week exceeds the 75 minutes of vigorous activity in the US guidelines. It is a sensible session length for most people. Whether it is enough for a specific goal, such as a 10K or a marathon, depends on the goal; longer events need at least one longer run each week.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is 20 minutes on the treadmill enough?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Twenty minutes of running is a worthwhile session, especially for beginners and on busy days. Three or four 20-minute runs a week reaches or approaches the 75 vigorous minutes in the US guidelines. Short sessions done consistently beat long sessions done occasionally. Add time gradually once 20 minutes feels comfortable, if your goals call for it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should I run on a treadmill to lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no single number, because weight change depends on diet, total activity and the individual. Running burns energy in proportion to your weight and distance, so more total weekly time helps, but adding it gradually matters more than any single long session. Mixing runs with incline walks lets you build total time without overloading your legs.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a beginner run on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About 20 to 30 minutes in total, including a five-minute walking warm-up, alternating short jogs with walking breaks, and a five-minute cool-down. Three sessions a week with rest or walking days between is a common start. The running portions lengthen over several weeks while the total time stays about the same.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I run for an hour on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If you have built up to it, yes. An hour at an easy pace is a normal long run for many runners. Use a fan, keep water in reach, vary speed and incline a little, and check whether your treadmill manual specifies a maximum continuous running time. If you are new to running, build up gradually rather than starting with an hour.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the warm-up count towards my running time?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, yes. Most plans give session lengths including the warm-up and cool-down, and the guidelines count moderate activity such as brisk walking too. What matters is being consistent about how you count, so that your weekly totals are comparable. If a plan specifies running minutes separately, follow its convention.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Run Length</h2>
+          <p>Most problems with session length come from adding too much too soon or from every session being the same.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Doubling session length overnight</h3>
+              <p>Going from 20 minutes to 40 because the last run felt easy is the classic route to sore shins or a sore Achilles. Fitness improves faster than tendons and bones adapt. Add time gradually, around 10% a week as a rule of thumb, and change only one thing at a time: duration, speed or incline.</p>
+            </li>
+            <li>
+              <h3>Making every run long and hard</h3>
+              <p>If every session is the longest and fastest you can manage, there are no easy days and no recovery. Most runs should be conversational, with at most one or two hard sessions and one longer run a week. The variety of lengths and efforts is what lets you keep running week after week.</p>
+            </li>
+            <li>
+              <h3>Running too fast to last the session</h3>
+              <p>Beginners often set a speed they cannot hold for more than a minute or two, then conclude they cannot run for 20 minutes. Slow down until you can talk in short sentences, use walk breaks, and let the running portions lengthen. Session length is limited by pace far more often than by fitness.</p>
+            </li>
+            <li>
+              <h3>Ignoring heat on long treadmill runs</h3>
+              <p>A long run indoors has no breeze, so body temperature and heart rate climb faster than outside, and the same pace becomes harder as the session goes on. Use a standalone fan, keep the room cool, drink, and slow down if your effort climbs. Stop for dizziness, nausea or confusion.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Run Length</h2>
-          <p class="text-gray-700 leading-relaxed">Most problems with session length come from adding too much too soon or from every session being the same.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Doubling session length overnight</h3>
-              <p class="text-gray-700 text-sm m-0">Going from 20 minutes to 40 because the last run felt easy is the classic route to sore shins or a sore Achilles. Fitness improves faster than tendons and bones adapt. Add time gradually, around 10% a week as a rule of thumb, and change only one thing at a time: duration, speed or incline.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Making every run long and hard</h3>
-              <p class="text-gray-700 text-sm m-0">If every session is the longest and fastest you can manage, there are no easy days and no recovery. Most runs should be conversational, with at most one or two hard sessions and one longer run a week. The variety of lengths and efforts is what lets you keep running week after week.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running too fast to last the session</h3>
-              <p class="text-gray-700 text-sm m-0">Beginners often set a speed they cannot hold for more than a minute or two, then conclude they cannot run for 20 minutes. Slow down until you can talk in short sentences, use walk breaks, and let the running portions lengthen. Session length is limited by pace far more often than by fitness.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring heat on long treadmill runs</h3>
-              <p class="text-gray-700 text-sm m-0">A long run indoors has no breeze, so body temperature and heart rate climb faster than outside, and the same pace becomes harder as the session goes on. Use a standalone fan, keep the room cool, drink, and slow down if your effort climbs. Stop for dizziness, nausea or confusion.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-long-should-i-walk-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Should I Walk on a Treadmill?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Walking time by goal and fitness, and the moderate side of the guidelines.</p>
-            </a>
-            <a href="/couch-to-5k-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Beginners</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Couch to 5K on a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A session-by-session plan from the first jog to running a full 5K.</p>
-            </a>
-            <a href="/treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Planning</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The four session types and how to build a week that works.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Start with 20 to 30 minutes including walk breaks, three times a
             week, and build from there.</strong> Most sessions for most goals sit between 20 and 45
             minutes; intervals are shorter, long runs are longer, and the weekly total matters
             more than any one day.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             The US guidelines suggest at least 75 minutes of vigorous or 150 of moderate activity a
             week as a floor. Add time by about 10% a week as a rule of thumb, keep most runs easy,
-            and manage heat and boredom on longer sessions. For a ready-made progression, see our
-            <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K treadmill plan</a>.
+            and manage heat and boredom on longer sessions. For a ready-made progression, see our <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K treadmill plan</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-long-should-i-walk-on-a-treadmill/">How Long Should I Walk on a Treadmill?</a></li>
+            <li><a href="/couch-to-5k-treadmill/">Couch to 5K on a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is 30 minutes of running on a treadmill enough?</h3></summary>
+            <p class="faq-a">
+              For general health, 30 minutes of steady running three times a week exceeds the 75 minutes of vigorous activity in the US guidelines. It is a sensible session length for most people. Whether it is enough for a specific goal, such as a 10K or a marathon, depends on the goal; longer events need at least one longer run each week.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is 20 minutes on the treadmill enough?</h3></summary>
+            <p class="faq-a">
+              Twenty minutes of running is a worthwhile session, especially for beginners and on busy days. Three or four 20-minute runs a week reaches or approaches the 75 vigorous minutes in the US guidelines. Short sessions done consistently beat long sessions done occasionally. Add time gradually once 20 minutes feels comfortable, if your goals call for it.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long should I run on a treadmill to lose weight?</h3></summary>
+            <p class="faq-a">
+              There is no single number, because weight change depends on diet, total activity and the individual. Running burns energy in proportion to your weight and distance, so more total weekly time helps, but adding it gradually matters more than any single long session. Mixing runs with incline walks lets you build total time without overloading your legs.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should a beginner run on a treadmill?</h3></summary>
+            <p class="faq-a">
+              About 20 to 30 minutes in total, including a five-minute walking warm-up, alternating short jogs with walking breaks, and a five-minute cool-down. Three sessions a week with rest or walking days between is a common start. The running portions lengthen over several weeks while the total time stays about the same.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I run for an hour on a treadmill?</h3></summary>
+            <p class="faq-a">
+              If you have built up to it, yes. An hour at an easy pace is a normal long run for many runners. Use a fan, keep water in reach, vary speed and incline a little, and check whether your treadmill manual specifies a maximum continuous running time. If you are new to running, build up gradually rather than starting with an hour.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the warm-up count towards my running time?</h3></summary>
+            <p class="faq-a">
+              Usually, yes. Most plans give session lengths including the warm-up and cool-down, and the guidelines count moderate activity such as brisk walking too. What matters is being consistent about how you count, so that your weekly totals are comparable. If a plan specifies running minutes separately, follow its convention.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-long-should-i-walk-on-a-treadmill/" class="card">
+            <div class="c-kicker">Walking</div>
+            <div class="c-title">How Long Should I Walk on a Treadmill?</div>
+            <p class="c-blurb">Walking time by goal and fitness, and the moderate side of the guidelines.</p>
+          </a>
+          <a href="/couch-to-5k-treadmill/" class="card">
+            <div class="c-kicker">Beginners</div>
+            <div class="c-title">Couch to 5K on a Treadmill</div>
+            <p class="c-blurb">A session-by-session plan from the first jog to running a full 5K.</p>
+          </a>
+          <a href="/treadmill-workouts/" class="card">
+            <div class="c-kicker">Planning</div>
+            <div class="c-title">Treadmill Workouts</div>
+            <p class="c-blurb">The four session types and how to build a week that works.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

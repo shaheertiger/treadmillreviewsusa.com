@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Deck Replacement (2026): Worn Decks, Flipping and Cost";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-deck-replacement/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Can Your Deck Be Flipped?", link: "#flip-option" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmilldeckreplacement" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmilldeckreplacement)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Maintenance</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Deck Replacement: Worn Decks, Flipping and What It Costs</h1>
+      <p class="ed-dek">
+        The deck is the part of a treadmill nobody sees and nearly everybody blames the belt for. Here is how to tell when it is worn, whether yours can be turned over for a second life, and what a flip or a new board involves and costs.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Maintenance
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Deck Replacement: <span class="text-[#5AA9FF]">Worn Decks, Flipping and What It Costs</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The deck is the part of a treadmill nobody sees and nearly everybody blames the belt for. Here is how to tell when it is worn, whether yours can be turned over for a second life, and what a flip or a new board involves and costs.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#symptoms" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Signs of a Worn Deck
-          </a>
-          <a href="#flip-option" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Can It Be Flipped?
-          </a>
-        </div>
+        <a href="#symptoms" class="btn-ghost">Signs of a Worn Deck</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Unplug before you touch anything, and get help to lift.</strong>
-          Every inspection and every step described here is done with the treadmill unplugged at
-          the wall. A deck is a large, heavy, awkward board and removing it means partly dismantling
-          the machine; treat it as a two-person job. Stop using the treadmill entirely for a
-          burning smell, a breaker that trips on start-up, speed that surges on its own, or a belt
-          that does not stop when the safety key is pulled. Your manual is the authority on your
-          model: it says whether the deck is reversible and in what order the parts come off.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Deck Replacement: The Short Answer</a>
-          <a href="#what-the-deck-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Deck Is and Why It Wears</a>
-          <a href="#symptoms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Symptoms of a Worn Treadmill Deck</a>
-          <a href="#rule-out" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Rule Out the Cheaper Causes First</a>
-          <a href="#flip-option" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Can the Deck Be Flipped?</a>
-          <a href="#flip-procedure" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How a Deck Flip Is Done</a>
-          <a href="#replacement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. When the Deck Must Be Replaced</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Deck Replacement Costs</a>
-          <a href="#worth-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Is It Worth It on Your Machine?</a>
-          <a href="#prevention" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Making the Next Deck Last</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Under the belt of every treadmill is a flat board that takes every footstrike, and when
           its surface wears through the machine starts to behave as if the belt is at fault. Owners
           lubricate, tighten, sometimes buy a new belt, and the drag comes back within weeks. The
@@ -206,8 +145,35 @@ const schema = {
           involves, and whether it is worth doing on your machine.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Unplug before you touch anything, and get help to lift.</strong> Every inspection and every step described here is done with the treadmill unplugged at
+          the wall. A deck is a large, heavy, awkward board and removing it means partly dismantling
+          the machine; treat it as a two-person job. Stop using the treadmill entirely for a
+          burning smell, a breaker that trips on start-up, speed that surges on its own, or a belt
+          that does not stop when the safety key is pulled. Your manual is the authority on your
+          model: it says whether the deck is reversible and in what order the parts come off.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Deck Replacement: The Short Answer</a></li>
+            <li><a href="#what-the-deck-is">What the Deck Is and Why It Wears</a></li>
+            <li><a href="#symptoms">Symptoms of a Worn Treadmill Deck</a></li>
+            <li><a href="#rule-out">Rule Out the Cheaper Causes First</a></li>
+            <li><a href="#flip-option">Can the Deck Be Flipped?</a></li>
+            <li><a href="#flip-procedure">How a Deck Flip Is Done</a></li>
+            <li><a href="#replacement">When the Deck Must Be Replaced</a></li>
+            <li><a href="#cost">What Deck Replacement Costs</a></li>
+            <li><a href="#worth-it">Is It Worth It on Your Machine?</a></li>
+            <li><a href="#prevention">Making the Next Deck Last</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Deck Replacement: The Short Answer</h2>
+          <h2>Treadmill Deck Replacement: The Short Answer</h2>
 <p>
             <strong>A treadmill deck wears out, and when it does the belt drags, slips and runs hot
             no matter how it is lubricated or tensioned.</strong> On many home machines the deck is
@@ -232,7 +198,7 @@ const schema = {
         </div>
 
         <div id="what-the-deck-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Deck Is and Why It Wears</h2>
+          <h2>What the Deck Is and Why It Wears</h2>
 <p>
             The deck is the rigid board that sits between the front and rear rollers, inside the
             loop of the walking belt. The top run of the belt slides across it, and every footstrike
@@ -247,8 +213,7 @@ const schema = {
             to the board. Better decks are laminated on both faces so they can be reversed; cheaper
             ones are coated on one side only. The deck is bolted to the frame, often through rubber
             or elastomer cushions that provide the machine's shock absorption, which is why our
-            guide to <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
-            spends so long on it.
+            guide to <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a> spends so long on it.
           </p>
           <p>
             It wears because the belt's underside and the deck's surface are in constant sliding
@@ -279,25 +244,21 @@ const schema = {
           <p>
             Lubrication is the whole story of deck life. A deck that is kept lubricated on schedule
             can outlast several belts; one run dry will take the belt with it in a fraction of the
-            time. Our guide to <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a>
-            is the maintenance task this page exists to make unnecessary.
+            time. Our guide to <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a> is the maintenance task this page exists to make unnecessary.
           </p>
         </div>
 
         <div id="symptoms" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Symptoms of a Worn Treadmill Deck</h2>
+          <h2>Symptoms of a Worn Treadmill Deck</h2>
 <p>
             The frustrating thing about a worn deck is that every symptom looks like something else
             first. Work through them with that in mind. If you suspect a crack rather than wear, read <a href="/treadmill-cracked-deck/" class="text-[#0F62FE] font-medium">treadmill cracked deck</a> first.
           </p>
           <p>
-            <strong>The belt drags or slows underfoot even after lubrication and correct tension.</strong>
-            This is the defining symptom. A belt that hesitates when you push off, or slows
+            <strong>The belt drags or slows underfoot even after lubrication and correct tension.</strong> This is the defining symptom. A belt that hesitates when you push off, or slows
             momentarily under each step, is usually fixed by lubricating a dry deck or tightening a
             loose belt. If you have done both properly and the hesitation returns within days, the
-            friction is coming from a surface that lubricant can no longer protect. Our guide to a
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">treadmill belt that slows down when you step on it</a>
-            walks the full order of checks, and the deck is the last stop on it.
+            friction is coming from a surface that lubricant can no longer protect. Our guide to a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">treadmill belt that slows down when you step on it</a> walks the full order of checks, and the deck is the last stop on it.
           </p>
           <p>
             <strong>Lubricant disappears almost immediately.</strong> On a healthy deck a proper
@@ -335,7 +296,7 @@ const schema = {
         </div>
 
         <div id="rule-out" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Rule Out the Cheaper Causes First</h2>
+          <h2>Rule Out the Cheaper Causes First</h2>
 <p>
             A deck flip is an afternoon and a replacement is a real expense, so be sure. Three
             cheaper problems produce most of the same symptoms, and all three should be ruled out
@@ -351,8 +312,7 @@ const schema = {
           <p>
             <strong>A loose or off-centre belt.</strong> Tension and tracking are adjusted at the
             rear roller. A belt that slips only on push-off is usually loose; one that rubs a rail
-            needs centring. Our guide to <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">adjusting a treadmill belt</a>
-            covers both. Do not over-tighten in the attempt — a tight belt on a worn deck is the
+            needs centring. Our guide to <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium">adjusting a treadmill belt</a> covers both. Do not over-tighten in the attempt — a tight belt on a worn deck is the
             fastest way to overheat a motor.
           </p>
           <p>
@@ -360,9 +320,7 @@ const schema = {
             fraying or its seam is lifting, the belt needs replacing whatever the deck is doing.
             The two are usually inspected together, and very often replaced or refreshed together,
             because fitting a new belt to a worn deck ruins the new belt and fitting a worn belt to
-            a fresh deck scores the new surface. Our guide to
-            <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a>
-            covers the belt side of that decision.
+            a fresh deck scores the new surface. Our guide to <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a> covers the belt side of that decision.
           </p>
           <p>
             Only when the belt is lubricated, correctly tensioned, centred and in reasonable
@@ -372,7 +330,7 @@ const schema = {
         </div>
 
         <div id="flip-option" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Can the Deck Be Flipped?</h2>
+          <h2>Can the Deck Be Flipped?</h2>
 <p>
             A reversible deck is laminated on both faces and mounted so that it can be removed,
             turned over end to end or side to side as the manual specifies, and bolted back in with
@@ -419,7 +377,7 @@ const schema = {
         </div>
 
         <div id="flip-procedure" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How a Deck Flip Is Done</h2>
+          <h2>How a Deck Flip Is Done</h2>
 <p>
             What follows is the general shape of the job, so that you can judge whether to take it
             on and know what a technician is doing when you pay for it. It is not a substitute for
@@ -463,13 +421,12 @@ const schema = {
           <p>
             Allow a full afternoon the first time. The dismantling is the same as for a belt
             replacement with the deck bolts added, which is why the two jobs are so often done
-            together; our guide to <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>
-            covers the belt stages in more detail and the snags that catch people out.
+            together; our guide to <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a> covers the belt stages in more detail and the snags that catch people out.
           </p>
         </div>
 
         <div id="replacement" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. When the Deck Must Be Replaced</h2>
+          <h2>When the Deck Must Be Replaced</h2>
 <p>
             If the deck is single-sided, already flipped, soft, swollen, delaminated or cracked,
             the answer is a new board. The procedure is the flip procedure with a different deck
@@ -511,7 +468,7 @@ const schema = {
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Deck Replacement Costs</h2>
+          <h2>What Deck Replacement Costs</h2>
 <p>
             Every figure here is a typical range gathered from what owners and technicians
             commonly report. Prices vary by brand, size, region and by whether the service is
@@ -538,8 +495,7 @@ const schema = {
             ordering. The arguments for a technician are a heavy non-folding machine, a machine
             still under a labour warranty, uncertainty about whether the deck is really the fault,
             and the simple value of having someone look at the rollers, drive belt and motor while
-            it is all apart. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
-            covers how to find one and what to ask.
+            it is all apart. Our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a> covers how to find one and what to ask.
           </p>
           <p>
             <strong>Warranty.</strong> Decks are usually treated as wear items with short cover, but
@@ -550,7 +506,7 @@ const schema = {
         </div>
 
         <div id="worth-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Is It Worth It on Your Machine?</h2>
+          <h2>Is It Worth It on Your Machine?</h2>
 <p>
             A deck flip is nearly always worth doing, because it costs so little and restores so
             much. A deck replacement is the point where the machine's age and value come into it.
@@ -567,9 +523,7 @@ const schema = {
             <strong>Look at the whole machine.</strong> A worn deck means the motor has been
             overloaded for a while. If the motor is also running hot, the roller bearings are
             noisy, the incline struggles or the console is unreliable, the deck is one item on a
-            list, and the list is the thing to price. Our guide to
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            helps place a machine in its life.
+            list, and the list is the thing to price. Our guide to <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> helps place a machine in its life.
           </p>
           <p>
             <strong>Parts availability decides some cases.</strong> If no deck exists for the
@@ -586,7 +540,7 @@ const schema = {
         </div>
 
         <div id="prevention" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Making the Next Deck Last</h2>
+          <h2>Making the Next Deck Last</h2>
 <p>
             Deck wear is almost entirely a function of lubrication, cleanliness and moisture. A
             deck that is looked after can outlast several belts and the motor besides.
@@ -594,9 +548,7 @@ const schema = {
           <ul>
             <li><strong>Lubricate on schedule, with the right product.</strong> <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>Silicone treadmill
             lubricant</a>, at the interval in your manual, checked by hand between times. Not
-            household oils, not sprays not intended for treadmills. Our guide to
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
-            sets out a workable routine. If the manual says the deck is a lubricant-free design,
+            household oils, not sprays not intended for treadmills. Our guide to <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a> sets out a workable routine. If the manual says the deck is a lubricant-free design,
             follow it.</li>
             <li><strong>Keep the belt centred and correctly tensioned.</strong> An off-centre belt
             wears a groove; a tight belt grinds the surface. Check both every few weeks.</li>
@@ -609,9 +561,7 @@ const schema = {
             <li><strong>Mind the room.</strong> A humid basement or an unheated garage swells
             fibreboard and lifts laminate. If the machine lives in one, a dehumidifier and a cover
             when it is not in use help.</li>
-            <li><strong>Keep up the rest of the schedule.</strong> A deck rarely fails alone. Our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
-            covers the full routine that keeps belt, deck, rollers and motor in step.</li>
+            <li><strong>Keep up the rest of the schedule.</strong> A deck rarely fails alone. Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a> covers the full routine that keeps belt, deck, rollers and motor in step.</li>
           </ul>
           <p>
             If you are buying rather than repairing, a reversible deck is a feature worth asking
@@ -619,141 +569,154 @@ const schema = {
             afternoon's maintenance and an expensive part a few years from now.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a treadmill deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The deck is the rigid board that sits inside the loop of the walking belt between the two rollers. The belt slides over it and your feet press the belt against it on every step. On most home machines it is a thick fibreboard or plywood panel with a hard, low-friction laminate or coating on top, mounted on rubber cushions that provide the shock absorption.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I know if my treadmill deck is worn?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The belt drags or slows underfoot even after proper lubrication and correct tension, lubricant seems to vanish within a session or two, you can feel a dip or soft spot in the foot-strike zone, the belt wears on one side, or the motor runs hotter than it used to. Confirm by unplugging, lifting the belt edge and looking for a dull, worn or grooved band in the deck surface.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you flip a treadmill deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes. Many home treadmills have a deck laminated on both faces with symmetrical mounting holes so it can be removed, turned over and refitted once. Check the manual first; if it is silent, look for a finished laminate on the underside and symmetrical bolt holes. A deck that is soft, delaminated, cracked or already worn on both faces cannot be flipped.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does it cost to replace a treadmill deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A replacement deck as a part commonly costs somewhere in the region of $100 to $300 for a typical home treadmill, with long or heavy-duty boards costing more. Fitted by a technician, usually together with a new belt because the two wear together, owners commonly report totals in the region of $300 to $600 or more. A flip costs only labour.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I replace the belt when I replace the deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Almost always. A belt that has been running on a worn deck has usually glazed its underside and will score the fresh surface and drag on it. The dismantling is the same for both jobs, so doing them together saves labour. The same logic applies the other way: fitting a new belt to a worn deck ruins the belt.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does a treadmill deck last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no fixed figure. A deck that is lubricated on schedule, kept clean and dry, and run with a centred, correctly tensioned belt can outlast several belts and many years of use. One run dry, in a damp room, or with a belt grinding against one rail can wear through in a fraction of that time. Lubrication is the deciding factor.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Decks</h2>
+          <p>Most decks are destroyed by neglect rather than mileage, and most deck repairs go wrong at one of these four points.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Running the deck dry</h3>
+              <p>A thin film of silicone lubricant is all that separates the belt from the deck, and once it goes both surfaces wear fast and the motor labours. Lubricate at the interval in your manual, check the belt underside by hand between times, and use treadmill silicone rather than household oils or sprays.</p>
+            </li>
+            <li>
+              <h3>Fitting a new belt on a worn deck, or an old belt on a new one</h3>
+              <p>The two wear together and should be refreshed together. A new belt on a worn deck drags, glazes and slips within months; a glazed old belt on a fresh deck scores the surface. Inspect both when either is exposed, and do the belt at the same time as any flip or deck replacement.</p>
+            </li>
+            <li>
+              <h3>Flipping a deck that is soft or delaminated</h3>
+              <p>A flip only works when the board underneath is sound. A deck that is swollen by moisture, lifting at the edges, cracked or soft under a thumb will not sit flat and the fresh face will wear quickly. Check the structure before investing the afternoon, and replace the board if it fails.</p>
+            </li>
+            <li>
+              <h3>Tightening the belt to hide deck drag</h3>
+              <p>Tension masks the symptom for a week and loads the motor, bearings and belt in the process, often ending in a hot motor or a tripped breaker. Set tension only to stop slip under push-off. If drag persists at correct tension on a lubricated deck, the deck is the problem and no amount of tightening fixes it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Decks</h2>
-          <p class="text-gray-700 leading-relaxed">Most decks are destroyed by neglect rather than mileage, and most deck repairs go wrong at one of these four points.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running the deck dry</h3>
-              <p class="text-gray-700 text-sm m-0">A thin film of silicone lubricant is all that separates the belt from the deck, and once it goes both surfaces wear fast and the motor labours. Lubricate at the interval in your manual, check the belt underside by hand between times, and use treadmill silicone rather than household oils or sprays.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fitting a new belt on a worn deck, or an old belt on a new one</h3>
-              <p class="text-gray-700 text-sm m-0">The two wear together and should be refreshed together. A new belt on a worn deck drags, glazes and slips within months; a glazed old belt on a fresh deck scores the surface. Inspect both when either is exposed, and do the belt at the same time as any flip or deck replacement.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Flipping a deck that is soft or delaminated</h3>
-              <p class="text-gray-700 text-sm m-0">A flip only works when the board underneath is sound. A deck that is swollen by moisture, lifting at the edges, cracked or soft under a thumb will not sit flat and the fresh face will wear quickly. Check the structure before investing the afternoon, and replace the board if it fails.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening the belt to hide deck drag</h3>
-              <p class="text-gray-700 text-sm m-0">Tension masks the symptom for a week and loads the motor, bearings and belt in the process, often ending in a hot motor or a tripped breaker. Set tension only to stop slip under push-off. If drag persists at correct tension on a lubricated deck, the deck is the problem and no amount of tightening fixes it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lubrication</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Lubrication</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The one maintenance task that decides how long a deck lasts.</p>
-            </a>
-            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Slows Down When I Step On It</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The full order of checks, from lubricant to the deck.</p>
-            </a>
-            <a href="/treadmill-belt-replacement-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Costs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Replacement Cost</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the belt side of the job costs, and when to replace it.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A worn deck is the usual reason a belt keeps dragging after it
             has been lubricated and tensioned properly.</strong> Confirm it by lifting the belt and
             looking, then flip the deck if the design allows, or replace it together with the belt
             if it does not.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">A flip costs an afternoon; a replacement is a real bill</strong>
-            that makes sense on a sound mid-range machine and rarely on an old budget one. Either
-            way, the next deck lasts as long as its lubrication schedule — our
-            <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">belt lubrication guide</a>
-            is where that starts.
+          <p>
+            <strong class="text-white">A flip costs an afternoon; a replacement is a real bill</strong> that makes sense on a sound mid-range machine and rarely on an old budget one. Either
+            way, the next deck lasts as long as its lubrication schedule — our <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">belt lubrication guide</a> is where that starts.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-belt-lubrication/">Treadmill Belt Lubrication</a></li>
+            <li><a href="/treadmill-belt-slows-down-when-i-step-on-it/">Treadmill Belt Slows Down When I Step On It</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a treadmill deck?</h3></summary>
+            <p class="faq-a">
+              The deck is the rigid board that sits inside the loop of the walking belt between the two rollers. The belt slides over it and your feet press the belt against it on every step. On most home machines it is a thick fibreboard or plywood panel with a hard, low-friction laminate or coating on top, mounted on rubber cushions that provide the shock absorption.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I know if my treadmill deck is worn?</h3></summary>
+            <p class="faq-a">
+              The belt drags or slows underfoot even after proper lubrication and correct tension, lubricant seems to vanish within a session or two, you can feel a dip or soft spot in the foot-strike zone, the belt wears on one side, or the motor runs hotter than it used to. Confirm by unplugging, lifting the belt edge and looking for a dull, worn or grooved band in the deck surface.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you flip a treadmill deck?</h3></summary>
+            <p class="faq-a">
+              Often, yes. Many home treadmills have a deck laminated on both faces with symmetrical mounting holes so it can be removed, turned over and refitted once. Check the manual first; if it is silent, look for a finished laminate on the underside and symmetrical bolt holes. A deck that is soft, delaminated, cracked or already worn on both faces cannot be flipped.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much does it cost to replace a treadmill deck?</h3></summary>
+            <p class="faq-a">
+              A replacement deck as a part commonly costs somewhere in the region of $100 to $300 for a typical home treadmill, with long or heavy-duty boards costing more. Fitted by a technician, usually together with a new belt because the two wear together, owners commonly report totals in the region of $300 to $600 or more. A flip costs only labour.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I replace the belt when I replace the deck?</h3></summary>
+            <p class="faq-a">
+              Almost always. A belt that has been running on a worn deck has usually glazed its underside and will score the fresh surface and drag on it. The dismantling is the same for both jobs, so doing them together saves labour. The same logic applies the other way: fitting a new belt to a worn deck ruins the belt.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long does a treadmill deck last?</h3></summary>
+            <p class="faq-a">
+              There is no fixed figure. A deck that is lubricated on schedule, kept clean and dry, and run with a centred, correctly tensioned belt can outlast several belts and many years of use. One run dry, in a damp room, or with a belt grinding against one rail can wear through in a fraction of that time. Lubrication is the deciding factor.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-belt-lubrication/" class="card">
+            <div class="c-kicker">Lubrication</div>
+            <div class="c-title">Treadmill Belt Lubrication</div>
+            <p class="c-blurb">The one maintenance task that decides how long a deck lasts.</p>
+          </a>
+          <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="card">
+            <div class="c-kicker">Diagnosis</div>
+            <div class="c-title">Treadmill Belt Slows Down When I Step On It</div>
+            <p class="c-blurb">The full order of checks, from lubricant to the deck.</p>
+          </a>
+          <a href="/treadmill-belt-replacement-cost/" class="card">
+            <div class="c-kicker">Costs</div>
+            <div class="c-title">Treadmill Belt Replacement Cost</div>
+            <p class="c-blurb">What the belt side of the job costs, and when to replace it.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

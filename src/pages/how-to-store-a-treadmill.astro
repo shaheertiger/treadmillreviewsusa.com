@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Store a Treadmill (2026): Short-Term and Long-Term Storage";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-store-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,108 +109,70 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Restarting Checklist", link: "#restarting" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtostoreatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtostoreatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership</span>
+      </nav>
+      <h1 class="ed-title">How to Store a Treadmill</h1>
+      <p class="ed-dek">
+        A treadmill does not need much to survive a few months unused, but it does need the right few things: a dry, temperate space, the power off, a clean deck and a careful restart. Here is how to put one away, and how to bring it back.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Store <span class="text-[#5AA9FF]">a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill does not need much to survive a few months unused, but it does need the right few things: a dry, temperate space, the power off, a clean deck and a careful restart. Here is how to put one away, and how to bring it back.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#long-term-steps" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Long-Term Storage Steps
-          </a>
-          <a href="#restarting" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Restarting Checklist
-          </a>
-        </div>
+        <a href="#long-term-steps" class="btn-ghost">Long-Term Storage Steps</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the wall
-          and remove the safety key before cleaning, adjusting or covering it. The procedures here
-          are general; your owner's manual is the authority on lubrication, belt adjustment and
-          whether your machine may be stored folded or on end. Where the manual and this page
-          differ, follow the manual.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Store a Treadmill: The Short Answer</a>
-          <a href="#short-vs-long" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Short-Term vs Long-Term Storage</a>
-          <a href="#where-to-store" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Where to Store a Treadmill</a>
-          <a href="#long-term-steps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Long-Term Storage: Step by Step</a>
-          <a href="#unplug" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Unplug It, and Deal With the Cord</a>
-          <a href="#clean" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Clean It Before It Goes Away</a>
-          <a href="#lubricate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Should You Lubricate Before Storage?</a>
-          <a href="#belt-tension" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Belt Tension: Should You Loosen It?</a>
-          <a href="#folded-or-flat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Folded or Flat? And Never On Its Side</a>
-          <a href="#cover-humidity-pests" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Covers, Humidity, Temperature and Pests</a>
-          <a href="#restarting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Restarting After Storage: The Checklist</a>
-          <a href="#storage-vs-selling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. When Storage Is the Wrong Answer</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most treadmills that come out of storage in poor shape were not damaged by being unused.
           They were damaged by where they were kept — a damp garage, a hot attic, a storage unit
           shared with mice — or by being switched on and run hard the moment they came back.
           Storage itself is easy. The location and the restart are where the care goes.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the wall
+          and remove the safety key before cleaning, adjusting or covering it. The procedures here
+          are general; your owner's manual is the authority on lubrication, belt adjustment and
+          whether your machine may be stored folded or on end. Where the manual and this page
+          differ, follow the manual.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">How to Store a Treadmill: The Short Answer</a></li>
+            <li><a href="#short-vs-long">Short-Term vs Long-Term Storage</a></li>
+            <li><a href="#where-to-store">Where to Store a Treadmill</a></li>
+            <li><a href="#long-term-steps">Long-Term Storage: Step by Step</a></li>
+            <li><a href="#unplug">Unplug It, and Deal With the Cord</a></li>
+            <li><a href="#clean">Clean It Before It Goes Away</a></li>
+            <li><a href="#lubricate">Should You Lubricate Before Storage?</a></li>
+            <li><a href="#belt-tension">Belt Tension: Should You Loosen It?</a></li>
+            <li><a href="#folded-or-flat">Folded or Flat? And Never On Its Side</a></li>
+            <li><a href="#cover-humidity-pests">Covers, Humidity, Temperature and Pests</a></li>
+            <li><a href="#restarting">Restarting After Storage: The Checklist</a></li>
+            <li><a href="#storage-vs-selling">When Storage Is the Wrong Answer</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Store a Treadmill: The Short Answer</h2>
+          <h2>How to Store a Treadmill: The Short Answer</h2>
 <p>
             To store a treadmill, keep it indoors in a dry, temperature-stable space; unplug it and
             remove the safety key; clean the belt, deck edges and motor compartment; make sure
@@ -222,7 +189,7 @@ const schema = {
         </div>
 
         <div id="short-vs-long" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Short-Term vs Long-Term Storage</h2>
+          <h2>Short-Term vs Long-Term Storage</h2>
 <p>
             It helps to decide which kind of storage you are doing, because the effort should match
             the risk.
@@ -230,9 +197,7 @@ const schema = {
           <p>
             <strong>Short-term: days to a few weeks, same room.</strong> The machine is staying where
             it lives, in a heated space, and you simply are not using it. Unplug it, remove the key,
-            wipe it down, and fold it if it folds. Nothing else is needed, and our guide to
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a>
-            covers doing that safely.
+            wipe it down, and fold it if it folds. Nothing else is needed, and our guide to <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill</a> covers doing that safely.
           </p>
           <p>
             <strong>Long-term: a month or more, or anywhere other than a heated room.</strong> This
@@ -247,7 +212,7 @@ const schema = {
         </div>
 
         <div id="where-to-store" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Where to Store a Treadmill</h2>
+          <h2>Where to Store a Treadmill</h2>
 <p>
             The best place to store a treadmill is the kind of place it was designed to be used in:
             indoors, dry, and at ordinary room temperature. Many owner's manuals specify exactly
@@ -261,9 +226,7 @@ const schema = {
           <p>
             <strong>Use with care:</strong> an attached garage in a mild climate, an unfinished
             basement with a dehumidifier running. These can work, but they need the cover, the
-            moisture break and the pest checks described below. Our guide to keeping a
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in the garage</a>
-            covers that environment in detail.
+            moisture break and the pest checks described below. Our guide to keeping a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">treadmill in the garage</a> covers that environment in detail.
           </p>
           <p>
             <strong>Avoid:</strong> sheds, uninsulated outbuildings, attics, covered porches, and
@@ -279,7 +242,7 @@ const schema = {
         </div>
 
         <div id="long-term-steps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Long-Term Storage: Step by Step</h2>
+          <h2>Long-Term Storage: Step by Step</h2>
 <p>
             This is the full sequence for anything longer than a few weeks or anywhere other than a
             heated room. Allow about an hour, most of which is cleaning.
@@ -306,12 +269,10 @@ const schema = {
         </div>
 
         <div id="unplug" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Unplug It, and Deal With the Cord</h2>
+          <h2>Unplug It, and Deal With the Cord</h2>
 <p>
             Unplugging is not just about saving standby power, although a treadmill left plugged in
-            does draw a small amount — our guide to
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a>
-            covers how much. It protects the controller from surges while nobody is around to notice
+            does draw a small amount — our guide to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a> covers how much. It protects the controller from surges while nobody is around to notice
             a storm, and it means nobody can start the machine.
           </p>
           <p>
@@ -319,14 +280,12 @@ const schema = {
             loosely — tight coils and kinks stress the conductors — and secure it so it is not
             trapped under the frame, pinched in the fold hinge, or lying across the floor where it
             can be stepped on or chewed. If you normally run the treadmill through a surge
-            protector, unplug that too; our
-            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a>
-            explains why it is worth reconnecting the same way afterwards.
+            protector, unplug that too; our <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a> explains why it is worth reconnecting the same way afterwards.
           </p>
         </div>
 
         <div id="clean" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Clean It Before It Goes Away</h2>
+          <h2>Clean It Before It Goes Away</h2>
 <p>
             Dirt that is a nuisance on a machine in use becomes a problem on one sitting for months.
             Sweat leaves salts on the frame and console that encourage corrosion, and dust and lint
@@ -335,23 +294,17 @@ const schema = {
           <p>
             <strong>Belt and frame.</strong> Wipe the belt surface, side rails, handrails and console
             with a cloth lightly dampened with water and a little mild soap, then dry everything.
-            Do not spray liquid onto the console or toward the motor hood. Our guide to
-            <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a>
-            covers safe products for each surface.
+            Do not spray liquid onto the console or toward the motor hood. Our guide to <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a> covers safe products for each surface.
           </p>
           <p>
             <strong>Around and under the deck.</strong> Vacuum the floor beneath and around the
-            machine, and the deck edges where lint collects. Our guide to
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
-            covers reaching the deck surface without disturbing the lubricant more than necessary.
+            machine, and the deck edges where lint collects. Our guide to <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a> covers reaching the deck surface without disturbing the lubricant more than necessary.
           </p>
           <p>
             <strong>Motor compartment.</strong> With the machine unplugged, remove the motor hood and
             vacuum out dust and fibre using a soft brush attachment, keeping the nozzle off the
             board and wiring. This is worth doing before any long storage because the dust that
-            builds up there is what pests nest in and what holds damp. Our
-            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">motor compartment guide</a>
-            walks through it.
+            builds up there is what pests nest in and what holds damp. Our <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">motor compartment guide</a> walks through it.
           </p>
           <p>
             Let everything dry completely before covering, because a cover over a damp machine is a
@@ -360,7 +313,7 @@ const schema = {
         </div>
 
         <div id="lubricate" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Should You Lubricate Before Storage?</h2>
+          <h2>Should You Lubricate Before Storage?</h2>
 <p>
             Follow the manual, and in the absence of specific storage instructions, follow the
             normal schedule rather than adding extra.
@@ -369,8 +322,7 @@ const schema = {
             If lubrication is due or close to due — most manuals put it somewhere around every 40 to
             50 hours of use, or at a set interval of months — doing it before storage is sensible.
             The deck goes away protected, and you are not relying on remembering when it comes back.
-            Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the procedure.
+            Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers the procedure.
           </p>
           <p>
             If it was lubricated recently, leave it. Adding lubricant "for storage" puts more on the
@@ -386,7 +338,7 @@ const schema = {
         </div>
 
         <div id="belt-tension" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Belt Tension: Should You Loosen It?</h2>
+          <h2>Belt Tension: Should You Loosen It?</h2>
 <p>
             Usually not. You will see advice to slacken the belt for long-term storage on the
             theory that it relieves the belt and roller bearings. Most manuals do not call for it,
@@ -405,8 +357,7 @@ const schema = {
             and write down precisely what you did. On the way back, reverse it exactly, then confirm
             with the lift test. On virtually every home treadmill, lifting the belt edge at the
             middle of the deck should open a gap of two to three inches; under two is over-tight.
-            Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
-            covers the full check.
+            Our guide to <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a> covers the full check.
           </p>
           <p>
             Never loosen the belt to the point it is sagging off the rollers. That is the over-loosening
@@ -415,7 +366,7 @@ const schema = {
         </div>
 
         <div id="folded-or-flat" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Folded or Flat? And Never On Its Side</h2>
+          <h2>Folded or Flat? And Never On Its Side</h2>
 <p>
             If the machine folds, storing it folded with the latch and any secondary lock fully
             engaged is fine and saves space. Check the latch is seated with a gentle pull before
@@ -438,7 +389,7 @@ const schema = {
         </div>
 
         <div id="cover-humidity-pests" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Covers, Humidity, Temperature and Pests</h2>
+          <h2>Covers, Humidity, Temperature and Pests</h2>
 <p>
             <strong>Use a breathable cover.</strong> A purpose-made <a href="/best-treadmill-covers/" class="text-[#0F62FE] font-medium" data-autolink>treadmill cover</a>, or a cotton or
             canvas dust sheet, keeps dust off while letting moisture escape. Plastic sheeting and
@@ -449,9 +400,7 @@ const schema = {
           <p>
             <strong>Keep it off concrete.</strong> Concrete floors in garages and basements wick
             moisture and stay cold. A rubber or PVC treadmill mat provides a moisture break and
-            protects the floor; our guide to whether
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">you need a treadmill mat</a>
-            covers the options.
+            protects the floor; our guide to whether <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">you need a treadmill mat</a> covers the options.
           </p>
           <p>
             <strong>Control humidity where you can.</strong> In a basement, a dehumidifier makes a
@@ -477,7 +426,7 @@ const schema = {
         </div>
 
         <div id="restarting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Restarting After Storage: The Checklist</h2>
+          <h2>Restarting After Storage: The Checklist</h2>
 <p>
             This is the part that matters most. A treadmill that has sat for months should be
             inspected and run in gently before anybody runs on it.
@@ -503,18 +452,15 @@ const schema = {
             <li><strong>Walk before you run.</strong> A few minutes at low speed, then build up.</li>
           </ul>
           <p>
-            If the belt drifts, our
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a>
-            covers the adjustment. If the machine will not power up, shuts off, or trips the
-            breaker, start with our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            rather than repeatedly cycling the power. And if a burning smell appears on the first
+            If the belt drifts, our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a> covers the adjustment. If the machine will not power up, shuts off, or trips the
+            breaker, start with our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a> rather than repeatedly cycling the power. And if a burning smell appears on the first
             run, stop immediately — some dust burning off a motor is common after a long rest, but a
             persistent or electrical smell is not something to run through.
           </p>
         </div>
 
         <div id="storage-vs-selling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. When Storage Is the Wrong Answer</h2>
+          <h2>When Storage Is the Wrong Answer</h2>
 <p>
             Storage is worth the effort for a machine you will use again. It is worth asking
             honestly whether you will, because a treadmill that spends two years in a damp garage
@@ -523,149 +469,159 @@ const schema = {
           <p>
             If the machine is old, the plan is vague, and the only available space is a shed or an
             unheated unit, selling it now while it works may be the better decision — and if it has
-            reached the end of its life, our guide to
-            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a>
-            covers the options. If you are moving house rather than storing, our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            covers the transport side, including why a machine coming out of a cold van needs the
+            reached the end of its life, our guide to <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a> covers the options. If you are moving house rather than storing, our guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> covers the transport side, including why a machine coming out of a cold van needs the
             same acclimatising as one coming out of storage.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you store a treadmill long term?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Keep it indoors somewhere dry and at ordinary room temperature. Lower the incline, unplug it and remove the key, clean the belt, frame and motor compartment, make sure lubrication is up to date per the manual, fold and lock it or leave it flat, raise it off concrete with a mat, and cover it with a breathable cover rather than plastic.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you loosen a treadmill belt for storage?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not. Most manuals do not call for it, and a belt that is loosened unevenly or not correctly retensioned slips and drifts on restart. If your manual recommends it, loosen modestly and equally on both rear roller bolts, write down exactly what you did, reverse it afterwards, and confirm with the lift test — two to three inches at mid-deck.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should you lubricate a treadmill before storing it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if it is due or nearly due on the manual's schedule — typically around every 40 to 50 hours of use. Extra lubricant added for storage tends to migrate to the belt edges and collect dust. If your deck is pre-waxed or maintenance-free, do not add silicone at all.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you store a treadmill on its side?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not a full-size treadmill, unless the manual specifically allows it. Storing it on its side or end loads the frame, uprights and console in ways they were not designed for and makes the machine easy to topple. Some walking pads are designed to stand on end, but that is a stated feature of those models, not a general rule.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill be stored in a storage unit?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, ideally a climate-controlled one. A non-climate-controlled unit in a hot or freezing climate exposes the machine to temperature swings and condensation, and storage units can have pest problems. Clean the motor compartment first, use a breathable cover, keep it off bare concrete, and inspect for pests and damage before restarting.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I check before using a treadmill after storage?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Let it reach room temperature for several hours, check the motor compartment for pests and chewed wiring, vacuum out dust, inspect the cord, check fasteners and rust, confirm belt tension and lubrication, level it, then run it empty at a slow speed to check tracking and listen for new noises. Walk before you run.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Storing a Treadmill</h2>
+          <p>None of these feel like mistakes at the time. All four show up when the machine comes back.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Wrapping it in plastic in a damp space</h3>
+              <p>Plastic sheeting traps humid air against the frame, and when the temperature drops it condenses on the inside and drips onto the machine. A breathable cover keeps dust off without turning the treadmill into a terrarium. Raise it off concrete and run a dehumidifier where you can.</p>
+            </li>
+            <li>
+              <h3>Over-loosening the belt and forgetting</h3>
+              <p>Slackening a belt for storage is rarely necessary, and a belt loosened unevenly or by too much slips and drifts on restart. If you do it, keep it modest, equal on both sides, and write it down — then reverse it exactly and confirm with the lift test.</p>
+            </li>
+            <li>
+              <h3>Skipping the pest check</h3>
+              <p>A motor compartment full of lint is ideal nesting material, and rodents chew wiring. In a garage, shed or storage unit, clean the compartment before storage and look inside it before you power up. Chewed insulation means repair first, power second.</p>
+            </li>
+            <li>
+              <h3>Running hard straight out of cold storage</h3>
+              <p>A machine brought in from the cold can have condensation on its board, a stiff belt and cold lubricant. Let it acclimatise for several hours, run it empty at a slow speed first, and walk before you run. A few hours of patience costs nothing; a damp controller board costs a great deal.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Storing a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">None of these feel like mistakes at the time. All four show up when the machine comes back.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Wrapping it in plastic in a damp space</h3>
-              <p class="text-gray-700 text-sm m-0">Plastic sheeting traps humid air against the frame, and when the temperature drops it condenses on the inside and drips onto the machine. A breathable cover keeps dust off without turning the treadmill into a terrarium. Raise it off concrete and run a dehumidifier where you can.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-loosening the belt and forgetting</h3>
-              <p class="text-gray-700 text-sm m-0">Slackening a belt for storage is rarely necessary, and a belt loosened unevenly or by too much slips and drifts on restart. If you do it, keep it modest, equal on both sides, and write it down — then reverse it exactly and confirm with the lift test.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the pest check</h3>
-              <p class="text-gray-700 text-sm m-0">A motor compartment full of lint is ideal nesting material, and rodents chew wiring. In a garage, shed or storage unit, clean the compartment before storage and look inside it before you power up. Chewed insulation means repair first, power second.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running hard straight out of cold storage</h3>
-              <p class="text-gray-700 text-sm m-0">A machine brought in from the cold can have condensation on its board, a stiff belt and cold lubricant. Let it acclimatise for several hours, run it empty at a slow speed first, and walk before you run. A few hours of patience costs nothing; a damp controller board costs a great deal.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-in-garage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Environment</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Keeping a Treadmill in the Garage</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Cold, condensation, dust and the warranty clause to check first.</p>
-            </a>
-            <a href="/how-to-fold-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Fold a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Folding, unfolding, and what to check when the latch will not hold.</p>
-            </a>
-            <a href="/treadmill-maintenance-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Routine</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What to do after each session, monthly, every 40-50 hours and yearly.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Dry, temperate, unplugged, clean and covered with something that
             breathes.</strong> Those five things do almost all of the work of storing a treadmill.
             Leave belt tension alone unless the manual says otherwise, and lubricate only if the
             schedule says it is due.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">The restart is where the care goes.</strong> Acclimatise it,
             check for pests and damage, confirm tension and tracking, and run it empty before
-            stepping on. If it will not behave, our
-            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>
-            is the place to start.
+            stepping on. If it will not behave, our <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a> is the place to start.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-in-garage/">Keeping a Treadmill in the Garage</a></li>
+            <li><a href="/how-to-fold-a-treadmill/">How to Fold a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How do you store a treadmill long term?</h3></summary>
+            <p class="faq-a">
+              Keep it indoors somewhere dry and at ordinary room temperature. Lower the incline, unplug it and remove the key, clean the belt, frame and motor compartment, make sure lubrication is up to date per the manual, fold and lock it or leave it flat, raise it off concrete with a mat, and cover it with a breathable cover rather than plastic.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Should you loosen a treadmill belt for storage?</h3></summary>
+            <p class="faq-a">
+              Usually not. Most manuals do not call for it, and a belt that is loosened unevenly or not correctly retensioned slips and drifts on restart. If your manual recommends it, loosen modestly and equally on both rear roller bolts, write down exactly what you did, reverse it afterwards, and confirm with the lift test — two to three inches at mid-deck.
             </p>
+          </details>
+          <details>
+            <summary><h3>Should you lubricate a treadmill before storing it?</h3></summary>
+            <p class="faq-a">
+              Only if it is due or nearly due on the manual's schedule — typically around every 40 to 50 hours of use. Extra lubricant added for storage tends to migrate to the belt edges and collect dust. If your deck is pre-waxed or maintenance-free, do not add silicone at all.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you store a treadmill on its side?</h3></summary>
+            <p class="faq-a">
+              Not a full-size treadmill, unless the manual specifically allows it. Storing it on its side or end loads the frame, uprights and console in ways they were not designed for and makes the machine easy to topple. Some walking pads are designed to stand on end, but that is a stated feature of those models, not a general rule.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can a treadmill be stored in a storage unit?</h3></summary>
+            <p class="faq-a">
+              Yes, ideally a climate-controlled one. A non-climate-controlled unit in a hot or freezing climate exposes the machine to temperature swings and condensation, and storage units can have pest problems. Clean the motor compartment first, use a breathable cover, keep it off bare concrete, and inspect for pests and damage before restarting.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should I check before using a treadmill after storage?</h3></summary>
+            <p class="faq-a">
+              Let it reach room temperature for several hours, check the motor compartment for pests and chewed wiring, vacuum out dust, inspect the cord, check fasteners and rust, confirm belt tension and lubrication, level it, then run it empty at a slow speed to check tracking and listen for new noises. Walk before you run.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-in-garage/" class="card">
+            <div class="c-kicker">Environment</div>
+            <div class="c-title">Keeping a Treadmill in the Garage</div>
+            <p class="c-blurb">Cold, condensation, dust and the warranty clause to check first.</p>
+          </a>
+          <a href="/how-to-fold-a-treadmill/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Fold a Treadmill</div>
+            <p class="c-blurb">Folding, unfolding, and what to check when the latch will not hold.</p>
+          </a>
+          <a href="/treadmill-maintenance-checklist/" class="card">
+            <div class="c-kicker">Routine</div>
+            <div class="c-title">Treadmill Maintenance Checklist</div>
+            <p class="c-blurb">What to do after each session, monthly, every 40-50 hours and yearly.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Goplus 2 in 1 Treadmill Review (2026): SuperFit Specs and Limits";
 const description =
@@ -143,6 +142,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/goplus-2-in-1-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "reviews");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -163,66 +168,53 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Who It Suits", link: "#who-it-suits" }}
+  stickyCta={{ text: "Budget 2-in-1: Goplus SuperFit 2-in-1", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-goplus2in1treadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-goplus2in1treadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/reviews/">Reviews</a>
+        <span aria-hidden="true">›</span>
+        <span>Model Review</span>
+      </nav>
+      <h1 class="ed-title">Goplus 2-in-1 Treadmill Review: The SuperFit</h1>
+      <p class="ed-dek">
+        The Goplus 2-in-1, sold as the SuperFit, is one of the longest-running budget folding treadmills: a 5-inch-thin pad with a handrail that folds up to unlock a running mode. It is a fair buy for slow desk walking and short jogs, provided you understand its 2.5 mph walking cap, its remote-only controls and a warranty that depends on where you buy it.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Model Review
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Goplus 2-in-1 Treadmill <span class="text-[#5AA9FF]">Review: The SuperFit</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Goplus 2-in-1, sold as the SuperFit, is one of the longest-running budget folding treadmills: a 5-inch-thin pad with a handrail that folds up to unlock a running mode. It is a fair buy for slow desk walking and short jogs, provided you understand its 2.5 mph walking cap, its remote-only controls and a warranty that depends on where you buy it.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#goplus-superfit-2-in-1" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            What Is Confirmed
-          </a>
-          <a href="#who-it-suits" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who It Suits
-          </a>
-        </div>
+        <a href="#goplus-superfit-2-in-1" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#goplus-superfit-2-in-1"><img src="https://m.media-amazon.com/images/I/41jxCgjZICL._SL500_.jpg" alt="Goplus SuperFit 2-in-1" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        <figcaption>Goplus SuperFit 2-in-1</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The Goplus 2-in-1 folding treadmill has been sold under several names and model numbers for
+          years, and its listing title — some version of “2-in-1 folding treadmill with remote
+          control, Bluetooth speaker and LED display” — has been copied so widely that it now reads
+          like a product category. This review pins down which machine that title usually means,
+          sets out the figures that the brand and independent reviewers agree on, flags the ones
+          they do not, and says plainly who should buy it and who should spend more.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           14 October 2026 we checked the Goplus 2-in-1 listings on Amazon (brand, model numbers,
           weights, warranty field and current seller), the same machine’s listing on Costway’s own
@@ -234,44 +226,26 @@ const schema = {
           database for Goplus and Costway. We have not tested the Goplus 2-in-1 ourselves. Prices
           are those shown on the day we checked and change often. We earn a commission if you buy
           through the Amazon link on this page; it does not change what we say about the machine.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is the Goplus 2-in-1 Treadmill Any Good? The Short Answer</a>
-          <a href="#which-machine" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Which Machine Is the “2-in-1 Folding Treadmill With RC Bluetooth Speaker and LED Display”?</a>
-          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Goplus 2-in-1 Specifications: Confirmed, Conflicting and Claimed</a>
-          <a href="#rail-and-modes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Fold-Up Rail: How the Two Modes Work</a>
-          <a href="#controls-and-display" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Controls, Display, Speaker and App</a>
-          <a href="#owner-reports" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Independent Reviewers and Owners Consistently Report</a>
-          <a href="#warranty-and-buying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Warranty, Returns and Where to Buy</a>
-          <a href="#keeping-it-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Keeping a Goplus 2-in-1 Running</a>
-          <a href="#who-it-suits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who the Goplus 2-in-1 Suits, and the Alternatives</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is the Goplus 2-in-1 Treadmill Any Good? The Short Answer</a></li>
+            <li><a href="#which-machine">Which Machine Is the “2-in-1 Folding Treadmill With RC Bluetooth Speaker and LED Display”?</a></li>
+            <li><a href="#specifications">Goplus 2-in-1 Specifications: Confirmed, Conflicting and Claimed</a></li>
+            <li><a href="#rail-and-modes">The Fold-Up Rail: How the Two Modes Work</a></li>
+            <li><a href="#controls-and-display">Controls, Display, Speaker and App</a></li>
+            <li><a href="#owner-reports">What Independent Reviewers and Owners Consistently Report</a></li>
+            <li><a href="#warranty-and-buying">Warranty, Returns and Where to Buy</a></li>
+            <li><a href="#keeping-it-running">Keeping a Goplus 2-in-1 Running</a></li>
+            <li><a href="#who-it-suits">Who the Goplus 2-in-1 Suits, and the Alternatives</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The Goplus 2-in-1 folding treadmill has been sold under several names and model numbers for
-          years, and its listing title — some version of “2-in-1 folding treadmill with remote
-          control, Bluetooth speaker and LED display” — has been copied so widely that it now reads
-          like a product category. This review pins down which machine that title usually means,
-          sets out the figures that the brand and independent reviewers agree on, flags the ones
-          they do not, and says plainly who should buy it and who should spend more.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is the Goplus 2-in-1 Treadmill Any Good? The Short Answer</h2>
+          <h2>Is the Goplus 2-in-1 Treadmill Any Good? The Short Answer</h2>
 <p>
             <strong>The Goplus 2-in-1 treadmill is a reasonable budget choice for slow under-desk
             walking with an occasional short jog, and a poor one for brisk desk walking, regular
@@ -294,78 +268,67 @@ const schema = {
             walking mode reaches 3.5 to 4 mph instead.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="which-machine" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Machine Is the “2-in-1 Folding Treadmill With RC Bluetooth Speaker and LED Display”?</h2>
+          <h2>Which Machine Is the “2-in-1 Folding Treadmill With RC Bluetooth Speaker and LED Display”?</h2>
 <p>
             The long title in the heading is one of the most searched names in <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a>, and
             it is worth knowing where it comes from. It is the catalogue name Costway uses for this
@@ -408,7 +371,7 @@ const schema = {
         </div>
 
         <div id="specifications" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Goplus 2-in-1 Specifications: Confirmed, Conflicting and Claimed</h2>
+          <h2>Goplus 2-in-1 Specifications: Confirmed, Conflicting and Claimed</h2>
 <p>
             The table sets each figure against how far it can be trusted. “Confirmed” means the
             brand’s listings and at least one independent hands-on review agree.
@@ -440,9 +403,7 @@ const schema = {
             made the same point in their own way: one tester at 5 feet 9 inches had to take
             deliberately short strides, another found it too short and narrow for a 5-foot-9 partner,
             and a third said its taller testers had to shorten their stride to avoid the front or back
-            of the belt when running. Our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through stride length against belt length.
+            of the belt when running. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> works through stride length against belt length.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The weight question</h3>
           <p>
@@ -456,14 +417,13 @@ const schema = {
         </div>
 
         <div id="rail-and-modes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Fold-Up Rail: How the Two Modes Work</h2>
+          <h2>The Fold-Up Rail: How the Two Modes Work</h2>
 <p>
             The 2-in-1 design is the reason to buy this machine, and the way it works shapes how you
             will use it.
           </p>
           <p>
-            <strong>Rail down, walking mode.</strong> With the front upright folded flat, the pad is a
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>: about 5 inches thick, able to slide under a standing desk, and limited to
+            <strong>Rail down, walking mode.</strong> With the front upright folded flat, the pad is a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>: about 5 inches thick, able to slide under a standing desk, and limited to
             about 2.5 mph. That cap is the most important number on the machine. A gentle 1.5 to
             2.5 mph is a comfortable typing pace for many people. A brisk walk, for most adults, is
             3 to 4 mph, which this pad cannot reach in desk mode.
@@ -480,14 +440,12 @@ const schema = {
             reviewer noted that the pad will not fold flat with them attached, so you either unbolt
             them each time you want to store it under furniture or leave them off. One reviewer
             recommended leaving them off if flat storage is the reason you are buying. Our comparison
-            of a
-            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad and a folding treadmill</a>
-            explains where a 2-in-1 sits between the two.
+            of a <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad and a folding treadmill</a> explains where a 2-in-1 sits between the two.
           </p>
         </div>
 
         <div id="controls-and-display" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Controls, Display, Speaker and App</h2>
+          <h2>Controls, Display, Speaker and App</h2>
 <p>
             <strong>The remote is the only control.</strong> There are no buttons on the rail or the
             deck. You switch the machine on at the base, then start, stop and change speed with a
@@ -506,9 +464,7 @@ const schema = {
             belt, cycling through time, speed, distance and calories. One reviewer found it hard to
             read from standing height while another found it large and clear, and two noted that many units default to kilometres,
             which can make distance look better than it is. Treat the calorie figure as a rough
-            estimate; our page on whether
-            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie counts are accurate</a>
-            explains why.
+            estimate; our page on whether <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie counts are accurate</a> explains why.
           </p>
           <p>
             <strong>The speaker and app.</strong> A built-in Bluetooth speaker plays audio from your
@@ -519,7 +475,7 @@ const schema = {
         </div>
 
         <div id="owner-reports" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Independent Reviewers and Owners Consistently Report</h2>
+          <h2>What Independent Reviewers and Owners Consistently Report</h2>
 <p>
             The SuperFit 2-in-1 has been written about more than most budget pads. Points that came up
             in more than one independent review are these.
@@ -540,9 +496,7 @@ const schema = {
             Noise is the one point on which reviewers split. One found it about as quiet as other
             models they tested, with footfall the main sound; another, testing an earlier unit,
             found it louder than their full-size treadmill. That spread is common with walking pads,
-            where floor type, <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium" data-autolink>belt lubrication</a> and walking style change the result. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
-            explains where the noise comes from and what reduces it.
+            where floor type, <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium" data-autolink>belt lubrication</a> and walking style change the result. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a> explains where the noise comes from and what reduces it.
           </p>
           <p>
             One reviewer also reported that the motor seemed to struggle when they stood on the belt
@@ -552,15 +506,14 @@ const schema = {
         </div>
 
         <div id="warranty-and-buying" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Warranty, Returns and Where to Buy</h2>
+          <h2>Warranty, Returns and Where to Buy</h2>
 <p>
             The warranty is the figure that changes most between listings, and on a machine at this
             price it matters as much as the hardware.
           </p>
           <p>
             <strong>Costway’s store</strong> sold the current version for $149.99 on the day we
-            checked, advertising free shipping, 30-day returns and a 365-day warranty on the listing.
-            <strong>Goplus’s Amazon storefront</strong> (the seller GoplusUS) listed the same deck at
+            checked, advertising free shipping, 30-day returns and a 365-day warranty on the listing. <strong>Goplus’s Amazon storefront</strong> (the seller GoplusUS) listed the same deck at
             $189.99 to $199.99, and Amazon’s product data for every Goplus 2-in-1 listing gives the
             warranty as 3 months. An independent review that checked the Goplus website reported the
             same three-month warranty, with returns within 90 days if the machine is in new
@@ -572,11 +525,7 @@ const schema = {
             buying directly from Costway gets you the longest written cover at the lowest price, and
             Amazon gets you Amazon’s own return process. Whichever you choose, save a copy of the
             listing’s warranty wording on the day you buy, and ask the seller in writing if it is not
-            clear. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            lists what to ask, and our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            explains how marketplace sellers affect returns.
+            clear. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> lists what to ask, and our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> explains how marketplace sellers affect returns.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Recalls</h3>
           <p>
@@ -589,7 +538,7 @@ const schema = {
         </div>
 
         <div id="keeping-it-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Keeping a Goplus 2-in-1 Running</h2>
+          <h2>Keeping a Goplus 2-in-1 Running</h2>
 <p>
             A budget 2-in-1 spends most of its life doing the hardest job a small motor does: carrying
             a person slowly for long periods. A few habits make a real difference.
@@ -597,23 +546,17 @@ const schema = {
           <p>
             <strong>Lubricate before first use and on schedule.</strong> One reviewer noted that the
             box includes small bottles of lubricant and that the belt should be lubricated before the
-            first session. Follow the manual for the interval after that; our
-            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">walking pad lubrication guide</a>
-            covers the method on a low deck.
+            first session. Follow the manual for the interval after that; our <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">walking pad lubrication guide</a> covers the method on a low deck.
           </p>
           <p>
             <strong>Watch the tracking.</strong> At a desk you drift, and the belt follows. Correct it
             early with small turns of the rear roller bolts, as the manual describes, rather than
-            letting it rub on the frame. Our guide to
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a>
-            walks through it.
+            letting it rub on the frame. Our guide to <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a> walks through it.
           </p>
           <p>
             <strong>Break up long sessions and plug it in properly.</strong> Give the motor a rest
             between long desk sessions, and plug the pad straight into a wall outlet rather than a
-            thin extension lead, since motors draw a surge at start-up. Our page on
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cords and treadmills</a>
-            explains why.
+            thin extension lead, since motors draw a surge at start-up. Our page on <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cords and treadmills</a> explains why.
           </p>
           <p>
             <strong>Safety basics.</strong> Unplug before cleaning or adjusting, keep children and pets
@@ -623,7 +566,7 @@ const schema = {
         </div>
 
         <div id="who-it-suits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who the Goplus 2-in-1 Suits, and the Alternatives</h2>
+          <h2>Who the Goplus 2-in-1 Suits, and the Alternatives</h2>
 <p>
             <strong>It suits slow desk walking with an occasional jog.</strong> If you want to walk
             gently while working and jog for ten minutes at the end of the day, the two modes do
@@ -631,171 +574,177 @@ const schema = {
           </p>
           <p>
             <strong>Brisk desk walkers should choose a faster walking mode.</strong> The 2.5 mph cap is
-            the main reason to look elsewhere. The pads in our
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrail roundup</a>
-            include models whose rail-down mode reaches about 3.8 to 4 mph, and our
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
-            covers flat pads built for long desk sessions.
+            the main reason to look elsewhere. The pads in our <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrail roundup</a> include models whose rail-down mode reaches about 3.8 to 4 mph, and our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a> covers flat pads built for long desk sessions.
           </p>
           <p>
             <strong>Runners and taller users need a longer belt.</strong> A belt of about 40 inches
-            is short for running at any height and for walking above about 5 feet 9 inches. Our
-            <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">low-profile treadmill roundup</a>
-            includes slim full-length machines, and our
-            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>
-            page covers longer pads.
+            is short for running at any height and for walking above about 5 feet 9 inches. Our <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">low-profile treadmill roundup</a> includes slim full-length machines, and our <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a> page covers longer pads.
           </p>
           <p>
             <strong>Anyone who wants long cover should buy direct or spend more.</strong> If a
             three-month warranty would worry you, buy from Costway’s store, where a 365-day term was
             advertised, or choose a pad from a brand with a longer written warranty. Two other budget
-            pads we have read the same way are the
-            <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a>
-            and the
-            <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow 3100W</a>.
+            pads we have read the same way are the <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a> and the <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow 3100W</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the Goplus 2-in-1 the same as the SuperFit treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, in most listings. Goplus sells the 2-in-1 under the SuperFit name, and Costway, the company behind Goplus, sells the same machine on its own store. Several versions exist, including an original single-display model, a newer Gymax-app model, a dual-display model with a 9 mph mode and a larger 4.75 HP machine, so check the model number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on the Goplus 2-in-1 treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Briefly and lightly. With the rail locked upright it runs up to 7.5 mph, but the belt is only about 40 by 16 inches, and independent reviewers found taller users had to shorten their stride. Treat it as a walking pad with a jogging option rather than a running treadmill, and clip the safety key to your clothing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast does the Goplus 2-in-1 go in walking mode?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                About 2.5 mph with the rail folded down, which is the under-desk mode. That is a comfortable typing pace for many people but below a brisk walk. To go faster you have to raise and lock the rail, which takes the pad out from under a desk. Some reviews quote the same limits in km/h, as 1 to 4.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the 2-in-1 folding treadmill with RC Bluetooth speaker and LED display a Goplus?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually. That title is Costway’s catalogue name for the Goplus SuperFit 2-in-1 family, copied by resellers, often with a Costway code beginning SP37. At least one shop uses a near-identical title for a different 2.0 HP machine rated for 250 lb, so check the model number, and buy from Costway or the Goplus storefront for brand support.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty does the Goplus 2-in-1 have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on where you buy it. Costway’s store advertised a 365-day warranty on the day we checked, while Amazon’s listing data for Goplus 2-in-1 models gives 3 months, and one independent review reported a three-month term on the Goplus website. Save the warranty wording on the day you buy and ask the seller if it is unclear.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use the Goplus 2-in-1 without the remote?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not in normal use. There are no speed or start buttons on the machine; the small remote starts it and changes speed, and the safety key only stops it. Every hands-on review flagged this. Keep the remote in a fixed place, keep a spare battery, and ask the seller about a replacement remote before you need one.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Goplus 2-in-1</h2>
+          <p>Most disappointment with this machine comes from expecting it to be something it is not. These are the four mistakes to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Expecting a brisk walk under the desk</h3>
+              <p>Walking mode stops at about 2.5 mph. If you planned to walk at 3 to 4 mph while working, you will have to raise the rail, which takes the pad out from under the desk. Check your usual walking speed before buying, and choose a pad with a faster rail-down mode if you need one.</p>
+            </li>
+            <li>
+              <h3>Buying a reseller listing because the title matches</h3>
+              <p>The long “RC Bluetooth speaker and LED display” title is copied by many shops. Some sell the Goplus machine without the brand’s support; at least one sells a different, lower-rated machine. Match the model number, speeds and weight rating, and buy from Costway or the Goplus storefront if you want the brand behind it.</p>
+            </li>
+            <li>
+              <h3>Assuming every listing carries the same warranty</h3>
+              <p>Costway’s store advertised 365 days; Amazon’s data gives 3 months. On a budget motor and controller, that difference decides whether a failure at month five is repaired or is your problem. Save the wording from the listing you buy from, and ask in writing if it is not stated.</p>
+            </li>
+            <li>
+              <h3>Losing the remote</h3>
+              <p>The remote is the only way to start the belt and change speed. Owners who leave it on the desk or the sofa end up with a machine they cannot use until a replacement arrives. Give it a fixed home, keep a spare battery, and find out how to order a replacement while the warranty runs.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Goplus 2-in-1</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointment with this machine comes from expecting it to be something it is not. These are the four mistakes to avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a brisk walk under the desk</h3>
-              <p class="text-gray-700 text-sm m-0">Walking mode stops at about 2.5 mph. If you planned to walk at 3 to 4 mph while working, you will have to raise the rail, which takes the pad out from under the desk. Check your usual walking speed before buying, and choose a pad with a faster rail-down mode if you need one.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a reseller listing because the title matches</h3>
-              <p class="text-gray-700 text-sm m-0">The long “RC Bluetooth speaker and LED display” title is copied by many shops. Some sell the Goplus machine without the brand’s support; at least one sells a different, lower-rated machine. Match the model number, speeds and weight rating, and buy from Costway or the Goplus storefront if you want the brand behind it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming every listing carries the same warranty</h3>
-              <p class="text-gray-700 text-sm m-0">Costway’s store advertised 365 days; Amazon’s data gives 3 months. On a budget motor and controller, that difference decides whether a failure at month five is repaired or is your problem. Save the wording from the listing you buy from, and ask in writing if it is not stated.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Losing the remote</h3>
-              <p class="text-gray-700 text-sm m-0">The remote is the only way to start the belt and change speed. Owners who leave it on the desk or the sofa end up with a machine they cannot use until a replacement arrives. Give it a fixed home, keep a spare battery, and find out how to order a replacement while the warranty runs.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads-with-handrail/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads With Handrail</p>
-              <p class="text-sm text-gray-500 leading-relaxed">2-in-1 pads compared, including faster walking modes.</p>
-            </a>
-            <a href="/best-low-profile-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Low-Profile Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Slim machines that store flat, from pads to full decks.</p>
-            </a>
-            <a href="/walking-pad-vs-folding-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs Folding Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where a 2-in-1 sits between the two formats.</p>
-            </a>
-            <a href="/redliro-under-desk-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking pad</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Redliro Under Desk Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What Redliro listings claim, where they disagree, and the return terms to read first.</p>
-            </a>
-            <a href="/best-2-in-1-folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best 2-in-1 Folding Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six 2-in-1 folding treadmills on Amazon, including the Goplus 2.25HP and 4.75HP listings, with what the…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The Goplus 2-in-1 is a fair budget buy for slow under-desk walking
           with an occasional short jog.</strong> Its belt of about 40 by 16 inches, 2.5 mph walking
           cap, 7.5 mph running mode, 265 lb rating and 5-inch fold are confirmed; its remote-only
           control, low display and bolt-on handles are the compromises, and its warranty depends on
           where you buy.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Buy it from Costway’s store or the Goplus storefront, keep the remote safe, and choose
-          something else if you want a brisk walk at a desk or a real run — our
-          <a href="/best-walking-pads-with-handrail/" class="text-[#5AA9FF] font-bold no-underline">walking pads with handrail</a>
-          roundup is the place to compare.
+          something else if you want a brisk walk at a desk or a real run — our <a href="/best-walking-pads-with-handrail/" class="text-[#5AA9FF] font-bold no-underline">walking pads with handrail</a> roundup is the place to compare.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads-with-handrail/">Best Walking Pads With Handrail</a></li>
+            <li><a href="/best-low-profile-treadmills/">Best Low-Profile Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is the Goplus 2-in-1 the same as the SuperFit treadmill?</h3></summary>
+            <p class="faq-a">
+              Yes, in most listings. Goplus sells the 2-in-1 under the SuperFit name, and Costway, the company behind Goplus, sells the same machine on its own store. Several versions exist, including an original single-display model, a newer Gymax-app model, a dual-display model with a 9 mph mode and a larger 4.75 HP machine, so check the model number.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you run on the Goplus 2-in-1 treadmill?</h3></summary>
+            <p class="faq-a">
+              Briefly and lightly. With the rail locked upright it runs up to 7.5 mph, but the belt is only about 40 by 16 inches, and independent reviewers found taller users had to shorten their stride. Treat it as a walking pad with a jogging option rather than a running treadmill, and clip the safety key to your clothing.
             </p>
+          </details>
+          <details>
+            <summary><h3>How fast does the Goplus 2-in-1 go in walking mode?</h3></summary>
+            <p class="faq-a">
+              About 2.5 mph with the rail folded down, which is the under-desk mode. That is a comfortable typing pace for many people but below a brisk walk. To go faster you have to raise and lock the rail, which takes the pad out from under a desk. Some reviews quote the same limits in km/h, as 1 to 4.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the 2-in-1 folding treadmill with RC Bluetooth speaker and LED display a Goplus?</h3></summary>
+            <p class="faq-a">
+              Usually. That title is Costway’s catalogue name for the Goplus SuperFit 2-in-1 family, copied by resellers, often with a Costway code beginning SP37. At least one shop uses a near-identical title for a different 2.0 HP machine rated for 250 lb, so check the model number, and buy from Costway or the Goplus storefront for brand support.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty does the Goplus 2-in-1 have?</h3></summary>
+            <p class="faq-a">
+              It depends on where you buy it. Costway’s store advertised a 365-day warranty on the day we checked, while Amazon’s listing data for Goplus 2-in-1 models gives 3 months, and one independent review reported a three-month term on the Goplus website. Save the warranty wording on the day you buy and ask the seller if it is unclear.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you use the Goplus 2-in-1 without the remote?</h3></summary>
+            <p class="faq-a">
+              Not in normal use. There are no speed or start buttons on the machine; the small remote starts it and changes speed, and the safety key only stops it. Every hands-on review flagged this. Keep the remote in a fixed place, keep a spare battery, and ask the seller about a replacement remote before you need one.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Reviews">
+          <h2 class="section-title">More in Reviews</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/reviews/" class="btn-ghost">See all Reviews</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Reviews &amp; Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads-with-handrail/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Walking Pads With Handrail</div>
+            <p class="c-blurb">2-in-1 pads compared, including faster walking modes.</p>
+          </a>
+          <a href="/best-low-profile-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Low-Profile Treadmills</div>
+            <p class="c-blurb">Slim machines that store flat, from pads to full decks.</p>
+          </a>
+          <a href="/walking-pad-vs-folding-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Walking Pad vs Folding Treadmill</div>
+            <p class="c-blurb">Where a 2-in-1 sits between the two formats.</p>
+          </a>
+          <a href="/redliro-under-desk-treadmill/" class="card">
+            <div class="c-kicker">Walking pad</div>
+            <div class="c-title">Redliro Under Desk Treadmill</div>
+            <p class="c-blurb">What Redliro listings claim, where they disagree, and the return terms to read first.</p>
+          </a>
+          <a href="/best-2-in-1-folding-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best 2-in-1 Folding Treadmills</div>
+            <p class="c-blurb">Six 2-in-1 folding treadmills on Amazon, including the Goplus 2.25HP and 4.75HP listings, with what the…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

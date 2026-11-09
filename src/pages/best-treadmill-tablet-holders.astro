@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Tablet Holders (2026): Clamp, Strap and Phone Mounts";
 const description =
@@ -245,6 +244,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-tablet-holders/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -265,143 +270,45 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Overall: Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmilltabletholders" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmilltabletholders)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmill Tablet Holders and Phone Mounts</h1>
+      <p class="ed-dek">
+        The best tablet holder is the one that fits your bar, your screen and your stride. Here are five clamp and strap mounts whose fit ranges agree between the maker and a major retailer, and where to put one so the screen sits at a sensible height without covering the safety key or shaking at running pace.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 15, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
+        <a href="#top-picks" class="btn-ghost">View products</a>
+      </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#arkon-tab131"><img src="https://m.media-amazon.com/images/I/41ePIEIxM6L._SL500_.jpg" alt="Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131)" width="360" height="500" decoding="async" /></a>
+          <a href="#arkon-tab134"><img src="https://m.media-amazon.com/images/I/41xYQPCbobL._SL500_.jpg" alt="Arkon Handlebar Slim-Grip Tablet Strap Mount (TAB134)" width="359" height="500" decoding="async" /></a>
+          <a href="#arkon-tabpb031"><img src="https://m.media-amazon.com/images/I/317XShsARkL._SL500_.jpg" alt="Arkon Heavy-Duty Clamp Post Tablet Mount (TABPB031)" width="500" height="500" decoding="async" /></a>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmill Tablet Holders <span class="text-[#5AA9FF]">and Phone Mounts</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The best tablet holder is the one that fits your bar, your screen and your stride. Here are five clamp and strap mounts whose fit ranges agree between the maker and a major retailer, and where to put one so the screen sits at a sensible height without covering the safety key or shaking at running pace.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#where-to-mount" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Where to Mount It
-          </a>
-        </div>
-      </div>
-    </div>
+        <figcaption>Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131) · Arkon Handlebar Slim-Grip Tablet Strap Mount (TAB134) · Arkon Heavy-Duty Clamp Post Tablet Mount (TABPB031)</figcaption>
+      </figure>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          holders. On 15 October 2026 we checked each one against two sources: the maker's own
-          store (arkon.com) and the Amazon listing for the same model number, confirming that both
-          showed it on sale and comparing every screen range, bar range and price. A figure appears
-          on this page only where those sources agree; where they disagreed or described the fit
-          differently, we left the figure out and say so on the card. Prices are the ones we saw on
-          that date and change often. A holder's published range is a starting point, not a
-          guarantee: measure your bar and your device in its case before ordering. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> This site reviews
-          equipment. The notes on screen height and neck position are general set-up guidance,
-          not medical or physiotherapy advice; if you have neck, back or balance problems, talk to
-          a qualified professional about how you should use a treadmill.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#arkon-tab131" class="font-bold text-gray-900 no-underline hover:underline">Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131)</a>
-            <a href="#arkon-tab131" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Thick Rails:</span>
-            <a href="#arkon-tab134" class="font-bold text-gray-900 no-underline hover:underline">Arkon Handlebar Slim-Grip Tablet Strap Mount (TAB134)</a>
-            <a href="#arkon-tab134" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Quick Removal:</span>
-            <a href="#arkon-tabpb031" class="font-bold text-gray-900 no-underline hover:underline">Arkon Heavy-Duty Clamp Post Tablet Mount (TABPB031)</a>
-            <a href="#arkon-tabpb031" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Phone Holder:</span>
-            <a href="#arkon-sm634" class="font-bold text-gray-900 no-underline hover:underline">Arkon Slim-Grip Ultra Bike or Motorcycle Handlebar Phone Mount (SM634)</a>
-            <a href="#arkon-sm634" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Walking Pads:</span>
-            <a href="#arkon-tab804" class="font-bold text-gray-900 no-underline hover:underline">Arkon Slim-Grip Tablet Holder with Clamp Base and Extension Arm (TAB804)</a>
-            <a href="#arkon-tab804" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmill Tablet Holders</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Holders</a>
-          <a href="#where-to-mount" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Where to Mount It: Handrail, Crossbar or Console</a>
-          <a href="#screen-height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Screen Height, Distance and Neck Posture</a>
-          <a href="#vibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Vibration and Wobble at Running Pace</a>
-          <a href="#mount-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Clamp, Strap or Desk Mount: Reading a Listing</a>
-          <a href="#folding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Folding Treadmills and Walking Pads</a>
-          <a href="#setting-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Fitting a Holder: A Five-Minute Check</a>
-          <a href="#using-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Using a Tablet Without Losing Your Footing</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Most treadmills already have somewhere to rest a tablet: a lip on the console, a media
           shelf, a slot above the display. The trouble is that it is usually too low, it often
           covers the buttons or the safety key, and the tablet can slide off once you start to run.
@@ -411,16 +318,75 @@ const schema = {
           choose the spot to mount one, which matters more than the holder itself.
         </p>
 
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#arkon-tab131">Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Thick Rails:</span> <a href="#arkon-tab134">Arkon Handlebar Slim-Grip Tablet Strap Mount (TAB134)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Quick Removal:</span> <a href="#arkon-tabpb031">Arkon Heavy-Duty Clamp Post Tablet Mount (TABPB031)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Phone Holder:</span> <a href="#arkon-sm634">Arkon Slim-Grip Ultra Bike or Motorcycle Handlebar Phone Mount (SM634)</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Walking Pads:</span> <a href="#arkon-tab804">Arkon Slim-Grip Tablet Holder with Clamp Base and Extension Arm (TAB804)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          holders. On 15 October 2026 we checked each one against two sources: the maker's own
+          store (arkon.com) and the Amazon listing for the same model number, confirming that both
+          showed it on sale and comparing every screen range, bar range and price. A figure appears
+          on this page only where those sources agree; where they disagreed or described the fit
+          differently, we left the figure out and say so on the card. Prices are the ones we saw on
+          that date and change often. A holder's published range is a starting point, not a
+          guarantee: measure your bar and your device in its case before ordering. We earn a
+          commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> This site reviews
+          equipment. The notes on screen height and neck position are general set-up guidance,
+          not medical or physiotherapy advice; if you have neck, back or balance problems, talk to
+          a qualified professional about how you should use a treadmill.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Treadmill Tablet Holders</a></li>
+            <li><a href="#how-we-chose">How We Chose These Holders</a></li>
+            <li><a href="#where-to-mount">Where to Mount It: Handrail, Crossbar or Console</a></li>
+            <li><a href="#screen-height">Screen Height, Distance and Neck Posture</a></li>
+            <li><a href="#vibration">Vibration and Wobble at Running Pace</a></li>
+            <li><a href="#mount-types">Clamp, Strap or Desk Mount: Reading a Listing</a></li>
+            <li><a href="#folding">Folding Treadmills and Walking Pads</a></li>
+            <li><a href="#setting-up">Fitting a Holder: A Five-Minute Check</a></li>
+            <li><a href="#using-it">Using a Tablet Without Losing Your Footing</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             One inexpensive clamp mount suits most treadmills with a round front crossbar or
             handrail. The others exist because a thick rail, a tablet you take off every session, a
             phone, or a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> with no handrail at all each changes what the holder has to do.
             If you are deciding whether a tablet on a basic treadmill can stand in for a built-in
-            screen, our guide to
-            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a>
-            covers that question first.
+            screen, our guide to <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a> covers that question first.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -444,7 +410,7 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmill Tablet Holders</h2>
+          <h2>The 5 Best Treadmill Tablet Holders</h2>
 <p>
             Each card gives the device sizes and bar diameters that the maker and the Amazon listing
             agree on, the price range we saw across the two, and who the holder suits. All five are
@@ -458,78 +424,67 @@ const schema = {
             shortlist faster than anything on a product page.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Holders</h2>
+          <h2>How We Chose These Holders</h2>
 <p>
             We have not tested these holders. They were chosen from published specifications, and
             the claims on the cards are limited to what two sources for each product support: the
@@ -581,7 +536,7 @@ const schema = {
         </div>
 
         <div id="where-to-mount" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Where to Mount It: Handrail, Crossbar or Console</h2>
+          <h2>Where to Mount It: Handrail, Crossbar or Console</h2>
 <p>
             Every treadmill offers different bars, and the choice of bar matters more than the
             choice of holder. Work through three questions in order, before you order anything.
@@ -594,9 +549,7 @@ const schema = {
             handrails. A holder above the console must not let the tablet hang down over the key,
             and one on a side rail must not swing into the cord's path when you grab the rail. If
             you cannot pull the key or press stop without touching the tablet, move the holder.
-            Our guide to
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety</a>
-            covers why the key belongs clipped to your clothing every session, and a screen is
+            Our guide to <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety</a> covers why the key belongs clipped to your clothing every session, and a screen is
             exactly the kind of distraction that makes it matter.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. Is the bar fixed?</h3>
@@ -638,7 +591,7 @@ const schema = {
         </div>
 
         <div id="screen-height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Screen Height, Distance and Neck Posture</h2>
+          <h2>Screen Height, Distance and Neck Posture</h2>
 <p>
             The commonest complaint about watching a tablet on a treadmill is a stiff neck, and the
             usual cause is a screen that is too low. Most consoles put the tablet ledge well below
@@ -648,9 +601,7 @@ const schema = {
             As general set-up guidance, aim for the top of the screen to sit roughly at eye level
             when you stand tall on the belt, so you look straight ahead or very slightly down. That
             also helps you hold your position in the middle of the belt, because looking down tends
-            to pull your stride forward towards the motor hood. Our guide to
-            <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a>
-            explains why where you look matters for the rest of your posture.
+            to pull your stride forward towards the motor hood. Our guide to <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a> explains why where you look matters for the rest of your posture.
           </p>
           <p>
             Distance is the other half. Too close, and the screen bounces in your field of view with
@@ -681,7 +632,7 @@ const schema = {
         </div>
 
         <div id="vibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Vibration and Wobble at Running Pace</h2>
+          <h2>Vibration and Wobble at Running Pace</h2>
 <p>
             Almost any holder is steady at a walk. Running is where they differ, and the cause is
             usually the mount and the bar, not the cradle that grips the tablet.
@@ -707,11 +658,7 @@ const schema = {
           <p>
             Some screen shake comes from the treadmill rather than the holder. A machine that thuds,
             rocks or rattles at speed will pass that into anything clamped to it, and no holder can
-            cancel it out. If the whole frame moves, fix that first: our guides to
-            <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">a treadmill that shakes or wobbles</a>
-            and
-            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noises</a>
-            cover the usual causes, from uneven feet to a belt that needs attention.
+            cancel it out. If the whole frame moves, fix that first: our guides to <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">a treadmill that shakes or wobbles</a> and <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noises</a> cover the usual causes, from uneven feet to a belt that needs attention.
           </p>
           <p>
             A simple test before you trust a set-up: mount the holder with the tablet in it, start
@@ -722,7 +669,7 @@ const schema = {
         </div>
 
         <div id="mount-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Clamp, Strap or Desk Mount: Reading a Listing</h2>
+          <h2>Clamp, Strap or Desk Mount: Reading a Listing</h2>
 <p>
             Treadmill tablet holders come in three basic forms, and the right one depends on your
             bar rather than your tablet.
@@ -773,7 +720,7 @@ const schema = {
         </div>
 
         <div id="folding" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Folding Treadmills and Walking Pads</h2>
+          <h2>Folding Treadmills and Walking Pads</h2>
 <p>
             On a folding treadmill, check what moves when the deck lifts. The deck rises towards
             the console, and on some machines it ends up close to the front crossbar or the console
@@ -787,24 +734,20 @@ const schema = {
           <p>
             Never clamp to the deck frame, the lift handle or the hinge area, all of which move when
             the machine folds, and do not leave a charging cable running from the tablet to a
-            socket across the fold line. Our guide to
-            <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill safely</a>
-            covers the latch and the hydraulic assist, which is where fingers and cables get caught.
+            socket across the fold line. Our guide to <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium">folding a treadmill safely</a> covers the latch and the hydraulic assist, which is where fingers and cables get caught.
           </p>
           <p>
             Walking pads without handrails have nowhere to clamp at all, and clamping anything to
             the pad's frame puts it at floor level next to the belt. A desk, a wall mount or a shelf
             at eye height is the answer there, which is why our walking-pad pick is a desk mount. If
-            you walk at a standing desk, our
-            <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
-            covers screen positions for working while you walk. Walking pads with a fold-up handle
+            you walk at a standing desk, our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a> covers screen positions for working while you walk. Walking pads with a fold-up handle
             bar are a middle case: the bar is usually thin and folds down, so treat it as a moving
             part and use a desk or wall mount instead.
           </p>
         </div>
 
         <div id="setting-up" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Fitting a Holder: A Five-Minute Check</h2>
+          <h2>Fitting a Holder: A Five-Minute Check</h2>
 <p>
             Most problems with treadmill tablet holders show up in the first session. Running this
             check once, with the machine unplugged at the wall for the fitting itself, catches nearly
@@ -837,7 +780,7 @@ const schema = {
         </div>
 
         <div id="using-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Using a Tablet Without Losing Your Footing</h2>
+          <h2>Using a Tablet Without Losing Your Footing</h2>
 <p>
             A tablet holder makes it easier to watch something and harder to notice your feet.
             Three habits keep it safe.
@@ -856,8 +799,7 @@ const schema = {
             incline often will have you looking down at the console more than a film will, so a
             screen that sits close above the console works better for classes than one mounted
             high. For ideas on what to watch, and how to structure a session so the screen helps
-            rather than distracts, see our guide to
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>.
+            rather than distracts, see our guide to <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Sound, cables and the end of the session</h3>
           <p>
@@ -880,7 +822,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If your treadmill has a tablet ledge at a good height</strong> that clears the
             controls, and you mostly walk, you may not need a holder at all. Try the ledge for a
@@ -909,157 +851,173 @@ const schema = {
             mount beside the treadmill is the safer choice.
           </p>
           <p>
-            <strong>If you are kitting out a new machine</strong>, our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            covers the mat, lubricant and other things worth buying before a tablet holder.
+            <strong>If you are kitting out a new machine</strong>, our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> covers the mat, lubricant and other things worth buying before a tablet holder.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where should I put a tablet holder on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a fixed part of the frame, usually the front crossbar, where the screen can sit near eye level without covering the safety key, the stop button or the speed controls. Avoid long side rails that flex, and never clamp to the deck, motor hood, incline mechanism, lift handle or folding hinge, which move during use or when the treadmill folds.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I stop my iPad shaking on the treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Use the shortest arm that puts the screen where you want it, clamp close to where the bar is supported, and make sure the clamp suits the bar's diameter rather than being stretched to its limit. Screw clamps generally twist less than straps. Retighten knobs and ball joints regularly, and check whether the treadmill itself rocks or rattles at speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use my phone on the treadmill safely?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, if it is held in a mount rather than in your hand, and you set up what you want to watch or hear before starting the belt. Slow to a walk before touching the screen, keep the safety key clipped on, and make sure the mount does not cover the stop button or the key, or sit where your hand lands on the rail.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What height should a treadmill tablet be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As general set-up guidance, roughly at eye level when you stand tall on the belt, so you look straight ahead or slightly down rather than at the console. Check it at the incline you use most, because the deck lifts you. If you have neck or back problems, ask a qualified professional about the right set-up for you.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a tablet holder fit my treadmill handrail?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure the rail's diameter and shape and compare them with the bar range the holder's maker publishes. The clamp mounts on this page take round bars from 12 to 40 mm, and the strap mounts from 15 to 50 mm. Square, oval or sculpted rails may need a strap, or a desk mount instead. If a listing gives no bar range, choose another holder.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a tablet holder if my treadmill has a media shelf?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not always. If the shelf holds the tablet at a comfortable height, keeps it clear of the controls and the tablet stays put at your usual pace, it is fine. Many shelves are low or let the tablet slide when you run, which is when a clamp-on holder on a bar above the console is worth buying.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Tablet Holders</h2>
+          <p>Most of these come down to mounting position, not to the holder itself.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Covering the safety key or stop button</h3>
+              <p>A tablet mounted above the console can hang down over the key and the stop button, especially in landscape. Check with the tablet in place that you can pull the key and press stop without touching the screen, in both orientations. If you cannot, move the holder higher or to the crossbar. Controls you cannot reach quickly are not doing their job.</p>
+            </li>
+            <li>
+              <h3>Clamping to something that moves</h3>
+              <p>The deck, motor hood, incline mechanism, lift handle and folding hinge all move during use or folding. A holder fixed to any of them can work loose, trap a cable or drop into the belt. Clamp only to fixed parts of the frame, and fold the machine once with the holder fitted and no tablet in it to check the deck clears it.</p>
+            </li>
+            <li>
+              <h3>Buying by screen size alone</h3>
+              <p>Two tablets with the same screen can differ in overall size, and a rugged case adds more. Measure the device in its case against the holder's published range, and measure the bar too. A listing that gives neither a physical device range nor a bar diameter is not giving you enough to buy on, however many treadmill brands it names.</p>
+            </li>
+            <li>
+              <h3>Reaching for the screen at speed</h3>
+              <p>Leaning forward to tap a tablet while running pulls your stride towards the motor hood and off the centre of the belt. Choose what to watch before you start, and drop to a walk before touching the screen. Keep the safety key clipped to your clothing so a stumble stops the belt, and route any charging cable away from it.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Tablet Holders</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come down to mounting position, not to the holder itself.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Covering the safety key or stop button</h3>
-              <p class="text-gray-700 text-sm m-0">A tablet mounted above the console can hang down over the key and the stop button, especially in landscape. Check with the tablet in place that you can pull the key and press stop without touching the screen, in both orientations. If you cannot, move the holder higher or to the crossbar. Controls you cannot reach quickly are not doing their job.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Clamping to something that moves</h3>
-              <p class="text-gray-700 text-sm m-0">The deck, motor hood, incline mechanism, lift handle and folding hinge all move during use or folding. A holder fixed to any of them can work loose, trap a cable or drop into the belt. Clamp only to fixed parts of the frame, and fold the machine once with the holder fitted and no tablet in it to check the deck clears it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying by screen size alone</h3>
-              <p class="text-gray-700 text-sm m-0">Two tablets with the same screen can differ in overall size, and a rugged case adds more. Measure the device in its case against the holder's published range, and measure the bar too. A listing that gives neither a physical device range nor a bar diameter is not giving you enough to buy on, however many treadmill brands it names.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reaching for the screen at speed</h3>
-              <p class="text-gray-700 text-sm m-0">Leaning forward to tap a tablet while running pulls your stride towards the motor hood and off the centre of the belt. Choose what to watch before you start, and drop to a walk before touching the screen. Keep the safety key clipped to your clothing so a stumble stops the belt, and route any charging cable away from it.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-make-treadmill-running-less-boring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Motivation</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Make Treadmill Running Less Boring</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Structure, music and screens that make the time pass.</p>
-            </a>
-            <a href="/treadmill-safety-tips/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Safety</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Safety Tips</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The safety key, clearance, folding decks and attention.</p>
-            </a>
-            <a href="/best-treadmill-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Accessories</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The mat, lubricant and other things worth buying first.</p>
-            </a>
-            <a href="/best-treadmill-laptop-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Laptop Holders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
-            </a>
-            <a href="/best-treadmill-phone-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Phone Holders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to…</p>
-            </a>
-            <a href="/best-treadmill-tv-stands/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill TV Stands and Mounts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Choose the bar first, then the holder.</strong> A screw clamp on
             a fixed, round front crossbar, with the screen near eye level and clear of the safety key,
             suits most treadmills, and the Arkon TAB131 is the simplest way to get there. Thick rails
             call for a strap, a folding machine for a quick release, and a walking pad for a desk
             mount.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Measure the bar and the device in its case before you order, keep the arm short for
             running, and take the tablet off before folding. For what to watch once it is up, see
-            our guide to
-            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#5AA9FF] font-bold no-underline">less boring treadmill runs</a>.
+            our guide to <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#5AA9FF] font-bold no-underline">less boring treadmill runs</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-make-treadmill-running-less-boring/">How to Make Treadmill Running Less Boring</a></li>
+            <li><a href="/treadmill-safety-tips/">Treadmill Safety Tips</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where should I put a tablet holder on a treadmill?</h3></summary>
+            <p class="faq-a">
+              On a fixed part of the frame, usually the front crossbar, where the screen can sit near eye level without covering the safety key, the stop button or the speed controls. Avoid long side rails that flex, and never clamp to the deck, motor hood, incline mechanism, lift handle or folding hinge, which move during use or when the treadmill folds.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How do I stop my iPad shaking on the treadmill?</h3></summary>
+            <p class="faq-a">
+              Use the shortest arm that puts the screen where you want it, clamp close to where the bar is supported, and make sure the clamp suits the bar's diameter rather than being stretched to its limit. Screw clamps generally twist less than straps. Retighten knobs and ball joints regularly, and check whether the treadmill itself rocks or rattles at speed.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can I use my phone on the treadmill safely?</h3></summary>
+            <p class="faq-a">
+              Yes, if it is held in a mount rather than in your hand, and you set up what you want to watch or hear before starting the belt. Slow to a walk before touching the screen, keep the safety key clipped on, and make sure the mount does not cover the stop button or the key, or sit where your hand lands on the rail.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What height should a treadmill tablet be?</h3></summary>
+            <p class="faq-a">
+              As general set-up guidance, roughly at eye level when you stand tall on the belt, so you look straight ahead or slightly down rather than at the console. Check it at the incline you use most, because the deck lifts you. If you have neck or back problems, ask a qualified professional about the right set-up for you.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will a tablet holder fit my treadmill handrail?</h3></summary>
+            <p class="faq-a">
+              Measure the rail's diameter and shape and compare them with the bar range the holder's maker publishes. The clamp mounts on this page take round bars from 12 to 40 mm, and the strap mounts from 15 to 50 mm. Square, oval or sculpted rails may need a strap, or a desk mount instead. If a listing gives no bar range, choose another holder.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a tablet holder if my treadmill has a media shelf?</h3></summary>
+            <p class="faq-a">
+              Not always. If the shelf holds the tablet at a comfortable height, keeps it clear of the controls and the tablet stays put at your usual pace, it is fine. Many shelves are low or let the tablet slide when you run, which is when a clamp-on holder on a bar above the console is worth buying.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-make-treadmill-running-less-boring/" class="card">
+            <div class="c-kicker">Motivation</div>
+            <div class="c-title">How to Make Treadmill Running Less Boring</div>
+            <p class="c-blurb">Structure, music and screens that make the time pass.</p>
+          </a>
+          <a href="/treadmill-safety-tips/" class="card">
+            <div class="c-kicker">Safety</div>
+            <div class="c-title">Treadmill Safety Tips</div>
+            <p class="c-blurb">The safety key, clearance, folding decks and attention.</p>
+          </a>
+          <a href="/best-treadmill-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Treadmill Accessories</div>
+            <p class="c-blurb">The mat, lubricant and other things worth buying first.</p>
+          </a>
+          <a href="/best-treadmill-laptop-holders/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Best Treadmill Laptop Holders</div>
+            <p class="c-blurb">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
+          </a>
+          <a href="/best-treadmill-phone-holders/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill Phone Holders</div>
+            <p class="c-blurb">Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to…</p>
+          </a>
+          <a href="/best-treadmill-tv-stands/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill TV Stands and Mounts</div>
+            <p class="c-blurb">Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

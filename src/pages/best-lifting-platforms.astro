@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Lifting Platforms (2026): Deadlift Platforms, Drop Pads and DIY";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-lifting-platforms/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,83 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+  stickyCta={{ text: "Best Deadlift Platform: Titan Fitness Deadlift Platform", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestliftingplatforms" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestliftingplatforms)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Lifting Platforms for a Home Gym</h1>
+      <p class="ed-dek">
+        A lifting platform protects the floor, takes the edge off the noise and gives you a flat, firm place to pull from. Here are five options, from a ready-made Olympic platform to a pair of drop pads and a stall mat from a farm store, and how to choose between them for a garage, a basement or an upstairs room.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 16, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Lifting Platforms <span class="text-[#5AA9FF]">for a Home Gym</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A lifting platform protects the floor, takes the edge off the noise and gives you a flat, firm place to pull from. Here are five options, from a ready-made Olympic platform to a pair of drop pads and a stall mat from a farm store, and how to choose between them for a garage, a basement or an upstairs room.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#platform-vs-tiles" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Platform or Rubber Tiles?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#titan-deadlift-platform"><img src="https://m.media-amazon.com/images/I/21O6wMWcqYL._SL500_.jpg" alt="Titan Fitness Deadlift Platform" width="500" height="500" decoding="async" /></a>
+          <a href="#valor-olympic-platform"><img src="https://m.media-amazon.com/images/I/41ldwe4rLnL._SL500_.jpg" alt="Valor Fitness Olympic Lifting Wood Platform" width="500" height="500" decoding="async" /></a>
+          <a href="#titan-silencer-drop-pads"><img src="https://m.media-amazon.com/images/I/31n1dsZ5XyL._SL500_.jpg" alt="Titan Fitness Silencer Drop Pad Set" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        <figcaption>Titan Fitness Deadlift Platform · Valor Fitness Olympic Lifting Wood Platform · Titan Fitness Silencer Drop Pad Set</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people start thinking about a lifting platform after the first heavy deadlift lands
+          on a garage floor, or after a neighbour knocks on the door. A platform is a layered
+          surface — usually rubber where the plates land and something firm where you stand — that
+          spreads the impact of a barbell, protects the floor beneath and gives you a level place
+          to lift. It is not always necessary, and the right answer depends on your floor, what
+          you lift and who is underneath. The five picks below cover a bolt-together deadlift
+          platform, a budget version, a complete Olympic platform, drop pads for noise and the
+          stall-mat DIY route, and the guide after them covers when each makes sense.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Deadlift Platform:</span> <a href="#titan-deadlift-platform">Titan Fitness Deadlift Platform</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Olympic Lifting:</span> <a href="#valor-olympic-platform">Valor Fitness Olympic Lifting Wood Platform</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Drop Pads:</span> <a href="#titan-silencer-drop-pads">Titan Fitness Silencer Drop Pad Set</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lower-Profile Pads:</span> <a href="#rep-crash-pads">REP Fitness Crash Pads (Pair)</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best DIY:</span> <a href="#rubber-cal-eco-sport-tiles">Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           platforms or pads, and no figure on this page is our own measurement. Each was confirmed
           as currently sold on 16 October 2026 on the maker's or retailer's own site (Titan Fitness
@@ -341,8 +363,7 @@ const schema = {
           card. Prices are those we saw on that date and change often; several of these are sold
           as a frame with optional tiles, so the total depends on what you add. We earn a
           commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          products we list or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review
           equipment; we are not giving medical, physiotherapy, coaching or structural engineering
           advice. Heavy lifting and dropping weights carry a real risk of injury and of damage to
           a building. A platform protects a floor; it does not make every floor suitable for heavy
@@ -350,80 +371,27 @@ const schema = {
           on any unusual floor, ask a structural engineer or builder to check the floor first. If
           you have an injury, a back, joint or heart condition, are pregnant, or are new to
           lifting, talk to a qualified professional before you start.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Deadlift Platform:</span>
-            <a href="#titan-deadlift-platform" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Deadlift Platform</a>
-            <a href="#titan-deadlift-platform" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Olympic Lifting:</span>
-            <a href="#valor-olympic-platform" class="font-bold text-gray-900 no-underline hover:underline">Valor Fitness Olympic Lifting Wood Platform</a>
-            <a href="#valor-olympic-platform" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Drop Pads:</span>
-            <a href="#titan-silencer-drop-pads" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Silencer Drop Pad Set</a>
-            <a href="#titan-silencer-drop-pads" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lower-Profile Pads:</span>
-            <a href="#rep-crash-pads" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Crash Pads (Pair)</a>
-            <a href="#rep-crash-pads" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best DIY:</span>
-            <a href="#rubber-cal-eco-sport-tiles" class="font-bold text-gray-900 no-underline hover:underline">Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles</a>
-            <a href="#rubber-cal-eco-sport-tiles" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Lifting Platforms and Pads</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Platforms</a>
-          <a href="#what-a-platform-does" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What a Lifting Platform Actually Does</a>
-          <a href="#platform-vs-tiles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Platform, Stall Mats or Rubber Tiles</a>
-          <a href="#diy-platform" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Building a DIY Platform With Stall Mats and Plywood</a>
-          <a href="#dropping-weights" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Dropping Weights Safely</a>
-          <a href="#upstairs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Upstairs Rooms and Apartments</a>
-          <a href="#size-and-setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Size, Placement and Care</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Lifting Platforms and Pads</a></li>
+            <li><a href="#how-we-chose">How We Chose These Platforms</a></li>
+            <li><a href="#what-a-platform-does">What a Lifting Platform Actually Does</a></li>
+            <li><a href="#platform-vs-tiles">Platform, Stall Mats or Rubber Tiles</a></li>
+            <li><a href="#diy-platform">Building a DIY Platform With Stall Mats and Plywood</a></li>
+            <li><a href="#dropping-weights">Dropping Weights Safely</a></li>
+            <li><a href="#upstairs">Upstairs Rooms and Apartments</a></li>
+            <li><a href="#size-and-setup">Size, Placement and Care</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people start thinking about a lifting platform after the first heavy deadlift lands
-          on a garage floor, or after a neighbour knocks on the door. A platform is a layered
-          surface — usually rubber where the plates land and something firm where you stand — that
-          spreads the impact of a barbell, protects the floor beneath and gives you a level place
-          to lift. It is not always necessary, and the right answer depends on your floor, what
-          you lift and who is underneath. The five picks below cover a bolt-together deadlift
-          platform, a budget version, a complete Olympic platform, drop pads for noise and the
-          stall-mat DIY route, and the guide after them covers when each makes sense.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five picks, one for each common situation. Most people deadlifting in a garage need
             the Titan frame or the DIY route. The Olympic platform is for lifters who snatch and
@@ -448,16 +416,13 @@ const schema = {
           </table></div>
           <p>
             A platform usually sits in front of or inside a rack, so the two are worth planning
-            together; our guide to the
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">best squat racks for a home gym</a>
-            covers ceiling height, anchoring and floor loading from the rack side. For the wider
-            picture of what a home gym needs, see our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a>.
+            together; our guide to the <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">best squat racks for a home gym</a> covers ceiling height, anchoring and floor loading from the rack side. For the wider
+            picture of what a home gym needs, see our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a>.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Lifting Platforms and Pads</h2>
+          <h2>The 5 Best Lifting Platforms and Pads</h2>
 <p>
             Each card gives the dimensions, layers and materials we could confirm in two places,
             the price range we saw and who the option suits. Two of the five are not a finished
@@ -466,78 +431,67 @@ const schema = {
             need to add.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Platforms</h2>
+          <h2>How We Chose These Platforms</h2>
 <p>
             We have not tested these platforms or pads. The picks were made from maker and
             retailer product pages and specification tables, and from independent coverage —
@@ -583,7 +537,7 @@ const schema = {
         </div>
 
         <div id="what-a-platform-does" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What a Lifting Platform Actually Does</h2>
+          <h2>What a Lifting Platform Actually Does</h2>
 <p>
             A platform does three jobs, and it helps to know which one you are buying it for,
             because the answer changes what you need.
@@ -621,7 +575,7 @@ const schema = {
         </div>
 
         <div id="platform-vs-tiles" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Platform, Stall Mats or Rubber Tiles</h2>
+          <h2>Platform, Stall Mats or Rubber Tiles</h2>
 <p>
             The three common options are often lumped together, but they do different amounts of
             work.
@@ -650,17 +604,13 @@ const schema = {
           </p>
           <p>
             Thickness is a useful guide but density matters more, a point that applies equally to
-            treadmill mats; our guide to
-            <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>
-            explains why a thick soft layer can be worse than a thin firm one. If you are also
-            protecting the floor under a treadmill or bike in the same room, our guide to
-            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>
-            covers sizing for machines.
+            treadmill mats; our guide to <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a> explains why a thick soft layer can be worse than a thin firm one. If you are also
+            protecting the floor under a treadmill or bike in the same room, our guide to <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a> covers sizing for machines.
           </p>
         </div>
 
         <div id="diy-platform" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Building a DIY Platform With Stall Mats and Plywood</h2>
+          <h2>Building a DIY Platform With Stall Mats and Plywood</h2>
 <p>
             The DIY platform is popular because it is cheaper than a ready-made one and uses
             materials you can collect locally. The idea is simple: plywood underneath to spread
@@ -711,7 +661,7 @@ const schema = {
         </div>
 
         <div id="dropping-weights" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Dropping Weights Safely</h2>
+          <h2>Dropping Weights Safely</h2>
 <p>
             A platform makes dropping weights less destructive. It does not make it free of
             consequences, and some of the damage blamed on platforms is really down to what was
@@ -743,7 +693,7 @@ const schema = {
         </div>
 
         <div id="upstairs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Upstairs Rooms and Apartments</h2>
+          <h2>Upstairs Rooms and Apartments</h2>
 <p>
             Lifting heavy in an upstairs room or an apartment raises two separate questions:
             noise for the people below, and load on the floor. A platform helps with the first and
@@ -756,11 +706,7 @@ const schema = {
             bar onto them. The most effective measure costs nothing — do not drop weights, and
             lower every rep under control. Train at reasonable hours, and talk to the neighbours
             below before you start rather than after a complaint. If you also walk or run on a
-            treadmill in the same building, the same principles apply; our guide to
-            <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">treadmill anti-vibration pads</a>
-            covers isolating a machine, and our
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a>
-            covers the trade-offs of exercising above someone else.
+            treadmill in the same building, the same principles apply; our guide to <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">treadmill anti-vibration pads</a> covers isolating a machine, and our <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a> covers the trade-offs of exercising above someone else.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Floor loading</h3>
           <p>
@@ -782,7 +728,7 @@ const schema = {
         </div>
 
         <div id="size-and-setup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Size, Placement and Care</h2>
+          <h2>Size, Placement and Care</h2>
 <p>
             <strong>Size it to the bar and the lift.</strong> A standard <a href="/best-barbells/" class="text-[#0F62FE] font-medium" data-autolink>Olympic barbell</a> is a
             little over 7 ft long, which is why platforms are usually around 8 ft in the direction
@@ -793,16 +739,12 @@ const schema = {
             <strong>Plan it with the rack.</strong> A platform can sit in front of a rack for
             deadlifts and Olympic lifts, or the rack can stand on the platform or on the same
             rubber. If your rack must be bolted down, check the rack maker's guidance on anchoring
-            through rubber or a platform before deciding where each goes; our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            covers anchoring by rack.
+            through rubber or a platform before deciding where each goes; our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> covers anchoring by rack.
           </p>
           <p>
             <strong>Leave clearance.</strong> Keep a clear margin around the platform for a
             dropped bar to roll and for you to step off. In a shared garage, give a treadmill its
-            own space and do not lift where a bar could reach it; our guide to
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">keeping a treadmill in a garage</a>
-            covers the space and damp issues the two share.
+            own space and do not lift where a bar could reach it; our guide to <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">keeping a treadmill in a garage</a> covers the space and damp issues the two share.
           </p>
           <p>
             <strong>Look after it.</strong> Sweep chalk and grit off regularly, since grit on a
@@ -815,7 +757,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you never drop weights and lift on a concrete slab</strong>, a floor of
             3/4-inch stall mats may be all you need. A full platform adds level footing and
@@ -825,11 +767,7 @@ const schema = {
             <strong>If you train mainly with dumbbells and kettlebells</strong>, rubber flooring
             protects the floor well enough, and a platform is designed around a barbell. Bodyweight
             work needs even less: for pull-ups, what matters is how the bar is mounted, not the
-            floor, which our guide to the
-            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">best pull-up bars</a>
-            covers. Our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a>
-            helps decide where the money is best spent.
+            floor, which our guide to the <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">best pull-up bars</a> covers. Our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a> helps decide where the money is best spent.
           </p>
           <p>
             <strong>If your floor cannot take the load</strong>, no platform fixes that. Have the
@@ -838,141 +776,158 @@ const schema = {
           <p>
             <strong>If your noise problem is a treadmill or bike</strong> rather than a barbell, a
             platform is the wrong tool. Start with a properly sized machine mat or anti-vibration
-            pads and a quieter machine; see our guide to
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>.
+            pads and a quieter machine; see our guide to <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a lifting platform in my home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not always. If you lift on a concrete slab, rarely drop weights and nobody is underneath, heavy rubber stall mats are often enough. A platform earns its place if you drop weights, deadlift heavy often, do Olympic lifts, need a level surface on a sloped garage floor, or want to protect a finished floor. Upstairs, check the structure before relying on any platform.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best lifting platform?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For deadlifts in a garage, a steel-framed 8 x 4 ft platform filled with rubber, such as Titan's Deadlift Platform, or Rogue's version if you buy direct. For Olympic lifts, a wider complete platform like Valor's. If noise is the main problem, drop pads under bumper plates. On a budget, stall mats and plywood make a good DIY platform.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you build a DIY deadlift platform?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A common build uses one or two layers of plywood as a base, a smooth plywood strip down the middle to stand on, and 3/4-inch rubber stall mats cut to fill the sides where the plates land, with the top layers screwed down. Make it about 8 ft long; 4 ft wide works for deadlifts, wider for Olympic lifts.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are horse stall mats good for a home gym?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, for most garage and basement gyms. They are dense, durable and cheap per square foot, and they protect the floor and equipment well. They are very heavy, smell of rubber when new and have a textured surface. For heavy drops, put them on top of plywood or in a platform frame rather than relying on one layer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I use a lifting platform in an apartment?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A platform and drop pads reduce the impact noise heard below, but they do not remove it, and they do not reduce the total load on the floor. In an apartment, avoid dropping weights, lower every rep under control, check your lease, and ask the landlord or a structural professional before installing heavy equipment.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do drop pads work for deadlifts?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They soften the landing of dropped bumper plates and reduce noise, which is their main job. They are not a full floor, so use them on top of rubber flooring. At around 6 inches tall they raise the bar if you start each lift from them, and a loaded bar should not be left resting on them.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Lifting Platforms</h2>
+          <p>Each of these turns a platform that should protect the floor and quiet the gym into one that does neither, or creates a new problem.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Standing on the rubber and dropping onto the wood</h3>
+              <p>A platform is designed with a firm centre for your feet and rubber where the plates land. Setting up with the plates over the wood, or a narrow platform that puts plates on bare floor, defeats the point. Centre yourself on the wood strip so both sets of plates land on rubber every time.</p>
+            </li>
+            <li>
+              <h3>Dropping iron plates or an empty bar</h3>
+              <p>Platforms and drop pads are made for bumper plates. Dropped cast-iron plates crack rubber, dent wood and damage the plates; a dropped empty or lightly loaded bar can hit the floor and bend. Lower the bar under control unless it is loaded with bumpers, and follow the plate maker's guidance on drop heights.</p>
+            </li>
+            <li>
+              <h3>Assuming a platform makes upstairs lifting safe</h3>
+              <p>A platform spreads impact, but the rack, plates and lifter still put a heavy load on the floor, and repeated drops add stress. On an upper floor or in a flat, have the structure checked before you install heavy equipment, keep it near load-bearing walls, and avoid dropping weights altogether.</p>
+            </li>
+            <li>
+              <h3>Using soft foam tiles as a platform</h3>
+              <p>Thick foam tiles feel protective but compress under a barbell, letting the plates hit the floor and leaving you standing on an unstable surface. Choose dense rubber at 3/4 inch or more, ideally over plywood or in a frame, and keep any foam drop pads for catching plates, not for standing on.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Lifting Platforms</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a platform that should protect the floor and quiet the gym into one that does neither, or creates a new problem.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Standing on the rubber and dropping onto the wood</h3>
-              <p class="text-gray-700 text-sm m-0">A platform is designed with a firm centre for your feet and rubber where the plates land. Setting up with the plates over the wood, or a narrow platform that puts plates on bare floor, defeats the point. Centre yourself on the wood strip so both sets of plates land on rubber every time.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Dropping iron plates or an empty bar</h3>
-              <p class="text-gray-700 text-sm m-0">Platforms and drop pads are made for bumper plates. Dropped cast-iron plates crack rubber, dent wood and damage the plates; a dropped empty or lightly loaded bar can hit the floor and bend. Lower the bar under control unless it is loaded with bumpers, and follow the plate maker's guidance on drop heights.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a platform makes upstairs lifting safe</h3>
-              <p class="text-gray-700 text-sm m-0">A platform spreads impact, but the rack, plates and lifter still put a heavy load on the floor, and repeated drops add stress. On an upper floor or in a flat, have the structure checked before you install heavy equipment, keep it near load-bearing walls, and avoid dropping weights altogether.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using soft foam tiles as a platform</h3>
-              <p class="text-gray-700 text-sm m-0">Thick foam tiles feel protective but compress under a barbell, letting the plates hit the floor and leaving you standing on an unstable surface. Choose dense rubber at 3/4 inch or more, ideally over plywood or in a frame, and keep any foam drop pads for catching plates, not for standing on.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six racks by type and budget, with ceiling height, safeties and anchoring explained.</p>
-            </a>
-            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Setup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How flooring fits with the rack, bar, plates and bench in a home gym.</p>
-            </a>
-            <a href="/best-treadmill-anti-vibration-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Noise</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Anti-Vibration Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Isolating a machine from the floor when the people below are the concern.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most garage gyms, start with 3/4-inch rubber stall mats, and
             add a framed deadlift platform when you deadlift heavy or drop weights</strong> — the
             Titan's frame on Amazon, or Rogue's if you buy direct. Choose the Valor platform for
             Olympic lifting without a DIY build, and Titan or REP drop pads when noise is the main
             problem or space is tight.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you choose, drop only bumper plates, keep the plates landing on rubber, and have
             an upstairs floor checked before you lift heavy on it. If the platform is going in
-            front of a rack, plan the two together with our guide to the
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">best squat racks for a home gym</a>.
+            front of a rack, plan the two together with our guide to the <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">best squat racks for a home gym</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for Home Gym</a></li>
+            <li><a href="/home-workout-equipment-reviews/">Home Workout Equipment Reviews</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Do I need a lifting platform in my home gym?</h3></summary>
+            <p class="faq-a">
+              Not always. If you lift on a concrete slab, rarely drop weights and nobody is underneath, heavy rubber stall mats are often enough. A platform earns its place if you drop weights, deadlift heavy often, do Olympic lifts, need a level surface on a sloped garage floor, or want to protect a finished floor. Upstairs, check the structure before relying on any platform.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the best lifting platform?</h3></summary>
+            <p class="faq-a">
+              For deadlifts in a garage, a steel-framed 8 x 4 ft platform filled with rubber, such as Titan's Deadlift Platform, or Rogue's version if you buy direct. For Olympic lifts, a wider complete platform like Valor's. If noise is the main problem, drop pads under bumper plates. On a budget, stall mats and plywood make a good DIY platform.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do you build a DIY deadlift platform?</h3></summary>
+            <p class="faq-a">
+              A common build uses one or two layers of plywood as a base, a smooth plywood strip down the middle to stand on, and 3/4-inch rubber stall mats cut to fill the sides where the plates land, with the top layers screwed down. Make it about 8 ft long; 4 ft wide works for deadlifts, wider for Olympic lifts.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are horse stall mats good for a home gym?</h3></summary>
+            <p class="faq-a">
+              Yes, for most garage and basement gyms. They are dense, durable and cheap per square foot, and they protect the floor and equipment well. They are very heavy, smell of rubber when new and have a textured surface. For heavy drops, put them on top of plywood or in a platform frame rather than relying on one layer.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I use a lifting platform in an apartment?</h3></summary>
+            <p class="faq-a">
+              A platform and drop pads reduce the impact noise heard below, but they do not remove it, and they do not reduce the total load on the floor. In an apartment, avoid dropping weights, lower every rep under control, check your lease, and ask the landlord or a structural professional before installing heavy equipment.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do drop pads work for deadlifts?</h3></summary>
+            <p class="faq-a">
+              They soften the landing of dropped bumper plates and reduce noise, which is their main job. They are not a full floor, so use them on top of rubber flooring. At around 6 inches tall they raise the bar if you start each lift from them, and a loaded bar should not be left resting on them.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Racks</div>
+            <div class="c-title">Best Squat Racks for Home Gym</div>
+            <p class="c-blurb">Six racks by type and budget, with ceiling height, safeties and anchoring explained.</p>
+          </a>
+          <a href="/home-workout-equipment-reviews/" class="card">
+            <div class="c-kicker">Setup</div>
+            <div class="c-title">Home Workout Equipment Reviews</div>
+            <p class="c-blurb">How flooring fits with the rack, bar, plates and bench in a home gym.</p>
+          </a>
+          <a href="/best-treadmill-anti-vibration-pads/" class="card">
+            <div class="c-kicker">Noise</div>
+            <div class="c-title">Treadmill Anti-Vibration Pads</div>
+            <p class="c-blurb">Isolating a machine from the floor when the people below are the concern.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

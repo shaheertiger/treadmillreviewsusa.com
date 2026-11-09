@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill HIIT Workout (2026): Five Sessions and How to Set Them Up";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-hiit-workout/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,105 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Sessions", link: "#the-sessions" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillhiitworkout" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillhiitworkout)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Training</span>
+      </nav>
+      <h1 class="ed-title">Treadmill HIIT Workouts That Actually Are HIIT</h1>
+      <p class="ed-dek">
+        High-intensity interval training on a treadmill is harder to set up than it is on a track, because the belt takes time to speed up and slow down. Here is what the session should feel like, how to work around the machine, five structures worth repeating, and a version for people who have never done one.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Training
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill HIIT Workouts <span class="text-[#5AA9FF]">That Actually Are HIIT</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          High-intensity interval training on a treadmill is harder to set up than it is on a track, because the belt takes time to speed up and slow down. Here is what the session should feel like, how to work around the machine, five structures worth repeating, and a version for people who have never done one.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#the-sessions" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Five Sessions
-          </a>
-          <a href="#belt-lag" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Handling the Belt Lag
-          </a>
-        </div>
+        <a href="#the-sessions" class="btn-ghost">The Five Sessions</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to running hard intervals on one — it is not medical
-          advice, physiotherapy, coaching or a nutrition plan, and we are not qualified to give any
-          of those. HIIT takes the heart close to its limit on purpose. If you have a heart, lung or
-          circulation condition, high blood pressure, take medication that affects heart rate, are
-          pregnant, are recovering from an injury, or have not exercised hard for a long time, talk
-          to a doctor before trying it. Stop immediately for chest pain, dizziness, faintness or
-          breathlessness that feels wrong. <strong class="text-gray-900">On the figures below:</strong>
-          speeds are examples for one hypothetical intermediate runner, not targets, and work-to-rest
-          ratios are starting points to adjust by feel.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: A Treadmill HIIT Workout</a>
-          <a href="#what-hiit-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What HIIT Actually Means, and What Most Treadmill HIIT Really Is</a>
-          <a href="#belt-lag" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Treadmill Problem: Handling the Belt Lag</a>
-          <a href="#picking-speeds" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Pick Your Speeds Without Fixed Numbers</a>
-          <a href="#the-sessions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Five Treadmill HIIT Sessions</a>
-          <a href="#beginner-version" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. A Beginner Treadmill HIIT Workout</a>
-          <a href="#how-often" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Often to Do HIIT, and What It Costs</a>
-          <a href="#warm-up-cool-down" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warm-Up and Cool-Down for HIIT</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Safety: Rails, the Key and the Stop Button</a>
-          <a href="#what-a-treadmill-needs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What a Treadmill Needs to Do HIIT Well</a>
-          <a href="#hiit-for-weight-loss" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. HIIT, Calories and Weight Loss: The Honest Version</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill HIIT workout is a short session of very hard efforts — hard enough that you
           could not hold them for more than a minute or two — separated by easy recovery, repeated
           a handful of times. Most of what gets called HIIT on a treadmill is really moderate
@@ -211,8 +145,40 @@ const schema = {
           structures, and how a beginner should approach it without being thrown off the back.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review
+          treadmills. This is a practical guide to running hard intervals on one — it is not medical
+          advice, physiotherapy, coaching or a nutrition plan, and we are not qualified to give any
+          of those. HIIT takes the heart close to its limit on purpose. If you have a heart, lung or
+          circulation condition, high blood pressure, take medication that affects heart rate, are
+          pregnant, are recovering from an injury, or have not exercised hard for a long time, talk
+          to a doctor before trying it. Stop immediately for chest pain, dizziness, faintness or
+          breathlessness that feels wrong. <strong class="text-gray-900">On the figures below:</strong> speeds are examples for one hypothetical intermediate runner, not targets, and work-to-rest
+          ratios are starting points to adjust by feel.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">The Short Answer: A Treadmill HIIT Workout</a></li>
+            <li><a href="#what-hiit-is">What HIIT Actually Means, and What Most Treadmill HIIT Really Is</a></li>
+            <li><a href="#belt-lag">The Treadmill Problem: Handling the Belt Lag</a></li>
+            <li><a href="#picking-speeds">How to Pick Your Speeds Without Fixed Numbers</a></li>
+            <li><a href="#the-sessions">Five Treadmill HIIT Sessions</a></li>
+            <li><a href="#beginner-version">A Beginner Treadmill HIIT Workout</a></li>
+            <li><a href="#how-often">How Often to Do HIIT, and What It Costs</a></li>
+            <li><a href="#warm-up-cool-down">Warm-Up and Cool-Down for HIIT</a></li>
+            <li><a href="#safety">Safety: Rails, the Key and the Stop Button</a></li>
+            <li><a href="#what-a-treadmill-needs">What a Treadmill Needs to Do HIIT Well</a></li>
+            <li><a href="#hiit-for-weight-loss">HIIT, Calories and Weight Loss: The Honest Version</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer: A Treadmill HIIT Workout</h2>
+          <h2>The Short Answer: A Treadmill HIIT Workout</h2>
 <p>
             The simplest effective <strong>treadmill HIIT workout</strong> is this: warm up for ten
             minutes, then run eight efforts of 30 seconds at a speed you could not hold for much
@@ -221,28 +187,23 @@ const schema = {
             half an hour, and it is as hard as most people need or want.
           </p>
           <p>
-            Three things make it HIIT rather than just intervals. The efforts are
-            <strong>near-maximal</strong> — breathing hard enough that speaking is impossible, and
+            Three things make it HIIT rather than just intervals. The efforts are <strong>near-maximal</strong> — breathing hard enough that speaking is impossible, and
             genuinely glad when each one ends. They are <strong>short</strong>, typically 20 seconds
-            to two minutes, because nobody can hold that effort for longer. And the recovery is
-            <strong>real</strong>, long enough that the next effort can be almost as good as the
+            to two minutes, because nobody can hold that effort for longer. And the recovery is <strong>real</strong>, long enough that the next effort can be almost as good as the
             last. If you can chat during the work periods, or you are doing 20 of them, it is a
-            moderate interval session. That is fine, and our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
-            covers it properly, but it is not what this page describes.
+            moderate interval session. That is fine, and our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a> covers it properly, but it is not what this page describes.
           </p>
           <p>
             The treadmill complicates HIIT in one specific way: the belt takes several seconds to
             reach speed and several more to slow down, which eats into short efforts and makes the
-            transitions the riskiest part of the session. The section on
-            <strong>handling the belt lag</strong> below covers the three ways round that. Once a
+            transitions the riskiest part of the session. The section on <strong>handling the belt lag</strong> below covers the three ways round that. Once a
             week is plenty for a true HIIT session; twice is a ceiling for most people, and the rest
             of the week should be easy.
           </p>
         </div>
 
         <div id="what-hiit-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What HIIT Actually Means, and What Most Treadmill HIIT Really Is</h2>
+          <h2>What HIIT Actually Means, and What Most Treadmill HIIT Really Is</h2>
 <p>
             HIIT has become a label for almost any workout with a timer, so it is worth being
             precise. High-intensity interval training means repeated efforts at an intensity close
@@ -275,13 +236,12 @@ const schema = {
           <p>
             The honest position is that most people get more total benefit from a mix: one real
             HIIT session a week at most, one moderate interval or hill session, and the rest easy.
-            Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a>
-            sets out how those four session types fit together.
+            Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a> sets out how those four session types fit together.
           </p>
         </div>
 
         <div id="belt-lag" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Treadmill Problem: Handling the Belt Lag</h2>
+          <h2>The Treadmill Problem: Handling the Belt Lag</h2>
 <p>
             On a track, a hard effort starts when you decide it does. On a treadmill, you press a
             button and wait. Most home machines take somewhere in the region of five to fifteen
@@ -304,8 +264,7 @@ const schema = {
             find less restful. The mount is the single most dangerous moment in the session and
             must be practised at a modest speed before it is used at a hard one. And it only works
             on a machine with proper side platforms and rails you can hold through the transition.
-            The method is described in full, including the dismount, in our
-            <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>,
+            The method is described in full, including the dismount, in our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>,
             because sprinting is where it matters most.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Option two: use incline instead of speed</h3>
@@ -337,7 +296,7 @@ const schema = {
         </div>
 
         <div id="picking-speeds" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Pick Your Speeds Without Fixed Numbers</h2>
+          <h2>How to Pick Your Speeds Without Fixed Numbers</h2>
 <p>
             The speeds in other people's HIIT plans are useless to you, because the right speed is
             the one that puts <em>you</em> at a near-maximal effort for the length of the rep. Two
@@ -369,9 +328,7 @@ const schema = {
             30-second rep ends before the monitor has caught up, and the peak reading appears during
             the recovery. It can tell you afterwards whether the session reached the top zones, and
             whether your recovery heart rate is coming down between reps, but it should not be used
-            to decide the speed in the moment. Our
-            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            covers the lag and why the console <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> are the worst tool of all for this.
+            to decide the speed in the moment. Our <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a> covers the lag and why the console <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> are the worst tool of all for this.
           </p>
           <p>
             <strong>Example speeds, for illustration only.</strong> For a hypothetical intermediate
@@ -383,7 +340,7 @@ const schema = {
         </div>
 
         <div id="the-sessions" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Five Treadmill HIIT Sessions</h2>
+          <h2>Five Treadmill HIIT Sessions</h2>
 <p>
             Each of these assumes a 10-minute warm-up and a 5-to-10-minute cool-down, which are
             not optional and are described further down. All speeds in the table are examples for
@@ -427,9 +384,7 @@ const schema = {
             speed on the flat or walking, eight to ten times. The effort comes from the hill, so the
             belt speed never changes much and there is no mounting. Start the incline change five
             seconds before each rep. This is the kindest HIIT session on the joints and the best
-            one for a budget machine with a slow motor. Our
-            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">hill workout guide</a>
-            covers the calf and Achilles caution that applies to anything steep.
+            one for a budget machine with a slow motor. Our <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">hill workout guide</a> covers the calf and Achilles caution that applies to anything steep.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Session four: two-minute repeats</h3>
           <p>
@@ -450,7 +405,7 @@ const schema = {
         </div>
 
         <div id="beginner-version" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. A Beginner Treadmill HIIT Workout</h2>
+          <h2>A Beginner Treadmill HIIT Workout</h2>
 <p>
             If you are new to hard running, or new to the treadmill, do not start with any of the
             five sessions above. The HIIT part is the easy bit to copy; the bit that takes time is
@@ -459,9 +414,7 @@ const schema = {
           </p>
           <p>
             <strong>Prerequisite.</strong> You should be able to run continuously at an easy effort
-            for 20 minutes before adding HIIT. If you cannot yet, our
-            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill plan</a>
-            builds to that in about four weeks, and it is the better use of the time.
+            for 20 minutes before adding HIIT. If you cannot yet, our <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill plan</a> builds to that in about four weeks, and it is the better use of the time.
           </p>
           <p>
             <strong>The session.</strong> Warm up for ten minutes, walking into easy jogging. Then
@@ -487,7 +440,7 @@ const schema = {
         </div>
 
         <div id="how-often" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How Often to Do HIIT, and What It Costs</h2>
+          <h2>How Often to Do HIIT, and What It Costs</h2>
 <p>
             Once a week. That is the honest answer for almost everyone training at home, and it is
             not a conservative one. A genuine HIIT session is a large stimulus and a large stress:
@@ -501,9 +454,7 @@ const schema = {
             source of most of the trouble. It is time-efficient as a session, but the adaptations it
             drives sit on top of a base built by easier, longer work — not instead of it. A week of
             three easy runs or walks and one HIIT session will beat a week of three HIIT sessions for
-            almost anyone, and will be far more sustainable. Our
-            <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 guide</a>
-            covers the easy end, which is where most of the week belongs.
+            almost anyone, and will be far more sustainable. Our <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium">zone 2 guide</a> covers the easy end, which is where most of the week belongs.
           </p>
           <p>
             <strong>Signs you are doing too much:</strong> the work speed you managed easily last
@@ -520,7 +471,7 @@ const schema = {
         </div>
 
         <div id="warm-up-cool-down" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warm-Up and Cool-Down for HIIT</h2>
+          <h2>Warm-Up and Cool-Down for HIIT</h2>
 <p>
             The warm-up before a HIIT session is longer than before an easy run, not shorter, and
             skipping it is the most common way to pull a hamstring on a treadmill. Cold muscle asked
@@ -548,15 +499,13 @@ const schema = {
             hard running is the classic cause of the dizzy, faint feeling people get when they step
             off. Blood is pooled in the legs, the muscles that were pumping it back have stopped,
             and blood pressure drops. Walk it down — two or three minutes of easy jogging, then
-            walking, with the belt slowing in stages, before you stop. Our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            covers the dizziness in detail, along with the off-belt drills that are worth adding
+            walking, with the belt slowing in stages, before you stop. Our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> covers the dizziness in detail, along with the off-belt drills that are worth adding
             before a hard session.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Safety: Rails, the Key and the Stop Button</h2>
+          <h2>Safety: Rails, the Key and the Stop Button</h2>
 <p>
             HIIT is where treadmill accidents happen. Not during the effort, usually, but at the
             transitions, when a tired person is changing speed or stepping on or off a fast belt.
@@ -566,17 +515,14 @@ const schema = {
             <li><strong>Clip the safety key to your clothing</strong>, at the waist, with modest
             slack — every session, not just the first few. At HIIT speeds a stumble carries you off
             the back of the deck in well under a second, and the key is the only thing that stops the
-            belt when you are no longer in reach of the console. Our
-            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
-            covers the key and the clearance you need behind the machine.</li>
+            belt when you are no longer in reach of the console. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a> covers the key and the clearance you need behind the machine.</li>
             <li><strong>Know where the stop button is without looking.</strong> Before the first
             rep, put your hand on it. On most machines it is the large red control in the centre of
             the console; on some it is on a rail. Use it the moment anything feels wrong.</li>
             <li><strong>Hands off the rails at speed.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> while running hard
             shortens your stride, twists your posture and, worse, means your hands are busy when you
             need them for balance. The rails are for the mount and dismount only.</li>
-            <li><strong>Do not change speed while looking down for more than a glance.</strong>
-            Find the quick-set buttons by feel during the warm-up. Set the speed, then look ahead
+            <li><strong>Do not change speed while looking down for more than a glance.</strong> Find the quick-set buttons by feel during the warm-up. Set the speed, then look ahead
             at a point at eye level.</li>
             <li><strong>Run in the middle of the belt.</strong> Drifting to the back is how people
             get carried off; drifting to the front is how people kick the motor hood.</li>
@@ -595,7 +541,7 @@ const schema = {
         </div>
 
         <div id="what-a-treadmill-needs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What a Treadmill Needs to Do HIIT Well</h2>
+          <h2>What a Treadmill Needs to Do HIIT Well</h2>
 <p>
             Any treadmill can do incline-based HIIT at a steady speed. Speed-based HIIT, with the
             belt going from a walk to a hard run and back every couple of minutes, is a specific
@@ -620,16 +566,12 @@ const schema = {
             <strong>A motor that does not bog.</strong> A belt that slows visibly as your foot lands
             at speed, then surges, is unpleasant at an easy pace and unsafe at a hard one. Heavier
             runners feel this most. Motor ratings are a poor guide on their own, but a machine
-            that owners describe as holding speed under a heavy footstrike is what you want; our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why the number on the box tells you less than it should.
+            that owners describe as holding speed under a heavy footstrike is what you want; our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why the number on the box tells you less than it should.
           </p>
           <p>
             <strong>A stable frame and a long enough deck.</strong> Hard running shakes a light
             frame, and a machine that wobbles at speed is tiring and worrying. Fast running also
-            lengthens your stride, so a short deck that was fine for walking becomes cramped. Our
-            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
-            roundup is built around exactly these criteria.
+            lengthens your stride, so a short deck that was fine for walking becomes cramped. Our <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a> roundup is built around exactly these criteria.
           </p>
           <p>
             <strong>Side platforms and rails you can use.</strong> For the straddle method, the
@@ -645,7 +587,7 @@ const schema = {
         </div>
 
         <div id="hiit-for-weight-loss" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. HIIT, Calories and Weight Loss: The Honest Version</h2>
+          <h2>HIIT, Calories and Weight Loss: The Honest Version</h2>
 <p>
             HIIT is heavily marketed as a fat-loss tool, usually on the strength of the "afterburn"
             — the elevated energy use that continues after a hard session. The effect is real, but
@@ -658,9 +600,7 @@ const schema = {
             What HIIT does offer for weight loss is time efficiency and, for some people, something
             they actually enjoy. Those matter more than the afterburn, because the thing that
             decides weight loss is whether the training continues for months and whether it is
-            paired with a reasonable diet. A session you dread and skip burns nothing. Our
-            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a>
-            page lays out the longer-term approach, in which HIIT is one session a week rather than
+            paired with a reasonable diet. A session you dread and skip burns nothing. Our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workout for weight loss</a> page lays out the longer-term approach, in which HIIT is one session a week rather than
             the whole plan.
           </p>
           <p>
@@ -674,7 +614,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Make the efforts genuinely hard, keep the session short, and do it once a
             week.</strong> Eight reps of 30 seconds at an effort you could not hold for much more
@@ -694,143 +634,157 @@ const schema = {
             method, but one that accelerates quickly and holds its speed makes everything easier.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a good HIIT treadmill workout?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                After a ten-minute warm-up, run eight efforts of 30 seconds at a speed you could not hold for more than about a minute, each followed by 90 seconds of easy walking, then cool down for five to ten minutes. Pick the speed by feel — a 9 out of 10, unable to speak more than a word — rather than copying someone else's number. Once a week is enough.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a treadmill HIIT workout be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The hard part is short: typically 10 to 20 minutes of work and recovery combined, which is four to ten efforts depending on their length. With a proper ten-minute warm-up and a five-to-ten-minute cool-down the whole session runs 30 to 40 minutes. If the interval block is much longer than 20 minutes, the efforts are almost certainly not hard enough to be HIIT.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do you do HIIT on a treadmill with the speed changes?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Three ways. Leave the belt at work speed and straddle it on the side platforms during recovery, stepping back on with the rails once you have practised the mount. Or keep the speed steady and use steep incline for the hard periods. Or set the speed while running and count the effort from when the display reaches it, accepting a ramp before and after.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is treadmill HIIT good for beginners?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not as a starting point. Build to 20 minutes of continuous easy running first, then begin with six efforts of 20 seconds at a hard but not maximal pace, each followed by 100 seconds of walking. Add reps, then length, then speed, one change a week. Walkers can do the same structure using steep incline instead of speed, with much less risk.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How many times a week should I do HIIT on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Once, for most people, with the rest of the week easy. Experienced runners sometimes manage two, spaced at least two easy days apart from each other and from any other hard session. Three or more a week tends to lead to tired legs, slower efforts and tendon niggles, because the recovery cost of a genuine HIIT session is far larger than its short duration suggests.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is HIIT on a treadmill better than steady running for fat loss?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not meaningfully, at matched time. The afterburn after HIIT is real but modest, and the session is short, so total energy use is commonly similar to a slightly longer steady run. HIIT is time-efficient and some people enjoy it, which matters for sticking with training. For heavier or returning exercisers, walking and easy running are the better start.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill HIIT Workouts</h2>
+          <p>The sessions themselves are simple. Almost everything that goes wrong is one of these four, and the first two are safety issues rather than training ones.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Jumping onto a fast belt without practising the mount</h3>
+              <p>The straddle-and-step-on method is excellent once learned and the most dangerous moment in the session until then. Rehearse it at a jogging speed for several sessions, rails held, before using it at HIIT speed — and never do it on a machine with narrow side platforms or short rails. If in doubt, use incline instead.</p>
+            </li>
+            <li>
+              <h3>Stopping dead after the last rep</h3>
+              <p>Hitting stop straight after a near-maximal effort is the classic cause of the dizzy, faint feeling on stepping off, because blood pools in the legs when the pumping stops. Jog, then walk, bringing the belt down in stages over five to ten minutes before you step off the machine. Then stand still for a moment.</p>
+            </li>
+            <li>
+              <h3>Calling a moderate session HIIT and doing it three times a week</h3>
+              <p>If you can talk during the efforts, it is interval training at a moderate effort, which can be done more often. If the efforts are genuinely near-maximal, once a week is enough and twice is a ceiling. Mixing the two up leads either to under-training or to a tired, stale month.</p>
+            </li>
+            <li>
+              <h3>Copying speeds from someone else</h3>
+              <p>A speed that is a 9 out of 10 for one runner is a warm-up for another and a fall for a third. Find your own band by feel — unable to speak more than a word, could not hold it for a second minute — using two or three probe efforts after a full warm-up, and expect it to change as you improve.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill HIIT Workouts</h2>
-          <p class="text-gray-700 leading-relaxed">The sessions themselves are simple. Almost everything that goes wrong is one of these four, and the first two are safety issues rather than training ones.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Jumping onto a fast belt without practising the mount</h3>
-              <p class="text-gray-700 text-sm m-0">The straddle-and-step-on method is excellent once learned and the most dangerous moment in the session until then. Rehearse it at a jogging speed for several sessions, rails held, before using it at HIIT speed — and never do it on a machine with narrow side platforms or short rails. If in doubt, use incline instead.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Stopping dead after the last rep</h3>
-              <p class="text-gray-700 text-sm m-0">Hitting stop straight after a near-maximal effort is the classic cause of the dizzy, faint feeling on stepping off, because blood pools in the legs when the pumping stops. Jog, then walk, bringing the belt down in stages over five to ten minutes before you step off the machine. Then stand still for a moment.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calling a moderate session HIIT and doing it three times a week</h3>
-              <p class="text-gray-700 text-sm m-0">If you can talk during the efforts, it is interval training at a moderate effort, which can be done more often. If the efforts are genuinely near-maximal, once a week is enough and twice is a ceiling. Mixing the two up leads either to under-training or to a tired, stale month.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Copying speeds from someone else</h3>
-              <p class="text-gray-700 text-sm m-0">A speed that is a 9 out of 10 for one runner is a warm-up for another and a fall for a third. Find your own band by feel — unable to speak more than a word, could not hold it for a second minute — using two or three probe efforts after a full warm-up, and expect it to change as you improve.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Training Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-interval-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Intervals</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Interval Workouts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five moderate-to-hard interval sessions, and how to pace them so you finish.</p>
-            </a>
-            <a href="/treadmill-sprint-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sprinting</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Sprint Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The safe mount and dismount, and when hill sprints are the better choice.</p>
-            </a>
-            <a href="/treadmill-warm-up-and-cool-down/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Warm Up and Cool Down</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How long each takes, and why you feel dizzy stepping off.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Make it short, make it genuinely hard, and do it once a
             week.</strong> Eight efforts of 30 seconds at an effort you could not hold for much more
             than a minute, with 90 seconds easy between, after a ten-minute warm-up, is a complete
             treadmill HIIT session. If you can talk during the efforts it is a moderate interval
             session — worthwhile, but not the same thing.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Handle the belt lag by straddling during recovery, using incline instead of speed, or
             counting from when the belt reaches the target. Clip the key on, keep your hands off
             the rails at speed, and walk the cool-down down in stages. If you are not yet running
-            20 minutes comfortably, start with our
-            <a href="/treadmill-workout-for-beginners/" class="text-[#5AA9FF] font-bold no-underline">beginner treadmill plan</a>
-            instead.
+            20 minutes comfortably, start with our <a href="/treadmill-workout-for-beginners/" class="text-[#5AA9FF] font-bold no-underline">beginner treadmill plan</a> instead.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-interval-workouts/">Treadmill Interval Workouts</a></li>
+            <li><a href="/treadmill-sprint-workout/">Treadmill Sprint Workout</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a good HIIT treadmill workout?</h3></summary>
+            <p class="faq-a">
+              After a ten-minute warm-up, run eight efforts of 30 seconds at a speed you could not hold for more than about a minute, each followed by 90 seconds of easy walking, then cool down for five to ten minutes. Pick the speed by feel — a 9 out of 10, unable to speak more than a word — rather than copying someone else's number. Once a week is enough.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How long should a treadmill HIIT workout be?</h3></summary>
+            <p class="faq-a">
+              The hard part is short: typically 10 to 20 minutes of work and recovery combined, which is four to ten efforts depending on their length. With a proper ten-minute warm-up and a five-to-ten-minute cool-down the whole session runs 30 to 40 minutes. If the interval block is much longer than 20 minutes, the efforts are almost certainly not hard enough to be HIIT.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do you do HIIT on a treadmill with the speed changes?</h3></summary>
+            <p class="faq-a">
+              Three ways. Leave the belt at work speed and straddle it on the side platforms during recovery, stepping back on with the rails once you have practised the mount. Or keep the speed steady and use steep incline for the hard periods. Or set the speed while running and count the effort from when the display reaches it, accepting a ramp before and after.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is treadmill HIIT good for beginners?</h3></summary>
+            <p class="faq-a">
+              Not as a starting point. Build to 20 minutes of continuous easy running first, then begin with six efforts of 20 seconds at a hard but not maximal pace, each followed by 100 seconds of walking. Add reps, then length, then speed, one change a week. Walkers can do the same structure using steep incline instead of speed, with much less risk.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How many times a week should I do HIIT on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Once, for most people, with the rest of the week easy. Experienced runners sometimes manage two, spaced at least two easy days apart from each other and from any other hard session. Three or more a week tends to lead to tired legs, slower efforts and tendon niggles, because the recovery cost of a genuine HIIT session is far larger than its short duration suggests.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is HIIT on a treadmill better than steady running for fat loss?</h3></summary>
+            <p class="faq-a">
+              Not meaningfully, at matched time. The afterburn after HIIT is real but modest, and the session is short, so total energy use is commonly similar to a slightly longer steady run. HIIT is time-efficient and some people enjoy it, which matters for sticking with training. For heavier or returning exercisers, walking and easy running are the better start.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Training Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-interval-workouts/" class="card">
+            <div class="c-kicker">Intervals</div>
+            <div class="c-title">Treadmill Interval Workouts</div>
+            <p class="c-blurb">Five moderate-to-hard interval sessions, and how to pace them so you finish.</p>
+          </a>
+          <a href="/treadmill-sprint-workout/" class="card">
+            <div class="c-kicker">Sprinting</div>
+            <div class="c-title">Treadmill Sprint Workout</div>
+            <p class="c-blurb">The safe mount and dismount, and when hill sprints are the better choice.</p>
+          </a>
+          <a href="/treadmill-warm-up-and-cool-down/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Treadmill Warm Up and Cool Down</div>
+            <p class="c-blurb">How long each takes, and why you feel dizzy stepping off.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

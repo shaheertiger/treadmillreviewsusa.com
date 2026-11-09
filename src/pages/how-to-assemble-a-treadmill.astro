@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How to Assemble a Treadmill (2026): Time, Tools and Assembly Cost";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-to-assemble-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "maintenance");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Professional Assembly Cost", link: "#professional-cost" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howtoassembleatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howtoassembleatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/maintenance/">Maintenance</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership</span>
+      </nav>
+      <h1 class="ed-title">How to Assemble a Treadmill</h1>
+      <p class="ed-dek">
+        Most home treadmills arrive mostly built, and assembly is a few hours of bolting on uprights, a console and handrails. It is not difficult, but it is heavy, and one step — routing the console cable — is where most first-timers go wrong. Here is what to expect and when to pay someone else.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How to Assemble <span class="text-[#5AA9FF]">a Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most home treadmills arrive mostly built, and assembly is a few hours of bolting on uprights, a console and handrails. It is not difficult, but it is heavy, and one step — routing the console cable — is where most first-timers go wrong. Here is what to expect and when to pay someone else.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#how-long" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            How Long It Takes
-          </a>
-          <a href="#professional-cost" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Professional Assembly Cost
-          </a>
-        </div>
+        <a href="#how-long" class="btn-ghost">How Long It Takes</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.7k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Safety, and the figures below.</strong> Keep the treadmill
-          unplugged until assembly is complete and every bolt is tight, and treat the base unit as a
-          two-person lift. Assembly sequences differ between models — follow your manual's steps and
-          hardware labels, not ours. Times and costs on this page are typical ranges for US home
-          treadmills as of late 2026, not quotes; check current prices with the retailer or
-          installer.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Assembly: The Short Answer</a>
-          <a href="#before-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Before Delivery: Route, Room and Delivery Option</a>
-          <a href="#unboxing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Unboxing: The Two-Person Lift and the Box-Cutter Risk</a>
-          <a href="#tools" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Tools You Need</a>
-          <a href="#how-long" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How Long Does It Take to Assemble a Treadmill?</a>
-          <a href="#common-steps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Common Assembly Steps</a>
-          <a href="#console-cable" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Console Cable: Where Most Assemblies Go Wrong</a>
-          <a href="#bolt-order" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Bolt Order: Snug First, Tighten Last</a>
-          <a href="#professional-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Professional Treadmill Assembly Cost</a>
-          <a href="#hiring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Hiring an Installer: What to Ask, and the Warranty</a>
-          <a href="#first-run" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. First-Run Checks After Assembly</a>
-          <a href="#problems" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Common Assembly Problems</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Treadmill assembly has a reputation it does not entirely deserve. The motor, deck, belt and
           rollers almost always come pre-assembled as one heavy base unit, and your job is to stand
           up the uprights, connect the console and fit the handrails. What makes it hard is weight,
@@ -206,8 +144,37 @@ const schema = {
           Get those right and a first-timer with a helper can do it in an afternoon.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Safety, and the figures below.</strong> Keep the treadmill
+          unplugged until assembly is complete and every bolt is tight, and treat the base unit as a
+          two-person lift. Assembly sequences differ between models — follow your manual's steps and
+          hardware labels, not ours. Times and costs on this page are typical ranges for US home
+          treadmills as of late 2026, not quotes; check current prices with the retailer or
+          installer.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Assembly: The Short Answer</a></li>
+            <li><a href="#before-delivery">Before Delivery: Route, Room and Delivery Option</a></li>
+            <li><a href="#unboxing">Unboxing: The Two-Person Lift and the Box-Cutter Risk</a></li>
+            <li><a href="#tools">Tools You Need</a></li>
+            <li><a href="#how-long">How Long Does It Take to Assemble a Treadmill?</a></li>
+            <li><a href="#common-steps">The Common Assembly Steps</a></li>
+            <li><a href="#console-cable">The Console Cable: Where Most Assemblies Go Wrong</a></li>
+            <li><a href="#bolt-order">Bolt Order: Snug First, Tighten Last</a></li>
+            <li><a href="#professional-cost">Professional Treadmill Assembly Cost</a></li>
+            <li><a href="#hiring">Hiring an Installer: What to Ask, and the Warranty</a></li>
+            <li><a href="#first-run">First-Run Checks After Assembly</a></li>
+            <li><a href="#problems">Common Assembly Problems</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Assembly: The Short Answer</h2>
+          <h2>Treadmill Assembly: The Short Answer</h2>
 <p>
             Assembling a typical folding home treadmill takes roughly one to three hours for two
             people following the manual, and longer the first time or for a large non-folding
@@ -218,8 +185,7 @@ const schema = {
             The usual sequence is: unbox and lay out the hardware, attach the uprights to the base,
             route and connect the console cable, fit the console and handrails, tighten every bolt
             in the order the manual gives, then level the machine and do the first-run checks on
-            belt tension, tracking and lubrication. The first power-up is covered in
-            <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>.
+            belt tension, tracking and lubrication. The first power-up is covered in <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to turn on a treadmill</a>.
           </p>
           <p>
             If you would rather not, professional assembly typically costs somewhere around $100 to
@@ -229,7 +195,7 @@ const schema = {
         </div>
 
         <div id="before-delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Before Delivery: Route, Room and Delivery Option</h2>
+          <h2>Before Delivery: Route, Room and Delivery Option</h2>
 <p>
             The best assembly decisions are made before the truck arrives.
           </p>
@@ -237,8 +203,7 @@ const schema = {
             <strong>Assemble in the room the treadmill will live in.</strong> An assembled treadmill
             is much harder to move than a boxed base unit, and uprights do not go through doorways
             the way a flat box does. Plan to carry the box to its final position and build it
-            there. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the footprint and the clearance to leave behind and beside it.
+            there. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the footprint and the clearance to leave behind and beside it.
           </p>
           <p>
             <strong>Measure the route for the box.</strong> Treadmill cartons are long, rigid and
@@ -247,9 +212,7 @@ const schema = {
           </p>
           <p>
             <strong>Know the shipping weight.</strong> The boxed weight is higher than the assembled
-            weight because of the packaging. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            covers typical figures by type; a folding home treadmill in its box is commonly a
+            weight because of the packaging. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> covers typical figures by type; a folding home treadmill in its box is commonly a
             two-or-more-person carry, and many sellers deliver to the curb by default. If the
             machine is going upstairs or anywhere far from the entrance, room-of-choice delivery is
             often worth paying for.
@@ -261,7 +224,7 @@ const schema = {
         </div>
 
         <div id="unboxing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Unboxing: The Two-Person Lift and the Box-Cutter Risk</h2>
+          <h2>Unboxing: The Two-Person Lift and the Box-Cutter Risk</h2>
 <p>
             Lay the box flat where the treadmill will stand, with enough space around it to work on
             all sides. Open it on the face the manual or the carton markings indicate — usually the
@@ -295,7 +258,7 @@ const schema = {
         </div>
 
         <div id="tools" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Tools You Need</h2>
+          <h2>Tools You Need</h2>
 <p>
             Most treadmills come with the tools needed to assemble them, usually a set of hex keys
             and a small combination spanner. They work, but they are slow and uncomfortable on a job
@@ -324,7 +287,7 @@ const schema = {
         </div>
 
         <div id="how-long" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How Long Does It Take to Assemble a Treadmill?</h2>
+          <h2>How Long Does It Take to Assemble a Treadmill?</h2>
 <p>
             As typical ranges rather than promises:
           </p>
@@ -351,7 +314,7 @@ const schema = {
         </div>
 
         <div id="common-steps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Common Assembly Steps</h2>
+          <h2>The Common Assembly Steps</h2>
 <p>
             Every model differs in detail, and your manual's sequence is the one to follow. The
             general pattern on a home treadmill is:
@@ -381,7 +344,7 @@ const schema = {
         </div>
 
         <div id="console-cable" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Console Cable: Where Most Assemblies Go Wrong</h2>
+          <h2>The Console Cable: Where Most Assemblies Go Wrong</h2>
 <p>
             If a newly assembled treadmill does not power up or shows an error, the console cable is
             the first suspect, and it is nearly always one of three things.
@@ -412,7 +375,7 @@ const schema = {
         </div>
 
         <div id="bolt-order" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Bolt Order: Snug First, Tighten Last</h2>
+          <h2>Bolt Order: Snug First, Tighten Last</h2>
 <p>
             The single most useful assembly habit is to start every bolt in a joint by hand and
             leave them loose until all the parts that make up that frame are in place. Then tighten
@@ -439,7 +402,7 @@ const schema = {
         </div>
 
         <div id="professional-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Professional Treadmill Assembly Cost</h2>
+          <h2>Professional Treadmill Assembly Cost</h2>
 <p>
             Professional assembly is widely available, and for many buyers it is money well spent.
             As typical US ranges:
@@ -462,14 +425,12 @@ const schema = {
           <p>
             Whether it is worth it depends on the machine and on you. It is a straightforward
             decision if you have no helper, the machine is going upstairs, the console is complex,
-            or you would simply rather not spend an afternoon on it. Our guide to
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a>
-            covers the other extras that belong in the total budget.
+            or you would simply rather not spend an afternoon on it. Our guide to <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a> covers the other extras that belong in the total budget.
           </p>
         </div>
 
         <div id="hiring" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Hiring an Installer: What to Ask, and the Warranty</h2>
+          <h2>Hiring an Installer: What to Ask, and the Warranty</h2>
 <p>
             Before booking, ask a few specific questions:
           </p>
@@ -485,14 +446,13 @@ const schema = {
             but damage caused by incorrect assembly is typically excluded, whoever did it. Using the
             manufacturer's or retailer's assembly service usually puts responsibility for assembly
             faults in one place. With an independent installer, keep the receipt and their details.
-            Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            covers what typical warranties do and do not cover, and why registering the machine
+            Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> covers what typical warranties do and do not cover, and why registering the machine
             promptly is worth five minutes.
           </p>
         </div>
 
         <div id="first-run" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. First-Run Checks After Assembly</h2>
+          <h2>First-Run Checks After Assembly</h2>
 <p>
             A newly assembled treadmill should be checked before anyone runs on it. These take about
             fifteen minutes.
@@ -505,17 +465,12 @@ const schema = {
             key.</li>
             <li><strong>Check lubrication against the manual.</strong> Many decks come
             pre-lubricated from the factory, some are pre-waxed and must never receive silicone, and
-            some manuals ask you to lubricate before first use. Do what yours says. Our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the procedure.</li>
+            some manuals ask you to lubricate before first use. Do what yours says. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers the procedure.</li>
             <li><strong>Check belt tension</strong> with the machine unplugged: lifting the belt edge
             at the middle of the deck should open a gap of two to three inches on virtually every
-            home treadmill. Our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
-            covers the full check.</li>
+            home treadmill. Our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a> covers the full check.</li>
             <li><strong>Check tracking</strong> by running the belt empty at about 3 mph and watching
-            it for a minute. If it drifts, our
-            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a>
-            covers the quarter-turn adjustment.</li>
+            it for a minute. If it drifts, our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a> covers the quarter-turn adjustment.</li>
             <li><strong>Test the stop.</strong> Pull the safety key while the belt is running and make
             sure it stops.</li>
             <li><strong>Walk before you run,</strong> listening for anything that rubs, clicks or
@@ -523,20 +478,17 @@ const schema = {
           </ul>
           <p>
             Then register the warranty and note the serial number somewhere you will find it. Our
-            guide to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">using a treadmill</a>
-            covers the first sessions themselves.
+            guide to <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">using a treadmill</a> covers the first sessions themselves.
           </p>
         </div>
 
         <div id="problems" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Common Assembly Problems</h2>
+          <h2>Common Assembly Problems</h2>
 <p>
             <strong>Console is dead or shows an error.</strong> Unplug the machine and check the
             console cable connections and the cable itself for pinching in the uprights. Check the
             safety key is fitted and the power switch is on. If it still will not start, see our
-            guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a>
-            or, if the machine powers but the display does not, our guide to a
-            <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console not working</a>,
+            guide to a <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a> or, if the machine powers but the display does not, our guide to a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console not working</a>,
             and contact the manufacturer before taking anything else apart.
           </p>
           <p>
@@ -559,141 +511,155 @@ const schema = {
             not seated. Go round them again.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does it take to assemble a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As a typical range, a folding home treadmill takes roughly one to three hours for two people following the manual, and a large non-folding machine or incline trainer roughly two to four hours. Walking pads often need little or no assembly. First-time assemblers tend to land at the top of the range; reading the manual first and laying out the hardware by step helps.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does professional treadmill assembly cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Typically somewhere around $100 to $300 in the US for a standard home treadmill, whether through the retailer, the manufacturer or an independent fitness technician. Large machines, upstairs rooms and jobs that include carrying in and removing packaging cost more. These are typical ranges, not quotes, so check with the installer.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can one person assemble a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not safely for most full-size machines. The boxed base unit is a two-person lift, and several steps — standing up the uprights while routing the console cable, holding the console while connecting it — need one person to hold and another to connect and start bolts. Walking pads are the exception, as they often need little assembly.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What tools do I need to assemble a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most treadmills include the hex keys and small spanner needed. A proper set of hex keys, a socket set, scissors or snips for strapping, a spirit level and a torch make the job faster and easier. If you use a cordless driver, set the clutch low and do final tightening by hand to avoid cross-threading.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do you need to lubricate a new treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Follow the manual. Many treadmills ship with the deck already lubricated, some have pre-waxed decks that must never receive silicone, and some manuals ask you to lubricate before first use. Check belt tension and tracking at the same time, and start your lubrication schedule from the first day of use.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth paying for treadmill assembly?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, yes — particularly if you have no helper, the machine is going upstairs, it is a heavy non-folding model, or the console is complex. Using the retailer's or manufacturer's service usually puts responsibility for any assembly fault in one place. If you are comfortable with tools and have a helper, doing it yourself is entirely manageable.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Assembling a Treadmill</h2>
+          <p>These four account for most of the treadmills that do not work properly on day one.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Cutting into the belt or cable with a box cutter</h3>
+              <p>The running belt and the console cable often sit just beneath the cardboard. A knife pushed through the carton can slice either. Cut shallowly along seams, use tear strips, and cut strapping with scissors rather than a blade pointed at the machine.</p>
+            </li>
+            <li>
+              <h3>Pinching the console cable</h3>
+              <p>The cable runs up inside an upright and is easily trapped between the upright and the base as it is bolted down. A pinched cable means a dead console or intermittent faults. Have a helper feed the cable clear, and check the joint with a torch before inserting bolts.</p>
+            </li>
+            <li>
+              <h3>Fully tightening bolts as you go</h3>
+              <p>The frame only aligns with play in every joint. Tighten the first upright fully and the bolts on the far side will not start. Start everything by hand, tighten only when the manual says, and work progressively. Re-check every bolt after the first week.</p>
+            </li>
+            <li>
+              <h3>Skipping the first-run checks</h3>
+              <p>A treadmill fresh from the box may need its tension, tracking or lubrication set before use, and nobody has tested its stop. Fifteen minutes of checks — and registering the warranty — before the first proper session saves a slipping belt or a frayed edge later.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Assembling a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">These four account for most of the treadmills that do not work properly on day one.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cutting into the belt or cable with a box cutter</h3>
-              <p class="text-gray-700 text-sm m-0">The running belt and the console cable often sit just beneath the cardboard. A knife pushed through the carton can slice either. Cut shallowly along seams, use tear strips, and cut strapping with scissors rather than a blade pointed at the machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Pinching the console cable</h3>
-              <p class="text-gray-700 text-sm m-0">The cable runs up inside an upright and is easily trapped between the upright and the base as it is bolted down. A pinched cable means a dead console or intermittent faults. Have a helper feed the cable clear, and check the joint with a torch before inserting bolts.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fully tightening bolts as you go</h3>
-              <p class="text-gray-700 text-sm m-0">The frame only aligns with play in every joint. Tighten the first upright fully and the bolts on the far side will not start. Start everything by hand, tighten only when the manual says, and work progressively. Re-check every bolt after the first week.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the first-run checks</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill fresh from the box may need its tension, tracking or lubrication set before use, and nobody has tested its stop. Fifteen minutes of checks — and registering the warranty — before the first proper session saves a slipping belt or a frayed edge later.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Planning</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Space Requirements</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Footprints, clearances and folded dimensions before you build.</p>
-            </a>
-            <a href="/treadmill-warranty-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Warranties Explained</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Frame, motor, parts and labour terms, and what voids them.</p>
-            </a>
-            <a href="/treadmill-maintenance-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Routine</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Checklist</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The schedule to start on day one, from wipe-downs to lubrication.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Plan for one to three hours and two people</strong> for a typical
             folding home treadmill. Build it in the room it will live in, mind the box cutter, keep
             the console cable clear of every joint, and leave bolts loose until the frame is
             complete.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">Professional assembly at roughly $100 to $300</strong> is good
             value if you have no helper, stairs or a heavy machine. Either way, finish with the
-            first-run checks and register the warranty — our
-            <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
-            explains why it matters.
+            first-run checks and register the warranty — our <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a> explains why it matters.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-dimensions-space-requirements/">Treadmill Space Requirements</a></li>
+            <li><a href="/treadmill-warranty-guide/">Treadmill Warranties Explained</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How long does it take to assemble a treadmill?</h3></summary>
+            <p class="faq-a">
+              As a typical range, a folding home treadmill takes roughly one to three hours for two people following the manual, and a large non-folding machine or incline trainer roughly two to four hours. Walking pads often need little or no assembly. First-time assemblers tend to land at the top of the range; reading the manual first and laying out the hardware by step helps.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does professional treadmill assembly cost?</h3></summary>
+            <p class="faq-a">
+              Typically somewhere around $100 to $300 in the US for a standard home treadmill, whether through the retailer, the manufacturer or an independent fitness technician. Large machines, upstairs rooms and jobs that include carrying in and removing packaging cost more. These are typical ranges, not quotes, so check with the installer.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can one person assemble a treadmill?</h3></summary>
+            <p class="faq-a">
+              Not safely for most full-size machines. The boxed base unit is a two-person lift, and several steps — standing up the uprights while routing the console cable, holding the console while connecting it — need one person to hold and another to connect and start bolts. Walking pads are the exception, as they often need little assembly.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What tools do I need to assemble a treadmill?</h3></summary>
+            <p class="faq-a">
+              Most treadmills include the hex keys and small spanner needed. A proper set of hex keys, a socket set, scissors or snips for strapping, a spirit level and a torch make the job faster and easier. If you use a cordless driver, set the clutch low and do final tightening by hand to avoid cross-threading.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do you need to lubricate a new treadmill?</h3></summary>
+            <p class="faq-a">
+              Follow the manual. Many treadmills ship with the deck already lubricated, some have pre-waxed decks that must never receive silicone, and some manuals ask you to lubricate before first use. Check belt tension and tracking at the same time, and start your lubrication schedule from the first day of use.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it worth paying for treadmill assembly?</h3></summary>
+            <p class="faq-a">
+              Often, yes — particularly if you have no helper, the machine is going upstairs, it is a heavy non-folding model, or the console is complex. Using the retailer's or manufacturer's service usually puts responsibility for any assembly fault in one place. If you are comfortable with tools and have a helper, doing it yourself is entirely manageable.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Maintenance">
+          <h2 class="section-title">More in Maintenance</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/maintenance/" class="btn-ghost">See all Maintenance</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Ownership Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-dimensions-space-requirements/" class="card">
+            <div class="c-kicker">Planning</div>
+            <div class="c-title">Treadmill Space Requirements</div>
+            <p class="c-blurb">Footprints, clearances and folded dimensions before you build.</p>
+          </a>
+          <a href="/treadmill-warranty-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Treadmill Warranties Explained</div>
+            <p class="c-blurb">Frame, motor, parts and labour terms, and what voids them.</p>
+          </a>
+          <a href="/treadmill-maintenance-checklist/" class="card">
+            <div class="c-kicker">Routine</div>
+            <div class="c-title">Treadmill Maintenance Checklist</div>
+            <p class="c-blurb">The schedule to start on day one, from wipe-downs to lubrication.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Vibration Plates (2026): 5 Picks, Specs vs Claims";
 const description =
@@ -248,6 +247,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-vibration-plates/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: LifePro Waver Vibration Plate", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestvibrationplates" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestvibrationplates)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Vibration Plates Read as Hardware, Not Promises</h1>
+      <p class="ed-dek">
+        A vibration plate is a motorised platform that tilts, lifts or shakes under your feet. The type of motion, the frequency and the weight rating are checkable; the fat-loss, lymphatic and bone claims on the box mostly are not. Here are five plates, what their numbers mean, and who should ask a doctor before standing on any of them.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Vibration Plates <span class="text-[#5AA9FF]">Read as Hardware, Not Promises</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A vibration plate is a motorised platform that tilts, lifts or shakes under your feet. The type of motion, the frequency and the weight rating are checkable; the fat-loss, lymphatic and bone claims on the box mostly are not. Here are five plates, what their numbers mean, and who should ask a doctor before standing on any of them.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#who-should-not" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Not Use One
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#lifepro-waver"><img src="https://m.media-amazon.com/images/I/51P9-jocYxL._SL500_.jpg" alt="LifePro Waver Vibration Plate" width="500" height="500" decoding="async" /></a>
+          <a href="#lifepro-waver-mini"><img src="https://m.media-amazon.com/images/I/51zR98JQESL._SL500_.jpg" alt="LifePro Waver Mini Vibration Plate" width="500" height="500" decoding="async" /></a>
+          <a href="#merach-cv40"><img src="https://m.media-amazon.com/images/I/41jHE4YbnOL._SL500_.jpg" alt="Merach CV40 Vibration Plate" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>LifePro Waver Vibration Plate · LifePro Waver Mini Vibration Plate · Merach CV40 Vibration Plate</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Vibration plates are sold with bigger promises than almost anything else in home fitness:
+          fat loss, lymphatic drainage, stronger bones, better circulation. Physically, each one is
+          a platform driven by a motor, and plates differ mainly in how that platform moves, how
+          fast and how far. This guide sticks to what can be checked. It picks five plates across
+          the main motion types and budgets, explains what oscillating, lineal and "3D" or "4D"
+          actually describe, sets out what the research does and does not support, and lists the
+          people the makers' own manuals say should not use one.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.4k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#lifepro-waver">LifePro Waver Vibration Plate</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact:</span> <a href="#lifepro-waver-mini">LifePro Waver Mini Vibration Plate</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Highest Weight Rating:</span> <a href="#merach-cv40">Merach CV40 Vibration Plate</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lowest Price:</span> <a href="#merach-cv30-pro">Merach CV30 Pro Vibration Plate</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Lineal Plate:</span> <a href="#power-plate-move">Power Plate MOVE</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not used or tested
           any of these plates, and no figure on this page is our own measurement. The two LifePro
           Waver models were checked on 16 October 2026 for our full review against LifePro's store,
@@ -351,79 +372,27 @@ const schema = {
           pregnant, have an implant, a blood clot disorder, epilepsy, a heart, eye or spine
           condition, have had recent surgery, or have any concern about your health, talk to a
           doctor or another qualified professional before using a vibration plate.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#lifepro-waver" class="font-bold text-gray-900 no-underline hover:underline">LifePro Waver Vibration Plate</a>
-            <a href="#lifepro-waver" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compact:</span>
-            <a href="#lifepro-waver-mini" class="font-bold text-gray-900 no-underline hover:underline">LifePro Waver Mini Vibration Plate</a>
-            <a href="#lifepro-waver-mini" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Highest Weight Rating:</span>
-            <a href="#merach-cv40" class="font-bold text-gray-900 no-underline hover:underline">Merach CV40 Vibration Plate</a>
-            <a href="#merach-cv40" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest Price:</span>
-            <a href="#merach-cv30-pro" class="font-bold text-gray-900 no-underline hover:underline">Merach CV30 Pro Vibration Plate</a>
-            <a href="#merach-cv30-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Lineal Plate:</span>
-            <a href="#power-plate-move" class="font-bold text-gray-900 no-underline hover:underline">Power Plate MOVE</a>
-            <a href="#power-plate-move" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Vibration Plates</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Plates</a>
-          <a href="#motion-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Oscillating, Lineal or Tri-Planar: The Motion Types</a>
-          <a href="#frequency-amplitude" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Frequency, Amplitude and the Other Numbers</a>
-          <a href="#research" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What the Research Does and Doesn’t Support</a>
-          <a href="#who-should-not" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Who Should Not Use a Vibration Plate</a>
-          <a href="#weight-capacity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Weight Capacity, Size and Where to Put It</a>
-          <a href="#using-safely" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Using a Plate Safely</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Vibration Plates</a></li>
+            <li><a href="#how-we-chose">How We Chose These Plates</a></li>
+            <li><a href="#motion-types">Oscillating, Lineal or Tri-Planar: The Motion Types</a></li>
+            <li><a href="#frequency-amplitude">Frequency, Amplitude and the Other Numbers</a></li>
+            <li><a href="#research">What the Research Does and Doesn’t Support</a></li>
+            <li><a href="#who-should-not">Who Should Not Use a Vibration Plate</a></li>
+            <li><a href="#weight-capacity">Weight Capacity, Size and Where to Put It</a></li>
+            <li><a href="#using-safely">Using a Plate Safely</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Vibration plates are sold with bigger promises than almost anything else in home fitness:
-          fat loss, lymphatic drainage, stronger bones, better circulation. Physically, each one is
-          a platform driven by a motor, and plates differ mainly in how that platform moves, how
-          fast and how far. This guide sticks to what can be checked. It picks five plates across
-          the main motion types and budgets, explains what oscillating, lineal and "3D" or "4D"
-          actually describe, sets out what the research does and does not support, and lists the
-          people the makers' own manuals say should not use one.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five plates, chosen so that both main motion types and three price bands are covered by
             something on sale now. The first two are the only ones whose figures we could confirm
@@ -445,18 +414,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you are still deciding whether a plate belongs in your home gym at all, our
-            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
-            show where it sits beside cardio machines, weights and recovery kit, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
-            guide in this series. Our
-            <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a>
-            goes deeper into the top pick.
+            If you are still deciding whether a plate belongs in your home gym at all, our <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a> show where it sits beside cardio machines, weights and recovery kit, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            guide in this series. Our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">LifePro Waver review</a> goes deeper into the top pick.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Vibration Plates</h2>
+          <h2>The 5 Best Vibration Plates</h2>
 <p>
             Each card gives the motion type, the figures we could support, the price we saw and who
             the plate suits. On the LifePro cards, figures are ones that independent sources agreed
@@ -468,78 +432,67 @@ const schema = {
             one whose movement does not suit you, is the wrong plate however it is marketed.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Plates</h2>
+          <h2>How We Chose These Plates</h2>
 <p>
             We have not tested these plates. They were chosen from manufacturer product pages and
             manuals, retailer listings, recall records and independent coverage, and the claims on
@@ -551,8 +504,7 @@ const schema = {
             compact version, an option for heavier users, a budget option and a lineal plate, each
             on sale on the day we checked. The LifePro Waver and Waver Mini were the only plates for
             which we could confirm both current sale on Amazon and agreeing figures from independent
-            sources; that work is set out in our
-            <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">full Waver review</a>.
+            sources; that work is set out in our <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">full Waver review</a>.
             For the other three, Merach's and Power Plate's own US stores listed them on 19 October
             2026, but we found no independent source for their figures, so the cards label every
             number as the maker's.
@@ -582,7 +534,7 @@ const schema = {
         </div>
 
         <div id="motion-types" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Oscillating, Lineal or Tri-Planar: The Motion Types</h2>
+          <h2>Oscillating, Lineal or Tri-Planar: The Motion Types</h2>
 <p>
             Every vibration plate on sale moves in one of two basic ways, or combines them. The
             motion type matters more than the brand, the number of speed levels or the motor
@@ -631,7 +583,7 @@ const schema = {
         </div>
 
         <div id="frequency-amplitude" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Frequency, Amplitude and the Other Numbers</h2>
+          <h2>Frequency, Amplitude and the Other Numbers</h2>
 <p>
             Two numbers describe the vibration itself. Neither is measured to a common standard
             across brands, so compare plates of the same type, and treat the figures as the maker's.
@@ -681,7 +633,7 @@ const schema = {
         </div>
 
         <div id="research" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What the Research Does and Doesn’t Support</h2>
+          <h2>What the Research Does and Doesn’t Support</h2>
 <p>
             Vibration plates are among the most claim-heavy products in home fitness. The Waver's
             listing talks about muscle activation, circulation, recovery and bone health and is
@@ -710,9 +662,7 @@ const schema = {
               way to lose fat. Some studies combine vibration with diet and exercise, which makes the
               vibration's share hard to separate. A ten-minute session standing on a plate uses far
               less energy than ten minutes of brisk walking, cycling or rowing. If weight
-              management is your goal, our guide to whether
-              <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">walking pads help with weight loss</a>
-              gives a more realistic picture of what home equipment contributes.</li>
+              management is your goal, our guide to whether <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">walking pads help with weight loss</a> gives a more realistic picture of what home equipment contributes.</li>
             <li><strong>Lymphatic drainage, circulation and immune claims:</strong> these are
               medical questions. If swelling, circulation or any diagnosed condition is the reason
               you are looking at a plate, the right person to ask is your doctor.</li>
@@ -729,14 +679,12 @@ const schema = {
             The fair conclusion: a plate is a pleasant, low-effort way to add a few minutes of
             squats, holds and band work, and some people enjoy it as a warm-up or wind-down. Buy one
             for what you can feel it do, not for results printed on the box. For cardio fitness, a
-            machine you actively work on does a better-understood job; our
-            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
-            guide compares them.
+            machine you actively work on does a better-understood job; our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a> guide compares them.
           </p>
         </div>
 
         <div id="who-should-not" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who Should Not Use a Vibration Plate</h2>
+          <h2>Who Should Not Use a Vibration Plate</h2>
 <p>
             The most detailed list we found is in LifePro's current Waver Mini manual, which we read
             for our Waver review. Merach's product pages say only to consult a physician if you have
@@ -770,9 +718,7 @@ const schema = {
             to: older adults, people with joint or circulation problems, people recovering from
             injury or surgery. That is the strongest reason to treat the marketing with care. If you
             are in any of those groups, the conversation with your doctor comes before the order.
-            Older readers looking for low-impact daily movement with support may find our guide to
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
-            a useful comparison.
+            Older readers looking for low-impact daily movement with support may find our guide to <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> a useful comparison.
           </p>
           <p>
             Children should not use a plate, and it should be unplugged and out of reach when not in
@@ -782,15 +728,13 @@ const schema = {
         </div>
 
         <div id="weight-capacity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Weight Capacity, Size and Where to Put It</h2>
+          <h2>Weight Capacity, Size and Where to Put It</h2>
 <p>
             <strong>Weight rating.</strong> On the plates here, ratings run from 260 lb (Waver Mini)
             and 300 lb (Power Plate MOVE, maker's figure) to 330 lb (Waver) and 400 to 440 lb (the
             Merach plates, maker's figures). These are maximums set by the maker for the motor and
             mechanism as well as the frame, and manuals say not to exceed them. Leave a margin, and
-            if the plate will be shared, buy for the heaviest user. Our
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains how to read ratings like these on any home machine. A rating above your weight
+            if the plate will be shared, buy for the heaviest user. Our <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a> explains how to read ratings like these on any home machine. A rating above your weight
             is a minimum requirement, not evidence that the plate is better built.
           </p>
           <p>
@@ -811,18 +755,11 @@ const schema = {
             <strong>Floor and noise.</strong> A plate transmits vibration into the floor as well as
             into you. On a hard floor in an upstairs room or an apartment, that can carry to the
             room below more than you might expect. A dense mat under the plate helps with grip and
-            with transmitted vibration; our
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a>
-            and <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a>
-            cover what to look for. For neighbours, the
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a>
-            has the same structure-borne noise logic.
+            with transmitted vibration; our <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a> and <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a> cover what to look for. For neighbours, the <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a> has the same structure-borne noise logic.
           </p>
           <p>
             <strong>Power.</strong> Plug the plate directly into a grounded wall outlet; LifePro's
-            manual says not to use an extension cord or adapter, and our
-            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cord guide</a>
-            explains why motorised equipment generally should not run through one. Keep it indoors,
+            manual says not to use an extension cord or adapter, and our <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cord guide</a> explains why motorised equipment generally should not run through one. Keep it indoors,
             away from water and damp basements.
           </p>
           <p>
@@ -834,7 +771,7 @@ const schema = {
         </div>
 
         <div id="using-safely" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Using a Plate Safely</h2>
+          <h2>Using a Plate Safely</h2>
 <p>
             Most of this comes from LifePro's manuals; the manual for your plate is the authority,
             and where it differs, follow it.
@@ -862,29 +799,22 @@ const schema = {
           </ul>
           <p>
             If you want the stability and balance work some people buy a plate for, without the
-            motor, our
-            <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance board guide</a>
-            covers simpler options.
+            motor, our <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium">balance board guide</a> covers simpler options.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If your goal is weight loss or cardio fitness</strong>, buy a machine you
             actively work on. A walking pad, bike or rower gives you sustained effort you control.
-            Our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
-            compares them, and if you want something bouncy and joint-friendly that is still real
-            cardio, our <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder guide</a>
-            covers fitness mini-trampolines.
+            Our <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a> compares them, and if you want something bouncy and joint-friendly that is still real
+            cardio, our <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder guide</a> covers fitness mini-trampolines.
           </p>
           <p>
             <strong>If you want recovery after training</strong>, a plate is one option among
-            several. Our guide to
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for lifters</a>,
-            and our <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a>
-            and <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a>
-            roundups, cover tools aimed at specific muscles rather than the whole body.
+            several. Our guide to <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for lifters</a>,
+            and our <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a> and <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam roller</a> roundups, cover tools aimed at specific muscles rather than the whole body.
           </p>
           <p>
             <strong>If you are buying for a health condition</strong>, talk to your doctor first.
@@ -893,143 +823,158 @@ const schema = {
           </p>
           <p>
             <strong>If you need something to hold</strong> and want low-impact daily movement, our
-            guide to
-            <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a>
-            is a better starting point than a flat plate.
+            guide to <a href="/best-walking-pads-with-handrail/" class="text-[#0F62FE] font-medium">walking pads with handrails</a> is a better starting point than a flat plate.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best vibration plate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most healthy adults, the LifePro Waver: an oscillating plate whose hardware figures, including a 330 lb rating, agree across LifePro, Amazon, the manual and an independent retailer, with a lifetime warranty if registered within 14 days. Lighter users short of space can choose the Waver Mini. People who want a lineal plate like those in gyms are looking at a much more expensive machine such as the Power Plate MOVE.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between oscillating and lineal vibration plates?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                An oscillating plate rocks around a central pivot like a seesaw, at low frequencies with a large movement, and you raise the intensity by standing wider. A lineal plate moves the whole platform up and down together, at higher frequencies with a small movement, so intensity is set by the controls. Tri-planar, 3D and 4D are marketing terms with no common definition.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do vibration plates help you lose weight?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is little evidence that vibration on its own causes meaningful fat loss, and a short session on a plate uses far less energy than the same time walking, cycling or rowing. Weight-loss claims on listings are the sellers' claims. If weight management is the goal, a machine you actively work on, plus diet, does far more.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who should not use a vibration plate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                LifePro's manual says not to use one if you are pregnant or have recently given birth, have a pacemaker or other electronic implant, a blood clot disorder such as deep-vein thrombosis, recent surgery or fracture, severe osteoporosis or spinal problems, or serious heart conditions. It says to consult a physician first for epilepsy, joint replacements and other implants, diabetes and more. If unsure, ask your doctor.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What frequency should a vibration plate have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                There is no single right figure; it depends on the type. The oscillating plates we checked list roughly 4 to 12 Hz, while the lineal Power Plate MOVE lists 30 to 40 Hz. Compare plates of the same type, treat frequency and amplitude as the maker's figures, and be wary of budget oscillating plates that claim lineal-plate frequencies without explaining them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should you stand on a vibration plate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Sessions are short. LifePro's manual suggests starting at low levels with holds of 15 to 45 seconds, building over several weeks, and says not to use the plate for more than 20 minutes a day. Power Plate's MOVE timer counts to nine minutes. Keep your knees slightly bent, wear shoes, and stop if you feel dizzy or unwell.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Vibration Plate</h2>
+          <p>Most disappointment with vibration plates comes from expectations rather than hardware. These are the four mistakes that matter most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying it for the health claims</h3>
+              <p>Fat loss, lymphatic drainage, bone density, immunity and circulation claims are the sellers', and LifePro's own manual says its suggested benefits are not certified by any regulator. If one of those outcomes is why you want a plate, talk to your doctor about whether there is evidence for your situation. Buy a plate for the short sessions you will enjoy.</p>
+            </li>
+            <li>
+              <h3>Skipping the contraindications</h3>
+              <p>The manuals' lists of people who should not use a plate, or should ask a doctor first, include common situations: pregnancy, implants, joint replacements, recent surgery, blood clot disorders, epilepsy and heart conditions. Read the list before you order, not after the box arrives, and share it with anyone else in the household who might use the plate.</p>
+            </li>
+            <li>
+              <h3>Comparing numbers across motion types</h3>
+              <p>A 40 Hz lineal plate and a 12 Hz oscillating plate are not better and worse versions of the same thing, and "99 levels" says nothing about strength. Decide on the motion type first, then compare weight ratings, deck size and warranty within that type. Treat any frequency or amplitude figure as the maker's, especially on budget plates.</p>
+            </li>
+            <li>
+              <h3>Ignoring the weight rating and the warranty registration</h3>
+              <p>A plate is a motor carrying your full weight; exceeding its rating is how mechanisms fail. Buy for the heaviest user, with a margin. And if the warranty needs registering, as LifePro's does within 14 days, register it the day the plate arrives and keep the proof of purchase, or the cover you were counting on may not apply.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Vibration Plate</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointment with vibration plates comes from expectations rather than hardware. These are the four mistakes that matter most.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it for the health claims</h3>
-              <p class="text-gray-700 text-sm m-0">Fat loss, lymphatic drainage, bone density, immunity and circulation claims are the sellers', and LifePro's own manual says its suggested benefits are not certified by any regulator. If one of those outcomes is why you want a plate, talk to your doctor about whether there is evidence for your situation. Buy a plate for the short sessions you will enjoy.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the contraindications</h3>
-              <p class="text-gray-700 text-sm m-0">The manuals' lists of people who should not use a plate, or should ask a doctor first, include common situations: pregnancy, implants, joint replacements, recent surgery, blood clot disorders, epilepsy and heart conditions. Read the list before you order, not after the box arrives, and share it with anyone else in the household who might use the plate.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing numbers across motion types</h3>
-              <p class="text-gray-700 text-sm m-0">A 40 Hz lineal plate and a 12 Hz oscillating plate are not better and worse versions of the same thing, and "99 levels" says nothing about strength. Decide on the motion type first, then compare weight ratings, deck size and warranty within that type. Treat any frequency or amplitude figure as the maker's, especially on budget plates.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the weight rating and the warranty registration</h3>
-              <p class="text-gray-700 text-sm m-0">A plate is a motor carrying your full weight; exceeding its rating is how mechanisms fail. Buy for the heaviest user, with a margin. And if the warranty needs registering, as LifePro's does within 14 days, register it the day the plate arrives and keep the proof of purchase, or the cover you were counting on may not apply.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/lifepro-waver-vibration-plate-review/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LifePro Waver Vibration Plate Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Our top pick in depth: verified specs, the claims, and who should ask a doctor first.</p>
-            </a>
-            <a href="/best-recovery-tools-for-weightlifters/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Recovery Tools for Weightlifters</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The other tools people buy for after training, and what each actually does.</p>
-            </a>
-            <a href="/best-rebounders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Cardio</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Rebounders</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Fitness mini-trampolines: real low-impact cardio in a similar footprint.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people, the LifePro Waver is the plate to buy</strong>:
             an oscillating plate with a 330 lb rating whose figures agree across every source we
             checked, at about $200, with a lifetime warranty once registered. The Waver Mini is the
             cheaper, smaller choice for lighter users. Merach's plates list higher ratings for less,
             and the Power Plate MOVE is the lineal option, but their figures are the makers' own.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, treat the health claims as marketing, read the manual's list of people
             who should not use it before you order, and keep sessions short. If the real goal is
-            fitness or weight, a machine you actively work on will do more —
-            <a href="/home-cardio-equipment-guide/" class="text-[#5AA9FF] font-bold no-underline">our home cardio equipment guide</a>
-            compares the options.
+            fitness or weight, a machine you actively work on will do more — <a href="/home-cardio-equipment-guide/" class="text-[#5AA9FF] font-bold no-underline">our home cardio equipment guide</a> compares the options.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/lifepro-waver-vibration-plate-review/">LifePro Waver Vibration Plate Review</a></li>
+            <li><a href="/best-recovery-tools-for-weightlifters/">Best Recovery Tools for Weightlifters</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best vibration plate?</h3></summary>
+            <p class="faq-a">
+              For most healthy adults, the LifePro Waver: an oscillating plate whose hardware figures, including a 330 lb rating, agree across LifePro, Amazon, the manual and an independent retailer, with a lifetime warranty if registered within 14 days. Lighter users short of space can choose the Waver Mini. People who want a lineal plate like those in gyms are looking at a much more expensive machine such as the Power Plate MOVE.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between oscillating and lineal vibration plates?</h3></summary>
+            <p class="faq-a">
+              An oscillating plate rocks around a central pivot like a seesaw, at low frequencies with a large movement, and you raise the intensity by standing wider. A lineal plate moves the whole platform up and down together, at higher frequencies with a small movement, so intensity is set by the controls. Tri-planar, 3D and 4D are marketing terms with no common definition.
             </p>
+          </details>
+          <details>
+            <summary><h3>Do vibration plates help you lose weight?</h3></summary>
+            <p class="faq-a">
+              There is little evidence that vibration on its own causes meaningful fat loss, and a short session on a plate uses far less energy than the same time walking, cycling or rowing. Weight-loss claims on listings are the sellers' claims. If weight management is the goal, a machine you actively work on, plus diet, does far more.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Who should not use a vibration plate?</h3></summary>
+            <p class="faq-a">
+              LifePro's manual says not to use one if you are pregnant or have recently given birth, have a pacemaker or other electronic implant, a blood clot disorder such as deep-vein thrombosis, recent surgery or fracture, severe osteoporosis or spinal problems, or serious heart conditions. It says to consult a physician first for epilepsy, joint replacements and other implants, diabetes and more. If unsure, ask your doctor.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What frequency should a vibration plate have?</h3></summary>
+            <p class="faq-a">
+              There is no single right figure; it depends on the type. The oscillating plates we checked list roughly 4 to 12 Hz, while the lineal Power Plate MOVE lists 30 to 40 Hz. Compare plates of the same type, treat frequency and amplitude as the maker's figures, and be wary of budget oscillating plates that claim lineal-plate frequencies without explaining them.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should you stand on a vibration plate?</h3></summary>
+            <p class="faq-a">
+              Sessions are short. LifePro's manual suggests starting at low levels with holds of 15 to 45 seconds, building over several weeks, and says not to use the plate for more than 20 minutes a day. Power Plate's MOVE timer counts to nine minutes. Keep your knees slightly bent, wear shoes, and stop if you feel dizzy or unwell.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/lifepro-waver-vibration-plate-review/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">LifePro Waver Vibration Plate Review</div>
+            <p class="c-blurb">Our top pick in depth: verified specs, the claims, and who should ask a doctor first.</p>
+          </a>
+          <a href="/best-recovery-tools-for-weightlifters/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Recovery Tools for Weightlifters</div>
+            <p class="c-blurb">The other tools people buy for after training, and what each actually does.</p>
+          </a>
+          <a href="/best-rebounders/" class="card">
+            <div class="c-kicker">Cardio</div>
+            <div class="c-title">Best Rebounders</div>
+            <p class="c-blurb">Fitness mini-trampolines: real low-impact cardio in a similar footprint.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

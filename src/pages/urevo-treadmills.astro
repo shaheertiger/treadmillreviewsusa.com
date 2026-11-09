@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "UREVO Treadmill Guide (2026): Walking Pads, Prices and Warranty";
 const description =
@@ -338,6 +337,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/urevo-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -360,66 +365,100 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Current Range", link: "#current-range" }}
+  stickyCta={{ text: "Closest on Amazon: UREVO Smart Walking Pad", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-urevotreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-urevotreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">UREVO Treadmills: A Buyer’s Guide to the Range</h1>
+      <p class="ed-dek">
+        UREVO is one of the most visible walking-pad brands on Amazon and its own US store, with a range that now runs from a $170 flat pad to a $900 folding running treadmill. This guide sets out what it sells, what each machine costs on the day, which figures hold up, and what the warranty and 14-day return policy really cover.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          UREVO Treadmills: <span class="text-[#5AA9FF]">A Buyer’s Guide to the Range</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          UREVO is one of the most visible walking-pad brands on Amazon and its own US store, with a range that now runs from a $170 flat pad to a $900 folding running treadmill. This guide sets out what it sells, what each machine costs on the day, which figures hold up, and what the warranty and 14-day return policy really cover.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#current-range" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            The Current Range
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#urevo-smart-walking-pad"><img src="https://m.media-amazon.com/images/I/41bR35pRVJL._SL500_.jpg" alt="UREVO Smart Walking Pad" width="500" height="500" decoding="async" /></a>
+          <a href="#deerrun-z10"><img src="https://m.media-amazon.com/images/I/414t0YUkaFL._SL500_.jpg" alt="DeerRun Z10" width="400" height="500" decoding="async" /></a>
+          <a href="#urevo-strol-2e-pro"><img src="https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg" alt="UREVO Strol 2E Pro" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+        <figcaption>UREVO Smart Walking Pad · DeerRun Z10 · UREVO Strol 2E Pro</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Search for a walking pad on Amazon and a UREVO machine is likely to be among the first things
+          you see: a slim black pad, a big horsepower number, a price with a line through it. UREVO is a
+          real company with a broad and fast-changing range, and several of its pads appear on this
+          site’s own roundups because their basic figures could be cross-checked. It is also a brand whose
+          weight limits, motor claims and even warranty length change depending on which page you read.
+          This guide sets out who UREVO is, every machine in its US store on 20 October 2026 with the
+          price you would actually have paid, the figures that agree across sources and the ones that do
+          not, what the 18-month warranty and 14-day returns require of you, what the app costs, and
+          which UREVO, if any, fits the job you have in mind. Five of the UREVO models discussed here
+          (the SpaceWalk E1L and 3S, Strol 2S Pro, Foldi 3S and FoldiMix 5L) are sold through UREVO’s
+          own store and other retailers, and we could not find Amazon US listings that name them, so
+          their cards show the closest machines Amazon does sell; the prose below still covers the
+          UREVO models themselves.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#urevo-smart-walking-pad">UREVO Smart Walking Pad</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#deerrun-z10">DeerRun Z10</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Lightest 2-in-1:</span> <a href="#urevo-strol-2e-pro">UREVO Strol 2E Pro</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#urevo-strol-2e">UREVO Strol 2E</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#lastforever-walking-treadmill">Lastforever Walking Treadmill</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#sunny-treadpad-auto-incline">Sunny Health & Fitness Treadpad Treadmill 7% Auto Incline</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Most Incline:</span> <a href="#urevo-cyberpad-for-office">UREVO CyberPad for Office</a></span>
+              <a href={PRODUCTS[6].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">For Running:</span> <a href="#urevo-cybermega">UREVO CyberMega</a></span>
+              <a href={PRODUCTS[7].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           20 October 2026 we read every treadmill and walking-pad listing in UREVO’s US store
           (urevo.com), including the price each one showed at checkout that day, and the store’s
@@ -436,88 +475,29 @@ const schema = {
           handrail and budget treadmill guides. We have not tested a
           UREVO machine. Prices change often, sometimes daily, so confirm them before you order. As an
           Amazon Associate we earn from qualifying purchases.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#urevo-smart-walking-pad" class="font-bold text-gray-900 no-underline hover:underline">UREVO Smart Walking Pad</a>
-            <a href="#urevo-smart-walking-pad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#deerrun-z10" class="font-bold text-gray-900 no-underline hover:underline">DeerRun Z10</a>
-            <a href="#deerrun-z10" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lightest 2-in-1:</span>
-            <a href="#urevo-strol-2e-pro" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E Pro</a>
-            <a href="#urevo-strol-2e-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#urevo-strol-2e" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E</a>
-            <a href="#urevo-strol-2e" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#lastforever-walking-treadmill" class="font-bold text-gray-900 no-underline hover:underline">Lastforever Walking Treadmill</a>
-            <a href="#lastforever-walking-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is UREVO a Good Brand? The Short Answer</a>
-          <a href="#who-is-urevo" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes UREVO Treadmills, and Where Are They Sold?</a>
-          <a href="#current-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current UREVO Range and Prices</a>
-          <a href="#figures-that-conflict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Where UREVO’s Figures Disagree, and What to Trust</a>
-          <a href="#warranty-and-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. UREVO Warranty, Returns and Shipping</a>
-          <a href="#urevo-app" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The UREVO App: What It Does and What It Costs</a>
-          <a href="#safety-record" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Recalls: What the CPSC Record Shows</a>
-          <a href="#which-urevo" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Which UREVO to Buy, and How It Compares</a>
-          <a href="#before-you-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What to Check Before Buying a UREVO, and Who Should</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is UREVO a Good Brand? The Short Answer</a></li>
+            <li><a href="#who-is-urevo">Who Makes UREVO Treadmills, and Where Are They Sold?</a></li>
+            <li><a href="#current-range">The Current UREVO Range and Prices</a></li>
+            <li><a href="#figures-that-conflict">Where UREVO’s Figures Disagree, and What to Trust</a></li>
+            <li><a href="#warranty-and-returns">UREVO Warranty, Returns and Shipping</a></li>
+            <li><a href="#urevo-app">The UREVO App: What It Does and What It Costs</a></li>
+            <li><a href="#safety-record">Recalls: What the CPSC Record Shows</a></li>
+            <li><a href="#which-urevo">Which UREVO to Buy, and How It Compares</a></li>
+            <li><a href="#before-you-buy">What to Check Before Buying a UREVO, and Who Should</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Search for a walking pad on Amazon and a UREVO machine is likely to be among the first things
-          you see: a slim black pad, a big horsepower number, a price with a line through it. UREVO is a
-          real company with a broad and fast-changing range, and several of its pads appear on this
-          site’s own roundups because their basic figures could be cross-checked. It is also a brand whose
-          weight limits, motor claims and even warranty length change depending on which page you read.
-          This guide sets out who UREVO is, every machine in its US store on 20 October 2026 with the
-          price you would actually have paid, the figures that agree across sources and the ones that do
-          not, what the 18-month warranty and 14-day returns require of you, what the app costs, and
-          which UREVO, if any, fits the job you have in mind. Five of the UREVO models discussed here
-          (the SpaceWalk E1L and 3S, Strol 2S Pro, Foldi 3S and FoldiMix 5L) are sold through UREVO’s
-          own store and other retailers, and we could not find Amazon US listings that name them, so
-          their cards show the closest machines Amazon does sell; the prose below still covers the
-          UREVO models themselves.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is UREVO a Good Brand? The Short Answer</h2>
+          <h2>Is UREVO a Good Brand? The Short Answer</h2>
 <p>
             <strong>UREVO is a reasonable budget brand for walking, and its best pads are good value at the
-            prices they usually sell for, but it is not a brand to buy on its headline figures.</strong>
-            Its belt sizes and speed ranges generally hold up when checked against independent sources. Its
+            prices they usually sell for, but it is not a brand to buy on its headline figures.</strong> Its belt sizes and speed ranges generally hold up when checked against independent sources. Its
             weight limits often do not, its horsepower numbers are maximums that bear little relation to
             what the motor sustains, and its warranty is 18 months only if you register the machine in its
             app.
@@ -531,20 +511,16 @@ const schema = {
             which matters when you compare UREVO with anything else.
           </p>
           <p>
-            For most people who searched for a UREVO, the machine to look at first is the
-            <strong>SpaceWalk 3S</strong>: a powered 0 to 9% incline on a 42.5-inch belt for about $250, with
+            For most people who searched for a UREVO, the machine to look at first is the <strong>SpaceWalk 3S</strong>: a powered 0 to 9% incline on a 42.5-inch belt for about $250, with
             figures that agree across sources. The <strong>SpaceWalk E1L</strong> is the cheapest sensible
-            pad for slow desk walking, the <strong>Strol 2S Pro</strong> adds a short jogging mode, and the
-            <strong>CyberMega</strong> is the one to consider if you actually want to run. Heavier users
+            pad for slow desk walking, the <strong>Strol 2S Pro</strong> adds a short jogging mode, and the <strong>CyberMega</strong> is the one to consider if you actually want to run. Heavier users
             should be most careful: several UREVO pads advertise 350 or 400 lb limits that their own manuals
-            or Amazon listings put at 242 to 300 lb. Our
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
-            roundup shows how three of these pads compare with WalkingPad and MERACH.
+            or Amazon listings put at 242 to 300 lb. Our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup shows how three of these pads compare with WalkingPad and MERACH.
           </p>
         </div>
 
         <div id="who-is-urevo" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes UREVO Treadmills, and Where Are They Sold?</h2>
+          <h2>Who Makes UREVO Treadmills, and Where Are They Sold?</h2>
 <p>
             UREVO is a smart-fitness brand with roots in Shenzhen, China, that sells walking pads, treadmills, leg and body
             massagers and a <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium" data-autolink>smart scale</a>. The company behind it appears under several names, and no single
@@ -578,9 +554,7 @@ const schema = {
             says most items it sells can be returned within 30 days of delivery, with exceptions, and
             oversized items can carry their own return arrangements, so read the return terms on the specific
             listing before you buy. Amazon’s product pages would not load in full for us on 20 October, so
-            we could not confirm current Amazon prices. Our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            explains how to check the seller and the listing.
+            we could not confirm current Amazon prices. Our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> explains how to check the seller and the listing.
           </p>
           <p>
             One more point about names. UREVO reuses its series names across generations and markets, and
@@ -593,7 +567,7 @@ const schema = {
         </div>
 
         <div id="current-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current UREVO Range and Prices</h2>
+          <h2>The Current UREVO Range and Prices</h2>
 <p>
             The table lists every treadmill and walking pad in UREVO’s US store on 20 October 2026, with the
             figures UREVO publishes and the price shown at checkout that day. Where the product page showed a
@@ -630,9 +604,7 @@ const schema = {
             Foldi 3S and FoldiMix 5L) reach their higher speeds only with the handle or rails raised, and
             the E1L’s own product-page FAQ says it is not intended for light jogging. Speed is
             not what limits these machines for running; belt length is. If you want to run more than
-            occasionally, read our guide to
-            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">running on a walking pad</a>
-            before choosing one.
+            occasionally, read our guide to <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">running on a walking pad</a> before choosing one.
           </p>
           <p>
             Three practical notes on the prices. First, many UREVO pages show a higher price and then apply a
@@ -648,82 +620,70 @@ const schema = {
             lb, and no independent source publishes its belt size. The <strong>SpaceWalk 5L</strong> is listed
             at 400 lb by UREVO, 320 lb by Amazon and 300 lb in the EU manual. The two <strong>CyberPad for
             Home</strong> models have no independent coverage of the current versions and, for the original,
-            a capacity UREVO now gives as 350 lb against 264 lb in the manual the tracker read. And the
-            <strong>Strol 2E</strong> was sold out on UREVO’s store on the day we checked.
+            a capacity UREVO now gives as 350 lb against 264 lb in the manual the tracker read. And the <strong>Strol 2E</strong> was sold out on UREVO’s store on the day we checked.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="figures-that-conflict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Where UREVO’s Figures Disagree, and What to Trust</h2>
+          <h2>Where UREVO’s Figures Disagree, and What to Trust</h2>
 <p>
             Budget pad listings drift as copy moves between models, generations and marketplaces, and
             UREVO’s are no exception. The pattern is consistent enough to give a rule of thumb: belt size,
@@ -750,9 +710,7 @@ const schema = {
             figure is the load for normal operation at regular speed, and that 300 lb applies to its
             top-speed test. That is the most candid capacity statement we have seen from a pad maker, and it
             suggests the other 400 lb figures may be measured the same way. The safe reading is to plan on the
-            lowest published figure for the model you are buying and leave a margin under it. Our
-            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
-            roundup lists pads whose high ratings hold up better.
+            lowest published figure for the model you are buying and leave a margin under it. Our <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a> roundup lists pads whose high ratings hold up better.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Horsepower and brushless claims</h3>
           <p>
@@ -762,9 +720,7 @@ const schema = {
             Strol 2E and, from an owner teardown, the Strol 2S Pro’s drive motor. It reports brushless motors,
             from manuals and error codes, in the FoldiMix 5L and the two CyberPads, and infers one in the
             SpaceWalk 5L. For walking at 2 to 4 mph, a small brushed motor is normal and adequate; what
-            matters is not to choose between pads on the horsepower line. Our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why peak and continuous figures cannot be compared.
+            matters is not to choose between pads on the horsepower line. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why peak and continuous figures cannot be compared.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline: powered, manual or both</h3>
           <p>
@@ -787,7 +743,7 @@ const schema = {
         </div>
 
         <div id="warranty-and-returns" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. UREVO Warranty, Returns and Shipping</h2>
+          <h2>UREVO Warranty, Returns and Shipping</h2>
 <p>
             UREVO’s terms are shorter than most brands’, and two of its own pages contradict each other, so
             this section is worth reading before you order.
@@ -811,9 +767,7 @@ const schema = {
             in a dispute. If the longer term matters to you, ask UREVO in writing before you order and keep
             the reply. The same tracker reports that UREVO’s manuals set a baseline of one year on the frame
             and 90 days on other parts; we have not seen a manual that confirms it, but it is another reason
-            to get the terms in writing. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            lists the questions to ask.
+            to get the terms in writing. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> lists the questions to ask.
           </p>
           <p>
             Two practical points follow. Register the machine in the app the day it arrives, because without
@@ -840,9 +794,7 @@ const schema = {
             describe a separate trial, so treat it as the same 14-day, unused-item return. Unbox carefully,
             keep every piece of packaging, and test the machine’s full speed and incline range in the first
             few days, when a fault is clearly covered. If you are weighing a UREVO against a pad sold with a
-            30-day window on Amazon, the longer window may be worth more than a small price difference. Our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            guide compares typical terms.
+            30-day window on Amazon, the longer window may be worth more than a small price difference. Our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> guide compares typical terms.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Cancelling, shipping and support</h3>
           <ul>
@@ -858,7 +810,7 @@ const schema = {
         </div>
 
         <div id="urevo-app" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The UREVO App: What It Does and What It Costs</h2>
+          <h2>The UREVO App: What It Does and What It Costs</h2>
 <p>
             UREVO’s machines connect over Bluetooth to the UREVO app, which the product pages also call SmartCoach,
             for iPhone and Android. UREVO describes workout modes that change speed and incline automatically,
@@ -893,12 +845,11 @@ const schema = {
         </div>
 
         <div id="safety-record" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Recalls: What the CPSC Record Shows</h2>
+          <h2>Recalls: What the CPSC Record Shows</h2>
 <p>
             We searched the US Consumer Product Safety Commission’s recall database on 20 October 2026,
             using its public search for “UREVO” in product names and recall titles, and searched cpsc.gov for
-            the brand. <strong>We found no CPSC recall and no CPSC warning involving any UREVO product.</strong>
-            The treadmill recalls in the database concern other brands.
+            the brand. <strong>We found no CPSC recall and no CPSC warning involving any UREVO product.</strong> The treadmill recalls in the database concern other brands.
           </p>
           <p>
             One recent walking-pad warning is useful context. On 16 April 2026 the CPSC told consumers to stop
@@ -920,7 +871,7 @@ const schema = {
         </div>
 
         <div id="which-urevo" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Which UREVO to Buy, and How It Compares</h2>
+          <h2>Which UREVO to Buy, and How It Compares</h2>
 <p>
             UREVO’s range is wide enough that the right machine depends almost entirely on the job. Here is
             how the models with cross-checked figures map onto the common ones, and how they compare with the
@@ -932,27 +883,20 @@ const schema = {
             average height who is well under 242 lb. Its 35-inch belt is short, so if you are tall or walk
             briskly, spend more on a longer belt: the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> on our best walking pads list has a
             47.6-inch walking area for about $300. Against DeerRun’s similar Q2 Urban, the E1L’s advantage is
-            figures that could be checked; our
-            <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium">Deer Run treadmill guide</a>
-            sets the two side by side.
+            figures that could be checked; our <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium">Deer Run treadmill guide</a> sets the two side by side.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Walking with incline</h3>
           <p>
             The <strong>SpaceWalk 3S</strong> is the default choice: 0 to 9% powered on a 42.5-inch belt for
             about $250. The <strong>CyberPad for Office</strong> goes steeper, to 14%, for about $180 more, and
-            is the one to choose if a steep walk is the point. Our
-            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
-            roundup compares the 3S with MERACH and DeerRun’s auto-incline pads.
+            is the one to choose if a steep walk is the point. Our <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a> roundup compares the 3S with MERACH and DeerRun’s auto-incline pads.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A handlebar, a desk, or a short jog</h3>
           <p>
             The <strong>Strol 2E Pro</strong> is the lightest 2-in-1 at about 43 lb; the <strong>Strol 2S
-            Pro</strong> adds incline and a 7.6 mph mode on a longer belt but weighs about 75 lb. The
-            <strong>Foldi 3S</strong> and <strong>FoldiMix 5L</strong> add a desk, which saves buying a
+            Pro</strong> adds incline and a 7.6 mph mode on a longer belt but weighs about 75 lb. The <strong>Foldi 3S</strong> and <strong>FoldiMix 5L</strong> add a desk, which saves buying a
             standing desk. None of these is a running treadmill: treat the jogging mode as an occasional
-            extra. Our
-            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
-            roundup ranks the lightest options by checked unit weight.
+            extra. Our <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a> roundup ranks the lightest options by checked unit weight.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heavier walkers</h3>
           <p>
@@ -967,14 +911,12 @@ const schema = {
             Only the <strong>CyberMega</strong> is built for it, and two independent reviews found it capable.
             Its 51-inch belt is shorter than the 55 to 60 inches most running treadmills offer, which suits a
             runner of average height with a compact stride, and its selling point is folding flat. If you are
-            tall, run fast intervals or want a longer warranty, compare it with the machines on our
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
-            list before deciding.
+            tall, run fast intervals or want a longer warranty, compare it with the machines on our <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a> list before deciding.
           </p>
         </div>
 
         <div id="before-you-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What to Check Before Buying a UREVO, and Who Should</h2>
+          <h2>What to Check Before Buying a UREVO, and Who Should</h2>
 <p>
             If a UREVO looks like the right machine, these checks cover most of what goes wrong.
           </p>
@@ -988,9 +930,7 @@ const schema = {
             UREVO’s, and plan on the lower one.</li>
             <li><strong>The belt length against your height and pace.</strong> 35 to 36 inches suits slow
             walking for average heights; 42.5 inches gives more room; nothing below about 50 inches is for
-            regular running. Our
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            explains how to match belt to stride.</li>
+            regular running. Our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> explains how to match belt to stride.</li>
             <li><strong>The seller and the return window.</strong> Fourteen days, unused, at your shipping
             cost from UREVO; Amazon’s terms depend on the seller. Screenshot the terms on the day you buy.</li>
             <li><strong>The warranty steps.</strong> Install the app and bind the serial number on day one,
@@ -1008,148 +948,163 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Who makes UREVO treadmills?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                UREVO’s app is published by UREVO Wellness US Co., Ltd, and its copyright is held by a Shenzhen technology company whose name an Amazon listing renders as Shenzhen Yile Dynamic Technology Co., Ltd. UREVO exhibited at IFA Berlin as Zhile Holdings Group (HK) Limited, giving 2020 as its founding year. No single source we found explains how the companies relate.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is UREVO a good brand?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For walking, it is a reasonable budget brand: belt sizes and speed ranges generally hold up against independent sources, and pads such as the SpaceWalk 3S are good value at their usual prices. Its weight limits and horsepower figures are less reliable, its returns window is 14 days, and its warranty is 18 months only with app registration.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty does UREVO offer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For treadmills and walking pads bought from an official seller on or after 20 March 2026, one year plus a 180-day extension that requires binding the machine’s serial number in the UREVO app. UREVO’s FAQ still says direct purchases get two years by default, which conflicts with its product pages and warranty policy, so ask UREVO in writing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is UREVO’s return policy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Returns are accepted within 14 days of receipt if the product is unused, in its original condition and packaging, with proof of purchase and prior authorisation from customer service. You pay return shipping for a change of mind; UREVO pays if the item is damaged, defective or wrong. Amazon purchases follow the return terms of the Amazon listing and seller.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does the UREVO app cost money?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The app is free to download and the machines run without it, but its App Store listing showed in-app purchases on 20 October 2026, including a $9.99 monthly Premium plan and annual plans from $69.99 to $159.99. You need the app to activate UREVO’s 180-day warranty extension.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does UREVO make a treadmill you can run on?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                One: the CyberMega, a folding treadmill with a 51.2 by 18.9-inch belt, 12.5 mph top speed, 12% powered incline and 300 lb limit, at $899.99 on UREVO’s store on 20 October 2026. The rest of the range uses walking-pad belts of 35 to 43 inches, and the 2-in-1 models’ jogging modes suit only an occasional, easy jog.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Has UREVO had a recall?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. We found no CPSC recall or warning for any UREVO product as of 20 October 2026. The CPSC’s April 2026 warning to stop using certain walking pads concerns Sperax, a different brand.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a UREVO Treadmill</h2>
+          <p>Most disappointment with UREVO machines comes from trusting a headline figure or a badge more than the terms behind it. These are the four mistakes that matter most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying on the 400 lb headline</h3>
+              <p>Heavier buyers choose a CyberPad or SpaceWalk 5L for its 350 or 400 lb rating, then find the manual or Amazon listing says 242 to 300 lb, and the frame or motor wears early. Look up every published capacity for the exact model, plan on the lowest, and leave a margin under it.</p>
+            </li>
+            <li>
+              <h3>Skipping the app registration</h3>
+              <p>UREVO advertises an 18-month warranty, but the last 180 days exist only if you install the app and bind the serial number. Buyers who never open the app have a one-year warranty without realising it. Register on the day the machine arrives and screenshot the expiry date the app shows.</p>
+            </li>
+            <li>
+              <h3>Walking on it for three weeks, then trying to return it</h3>
+              <p>UREVO accepts returns within 14 days, and only of unused machines in their original packaging, with return shipping at your cost for a change of mind. Keep the box, run the machine through its full speed and incline range in the first few days, and decide inside the window.</p>
+            </li>
+            <li>
+              <h3>Buying a 2-in-1 pad to train for a race</h3>
+              <p>A 7.6 mph mode looks like a running treadmill, but on a 36 to 43-inch belt a real running stride hits the front or the back of the deck, and the motors are rated for walking loads. If you want to run regularly, buy the CyberMega or a full-size folding treadmill.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a UREVO Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most disappointment with UREVO machines comes from trusting a headline figure or a badge more than the terms behind it. These are the four mistakes that matter most.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying on the 400 lb headline</h3>
-              <p class="text-gray-700 text-sm m-0">Heavier buyers choose a CyberPad or SpaceWalk 5L for its 350 or 400 lb rating, then find the manual or Amazon listing says 242 to 300 lb, and the frame or motor wears early. Look up every published capacity for the exact model, plan on the lowest, and leave a margin under it.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the app registration</h3>
-              <p class="text-gray-700 text-sm m-0">UREVO advertises an 18-month warranty, but the last 180 days exist only if you install the app and bind the serial number. Buyers who never open the app have a one-year warranty without realising it. Register on the day the machine arrives and screenshot the expiry date the app shows.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Walking on it for three weeks, then trying to return it</h3>
-              <p class="text-gray-700 text-sm m-0">UREVO accepts returns within 14 days, and only of unused machines in their original packaging, with return shipping at your cost for a change of mind. Keep the box, run the machine through its full speed and incline range in the first few days, and decide inside the window.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a 2-in-1 pad to train for a race</h3>
-              <p class="text-gray-700 text-sm m-0">A 7.6 mph mode looks like a running treadmill, but on a 36 to 43-inch belt a real running stride hits the front or the back of the deck, and the motors are rated for walking loads. If you want to run regularly, buy the CyberMega or a full-size folding treadmill.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Walking Pad Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-walking-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best List</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Six pads, three of them UREVO, with figures checked against two sources.</p>
-            </a>
-            <a href="/walking-pad-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Which pad specifications to trust, and which to discount.</p>
-            </a>
-            <a href="/deer-run-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Deer Run Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Another walking-pad brand, read the same way.</p>
-            </a>
-            <a href="/yesoul-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Yesoul Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The T3S Plus screen treadmill and the 30%-incline T5 range.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">UREVO is a sensible budget brand for walking pads, provided you choose on
           belt length and incline, plan on the lowest published weight limit, and register the machine in
           the app on day one.</strong> For most buyers the SpaceWalk 3S is the UREVO to start with; the
           SpaceWalk E1L suits the smallest budget, the Strol 2S Pro adds a short jog, and the CyberMega is
           the only UREVO built for running.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Compare any UREVO with the pads on our
-          <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>
-          list before you buy, and read the
-          <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a>
-          so you know what the 14-day return and 18-month warranty will and will not cover.
+          <p>
+            Compare any UREVO with the pads on our <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a> list before you buy, and read the <a href="/treadmill-warranty-guide/" class="text-[#5AA9FF] font-bold no-underline">warranty guide</a> so you know what the 14-day return and 18-month warranty will and will not cover.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-walking-pads/">Best Walking Pads</a></li>
+            <li><a href="/walking-pad-buying-guide/">Walking Pad Buying Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Who makes UREVO treadmills?</h3></summary>
+            <p class="faq-a">
+              UREVO’s app is published by UREVO Wellness US Co., Ltd, and its copyright is held by a Shenzhen technology company whose name an Amazon listing renders as Shenzhen Yile Dynamic Technology Co., Ltd. UREVO exhibited at IFA Berlin as Zhile Holdings Group (HK) Limited, giving 2020 as its founding year. No single source we found explains how the companies relate.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is UREVO a good brand?</h3></summary>
+            <p class="faq-a">
+              For walking, it is a reasonable budget brand: belt sizes and speed ranges generally hold up against independent sources, and pads such as the SpaceWalk 3S are good value at their usual prices. Its weight limits and horsepower figures are less reliable, its returns window is 14 days, and its warranty is 18 months only with app registration.
             </p>
+          </details>
+          <details>
+            <summary><h3>What warranty does UREVO offer?</h3></summary>
+            <p class="faq-a">
+              For treadmills and walking pads bought from an official seller on or after 20 March 2026, one year plus a 180-day extension that requires binding the machine’s serial number in the UREVO app. UREVO’s FAQ still says direct purchases get two years by default, which conflicts with its product pages and warranty policy, so ask UREVO in writing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is UREVO’s return policy?</h3></summary>
+            <p class="faq-a">
+              Returns are accepted within 14 days of receipt if the product is unused, in its original condition and packaging, with proof of purchase and prior authorisation from customer service. You pay return shipping for a change of mind; UREVO pays if the item is damaged, defective or wrong. Amazon purchases follow the return terms of the Amazon listing and seller.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does the UREVO app cost money?</h3></summary>
+            <p class="faq-a">
+              The app is free to download and the machines run without it, but its App Store listing showed in-app purchases on 20 October 2026, including a $9.99 monthly Premium plan and annual plans from $69.99 to $159.99. You need the app to activate UREVO’s 180-day warranty extension.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does UREVO make a treadmill you can run on?</h3></summary>
+            <p class="faq-a">
+              One: the CyberMega, a folding treadmill with a 51.2 by 18.9-inch belt, 12.5 mph top speed, 12% powered incline and 300 lb limit, at $899.99 on UREVO’s store on 20 October 2026. The rest of the range uses walking-pad belts of 35 to 43 inches, and the 2-in-1 models’ jogging modes suit only an occasional, easy jog.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Has UREVO had a recall?</h3></summary>
+            <p class="faq-a">
+              No. We found no CPSC recall or warning for any UREVO product as of 20 October 2026. The CPSC’s April 2026 warning to stop using certain walking pads concerns Sperax, a different brand.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Walking Pad Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-walking-pads/" class="card">
+            <div class="c-kicker">Best List</div>
+            <div class="c-title">Best Walking Pads</div>
+            <p class="c-blurb">Six pads, three of them UREVO, with figures checked against two sources.</p>
+          </a>
+          <a href="/walking-pad-buying-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Walking Pad Buying Guide</div>
+            <p class="c-blurb">Which pad specifications to trust, and which to discount.</p>
+          </a>
+          <a href="/deer-run-treadmill/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Deer Run Treadmill Guide</div>
+            <p class="c-blurb">Another walking-pad brand, read the same way.</p>
+          </a>
+          <a href="/yesoul-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Yesoul Treadmills</div>
+            <p class="c-blurb">The T3S Plus screen treadmill and the 30%-incline T5 range.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

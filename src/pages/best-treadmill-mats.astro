@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmill Mats (2026): Five Picks by Floor and Machine";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmill-mats/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,80 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: SuperMats TreadMat", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillmats" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillmats)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmill Mats for Every Floor</h1>
+      <p class="ed-dek">
+        The right mat depends far more on your floor and your machine’s footprint than on the brand. Here are five mats that cover the common situations, what each is honestly good for, and how to size one so it actually does its job.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmill Mats <span class="text-[#5AA9FF]">for Every Floor</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The right mat depends far more on your floor and your machine’s footprint than on the brand. Here are five mats that cover the common situations, what each is honestly good for, and how to size one so it actually does its job.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#sizing" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Size a Mat
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#supermats-treadmat"><img src="https://m.media-amazon.com/images/I/31zMIWqRffL._SL500_.jpg" alt="SuperMats TreadMat" width="500" height="222" decoding="async" /></a>
+          <a href="#sunny-floor-protector"><img src="https://m.media-amazon.com/images/I/611J54drolL._SL500_.jpg" alt="Sunny Health &amp; Fitness Floor Protector Mat" width="500" height="500" decoding="async" /></a>
+          <a href="#rubber-cal-treadmill-mat"><img src="https://m.media-amazon.com/images/I/41qrwTpZTsL._SL500_.jpg" alt="Rubber-Cal Treadmill Mat (4 x 7.5 ft)" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+        <figcaption>SuperMats TreadMat · Sunny Health &amp; Fitness Floor Protector Mat · Rubber-Cal Treadmill Mat (4 x 7.5 ft)</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A treadmill mat is not a complicated product, and that is exactly why so many people buy
+          the wrong one. The common failures are a mat that is smaller than the machine, a soft
+          mat on carpet that lets the frame rock, and a thin vinyl mat bought for a noise problem
+          it was never going to fix. The five picks below are each matched to a floor and a
+          machine, and the guide after them covers the measurements that decide which one you need.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#supermats-treadmat">SuperMats TreadMat</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget:</span> <a href="#sunny-floor-protector">Sunny Health & Fitness Floor Protector Mat</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Carpet & Big Machines:</span> <a href="#rubber-cal-treadmill-mat">Rubber-Cal Treadmill Mat (4 x 7.5 ft)</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Upstairs:</span> <a href="#rubber-cal-eco-sport-tiles">Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Walking Pads:</span> <a href="#supermats-30gs">SuperMats 30GS Heavy Duty Equipment Mat (30 x 72 in.)</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> Sizes, thicknesses,
           materials and warranty terms were checked on 13 October 2026 against each maker's own
           product page where one exists, at least one major retailer listing, and independent
@@ -341,83 +360,32 @@ const schema = {
           about them. The Rubber-Cal tiles and the SuperMats 30GS replace two mats we could not link on
           Amazon; their figures are those checked for our gym flooring and carpet mat guides in October
           and November 2026.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#supermats-treadmat" class="font-bold text-gray-900 no-underline hover:underline">SuperMats TreadMat</a>
-            <a href="#supermats-treadmat" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#sunny-floor-protector" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Floor Protector Mat</a>
-            <a href="#sunny-floor-protector" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Carpet & Big Machines:</span>
-            <a href="#rubber-cal-treadmill-mat" class="font-bold text-gray-900 no-underline hover:underline">Rubber-Cal Treadmill Mat (4 x 7.5 ft)</a>
-            <a href="#rubber-cal-treadmill-mat" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Upstairs:</span>
-            <a href="#rubber-cal-eco-sport-tiles" class="font-bold text-gray-900 no-underline hover:underline">Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles</a>
-            <a href="#rubber-cal-eco-sport-tiles" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Walking Pads:</span>
-            <a href="#supermats-30gs" class="font-bold text-gray-900 no-underline hover:underline">SuperMats 30GS Heavy Duty Equipment Mat (30 x 72 in.)</a>
-            <a href="#supermats-30gs" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmill Mats</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Mats</a>
-          <a href="#sizing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Size: Measure the Machine, Not the Belt</a>
-          <a href="#thickness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Thickness and Density</a>
-          <a href="#materials" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. PVC or Rubber, and the Smell</a>
-          <a href="#floor-vs-noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Floor Protection Versus Noise</a>
-          <a href="#carpet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Treadmill Mats on Carpet</a>
-          <a href="#setup-and-care" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Laying the Mat and Looking After It</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Treadmill Mats</a></li>
+            <li><a href="#how-we-chose">How We Chose These Mats</a></li>
+            <li><a href="#sizing">Size: Measure the Machine, Not the Belt</a></li>
+            <li><a href="#thickness">Thickness and Density</a></li>
+            <li><a href="#materials">PVC or Rubber, and the Smell</a></li>
+            <li><a href="#floor-vs-noise">Floor Protection Versus Noise</a></li>
+            <li><a href="#carpet">Treadmill Mats on Carpet</a></li>
+            <li><a href="#setup-and-care">Laying the Mat and Looking After It</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A treadmill mat is not a complicated product, and that is exactly why so many people buy
-          the wrong one. The common failures are a mat that is smaller than the machine, a soft
-          mat on carpet that lets the frame rock, and a thin vinyl mat bought for a noise problem
-          it was never going to fix. The five picks below are each matched to a floor and a
-          machine, and the guide after them covers the measurements that decide which one you need.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Most readers need one of the first two. The others exist because a carpeted floor, an
             upstairs room, a long commercial-style machine or a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> each changes what a mat
             has to do. One mat appears twice: the rubber mat we chose for big machines is also the
-            one we would put on carpet. Not sure what thickness you need? See our guide to
-            <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>.
+            one we would put on carpet. Not sure what thickness you need? See our guide to <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -435,15 +403,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            If you are still deciding whether you need a mat at all, our guide to
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a>
-            covers what a mat does and does not do. This page assumes the answer is yes and is about
+            If you are still deciding whether you need a mat at all, our guide to <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a> covers what a mat does and does not do. This page assumes the answer is yes and is about
             which one to buy.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmill Mats</h2>
+          <h2>The 5 Best Treadmill Mats</h2>
 <p>
             Each card gives the sizes and materials we could confirm, the price range we saw, and
             who the mat suits. Read the size line before anything else: a good mat in the wrong
@@ -451,78 +417,67 @@ const schema = {
             sibling that is.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Mats</h2>
+          <h2>How We Chose These Mats</h2>
 <p>
             We have not tested these mats. They were chosen from published specifications,
             manufacturer listings, warranty terms and independent coverage, and the claims on this
@@ -553,7 +508,7 @@ const schema = {
         </div>
 
         <div id="sizing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Size: Measure the Machine, Not the Belt</h2>
+          <h2>Size: Measure the Machine, Not the Belt</h2>
 <p>
             Size is where most mat purchases go wrong, and the cause is usually measuring the wrong
             thing. The belt, or running surface, is the number on the box, and it is always smaller
@@ -564,17 +519,13 @@ const schema = {
             Use the assembled footprint from the manual or the spec sheet — overall length and
             width at the widest points, with the machine unfolded and in its use position — then
             add a margin. A few inches on each side is the minimum; more at the front, where the
-            motor's cooling air is drawn in, and at the back, where you step off. Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            covers the clearance behind the machine, which the mat sits inside but should not
+            motor's cooling air is drawn in, and at the back, where you step off. Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a> covers the clearance behind the machine, which the mat sits inside but should not
             replace.
           </p>
           <p>
             In practice that produces three common sizes. A <strong>walking pad</strong> is
             usually about 20 to 24 inches wide and 50 to 58 inches long, so a 30 x 60-inch mat
-            covers a compact pad and a 30 x 72-inch mat covers a longer one. A
-            <strong>typical folding treadmill</strong> fits a 36 x 78-inch mat with a margin. A
-            <strong>long or wide machine</strong> — commercial-style treadmills are often 80 inches
+            covers a compact pad and a 30 x 72-inch mat covers a longer one. A <strong>typical folding treadmill</strong> fits a 36 x 78-inch mat with a margin. A <strong>long or wide machine</strong> — commercial-style treadmills are often 80 inches
             long or more — needs something like 36 x 90 inches at minimum, and a 48-inch-wide mat if the frame is wider than about 32 inches.
           </p>
           <p>
@@ -586,7 +537,7 @@ const schema = {
         </div>
 
         <div id="thickness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Thickness and Density</h2>
+          <h2>Thickness and Density</h2>
 <p>
             Thickness is the figure people compare, but density is the figure that matters, and
             the two are easy to confuse. A thick soft mat is worse under a treadmill than a thin
@@ -599,8 +550,7 @@ const schema = {
             roughly 4 mm to 1/4 inch, protect a hard floor from scratches, dents, sweat and dust,
             and stop the frame rattling on tile or wood. They do little for noise travelling into
             the floor below. <strong>Thin rubber mats</strong>, around 3/16 inch, are heavier and
-            grippier than vinyl of the same thickness and are our choice for carpet.
-            <strong>Thick rubber mats</strong>, 3/8 inch and up, are the ones that do meaningful
+            grippier than vinyl of the same thickness and are our choice for carpet. <strong>Thick rubber mats</strong>, 3/8 inch and up, are the ones that do meaningful
             vibration work and are what we would put down in an upstairs room.
           </p>
           <p>
@@ -618,7 +568,7 @@ const schema = {
         </div>
 
         <div id="materials" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. PVC or Rubber, and the Smell</h2>
+          <h2>PVC or Rubber, and the Smell</h2>
 <p>
             Almost every treadmill mat is either PVC (vinyl) or rubber, and the choice is mostly
             decided by your floor and how much noise matters.
@@ -648,7 +598,7 @@ const schema = {
         </div>
 
         <div id="floor-vs-noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Floor Protection Versus Noise</h2>
+          <h2>Floor Protection Versus Noise</h2>
 <p>
             Be clear about which problem you are buying the mat to solve, because the answer
             changes the mat.
@@ -666,11 +616,7 @@ const schema = {
             carried into the floor structure, and a dense mat genuinely reduces some of it. That is
             the job the thick rubber pick is for, and even it will take the edge off rather than
             remove the problem. On a lightweight upper floor, walking rather than running and the
-            choice of machine matter more than the mat. Our guide to
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            covers the machine side, and our
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a>
-            covers the trade-offs of running above someone else.
+            choice of machine matter more than the mat. Our guide to <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> covers the machine side, and our <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a> covers the trade-offs of running above someone else.
           </p>
           <p>
             A useful test before spending on a heavy rubber mat: ask someone to stand in the room
@@ -680,7 +626,7 @@ const schema = {
         </div>
 
         <div id="carpet" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Treadmill Mats on Carpet</h2>
+          <h2>Treadmill Mats on Carpet</h2>
 <p>
             Carpet changes the job. On a hard floor the mat mostly protects the surface; on carpet
             it is a barrier that keeps carpet fibre away from the motor's cooling intake, and a
@@ -701,14 +647,12 @@ const schema = {
           </p>
           <p>
             On deep pile or soft foam underlay, no mat on its own will stop the frame settling. The
-            fix is a rigid board under the mat, and our guide to
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a>
-            explains when you need one and how to size it.
+            fix is a rigid board under the mat, and our guide to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a> explains when you need one and how to size it.
           </p>
         </div>
 
         <div id="setup-and-care" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Laying the Mat and Looking After It</h2>
+          <h2>Laying the Mat and Looking After It</h2>
 <p>
             Most mat problems after purchase are installation problems, and they are easy to
             avoid.
@@ -732,9 +676,7 @@ const schema = {
             edges of a mat as well as on top. Every month or two, wipe the top with a damp cloth
             and vacuum around the edges; a few times a year, fold back the margins and vacuum the
             floor underneath. On a rubber mat, avoid solvent cleaners, which can soften the
-            surface. Our guide to
-            <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a>
-            covers the machine itself.
+            surface. Our guide to <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a> covers the machine itself.
           </p>
           <p>
             <strong>Know when to replace it.</strong> A mat that has split, curled at a corner you
@@ -745,7 +687,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If your machine came with a mat</strong>, use it. Several treadmill makers sell
             or include a mat sized for their own frames, and it only needs replacing if it is too
@@ -755,162 +697,171 @@ const schema = {
             <strong>If the treadmill sits on bare concrete</strong> in a garage or basement and
             nobody is underneath, a mat is a convenience rather than a necessity. A cheap PVC mat
             still keeps the frame feet off a cold or damp floor and makes sweeping easier, but you
-            do not need rubber. Our
-            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a>
-            covers the bigger issues out there, which are damp and temperature.
+            do not need rubber. Our <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a> covers the bigger issues out there, which are damp and temperature.
           </p>
           <p>
             <strong>If you already have rubber gym flooring</strong>, it is doing the job a mat
             would do, and another layer adds little. If the treadmill shares a room with weights and
-            you are choosing a floor for the whole space, our
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">home gym flooring guide</a>
-            compares rubber tiles, rolls, sheets and stall mats.
+            you are choosing a floor for the whole space, our <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">home gym flooring guide</a> compares rubber tiles, rolls, sheets and stall mats.
           </p>
           <p>
             <strong>If your problem is noise you hear in the same room</strong>, a mat will
-            disappoint you. Look at the machine instead, starting with our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
-            guide. And if you are kitting out a new machine more broadly, our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            puts the mat alongside the lubricant, heart-rate strap and surge protection decisions.
+            disappoint you. Look at the machine instead, starting with our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a> guide. And if you are kitting out a new machine more broadly, our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> puts the mat alongside the lubricant, heart-rate strap and surge protection decisions.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill mat?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people with a folding treadmill on a hard floor, a treadmill-specific vinyl mat around 36 x 78 inches, such as the SuperMats TreadMat. If the treadmill is upstairs, choose a thick rubber mat instead. On carpet, choose a heavy rubber mat rather than foam. The best mat is the one that suits your floor and is bigger than your machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What size treadmill mat do I need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Measure the treadmill's overall footprint, unfolded, not the belt size, then add a few inches on every side and more at the front and back. A typical folding treadmill needs about 36 x 78 inches, long machines 36 x 90 inches or more, and a walking pad 30 x 60 or 30 x 72 inches depending on its length.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How thick should a treadmill mat be?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For floor protection on a hard floor, around 4 mm to 1/4 inch is enough. For noise in a room below, look for dense rubber at 3/8 inch or more. Density matters more than thickness: a thick soft mat lets the frame rock and is worse than a thinner firm one. Treat listed thicknesses with caution and check the maker's figure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a rubber or PVC treadmill mat better?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                PVC is lighter, cheaper and fine for protecting a hard ground-floor surface. Rubber is heavier, grips better and damps more vibration, so it is the better choice on carpet and upstairs. Rubber usually smells when new and can be heavy to move, and both materials can discolour some vinyl and pale wood floors, so check compatibility.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a treadmill mat stop noise for neighbours below?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It will reduce it, not stop it. A dense rubber mat takes the edge off the vibration that travels into the floor and is heard as a thud below. It does almost nothing for motor or belt noise in the room itself. On a lightweight upper floor, walking rather than running and choosing a quieter machine matter more than the mat.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a mat for a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On carpet or a finished hard floor, yes, for the same reasons as a treadmill: it protects the floor and keeps fibre and dust away from the motor. Because walking pads are small and light, a compact 30 x 60 or 30 x 72-inch mat is enough. On sealed concrete or existing rubber flooring, a mat is optional.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill Mat</h2>
+          <p>Each of these turns a cheap, simple purchase into one that does not do its job.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Sizing the mat to the belt</h3>
+              <p>The belt size on the box is always smaller than the machine. A mat cut to a 20 x 60-inch belt will leave the rear feet and rollers on its edge, where they curl it, and the motor intake over bare floor. Use the overall unfolded footprint from the manual and add a margin on every side.</p>
+            </li>
+            <li>
+              <h3>Buying soft foam for carpet</h3>
+              <p>Thick interlocking foam tiles compress under a treadmill’s feet, so on carpet they make the frame rock more, not less. Choose a dense rubber mat that stays firm, and on deep pile or foam underlay add a rigid board beneath it. Stability matters more than cushioning under a machine.</p>
+            </li>
+            <li>
+              <h3>Expecting a thin vinyl mat to fix noise</h3>
+              <p>A 4 mm vinyl mat protects the floor and stops rattles. It does very little for the thud heard below, and nothing for motor noise in the room. If noise is the reason you are buying, buy thick dense rubber and still expect improvement rather than silence.</p>
+            </li>
+            <li>
+              <h3>Unrolling a rubber mat straight into a bedroom</h3>
+              <p>Most recycled rubber mats smell when new, and in a closed room that can last weeks. Air the mat in a garage or outdoors for several days first. Then check under it after a few weeks if your floor is vinyl or pale wood, because some rubber can discolour those finishes.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill Mat</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these turns a cheap, simple purchase into one that does not do its job.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sizing the mat to the belt</h3>
-              <p class="text-gray-700 text-sm m-0">The belt size on the box is always smaller than the machine. A mat cut to a 20 x 60-inch belt will leave the rear feet and rollers on its edge, where they curl it, and the motor intake over bare floor. Use the overall unfolded footprint from the manual and add a margin on every side.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying soft foam for carpet</h3>
-              <p class="text-gray-700 text-sm m-0">Thick interlocking foam tiles compress under a treadmill’s feet, so on carpet they make the frame rock more, not less. Choose a dense rubber mat that stays firm, and on deep pile or foam underlay add a rigid board beneath it. Stability matters more than cushioning under a machine.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a thin vinyl mat to fix noise</h3>
-              <p class="text-gray-700 text-sm m-0">A 4 mm vinyl mat protects the floor and stops rattles. It does very little for the thud heard below, and nothing for motor noise in the room. If noise is the reason you are buying, buy thick dense rubber and still expect improvement rather than silence.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Unrolling a rubber mat straight into a bedroom</h3>
-              <p class="text-gray-700 text-sm m-0">Most recycled rubber mats smell when new, and in a closed room that can last weeks. Air the mat in a garage or outdoors for several days first. Then check under it after a few weeks if your floor is vinyl or pale wood, because some rubber can discolour those finishes.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Setup Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/do-you-need-a-treadmill-mat/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Setup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Do You Need a Treadmill Mat?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What a mat actually does for the floor, the motor and the noise, and when it is optional.</p>
-            </a>
-            <a href="/treadmill-on-carpet/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Carpet</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Putting a Treadmill on Carpet</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When a mat is enough, when you need a rigid board, and how carpet fibre reaches the motor.</p>
-            </a>
-            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Noise</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The machine side of the noise problem, which matters more than any mat.</p>
-            </a>
-            <a href="/best-treadmill-mats-for-carpet/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Mats for Carpet</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five treadmill mats for carpet checked against their Amazon listings: dense rubber and solid vinyl that…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            For a treadmill on a hard ground-floor surface, buy a properly sized vinyl mat such as the
-            <strong class="text-white">SuperMats TreadMat</strong>, and spend the difference on
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            For a treadmill on a hard ground-floor surface, buy a properly sized vinyl mat such as the <strong class="text-white">SuperMats TreadMat</strong>, and spend the difference on
             getting the size right rather than on thickness. On carpet or under a big machine,
             choose heavy rubber; upstairs, choose thick dense rubber and expect it to soften the
             noise below rather than remove it.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whichever you buy, measure the machine's overall footprint unfolded, add a margin, and
             check the listed size and thickness against the exact listing. If you are still
-            deciding whether you need one at all,
-            <a href="/do-you-need-a-treadmill-mat/" class="text-[#5AA9FF] font-bold no-underline">start here</a>.
+            deciding whether you need one at all, <a href="/do-you-need-a-treadmill-mat/" class="text-[#5AA9FF] font-bold no-underline">start here</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/do-you-need-a-treadmill-mat/">Do You Need a Treadmill Mat?</a></li>
+            <li><a href="/treadmill-on-carpet/">Putting a Treadmill on Carpet</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best treadmill mat?</h3></summary>
+            <p class="faq-a">
+              For most people with a folding treadmill on a hard floor, a treadmill-specific vinyl mat around 36 x 78 inches, such as the SuperMats TreadMat. If the treadmill is upstairs, choose a thick rubber mat instead. On carpet, choose a heavy rubber mat rather than foam. The best mat is the one that suits your floor and is bigger than your machine.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What size treadmill mat do I need?</h3></summary>
+            <p class="faq-a">
+              Measure the treadmill's overall footprint, unfolded, not the belt size, then add a few inches on every side and more at the front and back. A typical folding treadmill needs about 36 x 78 inches, long machines 36 x 90 inches or more, and a walking pad 30 x 60 or 30 x 72 inches depending on its length.
             </p>
+          </details>
+          <details>
+            <summary><h3>How thick should a treadmill mat be?</h3></summary>
+            <p class="faq-a">
+              For floor protection on a hard floor, around 4 mm to 1/4 inch is enough. For noise in a room below, look for dense rubber at 3/8 inch or more. Density matters more than thickness: a thick soft mat lets the frame rock and is worse than a thinner firm one. Treat listed thicknesses with caution and check the maker's figure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a rubber or PVC treadmill mat better?</h3></summary>
+            <p class="faq-a">
+              PVC is lighter, cheaper and fine for protecting a hard ground-floor surface. Rubber is heavier, grips better and damps more vibration, so it is the better choice on carpet and upstairs. Rubber usually smells when new and can be heavy to move, and both materials can discolour some vinyl and pale wood floors, so check compatibility.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will a treadmill mat stop noise for neighbours below?</h3></summary>
+            <p class="faq-a">
+              It will reduce it, not stop it. A dense rubber mat takes the edge off the vibration that travels into the floor and is heard as a thud below. It does almost nothing for motor or belt noise in the room itself. On a lightweight upper floor, walking rather than running and choosing a quieter machine matter more than the mat.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a mat for a walking pad?</h3></summary>
+            <p class="faq-a">
+              On carpet or a finished hard floor, yes, for the same reasons as a treadmill: it protects the floor and keeps fibre and dust away from the motor. Because walking pads are small and light, a compact 30 x 60 or 30 x 72-inch mat is enough. On sealed concrete or existing rubber flooring, a mat is optional.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Setup Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/do-you-need-a-treadmill-mat/" class="card">
+            <div class="c-kicker">Setup</div>
+            <div class="c-title">Do You Need a Treadmill Mat?</div>
+            <p class="c-blurb">What a mat actually does for the floor, the motor and the noise, and when it is optional.</p>
+          </a>
+          <a href="/treadmill-on-carpet/" class="card">
+            <div class="c-kicker">Carpet</div>
+            <div class="c-title">Putting a Treadmill on Carpet</div>
+            <p class="c-blurb">When a mat is enough, when you need a rigid board, and how carpet fibre reaches the motor.</p>
+          </a>
+          <a href="/quiet-treadmills/" class="card">
+            <div class="c-kicker">Noise</div>
+            <div class="c-title">Quiet Treadmills</div>
+            <p class="c-blurb">The machine side of the noise problem, which matters more than any mat.</p>
+          </a>
+          <a href="/best-treadmill-mats-for-carpet/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill Mats for Carpet</div>
+            <p class="c-blurb">Five treadmill mats for carpet checked against their Amazon listings: dense rubber and solid vinyl that…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

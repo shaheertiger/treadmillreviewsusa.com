@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Foot Pod Guide (2026): How They Work and Calibrate";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-foot-pod-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "training");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,101 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Calibrate Your Pod", link: "#calibration" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillfootpodguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillfootpodguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/training/">Workouts & Training</a>
+        <span aria-hidden="true">›</span>
+        <span>Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Foot Pod Guide: How They Work</h1>
+      <p class="ed-dek">
+        A foot pod is a small sensor on your shoe that tells a watch or an app how fast you are running, on any treadmill, whether the machine is connected or not. It is also only as good as its calibration. Here is what a pod measures, how to calibrate it against a belt speed you have actually checked, how pairing works, and when a treadmill that broadcasts its own speed makes a pod unnecessary.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 13, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Foot Pod Guide: <span class="text-[#5AA9FF]">How They Work</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A foot pod is a small sensor on your shoe that tells a watch or an app how fast you are running, on any treadmill, whether the machine is connected or not. It is also only as good as its calibration. Here is what a pod measures, how to calibrate it against a belt speed you have actually checked, how pairing works, and when a treadmill that broadcasts its own speed makes a pod unnecessary.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#calibration" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Calibrating a Foot Pod
-          </a>
-          <a href="#pod-or-ftms" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Pod or FTMS Treadmill?
-          </a>
-        </div>
+        <a href="#calibration" class="btn-ghost">Calibrating a Foot Pod</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.3k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the claims below.</strong> We have not tested foot pods
-          ourselves. How a pod works and how to calibrate one are described in general terms
-          that apply across brands; where we name a specific device, app or menu, the detail
-          comes from the maker's own documentation — Zwift's support articles on compatible
-          running hardware and footpod calibration, and Garmin's watch manuals — or from figures
-          already published in our own roundups. Menus, compatibility lists and firmware change,
-          so check your device's current manual and Zwift's current hardware list for the exact
-          model you own. Worked calibration examples are arithmetic, not measurements.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Is a Treadmill Foot Pod? The Short Answer</a>
-          <a href="#how-it-measures" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How a Foot Pod Measures Pace</a>
-          <a href="#pod-vs-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Pod Pace vs Belt Speed: Which Is the Truth?</a>
-          <a href="#check-the-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Step One: Check the Belt Before You Calibrate the Pod</a>
-          <a href="#calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Calibrating a Foot Pod Against the Belt</a>
-          <a href="#pairing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pairing a Foot Pod With Zwift, Watches and Apps</a>
-          <a href="#daily-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Mounting, Shoes and Battery: Living With a Pod</a>
-          <a href="#pod-or-ftms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When You Need a Foot Pod, and When an FTMS Treadmill Is Enough</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Other Ways to Get Treadmill Pace Into an App</a>
-          <a href="#what-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. If You Are Shopping for a Foot Pod or a Zwift Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A treadmill foot pod is a small motion sensor that clips to your laces or sits in a
           pocket under the insole. It measures how your foot moves with each stride, turns that
           into pace, distance and cadence, and broadcasts the result to a watch, a phone or a
@@ -208,8 +146,37 @@ const schema = {
           pairing works, and when you need one at all.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the claims below.</strong> We have not tested foot pods
+          ourselves. How a pod works and how to calibrate one are described in general terms
+          that apply across brands; where we name a specific device, app or menu, the detail
+          comes from the maker's own documentation — Zwift's support articles on compatible
+          running hardware and footpod calibration, and Garmin's watch manuals — or from figures
+          already published in our own roundups. Menus, compatibility lists and firmware change,
+          so check your device's current manual and Zwift's current hardware list for the exact
+          model you own. Worked calibration examples are arithmetic, not measurements.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">What Is a Treadmill Foot Pod? The Short Answer</a></li>
+            <li><a href="#how-it-measures">How a Foot Pod Measures Pace</a></li>
+            <li><a href="#pod-vs-belt">Pod Pace vs Belt Speed: Which Is the Truth?</a></li>
+            <li><a href="#check-the-belt">Step One: Check the Belt Before You Calibrate the Pod</a></li>
+            <li><a href="#calibration">Calibrating a Foot Pod Against the Belt</a></li>
+            <li><a href="#pairing">Pairing a Foot Pod With Zwift, Watches and Apps</a></li>
+            <li><a href="#daily-use">Mounting, Shoes and Battery: Living With a Pod</a></li>
+            <li><a href="#pod-or-ftms">When You Need a Foot Pod, and When an FTMS Treadmill Is Enough</a></li>
+            <li><a href="#alternatives">Other Ways to Get Treadmill Pace Into an App</a></li>
+            <li><a href="#what-to-buy">If You Are Shopping for a Foot Pod or a Zwift Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Is a Treadmill Foot Pod? The Short Answer</h2>
+          <h2>What Is a Treadmill Foot Pod? The Short Answer</h2>
 <p>
             <strong>A foot pod is a shoe-mounted sensor that estimates your running speed from the
             motion of your foot, so a watch or app can record treadmill pace without any
@@ -230,15 +197,13 @@ const schema = {
             leg moves, and your leg is not exactly the model. Calibrated against a belt speed you
             have checked, a good pod is a reliable source of pace. Calibrated against a console you
             have not checked, it faithfully copies the console's error. If you are deciding
-            between a pod and a new treadmill for Zwift, our guide to the
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
-            compares both routes, and recommends the pod for anyone who already owns a treadmill
+            between a pod and a new treadmill for Zwift, our guide to the <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a> compares both routes, and recommends the pod for anyone who already owns a treadmill
             they like.
           </p>
         </div>
 
         <div id="how-it-measures" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How a Foot Pod Measures Pace</h2>
+          <h2>How a Foot Pod Measures Pace</h2>
 <p>
             A foot pod has no idea how fast the belt is turning. Everything it reports is
             inferred from how your foot moves through each stride.
@@ -282,7 +247,7 @@ const schema = {
         </div>
 
         <div id="pod-vs-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Pod Pace vs Belt Speed: Which Is the Truth?</h2>
+          <h2>Pod Pace vs Belt Speed: Which Is the Truth?</h2>
 <p>
             On a treadmill your average speed is, by definition, the belt's speed: you stay in
             the same place in the room, so over a minute you have covered exactly as much belt as
@@ -293,9 +258,7 @@ const schema = {
             <li><strong>The console</strong> usually infers belt speed from the motor or a roller
             sensor. <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>Belt slip</a>, a dry deck, a heavy runner slowing the belt at each footstrike, and
             roller wear can all make the belt run slower than the display says, typically by a
-            small percentage that grows with speed and load. Our guide to whether
-            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">your treadmill speed is accurate</a>
-            explains why.</li>
+            small percentage that grows with speed and load. Our guide to whether <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">your treadmill speed is accurate</a> explains why.</li>
             <li><strong>The pod</strong> infers speed from your stride. Its error comes from its
             model and its calibration, and it varies with pace, fatigue, shoe and how firmly it is
             mounted.</li>
@@ -316,7 +279,7 @@ const schema = {
         </div>
 
         <div id="check-the-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Step One: Check the Belt Before You Calibrate the Pod</h2>
+          <h2>Step One: Check the Belt Before You Calibrate the Pod</h2>
 <p>
             The most common foot pod mistake is calibrating it to the treadmill console without
             checking the console. If the belt is actually turning at 5.7 mph while the display
@@ -339,16 +302,14 @@ const schema = {
             hour.</li>
           </ol>
           <p>
-            Our
-            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a>
-            walks through the method in full, with a worked example and the console's own
+            Our <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a> walks through the method in full, with a worked example and the console's own
             calibration modes. Do it once at the speed you will calibrate the pod at, and note the
             result. That number, not the display, is your reference.
           </p>
         </div>
 
         <div id="calibration" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Calibrating a Foot Pod Against the Belt</h2>
+          <h2>Calibrating a Foot Pod Against the Belt</h2>
 <p>
             Calibration means telling the pod, or the device it reports to, how far its estimate
             is from the truth, so it can scale every future reading by the same amount. The exact
@@ -404,7 +365,7 @@ const schema = {
         </div>
 
         <div id="pairing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pairing a Foot Pod With Zwift, Watches and Apps</h2>
+          <h2>Pairing a Foot Pod With Zwift, Watches and Apps</h2>
 <p>
             Foot pods talk to other devices over two wireless standards, and which one you use
             decides what the pod can connect to.
@@ -435,9 +396,7 @@ const schema = {
           </p>
           <p>
             Most Zwift connection problems with pods are range and body blocking, a pod already
-            grabbed by another app, or a flat battery. Our
-            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
-            covers where to put the screen, Bluetooth versus ANT+ on different devices, and the
+            grabbed by another app, or a flat battery. Our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a> covers where to put the screen, Bluetooth versus ANT+ on different devices, and the
             common fixes in order, so we will not repeat them here.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Watches</h3>
@@ -452,7 +411,7 @@ const schema = {
         </div>
 
         <div id="daily-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Mounting, Shoes and Battery: Living With a Pod</h2>
+          <h2>Mounting, Shoes and Battery: Living With a Pod</h2>
 <p>
             A pod's accuracy depends as much on how it is worn as on how it is calibrated. A few
             habits keep it consistent.
@@ -483,7 +442,7 @@ const schema = {
         </div>
 
         <div id="pod-or-ftms" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When You Need a Foot Pod, and When an FTMS Treadmill Is Enough</h2>
+          <h2>When You Need a Foot Pod, and When an FTMS Treadmill Is Enough</h2>
 <p>
             The alternative to a pod is a treadmill that broadcasts its own speed over Bluetooth
             FTMS, the open Fitness Machine Service standard. Zwift can pair to a compatible FTMS
@@ -525,7 +484,7 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Other Ways to Get Treadmill Pace Into an App</h2>
+          <h2>Other Ways to Get Treadmill Pace Into an App</h2>
 <p>
             A foot pod and an FTMS treadmill are the two main routes, but not the only ones.
           </p>
@@ -538,9 +497,7 @@ const schema = {
             <li><strong>A chest strap with running metrics.</strong> Some straps measure body
             movement as well as heart rate. Garmin says its HRM 600 sends treadmill pace and
             distance to compatible Garmin watches. If you were going to buy a strap anyway and
-            use a Garmin watch, that may be enough. Our comparison of
-            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps and wrist heart rate</a>
-            covers the heart rate side of that decision.</li>
+            use a Garmin watch, that may be enough. Our comparison of <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps and wrist heart rate</a> covers the heart rate side of that decision.</li>
             <li><strong>A belt-speed sensor.</strong> Zwift's compatible hardware list includes a
             treadmill sensor, the Runn, which reads belt speed on compatible machines and
             broadcasts it over Bluetooth. It measures the machine rather than you, so it does not
@@ -556,7 +513,7 @@ const schema = {
         </div>
 
         <div id="what-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. If You Are Shopping for a Foot Pod or a Zwift Treadmill</h2>
+          <h2>If You Are Shopping for a Foot Pod or a Zwift Treadmill</h2>
 <p>
             What to look for, in order of importance:
           </p>
@@ -575,154 +532,165 @@ const schema = {
             add cost.</li>
           </ul>
           <p>
-            If you are weighing a pod against a new machine, our
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">roundup of Zwift-ready treadmills and the pod that works on any machine</a>
-            covers four treadmills whose makers state Zwift support, alongside the Stryd 5.0
-            for adding Zwift to a treadmill you already own. Our
-            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
-            puts the foot pod alongside the heart rate strap, fan and mat if you are kitting out a
+            If you are weighing a pod against a new machine, our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">roundup of Zwift-ready treadmills and the pod that works on any machine</a> covers four treadmills whose makers state Zwift support, alongside the Stryd 5.0
+            for adding Zwift to a treadmill you already own. Our <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a> puts the foot pod alongside the heart rate strap, fan and mat if you are kitting out a
             treadmill more broadly.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a foot pod for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A foot pod is a small sensor that clips to your shoe or sits under the insole. It measures the motion of your foot with each stride, estimates your pace, distance and cadence, and broadcasts them to a watch or app over Bluetooth, ANT+ or both. Because it measures you rather than the machine, it works on any treadmill.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How accurate is a foot pod on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A well-calibrated pod can be a reliable pace source, but only once it has been calibrated against a belt speed you have checked. Uncalibrated, it can be several percent off, and accuracy can shift with pace, fatigue, shoe and mounting. Better pods hold their calibration across a wider range of speeds than cheaper ones.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I calibrate a foot pod on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                First measure the belt's real speed with a mark, a tape measure and a stopwatch. Then run steadily at that speed, compare the pod's pace or distance with the truth, and adjust the calibration factor in the pod's app, your watch or the training app until they agree. Calibrate at the pace you run most often.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do I need a foot pod if my treadmill has Bluetooth?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not if the treadmill broadcasts its speed over the open Bluetooth FTMS standard and your app supports it. Many treadmills use Bluetooth only for their maker's own app, though, and those cannot feed Zwift directly. Check for FTMS or a manufacturer statement naming your app; if neither exists, a foot pod is the reliable route.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which foot pods work with Zwift?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Zwift's compatible running hardware list names the Zwift RunPod, Stryd footpods, the Polar Stride Sensor and Garmin's foot pod, which is ANT+ only and needs an ANT+ adapter or bridge. Zwift recommends calibrating a footpod before using it. Lists change, so check Zwift's current support page for the exact model before buying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a foot pod more accurate than the treadmill console?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not automatically. The console infers belt speed from the motor or a roller and can read high when the belt slows under load. The pod infers speed from your stride and depends on its calibration. A pod calibrated against a measured belt can be more truthful than an unchecked console; a pod calibrated to that console simply copies its error.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Foot Pods</h2>
+          <p>Foot pods are simple devices, and almost every bad reading traces back to calibration, mounting or a connection the pod was never going to make.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Calibrating the pod to an unchecked console</h3>
+              <p>If the console reads 6.0 mph while the belt turns at 5.7, a pod calibrated to the display will over-read by the same margin everywhere, including outdoors. Measure the belt's real speed with a mark and a stopwatch first, then calibrate the pod to that figure rather than to the number on the screen.</p>
+            </li>
+            <li>
+              <h3>Calibrating at one pace and trusting it at all paces</h3>
+              <p>Your stride changes shape as you speed up, so a calibration done at an easy jog can drift at interval pace. Calibrate at the speed you run most, then check the pod at a faster measured speed. If it drifts a long way, decide which pace matters more or consider a pod that holds calibration better.</p>
+            </li>
+            <li>
+              <h3>Wearing it loose or on a different shoe</h3>
+              <p>A pod that wobbles on loose laces records the wobble as stride motion, and a very different shoe changes both the mount and your gait. Clip it tight in the same position every time, and recheck the calibration whenever you change shoes or move the pod between the laces and an insole pocket.</p>
+            </li>
+            <li>
+              <h3>Buying a pod you do not need</h3>
+              <p>If your treadmill already broadcasts its speed over Bluetooth FTMS to the app you use, a pod mainly adds a second opinion. If you only walk and read the console, it adds nothing. Check what your machine and app already support before spending money on a sensor.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Foot Pods</h2>
-          <p class="text-gray-700 leading-relaxed">Foot pods are simple devices, and almost every bad reading traces back to calibration, mounting or a connection the pod was never going to make.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating the pod to an unchecked console</h3>
-              <p class="text-gray-700 text-sm m-0">If the console reads 6.0 mph while the belt turns at 5.7, a pod calibrated to the display will over-read by the same margin everywhere, including outdoors. Measure the belt's real speed with a mark and a stopwatch first, then calibrate the pod to that figure rather than to the number on the screen.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating at one pace and trusting it at all paces</h3>
-              <p class="text-gray-700 text-sm m-0">Your stride changes shape as you speed up, so a calibration done at an easy jog can drift at interval pace. Calibrate at the speed you run most, then check the pod at a faster measured speed. If it drifts a long way, decide which pace matters more or consider a pod that holds calibration better.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Wearing it loose or on a different shoe</h3>
-              <p class="text-gray-700 text-sm m-0">A pod that wobbles on loose laces records the wobble as stride motion, and a very different shoe changes both the mount and your gait. Clip it tight in the same position every time, and recheck the calibration whenever you change shoes or move the pod between the laces and an insole pocket.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a pod you do not need</h3>
-              <p class="text-gray-700 text-sm m-0">If your treadmill already broadcasts its speed over Bluetooth FTMS to the app you use, a pod mainly adds a second opinion. If you only walk and read the console, it adds nothing. Check what your machine and app already support before spending money on a sensor.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Tech Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-zwift/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Zwift</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four treadmills with maker-stated Zwift support, plus a pod for any machine.</p>
-            </a>
-            <a href="/zwift-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Set-up</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Zwift Treadmill Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">How Zwift Run works, screen placement, Bluetooth vs ANT+ and connection fixes.</p>
-            </a>
-            <a href="/treadmill-calibration/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accuracy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calibration</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Check belt speed and incline, and calibrate a watch or pod to the result.</p>
-            </a>
-            <a href="/best-foot-pods-for-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Foot pod</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Foot Pods for Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Foot pods for accurate treadmill pace and Zwift, with the watches and apps each one pairs with.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A foot pod turns your stride into pace on any treadmill, and it is
             only as accurate as its calibration.</strong> Measure the belt's real speed first, then
             calibrate the pod to that figure at the pace you run most, and wear it firmly on the
             same shoe.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If your treadmill already broadcasts speed over Bluetooth FTMS to your app, you may not
             need a pod at all; if it does not, a pod is far cheaper than a new machine. To compare
-            the two routes, see our
-            <a href="/best-treadmills-for-zwift/" class="text-[#5AA9FF] font-bold no-underline">guide to the best treadmills and foot pod for Zwift</a>.
+            the two routes, see our <a href="/best-treadmills-for-zwift/" class="text-[#5AA9FF] font-bold no-underline">guide to the best treadmills and foot pod for Zwift</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-zwift/">Best Treadmills for Zwift</a></li>
+            <li><a href="/zwift-treadmill-guide/">Zwift Treadmill Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is a foot pod for a treadmill?</h3></summary>
+            <p class="faq-a">
+              A foot pod is a small sensor that clips to your shoe or sits under the insole. It measures the motion of your foot with each stride, estimates your pace, distance and cadence, and broadcasts them to a watch or app over Bluetooth, ANT+ or both. Because it measures you rather than the machine, it works on any treadmill.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How accurate is a foot pod on a treadmill?</h3></summary>
+            <p class="faq-a">
+              A well-calibrated pod can be a reliable pace source, but only once it has been calibrated against a belt speed you have checked. Uncalibrated, it can be several percent off, and accuracy can shift with pace, fatigue, shoe and mounting. Better pods hold their calibration across a wider range of speeds than cheaper ones.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do I calibrate a foot pod on a treadmill?</h3></summary>
+            <p class="faq-a">
+              First measure the belt's real speed with a mark, a tape measure and a stopwatch. Then run steadily at that speed, compare the pod's pace or distance with the truth, and adjust the calibration factor in the pod's app, your watch or the training app until they agree. Calibrate at the pace you run most often.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do I need a foot pod if my treadmill has Bluetooth?</h3></summary>
+            <p class="faq-a">
+              Not if the treadmill broadcasts its speed over the open Bluetooth FTMS standard and your app supports it. Many treadmills use Bluetooth only for their maker's own app, though, and those cannot feed Zwift directly. Check for FTMS or a manufacturer statement naming your app; if neither exists, a foot pod is the reliable route.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which foot pods work with Zwift?</h3></summary>
+            <p class="faq-a">
+              Zwift's compatible running hardware list names the Zwift RunPod, Stryd footpods, the Polar Stride Sensor and Garmin's foot pod, which is ANT+ only and needs an ANT+ adapter or bridge. Zwift recommends calibrating a footpod before using it. Lists change, so check Zwift's current support page for the exact model before buying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a foot pod more accurate than the treadmill console?</h3></summary>
+            <p class="faq-a">
+              Not automatically. The console infers belt speed from the motor or a roller and can read high when the belt slows under load. The pod infers speed from your stride and depends on its calibration. A pod calibrated against a measured belt can be more truthful than an unchecked console; a pod calibrated to that console simply copies its error.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Workouts & Training">
+          <h2 class="section-title">More in Workouts & Training</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/training/" class="btn-ghost">See all Workouts & Training</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Tech Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-zwift/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Treadmills for Zwift</div>
+            <p class="c-blurb">Four treadmills with maker-stated Zwift support, plus a pod for any machine.</p>
+          </a>
+          <a href="/zwift-treadmill-guide/" class="card">
+            <div class="c-kicker">Set-up</div>
+            <div class="c-title">Zwift Treadmill Guide</div>
+            <p class="c-blurb">How Zwift Run works, screen placement, Bluetooth vs ANT+ and connection fixes.</p>
+          </a>
+          <a href="/treadmill-calibration/" class="card">
+            <div class="c-kicker">Accuracy</div>
+            <div class="c-title">Treadmill Calibration</div>
+            <p class="c-blurb">Check belt speed and incline, and calibrate a watch or pod to the result.</p>
+          </a>
+          <a href="/best-foot-pods-for-treadmill/" class="card">
+            <div class="c-kicker">Foot pod</div>
+            <div class="c-title">Best Foot Pods for Treadmill</div>
+            <p class="c-blurb">Foot pods for accurate treadmill pace and Zwift, with the watches and apps each one pairs with.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

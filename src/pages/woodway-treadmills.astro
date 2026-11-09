@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Woodway Treadmill Buyer's Guide (2026): 4Front, Curve and Cost";
 const description =
@@ -168,6 +167,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/woodway-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -189,66 +194,56 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Read the Short Answer", link: "#short-answer" }}
+  stickyCta={{ text: "Closest on Amazon: Life Fitness Run CX", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-woodwaytreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-woodwaytreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Woodway Treadmills: Slat Belts, Prices and Who Should Buy One</h1>
+      <p class="ed-dek">
+        Woodway builds slat-belt treadmills in Waukesha, Wisconsin, for sports teams, hospitals, gyms and a small number of homes. This guide covers how the slat belt differs from an ordinary treadmill, what the motorised and Curve ranges cost, how the warranty reads, what a house needs to take one, and when a cheaper premium machine is the better buy.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Woodway Treadmills: <span class="text-[#5AA9FF]">Slat Belts, Prices and Who Should Buy One</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Woodway builds slat-belt treadmills in Waukesha, Wisconsin, for sports teams, hospitals, gyms and a small number of homes. This guide covers how the slat belt differs from an ordinary treadmill, what the motorised and Curve ranges cost, how the warranty reads, what a house needs to take one, and when a cheaper premium machine is the better buy.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#cost" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What It Costs
-          </a>
-        </div>
+        <a href="#life-fitness-run-cx" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#life-fitness-run-cx"><img src="https://m.media-amazon.com/images/I/31c6k3CSuYL._SL500_.jpg" alt="Life Fitness Run CX" width="500" height="435" decoding="async" /></a>
+          <a href="#sunny-sf-x7110"><img src="https://m.media-amazon.com/images/I/410X25pL25L._SL500_.jpg" alt="Sunny Health &amp; Fitness SF-X7110 Curved Treadmill" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+        <figcaption>Life Fitness Run CX · Sunny Health &amp; Fitness SF-X7110 Curved Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people who search for a Woodway treadmill have run on one somewhere else: a
+          university weight room, a physiotherapy clinic, a professional team's training centre, or
+          the curved manual treadmill in the corner of a gym. The ride is distinctive, the price is
+          not published for most models, and the question that follows is usually the same: is a
+          Woodway worth buying for a home, and if so, which one? This guide answers that from
+          Woodway's own documents and independent coverage, and flags where those sources do not
+          agree. It also says plainly that, for most home buyers, a Woodway is not the sensible
+          choice, and explains who the exceptions are.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           20 October 2026 we checked woodway.com (its treadmill index, the 4Front, Vive,
           Mercury/Path, Pro, Ridgerunner, Curve and Curve LTG product pages, its FAQ and its
@@ -266,47 +261,27 @@ const schema = {
           sold by Woodway and its distributors rather than on Amazon, so the two cards show the
           nearest alternatives Amazon does sell, with the figures checked for our cushioned and
           curved treadmill guides, while the text stays about Woodway's own machines.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is a Woodway Treadmill Worth It? The Short Answer</a>
-          <a href="#who-makes-woodway" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes Woodway Treadmills?</a>
-          <a href="#slat-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How a Slat Belt Differs From an Ordinary Treadmill</a>
-          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Motorised Range: 4Front, Vive, Mercury, Path and Pro</a>
-          <a href="#curve-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Non-Motorised Curve Range</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What a Woodway Costs, and Why</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Warranty, Buy-Back and the Home-Use Question</a>
-          <a href="#home-requirements" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Power, Floor and Space: Putting a Woodway in a Home</a>
-          <a href="#used-and-refurbished" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Buying a Used, Refurbished or Certified Pre-Owned Woodway</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy a Woodway, and Who Should Not</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Is a Woodway Treadmill Worth It? The Short Answer</a></li>
+            <li><a href="#who-makes-woodway">Who Makes Woodway Treadmills?</a></li>
+            <li><a href="#slat-belt">How a Slat Belt Differs From an Ordinary Treadmill</a></li>
+            <li><a href="#lineup">The Motorised Range: 4Front, Vive, Mercury, Path and Pro</a></li>
+            <li><a href="#curve-range">The Non-Motorised Curve Range</a></li>
+            <li><a href="#cost">What a Woodway Costs, and Why</a></li>
+            <li><a href="#warranty">Warranty, Buy-Back and the Home-Use Question</a></li>
+            <li><a href="#home-requirements">Power, Floor and Space: Putting a Woodway in a Home</a></li>
+            <li><a href="#used-and-refurbished">Buying a Used, Refurbished or Certified Pre-Owned Woodway</a></li>
+            <li><a href="#who-should-buy">Who Should Buy a Woodway, and Who Should Not</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people who search for a Woodway treadmill have run on one somewhere else: a
-          university weight room, a physiotherapy clinic, a professional team's training centre, or
-          the curved manual treadmill in the corner of a gym. The ride is distinctive, the price is
-          not published for most models, and the question that follows is usually the same: is a
-          Woodway worth buying for a home, and if so, which one? This guide answers that from
-          Woodway's own documents and independent coverage, and flags where those sources do not
-          agree. It also says plainly that, for most home buyers, a Woodway is not the sensible
-          choice, and explains who the exceptions are.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is a Woodway Treadmill Worth It? The Short Answer</h2>
+          <h2>Is a Woodway Treadmill Worth It? The Short Answer</h2>
 <p>
             <strong>A Woodway is worth the money for a small group of home buyers: people who run or
             walk on a treadmill most days, expect to keep it for decades, weigh more than most home
@@ -339,7 +314,7 @@ const schema = {
         </div>
 
         <div id="who-makes-woodway" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes Woodway Treadmills?</h2>
+          <h2>Who Makes Woodway Treadmills?</h2>
 <p>
             Woodway does. The brand's own history, repeated in its owner's manuals, traces it to a
             German technical director, Willi Schoenberger, who was dissatisfied with the treadmills
@@ -383,7 +358,7 @@ const schema = {
         </div>
 
         <div id="slat-belt" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How a Slat Belt Differs From an Ordinary Treadmill</h2>
+          <h2>How a Slat Belt Differs From an Ordinary Treadmill</h2>
 <p>
             On a conventional treadmill, a fabric-and-PVC belt wraps around two rollers and slides
             over a flat deck. Friction between the belt and the deck is the main source of wear: the
@@ -449,7 +424,7 @@ const schema = {
         </div>
 
         <div id="lineup" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Motorised Range: 4Front, Vive, Mercury, Path and Pro</h2>
+          <h2>The Motorised Range: 4Front, Vive, Mercury, Path and Pro</h2>
 <p>
             Woodway's treadmill index on 20 October 2026 grouped its motorised machines into a 4Front
             series (4Front, Vive, Ridgerunner, Mercury/Path and Pro/Pro XL), a Boost unweighting
@@ -529,78 +504,67 @@ const schema = {
             across Woodway and at least one independent source.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="curve-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Non-Motorised Curve Range</h2>
+          <h2>The Non-Motorised Curve Range</h2>
 <p>
             The Curve is the Woodway most gym-goers know: a self-powered treadmill whose running
             surface curves upward at front and back, so that stepping forward on the curve speeds the
@@ -628,8 +592,7 @@ const schema = {
             and it needs no outlet. It is harder to hold a steady easy pace on, it has no incline, and
             TreadmillReviews.com notes that runners often go slower on one than on a motorised
             treadmill. If your plan is daily steady running, walking or incline walking, a motorised
-            machine fits better. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill roundup</a>
-            sets the Curve LTG against the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner</a>, SOLE, TrueForm and others.
+            machine fits better. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill roundup</a> sets the Curve LTG against the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner</a>, SOLE, TrueForm and others.
           </p>
           <p>
             Price is the other difference. Woodway does not publish a price for the full Curve; Garage
@@ -639,7 +602,7 @@ const schema = {
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What a Woodway Costs, and Why</h2>
+          <h2>What a Woodway Costs, and Why</h2>
 <p>
             These are the prices Woodway's own shop listed on the day we checked (20 Oct 2026). They
             change, they exclude delivery and tax, and most of the range is sold only by quote.
@@ -682,8 +645,7 @@ const schema = {
             (5 hp peak) brushless servo drive, which is a lower continuous figure than many $2,000
             home treadmills print on their labels. That is not a weakness: a slat surface on bearings
             needs less power to turn than a belt dragging over a deck, and brands rate motors in
-            different ways. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why the label is a poor way to compare machines.
+            different ways. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains why the label is a poor way to compare machines.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The price compared with the alternatives</h3>
           <p>
@@ -697,7 +659,7 @@ const schema = {
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Warranty, Buy-Back and the Home-Use Question</h2>
+          <h2>Warranty, Buy-Back and the Home-Use Question</h2>
 <p>
             Woodway publishes one set of warranty terms per model rather than separate residential
             and commercial terms. Most of its spec sheets label them "Commercial Warranty", and its
@@ -715,9 +677,7 @@ const schema = {
             treadmills should notice that they are shorter on paper than the lifetime frame or
             lifetime parts cover some cheaper brands offer. Landice, for example, gives lifetime parts
             on its residential L7 and L8. Woodway's argument is that its surface rarely needs a
-            claim; ours is that you should read the terms for what they say. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how to compare terms across brands.
+            claim; ours is that you should read the terms for what they say. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how to compare terms across brands.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Conditions that matter</h3>
           <ul>
@@ -738,7 +698,7 @@ const schema = {
         </div>
 
         <div id="home-requirements" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Power, Floor and Space: Putting a Woodway in a Home</h2>
+          <h2>Power, Floor and Space: Putting a Woodway in a Home</h2>
 <p>
             A Woodway arrives as commercial equipment and expects the house to meet commercial
             installation standards. Before ordering one, check four things.
@@ -773,18 +733,15 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery</h3>
           <p>
-            Woodway's FAQ says treadmills ship by van line to the exact location, and that stairs,
-            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a> and sites a tractor-trailer cannot reach are not included in freight rates.
+            Woodway's FAQ says treadmills ship by van line to the exact location, and that stairs, <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a> and sites a tractor-trailer cannot reach are not included in freight rates.
             The manual says most Woodways arrive fully assembled. Measure every doorway, turn and
             stair on the route, tell Woodway about them when you ask for a quote, and get the
-            delivered price in writing. Our guide to
-            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">putting a gym treadmill in a home</a>
-            covers the same questions for other commercial brands.
+            delivered price in writing. Our guide to <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">putting a gym treadmill in a home</a> covers the same questions for other commercial brands.
           </p>
         </div>
 
         <div id="used-and-refurbished" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Buying a Used, Refurbished or Certified Pre-Owned Woodway</h2>
+          <h2>Buying a Used, Refurbished or Certified Pre-Owned Woodway</h2>
 <p>
             The slat surface's long life makes used Woodways attractive, and there are three ways to
             buy one.
@@ -825,13 +782,12 @@ const schema = {
             <li>Price delivery separately. Moving a 400-plus-pound treadmill costs real money.</li>
           </ul>
           <p>
-            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            covers the general checks that apply to any second-hand machine.
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> covers the general checks that apply to any second-hand machine.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy a Woodway, and Who Should Not</h2>
+          <h2>Who Should Buy a Woodway, and Who Should Not</h2>
 <p>
             <strong>Buy a 4Front if the treadmill is central to your training.</strong> If you run or
             walk on it most days, share it with other heavy users, want speeds up to 18 mph or steep
@@ -854,8 +810,7 @@ const schema = {
             <strong>Buy something cheaper if your use is ordinary home use.</strong> Thirty to sixty
             minutes a day of walking and running does not need a commercial machine, and a premium
             conventional treadmill does that job for $3,000 to $7,000 with a longer warranty on paper.
-            Our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice guide</a>
-            covers one heavy American alternative, and the commercial-grade roundup linked below
+            Our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice guide</a> covers one heavy American alternative, and the commercial-grade roundup linked below
             covers several more.
           </p>
           <p>
@@ -871,143 +826,159 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where are Woodway treadmills made?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Woodway USA is based in Waukesha, Wisconsin, and builds its treadmills to order. The brand began in Germany in the 1970s, and Woodway says the American company was formed in 1990 after a US licence was granted to a Waukesha manufacturer in 1988. Woodway does not say on the pages we read where every component comes from.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a Woodway treadmill cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 20 October 2026 Woodway’s shop listed the non-motorised Curve LTG at $3,495 on sale, the Vive at $11,395 and the 4Front from $13,995 to $19,995 depending on console and options. Certified pre-owned 4Fronts were $11,100 to $14,950. Most other models are sold by quote. Prices change and exclude delivery.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long does a Woodway slat belt last?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Woodway rates its slat running surface for about 150,000 miles and says owners should not need to replace a belt or deck. That is the manufacturer’s rating rather than independent data. The axle bearings still need greasing once a year, and the drive belt needs checking every six months, according to the 4Front manual.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Woodway make a home treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Woodway says there is no difference between its home and commercial treadmills: all are built to the same commercial standard. The Curve LTG is the model it positions most clearly for home gyms, and the Mercury and Vive are its more compact motorised options. Warranty terms are the same commercial-grade terms whether the machine goes into a house or a gym.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What electrical supply does a Woodway need?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Motorised Woodways need a dedicated 20-amp circuit that shares no neutral. The 4Front runs on 115 volts with a NEMA 5-20R outlet, or 208/230 volts with a NEMA 6-20R outlet. Woodway’s FAQ says models with top speeds of 16.5 mph and above need 208/230 volts. The non-motorised Curve models need no outlet.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a used Woodway treadmill worth buying?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Often, if the price reflects its age and condition. Woodway’s own certified pre-owned units carry a two-year parts and one-year labour warranty, but were priced close to new when we checked. Remanufactured units from dealers are cheaper with the seller’s warranty. A private sale carries no factory cover, because Woodway’s warranty belongs to the original purchaser.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Woodway Treadmill</h2>
+          <p>Woodway treadmills rarely fail in the ways cheaper machines do. These are the errors that cost buyers money, cover or a delivery day.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Plugging it into an ordinary household outlet</h3>
+              <p>A motorised Woodway needs a dedicated 20-amp circuit with a NEMA 5-20R outlet, or a 208/230-volt NEMA 6-20R supply on faster models, and damage from ignoring electrical codes is excluded from the warranty. Confirm the exact supply for your configuration with Woodway, and have an electrician install the circuit before the treadmill arrives.</p>
+            </li>
+            <li>
+              <h3>Not planning the delivery route</h3>
+              <p>A 4Front weighs 445 lb and usually arrives assembled, and Woodway’s freight rates exclude stairs, disassembly and hard-to-reach sites. Measure every doorway, turn and stair, send those measurements with your quote request, and get the delivered and installed price in writing before you pay.</p>
+            </li>
+            <li>
+              <h3>Skipping the maintenance log</h3>
+              <p>Woodway’s manual says the warranty does not apply without maintenance documentation, and its buy-back guarantee depends on proof of annual preventive maintenance. Keep a dated record of every six-monthly check and the annual bearing greasing from the first month, or buy Woodway’s preventive maintenance programme.</p>
+            </li>
+            <li>
+              <h3>Buying second-hand and assuming the warranty follows</h3>
+              <p>Woodway’s warranty is given only to the original purchaser, and Woodway says it does not authorise secondary resellers. A private or dealer used unit is covered only by what the seller offers. Get that warranty in writing, check the serial number with Woodway, and budget for a new belt if the unit ships with a worn one.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Woodway Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Woodway treadmills rarely fail in the ways cheaper machines do. These are the errors that cost buyers money, cover or a delivery day.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Plugging it into an ordinary household outlet</h3>
-              <p class="text-gray-700 text-sm m-0">A motorised Woodway needs a dedicated 20-amp circuit with a NEMA 5-20R outlet, or a 208/230-volt NEMA 6-20R supply on faster models, and damage from ignoring electrical codes is excluded from the warranty. Confirm the exact supply for your configuration with Woodway, and have an electrician install the circuit before the treadmill arrives.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not planning the delivery route</h3>
-              <p class="text-gray-700 text-sm m-0">A 4Front weighs 445 lb and usually arrives assembled, and Woodway’s freight rates exclude stairs, disassembly and hard-to-reach sites. Measure every doorway, turn and stair, send those measurements with your quote request, and get the delivered and installed price in writing before you pay.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the maintenance log</h3>
-              <p class="text-gray-700 text-sm m-0">Woodway’s manual says the warranty does not apply without maintenance documentation, and its buy-back guarantee depends on proof of annual preventive maintenance. Keep a dated record of every six-monthly check and the annual bearing greasing from the first month, or buy Woodway’s preventive maintenance programme.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying second-hand and assuming the warranty follows</h3>
-              <p class="text-gray-700 text-sm m-0">Woodway’s warranty is given only to the original purchaser, and Woodway says it does not authorise secondary resellers. A private or dealer used unit is covered only by what the seller offers. Get that warranty in writing, check the serial number with Woodway, and budget for a new belt if the unit ships with a worn one.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-curved-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Curved Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The Curve LTG against AssaultRunner, SOLE, TrueForm and others.</p>
-            </a>
-            <a href="/landice-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Landice Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The heavy American alternative at a fraction of a 4Front’s price.</p>
-            </a>
-            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial-Grade Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Gym-built machines for home, and what they ask of your space.</p>
-            </a>
-            <a href="/rogue-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Rogue Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A Woodway is the most durable treadmill most people will ever
           stand on, and for most home buyers it is more machine than they need.</strong> The 4Front,
           from $13,995 when we checked, makes sense for daily heavy use, heavier users and anyone
           planning on decades of ownership; the Curve LTG is the affordable way into the brand for a
           runner who wants a curved manual treadmill.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Before ordering, confirm the electrical supply, the floor, the room temperature and the
           delivery route, and read the warranty for what it is: commercial-grade terms for the
-          original owner, dependent on maintenance records. If ordinary home use is the plan, our
-          <a href="/landice-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Landice guide</a>
-          and <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial-grade roundup</a>
-          show what the same money, or much less, can buy.
+          original owner, dependent on maintenance records. If ordinary home use is the plan, our <a href="/landice-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Landice guide</a> and <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial-grade roundup</a> show what the same money, or much less, can buy.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-curved-treadmills/">Best Curved Treadmills</a></li>
+            <li><a href="/landice-treadmills/">Landice Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Where are Woodway treadmills made?</h3></summary>
+            <p class="faq-a">
+              Woodway USA is based in Waukesha, Wisconsin, and builds its treadmills to order. The brand began in Germany in the 1970s, and Woodway says the American company was formed in 1990 after a US licence was granted to a Waukesha manufacturer in 1988. Woodway does not say on the pages we read where every component comes from.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does a Woodway treadmill cost?</h3></summary>
+            <p class="faq-a">
+              On 20 October 2026 Woodway’s shop listed the non-motorised Curve LTG at $3,495 on sale, the Vive at $11,395 and the 4Front from $13,995 to $19,995 depending on console and options. Certified pre-owned 4Fronts were $11,100 to $14,950. Most other models are sold by quote. Prices change and exclude delivery.
             </p>
+          </details>
+          <details>
+            <summary><h3>How long does a Woodway slat belt last?</h3></summary>
+            <p class="faq-a">
+              Woodway rates its slat running surface for about 150,000 miles and says owners should not need to replace a belt or deck. That is the manufacturer’s rating rather than independent data. The axle bearings still need greasing once a year, and the drive belt needs checking every six months, according to the 4Front manual.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does Woodway make a home treadmill?</h3></summary>
+            <p class="faq-a">
+              Woodway says there is no difference between its home and commercial treadmills: all are built to the same commercial standard. The Curve LTG is the model it positions most clearly for home gyms, and the Mercury and Vive are its more compact motorised options. Warranty terms are the same commercial-grade terms whether the machine goes into a house or a gym.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What electrical supply does a Woodway need?</h3></summary>
+            <p class="faq-a">
+              Motorised Woodways need a dedicated 20-amp circuit that shares no neutral. The 4Front runs on 115 volts with a NEMA 5-20R outlet, or 208/230 volts with a NEMA 6-20R outlet. Woodway’s FAQ says models with top speeds of 16.5 mph and above need 208/230 volts. The non-motorised Curve models need no outlet.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a used Woodway treadmill worth buying?</h3></summary>
+            <p class="faq-a">
+              Often, if the price reflects its age and condition. Woodway’s own certified pre-owned units carry a two-year parts and one-year labour warranty, but were priced close to new when we checked. Remanufactured units from dealers are cheaper with the seller’s warranty. A private sale carries no factory cover, because Woodway’s warranty belongs to the original purchaser.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-curved-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Curved Treadmills</div>
+            <p class="c-blurb">The Curve LTG against AssaultRunner, SOLE, TrueForm and others.</p>
+          </a>
+          <a href="/landice-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Landice Treadmills</div>
+            <p class="c-blurb">The heavy American alternative at a fraction of a 4Front’s price.</p>
+          </a>
+          <a href="/commercial-treadmills/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Commercial-Grade Treadmills</div>
+            <p class="c-blurb">Gym-built machines for home, and what they ask of your space.</p>
+          </a>
+          <a href="/rogue-treadmills/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Rogue Fitness Treadmills</div>
+            <p class="c-blurb">The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

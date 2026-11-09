@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Delivery (2026): Curbside vs White Glove, Costs and Checks";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-delivery-guide/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,112 +109,72 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Compare Delivery Tiers", link: "#delivery-tiers" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmilldeliveryguide" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmilldeliveryguide)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Delivery: Curbside to White Glove</h1>
+      <p class="ed-dek">
+        A treadmill is bought once and delivered once, and the delivery tier decides whether a 250 lb crate ends up in your spare room or at the bottom of your driveway. Here is what each tier includes, what it typically costs, and what to check before you sign.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Delivery: <span class="text-[#5AA9FF]">Curbside to White Glove</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill is bought once and delivered once, and the delivery tier decides whether a 250 lb crate ends up in your spare room or at the bottom of your driveway. Here is what each tier includes, what it typically costs, and what to check before you sign.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#delivery-tiers" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Four Delivery Tiers
-          </a>
-          <a href="#inspecting" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Inspecting on Delivery
-          </a>
-        </div>
+        <a href="#delivery-tiers" class="btn-ghost">The Four Delivery Tiers</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Delivery prices on this page are
-          typical US ranges as of late 2026, not quotes from any seller or carrier. Delivery
-          services are named inconsistently, priced differently by region, and often bundled or
-          discounted during promotions. Read exactly what the tier on your order includes, in
-          writing, before you pay for it.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Delivery Options: The Short Answer</a>
-          <a href="#delivery-tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Curbside, Threshold, Room of Choice and White Glove</a>
-          <a href="#costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Each Delivery Tier Typically Costs</a>
-          <a href="#which-tier" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Which Delivery Tier You Actually Need</a>
-          <a href="#measure-route" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Measure the Route for the Box, Not the Machine</a>
-          <a href="#stairs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Stairs, Walk-Ups and Basements</a>
-          <a href="#apartments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Apartment Buildings: Elevators, Loading Docks and COIs</a>
-          <a href="#scheduling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Scheduling, Delivery Windows and the Day Before</a>
-          <a href="#inspecting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Inspecting the Delivery Before You Sign</a>
-          <a href="#damaged" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What to Do If the Treadmill Arrives Damaged</a>
-          <a href="#after-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. After the Crew Leaves: Packaging, Assembly and First Run</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Treadmill delivery comes in four broad tiers — curbside, threshold, room of choice and
           white glove — and the difference between them is who carries a very heavy crate the last
           fifty feet. Choosing the right one is mostly a question of stairs, helpers and building
           rules, and it is worth settling before you order rather than on the doorstep.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Delivery prices on this page are
+          typical US ranges as of late 2026, not quotes from any seller or carrier. Delivery
+          services are named inconsistently, priced differently by region, and often bundled or
+          discounted during promotions. Read exactly what the tier on your order includes, in
+          writing, before you pay for it.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Delivery Options: The Short Answer</a></li>
+            <li><a href="#delivery-tiers">Curbside, Threshold, Room of Choice and White Glove</a></li>
+            <li><a href="#costs">What Each Delivery Tier Typically Costs</a></li>
+            <li><a href="#which-tier">Which Delivery Tier You Actually Need</a></li>
+            <li><a href="#measure-route">Measure the Route for the Box, Not the Machine</a></li>
+            <li><a href="#stairs">Stairs, Walk-Ups and Basements</a></li>
+            <li><a href="#apartments">Apartment Buildings: Elevators, Loading Docks and COIs</a></li>
+            <li><a href="#scheduling">Scheduling, Delivery Windows and the Day Before</a></li>
+            <li><a href="#inspecting">Inspecting the Delivery Before You Sign</a></li>
+            <li><a href="#damaged">What to Do If the Treadmill Arrives Damaged</a></li>
+            <li><a href="#after-delivery">After the Crew Leaves: Packaging, Assembly and First Run</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Delivery Options: The Short Answer</h2>
+          <h2>Treadmill Delivery Options: The Short Answer</h2>
 <p>
             <strong>Curbside</strong> means the crate is left at the end of your driveway or at the
-            building entrance, and everything after that is your job. <strong>Threshold</strong>
-            means it is brought to or just inside your front door. <strong>Room of choice</strong>
-            means the crew carries it to the room you name. <strong>White glove</strong> normally
+            building entrance, and everything after that is your job. <strong>Threshold</strong> means it is brought to or just inside your front door. <strong>Room of choice</strong> means the crew carries it to the room you name. <strong>White glove</strong> normally
             means room of choice plus assembly and removal of the packaging, and sometimes a quick
             functional check before the crew leaves.
           </p>
@@ -230,7 +195,7 @@ const schema = {
         </div>
 
         <div id="delivery-tiers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Curbside, Threshold, Room of Choice and White Glove</h2>
+          <h2>Curbside, Threshold, Room of Choice and White Glove</h2>
 <p>
             The names vary between sellers and carriers, so treat these as descriptions of what
             happens rather than as guaranteed terms.
@@ -261,14 +226,12 @@ const schema = {
           </p>
           <p>
             There are also hybrid arrangements: room of choice with assembly but no packaging
-            removal, or assembly booked separately through a third party after a curbside drop. Our
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy guide</a>
-            covers which kinds of seller tend to include which.
+            removal, or assembly booked separately through a third party after a curbside drop. Our <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy guide</a> covers which kinds of seller tend to include which.
           </p>
         </div>
 
         <div id="costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Each Delivery Tier Typically Costs</h2>
+          <h2>What Each Delivery Tier Typically Costs</h2>
 <p>
             These are typical ranges for a standard home treadmill in the US, not quotes. They move
             with region, machine size, distance from the carrier's depot and the time of year.
@@ -294,22 +257,16 @@ const schema = {
             Promotional periods change the arithmetic. Retailers frequently include upgraded delivery
             or assembly rather than cutting the headline price further, and a machine that costs
             slightly more with white glove included can be the cheaper purchase once you price the
-            alternative. Our guide to
-            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a>
-            puts delivery alongside the other extras that belong in the total, and our
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">price calendar</a>
-            explains when those bundled offers tend to appear.
+            alternative. Our guide to <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">what a treadmill costs</a> puts delivery alongside the other extras that belong in the total, and our <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">price calendar</a> explains when those bundled offers tend to appear.
           </p>
         </div>
 
         <div id="which-tier" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Which Delivery Tier You Actually Need</h2>
+          <h2>Which Delivery Tier You Actually Need</h2>
 <p>
             Start with weight, because it rules out more options than anything else. A boxed home
             treadmill commonly weighs somewhere between about 150 and 350 lb depending on size, and
-            the crate has no handles. Our guide to
-            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            gives typical boxed figures by type. A <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> is a different proposition — light
+            the crate has no handles. Our guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a> gives typical boxed figures by type. A <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> is a different proposition — light
             enough that curbside is usually fine.
           </p>
           <p>
@@ -337,7 +294,7 @@ const schema = {
         </div>
 
         <div id="measure-route" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Measure the Route for the Box, Not the Machine</h2>
+          <h2>Measure the Route for the Box, Not the Machine</h2>
 <p>
             Before you order, get the boxed dimensions from the listing or the seller, and compare
             them with every pinch point between the truck and the room: the front door, internal
@@ -352,12 +309,8 @@ const schema = {
             floor or cut a cardboard template and walk it round first.
           </p>
           <p>
-            We will not repeat the full route-planning method here: our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            covers measuring pinch points, stair turns and protecting floors in detail, and the
-            same principles apply to a crate arriving as to a machine leaving. Our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers the room itself, including the clearance behind the deck.
+            We will not repeat the full route-planning method here: our guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> covers measuring pinch points, stair turns and protecting floors in detail, and the
+            same principles apply to a crate arriving as to a machine leaving. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers the room itself, including the clearance behind the deck.
           </p>
           <p>
             Tell the seller about anything unusual when you book: a spiral staircase, a narrow
@@ -368,7 +321,7 @@ const schema = {
         </div>
 
         <div id="stairs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Stairs, Walk-Ups and Basements</h2>
+          <h2>Stairs, Walk-Ups and Basements</h2>
 <p>
             Stairs are where delivery terms matter most and are read least. Room-of-choice and
             white-glove services usually include some stairs, but the details vary: some include
@@ -387,9 +340,7 @@ const schema = {
             when the crate will not make a turn; others will not. Ask before the day, not during it.
           </p>
           <p>
-            If you are taking a curbside delivery and moving the box upstairs yourselves, our
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a>
-            covers the technique, the number of people, and why the downhill person carries the
+            If you are taking a curbside delivery and moving the box upstairs yourselves, our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a> covers the technique, the number of people, and why the downhill person carries the
             most weight. The short version is that a boxed treadmill on a staircase is a two-person
             job at the very least, and a three-person job if you want a spare pair of hands for
             doors and turns.
@@ -397,7 +348,7 @@ const schema = {
         </div>
 
         <div id="apartments" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Apartment Buildings: Elevators, Loading Docks and COIs</h2>
+          <h2>Apartment Buildings: Elevators, Loading Docks and COIs</h2>
 <p>
             Apartment and condo buildings add a layer of rules that the seller does not control and
             often does not know about. Find out what your building requires before you choose a
@@ -428,14 +379,12 @@ const schema = {
           <p>
             <strong>Doormen and concierges.</strong> Many will not sign for or store a freight item
             on your behalf. Plan to be present. And check your lease or building rules on exercise
-            equipment generally — our
-            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a>
-            covers noise and floor rules that are worth knowing before the machine is upstairs.
+            equipment generally — our <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment treadmill guide</a> covers noise and floor rules that are worth knowing before the machine is upstairs.
           </p>
         </div>
 
         <div id="scheduling" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Scheduling, Delivery Windows and the Day Before</h2>
+          <h2>Scheduling, Delivery Windows and the Day Before</h2>
 <p>
             Freight delivery is rarely as precise as parcel delivery. Expect a call or message to
             schedule a day, then a window on that day that may be several hours long. If the
@@ -452,9 +401,7 @@ const schema = {
             <li>Clear and measure the final spot, and decide which way round the machine will face
             so assembly happens in place.</li>
             <li>Check there is a suitable wall outlet within reach. Treadmill manuals almost
-            universally prohibit <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cords</a>, and our
-            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a>
-            explains what to plug into.</li>
+            universally prohibit <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cords</a>, and our <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a> explains what to plug into.</li>
             <li>Have the order confirmation, the delivery terms and your phone to hand for photos.</li>
             <li>Put down the mat if you have one, so the machine is built on it rather than lifted
             onto it later.</li>
@@ -467,7 +414,7 @@ const schema = {
         </div>
 
         <div id="inspecting" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Inspecting the Delivery Before You Sign</h2>
+          <h2>Inspecting the Delivery Before You Sign</h2>
 <p>
             The delivery receipt — sometimes called the proof of delivery, or for freight the bill
             of lading — is the most important piece of paper in this process. What you write on it,
@@ -502,7 +449,7 @@ const schema = {
         </div>
 
         <div id="damaged" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What to Do If the Treadmill Arrives Damaged</h2>
+          <h2>What to Do If the Treadmill Arrives Damaged</h2>
 <p>
             The right response depends on whether the damage is visible at the door or only found
             once the box is open.
@@ -530,29 +477,22 @@ const schema = {
           </p>
           <p>
             <strong>Do not use a machine that might be structurally damaged.</strong> A bent frame
-            or a cracked deck is a safety issue, not a cosmetic one. Our guide to
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
-            covers how returns typically work if it comes to that, and our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
-            covers faults that only appear after the first few weeks.
+            or a cracked deck is a safety issue, not a cosmetic one. Our guide to <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a> covers how returns typically work if it comes to that, and our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a> covers faults that only appear after the first few weeks.
           </p>
         </div>
 
         <div id="after-delivery" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. After the Crew Leaves: Packaging, Assembly and First Run</h2>
+          <h2>After the Crew Leaves: Packaging, Assembly and First Run</h2>
 <p>
             If you took curbside, threshold or room-of-choice delivery, the machine is now a boxed
-            kit in your house. Our
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a>
-            covers the job itself — tools, the two-person lift out of the box, the console cable that
+            kit in your house. Our <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembly guide</a> covers the job itself — tools, the two-person lift out of the box, the console cable that
             catches most people out, and the order to tighten bolts in — so we will not repeat it
             here.
           </p>
           <p>
             If you took white glove, there are still a few checks the crew may not do. Confirm the
             machine is level and does not rock. Check the belt is centred and runs without drifting;
-            our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a>
-            covers the adjustment if it wanders. Find the safety key and confirm it stops the belt.
+            our <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">belt centring guide</a> covers the adjustment if it wanders. Find the safety key and confirm it stops the belt.
             Register the warranty while the paperwork is in front of you.
           </p>
           <p>
@@ -568,143 +508,155 @@ const schema = {
             to announce itself.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is white glove delivery for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                White glove delivery usually means the crew carries the treadmill into the room you choose, unpacks it, assembles it and takes the packaging away, sometimes with a brief power-on check. The term is used loosely, so confirm in writing that assembly and packaging removal are both included rather than assuming.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does treadmill delivery cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Curbside delivery is often included in the price. As typical US ranges, threshold upgrades commonly add around $50 to $150, room of choice around $100 to $200, and full white glove with assembly and packaging removal around $150 to $400 above curbside. Stair, long-carry and remote-area surcharges can add more.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will treadmill delivery bring it upstairs?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if you pay for a tier that includes it. Curbside and threshold delivery stop at the street or the door. Room-of-choice and white-glove services usually include some stairs, but many limit the number of flights or charge per additional flight, and some exclude spiral or very narrow staircases. Read the stair clause before booking.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is a COI for treadmill delivery?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A certificate of insurance is a document from a delivery company's insurer showing it carries liability cover. Many apartment and condo buildings require one before a crew can enter. Get your building's exact requirements in writing, ask the seller early whether their delivery partner can provide it, and allow several working days.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What should I do if my treadmill is delivered damaged?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Photograph the crate before it moves, write specific damage on the delivery receipt before signing, and contact the seller straight away. For concealed damage found after unpacking, report it as soon as you find it, because reporting windows can be short. Keep the packaging, and do not use a machine with a bent frame or cracked deck.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is white glove delivery worth it for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, if the treadmill is going upstairs, you do not have a second strong adult to help, or you would rather not assemble it. White glove often costs less than booking delivery and an assembler separately, and it leaves one company responsible if something is damaged on the way in.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Delivery</h2>
+          <p>Most delivery problems are decided at the checkout page, not on the doorstep. These are the four that cost people the most.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Assuming free delivery means it comes inside</h3>
+              <p>"Free delivery" on a treadmill very often means curbside: a crate weighing as much as an adult left at the end of the driveway. Read the tier description, not the headline, and price the upgrade before comparing sellers.</p>
+            </li>
+            <li>
+              <h3>Measuring the machine instead of the box</h3>
+              <p>The crate cannot fold, tilt or be partly dismantled, and it is often longer than the assembled deck. Compare the boxed dimensions with every door and stair turn on the route, and tell the seller about tight spots when you book.</p>
+            </li>
+            <li>
+              <h3>Forgetting the building</h3>
+              <p>Service elevator bookings, delivery hours and certificate-of-insurance requirements are set by your building, not the seller. A crew turned away at the lobby can mean a failed-delivery fee and a week-long wait for a new slot.</p>
+            </li>
+            <li>
+              <h3>Signing a clean receipt over a damaged box</h3>
+              <p>Signing without noting visible damage is often treated as accepting the delivery in good condition. Photograph the crate, write specific damage on the receipt before signing, and keep the packaging until you have run the machine.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Delivery</h2>
-          <p class="text-gray-700 leading-relaxed">Most delivery problems are decided at the checkout page, not on the doorstep. These are the four that cost people the most.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming free delivery means it comes inside</h3>
-              <p class="text-gray-700 text-sm m-0">"Free delivery" on a treadmill very often means curbside: a crate weighing as much as an adult left at the end of the driveway. Read the tier description, not the headline, and price the upgrade before comparing sellers.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the machine instead of the box</h3>
-              <p class="text-gray-700 text-sm m-0">The crate cannot fold, tilt or be partly dismantled, and it is often longer than the assembled deck. Compare the boxed dimensions with every door and stair turn on the route, and tell the seller about tight spots when you book.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the building</h3>
-              <p class="text-gray-700 text-sm m-0">Service elevator bookings, delivery hours and certificate-of-insurance requirements are set by your building, not the seller. A crew turned away at the lobby can mean a failed-delivery fee and a week-long wait for a new slot.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Signing a clean receipt over a damaged box</h3>
-              <p class="text-gray-700 text-sm m-0">Signing without noting visible damage is often treated as accepting the delivery in good condition. Photograph the crate, write specific damage on the receipt before signing, and keep the packaging until you have run the machine.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-to-assemble-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Assemble a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Tools, time, the console cable and the bolt order.</p>
-            </a>
-            <a href="/how-to-move-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Move a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Measuring the route, stairs and protecting floors.</p>
-            </a>
-            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Space</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Dimensions and Space Requirements</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Footprints, folded sizes and the clearance behind the deck.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Pay for the tier that matches your route.</strong> Curbside is
             fine for a light machine on a level route with two helpers. Anything involving stairs,
             a single person or an apartment building usually justifies room of choice, and white
-            glove is often the best value if you would rather not
-            <a href="/how-to-assemble-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">assemble it yourself</a>.
+            glove is often the best value if you would rather not <a href="/how-to-assemble-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">assemble it yourself</a>.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Settle the building rules, measure the route for the crate, and on the day
-            <strong class="text-white">inspect before you sign</strong>: photograph the box, write
+          <p>
+            Settle the building rules, measure the route for the crate, and on the day <strong class="text-white">inspect before you sign</strong>: photograph the box, write
             specific damage on the receipt, and keep the packaging until the machine has run. If
-            you are moving it yourself, our
-            <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving guide</a>
-            covers the stairs.
+            you are moving it yourself, our <a href="/how-to-move-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">moving guide</a> covers the stairs.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-to-assemble-a-treadmill/">How to Assemble a Treadmill</a></li>
+            <li><a href="/how-to-move-a-treadmill/">How to Move a Treadmill</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is white glove delivery for a treadmill?</h3></summary>
+            <p class="faq-a">
+              White glove delivery usually means the crew carries the treadmill into the room you choose, unpacks it, assembles it and takes the packaging away, sometimes with a brief power-on check. The term is used loosely, so confirm in writing that assembly and packaging removal are both included rather than assuming.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does treadmill delivery cost?</h3></summary>
+            <p class="faq-a">
+              Curbside delivery is often included in the price. As typical US ranges, threshold upgrades commonly add around $50 to $150, room of choice around $100 to $200, and full white glove with assembly and packaging removal around $150 to $400 above curbside. Stair, long-carry and remote-area surcharges can add more.
             </p>
+          </details>
+          <details>
+            <summary><h3>Will treadmill delivery bring it upstairs?</h3></summary>
+            <p class="faq-a">
+              Only if you pay for a tier that includes it. Curbside and threshold delivery stop at the street or the door. Room-of-choice and white-glove services usually include some stairs, but many limit the number of flights or charge per additional flight, and some exclude spiral or very narrow staircases. Read the stair clause before booking.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is a COI for treadmill delivery?</h3></summary>
+            <p class="faq-a">
+              A certificate of insurance is a document from a delivery company's insurer showing it carries liability cover. Many apartment and condo buildings require one before a crew can enter. Get your building's exact requirements in writing, ask the seller early whether their delivery partner can provide it, and allow several working days.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What should I do if my treadmill is delivered damaged?</h3></summary>
+            <p class="faq-a">
+              Photograph the crate before it moves, write specific damage on the delivery receipt before signing, and contact the seller straight away. For concealed damage found after unpacking, report it as soon as you find it, because reporting windows can be short. Keep the packaging, and do not use a machine with a bent frame or cracked deck.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is white glove delivery worth it for a treadmill?</h3></summary>
+            <p class="faq-a">
+              Usually, if the treadmill is going upstairs, you do not have a second strong adult to help, or you would rather not assemble it. White glove often costs less than booking delivery and an assembler separately, and it leaves one company responsible if something is damaged on the way in.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-to-assemble-a-treadmill/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Assemble a Treadmill</div>
+            <p class="c-blurb">Tools, time, the console cable and the bolt order.</p>
+          </a>
+          <a href="/how-to-move-a-treadmill/" class="card">
+            <div class="c-kicker">How-To</div>
+            <div class="c-title">How to Move a Treadmill</div>
+            <p class="c-blurb">Measuring the route, stairs and protecting floors.</p>
+          </a>
+          <a href="/treadmill-dimensions-space-requirements/" class="card">
+            <div class="c-kicker">Space</div>
+            <div class="c-title">Treadmill Dimensions and Space Requirements</div>
+            <p class="c-blurb">Footprints, folded sizes and the clearance behind the deck.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

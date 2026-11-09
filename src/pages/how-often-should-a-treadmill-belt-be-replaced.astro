@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "How Often Should a Treadmill Belt Be Replaced? (2026)";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/how-often-should-a-treadmill-belt-be-replaced/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,105 +109,67 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Five Signs", link: "#five-signs" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-howoftenshouldatreadmillbeltbereplaced" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-howoftenshouldatreadmillbeltbereplaced)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Ownership</span>
+      </nav>
+      <h1 class="ed-title">How Often Should a Treadmill Belt Be Replaced?</h1>
+      <p class="ed-dek">
+        Five to ten years on a maintained machine, and as little as two on one that was never lubricated. The interval is set almost entirely by friction rather than by mileage.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Ownership
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          How Often Should a <span class="text-[#5AA9FF]">Treadmill Belt Be Replaced?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Five to ten years on a maintained machine, and as little as two on one that was never lubricated. The interval is set almost entirely by friction rather than by mileage.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#five-signs" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Five Signs
-          </a>
-          <a href="#cost" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What It Costs
-          </a>
-        </div>
+        <a href="#five-signs" class="btn-ghost">The Five Signs</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="3.5k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Lifespans and prices are
-          typical ranges drawn from manufacturer guidance and common parts pricing rather than
-          measured data from a service network. Belt sizes and part numbers are model-specific, so
-          confirm against your exact machine and model year before ordering anything.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#typical-lifespan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Typical Lifespan</a>
-          <a href="#five-signs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Five Signs a Belt Is Due</a>
-          <a href="#how-to-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How to Check Properly</a>
-          <a href="#what-accelerates-wear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Makes Belts Wear Out Early</a>
-          <a href="#belt-and-deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why the Deck Usually Goes With It</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What It Costs</a>
-          <a href="#diy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Can You Do It Yourself?</a>
-          <a href="#choosing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Choosing a Replacement Belt</a>
-          <a href="#if-you-dont" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Happens If You Leave It</a>
-          <a href="#extending-life" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Getting Ten Years Instead of Three</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. The Short Version</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           The honest answer is that mileage matters less than maintenance. Two identical machines
           with the same hours on them can be five years apart in belt condition, and the variable
           is whether anyone ever lubricated the deck underneath it.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Lifespans and prices are
+          typical ranges drawn from manufacturer guidance and common parts pricing rather than
+          measured data from a service network. Belt sizes and part numbers are model-specific, so
+          confirm against your exact machine and model year before ordering anything.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#typical-lifespan">Typical Lifespan</a></li>
+            <li><a href="#five-signs">The Five Signs a Belt Is Due</a></li>
+            <li><a href="#how-to-check">How to Check Properly</a></li>
+            <li><a href="#what-accelerates-wear">What Makes Belts Wear Out Early</a></li>
+            <li><a href="#belt-and-deck">Why the Deck Usually Goes With It</a></li>
+            <li><a href="#cost">What It Costs</a></li>
+            <li><a href="#diy">Can You Do It Yourself?</a></li>
+            <li><a href="#choosing">Choosing a Replacement Belt</a></li>
+            <li><a href="#if-you-dont">What Happens If You Leave It</a></li>
+            <li><a href="#extending-life">Getting Ten Years Instead of Three</a></li>
+            <li><a href="#verdict">The Short Version</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="typical-lifespan" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Typical Lifespan</h2>
+          <h2>Typical Lifespan</h2>
 <p>
             <strong>A well-maintained home treadmill belt lasts five to ten years</strong>, or
             roughly 1,500 to 3,000 hours of use. For a machine used three times a week for
@@ -228,7 +195,7 @@ const schema = {
         </div>
 
         <div id="five-signs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Five Signs a Belt Is Due</h2>
+          <h2>The Five Signs a Belt Is Due</h2>
 <p>
             <strong>One: visible thinning or shine down the centre.</strong> Look along the belt in
             raking light. A distinct polished strip where your feet land, noticeably smoother than
@@ -259,7 +226,7 @@ const schema = {
         </div>
 
         <div id="how-to-check" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How to Check Properly</h2>
+          <h2>How to Check Properly</h2>
 <p>
             Ten minutes, once a year, ideally as part of the same session in which you clean under
             the belt.
@@ -283,14 +250,12 @@ const schema = {
           <p>
             <strong>Look at the deck at the same time.</strong> A polished or grooved deck surface
             usually accompanies a worn belt, and knowing both conditions is what tells you whether
-            to replace one part or two. Our
-            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">guide to cleaning under the belt</a>
-            covers getting access safely.
+            to replace one part or two. Our <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">guide to cleaning under the belt</a> covers getting access safely.
           </p>
         </div>
 
         <div id="what-accelerates-wear" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Makes Belts Wear Out Early</h2>
+          <h2>What Makes Belts Wear Out Early</h2>
 <p>
             <strong>No lubrication.</strong> By a wide margin the largest factor. A dry belt-deck
             interface is abrasive on every rotation, and it is why a belt can go from a decade to
@@ -322,7 +287,7 @@ const schema = {
         </div>
 
         <div id="belt-and-deck" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why the Deck Usually Goes With It</h2>
+          <h2>Why the Deck Usually Goes With It</h2>
 <p>
             Belt and deck wear as a pair, and replacing one without assessing the other is a common
             and expensive error.
@@ -347,7 +312,7 @@ const schema = {
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What It Costs</h2>
+          <h2>What It Costs</h2>
 <p>
             <strong>Belt part: $80-$250.</strong> Consumer machines sit at the lower end;
             commercial-grade and wide belts at the upper.
@@ -370,13 +335,12 @@ const schema = {
             Set that against the machine's value before proceeding. On a $500 <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a> at
             year six, a $400 professional belt-and-deck job is most of a replacement machine and
             rarely worth it. On a $1,800 machine at year seven, it is straightforwardly good value.
-            Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
-            covers the repair-or-replace threshold.
+            Our <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a> covers the repair-or-replace threshold.
           </p>
         </div>
 
         <div id="diy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Can You Do It Yourself?</h2>
+          <h2>Can You Do It Yourself?</h2>
 <p>
             Yes, for most people. A belt change is mechanically simple and physically awkward rather
             than technically demanding, and it does not involve the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> or any
@@ -400,15 +364,12 @@ const schema = {
           </p>
           <p>
             Whichever route, the last step matters most: set tension with the lift test and then
-            check tracking on a slow unloaded run. Our
-            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">tension guide</a>
-            and <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a>
-            cover both.
+            check tracking on a slow unloaded run. Our <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">tension guide</a> and <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring guide</a> cover both.
           </p>
         </div>
 
         <div id="choosing" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Choosing a Replacement Belt</h2>
+          <h2>Choosing a Replacement Belt</h2>
 <p>
             <strong>Get the exact size.</strong> Belts are specified by length and width, and both
             must match. Do not measure the old belt while it is fitted and under tension — use the
@@ -433,7 +394,7 @@ const schema = {
         </div>
 
         <div id="if-you-dont" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Happens If You Leave It</h2>
+          <h2>What Happens If You Leave It</h2>
 <p>
             Running on a worn belt is not immediately dangerous in most cases, but it is
             progressively expensive.
@@ -457,15 +418,13 @@ const schema = {
         </div>
 
         <div id="extending-life" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Getting Ten Years Instead of Three</h2>
+          <h2>Getting Ten Years Instead of Three</h2>
 <p>
             Belt life is almost entirely within your control, and the interventions are small.
           </p>
           <p>
             <strong>Lubricate every 40 to 50 hours of use.</strong> The single largest factor by a
-            wide margin. Our
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">interval guide</a>
-            covers the timing and the finger test that settles it.
+            wide margin. Our <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">interval guide</a> covers the timing and the finger test that settles it.
           </p>
           <p>
             <strong>Check tracking quarterly.</strong> A belt rubbing a side rail loses an edge in
@@ -486,7 +445,7 @@ const schema = {
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Expect five to ten years</strong> from a maintained belt, and two to three from
             a neglected one. Check it annually while you are cleaning under it.
@@ -506,139 +465,154 @@ const schema = {
             check that figure against a replacement before committing.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How often should a treadmill belt be replaced?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Every five to ten years on a maintained machine, or roughly 1,500 to 3,000 hours of use. A belt that was never lubricated can need replacing in two to three years, because a dry belt-deck interface abrades the backing far faster. Maintenance matters more than mileage.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the signs a treadmill belt needs replacing?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A polished or thinned strip down the centre where your feet land; fraying or curling at the edges; a rough, gritty feel on the underside; slipping that correct lubrication and tension do not resolve; and — most urgently — any separation of the running surface from the fabric backing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does it cost to replace a treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The part is $80 to $250, labour $100 to $200, plus an $80 to $150 call-out at many companies — so roughly $260 to $500 done professionally. If the deck also needs replacing, add $100 to $300, though many decks are reversible and flipping one costs only labour.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I replace the deck when I replace the belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Assess it at the same time. A worn belt has been polishing the deck's low-friction laminate for months, and fitting a new belt onto a worn deck wears the new belt prematurely. Many decks are reversible — flipping one gives you a second deck for labour alone, and the machine is already apart.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I replace a treadmill belt myself?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes for most people. It is mechanically simple and physically awkward rather than technically demanding, and it does not involve the motor compartment or electrical work. Expect two to three hours the first time, and get a second person — the belt is heavy and stiff and even tensioning takes patience.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it dangerous to run on a worn treadmill belt?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually it is expensive rather than dangerous — rising friction makes the motor draw more current, which destroys motors and controller boards. The exception is delamination: a belt whose layers are separating can fail suddenly underfoot. If you can see the surface lifting from the backing, stop using it.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With Treadmill Belt Replacement</h2>
+          <p>The first two cost you a belt you did not need to buy, and the third turns one repair into two.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Replacing a belt that only needed lubricating</h3>
+              <p>Slipping and hesitation under load are usually friction rather than belt wear. Lubricate properly, set tension with the lift test, and run it for a week before concluding the belt is finished. A great many belts are replaced when a $12 bottle of silicone would have fixed the symptom entirely.</p>
+            </li>
+            <li>
+              <h3>Fitting a new belt onto a worn deck</h3>
+              <p>A worn belt has spent months polishing away the deck's low-friction laminate. Put a fresh belt on that surface and it wears prematurely, so you buy another sooner than you should. Assess the deck while the machine is apart, and flip it if it is reversible — the labour overlaps almost entirely.</p>
+            </li>
+            <li>
+              <h3>Ordering a belt by measuring the old one</h3>
+              <p>A fitted belt is under tension and will measure short, and belt dimensions change between model years under the same product name. Use the manufacturer part specification for your exact model and year, and buy from a supplier who lists your model rather than a generic size.</p>
+            </li>
+            <li>
+              <h3>Ignoring tracking after fitting</h3>
+              <p>A new belt almost always needs tracking adjustment, and a belt running off-centre rubs the frame or side rails and destroys an edge within months. Run the machine slowly and unloaded after fitting, watch where the belt sits, and correct with quarter turns on one rear roller bolt at a time.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Belt Replacement</h2>
-          <p class="text-gray-700 leading-relaxed">The first two cost you a belt you did not need to buy, and the third turns one repair into two.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing a belt that only needed lubricating</h3>
-              <p class="text-gray-700 text-sm m-0">Slipping and hesitation under load are usually friction rather than belt wear. Lubricate properly, set tension with the lift test, and run it for a week before concluding the belt is finished. A great many belts are replaced when a $12 bottle of silicone would have fixed the symptom entirely.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fitting a new belt onto a worn deck</h3>
-              <p class="text-gray-700 text-sm m-0">A worn belt has spent months polishing away the deck's low-friction laminate. Put a fresh belt on that surface and it wears prematurely, so you buy another sooner than you should. Assess the deck while the machine is apart, and flip it if it is reversible — the labour overlaps almost entirely.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a belt by measuring the old one</h3>
-              <p class="text-gray-700 text-sm m-0">A fitted belt is under tension and will measure short, and belt dimensions change between model years under the same product name. Use the manufacturer part specification for your exact model and year, and buy from a supplier who lists your model rather than a generic size.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring tracking after fitting</h3>
-              <p class="text-gray-700 text-sm m-0">A new belt almost always needs tracking adjustment, and a belt running off-centre rubs the frame or side rails and destroys an edge within months. Run the machine slowly and unloaded after fitting, watch where the belt sits, and correct with quarter turns on one rear roller bolt at a time.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-often-to-lubricate-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Prevention</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Often to Lubricate a Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The single largest factor in how long a belt lasts.</p>
-            </a>
-            <a href="/how-to-clean-under-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Inspection</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How to Clean Under a Treadmill Belt</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The annual job that gives you the view you need to assess wear.</p>
-            </a>
-            <a href="/treadmill-maintenance-cost/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance Cost</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where a belt change sits against the repair-or-replace threshold.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Five to ten years</strong> maintained, two to three neglected —
             the variable is lubrication, not mileage. Check the belt annually while you have it
             slackened for cleaning, and replace it for a polished centre strip, fraying edges, a
             gritty underside, or slipping that lubrication does not fix.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Any separation of the layers means replace it now rather than plan to. Assess the deck at
-            the same time and <a href="/treadmill-maintenance-cost/" class="text-[#5AA9FF] font-bold no-underline">flip it if it is reversible</a>
-            — the machine is already apart and it doubles deck life for labour alone.
+            the same time and <a href="/treadmill-maintenance-cost/" class="text-[#5AA9FF] font-bold no-underline">flip it if it is reversible</a> — the machine is already apart and it doubles deck life for labour alone.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-often-to-lubricate-treadmill/">How Often to Lubricate a Treadmill</a></li>
+            <li><a href="/how-to-clean-under-treadmill-belt/">How to Clean Under a Treadmill Belt</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>How often should a treadmill belt be replaced?</h3></summary>
+            <p class="faq-a">
+              Every five to ten years on a maintained machine, or roughly 1,500 to 3,000 hours of use. A belt that was never lubricated can need replacing in two to three years, because a dry belt-deck interface abrades the backing far faster. Maintenance matters more than mileage.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What are the signs a treadmill belt needs replacing?</h3></summary>
+            <p class="faq-a">
+              A polished or thinned strip down the centre where your feet land; fraying or curling at the edges; a rough, gritty feel on the underside; slipping that correct lubrication and tension do not resolve; and — most urgently — any separation of the running surface from the fabric backing.
             </p>
+          </details>
+          <details>
+            <summary><h3>How much does it cost to replace a treadmill belt?</h3></summary>
+            <p class="faq-a">
+              The part is $80 to $250, labour $100 to $200, plus an $80 to $150 call-out at many companies — so roughly $260 to $500 done professionally. If the deck also needs replacing, add $100 to $300, though many decks are reversible and flipping one costs only labour.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I replace the deck when I replace the belt?</h3></summary>
+            <p class="faq-a">
+              Assess it at the same time. A worn belt has been polishing the deck's low-friction laminate for months, and fitting a new belt onto a worn deck wears the new belt prematurely. Many decks are reversible — flipping one gives you a second deck for labour alone, and the machine is already apart.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I replace a treadmill belt myself?</h3></summary>
+            <p class="faq-a">
+              Yes for most people. It is mechanically simple and physically awkward rather than technically demanding, and it does not involve the motor compartment or electrical work. Expect two to three hours the first time, and get a second person — the belt is heavy and stiff and even tensioning takes patience.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it dangerous to run on a worn treadmill belt?</h3></summary>
+            <p class="faq-a">
+              Usually it is expensive rather than dangerous — rising friction makes the motor draw more current, which destroys motors and controller boards. The exception is delamination: a belt whose layers are separating can fail suddenly underfoot. If you can see the surface lifting from the backing, stop using it.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Maintenance Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-often-to-lubricate-treadmill/" class="card">
+            <div class="c-kicker">Prevention</div>
+            <div class="c-title">How Often to Lubricate a Treadmill</div>
+            <p class="c-blurb">The single largest factor in how long a belt lasts.</p>
+          </a>
+          <a href="/how-to-clean-under-treadmill-belt/" class="card">
+            <div class="c-kicker">Inspection</div>
+            <div class="c-title">How to Clean Under a Treadmill Belt</div>
+            <p class="c-blurb">The annual job that gives you the view you need to assess wear.</p>
+          </a>
+          <a href="/treadmill-maintenance-cost/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">Treadmill Maintenance Cost</div>
+            <p class="c-blurb">Where a belt change sits against the repair-or-replace threshold.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

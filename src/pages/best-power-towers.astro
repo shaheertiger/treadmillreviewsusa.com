@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Power Towers (2026): 5 Pull-Up and Dip Stations Checked";
 const description =
@@ -249,6 +248,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-power-towers/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -269,66 +274,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: Sportsroyals Power Tower (360 lb)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestpowertowers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestpowertowers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Power Towers and What Their Weight Ratings Leave Out</h1>
+      <p class="ed-dek">
+        A power tower gives you pull-ups, dips, knee raises and push-ups in one freestanding frame, for less than a pair of good dumbbells. The catch is that the weight rating on the listing tells you little about how steady it will feel. Here are five towers on sale now, what we could and could not confirm about each, and the stability, height and assembly checks to make first.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Power Towers <span class="text-[#5AA9FF]">and What Their Weight Ratings Leave Out</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A power tower gives you pull-ups, dips, knee raises and push-ups in one freestanding frame, for less than a pair of good dumbbells. The catch is that the weight rating on the listing tells you little about how steady it will feel. Here are five towers on sale now, what we could and could not confirm about each, and the stability, height and assembly checks to make first.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#capacity" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Ratings vs Reality
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#sportsroyals-power-tower"><img src="https://m.media-amazon.com/images/I/415CKJv4JML._SL500_.jpg" alt="Sportsroyals Power Tower (360 lb)" width="500" height="500" decoding="async" /></a>
+          <a href="#relife-power-tower"><img src="https://m.media-amazon.com/images/I/41d5sC9owHL._SL500_.jpg" alt="RELIFE Rebuild Your Life Power Tower" width="500" height="500" decoding="async" /></a>
+          <a href="#marcy-tc-3515"><img src="https://m.media-amazon.com/images/I/41BbVMLLBVL._SL500_.jpg" alt="Marcy Power Tower TC-3515" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>Sportsroyals Power Tower (360 lb) · RELIFE Rebuild Your Life Power Tower · Marcy Power Tower TC-3515</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best power tower is the one that stays still while you use it, sets the bar high enough
+          for you to hang, and fits under your ceiling. Weight capacity, the figure most listings
+          lead with, is the least useful of the three: the same tower can be sold with three
+          different ratings, and a light frame can carry a higher number than a heavy one. The five
+          towers below were chosen because their key figures could be checked against more than one
+          source, and the guide after them explains how to judge stability, height and assembly for
+          any tower, including the many we could not verify.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.9k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#sportsroyals-power-tower">Sportsroyals Power Tower (360 lb)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Low Ceilings:</span> <a href="#relife-power-tower">RELIFE Rebuild Your Life Power Tower</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Established Brand:</span> <a href="#marcy-tc-3515">Marcy Power Tower TC-3515</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best With a Bench:</span> <a href="#stamina-full-body-power-tower-735">Stamina Full Body Power Tower 735</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Hanging Ab Work:</span> <a href="#stamina-power-tower-1698">Stamina Power Tower 1698</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           towers, and no figure on this page is our own measurement. Each was confirmed as currently
           sold on 19 October 2026 — the Sportsroyals tower on its Amazon listing, which showed it
@@ -342,85 +363,32 @@ const schema = {
           Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices are those we saw on that date and change often. We earn a commission if
           you buy through the Amazon links on this page; it does not change which products we list
-          or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          or what we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy or coaching advice. Weight
           ratings are manufacturer or seller figures, not ours. If you have a shoulder, elbow, back
           or heart condition, are pregnant or postpartum, or are returning from injury, talk to a
           qualified professional before starting pull-ups, dips or hanging exercises.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#sportsroyals-power-tower" class="font-bold text-gray-900 no-underline hover:underline">Sportsroyals Power Tower (360 lb)</a>
-            <a href="#sportsroyals-power-tower" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Low Ceilings:</span>
-            <a href="#relife-power-tower" class="font-bold text-gray-900 no-underline hover:underline">RELIFE Rebuild Your Life Power Tower</a>
-            <a href="#relife-power-tower" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Established Brand:</span>
-            <a href="#marcy-tc-3515" class="font-bold text-gray-900 no-underline hover:underline">Marcy Power Tower TC-3515</a>
-            <a href="#marcy-tc-3515" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best With a Bench:</span>
-            <a href="#stamina-full-body-power-tower-735" class="font-bold text-gray-900 no-underline hover:underline">Stamina Full Body Power Tower 735</a>
-            <a href="#stamina-full-body-power-tower-735" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Hanging Ab Work:</span>
-            <a href="#stamina-power-tower-1698" class="font-bold text-gray-900 no-underline hover:underline">Stamina Power Tower 1698</a>
-            <a href="#stamina-power-tower-1698" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Power Towers</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Towers</a>
-          <a href="#capacity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Weight Capacity: Listing Claims vs What You Can Verify</a>
-          <a href="#stability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Stability, Tipping and Anchoring</a>
-          <a href="#height" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Bar Height for Tall Users and Low Ceilings</a>
-          <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Assembly and Setup</a>
-          <a href="#tower-vs-bar" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Power Tower vs Pull-Up Bar vs Rack</a>
-          <a href="#safe-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Using a Power Tower Safely</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Power Towers</a></li>
+            <li><a href="#how-we-chose">How We Chose These Towers</a></li>
+            <li><a href="#capacity">Weight Capacity: Listing Claims vs What You Can Verify</a></li>
+            <li><a href="#stability">Stability, Tipping and Anchoring</a></li>
+            <li><a href="#height">Bar Height for Tall Users and Low Ceilings</a></li>
+            <li><a href="#assembly">Assembly and Setup</a></li>
+            <li><a href="#tower-vs-bar">Power Tower vs Pull-Up Bar vs Rack</a></li>
+            <li><a href="#safe-use">Using a Power Tower Safely</a></li>
+            <li><a href="#who-should-skip">Who Should Buy Something Else</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best power tower is the one that stays still while you use it, sets the bar high enough
-          for you to hang, and fits under your ceiling. Weight capacity, the figure most listings
-          lead with, is the least useful of the three: the same tower can be sold with three
-          different ratings, and a light frame can carry a higher number than a heavy one. The five
-          towers below were chosen because their key figures could be checked against more than one
-          source, and the guide after them explains how to judge stability, height and assembly for
-          any tower, including the many we could not verify.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Five towers, from a $120 adjustable frame to a tower with a fold-down bench. The short
             version: the Sportsroyals Power Tower is the best power tower for most people on a budget,
@@ -443,17 +411,13 @@ const schema = {
           </table></div>
           <p>
             If you only need a bar to hang from, a doorway or wall-mounted bar costs less and takes
-            no floor space; our guide to
-            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">the best pull-up bars</a>
-            covers those. If you are planning a fuller home gym, a power rack with a pull-up bar may
-            replace a tower altogether, which our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            explains.
+            no floor space; our guide to <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">the best pull-up bars</a> covers those. If you are planning a fuller home gym, a power rack with a pull-up bar may
+            replace a tower altogether, which our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> explains.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Power Towers</h2>
+          <h2>The 5 Best Power Towers</h2>
 <p>
             Each card gives the figures we could confirm from two sources, the price we saw on
             19 October 2026, and who the tower suits. Read the rating with the next sections in
@@ -466,78 +430,67 @@ const schema = {
             all of them.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Towers</h2>
+          <h2>How We Chose These Towers</h2>
 <p>
             We have not tested these towers. They were chosen from listings, maker product pages,
             recall records and independent coverage, and the claims on this page are limited to what
@@ -580,7 +533,7 @@ const schema = {
         </div>
 
         <div id="capacity" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Weight Capacity: Listing Claims vs What You Can Verify</h2>
+          <h2>Weight Capacity: Listing Claims vs What You Can Verify</h2>
 <p>
             Weight capacity is the most prominent number on almost every power tower listing and the
             hardest to trust. Three things we found while checking show why.
@@ -611,15 +564,13 @@ const schema = {
             force of dropping into the bottom of a dip — and stay well inside the lowest rating you
             have seen for that model. If you are close to the limit, or plan weighted pull-ups and
             dips, choose a tower from a maker whose figure two sources agree on, or move up to a
-            bolted rack. Our guide to
-            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity</a>
-            explains why a margin below any stated limit is sensible on home equipment generally,
+            bolted rack. Our guide to <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity</a> explains why a margin below any stated limit is sensible on home equipment generally,
             and the same reasoning applies here.
           </p>
         </div>
 
         <div id="stability" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Stability, Tipping and Anchoring</h2>
+          <h2>Stability, Tipping and Anchoring</h2>
 <p>
             A power tower is a tall frame on a footprint about the size of a doormat, loaded at the
             top. Most of the wobble owners complain about comes from that geometry, from assembly, or
@@ -652,9 +603,7 @@ const schema = {
           <p>
             <strong>The floor matters as much as the frame.</strong> Stand the tower on a hard, level
             surface. FitnessVolt recommends dense gym flooring over soft interlocking tiles, which can
-            let the feet sink unevenly and rock. Rubber stall mats are a good base; our
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a>
-            compares the options. On carpet, put a rigid board or mat under the whole footprint. Keep
+            let the feet sink unevenly and rock. Rubber stall mats are a good base; our <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a> compares the options. On carpet, put a rigid board or mat under the whole footprint. Keep
             a clear zone around the tower, away from doors, glass, a parked car in a garage, or a
             loaded barbell.
           </p>
@@ -667,7 +616,7 @@ const schema = {
         </div>
 
         <div id="height" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Bar Height for Tall Users and Low Ceilings</h2>
+          <h2>Bar Height for Tall Users and Low Ceilings</h2>
 <p>
             Height is where a power tower most often disappoints. Tall users need a bar high enough to
             hang from with legs clear of the floor, and the room needs space above the bar for the top
@@ -719,7 +668,7 @@ const schema = {
         </div>
 
         <div id="assembly" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Assembly and Setup</h2>
+          <h2>Assembly and Setup</h2>
 <p>
             Power towers are among the easier home gym assemblies, but how carefully you build one
             decides how steady it feels. We have not assembled these towers; this is what the makers
@@ -747,14 +696,12 @@ const schema = {
             bolts seat. Retighten everything after the first few sessions, and then monthly.</li>
           </ul>
           <p>
-            Our guide to
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
-            covers the small tools and storage that make maintenance easier.
+            Our guide to <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a> covers the small tools and storage that make maintenance easier.
           </p>
         </div>
 
         <div id="tower-vs-bar" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Power Tower vs Pull-Up Bar vs Rack</h2>
+          <h2>Power Tower vs Pull-Up Bar vs Rack</h2>
 <p>
             A power tower is one of three ways to get a pull-up bar into a home gym, and it is not
             always the right one.
@@ -764,9 +711,7 @@ const schema = {
             A doorway bar costs little and stores away; a wall- or ceiling-mounted bar, fixed into
             studs or joists, is the steadiest option short of a rack and can be mounted at any
             height. Neither gives you dips or knee raises, and both depend on the door frame or the
-            structure you fix them to. Our
-            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar guide</a>
-            covers them in detail.
+            structure you fix them to. Our <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar guide</a> covers them in detail.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Power tower</h3>
           <p>
@@ -780,24 +725,18 @@ const schema = {
             A power rack with a pull-up bar, especially one bolted to the floor, is steadier than any
             tower and lets you squat and press as well; many racks take dip attachments. It costs and
             weighs far more. An all-in-one home gym machine gives you assisted pulling through a lat
-            pulldown rather than true pull-ups. Our guides to
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a>
-            and
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a>
-            cover those routes.
+            pulldown rather than true pull-ups. Our guides to <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a> and <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a> cover those routes.
           </p>
           <p>
             If you cannot yet do a pull-up, a tower is still useful: dips, knee raises and
             hanging holds build towards it, and a looped band hung from the bar takes some of your
-            weight. Our
-            <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a>
-            covers pull-up assistance bands. Check the band's clips and loops for wear, which was the
+            weight. Our <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance band guide</a> covers pull-up assistance bands. Check the band's clips and loops for wear, which was the
             failure in the 2019 pull-up assist recall.
           </p>
         </div>
 
         <div id="safe-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Using a Power Tower Safely</h2>
+          <h2>Using a Power Tower Safely</h2>
 <p>
             Most power tower injuries come from falls and from shoulders pushed too far, not from
             frames breaking. A few habits cover most of the risk.
@@ -817,175 +756,179 @@ const schema = {
             light tower can tip it.</li>
           </ul>
           <p>
-            If you are combining bodyweight work with running or walking, our guide to
-            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">doing the treadmill before or after weights</a>
-            covers the order of a combined session.
+            If you are combining bodyweight work with running or walking, our guide to <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">doing the treadmill before or after weights</a> covers the order of a combined session.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+          <h2>Who Should Buy Something Else</h2>
 <p>
             <strong>If you are near or above any tower's rating</strong>, or want weighted pull-ups
             and dips, a bolted rack or a wall-mounted bar fixed into structure is the safer route.
-            Our
-            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>
-            covers racks with pull-up bars and dip attachments.
+            Our <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a> covers racks with pull-up bars and dip attachments.
           </p>
           <p>
-            <strong>If you only want pull-ups</strong>, a
-            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar</a>
-            costs less and takes no floor space.
+            <strong>If you only want pull-ups</strong>, a <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar</a> costs less and takes no floor space.
           </p>
           <p>
             <strong>If you want a full strength setup in one frame</strong>, an all-in-one machine
-            gives presses, pulldowns, leg work and cables; see our guide to
-            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a>.
-            For loaded upper-body work without a machine, a
-            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench</a>
-            and
-            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            pair well with a tower.
+            gives presses, pulldowns, leg work and cables; see our guide to <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a>.
+            For loaded upper-body work without a machine, a <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight bench</a> and <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a> pair well with a tower.
           </p>
           <p>
             <strong>If you have a shoulder or elbow problem</strong>, pull-ups and dips are among the
             hardest exercises on those joints. Get advice before you buy, and consider starting with
-            a cable machine, where the load can be set below your body weight; our
-            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a>
-            covers the options.
+            a cable machine, where the load can be set below your body weight; our <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machine guide</a> covers the options.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best power tower?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people on a budget, the Sportsroyals Power Tower, which an independent reviewer assembled and found sat flat on its broad base, though not without movement. The RELIFE suits low ceilings and families because its bar adjusts lowest, and the Marcy TC-3515 is the choice from an established brand whose 300 lb rating two sources agree on.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are power tower weight ratings accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Treat them as seller figures. We found the same tower name sold with ratings of 360, 400 and 450 lb, and another tower listed at 330, 400 and 450 lb in different places. Listings rarely say how the rating was set. Stay well inside the lowest figure you see for your model, and count any weighted vest or dip belt.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I stop a power tower from wobbling?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Assemble it with bolts loose, square the frame on a level floor, then tighten in stages and recheck after the first few sessions. Stand it on dense rubber flooring rather than soft tiles or carpet, use the dip and knee-raise stations from the side the manual shows, and train without kipping or swinging, which is what exposes most wobble.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a power tower good for tall people?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the top bar setting is above your straight-arm overhead reach. Measure from the floor to your fingertips with arms raised and compare it with the bar height, not the frame height. Of the towers here, the RELIFE and Marcy TC-3515 reach about 89 inches; the Sportsroyals tops out at about 83. Check the ceiling too, allowing for your head above the bar.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you bolt a power tower to the floor?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The towers on this page are designed as freestanding and their makers give no anchoring instructions. Do not drill through the feet or tie the frame to a wall unless the maker says you may, as that can void the warranty. If you need a frame that will not move, a bolted power rack or a wall-mounted pull-up bar is the better tool.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Power tower or pull-up bar: which should I buy?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Buy a pull-up bar if you only want pull-ups and can fix one to a door frame, wall or ceiling; it is cheaper, steadier and takes no floor space. Buy a power tower if you also want dips, knee raises and push-ups, rent, or cannot drill. A power rack with a pull-up bar beats both if you also want to lift a barbell.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Power Tower</h2>
+          <p>Each of these is easy to avoid before you order and frustrating to discover once the tower is built.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the rating in the title</h3>
+              <p>Power towers are sold in versions with different ratings under near-identical names, and reviews quote whichever version they saw. Open the listing you are buying, find the rating in the specification table, compare it with the manual if you can, and stay well inside the lowest figure you have seen.</p>
+            </li>
+            <li>
+              <h3>Checking the frame height but not your reach</h3>
+              <p>A tower that looks tall online can still leave a tall user pulling with bent knees. Measure your straight-arm overhead reach and compare it with the top bar setting, then add head clearance above the bar and check the ceiling at the exact spot, minus any flooring.</p>
+            </li>
+            <li>
+              <h3>Kipping on a freestanding frame</h3>
+              <p>Swinging pull-ups, muscle-ups and kipping put sideways and lifting forces on a frame that is not bolted to anything, and that is when towers rock and walk across the floor. Keep reps strict on any tower, and move to a bolted rack or a structural bar if dynamic work is part of your training.</p>
+            </li>
+            <li>
+              <h3>Never retightening the bolts</h3>
+              <p>New frames settle as bolts seat and pads compress, and a tower that felt solid on day one can rock by week two. Retighten every bolt after the first few sessions and then monthly, and check that height pins are fully home before each workout.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Power Tower</h2>
-          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and frustrating to discover once the tower is built.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the rating in the title</h3>
-              <p class="text-gray-700 text-sm m-0">Power towers are sold in versions with different ratings under near-identical names, and reviews quote whichever version they saw. Open the listing you are buying, find the rating in the specification table, compare it with the manual if you can, and stay well inside the lowest figure you have seen.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Checking the frame height but not your reach</h3>
-              <p class="text-gray-700 text-sm m-0">A tower that looks tall online can still leave a tall user pulling with bent knees. Measure your straight-arm overhead reach and compare it with the top bar setting, then add head clearance above the bar and check the ceiling at the exact spot, minus any flooring.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Kipping on a freestanding frame</h3>
-              <p class="text-gray-700 text-sm m-0">Swinging pull-ups, muscle-ups and kipping put sideways and lifting forces on a frame that is not bolted to anything, and that is when towers rock and walk across the floor. Keep reps strict on any tower, and move to a bolted rack or a structural bar if dynamic work is part of your training.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never retightening the bolts</h3>
-              <p class="text-gray-700 text-sm m-0">New frames settle as bolts seat and pads compress, and a tower that felt solid on day one can rock by week two. Retighten every bolt after the first few sessions and then monthly, and check that height pins are fully home before each workout.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Racks with pull-up bars and dip attachments, and how to anchor them.</p>
-            </a>
-            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Overview</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Where a power tower fits among the big home gym purchases.</p>
-            </a>
-            <a href="/best-home-gym-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Gym Accessories Worth Buying</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Flooring, storage and small kit that make a tower safer and tidier.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most people, the Sportsroyals Power Tower is the best power
             tower for the money</strong>, as long as you confirm the version you are buying. Choose
             the RELIFE for low ceilings and mixed heights, the Marcy TC-3515 for a tall frame from a
             maker whose figures agree with an independent source, and Stamina's 735 if you want a
             bench in the same frame.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, read the rating as a seller's figure, measure your reach and your ceiling,
-            build it square and retighten it, and train without kipping. If you only need a bar, our
-            <a href="/best-pull-up-bars/" class="text-[#5AA9FF] font-bold no-underline">pull-up bar guide</a>
-            is the cheaper route.
+            build it square and retighten it, and train without kipping. If you only need a bar, our <a href="/best-pull-up-bars/" class="text-[#5AA9FF] font-bold no-underline">pull-up bar guide</a> is the cheaper route.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-squat-racks-for-home-gym/">Best Squat Racks for a Home Gym</a></li>
+            <li><a href="/home-workout-equipment-reviews/">Home Workout Equipment Reviews</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best power tower?</h3></summary>
+            <p class="faq-a">
+              For most people on a budget, the Sportsroyals Power Tower, which an independent reviewer assembled and found sat flat on its broad base, though not without movement. The RELIFE suits low ceilings and families because its bar adjusts lowest, and the Marcy TC-3515 is the choice from an established brand whose 300 lb rating two sources agree on.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Are power tower weight ratings accurate?</h3></summary>
+            <p class="faq-a">
+              Treat them as seller figures. We found the same tower name sold with ratings of 360, 400 and 450 lb, and another tower listed at 330, 400 and 450 lb in different places. Listings rarely say how the rating was set. Stay well inside the lowest figure you see for your model, and count any weighted vest or dip belt.
             </p>
+          </details>
+          <details>
+            <summary><h3>How do I stop a power tower from wobbling?</h3></summary>
+            <p class="faq-a">
+              Assemble it with bolts loose, square the frame on a level floor, then tighten in stages and recheck after the first few sessions. Stand it on dense rubber flooring rather than soft tiles or carpet, use the dip and knee-raise stations from the side the manual shows, and train without kipping or swinging, which is what exposes most wobble.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a power tower good for tall people?</h3></summary>
+            <p class="faq-a">
+              Only if the top bar setting is above your straight-arm overhead reach. Measure from the floor to your fingertips with arms raised and compare it with the bar height, not the frame height. Of the towers here, the RELIFE and Marcy TC-3515 reach about 89 inches; the Sportsroyals tops out at about 83. Check the ceiling too, allowing for your head above the bar.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you bolt a power tower to the floor?</h3></summary>
+            <p class="faq-a">
+              The towers on this page are designed as freestanding and their makers give no anchoring instructions. Do not drill through the feet or tie the frame to a wall unless the maker says you may, as that can void the warranty. If you need a frame that will not move, a bolted power rack or a wall-mounted pull-up bar is the better tool.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Power tower or pull-up bar: which should I buy?</h3></summary>
+            <p class="faq-a">
+              Buy a pull-up bar if you only want pull-ups and can fix one to a door frame, wall or ceiling; it is cheaper, steadier and takes no floor space. Buy a power tower if you also want dips, knee raises and push-ups, rent, or cannot drill. A power rack with a pull-up bar beats both if you also want to lift a barbell.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-squat-racks-for-home-gym/" class="card">
+            <div class="c-kicker">Racks</div>
+            <div class="c-title">Best Squat Racks for a Home Gym</div>
+            <p class="c-blurb">Racks with pull-up bars and dip attachments, and how to anchor them.</p>
+          </a>
+          <a href="/home-workout-equipment-reviews/" class="card">
+            <div class="c-kicker">Overview</div>
+            <div class="c-title">Home Workout Equipment Reviews</div>
+            <p class="c-blurb">Where a power tower fits among the big home gym purchases.</p>
+          </a>
+          <a href="/best-home-gym-accessories/" class="card">
+            <div class="c-kicker">Accessories</div>
+            <div class="c-title">Home Gym Accessories Worth Buying</div>
+            <p class="c-blurb">Flooring, storage and small kit that make a tower safer and tidier.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

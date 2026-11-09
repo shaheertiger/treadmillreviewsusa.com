@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Cracked Deck (2026): Symptoms, Causes and Repair Cost";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-cracked-deck/";
+const HUB = SECTIONS.find((s) => s.slug === "problems");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,64 +109,46 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Stop Using It? Check Here", link: "#stop-using" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillcrackeddeck" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillcrackeddeck)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/problems/">Fault Diagnosis</a>
+        <span aria-hidden="true">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Cracked Deck: What It Means and What to Do Next</h1>
+      <p class="ed-dek">
+        A cracked treadmill deck is not a wear problem to manage; it is a structural failure under the surface you run on. Here is how to tell whether the deck has really cracked, what usually causes it, why patching and flipping are poor ideas, and what a replacement typically costs.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 14, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Troubleshooting
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Cracked Deck: <span class="text-[#5AA9FF]">What It Means and What to Do Next</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A cracked treadmill deck is not a wear problem to manage; it is a structural failure under the surface you run on. Here is how to tell whether the deck has really cracked, what usually causes it, why patching and flipping are poor ideas, and what a replacement typically costs.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#repair-or-replace" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Repair or Replace?
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most treadmill deck problems are slow: the surface wears, the belt drags, the motor works
+          harder, and over months the owner notices. A cracked deck is different. It often
+          announces itself with a sharp crack or a new give underfoot, and from that moment the
+          board under the belt is no longer a single rigid surface. This page covers how to
+          confirm a crack, the causes worth knowing about, the repairs that are and are not
+          reasonable, and the cost of fixing it. For worn-but-intact decks, flipping and the full
+          replacement procedure, see our guide to <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a>,
+          which this page builds on rather than repeats.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.5k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">Stop using a treadmill with a cracked deck, and unplug it
           before you look.</strong> A cracked board can give way under a footstrike, and the belt
           can catch on a raised edge. Inspect only with the treadmill unplugged at the wall and the
@@ -170,49 +157,28 @@ const schema = {
           key is pulled, or any crack in the steel frame. Your manual is the authority on your
           model's deck and its removal. Every cost figure here is a labelled estimate, "in the
           region of", consistent with our deck replacement and repair guides, not a quote.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Cracked Deck: The Short Answer</a>
-          <a href="#symptoms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What Are the Symptoms of a Cracked Treadmill Deck?</a>
-          <a href="#stop-using" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Should You Stop Using a Treadmill With a Cracked Deck?</a>
-          <a href="#confirm-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How Do You Confirm the Deck Is Cracked?</a>
-          <a href="#not-the-deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Is It the Deck, or Something Else That Is Broken?</a>
-          <a href="#causes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Causes a Treadmill Deck to Crack?</a>
-          <a href="#flip-or-patch" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Can a Cracked Treadmill Deck Be Flipped or Repaired?</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Does a Cracked Deck Cost to Fix?</a>
-          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Is a Cracked Deck Covered by Warranty?</a>
-          <a href="#repair-or-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Repair or Replace the Treadmill?</a>
-          <a href="#prevention" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How Do You Stop the Next Deck Cracking?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Treadmill Cracked Deck: The Short Answer</a></li>
+            <li><a href="#symptoms">What Are the Symptoms of a Cracked Treadmill Deck?</a></li>
+            <li><a href="#stop-using">Should You Stop Using a Treadmill With a Cracked Deck?</a></li>
+            <li><a href="#confirm-it">How Do You Confirm the Deck Is Cracked?</a></li>
+            <li><a href="#not-the-deck">Is It the Deck, or Something Else That Is Broken?</a></li>
+            <li><a href="#causes">What Causes a Treadmill Deck to Crack?</a></li>
+            <li><a href="#flip-or-patch">Can a Cracked Treadmill Deck Be Flipped or Repaired?</a></li>
+            <li><a href="#cost">What Does a Cracked Deck Cost to Fix?</a></li>
+            <li><a href="#warranty">Is a Cracked Deck Covered by Warranty?</a></li>
+            <li><a href="#repair-or-replace">Repair or Replace the Treadmill?</a></li>
+            <li><a href="#prevention">How Do You Stop the Next Deck Cracking?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most treadmill deck problems are slow: the surface wears, the belt drags, the motor works
-          harder, and over months the owner notices. A cracked deck is different. It often
-          announces itself with a sharp crack or a new give underfoot, and from that moment the
-          board under the belt is no longer a single rigid surface. This page covers how to
-          confirm a crack, the causes worth knowing about, the repairs that are and are not
-          reasonable, and the cost of fixing it. For worn-but-intact decks, flipping and the full
-          replacement procedure, see our guide to
-          <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a>,
-          which this page builds on rather than repeats.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Cracked Deck: The Short Answer</h2>
+          <h2>Treadmill Cracked Deck: The Short Answer</h2>
 <p>
             <strong>A treadmill cracked deck should be replaced, not flipped, glued or patched,
             and the machine should not be used until it is.</strong> The deck is the board the belt
@@ -223,8 +189,7 @@ const schema = {
           <p>
             As typical estimates, a replacement deck as a part commonly costs somewhere in the
             region of $100 to $300 for a home treadmill, and a technician fitting a deck and belt
-            together commonly comes to $300 to $600 or more all in, the same bands we use in our
-            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>.
+            together commonly comes to $300 to $600 or more all in, the same bands we use in our <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>.
             Before paying, check two things: whether the crack is really in the deck rather than
             in the frame, a plastic rail or the belt, and whether the warranty still applies,
             because a deck that cracks early on a machine used within its weight limit may be a
@@ -238,7 +203,7 @@ const schema = {
         </div>
 
         <div id="symptoms" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What Are the Symptoms of a Cracked Treadmill Deck?</h2>
+          <h2>What Are the Symptoms of a Cracked Treadmill Deck?</h2>
 <p>
             The usual signs of a cracked treadmill deck are a sudden crack or pop under foot, a
             new soft spot or dip where you land, a repeating thump or click as the belt passes
@@ -255,9 +220,7 @@ const schema = {
             against each other can creak with every step.</li>
             <li><strong>A rhythmic thump or catch.</strong> If one edge of the crack has lifted,
             the belt's underside can catch on it with each pass, giving a thump or a hesitation in
-            time with the belt rather than with your steps. Our guide to a
-            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noise</a>
-            covers the other causes of that sound.</li>
+            time with the belt rather than with your steps. Our guide to a <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noise</a> covers the other causes of that sound.</li>
             <li><strong>Belt wear in one spot.</strong> A scuffed, cut or fraying line across the
             underside of the belt can come from a raised crack edge.</li>
             <li><strong>Visible damage.</strong> With the belt lifted, a line across the deck
@@ -271,7 +234,7 @@ const schema = {
         </div>
 
         <div id="stop-using" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Should You Stop Using a Treadmill With a Cracked Deck?</h2>
+          <h2>Should You Stop Using a Treadmill With a Cracked Deck?</h2>
 <p>
             Yes. Stop using the treadmill as soon as you suspect the deck has cracked, unplug it,
             and remove the safety key so that nobody else uses it before it is inspected.
@@ -287,9 +250,7 @@ const schema = {
           <p>
             The same applies, more strongly, to a crack in the frame. If the crack is in the steel
             frame, a weld, an upright or the folding hinge rather than in the board, the machine
-            must not be used until a technician or the manufacturer has looked at it. Our guide to a
-            <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill that shakes or wobbles</a>
-            describes frame faults that mean stop.
+            must not be used until a technician or the manufacturer has looked at it. Our guide to a <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill that shakes or wobbles</a> describes frame faults that mean stop.
           </p>
           <p>
             If others use the machine, put a note on the console. A treadmill that looks normal is
@@ -298,7 +259,7 @@ const schema = {
         </div>
 
         <div id="confirm-it" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How Do You Confirm the Deck Is Cracked?</h2>
+          <h2>How Do You Confirm the Deck Is Cracked?</h2>
 <p>
             Confirm a cracked deck by looking at it: unplug the treadmill, slacken the belt enough
             to lift an edge well clear, and inspect the deck surface and edges with a torch at a
@@ -326,7 +287,7 @@ const schema = {
         </div>
 
         <div id="not-the-deck" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Is It the Deck, or Something Else That Is Broken?</h2>
+          <h2>Is It the Deck, or Something Else That Is Broken?</h2>
 <p>
             People searching for a treadmill broken deck sometimes have a different broken part,
             so rule out the frame, the side rails, the deck cushions and the belt before ordering
@@ -345,9 +306,7 @@ const schema = {
             move and creak. Tightening it may be the whole fix; if the hole around it has crumbled,
             the deck has failed there.</li>
             <li><strong>A split or torn belt.</strong> A belt with a lifting seam or torn edge
-            produces a thump each revolution and can feel like a deck fault. Our guide to
-            <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a>
-            covers that repair.</li>
+            produces a thump each revolution and can feel like a deck fault. Our guide to <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a> covers that repair.</li>
             <li><strong>A cracked frame, weld or hinge.</strong> The most serious possibility. A
             crack in the steel under the deck or at a folding hinge is a frame problem, not a deck
             problem, and frame warranties are often the longest on the machine, so contact the
@@ -356,7 +315,7 @@ const schema = {
         </div>
 
         <div id="causes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Causes a Treadmill Deck to Crack?</h2>
+          <h2>What Causes a Treadmill Deck to Crack?</h2>
 <p>
             Treadmill decks usually crack because the board was loaded beyond what it could take
             at that moment: a user above the weight limit, a board already softened by wear or
@@ -366,22 +325,16 @@ const schema = {
           <ul>
             <li><strong>Exceeding the weight limit.</strong> Running or jumping on a machine near or
             above its stated maximum user weight puts loads on the deck that it was not designed
-            for. Our guide to
-            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">exceeding a treadmill's weight limit</a>
-            explains why decks are one of the first things to suffer.</li>
+            for. Our guide to <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">exceeding a treadmill's weight limit</a> explains why decks are one of the first things to suffer.</li>
             <li><strong>A deck already softened.</strong> Most home decks are fibreboard or plywood
             with a hard laminate surface. When the surface wears through, or moisture gets in from
             sweat, spills or a damp room, the board loses strength and can then crack under a load
-            it once took easily. Our guide to
-            <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a>
-            explains how damp affects the deck.</li>
+            it once took easily. Our guide to <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a> explains how damp affects the deck.</li>
             <li><strong>Impact.</strong> A dumbbell or <a href="/best-adjustable-kettlebells/" class="text-[#0F62FE] font-medium" data-autolink>kettlebell</a> dropped on the belt, a child
             jumping onto it from a height, or a folded deck that dropped because the latch let go,
             can crack a sound board.</li>
             <li><strong>Moving damage.</strong> A treadmill moved on its side, dropped down a step,
-            or carried by the deck end can crack the deck or its mounts. Our guide to
-            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
-            covers how to avoid it.</li>
+            or carried by the deck end can crack the deck or its mounts. Our guide to <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a> covers how to avoid it.</li>
             <li><strong>Missing or failed cushions.</strong> If the cushions under the deck have
             hardened, split or fallen out, the board spans further unsupported and flexes more on
             each step.</li>
@@ -393,7 +346,7 @@ const schema = {
         </div>
 
         <div id="flip-or-patch" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Can a Cracked Treadmill Deck Be Flipped or Repaired?</h2>
+          <h2>Can a Cracked Treadmill Deck Be Flipped or Repaired?</h2>
 <p>
             A cracked deck should not be flipped, and gluing, screwing or bracing it is not a
             reliable repair; the safe fix is a new deck.
@@ -401,9 +354,7 @@ const schema = {
           <p>
             <strong>Why not flip it?</strong> Flipping a reversible deck gives a fresh running
             surface when the old face is worn but the board is sound. A crack goes through the
-            board, so the other face sits on the same broken structure. As our
-            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>
-            explains, a deck that is soft, delaminated, swollen or cracked should not be flipped,
+            board, so the other face sits on the same broken structure. As our <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a> explains, a deck that is soft, delaminated, swollen or cracked should not be flipped,
             because the fresh face will not stay flat.
           </p>
           <p>
@@ -424,7 +375,7 @@ const schema = {
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Does a Cracked Deck Cost to Fix?</h2>
+          <h2>What Does a Cracked Deck Cost to Fix?</h2>
 <p>
             A cracked deck costs the same to fix as any deck replacement: a part commonly in the
             region of $100 to $300, or roughly $300 to $600 or more fitted by a technician together
@@ -465,18 +416,15 @@ const schema = {
           </p>
           <p>
             <strong>DIY or technician.</strong> Fitting a new deck is the same job as flipping one,
-            described step by step in our
-            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>.
+            described step by step in our <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>.
             It is manageable for a careful owner with a helper and the manual. A technician makes
             sense for a heavy non-folding machine, a machine still under labour warranty, or when
-            you are not certain whether the frame is also damaged; our guide to finding
-            <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">treadmill repair near you</a>
-            covers how to choose one.
+            you are not certain whether the frame is also damaged; our guide to finding <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">treadmill repair near you</a> covers how to choose one.
           </p>
         </div>
 
         <div id="warranty" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Is a Cracked Deck Covered by Warranty?</h2>
+          <h2>Is a Cracked Deck Covered by Warranty?</h2>
 <p>
             Sometimes. Decks are often treated as wear items with shorter cover than the frame or
             motor, but a deck that cracks on a young machine used within its weight limit can be a
@@ -489,9 +437,7 @@ const schema = {
             plain account of how it happened. Expect questions about user weight, use and whether
             the machine has been moved; overloading, impact damage and moving damage are commonly
             excluded. If your machine was bought second-hand, check whether the warranty transfers,
-            since many apply to the original purchaser only. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains how the frame, motor, parts and labour terms usually work.
+            since many apply to the original purchaser only. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains how the frame, motor, parts and labour terms usually work.
           </p>
           <p>
             Do not dismantle the machine or fit an aftermarket deck before the manufacturer has
@@ -500,7 +446,7 @@ const schema = {
         </div>
 
         <div id="repair-or-replace" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Repair or Replace the Treadmill?</h2>
+          <h2>Repair or Replace the Treadmill?</h2>
 <p>
             Replacing a cracked deck is usually worth it on a mid-range or premium treadmill with a
             sound frame and motor, and often not on an old budget machine where the repair
@@ -513,19 +459,15 @@ const schema = {
             machine whose user is regularly above its weight limit will crack the next deck too,
             and the right answer there is a machine rated for the load. Parts availability can
             decide the matter: if no deck exists for the model, a generic board on an old machine
-            may not be worth the risk. Our guide to
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
-            helps place a machine in its life.
+            may not be worth the risk. Our guide to <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a> helps place a machine in its life.
           </p>
           <p>
-            If you replace the machine, our guide on
-            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a>
-            covers what to do with the old one.
+            If you replace the machine, our guide on <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a> covers what to do with the old one.
           </p>
         </div>
 
         <div id="prevention" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How Do You Stop the Next Deck Cracking?</h2>
+          <h2>How Do You Stop the Next Deck Cracking?</h2>
 <p>
             Keep within the weight limit, keep the deck lubricated, dry and supported, and keep
             heavy objects and impacts off it.
@@ -533,9 +475,7 @@ const schema = {
           <ul>
             <li><strong>Respect the maximum user weight</strong>, with a margin for running.</li>
             <li><strong>Lubricate on schedule</strong> so the surface does not wear through and
-            soften the board; our
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
-            covers how.</li>
+            soften the board; our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a> covers how.</li>
             <li><strong>Keep it dry.</strong> Wipe sweat off after sessions, keep drinks off the
             console above the belt, and avoid damp rooms or use a dehumidifier.</li>
             <li><strong>Check the cushions and deck bolts</strong> once or twice a year, with the
@@ -547,141 +487,155 @@ const schema = {
             never on its side.</li>
           </ul>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I keep using a treadmill with a cracked deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. A cracked deck can flex more with each step and eventually break under a footstrike, and a raised edge can damage the belt and load the motor. Unplug the treadmill, remove the safety key so nobody else uses it, and get the deck inspected and replaced before using the machine again.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you flip a cracked treadmill deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Flipping only helps when the old surface is worn but the board is sound. A crack runs through the board, so the other face sits on the same broken structure and will not stay flat. A cracked deck needs replacing, usually together with the belt.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can a cracked treadmill deck be glued or repaired?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It is not a reliable repair. A glued crack rarely stays flush under repeated impact, a brace screwed underneath can foul the frame or belt, and screws can rise into the belt. Because the deck carries a person on a moving belt, replacement is the safe fix. Cushions, bolts, rails and belts around the deck can often be repaired.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does it cost to replace a cracked treadmill deck?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                As typical estimates, a replacement deck commonly costs in the region of $100 to $300 as a part for a home treadmill, and a technician fitting a deck and belt together commonly comes to $300 to $600 or more all in. Premium and commercial machines cost more. Check the warranty before paying.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What causes a treadmill deck to crack?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Common causes are a user above the weight limit, a board already softened by surface wear or moisture, impacts from dropped weights or a dropped folding deck, damage during a move, missing or split cushions under the deck, and over-tightened deck bolts. Occasionally it is a manufacturing defect, which a warranty may cover.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a cracked treadmill deck covered under warranty?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be. Decks are often covered for shorter terms than frames or motors, but an early crack on a machine used within its weight limit may be a defect, and a crack in the steel frame falls under the frame warranty. Contact the manufacturer with photographs, the serial number and proof of purchase before ordering parts.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes With a Cracked Deck</h2>
+          <p>Most of the extra cost after a deck cracks comes from using the machine anyway or from a repair that does not hold.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Walking on it "just slowly"</h3>
+              <p>Even at walking pace a cracked board flexes, the crack grows, and a raised edge can cut the belt and overload the motor. Unplug the machine, take the safety key out, and leave it until the deck is replaced.</p>
+            </li>
+            <li>
+              <h3>Flipping a cracked deck</h3>
+              <p>Flipping solves surface wear, not structural failure. The fresh face sits on the same cracked board and will not stay flat. Replace a cracked deck rather than turning it over.</p>
+            </li>
+            <li>
+              <h3>Ordering a deck before checking the warranty</h3>
+              <p>An early crack on a machine used within its limits, or a crack in the frame, may be covered. Contact the manufacturer with photographs and the serial number first, and do not dismantle the machine until they reply.</p>
+            </li>
+            <li>
+              <h3>Fitting a new deck under an old belt</h3>
+              <p>A belt that ran over a crack is often scored, and an old glazed belt wears a new deck quickly. Replace them together unless the belt is nearly new and undamaged.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Cracked Deck</h2>
-          <p class="text-gray-700 leading-relaxed">Most of the extra cost after a deck cracks comes from using the machine anyway or from a repair that does not hold.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Walking on it "just slowly"</h3>
-              <p class="text-gray-700 text-sm m-0">Even at walking pace a cracked board flexes, the crack grows, and a raised edge can cut the belt and overload the motor. Unplug the machine, take the safety key out, and leave it until the deck is replaced.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Flipping a cracked deck</h3>
-              <p class="text-gray-700 text-sm m-0">Flipping solves surface wear, not structural failure. The fresh face sits on the same cracked board and will not stay flat. Replace a cracked deck rather than turning it over.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a deck before checking the warranty</h3>
-              <p class="text-gray-700 text-sm m-0">An early crack on a machine used within its limits, or a crack in the frame, may be covered. Contact the manufacturer with photographs and the serial number first, and do not dismantle the machine until they reply.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fitting a new deck under an old belt</h3>
-              <p class="text-gray-700 text-sm m-0">A belt that ran over a crack is often scored, and an old glazed belt wears a new deck quickly. Replace them together unless the belt is nearly new and undamaged.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Deck and Repair Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-deck-replacement/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Maintenance</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Deck Replacement</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Worn decks, flipping, the replacement procedure and costs.</p>
-            </a>
-            <a href="/treadmill-repair-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Repair</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Repair Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What you can fix yourself, what needs a technician, and typical costs.</p>
-            </a>
-            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Capacity</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Exceeding a Treadmill Weight Limit</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why decks are among the first parts to suffer.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">A treadmill cracked deck is a structural failure, so stop using
             the machine and replace the deck rather than flipping or patching it.</strong> Confirm
             the crack is in the board rather than the frame, a rail, a cushion or the belt, and
             check the warranty before buying anything.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             <strong class="text-white">A replacement deck is commonly $100 to $300 as a part, or $300 to
             $600 or more with a belt and a technician.</strong> It is usually worth doing on a sound
-            mid-range machine and often not on an old budget one. Our
-            <a href="/treadmill-deck-replacement/" class="text-[#5AA9FF] font-bold no-underline">deck replacement guide</a>
-            walks through the job itself.
+            mid-range machine and often not on an old budget one. Our <a href="/treadmill-deck-replacement/" class="text-[#5AA9FF] font-bold no-underline">deck replacement guide</a> walks through the job itself.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-deck-replacement/">Treadmill Deck Replacement</a></li>
+            <li><a href="/treadmill-repair-guide/">Treadmill Repair Guide</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Can I keep using a treadmill with a cracked deck?</h3></summary>
+            <p class="faq-a">
+              No. A cracked deck can flex more with each step and eventually break under a footstrike, and a raised edge can damage the belt and load the motor. Unplug the treadmill, remove the safety key so nobody else uses it, and get the deck inspected and replaced before using the machine again.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you flip a cracked treadmill deck?</h3></summary>
+            <p class="faq-a">
+              No. Flipping only helps when the old surface is worn but the board is sound. A crack runs through the board, so the other face sits on the same broken structure and will not stay flat. A cracked deck needs replacing, usually together with the belt.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can a cracked treadmill deck be glued or repaired?</h3></summary>
+            <p class="faq-a">
+              It is not a reliable repair. A glued crack rarely stays flush under repeated impact, a brace screwed underneath can foul the frame or belt, and screws can rise into the belt. Because the deck carries a person on a moving belt, replacement is the safe fix. Cushions, bolts, rails and belts around the deck can often be repaired.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much does it cost to replace a cracked treadmill deck?</h3></summary>
+            <p class="faq-a">
+              As typical estimates, a replacement deck commonly costs in the region of $100 to $300 as a part for a home treadmill, and a technician fitting a deck and belt together commonly comes to $300 to $600 or more all in. Premium and commercial machines cost more. Check the warranty before paying.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What causes a treadmill deck to crack?</h3></summary>
+            <p class="faq-a">
+              Common causes are a user above the weight limit, a board already softened by surface wear or moisture, impacts from dropped weights or a dropped folding deck, damage during a move, missing or split cushions under the deck, and over-tightened deck bolts. Occasionally it is a manufacturing defect, which a warranty may cover.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a cracked treadmill deck covered under warranty?</h3></summary>
+            <p class="faq-a">
+              It can be. Decks are often covered for shorter terms than frames or motors, but an early crack on a machine used within its weight limit may be a defect, and a crack in the steel frame falls under the frame warranty. Contact the manufacturer with photographs, the serial number and proof of purchase before ordering parts.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Fault Diagnosis">
+          <h2 class="section-title">More in Fault Diagnosis</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/problems/" class="btn-ghost">See all Fault Diagnosis</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Deck and Repair Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-deck-replacement/" class="card">
+            <div class="c-kicker">Maintenance</div>
+            <div class="c-title">Treadmill Deck Replacement</div>
+            <p class="c-blurb">Worn decks, flipping, the replacement procedure and costs.</p>
+          </a>
+          <a href="/treadmill-repair-guide/" class="card">
+            <div class="c-kicker">Repair</div>
+            <div class="c-title">Treadmill Repair Guide</div>
+            <p class="c-blurb">What you can fix yourself, what needs a technician, and typical costs.</p>
+          </a>
+          <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="card">
+            <div class="c-kicker">Capacity</div>
+            <div class="c-title">Exceeding a Treadmill Weight Limit</div>
+            <p class="c-blurb">Why decks are among the first parts to suffer.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

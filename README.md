@@ -8,7 +8,6 @@ Vercel's Production Branch should be `main`. `claude/seo-repo-structure-n1zh7s` 
 
 - [Astro](https://astro.build) (static site generation)
 - [Tailwind CSS](https://tailwindcss.com)
-- React islands (mobile nav)
 - `@astrojs/sitemap` with custom per-page priorities
 - Per-page JSON-LD (`BreadcrumbList`, `FAQPage`, `Article`, `Product`) via `src/components/SEO.astro`
 - `@vercel/analytics`
@@ -17,7 +16,7 @@ Vercel's Production Branch should be `main`. `claude/seo-repo-structure-n1zh7s` 
 
 ```
 src/
-  components/   SEO.astro, TrustBadge.astro, SocialProof.astro, AdUnit.astro, MobileNav.tsx
+  components/   SEO.astro, TrustBadge.astro, SocialProof.astro, AdUnit.astro, ProductImage.astro
   layouts/      Layout.astro (shared header/footer/ad slots), SectionHub.astro (section hubs)
   data/         constants.ts (brand colors, Amazon tag), sections.ts (the site IA)
   pages/        index.astro, best-of.astro, long-form article pages, and
@@ -31,6 +30,30 @@ scripts/
   build-articles.mjs       renders article pages from the content specs in src/content/articles/
   interlink.mjs            adds contextual links between articles from interlink-anchors.json
 ```
+
+## Design
+
+The site uses an editorial magazine layout (2026-11-09): a black top bar, a centred wordmark, an
+uppercase section strip built from `sections.ts`, a slide-out section menu, a single 712px reading
+column, and a black footer. Headlines and labels are Barlow Condensed, body copy is Source Serif 4 and
+interface text is Inter. All of it lives in `src/styles/global.css` as plain classes (`ed-*` for
+articles, `site-*`/`navstrip`/`card` for chrome), with the colours as CSS variables on `:root`.
+
+- **Spec-generated articles** (`scripts/build-articles.mjs`, `data-template="editorial"`): breadcrumb,
+  headline and italic dek, byline with a "View products" button, the affiliate disclosure, a collage of
+  the products' Amazon photos, "Our top picks" with an Amazon button per pick, a "What we checked"
+  note, numbered product blocks (award, name, photo, buy button, pros and cons, why we picked it,
+  features at a glance), common mistakes, the bottom line, a FAQ accordion (`<details>`), "Why trust
+  us" with the author card, "More in" links from the page's hub group and a "Readers also read" grid.
+  On phones a sticky bar links the top pick on Amazon.
+- **Hand-written articles** keep their markup; the `legacy-article` class on their `<article>` maps it
+  onto the same look (white masthead, condensed headings, serif body, no dark panels).
+- **Section hubs and the home page** use the same masthead and card grids.
+
+`npm run validate:format` checks editorial pages against their own list of required elements and
+hand-written pages against the original thirteen. The generator also turns a line break between a
+word and an inline tag into a space, because Astro's HTML compression otherwise drops it ("explained
+in<a>"); that was happening on the live site.
 
 ## Article pipeline
 

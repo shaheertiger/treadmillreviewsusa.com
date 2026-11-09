@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "OMA Treadmills (2026): The 7200EB, Who Sells OMA & What to Check";
 const description =
@@ -222,6 +221,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/oma-treadmills/";
+const HUB = SECTIONS.find((s) => s.slug === "brands");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -242,68 +247,77 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See the Alternatives", link: "#picks" }}
+  stickyCta={{ text: "Closest on Amazon: OMA Folding Treadmill with Incline (FBM01-OMA588)", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-omatreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-omatreadmills)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/brands/">Brands</a>
+        <span aria-hidden="true">›</span>
+        <span>Brand Guide</span>
+      </nav>
+      <h1 class="ed-title">OMA Treadmills: What You Are Buying</h1>
+      <p class="ed-dek">
+        OMA is a folding-treadmill brand that US buyers meet mostly on Amazon, under model numbers such as 7200EB and 1012EB. We found no US website for it, the 7200EB’s own manual and its listings disagree on the belt and the motor, and warranty terms vary from listing to listing. Here is what we could confirm on 5 November 2026, what we could not, and three alternatives from brands that publish their specifications.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Brand Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          OMA Treadmills: <span class="text-[#5AA9FF]">What You Are Buying</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          OMA is a folding-treadmill brand that US buyers meet mostly on Amazon, under model numbers such as 7200EB and 1012EB. We found no US website for it, the 7200EB’s own manual and its listings disagree on the belt and the motor, and warranty terms vary from listing to listing. Here is what we could confirm on 5 November 2026, what we could not, and three alternatives from brands that publish their specifications.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#oma-7200eb" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The OMA 7200EB
-          </a>
-          <a href="#picks" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            See the Alternatives
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#oma-7200eb-card"><img src="https://m.media-amazon.com/images/I/41YWrt8agHL._SL500_.jpg" alt="OMA Folding Treadmill with Incline (FBM01-OMA588)" width="500" height="500" decoding="async" /></a>
+          <a href="#sunny-sf-t724011"><img src="https://m.media-amazon.com/images/I/41kxpgUMVZL._SL500_.jpg" alt="Sunny Health &amp; Fitness Active 300 Smart Incline Treadmill (SF-T724011)" width="500" height="500" decoding="async" /></a>
+          <a href="#xterra-trx1200"><img src="https://m.media-amazon.com/images/I/41QdXIuP-yL._SL500_.jpg" alt="XTERRA TRX1200" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>OMA Folding Treadmill with Incline (FBM01-OMA588) · Sunny Health &amp; Fitness Active 300 Smart Incline Treadmill (SF-T724011) · XTERRA TRX1200</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          If you have found an OMA treadmill on Amazon at a good price and want to know whether the brand
+          is real, the short answer is yes: OMA treadmills are certified for sale and sold in the US, and the
+          7200EB is a conventional folding treadmill with figures that look reasonable for its price. The
+          longer answer is about what you can and cannot check before you buy, and what happens when it
+          breaks.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What we checked, and what we have not done.</strong>
-          On 5 November 2026 we searched for OMA treadmills by brand and model number, looked for an OMA
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Closest on Amazon:</span> <a href="#oma-7200eb-card">OMA Folding Treadmill with Incline (FBM01-OMA588)</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Alternative:</span> <a href="#sunny-sf-t724011">Sunny Health & Fitness Active 300 Smart Incline Treadmill (SF-T724011)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Compact Alternative:</span> <a href="#xterra-trx1200">XTERRA TRX1200</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Incline Alternative:</span> <a href="#sunny-sf-t723016">Sunny Health & Fitness SF-T723016</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On 5 November 2026 we searched for OMA treadmills by brand and model number, looked for an OMA
           website serving the US (we found none), and read what we could: third-party copies of OMA’s own
           manuals for the 1012EB/7200EB and the 7200EA, the US equipment-authorisation filing for the
           OMA-7200EA, a US liquidation auction listing of a returned OMA treadmill, marketplace copies of OMA
@@ -316,69 +330,24 @@ const schema = {
           Sunny Health &amp; Fitness’s and XTERRA’s own US stores, checked on the same day for our guides to
           those brands. We have not tested any of these machines. Prices change often. We earn a commission if
           you buy through the Amazon links on this page; it does not change what we say.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Closest on Amazon:</span>
-            <a href="#oma-7200eb-card" class="font-bold text-gray-900 no-underline hover:underline">OMA Folding Treadmill with Incline (FBM01-OMA588)</a>
-            <a href="#oma-7200eb-card" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Alternative:</span>
-            <a href="#sunny-sf-t724011" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness Active 300 Smart Incline Treadmill (SF-T724011)</a>
-            <a href="#sunny-sf-t724011" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Compact Alternative:</span>
-            <a href="#xterra-trx1200" class="font-bold text-gray-900 no-underline hover:underline">XTERRA TRX1200</a>
-            <a href="#xterra-trx1200" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Incline Alternative:</span>
-            <a href="#sunny-sf-t723016" class="font-bold text-gray-900 no-underline hover:underline">Sunny Health & Fitness SF-T723016</a>
-            <a href="#sunny-sf-t723016" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#who-is-oma" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Who Makes OMA Treadmills, and Does OMA Sell in the US?</a>
-          <a href="#oma-7200eb" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The OMA 7200EB: What the Figures Say</a>
-          <a href="#other-oma-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Other OMA Models You Will See</a>
-          <a href="#caroma" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Caroma Treadmills: Not the Same Brand, as Far as We Can Tell</a>
-          <a href="#warranty-and-support" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Warranty, Support and Returns</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Who an OMA Treadmill Suits, and Who Should Skip It</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The OMA 7200EB and Three Checked Alternatives</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#who-is-oma">Who Makes OMA Treadmills, and Does OMA Sell in the US?</a></li>
+            <li><a href="#oma-7200eb">The OMA 7200EB: What the Figures Say</a></li>
+            <li><a href="#other-oma-models">Other OMA Models You Will See</a></li>
+            <li><a href="#caroma">Caroma Treadmills: Not the Same Brand, as Far as We Can Tell</a></li>
+            <li><a href="#warranty-and-support">Warranty, Support and Returns</a></li>
+            <li><a href="#who-should-buy">Who an OMA Treadmill Suits, and Who Should Skip It</a></li>
+            <li><a href="#picks">The OMA 7200EB and Three Checked Alternatives</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          If you have found an OMA treadmill on Amazon at a good price and want to know whether the brand
-          is real, the short answer is yes: OMA treadmills are certified for sale and sold in the US, and the
-          7200EB is a conventional folding treadmill with figures that look reasonable for its price. The
-          longer answer is about what you can and cannot check before you buy, and what happens when it
-          breaks.
-        </p>
 
         <div id="who-is-oma" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Who Makes OMA Treadmills, and Does OMA Sell in the US?</h2>
+          <h2>Who Makes OMA Treadmills, and Does OMA Sell in the US?</h2>
 <p>
             OMA treadmills are folding home machines sold under model numbers such as 1012EB, 1017EB, 5108EB,
             7200EB and 7200EA, along with incline models numbered 5925, 6134 and 6830. OMA’s own manuals, as
@@ -402,15 +371,13 @@ const schema = {
           <p>
             In practice, then, buying an OMA treadmill in the US means buying through Amazon or a marketplace
             seller, with the seller’s returns terms and whatever warranty that listing states. That is the same
-            position as most marketplace treadmill brands, and our guides to
-            <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a> and
-            <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER</a> describe brands in
+            position as most marketplace treadmill brands, and our guides to <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a> and <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER</a> describe brands in
             a similar position.
           </p>
         </div>
 
         <div id="oma-7200eb" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The OMA 7200EB: What the Figures Say</h2>
+          <h2>The OMA 7200EB: What the Figures Say</h2>
 <p>
             The 7200EB is the OMA treadmill searched for most by name. OMA’s manual covers it together with the
             1012EB, and its listings describe a folding treadmill with three manual incline settings, an LED
@@ -443,13 +410,9 @@ const schema = {
           <p>
             <strong>What the conflicts mean.</strong> The belt is the figure that matters most, and it is short.
             Whether it is 45.3 or 45.5 inches, both are well under the 55 to 60 inches usually recommended for
-            running, and under 50 inches for anyone with a long walking stride; our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            explains why. Treat the 7200EB as a walking and light-jogging machine. The motor figure varies
+            running, and under 50 inches for anyone with a long walking stride; our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a> explains why. Treat the 7200EB as a walking and light-jogging machine. The motor figure varies
             between 2.25 and 3.0 HP depending on the listing, and none says whether it is a continuous or a peak
-            rating, so it tells you little; our
-            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains the difference.
+            rating, so it tells you little; our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> explains the difference.
           </p>
           <p>
             <strong>The model numbers overlap.</strong> OMA’s manual covers the 1012EB and 7200EB together, but
@@ -459,13 +422,12 @@ const schema = {
             incline matters to you, ask the seller to confirm before buying.
           </p>
           <p>
-            Our <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">guide to reading treadmill reviews</a>
-            covers how to weigh a listing’s star rating when the specifications cannot be checked.
+            Our <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">guide to reading treadmill reviews</a> covers how to weigh a listing’s star rating when the specifications cannot be checked.
           </p>
         </div>
 
         <div id="other-oma-models" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Other OMA Models You Will See</h2>
+          <h2>Other OMA Models You Will See</h2>
 <p>
             OMA’s US range, as far as we can trace it, is a family of folding treadmills with similar consoles,
             sold under several model numbers at once. We could not confirm which were live on Amazon on 5
@@ -498,15 +460,14 @@ const schema = {
         </div>
 
         <div id="caroma" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Caroma Treadmills: Not the Same Brand, as Far as We Can Tell</h2>
+          <h2>Caroma Treadmills: Not the Same Brand, as Far as We Can Tell</h2>
 <p>
             “Caroma treadmill” is searched alongside OMA, perhaps because the names look alike. We found no
             source linking the two. Caroma is best known as an Australian bathroom brand, and the treadmills we
             found under the Caroma name are a separate set of marketplace machines.
           </p>
           <p>
-            Two listings show what is out there. A used <strong>Caroma 3.0HP Folding Compact Treadmill</strong>
-            at Hydra Fitness Parts, a US reseller, was out of stock at a sale price of $419.40 on 5 November 2026,
+            Two listings show what is out there. A used <strong>Caroma 3.0HP Folding Compact Treadmill</strong> at Hydra Fitness Parts, a US reseller, was out of stock at a sale price of $419.40 on 5 November 2026,
             with a 15.75 by 47.24-inch running area, a 12 km/h (about 7.5 mph) top speed and a 250 lb capacity.
             A marketplace listing for another Caroma treadmill claimed a 3.25 HP motor, and a buyer on that
             listing reported that the motor label said 2.25 HP and that the seller told them the listed figure
@@ -521,7 +482,7 @@ const schema = {
         </div>
 
         <div id="warranty-and-support" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Warranty, Support and Returns</h2>
+          <h2>Warranty, Support and Returns</h2>
 <p>
             This is where an OMA treadmill differs most from a machine from a brand with its own US store. We
             could not find a published OMA warranty for the US. The terms we saw came from individual listings,
@@ -542,15 +503,12 @@ const schema = {
             <strong>Parts.</strong> Replacement OMA parts, such as a brushless drive motor for the 7200EB and a
             power switch for the 5108EB and 1012EB, appear on eBay in Europe, which suggests parts circulate. But
             without a US parts store, a failed motor board after the warranty may mean the machine is not
-            economic to repair. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what to look for in any warranty, and our guide to
-            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
-            covers sellers, returns and delivery.
+            economic to repair. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what to look for in any warranty, and our guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a> covers sellers, returns and delivery.
           </p>
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Who an OMA Treadmill Suits, and Who Should Skip It</h2>
+          <h2>Who an OMA Treadmill Suits, and Who Should Skip It</h2>
 <p>
             <strong>An OMA may suit you</strong> if you want a folding treadmill for walking and light jogging,
             you weigh comfortably under its stated capacity, you have found it at a price clearly below the
@@ -566,16 +524,12 @@ const schema = {
             above what comparable documented machines cost, which is a reminder to compare before you buy.
           </p>
           <p>
-            Our roundups of
-            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">folding treadmills</a>,
-            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a>
-            and the <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a>
-            cover the field, and the three alternatives below are the ones we would compare an OMA with first.
+            Our roundups of <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">folding treadmills</a>, <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a> and the <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> cover the field, and the three alternatives below are the ones we would compare an OMA with first.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The OMA 7200EB and Three Checked Alternatives</h2>
+          <h2>The OMA 7200EB and Three Checked Alternatives</h2>
 <p>
             We could not find the 7200EB itself on Amazon US, so the OMA card shows the OMA treadmill Amazon
             does list, a close sibling. The three alternatives are folding treadmills at or near the 7200EB’s
@@ -584,223 +538,229 @@ const schema = {
             replaced on 9 November with the Active 300 (SF-T724011).
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are OMA treadmills a good brand?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                OMA makes conventional folding treadmills whose agreed figures, such as the 7200EB’s 10 mph top speed and 300 lb capacity, are reasonable for their price. The weaknesses are short belts, motor and belt figures that differ between the manual and the listings, and no US website or published US warranty that we could find. Buy one only through a seller with clear warranty and returns terms.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does OMA sell treadmills in the US?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, mainly through Amazon and marketplace sellers. OMA manuals are indexed against Amazon US product identifiers, the OMA-7200EA has a US FCC authorisation, and returned OMA treadmills have been sold at US liquidation auctions. We found no OMA website or support page for US buyers.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What are the OMA 7200EB’s specifications?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                OMA’s manual and listings agree on a 0.6 to 10 mph speed range, three manual incline levels, 36 preset programs, a folding frame and a 300 lb capacity. They disagree on the belt, 16.5 by 45.3 inches in the manual and 17 by 45.5 inches in listings, and on the motor, given as 2.25, 2.5 or 3.0 HP.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is the OMA 7200EB good for running?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not really. Its belt, about 45 inches long by either published figure, is well short of the 55 to 60 inches usually recommended for running. Treat it as a walking and light-jogging treadmill, and if you want to run, look at a machine with a longer deck.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is Caroma the same as OMA?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We found no source linking them. Caroma is best known as an Australian bathroom brand, and the Caroma-named treadmills we found were separate marketplace machines, including a used 3.0HP folding treadmill with a 15.75 by 47.24-inch running area and a 250 lb capacity.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What warranty do OMA treadmills have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                We could not find a published OMA warranty for the US. Terms in individual listings varied, from one year on one incline model to three years on another, and one buyer mentioned a two-year term. Screenshot the warranty statement on the listing you buy from, and check the seller’s returns window.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying an OMA Treadmill</h2>
+          <p>Most of these apply to any marketplace treadmill; they matter more where the brand has no US store to fall back on.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Trusting the horsepower in the title</h3>
+              <p>OMA’s 7200EB is listed at 2.25, 2.5 and 3.0 HP in different places, and a Caroma buyer found 2.25 HP on a motor sold as 3.25. Horsepower in a marketplace title is the least reliable figure. Judge the machine on belt size, capacity, warranty and returns.</p>
+            </li>
+            <li>
+              <h3>Buying a short belt to run on</h3>
+              <p>A 45-inch belt is a walking belt. Running on it means a shortened stride and a real risk of stepping off the back. If you want to run, buy a treadmill with at least a 55-inch deck.</p>
+            </li>
+            <li>
+              <h3>Not recording the warranty on the day</h3>
+              <p>OMA’s warranty varies by listing, and listings change. Screenshot the warranty, the specification and the seller’s name when you order, so you can show what you were promised if something fails.</p>
+            </li>
+            <li>
+              <h3>Letting the returns window run out unopened</h3>
+              <p>A treadmill in its box can sit for weeks. Assemble it and test every speed and incline setting inside the returns window, so a fault is a return rather than a warranty claim to a maker you may not be able to reach.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an OMA Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these apply to any marketplace treadmill; they matter more where the brand has no US store to fall back on.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the horsepower in the title</h3>
-              <p class="text-gray-700 text-sm m-0">OMA’s 7200EB is listed at 2.25, 2.5 and 3.0 HP in different places, and a Caroma buyer found 2.25 HP on a motor sold as 3.25. Horsepower in a marketplace title is the least reliable figure. Judge the machine on belt size, capacity, warranty and returns.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a short belt to run on</h3>
-              <p class="text-gray-700 text-sm m-0">A 45-inch belt is a walking belt. Running on it means a shortened stride and a real risk of stepping off the back. If you want to run, buy a treadmill with at least a 55-inch deck.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not recording the warranty on the day</h3>
-              <p class="text-gray-700 text-sm m-0">OMA’s warranty varies by listing, and listings change. Screenshot the warranty, the specification and the seller’s name when you order, so you can show what you were promised if something fails.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting the returns window run out unopened</h3>
-              <p class="text-gray-700 text-sm m-0">A treadmill in its box can sit for weeks. Assemble it and test every speed and incline setting inside the returns window, so a fault is a return rather than a warranty claim to a maker you may not be able to reach.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand &amp; Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/sunny-health-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Sunny Health & Fitness Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A budget brand with its own US store and published specifications.</p>
-            </a>
-            <a href="/xterra-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">XTERRA Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Compact folders with powered incline, checked against XTERRA’s US store.</p>
-            </a>
-            <a href="/buying-a-treadmill-on-amazon/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Where to Buy</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill on Amazon</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Sellers, returns, delivery and how to read a listing.</p>
-            </a>
-            <a href="/best-folding-treadmill-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Folding treadmills compared on deck, motor, fold and warranty.</p>
-            </a>
-            <a href="/rhythm-fun-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">RHYTHM FUN Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely.</p>
-            </a>
-            <a href="/lifesmart-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">LifeSmart Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            OMA is a real treadmill brand sold to US buyers through Amazon, and the
-            <strong class="text-white">OMA 7200EB</strong> is a folding walking-and-jogging machine whose
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            OMA is a real treadmill brand sold to US buyers through Amazon, and the <strong class="text-white">OMA 7200EB</strong> is a folding walking-and-jogging machine whose
             agreed figures, 10 mph, three manual incline settings and 300 lb, are reasonable. Its belt is short,
             its motor rating varies by listing, and we found no US website or published warranty, so buy it
             only from a seller with clear terms, and screenshot them. The 7200EB was not listed on Amazon US
             when we checked; the OMA Amazon does list is a close sibling with an 8.1 mph top speed.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If the price gap is small, the <strong class="text-white">Sunny Active 300 (SF-T724011)</strong> at about $600 or
             the <strong class="text-white">XTERRA TRX1200</strong> at $549.99 gives you the same format from a
-            brand with a US store. For more, see our
-            <a href="/best-folding-treadmill-reviews/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill roundup</a>.
+            brand with a US store. For more, see our <a href="/best-folding-treadmill-reviews/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill roundup</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/sunny-health-fitness-treadmills/">Sunny Health & Fitness Treadmills</a></li>
+            <li><a href="/xterra-treadmills/">XTERRA Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Are OMA treadmills a good brand?</h3></summary>
+            <p class="faq-a">
+              OMA makes conventional folding treadmills whose agreed figures, such as the 7200EB’s 10 mph top speed and 300 lb capacity, are reasonable for their price. The weaknesses are short belts, motor and belt figures that differ between the manual and the listings, and no US website or published US warranty that we could find. Buy one only through a seller with clear warranty and returns terms.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Does OMA sell treadmills in the US?</h3></summary>
+            <p class="faq-a">
+              Yes, mainly through Amazon and marketplace sellers. OMA manuals are indexed against Amazon US product identifiers, the OMA-7200EA has a US FCC authorisation, and returned OMA treadmills have been sold at US liquidation auctions. We found no OMA website or support page for US buyers.
             </p>
+          </details>
+          <details>
+            <summary><h3>What are the OMA 7200EB’s specifications?</h3></summary>
+            <p class="faq-a">
+              OMA’s manual and listings agree on a 0.6 to 10 mph speed range, three manual incline levels, 36 preset programs, a folding frame and a 300 lb capacity. They disagree on the belt, 16.5 by 45.3 inches in the manual and 17 by 45.5 inches in listings, and on the motor, given as 2.25, 2.5 or 3.0 HP.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is the OMA 7200EB good for running?</h3></summary>
+            <p class="faq-a">
+              Not really. Its belt, about 45 inches long by either published figure, is well short of the 55 to 60 inches usually recommended for running. Treat it as a walking and light-jogging treadmill, and if you want to run, look at a machine with a longer deck.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is Caroma the same as OMA?</h3></summary>
+            <p class="faq-a">
+              We found no source linking them. Caroma is best known as an Australian bathroom brand, and the Caroma-named treadmills we found were separate marketplace machines, including a used 3.0HP folding treadmill with a 15.75 by 47.24-inch running area and a 250 lb capacity.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What warranty do OMA treadmills have?</h3></summary>
+            <p class="faq-a">
+              We could not find a published OMA warranty for the US. Terms in individual listings varied, from one year on one incline model to three years on another, and one buyer mentioned a two-year term. Screenshot the warranty statement on the listing you buy from, and check the seller’s returns window.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Brands">
+          <h2 class="section-title">More in Brands</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/brands/" class="btn-ghost">See all Brands</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Brand &amp; Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/sunny-health-fitness-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Sunny Health & Fitness Treadmills</div>
+            <p class="c-blurb">A budget brand with its own US store and published specifications.</p>
+          </a>
+          <a href="/xterra-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">XTERRA Treadmills</div>
+            <p class="c-blurb">Compact folders with powered incline, checked against XTERRA’s US store.</p>
+          </a>
+          <a href="/buying-a-treadmill-on-amazon/" class="card">
+            <div class="c-kicker">Where to Buy</div>
+            <div class="c-title">Buying a Treadmill on Amazon</div>
+            <p class="c-blurb">Sellers, returns, delivery and how to read a listing.</p>
+          </a>
+          <a href="/best-folding-treadmill-reviews/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Folding Treadmills</div>
+            <p class="c-blurb">Folding treadmills compared on deck, motor, fold and warranty.</p>
+          </a>
+          <a href="/rhythm-fun-treadmill/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">RHYTHM FUN Treadmills</div>
+            <p class="c-blurb">Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely.</p>
+          </a>
+          <a href="/lifesmart-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">LifeSmart Treadmills</div>
+            <p class="c-blurb">The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

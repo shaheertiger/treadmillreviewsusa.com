@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Wooden Walking Pad Buyer’s Guide (2026): Wood-Look, Solid Wood and Slat Treadmills";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/wooden-walking-pad/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -105,64 +110,45 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See Who Should Buy One", link: "#who-should-buy" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-woodenwalkingpad" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-woodenwalkingpad)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buyer's Guide</span>
+      </nav>
+      <h1 class="ed-title">Wooden Walking Pad Buyer’s Guide</h1>
+      <p class="ed-dek">
+        A “wooden walking pad” can mean a cheap motorised pad with a wood-grain finish, a German manual treadmill desk in beech and steel, or an $8,000 solid-wood curved trainer. They have little in common beyond the look. This guide separates them, sets out what wood actually changes, and says who should pay for it.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 20, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buyer's Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Wooden Walking Pad <span class="text-[#5AA9FF]">Buyer’s Guide</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A “wooden walking pad” can mean a cheap motorised pad with a wood-grain finish, a German manual treadmill desk in beech and steel, or an $8,000 solid-wood curved trainer. They have little in common beyond the look. This guide separates them, sets out what wood actually changes, and says who should pay for it.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy One
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A wooden walking pad is usually one of three things: a normal motorised pad with a wood or
+          wood-grain housing, a motorless walking treadmill built partly from solid wood, or a slat
+          treadmill whose running surface is made of wooden or wood-framed slats. Wood changes how the
+          machine looks and, on the expensive manual machines, how heavy and how quiet it is. It does not
+          change the things that decide whether a walking pad suits you — belt length, weight capacity,
+          speed range and the warranty behind it. This guide explains each type, what it costs in the US,
+          and when a standard walking pad is the better buy.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.2k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
           20 October 2026 we read the Walkolution 1 and Walkolution 2 listings and the shipping policy on
           Walkolution's USA and Canada store, including the store's product data for every configuration,
@@ -177,60 +163,38 @@ const schema = {
           Walker, Urevo, FlexiSpot, Redliro and Maksone and found no recalls. We have not tested any machine
           on this page. Prices are as shown on 20 October 2026 and change. This page is equipment advice,
           not medical advice. As an Amazon Associate we earn from qualifying purchases.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Wooden Walking Pads: The Short Answer</a>
-          <a href="#three-meanings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What People Mean by a Wooden Walking Pad</a>
-          <a href="#what-wood-changes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Wood Changes, and What It Does Not</a>
-          <a href="#machines" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Genuinely Wooden Machines Sold in the US</a>
-          <a href="#wood-look-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Wood-Look Motorised Pads: How to Read the Listing</a>
-          <a href="#prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Price Bands and What Each Buys</a>
-          <a href="#buying-in-the-us" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. US Availability, Shipping and Warranty</a>
-          <a href="#wood-care" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Caring for Wood Near Sweat and Humidity</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Recalls and Safety Checks</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy a Wooden Walking Pad, and Who Should Not</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Wooden Walking Pads: The Short Answer</a></li>
+            <li><a href="#three-meanings">What People Mean by a Wooden Walking Pad</a></li>
+            <li><a href="#what-wood-changes">What Wood Changes, and What It Does Not</a></li>
+            <li><a href="#machines">The Genuinely Wooden Machines Sold in the US</a></li>
+            <li><a href="#wood-look-pads">Wood-Look Motorised Pads: How to Read the Listing</a></li>
+            <li><a href="#prices">Price Bands and What Each Buys</a></li>
+            <li><a href="#buying-in-the-us">US Availability, Shipping and Warranty</a></li>
+            <li><a href="#wood-care">Caring for Wood Near Sweat and Humidity</a></li>
+            <li><a href="#safety">Recalls and Safety Checks</a></li>
+            <li><a href="#who-should-buy">Who Should Buy a Wooden Walking Pad, and Who Should Not</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A wooden walking pad is usually one of three things: a normal motorised pad with a wood or
-          wood-grain housing, a motorless walking treadmill built partly from solid wood, or a slat
-          treadmill whose running surface is made of wooden or wood-framed slats. Wood changes how the
-          machine looks and, on the expensive manual machines, how heavy and how quiet it is. It does not
-          change the things that decide whether a walking pad suits you — belt length, weight capacity,
-          speed range and the warranty behind it. This guide explains each type, what it costs in the US,
-          and when a standard walking pad is the better buy.
-        </p>
 
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Wooden Walking Pads: The Short Answer</h2>
+          <h2>Wooden Walking Pads: The Short Answer</h2>
 <p>
             <strong>If you want a walking pad that looks warmer than black plastic, a wood-grain motorised
             pad costs about the same as any other pad and should be judged exactly like one.</strong> The wood,
             or more often the wood-effect finish, is on the housing. The belt, motor, deck and controls are the
             same kind of parts you would find on a plain pad, so the usual checks — belt length, a continuous
             motor rating, weight capacity with margin, and a warranty from a seller you can reach — still decide
-            whether it is any good. Our
-            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
-            covers those checks in order.
+            whether it is any good. Our <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a> covers those checks in order.
           </p>
           <p>
             <strong>If you want a treadmill that is genuinely built from wood, you are buying a different and
-            far more expensive machine.</strong> In the US that currently means the German-made Walkolution
-            <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual treadmill</a> desks, sold through Woodway USA from $2,995 on the day we checked, or NOHrD's
+            far more expensive machine.</strong> In the US that currently means the German-made Walkolution <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual treadmill</a> desks, sold through Woodway USA from $2,995 on the day we checked, or NOHrD's
             solid-wood machines: the Sprintbok curved manual treadmill from about $8,199 and the motorised
             Citius slat treadmill from $22,999. A Berlin-made wood-framed manual pad, the Office Walker, was
             taking pre-orders. These machines are heavy, quiet and built to last, with long warranties on some
@@ -246,7 +210,7 @@ const schema = {
         </div>
 
         <div id="three-meanings" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What People Mean by a Wooden Walking Pad</h2>
+          <h2>What People Mean by a Wooden Walking Pad</h2>
 <p>
             The phrase covers three quite different products, and listings and search results mix them freely.
           </p>
@@ -289,7 +253,7 @@ const schema = {
         </div>
 
         <div id="what-wood-changes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Wood Changes, and What It Does Not</h2>
+          <h2>What Wood Changes, and What It Does Not</h2>
 <p>
             Wood is mostly a design choice. It is worth being clear about which properties it affects,
             because listings tend to imply more.
@@ -307,8 +271,7 @@ const schema = {
             there is no motor, not because the wood is. Walkolution claims an average under 35 dB for both of its
             models; OCDevel reports a manufacturer figure of 30 to 45 dB for the Office Walker. These are
             manufacturer numbers and we have not measured them. A wood housing on a motorised pad does nothing
-            about motor whine or belt slap; for that, see our
-            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">best quiet walking pads</a>.</li>
+            about motor whine or belt slap; for that, see our <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">best quiet walking pads</a>.</li>
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What it does not change</h3>
           <ul>
@@ -329,7 +292,7 @@ const schema = {
         </div>
 
         <div id="machines" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Genuinely Wooden Machines Sold in the US</h2>
+          <h2>The Genuinely Wooden Machines Sold in the US</h2>
 <p>
             These are the solid-wood and wood-framed machines we could find being sold to US buyers on
             20 October 2026. Figures are the manufacturers' or dealers' own, converted to imperial where needed,
@@ -397,8 +360,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">NOHrD Sprintbok and Citius</h3>
           <p>
             NOHrD, the sister brand of WaterRower, builds its machines in solid wood in Nordhorn, Germany. The
-            Sprintbok is a curved, self-powered running treadmill covered in detail in our
-            <a href="/nohrd-sprintbok/" class="text-[#0F62FE] font-medium">NOHrD Sprintbok review</a>; a US dealer
+            Sprintbok is a curved, self-powered running treadmill covered in detail in our <a href="/nohrd-sprintbok/" class="text-[#0F62FE] font-medium">NOHrD Sprintbok review</a>; a US dealer
             listed it from $8,199 on 20 October. The Citius is the only motorised wooden treadmill we found on
             sale in the US. Two US dealers agree on $22,999 (Shadow) to $25,499 (Walnut), a top speed of
             30 km/h (about 18.6 mph), a 25% incline, a 155 by 60 cm running surface, 215 kg machine weight and a
@@ -409,7 +371,7 @@ const schema = {
         </div>
 
         <div id="wood-look-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Wood-Look Motorised Pads: How to Read the Listing</h2>
+          <h2>Wood-Look Motorised Pads: How to Read the Listing</h2>
 <p>
             Wood-grain motorised pads are where most of the search traffic for "wooden walking pad" ends up, and
             they are also where listings are least reliable. Three examples show the pattern.
@@ -447,17 +409,14 @@ const schema = {
             remotes and safety keys are sold as spares.</li>
           </ol>
           <p>
-            If you do want to browse,
-            <a href="https://www.amazon.com/s?k=wood+walking+pad&amp;tag=sktiger-20" target="_blank" rel="sponsored nofollow noopener" class="text-[#0F62FE] font-medium">Amazon's wood walking pad results</a>
-            show what is listed today — a search, not a recommendation. For specific models whose figures we were
-            able to cross-check, use our
-            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup and choose
+            If you do want to browse, <a href="https://www.amazon.com/s?k=wood+walking+pad&amp;tag=sktiger-20" target="_blank" rel="sponsored nofollow noopener" class="text-[#0F62FE] font-medium">Amazon's wood walking pad results</a> show what is listed today — a search, not a recommendation. For specific models whose figures we were
+            able to cross-check, use our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup and choose
             the finish afterwards.
           </p>
         </div>
 
         <div id="prices" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Price Bands and What Each Buys</h2>
+          <h2>Price Bands and What Each Buys</h2>
 <p>
             The price gap between the types is large enough that the decision is often made by budget alone.
             These bands reflect listings on 20 October 2026; prices change, sometimes daily on marketplace pads.
@@ -485,7 +444,7 @@ const schema = {
         </div>
 
         <div id="buying-in-the-us" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. US Availability, Shipping and Warranty</h2>
+          <h2>US Availability, Shipping and Warranty</h2>
 <p>
             Most genuinely wooden machines are made in Germany, so who sells them in the US matters as much as
             the machine.
@@ -513,15 +472,13 @@ const schema = {
           <p>
             These ship like any walking pad, usually in a single box of 40 to 60 lb. Warranty terms vary from
             seller to seller and are sometimes missing from the listing altogether, as on the FlexiSpot page we
-            read. Our
-            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what to look for and why the company behind the warranty matters more than the number of
+            read. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what to look for and why the company behind the warranty matters more than the number of
             years.
           </p>
         </div>
 
         <div id="wood-care" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Caring for Wood Near Sweat and Humidity</h2>
+          <h2>Caring for Wood Near Sweat and Humidity</h2>
 <p>
             A walking machine spends its life under a person who is warm and sometimes sweating, often in a
             room with a heater or air conditioning. Solid wood copes well with that if a few habits are in place.
@@ -553,7 +510,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Recalls and Safety Checks</h2>
+          <h2>Recalls and Safety Checks</h2>
 <p>
             On 20 October 2026 we searched the US Consumer Product Safety Commission's recall database for every
             brand named on this page — Walkolution, Woodway, NOHrD, WaterRower, Office Walker, Urevo, FlexiSpot,
@@ -577,7 +534,7 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy a Wooden Walking Pad, and Who Should Not</h2>
+          <h2>Who Should Buy a Wooden Walking Pad, and Who Should Not</h2>
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A wood-look motorised pad suits you if</h3>
           <ul>
             <li>you want an ordinary walking pad and the finish matters because it lives in view;</li>
@@ -611,143 +568,156 @@ const schema = {
             machine.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a wooden walking pad actually made of wood?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually not entirely. Most motorised pads sold as wooden have a wood-grain or wood-texture finish on the housing, often printed or laminated, over an ordinary belt and deck. Genuinely wooden machines, such as the Walkolution 1 in solid beech and steel or NOHrD’s solid-wood treadmills, are motorless or premium machines costing thousands.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much does a wooden treadmill cost?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On 20 October 2026, wood-look motorised pads cost roughly the same as plain pads, about $150 to $450. The Walkolution 2 manual desk treadmill was $2,995 to $3,795, the Walkolution 1 $5,180 on sale, the NOHrD Sprintbok from about $8,199 and the motorised NOHrD Citius $22,999 to $25,499. Prices change.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a wooden walking pad quieter?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only when it has no motor. Manual wooden treadmills are quiet because there is nothing to whine; Walkolution claims under 35 dB. A wood-grain housing on a motorised pad does not reduce motor or belt noise, so judge it on the same noise checks as any other pad.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a wooden walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not on most. Wood-look motorised pads typically top out around 4 mph, and Walkolution says the Walkolution 2 is for walking only, up to 3.1 mph. If you want to run on a wooden machine, the options are running treadmills such as NOHrD’s curved Sprintbok or motorised Citius.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can I buy a Walkolution in the US?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Walkolution sells through a USA and Canada store priced in dollars, with Woodway USA as its North American team, free kerbside delivery in the contiguous US, and a 30-day trial with terms. On 20 October 2026 the Walkolution 2 started at $2,995. It is not sold on Amazon.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How do I look after the wood on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Keep the room’s humidity stable, ideally between 30% and 50%, keep the machine away from radiators and damp floors, wipe sweat off with a barely damp cloth and dry it, and re-oil only with the product and schedule the manufacturer names. Printed wood-grain finishes need no special care.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Wooden Walking Pad</h2>
+          <p>The mistakes here come from treating the wood as the specification. These are the four to avoid.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Paying extra for a wood-grain finish</h3>
+              <p>A printed wood effect on a motorised pad changes nothing about how it walks or lasts. If a wood-look pad costs more than a plain pad with the same belt, motor and capacity, buy the plain one or keep looking. Compare specifications first and choose the finish last.</p>
+            </li>
+            <li>
+              <h3>Buying a manual desk treadmill expecting a workout machine</h3>
+              <p>The Walkolution 2 is rated for walking only, up to 3.1 mph, and a motorless curved surface makes you set the pace. If you also want brisk incline walking or running, budget for a separate treadmill or choose a running machine instead of a desk walker.</p>
+            </li>
+            <li>
+              <h3>Forgetting the desk and the delivery</h3>
+              <p>A manual wooden treadmill sits higher than a pad, so your desk must rise further, and the machine arrives at the kerb in a heavy carton. Measure your desk’s maximum height, plan who will carry the machine indoors, and ask for a room-of-choice quote before ordering.</p>
+            </li>
+            <li>
+              <h3>Putting solid wood in a damp or hot room</h3>
+              <p>An unheated garage, a humid basement or a spot against a radiator can crack or warp the wood, and WaterRower warns such conditions may void its warranty. Keep the machine indoors at stable humidity, ideally 30% to 50%, and away from heat sources.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Wooden Walking Pad</h2>
-          <p class="text-gray-700 leading-relaxed">The mistakes here come from treating the wood as the specification. These are the four to avoid.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying extra for a wood-grain finish</h3>
-              <p class="text-gray-700 text-sm m-0">A printed wood effect on a motorised pad changes nothing about how it walks or lasts. If a wood-look pad costs more than a plain pad with the same belt, motor and capacity, buy the plain one or keep looking. Compare specifications first and choose the finish last.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a manual desk treadmill expecting a workout machine</h3>
-              <p class="text-gray-700 text-sm m-0">The Walkolution 2 is rated for walking only, up to 3.1 mph, and a motorless curved surface makes you set the pace. If you also want brisk incline walking or running, budget for a separate treadmill or choose a running machine instead of a desk walker.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the desk and the delivery</h3>
-              <p class="text-gray-700 text-sm m-0">A manual wooden treadmill sits higher than a pad, so your desk must rise further, and the machine arrives at the kerb in a heavy carton. Measure your desk’s maximum height, plan who will carry the machine indoors, and ask for a room-of-choice quote before ordering.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting solid wood in a damp or hot room</h3>
-              <p class="text-gray-700 text-sm m-0">An unheated garage, a humid basement or a spot against a radiator can crack or warp the wood, and WaterRower warns such conditions may void its warranty. Keep the machine indoors at stable humidity, ideally 30% to 50%, and away from heat sources.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Walking Pad Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/walking-pad-buying-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad Buying Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Belt length, motor, capacity and warranty, in the order they matter.</p>
-            </a>
-            <a href="/best-quiet-walking-pads/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Quiet Walking Pads</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The pads to consider when noise matters most.</p>
-            </a>
-            <a href="/nohrd-sprintbok/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NOHrD Sprintbok</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The solid-wood curved treadmill: what NOHrD confirms and who it suits.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Most wooden walking pads are ordinary motorised pads with a wood-look
           finish, and they should be bought on belt length, motor rating, capacity and warranty like any
           other.</strong> The finish is a matter of taste and should not cost extra. Genuinely wooden machines —
           Walkolution's manual desk treadmills from $2,995 and NOHrD's treadmills from about $8,199 — are a
           different, far more expensive category built for quiet daily walking or premium running.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Buy a solid-wood manual treadmill only if you will walk at a desk most days and value near-silence and
-          longevity enough to pay for them. Otherwise, start with our
-          <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>
-          and our
-          <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>,
+          longevity enough to pay for them. Otherwise, start with our <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a> and our <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>,
           and pick the finish you like once the specification is right.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/walking-pad-buying-guide/">Walking Pad Buying Guide</a></li>
+            <li><a href="/best-quiet-walking-pads/">Best Quiet Walking Pads</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is a wooden walking pad actually made of wood?</h3></summary>
+            <p class="faq-a">
+              Usually not entirely. Most motorised pads sold as wooden have a wood-grain or wood-texture finish on the housing, often printed or laminated, over an ordinary belt and deck. Genuinely wooden machines, such as the Walkolution 1 in solid beech and steel or NOHrD’s solid-wood treadmills, are motorless or premium machines costing thousands.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How much does a wooden treadmill cost?</h3></summary>
+            <p class="faq-a">
+              On 20 October 2026, wood-look motorised pads cost roughly the same as plain pads, about $150 to $450. The Walkolution 2 manual desk treadmill was $2,995 to $3,795, the Walkolution 1 $5,180 on sale, the NOHrD Sprintbok from about $8,199 and the motorised NOHrD Citius $22,999 to $25,499. Prices change.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a wooden walking pad quieter?</h3></summary>
+            <p class="faq-a">
+              Only when it has no motor. Manual wooden treadmills are quiet because there is nothing to whine; Walkolution claims under 35 dB. A wood-grain housing on a motorised pad does not reduce motor or belt noise, so judge it on the same noise checks as any other pad.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a wooden walking pad?</h3></summary>
+            <p class="faq-a">
+              Not on most. Wood-look motorised pads typically top out around 4 mph, and Walkolution says the Walkolution 2 is for walking only, up to 3.1 mph. If you want to run on a wooden machine, the options are running treadmills such as NOHrD’s curved Sprintbok or motorised Citius.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can I buy a Walkolution in the US?</h3></summary>
+            <p class="faq-a">
+              Yes. Walkolution sells through a USA and Canada store priced in dollars, with Woodway USA as its North American team, free kerbside delivery in the contiguous US, and a 30-day trial with terms. On 20 October 2026 the Walkolution 2 started at $2,995. It is not sold on Amazon.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How do I look after the wood on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Keep the room’s humidity stable, ideally between 30% and 50%, keep the machine away from radiators and damp floors, wipe sweat off with a barely damp cloth and dry it, and re-oil only with the product and schedule the manufacturer names. Printed wood-grain finishes need no special care.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Walking Pad Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/walking-pad-buying-guide/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Walking Pad Buying Guide</div>
+            <p class="c-blurb">Belt length, motor, capacity and warranty, in the order they matter.</p>
+          </a>
+          <a href="/best-quiet-walking-pads/" class="card">
+            <div class="c-kicker">Roundup</div>
+            <div class="c-title">Best Quiet Walking Pads</div>
+            <p class="c-blurb">The pads to consider when noise matters most.</p>
+          </a>
+          <a href="/nohrd-sprintbok/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">NOHrD Sprintbok</div>
+            <p class="c-blurb">The solid-wood curved treadmill: what NOHrD confirms and who it suits.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

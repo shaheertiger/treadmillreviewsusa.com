@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Treadmill Cushioning Explained (2026): What Actually Matters";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/treadmill-cushioning-explained/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,100 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Test It Yourself", link: "#store-test" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-treadmillcushioningexplained" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillcushioningexplained)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Spec Explainer</span>
+      </nav>
+      <h1 class="ed-title">Treadmill Cushioning Explained</h1>
+      <p class="ed-dek">
+        Every treadmill brochure promises a cushioned deck, most quote a percentage of impact it removes, and almost none tell you how that figure was measured. Here is how deck suspension actually works, what it can and cannot do, and how to judge it without the marketing.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Spec Explainer
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Treadmill Cushioning <span class="text-[#5AA9FF]">Explained</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Every treadmill brochure promises a cushioned deck, most quote a percentage of impact it removes, and almost none tell you how that figure was measured. Here is how deck suspension actually works, what it can and cannot do, and how to judge it without the marketing.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#how-it-works" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            How Decks Are Suspended
-          </a>
-          <a href="#store-test" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Test It Yourself
-          </a>
-        </div>
+        <a href="#how-it-works" class="btn-ghost">How Decks Are Suspended</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.8k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">Scope.</strong> This is an equipment explainer, not medical
-          advice. Cushioning affects comfort and how a surface feels; it is not a treatment for
-          joint pain or injury. If you have a knee, hip, back or foot condition, a physician or
-          physical therapist who knows your history is the right person to ask what kind of
-          exercise and surface suits you.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#what-cushioning-is" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What "Cushioning" Means on a Treadmill</a>
-          <a href="#how-it-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Treadmill Decks Are Suspended</a>
-          <a href="#what-it-does" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Cushioning Does and Does Not Do</a>
-          <a href="#too-soft" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why a Softer Deck Is Not Always Better</a>
-          <a href="#deck-thickness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Deck Thickness and Construction</a>
-          <a href="#belts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Belt Thickness and Orthopedic Belts</a>
-          <a href="#shoes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Your Shoes Still Matter More</a>
-          <a href="#walking-vs-running" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Running vs Walking: Who Needs What</a>
-          <a href="#wear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Cushioning Wears Out</a>
-          <a href="#apartments-and-knees" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Cushioning, Bad Knees and Apartments</a>
-          <a href="#store-test" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How to Judge Cushioning in a Store</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. So, Does Treadmill Cushioning Matter?</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           Cushioning is one of the few treadmill specifications that genuinely changes how a
           machine feels underfoot, and also one of the least honestly described. It does matter —
           a well-suspended deck is more comfortable than pavement and more comfortable than a
@@ -206,8 +145,36 @@ const schema = {
           treadmill worse rather than better.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">Scope.</strong> This is an equipment explainer, not medical
+          advice. Cushioning affects comfort and how a surface feels; it is not a treatment for
+          joint pain or injury. If you have a knee, hip, back or foot condition, a physician or
+          physical therapist who knows your history is the right person to ask what kind of
+          exercise and surface suits you.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#what-cushioning-is">What "Cushioning" Means on a Treadmill</a></li>
+            <li><a href="#how-it-works">How Treadmill Decks Are Suspended</a></li>
+            <li><a href="#what-it-does">What Cushioning Does and Does Not Do</a></li>
+            <li><a href="#too-soft">Why a Softer Deck Is Not Always Better</a></li>
+            <li><a href="#deck-thickness">Deck Thickness and Construction</a></li>
+            <li><a href="#belts">Belt Thickness and Orthopedic Belts</a></li>
+            <li><a href="#shoes">Your Shoes Still Matter More</a></li>
+            <li><a href="#walking-vs-running">Running vs Walking: Who Needs What</a></li>
+            <li><a href="#wear">Cushioning Wears Out</a></li>
+            <li><a href="#apartments-and-knees">Cushioning, Bad Knees and Apartments</a></li>
+            <li><a href="#store-test">How to Judge Cushioning in a Store</a></li>
+            <li><a href="#verdict">So, Does Treadmill Cushioning Matter?</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="what-cushioning-is" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What "Cushioning" Means on a Treadmill</h2>
+          <h2>What "Cushioning" Means on a Treadmill</h2>
 <p>
             On a running shoe, cushioning is foam. On a treadmill, it is almost never the deck
             itself. The deck is a rigid board — typically a medium-density fibreboard or similar
@@ -232,7 +199,7 @@ const schema = {
         </div>
 
         <div id="how-it-works" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Treadmill Decks Are Suspended</h2>
+          <h2>How Treadmill Decks Are Suspended</h2>
 <p>
             There are three broad approaches, and most machines use one or a blend of them.
           </p>
@@ -266,7 +233,7 @@ const schema = {
         </div>
 
         <div id="what-it-does" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Cushioning Does and Does Not Do</h2>
+          <h2>What Cushioning Does and Does Not Do</h2>
 <p>
             <strong>What it does.</strong> A suspended deck reduces the sharpness of each landing
             compared with a hard surface. Most people describe a well-cushioned treadmill as more
@@ -297,7 +264,7 @@ const schema = {
         </div>
 
         <div id="too-soft" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why a Softer Deck Is Not Always Better</h2>
+          <h2>Why a Softer Deck Is Not Always Better</h2>
 <p>
             The intuition is that softer equals kinder, and up to a point it is. Past that point,
             a soft deck starts to cost you.
@@ -320,15 +287,13 @@ const schema = {
             a deck is not how far it compresses but how quickly and evenly it comes back. A deck
             that gives moderately and returns promptly tends to feel both comfortable and
             efficient. A deck that gives a lot and returns slowly feels plush in a showroom and
-            tiring at home. Our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees guide</a>
-            makes the same point from the other direction: the softest deck is not automatically
+            tiring at home. Our <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees guide</a> makes the same point from the other direction: the softest deck is not automatically
             the kindest one.
           </p>
         </div>
 
         <div id="deck-thickness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Deck Thickness and Construction</h2>
+          <h2>Deck Thickness and Construction</h2>
 <p>
             Some spec sheets list deck thickness, and it is a reasonable — if indirect — signal
             of quality. Home treadmill decks are commonly in the region of three-quarters of an
@@ -352,7 +317,7 @@ const schema = {
         </div>
 
         <div id="belts" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Belt Thickness and Orthopedic Belts</h2>
+          <h2>Belt Thickness and Orthopedic Belts</h2>
 <p>
             The belt contributes a small amount of cushioning of its own. Treadmill belts are
             layered — a top running surface over one or more fabric plies — and thicker,
@@ -370,21 +335,17 @@ const schema = {
           </p>
           <p>
             Belt width and length affect comfort in a different way — how much room you have
-            rather than how soft it feels — and our
-            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
-            covers which dimensions suit walking, jogging and running.
+            rather than how soft it feels — and our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a> covers which dimensions suit walking, jogging and running.
           </p>
         </div>
 
         <div id="shoes" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Your Shoes Still Matter More</h2>
+          <h2>Your Shoes Still Matter More</h2>
 <p>
             This is the least glamorous point in the article and probably the most useful. The
             cushioning between your foot and the belt is overwhelmingly in your shoes, not in the
             deck. A running or walking shoe has inches of foam under the heel and forefoot; a
-            treadmill deck moves a fraction of an inch. Our
-            <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best running shoes for treadmill</a>
-            covers current picks.
+            treadmill deck moves a fraction of an inch. Our <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best running shoes for treadmill</a> covers current picks.
           </p>
           <p>
             That means a fresh pair of appropriate shoes is likely to change how a session feels
@@ -402,7 +363,7 @@ const schema = {
         </div>
 
         <div id="walking-vs-running" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Running vs Walking: Who Needs What</h2>
+          <h2>Running vs Walking: Who Needs What</h2>
 <p>
             The forces involved in walking and running are substantially different. Each
             footstrike when running loads the body considerably more than walking does, and the
@@ -425,14 +386,12 @@ const schema = {
           </p>
           <p>
             If you are deciding whether a treadmill is the right machine at all — perhaps because
-            impact is the thing you are trying to avoid — our
-            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a>
-            looks at the trade-offs between a cushioned belt and a machine with no impact phase.
+            impact is the thing you are trying to avoid — our <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a> looks at the trade-offs between a cushioned belt and a machine with no impact phase.
           </p>
         </div>
 
         <div id="wear" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Cushioning Wears Out</h2>
+          <h2>Cushioning Wears Out</h2>
 <p>
             Deck suspension is not permanent. Elastomer isolators are rubber or polyurethane, and
             like any elastomer under repeated load they gradually compress, harden or crack.
@@ -455,7 +414,7 @@ const schema = {
         </div>
 
         <div id="apartments-and-knees" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Cushioning, Bad Knees and Apartments</h2>
+          <h2>Cushioning, Bad Knees and Apartments</h2>
 <p>
             Two of the most common reasons people care about cushioning are joint comfort and
             noise. Both are reasonable concerns, and in both cases cushioning helps less directly
@@ -467,9 +426,7 @@ const schema = {
             cause are different things. Speed, incline, session length and how gradually you
             build up typically have more effect on how a joint feels afterwards than the deck
             does, and the right approach for a specific condition is a question for a clinician
-            rather than a spec sheet. Our
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">bad knees guide</a>
-            covers the features beyond cushioning that tend to matter here.
+            rather than a spec sheet. Our <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">bad knees guide</a> covers the features beyond cushioning that tend to matter here.
           </p>
           <p>
             <strong>Apartments and neighbours.</strong> More cushioning does not automatically
@@ -478,15 +435,13 @@ const schema = {
             absorbs footfall well can help, but a soft deck on a light, flexy frame may still pass
             a great deal of energy into the floor, and a bouncy deck can add rhythmic thumping of
             its own. Frame mass, a dense rubber mat, placement near a load-bearing wall and
-            running speed all play large roles. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            explains why the machine that is quietest beside you is not necessarily the one that
+            running speed all play large roles. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> explains why the machine that is quietest beside you is not necessarily the one that
             is quietest below.
           </p>
         </div>
 
         <div id="store-test" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How to Judge Cushioning in a Store</h2>
+          <h2>How to Judge Cushioning in a Store</h2>
 <p>
             Because there is no comparable published measure, the most reliable test is your own
             legs. If you can try machines in person, a few minutes on each, done the same way,
@@ -511,22 +466,19 @@ const schema = {
           <p>
             If you are buying online without a chance to try, read owner reviews for words like
             "bouncy", "hard", "thud" and "sluggish" rather than for the cushioning system's name,
-            and check the return policy. Our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
-            puts cushioning in context with motor, deck size, incline and warranty, which together
+            and check the return policy. Our <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a> puts cushioning in context with motor, deck size, incline and warranty, which together
             determine whether a machine suits you.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. So, Does Treadmill Cushioning Matter?</h2>
+          <h2>So, Does Treadmill Cushioning Matter?</h2>
 <p>
             <strong>Yes, within limits.</strong> A properly suspended deck is more comfortable
             than a hard surface and worth having, especially for runners. Among decent home
             treadmills, though, the differences are smaller than marketing suggests, and they are
             easily outweighed by your shoes, your training load and the rest of the machine. If
-            cushioning is still your priority, see the
-            <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">best cushioned treadmills</a>.
+            cushioning is still your priority, see the <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">best cushioned treadmills</a>.
           </p>
           <p>
             <strong>Firm and responsive beats soft and slow.</strong> Look for a deck that gives
@@ -540,141 +492,155 @@ const schema = {
             so the deck you buy will not feel the same in five years.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does treadmill cushioning matter?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, but less than marketing suggests. A suspended deck is more comfortable than a hard surface and that matters most for runners. Among reasonably built home treadmills the differences are modest, and your shoes, speed and training load typically affect how a session feels more than the deck does.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How does treadmill deck shock absorption work?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The deck itself is a rigid board. Cushioning comes from how it is mounted: most machines sit the deck on rubber or polyurethane isolators that compress slightly under each footstrike and spring back, and some use springs or adjustable mounts. The belt and frame stiffness also contribute.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a softer treadmill deck better for your joints?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not automatically. A very soft deck can absorb energy you would otherwise use to move forward, feel bouncy or unstable, and tire the leg muscles faster. Many people find a moderately firm deck that returns quickly more comfortable over a full session. For a specific joint condition, ask a clinician rather than relying on deck softness.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are "reduces impact by 30%" claims accurate?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They cannot be verified. There is no widely adopted independent standard for treadmill shock absorption, so each manufacturer measures against its own baseline using its own method, which is rarely published. The figures are not comparable between brands and are best treated as marketing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does treadmill cushioning wear out?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes. Elastomer isolators gradually compress, harden or crack with use, faster with heavier users, frequent running and temperature extremes. Signs include a harder feel, a new thud on footstrike or uneven feel side to side. On many machines the isolators are inexpensive replaceable parts.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Will a more cushioned treadmill be quieter for downstairs neighbours?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Not necessarily. Neighbours hear impact travelling through the frame and floor into the building. Good cushioning can help, but frame mass, a dense rubber mat, placement near a load-bearing wall and running speed matter as much or more, and a bouncy deck on a light frame can still transmit a lot.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Judging Treadmill Cushioning</h2>
+          <p>Cushioning is easy to misjudge because it is felt rather than measured. These four mistakes account for most disappointing purchases.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Choosing the softest deck in the showroom</h3>
+              <p>A deck that sinks luxuriously under a two-minute walk can feel slow and tiring over a forty-minute run. Judge how promptly the deck returns, not how far it gives, and test at the speed you will actually use at home.</p>
+            </li>
+            <li>
+              <h3>Comparing impact-reduction percentages</h3>
+              <p>Each manufacturer measures its own figure against its own baseline by its own method. A 35 per cent claim from one brand and a 20 per cent claim from another tell you nothing about which deck is softer, firmer or better suited to you.</p>
+            </li>
+            <li>
+              <h3>Expecting cushioning to fix noise</h3>
+              <p>More cushioning is not a guarantee of a quieter machine downstairs. Impact noise depends heavily on frame mass, the mat underneath, where the machine sits on the floor and how fast you run. Solve noise with those, and treat cushioning as one contributor.</p>
+            </li>
+            <li>
+              <h3>Blaming the deck instead of the shoes</h3>
+              <p>The foam in a running shoe does far more cushioning than a deck that moves a fraction of an inch. Worn-out or inappropriate shoes will make any treadmill feel harsh. Check your shoes and your weekly training load before deciding the machine is the problem.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Judging Treadmill Cushioning</h2>
-          <p class="text-gray-700 leading-relaxed">Cushioning is easy to misjudge because it is felt rather than measured. These four mistakes account for most disappointing purchases.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing the softest deck in the showroom</h3>
-              <p class="text-gray-700 text-sm m-0">A deck that sinks luxuriously under a two-minute walk can feel slow and tiring over a forty-minute run. Judge how promptly the deck returns, not how far it gives, and test at the speed you will actually use at home.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing impact-reduction percentages</h3>
-              <p class="text-gray-700 text-sm m-0">Each manufacturer measures its own figure against its own baseline by its own method. A 35 per cent claim from one brand and a 20 per cent claim from another tell you nothing about which deck is softer, firmer or better suited to you.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting cushioning to fix noise</h3>
-              <p class="text-gray-700 text-sm m-0">More cushioning is not a guarantee of a quieter machine downstairs. Impact noise depends heavily on frame mass, the mat underneath, where the machine sits on the floor and how fast you run. Solve noise with those, and treat cushioning as one contributor.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Blaming the deck instead of the shoes</h3>
-              <p class="text-gray-700 text-sm m-0">The foam in a running shoe does far more cushioning than a deck that moves a fraction of an inch. Worn-out or inappropriate shoes will make any treadmill feel harsh. Check your shoes and your weekly training load before deciding the machine is the problem.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-treadmills-for-bad-knees/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Low Impact</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Bad Knees</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Why deck recovery, incline and step-up height matter more than softness.</p>
-            </a>
-            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Apartments</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What neighbours actually hear, and why mass and a mat beat a decibel figure.</p>
-            </a>
-            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Specs</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The belt width and length that suit walking, jogging and running.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Cushioning matters, within limits.</strong> A suspended deck is
             more comfortable than a hard floor, but among decent home treadmills the differences
             are modest, impact percentages are unverifiable, and a deck that gives moderately and
             returns quickly beats one that is simply soft.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Your shoes, speed and training load still matter more than the deck, isolators wear over
             time, and more cushioning is not a guarantee of a quieter machine downstairs. Judge it
-            yourself, at your own pace — our
-            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a>
-            puts it alongside the specs that matter more.
+            yourself, at your own pace — our <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a> puts it alongside the specs that matter more.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-treadmills-for-bad-knees/">Best Treadmills for Bad Knees</a></li>
+            <li><a href="/quiet-treadmills/">Quiet Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Does treadmill cushioning matter?</h3></summary>
+            <p class="faq-a">
+              Yes, but less than marketing suggests. A suspended deck is more comfortable than a hard surface and that matters most for runners. Among reasonably built home treadmills the differences are modest, and your shoes, speed and training load typically affect how a session feels more than the deck does.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How does treadmill deck shock absorption work?</h3></summary>
+            <p class="faq-a">
+              The deck itself is a rigid board. Cushioning comes from how it is mounted: most machines sit the deck on rubber or polyurethane isolators that compress slightly under each footstrike and spring back, and some use springs or adjustable mounts. The belt and frame stiffness also contribute.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a softer treadmill deck better for your joints?</h3></summary>
+            <p class="faq-a">
+              Not automatically. A very soft deck can absorb energy you would otherwise use to move forward, feel bouncy or unstable, and tire the leg muscles faster. Many people find a moderately firm deck that returns quickly more comfortable over a full session. For a specific joint condition, ask a clinician rather than relying on deck softness.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are "reduces impact by 30%" claims accurate?</h3></summary>
+            <p class="faq-a">
+              They cannot be verified. There is no widely adopted independent standard for treadmill shock absorption, so each manufacturer measures against its own baseline using its own method, which is rarely published. The figures are not comparable between brands and are best treated as marketing.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does treadmill cushioning wear out?</h3></summary>
+            <p class="faq-a">
+              Yes. Elastomer isolators gradually compress, harden or crack with use, faster with heavier users, frequent running and temperature extremes. Signs include a harder feel, a new thud on footstrike or uneven feel side to side. On many machines the isolators are inexpensive replaceable parts.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Will a more cushioned treadmill be quieter for downstairs neighbours?</h3></summary>
+            <p class="faq-a">
+              Not necessarily. Neighbours hear impact travelling through the frame and floor into the building. Good cushioning can help, but frame mass, a dense rubber mat, placement near a load-bearing wall and running speed matter as much or more, and a bouncy deck on a light frame can still transmit a lot.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-treadmills-for-bad-knees/" class="card">
+            <div class="c-kicker">Low Impact</div>
+            <div class="c-title">Best Treadmills for Bad Knees</div>
+            <p class="c-blurb">Why deck recovery, incline and step-up height matter more than softness.</p>
+          </a>
+          <a href="/quiet-treadmills/" class="card">
+            <div class="c-kicker">Apartments</div>
+            <div class="c-title">Quiet Treadmills</div>
+            <p class="c-blurb">What neighbours actually hear, and why mass and a mat beat a decibel figure.</p>
+          </a>
+          <a href="/treadmill-belt-size-guide/" class="card">
+            <div class="c-kicker">Specs</div>
+            <div class="c-title">Treadmill Belt Size Guide</div>
+            <p class="c-blurb">The belt width and length that suit walking, jogging and running.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

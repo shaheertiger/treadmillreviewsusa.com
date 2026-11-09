@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Cheap vs. Premium Treadmill (2026): Where the Money Actually Goes";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/cheap-vs-premium-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "best-of");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,108 +109,70 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Breakdown", link: "#components" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-cheapvspremiumtreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-cheapvspremiumtreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best-of/">Best Lists</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Cheap vs. Premium Treadmill</h1>
+      <p class="ed-dek">
+        Both move a belt at a speed you choose. The difference is in six components, and only three of them are ones most home users will ever notice.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated September 8, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated September 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Cheap vs. Premium <span class="text-[#5AA9FF]">Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Both move a belt at a speed you choose. The difference is in six components, and only three of them are ones most home users will ever notice.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#components" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Component by Component
-          </a>
-          <a href="#what-you-notice" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What You Will Notice
-          </a>
-        </div>
+        <a href="#components" class="btn-ghost">Component by Component</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="4.1k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">On the figures below.</strong> Component specifications
-          are typical of each price band rather than universal — a well-specified budget machine
-          can beat a poorly-specified mid-range one, and outgoing model years blur the boundaries
-          further. Use these as a guide to what to look for, and check the actual specifications
-          of the machine in front of you.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#verdict-up-front" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Version</a>
-          <a href="#components" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Six Components That Differ</a>
-          <a href="#motor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Motor: The DC-to-AC Step Is the Real One</a>
-          <a href="#rollers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Rollers: The Specification Nobody Advertises</a>
-          <a href="#cushioning" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Cushioning: Consistency, Not Softness</a>
-          <a href="#what-you-notice" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What You Will Actually Notice</a>
-          <a href="#cost-per-year" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Cost Per Year Changes the Comparison</a>
-          <a href="#when-cheap-wins" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When Cheap Is the Right Answer</a>
-          <a href="#when-premium-wins" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When Premium Genuinely Pays</a>
-          <a href="#sweet-spot" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Why the Middle Is Where Most People Should Be</a>
-          <a href="#maintenance-equaliser" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Maintenance Is the Great Equaliser</a>
-          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Final Recommendations</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           A $500 treadmill and a $4,000 treadmill perform the same function, and anyone telling
           you the expensive one is eight times better is selling something. The honest answer is
           that six components differ, three of them matter to a home user, and the rest is
           durability you will only meet in year seven.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">On the figures below.</strong> Component specifications
+          are typical of each price band rather than universal — a well-specified budget machine
+          can beat a poorly-specified mid-range one, and outgoing model years blur the boundaries
+          further. Use these as a guide to what to look for, and check the actual specifications
+          of the machine in front of you.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#verdict-up-front">The Short Version</a></li>
+            <li><a href="#components">The Six Components That Differ</a></li>
+            <li><a href="#motor">Motor: The DC-to-AC Step Is the Real One</a></li>
+            <li><a href="#rollers">Rollers: The Specification Nobody Advertises</a></li>
+            <li><a href="#cushioning">Cushioning: Consistency, Not Softness</a></li>
+            <li><a href="#what-you-notice">What You Will Actually Notice</a></li>
+            <li><a href="#cost-per-year">Cost Per Year Changes the Comparison</a></li>
+            <li><a href="#when-cheap-wins">When Cheap Is the Right Answer</a></li>
+            <li><a href="#when-premium-wins">When Premium Genuinely Pays</a></li>
+            <li><a href="#sweet-spot">Why the Middle Is Where Most People Should Be</a></li>
+            <li><a href="#maintenance-equaliser">Maintenance Is the Great Equaliser</a></li>
+            <li><a href="#verdict">Final Recommendations</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="verdict-up-front" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Version</h2>
+          <h2>The Short Version</h2>
 <p>
             <strong>Under $500</strong> buys a walking machine. Short deck, small motor, light
             frame, minimal warranty. It works, and it works for the use most treadmills actually
@@ -233,7 +200,7 @@ const schema = {
         </div>
 
         <div id="components" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Six Components That Differ</h2>
+          <h2>The Six Components That Differ</h2>
 <p>
             <strong>Motor.</strong> Budget: 1.5-2.25 CHP DC. Mid: 2.5-3.5 CHP DC. Premium:
             commercial AC. The continuous-duty rating matters; the peak figure on the box does
@@ -263,7 +230,7 @@ const schema = {
         </div>
 
         <div id="motor" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Motor: The DC-to-AC Step Is the Real One</h2>
+          <h2>Motor: The DC-to-AC Step Is the Real One</h2>
 <p>
             Within DC motors, the difference between 2.5 and 3.5 CHP is smaller than it looks for a
             home user. Both hold pace comfortably; the larger one simply operates further inside
@@ -281,13 +248,12 @@ const schema = {
             Whether that is worth $1,500 depends on your duty cycle. One person running an hour a
             day is well inside what a good DC motor manages for a decade. Two people running high
             mileage daily is a different proposition, and it is the clearest case for paying for AC.
-            Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            covers the ratings in detail.
+            Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a> covers the ratings in detail.
           </p>
         </div>
 
         <div id="rollers" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Rollers: The Specification Nobody Advertises</h2>
+          <h2>Rollers: The Specification Nobody Advertises</h2>
 <p>
             If you learn one thing from this page, make it this. Roller diameter is rarely listed,
             rarely discussed, and predicts longevity better than almost anything else.
@@ -309,7 +275,7 @@ const schema = {
         </div>
 
         <div id="cushioning" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Cushioning: Consistency, Not Softness</h2>
+          <h2>Cushioning: Consistency, Not Softness</h2>
 <p>
             Every treadmill at every price is marketed on cushioning, and the marketing describes
             the wrong property. What separates a cheap deck from an expensive one is not how soft it
@@ -329,7 +295,7 @@ const schema = {
         </div>
 
         <div id="what-you-notice" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What You Will Actually Notice</h2>
+          <h2>What You Will Actually Notice</h2>
 <p>
             Three differences are perceptible from the first session, and they are the ones worth
             paying for.
@@ -358,7 +324,7 @@ const schema = {
         </div>
 
         <div id="cost-per-year" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Cost Per Year Changes the Comparison</h2>
+          <h2>Cost Per Year Changes the Comparison</h2>
 <p>
             Purchase price is a poor way to compare treadmills because lifespans differ so much.
             Cost per year of ownership is more honest, and it narrows the gap considerably.
@@ -374,14 +340,12 @@ const schema = {
             neglected $1,200 machine failing at four years costs $300 a year, twice the maintained
             figure. And a subscription changes everything: a $1,800 machine with a $39 monthly fee
             costs roughly $830 a year over five years, which dwarfs every hardware difference on
-            this page. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a>
-            works that through.
+            this page. Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a> works that through.
           </p>
         </div>
 
         <div id="when-cheap-wins" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When Cheap Is the Right Answer</h2>
+          <h2>When Cheap Is the Right Answer</h2>
 <p>
             Four situations where spending more would be waste rather than investment.
           </p>
@@ -407,7 +371,7 @@ const schema = {
         </div>
 
         <div id="when-premium-wins" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When Premium Genuinely Pays</h2>
+          <h2>When Premium Genuinely Pays</h2>
 <p>
             And four where the money is well spent rather than aspirational.
           </p>
@@ -418,9 +382,7 @@ const schema = {
           <p>
             <strong>High body weight.</strong> Capacities on mid-range machines cluster at 300 lbs,
             which with sensible margin means a practical ceiling near 240. Above that, commercial
-            hardware is not a luxury. Our
-            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
-            covers it.
+            hardware is not a luxury. Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a> covers it.
           </p>
           <p>
             <strong>A long ownership horizon.</strong> If you will keep one machine for fifteen
@@ -433,7 +395,7 @@ const schema = {
         </div>
 
         <div id="sweet-spot" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Why the Middle Is Where Most People Should Be</h2>
+          <h2>Why the Middle Is Where Most People Should Be</h2>
 <p>
             The pattern across every component on this page is the same: the gains are steep from
             budget to mid-range and shallow from mid-range to premium.
@@ -446,8 +408,7 @@ const schema = {
           <p>
             Which is also why the middle of the range rewards patience more than any other band:
             a mid-market machine on model-year clearance often costs what a budget machine costs
-            at full price. <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">Where to buy and what to pay</a>
-            covers which channels carry cleared stock and what the warranty looks like when they
+            at full price. <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">Where to buy and what to pay</a> covers which channels carry cleared stock and what the warranty looks like when they
             do.
           </p>
           <p>
@@ -457,16 +418,12 @@ const schema = {
           </p>
           <p>
             So the honest recommendation for most people is $1,000 to $1,800: everything you will
-            notice, very little you will not. Our
-            <a href="/best-treadmills-under-2000/" class="text-[#0F62FE] font-medium">under-$2,000 guide</a>
-            covers that band, and
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a>
-            works through it against your specific use.
+            notice, very little you will not. Our <a href="/best-treadmills-under-2000/" class="text-[#0F62FE] font-medium">under-$2,000 guide</a> covers that band, and <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a> works through it against your specific use.
           </p>
         </div>
 
         <div id="maintenance-equaliser" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Maintenance Is the Great Equaliser</h2>
+          <h2>Maintenance Is the Great Equaliser</h2>
 <p>
             One point worth ending on, because it outweighs several hundred dollars of
             specification difference: a maintained <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>cheap treadmill</a> outlasts a neglected expensive
@@ -482,16 +439,12 @@ const schema = {
             Lubricating every 40 to 50 hours of use, wiping the deck edges after sessions and
             checking tension quarterly takes under an hour a year and roughly doubles a machine's
             life at any price. If your budget is tight, buy the cheaper machine and commit to the
-            schedule — you will end up ahead of someone who bought better and ignored it. Our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
-            covers the year, and the
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the job itself.
+            schedule — you will end up ahead of someone who bought better and ignored it. Our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a> covers the year, and the <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a> covers the job itself.
           </p>
         </div>
 
         <div id="verdict" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Final Recommendations</h2>
+          <h2>Final Recommendations</h2>
 <p>
             Buy <strong>budget</strong> if you will walk, if you are unsure the habit will hold, or
             if this is a secondary machine. You are not compromising on anything you would use.
@@ -510,140 +463,153 @@ const schema = {
             And whichever you buy, lubricate it. That habit is worth more than a price tier.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are expensive treadmills worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For multiple daily users, higher body weights, serious mileage or a fifteen-year ownership horizon, yes. For one person walking or running an hour a day, the extra money buys durability margin you will not consume. The steepest value gain is between $500 and $1,000; the shallowest is between $2,500 and $4,000.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the difference between a cheap and expensive treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Six components: motor type and rating, deck size and substrate, roller diameter, frame mass, cushioning consistency, and warranty terms. Three of those — frame stability, deck length and noise character — are perceptible from the first session. The rest are differences you meet in year seven, if at all.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a DC or AC motor better in a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                AC handles sustained load without the heat build-up that eventually kills DC motors, which is why commercial gyms use it. It starts around $3,000. For one person running an hour a day a good DC motor is entirely adequate for a decade; for two or three people running daily, AC is the clearest reason to spend more.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What roller size should a treadmill have?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Budget machines use 1.9-inch rollers, good mid-range machines 2.5, commercial machines 3 inches or more. Larger rollers flex the belt less tightly, spin slower and load their bearings less, so they predict longevity better than almost any other specification — and they are almost never advertised. Ask for the figure.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does a more expensive treadmill last longer?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually, but maintenance matters more than price. The dominant failure at every price is a motor and controller worn out by friction against a dry deck. A premium machine has more margin to absorb that and does not prevent it. A maintained cheap treadmill routinely outlasts a neglected expensive one.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best value treadmill price range?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Roughly $1,000 to $1,800. Below it you are giving up deck length and frame mass, both of which you notice immediately. Above it you are buying durability margin — AC motors, larger rollers, longer warranties — that a single home user will rarely reach the end of.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Comparing Cheap and Premium Treadmills</h2>
+          <p>These four all come from comparing the specifications that are easy to find rather than the ones that determine the outcome.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Comparing peak horsepower figures</h3>
+              <p>Peak horsepower describes a burst the motor cannot sustain and exists largely for the box. Continuous-duty horsepower is the number that determines whether a motor holds speed and how hot it runs. A budget listing quoting only a peak figure is doing so because the continuous rating is unflattering.</p>
+            </li>
+            <li>
+              <h3>Judging cushioning by how soft it feels</h3>
+              <p>What separates a cheap deck from an expensive one is consistency, not softness. Budget elastomers compress permanently, so the deck softens over months — which sounds good and is not, because a deck without rebound absorbs energy your lower leg should get back. Judge on a 40-minute run, not on a showroom minute.</p>
+            </li>
+            <li>
+              <h3>Ignoring roller diameter entirely</h3>
+              <p>It is the least advertised and most predictive longevity specification. Two machines with identical motors and decks can have very different lifespans purely because one has 1.9-inch rollers and the other 2.5. Hunt for the figure when comparing similarly-priced machines — it is often the deciding difference.</p>
+            </li>
+            <li>
+              <h3>Comparing purchase price instead of cost per year</h3>
+              <p>A $500 machine lasting three years costs $167 a year; a $1,200 machine lasting eight costs $150. Add a subscription and the picture changes completely — an $1,800 connected machine costs roughly $830 a year over five years, which dwarfs every hardware difference discussed on this page.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Comparing Cheap and Premium Treadmills</h2>
-          <p class="text-gray-700 leading-relaxed">These four all come from comparing the specifications that are easy to find rather than the ones that determine the outcome.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing peak horsepower figures</h3>
-              <p class="text-gray-700 text-sm m-0">Peak horsepower describes a burst the motor cannot sustain and exists largely for the box. Continuous-duty horsepower is the number that determines whether a motor holds speed and how hot it runs. A budget listing quoting only a peak figure is doing so because the continuous rating is unflattering.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging cushioning by how soft it feels</h3>
-              <p class="text-gray-700 text-sm m-0">What separates a cheap deck from an expensive one is consistency, not softness. Budget elastomers compress permanently, so the deck softens over months — which sounds good and is not, because a deck without rebound absorbs energy your lower leg should get back. Judge on a 40-minute run, not on a showroom minute.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring roller diameter entirely</h3>
-              <p class="text-gray-700 text-sm m-0">It is the least advertised and most predictive longevity specification. Two machines with identical motors and decks can have very different lifespans purely because one has 1.9-inch rollers and the other 2.5. Hunt for the figure when comparing similarly-priced machines — it is often the deciding difference.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing purchase price instead of cost per year</h3>
-              <p class="text-gray-700 text-sm m-0">A $500 machine lasting three years costs $167 a year; a $1,200 machine lasting eight costs $150. Add a subscription and the picture changes completely — an $1,800 connected machine costs roughly $830 a year over five years, which dwarfs every hardware difference discussed on this page.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Value &amp; Spending Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Framework</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Much Should You Spend?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A decision framework based on your actual use rather than the market.</p>
-            </a>
-            <a href="/best-treadmills-under-2000/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sweet Spot</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $2,000</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The band where every perceptible difference lives.</p>
-            </a>
-            <a href="/how-long-do-treadmills-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Longevity</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmills Last?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Lifespans by tier, what fails first, and repair-or-replace.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             Three differences are perceptible from the first session — frame stability, deck length
-            and noise character — and they are all bought by around
-            <strong class="text-white">$1,200</strong>. Everything above that is durability you
+            and noise character — and they are all bought by around <strong class="text-white">$1,200</strong>. Everything above that is durability you
             will meet in year seven, if at all.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             The steepest value gain in the category is between $500 and $1,000. The shallowest is
-            between $2,500 and $4,000. And a
-            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintained cheap treadmill</a>
-            routinely outlasts a neglected expensive one, which is worth more than any price tier.
+            between $2,500 and $4,000. And a <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintained cheap treadmill</a> routinely outlasts a neglected expensive one, which is worth more than any price tier.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/how-much-should-you-spend-on-a-treadmill/">How Much Should You Spend?</a></li>
+            <li><a href="/best-treadmills-under-2000/">Best Treadmills Under $2,000</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Are expensive treadmills worth it?</h3></summary>
+            <p class="faq-a">
+              For multiple daily users, higher body weights, serious mileage or a fifteen-year ownership horizon, yes. For one person walking or running an hour a day, the extra money buys durability margin you will not consume. The steepest value gain is between $500 and $1,000; the shallowest is between $2,500 and $4,000.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>What is the difference between a cheap and expensive treadmill?</h3></summary>
+            <p class="faq-a">
+              Six components: motor type and rating, deck size and substrate, roller diameter, frame mass, cushioning consistency, and warranty terms. Three of those — frame stability, deck length and noise character — are perceptible from the first session. The rest are differences you meet in year seven, if at all.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a DC or AC motor better in a treadmill?</h3></summary>
+            <p class="faq-a">
+              AC handles sustained load without the heat build-up that eventually kills DC motors, which is why commercial gyms use it. It starts around $3,000. For one person running an hour a day a good DC motor is entirely adequate for a decade; for two or three people running daily, AC is the clearest reason to spend more.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What roller size should a treadmill have?</h3></summary>
+            <p class="faq-a">
+              Budget machines use 1.9-inch rollers, good mid-range machines 2.5, commercial machines 3 inches or more. Larger rollers flex the belt less tightly, spin slower and load their bearings less, so they predict longevity better than almost any other specification — and they are almost never advertised. Ask for the figure.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does a more expensive treadmill last longer?</h3></summary>
+            <p class="faq-a">
+              Usually, but maintenance matters more than price. The dominant failure at every price is a motor and controller worn out by friction against a dry deck. A premium machine has more margin to absorb that and does not prevent it. A maintained cheap treadmill routinely outlasts a neglected expensive one.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What is the best value treadmill price range?</h3></summary>
+            <p class="faq-a">
+              Roughly $1,000 to $1,800. Below it you are giving up deck length and frame mass, both of which you notice immediately. Above it you are buying durability margin — AC motors, larger rollers, longer warranties — that a single home user will rarely reach the end of.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Lists">
+          <h2 class="section-title">More in Best Lists</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best-of/" class="btn-ghost">See all Best Lists</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Value &amp; Spending Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/how-much-should-you-spend-on-a-treadmill/" class="card">
+            <div class="c-kicker">Framework</div>
+            <div class="c-title">How Much Should You Spend?</div>
+            <p class="c-blurb">A decision framework based on your actual use rather than the market.</p>
+          </a>
+          <a href="/best-treadmills-under-2000/" class="card">
+            <div class="c-kicker">Sweet Spot</div>
+            <div class="c-title">Best Treadmills Under $2,000</div>
+            <p class="c-blurb">The band where every perceptible difference lives.</p>
+          </a>
+          <a href="/how-long-do-treadmills-last/" class="card">
+            <div class="c-kicker">Longevity</div>
+            <div class="c-title">How Long Do Treadmills Last?</div>
+            <p class="c-blurb">Lifespans by tier, what fails first, and repair-or-replace.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

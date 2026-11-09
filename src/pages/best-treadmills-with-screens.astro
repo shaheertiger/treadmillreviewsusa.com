@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills With Screens (2026): 10 to 23.8 in. Touchscreens";
 const description =
@@ -275,6 +274,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-with-screens/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -296,66 +301,86 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Budget Touchscreen: NordicTrack T Series 10", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillswithscreens" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillswithscreens)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills With Screens</h1>
+      <p class="ed-dek">
+        A built-in touchscreen can run classes, scenic routes, streaming apps or nothing at all, depending on the brand and the subscription. These six treadmills range from a 10-inch tilting screen to a 23.8-inch swivel display; for each we say how big the screen is, what it needs a membership for, and what the treadmill still does if you stop paying.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills <span class="text-[#5AA9FF]">With Screens</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A built-in touchscreen can run classes, scenic routes, streaming apps or nothing at all, depending on the brand and the subscription. These six treadmills range from a 10-inch tilting screen to a 23.8-inch swivel display; for each we say how big the screen is, what it needs a membership for, and what the treadmill still does if you stop paying.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#without-subscription" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            What Works Without a Subscription
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-t-series-10"><img src="https://m.media-amazon.com/images/I/31zk9ulTbQL._SL500_.jpg" alt="NordicTrack T Series 10" width="500" height="500" decoding="async" /></a>
+          <a href="#sole-f80"><img src="https://m.media-amazon.com/images/I/31VQF5L4-ML._SL500_.jpg" alt="Sole F80 (2026)" width="500" height="333" decoding="async" /></a>
+          <a href="#echelon-stride-8s"><img src="https://m.media-amazon.com/images/I/31LABGsFG3L._SL500_.jpg" alt="Echelon Stride-8s" width="500" height="500" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        <figcaption>NordicTrack T Series 10 · Sole F80 (2026) · Echelon Stride-8s</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          Most people who want a treadmill with a screen want one of three things: classes with a trainer
+          who changes the speed and incline for them, something to watch while they walk, or simply a
+          bigger, clearer console than a row of LEDs. The trouble is that the same touchscreen can do all
+          three, some of them, or very little, depending on who made it and whether you are paying a monthly
+          membership. This guide picks six treadmills with built-in touchscreens across the price range and
+          sets out, for each, the screen size, which platform runs it, what needs a subscription, and what
+          the machine still does if you cancel. If you would rather use your own tablet, we cover that too.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Budget Touchscreen:</span> <a href="#nordictrack-t-series-10">NordicTrack T Series 10</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Without a Subscription:</span> <a href="#sole-f80">Sole F80 (2026)</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Echelon Screen:</span> <a href="#echelon-stride-8s">Echelon Stride-8s</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Built-In Apps:</span> <a href="#bowflex-t16">Bowflex T16</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for iFIT:</span> <a href="#nordictrack-commercial-1750">NordicTrack Commercial 1750</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Biggest Screen:</span> <a href="#peloton-tread-vision">Peloton Tread Vision</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">What we checked, and when.</strong> On 5 November 2026 we read
           the current US listings and prices on Sole's store (F80), Echelon's store (Stride-8s, checked 20 October),
           Bowflex's treadmill page (T16) and Peloton's treadmill page (Tread Vision, and its membership
@@ -371,77 +396,25 @@ const schema = {
           treadmills, and none of the figures are our own measurements. Prices and membership terms
           change often, so confirm them before you order. As an Amazon Associate we earn from qualifying
           purchases; it does not change which treadmills we list or what we say about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget Touchscreen:</span>
-            <a href="#nordictrack-t-series-10" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T Series 10</a>
-            <a href="#nordictrack-t-series-10" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Without a Subscription:</span>
-            <a href="#sole-f80" class="font-bold text-gray-900 no-underline hover:underline">Sole F80 (2026)</a>
-            <a href="#sole-f80" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Echelon Screen:</span>
-            <a href="#echelon-stride-8s" class="font-bold text-gray-900 no-underline hover:underline">Echelon Stride-8s</a>
-            <a href="#echelon-stride-8s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Built-In Apps:</span>
-            <a href="#bowflex-t16" class="font-bold text-gray-900 no-underline hover:underline">Bowflex T16</a>
-            <a href="#bowflex-t16" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for iFIT:</span>
-            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
-            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Treadmills With Screens</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Treadmills</a>
-          <a href="#screen-size" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Screen Size: What 10, 16 and 24 Inches Get You</a>
-          <a href="#without-subscription" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Does It Work Without a Subscription?</a>
-          <a href="#membership-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Counting the Membership in the Price</a>
-          <a href="#tablet-instead" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Built-In Screen or Your Own Tablet?</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip the Screen</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Treadmills With Screens</a></li>
+            <li><a href="#how-we-chose">How We Chose These Treadmills</a></li>
+            <li><a href="#screen-size">Screen Size: What 10, 16 and 24 Inches Get You</a></li>
+            <li><a href="#without-subscription">Does It Work Without a Subscription?</a></li>
+            <li><a href="#membership-cost">Counting the Membership in the Price</a></li>
+            <li><a href="#tablet-instead">Built-In Screen or Your Own Tablet?</a></li>
+            <li><a href="#who-should-skip">Who Should Skip the Screen</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          Most people who want a treadmill with a screen want one of three things: classes with a trainer
-          who changes the speed and incline for them, something to watch while they walk, or simply a
-          bigger, clearer console than a row of LEDs. The trouble is that the same touchscreen can do all
-          three, some of them, or very little, depending on who made it and whether you are paying a monthly
-          membership. This guide picks six treadmills with built-in touchscreens across the price range and
-          sets out, for each, the screen size, which platform runs it, what needs a subscription, and what
-          the machine still does if you cancel. If you would rather use your own tablet, we cover that too.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>
               <tr>
@@ -463,14 +436,13 @@ const schema = {
           </table></div>
           <p>
             Two of these stand out for different reasons. The <strong>Sole F80</strong> is the one to buy if
-            you want a touchscreen and no membership at all, because nothing on it is locked behind one. The
-            <strong>NordicTrack T Series 10</strong> is the lowest-cost way into iFIT's trainer-led classes on a
+            you want a touchscreen and no membership at all, because nothing on it is locked behind one. The <strong>NordicTrack T Series 10</strong> is the lowest-cost way into iFIT's trainer-led classes on a
             built-in screen, and it is often discounted well below the price NordicTrack's own site showed.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Treadmills With Screens</h2>
+          <h2>The 6 Best Treadmills With Screens</h2>
 <p>
             Ordered from the smallest screen to the largest. Every specification line carries only figures
             that the maker and at least one other source agree on for the current model number, and every
@@ -478,78 +450,67 @@ const schema = {
             does if you never pay, or stop paying, for the platform behind the screen.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Treadmills</h2>
+          <h2>How We Chose These Treadmills</h2>
 <p>
             We started from the treadmills on this site whose figures we have already cross-checked against
             the maker and a second source, and kept only those with a built-in touchscreen — not a
@@ -576,7 +537,7 @@ const schema = {
         </div>
 
         <div id="screen-size" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Screen Size: What 10, 16 and 24 Inches Get You</h2>
+          <h2>Screen Size: What 10, 16 and 24 Inches Get You</h2>
 <p>
             Touchscreens on current home treadmills come in roughly three sizes, and the size you need depends
             on what you will look at.
@@ -603,14 +564,12 @@ const schema = {
           <p>
             Remember that the screen is usually the shortest-warranted part of the machine. NordicTrack
             covers the touchscreen on the current Commercial and T Series models for one year, against two to
-            ten years on other parts. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
-            explains what to check, and <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">our console troubleshooting guide</a>
-            covers what to do when a screen goes blank.
+            ten years on other parts. Our <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a> explains what to check, and <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">our console troubleshooting guide</a> covers what to do when a screen goes blank.
           </p>
         </div>
 
         <div id="without-subscription" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Does It Work Without a Subscription?</h2>
+          <h2>Does It Work Without a Subscription?</h2>
 <p>
             Every treadmill here runs without a membership in the sense that the belt moves and you can set
             speed and incline. What differs is how much of the screen does anything.
@@ -620,24 +579,19 @@ const schema = {
             the belt and set speed and incline yourself, and the motor, deck and incline need no membership.
             Classes, automatic speed and incline control, Google Maps routes and most of the touchscreen's
             other content need a paid iFIT plan, and streaming apps, where offered, need the top plan plus your
-            own streaming account. Our <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">guide to using a NordicTrack without iFIT</a>
-            and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
-            go into the detail, and <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">our Netflix guide</a>
-            covers streaming.
+            own streaming account. Our <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">guide to using a NordicTrack without iFIT</a> and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a> go into the detail, and <a href="/can-you-watch-netflix-on-nordictrack/" class="text-[#0F62FE] font-medium">our Netflix guide</a> covers streaming.
           </p>
           <p>
             <strong>Peloton.</strong> Peloton's page says an All-Access Membership is required to access all
             Peloton content and applicable features, sold separately from the treadmill. Peloton also says
             its Just Run feature on the Tread Vision does not need the membership, so you can set speed and
             incline manually and see basic metrics. Classes, Run Analysis and the camera features need
-            All-Access. Our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
-            sets out the terms.
+            All-Access. Our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a> sets out the terms.
           </p>
           <p>
             <strong>Echelon.</strong> Independent reviews say the Stride treadmills run in a manual mode but need
             at least a free Echelon account, and that classes and most screen features need Premier. Echelon's
-            warranty is also longer while Premier stays active; see our
-            <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon buyer's guide</a>.
+            warranty is also longer while Premier stays active; see our <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon buyer's guide</a>.
           </p>
           <p>
             <strong>Bowflex JRNY.</strong> Bowflex says the T16 works without a JRNY subscription and a free
@@ -648,13 +602,12 @@ const schema = {
           <p>
             <strong>Sole.</strong> The F80's SOLE+ app is free and nothing on the treadmill needs a membership.
             The screen offers Wi-Fi, Bluetooth speakers and screen mirroring from your own device. If the idea
-            of a monthly fee is what puts you off, start here, and see our full list of
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
+            of a monthly fee is what puts you off, start here, and see our full list of <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
           </p>
         </div>
 
         <div id="membership-cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Counting the Membership in the Price</h2>
+          <h2>Counting the Membership in the Price</h2>
 <p>
             A treadmill with a class screen is really two purchases: the machine and the platform. Over the
             five to ten years a good treadmill lasts, the membership can cost as much as the treadmill, so
@@ -666,21 +619,18 @@ const schema = {
             Three rules of thumb help. First, if you would not pay for the classes, do not pay extra for a
             screen designed around them: a no-membership machine such as the Sole F80, or a cheaper treadmill
             and a tablet, will serve you better. Second, if you would pay for classes, pick the platform first
-            and the treadmill second, because switching later means buying a new machine. Our
-            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
-            is the place to start. Third, check whether the warranty depends on the membership, as Echelon's
+            and the treadmill second, because switching later means buying a new machine. Our <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a> is the place to start. Third, check whether the warranty depends on the membership, as Echelon's
             does, before counting on it.
           </p>
           <p>
             Resale is the hidden cost. A used class treadmill sells more easily when the next owner can see
             that it works in manual mode and that the membership transfers cleanly. Keep your account details
-            and receipts, and our <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart vs regular treadmill guide</a>
-            covers how smart features age.
+            and receipts, and our <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart vs regular treadmill guide</a> covers how smart features age.
           </p>
         </div>
 
         <div id="tablet-instead" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Built-In Screen or Your Own Tablet?</h2>
+          <h2>Built-In Screen or Your Own Tablet?</h2>
 <p>
             A built-in touchscreen has real advantages: the treadmill can change its own speed and incline from
             a class, there is nothing to set up each session, and it is the right size and angle. It also has
@@ -692,30 +642,23 @@ const schema = {
             A tablet on a good holder gives you any app you like, from Zwift to Netflix, on a screen you can
             replace or upgrade, and many treadmills now pair over Bluetooth so apps can read your speed. What it
             usually cannot do is control the treadmill, except on machines and apps that support it. If you
-            mostly want something to watch, a tablet is cheaper and more flexible; see our
-            <a href="/best-treadmill-tablet-holders/" class="text-[#0F62FE] font-medium">treadmill tablet holder picks</a>
-            and <a href="/best-treadmill-workout-apps/" class="text-[#0F62FE] font-medium">treadmill workout apps</a>.
+            mostly want something to watch, a tablet is cheaper and more flexible; see our <a href="/best-treadmill-tablet-holders/" class="text-[#0F62FE] font-medium">treadmill tablet holder picks</a> and <a href="/best-treadmill-workout-apps/" class="text-[#0F62FE] font-medium">treadmill workout apps</a>.
             If you want a trainer to drive the treadmill for you, a built-in screen is worth paying for.
           </p>
           <p>
             Searching for a "treadmill screen" sometimes means a replacement console rather than a new
             treadmill. Replacement touchscreens are model-specific parts sold by the maker's parts department;
             have your model and serial number ready, check whether the screen is still under warranty, and try
-            the steps in our <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">console troubleshooting guide</a>
-            first, since a frozen screen is often a software or power problem.
+            the steps in our <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">console troubleshooting guide</a> first, since a frozen screen is often a software or power problem.
           </p>
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip the Screen</h2>
+          <h2>Who Should Skip the Screen</h2>
 <p>
             Skip a built-in touchscreen if you run to podcasts or music, if you already use Zwift or another
             app on your own device, if you want the longest possible warranty for the money, or if you are
-            buying on a tight budget, where the same money buys a better motor and deck without a screen. Our
-            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a>
-            guide covers the platforms in more depth, and
-            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">our Zwift treadmill picks</a>
-            suit runners who bring their own screen.
+            buying on a tight budget, where the same money buys a better motor and deck without a screen. Our <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a> guide covers the platforms in more depth, and <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">our Zwift treadmill picks</a> suit runners who bring their own screen.
           </p>
           <p>
             Choose a screen if you will follow classes several times a week, if you need on-screen guidance
@@ -725,150 +668,167 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill with a screen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on what you want the screen for. For iFIT classes on a budget, the NordicTrack T Series 10; for a screen with no membership at all, the Sole F80; for streaming your own apps, the Bowflex T16; for running-focused iFIT with decline, the NordicTrack Commercial 1750; and for the biggest screen and Peloton classes, the Peloton Tread Vision. We have not tested them.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you use a treadmill with a screen without a subscription?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, on all six here, but how much of the screen works varies. NordicTrack runs in manual mode, Peloton’s Just Run sets speed and incline manually, Echelon runs manually with a free account according to reviews, the Bowflex T16 runs programs and streaming apps, and the Sole F80 needs no membership for anything.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How big is the NordicTrack T Series 10 touchscreen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                The current T Series 10 (NTL15425) has a 10-inch touchscreen that tilts. NordicTrack covers the screen for one year. Older models sold under similar names have had different consoles, so check the model number.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Which treadmill has the biggest screen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Of the six here, the Peloton Tread Vision, at 23.8 inches. NordicTrack’s Commercial 2450 and X24 have 24-inch screens, and Peloton’s Tread+ Vision also has a 23.8-inch screen, at higher prices.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you watch Netflix on a treadmill screen?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On some. The Bowflex T16 runs Netflix, Prime Video and YouTube with your own accounts. Current touchscreen NordicTracks offer Netflix through iFIT on its top plan. Peloton and Echelon screens are built around their own classes. With any treadmill, a tablet on a holder will play whatever you like.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a built-in screen better than using a tablet?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A built-in screen can let a trainer change the speed and incline for you and needs no setup. A tablet is cheaper, runs any app, and is easy to replace, but usually cannot control the treadmill. If you want classes that drive the machine, buy the built-in screen; if you just want something to watch, use a tablet.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Treadmill With a Screen</h2>
+          <p>The screen is the most visible part of a smart treadmill and the easiest to overpay for. These are the usual errors.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the screen and not the treadmill</h3>
+              <p>A big touchscreen on a short belt, a low weight rating or a weak warranty is a poor buy. Check the deck, motor rating, user weight and warranty first, then compare screens among machines that pass.</p>
+            </li>
+            <li>
+              <h3>Leaving the membership out of the price</h3>
+              <p>On iFIT, Peloton and Echelon machines, most of what the screen does depends on a monthly plan. Over several years it can cost as much as the treadmill. Count it, or choose a machine like the Sole F80 that needs none.</p>
+            </li>
+            <li>
+              <h3>Assuming the screen plays any app</h3>
+              <p>Many treadmill touchscreens are locked to their maker’s software. Netflix on a NordicTrack needs iFIT’s top plan, and Peloton and Echelon screens are built around their own classes. If streaming your own apps matters, check the app list for the exact model before buying.</p>
+            </li>
+            <li>
+              <h3>Buying an older model with the same name</h3>
+              <p>NordicTrack in particular has sold several generations under the same names with different screens, motors and ratings. Check the model number on any discounted or clearance unit against the figures you are relying on.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill With a Screen</h2>
-          <p class="text-gray-700 leading-relaxed">The screen is the most visible part of a smart treadmill and the easiest to overpay for. These are the usual errors.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the screen and not the treadmill</h3>
-              <p class="text-gray-700 text-sm m-0">A big touchscreen on a short belt, a low weight rating or a weak warranty is a poor buy. Check the deck, motor rating, user weight and warranty first, then compare screens among machines that pass.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the membership out of the price</h3>
-              <p class="text-gray-700 text-sm m-0">On iFIT, Peloton and Echelon machines, most of what the screen does depends on a monthly plan. Over several years it can cost as much as the treadmill. Count it, or choose a machine like the Sole F80 that needs none.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the screen plays any app</h3>
-              <p class="text-gray-700 text-sm m-0">Many treadmill touchscreens are locked to their maker’s software. Netflix on a NordicTrack needs iFIT’s top plan, and Peloton and Echelon screens are built around their own classes. If streaming your own apps matters, check the app list for the exact model before buying.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying an older model with the same name</h3>
-              <p class="text-gray-700 text-sm m-0">NordicTrack in particular has sold several generations under the same names with different screens, motors and ratings. Check the model number on any discounted or clearance unit against the figures you are relying on.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-smart-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Smart</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Smart Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">iFIT, Peloton, JRNY and Echelon platforms compared, and what each locks behind a membership.</p>
-            </a>
-            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Cost</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmills Without Subscriptions</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Machines that do everything on their own console, for buyers who want no platform.</p>
-            </a>
-            <a href="/is-ifit-worth-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">iFIT</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Is iFIT Worth It?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What the membership adds to a NordicTrack or ProForm, and when to skip it.</p>
-            </a>
-            <a href="/smart-treadmill-vs-regular/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Decide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Smart vs Regular Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Whether a connected treadmill is worth the extra cost for how you train.</p>
-            </a>
-            <a href="/yesoul-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Yesoul Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The T3S Plus screen treadmill and the 30%-incline T5 range.</p>
-            </a>
-            <a href="/best-treadmill-tv-stands/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill TV Stands and Mounts</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">The best treadmill with a screen is the one whose screen you will use
           without resenting the fee.</strong> For no membership at all, the Sole F80's 10.1-inch touchscreen at
           $1,599.99; for iFIT classes on a budget, the NordicTrack T Series 10 bought on a retailer discount;
           for streaming your own apps, the Bowflex T16; for the biggest screen, the Peloton Tread Vision.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Check the deck, rating and warranty before the screen, count the membership in the price, and if you
-          only want something to watch, consider a cheaper treadmill and a tablet. Our
-          <a href="/best-smart-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best smart treadmills</a>
-          guide covers the platforms in more depth.
+          only want something to watch, consider a cheaper treadmill and a tablet. Our <a href="/best-smart-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best smart treadmills</a> guide covers the platforms in more depth.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-smart-treadmills/">Best Smart Treadmills</a></li>
+            <li><a href="/best-treadmills-without-subscriptions/">Treadmills Without Subscriptions</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best treadmill with a screen?</h3></summary>
+            <p class="faq-a">
+              It depends on what you want the screen for. For iFIT classes on a budget, the NordicTrack T Series 10; for a screen with no membership at all, the Sole F80; for streaming your own apps, the Bowflex T16; for running-focused iFIT with decline, the NordicTrack Commercial 1750; and for the biggest screen and Peloton classes, the Peloton Tread Vision. We have not tested them.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Can you use a treadmill with a screen without a subscription?</h3></summary>
+            <p class="faq-a">
+              Yes, on all six here, but how much of the screen works varies. NordicTrack runs in manual mode, Peloton’s Just Run sets speed and incline manually, Echelon runs manually with a free account according to reviews, the Bowflex T16 runs programs and streaming apps, and the Sole F80 needs no membership for anything.
             </p>
+          </details>
+          <details>
+            <summary><h3>How big is the NordicTrack T Series 10 touchscreen?</h3></summary>
+            <p class="faq-a">
+              The current T Series 10 (NTL15425) has a 10-inch touchscreen that tilts. NordicTrack covers the screen for one year. Older models sold under similar names have had different consoles, so check the model number.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Which treadmill has the biggest screen?</h3></summary>
+            <p class="faq-a">
+              Of the six here, the Peloton Tread Vision, at 23.8 inches. NordicTrack’s Commercial 2450 and X24 have 24-inch screens, and Peloton’s Tread+ Vision also has a 23.8-inch screen, at higher prices.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Can you watch Netflix on a treadmill screen?</h3></summary>
+            <p class="faq-a">
+              On some. The Bowflex T16 runs Netflix, Prime Video and YouTube with your own accounts. Current touchscreen NordicTracks offer Netflix through iFIT on its top plan. Peloton and Echelon screens are built around their own classes. With any treadmill, a tablet on a holder will play whatever you like.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is a built-in screen better than using a tablet?</h3></summary>
+            <p class="faq-a">
+              A built-in screen can let a trainer change the speed and incline for you and needs no setup. A tablet is cheaper, runs any app, and is easy to replace, but usually cannot control the treadmill. If you want classes that drive the machine, buy the built-in screen; if you just want something to watch, use a tablet.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-smart-treadmills/" class="card">
+            <div class="c-kicker">Smart</div>
+            <div class="c-title">Best Smart Treadmills</div>
+            <p class="c-blurb">iFIT, Peloton, JRNY and Echelon platforms compared, and what each locks behind a membership.</p>
+          </a>
+          <a href="/best-treadmills-without-subscriptions/" class="card">
+            <div class="c-kicker">Cost</div>
+            <div class="c-title">Treadmills Without Subscriptions</div>
+            <p class="c-blurb">Machines that do everything on their own console, for buyers who want no platform.</p>
+          </a>
+          <a href="/is-ifit-worth-it/" class="card">
+            <div class="c-kicker">iFIT</div>
+            <div class="c-title">Is iFIT Worth It?</div>
+            <p class="c-blurb">What the membership adds to a NordicTrack or ProForm, and when to skip it.</p>
+          </a>
+          <a href="/smart-treadmill-vs-regular/" class="card">
+            <div class="c-kicker">Decide</div>
+            <div class="c-title">Smart vs Regular Treadmill</div>
+            <p class="c-blurb">Whether a connected treadmill is worth the extra cost for how you train.</p>
+          </a>
+          <a href="/yesoul-treadmills/" class="card">
+            <div class="c-kicker">Brand Guide</div>
+            <div class="c-title">Yesoul Treadmills</div>
+            <p class="c-blurb">The T3S Plus screen treadmill and the 30%-incline T5 range.</p>
+          </a>
+          <a href="/best-treadmill-tv-stands/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Treadmill TV Stands and Mounts</div>
+            <p class="c-blurb">Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

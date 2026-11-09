@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Treadmills for Sprinting (2026): Five Picks, Motorised and Curved";
 const description =
@@ -251,6 +250,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-treadmills-for-sprinting/";
+const HUB = SECTIONS.find((s) => s.slug === "best");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -272,66 +277,82 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Fastest Motorised: NordicTrack Commercial 2450", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-besttreadmillsforsprinting" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsforsprinting)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/best/">Best Treadmills</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Treadmills for Sprinting</h1>
+      <p class="ed-dek">
+        Most home treadmills top out at 12 mph and take several seconds to get there, which is fine for intervals and a real limit for true sprints. These five machines handle hard efforts best, from a 14 mph motorised treadmill to curved trainers that go as fast as your legs do.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated November 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated November 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Treadmills <span class="text-[#5AA9FF]">for Sprinting</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Most home treadmills top out at 12 mph and take several seconds to get there, which is fine for intervals and a real limit for true sprints. These five machines handle hard efforts best, from a 14 mph motorised treadmill to curved trainers that go as fast as your legs do.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#motorised-vs-curved" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Motorised or Curved?
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#nordictrack-commercial-2450"><img src="https://m.media-amazon.com/images/I/31NVjoFCMQL._SL500_.jpg" alt="NordicTrack Commercial 2450" width="500" height="500" decoding="async" /></a>
+          <a href="#horizon-7-4-at"><img src="https://m.media-amazon.com/images/I/41wMaZFsNwL._SL500_.jpg" alt="Horizon Fitness 7.4 AT" width="500" height="500" decoding="async" /></a>
+          <a href="#sole-c80"><img src="https://m.media-amazon.com/images/I/31bmqOOpE8L._SL500_.jpg" alt="SOLE C80 Curved Manual Treadmill" width="500" height="333" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">November 6, 2026</strong>
+        <figcaption>NordicTrack Commercial 2450 · Horizon Fitness 7.4 AT · SOLE C80 Curved Manual Treadmill</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          The best treadmill for sprinting depends on what you mean by a sprint. If you mean hard
+          intervals of 20 to 60 seconds at 9 to 12 mph, a well-built motorised treadmill with a strong
+          motor, a long deck and quick speed changes does the job. If you mean flat-out efforts where you
+          want the belt to respond the instant you push harder, a curved manual trainer is the better
+          tool, because it has no motor to wait for and no top speed. This page covers both, with five
+          machines sold on Amazon US, and explains which numbers on a specification sheet matter for
+          sprinting. For the sessions themselves, see our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.5k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Fastest Motorised:</span> <a href="#nordictrack-commercial-2450">NordicTrack Commercial 2450</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Intervals:</span> <a href="#horizon-7-4-at">Horizon Fitness 7.4 AT</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Curved:</span> <a href="#sole-c80">SOLE C80 Curved Manual Treadmill</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Sled-Style Pushes:</span> <a href="#tru-grit-runner">Tru Grit Runner Curved Manual Treadmill</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Value Curved:</span> <a href="#sb-fitness-ct400">SB Fitness CT400 Curved Treadmill</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           treadmills. Speeds, motor ratings, deck sizes, resistance levels and capacities were checked on
           6 November 2026 against each machine's Amazon US listing and, where the listing did not give a
@@ -343,79 +364,26 @@ const schema = {
           not exercised hard recently, talk to a doctor before starting. We earn a commission if you buy
           through the Amazon links on this page; it does not change which products we list or what we say
           about them.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Fastest Motorised:</span>
-            <a href="#nordictrack-commercial-2450" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 2450</a>
-            <a href="#nordictrack-commercial-2450" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Intervals:</span>
-            <a href="#horizon-7-4-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon Fitness 7.4 AT</a>
-            <a href="#horizon-7-4-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Curved:</span>
-            <a href="#sole-c80" class="font-bold text-gray-900 no-underline hover:underline">SOLE C80 Curved Manual Treadmill</a>
-            <a href="#sole-c80" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Sled-Style Pushes:</span>
-            <a href="#tru-grit-runner" class="font-bold text-gray-900 no-underline hover:underline">Tru Grit Runner Curved Manual Treadmill</a>
-            <a href="#tru-grit-runner" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Curved:</span>
-            <a href="#sb-fitness-ct400" class="font-bold text-gray-900 no-underline hover:underline">SB Fitness CT400 Curved Treadmill</a>
-            <a href="#sb-fitness-ct400" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmills for Sprinting</a>
-          <a href="#what-matters" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Matters on a Sprint Treadmill</a>
-          <a href="#motorised-vs-curved" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Motorised or Curved: Which Suits Sprinting?</a>
-          <a href="#speed-table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Treadmill Speed and Sprint Pace</a>
-          <a href="#sprint-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Sprinting Safely on a Treadmill</a>
-          <a href="#space-power-noise" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Space, Power and Noise at Home</a>
-          <a href="#choosing-between" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Choosing Between the Five</a>
-          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Not Buy a Sprint Treadmill</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 5 Best Treadmills for Sprinting</a></li>
+            <li><a href="#what-matters">What Matters on a Sprint Treadmill</a></li>
+            <li><a href="#motorised-vs-curved">Motorised or Curved: Which Suits Sprinting?</a></li>
+            <li><a href="#speed-table">Treadmill Speed and Sprint Pace</a></li>
+            <li><a href="#sprint-safety">Sprinting Safely on a Treadmill</a></li>
+            <li><a href="#space-power-noise">Space, Power and Noise at Home</a></li>
+            <li><a href="#choosing-between">Choosing Between the Five</a></li>
+            <li><a href="#who-should-skip">Who Should Not Buy a Sprint Treadmill</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          The best treadmill for sprinting depends on what you mean by a sprint. If you mean hard
-          intervals of 20 to 60 seconds at 9 to 12 mph, a well-built motorised treadmill with a strong
-          motor, a long deck and quick speed changes does the job. If you mean flat-out efforts where you
-          want the belt to respond the instant you push harder, a curved manual trainer is the better
-          tool, because it has no motor to wait for and no top speed. This page covers both, with five
-          machines sold on Amazon US, and explains which numbers on a specification sheet matter for
-          sprinting. For the sessions themselves, see our
-          <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             If you want one machine for sprints and for ordinary running, choose a motorised treadmill.
             If sprinting and conditioning are the main reason you are buying, choose a curved trainer. The
@@ -438,84 +406,73 @@ const schema = {
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmills for Sprinting</h2>
+          <h2>The 5 Best Treadmills for Sprinting</h2>
 <p>
             Two motorised treadmills come first, then three curved manual trainers. The motorised machines
             are better all-rounders; the curved ones are better sprint tools. Each card says what limits it.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="what-matters" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Matters on a Sprint Treadmill</h2>
+          <h2>What Matters on a Sprint Treadmill</h2>
 <p>
             Most treadmill specification sheets are written for steady running. For sprinting, five
             figures matter, in roughly this order.
@@ -552,14 +509,13 @@ const schema = {
         </div>
 
         <div id="motorised-vs-curved" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Motorised or Curved: Which Suits Sprinting?</h2>
+          <h2>Motorised or Curved: Which Suits Sprinting?</h2>
 <p>
             A curved manual trainer is driven entirely by you. Its slat belt runs on bearings over a concave
             deck, and the further forward you run on the curve, the faster it goes. Ease back towards the
             middle and it slows. There is no motor to ramp up and no top speed, so a sprint starts and stops
             as quickly as you do. That is why sports teams and gyms that train speed use them, and why our
-            guide to the <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
-            treats them as a separate category.
+            guide to the <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a> treats them as a separate category.
           </p>
           <p>
             <strong>Curved trainers suit you if</strong> sprints, intervals and conditioning are your main use;
@@ -576,19 +532,17 @@ const schema = {
             <strong>Motorised treadmills suit you if</strong> you also run easy miles, walk, or want incline. A
             fixed belt speed is also a help for some interval sessions: you set 11 mph and the belt makes you hold
             it. Incline sprints, which are often the safer way to sprint at home, are only possible on a
-            motorised machine. Our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">sprint workout guide</a>
-            explains why incline sprints at a moderate speed suit most home runners better than flat sprints
+            motorised machine. Our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">sprint workout guide</a> explains why incline sprints at a moderate speed suit most home runners better than flat sprints
             near top speed.
           </p>
           <p>
             For a specialist option not sold on Amazon, the NOHrD Sprintbok is a flat, <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>non-motorised</a> sprint
-            trainer with a very different design; our <a href="/nohrd-sprintbok/" class="text-[#0F62FE] font-medium">NOHrD Sprintbok review</a>
-            covers it.
+            trainer with a very different design; our <a href="/nohrd-sprintbok/" class="text-[#0F62FE] font-medium">NOHrD Sprintbok review</a> covers it.
           </p>
         </div>
 
         <div id="speed-table" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Treadmill Speed and Sprint Pace</h2>
+          <h2>Treadmill Speed and Sprint Pace</h2>
 <p>
             Treadmill speeds are shown in miles per hour; most runners think in pace. The conversions
             below make it easier to see what a top speed means for you.
@@ -614,7 +568,7 @@ const schema = {
         </div>
 
         <div id="sprint-safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Sprinting Safely on a Treadmill</h2>
+          <h2>Sprinting Safely on a Treadmill</h2>
 <p>
             A fall at sprint speed on a moving belt is a serious injury risk. These rules apply to every
             machine on this page.
@@ -645,7 +599,7 @@ const schema = {
         </div>
 
         <div id="space-power-noise" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Space, Power and Noise at Home</h2>
+          <h2>Space, Power and Noise at Home</h2>
 <p>
             A sprint treadmill is a large, heavy object that makes more noise than an ordinary treadmill,
             because hard foot strikes are louder than easy ones. A few practical points are worth settling
@@ -677,7 +631,7 @@ const schema = {
         </div>
 
         <div id="choosing-between" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Choosing Between the Five</h2>
+          <h2>Choosing Between the Five</h2>
 <p>
             <strong>You run easy miles too, and want the most speed from a motorised machine.</strong> The
             Commercial 2450, for its 14 mph top speed and 4.25 CHP motor. Expect to pay for the screen and
@@ -700,7 +654,7 @@ const schema = {
         </div>
 
         <div id="who-should-skip" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Not Buy a Sprint Treadmill</h2>
+          <h2>Who Should Not Buy a Sprint Treadmill</h2>
 <p>
             <strong>If you mostly walk or jog,</strong> a sprint treadmill is the wrong purchase. You will pay
             for speed and stiffness you do not use, and a curved trainer is harder work at walking pace than a
@@ -721,135 +675,151 @@ const schema = {
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill for sprinting?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For dedicated sprint training, a curved manual trainer such as the SOLE C80, because it has no motor lag and no top speed. If you also want to run easy miles and walk on incline, a motorised treadmill with a high top speed, such as the NordicTrack Commercial 2450 at 14 mph, is the better all-rounder.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How fast can you sprint on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Most home treadmills stop at 12 mph, a 5:00 mile pace. A few, including the NordicTrack Commercial 2450, reach 14 mph. Curved manual trainers have no electronic limit, so the belt moves as fast as you can drive it.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are curved treadmills better for sprinting?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For short, maximal efforts, usually yes. The belt speeds up and slows down as you do, with no motor to ramp up, and there is no top speed. They are less suited to steady running and walking, have no incline, and cost around $1,600 to $2,500.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What motor do you need for sprinting on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Look for a continuous-duty rating of at least 3 CHP, and more if you are heavy or sprint often. The motorised picks here are rated 3.5 and 4.25 CHP. A bigger continuous rating usually means the belt slows less under each hard foot strike.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it safe to sprint on a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It can be, with care. On a motorised treadmill, clip on the safety key, never jump on or off a belt at speed, and keep about 2 m clear behind the deck. Incline sprints at a moderate speed carry less fall risk than flat sprints near top speed.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How long should a treadmill deck be for sprinting?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                At least 60 in. Stride length grows with speed, and a short deck leaves little margin if you drift back. The motorised picks here have 60 in. belts, and the SOLE C80's curved deck is 62 in.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes Buying a Sprint Treadmill</h2>
+          <p>Most of these come from judging a sprint treadmill on the figures that matter for steady running.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Ignoring the top speed</h3>
+              <p>A 12 mph treadmill caps you at a 5:00 mile pace. If your fastest repeats are already near that, you will hit the limit within weeks. Check the top speed against the pace table, and consider 14 mph or a curved trainer.</p>
+            </li>
+            <li>
+              <h3>Judging a motor on peak horsepower</h3>
+              <p>Peak figures describe a brief maximum, not what the motor sustains. For hard, repeated efforts, compare continuous-duty (CHP) ratings, and treat a listing that gives only peak horsepower with caution.</p>
+            </li>
+            <li>
+              <h3>Buying a curved trainer for steady running</h3>
+              <p>Curved trainers are excellent for sprints and poor for long, even-paced runs and walking, which feel heavier on a self-driven belt. If most of your treadmill time is steady, buy a motorised machine and sprint on incline.</p>
+            </li>
+            <li>
+              <h3>Jumping onto a moving belt</h3>
+              <p>Stepping onto a belt already at 12 mph is a common way to fall. Straddle the deck on the side rails while it reaches speed and step on carefully, or start each rep from a slower pace, and always clip on the safety key.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Sprint Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most of these come from judging a sprint treadmill on the figures that matter for steady running.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the top speed</h3>
-              <p class="text-gray-700 text-sm m-0">A 12 mph treadmill caps you at a 5:00 mile pace. If your fastest repeats are already near that, you will hit the limit within weeks. Check the top speed against the pace table, and consider 14 mph or a curved trainer.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging a motor on peak horsepower</h3>
-              <p class="text-gray-700 text-sm m-0">Peak figures describe a brief maximum, not what the motor sustains. For hard, repeated efforts, compare continuous-duty (CHP) ratings, and treat a listing that gives only peak horsepower with caution.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a curved trainer for steady running</h3>
-              <p class="text-gray-700 text-sm m-0">Curved trainers are excellent for sprints and poor for long, even-paced runs and walking, which feel heavier on a self-driven belt. If most of your treadmill time is steady, buy a motorised machine and sprint on incline.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Jumping onto a moving belt</h3>
-              <p class="text-gray-700 text-sm m-0">Stepping onto a belt already at 12 mph is a common way to fall. Straddle the deck on the side rails while it reaches speed and step on carefully, or start each rep from a slower pace, and always clip on the safety key.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Sprint and Treadmill Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/treadmill-sprint-workout/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Training</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Sprint Workout</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Four sprint sessions, rest intervals and the safe way to mount a fast belt.</p>
-            </a>
-            <a href="/best-curved-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Curved Treadmills</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Seven self-powered curved trainers, from the AssaultRunner to Woodway.</p>
-            </a>
-            <a href="/nohrd-sprintbok/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Review</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">NOHrD Sprintbok Review</p>
-              <p class="text-sm text-gray-500 leading-relaxed">A flat, non-motorised sprint trainer, and how settled its specifications are.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            For dedicated sprint work, a curved trainer is the better tool, and the
-            <strong class="text-white">SOLE C80 Curved Manual Treadmill</strong> is the one we would choose for most
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            For dedicated sprint work, a curved trainer is the better tool, and the <strong class="text-white">SOLE C80 Curved Manual Treadmill</strong> is the one we would choose for most
             people: no top speed, no motor lag, magnetic resistance and a 19 in. deck. The Tru Grit Runner suits
             resisted pushes, and the SB Fitness CT400 is the lower-priced option.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            If you also run easy miles and hills, buy a motorised treadmill instead. The
-            <strong class="text-white">NordicTrack Commercial 2450</strong> reaches 14 mph, and the Horizon 7.4 AT
-            changes pace quickly for intervals up to 12 mph. Either way, start with the sessions in our
-            <a href="/treadmill-sprint-workout/" class="text-[#5AA9FF] font-bold no-underline">treadmill sprint workout guide</a>.
+          <p>
+            If you also run easy miles and hills, buy a motorised treadmill instead. The <strong class="text-white">NordicTrack Commercial 2450</strong> reaches 14 mph, and the Horizon 7.4 AT
+            changes pace quickly for intervals up to 12 mph. Either way, start with the sessions in our <a href="/treadmill-sprint-workout/" class="text-[#5AA9FF] font-bold no-underline">treadmill sprint workout guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/treadmill-sprint-workout/">Treadmill Sprint Workout</a></li>
+            <li><a href="/best-curved-treadmills/">Best Curved Treadmills</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best treadmill for sprinting?</h3></summary>
+            <p class="faq-a">
+              For dedicated sprint training, a curved manual trainer such as the SOLE C80, because it has no motor lag and no top speed. If you also want to run easy miles and walk on incline, a motorised treadmill with a high top speed, such as the NordicTrack Commercial 2450 at 14 mph, is the better all-rounder.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>How fast can you sprint on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Most home treadmills stop at 12 mph, a 5:00 mile pace. A few, including the NordicTrack Commercial 2450, reach 14 mph. Curved manual trainers have no electronic limit, so the belt moves as fast as you can drive it.
             </p>
+          </details>
+          <details>
+            <summary><h3>Are curved treadmills better for sprinting?</h3></summary>
+            <p class="faq-a">
+              For short, maximal efforts, usually yes. The belt speeds up and slows down as you do, with no motor to ramp up, and there is no top speed. They are less suited to steady running and walking, have no incline, and cost around $1,600 to $2,500.
+            </p>
+          </details>
+          <details>
+            <summary><h3>What motor do you need for sprinting on a treadmill?</h3></summary>
+            <p class="faq-a">
+              Look for a continuous-duty rating of at least 3 CHP, and more if you are heavy or sprint often. The motorised picks here are rated 3.5 and 4.25 CHP. A bigger continuous rating usually means the belt slows less under each hard foot strike.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Is it safe to sprint on a treadmill?</h3></summary>
+            <p class="faq-a">
+              It can be, with care. On a motorised treadmill, clip on the safety key, never jump on or off a belt at speed, and keep about 2 m clear behind the deck. Incline sprints at a moderate speed carry less fall risk than flat sprints near top speed.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How long should a treadmill deck be for sprinting?</h3></summary>
+            <p class="faq-a">
+              At least 60 in. Stride length grows with speed, and a short deck leaves little margin if you drift back. The motorised picks here have 60 in. belts, and the SOLE C80's curved deck is 62 in.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Best Treadmills">
+          <h2 class="section-title">More in Best Treadmills</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/best/" class="btn-ghost">See all Best Treadmills</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Sprint and Treadmill Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/treadmill-sprint-workout/" class="card">
+            <div class="c-kicker">Training</div>
+            <div class="c-title">Treadmill Sprint Workout</div>
+            <p class="c-blurb">Four sprint sessions, rest intervals and the safe way to mount a fast belt.</p>
+          </a>
+          <a href="/best-curved-treadmills/" class="card">
+            <div class="c-kicker">Buying Guide</div>
+            <div class="c-title">Best Curved Treadmills</div>
+            <p class="c-blurb">Seven self-powered curved trainers, from the AssaultRunner to Woodway.</p>
+          </a>
+          <a href="/nohrd-sprintbok/" class="card">
+            <div class="c-kicker">Review</div>
+            <div class="c-title">NOHrD Sprintbok Review</div>
+            <p class="c-blurb">A flat, non-motorised sprint trainer, and how settled its specifications are.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

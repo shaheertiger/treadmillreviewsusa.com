@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Best Foam Roller (2026): 6 Picks by Firmness, Texture and Size";
 const description =
@@ -276,6 +275,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/best-foam-rollers/";
+const HUB = SECTIONS.find((s) => s.slug === "home-gym");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -297,66 +302,86 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+  stickyCta={{ text: "Best Overall: TriggerPoint GRID 1.0 Foam Roller", link: PRODUCTS[0].amazonUrl }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-bestfoamrollers" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-bestfoamrollers)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/home-gym/">Home Gym</a>
+        <span aria-hidden="true">›</span>
+        <span>Buying Guide</span>
+      </nav>
+      <h1 class="ed-title">Best Foam Roller for Your Firmness, Texture and Space</h1>
+      <p class="ed-dek">
+        The best foam roller is the one firm enough to feel useful and soft enough that you can relax on it. Here are six currently sold rollers, from a medium-density beginner roller to a bumpy deep-tissue roller and two vibrating ones, with what each costs and what foam rolling can and cannot do.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 19, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Buying Guide
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Best Foam Roller <span class="text-[#5AA9FF]">for Your Firmness, Texture and Space</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The best foam roller is the one firm enough to feel useful and soft enough that you can relax on it. Here are six currently sold rollers, from a medium-density beginner roller to a bumpy deep-tissue roller and two vibrating ones, with what each costs and what foam rolling can and cannot do.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            See the Picks
-          </a>
-          <a href="#how-to-use" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            How to Use a Foam Roller
-          </a>
-        </div>
+        <a href="#top-picks" class="btn-ghost">View products</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#triggerpoint-grid-foam-roller"><img src="https://m.media-amazon.com/images/I/313Yjj-Ju2L._SL500_.jpg" alt="TriggerPoint GRID 1.0 Foam Roller" width="400" height="500" decoding="async" /></a>
+          <a href="#triggerpoint-core-foam-roller"><img src="https://m.media-amazon.com/images/I/41ud7qKu5XL._SL500_.jpg" alt="TriggerPoint CORE Foam Roller" width="500" height="235" decoding="async" /></a>
+          <a href="#rumbleroller-original"><img src="https://m.media-amazon.com/images/I/3136XZ0QcqL._SL500_.jpg" alt="RumbleRoller Original Foam Roller" width="500" height="286" decoding="async" /></a>
         </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        <figcaption>TriggerPoint GRID 1.0 Foam Roller · TriggerPoint CORE Foam Roller · RumbleRoller Original Foam Roller</figcaption>
+      </figure>
+
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          A foam roller is the cheapest recovery tool most people will ever buy, and one of the easiest
+          to get wrong. Too soft and it feels like lying on a pool noodle; too firm or too knobbly and
+          you spend the whole session tensing against it, which defeats the point. Length decides
+          whether you can lie along it for your upper back or carry it in a gym bag, and a vibrating
+          roller costs several times as much as a plain one. The six rollers below cover the
+          common firmnesses, textures and sizes, and the guide after them explains how to choose,
+          how to use one, what the research says it does, and the places you should not roll.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="1.5k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <section id="top-picks" class="ed-toppicks not-prose">
+          <h2>Our top picks:</h2>
+          <ul>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Overall:</span> <a href="#triggerpoint-grid-foam-roller">TriggerPoint GRID 1.0 Foam Roller</a></span>
+              <a href={PRODUCTS[0].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best for Beginners:</span> <a href="#triggerpoint-core-foam-roller">TriggerPoint CORE Foam Roller</a></span>
+              <a href={PRODUCTS[1].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Textured Roller:</span> <a href="#rumbleroller-original">RumbleRoller Original Foam Roller</a></span>
+              <a href={PRODUCTS[2].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Extra-Firm:</span> <a href="#triggerpoint-grid-x">TriggerPoint GRID X Foam Roller</a></span>
+              <a href={PRODUCTS[3].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Vibrating Roller:</span> <a href="#hyperice-vyper-3">Hyperice Vyper 3</a></span>
+              <a href={PRODUCTS[4].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+            <li>
+              <span class="tp-label"><span class="tp-award">Best Vibrating Value:</span> <a href="#therabody-waveroller">Therabody WaveRoller</a></span>
+              <a href={PRODUCTS[5].amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy-pill">Amazon &rarr;</a>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           rollers, and no figure on this page is our own measurement. Each was confirmed as currently
           sold on 19 October 2026 on its maker's own US store (TriggerPoint, RumbleRoller, Hyperice and
@@ -370,86 +395,33 @@ const schema = {
           should check that the listing is sold by Amazon or the brand's own store. Prices are those we
           saw on the makers' stores on that date and change often. We earn a commission if you buy
           through the Amazon links on this page; it does not change which products we list or what
-          we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym
+          we say about them. <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym
           equipment; we are not giving medical or physiotherapy advice, and we make no claim that
           foam rolling speeds healing, breaks up scar tissue, prevents injury or improves
           performance. Makers market some of those benefits; on this page they are reported as the
           sellers' claims. If you have an injury, a medical condition, pain that does not settle, or
           you are pregnant, ask a doctor or a qualified physiotherapist before you start.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-
-    <div class="max-w-3xl mx-auto px-4 pt-8">
-      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
-        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
-        <ul class="list-none m-0 p-0">
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#triggerpoint-grid-foam-roller" class="font-bold text-gray-900 no-underline hover:underline">TriggerPoint GRID 1.0 Foam Roller</a>
-            <a href="#triggerpoint-grid-foam-roller" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Beginners:</span>
-            <a href="#triggerpoint-core-foam-roller" class="font-bold text-gray-900 no-underline hover:underline">TriggerPoint CORE Foam Roller</a>
-            <a href="#triggerpoint-core-foam-roller" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Textured Roller:</span>
-            <a href="#rumbleroller-original" class="font-bold text-gray-900 no-underline hover:underline">RumbleRoller Original Foam Roller</a>
-            <a href="#rumbleroller-original" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Extra-Firm:</span>
-            <a href="#triggerpoint-grid-x" class="font-bold text-gray-900 no-underline hover:underline">TriggerPoint GRID X Foam Roller</a>
-            <a href="#triggerpoint-grid-x" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Vibrating Roller:</span>
-            <a href="#hyperice-vyper-3" class="font-bold text-gray-900 no-underline hover:underline">Hyperice Vyper 3</a>
-            <a href="#hyperice-vyper-3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
-          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Foam Rollers</a>
-          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Foam Rollers</a>
-          <a href="#firmness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Density and Firmness: Soft, Medium, Firm or Extra-Firm</a>
-          <a href="#texture" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Smooth vs Textured Rollers</a>
-          <a href="#length-size" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Length, Diameter and Travel Size</a>
-          <a href="#vibrating" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Vibrating vs Non-Vibrating Foam Rollers</a>
-          <a href="#how-to-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Use a Foam Roller</a>
-          <a href="#what-it-does" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Foam Rolling Does and Does Not Do</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Where Not to Roll, and Who Should Ask First</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#quick-picks">Our Picks at a Glance</a></li>
+            <li><a href="#picks">The 6 Best Foam Rollers</a></li>
+            <li><a href="#how-we-chose">How We Chose These Foam Rollers</a></li>
+            <li><a href="#firmness">Density and Firmness: Soft, Medium, Firm or Extra-Firm</a></li>
+            <li><a href="#texture">Smooth vs Textured Rollers</a></li>
+            <li><a href="#length-size">Length, Diameter and Travel Size</a></li>
+            <li><a href="#vibrating">Vibrating vs Non-Vibrating Foam Rollers</a></li>
+            <li><a href="#how-to-use">How to Use a Foam Roller</a></li>
+            <li><a href="#what-it-does">What Foam Rolling Does and Does Not Do</a></li>
+            <li><a href="#safety">Where Not to Roll, and Who Should Ask First</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          A foam roller is the cheapest recovery tool most people will ever buy, and one of the easiest
-          to get wrong. Too soft and it feels like lying on a pool noodle; too firm or too knobbly and
-          you spend the whole session tensing against it, which defeats the point. Length decides
-          whether you can lie along it for your upper back or carry it in a gym bag, and a vibrating
-          roller costs several times as much as a plain one. The six rollers below cover the
-          common firmnesses, textures and sizes, and the guide after them explains how to choose,
-          how to use one, what the research says it does, and the places you should not roll.
-        </p>
 
         <div id="quick-picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+          <h2>Our Picks at a Glance</h2>
 <p>
             Six rollers, chosen so that each common firmness, texture and use has a good example. The
             short version: most people should start with a firm, short, hollow-core roller like the
@@ -472,16 +444,13 @@ const schema = {
             </tbody>
           </table></div>
           <p>
-            A roller is usually the first recovery tool worth buying. Our guide to the
-            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">best recovery tools for weightlifters</a>
-            puts it alongside massage balls, straps and powered tools, and the
-            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide
+            A roller is usually the first recovery tool worth buying. Our guide to the <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">best recovery tools for weightlifters</a> puts it alongside massage balls, straps and powered tools, and the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> links every guide
             in this series.
           </p>
         </div>
 
         <div id="picks" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Foam Rollers</h2>
+          <h2>The 6 Best Foam Rollers</h2>
 <p>
             Each card gives the figures we could confirm from the maker and Rogue Fitness, the price
             we saw and who the roller suits. Weight ratings are missing on purpose: the figures we
@@ -492,78 +461,67 @@ const schema = {
             what the roller is, how firm and textured it is, and how people commonly use it.
           </p>
         </div>
-      </div>
-
-      <!-- Product cards -->
+      <!-- Product blocks -->
       <div class="not-prose">
         {
           PRODUCTS.map((product, index) => (
-            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
-              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
-                  <div>
-                    <h3 class="text-white font-black text-xl leading-tight m-0">
-                      {index + 1}. {product.name}
-                    </h3>
-                    <p class="text-gray-400 text-xs">{product.category}</p>
-                  </div>
-                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                    {product.badge}
-                  </span>
-                </div>
-                <div class="p-6">
-                  {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                    </a>
-                  )}
-                  <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
-                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
-                  </div>
-                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
-                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
-                      <ul class="space-y-2">
-                        {product.pros.map((pro) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
-                      <ul class="space-y-2">
-                        {product.cons.map((con) => (
-                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="border-t border-gray-100 pt-4">
-                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        {product.amazonLabel} &rarr;
-                      </a>
-                      {product.reviewUrl && (
-                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
-                          Read our full {product.name} review &rarr;
-                        </a>
-                      )}
-                    </div>
-                  </div>
+            <section id={product.id} class="ed-product">
+              <div class="ed-p-head">
+                <div class="ed-p-num">{index + 1}</div>
+                <div>
+                  <div class="ed-p-award">{product.badge}</div>
+                  <h3 class="ed-p-name">{product.name}</h3>
+                  <p class="ed-p-cat">{product.category}</p>
                 </div>
               </div>
-            </div>
+              <div class={`ed-p-media${product.image ? " has-img" : ""}`}>
+                {product.image && ( <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="ed-p-img">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" />
+                  </a> )}
+                <div class="ed-p-buy">
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="buy">
+                    <span>{product.amazonLabel.replace(/ on Amazon$/, "")}</span>
+                    <span>Amazon &rarr;</span>
+                  </a>
+                  <span class="ed-buy-note">
+                    {product.priceRange && <><strong>Typical price:</strong> {product.priceRange}. </>}
+                    Prices and availability change often; Amazon shows today's price.
+                  </span>
+                </div>
+              </div>
+              <div class="ed-proscons">
+                <div class="pros">
+                  <h4>Pros</h4>
+                  <ul>{product.pros.map((pro) => <li>{pro}</li>)}</ul>
+                </div>
+                <div class="cons">
+                  <h4>Cons</h4>
+                  <ul>{product.cons.map((con) => <li>{con}</li>)}</ul>
+                </div>
+              </div>
+              <div class="ed-p-copy">
+                <p><span class="ed-lbl">Why we picked it:</span> <Fragment set:html={product.description} /></p>
+                <p><span class="ed-lbl">Bottom line:</span> {product.bottomLine}</p>
+              </div>
+              {product.specs && (
+                <>
+                  <div class="ed-glance-h">Features at a glance</div>
+                  <div class="ed-glance">
+                    {product.priceRange && <div><span class="g-k">Price</span>{product.priceRange}</div>}
+                    {product.specs.split(/\s+·\s+/).filter(Boolean).map((s) => <div>{s}</div>)}
+                  </div>
+                </>
+              )}
+              <p class="ed-p-links">
+                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener">See the {product.name} on Amazon &rarr;</a> {product.reviewUrl && <a href={product.reviewUrl} class="ed-p-more">Read our full {product.name} review &rarr;</a>}
+              </p>
+            </section>
           ))
         }
       </div>
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="how-we-chose" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Foam Rollers</h2>
+          <h2>How We Chose These Foam Rollers</h2>
 <p>
             We have not tested these rollers. They were chosen from makers' product pages, retailer
             listings, recall records and published research, and every claim on this page is limited
@@ -602,7 +560,7 @@ const schema = {
         </div>
 
         <div id="firmness" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Density and Firmness: Soft, Medium, Firm or Extra-Firm</h2>
+          <h2>Density and Firmness: Soft, Medium, Firm or Extra-Firm</h2>
 <p>
             Firmness is the first decision and the one people most often get wrong. Makers describe it
             loosely — soft, medium, firm, high-density, extra-firm — and there is no shared scale, so
@@ -641,7 +599,7 @@ const schema = {
         </div>
 
         <div id="texture" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Smooth vs Textured Rollers</h2>
+          <h2>Smooth vs Textured Rollers</h2>
 <p>
             A smooth roller spreads pressure evenly and is the most comfortable for large areas and
             for beginners. A textured roller concentrates pressure on ridges or bumps, which feels
@@ -664,7 +622,7 @@ const schema = {
         </div>
 
         <div id="length-size" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Length, Diameter and Travel Size</h2>
+          <h2>Length, Diameter and Travel Size</h2>
 <p>
             Length decides what a roller is good for, and where it lives.
           </p>
@@ -692,15 +650,13 @@ const schema = {
           </p>
           <p>
             Where you roll matters as much as what you roll on. A roller on a hard floor can slip;
-            a firm mat or gym flooring underneath helps. Our guides to
-            <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga and exercise mats</a> and
-            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> cover
+            a firm mat or gym flooring underneath helps. Our guides to <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga and exercise mats</a> and <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> cover
             both.
           </p>
         </div>
 
         <div id="vibrating" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Vibrating vs Non-Vibrating Foam Rollers</h2>
+          <h2>Vibrating vs Non-Vibrating Foam Rollers</h2>
 <p>
             Vibrating rollers put a motor inside a roller. Hyperice says the Vyper 3's high-frequency
             vibration wakes up muscles, improves activation and enhances range of motion; Therabody
@@ -721,16 +677,13 @@ const schema = {
             against 1.32 pounds for the GRID 1.0 on Rogue's listing), need charging and are noisier.
             They are also firm: the Vyper 3 has a polypropylene shell rather than foam, and the
             WaveRoller uses high-density EVA foam. If you like the idea of vibration across your
-            whole body rather than one muscle, a
-            <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plate</a>
-            is a different tool with its own cautions; and if you want targeted work on small areas, a
-            <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a> is
+            whole body rather than one muscle, a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plate</a> is a different tool with its own cautions; and if you want targeted work on small areas, a <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium">massage gun</a> is
             usually a better use of the same money.
           </p>
         </div>
 
         <div id="how-to-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How to Use a Foam Roller</h2>
+          <h2>How to Use a Foam Roller</h2>
 <p>
             Foam rolling is simple, but a few habits make it more comfortable and more useful. This is
             general guidance, not a programme; a physiotherapist or coach can tailor it to you.
@@ -746,18 +699,14 @@ const schema = {
             <li><strong>Keep sessions short.</strong> A minute or so per muscle group, a few minutes in
             all, is how most people use a roller. More is not obviously better.</li>
             <li><strong>Before training, keep it brief</strong> and follow it with the real warm-up:
-            lighter sets of the movement you are about to do. Our
-            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
-            covers the general shape of both.</li>
+            lighter sets of the movement you are about to do. Our <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a> covers the general shape of both.</li>
             <li><strong>After training, slow down</strong> and combine rolling with gentle stretching.</li>
           </ol>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Common areas</h3>
           <p>
             <strong>Calves:</strong> sit with the roller under one calf, cross the other leg on top to
             add weight if you want it, and lift your hips. <strong>Quads:</strong> face down with the
-            roller under the front of the thighs, supported on your forearms like a plank.
-            <strong>Hamstrings and glutes:</strong> sit on the roller and lean slightly to one side.
-            <strong>Upper back:</strong> lie with the roller across your shoulder blades, hands
+            roller under the front of the thighs, supported on your forearms like a plank. <strong>Hamstrings and glutes:</strong> sit on the roller and lean slightly to one side. <strong>Upper back:</strong> lie with the roller across your shoulder blades, hands
             supporting your head, and roll the area between the shoulder blades and the bottom of the
             ribs. <strong>Lats:</strong> lie on your side with the roller under the armpit area and arm
             overhead. <strong>Outer thigh:</strong> many people find rolling the outside of the thigh
@@ -767,7 +716,7 @@ const schema = {
         </div>
 
         <div id="what-it-does" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Foam Rolling Does and Does Not Do</h2>
+          <h2>What Foam Rolling Does and Does Not Do</h2>
 <p>
             Foam rolling is marketed with words like "release", "break up" and "flush". Here is what
             the research actually supports.
@@ -794,14 +743,12 @@ const schema = {
             gradually and includes easier days do far more for how you recover than any roller. If
             you are always sore or regularly in pain, the answer is usually the plan or a visit to a
             professional, not a firmer roller. If you want something to support mobility work
-            alongside a roller, a set of
-            <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance bands</a>
-            is the cheap, versatile next step.
+            alongside a roller, a set of <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium">resistance bands</a> is the cheap, versatile next step.
           </p>
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Where Not to Roll, and Who Should Ask First</h2>
+          <h2>Where Not to Roll, and Who Should Ask First</h2>
 <p>
             Rolling is low-risk for most healthy adults when it is gentle. A few areas and situations
             call for care.
@@ -848,149 +795,162 @@ const schema = {
           </p>
           <p>
             <strong>Keep the floor clear.</strong> A roller left on a lifting platform is a trip
-            hazard next to a loaded bar. A wall hook or shelf keeps it out of the way; our
-            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
-            covers storage, and our
-            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
-            covers the floor around the bar.
+            hazard next to a loaded bar. A wall hook or shelf keeps it out of the way; our <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a> covers storage, and our <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a> covers the floor around the bar.
           </p>
         </div>
 
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What is the best foam roller?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                For most people, a firm, short, hollow-core roller such as the TriggerPoint GRID 1.0 is the best first roller. If you are new to rolling or very sore, a medium-density roller such as the TriggerPoint CORE is more comfortable. Textured, extra-firm and vibrating rollers are worth considering only once you know you like rolling and want more intensity or features.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy a soft or firm foam roller?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Start medium or firm, not extra-firm. A medium roller suits beginners and sore muscles; a firm roller suits people who already roll or train regularly, and you can make it gentler by putting less weight on it. Move to an extra-firm or high-profile textured roller only when your current one stops feeling like much. If you tense up or hold your breath on a roller, it is too firm.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">What length foam roller should I get?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A 12 to 13 inch roller is best for travel, small spaces and rolling one leg at a time. An 18 to 26 inch roller rolls both legs at once and works across the upper back. A 31 to 36 inch roller is long enough to lie along your spine for chest stretches and is the most stable. Many people own a short one and later add a long one.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are vibrating foam rollers worth it?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Only if the budget is there and you already like rolling. Makers say vibration improves mobility and recovery, but we could not find enough independent research to show it adds much to rolling alone. Owners commonly say it makes rolling feel more pleasant. Vibrating rollers cost several times more, weigh more and need charging, so buy a plain roller first.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does foam rolling actually work?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A 2019 meta-analysis of 21 studies found small effects: slightly better flexibility and sprint performance after rolling before exercise, and slightly less reported muscle pain after rolling after exercise, with little effect on strength or jumping. Rolling can help you feel looser and less sore for a while. It does not break up scar tissue, flush lactic acid or prevent injury.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Where should you not use a foam roller?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Avoid rolling directly on the lower spine, the front and sides of the neck, bones and joints such as kneecaps and shins, and any bruised, swollen or injured area. Ask a doctor or physiotherapist first if you have had a blood clot, take blood thinners, have osteoporosis, are pregnant, have a circulation or heart condition or reduced sensation, or have recently had surgery.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Buying and Using a Foam Roller</h2>
+          <p>Most problems with foam rollers come from buying one that is too firm, or using it harder and longer than it needs.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the firmest roller first</h3>
+              <p>Extra-firm and high-profile textured rollers look like the serious choice, but they make most beginners tense up, which defeats the purpose. Start with a medium or standard firm roller and move up only when it stops feeling like much. A firm roller can always be made gentler by taking weight onto your hands.</p>
+            </li>
+            <li>
+              <h3>Rolling fast and grinding on one spot</h3>
+              <p>Rolling quickly feels productive but keeps muscles tense, and grinding on a tender spot for minutes is how people end up bruised. Roll slowly, about an inch a second, pause briefly on tight spots and breathe, then move on. A minute or so per muscle is plenty.</p>
+            </li>
+            <li>
+              <h3>Lying on the roller under the lower back</h3>
+              <p>The lower spine is not a muscle, and lying with a roller directly under it is uncomfortable for many people and not useful. Roll the glutes, hips and upper back instead, and keep the roller off the neck, kneecaps, shins and any injured or swollen area.</p>
+            </li>
+            <li>
+              <h3>Expecting a roller to fix pain or a training problem</h3>
+              <p>Rolling has small, short-lived effects on soreness and flexibility. It will not fix an injury, a poor training plan or too little sleep. If you are always sore, or pain is sharp, worsening or comes with swelling or numbness, stop and get it looked at by a professional.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying and Using a Foam Roller</h2>
-          <p class="text-gray-700 leading-relaxed">Most problems with foam rollers come from buying one that is too firm, or using it harder and longer than it needs.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the firmest roller first</h3>
-              <p class="text-gray-700 text-sm m-0">Extra-firm and high-profile textured rollers look like the serious choice, but they make most beginners tense up, which defeats the purpose. Start with a medium or standard firm roller and move up only when it stops feeling like much. A firm roller can always be made gentler by taking weight onto your hands.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Rolling fast and grinding on one spot</h3>
-              <p class="text-gray-700 text-sm m-0">Rolling quickly feels productive but keeps muscles tense, and grinding on a tender spot for minutes is how people end up bruised. Roll slowly, about an inch a second, pause briefly on tight spots and breathe, then move on. A minute or so per muscle is plenty.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Lying on the roller under the lower back</h3>
-              <p class="text-gray-700 text-sm m-0">The lower spine is not a muscle, and lying with a roller directly under it is uncomfortable for many people and not useful. Roll the glutes, hips and upper back instead, and keep the roller off the neck, kneecaps, shins and any injured or swollen area.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a roller to fix pain or a training problem</h3>
-              <p class="text-gray-700 text-sm m-0">Rolling has small, short-lived effects on soreness and flexibility. It will not fix an injury, a poor training plan or too little sleep. If you are always sore, or pain is sharp, worsening or comes with swelling or numbness, stop and get it looked at by a professional.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/best-recovery-tools-for-weightlifters/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Recovery</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Recovery Tools for Weightlifters</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Rollers, balls, straps, bands, a massage gun and compression boots compared.</p>
-            </a>
-            <a href="/best-massage-guns/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Massage Guns</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Massage Guns</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Amplitude, stall force, noise and where not to use a percussion massager.</p>
-            </a>
-            <a href="/best-yoga-mats/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Mats</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Yoga Mats</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Mats for stretching, floor work and rolling, by material and thickness.</p>
-            </a>
-            <a href="/best-outdoor-saunas/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sauna</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Outdoor Saunas</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Barrel and cabin saunas: foundations, 240V wiring, permits, wood vs electric heat.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            <strong class="text-white">For most people, the TriggerPoint GRID 1.0 is the foam roller to buy</strong>
-            — firm, short, durable and inexpensive. Choose the TriggerPoint CORE if you are new to
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
+            <strong class="text-white">For most people, the TriggerPoint GRID 1.0 is the foam roller to buy</strong> — firm, short, durable and inexpensive. Choose the TriggerPoint CORE if you are new to
             rolling or want a long roller for your spine, the RumbleRoller once you want more
             intensity, the GRID X only if the standard GRID feels too gentle, and a Vyper 3 or
             WaveRoller only if you already roll and want vibration as a comfort upgrade.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             Whatever you buy, roll slowly with moderate pressure for a minute or so per muscle, keep
             off the lower spine, neck, bones and injuries, and treat rolling as something that helps
-            you feel better rather than a fix. For targeted work on smaller areas, see our
-            <a href="/best-massage-guns/" class="text-[#5AA9FF] font-bold no-underline">best massage guns guide</a>.
+            you feel better rather than a fix. For targeted work on smaller areas, see our <a href="/best-massage-guns/" class="text-[#5AA9FF] font-bold no-underline">best massage guns guide</a>.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/best-recovery-tools-for-weightlifters/">Best Recovery Tools for Weightlifters</a></li>
+            <li><a href="/best-massage-guns/">Best Massage Guns</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>What is the best foam roller?</h3></summary>
+            <p class="faq-a">
+              For most people, a firm, short, hollow-core roller such as the TriggerPoint GRID 1.0 is the best first roller. If you are new to rolling or very sore, a medium-density roller such as the TriggerPoint CORE is more comfortable. Textured, extra-firm and vibrating rollers are worth considering only once you know you like rolling and want more intensity or features.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Should I buy a soft or firm foam roller?</h3></summary>
+            <p class="faq-a">
+              Start medium or firm, not extra-firm. A medium roller suits beginners and sore muscles; a firm roller suits people who already roll or train regularly, and you can make it gentler by putting less weight on it. Move to an extra-firm or high-profile textured roller only when your current one stops feeling like much. If you tense up or hold your breath on a roller, it is too firm.
             </p>
+          </details>
+          <details>
+            <summary><h3>What length foam roller should I get?</h3></summary>
+            <p class="faq-a">
+              A 12 to 13 inch roller is best for travel, small spaces and rolling one leg at a time. An 18 to 26 inch roller rolls both legs at once and works across the upper back. A 31 to 36 inch roller is long enough to lie along your spine for chest stretches and is the most stable. Many people own a short one and later add a long one.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are vibrating foam rollers worth it?</h3></summary>
+            <p class="faq-a">
+              Only if the budget is there and you already like rolling. Makers say vibration improves mobility and recovery, but we could not find enough independent research to show it adds much to rolling alone. Owners commonly say it makes rolling feel more pleasant. Vibrating rollers cost several times more, weigh more and need charging, so buy a plain roller first.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Does foam rolling actually work?</h3></summary>
+            <p class="faq-a">
+              A 2019 meta-analysis of 21 studies found small effects: slightly better flexibility and sprint performance after rolling before exercise, and slightly less reported muscle pain after rolling after exercise, with little effect on strength or jumping. Rolling can help you feel looser and less sore for a while. It does not break up scar tissue, flush lactic acid or prevent injury.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Where should you not use a foam roller?</h3></summary>
+            <p class="faq-a">
+              Avoid rolling directly on the lower spine, the front and sides of the neck, bones and joints such as kneecaps and shins, and any bruised, swollen or injured area. Ask a doctor or physiotherapist first if you have had a blood clot, take blood thinners, have osteoporosis, are pregnant, have a circulation or heart condition or reduced sensation, or have recently had surgery.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Home Gym">
+          <h2 class="section-title">More in Home Gym</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/home-gym/" class="btn-ghost">See all Home Gym</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Home Gym Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/best-recovery-tools-for-weightlifters/" class="card">
+            <div class="c-kicker">Recovery</div>
+            <div class="c-title">Best Recovery Tools for Weightlifters</div>
+            <p class="c-blurb">Rollers, balls, straps, bands, a massage gun and compression boots compared.</p>
+          </a>
+          <a href="/best-massage-guns/" class="card">
+            <div class="c-kicker">Massage Guns</div>
+            <div class="c-title">Best Massage Guns</div>
+            <p class="c-blurb">Amplitude, stall force, noise and where not to use a percussion massager.</p>
+          </a>
+          <a href="/best-yoga-mats/" class="card">
+            <div class="c-kicker">Mats</div>
+            <div class="c-title">Best Yoga Mats</div>
+            <p class="c-blurb">Mats for stretching, floor work and rolling, by material and thickness.</p>
+          </a>
+          <a href="/best-outdoor-saunas/" class="card">
+            <div class="c-kicker">Sauna</div>
+            <div class="c-title">Best Outdoor Saunas</div>
+            <p class="c-blurb">Barrel and cabin saunas: foundations, 240V wiring, permits, wood vs electric heat.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

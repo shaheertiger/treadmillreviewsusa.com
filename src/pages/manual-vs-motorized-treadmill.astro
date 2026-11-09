@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Manual vs. Motorized Treadmill (2026): Are Manual Treadmills Any Good?";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/manual-vs-motorized-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "compare");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,110 +109,71 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "See the Verdict", link: "#verdict-up-front" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-manualvsmotorizedtreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-manualvsmotorizedtreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/compare/">Comparisons</a>
+        <span aria-hidden="true">›</span>
+        <span>Comparison</span>
+      </nav>
+      <h1 class="ed-title">Manual vs. Motorized Treadmill</h1>
+      <p class="ed-dek">
+        For most home buyers, a motorized treadmill is the right answer and a cheap flat manual one is the wrong one. The exception is a premium curved trainer, which is a different machine at a different price for a different job.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 6, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Comparison
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Manual vs. Motorized <span class="text-[#5AA9FF]">Treadmill</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          For most home buyers, a motorized treadmill is the right answer and a cheap flat manual one is the wrong one. The exception is a premium curved trainer, which is a different machine at a different price for a different job.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#verdict-up-front" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Verdict Up Front
-          </a>
-          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Who Should Buy Which
-          </a>
-        </div>
+        <a href="#verdict-up-front" class="btn-ghost">The Verdict Up Front</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 6, 2026</strong>
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
+          "Manual treadmill" describes two machines that share a name and very little else: a
+          cheap flat-belt unit sold as a budget alternative to a motorized treadmill, and a
+          commercial curved trainer that costs more than most motorized ones. Which one you are
+          looking at decides whether the answer is "avoid" or "excellent, for the right person". For
+          current machines of both kinds, see our <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>.
         </p>
-        <div class="ml-auto">
-          <SocialProof users="2.1k" />
-        </div>
-      </div>
 
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
           <strong class="text-gray-900">On the figures.</strong> Prices and specifications below
           are broad typical ranges for each category rather than measurements of particular
           models, and they move with promotions and model years. Check the manufacturer's current
           listing — in particular the deck size, the user weight limit and the warranty — before
           treating any figure here as a benchmark for a specific machine.
-        </p>
-      </div>
-    </div>
+        </aside>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#verdict-up-front" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Verdict, Up Front</a>
-          <a href="#two-kinds-of-manual" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Two Very Different "Manual" Treadmills</a>
-          <a href="#cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Each Costs</a>
-          <a href="#effort-and-gait" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Effort and Gait: Why Flat Manual Belts Feel Wrong</a>
-          <a href="#joint-stress" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Joint Stress and Cushioning</a>
-          <a href="#speed-control" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Speed Control and Training Structure</a>
-          <a href="#noise-and-power" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Noise, Electricity and Where It Can Go</a>
-          <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Maintenance and Lifespan</a>
-          <a href="#safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Safety</a>
-          <a href="#space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Space and Weight</a>
-          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Which</a>
-          <a href="#before-you-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. What to Check Before Buying Either</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#verdict-up-front">The Verdict, Up Front</a></li>
+            <li><a href="#two-kinds-of-manual">Two Very Different "Manual" Treadmills</a></li>
+            <li><a href="#cost">What Each Costs</a></li>
+            <li><a href="#effort-and-gait">Effort and Gait: Why Flat Manual Belts Feel Wrong</a></li>
+            <li><a href="#joint-stress">Joint Stress and Cushioning</a></li>
+            <li><a href="#speed-control">Speed Control and Training Structure</a></li>
+            <li><a href="#noise-and-power">Noise, Electricity and Where It Can Go</a></li>
+            <li><a href="#maintenance">Maintenance and Lifespan</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#space">Space and Weight</a></li>
+            <li><a href="#who-should-buy">Who Should Buy Which</a></li>
+            <li><a href="#before-you-buy">What to Check Before Buying Either</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
         </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          "Manual treadmill" describes two machines that share a name and very little else: a
-          cheap flat-belt unit sold as a budget alternative to a motorized treadmill, and a
-          commercial curved trainer that costs more than most motorized ones. Which one you are
-          looking at decides whether the answer is "avoid" or "excellent, for the right person". For
-          current machines of both kinds, see our
-          <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>.
-        </p>
 
         <div id="verdict-up-front" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Verdict, Up Front</h2>
+          <h2>The Verdict, Up Front</h2>
 <p>
             <strong>Buy a motorized treadmill if</strong> you want to walk or run at a steady,
             chosen pace, at a comfortable posture, for thirty minutes or more at a time. That
@@ -234,7 +200,7 @@ const schema = {
         </div>
 
         <div id="two-kinds-of-manual" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Two Very Different "Manual" Treadmills</h2>
+          <h2>Two Very Different "Manual" Treadmills</h2>
 <p>
             <strong>The flat-belt manual treadmill</strong> is the one sold at the bottom of every
             price list. It is a conventional-looking frame with a short, narrow belt running over
@@ -268,7 +234,7 @@ const schema = {
         </div>
 
         <div id="cost" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Each Costs</h2>
+          <h2>What Each Costs</h2>
 <p>
             <strong>Flat manual treadmills</strong> typically sit somewhere around $100 to $300
             new. That is the entire appeal, and it is a real one: it is a fraction of the price of
@@ -277,11 +243,7 @@ const schema = {
           <p>
             <strong>Motorized treadmills</strong> start from a few hundred dollars for walking pads
             and compact walking machines, and a treadmill you can actually run on comfortably
-            generally starts somewhere around $1,000 and climbs from there. Our
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">spending guide</a>
-            breaks down what each price band buys, and the
-            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 list</a>
-            covers the cheapest motorized machines worth considering.
+            generally starts somewhere around $1,000 and climbs from there. Our <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">spending guide</a> breaks down what each price band buys, and the <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">under-$500 list</a> covers the cheapest motorized machines worth considering.
           </p>
           <p>
             <strong>Curved non-motorized trainers</strong> are commercial equipment and are priced
@@ -304,7 +266,7 @@ const schema = {
         </div>
 
         <div id="effort-and-gait" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Effort and Gait: Why Flat Manual Belts Feel Wrong</h2>
+          <h2>Effort and Gait: Why Flat Manual Belts Feel Wrong</h2>
 <p>
             This is the core problem with the budget manual treadmill, and it is a matter of
             mechanics rather than build quality.
@@ -342,7 +304,7 @@ const schema = {
         </div>
 
         <div id="joint-stress" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Joint Stress and Cushioning</h2>
+          <h2>Joint Stress and Cushioning</h2>
 <p>
             We are an equipment site rather than a clinic, so nothing here is medical advice; if
             you have a joint condition, ask the professional treating it. What we can describe is
@@ -352,9 +314,7 @@ const schema = {
             <strong>Motorized treadmills</strong> in the mid-range and above usually have some
             form of deck suspension — elastomer cushions, springs or a flexing deck — and a deck
             long enough for a natural stride. That combination is a large part of why many
-            people find them comfortable for long sessions. Our guide to
-            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a>
-            covers what to look for if comfort is the priority.
+            people find them comfortable for long sessions. Our guide to <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a> covers what to look for if comfort is the priority.
           </p>
           <p>
             <strong>Flat manual treadmills</strong> usually have little or no <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium" data-autolink>deck cushioning</a> and
@@ -373,7 +333,7 @@ const schema = {
         </div>
 
         <div id="speed-control" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Speed Control and Training Structure</h2>
+          <h2>Speed Control and Training Structure</h2>
 <p>
             How a machine controls speed decides what kind of session it supports.
           </p>
@@ -382,9 +342,7 @@ const schema = {
             change it. That is ideal for steady walking, tempo runs, pace practice and anything
             where you want to hit and hold a number. Programmes, incline control and interval
             presets all depend on it. The drawback is lag — a motorized belt takes a few seconds
-            to change speed, which makes very short, sharp sprints clumsy. Our
-            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
-            builds sessions around that lag rather than against it.
+            to change speed, which makes very short, sharp sprints clumsy. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a> builds sessions around that lag rather than against it.
           </p>
           <p>
             <strong>Curved non-motorized:</strong> speed changes as fast as you do. Accelerate and
@@ -406,15 +364,13 @@ const schema = {
         </div>
 
         <div id="noise-and-power" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Noise, Electricity and Where It Can Go</h2>
+          <h2>Noise, Electricity and Where It Can Go</h2>
 <p>
             <strong>Electricity.</strong> Manual treadmills of both kinds need no mains power —
             the display, where there is one, usually runs on batteries or is powered by the
             movement itself. That is a genuine advantage in a garage, a shed, an outbuilding or a
             room with no suitable outlet. A motorized treadmill wants a dedicated outlet in good
-            condition, and its running cost, while usually modest, is not zero; our
-            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity usage guide</a>
-            works through what a typical routine costs.
+            condition, and its running cost, while usually modest, is not zero; our <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity usage guide</a> works through what a typical routine costs.
           </p>
           <p>
             <strong>Noise.</strong> This one is less clear-cut than people expect. A flat manual
@@ -422,9 +378,7 @@ const schema = {
             belt slapping as it surges all make noise, and cheap frames rattle. A curved trainer
             has no motor either, but running on it at speed is a heavy, rhythmic sound, and the
             footfall is what neighbours below you hear on any machine. A good motorized treadmill
-            at walking pace can be quieter than either. Our
-            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            covers what actually makes the noise.
+            at walking pace can be quieter than either. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> covers what actually makes the noise.
           </p>
           <p>
             <strong>Placement.</strong> Neither manual type needs to be near an outlet, so you
@@ -434,13 +388,11 @@ const schema = {
         </div>
 
         <div id="maintenance" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Maintenance and Lifespan</h2>
+          <h2>Maintenance and Lifespan</h2>
 <p>
             <strong>Motorized treadmills</strong> need routine care: lubricating the deck, keeping
             the belt tensioned and centred, and vacuuming dust out of the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.
-            None of it is difficult, and our
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
-            covers the full routine, but it is a commitment, and the motor and controller board
+            None of it is difficult, and our <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a> covers the full routine, but it is a commitment, and the motor and controller board
             are the components most likely to need expensive repair over the machine's life.
           </p>
           <p>
@@ -460,7 +412,7 @@ const schema = {
         </div>
 
         <div id="safety" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Safety</h2>
+          <h2>Safety</h2>
 <p>
             Every treadmill is a moving surface and should be treated with respect — use the
             safety clip where there is one, keep children and pets well away, and never step on
@@ -492,7 +444,7 @@ const schema = {
         </div>
 
         <div id="space" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Space and Weight</h2>
+          <h2>Space and Weight</h2>
 <p>
             <strong>Flat manual treadmills</strong> are the smallest and lightest of the three.
             Most fold, most can be moved by one person, and they fit in rooms where nothing else
@@ -502,9 +454,7 @@ const schema = {
           <p>
             <strong>Motorized treadmills</strong> vary enormously, from walking pads that slide
             under a sofa to full running machines that need a dedicated room. The running deck
-            length you need depends on your height and whether you run, and our
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            covers footprint and clearance properly.
+            length you need depends on your height and whether you run, and our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a> covers footprint and clearance properly.
           </p>
           <p>
             <strong>Curved trainers</strong> are large, very heavy and do not fold. They are built
@@ -521,16 +471,13 @@ const schema = {
         </div>
 
         <div id="who-should-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Which</h2>
+          <h2>Who Should Buy Which</h2>
 <p>
             <strong>A flat manual treadmill makes sense if</strong> you want occasional slow
             walking, you have no usable outlet, the budget is genuinely capped around $200, and
             you understand it is a compromise. Even then, compare it with a second-hand motorized
-            treadmill, which at the same money usually gives a better experience — our
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs. used guide</a>
-            explains how to buy one safely. If walking at a desk is the goal, a walking pad is
-            usually the better small machine; see
-            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs. treadmill</a>.
+            treadmill, which at the same money usually gives a better experience — our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs. used guide</a> explains how to buy one safely. If walking at a desk is the goal, a walking pad is
+            usually the better small machine; see <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs. treadmill</a>.
           </p>
           <p>
             <strong>A motorized treadmill makes sense if</strong> you want to walk or run at a
@@ -552,7 +499,7 @@ const schema = {
         </div>
 
         <div id="before-you-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. What to Check Before Buying Either</h2>
+          <h2>What to Check Before Buying Either</h2>
 <p>
             If you are still drawn to a manual machine, a few checks separate the tolerable from
             the regrettable.
@@ -574,146 +521,158 @@ const schema = {
           </p>
           <p>
             <strong>For a motorized treadmill:</strong> focus on deck size, motor rating, frame
-            and motor warranty, and whether the console needs a subscription to be useful. Our
-            <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs. premium comparison</a>
-            explains where extra money actually goes.
+            and motor warranty, and whether the console needs a subscription to be useful. Our <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap vs. premium comparison</a> explains where extra money actually goes.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are manual treadmills any good?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends entirely on which kind. Cheap flat-belt manual treadmills are a compromise: the belt only moves because the deck is tilted and you push it, which forces a forward lean and a short stride, and most people stop using them. Premium curved non-motorized trainers are excellent for sprinting and intervals, but they cost more than most motorized home treadmills.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a manual treadmill a better workout than a motorized one?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                A given speed usually feels harder on a manual treadmill, because you are supplying the power a motor would provide. On a curved trainer that extra effort is useful training. On a flat manual treadmill much of it goes into fighting the incline and the belt's resistance, which makes sessions uncomfortable and short — and the best workout is the one you will keep doing.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Can you run on a manual treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                On a curved non-motorized trainer, yes — running and sprinting are what it is designed for. On a cheap flat manual treadmill, barely: the short deck, fixed incline and belt resistance make a sustained jog awkward and a sprint close to impossible. If you want to run at home on a budget, a used motorized treadmill is usually the better route.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do manual treadmills use electricity?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                No. Neither flat manual treadmills nor curved trainers need mains power — any display usually runs on batteries or is powered by the movement. That makes them usable in garages and outbuildings without a suitable outlet. Motorized treadmills need a dedicated outlet, though their running cost for typical home use is usually modest.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Are manual treadmills safer than motorized ones?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                In one respect: the belt stops when you stop, so there is no motor to carry you backwards if you stumble, and it cannot be left running with children nearby. Flat manual treadmills give some of that back through their forward-leaning gait, narrow decks and surging belts. A motorized treadmill used with its safety key is safe for most people.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why are curved treadmills so expensive?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                They are commercial training equipment: a heavy steel frame, a slatted running surface on bearings rather than a belt on a deck, and construction designed for years of gym use. They are typically priced at several thousand dollars, often more than a good motorized home treadmill. They are not a cheaper alternative to a motorized machine, and should not be bought as one.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Choosing a Manual Treadmill</h2>
+          <p>Most regret in this category comes from the shared name. These are the four errors we see most often.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Treating all manual treadmills as one category</h3>
+              <p>A $200 flat-belt machine and a commercial curved trainer share the absence of a motor and nothing else. Reviews praising curved trainers do not apply to cheap flat ones, and complaints about flat ones do not apply to curved trainers. Establish which you are reading about before drawing any conclusion.</p>
+            </li>
+            <li>
+              <h3>Buying a flat manual treadmill to run on</h3>
+              <p>The fixed incline, belt resistance and short deck make sustained running awkward at best. If running is the goal, the money is far better spent on a used motorized machine with a proper deck, which at the same budget is the better experience by a wide margin.</p>
+            </li>
+            <li>
+              <h3>Counting "harder workout" as a benefit</h3>
+              <p>A flat manual treadmill feels hard largely because you are leaning into a slope and shoving a resistant belt. That is effort spent fighting the machine rather than training, and it is the reason sessions shorten and stop. Consistency over months matters more than intensity in any one session.</p>
+            </li>
+            <li>
+              <h3>Ignoring delivery and floor weight for a curved trainer</h3>
+              <p>Curved trainers are large, very heavy and do not fold. Measure doorways, stairs and turning points, confirm the floor can take the load, and read the delivery terms before ordering, because returning one is expensive and awkward.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Choosing a Manual Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most regret in this category comes from the shared name. These are the four errors we see most often.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating all manual treadmills as one category</h3>
-              <p class="text-gray-700 text-sm m-0">A $200 flat-belt machine and a commercial curved trainer share the absence of a motor and nothing else. Reviews praising curved trainers do not apply to cheap flat ones, and complaints about flat ones do not apply to curved trainers. Establish which you are reading about before drawing any conclusion.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a flat manual treadmill to run on</h3>
-              <p class="text-gray-700 text-sm m-0">The fixed incline, belt resistance and short deck make sustained running awkward at best. If running is the goal, the money is far better spent on a used motorized machine with a proper deck, which at the same budget is the better experience by a wide margin.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Counting "harder workout" as a benefit</h3>
-              <p class="text-gray-700 text-sm m-0">A flat manual treadmill feels hard largely because you are leaning into a slope and shoving a resistant belt. That is effort spent fighting the machine rather than training, and it is the reason sessions shorten and stop. Consistency over months matters more than intensity in any one session.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring delivery and floor weight for a curved trainer</h3>
-              <p class="text-gray-700 text-sm m-0">Curved trainers are large, very heavy and do not fold. Measure doorways, stairs and turning points, confirm the floor can take the load, and read the delivery terms before ordering, because returning one is expensive and awkward.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Comparison Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/walking-pad-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs. Treadmill</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The other small-machine decision, and when a pad is enough.</p>
-            </a>
-            <a href="/treadmill-vs-running-outside/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill vs. Running Outside</p>
-              <p class="text-sm text-gray-500 leading-relaxed">What changes indoors, and how to blend the two.</p>
-            </a>
-            <a href="/best-treadmills-under-500/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Budget</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $500</p>
-              <p class="text-sm text-gray-500 leading-relaxed">The cheapest motorized machines worth considering.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">For most home buyers, buy motorized.</strong> A cheap flat
             manual treadmill forces a forward-leaning, push-the-belt gait that makes walking
             awkward and running close to impractical, and most end up unused. If the budget is
             tight, a used motorized machine is usually the better buy.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             A <strong class="text-white">curved non-motorized trainer</strong> is a different
             proposition — excellent for sprints and intervals, and priced as commercial equipment.
-            Buy one for that job, not as a cheaper treadmill. Our
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">spending guide</a>
-            shows what a motorized budget buys.
+            Buy one for that job, not as a cheaper treadmill. Our <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">spending guide</a> shows what a motorized budget buys.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/walking-pad-vs-treadmill/">Walking Pad vs. Treadmill</a></li>
+            <li><a href="/treadmill-vs-running-outside/">Treadmill vs. Running Outside</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Are manual treadmills any good?</h3></summary>
+            <p class="faq-a">
+              It depends entirely on which kind. Cheap flat-belt manual treadmills are a compromise: the belt only moves because the deck is tilted and you push it, which forces a forward lean and a short stride, and most people stop using them. Premium curved non-motorized trainers are excellent for sprinting and intervals, but they cost more than most motorized home treadmills.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Is a manual treadmill a better workout than a motorized one?</h3></summary>
+            <p class="faq-a">
+              A given speed usually feels harder on a manual treadmill, because you are supplying the power a motor would provide. On a curved trainer that extra effort is useful training. On a flat manual treadmill much of it goes into fighting the incline and the belt's resistance, which makes sessions uncomfortable and short — and the best workout is the one you will keep doing.
             </p>
+          </details>
+          <details>
+            <summary><h3>Can you run on a manual treadmill?</h3></summary>
+            <p class="faq-a">
+              On a curved non-motorized trainer, yes — running and sprinting are what it is designed for. On a cheap flat manual treadmill, barely: the short deck, fixed incline and belt resistance make a sustained jog awkward and a sprint close to impossible. If you want to run at home on a budget, a used motorized treadmill is usually the better route.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Do manual treadmills use electricity?</h3></summary>
+            <p class="faq-a">
+              No. Neither flat manual treadmills nor curved trainers need mains power — any display usually runs on batteries or is powered by the movement. That makes them usable in garages and outbuildings without a suitable outlet. Motorized treadmills need a dedicated outlet, though their running cost for typical home use is usually modest.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Are manual treadmills safer than motorized ones?</h3></summary>
+            <p class="faq-a">
+              In one respect: the belt stops when you stop, so there is no motor to carry you backwards if you stumble, and it cannot be left running with children nearby. Flat manual treadmills give some of that back through their forward-leaning gait, narrow decks and surging belts. A motorized treadmill used with its safety key is safe for most people.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Why are curved treadmills so expensive?</h3></summary>
+            <p class="faq-a">
+              They are commercial training equipment: a heavy steel frame, a slatted running surface on bearings rather than a belt on a deck, and construction designed for years of gym use. They are typically priced at several thousand dollars, often more than a good motorized home treadmill. They are not a cheaper alternative to a motorized machine, and should not be bought as one.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Comparisons">
+          <h2 class="section-title">More in Comparisons</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/compare/" class="btn-ghost">See all Comparisons</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Comparison Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/walking-pad-vs-treadmill/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Walking Pad vs. Treadmill</div>
+            <p class="c-blurb">The other small-machine decision, and when a pad is enough.</p>
+          </a>
+          <a href="/treadmill-vs-running-outside/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Treadmill vs. Running Outside</div>
+            <p class="c-blurb">What changes indoors, and how to blend the two.</p>
+          </a>
+          <a href="/best-treadmills-under-500/" class="card">
+            <div class="c-kicker">Budget</div>
+            <div class="c-title">Best Treadmills Under $500</div>
+            <p class="c-blurb">The cheapest motorized machines worth considering.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

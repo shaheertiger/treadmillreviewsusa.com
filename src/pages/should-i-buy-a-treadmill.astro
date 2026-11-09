@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import SocialProof from "../components/SocialProof.astro";
+import { SECTIONS } from "../data/sections";
 
 const title = "Should I Buy a Treadmill? (2026): An Honest Yes-or-No Test";
 const description =
@@ -82,6 +81,12 @@ const schema = {
     },
   ],
 };
+
+// "More in" links: the other pages in this article's hub group.
+const HERE = "/should-i-buy-a-treadmill/";
+const HUB = SECTIONS.find((s) => s.slug === "guides");
+const GROUP = HUB?.groups.find((g) => g.pages.some((p) => p.url === HERE)) ?? HUB?.groups[0];
+const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 ---
 
 <Layout
@@ -104,103 +109,34 @@ const schema = {
   jsonLd={schema}
   stickyCta={{ text: "Take the Self-Test", link: "#self-test" }}
 >
-  <article class="relative overflow-hidden">
-    <!-- Hero Section -->
-    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
-      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-shouldibuyatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-shouldibuyatreadmill)"></rect>
-      </svg>
-      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <div class="flex justify-center mb-6">
-          <TrustBadge />
+  <article class="ed-article" data-template="editorial">
+    <div class="ed-col">
+      <nav class="ed-crumbs" aria-label="Breadcrumb">
+        <a href="/guides/">Buying Guides</a>
+        <span aria-hidden="true">›</span>
+        <span>Question Answered</span>
+      </nav>
+      <h1 class="ed-title">Should I Buy a Treadmill?</h1>
+      <p class="ed-dek">
+        A treadmill is one of the best-value pieces of exercise equipment you can own and one of the most commonly abandoned. Which one it becomes depends far more on you, your home and your week than on the machine. Here is how to tell in advance, with the arithmetic, the checklist and an eight-question self-test.
+      </p>
+
+      <!-- Byline -->
+      <div class="ed-byline">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="44" height="44" />
+        <div class="ed-byline-text">
+          By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
+          Updated October 18, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
-          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Question Answered
-          </span>
-          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated October 2026
-          </span>
-        </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          Should I Buy <span class="text-[#5AA9FF]">a Treadmill?</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A treadmill is one of the best-value pieces of exercise equipment you can own and one of the most commonly abandoned. Which one it becomes depends far more on you, your home and your week than on the machine. Here is how to tell in advance, with the arithmetic, the checklist and an eight-question self-test.
-        </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            The Short Answer
-          </a>
-          <a href="#self-test" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Take the Self-Test
-          </a>
-        </div>
+        <a href="#short-answer" class="btn-ghost">The Short Answer</a>
       </div>
-    </div>
+      <p class="ed-disclosure">
+        We research every product on this page independently. If you buy through our links, we may earn a
+        commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
+      </p>
 
-
-    <!-- Author & Meta -->
-    <div class="max-w-3xl mx-auto px-4 pt-12">
-      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
-        <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
-          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
-        </div>
-        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
-        <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">October 18, 2026</strong>
-        </p>
-        <div class="ml-auto">
-          <SocialProof users="1.6k" />
-        </div>
-      </div>
-
-      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
-        <p class="text-sm text-gray-700 m-0 leading-relaxed">
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills;
-          this is a general buying-decision guide. It is not medical, physiotherapy or financial
-          advice. If you are buying a treadmill for rehabilitation, or you have a heart, lung, joint
-          or balance condition, are pregnant or are returning after illness or injury, talk to your
-          doctor or physical therapist first and follow their guidance on what to use and how.
-          <strong class="text-gray-900">On the figures below.</strong> Every price, cost-per-use and
-          resale figure is either a typical US range taken from our other guides or an example with
-          round numbers chosen to make the arithmetic easy to follow, and each is labelled as such.
-          Prices, return terms and rental rates change; put your own numbers into the same sums
-          before deciding, and check the current terms of any retailer you buy from. Checked
-          October 18, 2026.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-          In This Guide
-        </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should I Buy a Treadmill? The Short Answer</a>
-          <a href="#who-benefits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Gets Real Value From a Home Treadmill</a>
-          <a href="#who-regrets" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Who Tends to Regret Buying One</a>
-          <a href="#cost-per-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Is a Treadmill Worth the Money? Cost per Use, Worked Out</a>
-          <a href="#space-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Do You Have Room? The Space, Power and Floor Checklist</a>
-          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Alternatives to Buying a Treadmill</a>
-          <a href="#self-test" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Should You Buy a Treadmill? An Eight-Question Self-Test</a>
-          <a href="#de-risk" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Lower the Risk if You Decide to Buy</a>
-          <a href="#next-steps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. If the Answer Is Yes: What to Do Next</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+      <div class="ed-body prose prose-lg">
+        <p class="ed-lead">
           "Should I buy a treadmill?" is really a question about your future self. The machine is
           the easy part: a sensible home treadmill is not hard to find at almost any budget. The
           hard part is predicting whether you will still be using it in month six, whether it fits
@@ -209,8 +145,38 @@ const schema = {
           make the call honestly before you spend anything.
         </p>
 
+        <aside class="ed-note not-prose">
+          <span class="ed-note-k">What we checked</span>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills;
+          this is a general buying-decision guide. It is not medical, physiotherapy or financial
+          advice. If you are buying a treadmill for rehabilitation, or you have a heart, lung, joint
+          or balance condition, are pregnant or are returning after illness or injury, talk to your
+          doctor or physical therapist first and follow their guidance on what to use and how. <strong class="text-gray-900">On the figures below.</strong> Every price, cost-per-use and
+          resale figure is either a typical US range taken from our other guides or an example with
+          round numbers chosen to make the arithmetic easy to follow, and each is labelled as such.
+          Prices, return terms and rental rates change; put your own numbers into the same sums
+          before deciding, and check the current terms of any retailer you buy from. Checked
+          October 18, 2026.
+        </aside>
+
+        <nav class="ed-toc not-prose" aria-label="In this guide">
+          <h2>In this guide</h2>
+          <ol>
+            <li><a href="#short-answer">Should I Buy a Treadmill? The Short Answer</a></li>
+            <li><a href="#who-benefits">Who Gets Real Value From a Home Treadmill</a></li>
+            <li><a href="#who-regrets">Who Tends to Regret Buying One</a></li>
+            <li><a href="#cost-per-use">Is a Treadmill Worth the Money? Cost per Use, Worked Out</a></li>
+            <li><a href="#space-check">Do You Have Room? The Space, Power and Floor Checklist</a></li>
+            <li><a href="#alternatives">Alternatives to Buying a Treadmill</a></li>
+            <li><a href="#self-test">Should You Buy a Treadmill? An Eight-Question Self-Test</a></li>
+            <li><a href="#de-risk">How to Lower the Risk if You Decide to Buy</a></li>
+            <li><a href="#next-steps">If the Answer Is Yes: What to Do Next</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
         <div id="short-answer" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should I Buy a Treadmill? The Short Answer</h2>
+          <h2>Should I Buy a Treadmill? The Short Answer</h2>
 <p>
             <strong>Buy a treadmill if you already exercise at least a couple of times a week and
             something specific — weather, darkness, safety, childcare or your schedule — keeps
@@ -242,7 +208,7 @@ const schema = {
         </div>
 
         <div id="who-benefits" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Gets Real Value From a Home Treadmill</h2>
+          <h2>Who Gets Real Value From a Home Treadmill</h2>
 <p>
             A treadmill earns its place when it removes a specific obstacle between you and exercise
             you already want to do. These are the situations where that happens most reliably. If
@@ -250,12 +216,9 @@ const schema = {
           </p>
           <p>
             <strong>People whose weather is the problem.</strong> Summer heat and humidity, icy
-            winter pavements, long stretches of rain and short winter days all knock <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a>
-            and running off the calendar for weeks at a time. A treadmill makes the weather
+            winter pavements, long stretches of rain and short winter days all knock <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a> and running off the calendar for weeks at a time. A treadmill makes the weather
             irrelevant. For someone who walks happily outdoors from April to October and then stops
-            until spring, it can fill the five months that currently go missing. Our comparison of
-            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill versus running outside</a>
-            covers how the two differ underfoot.
+            until spring, it can fill the five months that currently go missing. Our comparison of <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill versus running outside</a> covers how the two differ underfoot.
           </p>
           <p>
             <strong>Shift workers and people with tight or unpredictable schedules.</strong> If your
@@ -269,8 +232,7 @@ const schema = {
             home needs you within earshot, a treadmill lets you exercise during a nap or after
             bedtime. The safety side matters here: children and pets should be kept away from a
             moving belt, and the safety key should be removed and stored out of reach whenever the
-            machine is not in use. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
-            set out the household rules.
+            machine is not in use. Our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a> set out the household rules.
           </p>
           <p>
             <strong>People for whom outdoor walking does not feel safe.</strong> Roads without
@@ -284,9 +246,7 @@ const schema = {
             surface with no curbs or potholes, a precise speed they can raise by a tenth of a mile
             an hour, handrails within reach and the ability to stop the moment they want to. A
             treadmill is good at all of that. If the treadmill is part of a recovery plan, the plan
-            itself should come from your clinician; our guide for
-            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">older walkers</a>
-            covers the features — step-up height, long handrails, low starting speed — that matter
+            itself should come from your clinician; our guide for <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">older walkers</a> covers the features — step-up height, long handrails, low starting speed — that matter
             in this situation.
           </p>
           <p>
@@ -294,22 +254,18 @@ const schema = {
             a tempo run, repeat a hill of a known grade as many times as the plan asks, and keep
             training through a winter that would otherwise interrupt a spring marathon build. Most
             runners do not want every run indoors, but a machine at home for the hard sessions and
-            the bad-weather days is a genuine training tool. Our
-            <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training guide</a>
-            shows how runners typically combine the two.
+            the bad-weather days is a genuine training tool. Our <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium">treadmill marathon training guide</a> shows how runners typically combine the two.
           </p>
           <p>
             Behind all of these sits the broader point that regular walking and running are among
             the most useful things you can do for your health, and that the best exercise is the one
-            you actually do. Our guide to the
-            <a href="/benefits-of-treadmill-exercise/" class="text-[#0F62FE] font-medium">benefits of treadmill exercise</a>
-            covers what the evidence says. A treadmill does not add benefits that outdoor walking
+            you actually do. Our guide to the <a href="/benefits-of-treadmill-exercise/" class="text-[#0F62FE] font-medium">benefits of treadmill exercise</a> covers what the evidence says. A treadmill does not add benefits that outdoor walking
             lacks; its value is that it makes the walking happen more often.
           </p>
         </div>
 
         <div id="who-regrets" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Who Tends to Regret Buying One</h2>
+          <h2>Who Tends to Regret Buying One</h2>
 <p>
             The reasons people regret a treadmill are remarkably consistent, and almost none of them
             are about the machine breaking. They are about the fit between the machine and the life
@@ -338,8 +294,7 @@ const schema = {
             detached house with a ground-floor room it rarely matters. In an upstairs apartment with
             neighbors below, or a home where someone is asleep when you want to run, it can rule out
             the times you would actually use it. Running is much louder through a floor than
-            walking. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a>
-            explains what helps and what does not.
+            walking. Our <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills guide</a> explains what helps and what does not.
           </p>
           <p>
             <strong>Boredom and motivation.</strong> Some people find indoor walking or running
@@ -351,27 +306,23 @@ const schema = {
             <strong>The gym membership stays anyway.</strong> If you go to a gym for weights, classes
             or a pool and will keep paying for it, a home treadmill is an extra cost rather than a
             saving. That can still be worth it for convenience, but it changes the arithmetic, which
-            our <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs gym membership</a>
-            comparison works through.
+            our <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs gym membership</a> comparison works through.
           </p>
           <p>
             <strong>The wrong machine for the job.</strong> A smaller group of regrets comes from
             buying the right category but the wrong machine — a deck too short for a tall runner, a
             walking pad bought for jogging, a capacity with no margin. Those are avoidable with a tape
-            measure and ten minutes of reading, and our list of
-            <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes</a>
-            covers the fifteen that come up most.
+            measure and ten minutes of reading, and our list of <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes</a> covers the fifteen that come up most.
           </p>
         </div>
 
         <div id="cost-per-use" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Is a Treadmill Worth the Money? Cost per Use, Worked Out</h2>
+          <h2>Is a Treadmill Worth the Money? Cost per Use, Worked Out</h2>
 <p>
             The sticker price is the wrong number to judge a treadmill by. What matters is what each
             session ends up costing you once you count how often you will actually use it, what it
             costs to run, and what you get back if you sell it. The examples below are illustrations
-            with round numbers, not quotes. Treadmill price tiers are the typical US ranges from our
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to how much to spend</a>,
+            with round numbers, not quotes. Treadmill price tiers are the typical US ranges from our <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">guide to how much to spend</a>,
             running costs of about $5 a month for electricity and routine maintenance come from our
             gym comparison, and resale assumes the typical pattern of roughly half the original price
             after about two years and around a third after three to five.
@@ -417,14 +368,11 @@ const schema = {
         </div>
 
         <div id="space-check" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Do You Have Room? The Space, Power and Floor Checklist</h2>
+          <h2>Do You Have Room? The Space, Power and Floor Checklist</h2>
 <p>
             A treadmill that does not fit, cannot be delivered or annoys the household is a
             treadmill that does not get used. Run through this list before you shop; it takes a tape
-            measure and twenty minutes. Our guide to
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            has the full numbers, and <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
-            covers which rooms work best.
+            measure and twenty minutes. Our guide to <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a> has the full numbers, and <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a> covers which rooms work best.
           </p>
           <ul>
             <li><strong>Footprint plus clearance.</strong> A typical full-size treadmill is around
@@ -450,9 +398,7 @@ const schema = {
             need a dedicated 20-amp circuit. If any of that is unclear for your home, ask an
             electrician.</li>
             <li><strong>Floor.</strong> The machine needs a solid, level floor. On carpet, a mat
-            keeps fibers out of the motor and gives a stable base; our guide to
-            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmills on carpet</a>
-            explains why. Upstairs, think about who is underneath and when you will use it.</li>
+            keeps fibers out of the motor and gives a stable base; our guide to <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmills on carpet</a> explains why. Upstairs, think about who is underneath and when you will use it.</li>
             <li><strong>The household.</strong> Check the times you would realistically use it
             against who is asleep, working or on calls nearby, and where children and pets will be.
             A machine you can only use when nobody else is home is one you will use less.</li>
@@ -465,7 +411,7 @@ const schema = {
         </div>
 
         <div id="alternatives" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Alternatives to Buying a Treadmill</h2>
+          <h2>Alternatives to Buying a Treadmill</h2>
 <p>
             Before buying, it is worth asking whether something else solves the same problem more
             cheaply or with less commitment. Often the honest answer is yes, at least for now.
@@ -480,42 +426,32 @@ const schema = {
             <strong>A gym membership.</strong> A budget gym costs little a month, comes with
             treadmills built for heavy use, and adds weights and other equipment. It is the natural
             choice for anyone who would go anyway, and a good way to test whether you like treadmill
-            sessions before buying your own. Our
-            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">gym comparison</a>
-            has the break-even arithmetic.
+            sessions before buying your own. Our <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">gym comparison</a> has the break-even arithmetic.
           </p>
           <p>
             <strong>A walking pad.</strong> If you only walk, and especially if you want to walk
             while you work, a walking pad costs roughly $200 to $600 and slides under a sofa or bed.
-            It is a smaller bet than a full treadmill and a good fit for desk workers. Our guide to
-            <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>
-            covers who gains and who regrets one.
+            It is a smaller bet than a full treadmill and a good fit for desk workers. Our guide to <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a> covers who gains and who regrets one.
           </p>
           <p>
             <strong>An exercise bike or elliptical.</strong> If the goal is cardio rather than walking
             or running specifically, a bike is quieter, smaller and gentler on the joints, and an
-            elliptical gives low-impact full-body work. Our comparisons of
-            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
-            and <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
-            set out the trade-offs.
+            elliptical gives low-impact full-body work. Our comparisons of <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a> and <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a> set out the trade-offs.
           </p>
           <p>
             <strong>Renting a treadmill.</strong> A month or two of rental answers the question
             "will I actually use it?" at a fraction of the purchase price, and it suits short,
-            defined needs such as a recovery period or a temporary home. Our
-            <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill rental guide</a>
-            explains when renting beats buying and why rent-to-own rarely does.
+            defined needs such as a recovery period or a temporary home. Our <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill rental guide</a> explains when renting beats buying and why rent-to-own rarely does.
           </p>
           <p>
             <strong>A used treadmill.</strong> Treadmills lose value fast and then flatten, so a
             used machine bought at a fair price can usually be resold for not much less. That makes
-            it a low-risk trial. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used treadmill</a>
-            guide covers what to inspect.
+            it a low-risk trial. Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used treadmill</a> guide covers what to inspect.
           </p>
         </div>
 
         <div id="self-test" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Should You Buy a Treadmill? An Eight-Question Self-Test</h2>
+          <h2>Should You Buy a Treadmill? An Eight-Question Self-Test</h2>
 <p>
             Answer each question yes or no, honestly, about your life as it is now rather than as you
             hope it will be. Count the yeses.
@@ -535,12 +471,10 @@ const schema = {
             <li><strong>Would you still use it if all you ever did on it was walk?</strong> Most
             treadmill sessions, at every price, are walks. A machine bought only for running you have
             not started yet is a riskier purchase.</li>
-            <li><strong>Can the household live with the noise at the times you would use it?</strong>
-            Think about neighbors below, sleeping children and calls in the next room.</li>
+            <li><strong>Can the household live with the noise at the times you would use it?</strong> Think about neighbors below, sleeping children and calls in the next room.</li>
             <li><strong>Would it replace something you pay for now, such as a gym membership you use
             mainly for cardio?</strong></li>
-            <li><strong>If it went unused for a month, would you sell it rather than let it sit?</strong>
-            Willingness to sell caps how much a mistake can cost you.</li>
+            <li><strong>If it went unused for a month, would you sell it rather than let it sit?</strong> Willingness to sell caps how much a mistake can cost you.</li>
           </ol>
           <p>
             <strong>Six to eight yeses: buy one.</strong> You have the habit, a reason, the room and a
@@ -564,7 +498,7 @@ const schema = {
         </div>
 
         <div id="de-risk" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How to Lower the Risk if You Decide to Buy</h2>
+          <h2>How to Lower the Risk if You Decide to Buy</h2>
 <p>
             Even a clear yes is a bet on future behavior. These steps make the bet cheaper to lose.
           </p>
@@ -572,17 +506,13 @@ const schema = {
             <strong>Rent first.</strong> For anyone in the cautious middle, a short rental is the
             cleanest experiment: the provider typically handles delivery and collection, and you
             find out within a few weeks whether the machine gets used. Rental is usually poor value
-            beyond a few months, so treat it as a trial with an end date, and read the
-            <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">rental guide</a>
-            for what to check in the agreement.
+            beyond a few months, so treat it as a trial with an end date, and read the <a href="/rent-a-treadmill/" class="text-[#0F62FE] font-medium">rental guide</a> for what to check in the agreement.
           </p>
           <p>
             <strong>Buy used, with resale in mind.</strong> A used machine bought at a fair price
             loses relatively little more value, so if the habit does not stick you can sell it for
             close to what you paid. The catch is moving it — budget for a van and a helper — and
-            inspecting it properly before you hand over money. Our
-            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
-            covers the inspection.
+            inspecting it properly before you hand over money. Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a> covers the inspection.
           </p>
           <p>
             <strong>Know the return terms before you buy new.</strong> Return policies vary a great
@@ -590,9 +520,7 @@ const schema = {
             typical, some manufacturers advertise home trials of 30 days or longer, and the details that decide what a return really costs — restocking fees, freight pickup
             charges, whether the machine must be disassembled and whether the <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> is
             required — differ from seller to seller and change over time. Read the current terms on
-            the day you buy, keep the crate and packing until you are past the window, and see our
-            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">guide to treadmill return policies</a>
-            for what to look for.
+            the day you buy, keep the crate and packing until you are past the window, and see our <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">guide to treadmill return policies</a> for what to look for.
           </p>
           <p>
             <strong>Try before you buy.</strong> A few minutes walking and jogging on two or three
@@ -606,14 +534,12 @@ const schema = {
           </p>
           <p>
             <strong>Time the purchase.</strong> Prices move through the year, and model-year
-            clearance can bring a machine down a price tier with the warranty intact. Our guide to the
-            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
-            covers the pattern, though no discount makes an unused machine good value.
+            clearance can bring a machine down a price tier with the warranty intact. Our guide to the <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a> covers the pattern, though no discount makes an unused machine good value.
           </p>
         </div>
 
         <div id="next-steps" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If the Answer Is Yes: What to Do Next</h2>
+          <h2>If the Answer Is Yes: What to Do Next</h2>
 <p>
             Once you have decided to buy, the next question is which kind of treadmill. That follows
             from three things: whether you will mostly walk or run, how much space you can give it,
@@ -627,149 +553,161 @@ const schema = {
             your tape-measure results from the checklist above in hand.
           </p>
           <p>
-            Before you order, read the list of
-            <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes</a>
-            once — most of them take a minute to avoid and cost a great deal to discover after
+            Before you order, read the list of <a href="/treadmill-buying-mistakes/" class="text-[#0F62FE] font-medium">treadmill buying mistakes</a> once — most of them take a minute to avoid and cost a great deal to discover after
             delivery. And whichever machine you pick, check cpsc.gov for recalls and warnings on the
             brand and model, and register it with the manufacturer once it arrives so you hear about
             any future recall.
           </p>
         </div>
-      </div>
 
 
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-
-        <!-- FAQ -->
-        <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is it worth buying a treadmill for home?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Usually yes if you already exercise at least twice a week and something such as weather, darkness, safety, childcare or your schedule keeps getting in the way. Used two or more times a week for a few years, a sensible treadmill typically works out at a dollar or two a session. Used once a week or for a few months, it is poor value whatever it cost.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Do most people stop using their treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Many treadmills do end up used far less than their owners planned, which is where the clothes-rack joke comes from. The usual reasons are buying to start a habit rather than to support one, putting the machine somewhere awkward, and noise or setup friction. People with an established routine and a clear reason for exercising at home are much more likely to keep using one.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill better than a gym membership?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                It depends on what you use the gym for and how often you would use a treadmill. If you mainly go for cardio and would use a home machine two or more times a week, a treadmill usually pays for itself within a few years. If you go for weights, classes or a pool, or your gym is very cheap, the membership often wins on money.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I buy a treadmill or a walking pad?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                If you only walk, and especially if you want to walk while working at a desk, a walking pad is a smaller and cheaper commitment that fits where a treadmill will not. If you want to jog or run, use steep incline, or walk briskly for exercise sessions, a full treadmill is the better tool. A walking pad is not a small running machine.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">How much space do I need for a treadmill?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Plan for the machine's footprint plus about 6 feet of clear floor behind the belt and about 2 feet on each side. For a typical full-size treadmill that is roughly 12 feet long by 6 to 7 feet wide. Check the ceiling too: your height plus the deck height plus at least 12 inches of clearance.
-              </p>
-            </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Should I rent a treadmill before buying one?</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Renting for a month or two is a sensible trial if you are unsure whether you will use one, or if the need is short and defined. Over longer periods rental usually costs more than buying and reselling, and rent-to-own agreements are rarely good value. Buying a used machine you can resell is the other low-risk trial.
-              </p>
-            </div>
-          </div>
+        <!-- Common mistakes -->
+        <div id="common-mistakes" class="scroll-mt-24">
+          <h2>Common Mistakes When Deciding Whether to Buy a Treadmill</h2>
+          <p>Most treadmill regrets are decided before the machine arrives. These are the decision mistakes we see most often, and how to avoid each one.</p>
+          <ol class="ed-mistakes not-prose">
+            <li>
+              <h3>Buying the treadmill to create the habit</h3>
+              <p>A new machine is exciting for a few weeks, and then the old routine reasserts itself. If you are not exercising regularly now, prove the habit first, outside, at a gym or with a short rental, and buy once it has lasted a couple of months.</p>
+            </li>
+            <li>
+              <h3>Judging value by the sticker price</h3>
+              <p>A cheap treadmill used for six months can cost far more per session than a mid-range one used for five years. Work out cost per session from how often and for how long you will realistically use it, and count running costs and resale.</p>
+            </li>
+            <li>
+              <h3>Not measuring before deciding</h3>
+              <p>Clearance behind the belt, ceiling height and the delivery route rule out more treadmills than budget does. Measure the room, the doors and the stairs before you decide a treadmill fits your home, not after you have chosen a model.</p>
+            </li>
+            <li>
+              <h3>Ignoring the return terms</h3>
+              <p>Returning a 200-pound machine can carry restocking fees, freight pickup charges and packaging rules. Read the current policy before ordering, keep the crate until the window closes, and prefer sellers whose terms you can live with if it goes wrong.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Common Mistakes -->
-        <div class="mt-16">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Deciding Whether to Buy a Treadmill</h2>
-          <p class="text-gray-700 leading-relaxed">Most treadmill regrets are decided before the machine arrives. These are the decision mistakes we see most often, and how to avoid each one.</p>
-          <div class="space-y-6 my-8">
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the treadmill to create the habit</h3>
-              <p class="text-gray-700 text-sm m-0">A new machine is exciting for a few weeks, and then the old routine reasserts itself. If you are not exercising regularly now, prove the habit first, outside, at a gym or with a short rental, and buy once it has lasted a couple of months.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging value by the sticker price</h3>
-              <p class="text-gray-700 text-sm m-0">A cheap treadmill used for six months can cost far more per session than a mid-range one used for five years. Work out cost per session from how often and for how long you will realistically use it, and count running costs and resale.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring before deciding</h3>
-              <p class="text-gray-700 text-sm m-0">Clearance behind the belt, ceiling height and the delivery route rule out more treadmills than budget does. Measure the room, the doors and the stairs before you decide a treadmill fits your home, not after you have chosen a model.</p>
-            </div>
-            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the return terms</h3>
-              <p class="text-gray-700 text-sm m-0">Returning a 200-pound machine can carry restocking fees, freight pickup charges and packaging rules. Read the current policy before ordering, keep the crate until the window closes, and prefer sellers whose terms you can live with if it goes wrong.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Guides -->
-        <div class="mt-16">
-          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="/what-treadmill-should-i-buy/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Next step</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">What Treadmill Should I Buy?</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Route from how you will use it to the right type, minimum specs and roundup.</p>
-            </a>
-            <a href="/home-treadmill-vs-gym-membership/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Comparison</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Home Treadmill vs Gym Membership</p>
-              <p class="text-sm text-gray-500 leading-relaxed">Break-even arithmetic with labelled examples, hidden costs and resale.</p>
-            </a>
-            <a href="/rent-a-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-green-600">Low-risk trial</span>
-              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Rental</p>
-              <p class="text-sm text-gray-500 leading-relaxed">When renting beats buying, and why rent-to-own rarely does.</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Closing CTA -->
-        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-          <p class="text-gray-300 leading-relaxed mb-4">
+        <!-- The bottom line -->
+        <div id="bottom-line" class="ed-bottomline">
+          <h2>The bottom line</h2>
+          <p>
             <strong class="text-white">Buy a treadmill if you already exercise and something specific keeps
             stopping you; do not buy one to start a habit you do not have yet.</strong> Used a couple
             of times a week for a few years, a sensible machine costs a dollar or two a session.
             Used for a few months, it is an expensive clothes rack.
           </p>
-          <p class="text-gray-300 leading-relaxed mb-4">
+          <p>
             If you land in the middle, make the yes reversible: rent, buy used, start with a walking pad
             or buy new from a seller whose return terms you have read. Measure the room first, then
-            use our guide to
-            <a href="/what-treadmill-should-i-buy/" class="text-[#5AA9FF] font-bold no-underline">what treadmill to buy</a>
-            to match the machine to how you will actually use it.
+            use our guide to <a href="/what-treadmill-should-i-buy/" class="text-[#5AA9FF] font-bold no-underline">what treadmill to buy</a> to match the machine to how you will actually use it.
           </p>
         </div>
 
-        <!-- Meet the Author -->
-        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
-          <div>
-            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm font-bold text-gray-900 m-0">
-              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
-              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+        <aside class="ed-more not-prose">
+          <div class="ed-more-k">Keep reading</div>
+          <ul>
+            <li><a href="/what-treadmill-should-i-buy/">What Treadmill Should I Buy?</a></li>
+            <li><a href="/home-treadmill-vs-gym-membership/">Home Treadmill vs Gym Membership</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <section id="faq" class="ed-faq scroll-mt-24">
+          <h2>Frequently asked questions</h2>
+          <details open>
+            <summary><h3>Is it worth buying a treadmill for home?</h3></summary>
+            <p class="faq-a">
+              Usually yes if you already exercise at least twice a week and something such as weather, darkness, safety, childcare or your schedule keeps getting in the way. Used two or more times a week for a few years, a sensible treadmill typically works out at a dollar or two a session. Used once a week or for a few months, it is poor value whatever it cost.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
-              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
-              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
-              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
-              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
-              running ergonomics, noise and long-term durability. Every guide says what was checked and
-              when, and says plainly when a product has not been tested hands-on.
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+          </details>
+          <details>
+            <summary><h3>Do most people stop using their treadmill?</h3></summary>
+            <p class="faq-a">
+              Many treadmills do end up used far less than their owners planned, which is where the clothes-rack joke comes from. The usual reasons are buying to start a habit rather than to support one, putting the machine somewhere awkward, and noise or setup friction. People with an established routine and a clear reason for exercising at home are much more likely to keep using one.
             </p>
+          </details>
+          <details>
+            <summary><h3>Is a treadmill better than a gym membership?</h3></summary>
+            <p class="faq-a">
+              It depends on what you use the gym for and how often you would use a treadmill. If you mainly go for cardio and would use a home machine two or more times a week, a treadmill usually pays for itself within a few years. If you go for weights, classes or a pool, or your gym is very cheap, the membership often wins on money.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I buy a treadmill or a walking pad?</h3></summary>
+            <p class="faq-a">
+              If you only walk, and especially if you want to walk while working at a desk, a walking pad is a smaller and cheaper commitment that fits where a treadmill will not. If you want to jog or run, use steep incline, or walk briskly for exercise sessions, a full treadmill is the better tool. A walking pad is not a small running machine.
+            </p>
+          </details>
+          <details>
+            <summary><h3>How much space do I need for a treadmill?</h3></summary>
+            <p class="faq-a">
+              Plan for the machine's footprint plus about 6 feet of clear floor behind the belt and about 2 feet on each side. For a typical full-size treadmill that is roughly 12 feet long by 6 to 7 feet wide. Check the ceiling too: your height plus the deck height plus at least 12 inches of clearance.
+            </p>
+          </details>
+          <details>
+            <summary><h3>Should I rent a treadmill before buying one?</h3></summary>
+            <p class="faq-a">
+              Renting for a month or two is a sensible trial if you are unsure whether you will use one, or if the need is short and defined. Over longer periods rental usually costs more than buying and reselling, and rent-to-own agreements are rarely good value. Buying a used machine you can resell is the other low-risk trial.
+            </p>
+          </details>
+        </section>
+
+        <!-- Why trust us -->
+        <section id="why-trust-us" class="ed-trust not-prose">
+          <h2>Why trust Treadmill Reviews USA?</h2>
+          <p>
+            Every recommendation is checked against the numbers that matter for a treadmill: the maker's own
+            listing and manual, at least one independent source, the warranty terms and the CPSC recall
+            database. Where sources disagree we say so rather than pick a number, we say plainly when a
+            machine has not been tested hands-on, and we never accept payment for a placement. <a href="/editorial-standards/">Read our review process.</a>
+          </p>
+          <div class="author-card">
+            <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" loading="lazy" />
+            <div>
+              <div class="ac-k">Written by</div>
+              <div class="ac-n"><a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a></div>
+              <p class="ac-b">
+                Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS. PhD in Kinesiology
+                (Biomechanics), University of Michigan. His evaluations look at motor performance, belt
+                stability, shock absorption, incline accuracy, noise and long-term durability. <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
 
       </div>
+    </div>
+
+    <div class="wrap">
+      {MORE.length > 0 && (
+        <nav class="more-in" aria-label="More in Buying Guides">
+          <h2 class="section-title">More in Buying Guides</h2>
+          <ul>
+            {MORE.map((p) => <li><a href={p.url}>{p.title}</a></li>)}
+          </ul>
+          <a href="/guides/" class="btn-ghost">See all Buying Guides</a>
+        </nav>
+      )}
+
+      <!-- Related -->
+      <section class="ed-related" aria-label="Related Buying Guides">
+        <h2 class="section-title">Readers also read</h2>
+        <div class="card-grid">
+          <a href="/what-treadmill-should-i-buy/" class="card">
+            <div class="c-kicker">Next step</div>
+            <div class="c-title">What Treadmill Should I Buy?</div>
+            <p class="c-blurb">Route from how you will use it to the right type, minimum specs and roundup.</p>
+          </a>
+          <a href="/home-treadmill-vs-gym-membership/" class="card">
+            <div class="c-kicker">Comparison</div>
+            <div class="c-title">Home Treadmill vs Gym Membership</div>
+            <p class="c-blurb">Break-even arithmetic with labelled examples, hidden costs and resale.</p>
+          </a>
+          <a href="/rent-a-treadmill/" class="card">
+            <div class="c-kicker">Low-risk trial</div>
+            <div class="c-title">Treadmill Rental</div>
+            <p class="c-blurb">When renting beats buying, and why rent-to-own rarely does.</p>
+          </a>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>
