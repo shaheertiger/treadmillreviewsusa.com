@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-overheating',
-  title: 'Treadmill Overheating (2026): Causes, Checks and When to Stop',
+  title: 'Treadmill Overheating: Causes, Checks and When to Stop',
   description:
     'Why a treadmill motor overheats — dry deck, tight belt, dust, worn brushes, overload or low voltage — how to check each cause, and when a hot smell means stop.',
   crumbLabel: 'Treadmill Overheating',

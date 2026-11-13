@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-safety-keys',
-  title: 'Best Treadmill Safety Keys (2026): Magnetic, Pin and Brand-Specific',
+  title: 'Best Treadmill Safety Keys (2026): Magnetic, Pin, Brand-Specific',
   description:
     'Five replacement treadmill safety keys, how magnetic and pin-style keys differ, how to match one to your brand, and how to test that it stops the belt.',
   crumbLabel: 'Best Treadmill Safety Keys',

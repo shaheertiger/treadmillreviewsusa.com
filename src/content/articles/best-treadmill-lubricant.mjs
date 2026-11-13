@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-lubricant',
-  title: 'Best Treadmill Lubricant (2026): 100% Silicone, and Which Applicator',
+  title: 'Best Treadmill Lubricant (2026): 100% Silicone and Applicators',
   description:
     'Almost every treadmill needs 100% silicone — the real decision is bottle versus aerosol, and whether your deck is pre-waxed and must never receive silicone at all.',
   crumbLabel: 'Best Treadmill Lubricant',

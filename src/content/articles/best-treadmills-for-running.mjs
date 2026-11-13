@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmills-for-running',
-  title: 'Best Treadmills for Running (2026): Deck Length First, Motor Second',
+  title: 'Best Treadmills for Running (2026): Deck First, Motor Second',
   description:
     'We compared six running treadmills on deck length, frame mass, motor rating and warranty. Deck length and frame rigidity separate them; motor horsepower, the spec everyone shops on, barely matters.',
   crumbLabel: 'Best Treadmills for Running',

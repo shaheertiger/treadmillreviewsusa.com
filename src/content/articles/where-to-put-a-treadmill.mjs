@@ -1,6 +1,6 @@
 export default {
   slug: 'where-to-put-a-treadmill',
-  title: 'Where to Put a Treadmill in Your House (2026): Room-by-Room Guide',
+  title: 'Where to Put a Treadmill in Your House: Room-by-Room Guide',
   description:
     'Where to put a treadmill: footprint and clearance, ceiling-height arithmetic, and the trade-offs of upstairs, bedroom, basement, garage, living room and flat.',
   crumbLabel: 'Where to Put a Treadmill',

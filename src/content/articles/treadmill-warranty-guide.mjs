@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-warranty-guide',
-  title: 'Treadmill Warranty Explained (2026): What It Covers and What Voids It',
+  title: 'Treadmill Warranty Explained: What It Covers and What Voids It',
   description:
     'Treadmill warranties explained: frame, motor, parts and labor tiers, what "lifetime" means, in-home service, what voids cover, whether extended warranties pay off, and how to claim.',
   crumbLabel: 'Treadmill Warranty Guide',

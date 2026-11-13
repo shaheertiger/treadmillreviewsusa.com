@@ -1,6 +1,6 @@
 export default {
   slug: 'how-long-should-i-run-on-a-treadmill',
-  title: 'How Long Should I Run on a Treadmill? (2026): By Goal and Level',
+  title: 'How Long Should I Run on a Treadmill? By Goal and Level',
   description:
     'Beginners: 20 to 30 minutes with walk breaks. After that it depends on your goal. Session lengths by goal, the US guidelines, building up, long runs and intervals.',
   crumbLabel: 'How Long Should I Run on a Treadmill',

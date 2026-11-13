@@ -1,6 +1,6 @@
 export default {
   slug: 'is-walking-on-a-treadmill-the-same-as-walking-outside',
-  title: 'Is Treadmill Walking the Same as Walking Outside? (2026): Differences',
+  title: 'Is Treadmill Walking the Same as Walking Outside? Differences',
   description:
     'Close, but not identical. How the belt, the flat surface, stride, balance, step tracking and the mental side differ, and whether treadmill walking is good for you.',
   crumbLabel: 'Is Walking on a Treadmill the Same as Walking Outside',

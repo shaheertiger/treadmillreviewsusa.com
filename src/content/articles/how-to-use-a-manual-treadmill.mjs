@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-use-a-manual-treadmill',
-  title: 'How to Use a Manual Treadmill (2026): Flat and Curved, Step by Step',
+  title: 'How to Use a Manual Treadmill: Flat and Curved, Step by Step',
   description:
     'How to use a manual treadmill safely: getting on, starting the belt, posture on flat and curved decks, resistance settings, stopping, first sessions and common aches.',
   crumbLabel: 'How to Use a Manual Treadmill',

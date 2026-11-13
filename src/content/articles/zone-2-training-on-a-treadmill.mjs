@@ -1,6 +1,6 @@
 export default {
   slug: 'zone-2-training-on-a-treadmill',
-  title: 'Zone 2 Training on a Treadmill (2026): Walking, Incline and Pace',
+  title: 'Zone 2 Training on a Treadmill: Walking, Incline and Pace',
   description:
     'How to do zone 2 training on a treadmill: what zone 2 is, the talk test, why heart-rate formulas are crude, using incline walking to get there, session length, progression and drift.',
   crumbLabel: 'Zone 2 Training on a Treadmill',

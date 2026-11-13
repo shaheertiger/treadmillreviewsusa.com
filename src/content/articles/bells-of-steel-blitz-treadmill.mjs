@@ -1,6 +1,6 @@
 export default {
   slug: 'bells-of-steel-blitz-treadmill',
-  title: 'Bells of Steel Blitz Treadmill (2026): Magnetic Curved Manual, Checked',
+  title: 'Bells of Steel Blitz Treadmill (2026): Magnetic Curved Manual',
   description:
     'The Bells of Steel Blitz Magnetic Resistance Manual Treadmill: November 2026 price, the figures Bells of Steel and reviewers agree on, the warranty, delivery and cheaper rivals.',
   crumbLabel: 'Bells of Steel Blitz Treadmill',

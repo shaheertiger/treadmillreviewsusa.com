@@ -1,6 +1,6 @@
 export default {
   slug: 'does-a-fitness-tracker-count-steps-on-a-treadmill',
-  title: 'Does a Fitness Tracker Count Steps on a Treadmill? (2026): Explained',
+  title: 'Does a Fitness Tracker Count Steps on a Treadmill? Explained',
   description:
     'Wrist trackers count treadmill steps from arm swing, so yes, unless you hold the rails. Phones, GPS indoors, indoor modes, stride calibration and which distance to trust.',
   crumbLabel: 'Does a Fitness Tracker Count Steps on a Treadmill',

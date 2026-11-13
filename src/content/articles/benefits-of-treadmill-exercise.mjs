@@ -1,6 +1,6 @@
 export default {
   slug: 'benefits-of-treadmill-exercise',
-  title: 'Benefits of Treadmill Exercise (2026): Is a Treadmill Good Exercise?',
+  title: 'Benefits of Treadmill Exercise: Is a Treadmill Good Exercise?',
   description:
     'The honest list of treadmill benefits — heart and lung fitness, precise control, weather-proof habit, weight-bearing loading — plus the real downsides most pages leave out.',
   crumbLabel: 'Benefits of Treadmill Exercise',

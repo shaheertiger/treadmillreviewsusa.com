@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-hiit-workout',
-  title: 'Treadmill HIIT Workout (2026): Five Sessions and How to Set Them Up',
+  title: 'Treadmill HIIT Workout: Five Sessions and How to Set Them Up',
   description:
     'What HIIT on a treadmill is, how to handle the belt lag, five sessions with work-to-rest ratios, a beginner version, and what a machine needs to do it well.',
   crumbLabel: 'Treadmill HIIT Workout',

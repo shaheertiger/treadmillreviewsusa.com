@@ -1,6 +1,6 @@
 export default {
   slug: 'folding-vs-non-folding-treadmill',
-  title: 'Folding vs Non-Folding Treadmill (2026): What You Trade for Storage',
+  title: 'Folding vs Non-Folding Treadmill: What You Trade for Storage',
   description:
     'Folding treadmills save floor space when stored; non-folding ones usually give more stability, deck and motor per dollar. Here is the trade, honestly weighed.',
   crumbLabel: 'Folding vs Non-Folding Treadmill',

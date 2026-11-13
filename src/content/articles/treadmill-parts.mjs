@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-parts',
-  title: 'Treadmill Parts (2026): Where to Buy, OEM vs Aftermarket & What They Cost',
+  title: 'Treadmill Parts (2026): Where to Buy, OEM vs Aftermarket, Cost',
   description:
     'Which treadmill parts fail, how to find your model and serial number, OEM against aftermarket, where to buy NordicTrack, ProForm, Sole, Life Fitness and Precor parts, and when a part costs more than the machine is worth.',
   crumbLabel: 'Treadmill Parts',

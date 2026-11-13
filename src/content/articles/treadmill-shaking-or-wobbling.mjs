@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-shaking-or-wobbling',
-  title: 'Treadmill Shaking or Wobbling? (2026): Floor, Frame or Machinery',
+  title: 'Treadmill Shaking or Wobbling? Floor, Frame or Machinery',
   description:
     'A treadmill that shakes, wobbles or vibrates is usually sitting unevenly or has loose bolts. Here is how to find the cause, from levelling feet to rollers, and when to stop.',
   crumbLabel: 'Treadmill Shaking or Wobbling',

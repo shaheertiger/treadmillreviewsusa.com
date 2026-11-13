@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-adjust-treadmill-belt',
-  title: 'How to Adjust a Treadmill Belt (2026): Tighten and Track It Properly',
+  title: 'How to Adjust a Treadmill Belt: Tighten and Track It Properly',
   description:
     'How to adjust and tighten a treadmill belt: tension versus tracking, the quarter-turn method on the rear roller bolts, the lift test, and when tightening is wrong.',
   crumbLabel: 'How to Adjust a Treadmill Belt',

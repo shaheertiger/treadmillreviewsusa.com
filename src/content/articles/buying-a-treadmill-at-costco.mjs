@@ -1,6 +1,6 @@
 export default {
   slug: 'buying-a-treadmill-at-costco',
-  title: 'Costco Treadmills (2026): Is Buying a Treadmill at Costco Worth It?',
+  title: 'Costco Treadmills (2026): Is Buying One at Costco Worth It?',
   description:
     'Costco treadmill selection rotates and differs between warehouse and online. How to judge an exclusive model number, what the return policy means for a treadmill, and delivery.',
   crumbLabel: 'Buying a Treadmill at Costco',

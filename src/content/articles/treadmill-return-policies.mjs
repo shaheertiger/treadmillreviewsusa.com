@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-return-policies',
-  title: 'Treadmill Return Policy (2026): Restocking Fees, Trials and Pickups',
+  title: 'Treadmill Return Policy (2026): Restocking Fees and Trials',
   description:
     'Can you return a treadmill? How trial periods, restocking fees, freight pickup charges and packaging rules typically work, and what to check before you buy.',
   crumbLabel: 'Treadmill Return Policies',

@@ -1,6 +1,6 @@
 export default {
   slug: 'ac-vs-dc-treadmill-motor',
-  title: 'AC vs DC Treadmill Motor (2026): Which One Do You Actually Need?',
+  title: 'AC vs DC Treadmill Motor: Which One Do You Actually Need?',
   description:
     'Home treadmills use DC motors and gym machines use AC. How each works, what it means for circuits, noise and maintenance, and the motor specs home buyers should check.',
   crumbLabel: 'AC vs DC Treadmill Motor',

@@ -1,6 +1,6 @@
 export default {
   slug: 'history-of-the-treadmill',
-  title: 'History of the Treadmill (2026): When Was It Invented, and by Whom?',
+  title: 'History of the Treadmill: When Was It Invented, and by Whom?',
   description:
     'From Roman treadwheel cranes and the 1818 prison treadmill to the 1913 patent, the medical treadmill and the first home machines: the treadmill story, dated with care.',
   crumbLabel: 'History of the Treadmill',

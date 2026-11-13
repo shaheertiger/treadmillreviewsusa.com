@@ -1,6 +1,6 @@
 export default {
   slug: 'matrix-t5x-treadmill',
-  title: 'Matrix T5x Treadmill Review (2026): Specs, Generations and Used Value',
+  title: 'Matrix T5x Treadmill Review (2026): Specs and Used Value',
   description:
     'The Matrix T5x is a commercial gym treadmill most buyers now find remanufactured. Which specs the sources agree on, which conflict, what it costs, and what to check before buying.',
   crumbLabel: 'Matrix T5x Treadmill',

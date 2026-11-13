@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-repair-guide',
-  title: 'Treadmill Repair Guide (2026): DIY Fixes, Costs and Calling a Tech',
+  title: 'Treadmill Repair Guide: DIY Fixes, Costs and Calling a Tech',
   description:
     'Which treadmill repairs you can do yourself, which need a technician, how to diagnose the component before paying, typical costs and the repair-or-replace rule.',
   crumbLabel: 'Treadmill Repair Guide',

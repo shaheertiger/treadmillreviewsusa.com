@@ -1,6 +1,6 @@
 export default {
   slug: 'best-vr-treadmills',
-  title: 'Best VR Treadmill (2026): Home Options on Amazon, Honestly Compared',
+  title: 'Best VR Treadmill (2026): Home Options on Amazon Compared',
   description:
     'The best VR treadmill for home use in 2026: KAT Walk C3 and C2 models on Amazon, compared with the Virtuix Omni One on price, headset support, space and limits, and why none is a fitness treadmill.',
   crumbLabel: 'Best VR Treadmills',

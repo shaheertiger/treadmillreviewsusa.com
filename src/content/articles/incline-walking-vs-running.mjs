@@ -1,6 +1,6 @@
 export default {
   slug: 'incline-walking-vs-running',
-  title: 'Incline Walking vs Running (2026): An Honest Treadmill Comparison',
+  title: 'Incline Walking vs Running: An Honest Treadmill Comparison',
   description:
     'Incline walking vs running compared: energy cost, impact and injury, heart and muscle adaptation, time, weight loss, who each suits and the rail problem.',
   crumbLabel: 'Incline Walking vs Running',

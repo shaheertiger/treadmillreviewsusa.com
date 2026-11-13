@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmills-for-sprinting',
-  title: 'Best Treadmills for Sprinting (2026): Five Picks, Motorised and Curved',
+  title: 'Best Treadmills for Sprinting (2026): Motorised and Curved Picks',
   description:
     'Five sprint treadmills sold on Amazon, compared on what sprinting needs: top speed, how fast the belt changes pace, motor rating, deck length, and curved manual trainers with no speed limit.',
   crumbLabel: 'Best Treadmills for Sprinting',

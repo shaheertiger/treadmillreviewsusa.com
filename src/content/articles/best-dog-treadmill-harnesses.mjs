@@ -1,6 +1,6 @@
 export default {
   slug: 'best-dog-treadmill-harnesses',
-  title: 'Best Dog Treadmill Harnesses (2026): Five Picks and the Safety Rules',
+  title: 'Best Dog Treadmill Harnesses (2026): 5 Picks and Safety Rules',
   description:
     'Five dog harnesses that suit treadmill training, chosen for free shoulder movement, a secure fit and nothing that can catch in a belt, with the rule that matters most: never tie a dog to a treadmill.',
   crumbLabel: 'Best Dog Treadmill Harnesses',

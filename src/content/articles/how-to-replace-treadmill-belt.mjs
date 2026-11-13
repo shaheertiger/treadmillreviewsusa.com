@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-replace-treadmill-belt',
-  title: 'How to Replace a Treadmill Belt (2026): Measure, Order, Fit, Tension',
+  title: 'How to Replace a Treadmill Belt: Measure, Order, Fit, Tension',
   description:
     'A treadmill belt replacement is awkward rather than difficult. How to measure the old belt, order the right one, fit it step by step, then tension, centre and break it in.',
   crumbLabel: 'How to Replace a Treadmill Belt',

@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-vs-running-outside',
-  title: 'Treadmill vs. Running Outside (2026): Is Treadmill Running Easier?',
+  title: 'Treadmill vs. Running Outside: Is Treadmill Running Easier?',
   description:
     'Treadmill running is usually slightly easier at the same pace, mainly because there is no air to push through. Here is what actually differs, what the 1% rule means, and how to blend the two.',
   crumbLabel: 'Treadmill vs. Running Outside',

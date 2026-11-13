@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-use-a-treadmill',
-  title: 'How to Use a Treadmill (2026): A Safe First Session, Step by Step',
+  title: 'How to Use a Treadmill: A Safe First Session, Step by Step',
   description:
     'How to use a treadmill safely: clip the safety key, straddle the belt, start slow, let go of the rails, step off properly, and a sensible first-week plan.',
   crumbLabel: 'How to Use a Treadmill',

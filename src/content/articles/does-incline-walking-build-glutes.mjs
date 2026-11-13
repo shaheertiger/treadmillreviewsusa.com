@@ -1,6 +1,6 @@
 export default {
   slug: 'does-incline-walking-build-glutes',
-  title: 'Does Incline Walking Build Glutes? (2026): What It Can and Cannot Do',
+  title: 'Does Incline Walking Build Glutes? What It Can and Cannot Do',
   description:
     'Incline walking works the glutes harder than flat walking, but it is endurance work, not a replacement for strength training. Grades, form cues and how to pair the two.',
   crumbLabel: 'Does Incline Walking Build Glutes',

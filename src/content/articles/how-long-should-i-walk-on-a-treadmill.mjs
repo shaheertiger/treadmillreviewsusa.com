@@ -1,6 +1,6 @@
 export default {
   slug: 'how-long-should-i-walk-on-a-treadmill',
-  title: 'How Long Should I Walk on a Treadmill? (2026): By Goal and Fitness',
+  title: 'How Long Should I Walk on a Treadmill? By Goal and Fitness',
   description:
     'For general health, about 30 minutes on most days. For weight loss, more — often 45 to 60. Here is how session length, speed and incline fit together for your goal.',
   crumbLabel: 'How Long Should I Walk on a Treadmill?',

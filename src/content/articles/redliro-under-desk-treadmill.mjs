@@ -1,6 +1,6 @@
 export default {
   slug: 'redliro-under-desk-treadmill',
-  title: 'Redliro Under Desk Treadmill Review (2026): What the Listings Claim',
+  title: 'Redliro Under Desk Treadmill Review (2026): The Listing Claims',
   description:
     'The Redliro under desk treadmill is a budget walking pad sold mainly through marketplaces. What its listings claim, where the figures conflict, the 1-year warranty, and who it suits.',
   crumbLabel: 'Redliro Under Desk Treadmill',

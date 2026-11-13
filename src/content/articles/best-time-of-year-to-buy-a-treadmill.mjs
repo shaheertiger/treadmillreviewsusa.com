@@ -1,6 +1,6 @@
 export default {
   slug: 'best-time-of-year-to-buy-a-treadmill',
-  title: 'Best Time of Year to Buy a Treadmill (2026): The Annual Price Cycle',
+  title: 'Best Time of Year to Buy a Treadmill (2026): The Price Cycle',
   description:
     'Treadmill prices swing 20-35% across a year on the same machine. Here is when the real reductions happen, when the fake ones do, and the three weeks to avoid entirely.',
   crumbLabel: 'Best Time of Year to Buy a Treadmill',

@@ -1,6 +1,6 @@
 export default {
   slug: 'best-dog-treadmills-for-small-dogs',
-  title: 'Best Dog Treadmills for Small Dogs (2026): Sized for Toy & Small Breeds',
+  title: 'Best Dog Treadmills for Small Dogs (2026): Toy & Small Breeds',
   description:
     'Four dog treadmills for toy and small breeds sold on Amazon, checked in November 2026: running length against your dog, speed, side panels, what was actually in stock, and the safety rules that matter most.',
   crumbLabel: 'Dog Treadmills for Small Dogs',

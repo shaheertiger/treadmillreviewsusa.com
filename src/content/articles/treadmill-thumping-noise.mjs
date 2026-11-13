@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-thumping-noise',
-  title: 'Treadmill Thumping Noise (2026): Time the Thump to Find It',
+  title: 'Treadmill Thumping Noise: Time the Thump to Find It',
   description:
     'A thump, knock or clunk is a different problem from a squeak. Time it against the belt and your stride and it points at the belt, the deck mounts, the rollers, the motor or the incline.',
   crumbLabel: 'Treadmill Thumping Noise',

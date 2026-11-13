@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-cushioning-explained',
-  title: 'Treadmill Cushioning Explained (2026): What Actually Matters',
+  title: 'Treadmill Cushioning Explained: What Actually Matters',
   description:
     'How treadmill deck suspension works, why "% less impact" claims are unverifiable, when a softer deck is worse, and how to judge cushioning yourself in a store.',
   crumbLabel: 'Treadmill Cushioning Explained',

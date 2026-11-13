@@ -1,6 +1,6 @@
 export default {
   slug: 'ancheer-treadmills',
-  title: 'ANCHEER Treadmill Guide (2026): Folding Models, Manuals and Support',
+  title: 'ANCHEER Treadmill (2026): Folding Models, Manuals and Support',
   description:
     'ANCHEER sells walking pads and folding treadmills on Amazon with no working treadmill website. What it sells, conflicting listing figures, finding a manual, warranty, and safer alternatives.',
   crumbLabel: 'ANCHEER Treadmills',

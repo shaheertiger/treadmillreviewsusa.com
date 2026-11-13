@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-extension-cord',
-  title: 'Treadmill Extension Cord (2026): Can You Use One, and What Kind',
+  title: 'Treadmill Extension Cord: Can You Use One, and What Kind',
   description:
     'Can you use an extension cord with a treadmill? Why manuals say no, what a safer cord looks like, the dedicated-circuit question, GFCI trips and power cords.',
   crumbLabel: 'Treadmill Extension Cord',

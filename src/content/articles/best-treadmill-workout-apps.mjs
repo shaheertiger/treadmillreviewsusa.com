@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-workout-apps',
-  title: 'Best Treadmill Workout Apps (2026): Eight Apps, What Each Controls',
+  title: 'Best Treadmill Workout Apps (2026): 8 Apps, What Each Controls',
   description:
     'Eight treadmill apps checked against their makers and a second source: which can change your speed or incline, what devices they need, which have a free tier.',
   crumbLabel: 'Best Treadmill Workout Apps',

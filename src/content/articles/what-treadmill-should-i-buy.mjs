@@ -82,7 +82,7 @@ ${TABLE_ROWS.map(row).join('\n')}
 
 export default {
   slug: 'what-treadmill-should-i-buy',
-  title: "What Treadmill Should I Buy? (2026): Pick by How You'll Use It",
+  title: "What Treadmill Should I Buy? Pick by How You'll Use It",
   description:
     'How to choose a treadmill: match desk walking, walking, jogging, running, heavy use, a small space or a tight budget to a type, minimum specs and a guide.',
   crumbLabel: 'What Treadmill Should I Buy',

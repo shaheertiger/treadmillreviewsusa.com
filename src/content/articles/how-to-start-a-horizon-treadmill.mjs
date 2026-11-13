@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-start-a-horizon-treadmill',
-  title: 'How to Start a Horizon Treadmill (2026): Switch, Key and Start',
+  title: 'How to Start a Horizon Treadmill: Switch, Key and Start',
   description:
     'From Horizon’s manuals: switch on by the power cord, clip and fit the safety key, press Start. T101, T202 and 7.x AT notes, and what to check if it won’t start.',
   crumbLabel: 'How to Start a Horizon Treadmill',

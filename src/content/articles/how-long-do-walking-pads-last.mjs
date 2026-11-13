@@ -1,6 +1,6 @@
 export default {
   slug: 'how-long-do-walking-pads-last',
-  title: 'How Long Do Walking Pads Last? (2026): Lifespan, Wear and Repair',
+  title: 'How Long Do Walking Pads Last? Lifespan, Wear and Repair',
   description:
     'Most walking pads last roughly 2 to 4 years under heavy desk use and longer with light use. What wears first, what warranties signal, hours per day, and repair or replace.',
   crumbLabel: 'How Long Do Walking Pads Last',

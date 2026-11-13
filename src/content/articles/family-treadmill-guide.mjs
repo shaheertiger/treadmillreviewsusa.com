@@ -1,6 +1,6 @@
 export default {
   slug: 'family-treadmill-guide',
-  title: 'Family Treadmill Guide (2026): Buying One Machine for Several Users',
+  title: 'Family Treadmill Guide: Buying One Machine for Several Users',
   description:
     'How to choose a treadmill for a family or couple: size it for the tallest runner and heaviest user, rate the motor for combined hours, and plan for kids and noise.',
   crumbLabel: 'Family Treadmill Guide',

@@ -1,6 +1,6 @@
 export default {
   slug: 'how-much-does-a-treadmill-weigh',
-  title: 'How Much Does a Treadmill Weigh? (2026): Typical Weights by Type',
+  title: 'How Much Does a Treadmill Weigh? Typical Weights by Type',
   description:
     'Treadmills weigh from about 45 lb for a walking pad to 500+ lb for a gym machine. Typical weights by type, boxed vs. assembled, and what weight means for your floor.',
   crumbLabel: 'How Much Does a Treadmill Weigh?',

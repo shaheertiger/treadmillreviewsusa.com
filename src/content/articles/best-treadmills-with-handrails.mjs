@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmills-with-handrails',
-  title: 'Best Treadmills With Handrails (2026): Long Side Rails for Walkers',
+  title: 'Best Treadmills With Handrails (2026): Long Rails for Walkers',
   description:
     'Five treadmills with full-length or extended side handrails, checked against Amazon and maker listings on 6 November 2026, for walkers, seniors and anyone who wants support on both sides.',
   crumbLabel: 'Best Treadmills With Handrails',

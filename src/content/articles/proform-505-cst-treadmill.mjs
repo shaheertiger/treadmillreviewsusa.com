@@ -1,6 +1,6 @@
 export default {
   slug: 'proform-505-cst-treadmill',
-  title: 'ProForm 505 CST Treadmill Review (2026): The Volume Budget Machine',
+  title: 'ProForm 505 CST Treadmill Review (2026): The Budget Best-Seller',
   description:
     'A 2.5 CHP motor, a 20 x 55-inch deck and a 325 lb capacity that beats machines costing more. What the 505 CST gets right at the budget end, and where the money was saved.',
   crumbLabel: 'ProForm 505 CST',

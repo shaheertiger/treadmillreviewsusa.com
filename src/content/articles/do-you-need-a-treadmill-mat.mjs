@@ -1,6 +1,6 @@
 export default {
   slug: 'do-you-need-a-treadmill-mat',
-  title: 'Do You Need a Treadmill Mat? (2026): Benefits, Thickness and Size',
+  title: 'Do You Need a Treadmill Mat? Benefits, Thickness and Size',
   description:
     'What a treadmill mat actually does — floor protection, dust control, some vibration damping — what it cannot fix, and how to choose the material, thickness and size.',
   crumbLabel: 'Do You Need a Treadmill Mat?',

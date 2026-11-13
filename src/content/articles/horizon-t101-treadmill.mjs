@@ -1,6 +1,6 @@
 export default {
   slug: 'horizon-t101-treadmill',
-  title: 'Horizon Treadmill T101 Review (2026): T101 Connect, Manual and Recall',
+  title: 'Horizon T101 Treadmill Review (2026): Connect, Manual and Recall',
   description:
     'The Horizon T101 Connect checked against Horizon’s listing: a 20 x 55 in. deck, 10 mph, 10% incline and 300 lb rating, sold out on 14 October 2026. Plus where to get the T101 manual and how to check a T101-05 for the 2022 recall.',
   crumbLabel: 'Horizon T101 Treadmill',

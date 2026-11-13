@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-drive-belt',
-  title: 'Treadmill Drive Belt (2026): Slipping Motor Belt Signs and Replacement',
+  title: 'Treadmill Drive Belt: Slipping Motor Belt Signs and Replacement',
   description:
     'The treadmill drive belt links the motor to the front roller. How it differs from the running belt, signs it is slipping or worn, how to inspect and replace it, and ordering the right part.',
   crumbLabel: 'Treadmill Drive Belt',

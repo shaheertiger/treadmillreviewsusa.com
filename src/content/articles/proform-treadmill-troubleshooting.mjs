@@ -1,6 +1,6 @@
 export default {
   slug: 'proform-treadmill-troubleshooting',
-  title: 'ProForm Treadmill Troubleshooting (2026): Reset, Belt and iFIT Fixes',
+  title: 'ProForm Treadmill Troubleshooting: Reset, Belt and iFIT Fixes',
   description:
     'ProForm treadmill troubleshooting: the safety key, console reset, a frozen iFIT screen, a belt that will not move or slips, incline faults and calling support.',
   crumbLabel: 'ProForm Treadmill Troubleshooting',

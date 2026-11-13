@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-cup-holders',
-  title: 'Best Treadmill Cup Holders and Trays (2026): Clip-On, Strap and Desk',
+  title: 'Best Treadmill Cup Holders and Trays (2026): Clip-On and Strap',
   description:
     'Five treadmill cup holders, bottle cages and trays with their bar and cup sizes from the listings, and where to put a drink so spills miss the console and motor.',
   crumbLabel: 'Best Treadmill Cup Holders',

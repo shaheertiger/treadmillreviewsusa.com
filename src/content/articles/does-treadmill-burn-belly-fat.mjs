@@ -1,6 +1,6 @@
 export default {
   slug: 'does-treadmill-burn-belly-fat',
-  title: 'Does a Treadmill Burn Belly Fat? (2026): The Honest Answer',
+  title: 'Does a Treadmill Burn Belly Fat? The Honest Answer',
   description:
     'A treadmill cannot target belly or thigh fat — nothing can. It does help with whole-body fat loss, including the visceral kind. Here is what actually works, and why.',
   crumbLabel: 'Does a Treadmill Burn Belly Fat?',

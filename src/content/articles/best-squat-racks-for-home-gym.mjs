@@ -1,6 +1,6 @@
 export default {
   slug: 'best-squat-racks-for-home-gym',
-  title: 'Best Squat Racks for Home Gym (2026): Six Racks by Type and Budget',
+  title: 'Best Squat Racks for Home Gym (2026): 6 Racks by Type and Budget',
   description:
     'Six squat racks for a home gym, checked against maker specs and reviews: full power racks, a half rack, a squat stand and a folding wall rack, plus 3x3 vs 2x3 explained.',
   crumbLabel: 'Best Squat Racks for Home Gym',

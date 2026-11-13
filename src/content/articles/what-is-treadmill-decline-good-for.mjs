@@ -1,6 +1,6 @@
 export default {
   slug: 'what-is-treadmill-decline-good-for',
-  title: 'What Is Treadmill Decline Good For? (2026): Uses, Risks, How Much',
+  title: 'What Is Treadmill Decline Good For? Uses, Risks, How Much',
   description:
     'Treadmill decline trains the descent: downhill race and hiking prep and eccentric quad strength. How much to use, how to introduce it, and who should skip it.',
   crumbLabel: 'What Is Treadmill Decline Good For',

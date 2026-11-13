@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-before-or-after-weights',
-  title: 'Treadmill Before or After Weights? (2026): An Honest Answer by Goal',
+  title: 'Treadmill Before or After Weights? An Honest Answer by Goal',
   description:
     'Treadmill before or after lifting: the short answer by goal, the interference effect without the hype, warm-up versus hard cardio, and sample weekly layouts.',
   crumbLabel: 'Treadmill Before or After Weights',

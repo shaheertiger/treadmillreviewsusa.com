@@ -1,6 +1,6 @@
 export default {
   slug: 'nohrd-sprintbok',
-  title: 'NOHrD Sprintbok Treadmill Review (2026): Price, Specs and Who It Suits',
+  title: 'NOHrD Sprintbok Review (2026): Price, Specs and Who It Suits',
   description:
     'The NOHrD Sprintbok treadmill is a handmade wooden curved manual treadmill from $8,199 in the US. What NOHrD confirms, the V2 vs Pro, the short warranty, and who it suits.',
   crumbLabel: 'NOHrD Sprintbok',

@@ -1,6 +1,6 @@
 export default {
   slug: 'outdoor-treadmill',
-  title: 'Treadmill Outdoors (2026): Can You Use or Keep One Outside?',
+  title: 'Treadmill Outdoors: Can You Use or Keep One Outside?',
   description:
     'Can you use a treadmill outdoors on a porch, patio or covered deck? What manuals say, what rain, humidity and sun do, outdoor GFCI and wiring risks, warranties, and which types cope.',
   crumbLabel: 'Treadmill Outdoors',

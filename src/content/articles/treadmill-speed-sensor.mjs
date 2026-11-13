@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-speed-sensor',
-  title: 'Treadmill Speed Sensor (2026): Symptoms, Testing and Replacement',
+  title: 'Treadmill Speed Sensor: Symptoms, Testing and Replacement',
   description:
     'What a treadmill speed sensor does, the symptoms when it fails, how to inspect, test and replace it safely, and when the controller board is the real fault.',
   crumbLabel: 'Treadmill Speed Sensor',

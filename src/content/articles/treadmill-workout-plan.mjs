@@ -409,7 +409,7 @@ const RUNNER_PROGRESSION = [
 
 export default {
   slug: 'treadmill-workout-plan',
-  title: 'Treadmill Workout Plan (2026): A 12-Week Progressive Program',
+  title: 'Treadmill Workout Plan: A 12-Week Progressive Program',
   description:
     'A 12-week treadmill workout plan with walker, beginner-runner and runner tracks: week-by-week speed, incline, duration and RPE, plus deloads and strength days.',
   crumbLabel: 'Treadmill Workout Plan',

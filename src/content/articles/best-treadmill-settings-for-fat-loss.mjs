@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-settings-for-fat-loss',
-  title: 'Best Treadmill Settings for Fat Loss (2026): Speed, Incline and Time',
+  title: 'Best Treadmill Settings for Fat Loss: Speed, Incline and Time',
   description:
     'The best treadmill settings for fat loss by fitness level: speed, incline and time as starting points, the built-in program to pick, calorie arithmetic and why diet matters more.',
   crumbLabel: 'Best Treadmill Settings for Fat Loss',

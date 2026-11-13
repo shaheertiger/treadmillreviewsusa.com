@@ -1,6 +1,6 @@
 export default {
   slug: 'dicks-sporting-goods-treadmills',
-  title: "Dick's Sporting Goods Treadmills (2026): What to Know Before You Buy",
+  title: "Dick's Sporting Goods Treadmills (2026): Know Before You Buy",
   description:
     "Buying a treadmill at Dick's Sporting Goods: how to test one in store, what range to expect, delivery and assembly, returns, price matching and how to compare.",
   crumbLabel: "Dick's Sporting Goods Treadmills",

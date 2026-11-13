@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-in-garage',
-  title: 'Can You Keep a Treadmill in a Garage? (2026): Cold, Damp and Warranty',
+  title: 'Can You Keep a Treadmill in a Garage? Cold, Damp and Warranty',
   description:
     'Can you keep a treadmill in a garage? Often, with care. What cold, heat, condensation, dust and garage power do to a treadmill, the warranty clause to check, and how to set it up.',
   crumbLabel: 'Treadmill in the Garage',

@@ -1,6 +1,6 @@
 export default {
   slug: 'what-does-incline-walking-do',
-  title: 'What Does Incline Walking Do? (2026): Heart, Calories, Muscle, Fat',
+  title: 'What Does Incline Walking Do? Heart, Calories, Muscle, Fat',
   description:
     'Incline walking raises heart rate and calorie cost without running impact. Calorie estimates by grade, muscles worked, fat-loss honesty, risks and how to start.',
   crumbLabel: 'What Does Incline Walking Do',

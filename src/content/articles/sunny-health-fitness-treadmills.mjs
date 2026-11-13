@@ -4,7 +4,7 @@ const row = (cells) => `<tr>${cells.map((c) => `<td class="${TD}">${c}</td>`).jo
 
 export default {
   slug: 'sunny-health-fitness-treadmills',
-  title: 'Sunny Health & Fitness Treadmills (2026): Range, T4400 and Warranty',
+  title: 'Sunny Health & Fitness Treadmills (2026): T4400 and Warranty',
   description:
     'Sunny Health & Fitness sells about 30 treadmills, walking pads and manual walkers. The current range and prices, the SF-T4400 vs SF-T4400SMART, conflicting figures, warranty and returns.',
   crumbLabel: 'Sunny Health & Fitness Treadmills',

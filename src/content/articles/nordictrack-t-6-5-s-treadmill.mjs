@@ -1,6 +1,6 @@
 export default {
   slug: 'nordictrack-t-6-5-s-treadmill',
-  title: 'NordicTrack T 6.5 S Treadmill Review (2026): The Budget iFit Machine',
+  title: 'NordicTrack T 6.5 S Review (2026): The Budget iFIT Treadmill',
   description:
     'A 2.6 CHP motor, a 20 x 55-inch deck and a five-inch screen attached to a content platform. What the T 6.5 S does well, what it does not do, and what it does without a membership.',
   crumbLabel: 'NordicTrack T 6.5 S',

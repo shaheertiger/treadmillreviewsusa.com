@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-delivery-guide',
-  title: 'Treadmill Delivery (2026): Curbside vs White Glove, Costs and Checks',
+  title: 'Treadmill Delivery (2026): Curbside vs White Glove and Costs',
   description:
     'Curbside, threshold, room-of-choice and white-glove treadmill delivery explained: typical costs, stairs and apartment buildings, and how to inspect on arrival.',
   crumbLabel: 'Treadmill Delivery Guide',

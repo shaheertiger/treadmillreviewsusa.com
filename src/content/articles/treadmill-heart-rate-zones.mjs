@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-heart-rate-zones',
-  title: 'Treadmill Heart Rate Zones (2026): What the Number Is Worth',
+  title: 'Treadmill Heart Rate Zones: What the Number Is Worth',
   description:
     'How the five zones work, why 220-minus-age is a poor guide for an individual, why treadmill grip sensors mislead, and when the talk test beats a monitor entirely.',
   crumbLabel: 'Treadmill Heart Rate Zones',

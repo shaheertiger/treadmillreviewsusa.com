@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-desk-guide',
-  title: 'How to Use a Treadmill Desk (2026): Setup, Speed and Habits',
+  title: 'How to Use a Treadmill Desk: Setup, Speed and Habits',
   description:
     'How to walk while working: desk and monitor height, typing speed, how fast to build up daily minutes, which tasks suit walking, posture, footwear and noise on calls.',
   crumbLabel: 'How to Use a Treadmill Desk',

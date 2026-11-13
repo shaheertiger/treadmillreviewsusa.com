@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-make-treadmill-running-less-boring',
-  title: 'How to Make Treadmill Running Less Boring (2026): Nine Fixes That Work',
+  title: 'How to Make Treadmill Running Less Boring: Nine Fixes That Work',
   description:
     'Treadmill boring? Structure, time-chunking, the right entertainment, goal games, virtual routes and a fan do more than willpower. Here is why it drags, and what helps.',
   crumbLabel: 'How to Make Treadmill Running Less Boring',

@@ -1,6 +1,6 @@
 export default {
   slug: 'what-are-mets-on-a-treadmill',
-  title: 'What Are METs on a Treadmill? (2026): Meaning, Table and Calories',
+  title: 'What Are METs on a Treadmill? Meaning, Table and Calories',
   description:
     'A MET is a multiple of resting energy use. How treadmill consoles estimate METs from speed and incline, a MET table, converting METs to calories, and MET-minutes.',
   crumbLabel: 'What Are METs on a Treadmill',

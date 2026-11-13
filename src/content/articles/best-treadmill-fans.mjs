@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-fans',
-  title: 'Best Treadmill Fans (2026): Five Picks for Treadmills and Home Gyms',
+  title: 'Best Treadmill Fans (2026): 5 Picks for Treadmills and Home Gyms',
   description:
     'Five fans for a treadmill or home gym, checked against maker and retailer listings: a smart training fan, two Vornado circulators and two Lasko garage fans.',
   crumbLabel: 'Best Treadmill Fans',

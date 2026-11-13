@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-financing',
-  title: 'Treadmill Financing (2026): 0% Offers, Buy Now Pay Later and Traps',
+  title: 'Treadmill Financing (2026): 0% Offers, BNPL and the Traps',
   description:
     'How treadmill financing works: 0% promotional offers, deferred interest, buy now pay later, store cards and subscription bundles, with worked cost examples.',
   crumbLabel: 'Treadmill Financing',

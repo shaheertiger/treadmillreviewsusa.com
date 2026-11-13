@@ -3,7 +3,7 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'tru-grit-treadmills',
-  title: 'Tru Grit Treadmill (2026): Grit Runner and Runner Elite Buyer’s Guide',
+  title: 'Tru Grit Treadmill (2026): Grit Runner and Runner Elite',
   description:
     'Tru Grit sells two curved manual treadmills: the Grit Runner ($1,996-$2,699 at dealers) and the Runner Elite ($3,495). Figures, conflicts, warranty, dealers and better-documented alternatives.',
   crumbLabel: 'Tru Grit Treadmills',

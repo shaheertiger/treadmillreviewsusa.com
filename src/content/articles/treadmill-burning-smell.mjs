@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-burning-smell',
-  title: 'Treadmill Burning Smell? (2026): What It Means and When to Stop',
+  title: 'Treadmill Burning Smell? What It Means and When to Stop',
   description:
     'Burning rubber, hot plastic, dust or new-machine smell? What each treadmill smell usually means, which ones mean unplug it now, and what to check once it has cooled.',
   crumbLabel: 'Treadmill Burning Smell',

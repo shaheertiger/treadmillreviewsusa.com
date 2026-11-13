@@ -1,6 +1,6 @@
 export default {
   slug: 'best-low-profile-treadmills',
-  title: 'Best Low Profile Treadmills (2026): Slimline, Fold-Flat, Lightweight',
+  title: 'Best Low Profile Treadmills (2026): Slimline and Fold-Flat',
   description:
     'The best low profile treadmills by the measurement that matters to you: low step-up height, a slimline fold-flat profile for under a bed or sofa, or a light weight you can move alone.',
   crumbLabel: 'Best Low Profile Treadmills',

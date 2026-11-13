@@ -1,6 +1,6 @@
 export default {
   slug: 'do-walking-pads-help-you-lose-weight',
-  title: 'Do Walking Pads Help You Lose Weight? (2026): The Honest Arithmetic',
+  title: 'Do Walking Pads Help You Lose Weight? The Honest Arithmetic',
   description:
     'Walking pads add low-intensity movement, not a fat-loss engine. Calorie estimates at 1.5 to 3 mph, what a work day adds up to, NEAT, diet and the no-incline limit.',
   crumbLabel: 'Do Walking Pads Help You Lose Weight',

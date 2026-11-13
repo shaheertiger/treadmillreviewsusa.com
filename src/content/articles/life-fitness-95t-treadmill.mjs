@@ -3,7 +3,7 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'life-fitness-95t-treadmill',
-  title: 'Life Fitness 95T and 95Ti Treadmill (2026): Buying One Remanufactured',
+  title: 'Life Fitness 95T and 95Ti Treadmill (2026): Buying Remanufactured',
   description:
     'The Life Fitness 95T Elevation Series (Inspire, Engage, Discover SE/SI/SE3) and older 95Ti are discontinued and sold remanufactured from about $2,600 to $5,000. Figures, consoles and checks.',
   crumbLabel: 'Life Fitness 95T Treadmill',

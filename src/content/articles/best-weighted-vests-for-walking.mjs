@@ -1,6 +1,6 @@
 export default {
   slug: 'best-weighted-vests-for-walking',
-  title: 'Best Weighted Vests for Walking (2026): Treadmill and Rucking Picks',
+  title: 'Best Weighted Vests for Walking (2026): Treadmill and Rucking',
   description:
     'Five weighted vests for walking, checked against makers and reviews: micro-weight, plate carrier, rucking, women’s fit and budget, plus treadmill safety tips.',
   crumbLabel: 'Best Weighted Vests for Walking',

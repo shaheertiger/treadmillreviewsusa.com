@@ -5,7 +5,7 @@ const row = (...cells) => `              <tr>${cells.map(td).join('')}</tr>`;
 
 export default {
   slug: 'precor-treadmills',
-  title: 'Precor Treadmill Buyer’s Guide (2026): Models, Used Value, Warranty',
+  title: 'Precor Treadmill (2026): Models, Used Value and Warranty',
   description:
     'Precor treadmills are now commercial-only and owned by Peloton. The current TRM 800 to 500 lines, what happened to the home models, used prices, the 20-amp circuit and the home warranty.',
   crumbLabel: 'Precor Treadmills',

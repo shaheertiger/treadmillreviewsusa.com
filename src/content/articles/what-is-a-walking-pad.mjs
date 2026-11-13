@@ -1,6 +1,6 @@
 export default {
   slug: 'what-is-a-walking-pad',
-  title: 'What Is a Walking Pad? (2026): How It Differs From a Treadmill',
+  title: 'What Is a Walking Pad? How It Differs From a Treadmill',
   description:
     'A walking pad is a compact, low, motorised walking belt with no console arm and usually no handrail. How it differs from a treadmill, speeds, incline, who it suits.',
   crumbLabel: 'What Is a Walking Pad?',

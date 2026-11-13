@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-marathon-training',
-  title: 'Marathon Training on a Treadmill (2026): Long Runs That Work',
+  title: 'Marathon Training on a Treadmill: Long Runs That Work',
   description:
     'How to train for a marathon on a treadmill: the 1% incline convention, surviving long runs indoors, fuel and fluid logistics, heat, the downhill gap, and what long runs ask of the motor.',
   crumbLabel: 'Marathon Training on a Treadmill',
