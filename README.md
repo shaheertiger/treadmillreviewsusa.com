@@ -130,6 +130,7 @@ Ecosia, Copilot), so the on-page rules follow what Bing rewards. `npm run build 
   suffix past 65. **A year only where the answer changes by year**: buying guides, reviews, brand
   verdicts, prices and deals carry `(2026)`; how-tos, fixes, maintenance, training and spec
   explainers do not (141 titles lost a year that added nothing on 2026-11-13).
+- **Answer first.** Roundups whose first pick has a real "Best ..." award open with a `Short answer` line under the dek naming the top three picks (`shortAnswer()` in `scripts/build-articles.mjs`); question pages already open with a `short-answer` section.
 - **Meta descriptions 110-160 characters.** `fitDescription()` in `SEO.astro` trims long ones at a
   sentence end only when that leaves at least 110 characters, otherwise at a word boundary.
 - **Real dates.** `dateModified` is written into each page and feeds the sitemap `<lastmod>`; change it

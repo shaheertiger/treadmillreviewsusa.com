@@ -307,6 +307,20 @@ const DATA_PENDING_BANNER = `      <!-- Editorial draft banner -->
       </div>
 `;
 
+// Answer first: one line under the dek naming the picks, so Bing and Copilot find a short,
+// self-contained answer where they read first. Only on roundups whose first pick carries a
+// real "Best ..." award (not brand pages listing the closest Amazon alternatives), and only on
+// pages that do not already open with a short-answer section.
+const NOT_A_VERDICT = /amazon|closest|alternative|listing|claims/i;
+function shortAnswer(spec) {
+  if (spec.sections?.[0]?.id === 'short-answer' || spec.dataPending?.length) return '';
+  const picks = (spec.products ?? []).filter((p) => p.badge && !NOT_A_VERDICT.test(p.badge));
+  if (!picks.length || !/^best\b/i.test(spec.products[0].badge ?? '') || picks[0] !== spec.products[0]) return '';
+  const parts = picks.slice(0, 3).map((p) => `${p.badge}: <a href="#${p.id}">${p.name}</a>`);
+  return `      <p class="ed-answer"><strong>Short answer.</strong> ${parts.join('. ')}.</p>
+`;
+}
+
 // "Our top picks" list near the top of a roundup: each pick's award, a jump link to its block
 // and a direct Amazon button, so a reader (and a search snippet) gets the answer first.
 function topPicksBox(spec) {
@@ -459,7 +473,7 @@ ${spec.tags.map((t) => `      ${jsStr(t)},`).join('\n')}
       <p class="ed-dek">
         ${spec.standfirst}
       </p>
-
+${shortAnswer(spec)}
       <!-- Byline -->
       <div class="ed-byline">
         <img src="/authors/shaheer-ali-khan.png" alt="${AUTHOR}, PhD" width="44" height="44" />
