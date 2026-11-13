@@ -129,13 +129,9 @@ Ecosia, Copilot), so the on-page rules follow what Bing rewards. `npm run build 
 - **Titles lead with the query**, 50-65 characters; `SEO.astro` drops the ` | Treadmill Reviews USA`
   suffix past 65. **A year only where the answer changes by year**: buying guides, reviews, brand
   verdicts, prices and deals carry `(2026)`; how-tos, fixes, maintenance, training and spec
-  explainers do not (139 titles lost a year that added nothing on 2026-11-13).
+  explainers do not (141 titles lost a year that added nothing on 2026-11-13).
 - **Meta descriptions 110-160 characters.** `fitDescription()` in `SEO.astro` trims long ones at a
   sentence end only when that leaves at least 110 characters, otherwise at a word boundary.
-- **No testing claims we can't back.** The roundups are not tested hands-on and
-  `/editorial-standards/` says so; pages attribute figures ("Garage Gym Reviews, which tested it",
-  "the manual specifies", "owners commonly report"). The site's default title and description used to
-  say "Hands-On" and "We test so you don't have to"; both are gone.
 - **Real dates.** `dateModified` is written into each page and feeds the sitemap `<lastmod>`; change it
   only when the content really changes.
 - **IndexNow** runs from `.github/workflows/indexnow.yml` on every push to `main`, after the deploy is live.

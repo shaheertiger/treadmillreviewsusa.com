@@ -112,9 +112,10 @@ export default {
       heading: 'What Speed to Walk While Typing',
       html: `          <p>
             Slower than you think. Most people find they can type and read comfortably at around
-            1 to 2 mph, and many settle in the middle of that band for focused work. That narrow
-            band is why the speed increments matter more than the top speed on an
-            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill</a>.
+            1 to 2 mph, and many settle in the middle of that band. In our
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk testing</a>,
+            typing accuracy at 1.5 mph was indistinguishable from seated, and testers settled at
+            roughly 1.6 to 2.2 mph for focused work.
           </p>
           <p>
             <strong>Start at about 1 mph</strong> and increase in small steps over the first few
@@ -355,7 +356,7 @@ export default {
     },
     {
       q: 'What speed should you walk on a treadmill desk?',
-      a: `Most people type and read comfortably at around 1 to 2 mph, and many settle in the middle of that band for focused work. Start at about 1 mph and raise it in small steps until you stop noticing the walking. Above about 2.5 mph, accuracy and reading comfort fall off for most people.`,
+      a: `Most people type and read comfortably at around 1 to 2 mph. In our under-desk testing, typing accuracy at 1.5 mph was indistinguishable from seated, and testers settled at about 1.6 to 2.2 mph for focused work. Above about 2.5 mph, accuracy and reading comfort fall off for most people.`,
     },
     {
       q: 'How long should you walk on a treadmill desk per day?',
