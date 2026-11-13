@@ -1,6 +1,6 @@
 export default {
   slug: 'can-you-walk-barefoot-on-a-treadmill',
-  title: 'Can You Walk Barefoot on a Treadmill? (2026): Risks and What to Wear',
+  title: 'Can You Walk Barefoot on a Treadmill? Risks and What to Wear',
   description:
     'You physically can, but many treadmill manuals say to wear athletic shoes. Friction burns, caught toes, belt heat, hygiene and socks explained, plus who should never try it.',
   crumbLabel: 'Can You Walk Barefoot on a Treadmill',

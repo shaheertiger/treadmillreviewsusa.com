@@ -1,6 +1,6 @@
 export default {
   slug: 'what-muscles-does-a-treadmill-work',
-  title: 'What Muscles Does a Treadmill Work? (2026): Walking, Running, Incline',
+  title: 'What Muscles Does a Treadmill Work? Walking, Running, Incline',
   description:
     'A treadmill mainly trains your heart and lungs; the legs do the work. Muscles used walking, running, on incline and backwards, what it does to your body, and what it misses.',
   crumbLabel: 'What Muscles Does a Treadmill Work',

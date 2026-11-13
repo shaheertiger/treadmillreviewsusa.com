@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-weight-capacity-guide',
-  title: 'Treadmill Weight Capacity Guide (2026): What Limit Do You Need?',
+  title: 'Treadmill Weight Capacity Guide: What Limit Do You Need?',
   description:
     'What a treadmill weight limit actually measures, why running loads the deck far beyond your body weight, and how much capacity to buy for your weight and training.',
   crumbLabel: 'Treadmill Weight Capacity Guide',

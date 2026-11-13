@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-make-a-cheap-treadmill-last-longer',
-  title: 'How to Make a Cheap Treadmill Last Longer (2026): 9 Habits',
+  title: 'How to Make a Cheap Treadmill Last Longer: 9 Habits',
   description:
     'Budget treadmills and walking pads wear out from heat, friction and overload. Stay inside the ratings, rest the motor, lubricate, set the belt, and protect power and placement.',
   crumbLabel: 'How to Make a Cheap Treadmill Last Longer',

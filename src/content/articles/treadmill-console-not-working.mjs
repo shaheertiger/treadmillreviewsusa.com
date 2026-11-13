@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-console-not-working',
-  title: 'Treadmill Console Not Working? (2026): Blank Display and Dead Buttons',
+  title: 'Treadmill Console Not Working? Blank Display and Dead Buttons',
   description:
     'A blank treadmill display or unresponsive buttons is usually the safety key, a cable at the upright or the keypad ribbon before it is a board. Here is the order to check.',
   crumbLabel: 'Treadmill Console Not Working',

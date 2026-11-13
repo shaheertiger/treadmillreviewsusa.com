@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-stay-cool-on-a-treadmill',
-  title: 'How to Stay Cool on a Treadmill (2026): Fans, Room and Timing',
+  title: 'How to Stay Cool on a Treadmill: Fans, Room and Timing',
   description:
     'Why treadmill sessions feel hotter than outdoor ones, and how to fix it: fan size and placement, room temperature and humidity, clothing, water, timing and when to stop.',
   crumbLabel: 'How to Stay Cool on a Treadmill',

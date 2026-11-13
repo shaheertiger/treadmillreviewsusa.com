@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-walking-workouts',
-  title: 'Treadmill Walking Workouts (2026): Six Sessions, Speeds and Inclines',
+  title: 'Treadmill Walking Workouts: Six Sessions, Speeds and Inclines',
   description:
     'Six structured treadmill walking workouts — steady brisk, incline intervals, pyramid, speed-walk intervals, long easy and a hill climb — with typical speeds, grades and progression.',
   crumbLabel: 'Treadmill Walking Workouts',

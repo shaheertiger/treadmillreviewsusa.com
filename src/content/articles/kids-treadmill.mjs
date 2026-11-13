@@ -1,6 +1,6 @@
 export default {
   slug: 'kids-treadmill',
-  title: 'Kids Treadmill Guide (2026): Safe Ages, Injury Data and Kid-Sized Models',
+  title: 'Kids Treadmill Guide: Safe Ages, Injury Data and Kid-Sized Models',
   description:
     'Should children use a treadmill? What NordicTrack, ProForm, Sole, Horizon and Peloton manuals say, CDC and AAP activity advice, injury data, toy treadmills and a home checklist.',
   crumbLabel: 'Kids Treadmill Guide',

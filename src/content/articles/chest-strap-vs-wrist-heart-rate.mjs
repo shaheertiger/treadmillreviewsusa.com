@@ -1,6 +1,6 @@
 export default {
   slug: 'chest-strap-vs-wrist-heart-rate',
-  title: 'Chest Strap vs Wrist Heart Rate (2026): Which to Trust on a Treadmill',
+  title: 'Chest Strap vs Wrist Heart Rate: Which to Trust on a Treadmill',
   description:
     'Chest straps read the heart\'s electrical signal; wrist and arm sensors infer it from blood flow. Why wrist readings lag in intervals, cadence lock, fit, and which to use for zones.',
   crumbLabel: 'Chest Strap vs Wrist Heart Rate',

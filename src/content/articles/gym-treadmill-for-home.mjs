@@ -1,6 +1,6 @@
 export default {
   slug: 'gym-treadmill-for-home',
-  title: 'Gym Treadmill for Home (2026): What It Takes to Run One at Home',
+  title: 'Gym Treadmill for Home: What It Takes to Run One at Home',
   description:
     'Putting a commercial gym treadmill in your home: weight and floors, stairs and delivery, dedicated circuits, ceiling height, warranty terms and buying ex-gym.',
   crumbLabel: 'Gym Treadmill for Home',

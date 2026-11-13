@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-workout-for-weight-loss',
-  title: 'Treadmill Workouts for Weight Loss (2026): What Actually Helps',
+  title: 'Treadmill Workouts for Weight Loss: What Actually Helps',
   description:
     'The honest version: a treadmill is a strong tool for health and consistency and a weaker one for weight change than most content implies. Here is how to use it well.',
   crumbLabel: 'Treadmill Workouts for Weight Loss',

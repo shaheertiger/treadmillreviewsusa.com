@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-running-form',
-  title: 'Treadmill Running Form (2026): How to Run Properly on a Belt',
+  title: 'Treadmill Running Form: How to Run Properly on a Belt',
   description:
     'How to run properly on a treadmill: cadence, overstriding, posture, arm swing, where to stand on the belt, footstrike, whether the belt pulls you, and the common faults to fix.',
   crumbLabel: 'Treadmill Running Form',

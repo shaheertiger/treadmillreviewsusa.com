@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-incline-not-working',
-  title: 'Treadmill Incline Not Working (2026): Stuck or Stopping at One Level',
+  title: 'Treadmill Incline Not Working: Stuck or Stopping at One Level',
   description:
     'An incline that sticks, moves one way only or stops at one level is usually calibration, power or a sensor before it is the motor. How to work through it in order, and what the manual decides.',
   crumbLabel: 'Treadmill Incline Not Working',

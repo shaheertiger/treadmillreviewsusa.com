@@ -1,6 +1,6 @@
 export default {
   slug: 'couch-to-5k-treadmill',
-  title: 'Couch to 5K on a Treadmill (2026): The Nine-Week Plan',
+  title: 'Couch to 5K on a Treadmill: The Nine-Week Plan',
   description:
     'The full nine-week walk-to-run progression adapted for a treadmill, with speeds to set, what to do when a week is too hard, and the deck length you actually need.',
   crumbLabel: 'Couch to 5K on a Treadmill',

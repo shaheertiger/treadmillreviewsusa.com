@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-interval-workouts',
-  title: 'Treadmill Interval Workouts (2026): Sessions That Actually Work',
+  title: 'Treadmill Interval Workouts: Sessions That Actually Work',
   description:
     'Five interval sessions from beginner to advanced, how to pick the pace so you finish the last rep, and why the belt not slowing down when you tire changes everything.',
   crumbLabel: 'Treadmill Interval Workouts',

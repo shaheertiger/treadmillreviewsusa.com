@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-repair-near-me',
-  title: 'Treadmill Repair Near Me (2026): Finding a Qualified Technician',
+  title: 'Treadmill Repair Near Me: Finding a Qualified Technician',
   description:
     'How to find treadmill repair near you: manufacturer service routes for NordicTrack, Sole and Horizon, independent fitness technicians, typical call-out costs, questions to ask and red flags.',
   crumbLabel: 'Treadmill Repair Near Me',

@@ -1,6 +1,6 @@
 export default {
   slug: 'types-of-treadmills',
-  title: 'Types of Treadmills (2026): Every Kind Explained, and Who It Suits',
+  title: 'Types of Treadmills: Every Kind Explained, and Who It Suits',
   description:
     'The different types of treadmills explained: folding and non-folding motorized, manual, curved, walking pads, under-desk, incline trainers, commercial, smart, dog and VR machines.',
   crumbLabel: 'Types of Treadmills',

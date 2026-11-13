@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-workouts',
-  title: 'Treadmill Workouts (2026): How to Structure a Week That Works',
+  title: 'Treadmill Workouts: How to Structure a Week That Works',
   description:
     'Four session types cover everything a treadmill can do. Here is what each is for, how to build a week from them, and how to progress without breaking the habit.',
   crumbLabel: 'Treadmill Workouts',

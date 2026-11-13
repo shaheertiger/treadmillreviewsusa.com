@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-foot-pod-guide',
-  title: 'Treadmill Foot Pod Guide (2026): How They Work and Calibrate',
+  title: 'Treadmill Foot Pod Guide: How They Work and Calibrate',
   description:
     'What a running foot pod is, how it turns stride motion into pace, how to calibrate it against a checked belt, pairing with Zwift and watches, and when an FTMS treadmill makes one unnecessary.',
   crumbLabel: 'Treadmill Foot Pod Guide',

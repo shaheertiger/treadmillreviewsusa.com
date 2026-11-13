@@ -1,6 +1,6 @@
 export default {
   slug: 'is-running-on-a-treadmill-bad-for-you',
-  title: 'Is Running on a Treadmill Bad for You? (2026): Risks and Myths',
+  title: 'Is Running on a Treadmill Bad for You? Risks and Myths',
   description:
     'For most people treadmill running is a safe way to run. The real downsides are repetition, heat, falls, overuse and machine-set pace, not ruined form or knees.',
   crumbLabel: 'Is Running on a Treadmill Bad for You',

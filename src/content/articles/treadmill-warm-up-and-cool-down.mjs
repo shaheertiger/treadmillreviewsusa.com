@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-warm-up-and-cool-down',
-  title: 'Treadmill Warm Up and Cool Down (2026): How Long and What to Do',
+  title: 'Treadmill Warm Up and Cool Down: How Long and What to Do',
   description:
     'How to warm up and cool down on a treadmill: how long each should take, how to build speed and incline, drills to do off the belt, and what to do if you feel dizzy after running.',
   crumbLabel: 'Treadmill Warm Up and Cool Down',

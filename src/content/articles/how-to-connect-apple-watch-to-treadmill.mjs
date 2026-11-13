@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-connect-apple-watch-to-treadmill',
-  title: 'How to Connect Apple Watch to a Treadmill (2026): GymKit and Strava',
+  title: 'How to Connect Apple Watch to a Treadmill: GymKit and Strava',
   description:
     'How to connect an Apple Watch to a treadmill with GymKit, what to do when your machine lacks it, why distances disagree, and how to log treadmill runs on Strava.',
   crumbLabel: 'How to Connect Apple Watch to a Treadmill',

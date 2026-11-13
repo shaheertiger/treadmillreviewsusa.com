@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-safety-tips',
-  title: 'Treadmill Safety Tips (2026): Keys, Kids, Pets and Clearance',
+  title: 'Treadmill Safety Tips: Keys, Kids, Pets and Clearance',
   description:
     'Treadmill safety at home: the safety key, keeping children and pets away, clearance behind the belt, folding-deck and cord hazards, footwear and staying aware while you run.',
   crumbLabel: 'Treadmill Safety Tips',

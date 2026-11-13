@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-reset-nordictrack-treadmill',
-  title: 'How to Reset a NordicTrack Treadmill (2026): Power, Reset and Restart',
+  title: 'How to Reset a NordicTrack Treadmill: Power, Reset and Restart',
   description:
     'How to reset a NordicTrack treadmill: turning it on in the right order, the reset breaker, a safe console factory reset, and taking it apart for moving.',
   crumbLabel: 'How to Reset a NordicTrack Treadmill',

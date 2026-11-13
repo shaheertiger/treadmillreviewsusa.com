@@ -1,6 +1,6 @@
 export default {
   slug: 'standing-desk-height-for-walking-pad',
-  title: 'Standing Desk Height for a Walking Pad (2026): Chart and Formula',
+  title: 'Standing Desk Height for a Walking Pad: Chart and Formula',
   description:
     'How high your standing desk must go over a walking pad: elbow height plus deck height plus shoes, a chart by user height, monitor height, keyboard trays, and why many desks fall short.',
   crumbLabel: 'Standing Desk Height for a Walking Pad',

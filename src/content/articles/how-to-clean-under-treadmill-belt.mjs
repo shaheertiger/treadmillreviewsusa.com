@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-clean-under-treadmill-belt',
-  title: 'How to Clean Under a Treadmill Belt (2026): The Full Method',
+  title: 'How to Clean Under a Treadmill Belt: The Full Method',
   description:
     'Debris under the belt is abrasive and raises friction directly. Here is how to slacken the belt, clear and clean the deck properly, and get the tension back right afterwards.',
   crumbLabel: 'How to Clean Under a Treadmill Belt',

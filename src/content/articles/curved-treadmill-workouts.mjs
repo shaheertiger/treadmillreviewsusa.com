@@ -1,6 +1,6 @@
 export default {
   slug: 'curved-treadmill-workouts',
-  title: 'Curved Treadmill Workouts (2026): Sprints, Tempo and Sled Pushes',
+  title: 'Curved Treadmill Workouts: Sprints, Tempo and Sled Pushes',
   description:
     'Curved treadmill workouts that suit a self-powered belt: sprint repeats, tempo running, sled-push style work, walking intervals and a six-week progression.',
   crumbLabel: 'Curved Treadmill Workouts',

@@ -1,6 +1,6 @@
 export default {
   slug: 'what-happens-if-you-exceed-treadmill-weight-limit',
-  title: 'What Happens If You Exceed a Treadmill Weight Limit? (2026)',
+  title: 'What Happens If You Exceed a Treadmill Weight Limit?',
   description:
     'Going over a treadmill or walking pad weight limit rarely breaks it at once. What wears first, the warning signs, what it means for your warranty and safety, and how much margin to buy.',
   crumbLabel: 'Exceeding a Treadmill Weight Limit',

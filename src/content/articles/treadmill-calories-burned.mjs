@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-calories-burned',
-  title: 'Treadmill Calories Burned (2026): Estimates by Speed and Weight',
+  title: 'Treadmill Calories Burned: Estimates by Speed and Weight',
   description:
     'How many calories a treadmill burns in 30 minutes: estimate tables for walking, incline and running at three body weights, and why the console is generous.',
   crumbLabel: 'Treadmill Calories Burned',

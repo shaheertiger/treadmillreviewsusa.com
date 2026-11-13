@@ -1,6 +1,6 @@
 export default {
   slug: 'can-you-use-a-treadmill-every-day',
-  title: 'Can You Use a Treadmill Every Day? (2026): Walking, Running, Wear',
+  title: 'Can You Use a Treadmill Every Day? Walking, Running, Wear',
   description:
     'Daily walking is fine for most people. Daily running depends on easy-hard balance and rest. Warning signs of overuse, plus what daily use means for the machine.',
   crumbLabel: 'Can You Use a Treadmill Every Day',

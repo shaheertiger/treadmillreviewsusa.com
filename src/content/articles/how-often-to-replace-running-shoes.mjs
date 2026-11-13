@@ -1,6 +1,6 @@
 export default {
   slug: 'how-often-to-replace-running-shoes',
-  title: 'How Often to Replace Running Shoes (2026): Miles, Signs, Treadmill',
+  title: 'How Often to Replace Running Shoes: Miles, Signs, Treadmill',
   description:
     'The usual rule of thumb is 300 to 500 miles. What that means in months, why treadmill shoes look newer than they are, the signs a pair is done, tracking mileage and rotating pairs.',
   crumbLabel: 'How Often to Replace Running Shoes',

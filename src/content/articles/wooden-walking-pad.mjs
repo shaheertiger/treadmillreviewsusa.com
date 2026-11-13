@@ -1,6 +1,6 @@
 export default {
   slug: 'wooden-walking-pad',
-  title: 'Wooden Walking Pad Buyer’s Guide (2026): Wood-Look, Solid Wood and Slat Treadmills',
+  title: 'Wooden Walking Pad (2026): Wood-Look, Solid Wood and Slat Pads',
   description:
     'What a wooden walking pad really is, what wood changes and what it does not, US prices from about $300 to $25,000, warranties, wood care and who should buy one.',
   crumbLabel: 'Wooden Walking Pad Guide',

@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-stress-test',
-  title: 'Treadmill Stress Test (2026): What It Shows, How It Works, How Long',
+  title: 'Treadmill Stress Test: What It Shows, How It Works, How Long',
   description:
     'A plain-English explainer of the treadmill stress test: what the exercise ECG looks for, how the Bruce protocol works, how long it takes and how to prepare.',
   crumbLabel: 'Treadmill Stress Test',

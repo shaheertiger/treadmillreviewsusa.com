@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-surge-protector',
-  title: 'Do You Need a Surge Protector for a Treadmill? (2026)',
+  title: 'Do You Need a Surge Protector for a Treadmill?',
   description:
     'Whether to plug a treadmill into a surge protector, why ordinary power strips trip or overheat, what joule and UL 1449 ratings mean, and why extension cords are a bad idea.',
   crumbLabel: 'Treadmill Surge Protector',

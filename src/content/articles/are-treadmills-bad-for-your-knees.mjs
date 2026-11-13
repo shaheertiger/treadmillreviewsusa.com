@@ -1,6 +1,6 @@
 export default {
   slug: 'are-treadmills-bad-for-your-knees',
-  title: 'Are Treadmills Bad for Your Knees? (2026): What the Evidence Says',
+  title: 'Are Treadmills Bad for Your Knees? What the Evidence Says',
   description:
     'For most healthy people, treadmills are not bad for your knees. What research says about running and knee health, and the habits that cause trouble on a belt.',
   crumbLabel: 'Are Treadmills Bad for Your Knees?',

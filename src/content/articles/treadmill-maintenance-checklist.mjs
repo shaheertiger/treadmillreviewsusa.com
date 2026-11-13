@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-maintenance-checklist',
-  title: 'Treadmill Maintenance Checklist (2026): Every Task, By Interval',
+  title: 'Treadmill Maintenance Checklist: Every Task, By Interval',
   description:
     'The complete treadmill maintenance checklist organised by how often each task is due — after every session, monthly, every 40-50 hours, and annually. Under an hour a year.',
   crumbLabel: 'Treadmill Maintenance Checklist',

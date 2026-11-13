@@ -1,6 +1,6 @@
 export default {
   slug: 'should-i-buy-a-treadmill',
-  title: 'Should I Buy a Treadmill? (2026): An Honest Yes-or-No Test',
+  title: 'Should I Buy a Treadmill? An Honest Yes-or-No Test',
   description:
     'Who a home treadmill pays off for, who regrets one, cost per use, the space and power checklist, cheaper alternatives and an eight-question self-test.',
   crumbLabel: 'Should I Buy a Treadmill',

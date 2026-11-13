@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-start-running-on-a-treadmill',
-  title: 'How to Start Running on a Treadmill (2026): Your First 8 Weeks',
+  title: 'How to Start Running on a Treadmill: Your First 8 Weeks',
   description:
     'Walk-run intervals, typical starting speeds, the 1% incline, form on a moving belt and how to progress over 4 to 8 weeks, plus the warning signs to stop.',
   crumbLabel: 'How to Start Running on a Treadmill',

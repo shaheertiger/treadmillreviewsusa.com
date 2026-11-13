@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-lubricate-a-walking-pad',
-  title: 'How to Lubricate a Walking Pad (2026): Steps, Timing and What to Use',
+  title: 'How to Lubricate a Walking Pad: Steps, Timing and What to Use',
   description:
     'How to lubricate a walking pad with no rail to lift: loosen the rear bolts, apply 100% silicone under the belt centre, re-tension, walk it in and re-centre. Plus timing.',
   crumbLabel: 'How to Lubricate a Walking Pad',

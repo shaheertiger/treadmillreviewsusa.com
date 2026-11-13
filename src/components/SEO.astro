@@ -33,6 +33,10 @@ const abs = (path: string) => new URL(path, `${siteUrl}/`).toString();
 const canonicalUrl = canonical ?? abs(Astro.url.pathname);
 const ogImage = ogImageProp ? abs(ogImageProp) : abs('/og-default.png');
 
+// Bing Webmaster Tools ownership tag. Set PUBLIC_BING_SITE_VERIFICATION in Vercel to the
+// msvalidate.01 code, unless the site is verified by DNS instead.
+const bingVerification = import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
+
 // Bing and other engines truncate titles at roughly 60-70 characters. Pages append the site
 // name; drop it when it would push the title past 65 so the page's own words are what shows.
 const SUFFIX = ' | Treadmill Reviews USA';
@@ -45,7 +49,8 @@ function fitDescription(text: string, max = 160): string {
   if (t.length <= max) return t;
   const window = t.slice(0, max);
   const sentenceEnd = Math.max(window.lastIndexOf('. '), window.lastIndexOf('? '), window.lastIndexOf('! '));
-  if (sentenceEnd >= 100) return window.slice(0, sentenceEnd + 1);
+  // Bing playbook: 110-160 characters. A first sentence shorter than 110 undersells the page.
+  if (sentenceEnd >= 109) return window.slice(0, sentenceEnd + 1);
   const cut = t.slice(0, max - 1);
   return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\-–—]+$/, '')}…`;
 }
@@ -112,6 +117,7 @@ if (jsonLd) {
 ---
 <!-- Primary Meta Tags -->
 <title>{title}</title>
+{bingVerification && <meta name="msvalidate.01" content={bingVerification} />}
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />

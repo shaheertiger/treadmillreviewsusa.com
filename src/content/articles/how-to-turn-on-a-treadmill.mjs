@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-turn-on-a-treadmill',
-  title: 'How Do You Turn On a Treadmill? (2026): NordicTrack, ProForm and More',
+  title: 'How Do You Turn On a Treadmill? NordicTrack, ProForm and More',
   description:
     'Plug into the wall, flip the power switch at the front of the base, fit the safety key, let the console boot, then press start. Brand notes and what to do if it stays dark.',
   crumbLabel: 'How to Turn On a Treadmill',

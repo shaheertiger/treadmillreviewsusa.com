@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-safety-key-not-working',
-  title: 'Treadmill Safety Key Not Working or Lost? (2026): What to Do',
+  title: 'Treadmill Safety Key Not Working or Lost? What to Do',
   description:
     'A treadmill will not run without its safety key, by design. Here is how the key switch works, why a key stops working, how to replace a lost one, and why you should never bypass it.',
   crumbLabel: 'Treadmill Safety Key Not Working',

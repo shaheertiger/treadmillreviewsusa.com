@@ -1,6 +1,6 @@
 export default {
   slug: 'should-you-hold-the-handrails-on-a-treadmill',
-  title: 'Should You Hold the Handrails on a Treadmill? (2026): When and Why',
+  title: 'Should You Hold the Handrails on a Treadmill? When and Why',
   description:
     'Hold the rails to get on and off, change speed, or if you need support. Habitual gripping cuts the work, bends your posture and inflates console calories. How to stop.',
   crumbLabel: 'Should You Hold the Handrails on a Treadmill',

@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-read-treadmill-reviews',
-  title: 'How to Read Treadmill Reviews (2026): Spot Patterns, Not Stars',
+  title: 'How to Read Treadmill Reviews: Spot Patterns, Not Stars',
   description:
     'How to read treadmill reviews on Amazon and review sites: merged listings, incentivised and early reviews, failure patterns in 1-3 star reviews, and tested vs spec-sheet claims.',
   crumbLabel: 'How to Read Treadmill Reviews',

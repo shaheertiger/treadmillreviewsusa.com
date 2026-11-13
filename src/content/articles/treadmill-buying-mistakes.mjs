@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-buying-mistakes',
-  title: 'Treadmill Buying Mistakes (2026): 15 to Avoid Before You Order',
+  title: 'Treadmill Buying Mistakes: 15 to Avoid Before You Order',
   description:
     'The fifteen mistakes that turn a treadmill into an expensive clothes rack: peak horsepower, short decks, low ceilings, delivery routes, subscriptions and more.',
   crumbLabel: 'Treadmill Buying Mistakes',

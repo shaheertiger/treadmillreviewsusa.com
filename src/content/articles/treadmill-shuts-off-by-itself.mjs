@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-shuts-off-by-itself',
-  title: 'Treadmill Shuts Off by Itself? (2026): Diagnose It by When It Stops',
+  title: 'Treadmill Shuts Off by Itself? Diagnose It by When It Stops',
   description:
     'A treadmill that keeps stopping is usually telling you when and why. Sort the fault by timing — at start, after minutes, under load, at speed — and check the cheap causes first.',
   crumbLabel: 'Treadmill Shuts Off by Itself',

@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-pack-a-treadmill',
-  title: 'How to Pack a Treadmill (2026): Moving, Storage and Returns',
+  title: 'How to Pack a Treadmill: Moving, Storage and Returns',
   description:
     'Treadmill packing for a move, storage or a return: original box or not, securing the deck and console, cords, the safety key, labelling hardware, and freight versus parcel.',
   crumbLabel: 'How to Pack a Treadmill',

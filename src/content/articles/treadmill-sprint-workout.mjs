@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-sprint-workout',
-  title: 'Treadmill Sprint Workout (2026): How to Sprint on a Treadmill Safely',
+  title: 'Treadmill Sprint Workout: How to Sprint on a Treadmill Safely',
   description:
     'How sprinting on a treadmill differs from a track, the safe mount and dismount, why incline sprints suit home machines, four sessions and who should not.',
   crumbLabel: 'Treadmill Sprint Workout',

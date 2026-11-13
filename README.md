@@ -120,6 +120,28 @@ Every published article has at least three inbound links from other articles. Pa
 topic no other article mentions (mostly niche Home Gym roundups) get theirs from Related
 Guides cards on sibling pages in the same hub group; the Related grid takes up to six cards.
 
+## Bing first
+
+Nearly all search traffic to this site comes from Bing-powered engines (Bing, DuckDuckGo, Yahoo,
+Ecosia, Copilot), so the on-page rules follow what Bing rewards. `npm run build && npm run audit:seo`
+(add `--list` for the URLs) checks the built site against them; run it monthly and after any batch.
+
+- **Titles lead with the query**, 50-65 characters; `SEO.astro` drops the ` | Treadmill Reviews USA`
+  suffix past 65. **A year only where the answer changes by year**: buying guides, reviews, brand
+  verdicts, prices and deals carry `(2026)`; how-tos, fixes, maintenance, training and spec
+  explainers do not (139 titles lost a year that added nothing on 2026-11-13).
+- **Meta descriptions 110-160 characters.** `fitDescription()` in `SEO.astro` trims long ones at a
+  sentence end only when that leaves at least 110 characters, otherwise at a word boundary.
+- **No testing claims we can't back.** The roundups are not tested hands-on and
+  `/editorial-standards/` says so; pages attribute figures ("Garage Gym Reviews, which tested it",
+  "the manual specifies", "owners commonly report"). The site's default title and description used to
+  say "Hands-On" and "We test so you don't have to"; both are gone.
+- **Real dates.** `dateModified` is written into each page and feeds the sitemap `<lastmod>`; change it
+  only when the content really changes.
+- **IndexNow** runs from `.github/workflows/indexnow.yml` on every push to `main`, after the deploy is live.
+- **Bing Webmaster Tools**: set `PUBLIC_BING_SITE_VERIFICATION` in Vercel to the `msvalidate.01` code
+  to add the tag to every page, unless the site is verified by DNS. Submit `/sitemap-index.xml` there.
+
 ## Information architecture
 
 Nine section hubs sit above the article pages and group them by the decision a reader is

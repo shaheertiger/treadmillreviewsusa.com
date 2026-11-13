@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-belt-jerking',
-  title: 'Treadmill Belt Jerking or Surging? (2026): Diagnose It by the Rhythm',
+  title: 'Treadmill Belt Jerking or Surging? Diagnose It by the Rhythm',
   description:
     'A treadmill belt that jerks, stutters or surges is telling you where to look by when it happens: once per revolution, with each step, or on its own. Here is how to tell.',
   crumbLabel: 'Treadmill Belt Jerking',

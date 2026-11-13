@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-hill-workout',
-  title: 'Treadmill Hill Workout (2026): Four Incline Running Sessions',
+  title: 'Treadmill Hill Workout: Four Incline Running Sessions',
   description:
     'Four treadmill hill workouts — repeats, rolling hills, a progressive climb and a long incline walk — with effort guidance, calf and Achilles cautions, and how grade compares outdoors.',
   crumbLabel: 'Treadmill Hill Workout',

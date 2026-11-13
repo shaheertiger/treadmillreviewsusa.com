@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-trips-breaker',
-  title: 'Treadmill Tripping the Breaker? (2026): Circuit, GFCI or Machine Fault',
+  title: 'Treadmill Tripping the Breaker? Circuit, GFCI or Machine Fault',
   description:
     'A treadmill that trips a breaker or GFCI is either sharing a circuit, fighting friction, or reporting a real fault. How to tell which safely — and what never to do at the panel.',
   crumbLabel: 'Treadmill Tripping the Breaker',

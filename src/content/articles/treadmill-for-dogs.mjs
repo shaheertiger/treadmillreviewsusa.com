@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-for-dogs',
-  title: 'Treadmill for Dogs (2026): Can a Dog Use a Human Treadmill Safely?',
+  title: 'Treadmill for Dogs: Can a Dog Use a Human Treadmill Safely?',
   description:
     'Can a dog use a human treadmill? The equipment-side answer: how dog treadmills differ, the non-negotiable safety rules, which dogs it is wrong for, and wear.',
   crumbLabel: 'Treadmill for Dogs',

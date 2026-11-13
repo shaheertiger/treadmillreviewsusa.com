@@ -1,6 +1,6 @@
 export default {
   slug: 'lifesmart-treadmills',
-  title: 'LifeSmart Treadmills (2026): TM4500, TM6500, TM4000C and the PowerTouch Range',
+  title: 'LifeSmart Treadmills (2026): TM4500, TM6500 and TM4000C',
   description:
     'LifeSmart’s PowerTouch treadmills fold themselves and sell mainly through Costco and Dick’s. The TM4500 is discontinued; what replaced it, the TM3000, TM4800, TM5000 and TM6500, conflicting figures and the one-year warranty.',
   crumbLabel: 'LifeSmart Treadmills',

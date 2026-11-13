@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-store-a-treadmill',
-  title: 'How to Store a Treadmill (2026): Short-Term and Long-Term Storage',
+  title: 'How to Store a Treadmill: Short-Term and Long-Term Storage',
   description:
     'How to store a treadmill for weeks or months: where to keep it, unplugging, cleaning, belt tension, covers, humidity and pests, and a checklist for restarting it safely.',
   crumbLabel: 'How to Store a Treadmill',

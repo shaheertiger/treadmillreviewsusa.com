@@ -1,6 +1,6 @@
 export default {
   slug: 'how-long-is-a-mile-on-a-treadmill',
-  title: 'How Long Is a Mile on a Treadmill? (2026): Times, 5K and 10,000 Steps',
+  title: 'How Long Is a Mile on a Treadmill? Times, 5K and 10,000 Steps',
   description:
     'A treadmill mile is a mile; the time depends on speed. Minutes per mile from 2 to 10 mph, 5K and 10K times, 10,000 steps, distance in 30 minutes, and accuracy.',
   crumbLabel: 'How Long Is a Mile on a Treadmill',

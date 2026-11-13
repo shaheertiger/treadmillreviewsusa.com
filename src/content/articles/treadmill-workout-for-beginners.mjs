@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-workout-for-beginners',
-  title: 'Treadmill Workout for Beginners (2026): Your First Four Weeks',
+  title: 'Treadmill Workout for Beginners: Your First Four Weeks',
   description:
     'A four-week beginner treadmill plan, walking first then walk-run, with a weekly table, a first-session walkthrough, starting speeds, soreness and common errors.',
   crumbLabel: 'Treadmill Workout for Beginners',

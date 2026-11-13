@@ -1,6 +1,6 @@
 export default {
   slug: 'how-thick-should-a-treadmill-mat-be',
-  title: 'How Thick Should a Treadmill Mat Be? (2026): Bands by Floor',
+  title: 'How Thick Should a Treadmill Mat Be? Bands by Floor',
   description:
     'Around 1/4 inch protects a hard floor; dense rubber at 3/8 inch or more helps the room below. Thickness bands, why soft mats rock, density, and size first.',
   crumbLabel: 'How Thick Should a Treadmill Mat Be',

@@ -1,6 +1,6 @@
 export default {
   slug: 'elliptical-vs-treadmill-calories',
-  title: 'What Burns More Calories, Elliptical or Treadmill? (2026)',
+  title: 'What Burns More Calories, Elliptical or Treadmill?',
   description:
     'Elliptical vs treadmill calories, worked out from 2024 Compendium MET values for three body weights, plus why consoles overstate the burn on both machines.',
   crumbLabel: 'Elliptical vs Treadmill Calories',

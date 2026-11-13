@@ -1,6 +1,6 @@
 export default {
   slug: 'zwift-treadmill-guide',
-  title: 'Zwift Treadmill Guide (2026): How Zwift Run Works With Any Treadmill',
+  title: 'Zwift Treadmill Guide: How Zwift Run Works With Any Treadmill',
   description:
     'How Zwift Run works with a treadmill: where the speed signal comes from, foot pods vs connected machines, calibration, Bluetooth vs ANT+ set-up and fixes.',
   crumbLabel: 'Zwift Treadmill Guide',

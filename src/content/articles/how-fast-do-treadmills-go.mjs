@@ -1,6 +1,6 @@
 export default {
   slug: 'how-fast-do-treadmills-go',
-  title: 'How Fast Do Treadmills Go? (2026): Top Speeds by Type Explained',
+  title: 'How Fast Do Treadmills Go? Top Speeds by Type Explained',
   description:
     'Most home treadmills top out at 10-12 mph, walking pads at 4-6 mph, gym machines at 12-15 mph. What those speeds mean as pace, and why top speed rarely matters.',
   crumbLabel: 'How Fast Do Treadmills Go?',

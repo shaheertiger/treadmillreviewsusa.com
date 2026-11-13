@@ -1,6 +1,6 @@
 export default {
   slug: 'how-many-steps-in-a-mile-on-a-treadmill',
-  title: 'How Many Steps in a Mile on a Treadmill? (2026): Walking vs Running',
+  title: 'How Many Steps in a Mile on a Treadmill? Walking vs Running',
   description:
     'Walking a mile typically takes about 2,000 to 2,500 steps; running takes fewer. Here is the stride arithmetic, the effect of height and speed, and how to count your own.',
   crumbLabel: 'How Many Steps in a Mile?',

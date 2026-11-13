@@ -1,6 +1,6 @@
 export default {
   slug: 'freemotion-treadmills',
-  title: 'Freemotion Treadmills (2026): Reflex t10.9b, t8.9b and Incline Trainers',
+  title: 'Freemotion Treadmills (2026): Reflex t10.9b, t8.9b and Incline',
   description:
     'Freemotion is iFIT’s commercial brand. The t8.9b, the Reflex t10.9b and t22.9, the incline trainers, what they cost for home buyers, the 20-amp circuit and how they compare with NordicTrack.',
   crumbLabel: 'Freemotion Treadmills',

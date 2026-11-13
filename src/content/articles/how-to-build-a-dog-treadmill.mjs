@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-build-a-dog-treadmill',
-  title: 'How to Build a Dog Treadmill (2026): DIY Slatmills, Honestly',
+  title: 'How to Build a Dog Treadmill: DIY Slatmills, Honestly',
   description:
     'DIY dog treadmills are dog-powered slatmills and carpet mills. Design principles, costs, skills and failure modes, and why not to build a motorized one.',
   crumbLabel: 'How to Build a Dog Treadmill',

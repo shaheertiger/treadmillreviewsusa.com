@@ -1,6 +1,6 @@
 export default {
   slug: 'bowflex-treadmill-10',
-  title: 'Bowflex Treadmill 10 Review (2026): Discontinued, Specs and Buying Used',
+  title: 'Bowflex Treadmill 10 Review (2026): Specs and Buying Used',
   description:
     'The Bowflex Treadmill 10 is discontinued. Its checked specs (22 x 60 in. deck, -5% to 15%, 400 lb), the Nautilus-era warranty, JRNY terms, buying one used, and the T9 or T16 instead.',
   crumbLabel: 'Bowflex Treadmill 10',

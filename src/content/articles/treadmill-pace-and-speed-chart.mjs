@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-pace-and-speed-chart',
-  title: 'Treadmill Pace & Speed Chart (2026): mph, Pace and Incline',
+  title: 'Treadmill Pace & Speed Chart: mph, Pace and Incline',
   description:
     'Convert treadmill mph to minutes per mile and km/h, see what each speed actually feels like, and what an incline grade is worth in equivalent flat effort.',
   crumbLabel: 'Treadmill Pace & Speed Chart',
