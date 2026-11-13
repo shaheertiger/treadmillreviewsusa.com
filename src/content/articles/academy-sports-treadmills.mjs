@@ -3,7 +3,7 @@ const td = 'border-b border-gray-100 py-2 pr-4 text-gray-700';
 
 export default {
   slug: 'academy-sports-treadmills',
-  title: 'Academy Sports Treadmills (2026): Brands, Prices, Delivery, Returns',
+  title: 'Academy Sports Treadmills (2026): Brands, Prices and Delivery',
   description:
     'Buying a treadmill at Academy Sports + Outdoors: the brands and price range on academy.com, bulk delivery tiers, assembly, the 60-day return policy, its beat-by-5% price match and the store card, checked October 2026.',
   crumbLabel: 'Academy Sports Treadmills',

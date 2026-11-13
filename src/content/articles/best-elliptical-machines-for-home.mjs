@@ -1,6 +1,6 @@
 export default {
   slug: 'best-elliptical-machines-for-home',
-  title: 'Best Elliptical Machines for Home (2026): Six Picks, Small to Large',
+  title: 'Best Elliptical Machines for Home (2026): 6 Picks, Small to Large',
   description:
     'Six home ellipticals from $699 to $2,999, checked against maker pages and independent reviews: stride length, user capacity, ceiling height, drive type and apps.',
   crumbLabel: 'Best Ellipticals for Home',

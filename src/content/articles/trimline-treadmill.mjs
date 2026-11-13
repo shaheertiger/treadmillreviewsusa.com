@@ -1,6 +1,6 @@
 export default {
   slug: 'trimline-treadmill',
-  title: 'Trimline Treadmill Guide (2026): Models, Parts, Manuals and Used Value',
+  title: 'Trimline Treadmill (2026): Models, Parts, Manuals, Used Value',
   description:
     'Trimline treadmills are no longer made for the US market. Who built them, which models exist, where to find parts and manuals, and whether a used one is worth buying.',
   crumbLabel: 'Trimline Treadmill',

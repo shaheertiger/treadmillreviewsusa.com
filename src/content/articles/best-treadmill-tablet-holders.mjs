@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-tablet-holders',
-  title: 'Best Treadmill Tablet Holders (2026): Clamp, Strap and Phone Mounts',
+  title: 'Best Treadmill Tablet Holders (2026): Clamp and Strap Mounts',
   description:
     'Five treadmill tablet and phone holders with cross-checked fit ranges, and where to mount one so it clears the safety key and stays steady at running pace.',
   crumbLabel: 'Best Treadmill Tablet Holders',

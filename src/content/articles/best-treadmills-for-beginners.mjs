@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmills-for-beginners',
-  title: 'Best Treadmills for Beginners (2026): Buy Less Machine Than You Think',
+  title: 'Best Treadmills for Beginners (2026): Buy Less Than You Think',
   description:
     'Most first treadmills are bought too expensive and abandoned in ten weeks. We ranked six machines on assembly, console simplicity, safety and how little you need to spend.',
   crumbLabel: 'Best Treadmills for Beginners',

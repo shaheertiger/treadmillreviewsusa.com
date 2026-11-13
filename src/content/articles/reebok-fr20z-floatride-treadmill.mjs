@@ -1,6 +1,6 @@
 export default {
   slug: 'reebok-fr20z-floatride-treadmill',
-  title: 'Reebok FR20z Floatride Treadmill Review (2026): Specs and Where to Buy',
+  title: 'Reebok FR20z Floatride Treadmill Review (2026): Specs and Price',
   description:
     'The Reebok FR20z Floatride is a non-folding home treadmill sold mainly in the UK and Australia. Its agreed specs, the conflicts, and why US stock is hard to find.',
   crumbLabel: 'Reebok FR20z Floatride',

@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-covers',
-  title: 'Best Treadmill Covers (2026): Picks for Garage, Indoor and Outdoor',
+  title: 'Best Treadmill Covers (2026): Garage, Indoor and Outdoor Picks',
   description:
     'Four treadmill covers checked against their listings, for folding, non-folding and garage use, plus how to measure your machine and avoid trapping condensation.',
   crumbLabel: 'Best Treadmill Covers',

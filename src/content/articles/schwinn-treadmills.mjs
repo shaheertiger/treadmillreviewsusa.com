@@ -1,6 +1,6 @@
 export default {
   slug: 'schwinn-treadmills',
-  title: 'Schwinn Treadmills (2026): 810, 815, SFT4.1, SFT4.3 and the Old 830',
+  title: 'Schwinn Treadmills (2026): 810, 815, SFT4.1, SFT4.3 and 830',
   description:
     'Schwinn still sells four treadmills in the US, from $699 to $1,099. The 810, 815, SFT4.1 and SFT4.3 compared, what happened to the 830, the motor figures Schwinn does not publish, and the one-year parts warranty.',
   crumbLabel: 'Schwinn Treadmills',

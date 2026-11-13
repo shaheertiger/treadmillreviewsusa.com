@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-tv-stands',
-  title: 'Best Treadmill TV Stands and Mounts (2026): Height, Distance, VESA',
+  title: 'Best Treadmill TV Stands and Mounts (2026): Height and VESA',
   description:
     'Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height and viewing-distance maths to place the screen properly.',
   crumbLabel: 'Best Treadmill TV Stands',

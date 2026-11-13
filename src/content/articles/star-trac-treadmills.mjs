@@ -1,6 +1,6 @@
 export default {
   slug: 'star-trac-treadmills',
-  title: 'Star Trac Treadmill Guide (2026): Models, Used Value and What to Check',
+  title: 'Star Trac Treadmills (2026): Models, Used Value, What to Check',
   description:
     'Star Trac builds gym treadmills, not home ones. The current FreeRunner, 8TRx, 6TR and 4TR, why most home buyers meet a used or remanufactured unit, and what one is worth.',
   crumbLabel: 'Star Trac Treadmills',

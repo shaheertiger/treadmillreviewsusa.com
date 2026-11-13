@@ -1,6 +1,6 @@
 export default {
   slug: 'life-fitness-run-cx-treadmill',
-  title: 'Run CX Treadmill Review (2026): Life Fitness Specs, Warranty and Price',
+  title: 'Life Fitness Run CX Treadmill Review (2026): Specs and Warranty',
   description:
     'The Life Fitness Run CX treadmill: a 22 x 60 in. FlexDeck, 3.0 HP continuous motor, 15% incline, 400 lb capacity and lifetime frame cover at about $4,800-$4,900. Who it suits.',
   crumbLabel: 'Life Fitness Run CX Treadmill',

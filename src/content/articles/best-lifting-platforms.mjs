@@ -1,6 +1,6 @@
 export default {
   slug: 'best-lifting-platforms',
-  title: 'Best Lifting Platforms (2026): Deadlift Platforms, Drop Pads and DIY',
+  title: 'Best Lifting Platforms (2026): Deadlift Platforms, Pads and DIY',
   description:
     'Five lifting platform picks checked against makers and reviews: two deadlift platforms, a full Olympic platform, drop pads and the stall-mat DIY route, plus upstairs advice.',
   crumbLabel: 'Best Lifting Platforms',

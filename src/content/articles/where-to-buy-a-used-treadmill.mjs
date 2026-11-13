@@ -1,6 +1,6 @@
 export default {
   slug: 'where-to-buy-a-used-treadmill',
-  title: 'Used Treadmill Near Me (2026): Where to Buy Used Exercise Equipment',
+  title: 'Used Treadmill Near Me (2026): Where to Buy Used Equipment',
   description:
     'Where to find a used treadmill near you: marketplaces, used fitness stores and gym liquidations, plus safe collection, moving, fair prices and scams to avoid.',
   crumbLabel: 'Where to Buy a Used Treadmill',

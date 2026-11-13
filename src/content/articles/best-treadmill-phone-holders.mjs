@@ -1,6 +1,6 @@
 export default {
   slug: 'best-treadmill-phone-holders',
-  title: 'Best Treadmill Phone Holders (2026): Clamp, Strap and Magnetic Mounts',
+  title: 'Best Treadmill Phone Holders (2026): Clamp, Strap and Magnetic',
   description:
     'Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to mount one so it stays steady and clear of the safety key.',
   crumbLabel: 'Best Treadmill Phone Holders',

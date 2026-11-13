@@ -1,6 +1,6 @@
 export default {
   slug: 'best-smart-treadmills',
-  title: 'Best Smart Treadmills (2026): Screens, Apps and What You Keep Paying',
+  title: 'Best Smart Treadmills (2026): Screens, Apps and Subscriptions',
   description:
     'Six smart treadmills across iFIT, Peloton, JRNY, Echelon and open apps, chosen from published specs and warranty terms. What each screen needs a membership for, and what it costs to own.',
   crumbLabel: 'Best Smart Treadmills',

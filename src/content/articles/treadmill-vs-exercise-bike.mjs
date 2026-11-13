@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-vs-exercise-bike',
-  title: 'Treadmill vs Exercise Bike (2026): Better for Weight Loss and Knees?',
+  title: 'Treadmill vs Exercise Bike: Better for Weight Loss and Knees?',
   description:
     'Treadmill or exercise bike? How they compare on calorie burn at the same effort, knee comfort, bone loading, space, noise and cost — with a clear, honest verdict.',
   crumbLabel: 'Treadmill vs Exercise Bike',

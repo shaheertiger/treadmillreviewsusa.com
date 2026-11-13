@@ -1,6 +1,6 @@
 export default {
   slug: 'peloton-tread',
-  title: 'Peloton Treadmill Buyer’s Guide (2026): Tread Flex, Vision and Tread+',
+  title: 'Peloton Treadmill (2026): Tread Flex, Vision and Tread+ Compared',
   description:
     'Peloton’s three new Treads checked against its own pages and independent coverage: delivered prices, All-Access, Just Run, the 2021 recalls, space needs and used buys.',
   crumbLabel: 'Peloton Tread',

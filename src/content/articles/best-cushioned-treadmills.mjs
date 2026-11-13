@@ -1,6 +1,6 @@
 export default {
   slug: 'best-cushioned-treadmills',
-  title: 'Best Cushioned Treadmills (2026): Low-Impact, Shock-Absorbing Decks',
+  title: 'Best Cushioned Treadmills (2026): Low-Impact, Shock-Absorbing',
   description:
     'The best cushioned treadmills for low-impact walking and running, each with a named, manufacturer-confirmed deck cushioning system — plus what cushioning can and cannot do for your joints.',
   crumbLabel: 'Best Cushioned Treadmills',

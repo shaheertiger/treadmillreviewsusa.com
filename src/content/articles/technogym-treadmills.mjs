@@ -4,7 +4,7 @@ const row = (...cells) => `              <tr>${cells.map((c) => `<td class="${TD
 
 export default {
   slug: 'technogym-treadmills',
-  title: 'Technogym Treadmill Buyer’s Guide (2026): Models, US Prices, Warranty',
+  title: 'Technogym Treadmill (2026): Models, US Prices and Warranty',
   description:
     'Every Technogym treadmill sold in the US, from the $5,390 MyRun to the $14,350 Run: specs cross-checked, the app, the two-year warranty and delivery.',
   crumbLabel: 'Technogym Treadmills',

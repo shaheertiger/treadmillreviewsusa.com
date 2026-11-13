@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-water-damage',
-  title: 'Can a Treadmill Be Fixed After Water Damage? (2026): Costs and Risks',
+  title: 'Can a Treadmill Be Fixed After Water Damage? Costs and Risks',
   description:
     'Often yes, if it was not powered while wet and is dried properly. What to do first, what water damages, flood vs spill vs sweat, estimated repair costs, insurance and warranty.',
   crumbLabel: 'Treadmill Water Damage',

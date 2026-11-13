@@ -1,6 +1,6 @@
 export default {
   slug: 'funmily-treadmills',
-  title: 'FUNMILY Treadmill (2026): Walking Pads, Desk Treadmill and Manuals',
+  title: 'FUNMILY Treadmill (2026): Walking Pads, Desk Model and Manuals',
   description:
     'Is a FUNMILY treadmill or walking pad worth buying? FUNMILY’s range checked on 5 November 2026, where its figures conflict, how to find the manual, and checked alternatives.',
   crumbLabel: 'FUNMILY Treadmills',

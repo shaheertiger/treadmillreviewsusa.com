@@ -1,6 +1,6 @@
 export default {
   slug: 'where-to-buy-a-treadmill-near-me',
-  title: 'Treadmill Near Me (2026): Where to Buy and How to Test One In Store',
+  title: 'Treadmill Near Me (2026): Where to Buy and Test One In Store',
   description:
     'Looking for treadmills for sale near you? The kinds of fitness equipment store, a ten-minute in-store test, what to ask the salesperson and how to negotiate.',
   crumbLabel: 'Treadmill Near Me',

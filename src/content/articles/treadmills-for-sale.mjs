@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmills-for-sale',
-  title: 'Treadmills for Sale (2026): Where to Buy, What to Pay, What to Avoid',
+  title: 'Treadmills for Sale (2026): Where to Buy and What to Pay',
   description:
     'Four separate markets sell treadmills, and they differ more in delivery, warranty and returns than in price. What each one actually costs you, and when the discounts are real.',
   crumbLabel: 'Treadmills for Sale',

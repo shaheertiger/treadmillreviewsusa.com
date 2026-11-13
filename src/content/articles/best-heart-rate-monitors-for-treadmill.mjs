@@ -1,6 +1,6 @@
 export default {
   slug: 'best-heart-rate-monitors-for-treadmill',
-  title: 'Best Heart Rate Monitors for Treadmill (2026): Straps and Arm Bands',
+  title: 'Best Heart Rate Monitors for Treadmill (2026): Straps, Arm Bands',
   description:
     'Seven chest straps and arm bands for treadmill training, picked from published specs and independent coverage: battery type, Bluetooth, ANT+ and 5 kHz, and what your console will read.',
   crumbLabel: 'Best Heart Rate Monitors for Treadmill',

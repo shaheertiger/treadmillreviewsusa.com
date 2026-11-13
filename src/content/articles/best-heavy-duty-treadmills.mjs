@@ -1,6 +1,6 @@
 export default {
   slug: 'best-heavy-duty-treadmills',
-  title: 'Best Heavy Duty Treadmills (2026): Built to Last, Not Just Labelled',
+  title: 'Best Heavy Duty Treadmills (2026): Built to Last, Not Labelled',
   description:
     'Five heavy duty treadmills checked against Amazon listings on 6 November 2026, and how to judge frame, motor, deck and weight rating when every listing says heavy duty.',
   crumbLabel: 'Best Heavy Duty Treadmills',

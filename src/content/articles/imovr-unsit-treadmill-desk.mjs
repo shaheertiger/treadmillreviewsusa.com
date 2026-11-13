@@ -1,6 +1,6 @@
 export default {
   slug: 'imovr-unsit-treadmill-desk',
-  title: 'Unsit Treadmill Desk Bundle Review (2026): iMovR Unsit With the Lander',
+  title: 'iMovR Unsit Treadmill Desk Review (2026): With the Lander Desk',
   description:
     'The iMovR Unsit treadmill desk bundle: the Unsit office treadmill (30 x 40 in. belt, 2 mph) with a Lander standing desk, what the set costs, the conflicting specs, delivery and returns.',
   crumbLabel: 'iMovR Unsit Treadmill Desk',

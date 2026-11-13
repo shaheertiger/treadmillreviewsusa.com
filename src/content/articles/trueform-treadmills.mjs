@@ -1,6 +1,6 @@
 export default {
   slug: 'trueform-treadmills',
-  title: 'TrueForm Treadmills (2026): Runner vs Trainer Curved Manual Treadmills',
+  title: 'TrueForm Treadmills (2026): Runner vs Trainer Curved Manual',
   description:
     'TrueForm’s Runner and Trainer curved manual treadmills compared: November 2026 prices, which figures the sources agree on, the warranty, lead times and the cheaper rivals.',
   crumbLabel: 'TrueForm Treadmills',

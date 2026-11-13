@@ -1,6 +1,6 @@
 export default {
   slug: 'life-fitness-club-series-plus-treadmill',
-  title: 'Life Fitness Club Series+ Treadmill (2026): SE4 vs SL Buyer’s Guide',
+  title: 'Life Fitness Club Series+ Treadmill (2026): SE4 vs SL Compared',
   description:
     'The Life Fitness Club Series+ treadmill, with the SE4 or SL console: confirmed specs, what each console costs, the 15-amp circuit, warranty, and how it differs from the Platinum Club Series.',
   crumbLabel: 'Life Fitness Club Series+ Treadmill',

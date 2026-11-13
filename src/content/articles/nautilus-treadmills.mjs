@@ -1,6 +1,6 @@
 export default {
   slug: 'nautilus-treadmills',
-  title: 'Nautilus Treadmills (2026): T614, T616, T618 and What Replaced Them',
+  title: 'Nautilus Treadmills (2026): T614, T616, T618 and Replacements',
   description:
     'Nautilus no longer sells treadmills. The T614, T616 and T618 figures, the 2022 T616/T618 recall with no remedy left, who owns the Nautilus name now, and the Bowflex and Schwinn machines to buy instead.',
   crumbLabel: 'Nautilus Treadmills',

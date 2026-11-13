@@ -1,6 +1,6 @@
 export default {
   slug: 'are-treadmills-hsa-fsa-eligible',
-  title: 'Are Treadmills HSA or FSA Eligible? (2026): The Medical Necessity Rule',
+  title: 'Are Treadmills HSA or FSA Eligible? (2026): The Medical Rule',
   description:
     'Usually not as general fitness gear, but possibly yes when bought to treat a diagnosed condition with a Letter of Medical Necessity. FSA vs HSA rules, records and risks.',
   crumbLabel: 'Are Treadmills HSA or FSA Eligible',

@@ -1,6 +1,6 @@
 export default {
   slug: 'curved-treadmill-guide',
-  title: 'Curved Treadmill Guide (2026): Benefits, Drawbacks and Curved vs Flat',
+  title: 'Curved Treadmill Guide: Benefits, Drawbacks, Curved vs Flat',
   description:
     'How a curved manual treadmill works, which benefits are real, the drawbacks of price, no incline and the learning curve, and who should and should not buy one.',
   crumbLabel: 'Curved Treadmill Guide',

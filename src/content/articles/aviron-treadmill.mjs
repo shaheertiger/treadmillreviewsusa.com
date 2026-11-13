@@ -1,6 +1,6 @@
 export default {
   slug: 'aviron-treadmill',
-  title: 'Aviron Treadmill Review (2026): Justice, Podium and Summit Compared',
+  title: 'Aviron Treadmill Review (2026): Justice, Podium and Summit',
   description:
     'Aviron’s three treadmills checked against its own pages and independent reviews: prices, membership, what works without it, the 20-year warranty’s conditions and recalls.',
   crumbLabel: 'Aviron Treadmill',

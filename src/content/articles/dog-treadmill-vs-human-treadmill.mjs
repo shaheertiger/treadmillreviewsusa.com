@@ -1,6 +1,6 @@
 export default {
   slug: 'dog-treadmill-vs-human-treadmill',
-  title: 'Dog Treadmill vs Human Treadmill (2026): What Differs, What Matters',
+  title: 'Dog Treadmill vs Human Treadmill: What Differs, What Matters',
   description:
     'Dog treadmill vs human treadmill: belt length against stride, side panels, front clearance, speed range, noise and controls, and when a human machine is a poor fit.',
   crumbLabel: 'Dog Treadmill vs Human Treadmill',

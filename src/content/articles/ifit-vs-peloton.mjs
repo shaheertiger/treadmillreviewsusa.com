@@ -1,6 +1,6 @@
 export default {
   slug: 'ifit-vs-peloton',
-  title: 'iFIT vs Peloton (2026): Which Connected Treadmill Ecosystem Fits You?',
+  title: 'iFIT vs Peloton (2026): Which Treadmill Ecosystem Fits You?',
   description:
     'iFIT vs Peloton for treadmills: how each works, hardware lock-in, auto-adjust trail runs vs studio classes, life without the subscription and who suits each.',
   crumbLabel: 'iFIT vs Peloton',
