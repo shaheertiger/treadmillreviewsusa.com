@@ -492,16 +492,7 @@ ${heroCollage(spec)}${spec.dataPending?.length ? DATA_PENDING_BANNER : ''}
         <p class="ed-lead">
           ${spec.lead}
         </p>
-${topPicksBox(spec)}${
-  spec.note
-    ? `
-        <aside class="ed-note not-prose">
-          <span class="ed-note-k">What we checked</span>
-          ${spec.note}
-        </aside>
-`
-    : ''
-}
+${topPicksBox(spec)}
         <nav class="ed-toc not-prose" aria-label="In this guide">
           <h2>In this guide</h2>
           <ol>
