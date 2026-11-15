@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill warm up', 'treadmill cool down', 'dynamic warm up', 'dizzy after treadmill', 'treadmill safety'],
   stickyCta: { text: 'See the Warm-Up', link: '#treadmill-warm-up' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to starting and finishing a session sensibly — it
-          is not medical advice or a coaching plan. If you have a heart, blood-pressure or balance
-          condition, take medication that affects heart rate or blood pressure, are pregnant, or
-          regularly feel faint during or after exercise, talk to a doctor before relying on
-          anything here. Chest pain, fainting, a racing or irregular heartbeat, or dizziness that
-          does not settle within a few minutes of sitting down are reasons to stop and seek
-          medical help, not to adjust your cool-down.
-          <strong class="text-gray-900">On the figures below:</strong> durations and speeds are
-          typical ranges, not prescriptions.`,
   lead: `A good treadmill warm-up takes five to ten minutes and simply builds from an easy walk to
           the effort of your main session, a little at a time. A good cool-down does the same in
           reverse. Neither needs to be elaborate, and the treadmill makes both easier than they are

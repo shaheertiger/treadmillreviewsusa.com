@@ -24,11 +24,6 @@ export default {
           price looks like, and the scams that follow this market around. It deliberately does not
           repeat the inspection — our used treadmill buying checklist covers that step by step, and
           you should run it on any machine before money changes hands.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Secondhand prices vary a great
-          deal by region, season, condition and how keen the seller is to clear the space. The
-          ratios on this page are typical ranges, consistent with our new vs used guide, not quotes.
-          Check local listings before treating any figure as a benchmark. This site is not
-          affiliated with any marketplace or dealer mentioned.`,
   sections: [
     {
       id: 'short-answer',

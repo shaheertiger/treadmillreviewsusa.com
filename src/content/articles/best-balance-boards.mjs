@@ -26,26 +26,6 @@ export default {
           balance board ends up under the bed. The five boards below cover all four designs with
           products you can buy on Amazon now, and the guide after them explains which suits a
           standing desk, which suits sport practice, and who should talk to a clinician first.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          boards, and no figure on this page is our own measurement. Each was confirmed on 19
-          October 2026 as listed on Amazon US, in most cases by the brand's own Amazon store, and
-          each figure was checked on that date against the maker's page or the Amazon listing plus
-          at least one independent source — a published review or a second retailer. A figure
-          appears in a card's specification line only where those sources agree; where they
-          conflicted — the Revbalance's width and weight, the Indo Board's current deck size, the
-          FluidStance Plane's weight rating and the StrongTek board's wood type — we left it out
-          and say so on the card. Yes4All and StrongTek sell mainly through Amazon and large
-          retailers and we found no in-depth independent review of either, so their figures are
-          the listings' own claims, repeated by other retailers. Prices are those we saw on that
-          date and change often. We earn a commission if you buy through the Amazon links on this
-          page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">This is not medical advice.</strong> We review equipment;
-          we are not giving medical, physiotherapy or rehabilitation advice, and we make no claim
-          that any board improves balance, prevents falls or injuries, or treats any condition.
-          Where a seller makes such claims, we present them as the seller's. A balance board is
-          designed to be unstable, so falling off is a real risk. If you have a balance problem,
-          dizziness, a history of falls, osteoporosis, a recent injury or surgery, or are pregnant,
-          talk to a doctor or physical therapist before using one.`,
   sections: [
     {
       id: 'quick-picks',

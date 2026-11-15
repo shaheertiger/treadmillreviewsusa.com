@@ -23,20 +23,6 @@ export default {
   ],
   tags: ['sunny health and fitness treadmill', 'sunny treadmill', 'sunny health treadmill', 'sunny health & fitness t4400 treadmill', 'sunny sf-t7603', 'is sunny health and fitness a good brand'],
   stickyCta: { text: 'See the Current Range', link: '#current-range' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read every treadmill, walking-pad and manual-treadmill listing in Sunny Health &amp;
-          Fitness’s US store (sunnyhealthfitness.com), including the price each showed that day, the specification
-          tables on the product pages, and the store’s warranty policy, warranty registration, refund policy and
-          about pages. We compared those with independent sources: retailer listings at Academy Sports, Klarna,
-          Staples, Kohl’s and Target; reviews and specification summaries from Garage Gym Reviews, Treadmill
-          Doctor, Torokhtiy and OCDevel’s walking-pad tracker; and the US Consumer Product Safety Commission’s
-          recall database. Amazon’s pages would not load for us that day; the two Amazon alternatives
-          added on 9 November 2026 carry the Amazon prices and figures checked on 6 November for our low-ceiling
-          and auto-incline treadmill guides.
-          Figures on the product cards are those on which Sunny and at least one independent source agree; where
-          they disagree, including where Sunny’s own pages disagree with each other, we say so and leave the figure
-          off the card. We have not tested a Sunny treadmill. Prices change often, so confirm them before you
-          order. As an Amazon Associate we earn from qualifying purchases.`,
   lead: `Type "treadmill" into Amazon with a budget under $500 and a Sunny Health &amp; Fitness machine is
           likely to appear on the first screen. Sunny is a real, long-established company with a large and
           fast-changing range, and its cheapest machines are genuinely cheap. It is also a brand whose model

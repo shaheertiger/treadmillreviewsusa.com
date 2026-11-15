@@ -19,21 +19,6 @@ export default {
   ],
   tags: ['best foot pod for treadmill', 'treadmill foot pod', 'foot pod for zwift', 'stryd treadmill', 'coros pod 2', 'treadmill pace sensor'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          sensors. On 15 October 2026 we checked each one against its maker's own store or product
-          page (Stryd, COROS, Garmin and North Pole Engineering), the maker's help documentation
-          where it exists, Zwift's "Compatible Running Hardware" support page, and at least one
-          independent review or retailer listing. A figure appears in a card's specification line
-          only where those sources agree; where they disagreed — battery hours on the COROS POD 2,
-          for example — we left the figure out and say so in the text. None of these figures are
-          our own measurements. Prices are those we saw on the makers' stores on 15 October 2026,
-          or on Amazon on 9 November 2026 for the Garmin HRM-Fit, which we checked against Garmin's
-          manual and independent reviews on that date, or on Amazon on 9 November 2026 for the Garmin
-          Running Dynamics Pod (checked against its listing, retailers and DC Rainmaker's coverage) and
-          the HRM 200 (figures as checked for our heart rate monitor guide), and change often, and compatibility lists change with firmware, so confirm the price and
-          that the sensor pairs with your exact watch or app before you order. We earn a commission
-          if you buy through the Amazon links on this page; it does not change which products we
-          list or what we say about them.`,
   lead: `A foot pod is the cheapest way to get honest treadmill pace into a watch or into Zwift,
           and it works on any treadmill, connected or not. The awkward part in 2026 is that the
           market has shrunk. Zwift's own pod, Garmin's long-running foot pod and the little Milestone

@@ -25,31 +25,6 @@ export default {
           glasses, resistance that starts genuinely easy, a weight rating with room to spare, and
           someone to put the thing together. The seven bikes below were chosen on those terms, and the
           guide after them explains how to judge each feature for yourself.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
-          2026 as currently sold on its maker's own US store (Schwinn, Horizon, SOLE, Marcy and Sunny
-          Health &amp; Fitness) or, for the DeskCycle 2, through an independent review that links its
-          listings, and its figures were checked on that date against at least one independent source:
-          hands-on reviews from Garage Gym Reviews, OutdoorGearLab and BarBend, or a second retailer
-          (Dick's Sporting Goods for the Horizon 5.0U). Our checking tools could not load Amazon's own
-          pages on 19 October. Independent reviewers have linked the Schwinn 290, Marcy ME-709 and
-          DeskCycle 2 to Amazon listings, and Schwinn, Horizon and Sunny sell through Amazon; SOLE sells the LCR,
-          which was on this list, direct rather than on Amazon, so on 9 November 2026 we replaced it with the
-          3G Cardio Elite RB X, checked that day against 3G Cardio's store and its Amazon listing. Confirm the exact
-          model and seller on any listing before you order. A figure appears in a product's
-          specification line only where sources agree; where they conflicted we left it off the card
-          and say so in the text. Every brand was searched in the US Consumer Product Safety
-          Commission's recall database on 19 October 2026. Prices are those we saw on that date and
-          change often. We earn a commission if you buy through the Amazon links on this page; it does
-          not change which products we list or what we say about them.
-          <br><br>
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment; we are not giving medical, physiotherapy or rehabilitation advice, and nothing here
-          says a bike will treat or prevent any condition. If you have a heart condition or take
-          medication that affects your heart rate or blood pressure, have balance problems, dizziness,
-          osteoporosis, diabetes with foot or nerve problems, have had a joint replacement or other
-          surgery, or have an implanted medical device, ask your doctor or physiotherapist whether
-          cycling suits you and how hard to work before you buy or start.`,
   sections: [
     {
       id: 'quick-picks',

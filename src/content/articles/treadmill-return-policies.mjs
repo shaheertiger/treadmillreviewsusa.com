@@ -23,12 +23,6 @@ export default {
           250 lb freight item are rarely free. The cost of changing your mind is set by four things —
           the window, any restocking fee, who pays for collection, and the condition and packaging
           rules — and all four are in the policy before you buy.`,
-  note: `<strong class="text-gray-900">On the figures below, and what this page is not.</strong> Fees
-          and windows on this page are typical ranges and round-number illustrations, not the terms
-          of any particular seller. Policies change often and vary by product, channel and
-          promotion. This is a buyer's guide, not legal advice: consumer protection rules differ by
-          state, and for a dispute that matters, read the seller's written terms and your card
-          agreement, or ask a qualified adviser.`,
   sections: [
     {
       id: 'short-answer',

@@ -19,23 +19,6 @@ export default {
   ],
   tags: ['woodway treadmill', 'woodway treadmills', 'woodway 4front', 'woodway curve', 'woodway curve ltg', 'used woodway treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked woodway.com (its treadmill index, the 4Front, Vive,
-          Mercury/Path, Pro, Ridgerunner, Curve and Curve LTG product pages, its FAQ and its
-          "Woodway Difference" page), Woodway's published spec sheets for eleven models and its
-          4Front owner's manual (version dated 18 September 2025), and every listing and price in
-          Woodway's online shop. We cross-checked figures against independent coverage from
-          TreadmillReviews.com, Garage Gym Reviews, BarBend, Treadmill Review Guru and Front Desk
-          Review, Rogue's Curve LTG listing, and remanufactured-unit listings at Fitness Superstore.
-          We searched the US Consumer Product Safety Commission's recall listings and its recall
-          database, and found no Woodway recall. Where Woodway's own documents disagree with each
-          other, or with independent sources, we say so rather than choose a number. We have not
-          tested any Woodway treadmill. Prices are what Woodway's shop and the named retailers
-          showed on the day we checked (20 Oct 2026); they change, and most Woodway models are sold
-          by quote. As an Amazon Associate we earn from qualifying purchases; Woodway treadmills are
-          sold by Woodway and its distributors rather than on Amazon, so the two cards show the
-          nearest alternatives Amazon does sell, with the figures checked for our cushioned and
-          curved treadmill guides, while the text stays about Woodway's own machines.`,
   lead: `Most people who search for a Woodway treadmill have run on one somewhere else: a
           university weight room, a physiotherapy clinic, a professional team's training centre, or
           the curved manual treadmill in the corner of a gym. The ride is distinctive, the price is

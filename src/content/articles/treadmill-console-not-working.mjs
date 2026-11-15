@@ -24,12 +24,6 @@ export default {
           of a chain — wall outlet, cord, power switch, safety key, controller board, a cable up
           the upright, and finally the display and keypad — and the fault is somewhere along that
           chain. Finding which link takes a few minutes and, in most cases, no tools.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before removing the motor hood, opening the console or disconnecting any cable.
-          Controller boards can hold a charge after disconnection, so do not probe the board. If
-          you smell burning or hot plastic, see scorch marks, or the belt moves when the console
-          shows nothing, stop using the machine and contact the manufacturer — a belt you cannot
-          control from the console is not a display problem.`,
   sections: [
     {
       id: 'short-answer',

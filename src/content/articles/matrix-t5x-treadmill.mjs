@@ -27,18 +27,6 @@ export default {
           agree. We could not find it on Matrix's US home store, and Matrix's commercial catalogue
           does not list it by that name today. This review works through what the sources do agree on,
           what they do not, what remanufactured units cost, and what to check before you pay.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked Matrix's owner's manual for the MX-T5x (a 2006 print file hosted
-          on a public manual archive), Matrix's US home store and its search (no T5x listed), two US
-          remanufacturer and reseller listings and one reseller's Matrix comparison chart, a UK
-          retailer listing, and the US Consumer Product Safety Commission's recall database. The
-          figures on this page are the ones on which Matrix's manual and at least one independent
-          listing agree. Running width, maximum user weight, machine weight and, on one listing, top
-          speed conflict across sources — most likely because the name covers more than one
-          generation — so we give them as conflicts rather than choose. We could not confirm that the
-          T5x is currently sold new by Matrix in the US. We have not tested a T5x. Prices are
-          remanufactured listings on the day, not new prices. As an Amazon Associate we earn from
-          qualifying purchases.`,
   products: [
     {
       id: 'matrix-t5x',

@@ -37,18 +37,6 @@ export default {
           WalkingPad, Amazon and an independent hands-on review agree on, where they disagree and
           why, what it costs and on what terms on 20 October 2026, how it compares with the A1 Pro
           and the UREVO pads we cover, and who should buy something else.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked both Z1 listings on WalkingPad’s US store (the standard Z1 and
-          the Z1 White), their specification tables, and WalkingPad’s return, refund and warranty
-          terms; the Z1’s Amazon US listing (ASIN B0H2YYZTL8, model number WP400F4), its seller,
-          price, specifications and return terms; and Living.fit’s listing for the Z1 White. We
-          cross-checked the figures against Tom’s Guide’s hands-on review, published in June 2025,
-          and its nine-month follow-up from March 2026, and against an independent specification
-          tracker. We searched the CPSC recall database for KingSmith and WalkingPad. The card below
-          prints only figures on which WalkingPad and at least one independent source agree; the
-          motor rating, noise level and exact top speed conflict, and the page says so rather than
-          choosing. We have not tested the Z1. Prices are those shown on the day we checked and
-          change often.`,
   products: [
     {
       id: 'walkingpad-z1',

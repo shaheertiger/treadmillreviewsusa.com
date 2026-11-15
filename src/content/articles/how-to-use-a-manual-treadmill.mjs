@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['how to use a manual treadmill', 'manual treadmill technique', 'curved treadmill posture', 'manual treadmill resistance', 'non-motorized treadmill'],
   stickyCta: { text: 'See the Step-by-Step', link: '#getting-on' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a practical guide to operating a type of equipment — it is not medical,
-          physiotherapy or coaching advice, and we are not qualified to give any of those. If you
-          have a heart, joint or balance condition, are pregnant, are returning from an injury or
-          have been inactive for a long time, talk to a doctor or physical therapist before starting
-          on any treadmill, and a manual one in particular, because it asks more of your legs and
-          balance at low speeds than a motorised belt does. Stop and seek advice for chest pain,
-          dizziness, unusual breathlessness or any sharp pain. <strong class="text-gray-900">On the
-          figures below:</strong> session lengths and settings are illustrations rather than
-          prescriptions, and your machine's manual is the authority on its own controls, limits and
-          safety features.`,
   lead: `Using a manual treadmill is mostly about one idea: you are the motor. On a flat folding
           walker your feet push the belt back down a fixed slope; on a curved trainer your position
           on the curve decides how fast the belt runs. Get that idea into your body and everything

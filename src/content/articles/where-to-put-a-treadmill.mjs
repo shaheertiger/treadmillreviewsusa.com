@@ -26,13 +26,6 @@ export default {
           bedroom machine has become a clothes rack because nobody wants to run where they sleep.
           This guide works through the measurements first and then each room in turn, with the
           honest trade-offs of each.`,
-  note: `<strong class="text-gray-900">On floors and structures.</strong> The guidance here about
-          upstairs floors is general and applies to a typical home treadmill on a modern
-          residential floor. We are not structural engineers. If your house is old, the floor is
-          unusual, the machine is a heavy commercial model, or you have any doubt at all, ask a
-          qualified professional to look before the treadmill goes up the stairs. The manual for
-          your model is the authority on its clearance requirements, outlet type and the floor it
-          may be used on.`,
   sections: [
     {
       id: 'short-answer',

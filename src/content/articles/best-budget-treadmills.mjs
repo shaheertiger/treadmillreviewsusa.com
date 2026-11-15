@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['best budget treadmill', 'best cheap treadmill', 'best affordable treadmill', 'cheap treadmill', 'budget treadmill', 'horizon t202', 'bowflex t6'],
   stickyCta: { text: 'See the Best Pick for Your Budget', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Each was confirmed on 15 October 2026 as on sale, and its specifications were
-          checked on that date against the maker's own product page (Horizon Fitness and
-          SOLE) and at least one source that does not make it: a major retailer's
-          listing, an independent review or a walking pad tracker that reads owner's manuals. A
-          figure appears on a product card only where those sources agree; where they disagreed —
-          most often on motor horsepower, belt width and unit weight — we left the figure out and
-          say so in the text. None of these are our own measurements. Prices are those we saw on
-          maker and retailer sites on 15 October 2026; at this end of the market they move weekly
-          and "compare at" prices are often inflated, so confirm the price, the specification and
-          the warranty for the exact unit before you order. The MERACH, Goplus and NordicTrack cards replace UREVO and
-          BowFlex machines that Amazon US does not sell; their figures are those checked against the
-          maker and the Amazon listing for our walking-pad, under-$500 and auto-incline guides on 5
-          and 6 November 2026. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   lead: `There is no single best budget treadmill, because a budget is not one number. Somebody
           with $300 and somebody with $1,100 are both shopping cheap, and the right machine for one
           is useless to the other. So this page does not rank six treadmills against each other.

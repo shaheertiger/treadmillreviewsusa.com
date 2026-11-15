@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['is horizon a good treadmill brand', 'horizon fitness review', 'who makes horizon treadmills', 'horizon treadmill recall', 'horizon treadmill warranty'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we did not.</strong> We have not
-          tested Horizon treadmills. This page is built from Horizon's published specifications and
-          warranty terms as summarised in our
-          <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">Horizon roundup</a>
-          (checked on 13 October 2026), from the US Consumer Product Safety Commission's recall notice
-          and its August 2026 civil penalty announcement on cpsc.gov, and from Johnson Health Tech's own
-          corporate site cross-checked against independent coverage. Warranty terms, stock and prices
-          change; confirm them for the exact unit before you order. Where a figure is not published by
-          Horizon, we say so rather than fill the gap.`,
   lead: `"Is Horizon a good brand?" usually means one of three things: is it well made, will it
           be looked after if something goes wrong, and is it a sensible way to avoid paying a monthly
           fee for a treadmill. The short version is yes on the third, a qualified yes on the first two,

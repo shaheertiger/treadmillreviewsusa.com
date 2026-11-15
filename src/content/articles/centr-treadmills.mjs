@@ -29,20 +29,6 @@ export default {
     'hyrox treadmill',
   ],
   stickyCta: { text: 'See the Treadmills', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read Centr's US store, including its full product catalogue and the product and
-          specification pages for the Centr Runr, the Centr Runr-S and the Official HYROX Perform Tread (the
-          Centr x HYROX Perform Tread). We cross-checked them against Perform Better's US listing for the
-          Perform Tread, Costco's US listing for the Centr Runr Folding Tool-less Assembly Treadmill and
-          Garage Gym Reviews' Runr-S and Perform Tread coverage (both seen only in search results; Costco
-          refused our request and Garage Gym Reviews' pages would not load), other retailer listings in
-          search results, trade-press reports of Centr's ownership and its HYROX partnership, and the US
-          Consumer Product Safety Commission's recall database. Figures we give for Centr's machines are
-          those on which Centr and at least one other source agree; conflicts are set out in the text. Centr's
-          treadmills are not sold on Amazon, so the product cards show the closest Amazon alternatives, and
-          their figures are the ones checked for our curved, budget and NordicTrack treadmill guides. Prices are Centr's own on the day unless stated, and change often. We have not tested any
-          Centr treadmill and have no relationship with Centr or HYROX. As an Amazon Associate we earn from
-          qualifying purchases; that does not change what we say.`,
   lead: `Centr is better known as an app than as an equipment brand: Chris Hemsworth launched it in 2019 as a
           workout and nutrition subscription. Since a 2022 deal that put Centr and Inspire Fitness, a Southern
           California equipment maker, under the same owner, it has sold home gyms, racks, weights and cardio

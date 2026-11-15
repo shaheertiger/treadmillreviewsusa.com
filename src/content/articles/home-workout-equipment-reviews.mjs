@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['home workout equipment reviews', 'exercise equipment reviews', 'home gym equipment', 'fitness gym equipment types', 'how to read exercise equipment reviews', 'best home gym equipment', 'home gym buying guide'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          products. Each was confirmed on 16 October 2026 as currently sold on its maker's own store
-          (Sole, Schwinn, Concept2, PowerBlock and REP Fitness), and its figures were checked on that
-          date against the maker's product page and at least one independent source — published
-          hands-on reviews and, for the dumbbells, a second retailer. The PowerBlock card now shows the complete 90 lb set Amazon sells, whose
-          figures are those checked for our adjustable dumbbell guide. A figure appears in a
-          product's specification line only where those sources agree; where they conflicted — on
-          unit weights, dimensions after a model refresh, adjustment counts and some warranty terms
-          — we left the figure out and say so in the text. None of these are our own measurements.
-          Prices are those we saw on 16 October 2026 and change often, sometimes weekly; Amazon
-          availability and sellers vary, so confirm the price, the seller and the specification
-          against the exact listing before you order. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them. <strong class="text-gray-900">What this page is, and is not.</strong> This site
-          reviews equipment. It does not give medical, physiotherapy or coaching advice, and nothing
-          here is a training programme. If you have a heart, joint, back or balance condition, are
-          returning from injury, or are unsure whether a type of exercise is right for you, talk to
-          a doctor or another qualified professional before you start.`,
   lead: `Most "home workout equipment reviews" are lists of things to buy with a star rating attached
           and no way to tell what, if anything, was checked. This page takes the opposite approach.
           It names one product in each of the seven categories most home gyms are built from, says

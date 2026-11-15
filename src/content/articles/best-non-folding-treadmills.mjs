@@ -19,23 +19,6 @@ export default {
   ],
   tags: ['best non folding treadmill', 'non folding treadmill', 'best fixed deck treadmill', 'non-folding treadmill for home', 'spirit xt685', 'life fitness run cx', 'nordictrack x16'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed on 15 October 2026 as on sale, and its specifications were
-          checked on that date against the maker's own product page (Spirit Fitness, NordicTrack and
-          Life Fitness) and at least one source that does not make it: a major US retailer's listing
-          and, where one exists, an independent review. For each machine we also confirmed from the
-          maker's own specification or product description that it does not fold, except the
-          FreeMotion i11.9, which stands in for the X16 and whose fold we could not confirm. The
-          Matrix T5x and FreeMotion cards carry the figures checked for our Cybex and incline trainer
-          guides in October and November 2026. A figure appears
-          on a product card only where the maker and an independent source agree; where they
-          disagreed, or where only the maker gave a figure, we left it out or say so in the text.
-          None of these are our own measurements. Prices are those we saw on maker and retailer
-          sites on 15 October 2026 and change often; the Sole TT8's figures and price are those checked
-          for our long-distance running guide on 6 November 2026, so confirm the price, the specification and the
-          warranty for the exact unit before you order. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them.`,
   lead: `Most home treadmills fold, and most of the people who buy them never fold them again
           after the first week. If yours is going into a spare room, a basement or a garage where
           it will stay, a non-folding treadmill is worth a serious look. A frame without a hinge

@@ -32,23 +32,6 @@ export default {
           and that is who this page is written for. It sets out what the Treadmill 10 actually was, using
           figures confirmed by Bowflex and independent reviews; what its warranty said and why that
           matters after the 2024 change of ownership; and whether a used one beats a new T9 or T16.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked Bowflex’s US store (its full product catalogue, its treadmill page,
-          its site search and the old Treadmill 10 address), Bowflex’s Canadian store, where the
-          Treadmill 10 (SKU HTM1480-OS) and Treadmill 22 (HTM1475-OS) still have product pages marked
-          “Discontinued” with their specification and warranty tables, and Bowflex’s combined
-          Treadmill 10 / Treadmill 25 owner’s manual (Nautilus, Inc., copyright 2020). We cross-checked
-          those against three independent reviews: Treadmill Review Guru (July 2024), BarBend (updated
-          July 2024) and Tom’s Guide (February 2025), plus Tom’s Guide’s T16 review (December 2025), which
-          describes the Treadmill 10 as discontinued. The deck, speed, incline and decline range, user
-          weight, machine weight, dimensions and screen agree across Bowflex and at least two reviews.
-          Bowflex never published a motor rating, so we give none. The motor warranty, the JRNY trial
-          length and the cushioning are reported differently by different sources, and the page says so.
-          Current Bowflex prices are those on bowflex.com on 20 October 2026, during a sale Bowflex says
-          ends on 25 October. We searched the CPSC recall database for Bowflex and Nautilus on the same
-          day. We have not tested the Treadmill 10, and none of these figures are our own measurements.
-          We earn a commission if you buy through the Amazon link on this page; it does not change what
-          we say about the machine.`,
   products: [
     {
       id: "bowflex-t16",

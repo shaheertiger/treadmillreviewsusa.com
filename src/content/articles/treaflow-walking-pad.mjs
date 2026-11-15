@@ -32,16 +32,6 @@ export default {
           core figures. This review sets out which numbers can be confirmed, which conflict, what
           owners and independent reviewers report in more than one place, and who should and should
           not buy one.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the Treaflow 3100W listing data on Amazon (brand, model number,
-          dimensions, weight, warranty and current sellers), the brand’s listings for its sibling
-          3120 and 3006 models, and the brand website as indexed, then cross-checked the figures
-          against two independent write-ups of the 3100W and a published user manual. The card below
-          gives only the figures on which the brand listing and at least one independent source
-          agree; where sources conflict — minimum speed, a higher top speed on some listings, and
-          the warranty length — the page says so rather than choosing. We also searched the CPSC
-          recall database for the brand. We have not tested the 3100W. Prices are those shown on
-          the day we checked and change often.`,
   products: [
     {
       id: 'treaflow-3100w',

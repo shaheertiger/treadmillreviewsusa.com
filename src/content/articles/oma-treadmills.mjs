@@ -25,20 +25,6 @@ export default {
     'oma folding treadmill',
   ],
   stickyCta: { text: 'See the Alternatives', link: '#picks' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong>
-          On 5 November 2026 we searched for OMA treadmills by brand and model number, looked for an OMA
-          website serving the US (we found none), and read what we could: third-party copies of OMA’s own
-          manuals for the 1012EB/7200EB and the 7200EA, the US equipment-authorisation filing for the
-          OMA-7200EA, a US liquidation auction listing of a returned OMA treadmill, marketplace copies of OMA
-          listings, and Reviewed’s coverage of the OMA 1012EB. Amazon’s and Walmart’s pages returned errors or
-          bot checks that day, so we could not confirm which OMA listings were live on Amazon or what they
-          cost; on 9 November 2026 Amazon showed the OMA listing now on the card, with its price. OMA figures on this page are OMA’s own published claims as
-          those sources recorded them; where the manual and listings disagree, we say so and leave the figure
-          off the card. We found no source linking OMA to the Caroma name. We searched the CPSC recall database
-          for OMA and Caroma and found no treadmill recall. The three alternatives use figures and prices from
-          Sunny Health &amp; Fitness’s and XTERRA’s own US stores, checked on the same day for our guides to
-          those brands. We have not tested any of these machines. Prices change often. We earn a commission if
-          you buy through the Amazon links on this page; it does not change what we say.`,
   lead: `If you have found an OMA treadmill on Amazon at a good price and want to know whether the brand
           is real, the short answer is yes: OMA treadmills are certified for sale and sold in the US, and the
           7200EB is a conventional folding treadmill with figures that look reasonable for its price. The

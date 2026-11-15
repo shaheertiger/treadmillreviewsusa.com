@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['is running on a treadmill bad for you', 'is treadmill running bad for you', 'treadmill running risks', 'treadmill running myths', 'treadmill injuries'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a plain-English guide to the practical risks of running on one — it is not
-          medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. Whether running is right for you depends on your health, history and current
-          fitness; if you have a heart, lung, joint or balance condition, are pregnant, are
-          returning from injury or illness, or have any concern about exercise, talk to a doctor
-          or physical therapist before you start, and stop and get checked if something hurts or
-          feels wrong. <strong class="text-gray-900">On the claims below:</strong> where something
-          is a convention or rule of thumb we say so, and we do not quote research figures we
-          cannot stand behind.`,
   lead: `Running on a treadmill is not bad for you in any general sense. For a healthy adult it is
           one of the most controlled ways to run there is: no kerbs, no traffic, no ice, no
           potholes, a surface that is the same every step and a pace you choose to the tenth of a

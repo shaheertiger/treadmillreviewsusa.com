@@ -21,10 +21,6 @@ export default {
   lead: `The honest answer is that mileage matters less than maintenance. Two identical machines
           with the same hours on them can be five years apart in belt condition, and the variable
           is whether anyone ever lubricated the deck underneath it.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Lifespans and prices are
-          typical ranges drawn from manufacturer guidance and common parts pricing rather than
-          measured data from a service network. Belt sizes and part numbers are model-specific, so
-          confirm against your exact machine and model year before ordering anything.`,
   sections: [
     {
       id: 'typical-lifespan',

@@ -27,20 +27,6 @@ export default {
           some are simply a better bench. This guide sets out five that were on sale when we
           checked, explains how band and plate resistance feel different through the rep, and
           covers the comfort and space questions that decide whether a machine gets used.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. On 19 October 2026 we checked each one against its maker's product page and,
-          where one existed, an independent source: a published hands-on review, a second retailer
-          or the Amazon listing. A figure appears in a specification line only where those sources
-          agreed or, where the maker was the only source, it is labelled as the maker's figure in
-          the text. Amazon availability was confirmed through Amazon's own search results for the
-          Titan and BootySprout machines; Amazon pages themselves would not load for us, so check
-          the seller and price on the listing before you order. The RitFit, Bells of Steel and
-          Nautilus products are sold through their makers or dealers, and we could not confirm an
-          Amazon listing for them; on 9 November 2026 we replaced the RitFit PHM02 card with the
-          BalanceFrom hip thrust machine, checked against BalanceFrom's parent's store, Best Buy and
-          Walmart listings and its Amazon listing that day. The RitFit is still discussed in the text. Prices are those we saw on 19 October 2026 and change often. We
-          earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

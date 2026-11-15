@@ -23,12 +23,6 @@ export default {
           more for weight loss, or which one is kinder to sore knees. The honest answers are less
           dramatic than most comparisons suggest, and the deciding factor is often something
           practical — space, noise, or which one you will actually get on four times a week.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment. This is a comparison of two machines, not medical, physiotherapy or nutrition
-          advice, and we are not qualified to give any of those. If you have knee, hip or back pain, a
-          heart condition, take medication that affects heart rate, or are returning from injury or
-          surgery, ask a doctor or physiotherapist which kind of exercise suits you. Calorie figures
-          below are described in general terms because they vary widely between people.`,
   sections: [
     {
       id: 'verdict',

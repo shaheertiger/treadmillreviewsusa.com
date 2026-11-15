@@ -18,12 +18,6 @@ export default {
   ],
   tags: ['treadmill workouts', 'treadmill training', 'treadmill interval training', 'treadmill running plan', 'cardio workouts'],
   stickyCta: { text: 'See the Four Session Types', link: '#four-types' },
-  note: `<strong class="text-gray-900">A note on what this is.</strong> We review treadmills; we
-          are not clinicians, coaches or dietitians. This is a guide to structuring training on a
-          machine, not personalised advice. If you have a heart condition, are pregnant, are
-          recovering from injury or surgery, or have been inactive for a long time, speak to your
-          doctor before starting. Stop and seek advice for chest pain, unusual breathlessness,
-          dizziness or an irregular heartbeat.`,
   lead: `A treadmill can do exactly four useful things: let you go easy for a long time, go hard
           for a short time, go uphill, or go far. Almost every workout ever written is a
           combination of those four, and almost every failed treadmill habit is a failure to

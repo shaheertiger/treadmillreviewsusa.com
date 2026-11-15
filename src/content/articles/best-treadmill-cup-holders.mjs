@@ -34,16 +34,6 @@ export default {
           guide lists five whose sizes are stated on their listings, and spends as much time on
           where to put a drink as on what to put it in, because on a treadmill that is what decides
           whether a spill is a nuisance or a repair bill.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          holders or trays. On 6 November 2026 we looked each one up on Amazon US and recorded the
-          price shown and what the listing says about bar size, cup or bottle size and mounting.
-          Every figure on a card comes from that listing; where a listing gives no figure, or gives
-          figures that do not add up, we leave it out and say so. This is a category made up mostly
-          of small accessory sellers rather than established brands, and several of the products
-          here are sold for bikes, strollers or wheelchairs rather than treadmills. Measure your bar
-          and your drink before ordering. Prices change often. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or what
-          we say about them.`,
   sections: [
     {
       id: 'quick-picks',

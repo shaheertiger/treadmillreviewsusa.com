@@ -25,11 +25,6 @@ export default {
           poorly suspended one — but it matters less than the brochures imply, it matters in
           different ways for walking and running, and past a certain point more of it makes a
           treadmill worse rather than better.`,
-  note: `<strong class="text-gray-900">Scope.</strong> This is an equipment explainer, not medical
-          advice. Cushioning affects comfort and how a surface feels; it is not a treatment for
-          joint pain or injury. If you have a knee, hip, back or foot condition, a physician or
-          physical therapist who knows your history is the right person to ask what kind of
-          exercise and surface suits you.`,
   sections: [
     {
       id: 'what-cushioning-is',

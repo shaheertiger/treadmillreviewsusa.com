@@ -33,21 +33,6 @@ export default {
           motor rating, and what it does publish is a $2,100 reference price that it does not sell at.
           This page reads both properly, and ends with a dated look at what a good sale price for the
           7.0 AT looks like.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read Horizon’s US product page for the 7.0 AT (SKU HTM1457-01), including
-          its full specification table, warranty, delivery and guarantee terms, and Horizon’s help-centre
-          articles on its warranties, programs and electrical requirements. We cross-checked the figures
-          against three independent reviews of the current version, updated in November 2024, December
-          2024 and April 2026. Horizon and those reviews agree on the 20 x 60 in. running area, 0.5-12 mph,
-          0-15% incline, 325 lb maximum user weight, 76 x 35 x 67 in. assembled size, 7.25 in. LCD with
-          four LED windows, eight programs and the lifetime frame and motor, 3-year parts and 1-year
-          labour warranty; two of them also give the 277 lb weight and the 44 in. folded length. Horizon
-          does not publish a motor rating; the reviews quote 3.0 HP or 3.0 CHP, and one says it inferred
-          the figure from earlier versions, so we leave it out. We searched cpsc.gov and found no recall
-          of the 7.0 AT. We have not tested it, and none of these figures are our own measurements. Prices
-          are those shown on horizonfitness.com on 14 October 2026 and change often. We earn a commission
-          if you buy through the Amazon link on this page; it does not change what we say about the
-          machine.`,
   products: [
     {
       id: 'horizon-7-0-at',

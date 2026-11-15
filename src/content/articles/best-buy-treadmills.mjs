@@ -24,11 +24,6 @@ export default {
           weeks. It covers what a general electronics retailer is good and bad at when it sells
           fitness equipment, how to judge an open-box listing, what to check on delivery and
           returns, and how the result compares with buying from a specialist.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Best Buy. Product range, delivery and installation services, return
-          windows, restocking fees and membership benefits change over time and can differ by
-          product, region and membership level. Where this page describes how things typically
-          work, check the current policy on the product page or with the store before you buy.`,
   sections: [
     {
       id: 'short-answer',

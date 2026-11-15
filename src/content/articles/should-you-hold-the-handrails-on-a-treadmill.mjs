@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['should you hold the handrails on a treadmill', 'holding onto treadmill calories', 'treadmill handrails', 'treadmill posture', 'treadmill balance'],
   stickyCta: { text: 'How to Let Go Safely', link: '#how-to-stop' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is general guidance on using the machine — it is not medical, physiotherapy or
-          coaching advice, and we are not qualified to give any of those. If you have a balance,
-          heart, joint, neurological or other condition, are recovering from an injury or surgery,
-          take medication that affects balance or blood pressure, or have ever felt dizzy or
-          unsteady on a treadmill, talk to a doctor or physical therapist about how you should use
-          one, and follow their advice over anything here. <strong class="text-gray-900">On the
-          effects described below:</strong> we explain the direction of each effect (less work, a
-          higher console estimate) rather than putting a number on it, because the size depends on
-          how hard you hold, how you lean and the speed and grade, and nobody can measure that from
-          a console.`,
   lead: `The handrails on a treadmill are there for a reason, and the reason is safety: getting on,
           getting off, steadying yourself while the belt changes speed, and giving support to people
           who need it. They are not there to be held for the whole of a workout by someone who could

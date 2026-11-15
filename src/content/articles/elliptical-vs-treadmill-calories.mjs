@@ -19,19 +19,6 @@ export default {
   ],
   tags: ['what burns more calories elliptical or treadmill', 'elliptical vs treadmill calories', 'elliptical or treadmill for weight loss', 'elliptical calories per hour', 'treadmill vs elliptical calorie burn'],
   stickyCta: { text: 'See the Calorie Tables', link: '#calorie-tables' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
-          equipment. This is a comparison of estimated energy cost on two machines — it is not
-          medical, nutrition or coaching advice, and we are not qualified to give any of those. If
-          you have a heart, lung, metabolic or joint condition, take medication that affects heart
-          rate, are pregnant, or have a history of disordered eating, talk to a doctor or a
-          registered dietitian before using calorie figures to plan exercise or eating.
-          <strong class="text-gray-900">On the figures below:</strong> MET values were checked on
-          18 October 2026 against the 2024 Adult Compendium of Physical Activities (Herrmann and
-          colleagues, <em>Journal of Sport and Health Science</em>, 2024, with the full lists at
-          pacompendium.com) and its published tracking guide. Calorie figures are our arithmetic
-          from those values — calories ≈ MET × body weight in kg × hours — rounded to the nearest
-          5. They are estimates for an average adult, not measurements, and real individuals can
-          differ from them meaningfully.`,
   lead: `"Which burns more" sounds like a question about the machines, but the machines barely
           matter. What decides the calories is how hard you work and for how long, multiplied by how
           much you weigh. The treadmill and the elliptical differ in how easy they make it to work

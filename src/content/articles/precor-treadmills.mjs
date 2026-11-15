@@ -31,24 +31,6 @@ export default {
     'precor treadmill warranty',
   ],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked Precor's US treadmill pages and the North American product
-          brochures for the TRM 800, 700, 600 and 500 lines; Precor's US warranty page, its 2026
-          warranty summary and its limited warranty for commercial cardio equipment sold into a
-          home; the full product list of the Precor At Home store; Peloton's announcement that it had
-          completed the purchase of Precor, its fiscal 2026 results release of 6 August 2026, and
-          trade coverage of the 2025 Commercial Business Unit and the 2026 Peloton Commercial
-          Series; listings from a US remanufacturer, a refurbished-equipment dealer's guide and an
-          independent review site; Matrix's US home store; and the US Consumer Product Safety
-          Commission's recall database. Figures on this page are the ones on which Precor and at
-          least one independent source agree; where they do not, we say so. Used prices are the
-          listings we saw on the day we checked (20 Oct 2026), not market data, and they change. We
-          have not tested any Precor treadmill. As an Amazon Associate we earn from qualifying
-          purchases; there are no product links on this page, and nothing here is sponsored.
-          <strong class="text-gray-900">This is not medical advice.</strong> Where we mention
-          deck cushioning we are repeating the maker's description, not claiming any injury or
-          joint benefit; if you have a health condition, ask a doctor before starting a running
-          programme.`,
   lead: `If you have searched for a Precor treadmill, you have probably run on one — in a hotel
           gym, a university rec centre or a health club — and wondered whether you could have the same
           machine at home. You can, but not the way you buy most treadmills. Precor, owned by Peloton

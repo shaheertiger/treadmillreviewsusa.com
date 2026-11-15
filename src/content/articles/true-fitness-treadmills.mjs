@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['true treadmill', 'true fitness treadmill', 'true treadmills', 'true performance 8000 treadmill', 'true z500 treadmill'],
   stickyCta: { text: 'See the Current Range', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked TRUE Fitness's commercial site (its Our Story page, cardio series
-          pages, the Apex and Stryker Slat treadmill pages and its FAQ) and its home store at
-          shop.truefitness.com (the treadmill collection, the Z500, Performance 1000, 3000 and 8000
-          product pages, its warranty, FAQ and shipping pages and the 2026 Z500 spec sheet). We
-          cross-checked the home models against The Fitness Outlet's listings, Abt's listing and the
-          2025 TRUE spec sheets Abt hosts, the Apex against Schellers' listing, and the company's
-          history against Treadmill Review Guru's TRUE coverage and 2020 trade-press reports of the
-          Octane Fitness acquisition. We searched the US Consumer Product Safety Commission's recall
-          database, which lists a 2023 TRUE console recall and a 1998 motor recall; both are covered
-          below. Figures on product cards are ones on which TRUE and at least one independent source
-          agree; where they disagree we say so rather than choose. We have not tested any TRUE
-          treadmill. Prices are what each seller showed on the day we checked (20 Oct 2026) and they
-          change. As an Amazon Associate we earn from qualifying purchases. TRUE home treadmills are
-          sold through TRUE and its dealers, not on Amazon, so the product cards show the closest
-          treadmills we could find on Amazon; their figures are those checked for our non-folding,
-          long-distance and heavy duty treadmill guides, with prices seen on Amazon or the maker's
-          store on the dates given on each card.`,
   lead: `Most people who search for a TRUE treadmill have used one already, usually in a hotel, a
           YMCA or an apartment-block gym, and want to know whether the home version is the same
           machine. The short version is that TRUE is a commercial-first company with a small home

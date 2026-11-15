@@ -19,21 +19,6 @@ export default {
   ],
   tags: ['landice treadmill', 'landice treadmills', 'landice l7 treadmill', 'landice l8 treadmill', 'landice m2 genesis'],
   stickyCta: { text: 'See the Current Range', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked Landice's own online store (its residential, commercial and
-          rehabilitation collections, the L7, L8, M2 Genesis and L10 Club product pages, its warranty
-          page, residential FAQ and About page), a specialist fitness retailer's L7 and M2 listings,
-          independent reviews from Garage Gym Reviews, Treadmill Review Guru and TreadmillReviews.com,
-          a federal contractor registry entry and 2017 trade-press coverage of the company, and the
-          US Consumer Product Safety Commission's recall database, which lists no Landice recall.
-          Product figures on this page are the ones on which Landice and at least one independent
-          source agree; where they disagree we say so rather than choose. We have not tested any
-          Landice treadmill. Prices are what landice.com showed on the day and change with the
-          console and options you pick. As an Amazon Associate we earn from qualifying purchases;
-          Landice treadmills are mainly sold through Landice and its dealers rather than on Amazon, so
-          the product cards show the nearest Amazon alternatives to the L7, L8 and M2 Genesis, the Sole
-          TT8, Spirit XT485 and NordicTrack Commercial 2450, with figures as checked for our long-distance
-          running and heavy duty treadmill guides on 6 November 2026.`,
   lead: `Most people who search for a Landice treadmill have met one somewhere other than a shop:
           in a physical therapist's clinic, a university gym, a hospital rehab department, or a
           friend's basement where it has been running for years. The name is far less familiar than

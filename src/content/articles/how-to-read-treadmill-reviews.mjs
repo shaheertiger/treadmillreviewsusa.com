@@ -19,13 +19,6 @@ export default {
   ],
   tags: ['how to read treadmill reviews', 'are amazon treadmill reviews reliable', 'treadmill reviews', 'fake treadmill reviews', 'treadmill review sites'],
   stickyCta: { text: 'Read the Low-Star Method', link: '#low-star-reviews' },
-  note: `<strong class="text-gray-900">On this page.</strong> This is a reading method, not a review of
-          any machine, and we have not tested the treadmills mentioned in the examples. Where we
-          describe a specific listing, the example comes from listings we checked on 13 October 2026
-          for our Amazon roundup; listings change, so the same page may look different when you visit.
-          The rules on incentivised reviews are summarised from Amazon's published guidelines and the
-          US Federal Trade Commission's 2024 rule, and are a plain-English summary rather than legal
-          advice.`,
   lead: `Reviews are the main reason people feel comfortable buying a treadmill online, and they
           are genuinely useful — for assembly, noise, early faults and how a seller behaves when
           something goes wrong. But a treadmill is a machine you will own for years, and the review

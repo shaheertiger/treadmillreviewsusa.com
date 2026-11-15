@@ -28,19 +28,6 @@ export default {
           the <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best running shoes for treadmill use</a>,
           and the women's versions of several of these shoes are on our guide to the
           <a href="/best-womens-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best women's running shoes for treadmill running</a>.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          shoes. Men's figures — drop, weight, stack and widths — were checked on 6 November 2026
-          against the Amazon US men's listing for each shoe, the brand's published figures as given
-          by the brand or its retailers (Running Warehouse, Fleet Feet, Road Runner Sports, REI and
-          SportsShoes) and at least one independent source — Road Trail Run, Doctors of Running,
-          RTINGS, RunRepeat, Believe in the Run or GearLab. Weights are for the men's size each source
-          quotes, usually a US 9. Where sources disagreed on a figure, usually stack height or weight,
-          we left it out and the card says so. None of these figures are our own measurements. Prices
-          are the Amazon prices we saw for the men's listing on that date; they vary by size and
-          colour and change often. This page is general buying information, not medical advice: if
-          you have pain, an injury, a foot condition or diabetes, talk to a doctor or podiatrist
-          before changing shoes or training. We earn a commission if you buy through the Amazon
-          links on this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

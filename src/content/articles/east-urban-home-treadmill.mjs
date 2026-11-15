@@ -32,16 +32,6 @@ export default {
           is used on listings under several other Wayfair labels too. This page sets out what can
           be confirmed about the brand and the listings, what cannot, and what to check before you
           spend money on any treadmill sold this way.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we searched wayfair.com for East Urban Home treadmills and for the
-          "Compact Foldable Electric Treadmill" title, opened every matching listing we could find
-          and recorded the brand label, price, product type, weight and description shown on each.
-          We checked the East Urban Home brand page on Wayfair, Wayfair’s annual report for 2025
-          (filed with the SEC in February 2026) and an independent explainer on Wayfair’s house
-          brands, and we searched the CPSC recall database for the label. We could not find an East
-          Urban Home treadmill listing, so this page gives no specifications for one, and we have
-          not tested any machine sold under this title. Wayfair listings change often; a listing may
-          be corrected, replaced or removed after the date above.`,
   sections: [
     {
       id: 'short-answer',

@@ -22,11 +22,6 @@ export default {
   lead: `Ask who invented the treadmill and you will get several confident, different answers,
           and most of them are right about something. The machine has been reinvented at least four
           times, each time for a purpose its earlier versions would not recognise.`,
-  note: `<strong class="text-gray-900">On the dates below.</strong> Where a date is well
-          documented — a patent, an Act of Parliament, a published paper — we give it plainly.
-          Where sources disagree or the record is thin, we say "around" or give a decade rather
-          than invent precision. Ancient and early industrial dates in particular are approximate,
-          and anyone quoting this page for something that matters should check a primary source.`,
   sections: [
     {
       id: 'short-answer',

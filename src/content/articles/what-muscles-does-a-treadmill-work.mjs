@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['what muscles does the treadmill work', 'what does a treadmill do to your body', 'treadmill muscles worked', 'treadmill leg muscles', 'does treadmill build muscle'],
   stickyCta: { text: 'See Muscles at a Glance', link: '#at-a-glance' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page describes, in general terms, which muscles treadmill walking and running use —
-          it is not medical, physiotherapy or coaching advice, and we are not qualified to give
-          any of those. If you have a heart, joint, back or other condition, are recovering from
-          injury, are pregnant, or feel pain during or after exercise, talk to a doctor or
-          physical therapist before starting or changing a routine.
-          <strong class="text-gray-900">On the descriptions below:</strong> muscle emphasis is
-          described qualitatively from how walking and running mechanics are generally
-          understood, not from measurements of your body, and individual technique changes the
-          picture.`,
   lead: `People ask what muscles a treadmill works for two different reasons. Some want to know
           whether it will tone their legs or build their glutes; others want to know whether it
           is a complete workout or needs something added. The answer to both starts in the same

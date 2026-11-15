@@ -22,11 +22,6 @@ export default {
           mains wiring, and a fan pulling room air across all three. Everything that fan draws in
           that is not air stays there, and after a few years it is a blanket over the component
           least able to tolerate one.`,
-  note: `<strong class="text-gray-900">Read the safety section before doing anything.</strong>
-          This task involves opening an enclosure containing mains wiring and a controller board
-          that can retain charge after disconnection. It is within reach of a careful person
-          following the rules below, and it is not a job to improvise. If you are not comfortable,
-          a service engineer will do it during any visit.`,
   sections: [
     {
       id: 'why-it-matters',

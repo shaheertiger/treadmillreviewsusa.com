@@ -18,13 +18,6 @@ export default {
   ],
   tags: ['treadmill weight loss', 'treadmill workout', 'walking for weight loss', 'incline walking', 'cardio for fat loss'],
   stickyCta: { text: 'See the Sessions', link: '#the-sessions' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a guide to using one consistently — it is not medical advice,
-          nutrition advice, or a weight-loss programme, and we are not qualified to give any of
-          those. If you have a health condition, take medication that affects heart rate, are
-          pregnant, or have any history of disordered eating, please talk to a doctor or a
-          registered dietitian rather than to a review site. Exercise is worth doing regardless
-          of what happens to your weight.`,
   lead: `The honest starting point is that a treadmill is an excellent tool for health, fitness
           and building a durable habit, and a weaker tool for weight change than most content in
           this category implies. Understanding that up front is what stops people quitting in

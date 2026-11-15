@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['best treadmill settings for fat loss', 'best treadmill program for weight loss', 'best treadmill routine for weight loss', 'treadmill speed and incline for weight loss', 'fat burn treadmill program'],
   stickyCta: { text: 'See the Settings Table', link: '#settings-by-level' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          The settings below are general starting points built from published exercise equations and
-          common training conventions — they are not medical, coaching or nutrition advice, and we are
-          not qualified to give any of those. Weight loss depends far more on diet, sleep, medication
-          and health than on any treadmill setting. If you have a heart, lung, joint, metabolic or
-          other condition, are pregnant, take medication that affects heart rate (such as beta
-          blockers), have an injury, or have not exercised for a long time, talk to a doctor or
-          physical therapist before starting, and a registered dietitian for anything about food.
-          <strong class="text-gray-900">On the figures below:</strong> MET values come from the ACSM
-          walking and running equations and calorie figures are arithmetic from those values, both
-          labelled as estimates; they are not measurements and real individuals vary.`,
   lead: `Ask what the best treadmill settings for fat loss are and you will be offered everything from
           a single "fat burn" button to a twelve-step interval plan. The honest answer is simpler. For
           most people, the setting that matters most is incline, the number that matters second is

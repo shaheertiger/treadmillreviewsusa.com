@@ -27,13 +27,6 @@ export default {
           a long extension lead — and occasionally the machine is simply being asked to do more
           than its motor can manage. This page sets the causes out in order of likelihood, with
           the check for each.`,
-  note: `<strong class="text-gray-900">A burning smell means stop.</strong> Warmth from the motor
-          hood after a long session is normal. A smell of hot electrics, scorched plastic, burning
-          rubber or singed dust is not: stop the belt, switch off, unplug at the wall and do not
-          restart until the cause has been found. Let the machine cool fully before opening the
-          hood, and unplug before any inspection. A treadmill that shuts itself down when hot is
-          protecting itself, and the right response is to find out why it got hot, not to bypass
-          the protection. Your manual is the authority on your model.`,
   sections: [
     {
       id: 'short-answer',

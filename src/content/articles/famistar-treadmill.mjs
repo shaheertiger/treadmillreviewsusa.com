@@ -19,18 +19,6 @@ export default {
   ],
   tags: ['famistar treadmill', 'famistar walking pad', 'famistar treadmill reviews', 'famistar t532 treadmill', 'famistar w500c treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read every treadmill and walking-pad listing in Famistar’s own web store
-          (famistar.net), with prices and stock status, and the store’s about, contact, refund,
-          shipping and terms pages; Famistar’s Walmart listings as indexed by search engines
-          (Walmart’s own pages would not load for us); the brand’s press releases; and an
-          independent repair-and-review site’s coverage of older Famistar models. We searched
-          Amazon’s US product data, where we found no Famistar treadmill on sale, and the US Consumer
-          Product Safety Commission’s recall database, which lists no Famistar recall. We found no
-          independent source confirming the specifications of any current Famistar treadmill, so
-          every current figure on this page is the seller’s claim, and where Famistar’s own pages
-          disagree we say so rather than choosing. We have not tested a Famistar treadmill. Prices
-          change often; the ones here are those shown on the day we checked.`,
   lead: `A Famistar treadmill usually turns up in one of two ways: as a cheap folding machine with
           Bluetooth speakers in a Walmart search, or in one of the brand’s many press releases
           announcing that it leads the year’s best treadmill deals. The brand and its machines are

@@ -25,23 +25,6 @@ export default {
           discounted most of the year. Choosing well comes down to four questions — how fast and
           how steep you need to go, how wide a belt you want, how much screen you will actually
           use, and how long NordicTrack will cover the motor.`,
-  note: `<strong class="text-gray-900">What we checked, and what we left out.</strong> On 13 October
-          2026 we checked the current lineup and every model's specification on nordictrack.com,
-          then cross-checked against a major US retailer's listings (P.C. Richard &amp; Son) and
-          independent review coverage; the two Amazon alternatives shown in place of the X16 and
-          X24 carry the figures checked for our incline trainer and long-distance running guides.
-          The spec lines for NordicTrack's own machines carry only figures NordicTrack
-          confirms and that agree across those sources. Some NordicTrack figures do not: the motor
-          ratings of the T Series 10 and of the Commercial 1250 and 1750, and the deck width and
-          maximum user weight of the 1750, are quoted differently across sources and model years,
-          so we have left them out rather than pick a number — our
-          <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a>
-          sets out that conflict. None of these figures are our own measurements; we have not
-          tested these machines. Price bands are prices seen on 13 October 2026 and change often,
-          and NordicTrack runs near-permanent promotions, so confirm the price, the specification
-          and the warranty for the exact unit before you order. iFIT membership prices are not
-          quoted because they change. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   products: [
     {
       id: 'nordictrack-commercial-1750',

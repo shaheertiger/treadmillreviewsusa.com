@@ -23,11 +23,6 @@ export default {
           walking speed, followed by a continuous motor rating and weight capacity with real
           margin. Everything else — remote, app, handrail, incline — is a preference to weigh after
           those three, and the warranty tells you how long the seller expects it to last.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Specification ranges on this
-          page are typical of the walking pad category as of late 2026, not measurements of any
-          particular model, and this guide deliberately names no products. For our specification-based
-          picks, see our under-desk treadmill roundup. Always check the current listing and the manual
-          for the exact figures of the machine you are considering.`,
   sections: [
     {
       id: 'short-answer',

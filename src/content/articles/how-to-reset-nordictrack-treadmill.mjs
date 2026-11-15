@@ -25,13 +25,6 @@ export default {
           switch near the cord at the front of the base, a safety key, and on many models a reset
           breaker beside the power switch. Start there. Most machines that seem to need a reset
           need one of those three things checked.`,
-  note: `<strong class="text-gray-900">Safety and scope.</strong> Unplug the treadmill at the wall
-          before removing any cover, the motor hood or the console, and before reaching under the
-          belt. The safety key stops the belt; it does not isolate the machine. Never bypass or
-          defeat the safety key. Procedures differ by model and console software, so where this
-          page says to follow your manual or NordicTrack support, do — we have not guessed at menu
-          paths or button sequences that vary between machines. If you smell burning, see sparks,
-          or the breaker trips repeatedly, stop and get it looked at.`,
   sections: [
     {
       id: 'short-answer',

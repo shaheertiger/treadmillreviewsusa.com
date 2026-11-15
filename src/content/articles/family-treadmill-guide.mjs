@@ -23,12 +23,6 @@ export default {
           for a household means matching it to the most demanding person on every axis at once —
           and then adding the hours together. Most shared-machine disappointments come from sizing
           for the average user instead.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Motor ratings, deck sizes,
-          capacities and clearances are typical ranges from our other buying guides, not
-          specifications for any particular machine. Treadmills are not designed for use by young
-          children; follow the manufacturer's age and supervision guidance in the manual, which
-          takes precedence over anything here. Our <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">kids treadmill guide</a>
-          lists the minimum ages in the main brands' manuals and covers teenagers on an adult machine.`,
   sections: [
     {
       id: 'short-answer',

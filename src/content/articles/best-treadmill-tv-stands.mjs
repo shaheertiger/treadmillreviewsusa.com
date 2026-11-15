@@ -34,18 +34,6 @@ export default {
           guide lists five that suit a treadmill, explains how to work out the height and the
           distance for your own machine and body, and covers VESA patterns, weight limits and the
           safety points that matter when a large screen sits in front of a moving belt.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          stands and mounts. On 6 November 2026 we looked each one up on Amazon US and recorded the
-          price shown and what the listing says about screen size, weight limit, VESA patterns,
-          height and adjustment. Every figure on a card comes from that listing; where a listing
-          does not give a figure, the card does not either. The height and distance figures in the
-          guide are worked examples using general rules of thumb, not measurements of any person or
-          treadmill: measure your own. Prices change often. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say
-          about them.
-          <strong class="text-gray-900">Safety.</strong> Televisions and stands can tip. Follow each
-          maker's weight limits and installation instructions, fix wall mounts into studs or masonry
-          as directed, and keep children away from freestanding stands.`,
   sections: [
     {
       id: 'quick-picks',

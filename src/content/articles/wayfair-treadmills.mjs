@@ -25,14 +25,6 @@ export default {
           you deal with when something goes wrong — how to tell a listing you can trust from one you
           cannot, and what the delivery, return, warranty and protection-plan terms mean for a heavy,
           powered machine.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Wayfair. On 14 October 2026 we checked Wayfair’s product listings and
-          help-centre text, its annual report for 2025 filed with the SEC in February 2026, its
-          supplier site, and the protection-plan administrator’s Wayfair page, and compared them with
-          independent guides to Wayfair’s policies. Return windows, fees, delivery options, plan
-          terms and the treadmills offered change over time and can differ by listing. Where this page
-          describes how things typically work, check the current terms on the listing and in
-          Wayfair’s help centre before you buy. Prices are not quoted as current.`,
   sections: [
     {
       id: 'short-answer',

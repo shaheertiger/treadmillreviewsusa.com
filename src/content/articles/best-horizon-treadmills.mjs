@@ -26,21 +26,6 @@ export default {
           incline over Bluetooth to whichever app you already use, and every one carries a lifetime
           frame and motor warranty. Choosing well comes down to the deck you need, the weight you
           need it to carry, and how many years of parts cover you want.`,
-  note: `<strong class="text-gray-900">What we checked, and what we left out.</strong> On 13 October
-          2026 we checked Horizon's current treadmill range and each model's specification table on
-          horizonfitness.com, then cross-checked against a Johnson Fitness &amp; Wellness store
-          listing (Horizon's parent company's retail chain) and independent review coverage,
-          principally Treadmill Review Guru's Horizon range comparison and its T202 review. The spec
-          lines below carry only figures Horizon publishes and that agree across those sources.
-          Horizon does not publish a motor horsepower figure for any current treadmill, so the
-          ratings quoted by reviewers — 2.5 to 4.0 horsepower depending on model — are left out.
-          We also checked cpsc.gov: older T101-05 treadmills were recalled in October 2022, and the
-          T101 Connect card explains what that means. None of these figures are our own
-          measurements; we have not tested these machines. Price bands are prices seen on Horizon's
-          own store on 13 October 2026, several of them with a promotional code, and they change
-          often, so confirm the price, the stock date and the warranty for the exact unit before
-          you order. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.`,
   products: [
     {
       id: 'horizon-7-0-at',

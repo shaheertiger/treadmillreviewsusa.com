@@ -22,13 +22,6 @@ export default {
           part everyone worries about. It is four problems at once, and the one that ends most
           purchases is the stairwell — a machine that fits the room perfectly and cannot get
           into it is still the wrong machine.`,
-  note: `<strong class="text-gray-900">Two guides, different jobs.</strong> This page is about
-          the whole apartment constraint set — noise, footprint, delivery and your lease. If
-          your only question is which machines are quietest and why, our
-          <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
-          covers the acoustics in far more detail, including why the room below hears something
-          different. We have not tested the machines on this page; the rankings come from
-          published specifications and what they imply, not from our own measurements.`,
   sections: [
     {
       id: 'constraints',

@@ -23,11 +23,6 @@ export default {
           hours a day by hundreds of people, and it felt solid in a way most home treadmills do not.
           The catch is that it was also built to be installed by a crew, on a ground-floor slab, next
           to a dedicated circuit. Your house may offer none of those.`,
-  note: `<strong class="text-gray-900">On the figures and the wiring.</strong> Weights, deck heights
-          and circuit ratings on this page are typical ranges, not specifications for any particular
-          machine; the manufacturer's installation requirements always rule. Any new circuit or
-          outlet should be installed by a licensed electrician. Never modify a treadmill's plug, use
-          an adaptor to fit a different outlet, or run a commercial machine from an extension cord.`,
   sections: [
     {
       id: 'short-answer',

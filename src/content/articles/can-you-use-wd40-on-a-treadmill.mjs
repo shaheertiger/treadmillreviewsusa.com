@@ -22,11 +22,6 @@ export default {
           WD-40 is not a lubricant in the sense a treadmill needs. It is a solvent and water
           displacer, and applying it to a deck actively removes the thing you were trying to
           improve.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before touching the belt, deck or motor housing. A treadmill motor can turn under
-          stored energy and the safety key is not an isolator. If you smell burning, see sparking,
-          notice smoke, or the belt moves when the machine is off, stop using it and get it
-          looked at — those are not maintenance problems.`,
   sections: [
     {
       id: 'what-wd40-is',

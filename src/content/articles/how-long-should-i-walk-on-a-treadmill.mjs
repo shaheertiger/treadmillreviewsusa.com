@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how long to walk on treadmill', 'treadmill walking for weight loss', 'walking guidelines', 'treadmill beginner plan', 'steps per day'],
   stickyCta: { text: 'Find Your Session Length', link: '#by-goal' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page summarises mainstream public-health guidance so you can plan
-          treadmill sessions sensibly — it is not medical advice, coaching or a weight-loss
-          programme. If you have a heart or lung condition, diabetes, joint problems, are
-          pregnant, take medication that affects heart rate or balance, or have been inactive for a
-          long time, check with a doctor before increasing your activity.
-          <strong class="text-gray-900">On the figures below:</strong> session lengths, calorie
-          costs and step counts are typical ranges from public guidance and standard estimation
-          equations, not measurements of any individual.`,
   lead: `Most people asking this question want a number, so here it is: about 30 minutes of
           brisk walking on five days a week meets the core US activity guideline for adults. That
           is the floor, not the ceiling. How far above it you should go depends on what you want

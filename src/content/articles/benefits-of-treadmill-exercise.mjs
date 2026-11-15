@@ -19,12 +19,6 @@ export default {
   ],
   tags: ['treadmill benefits', 'is treadmill good exercise', 'benefits of walking on treadmill', 'treadmill cardio', 'treadmill pros and cons'],
   stickyCta: { text: 'See the Downsides Too', link: '#downsides' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page summarises mainstream, widely accepted benefits of regular walking
-          and running so you can judge whether a treadmill suits you — this site reviews equipment
-          and does not give medical advice. It is not a treatment for any condition. If you have a
-          heart, lung, bone or joint condition, are pregnant, or are starting exercise after a long
-          break, talk to a doctor about what kind and amount of activity is right for you.`,
   lead: `Ask whether a treadmill is good exercise and you will find two kinds of answer: breathless
           lists of miraculous benefits, and dismissive ones calling it a hamster wheel. The truth
           is more useful than either. A treadmill delivers the well-established benefits of

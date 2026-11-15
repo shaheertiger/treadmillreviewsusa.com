@@ -26,20 +26,6 @@ export default {
     'xterra tr75 treadmill',
   ],
   stickyCta: { text: 'See the Current Range', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we checked XTERRA Fitness's US site (its treadmill collection page and the
-          TRX1000, TRX1200, TR75 and TR95H product pages), retailer listings at Target, Academy, Dick's
-          Sporting Goods and Amazon as they appeared in search results, TreadmillReviewGuru's TR150
-          review, Dyaco's own brand and history pages, and the US Consumer Product Safety Commission's
-          recall database, which lists no XTERRA or Dyaco recall. Figures on the product cards are those
-          on which XTERRA and at least one independent source agree. XTERRA's collection page and its
-          TR95H product page give different motor and deck figures for the same machine; we set those
-          out as a conflict and keep them off the card. The Sunny Versatile Treadmill card, which stands in
-          for the TR95H on Amazon, carries the figures checked for our incline trainer guide. Amazon's own pages would not load for us, so
-          Amazon details come from search results and we could not confirm an Amazon price. We have not
-          tested any XTERRA treadmill. Prices are XTERRA's sale prices on 5 November 2026, shown against
-          higher compare-at prices; they change often. As an Amazon Associate we earn from qualifying
-          purchases; that does not change what we say.`,
   lead: `XTERRA is one of the names you meet most often when shopping for an inexpensive treadmill:
           on Amazon, at Target and Academy, at Dick's and in warehouse clubs. The range runs from compact
           folders around $500 to a $2,200 "Hiker" with a standing desk, all sold at what XTERRA presents

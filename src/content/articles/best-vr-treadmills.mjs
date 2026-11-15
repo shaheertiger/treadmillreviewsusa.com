@@ -19,25 +19,6 @@ export default {
   ],
   tags: ['best vr treadmill', 'vr treadmill for home', 'omnidirectional treadmill', 'virtuix omni one', 'kat walk c2', 'vr treadmill price'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not used or tested
-          these machines. Prices, configurations, headset compatibility, user limits and dimensions
-          were checked on 14 October 2026 against each maker's own store and product pages
-          (Virtuix and KAT VR) and cross-checked against at least one independent source — Road to
-          VR, TechSpot, Auganix, Yanko Design and TweakTown coverage, hands-on impressions from Road
-          to VR, Tom's Guide, GameSpace and VRScout, an authorised retailer (Knoxlabs) and a
-          university lab's equipment page. Where sources disagreed, as they do on KAT's supported
-          height range, the figure is left out and the description says so. Prices for these
-          machines move a lot with promotions and bundles, so we give dated bands rather than a
-          single figure; confirm the price, what is in the box and the warranty before ordering. On
-          9 November 2026 we replaced the three Virtuix Omni One cards with KAT's C3 Core, because
-          Virtuix sells direct and through Meta's store rather than on Amazon; the C3 Core was
-          checked against its Amazon listing, KAT's store and Knoxlabs. The C2 Core card now links
-          KAT's Amazon listing for the C2 Core, which does not use the word Enhanced, so its card asks
-          you to confirm the version. We searched cpsc.gov for
-          Virtuix and KAT VR and found no recall or warning. These are gaming
-          and VR locomotion devices, not exercise equipment in the usual sense, and nothing here is
-          fitness or medical advice. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   lead: `The best VR treadmill for most people at home in 2026 is one of two things: a Virtuix
           Omni One, if you want the most finished system and are happy to pay for it, or a KAT
           Walk C2, if you want something cheaper and already own a PC VR setup. Both are

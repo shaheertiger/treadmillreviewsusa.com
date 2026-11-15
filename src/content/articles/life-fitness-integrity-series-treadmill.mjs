@@ -33,24 +33,6 @@ export default {
           sold mainly to businesses, priced like it, and wired for a 20-amp circuit. This review
           sets out what we could confirm, which figures conflict, how a home buyer gets one, and
           whether delivery and installation are really included.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked the Integrity+ on Life Fitness's US product page and its
-          business store (facilityshop.lifefitness.com), the Integrity listings on its US consumer
-          store (shop.lifefitness.com), and an authorised US dealer listing (The Fitness Outlet). The
-          Integrity+ figures on this page — running area, motor rating, speed, incline, maximum user weight,
-          footprint, unit weight and power requirement — agree between Life Fitness and that dealer.
-          Several things do not agree and are presented as conflicts rather than resolved: the
-          warranty terms (Life Fitness's consumer outlet listing, the dealer and a Life Fitness
-          European warranty table each give different terms), the step-up height on some
-          configurations, and the delivery lead time on the business store. Independent hands-on
-          reviews of the Integrity+ for home use are scarce, so this page relies on manufacturer and
-          dealer information and says so. We searched cpsc.gov for Life Fitness treadmill recalls; the
-          only one we found dates from 2003 and covered three older club models, not the Integrity
-          line. We have not tested the Integrity+. Prices are those listed on 14 October 2026 and
-          change often. On 9 November 2026 the product card changed from the
-          Integrity+, which Amazon does not sell, to the Run CX, whose figures are those checked for our
-          cushioned treadmill guide. We earn a commission if you buy through the Amazon link on this page; it does
-          not change what we say about the machine.`,
   products: [
     {
       id: "life-fitness-run-cx",

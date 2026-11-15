@@ -27,17 +27,6 @@ export default {
           machines sold on Amazon US, and explains which numbers on a specification sheet matter for
           sprinting. For the sessions themselves, see our
           <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout guide</a>.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Speeds, motor ratings, deck sizes, resistance levels and capacities were checked on
-          6 November 2026 against each machine's Amazon US listing and, where the listing did not give a
-          figure, against the maker's own product page or specification sheet. Where sources disagreed —
-          as they did on one curved trainer's user capacity — we left the figure out. None of these figures
-          are our own measurements; makers do not publish acceleration times, and we have not measured them.
-          Prices are the Amazon prices we saw on that date and change often. Sprinting on any treadmill
-          carries a real risk of falls: read the safety section, and if you have a heart condition or have
-          not exercised hard recently, talk to a doctor before starting. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   sections: [
     {
       id: 'quick-picks',

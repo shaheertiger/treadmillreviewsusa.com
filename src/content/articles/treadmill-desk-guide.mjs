@@ -22,11 +22,6 @@ export default {
   lead: `Set the desk so your elbows sit at about 90 degrees while you stand on the belt, raise the
           screen to eye level, walk slowly — most people type comfortably at around 1 to 2 mph —
           and build up your daily minutes over several weeks rather than several days.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a practical guide to setting up and using one at a desk — it is not medical or
-          ergonomic advice for any individual. If you have a foot, knee, back or balance condition,
-          are pregnant, or have been advised to limit standing or walking, ask a doctor or
-          physical therapist before walking for long periods. Stop and rest if anything hurts.`,
   sections: [
     {
       id: 'short-version',

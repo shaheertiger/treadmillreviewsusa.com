@@ -25,17 +25,6 @@ export default {
           apps that tell you what to do and trust you to press the buttons, and one of the best known
           is really a training log. Which one is right depends far less on the app than on the
           treadmill you own and what you want from a session. This page sorts them by that.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> These are apps, not
-          products we sell or link to, and we have not tested them. What each app does, which
-          treadmills it can control, which devices it runs on and whether it has a free tier were
-          checked on 15 October 2026 against the app maker's own website and at least one other
-          source — the app's App Store listing, an independent reference, or treadmill makers' own
-          compatibility statements. Where a claim appeared in only one place or the sources
-          disagreed, we left it out or say so. We do not quote subscription prices, which change
-          often; check the current price with each app before you sign up. <strong class="text-gray-900">What
-          this page is, and is not.</strong> We review equipment and software; we are not giving
-          medical, coaching or nutrition advice. If you have a medical condition, an injury or a
-          concern about starting a training plan, talk to a qualified professional first.`,
   sections: [
     {
       id: 'quick-picks',

@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['what happens if you exceed treadmill weight limit', 'treadmill weight limit', 'over treadmill weight limit', 'walking pad weight limit', 'treadmill warranty weight'],
   stickyCta: { text: 'See What Fails First', link: '#what-fails-first' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page explains what happens to a machine used above its rated capacity — it is not
-          medical, coaching or weight-loss advice, and we are not qualified to give any of those.
-          Walking is one of the most accessible ways to be more active at any weight, but if you are
-          starting exercise after a long break, or you have a heart, joint, balance or other
-          condition, talk to a doctor or physical therapist about how much and how fast to begin, and
-          stop if you feel pain, dizziness or chest discomfort. <strong class="text-gray-900">On the
-          figures below:</strong> margins are rules of thumb rather than an industry standard, and
-          force figures are typical ranges reported in biomechanics research, not measurements of any
-          machine. Your owner's manual and warranty document are the authority on your model; unplug
-          the machine at the wall before any inspection.`,
   lead: `A treadmill's weight limit is the heaviest user the manufacturer designed the machine
           around and will stand behind under warranty. It is not the weight at which the machine
           collapses, and that is the source of the confusion: people go a little over, nothing

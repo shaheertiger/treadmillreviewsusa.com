@@ -23,12 +23,6 @@ export default {
           sensitive circuit board, and that combination is exactly what makes the surge question
           worth getting right. The motor is why a cheap power strip is the wrong answer. The board
           is why doing nothing is not a great one either.`,
-  note: `<strong class="text-gray-900">Safety first.</strong> Your treadmill's manual is the
-          authority on how to connect it, and where it conflicts with anything on this page, follow
-          the manual. Any work on outlets, circuits, breakers or the electrical panel — including
-          installing a dedicated circuit or whole-house surge protection — is a job for a licensed
-          electrician. If a plug or outlet is hot to the touch, discoloured, buzzing or smells of
-          burning, stop using it and have it inspected.`,
   sections: [
     {
       id: 'short-answer',

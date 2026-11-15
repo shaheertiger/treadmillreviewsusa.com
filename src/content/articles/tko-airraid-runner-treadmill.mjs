@@ -32,22 +32,6 @@ export default {
           they are easy to confuse. This page is about the 8CTM. It sets out what TKO's own sell sheet
           confirms, where TKO's manual and dealer listings disagree with it, how a curved treadmill with
           magnetic resistance trains, and who it suits — with the 8CRUN covered where it matters.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read TKO Strength &amp; Performance's own product pages for the AirRaid
-          Force (SKU 8CTM-B) and the AirRaid Runner (8CRUN), TKO's sell sheets for both dated 13 May
-          2026, the 8CTM-B owner's manual, and TKO's return policy, and compared them with four US dealer
-          listings for the 8CTM (Select Fitness, Push Pedal Pull, Iron Company and The Fitness Outlet).
-          TKO's sell sheet and the dealers agree on the 68 x 32 x 67 in. footprint, the 350 lb maximum
-          user weight, four-level magnetic resistance, ANT+ and Bluetooth, and a 5-year frame and 2-year
-          parts warranty. They disagree on machine weight (297 lb on TKO's sheet and two dealers, 330 lb
-          on two others). The 63 x 17.3 in. running surface appears only on dealer listings, and TKO's
-          manual gives different figures for surface, dimensions, capacity, slat count and warranty; we
-          state each as a conflict rather than choosing. We found no independent hands-on review or
-          owner report. We have not tested the 8CTM. Prices and stock were as shown on 14 October 2026
-          and change often. Because the 8CTM is not sold on Amazon, the product card shows the closest
-          curved trainer that is, the SB Fitness CT700, with figures from our CT700 review. We earn a
-          commission if you buy through the Amazon link on this page; it
-          does not change what we say about the machine.`,
   products: [
     {
       id: 'sb-fitness-ct700',

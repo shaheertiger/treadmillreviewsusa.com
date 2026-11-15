@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['best treadmill on amazon', 'amazon treadmill', 'treadmills on amazon', 'best amazon treadmill', 'horizon t101 amazon', 'nordictrack t series 5', 'urevo walking pad'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Each one was confirmed on 13 October 2026 as currently listed on Amazon (UREVO's
-          CyberPad on 6 November 2026, its figures being those checked for our auto-incline
-          treadmill guide), and its specifications were checked on that date against the manufacturer's own product page
-          or published product data (Horizon Fitness, NordicTrack, UREVO and Sunny Health &amp;
-          Fitness), the Amazon listing itself, and independent coverage — specialist review sites
-          and a long-running walking pad tracker that reads owner's manuals. A figure appears in a
-          product's specification line only where those sources agree; where they did not — most
-          often on motor horsepower, weight capacity, unit weight and whether a machine folds — we
-          left it out and say so in the description. None of these are our own measurements.
-          Prices are those we saw on Amazon and the brands' own stores on 13 October 2026 and
-          change often, sometimes daily, and several Amazon listings hide the price until the item
-          is in your cart. Confirm the price, the seller, the specification and the warranty terms
-          against the exact listing before you order. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   lead: `"Best treadmill on Amazon" is really two questions. The first is the usual one — which
           machine suits the way you will use it. The second is particular to a marketplace: is the
           listing in front of you selling the machine the brand describes, from a seller the brand

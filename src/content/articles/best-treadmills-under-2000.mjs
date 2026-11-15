@@ -21,16 +21,6 @@ export default {
   lead: `Somewhere between $1,200 and $1,800 a treadmill stops being a machine you can jog on and
           becomes one you can run on. The specification that changes is not the motor — it is the
           combination of a 60-inch deck and enough frame mass to keep it still underneath you.`,
-  note: `<strong class="text-gray-900">On the five-year cost.</strong> Several machines in this
-          band carry a subscription of around $39 a month, which is roughly $2,350 over five
-          years — more than the treadmill. Prices below are purchase prices only. The section on
-          total cost works through what that means for the comparison, and our
-          <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a>
-          covers what each console does when you stop paying.
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Deck, motor and weight figures are the manufacturers' published
-          specifications, and judgements on how they run come from what those figures imply — not
-          from our own measurements.`,
   sections: [
     {
       id: 'what-changes',

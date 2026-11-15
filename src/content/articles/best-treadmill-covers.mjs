@@ -27,16 +27,6 @@ export default {
           are the ones whose figures held up across more than one source, and the guide after them
           covers measuring your machine, choosing between a dust cover and a weatherproof one, and
           the condensation problem that a cover can make better or worse.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          covers. The Rilime cover was checked on 9 November 2026 against its Amazon listing only, as its
-          card explains. The others were checked on 15 October 2026 against its Amazon listing or the maker's own
-          site, and against at least one second source — another retailer listing or an independent
-          roundup — for size, fabric and current availability. A figure appears on this page only
-          where those sources agreed; where a listing contradicted itself or another source, we left
-          the figure out and say so. Prices are the ones we saw on that date and change often, so
-          confirm the size and the style you have selected on the exact listing before ordering. We
-          earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

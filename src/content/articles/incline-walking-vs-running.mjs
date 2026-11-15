@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['incline walking vs running', 'is incline walking as good as running', 'incline walking vs running for weight loss', 'walking on incline vs running', 'treadmill incline walking'],
   stickyCta: { text: 'See the Comparison', link: '#comparison-table' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a plain-English comparison of two ways of using one — it is not
-          medical advice, physiotherapy, coaching or nutrition advice, and we are not qualified to
-          give any of those. If you have a heart, lung or circulation condition, a joint, tendon or
-          back injury, are pregnant, or are returning to exercise after a long gap, talk to a doctor
-          or physical therapist before choosing a training plan. Stop for chest pain, dizziness or
-          sharp joint pain. <strong class="text-gray-900">On the figures below:</strong> where we
-          say incline walking "can approach" or "is commonly reported" to match something, that is
-          the general picture, not a measured number for you; calorie and effort figures vary
-          between people and machines, and console estimates are rough at best.`,
   lead: `Incline walking and running are both good, both train the heart, and at a matched effort
           both use a broadly similar amount of energy per minute. Where they differ is in impact,
           in the muscles that do the work, in how high an intensity each can reach, in who can do

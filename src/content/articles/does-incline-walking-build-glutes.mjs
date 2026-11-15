@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['does incline walking build glutes', 'incline walking glutes', 'how much incline on treadmill for glutes', 'treadmill glute workout', 'incline walking muscles'],
   stickyCta: { text: 'See the Incline Ranges', link: '#how-much-incline' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This page explains, in general terms, what incline walking asks of the muscles — it is
-          not medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. Steep walking loads the calves, Achilles tendons, hips and lower back; if you
-          have a heart, joint, tendon or back condition, are recovering from injury, are pregnant,
-          or have any concern about exercise, talk to a doctor, physical therapist or qualified
-          coach before starting. <strong class="text-gray-900">On the figures below:</strong>
-          incline ranges are commonly suggested starting points and rules of thumb, not
-          research-derived prescriptions, and the right grade for you depends on your fitness and
-          your machine.`,
   lead: `Incline walking has a reputation as a glute workout, and like most reputations it is part
           true and part exaggerated. The true part: walking uphill makes the hips extend through a
           bigger range against more resistance, so the glutes do noticeably more work than they

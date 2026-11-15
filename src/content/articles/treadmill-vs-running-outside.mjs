@@ -23,11 +23,6 @@ export default {
           The physics differ in a handful of specific ways, most of them small, and almost all of
           them can be adjusted for. What cannot be adjusted for is what running indoors does to
           your head — and that is usually what decides whether a treadmill works for you.`,
-  note: `<strong class="text-gray-900">Scope.</strong> We are a treadmill equipment site, not
-          coaches or clinicians, and nothing here is training or medical advice. The research
-          referred to below is described in general terms and individual responses vary
-          considerably. If you are training for a specific goal or managing an injury, take
-          advice from a qualified coach or health professional.`,
   sections: [
     {
       id: 'short-answer',

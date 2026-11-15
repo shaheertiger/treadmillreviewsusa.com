@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['standing desk height for walking pad', 'walking pad desk height', 'treadmill desk height', 'how tall should a standing desk be', 'walking pad standing desk'],
   stickyCta: { text: 'See the Height Chart', link: '#height-chart' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills and walking pads. This is a set-up reference built from simple arithmetic and
-          widely used ergonomic rules of thumb — it is not medical, physiotherapy or occupational
-          health advice, and we are not qualified to give any of those. If you have neck, back,
-          shoulder, wrist or other pain, a balance or heart condition, or any concern about walking
-          while you work, talk to a doctor, physical therapist or an occupational health
-          professional before setting up a treadmill desk. <strong class="text-gray-900">On the
-          figures below:</strong> elbow and eye heights are estimated from overall height using
-          approximate body proportions, which vary from person to person by an inch or more, so
-          the chart is a starting point for the tape measure, not a substitute for it.`,
   lead: `Most people buy a standing desk, slide a walking pad underneath, step on and find
           themselves hunched over a keyboard that is suddenly too low. It is the most common
           treadmill desk mistake, and it is entirely predictable: the pad raises you by its deck

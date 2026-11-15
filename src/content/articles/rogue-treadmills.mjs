@@ -29,23 +29,6 @@ export default {
     'rogue fitness treadmill',
   ],
   stickyCta: { text: 'See the Treadmills', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read Rogue Fitness's US treadmill category page and the product pages for all
-          eight treadmills it listed (the Rogue | Woodway Curve LTG, TrueForm Trainer, TrueForm Runner,
-          Woodway Vive, STEPR Performance Tread Pro, STEPR Performance Tread XL, STEPR TREADSLED XL VPR and
-          STEPR All-In Tread XL), including their gear specs and warranty text. We cross-checked prices and
-          figures against our own Woodway and TrueForm guides (which checked Woodway's and TrueForm's own
-          stores and independent reviews), STEPR's own store and US dealers StrengthWarehouseUSA and Peak
-          Primal Wellness (seen in search results), Treadmill Review Guru's review of the Rogue-branded
-          Curve LTG, and the US Consumer Product Safety Commission's recall database for Rogue, Woodway,
-          TrueForm and STEPR. Figures quoted for Rogue’s machines are those on which Rogue and at least one
-          other source agree; conflicts are set out in the text. Rogue’s treadmills are not sold on Amazon, so
-          the product cards show the nearest Amazon-sold alternatives, with the figures checked for our curved
-          treadmill, SB Fitness, Pro 6, Bells of Steel Blitz and long-distance running guides. The Woodway Vive's
-          figures come from Rogue's listing alone, so we give them only in the text. Prices are Rogue's on the day, change
-          often, and exclude any freight surcharges. We have not tested any of these treadmills, and we
-          have no relationship with Rogue. As an Amazon Associate we earn from qualifying purchases; that
-          does not change what we say.`,
   lead: `"Rogue treadmill" is a reasonable thing to search for: Rogue Fitness sells almost everything a garage
           gym needs, and the CrossFit Games run on a Rogue-branded curved treadmill. But Rogue does not design
           or build treadmills. On 5 November 2026 its treadmill category held eight machines from three makers —

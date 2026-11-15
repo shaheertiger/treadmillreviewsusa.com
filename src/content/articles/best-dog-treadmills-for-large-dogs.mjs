@@ -25,27 +25,6 @@ export default {
     'treadmill for big dogs',
   ],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below, and what this page is not.</strong>
-          We have not tested these dog treadmills. The specifications on this page were checked on
-          14 October 2026 against the manufacturers’ own pages where they could be read (Dog Trotter
-          USA, Jog A Dog and GoPet), the listings of specialist US dealers (Canine Athletes, Ray Allen
-          Manufacturing and J&amp;J Dog Supplies), and independent coverage including Whole Dog
-          Journal’s January 2026 comparison. A figure appears in a product’s specification line only
-          where the maker or its dealer and a second source agree; where they disagreed — on weight
-          capacity, running length, speed or warranty — we left it out and say so in the text. None
-          of these are our own measurements. Prices are those listed on 14 October 2026 and change
-          often; several of these machines are built to order, ship by freight and cannot be returned
-          once dispatched, so confirm the price, the specification, the warranty and the returns
-          terms with the seller before ordering. Because none of these machines is sold on Amazon US,
-          on 9 November 2026 the cards were replaced by the closest dog treadmills Amazon lists
-          (Xoiasth, Foorose, PawPaw's, MlemGirove and PawArmorX98); their figures are the sellers'
-          listing claims, which we could not confirm independently, and where a listing gives a
-          running length it is the seller's figure. We searched the CPSC recall database for every
-          brand and found no recalls. This page is about equipment; it is not veterinary
-          advice. Speak to your vet before putting any dog on any treadmill, and stop at the first
-          sign of distress, lameness, overheating or laboured breathing. We earn a commission if you
-          buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   lead: `Most dog treadmills are built around medium dogs, and a Labrador, a German Shepherd or a
           Mastiff on one of them runs out of belt long before it runs out of energy. This page is the
           large-breed companion to our general

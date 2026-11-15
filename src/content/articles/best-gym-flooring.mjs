@@ -25,21 +25,6 @@ export default {
           weights, thin rubber under a barbell that gets dropped, or a beautiful rubber floor laid over
           a damp basement slab. The picks below are sorted by the job they do, and the guide after them
           covers thickness, smell, subfloors, moisture and what each option costs per square foot.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          floors, and no figure on this page is our own measurement. On 19 October 2026 we confirmed each
-          product as listed on Amazon US, and checked its size, thickness, material and warranty against
-          the maker's own product page and at least one other source: the Amazon listing, a second
-          retailer or independent coverage. A figure appears on a card only where those sources agree;
-          where they did not, we left it out and say so. Rubber-Cal's figures rest on Rubber-Cal's site
-          and its Amazon listings, some of which Rubber-Cal sells itself, so treat them as maker
-          figures. Every brand was checked against the US Consumer Product Safety Commission's recall
-          database. The Boomerang Rubber stall mat was added on 9 November 2026, after the Rubber-Cal
-          Maxx-Tuff sheet could not be confirmed on Amazon US, and was checked against its Amazon
-          listing and Tractor Supply's listing of the same mat. Prices and costs per square foot are the listed prices we saw on that date divided by
-          the listed coverage, are approximate, and change often. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say about
-          them. Floor loading is general guidance only: for an upstairs room, an old or unusual
-          structure, or heavy racks and plates, ask a qualified professional.`,
   sections: [
     {
       id: 'quick-picks',

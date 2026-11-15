@@ -22,17 +22,6 @@ export default {
           the way it is sold is close to backwards. What reduces load through a painful knee is
           not a softer surface — it is a slower speed, a steeper incline and a deck that returns
           the energy it absorbs.`,
-  note: `<strong class="text-gray-900">This is an equipment guide, not medical advice.</strong>
-          We review treadmills; we are not clinicians and we cannot tell you whether walking or
-          running is appropriate for your knees. If you have arthritis, a meniscus or ligament
-          injury, a replacement, or pain you have not had assessed, speak to your doctor or a
-          physiotherapist before starting. What follows is about which machines reduce load and
-          give you finer control over it. We have not tested these machines: incline ranges, speed
-          increments and step-up heights are published specifications, and what we say about deck
-          character is inferred from each machine's construction and class, not from our own
-          measurements. On 9 November 2026 the budget incline card changed from the ProForm Power 1295i,
-          which Amazon US does not sell, to the ProForm Carbon TLX, whose figures are those checked for
-          our iFIT treadmill guide.`,
   sections: [
     {
       id: 'softness-myth',

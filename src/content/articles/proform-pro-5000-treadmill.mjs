@@ -23,14 +23,6 @@ export default {
           on, the Pro 5000 is the best-value machine ProForm makes. A 22 by 60-inch deck and a
           3.75 CHP motor are figures you normally pay several hundred dollars more for. The
           question this review exists to answer is what the console costs you after that.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> These are the
-          manufacturer's published figures, cross-checked in September 2026 against the ProForm
-          listing, major retailer listings and independent review coverage, which agree. They are
-          not our own measurements. Warranty terms and price bands vary by retailer and model
-          year, so confirm both against the exact unit you are buying — and note that ProForm
-          refreshes consoles within a model name. The Pro 5000 is not sold on Amazon US, so the product
-          card shows the ProForm Pro 2000, whose figures are those checked for our iFIT treadmill guide
-          on 6 November 2026.`,
   products: [
     {
       id: 'proform-pro-2000',

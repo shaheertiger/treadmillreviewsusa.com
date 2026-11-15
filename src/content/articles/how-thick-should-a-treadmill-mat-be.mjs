@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['how thick should a treadmill mat be', 'treadmill mat thickness', 'treadmill mat for upstairs', 'rubber vs pvc treadmill mat', 'treadmill mat density'],
   stickyCta: { text: 'See the Thickness Bands', link: '#thickness-bands' },
-  note: `<strong class="text-gray-900">How to read the figures on this page.</strong> We review
-          treadmills and the kit around them; we have not measured or tested treadmill mats
-          ourselves. The thickness bands below are the ranges treadmill mats are commonly sold in,
-          and the uses we attach to them are general guidance rather than test results. Where we
-          quote a specific mat's thickness, it is a figure from our
-          <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat roundup</a>,
-          which only prints numbers that more than one source agreed on. Conversions between
-          inches and millimetres are simple arithmetic. If a mat is going under a treadmill in a
-          flat or above an occupied room, your building's rules and your machine's manual come
-          before anything here.`,
   lead: `How thick should a treadmill mat be? For most people with a treadmill on a hard
           ground-floor surface, about 1/4 inch of firm PVC or vinyl is enough. For carpet, a
           heavier, denser rubber mat matters more than any particular thickness. For an upstairs

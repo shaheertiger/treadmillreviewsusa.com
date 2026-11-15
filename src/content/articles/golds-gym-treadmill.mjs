@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['golds gym treadmill', 'treadmill golds gym', 'golds gym trainer 720 treadmill', 'golds gym trainer 430i', 'golds gym treadmill parts'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we could not.</strong> On 14 October
-          2026 we checked Gold’s Gym’s own website and its owner RSG Group’s brand page, Gold’s Gym’s
-          2019 request for new home-equipment licensees, IMG Licensing’s 2025 announcement, ICON’s
-          2004 annual report and iFIT’s 2021 registration statement, Amazon’s US catalogue through its
-          product search, independent reviews of the Trainer 430i and Trainer 720, and the US Consumer
-          Product Safety Commission’s recall database. Walmart’s site blocked our automated checks, so
-          we could not see its current listings directly; where we describe Walmart we say what other
-          sources show. Model figures appear only where at least two independent sources agree; where
-          they conflict, we say so. We have no connection with Gold’s Gym, RSG Group or iFIT and have
-          not tested any Gold’s Gym treadmill. Used values are rough, labelled estimates.`,
   lead: `Gold’s Gym is a gym chain first. Its name went onto home treadmills through a licence, and
           the machines themselves were built by ICON Health & Fitness — renamed iFIT in 2021 — alongside
           its NordicTrack, ProForm and Weslo lines. That matters for anyone searching for a Gold’s Gym

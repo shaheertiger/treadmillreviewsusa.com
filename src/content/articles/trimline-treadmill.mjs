@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['trimline treadmill', 'trimline treadmill parts', 'trimline treadmill manual', 'trimline 7600 treadmill', 'used trimline treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we did not.</strong> On 14 October
-          2026 we checked the parts catalogue for Trimline models at FitnessRepairParts.com, owner's
-          manuals for Hebb-built Trimline treadmills held on public manual archives, the current
-          Trimline range sold by Elite Fitness in New Zealand, and the US Consumer Product Safety
-          Commission's recall database, which lists no Trimline recall. The brand history comes from
-          several long-running treadmill review and repair sites, which do not entirely agree; we
-          give their accounts as accounts rather than as settled fact. We have no connection with
-          any Trimline business and have not tested any Trimline treadmill. Used prices on this page
-          are rough, labelled estimates, not market data.`,
   lead: `If you have searched for a Trimline treadmill, you probably have one in front of you — a
           machine that came with a house, a parent's old treadmill, a cheap listing on a resale site
           — or you have found a part number and want to know whether anything still fits. The short

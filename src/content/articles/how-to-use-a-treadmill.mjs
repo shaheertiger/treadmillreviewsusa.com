@@ -19,13 +19,6 @@ export default {
   ],
   tags: ['how to use a treadmill', 'treadmill for beginners', 'treadmill safety key', 'running on a treadmill', 'treadmill running form'],
   stickyCta: { text: 'Your First Session', link: '#first-session' },
-  note: `<strong class="text-gray-900">Before you start.</strong> We review treadmills; this is a
-          practical guide to operating one, not medical or coaching advice. If you have a heart,
-          joint or balance condition, are pregnant, or have been inactive for a long time, check
-          with a doctor before starting a new exercise routine. Stop and seek advice for chest
-          pain, dizziness, unusual breathlessness or a heartbeat that feels irregular. And
-          whatever your fitness, read your machine's manual — controls, speed ranges and safety
-          features differ between models, and the manual is the authority for yours.`,
   lead: `Using a treadmill comes down to a short sequence: clip the safety key to your clothing,
           stand on the side rails, start the belt at its slowest speed, step on, and only then
           build up. Stopping is the same sequence in reverse. Everything else on this page —

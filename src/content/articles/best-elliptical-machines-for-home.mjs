@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['best elliptical machine for home', 'home elliptical', 'best elliptical for small spaces', 'elliptical stride length', 'sole e35'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Each was confirmed on 16 October 2026 as currently sold, and its specifications
-          were checked on that date against the maker's own product page and specification table
-          (SOLE, Horizon Fitness, Schwinn Fitness and NordicTrack), the Amazon listing where one
-          exists, and at least one independent source — published reviews and a second retailer. A
-          figure appears in a product's specification line only where the maker and an independent
-          source agree. Where they did not — on one machine's user capacity, another's flywheel
-          weight and dimensions, a third's incline and a fourth's capacity — we left the figure out
-          and say so in the text. None of these figures are our own measurements. Prices are those we saw on brand
-          stores and Amazon on 16 October 2026; they change often, and app subscription prices are
-          not quoted here at all, so check the current price before you buy. We earn a commission
-          if you buy through the Amazon links on this page; it does not change which products we
-          list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          equipment. Nothing here is medical, physiotherapy or coaching advice. If you have a joint,
-          heart or balance condition, are recovering from an injury, or are unsure whether an
-          elliptical suits you, talk to a doctor or a qualified professional before you buy or
-          start training.`,
   lead: `Ellipticals are easy to buy badly. The listings lead with screens, programmes and
           flywheel weights, while the things that decide whether you will actually use the machine —
           whether the stride is long enough for your legs, whether your head clears the ceiling at

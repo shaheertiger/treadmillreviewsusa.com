@@ -18,12 +18,6 @@ export default {
   ],
   tags: ['treadmill interval workouts', 'treadmill hiit', 'interval training', 'treadmill sprints', 'treadmill workouts'],
   stickyCta: { text: 'See the Five Sessions', link: '#five-sessions' },
-  note: `<strong class="text-gray-900">Before starting interval training.</strong> High-intensity
-          work raises heart rate and blood pressure substantially. If you have a heart condition,
-          high blood pressure, are pregnant, are returning from injury, or have been inactive for
-          a long time, speak to your doctor first — and build several weeks of easy steady work
-          before adding intensity. Stop immediately for chest pain, unusual breathlessness,
-          dizziness or an irregular heartbeat.`,
   lead: `Intervals do more for fitness per minute than anything else you can do on a treadmill,
           and they are the reason more treadmill habits end in injury than in boredom. The
           sessions below are structured so that the second point does not happen to you.`,

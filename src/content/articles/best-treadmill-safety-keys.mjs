@@ -34,18 +34,6 @@ export default {
           stop it reliably when pulled. This page lists five replacement keys, explains how to work
           out which kind your treadmill takes, and sets out how to test a new key before you trust
           it.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          keys. On 6 November 2026 we looked each one up on Amazon US and recorded the price shown
-          and what the listing says about type, size and compatibility. Every figure on a card comes
-          from the listing; compatibility claims are the seller's, not ours. Four of the five keys
-          come from one parts supplier, TreadLife Fitness, because it was the established seller
-          whose listings gave part numbers, sizes or warranty terms; most other replacement keys on
-          Amazon are near-identical generic magnets sold under changing brand names. Prices change
-          often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.
-          <strong class="text-gray-900">Safety first.</strong> A key that fits must still stop the
-          belt. Test every replacement key, as described on this page, before you run on it, and
-          never use a loose magnet, tape or a makeshift object in place of a key.`,
   sections: [
     {
       id: 'quick-picks',

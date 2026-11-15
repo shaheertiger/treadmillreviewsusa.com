@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['urevo treadmill', 'urevo walking pad', 'urevo spacewalk e1l', 'urevo spacewalk 3s', 'urevo strol 2s pro', 'urevo cybermega', 'is urevo a good brand'],
   stickyCta: { text: 'See the Current Range', link: '#current-range' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we read every treadmill and walking-pad listing in UREVO’s US store
-          (urevo.com), including the price each one showed at checkout that day, and the store’s
-          warranty, return and refund, shipping, FAQ, contact, about and app pages. We compared those
-          against UREVO’s App Store listing; independent reviews from Tom’s Guide (CyberMega and
-          FoldiMix 5L), Notebookcheck (CyberMega), Popular Science (CyberPad for Office) and VICE
-          (Foldi 3S); an independent walking-pad specification tracker (OCDevel) that reads UREVO’s
-          manuals and Amazon listings; UREVO’s IFA Berlin exhibitor profile; and the US Consumer Product
-          Safety Commission’s recall database. Amazon’s product pages would not load in full for us that
-          day, so Amazon prices on this page are attributed to the source and date that recorded them.
-          Figures on the product cards are those on which UREVO and at least one independent source
-          agree; where they disagree we say so and leave the figure off the card. The five cards marked
-          “Closest on Amazon” carry the figures checked for our walking-pad, 2-in-1, low-ceiling,
-          handrail and budget treadmill guides. We have not tested a
-          UREVO machine. Prices change often, sometimes daily, so confirm them before you order. As an
-          Amazon Associate we earn from qualifying purchases.`,
   lead: `Search for a walking pad on Amazon and a UREVO machine is likely to be among the first things
           you see: a slim black pad, a big horsepower number, a price with a line through it. UREVO is a
           real company with a broad and fast-changing range, and several of its pads appear on this

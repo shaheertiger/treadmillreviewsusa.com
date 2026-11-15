@@ -26,15 +26,6 @@ export default {
           brand with a track record, each priced under or right at $200 on Amazon on the day we
           checked. We also cover what to expect under $100, which is less than the listings suggest,
           and the small costs that turn a $170 machine into a $210 one.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed as currently sold on Amazon US on 6 November 2026 at or under
-          $200 in at least one listing, and the figures on each card come from the Amazon listing's
-          own bullet points or, where we say so, the maker's website. Where sources disagreed, we left
-          the figure off the card and explain why. None of these figures are our own measurements.
-          Prices at this level move constantly, often by $20 to $50 in a week, so a pick may be above
-          $200 when you look and below it a few days later. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   sections: [
     {
       id: 'quick-picks',

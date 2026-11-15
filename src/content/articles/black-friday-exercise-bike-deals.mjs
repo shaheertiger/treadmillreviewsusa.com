@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['black friday exercise bike deals', 'exercise bike black friday', 'black friday spin bike deals', 'peloton black friday', 'schwinn ic4 black friday', 'recumbent bike black friday', 'air bike black friday'],
   stickyCta: { text: 'See the Bikes to Watch', link: '#picks' },
-  note: `<strong class="text-gray-900">On the prices and products below.</strong> We have not
-          tested these bikes, and no figure on this page is our own measurement. The six were chosen
-          from our existing exercise bike, recumbent, air bike and folding bike roundups, whose
-          specifications were cross-checked between the maker (or the Amazon listing) and at least
-          one independent review on 16 and 19 October 2026; we have not changed those figures here. The budget spin bike is the exception: the friction
-          YOSUDA from our roundup could no longer be found on Amazon, so on 9 November 2026 its card
-          became the YOSUDA PRO Magnetic Exercise Bike, whose figures are listing claims repeated by
-          BarBend and The Gadgeteer.
-          On 28 October 2026 we re-checked the US Consumer Product Safety Commission's recall
-          database for every brand on this page and for Peloton, and looked for current and past
-          prices on maker stores, Keiser's own store and deal-tracking sites. Prices on the cards are
-          what we or those roundups saw on the dates stated, at the retailer named; past sale prices
-          are quoted from deal posts with their dates and are history, not a forecast. Black Friday
-          2026 prices had not been published by any of these retailers when we wrote this, every
-          "price we would wait for" is our own judgement rather than a prediction, and prices change
-          daily, so confirm the price, seller and model number on the listing before you order. We
-          earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.`,
   lead: `Exercise bikes are one of the most heavily promoted categories every November, and one of
           the easiest in which to be sold an ordinary price dressed up as a sale. List prices that
           nobody pays, memberships counted as money off, and a big percentage on a bike that was the

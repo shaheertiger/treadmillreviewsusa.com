@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['are walking pads worth it', 'is a walking pad worth it', 'do walking pads work', 'walking pad review', 'walking pad cost'],
   stickyCta: { text: 'See the Cost per Use', link: '#cost-per-use' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          and walking pads. This is a buying verdict built from typical price ranges and simple
-          arithmetic — it is not financial, medical or fitness advice. Prices quoted here are
-          typical market bands, not current prices for any particular product, and they move;
-          lifespans are typical expectations, not guarantees. Whether more walking is right for you,
-          and how much, depends on your health; if you have a heart, joint or balance condition, or
-          any concern about exercise, talk to a doctor or physical therapist first.
-          <strong class="text-gray-900">On the figures below:</strong> every cost-per-use number is
-          our arithmetic from stated assumptions, and you should rerun it with your own price and
-          your own honest estimate of how often you will walk.`,
   lead: `Whether a walking pad is worth it comes down to one variable more than any other: how
           often it actually gets used. The machine itself does what it says — it moves a belt at
           walking pace in a space too small for a treadmill — and most of them do that adequately

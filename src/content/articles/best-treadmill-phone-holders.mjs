@@ -33,16 +33,6 @@ export default {
           that. This guide lists five phone holders whose bar diameters and phone sizes are stated
           on their listings, and covers the part that matters more than the holder: where on the
           treadmill to put it.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          holders. On 6 November 2026 we looked each one up on Amazon US and recorded the price
-          shown and what the listing says about bar range, phone size and mounting. Every figure on
-          a card comes from that listing; where the listing does not give a figure, or gives two that
-          disagree, we say so rather than choose one. All five are sold for bicycles, motorcycles,
-          strollers or gym equipment, not treadmills specifically, because very few dedicated
-          treadmill phone holders publish a bar range at all. Measure your bar and your phone in its
-          case before ordering. Prices change often. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them.`,
   sections: [
     {
       id: 'quick-picks',

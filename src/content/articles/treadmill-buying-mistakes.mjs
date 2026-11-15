@@ -24,10 +24,6 @@ export default {
           does not matter, a frame that will not go up the stairs. Each of the mistakes below is
           common, each is avoidable with a tape measure or ten minutes of reading, and each links
           to the page that covers it properly.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Motor ratings, deck sizes,
-          clearances and weights on this page are typical ranges drawn from our other guides, not
-          specifications for any particular machine. Manufacturers differ, and the manual and spec
-          sheet for the machine you are considering always take precedence over a rule of thumb.`,
   sections: [
     {
       id: 'short-answer',

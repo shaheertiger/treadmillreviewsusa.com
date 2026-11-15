@@ -27,19 +27,6 @@ export default {
     'black friday treadmill sale',
   ],
   stickyCta: { text: 'See the 2026 Watch List', link: '#picks' },
-  note: `<strong class="text-gray-900">How this page was put together.</strong> On 28 October 2026
-          we checked the prices below against the manufacturers' own stores (UREVO, WalkingPad,
-          Horizon Fitness and NordicTrack) and, where we could read it, the Amazon listing; the
-          NordicTrack Commercial 1750 listing on Amazon was the one we could read in full that day.
-          Where we could not confirm a current price, we give the dated price from our own earlier
-          checks (13, 14 and 20 October 2026) and say so. Specifications come from our existing
-          roundups, where each figure was cross-checked between the maker and at least one
-          independent source; figures the sources disagreed on are left out. Prices change, often
-          daily, and Black Friday 2026 prices had not been published by any of these retailers when
-          we wrote this. Every "target" price is our own judgement of a good deal, not a prediction
-          or a promise that the price will appear. We have not tested these machines. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   lead: `Most Black Friday treadmill lists are written on the day and out of date by lunchtime. This
           one is written a month early on purpose. It names seven machines sold on Amazon that we
           think are worth watching across every tier, from a walking pad under $200 to a

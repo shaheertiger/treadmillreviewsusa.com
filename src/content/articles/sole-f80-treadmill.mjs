@@ -36,21 +36,6 @@ export default {
           F80. This review is about the third one, the 2026 model on Sole's own store, and it
           only states a figure where Sole's listing and an independent source agree. Where they do
           not, it says what each side says.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read Sole's US product page and product feed for the F80 (listed as new
-          for 2026, item F80-2026), including its full specification table, warranty table and
-          delivery options. We cross-checked each figure against two independent sources describing
-          the same 2026 model: Run Reviews' F80 review (last updated 30 July 2026) and the Flex Marks
-          the Spot product listing, a third-party price-tracking site. We also read the Sole-branded
-          specification sheet on the site of Dyaco, Sole's parent company, and older reviews from
-          BarBend, OutdoorGearLab, Garage Gym Reviews and Home Gym Verdict to identify which figures
-          belong to earlier F80s. Every figure on this page is one that Sole's current listing and at
-          least one independent source agree on; where sources disagree, we state both figures and
-          where each comes from rather than choosing. We have not tested the F80, and nothing here is
-          our own measurement. Prices are those shown on 14 October 2026 and change often, so confirm
-          the price, the specification and the warranty for the exact unit before you order. We earn
-          a commission if you buy through the Amazon link on this page; it does not change what we
-          say about the machine.`,
   products: [
     {
       id: 'sole-f80',

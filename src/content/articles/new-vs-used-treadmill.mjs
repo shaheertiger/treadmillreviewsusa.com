@@ -22,11 +22,6 @@ export default {
           advantage — it is the difference between a walking machine and a running one at the same
           budget. What it costs you is recourse, and whether that trade is sound depends almost
           entirely on how carefully you inspect.`,
-  note: `<strong class="text-gray-900">Prices here are indicative.</strong> Secondhand treadmill
-          values vary enormously by region, season and how urgently the seller needs the floor
-          space back. The ratios described below — roughly a third of original price at three to
-          five years — hold reasonably well, but check local listings before treating any figure
-          as a benchmark.`,
   sections: [
     {
       id: 'verdict-up-front',

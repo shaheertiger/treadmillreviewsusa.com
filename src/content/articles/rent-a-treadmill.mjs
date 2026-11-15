@@ -22,13 +22,6 @@ export default {
   lead: `Rent a treadmill for a need measured in weeks or a few months, when you cannot or do not
           want to deal with buying and selling. For anything longer, buying — often used, then
           reselling — is cheaper, and rent-to-own is rarely the right answer at all.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Rental and rent-to-own pricing
-          varies widely by provider, region, machine and term, and changes often. The dollar
-          figures on this page are illustrations with round numbers chosen to show how the
-          arithmetic works — they are not quotes from any company. Get the full written cost,
-          including fees, for any agreement you are considering. If you need a treadmill for
-          rehabilitation, your clinician’s guidance on what you need comes first; this site
-          reviews equipment and does not give medical advice.`,
   sections: [
     {
       id: 'short-answer',

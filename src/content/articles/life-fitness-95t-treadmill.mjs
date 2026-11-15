@@ -29,19 +29,6 @@ export default {
     'life fitness elevation series treadmill',
   ],
   stickyCta: { text: 'See Prices', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read Life Fitness's US catalogue page for the Elevation Series treadmill (marked
-          discontinued), Life Fitness's US Facility Shop listing for the same machine, Fitness Superstore's US
-          listings for remanufactured 95T Achieve, Inspire, Engage, Discover SI and Discover SE3 treadmills and
-          the 95Ti, and GymStore's remanufactured 95Ti listing, including their prices, availability, specification
-          tables and warranty options. We also used other remanufacturer and retailer listings seen in search
-          results (Keystone Fitness, SGroup Fitness, Fitness Superstore UK, Life Fitness Australia), our existing
-          Life Fitness reviews, and the US Consumer Product Safety Commission's recall database. Figures we give for
-          the 95T and 95Ti are those on which Life Fitness and a seller, or two sellers, agree; conflicts are set
-          out in the text. Neither machine is sold on Amazon, so the product cards show the closest new machines
-          sold there, with the figures checked for our long-distance and non-folding treadmill guides. Remanufactured prices are individual sellers' asking prices, change
-          constantly and exclude freight. We have not tested any 95T or 95Ti. As an Amazon Associate we earn from
-          qualifying purchases; that does not change what we say.`,
   lead: `If you search for a Life Fitness 95T, you will find dozens of listings — "95T Inspire", "95T Discover SE
           inc WiFi", "95Ti remanufactured" — and no way to buy one new from Life Fitness's US catalogue, which marks
           the Elevation Series treadmill as discontinued and points to the Integrity+ as its replacement. These

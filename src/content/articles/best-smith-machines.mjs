@@ -27,34 +27,6 @@ export default {
           that are easy to misread. The seven picks below cover the three ways Smith machines
           reach a home — standalone, all-in-one with cables, and rack attachment — and the guide
           after them explains each specification in plain terms.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines, and no figure on this page is our own measurement. Each was confirmed as
-          currently sold on 19 October 2026 on the maker's own store (Titan Fitness, Body-Solid,
-          Mikolo, Marcy and RitFit), and its bar weight,
-          capacity, dimensions and price were checked on that date against at least one independent
-          source — chiefly Garage Gym Reviews, BarBend and Iron Company. A figure appears in a
-          product's specification line only where the maker and an independent source agree; where
-          they conflicted, we left it out and say so on the card. We chose machines sold on Amazon
-          US where we could find them: Amazon's own pages would not load for us (they returned
-          errors), so Amazon availability was confirmed from indexed Amazon listings for the
-          Body-Solid machine only, and each card says where we could not confirm
-          it. The Major Fitness B52, sold on Major Fitness's own store, could not be matched to an
-          Amazon listing, so on 9 November 2026 its card was replaced by the same maker's Drone MAX V,
-          whose figures are the seller's listing claims; we could not confirm them independently. The Marcy MD-9010G and Titan's T-3 Smith attachment, added in November 2026 in place of
-          two direct-sold machines, were checked against their Amazon listings on 9 November, when we also matched the Mikolo
-          M4-2.0 (Ultra version) and the RitFit PSR05 2.0 to Amazon listings by model name and, for the
-          RitFit, the 44 by 45.3 by 82 inch dimensions RitFit's own page gives. Where a
-          button is a search rather than a direct listing, check the model name and the seller.
-          Every brand was checked against the US Consumer Product Safety Commission's recall
-          database. Prices are those we saw on that date and change often. We earn a commission if
-          you buy through the Amazon links on this page; it does not change which products we list
-          or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy, coaching or structural
-          engineering advice. Rated capacities are manufacturer figures, not a guide to what you
-          should lift. If you have a back, shoulder, knee or heart condition, are pregnant or
-          postpartum, or are returning from injury or surgery, talk to a qualified professional
-          before starting or changing a strength programme.`,
   sections: [
     {
       id: 'quick-picks',

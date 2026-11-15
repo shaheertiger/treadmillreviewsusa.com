@@ -29,21 +29,6 @@ export default {
           is covered in our main guide to the
           <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium">best running shoes for treadmill use</a>,
           and we have not repeated it here.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          shoes. Women's figures — stack, drop, weight, widths — and list prices were checked on 14
-          October 2026 against the brand's published figures as given by the brand or its retailers
-          (Saucony, New Balance, ASICS, Nike and HOKA, via Running Warehouse, Fleet Feet, Road Runner
-          Sports and Marathon Sports) and cross-checked against at least one independent source —
-          Believe in the Run, Doctors of Running, RTINGS, Road Trail Run, RunSpirited or Fleet Feet's
-          reviews. Weights are for the women's size each source quotes, usually a US 8. Where sources
-          disagreed on a figure, usually stack height, we left it out and the card says so. None of
-          these figures are our own measurements. Prices are the list prices and ranges we saw on
-          that date and change often. We searched cpsc.gov for each brand and found no open recall
-          or warning covering these shoes. This page is general buying information, not medical
-          advice: if you are pregnant, have pain, an injury, a foot condition or diabetes, talk to
-          a doctor, midwife or podiatrist before changing shoes or training. We earn a commission
-          if you buy through the Amazon links on this page; it does not change which products we
-          list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

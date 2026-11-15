@@ -26,27 +26,6 @@ export default {
           This page names five recumbents whose published figures agreed between the maker and an
           independent source when we checked them, and explains how to judge the features that
           listings describe loosely or not at all.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
-          2026 as currently sold on its maker's own store (Schwinn, Horizon, Marcy and Sunny Health
-          &amp; Fitness), and its figures were checked on that date against the maker's page and at
-          least one independent source — hands-on reviews from OutdoorGearLab, BarBend and Garage Gym
-          Reviews. Our checking tools could not load Amazon's own pages on 19 October; the Schwinn 290
-          and Marcy ME-709 were linked to Amazon listings by an independent reviewer, Garage Gym
-          Reviews notes the Schwinn 230 is sold there too, and Horizon and Sunny both sell through
-          Amazon, but confirm that the exact model and seller are on the listing before you order. A
-          figure appears in a product's specification line only where sources agree; where they
-          conflicted — on unit weights, measured footprints and rider height ranges — we left it off
-          the card and say so in the text. Prices are those we saw on 19 October 2026 and change
-          often. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
-          we are not giving medical, physiotherapy or rehabilitation advice, and nothing here says a
-          recumbent bike will treat or prevent any condition. Where a maker markets a health benefit,
-          treat it as the maker's claim. If you have a heart condition, joint or back pain, balance
-          problems or osteoporosis, have had a joint replacement or other surgery, or are returning
-          from injury, ask your doctor or physiotherapist whether a recumbent bike suits you and how
-          to set it up before you start.`,
   sections: [
     {
       id: 'quick-picks',

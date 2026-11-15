@@ -27,17 +27,6 @@ export default {
           listing carefully — which figures are consistent, which conflict, and which are
           marketing — explains what a curved, motorless treadmill is like to use, and then says
           plainly who the CT550 suits.`,
-  note: `<strong class="text-gray-900">What is claimed, what conflicts, and what we have not done.</strong>
-          On 14 October 2026 we checked the CT550 on SB Fitness Equipment's own store, including its
-          shipping and returns policies, and compared it with an independent walking-equipment
-          catalogue that records the brand's spec sheet and an Amazon listing, and with reseller
-          listings. The specifications on this page — the 62 by 20-inch running surface, eight
-          magnetic resistance levels, the 350 lb rating, the 181 lb machine weight and the warranty
-          — are the seller's claims; the listings agree on most of them but we found no
-          independent measurement or long-term review. One reseller lists a different machine
-          weight, and summaries of the warranty differ; we give both as conflicts. We have not
-          tested the CT550. Prices change; confirm the price, specification and warranty before
-          you order.`,
   products: [
     {
       id: 'sb-fitness-ct550',

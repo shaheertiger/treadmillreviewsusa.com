@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['livestrong treadmill', 'livestrong treadmill ls10.0t', 'livestrong ls10.0t parts', 'livestrong treadmill manual', 'used livestrong treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we did not.</strong> On 14 October
-          2026 we checked the 2009 trade reports of Johnson Health Tech's LIVESTRONG licence, Canadian
-          Tire's 2012 launch announcement, the LS10.0T owner's and service manuals held on ManualsLib,
-          the LS10.0T parts catalogue at FitnessRepairParts.com, independent reviews of the LS10.0T and
-          the LIVESTRONG line, and the US Consumer Product Safety Commission's recall database. The
-          weight limit and warranty terms below appear both in Johnson Health Tech's own manual and in
-          an independent review, so we state them as confirmed. The motor rating, deck size, speed and
-          incline come from a single review or conflict between sources, and we label them that way.
-          We have no connection with Johnson Health Tech or the LIVESTRONG Foundation and have not
-          tested any LIVESTRONG treadmill. Parts prices are those shown on that date; used values are
-          rough, labelled estimates, not market data.`,
   lead: `Most people searching for a LIVESTRONG treadmill already have one, or are looking at one on
           a resale site, and want to know whether it is any good, where to find a part or manual, and
           whether the brand still exists. The short version: these were real, reasonably well-built

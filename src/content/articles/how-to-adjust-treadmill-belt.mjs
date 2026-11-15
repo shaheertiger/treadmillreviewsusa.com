@@ -24,13 +24,6 @@ export default {
           so it runs down the middle of the deck. Turn both bolts equally and you change tension.
           Turn one and you change tracking. Almost every belt that ends up worse after an
           adjustment got that way because someone did one while trying to do the other.`,
-  note: `<strong class="text-gray-900">Before you touch a bolt.</strong> Unplug the treadmill at
-          the wall for every tension adjustment and for anything that puts your hands near the
-          rollers or under the belt. The safety key stops the belt; it does not isolate the
-          machine. Tracking is adjusted with the belt running empty, so do it from the side, never
-          standing on the belt, with the safety key within reach. If you smell burning, see
-          sparks, or the belt moves with the machine switched off, stop — that is not an
-          adjustment problem.`,
   sections: [
     {
       id: 'short-answer',

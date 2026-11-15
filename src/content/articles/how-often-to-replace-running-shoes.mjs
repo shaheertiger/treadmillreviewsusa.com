@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how often to replace running shoes', 'running shoe mileage', 'when to replace running shoes', 'treadmill running shoes wear', 'rotating running shoes'],
   stickyCta: { text: 'See the Miles Table', link: '#miles-to-months' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills and the gear used with them. This is a general guide to shoe wear built on
-          widely used rules of thumb and simple arithmetic — it is not medical, podiatry or
-          physiotherapy advice, and we are not qualified to give any of those. New or persistent
-          pain is not something to solve by changing shoes on your own: if you have pain, an
-          injury, a foot condition, diabetes or neuropathy, or you use orthotics, talk to a doctor,
-          podiatrist or physical therapist. <strong class="text-gray-900">On the figures
-          below:</strong> the 300 to 500-mile range is a convention, not a measured limit for any
-          shoe, and the month figures are arithmetic from the weekly mileage stated.`,
   lead: `Running shoes do not come with a use-by date, and the way most people judge them — by
           looking at the sole — is the least reliable way there is, especially for anyone who runs
           or walks indoors. The cushioning that matters is in the midsole foam, and foam wears out

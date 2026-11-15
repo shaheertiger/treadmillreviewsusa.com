@@ -25,21 +25,6 @@ export default {
           refrigerator. This guide sets out the four kinds sold as "a stepper", what each cost on
           the day we checked, which specifications are worth reading, how far to trust the calorie
           claims, and when a different machine would serve you better.`,
-  note: `<strong class="text-gray-900">What we checked, and what we did not.</strong> We have not
-          tested any stepper on this page. On 20 October 2026 we checked the three carded products
-          against their makers' US stores (Sunny Health &amp; Fitness, BowFlex and Bells of Steel) and
-          against independent coverage from Garage Gym Reviews and BarBend. A figure appears on a
-          card only where the maker and an independent source agreed; where they did not, as with
-          the Sunny mini stepper's weight limit, we left it off and say why. Other models named in
-          the text are described from the maker's or a retailer's listing, labelled as such.
-          Calorie figures are estimates calculated from the 2024 Adult Compendium of Physical
-          Activities, not measurements. Recall information comes from the US Consumer Product Safety
-          Commission's recall database, searched the same day. On 9 November 2026 we replaced the BowFlex Max Trainer M6 card, because the M6 is not sold
-          on Amazon US, with Sunny's SF-E3919, checked against Sunny's page, its Amazon listing and two
-          other retailers. Prices and subscription prices are those shown on 20 October 2026, or on
-          9 November for the Sunny, and change often. Amazon pages would not load for us, so
-          check the seller, model and price on any listing before you order. This page is not
-          medical advice. As an Amazon Associate we earn from qualifying purchases.`,
   sections: [
     {
       id: 'short-answer',

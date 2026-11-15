@@ -24,11 +24,6 @@ export default {
           usually carries more than any single shop. Instead it covers what a sporting goods chain is
           good at, what to check on delivery, assembly and returns, and how to compare a price there
           with what the same kind of machine costs elsewhere.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with Dick's Sporting Goods. Selection, delivery and assembly services,
-          return rules and price-matching terms change over time and can differ between stores,
-          regions and the website. Where this page describes how things typically work, check the
-          current policy with the store or on the product page before you buy.`,
   sections: [
     {
       id: 'short-answer',

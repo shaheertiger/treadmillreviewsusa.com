@@ -27,20 +27,6 @@ export default {
           single protector rated for the treadmill's current that plugs straight into the wall.
           This page lists the three we could verify, and explains when the better answer is no
           plug-in device at all.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          surge protectors. Ratings, outlet counts and warranty terms were checked on 15 October
-          2026 against each maker's own product page, datasheet or instructions, and against at
-          least one retailer or reviewer that does not make the product. A figure appears on a
-          card only where those sources agree; where they disagreed — on the Panamax M2A20's
-          outlet layout and UL rating, and on the Tripp Lite SPIKECUBE's joule figure — we left it out and
-          say so. The Tripp Lite ULTRABLOK, added on 9 November 2026 because the Panamax MD2 is not
-          sold on Amazon US, was checked against Tripp Lite's datasheet and its Amazon listing. Prices are the ranges we saw on that date and change often. This is general
-          information, not electrical advice: <strong>your treadmill's manual is the
-          authority</strong>, and if it says to plug directly into a grounded wall outlet with
-          nothing in between, do that and buy nothing on this page. Any work on outlets, circuits
-          or the electrical panel is for a licensed electrician. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

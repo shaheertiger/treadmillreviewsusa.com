@@ -26,22 +26,6 @@ export default {
           key cord. Sweat is worse, because there is no breeze to dry it. The six pairs below are
           chosen for those conditions, and the guide after them explains which trade-off suits
           which runner.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          headphones. Model names, water-resistance ratings, battery figures and features were
-          checked on 15 October 2026 against each maker's own product page or store listing and
-          at least one independent review or major retailer listing. A figure appears on a card
-          only where those sources agree; where they disagreed — battery life on the JLab pair,
-          the water rating on the Soundcore pair, weight and standby time on the OpenRun Pro 2 — we
-          left it out and say so in the description. None of these figures are our own
-          measurements. Prices are the ranges we saw on maker stores and retailer listings on or
-          shortly before that date, and they change often, so confirm the price and the exact
-          variant before ordering. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> This site reviews
-          equipment. It is not giving medical or audiology advice, and nothing here is a claim
-          that any headphone type is better or worse for your hearing. Keep the volume moderate,
-          and if you have a concern about your hearing or your ears, talk to a qualified
-          professional.`,
   sections: [
     {
       id: 'quick-picks',

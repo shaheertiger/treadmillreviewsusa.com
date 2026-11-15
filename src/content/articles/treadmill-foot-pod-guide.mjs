@@ -19,14 +19,6 @@ export default {
   ],
   tags: ['treadmill foot pod', 'foot pod calibration', 'foot pod for zwift', 'running foot pod', 'treadmill pace sensor'],
   stickyCta: { text: 'Calibrate Your Pod', link: '#calibration' },
-  note: `<strong class="text-gray-900">On the claims below.</strong> We have not tested foot pods
-          ourselves. How a pod works and how to calibrate one are described in general terms
-          that apply across brands; where we name a specific device, app or menu, the detail
-          comes from the maker's own documentation — Zwift's support articles on compatible
-          running hardware and footpod calibration, and Garmin's watch manuals — or from figures
-          already published in our own roundups. Menus, compatibility lists and firmware change,
-          so check your device's current manual and Zwift's current hardware list for the exact
-          model you own. Worked calibration examples are arithmetic, not measurements.`,
   lead: `A treadmill foot pod is a small motion sensor that clips to your laces or sits in a
           pocket under the insole. It measures how your foot moves with each stride, turns that
           into pace, distance and cadence, and broadcasts the result to a watch, a phone or a

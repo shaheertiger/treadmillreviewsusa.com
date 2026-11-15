@@ -26,15 +26,6 @@ export default {
           2-in-1 machines currently sold on Amazon US, explains what the confusing Goplus listing
           names refer to, and shows how to tell whether the running mode on any of them will suit the
           way you actually run.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed as currently sold on Amazon US on 6 November 2026, and the
-          figures on each card come from the Amazon listing's own bullet points or, where we say so,
-          the maker's website. Where two sources gave different figures, we left the figure off the
-          card and explain the difference in the text. None of these figures are our own
-          measurements. Prices are those Amazon showed on 6 November 2026 and move often, sometimes
-          by a third in a week, so check the price and the exact listing before you order. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

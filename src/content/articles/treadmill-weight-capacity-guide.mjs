@@ -24,12 +24,6 @@ export default {
           breaks, and it is not the weight at which it stops being pleasant to use. It is the
           heaviest user the manufacturer will stand behind — and the gap between those three
           things is what this guide is about.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> Capacity tiers, roller
-          diameters and motor ratings are given as typical ranges drawn from manufacturers'
-          published specifications across the market, not from measurements of any one machine.
-          Manufacturers do not all define maximum user weight the same way, and some do not say
-          how they arrived at it. Where your own machine's manual or warranty says something
-          different from this page, the manual wins.`,
   sections: [
     {
       id: 'what-it-means',

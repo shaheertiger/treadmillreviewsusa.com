@@ -26,26 +26,6 @@ export default {
           and, before any of it, a frank look at whether sauna heat suits your health. The five
           saunas below are all sold on Amazon US, all indoor-only, and all checked against the
           maker's own figures.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review home gym and
-          recovery equipment; this is not medical advice, and nothing on this page says a sauna
-          treats, cures or prevents any condition. Sauna makers market detox, weight-loss, skin,
-          circulation and recovery benefits; on this page those are reported as the sellers' claims.
-          Every manual we read tells pregnant women, and people with heart disease, high or low blood
-          pressure, circulation problems, diabetes or other medical conditions, or who take
-          medication, to consult a physician before using a sauna. If any of that applies to you, or
-          you are not sure, talk to your doctor first.
-          <strong class="text-gray-900">On the products below.</strong> We have not tested these
-          saunas, and no temperature, heat-up time or EMF figure here is our own measurement. On 19
-          October 2026 we confirmed each sauna as listed and in stock on Amazon US — the Dynamic models
-          sold by Spreetail, the Maxxus by Dealsupply and the Almost Heaven by Harvia US, the brand's
-          parent company. We checked dimensions, heaters, electrical requirements and warranty
-          against the maker's own product page or owner's manual and at least one other source: the
-          Amazon listing, a second retailer or Garage Gym Reviews' hands-on coverage. A figure appears
-          on a card only where those sources agree; where they conflicted, we left it off and say so.
-          Every brand was checked against the US Consumer Product Safety Commission's recall
-          database, and recalled products are excluded. Prices are those we saw on that date and
-          change often. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

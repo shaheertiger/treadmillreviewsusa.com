@@ -19,13 +19,6 @@ export default {
   ],
   tags: ['types of treadmills', 'different types of treadmills', 'different kinds of treadmills', 'types of running machines', 'treadmill types explained'],
   stickyCta: { text: 'Compare the Types', link: '#at-a-glance' },
-  note: `<strong class="text-gray-900">On the figures below.</strong> Price bands are typical US
-          ranges for new machines as of October 2026, drawn from our own roundups and current
-          listings; they are not quotes for any named product, and prices move through the year.
-          Motor, deck and capacity figures are general characteristics of each type rather than
-          specifications of any model — check the manufacturer's listing for the machine you are
-          considering. We have not tested the products in each category; where this page names a
-          product to illustrate a type, it is an example, not a recommendation.`,
   lead: `"Treadmill" covers a wider range of machines than almost any other piece of home exercise
           equipment. At one end is a slim, handrail-free walking pad that slides under a sofa; at the
           other is a commercial running machine built for hours of daily use that may need its own

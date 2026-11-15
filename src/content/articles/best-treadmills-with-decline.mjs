@@ -27,26 +27,6 @@ export default {
           October 2026, decline was confined almost entirely to NordicTrack's Commercial and X
           Series and to the Wahoo KICKR RUN — and the cheapest of them still costs around $1,600.
           On Amazon, Sunny Health &amp; Fitness's Versatile Treadmill adds a walking-only option.`,
-  note: `<strong class="text-gray-900">What we checked, and what we left out.</strong> On 13 October
-          2026 we checked the current treadmill ranges of NordicTrack, ProForm, Sole, Bowflex,
-          Horizon, Peloton and Wahoo for machines with powered decline, using each manufacturer's
-          own product or specification pages, then cross-checked every machine listed here against
-          retailer listings and independent review coverage. A machine appears only where the
-          manufacturer itself confirms the decline figure. Spec lines carry only figures that agree
-          across sources; NordicTrack's motor ratings, the Commercial 1250's deck width and maximum
-          user weight, and the KICKR RUN's warranty term are quoted differently in different places,
-          so we left them out. We also searched cpsc.gov for recalls on each brand and model and
-          found none open for these treadmills. The Wahoo KICKR RUN we first carded is sold by Wahoo
-          and its dealers rather than on Amazon, so on 9 November 2026 we replaced its card with Sunny's
-          Versatile Treadmill, whose figures are those checked for our incline trainer guide; the
-          KICKR RUN is still discussed below. The same day the NordicTrack X16 card, which Amazon does
-          not sell, became the Sole TT8, whose figures are also those checked for our incline trainer
-          guide; the X16 is still discussed below. None of these figures are our own measurements; we
-          have not tested these machines. Price bands are prices seen on 13 October 2026 and change
-          often, so confirm the price, the specification and the warranty for the exact unit
-          before you order. Nothing on this page is medical advice. We earn a commission if you
-          buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   products: [
     {
       id: 'nordictrack-commercial-1750',

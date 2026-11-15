@@ -21,10 +21,6 @@ export default {
   lead: `Almost every treadmill budget is set the wrong way round — a number is chosen first and
           a machine found to fit it. Set the use first and the budget falls out of it, and the
           result is usually less money spent on a machine that suits you better.`,
-  note: `<strong class="text-gray-900">One number to have ready.</strong> Before starting, decide
-          how many sessions a week you will realistically do in month six, not in week one. Every
-          calculation on this page depends on that figure, and being honest about it is the single
-          most valuable thing you can do for this decision.`,
   sections: [
     {
       id: 'question-one',

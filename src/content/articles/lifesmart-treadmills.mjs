@@ -26,20 +26,6 @@ export default {
     'lifesmart tm4000c treadmill',
   ],
   stickyCta: { text: 'See the Range', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we checked LifeSmart's US treadmill store (its full product catalogue with prices and stock
-          flags, the TM3000, TM4000, TM4000C, TM4500 and TM5000 product pages, its warranty page and its About page),
-          Costco's product pages for the TM6500 and TM55 (Costco's pages did not show prices to our requests, and its
-          TM4500 page refused them), Action Lifestyle's TM4000C listing and a Costco deal tracker's TM4800 entry in
-          search results, an open-box retailer's TM4800 listing, a fitness retailer's LifeSmart brand guide and Sole's
-          blog coverage of the TM4500, and the US Consumer Product Safety Commission's recall database for LifeSmart.
-          Several LifeSmart figures differ between LifeSmart, Costco and retailers; conflicts are set out in the text
-          and kept off the cards, and where only LifeSmart publishes a figure we say so. Prices are those shown on the
-          day and change often. The NordicTrack T Series 16 card, which stands in for the Costco-only TM6500, carries
-          the figures checked for our NordicTrack treadmills guide; the ProForm Pro 2000 and NordicTrack Commercial
-          1250 cards, which stand in for the TM4000C and TM4500 because we could not find them on Amazon US, carry the
-          figures checked for our iFIT and NordicTrack guides. We have not tested any LifeSmart treadmill. As an Amazon Associate we earn from
-          qualifying purchases; that does not change what we say.`,
   lead: `LifeSmart's pitch is one feature: PowerTouch, a motorised fold that raises and lowers the deck at the press
           of a button, with infrared sensors meant to stop it lowering onto a pet or a child. Around that it builds
           brushless-motor folding treadmills with incline and a small decline, sold mainly through Costco and Dick's

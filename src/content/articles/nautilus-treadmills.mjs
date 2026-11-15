@@ -26,21 +26,6 @@ export default {
     'nautilus treadmill recall',
   ],
   stickyCta: { text: 'See What to Buy Instead', link: '#buy-instead' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we checked nautilus.com (which now sells a vibration plate, supplements and
-          apparel, and no treadmills), Bowflex's US treadmill page and prices, Schwinn Fitness's US store and
-          product specification pages, the US Consumer Product Safety Commission's recall notice 22-153 and its
-          recall database for Nautilus, Bowflex and Johnson Health Tech, local and trade press on the 2023 sale
-          of the Nautilus brand and the 2024 sale of BowFlex Inc. (The Columbian, SGI News, Athletech News and
-          bankruptcy-sale coverage), and model figures from TreadmillReviews.com, USA Home Gym, Garage Gym
-          Reviews and a Schwinn-hosted Nautilus specification page seen in search results. Discontinued-model
-          figures come from old listings and reviews, several of which disagree; conflicts are set out in the
-          text and kept off the cards. On 9 November 2026 we replaced the used Nautilus T614 card, which
-          cannot be bought on Amazon, with the Schwinn 810, whose figures are those checked for our Schwinn
-          guide, and the Bowflex T6 and T9 cards with the Horizon 7.0 AT and 7.4 AT, whose figures are those
-          checked for our budget and heavy-duty treadmill guides. Prices are those shown on the day and change often. We have not tested
-          any of these treadmills. As an Amazon Associate we earn from qualifying purchases; that does not
-          change what we say.`,
   lead: `Searches for "Nautilus treadmill" are still common, and so are the machines: plenty of T614s, T616s
           and T618s were sold through Best Buy, Walmart, Amazon and nautilus.com in the late 2010s and early
           2020s, and they now fill local marketplace listings. What has gone is everything behind them. Nautilus

@@ -26,16 +26,6 @@ export default {
           question is not which treadmill has iFIT — all of the current NordicTrack and ProForm
           range does — but which frame, belt and screen suit you, and which membership tier the
           screen you choose actually needs. This guide answers both.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed on 6 November 2026 as currently sold on Amazon US, and the
-          figures on each card come from the Amazon listing's own specification bullets or from
-          NordicTrack's and ProForm's published specifications, which earlier guides on this site
-          checked against independent sources. Where a figure appeared in only one place or the
-          sources disagreed, we left it off the card. iFIT membership prices are those iFIT's own
-          membership page showed in November 2026. Prices are Amazon's on 6 November 2026 and
-          change often, so confirm the price, specification and included trial membership on the
-          exact listing before you order. We earn a commission if you buy through the Amazon links
-          on this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

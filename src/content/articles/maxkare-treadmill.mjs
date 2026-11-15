@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['maxkare treadmill', 'maxkare folding treadmill', 'maxkare treadmill reviews', 'maxkare walking pad', 'maxkare 3.5hp treadmill'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read every treadmill and walking-pad listing in MaxKare’s own web store
-          (maxkare.net), including stock status and prices, and the store’s about, warranty, returns
-          and shipping pages; MaxKare’s Walmart listings as indexed by search engines (Walmart’s own
-          pages would not load for us); a brand press release from October 2025; one independent
-          review of an older MaxKare model; and Amazon’s US product data, where we found no MaxKare
-          treadmill on sale. We searched the US Consumer Product Safety Commission’s recall database
-          for the brand. We found no independent source that confirms the specifications of any
-          current MaxKare treadmill, so every figure on this page is the seller’s claim, and where
-          two MaxKare listings disagree we say so rather than choosing. We have not tested a MaxKare
-          treadmill. Prices change often; the ones here are those shown on the day we checked.`,
   lead: `If you searched for a MaxKare treadmill, you most likely saw one on Walmart.com: a folding
           machine with a 3.5 HP badge, 15 incline levels and a price well under the big brands. The
           brand is real, it does sell those machines, and some of them are in stock. What it does not

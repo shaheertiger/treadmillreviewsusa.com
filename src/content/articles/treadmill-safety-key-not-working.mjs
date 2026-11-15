@@ -25,12 +25,6 @@ export default {
           and a lost key is an inexpensive part. The bad news is that the internet is full of
           advice to tape a fridge magnet over the switch, and this page explains at some length
           why that is a genuinely bad idea.`,
-  note: `<strong class="text-gray-900">Never bypass the safety key.</strong> Do not tape, glue or
-          wedge a magnet, clip or anything else into the key position to make the machine run.
-          The key is the treadmill's emergency stop, and defeating it means the belt keeps moving
-          if you fall. If pulling the key does not stop the belt, stop using the machine, unplug it
-          and contact the manufacturer. Unplug the treadmill at the wall before any inspection —
-          the key stops the belt, but it does not isolate the machine from the mains.`,
   sections: [
     {
       id: 'short-answer',

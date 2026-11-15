@@ -25,11 +25,6 @@ export default {
           circuit board you would rather not drop, and a deck that can swing open if the lock is
           not engaged. The work is mostly in the preparation, and the preparation is mostly
           measuring and taking things off.`,
-  note: `<strong class="text-gray-900">Safety first.</strong> Unplug the treadmill at the wall and
-          remove the safety key before you fold, tilt or dismantle anything. Treat any
-          full-size machine as a team lift — at least two people, three for stairs — and if the
-          deck will not lock securely in the folded position, move it flat rather than trusting
-          the latch. Nobody should ever be below a treadmill on a staircase.`,
   sections: [
     {
       id: 'how-heavy',

@@ -23,12 +23,6 @@ export default {
           equipment, mainly because it works perfectly the moment you go to look at it. The way
           through is to stop asking what is broken and start asking when it stops — because the
           timing narrows a dozen candidates down to two or three.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the treadmill at the
-          wall before removing the motor hood, touching the belt or reaching under the deck. The
-          safety key is not an isolator, and controller boards can hold a charge after
-          disconnection. If you smell burning, see sparking, notice smoke, or the belt moves when
-          the machine is off, stop using it and get it looked at — those are not things to
-          troubleshoot.`,
   sections: [
     {
       id: 'when-it-stops',

@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['should i buy a treadmill', 'is a treadmill worth it', 'is buying a treadmill worth it', 'should i get a treadmill', 'home treadmill worth it'],
   stickyCta: { text: 'Take the Self-Test', link: '#self-test' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills;
-          this is a general buying-decision guide. It is not medical, physiotherapy or financial
-          advice. If you are buying a treadmill for rehabilitation, or you have a heart, lung, joint
-          or balance condition, are pregnant or are returning after illness or injury, talk to your
-          doctor or physical therapist first and follow their guidance on what to use and how.
-          <strong class="text-gray-900">On the figures below.</strong> Every price, cost-per-use and
-          resale figure is either a typical US range taken from our other guides or an example with
-          round numbers chosen to make the arithmetic easy to follow, and each is labelled as such.
-          Prices, return terms and rental rates change; put your own numbers into the same sums
-          before deciding, and check the current terms of any retailer you buy from. Checked
-          October 18, 2026.`,
   lead: `"Should I buy a treadmill?" is really a question about your future self. The machine is
           the easy part: a sensible home treadmill is not hard to find at almost any budget. The
           hard part is predicting whether you will still be using it in month six, whether it fits

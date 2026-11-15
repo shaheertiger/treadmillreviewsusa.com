@@ -19,14 +19,6 @@ export default {
   ],
   tags: ['treadmill belly fat', 'spot reduction', 'visceral fat', 'incline walking thigh fat', 'treadmill fat loss'],
   stickyCta: { text: 'See a Realistic Plan', link: '#realistic-plan' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page explains how fat loss works in general terms so you can use a
-          treadmill sensibly — it is not medical advice, nutrition advice or a weight-loss
-          programme, and we are not qualified to give any of those. If you have a health
-          condition, take medication, are pregnant, or have any history of disordered eating,
-          talk to a doctor or a registered dietitian. <strong class="text-gray-900">On the figures
-          below:</strong> where we give timelines, rates or calorie costs, they are typical ranges
-          from mainstream guidance and standard estimation equations, not measurements of you.`,
   lead: `It is one of the most searched questions in home fitness, and it deserves a straight
           answer: no machine burns fat from a particular body part. A treadmill helps you lose fat
           from your whole body, and your belly is part of your whole body. That distinction sounds

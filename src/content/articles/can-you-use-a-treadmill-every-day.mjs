@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['can you use a treadmill every day', 'can you walk on a treadmill every day', 'can you run on a treadmill every day', 'is it ok to use a treadmill daily', 'treadmill every day'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
-          This is a general guide to daily treadmill use and daily-use maintenance — it is not
-          medical, physiotherapy or coaching advice, and we are not qualified to give any of
-          those. How often you should walk or run depends on your health, history, fitness and
-          goals; if you have a heart, lung, joint or other condition, an injury, are pregnant, or
-          are returning from illness, talk to a doctor or physical therapist first, and stop and
-          get checked if something hurts or feels wrong. <strong class="text-gray-900">On the
-          machine side:</strong> always unplug the treadmill before any cleaning or servicing,
-          and treat your owner's manual as the authority on usage limits and maintenance
-          intervals.`,
   lead: `"Every day" is two questions. One is about your body: can you walk or run on a treadmill
           daily without wearing yourself down? The other is about the machine: can a home
           treadmill take daily use, and what does it need if it is going to? The body answer is

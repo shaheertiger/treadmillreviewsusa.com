@@ -21,11 +21,6 @@ export default {
   lead: `The full annual cost of keeping a home treadmill healthy is somewhere between a takeaway
           meal and a tank of fuel. The cost of not doing it is a motor or controller board, and
           those are several hundred dollars each. Very few purchases have that payoff ratio.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> These are typical US ranges
-          drawn from published parts pricing and common service rates, not measured data from a
-          service network. Labour rates vary widely by region and by whether a manufacturer has
-          local engineers. Treat them as planning figures and get a specific quote before
-          committing to any repair.`,
   sections: [
     {
       id: 'annual-cost',

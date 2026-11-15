@@ -19,12 +19,6 @@ export default {
   ],
   tags: ['treadmill running form', 'running cadence', 'overstriding', 'running posture', 'treadmill running'],
   stickyCta: { text: 'See the Checklist', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is general guidance on running technique on a belt — it is not medical
-          advice, a gait analysis or physiotherapy. If you have pain while running, a current
-          injury, or a history of recurring injuries, a physical therapist or sports medicine
-          clinician can assess your running properly and is a much better source than a website.
-          Change technique gradually, and stop if a change causes pain.`,
   lead: `To run properly on a treadmill: stand tall with a slight forward lean from the ankles,
           look ahead rather than down, land with your foot roughly under your hips rather than out
           in front, take slightly shorter and quicker steps than feels natural if you overstride,

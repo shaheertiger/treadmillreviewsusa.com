@@ -26,28 +26,6 @@ export default {
           roller costs several times as much as a plain one. The six rollers below cover the
           common firmnesses, textures and sizes, and the guide after them explains how to choose,
           how to use one, what the research says it does, and the places you should not roll.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          rollers, and no figure on this page is our own measurement. Each was confirmed as currently
-          sold on 19 October 2026 on its maker's own US store (TriggerPoint, RumbleRoller, Hyperice and
-          Therabody) and at Rogue Fitness, and each figure was checked on that date against the
-          maker's product page and Rogue's listing. A figure appears in a card's specification line
-          only where those sources agree; where they conflicted or only one source gave a figure —
-          most often weight ratings, diameters and the GRID X's dimensions — we left it out and say
-          so on the card. TriggerPoint, Hyperice and Therabody sell on Amazon US through their brand
-          listings, but Amazon's pages would not load for us that day, so we could not confirm each
-          exact listing or its seller; each button is a tagged Amazon search for the model, and you
-          should check that the listing is sold by Amazon or the brand's own store. Prices are those we
-          saw on the makers' stores on that date and change often. On 9 November 2026 we found the
-          Vyper 3 on Amazon US only in a bundle with Hyperice's Hypersphere Go ball, sold by Hyperice, so
-          that card links the bundle and gives its price. We earn a commission if you buy
-          through the Amazon links on this page; it does not change which products we list or what
-          we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home gym
-          equipment; we are not giving medical or physiotherapy advice, and we make no claim that
-          foam rolling speeds healing, breaks up scar tissue, prevents injury or improves
-          performance. Makers market some of those benefits; on this page they are reported as the
-          sellers' claims. If you have an injury, a medical condition, pain that does not settle, or
-          you are pregnant, ask a doctor or a qualified physiotherapist before you start.`,
   sections: [
     {
       id: 'quick-picks',

@@ -22,13 +22,6 @@ export default {
           geometry rather than power: at 8 mph your stride is roughly twice as long as it is at
           3 mph, and the deck either has room for it or it does not. No amount of motor solves
           a short deck.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> Deck dimensions, motor
-          ratings and weight capacities are the manufacturers' published figures, and price
-          bands are typical street prices rather than live pricing. Specifications change
-          between model years without the product name changing, so confirm the deck length and
-          motor rating against the exact unit you are buying before you order. We have not
-          tested these machines: the judgements below come from those published figures and from
-          what the specifications imply for a runner. None of them are our own measurements.`,
   sections: [
     {
       id: 'why-running-differs',

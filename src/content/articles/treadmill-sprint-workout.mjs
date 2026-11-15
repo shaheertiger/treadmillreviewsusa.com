@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill sprint workout', 'sprints on treadmill', 'treadmill sprints', 'how to sprint on a treadmill', 'hill sprints treadmill'],
   stickyCta: { text: 'The Safe Mount', link: '#mounting' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to sprinting on one — it is not medical advice,
-          physiotherapy or coaching, and we are not qualified to give any of those. Sprinting puts
-          more force through hamstrings, calves and Achilles tendons than any other running, and
-          sprinting on a motorised belt adds a real risk of falling. If you have a heart, lung or
-          circulation condition, take medication that affects heart rate, are pregnant, have a
-          history of hamstring, calf or Achilles injury, or have balance problems, talk to a doctor
-          or physical therapist before trying it. Stop for chest pain, dizziness or any sharp pain.
-          <strong class="text-gray-900">On the figures below:</strong> speeds, grades and rep
-          counts are illustrations, not prescriptions, and top speeds vary widely between machines.`,
   lead: `A treadmill sprint workout is a session of short, all-out or near-all-out efforts — ten to
           thirty seconds — with long, complete recovery between them. On a track, the hard part is
           the sprint. On a motorised treadmill, the hard part is the transition: getting onto a

@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['can you use nordictrack without ifit', 'nordictrack without subscription', 'nordictrack manual mode', 'ifit membership required', 'nordictrack cancel ifit'],
   stickyCta: { text: 'See What Still Works', link: '#what-works' },
-  note: `<strong class="text-gray-900">What this page is based on.</strong> We checked
-          NordicTrack's iFIT membership FAQ and its smart-versus-traditional treadmill page on 13
-          October 2026, and cross-checked what they say against independent review coverage of
-          the current models and independent reporting on iFIT's software changes. We have not
-          tested a NordicTrack with and without a membership ourselves. What a console does
-          without a membership varies by model, model year and software version, and iFIT has
-          changed it before, so treat this as a description of the general pattern and confirm
-          the current behaviour for the exact machine with NordicTrack or the retailer before you
-          rely on it. Membership prices are not quoted because they change.`,
   lead: `A NordicTrack without iFIT is still a treadmill. Press start and the belt moves; press
           the speed and incline buttons and they respond. That much is not in dispute, and
           NordicTrack says so in writing. The real question behind the search is narrower and

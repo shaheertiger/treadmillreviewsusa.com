@@ -19,19 +19,6 @@ export default {
   ],
   tags: ['spirit treadmill', 'spirit treadmills', 'spirit fitness treadmill', 'spirit xt485 treadmill', 'spirit xt685 treadmill'],
   stickyCta: { text: 'See the Current Range', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we checked Spirit Fitness's US site (every residential treadmill page, its
-          commercial treadmill pages and its connectivity and SPIRIT+ pages), the corporate history
-          of Dyaco, Spirit's parent company, a 2008 trade announcement of the acquisition, retailer
-          listings from Abt and The Fitness Outlet, independent coverage from TopTenReviews and
-          TreadmillReviews.com, Zwift's published list of manufacturers with confirmed compatible
-          models, and the US Consumer Product Safety Commission's recall database, which lists no
-          Spirit treadmill recall. Figures on this page are the ones on which Spirit and at least one
-          independent source agree; where they disagree we say so. We have not tested any Spirit
-          treadmill. Prices are what spiritfitness.com showed on the day and change often. The XT685
-          is sold by Spirit and its dealers rather than on Amazon, so its card shows the XT385, the
-          other Spirit Amazon sells, with the figures checked for our Apple Watch treadmill guide. As an
-          Amazon Associate we earn from qualifying purchases.`,
   lead: `People who search for a Spirit treadmill usually mean Spirit Fitness, the Arkansas brand
           whose XT treadmills sit in specialist fitness stores next to Sole, Horizon and True. Spirit
           is less familiar than the brands that advertise heavily because it sells mostly through

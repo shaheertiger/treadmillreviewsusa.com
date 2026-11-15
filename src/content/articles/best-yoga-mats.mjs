@@ -26,23 +26,6 @@ export default {
           is off-limits to anyone with a latex allergy. The seven mats below cover the common
           materials and price points, and the guide after them explains how to choose between them
           — and when what you actually need is an exercise mat or gym flooring instead.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          mats, and no figure on this page is our own measurement. Each was confirmed on 19 October
-          2026 as listed on Amazon US, in most cases by the brand's own Amazon store or with Amazon
-          as the seller, and each figure was checked on that date against the maker's own product
-          page or the Amazon listing plus at least one independent source — a published hands-on
-          review or a second retailer. A figure appears in a card's specification line only where
-          those sources agree; where they conflicted — the Gaiam mat's weight, the PROlite's
-          thickness on one retailer's page, and the Manduka begin's material on some Amazon listings
-          — we say so on the card. The Amazon Basics mat has no independent review we could find,
-          so its figures are the listing's own claims. Prices are those we saw on that date and
-          change often. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.
-          <strong class="text-gray-900">Scope.</strong> This is an equipment guide, not yoga
-          instruction or medical advice. Natural rubber mats contain latex and are not suitable for
-          anyone with a latex allergy. If you are pregnant, injured or have a joint or balance
-          condition, ask a doctor or a qualified instructor which kind of practice suits you before
-          choosing a mat for it.`,
   sections: [
     {
       id: 'quick-picks',

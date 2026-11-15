@@ -19,21 +19,6 @@ export default {
   ],
   tags: ['echelon treadmill', 'echelon treadmills', 'echelon stride treadmill', 'echelon stride 6', 'echelon stride 8s', 'echelon vs peloton treadmill'],
   stickyCta: { text: 'See the Current Range', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked Echelon's US site (its treadmill collection, the Stride-6,
-          Stride-6s, Stride-8s and Stride 50 RCX-22 product pages, its Premier membership pages and
-          its published warranty terms and support article), independent coverage of the Stride
-          range from Garage Gym Reviews, BarBend, TreadmillReviews.com and Run to the Finish,
-          Peloton's current treadmill page and launch coverage of its new Tread line, a US
-          Attorney's Office settlement announcement reported by the Chattanooga Times Free Press
-          and Chattanoogan.com, and the US Consumer Product Safety Commission's recall database,
-          which lists no Echelon recall. Figures on the Stride-8s card are those on which Echelon
-          and at least one independent source agree (the ProForm and NordicTrack alternatives carry
-          the figures checked for our iFIT and auto-incline guides on 6 November 2026); where they disagree we say so in the text and
-          leave the figure off the card. We have not tested any Echelon treadmill. Prices and
-          membership prices are what echelonfit.com showed on the day we checked (20 Oct 2026); both
-          change often, so confirm them before you order. As an Amazon Associate we earn from
-          qualifying purchases.`,
   lead: `Most people who search for an Echelon treadmill have seen the trick before they have seen
           the specification: a full-length treadmill that folds itself down at the touch of a
           button and slides under a bed or against a wall. That feature is real, and for a small

@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how to disassemble a treadmill', 'how to take apart a treadmill', 'how to dismantle a treadmill', 'how to take apart nordictrack treadmill', 'treadmill disassembly'],
   stickyCta: { text: 'See the Steps', link: '#console-cable' },
-  note: `<strong class="text-gray-900">Unplug first, and leave the control board alone.</strong>
-          Switch the treadmill off, remove the safety key and unplug it at the wall before you
-          remove a single bolt, then wait before opening the motor hood: capacitors on the motor
-          control board can hold a charge after the power is removed. Do not touch the board, its
-          terminals or the mains wiring. Treadmill parts are heavy and the folding mechanism can
-          store energy, so work with at least one other person. Your owner's manual is the
-          authority on your model; if the treadmill is under warranty, check the terms before
-          dismantling more than the manual describes, and if anything here conflicts with the
-          manual, follow the manual.`,
   lead: `People take treadmills apart for three main reasons: to get one through a doorway or up a
           staircase, to move house, or to break one down for disposal. All three need less
           dismantling than most people expect, and all three go wrong in the same ways — a console

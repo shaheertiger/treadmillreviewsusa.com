@@ -23,17 +23,6 @@ export default {
   ],
   tags: ['what treadmills do gyms use', 'gym treadmill brands', 'commercial treadmill brands', 'what brand treadmill does planet fitness use', 'best gym treadmill brand'],
   stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          18 October 2026 we checked the ownership of each brand below against company and trade
-          sources: Peloton's announcement that it had completed its purchase of Precor, trade
-          coverage of KPS Capital Partners' purchase of Life Fitness, Life Fitness's own list of its
-          brands, and Core Health &amp; Fitness's brand list, as summarised on our Star Trac page. We
-          read Planet Fitness's annual report for 2025 on how its clubs buy equipment, Life Fitness's
-          specification page for the Integrity treadmill, Precor's TRM 885 brochure alongside
-          independent retailer listings, and the US Consumer Product Safety Commission's recall
-          database for each brand. We looked for a reliable current source naming the treadmill
-          brands used by the big US gym chains and did not find one, so this page does not claim
-          any. We have not tested the machines mentioned, and nothing here is sponsored.`,
   lead: `You have spent enough time on the treadmill at your gym to wonder what it is, and whether
           you could have one at home. The answer is that gym treadmills come from a short list of
           commercial manufacturers most home buyers never shop with, sold to facilities by quote

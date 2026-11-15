@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill workout for beginners', 'beginner treadmill workout', 'treadmill running for beginners', 'how to start running on a treadmill', 'beginner treadmill plan'],
   stickyCta: { text: 'See the Plan', link: '#the-plan' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical beginner plan for using one — it is not medical advice,
-          physiotherapy, coaching or nutrition advice, and we are not qualified to give any of
-          those. If you have a heart, lung or circulation condition, high blood pressure, diabetes,
-          a joint or back problem, are pregnant, are significantly overweight, or have not exercised
-          for years, talk to a doctor before starting, and to a physical therapist if anything
-          hurts beyond ordinary muscle soreness. Stop for chest pain, dizziness, faintness or sharp
-          pain. <strong class="text-gray-900">On the figures below:</strong> speeds, inclines and
-          durations are typical starting points for illustration, not prescriptions; the right
-          numbers are the ones that feel right to you.`,
   lead: `A treadmill workout for beginners should be easier than you expect, shorter than you
           expect, and repeated more often than you expect. The aim of the first month is not
           fitness — that comes on its own — but the habit of getting on the machine, and legs,

@@ -25,25 +25,6 @@ export default {
     'inmovement unsit bundle',
   ],
   stickyCta: { text: 'See the Range', link: '#what-inmovement-sells' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read InMovement’s own store (inmovement.com): the home page, the Unsit
-          Under Desk Treadmill, the Unsit Treadmill + Desk Bundle and the Unsit Standing Desk
-          listings, including each one’s price, stock status, specification table, warranty,
-          shipping and return terms. We compared those with iMovR’s Unsit listing on the same day,
-          a hands-on review by Treadmill Review Guru (July 2024), an independent walking-pad spec
-          tracker’s Unsit page (February 2026), and a June 2026 InMovement press release. InMovement
-          and iMovR agree on the 30 x 40 in. walking surface, 0.3 to 2.0 mph, 5 in. step-up, 162 lb
-          unit weight, 400 lb maximum user weight and the lifetime frame, 2-year parts and 1-year
-          labour warranty. They disagree on the motor (2.75 HP, or 2.75 and 2.0 HP on iMovR’s page)
-          and iMovR shows a three-year motor badge its warranty text does not explain; those are set
-          out as conflicts. LifeSpan figures were checked on LifeSpan’s store
-          the same day. We searched the CPSC recall database for InMovement, iMovR, Unsit and LifeSpan
-          and found no recall. We have not tested any of these machines. Prices change often. The
-          Unsit, InMovement’s desk and the LifeSpan TR1200Pro are not sold on Amazon, so the cards show
-          the closest Amazon alternatives alongside the LifeSpan TX6-GlowUp; the alternatives’ figures are
-          those checked for our walking pad, treadmill desk and auto incline guides. We earn a
-          commission if you buy through the Amazon links on this page; it does not change what we
-          say.`,
   lead: `If you searched for an InMovement treadmill desk, you have probably already seen the
           Unsit: a heavy, unusually wide office treadmill that tops out at 2 mph and sits under a
           standing desk all day. Most coverage presents it as an iMovR product, because iMovR sells

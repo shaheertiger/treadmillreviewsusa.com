@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['rhythm fun treadmill', 'rhythm fun walking pad treadmill', 'rhythm fun incline foldable treadmill', 'rhythm fun walking pad', 'rhythm fun treadmill review'],
   stickyCta: { text: 'See the Models', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read the full product catalogue of RHYTHM FUN’s US store
-          (rhythmfunfitness.com: five treadmills and walking pads and one exercise bike), with each
-          model’s price, stock status and description. We cross-checked the models against OCDevel’s
-          walking-pad tracker, which recorded RHYTHM FUN’s earlier AP01, AP02 and CP03 in February 2026,
-          and against an independent listing summary of the current 13% handle-bar pad that reads its
-          Amazon listing. Amazon and the international reseller pages that copy its listings returned
-          errors or blocks, so we could not confirm Amazon prices or sellers. We found no hands-on review
-          of any current RHYTHM FUN model. Figures that only RHYTHM FUN gives are marked as the maker’s,
-          and figures that conflict are kept off the cards. On 9 November 2026 we added RHYTHM FUN’s
-          Amazon listing for its side-handlebar pad, read from Amazon’s product data, and replaced two
-          RHYTHM FUN models we could not find on Amazon US with the DeerRun A6 Plus and ANCHEER’s
-          handle-bar pad, whose figures are those checked for our 2-in-1 and ANCHEER guides. We searched the CPSC recall database for
-          RHYTHM FUN by title and manufacturer and found no recall. We have not tested any of these
-          machines. Prices change often. We earn a commission if you buy through the Amazon links on
-          this page; it does not change what we say.`,
   lead: `RHYTHM FUN is a budget walking-pad brand that made its name on Amazon with a pair of small
           incline pads, the AP01 and AP02, that reviewers liked for being quiet and compact. Those have
           been withdrawn, and the brand now sells a 13% incline walking pad with side handlebars, a

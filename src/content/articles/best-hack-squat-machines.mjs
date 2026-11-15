@@ -27,32 +27,6 @@ export default {
           levers and hack presses are all on sale, and they feel very different. The six picks
           below cover those designs, and the guide after them explains angle, shoulder pads,
           safety stops, storage and space in plain terms.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines, and no figure on this page is our own measurement. Each was confirmed as
-          currently sold on 19 October 2026 on the maker's own store (Titan Fitness, Bells of Steel
-          and Body-Solid). On 9 November 2026 we replaced four machines we first carded, the Force
-          USA Compact, the Bells of Steel Pandemonium, the Steelflex PLHP and Titan's Leg Press Hack
-          Squat combo, which are sold direct
-          or through dealers but not on Amazon, with the nearest machines sold on Amazon US, checked
-          against the maker's store or Amazon listing and at least one other source. Angle, capacity,
-          dimensions and price were checked on that date against at least one independent source
-          where one existed — Garage Gym Reviews, Iron Company, indexed Amazon listings and a UK
-          retailer. A figure appears in a product's specification line only where the maker and an
-          independent source agree; where they conflicted, we left it out and say so on the card.
-          Two machines (Titan's dedicated hack squat and the Bells of Steel combo) have little or
-          no independent coverage, so their figures are the maker's and are labelled as such. Every
-          machine on this page is sold on Amazon US; check the model name and seller before you
-          order. Every brand was checked against the US Consumer Product Safety Commission's recall
-          database. Prices are those we saw on that date and change often. We earn a commission if
-          you buy through the Amazon links on this page; it does not change which products we list
-          or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy, coaching or structural
-          engineering advice. Rated capacities are manufacturer figures, not a guide to what you
-          should lift. A hack squat loads the knees, hips and spine through the shoulders and
-          raises blood pressure under heavy effort; if you have a knee, hip, back, neck or heart
-          condition, high blood pressure, are pregnant or postpartum, or are returning from injury
-          or surgery, talk to a qualified professional before starting or changing a programme.`,
   sections: [
     {
       id: 'quick-picks',

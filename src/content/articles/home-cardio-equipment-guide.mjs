@@ -23,13 +23,6 @@ export default {
           in the room you actually have, without annoying the people you live with or below. For
           most households that narrows six options to two or three quickly, and the choice between
           those comes down to your goal, your joints and your floor.`,
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review fitness
-          equipment. This is a guide to choosing a machine for general home cardio; it is not
-          medical advice, and this site does not give medical advice. If you have joint pain, a
-          heart or lung condition, balance problems, are recovering from surgery or injury, or are
-          pregnant, ask your doctor or physiotherapist which kind of exercise suits you before
-          choosing a machine. Price ranges below are typical US figures as of late 2026, not
-          quotes.`,
   sections: [
     {
       id: 'short-answer',

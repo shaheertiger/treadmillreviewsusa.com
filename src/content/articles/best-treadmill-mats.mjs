@@ -24,18 +24,6 @@ export default {
           mat on carpet that lets the frame rock, and a thin vinyl mat bought for a noise problem
           it was never going to fix. The five picks below are each matched to a floor and a
           machine, and the guide after them covers the measurements that decide which one you need.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> Sizes, thicknesses,
-          materials and warranty terms were checked on 13 October 2026 against each maker's own
-          product page where one exists, at least one major retailer listing, and independent
-          coverage where we could find it. Where sources disagreed on a figure — several did on
-          thickness and weight — we left it out of the specification line rather than pick one.
-          None of these figures are our own measurements; we have not tested these mats. Prices
-          are the ranges we saw on that date and change often, so confirm the size, thickness and
-          price against the exact listing before ordering. We earn a commission if you buy through
-          the Amazon links on this page; it does not change which products we list or what we say
-          about them. The Rubber-Cal tiles and the SuperMats 30GS replace two mats we could not link on
-          Amazon; their figures are those checked for our gym flooring and carpet mat guides in October
-          and November 2026.`,
   sections: [
     {
       id: 'quick-picks',

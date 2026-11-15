@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['umay treadmill', 'umay fitness treadmill', 'umay treadmill review', 'umay sf20 foldable treadmill', 'umay walking pad'],
   stickyCta: { text: 'See the UMAY Picks', link: '#models' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we read the full product catalogue of UMAY Fitness’s US store
-          (umayfitness.com, 44 products, including 14 walking pads and treadmills) with each model’s
-          sale and “regular” price, stock status, description, warranty and returns terms, and read the
-          SF20, U20F and Smart Walking Pad product pages and their buyer reviews in full. We
-          cross-checked the SF20 against UMAY’s published manuals as indexed by a manuals site, the L20
-          against its Best Buy marketplace listing title, and the brand against OCDevel’s walking-pad
-          tracker. Amazon and Best Buy pages returned errors when we tried to read them, so we could not
-          confirm Amazon prices or sellers. We found no hands-on review of the SF20, U20F or L20.
-          Figures that conflict are stated as conflicts and kept off the cards. We searched the CPSC
-          recall database for UMAY by title and manufacturer and found no treadmill recall. We have not
-          tested any of these machines. Prices change often, and UMAY’s sale prices especially. On 9 November 2026 the SF20 and U20F
-          cards became the CURSOR 40% Incline Treadmill and UREVO Strol 2E Pro, whose figures are those checked
-          for our incline trainer and 2-in-1 folding treadmill guides. We earn
-          a commission if you buy through the Amazon links on this page; it does not change what we
-          say.`,
   lead: `UMAY is one of the newer budget names in walking pads and folding treadmills: it has its own
           US web store with a phone number and a 30-day returns policy, sells on Amazon, and lists a
           wide range, from a $180 vibrating walking pad to a $600 treadmill with a 20% motorised incline.

@@ -24,12 +24,6 @@ export default {
           machines costing two or three hundred dollars more, and capacity is a better proxy for
           how a treadmill feels underfoot than horsepower is. The rest of the machine is honest
           budget hardware.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> These are the
-          manufacturer's published figures, cross-checked in September 2026 against the ProForm
-          listing, major retailer listings and independent review coverage, which agree. They are
-          not our own measurements. ProForm revises consoles within a model name and sells this
-          machine through several retailers, so confirm the display, the warranty and the model
-          number against the exact unit you are ordering.`,
   products: [
     {
       id: "nordictrack-t-series-5",

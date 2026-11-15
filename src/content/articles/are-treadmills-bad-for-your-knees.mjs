@@ -19,12 +19,6 @@ export default {
   ],
   tags: ['treadmill knees', 'are treadmills bad for your knees', 'treadmill knee pain', 'running and knee health', 'low impact cardio'],
   stickyCta: { text: 'What the Research Says', link: '#running-and-knees' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills; this site does not give medical advice, and nothing here is a diagnosis or
-          a treatment plan. If you have knee pain, a diagnosed joint condition, a recent injury
-          or surgery, or symptoms such as swelling, locking or the knee giving way, please see a
-          doctor or physical therapist before using a treadmill — they can assess your knee,
-          which a review site cannot.`,
   lead: `Treadmills are not inherently bad for your knees. For healthy people, the research on
           recreational running and knee arthritis is broadly reassuring, and a treadmill deck is,
           if anything, slightly more forgiving than pavement. What does cause knee problems — on

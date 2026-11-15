@@ -26,12 +26,6 @@ export default {
           is actually selling it, which numbers on the listing mean something, how to read reviews
           that may not describe the machine in front of you, and what delivery, returns and
           warranty look like for an item this heavy.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site earns a commission
-          as an Amazon Associate on qualifying purchases made through some of our links, at no extra
-          cost to you, and that does not change what we tell you here. We are not otherwise
-          affiliated with Amazon. Delivery options, return terms and seller arrangements change and
-          differ between listings, so check the current terms on the specific product page before
-          you buy.`,
   sections: [
     {
       id: 'short-answer',

@@ -24,15 +24,6 @@ export default {
           listed when we checked, how those listings are fulfilled, what the warranty fields
           actually say, how Home Depot's return policy applies to a heavy machine, and the few
           situations in which buying there makes sense.`,
-  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and
-          not affiliated with The Home Depot. On 18 October 2026 we read homedepot.com's Treadmills
-          category and the product data on 36 of its listings, ran site searches for seven
-          mainstream treadmill brands, and read Home Depot's return policy and price-match pages. We
-          also searched the US Consumer Product Safety Commission's recall database for the brands
-          we found. What Home Depot describes about third-party vendors comes from seller-facing
-          guides rather than Home Depot itself, and is marked as such. Listings, prices and policies
-          change; check the current terms on the product page before you buy. Prices are not quoted
-          as current.`,
   sections: [
     {
       id: 'short-answer',

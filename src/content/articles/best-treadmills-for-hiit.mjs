@@ -19,29 +19,6 @@ export default {
   ],
   tags: ['best treadmill for hiit', 'best treadmill for sprinting', 'best treadmill for interval training', 'hiit treadmill', 'sprint treadmill', 'horizon 7.4 at', 'nordictrack commercial 2450'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed on 15 October 2026 as currently on sale, and its
-          specifications were checked on that date against the manufacturer's own product page
-          (Horizon Fitness, NordicTrack and, for the curved pick, Sole) and at least one independent source — published
-          reviews from specialist treadmill review sites. A figure appears on a product card only where those sources agree; where they
-          disagreed, as they did on the motor ratings Horizon does not publish, we left the figure out
-          and say so in the text. The Sole C80 replaced the Wahoo KICKR RUN in November 2026, because
-          the KICKR RUN is sold by Wahoo rather than on Amazon; its figures are those checked for our
-          Sole treadmills guide. Horizon's 7.8 AT and NordicTrack's X16 are sold by their makers rather
-          than on Amazon, so in November 2026 we replaced them with the Horizon 7.4 AT and Sunny's
-          Versatile Treadmill, whose figures are those checked for our Horizon, heavy-duty and incline
-          trainer guides. None of these are
-          our own measurements. Prices are those we saw on manufacturer stores and in review
-          coverage on 15 October 2026; they change often, and list prices are frequently far above
-          what these machines actually sell for, so confirm the price, the specification and the
-          warranty for the exact unit before you order. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say about
-          them. <strong class="text-gray-900">What this page is, and is not.</strong> We review
-          equipment. This is a guide to choosing a treadmill for hard interval work, not coaching or
-          medical advice, and nothing here is a training prescription. High-intensity intervals and
-          all-out sprints place real demands on the heart, joints and tendons; if you have a heart
-          condition, high blood pressure, an injury, are pregnant, or are new to hard exercise, talk
-          to a doctor or a qualified coach before you start.`,
   lead: `A treadmill that suits steady running can be a frustrating HIIT machine. The problem is
           rarely the top speed printed on the box. It is the eight or ten seconds of a 30-second
           sprint you spend pressing an up arrow, the belt that is still at sprint pace while you

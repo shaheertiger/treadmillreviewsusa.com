@@ -23,12 +23,6 @@ export default {
           what is on it. Treat it the way you would any other powerful machine in the house: used
           deliberately, switched off and disabled when nobody is using it, and kept out of reach
           of anyone too young to understand it.`,
-  note: `<strong class="text-gray-900">Before anything else.</strong> If a child or pet has been
-          injured by a treadmill, get medical or veterinary help first and read this later.
-          Unplug the treadmill at the wall before inspecting, cleaning or servicing it — the
-          safety key stops the belt but is not an electrical isolator. Follow your manual’s
-          warnings, which are specific to your machine, and never disable or bypass a safety
-          feature. This site reviews equipment and does not give medical advice.`,
   sections: [
     {
       id: 'the-rules',

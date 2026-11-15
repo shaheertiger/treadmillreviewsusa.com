@@ -19,24 +19,6 @@ export default {
   ],
   tags: ['best treadmill under 300', 'treadmill under 300', 'cheap treadmill', 'budget treadmill', 'walking pad under 300', 'urevo strol 2e', 'sunny treadpad compact'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Each was confirmed on 13 October 2026 as currently sold, and its specifications
-          were checked on that date against the brand's own product page (UREVO, DeerRun and
-          Sunny), the Amazon listing, and independent coverage — chiefly a long-running walking
-          pad tracker that reads owner's manuals and motor labels, plus published reviews. A figure
-          appears in a product's specification line only where those sources agree. Budget
-          listings at this price disagree with each other often, and where they did — on motor
-          horsepower, weight capacity, maximum incline, unit weight and warranty — we left the
-          figure out and say so in the text. None of these are our own measurements. Prices are
-          those we saw on brand stores, Amazon and price trackers on 13 October 2026; at this end
-          of the market they move weekly and "list prices" are often inflated, so confirm the
-          price, the specification and the warranty terms against the exact unit before you order.
-          The UREVO Smart Walking Pad, Sunny Treadpad Compact and Yesoul cards were added on 9
-          November 2026 so that every pick is sold on Amazon; their figures are those checked on 6
-          November 2026 for our lightweight, low-ceiling and handrail treadmill guides, and the
-          UREVO and Yesoul figures are their Amazon listings' own.
-          We earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.`,
   lead: `Search for a treadmill under $300 and you will find hundreds of listings promising
           running speeds, 3 HP motors and 300 lb ratings. Almost all of them are walking pads, many
           from brands with no presence outside a marketplace, and their specifications frequently

@@ -22,10 +22,6 @@ export default {
           eroding, bearings slowly giving up. They die of heat, and the heat comes from the belt
           dragging on a dry deck. Which means the lifespan figure is less a property of the motor
           than of its owner.`,
-  note: `<strong class="text-gray-900">On the figures below.</strong> These are typical ranges
-          based on manufacturer guidance and common failure patterns rather than measured data
-          from a service network. Individual machines vary widely, and the same motor in two
-          households can differ by years depending on maintenance, placement and duty cycle.`,
   sections: [
     {
       id: 'by-type',

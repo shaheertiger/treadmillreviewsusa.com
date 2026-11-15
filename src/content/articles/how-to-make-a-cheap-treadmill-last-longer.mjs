@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how to make a cheap treadmill last longer', 'budget treadmill maintenance', 'walking pad lifespan', 'cheap treadmill tips', 'treadmill motor overheating'],
   stickyCta: { text: 'See the Habits', link: '#short-answer' },
-  note: `<strong class="text-gray-900">Safety first, and your manual decides.</strong> Unplug the
-          treadmill at the wall before any cleaning, lubrication, adjustment or inspection, and remove
-          the safety key. Never put hands, tools or cloths near a moving belt or roller. Do not open a
-          motor hood or a sealed walking pad casing if your manual or warranty says not to; some
-          budget brands treat opening the casing as voiding the cover. Where your owner's manual gives
-          a different lubricant, interval, tension setting, session limit or electrical requirement
-          from this page, the manual is the authority. We review treadmills; we have not tested the
-          machines named in our budget roundup, and nothing here replaces the manufacturer's
-          instructions or a qualified electrician's advice.`,
   lead: `Cheap treadmills fail for the same reasons expensive ones do — heat, friction, dirt and
           overload — but they reach the failure point sooner, because every part is sized with less
           margin. A premium machine can shrug off a dry deck or a heavy user for a while; a $250 walking

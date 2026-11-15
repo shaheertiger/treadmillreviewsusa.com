@@ -26,26 +26,6 @@ export default {
           below were chosen so that air, water, magnetic and hydraulic resistance each have a pick
           you can buy on Amazon today, and the guide after them explains which type suits which
           home.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          rowers, and no figure on this page is our own measurement. Each was confirmed as currently
-          sold on 19 October 2026: on its maker's own store (Concept2, Merach and Sunny Health &
-          Fitness), or through the maker's Amazon listing and independent coverage where the maker's
-          store could not be loaded that day (WaterRower and Hydrow). We picked rowers that are sold
-          on Amazon US, usually by the maker's own Amazon store, and checked each one's resistance,
-          size, user rating, inseam and warranty against at least one independent source: Garage Gym
-          Reviews' rowing roundup (updated 24 September 2026) and model reviews, BarBend, The
-          Gadgeteer, Shop TODAY, and second retailers. A figure appears on a card only where the maker
-          and an independent source agree; where they conflicted — most often on maximum user weight,
-          unit weight and inseam — we left the number off and say so in the text. Every brand was
-          checked against the US Consumer Product Safety Commission's recall database. Prices are
-          those we saw on or shortly before 19 October 2026 and change often. We earn a commission if
-          you buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home exercise
-          equipment; this is not medical, physiotherapy or coaching advice. Rowing asks a lot of the
-          lower back and takes the hips and knees through a deep bend. If you have back, hip or knee
-          problems, a heart condition, are pregnant or postpartum, or are returning from injury or
-          surgery, ask a doctor or physiotherapist whether rowing suits you before you buy.`,
   sections: [
     {
       id: 'quick-picks',

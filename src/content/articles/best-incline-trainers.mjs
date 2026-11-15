@@ -27,18 +27,6 @@ export default {
           incline trainers you can order on Amazon today, with the nearest Amazon alternatives to two
           commercial machines worth knowing, and it explains where NordicTrack's X-series, the best-known incline trainers,
           fit in.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. The five picks were confirmed on 6 November 2026 as currently sold on
-          Amazon US, and their figures come from the Amazon listing's own specification bullets.
-          The commercial incline trainers from TRUE and Freemotion that we discuss are not sold on
-          Amazon US; their figures and prices come from the makers' pages as checked for our earlier
-          guides on 5 November 2026. Two cards stand in for them: the THERUN 20% and the Sole TT8,
-          whose figures are those checked for our auto incline and long-distance running guides on
-          6 November 2026. Where sources disagreed or a figure appeared in only
-          one place, we left it off the card. Prices change often, so confirm the price,
-          specification and warranty against the exact listing before you order. We earn a
-          commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

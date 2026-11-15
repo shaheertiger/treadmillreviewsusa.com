@@ -18,12 +18,6 @@ export default {
   ],
   tags: ['treadmill heart rate zones', 'heart rate training', 'zone 2 training', 'max heart rate', 'cardio zones'],
   stickyCta: { text: 'See the Five Zones', link: '#five-zones' },
-  note: `<strong class="text-gray-900">An important limitation.</strong> We review treadmills. If
-          you have a heart condition, arrhythmia, high blood pressure, or take medication that
-          affects heart rate — beta blockers in particular make every calculation on this page
-          meaningless — your target ranges must come from your doctor, not from a formula. Stop
-          exercising and seek advice for chest pain, unusual breathlessness, dizziness, or a
-          heartbeat that feels irregular.`,
   lead: `Heart rate zones are a genuinely useful way to structure training, built on a foundation
           shakier than most people realise. The framework is sound; the number it is anchored to
           is a population average that fits a large minority of individuals badly.`,

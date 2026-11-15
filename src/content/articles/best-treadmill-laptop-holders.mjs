@@ -26,22 +26,6 @@ export default {
     'laptop shelf for treadmill',
   ],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong>
-          We have not tested these holders. On 5 November 2026 we read the makers’ own product pages
-          for every product here where one exists (VIVO, Arkon and UPLIFT), the retailer listings that
-          carry them (Target, Newegg and PCLiquidations for the VIVO and Wakeman products, and a reseller
-          listing for the Arkon mount), and price trackers and reseller copies of Amazon listings for the
-          wider category. Amazon’s own pages would not load for us that day. The Qsxou card, added on 9
-          November 2026 in place of VIVO’s plain STAND-TDML2 board, which we could not find on Amazon US,
-          carries its Amazon listing’s price and figures as checked on 6 November. A figure appears in a product’s specification line only where the maker and a
-          second source agree; figures we could read from one source only are in the text, labelled with
-          where they came from. Where two parts of one listing disagree, as with the Wakeman board’s
-          length, we left the figure out. We searched the CPSC recall database for VIVO, Arkon, Wakeman and
-          UPLIFT and found no recall of any of these products (VIVO’s only treadmill-unrelated recall, of
-          speaker wall mounts, was in 2019). Prices are those listed on 5 November 2026 and change often;
-          confirm the price, the fit range and the returns terms before ordering. We earn a commission if
-          you buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   lead: `A laptop on a treadmill is a compromise, and the holders that work best are the ones that admit
           it. They turn the space between your handrails into a shelf for walking work at a slow, steady
           pace: email, reading, video calls with the camera off. This page covers the holders that strap

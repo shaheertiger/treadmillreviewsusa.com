@@ -101,16 +101,6 @@ export default {
   ],
   tags: ['what treadmill should i buy', 'how to choose a treadmill', 'how to pick a treadmill', 'what is a good treadmill to buy', 'which treadmill is good', 'what to look for in a home treadmill'],
   stickyCta: { text: 'See the Decision Table', link: '#decision-table' },
-  note: `<strong class="text-gray-900">On the figures below.</strong> Deck sizes, motor ratings,
-          weight-capacity margins and warranty terms on this page are rules of thumb drawn from our
-          own buying guides, belt-size guide, horsepower guide and weight-capacity guide, so that
-          this page and those agree. They are general thresholds, not specifications of any
-          particular machine, and price bands are typical US ranges as of October 18, 2026 that
-          move through the year. We have not tested the machines in our roundups hands-on; each
-          roundup says what was checked and when. The manufacturer's listing and manual for the
-          machine you are considering always take precedence over a rule of thumb. If you are
-          buying for rehabilitation or have a medical condition, your clinician's advice on what
-          you need comes first.`,
   lead: `Most people start choosing a treadmill by comparing models. That is the slow way round.
           Whether you should be looking at a walking pad, a folding treadmill, a heavy non-folding
           machine or an incline trainer is decided by four answers you already know: what you will

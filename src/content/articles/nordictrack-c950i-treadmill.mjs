@@ -45,24 +45,6 @@ export default {
           documented thinly; what iFIT’s decision to end support for older machines in 2023 means for its
           console; and whether the parts that wear out can still be found. We end with the current
           NordicTrack models that do the same job new.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we searched for the C950i on NordicTrack’s US site (which refused our automated
-          requests on the day), in owner’s-manual archives, in parts retailers’ catalogues and in independent
-          reviews. The only full independent specification we found is Garage Gym Reviews’ review (updated
-          21 August 2024), which says the machine is no longer in production; we found no second source that
-          confirms its weight capacity, incline range or motor rating, so those figures are presented as one
-          review’s and kept off the product card. Manual archives give the model number 831.25044.0, and
-          parts catalogues list 831.25044.2 and 831.25044.5 versions. We read iFIT’s own notice ending
-          support for older machines on 30 April 2023. Parts prices quoted are from third-party listings
-          that appeared in search results on 5 November 2026; we have not checked their fitment. The T Series
-          10 and Commercial 1250 figures on their cards were checked for our NordicTrack reviews in October
-          2026; we could not read current prices on nordictrack.com on 5 November, so their cards carry no
-          price. The C950i itself is sold only used, so its figures are in the sections below rather than on a
-          product card; the first card is the NordicTrack T 6.5 S, the cheapest new NordicTrack on Amazon, with
-          figures from our T 6.5 S review. We searched the US Consumer Product Safety Commission’s recall database for NordicTrack and
-          found recalls of NordicTrack rowing machines (2025) and iSelect dumbbells (2024), and none of the
-          C950i. We have not tested a C950i. We earn a commission if you buy through an Amazon link on this
-          page; it does not change what we say.`,
   products: [
     {
       id: 'nordictrack-t-6-5-s',

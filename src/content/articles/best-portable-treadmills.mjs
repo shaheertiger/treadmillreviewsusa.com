@@ -27,23 +27,6 @@ export default {
           portable treadmill are and what each one gives up, our explainer on
           <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
           covers that; this page is the shortlist.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested or
-          weighed these machines. Each was confirmed on 18 October 2026 as currently sold on its
-          maker's own store, and its specifications were checked on that date against the maker's
-          product page and at least one independent source — a published hands-on review, a second
-          retailer or an independent specification tracker. A figure appears in a product's
-          specification line only where those sources agree; where they did not — most often on
-          motor ratings, weight limits and incline — we left the figure out and say so in the text.
-          Unit weights are the makers' net figures for the machine out of the box, not the boxed
-          weight. On 9 November 2026 we replaced the WalkingPad X21 and Echelon Stride-6s, which we could
-          not find on Amazon US, with the WalkingPad R3 Hybrid+ (figures as checked for our tall walkers'
-          guide) and the Echelon Stride-S (its Amazon listing, a retailer's specification and Echelon's
-          manual, checked on 9 November); we could not confirm a unit weight for either.
-          We searched the US Consumer Product Safety Commission recall database for every
-          brand listed. Prices are those we saw on that date and change often, so confirm the price
-          and specification against the exact listing before you order. We earn a commission if you
-          buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

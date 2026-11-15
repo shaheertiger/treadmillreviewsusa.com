@@ -19,22 +19,6 @@ export default {
   ],
   tags: ['cyber monday treadmill deals', 'treadmill cyber monday', 'cyber monday treadmill', 'cyber monday walking pad', 'cyber week treadmill deals', 'amazon treadmill deals'],
   stickyCta: { text: 'See the Six Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products and prices below.</strong> We have not
-          tested these machines. On 28 October 2026 we checked the current prices of the UREVO
-          Strol 2E and WalkingPad Z1 on UREVO's and WalkingPad's own US stores, and an expired
-          July 2026 deal post for the MERACH W50 TrekPad on a deal-sharing site. Every other price
-          is the dated figure from our existing roundups — taken from Amazon, the makers' stores
-          and a price tracker between 13 and 18 October 2026 — and each card says which. The
-          specification lines repeat only figures those roundups had already cross-checked between
-          the maker (or the Amazon listing) and an independent source; where sources disagreed, the
-          figure is left out and the description says so. Black Friday and Cyber Monday 2026 prices
-          had not been published when we wrote this, and Amazon had not announced its 2026 sale
-          dates. The "target price" on each card is our judgement of a price worth acting on, not a
-          prediction of what any retailer will charge. Prices change often, sometimes several
-          times a day in sale weeks, so confirm the price, seller, specification and delivery date
-          on the exact listing before you order. We earn a commission if you buy through the
-          Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
   lead: `Cyber Monday is the same sale as Black Friday seen from a different angle: four days
           later, entirely online, and closer to the point where Christmas delivery starts to get
           tight. For treadmills that changes more than you might expect — which machines it suits,

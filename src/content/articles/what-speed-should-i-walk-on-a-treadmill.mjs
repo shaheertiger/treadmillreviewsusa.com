@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['treadmill walking speed', 'average walking speed', 'brisk walking pace', 'walking mph', 'talk test'],
   stickyCta: { text: 'Find Your Walking Speed', link: '#talk-test' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This page explains typical walking speeds so you can use the machine
-          sensibly — this site reviews equipment and does not give medical advice. If you have a
-          heart, lung, joint or balance condition, are recovering from illness or surgery, or have
-          been told to keep to a particular intensity, follow your clinician's guidance over
-          anything here.
-          <strong class="text-gray-900">On the figures below:</strong> speeds are typical ranges
-          for adults, not targets. Height, age, fitness and how a particular treadmill is
-          calibrated all move the numbers.`,
   lead: `It is one of the first questions anyone asks on a new treadmill, and the honest answer is
           a range rather than a number. People walk at very different speeds for perfectly good
           reasons, and a speed that is brisk for one person is a stroll for another. What you can

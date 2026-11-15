@@ -19,20 +19,6 @@ export default {
   ],
   tags: ['walking pad with handrail', '2 in 1 walking pad', 'folding walking pad with handle', 'walking pad with handle bar', 'under desk treadmill with handrail', 'urevo strol 2s pro', 'goplus superfit 2 in 1'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          walking pads. The specifications on this page were checked on 13 October 2026 against
-          each brand's own product page (WalkingPad and, for the Sunny, Sunny's store), the Amazon, brand-store or
-          specialist-retailer listing, and independent coverage — a published hands-on review for
-          the Goplus SuperFit, and a long-running spec tracker that reads
-          owner's manuals and motor labels. A figure appears in a product's specification line
-          only where those sources agree. Where they did not — most often on weight capacity and
-          motor type — we left the figure out and say so in the text. None of these are our own
-          measurements. Prices are those we saw on brand and retailer sites on 13 October 2026,
-          except the Goplus, where the band reflects recent tracked prices; all of them change
-          often, as do specifications under unchanged product names, so confirm the price, the
-          specification and the warranty terms against the exact unit before you order. Nothing on
-          this page is medical advice. We earn a commission if you buy through the Amazon links on
-          this page; it does not change which products we list or what we say about them.`,
   lead: `Most walking pads have nothing to hold. That is fine for slow, steady walking at a desk,
           but plenty of people want a hand on something — when they step on, when the belt speeds
           up, or simply because it feels steadier. A walking pad with a handrail answers that, and

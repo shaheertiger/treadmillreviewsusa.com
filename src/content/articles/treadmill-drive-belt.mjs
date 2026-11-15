@@ -24,13 +24,6 @@ export default {
           running belt. It is a cheap part with a long life, but it stretches, glazes and cracks
           eventually, and because its symptoms look like running-belt slip, it is one of the most
           commonly missed causes of a hesitating treadmill.`,
-  note: `<strong class="text-gray-900">Before you open anything.</strong> Unplug the treadmill
-          at the wall — not just the safety key — and wait at least thirty minutes before removing
-          the motor hood, so stored charge in the controller board can dissipate. Never run the
-          machine with the hood off and never put your hands near the pulleys with it plugged in.
-          Opening the motor compartment can affect your warranty on some machines, so check first.
-          If you smell burning, see smoke or see sparking, stop using the treadmill and have it
-          checked.`,
   sections: [
     {
       id: 'short-answer',

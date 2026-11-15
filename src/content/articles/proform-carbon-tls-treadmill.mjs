@@ -32,21 +32,6 @@ export default {
           and iFIT then steers the speed and incline to follow its trainers. Two things need reading
           carefully before you buy: what the machine does without a paid iFIT membership, and a warranty
           that ProForm’s own pages state in more than one way.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> We read
-          ProForm’s US product page for the Carbon TLS (model PFTL79925) and its Carbon Series page,
-          including the specification tables, warranty statements, iFIT terms, trial and price-guarantee
-          terms, on 13 October 2026; proform.com refused our requests on 14 October, so prices from it
-          are those of 13 October. On 14 October 2026 we cross-checked the figures against Scheels’
-          listing for the same model number and an independent review site’s Carbon TLS page. ProForm and
-          those sources agree on the 18 x 55 in. belt, 300 lb user capacity and 67.5 x 31.6 x 56.2 in.
-          footprint, and ProForm and Scheels on the 0-10 mph speed, 0-12% incline, 5 in. LCD and
-          7.75 in. step-up height. ProForm and Scheels both give a 2.6 CHP motor, but our ProForm
-          roundup’s check on 13 October found an independent source quoting a different rating, so the
-          motor is left off the card. Warranty terms beyond the ten-year frame conflict across ProForm’s
-          own pages and are set out below rather than chosen. We searched cpsc.gov and found no recall of
-          the Carbon TLS. We have not tested it, and none of these figures are our own measurements.
-          Prices change often. We earn a commission if you buy through the Amazon link on this page; it
-          does not change what we say about the machine.`,
   products: [
     {
       id: 'proform-carbon-tls',

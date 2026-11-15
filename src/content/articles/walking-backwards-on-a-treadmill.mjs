@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['walking backwards on treadmill', 'retro walking', 'backward walking benefits', 'knee friendly cardio', 'treadmill safety'],
   stickyCta: { text: 'How to Start Safely', link: '#how-to-start' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. Backward walking is used in some rehabilitation settings, and this page
-          summarises what is generally understood about it — it is not medical advice, and it is
-          not a substitute for a physical therapist. If you have a knee, hip or ankle injury,
-          balance problems, dizziness, osteoporosis, a neurological condition, are pregnant, or
-          are recovering from surgery, ask your clinician before trying it.
-          <strong class="text-gray-900">On the figures below:</strong> speeds and durations are
-          typical conservative starting points, not prescriptions, and research findings are
-          described in general terms because study sizes are often small.`,
   lead: `It looks like a gym gimmick, and it has some of the trappings of one. But backward
           walking has a longer and more serious history than its social-media moment suggests:
           physical therapists and coaches have used it for decades, and a modest body of research

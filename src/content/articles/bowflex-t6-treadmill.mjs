@@ -26,15 +26,6 @@ export default {
           figure, which Bowflex itself says is a test rating, and the one year of labour cover.
           This review works through both, and through the two comparisons that decide most
           purchases: the T9 above it and the Sole F63 beside it.`,
-  note: `<strong class="text-gray-900">On the numbers below.</strong> The specifications on this
-          page are Bowflex's published figures for the T6 (SKU BTM0011-01), cross-checked on
-          8 October 2026 against an independent reviewer's published spec table and a specialist
-          fitness retailer's listing, which all agree. The T9 figures are from Bowflex's own
-          product page on the same date, and the Sole F63 figures are the core numbers on which
-          independent reviews agree. None of them are our own measurements — we have not tested
-          the T6. Prices are those shown on bowflex.com on the day we checked and change often,
-          so confirm the price, the specification and the warranty terms against the exact unit
-          you are buying before you order.`,
   products: [
     {
       id: "sole-f63",

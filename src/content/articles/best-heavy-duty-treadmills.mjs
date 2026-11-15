@@ -27,17 +27,6 @@ export default {
           picks five treadmills on those terms, from a long-warranty folding Spirit to two budget
           machines with high weight ratings, and is plain about what each one's listing does and does
           not prove.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills. Each was confirmed on 6 November 2026 as currently sold on Amazon US, and the
-          figures on each card come from the Amazon listing's own specification bullets or from the
-          maker's published specifications, which earlier guides on this site checked against
-          independent sources. Where sources disagreed on a figure — weight ratings most often — we
-          left it off the card and explain the disagreement in the text. Weight ratings and motor
-          figures on budget listings are the maker's own claims; we could not verify them
-          independently and say so. Prices are Amazon's on 6 November 2026 and change often, so
-          confirm the price, specification and warranty on the exact listing before you order. We
-          earn a commission if you buy through the Amazon links on this page; it does not change which
-          products we list or what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

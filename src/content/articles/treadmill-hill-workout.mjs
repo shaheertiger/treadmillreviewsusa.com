@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill hill workout', 'incline running workout', 'hill repeats', 'incline walking', 'treadmill training'],
   stickyCta: { text: 'See the Sessions', link: '#hill-repeats' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
-          treadmills. This is a practical guide to using the incline control — it is not medical
-          advice, physiotherapy or a coaching plan, and we are not qualified to give any of those.
-          Hill work loads the calves, Achilles tendons and heart more than flat walking or running.
-          If you have a heart, lung or circulation condition, take medication that affects heart
-          rate, or have a history of Achilles or calf problems, check with a doctor or physical
-          therapist first. Stop for chest pain, dizziness or unusual breathlessness.
-          <strong class="text-gray-900">On the figures below:</strong> grades, durations and speeds
-          are typical starting ranges, not prescriptions, and treadmill incline readings vary
-          between machines.`,
   lead: `A treadmill hill workout is any session that uses the incline, rather than speed, as the
           main thing that makes it hard. Done well it is the most useful session on the machine:
           more effort for less impact, precise and repeatable in a way outdoor hills never are. Done

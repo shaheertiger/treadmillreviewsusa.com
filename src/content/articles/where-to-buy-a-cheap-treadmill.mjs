@@ -23,18 +23,6 @@ export default {
   ],
   tags: ['where to buy treadmills cheap', 'where can i buy a treadmill for cheap', 'where to buy cheap treadmill', 'cheap treadmill', 'cheap treadmills for sale', 'used treadmill deals'],
   stickyCta: { text: 'See the Ranking', link: '#short-answer' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          18 October 2026 we checked how Amazon describes its Amazon Resale store (formerly Amazon
-          Warehouse) and how Walmart's product pages describe the condition tiers of Walmart
-          Restored; a university surplus office's terms for retired gym treadmills listed on
-          GovDeals; Planet Fitness's annual report for 2025 on how often its clubs replace
-          equipment; and the US Consumer Product Safety Commission's recall database and
-          safety warnings for the treadmill recalls and warning named below. Retailer programmes, return windows, delivery terms and
-          what is in stock change, so treat every policy on this page as how it was described on
-          that date and read the current terms on the listing before you pay. Price figures are
-          typical ranges or arithmetic from the inputs stated beside them, not live quotes or
-          market data. This page carries no product recommendations and no affiliate links, and we
-          have not tested any machine mentioned.`,
   lead: `Ask where to buy a treadmill cheap and most answers give you a list of shops. The more
           useful answer is a ranking, because the places that sell the lowest sticker prices are not
           the places that sell the cheapest treadmill. A $200 machine you replace in two years, a

@@ -26,24 +26,6 @@ export default {
           for the jobs it does not do well, and the handful of specifications that decide whether
           any walking pad suits you — belt length, weight limit, the real motor rating and
           whether it folds — so you can judge a pad that is not on this list too.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          walking pads. The WalkingPad Z1 and MERACH W50 were confirmed on 18 October 2026 as sold on
-          their makers' own US stores, and their specifications were checked on that date against
-          the maker's product page and at least one independent source — a long-running spec
-          tracker that reads owner's manuals and motor labels, or a second retailer. The other four
-          are Amazon listings whose figures are those checked for our lightweight, low-ceiling,
-          auto-incline and 2-in-1 treadmill guides, against the listing and, where it publishes
-          them, the maker's own store, in early November 2026. A figure
-          appears in a product's specification line only where those sources agree; where they did
-          not — most often on motor ratings, weight limits, unit weight and deck height — we left
-          it off the card and say so in the text. We searched the US Consumer Product Safety
-          Commission's recall database for every brand on this page and found no recalls; Sperax
-          pads are excluded after the CPSC's April 2026 warning. None of the figures are our own
-          measurements. Prices are those the makers or Amazon showed on the dates given on each card and change often, as
-          do specifications under unchanged product names, so confirm the price, specification and
-          warranty terms against the exact listing before you order. We earn a commission if you
-          buy through the Amazon links on this page; it does not change which products we list or
-          what we say about them.`,
   sections: [
     {
       id: 'quick-picks',

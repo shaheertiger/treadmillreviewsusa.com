@@ -19,16 +19,6 @@ export default {
   ],
   tags: ['treadmill for dogs', 'can dogs use a treadmill', 'dog on treadmill', 'human treadmill for dogs', 'dog exercise equipment'],
   stickyCta: { text: 'Read the Safety Rules', link: '#safety-rules' },
-  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
-          for people. This page looks at what happens when a dog is put on one, from the equipment
-          side — it is not veterinary advice, dog-training advice or a recommendation to exercise
-          any particular dog on any machine, and we are not qualified to give any of those. Dogs
-          vary enormously in build, age, breed, health and temperament, and a treadmill is a
-          moving machine with a motor, rollers and pinch points that was never designed with a
-          dog in mind. An owner should consult a vet before exercising a dog on any treadmill,
-          human or dog-specific, and should stop immediately if the dog shows any sign of
-          distress, lameness, overheating or breathing difficulty. Nothing on this page replaces
-          that conversation.`,
   lead: `Searches for "treadmill for dogs" come from two kinds of owner: one with a high-energy dog
           and a long winter, wondering whether the treadmill in the spare room can help, and one
           who has seen a dog trotting on a treadmill online and wants to know whether it is safe.

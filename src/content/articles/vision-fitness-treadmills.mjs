@@ -26,20 +26,6 @@ export default {
     'vision treadmill recall',
   ],
   stickyCta: { text: 'See the T600 and Alternatives', link: '#t600' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          5 November 2026 we checked Vision Fitness's US site (its home page, cardio catalogue and the T600/T600E
-          product page), Fitness Supply's US listing for the T600E with its warranty terms, other US, Canadian,
-          Australian and UK dealer listings for the T600 seen in search results, TreadmillReviews.com and Treadmill
-          Doctor coverage of the T9200 and manuals and parts listings for older models, the US Consumer Product Safety
-          Commission's recall database for Vision Fitness and Johnson Health Tech (recall 26-203 of January 2026 and
-          recall 06-556 of 2006), and Horizon's and Life Fitness's US stores for the alternatives, as checked for our
-          reviews of those machines the same day. On 9 November 2026 we replaced the T600 and T600E cards with the
-          Matrix T5x and NordicTrack Commercial 2450, which are sold on Amazon; their figures are those checked for our
-          Matrix T5x review and heavy-duty treadmill guide. The same day the Horizon 7.8 AT card became the Horizon 7.4 AT,
-          which Amazon sells, with the figures checked for our Horizon treadmill guide. Vision publishes no prices; the T600E price is one dealer's, and
-          dealer prices vary by region and change often. Conflicting figures are set out in the text and kept off the
-          cards. We have not tested any Vision treadmill. As an Amazon Associate we earn from qualifying purchases;
-          that does not change what we say.`,
   lead: `For twenty years "Vision Fitness" meant a particular kind of treadmill: sold through specialty fitness
           stores rather than big-box retailers, a step above department-store brands in build and warranty, and
           made by the same company as Horizon and Matrix. Searches still reflect that, for the T9200 in particular.

@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['sole vs nordictrack', 'nordictrack vs sole', 'sole or nordictrack treadmill', 'sole treadmill warranty', 'treadmill without subscription'],
   stickyCta: { text: 'Compare the Warranties', link: '#warranty' },
-  note: `<strong class="text-gray-900">Where the figures come from.</strong> Every specification
-          and warranty term on this page is taken from our
-          <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole range guide</a>
-          and our
-          <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack range guide</a>,
-          both of which checked the manufacturer's current US listings against independent
-          coverage on 13 October 2026 and carry only figures those sources agree on. Both brands
-          keep model names while changing the hardware, and Sole's 2026 redesign means several of
-          its model names now describe different machines from the ones most reviews cover. We
-          have not tested these machines. Confirm the specification, the warranty and the model
-          year for the exact unit before you order.`,
   lead: `Sole and NordicTrack are the two names most often shortlisted together for a home
           treadmill in the mid-price bracket, and they are built on opposite ideas. Sole sells a
           heavy machine with long frame and motor cover, a plain or app-free console, and no

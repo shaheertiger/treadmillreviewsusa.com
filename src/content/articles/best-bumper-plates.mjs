@@ -26,36 +26,6 @@ export default {
           differences that matter in a garage — bounce, thickness, smell and how the 10 lb plates
           survive — are rarely on the front of the box. The six sets below cover that range, and the
           guide after them explains each figure and what it costs you.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          plates, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
-          each set as currently listed on its maker's own store (REP Fitness, Fringe Sport, Titan
-          Fitness and CAP Barbell) and checked its weight tolerance, durometer, plate widths and
-          warranty against at least one independent source: Garage Gym Reviews' bumper plate guide
-          and its REP competition plate review, and BarBend's bumper plate guide. A figure appears on
-          a card only where the maker and an independent source agree; where they conflicted — on
-          one set's warranty and on durometer figures quoted from older listings — we left it out and
-          say so on the card. CAP's Economy set is the exception: we found no independent review
-          with figures we could check, so its card carries CAP's own description only and says so.
-          <strong class="text-gray-900">Where to buy.</strong> Amazon's pages would not load for us
-          that day, so Amazon availability was confirmed from Amazon US listings returned by search:
-          we found REP's black bumper plates, Fringe Sport's black bumper sets (listed under its
-          former name, OneFitWonder) and Titan's Economy bumpers there, and REP's competition plates
-          in kilogram sets. We could not confirm Amazon listings for Fringe's MilSpec plates, REP's
-          pound competition plates or CAP's Economy sets. On 9 November 2026 we replaced the first two
-          cards with the closest plates Amazon does sell — Fringe's Savage pairs, checked against Fringe's
-          page, a retailer listing and Garage Gym Lab's review, and REP's kilogram competition plates,
-          which Garage Gym Reviews reviewed — and discuss the MilSpec and pound competition plates in the
-          text. Every brand was checked against the US Consumer Product Safety
-          Commission's recall database on the same date, along with bumper and weight plates as a
-          category. Prices are those we saw on that date and change often, and per-pound figures are
-          our arithmetic from those prices. We earn a commission if you buy through the Amazon links
-          on this page; it does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
-          here is a training programme. Olympic lifts and dropped barbells carry a real risk of injury
-          to you and to anyone nearby. If you have a back, shoulder, joint or heart condition, are
-          pregnant or postpartum, or are new to lifting or returning from injury, talk to a qualified
-          professional before you start, and learn the lifts from a qualified coach.`,
   sections: [
     {
       id: 'quick-picks',

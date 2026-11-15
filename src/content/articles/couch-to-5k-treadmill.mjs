@@ -18,12 +18,6 @@ export default {
   ],
   tags: ['couch to 5k treadmill', 'c25k', 'beginner running', 'treadmill running plan', 'learn to run'],
   stickyCta: { text: 'See the Plan', link: '#the-plan' },
-  note: `<strong class="text-gray-900">Before you start.</strong> We review treadmills rather than
-          coach runners. If you have a heart condition, high blood pressure, joint problems, are
-          pregnant, are significantly overweight, or have been inactive for a long time, speak to
-          your doctor before beginning a running programme. Stop for chest pain, unusual
-          breathlessness, dizziness or an irregular heartbeat. Sharp joint pain means stop that
-          session, not push through it.`,
   lead: `The walk-to-run progression works because it treats running as something to be built
           rather than attempted. A treadmill suits it unusually well — the pace is held for you,
           the surface is forgiving, and the weather is irrelevant — provided you avoid two

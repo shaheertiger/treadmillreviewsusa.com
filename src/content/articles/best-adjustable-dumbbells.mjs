@@ -25,26 +25,6 @@ export default {
           The category has also had a run of recalls in which plates came loose mid-lift. The seven
           sets below were chosen to cover every common mechanism with a product that is on sale now,
           and the guide after them explains which mechanism suits which kind of training.`,
-  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          dumbbells, and no figure on this page is our own measurement. Each set was confirmed as
-          currently sold on 16 October 2026 on the maker's own store (PowerBlock, REP Fitness, Core
-          Home Fitness, SMRTFT, CAP Barbell, and Ironmaster and Nike Strength for the sets we discuss
-          but could not card), or on 9 November 2026 on Amazon and Titan's store for the Titan
-          handles, and its weight range,
-          increments, length and warranty were checked on that date against at least one independent
-          source — a review site's specification table or a second retailer. A figure appears on this
-          page only where the maker and an independent source agree; where they conflicted — on
-          handle lengths and on one set's smallest weight step — we left the number out and say so on
-          the card. Every brand was checked against the US Consumer Product Safety Commission's recall
-          database, and recalled products are excluded. Prices are those we saw on that date and
-          change often. We earn a commission if you buy through the Amazon links on this page; it
-          does not change which products we list or what we say about them.
-          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
-          exercise equipment; we are not giving medical, physiotherapy, coaching or nutrition advice.
-          Weight ranges and ratings are manufacturer figures, not a guide to what you should lift. If
-          you have a back, shoulder, joint or heart condition, are pregnant or postpartum, or are
-          returning from injury, talk to a qualified professional before starting or changing a
-          strength programme.`,
   sections: [
     {
       id: 'quick-picks',

@@ -32,23 +32,6 @@ export default {
           whether to buy it new at list price, but whether a particular unit is worth the asking price,
           what it costs to keep running, and what you would get for similar money from NordicTrack's
           current range.`,
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          14 October 2026 we read NordicTrack's US treadmill category, which listed seven treadmills and
-          not the EXP 7i, and the product page for the EXP 7i (SKU NTL10423) that still loads on
-          nordictrack.com, including its specification block. We cross-checked those figures against
-          independent reviews by TreadmillReviews.com (updated October 2023) and OutdoorGearLab
-          (March 2024), which agree on the 2.6 CHP motor rating, the 20 x 55 in. belt, 10 mph, the
-          7 in. touchscreen and the 300 lb rating; NordicTrack and TreadmillReviews.com also agree on the
-          0-12% incline, the footprint, the boxed weight and the warranty. Garage Gym Reviews' summary
-          gives a 3.0 CHP motor and a 12 mph top speed, which conflict with every other source, so we do
-          not use them. The alternative models' figures are from our
-          <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">T Series review</a>,
-          checked the same day; on 9 November 2026 the EXP 7i and T Series 8 cards, neither sold on Amazon, became
-          the NordicTrack T 6.5 S and ProForm Carbon TLX, whose figures are those checked for our NordicTrack C950i
-          and iFIT treadmill guides. We have not tested the EXP 7i or any machine here, and none of the figures
-          are our own measurements. Prices change constantly; those given are what we saw on 14 October
-          2026. We earn a commission if you buy through the Amazon links on this page; it does not change
-          what we say.`,
   products: [
     {
       id: "nordictrack-t-6-5-s",

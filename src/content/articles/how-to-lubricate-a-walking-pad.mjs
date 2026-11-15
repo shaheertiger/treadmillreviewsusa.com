@@ -19,15 +19,6 @@ export default {
   ],
   tags: ['how to lubricate a walking pad', 'how to oil a walking pad', 'walking pad lubricant', 'walking pad maintenance', 'silicone treadmill lubricant'],
   stickyCta: { text: 'See the Steps', link: '#steps' },
-  note: `<strong class="text-gray-900">Before anything else.</strong> Unplug the walking pad at the
-          wall before touching the belt, the deck, the rollers or the bolts, and let the motor cool
-          if it has just been used. Removing the safety key or switching off at the remote is not
-          enough; the plug comes out. <strong class="text-gray-900">The manual is the
-          authority.</strong> Some walking pads use a pre-waxed or maintenance-free deck and say not
-          to add lubricant at all, and adding it to those can make the belt slip and may affect the
-          warranty. Where the manual gives a different method, product, quantity or interval from
-          this page, follow the manual. If you smell burning, see sparks or smoke, or the belt moves
-          while the pad is unplugged, stop — that is not a lubrication problem.`,
   lead: `Lubricating a walking pad is the same idea as lubricating any treadmill: put a small
           amount of 100% silicone between the underside of the belt and the deck, then spread it by
           walking. The difference is access. A full treadmill has a frame and enough clearance to

@@ -23,22 +23,6 @@ export default {
   ],
   tags: ['technogym treadmill', 'technogym treadmills', 'technogym myrun', 'technogym run', 'technogym skillrun', 'technogym warranty'],
   stickyCta: { text: 'See Every US Model', link: '#lineup' },
-  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
-          20 October 2026 we checked Technogym’s US store (technogym.com/en-US): its treadmill
-          category page and the product pages for the MyRun, Technogym Run, Excite+ Run, Skillrun,
-          Skillmill, Run Personal and Artis Run; its Technogym Plus and membership pages; its US sales
-          conditions and return policy; and the MyRun’s US technical specification sheet. We set those
-          against independent coverage — DC Rainmaker’s 2023 MyRun review, CoachWeb’s 2024 and
-          TechRadar’s reviews of the Technogym Run, a Canadian Technogym dealer’s MyRun listing, and
-          retailer and review-site specification listings for the Skillrun and Run Personal — and
-          checked company facts against Technogym’s own releases, Wikipedia and trade press. The US
-          Consumer Product Safety Commission’s recall database returned no Technogym recall. Where
-          sources disagree we say so rather than choose, and figures we could find only on Technogym’s
-          own pages are labelled as such. We have not tested any Technogym treadmill. Prices are what
-          technogym.com showed on the day we checked (20 Oct 2026); they change, and Technogym’s
-          prices have risen since 2024. As an Amazon Associate we earn from qualifying purchases;
-          Technogym treadmills are sold through Technogym itself rather than on Amazon, so this page
-          has no Amazon buttons for them.`,
   lead: `Most people who search for a Technogym treadmill have already run on one — in a hotel gym,
           a smart city club or a physiotherapy suite — and want to know whether the same thing can
           live at home. It can, but not quite in the way the badge suggests. Technogym sells seven

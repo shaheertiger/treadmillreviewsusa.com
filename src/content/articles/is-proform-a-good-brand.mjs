@@ -19,17 +19,6 @@ export default {
   ],
   tags: ['is proform a good brand', 'is proform a good treadmill', 'proform treadmill reviews', 'who owns proform', 'proform vs nordictrack'],
   stickyCta: { text: 'See Who Should Buy One', link: '#who-should-buy' },
-  note: `<strong class="text-gray-900">What this assessment is based on.</strong> The figures
-          on this page come from our
-          <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm range guide</a>,
-          which checked ProForm's own US site against independent review coverage on 13 October
-          2026 and carries only figures they agree on. Ownership details were checked against
-          iFIT's own announcement and independent sources. We have not tested ProForm's current
-          machines, and we do not have access to failure-rate or service data for any brand, so
-          we do not claim one; where we describe the brand's strengths and weaknesses, they rest
-          on published specifications, warranty terms and independent review coverage. ProForm
-          changes its range, prices and terms often, so confirm the specification and warranty
-          for the exact unit before you order.`,
   lead: `"Is ProForm a good brand?" usually means one of three things. Will the machine last?
           Is it good value next to NordicTrack and Sole? And is the iFIT subscription a trap? The
           honest answer to each is more useful than a verdict, because ProForm is not a bad brand
